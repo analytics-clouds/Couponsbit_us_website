@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Link from "next/link";
 import {
   ShoppingBag, 
@@ -48,14 +48,14 @@ export const Footer = () => {
     { name: "Mobile & Telecom",   href: "/categories/mobile" },
   ];
   const topStores = [
-    { name: "StubHub",        href: "/stores/stubhub" },
-    { name: "Viagogo",        href: "/stores/viagogo" },
-    { name: "LATAM Airlines", href: "/stores/latam-airlines" },
-    { name: "Driffle",        href: "/stores/driffle" },
-    { name: "Bluehost",       href: "/stores/bluehost" },
-    { name: "Lyca Mobile",    href: "/stores/lyca-mobile" },
-    { name: "Reolink",        href: "/stores/reolink" },
-    { name: "Sintra",         href: "/stores/sintra" },
+    { name: "StubHub",        href: "/stores/stubhub-coupon-code" },
+    { name: "Viagogo",        href: "/stores/viagogo-coupon-code" },
+    { name: "LATAM Airlines", href: "/stores/latam-airlines-coupon-code" },
+    { name: "Driffle",        href: "/stores/driffle-coupon-code" },
+    { name: "Bluehost",       href: "/stores/bluehost-coupon-code" },
+    { name: "Lyca Mobile",    href: "/stores/lyca-mobile-coupon-code" },
+    { name: "Reolink",        href: "/stores/reolink-coupon-code" },
+    { name: "Sintra",         href: "/stores/sintra-coupon-code" },
   ];
   
   const companyLinks = [

@@ -29,8 +29,8 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "rayneo", name: "Rayneo", logo: "/reyneo-coupon-code.webp", coupons: 6, discount: "Flat ₹2000 Off" },
-  { id: "reolink", name: "Reolink", logo: "/Reolink-coupon-code.webp", coupons: 11, discount: "Up to 30% OFF" }
+  { id: "rayneo-coupon-code", name: "Rayneo", logo: "/reyneo-coupon-code.webp", coupons: 6, discount: "Flat ₹2000 Off" },
+  { id: "reolink-coupon-code", name: "Reolink", logo: "/Reolink-coupon-code.webp", coupons: 11, discount: "Up to 30% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

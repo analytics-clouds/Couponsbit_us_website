@@ -51,6 +51,14 @@ const slides = [
   { id: 5, image: "/sintra-online-deals.webp",            alt: "Sintra Deals" },
 ];
 
+const mobileSlides = [
+  { id: 1, image: "/reolink-online-deals-mobile.webp",         alt: "Reolink Deals" },
+  { id: 2, image: "/viagogo-online-deals-mobile.webp",         alt: "Viagogo Deals" },
+  { id: 3, image: "/envato-elements-online-deals-mobile.webp", alt: "Envato Elements Deals" },
+  { id: 4, image: "/rayneo-online-deals-mobile.webp",          alt: "Rayneo Deals" },
+  { id: 5, image: "/sintra-online-deals-mobile.webp",          alt: "Sintra Deals" },
+];
+
 
 // --- Sub-components ---
 const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boolean, onClose: () => void }) => {
@@ -136,8 +144,8 @@ export default function DealsOfTheDayContent() {
     <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
       <Navbar />
 
-      {/* Section 1: Hero Slider */}
-      <div className="relative w-full mt-24 overflow-hidden" style={{ aspectRatio: "1920/400" }}>
+      {/* Section 1: Hero Slider (Desktop) */}
+      <div className="relative w-full mt-24 overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
         {slides.map((slide, index) => (
           <motion.div
             key={slide.id}
@@ -157,6 +165,33 @@ export default function DealsOfTheDayContent() {
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {slides.map((_, i) => (
+            <button key={i} onClick={() => setCurrentSlide(i)} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
+          ))}
+        </div>
+      </div>
+
+      {/* Section 1: Hero Slider (Mobile) */}
+      <div className="relative w-full mt-24 overflow-hidden md:hidden">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={mobileSlides[currentSlide].id}
+            src={mobileSlides[currentSlide].image}
+            alt={mobileSlides[currentSlide].alt}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full h-auto block"
+          />
+        </AnimatePresence>
+        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+          <ArrowLeft className="w-5 h-5 text-white" />
+        </button>
+        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+          <ArrowRight className="w-5 h-5 text-white" />
+        </button>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {mobileSlides.map((_, i) => (
             <button key={i} onClick={() => setCurrentSlide(i)} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
           ))}
         </div>
@@ -184,7 +219,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/viagogo" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/viagogo-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -213,7 +248,7 @@ export default function DealsOfTheDayContent() {
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
+                  <Link href="/stores/viagogo-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
                 </div>
               </div>
             ))}
@@ -228,7 +263,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Reolink Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/reolink" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/reolink-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -255,7 +290,7 @@ export default function DealsOfTheDayContent() {
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/reolink"><button className="mt-3 w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/reolink-coupon-code"><button className="mt-3 w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -270,7 +305,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/rayneo" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/rayneo-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
@@ -287,7 +322,7 @@ export default function DealsOfTheDayContent() {
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
+                <Link href="/stores/rayneo-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
               </div>
             ))}
           </div>
@@ -301,7 +336,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Envato Elements Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/envato-elements" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/envato-elements-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
@@ -324,7 +359,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-[9px] font-bold text-[#19798d] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/envato-elements"><button className="bg-[#19798d] hover:bg-[#0f5a6b] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/envato-elements-coupon-code"><button className="bg-[#19798d] hover:bg-[#0f5a6b] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -341,7 +376,7 @@ export default function DealsOfTheDayContent() {
             </div>
             <div className="flex items-center justify-between">
               <p className="text-gray-400 text-xs sm:text-sm">Exclusive AI subscription deals — save more today</p>
-              <Link href="/stores/sintra" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200 ml-4">View All →</Link>
+              <Link href="/stores/sintra-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200 ml-4">View All →</Link>
             </div>
           </div>
           <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
@@ -366,7 +401,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/sintra"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
+                  <Link href="/stores/sintra-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
                 </div>
               </div>
             ))}

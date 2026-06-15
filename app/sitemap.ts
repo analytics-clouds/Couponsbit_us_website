@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.couponsclouds.com";
+const BASE_URL = "https://couponsbit.us";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/this-month-sale`,
+      url: `${BASE_URL}/deals-of-the-month`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
@@ -40,61 +40,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/stores/amazon`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/stores/driffle`,
+      url: `${BASE_URL}/stores/driffle-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/envato-elements`,
+      url: `${BASE_URL}/stores/envato-elements-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/latam-airlines`,
+      url: `${BASE_URL}/stores/latam-airlines-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/lyca-mobile`,
+      url: `${BASE_URL}/stores/lyca-mobile-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/rayneo`,
+      url: `${BASE_URL}/stores/rayneo-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/reolink`,
+      url: `${BASE_URL}/stores/reolink-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/sintra`,
+      url: `${BASE_URL}/stores/sintra-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/stubhub`,
+      url: `${BASE_URL}/stores/stubhub-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/stores/viagogo`,
+      url: `${BASE_URL}/stores/viagogo-coupon-code`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
@@ -128,20 +122,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
 
-    // Products
-    {
-      url: `${BASE_URL}/products`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/products/amazon`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.6,
-    },
-
     // Info / support pages
     {
       url: `${BASE_URL}/about`,
@@ -168,24 +148,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${BASE_URL}/submit-coupon`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.4,
-    },
-    {
       url: `${BASE_URL}/careers`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.4,
     },
-    {
-      url: `${BASE_URL}/feedback`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
-
     // Legal
     {
       url: `${BASE_URL}/privacy-policy`,

@@ -23,8 +23,8 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "stubhub", name: "Stubhub", logo: "/stubhub-coupon-code.webp", coupons: 11, discount: "Up to 15% OFF" },
-  { id: "viagogo", name: "Viagogo", logo: "/viagogo-coupon-code.webp", coupons: 9, discount: "Up to 10% OFF" }
+  { id: "stubhub-coupon-code", name: "Stubhub", logo: "/stubhub-coupon-code.webp", coupons: 11, discount: "Up to 15% OFF" },
+  { id: "viagogo-coupon-code", name: "Viagogo", logo: "/viagogo-coupon-code.webp", coupons: 9, discount: "Up to 10% OFF" }
 ];
 
 

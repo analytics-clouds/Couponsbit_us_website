@@ -120,16 +120,16 @@ const Hero = () => {
 };
 
 const TOP_BRANDS = [
-  { name: "StubHub",         logo: "/stubhub-coupon-code.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub" },
-  { name: "Viagogo",         logo: "/viagogo-coupon-code.webp",         discount: "Starting at $332", href: "/stores/viagogo" },
-  { name: "LATAM Airlines",  logo: "/latam-airlines-coupon-code.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines" },
-  { name: "Rayneo",          logo: "/reyneo-coupon-code.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo" },
-  { name: "Driffle",         logo: "/driffle-coupon-code.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle" },
-  { name: "Lyca Mobile",     logo: "/lyca-mobile-coupon-code.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile" },
-  { name: "Bluehost",        logo: "/bluehost-coupon-code.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost" },
-  { name: "Reolink",         logo: "/Reolink-coupon-code.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink" },
-  { name: "Envato Elements", logo: "/envato-coupon-code.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements" },
-  { name: "Sintra",          logo: "/sintra-coupon-code.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra" },
+  { name: "StubHub",         logo: "/stubhub-coupon-code.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",         logo: "/viagogo-coupon-code.webp",         discount: "Starting at $332", href: "/stores/viagogo-coupon-code" },
+  { name: "LATAM Airlines",  logo: "/latam-airlines-coupon-code.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-coupon-code" },
+  { name: "Rayneo",          logo: "/reyneo-coupon-code.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-coupon-code" },
+  { name: "Driffle",         logo: "/driffle-coupon-code.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-coupon-code" },
+  { name: "Lyca Mobile",     logo: "/lyca-mobile-coupon-code.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Bluehost",        logo: "/bluehost-coupon-code.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-coupon-code" },
+  { name: "Reolink",         logo: "/Reolink-coupon-code.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
+  { name: "Envato Elements", logo: "/envato-coupon-code.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
+  { name: "Sintra",          logo: "/sintra-coupon-code.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
 ];
 
 const TopBrands = () => {
@@ -486,28 +486,28 @@ export default function HomePageContent() {
                   title: "UP TO 95% OFF – XCOM 2 on Driffle",
                   desc: "Enjoy huge discounts on top-rated strategy and digital games.",
                   points: ["Up to 95% OFF on selected game titles", "Instant digital delivery", "Valid on PC & console keys"],
-                  href: "/stores/driffle"
+                  href: "/stores/driffle-coupon-code"
                 },
                 {
                   label: "SAVE", discount: "70%", cat: "AI Tools",
                   title: "Sintra 12-Month Plan – Save 70%",
                   desc: "Unlock maximum savings with Sintra AI's most popular annual plan.",
                   points: ["Save 70% on annual plan", "Access all AI automation bots", "Best value for businesses"],
-                  href: "/stores/sintra"
+                  href: "/stores/sintra-coupon-code"
                 },
                 {
                   label: "UP TO", discount: "69%", cat: "Mobile Plans",
                   title: "Up to 69% OFF – Summer Prepaid Plans by Lyca Mobile",
                   desc: "High-speed data, unlimited talk & text with no contracts.",
                   points: ["Up to 69% OFF on prepaid plans", "High-speed 4G/5G data included", "No lock-in contracts"],
-                  href: "/stores/lyca-mobile"
+                  href: "/stores/lyca-mobile-coupon-code"
                 },
                 {
                   label: "UP TO", discount: "50%", cat: "Web Hosting",
                   title: "UP TO 50% OFF – Bluehost Hosting Plan Savings",
                   desc: "Save big on secure and reliable Bluehost hosting subscriptions.",
                   points: ["Up to 50% OFF on hosting plans", "Free domain included", "24/7 customer support"],
-                  href: "/stores/bluehost"
+                  href: "/stores/bluehost-coupon-code"
                 },
               ].map((c, i) => (
                 <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">

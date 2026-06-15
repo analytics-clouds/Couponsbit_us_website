@@ -23,7 +23,7 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "lyca-mobile", name: "Lyca Mobile", logo: "/lyca-mobile-coupon-code.webp", coupons: 10, discount: "Up to 20% OFF" }
+  { id: "lyca-mobile-coupon-code", name: "Lyca Mobile", logo: "/lyca-mobile-coupon-code.webp", coupons: 10, discount: "Up to 20% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

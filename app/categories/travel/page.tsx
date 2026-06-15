@@ -87,7 +87,7 @@ const travelSchema = {
           item: {
             "@type": "WebPage",
             name: "LATAM Airlines Coupon Codes",
-            url: "https://couponsbit.us/stores/latam-airlines",
+            url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
           },
         },
         // ← add more travel stores here as you onboard them

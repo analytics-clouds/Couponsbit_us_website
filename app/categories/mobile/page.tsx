@@ -87,7 +87,7 @@ const mobileSchema = {
           item: {
             "@type": "WebPage",
             name: "Lyca Mobile Coupon Codes",
-            url: "https://couponsbit.us/stores/lyca-mobile",
+            url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
           },
         },
         // ← add more mobile/telecom stores here as you onboard them

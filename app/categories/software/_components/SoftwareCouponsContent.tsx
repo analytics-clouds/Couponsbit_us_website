@@ -23,10 +23,10 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "driffle", name: "Driffle", logo: "/driffle-coupon-code.webp", coupons: 14, discount: "Up to 15% OFF" },
-  { id: "bluehost", name: "Bluehost", logo: "/bluehost-coupon-code.webp", coupons: 12, discount: "Up to 65% OFF" },
-  { id: "envato-elements", name: "Envato Elements", logo: "/envato-coupon-code.webp", coupons: 7, discount: "Up to 50% OFF" },
-  { id: "sintra", name: "Sintra", logo: "/sintra-coupon-code.webp", coupons: 5, discount: "Up to 40% OFF" }
+  { id: "driffle-coupon-code", name: "Driffle", logo: "/driffle-coupon-code.webp", coupons: 14, discount: "Up to 15% OFF" },
+  { id: "bluehost-coupon-code", name: "Bluehost", logo: "/bluehost-coupon-code.webp", coupons: 12, discount: "Up to 65% OFF" },
+  { id: "envato-elements-coupon-code", name: "Envato Elements", logo: "/envato-coupon-code.webp", coupons: 7, discount: "Up to 50% OFF" },
+  { id: "sintra-coupon-code", name: "Sintra", logo: "/sintra-coupon-code.webp", coupons: 5, discount: "Up to 40% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

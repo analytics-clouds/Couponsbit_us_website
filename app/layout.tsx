@@ -2,7 +2,7 @@
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.couponsclouds.com"),
+  metadataBase: new URL("https://couponsbit.us"),
   title: {
     default: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
     template: "%s | Coupons Clouds",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.couponsclouds.com",
+    url: "https://couponsbit.us",
     siteName: "Coupons Clouds",
     title: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
     description:
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 

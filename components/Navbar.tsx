@@ -1,12 +1,12 @@
 ﻿"use client";
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { 
-  Cloud, 
-  Search, 
-  ChevronDown, 
-  Menu, 
+import {
+  Search,
+  ChevronDown,
+  Menu,
   Bell,
   Laptop,
   Plane,
@@ -29,13 +29,14 @@ import { NotificationPanel } from "./NotificationPanel";
 
 
 export const Logo = () => (
-  <div className="flex flex-col items-start leading-none gap-0">
-    <div className="flex items-center gap-1.5">
-      <span className="font-extrabold text-2xl tracking-tighter text-black">COUPONS</span>
-      <Cloud className="w-5 h-5 text-brand-primary" fill="currentColor" />
-    </div>
-    <span className="text-[10px] font-bold tracking-[0.2em] text-brand-primary -mt-0.5">CLOUDS</span>
-  </div>
+  <Image
+    src="/coupons-bit-logo.png"
+    alt="Couponsbit Logo"
+    width={1347}
+    height={542}
+    priority
+    className="h-14 w-auto"
+  />
 );
 
 export const NavLinks = [
@@ -179,14 +180,12 @@ export const Navbar = () => {
           {/* Mobile Menu Trigger */}
           <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger 
-                render={
-                  <Button variant="ghost" size="icon" className="text-black hover:text-brand-primary">
-                    <Menu className="w-6 h-6" />
-                  </Button>
-                }
-              />
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="text-black hover:text-brand-primary">
+                  <Menu className="w-6 h-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-white">
                 <SheetHeader className="mb-8">
                   <SheetTitle className="text-left">
                     <Link href="/" onClick={handleLinkClick}>

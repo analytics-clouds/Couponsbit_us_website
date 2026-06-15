@@ -490,16 +490,16 @@ export default function CategoriesPageContent() {
             </div>
             <div className="space-y-1">
               {[
-                { name: "StubHub",        deal: "Up to 15% OFF on Tickets",    href: "/stores/stubhub" },
-                { name: "Viagogo",        deal: "Up to 10% OFF on Events",     href: "/stores/viagogo" },
-                { name: "LATAM Airlines",  deal: "Up to 12% OFF on Flights",    href: "/stores/latam-airlines" },
-                { name: "Rayneo",          deal: "Up to 30% OFF on AR Glasses", href: "/stores/rayneo" },
-                { name: "Driffle",         deal: "Up to 70% OFF on Game Keys",  href: "/stores/driffle" },
-                { name: "Lyca Mobile",     deal: "Up to 20% OFF on Plans",      href: "/stores/lyca-mobile" },
-                { name: "Bluehost",        deal: "Up to 65% OFF on Hosting",    href: "/stores/bluehost" },
-                { name: "Reolink",         deal: "Up to 30% OFF on Cameras",    href: "/stores/reolink" },
-                { name: "Envato Elements", deal: "Up to 50% OFF on Assets",     href: "/stores/envato-elements" },
-                { name: "Sintra",          deal: "Up to 40% OFF on AI Tools",   href: "/stores/sintra" },
+                { name: "StubHub",        deal: "Up to 15% OFF on Tickets",    href: "/stores/stubhub-coupon-code" },
+                { name: "Viagogo",        deal: "Up to 10% OFF on Events",     href: "/stores/viagogo-coupon-code" },
+                { name: "LATAM Airlines",  deal: "Up to 12% OFF on Flights",    href: "/stores/latam-airlines-coupon-code" },
+                { name: "Rayneo",          deal: "Up to 30% OFF on AR Glasses", href: "/stores/rayneo-coupon-code" },
+                { name: "Driffle",         deal: "Up to 70% OFF on Game Keys",  href: "/stores/driffle-coupon-code" },
+                { name: "Lyca Mobile",     deal: "Up to 20% OFF on Plans",      href: "/stores/lyca-mobile-coupon-code" },
+                { name: "Bluehost",        deal: "Up to 65% OFF on Hosting",    href: "/stores/bluehost-coupon-code" },
+                { name: "Reolink",         deal: "Up to 30% OFF on Cameras",    href: "/stores/reolink-coupon-code" },
+                { name: "Envato Elements", deal: "Up to 50% OFF on Assets",     href: "/stores/envato-elements-coupon-code" },
+                { name: "Sintra",          deal: "Up to 40% OFF on AI Tools",   href: "/stores/sintra-coupon-code" },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="group block">
                   <div className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 hover:bg-gray-50 rounded-xl px-2 -mx-2 transition-colors cursor-pointer">
