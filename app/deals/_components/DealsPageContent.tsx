@@ -43,7 +43,7 @@ export default function DealsPageContent() {
   const prevSlide = () => setCurrentSlide((p) => (p - 1 + slides.length) % slides.length);
 
   return (
-    <div className="min-h-screen bg-[#f4f7f8] font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#f4f7f8] font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
 
       {/* ── Hero Slider (Desktop) ── */}
@@ -103,7 +103,7 @@ export default function DealsPageContent() {
       <div className="bg-white border-b border-[#e8e8e8]">
         <div className="container mx-auto px-4 py-4 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">Deals</span>
           </nav>
@@ -118,10 +118,10 @@ export default function DealsPageContent() {
         <section>
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">StubHub Coupons</h2>
             </div>
-            <Link href="/stores/stubhub-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/stubhub-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -145,20 +145,20 @@ export default function DealsPageContent() {
                       <span className="bg-red-50 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                       <span className="bg-green-50 text-green-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified Deal</span>
                     </div>
-                    <p className="text-[#19798d] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
+                    <p className="text-[#056bfa] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
-                    <button onClick={() => setOpenStub(openStub === i ? null : i)} className="mt-2 text-[#19798d] font-bold text-[13px] flex items-center gap-1">
+                    <button onClick={() => setOpenStub(openStub === i ? null : i)} className="mt-2 text-[#056bfa] font-bold text-[13px] flex items-center gap-1">
                       View Details <ChevronDown size={13} className={cn("transition-transform", openStub === i ? "rotate-180" : "")} />
                     </button>
                     {openStub === i && (
                       <ul className="mt-2 space-y-1 text-gray-600 text-[12px]">
-                        {c.points.map((p, pi) => <li key={pi} className="flex gap-1"><span className="text-[#19798d]">•</span>{p}</li>)}
+                        {c.points.map((p, pi) => <li key={pi} className="flex gap-1"><span className="text-[#056bfa]">•</span>{p}</li>)}
                       </ul>
                     )}
                   </div>
                   <Link href="/stores/stubhub-coupon-code">
-                    <button className="mt-3 w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
+                    <button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
                   </Link>
                 </div>
               </div>
@@ -193,8 +193,8 @@ export default function DealsPageContent() {
               <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
                 {/* Top badges */}
                 <div className="flex items-center justify-between">
-                  <span className="bg-[#19798d] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">LATAM</span>
-                  <span className="bg-[#e8f6f8] text-[#19798d] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
+                  <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">LATAM</span>
+                  <span className="bg-[#e8f6f8] text-[#056bfa] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
                 </div>
                 {/* Content */}
                 <div className="my-auto pt-4 pb-2">
@@ -209,7 +209,7 @@ export default function DealsPageContent() {
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
                   <Link href="/stores/latam-airlines-coupon-code">
-                    <button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button>
+                    <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button>
                   </Link>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default function DealsPageContent() {
 
           {/* Scroll indicator */}
           <div className="w-full bg-gray-100 h-1 rounded-full mt-3 hidden sm:block">
-            <div className="bg-[#19798d] w-1/4 h-full rounded-full" />
+            <div className="bg-[#056bfa] w-1/4 h-full rounded-full" />
           </div>
         </section>
 
@@ -228,10 +228,10 @@ export default function DealsPageContent() {
         <section>
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
-            <Link href="/stores/rayneo-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/rayneo-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -242,15 +242,15 @@ export default function DealsPageContent() {
             ].map((c, i) => (
               <div key={i} className="bg-white border border-[#f0f0f0] rounded-[28px] p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="bg-[#19798d] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">RAYNEO</span>
+                  <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">RAYNEO</span>
                   <span className="bg-[#f5f5f5] text-gray-500 text-[10px] font-bold px-3 py-1.5 rounded-full">{c.type}</span>
                 </div>
-                <h3 className="text-[#19798d] font-black text-4xl leading-none mb-1">{c.discount}</h3>
+                <h3 className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</h3>
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
                 <Link href="/stores/rayneo-coupon-code">
-                  <button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button>
+                  <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button>
                 </Link>
               </div>
             ))}
@@ -263,10 +263,10 @@ export default function DealsPageContent() {
         <section>
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Driffle Coupons</h2>
             </div>
-            <Link href="/stores/driffle-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/driffle-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -275,13 +275,13 @@ export default function DealsPageContent() {
               { badge: "UP TO", discount: "95%", title: "UP TO 95% OFF – XCOM 2",                              desc: "Enjoy huge discounts on top-rated strategy games.",                  tag: "Popular" },
               { badge: "UP TO", discount: "81%", title: "UP TO 81% OFF – EA SPORTS FC 26",                     desc: "Score massive savings on the latest football gaming experience.",    tag: "Trending" },
             ].map((c, i) => (
-              <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#19798d] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#19798d] hover:border-r-[#19798d] hover:shadow-lg transition-all duration-300">
+              <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#056bfa] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#056bfa] hover:border-r-[#056bfa] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[#19798d] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
+                  <span className="text-[#056bfa] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
                   <span className="text-[9px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-baseline text-[#19798d] mb-2">
+                  <div className="flex items-baseline text-[#056bfa] mb-2">
                     <span className="text-5xl font-black tracking-tighter">{c.discount}</span>
                     <span className="text-lg font-extrabold ml-1 uppercase">OFF</span>
                   </div>
@@ -289,9 +289,9 @@ export default function DealsPageContent() {
                   <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-[9px] font-bold text-[#19798d] uppercase tracking-wide">{c.tag}</span>
+                  <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
                   <Link href="/stores/driffle-coupon-code">
-                    <button className="bg-[#19798d] hover:bg-[#0f5a6b] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button>
+                    <button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button>
                   </Link>
                 </div>
               </div>
@@ -305,10 +305,10 @@ export default function DealsPageContent() {
         <section>
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
-            <Link href="/stores/viagogo-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/viagogo-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -319,13 +319,13 @@ export default function DealsPageContent() {
             ].map((c, i) => (
               <div key={i} className="relative bg-white rounded-[20px] overflow-visible shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style={{ filter: "drop-shadow(0 4px 16px rgba(25,121,141,0.10))" }}>
                 {/* Teal top */}
-                <div className="relative rounded-t-[20px] bg-[#19798d] px-6 pt-7 pb-8 text-center overflow-hidden">
+                <div className="relative rounded-t-[20px] bg-[#056bfa] px-6 pt-7 pb-8 text-center overflow-hidden">
                   <div className="absolute top-0 left-0 right-0 flex justify-around px-4 pt-2">
                     {Array.from({ length: 12 }).map((_, k) => <span key={k} className="w-1 h-1 rounded-full bg-white/20 block" />)}
                   </div>
                   <p className="text-white/60 text-[9px] font-black uppercase tracking-[4px] mb-1">{c.label}</p>
                   <p className="text-white font-black leading-none" style={{ fontSize: c.discount.length > 3 ? "3.5rem" : "4.5rem" }}>{c.discount}</p>
-                  <span className="absolute top-4 right-4 text-[8px] font-black uppercase bg-white text-[#19798d] px-2.5 py-1 rounded-full">{c.badge}</span>
+                  <span className="absolute top-4 right-4 text-[8px] font-black uppercase bg-white text-[#056bfa] px-2.5 py-1 rounded-full">{c.badge}</span>
                   <div className="absolute -bottom-3 left-0 right-0 flex items-center">
                     <div className="w-6 h-6 rounded-full bg-[#f4f7f8] -translate-x-1/2 shrink-0" />
                     <div className="flex-1 border-t-2 border-dashed border-white/20 mx-1" />
@@ -336,12 +336,12 @@ export default function DealsPageContent() {
                 <div className="rounded-b-[20px] bg-white px-6 pt-7 pb-6">
                   <div className="flex gap-2 mb-4">
                     <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-red-50 text-red-500 px-2.5 py-1 rounded-full"><Clock className="w-2.5 h-2.5" />Limited Time</span>
-                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#19798d] px-2.5 py-1 rounded-full"><BadgeCheck className="w-2.5 h-2.5" />Verified</span>
+                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#056bfa] px-2.5 py-1 rounded-full"><BadgeCheck className="w-2.5 h-2.5" />Verified</span>
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
                   <Link href="/stores/viagogo-coupon-code">
-                    <button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button>
+                    <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button>
                   </Link>
                 </div>
               </div>
@@ -366,7 +366,7 @@ export default function DealsPageContent() {
               </h2>
 
               <div className="space-y-6">
-                <h3 className="text-[#19798d] font-black text-2xl mb-2">
+                <h3 className="text-[#056bfa] font-black text-2xl mb-2">
                   Save More Every Time You Shop With Couponsbit Deals
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">
@@ -388,7 +388,7 @@ export default function DealsPageContent() {
                 
                 {/* VERIFIED DEALS SECTION */}
                 <div className="pt-8 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Discover Verified Deals From Top Brands
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-4">
@@ -414,7 +414,7 @@ export default function DealsPageContent() {
                       "Seasonal shopping promotions"
                     ].map((point, i) => (
                       <div key={i} className="flex items-center gap-4 py-2 border-b border-[#f0f0f0] last:border-0">
-                        <span className="w-2 h-2 rounded-full bg-[#19798d] shrink-0" />
+                        <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
                         <p className="text-gray-700 text-lg font-medium">{point}</p>
                       </div>
                     ))}
@@ -426,7 +426,7 @@ export default function DealsPageContent() {
 
                 {/* WHY SHOPPERS LOVE COUPONSBIT */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-6">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-6">
                     Why Shoppers Love Couponsbit Deals
                   </h3>
                   
@@ -456,7 +456,7 @@ export default function DealsPageContent() {
 
                 {/* HOW IT WORKS SECTION */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     How Couponsbit Deals Work
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-6">
@@ -465,22 +465,22 @@ export default function DealsPageContent() {
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="border border-gray-100 rounded-xl p-5 bg-white">
-                      <span className="text-xs font-black text-[#19798d] uppercase tracking-wider block mb-1">Step 1</span>
+                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wider block mb-1">Step 1</span>
                       <h4 className="text-black font-extrabold text-base mb-2">Search for Your Favorite Brand</h4>
                       <p className="text-gray-500 text-sm leading-relaxed">Browse thousands of deals and promo codes from popular stores and online brands.</p>
                     </div>
                     <div className="border border-gray-100 rounded-xl p-5 bg-white">
-                      <span className="text-xs font-black text-[#19798d] uppercase tracking-wider block mb-1">Step 2</span>
+                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wider block mb-1">Step 2</span>
                       <h4 className="text-black font-extrabold text-base mb-2">Reveal the Promo Code</h4>
                       <p className="text-gray-500 text-sm leading-relaxed">Click on the deal or coupon to copy the code instantly.</p>
                     </div>
                     <div className="border border-gray-100 rounded-xl p-5 bg-white">
-                      <span className="text-xs font-black text-[#19798d] uppercase tracking-wider block mb-1">Step 3</span>
+                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wider block mb-1">Step 3</span>
                       <h4 className="text-black font-extrabold text-base mb-2">Shop on the Brand’s Website</h4>
                       <p className="text-gray-500 text-sm leading-relaxed">Visit the retailer’s website and add your favorite products or services to your cart.</p>
                     </div>
                     <div className="border border-gray-100 rounded-xl p-5 bg-white">
-                      <span className="text-xs font-black text-[#19798d] uppercase tracking-wider block mb-1">Step 4</span>
+                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wider block mb-1">Step 4</span>
                       <h4 className="text-black font-extrabold text-base mb-2">Apply the Promo Code</h4>
                       <p className="text-gray-500 text-sm leading-relaxed">Paste the promo code during checkout and enjoy instant savings on your purchase.</p>
                     </div>
@@ -493,7 +493,7 @@ export default function DealsPageContent() {
 
                 {/* SEASONAL SALES */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Save More During Seasonal Sales
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-6">
@@ -522,7 +522,7 @@ export default function DealsPageContent() {
 
                 {/* SMART SHOPPING */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Smart Shopping Starts With Better Deals
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-4">
@@ -538,7 +538,7 @@ export default function DealsPageContent() {
 
                 {/* DEALS FOR EVERY SHOPPER GRID BLOCK */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Deals for Every Type of Shopper
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-6">
@@ -602,7 +602,7 @@ export default function DealsPageContent() {
 
                 {/* WHY VERIFIED DEALS MATTER */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Why Verified Deals Matter
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-4">
@@ -618,7 +618,7 @@ export default function DealsPageContent() {
 
                 {/* SMARTER WAY TO SAVE */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     A Smarter Way to Save Money Online
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-4">
@@ -634,7 +634,7 @@ export default function DealsPageContent() {
 
                 {/* START EXPLORING CLOSING OUTRO */}
                 <div className="pt-12 space-y-6">
-                  <h3 className="text-[#19798d] font-black text-2xl mb-4">
+                  <h3 className="text-[#056bfa] font-black text-2xl mb-4">
                     Start Exploring the Latest Deals Today
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-lg mb-4">
@@ -655,7 +655,7 @@ export default function DealsPageContent() {
                 onClick={() => setIsSeoExpanded(!isSeoExpanded)}
                 className="flex justify-center w-full lg:hidden mt-8"
               >
-                <div className="flex items-center gap-3 px-8 py-3 bg-[#e8f6f8] text-[#19798d] font-black rounded-full border border-[#19798d] shadow-sm hover:bg-[#19798d] hover:text-white transition-all">
+                <div className="flex items-center gap-3 px-8 py-3 bg-[#e8f6f8] text-[#056bfa] font-black rounded-full border border-[#056bfa] shadow-sm hover:bg-[#056bfa] hover:text-white transition-all">
                   {isSeoExpanded ? (
                     <>Read Less <ChevronUp className="w-5 h-5" /></>
                   ) : (
@@ -689,13 +689,13 @@ export default function DealsPageContent() {
                   ].map((item, i) => (
                     <div key={i} className="flex items-center justify-between group py-3 border-b border-[#f0f0f0] last:border-0 hover:bg-gray-50/50 rounded-xl transition-colors">
                       <div className="flex items-center gap-4">
-                        <div className="w-2 h-2 rounded-full bg-[#19798d] group-hover:scale-150 transition-transform" />
+                        <div className="w-2 h-2 rounded-full bg-[#056bfa] group-hover:scale-150 transition-transform" />
                         <div>
                           <p className="text-sm font-black text-black leading-tight">{item.store}</p>
                           <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">{item.deal}</p>
                         </div>
                       </div>
-                      <button className="text-[11px] font-black text-[#19798d] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">VIEW</button>
+                      <button className="text-[11px] font-black text-[#056bfa] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">VIEW</button>
                     </div>
                   ))}
                 </div>
@@ -704,7 +704,7 @@ export default function DealsPageContent() {
               {/* Sidebar Widget 3: Quick Trust Accordion */}
               <div className="bg-white border border-[#f0f0f0] rounded-[32px] p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-8">
-                  <HeartHandshake className="w-6 h-6 text-[#19798d]" />
+                  <HeartHandshake className="w-6 h-6 text-[#056bfa]" />
                   <h3 className="text-black font-black text-xl">Couponsbit Trust</h3>
                 </div>
                 <div className="space-y-6">
@@ -723,7 +723,7 @@ export default function DealsPageContent() {
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
                         className="flex items-center justify-between w-full text-left py-2 group"
                       >
-                        <span className="text-base font-black text-black group-hover:text-[#19798d] transition-colors pr-6 leading-tight">{faq.q}</span>
+                        <span className="text-base font-black text-black group-hover:text-[#056bfa] transition-colors pr-6 leading-tight">{faq.q}</span>
                         <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform shrink-0", openFaq === i && "rotate-180")} />
                       </button>
                       <AnimatePresence>

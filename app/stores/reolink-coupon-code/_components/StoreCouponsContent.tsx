@@ -175,7 +175,7 @@ export default function ReolinkCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Toast Notification */}
@@ -198,9 +198,9 @@ export default function ReolinkCouponsContent() {
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
-              <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+              <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
-              <Link href="/stores" className="text-[#19798d] hover:underline">Stores</Link>
+              <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
               <span className="text-black font-extrabold">Reolink</span>
             </nav>
@@ -240,7 +240,7 @@ export default function ReolinkCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#19798d]" />
+                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
                          <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
@@ -299,7 +299,7 @@ export default function ReolinkCouponsContent() {
                 { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 justify-center md:border-r last:border-0 border-[#e0e0e0] px-4">
-                  <item.icon className="w-6 h-6 text-[#19798d] shrink-0" />
+                  <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
                     <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
@@ -656,7 +656,7 @@ export default function ReolinkCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
                     Reolink is a global smart security technology company specializing in video surveillance products for homes, businesses, and outdoor properties. Known for combining advanced technology with user-friendly design, Reolink has become a trusted brand in the security camera industry.
                   </p>
-                  <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#19798d] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -677,11 +677,11 @@ export default function ReolinkCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#19798d] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -732,7 +732,7 @@ export default function ReolinkCouponsContent() {
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#19798d]">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
         <div>
@@ -762,14 +762,14 @@ export default function ReolinkCouponsContent() {
                 <Link 
                   key={i} 
                   href={store.href}
-                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#19798d] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
                     <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#19798d] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#19798d] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -794,7 +794,7 @@ export default function ReolinkCouponsContent() {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Know More About Reolink</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Reolink</h3>
             <p>
               Reolink is a global smart security technology company specializing in video surveillance products for homes, businesses, and outdoor properties. Known for combining advanced technology with user-friendly design, Reolink has become a trusted brand in the security camera industry.
             </p>
@@ -816,7 +816,7 @@ export default function ReolinkCouponsContent() {
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#19798d] mb-8">How to Use a Reolink Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Reolink Coupon Code</h3>
             <div className="space-y-6">
               {[
                 "Step 1: Browse Available Reolink Deals — Visit the Reolink page on Couponsbit and explore current discounts, promo codes, and special offers.",
@@ -827,7 +827,7 @@ export default function ReolinkCouponsContent() {
                 "Step 6: Complete Your Purchase — Finalize your order and enjoy savings on your new security system."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#19798d] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
@@ -837,7 +837,7 @@ export default function ReolinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Best Ways to Save at Reolink</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Reolink</h3>
             <p><strong>Check Couponsbit Before Buying:</strong> Always visit Couponsbit before placing an order to find the latest Reolink promo codes and security deals.</p>
             <p><strong>Shop Holiday Sales:</strong> Reolink frequently participates in major shopping events throughout the year. Look for discounts during: Black Friday, Cyber Monday, Memorial Day Sales, Labor Day Promotions, Independence Day Sales, and Holiday Shopping Events.</p>
             <p><strong>Bundle Multiple Cameras:</strong> Purchasing complete security systems or camera bundles may provide better overall value than buying individual devices separately.</p>
@@ -846,7 +846,7 @@ export default function ReolinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Choose Reolink?</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Reolink?</h3>
             <p><strong>High-Quality Video Recording:</strong> Many Reolink cameras offer high-resolution video capture for clearer monitoring and playback.</p>
             <p><strong>Smart Detection Features:</strong> Advanced motion detection and AI-powered alerts help users stay informed about important activity.</p>
             <p><strong>Remote Monitoring:</strong> Access live video feeds and recordings from virtually anywhere using mobile apps and desktop software.</p>
@@ -855,7 +855,7 @@ export default function ReolinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Use Couponsbit for Reolink Deals?</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Reolink Deals?</h3>
             <p><strong>Verified Discounts:</strong> We regularly update available Reolink offers to help users access current promotions.</p>
             <p><strong>Easy Savings:</strong> Find Reolink coupon codes, security deals, and promotional offers in one convenient place.</p>
             <p><strong>Free to Use:</strong> Couponsbit is completely free and designed to help consumers save on technology, travel, fashion, home products, and more.</p>
@@ -863,7 +863,7 @@ export default function ReolinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Protect More While Spending Less</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Protect More While Spending Less</h3>
             <p>Whether you're securing your home, monitoring your business, protecting valuable assets, or upgrading your smart home security system, Reolink offers reliable surveillance solutions designed for modern security needs.</p>
             <p>Before completing your purchase, visit Couponsbit to explore the latest Reolink coupon codes, promo codes, and security camera deals. With verified discounts and regularly updated offers, Couponsbit helps you get more value from your investment in safety and security.</p>
           </div>
@@ -875,7 +875,7 @@ export default function ReolinkCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -897,7 +897,7 @@ export default function ReolinkCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#19798d] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -911,14 +911,14 @@ export default function ReolinkCouponsContent() {
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#19798d]/5">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Reolink Searches</h4>
           <div className="flex flex-wrap gap-2.5">
             {["Security Cameras", "Video Doorbells", "PoE Systems", "Reolink NVR", "Reolink Promo Code", "Battery Cameras", "Floodlight Camera", "Surveillance Deals"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#19798d] uppercase tracking-widest shadow-sm hover:bg-[#19798d] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -931,12 +931,12 @@ export default function ReolinkCouponsContent() {
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#19798d] font-black text-xl italic shadow-inner">R</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">R</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#19798d] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#19798d] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#19798d] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
               </div>
             ))}
           </div>

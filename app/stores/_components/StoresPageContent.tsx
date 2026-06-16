@@ -78,7 +78,7 @@ export default function StoresPageContent() {
   const storesToDisplay = filteredStores.slice(0, showAllLimit);
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* SECTION 1 — Hero (full-width, white bg) */}
@@ -96,7 +96,7 @@ export default function StoresPageContent() {
 
               {/* Search Bar */}
               <div className="w-full max-w-xl mt-6">
-                <div className="flex bg-white items-center border-2 border-gray-100 rounded-2xl p-1 shadow-sm focus-within:border-[#19798d] focus-within:shadow-md transition-all">
+                <div className="flex bg-white items-center border-2 border-gray-100 rounded-2xl p-1 shadow-sm focus-within:border-[#056bfa] focus-within:shadow-md transition-all">
                   <div className="pl-4 pr-2 text-gray-400">
                     <Search className="w-5 h-5 pointer-events-none" />
                   </div>
@@ -109,7 +109,7 @@ export default function StoresPageContent() {
                   />
                   <button 
                     onClick={() => {}}
-                    className="bg-[#19798d] hover:bg-[#0f5a6b] text-white font-extrabold text-sm rounded-xl px-6 py-3 transition-colors shrink-0"
+                    className="bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm rounded-xl px-6 py-3 transition-colors shrink-0"
                   >
                     Search
                   </button>
@@ -119,7 +119,7 @@ export default function StoresPageContent() {
               {/* Stat Badges */}
               <div className="flex flex-wrap gap-2.5 mt-8">
                 {[
-                  { label: "2,000+ Stores", icon: Store, bg: "bg-teal-50 text-[#19798d]" },
+                  { label: "2,000+ Stores", icon: Store, bg: "bg-teal-50 text-[#056bfa]" },
                   { label: "15,000+ Coupons & Deals", icon: Ticket, bg: "bg-blue-50 text-blue-700" },
                   { label: "500K+ Happy Shoppers", icon: Users, bg: "bg-purple-50 text-purple-700" },
                   { label: "100% Verified Stores", icon: CheckCircle, bg: "bg-emerald-50 text-emerald-700" }
@@ -165,7 +165,7 @@ export default function StoresPageContent() {
                 Top Stores
               </h2>
               {searchQuery && (
-                <div className="text-xs bg-gray-100 text-[#19798d] px-3 py-1.5 rounded-full font-bold">
+                <div className="text-xs bg-gray-100 text-[#056bfa] px-3 py-1.5 rounded-full font-bold">
                   Showing {filteredStores.length} results
                 </div>
               )}
@@ -186,7 +186,7 @@ export default function StoresPageContent() {
                     setSearchQuery("");
                     setSelectedCategory("All Stores (2000+)");
                   }}
-                  className="bg-[#19798d] hover:bg-[#0f5a6b] text-white text-xs font-black uppercase tracking-wider px-5 py-2.5 rounded-xl mt-5 transition-colors"
+                  className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-black uppercase tracking-wider px-5 py-2.5 rounded-xl mt-5 transition-colors"
                 >
                   Clear Filters
                 </button>
@@ -200,7 +200,7 @@ export default function StoresPageContent() {
                 return (
                   <div 
                     key={store.id}
-                    className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#19798d] transition-all duration-300 flex flex-col justify-between h-full group"
+                    className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#056bfa] transition-all duration-300 flex flex-col justify-between h-full group"
                   >
                     <div>
                       {/* Brand Logo Centered */}
@@ -209,7 +209,7 @@ export default function StoresPageContent() {
                       </div>
 
                       {/* Store Name */}
-                      <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#19798d] transition-colors line-clamp-1 truncate px-1">
+                      <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#056bfa] transition-colors line-clamp-1 truncate px-1">
                         {store.name}
                       </h3>
 
@@ -219,7 +219,7 @@ export default function StoresPageContent() {
                       </p>
 
                       {/* Discount display */}
-                      <span className="text-xs font-black text-[#19798d] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">
+                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">
                         {store.discount}
                       </span>
                     </div>
@@ -230,7 +230,7 @@ export default function StoresPageContent() {
                         href={`/stores/${storeSlug}`} 
                         className="block w-full"
                       >
-                        <button className="w-full text-center py-2 border border-[#19798d] text-[#19798d] hover:bg-[#19798d] hover:text-white rounded-lg text-xs font-black transition-all duration-300">
+                        <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-xs font-black transition-all duration-300">
                           View Store
                         </button>
                       </Link>
@@ -245,7 +245,7 @@ export default function StoresPageContent() {
               <div className="mt-10 flex justify-center">
                 <button
                   onClick={() => setShowAllLimit(prev => prev + 15)}
-                  className="inline-flex items-center gap-1.5 px-8 py-3.5 border-2 border-[#19798d] text-[#19798d] bg-white rounded-full font-black text-sm uppercase tracking-wider hover:bg-[#19798d] hover:text-white shadow-md hover:shadow-lg transition-all duration-300"
+                  className="inline-flex items-center gap-1.5 px-8 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black text-sm uppercase tracking-wider hover:bg-[#056bfa] hover:text-white shadow-md hover:shadow-lg transition-all duration-300"
                 >
                   Show More Stores ▾
                 </button>
@@ -260,7 +260,7 @@ export default function StoresPageContent() {
               {/* Store Categories Card */}
               <div className="bg-white border border-gray-100 rounded-3xl p-5 shadow-sm">
                 <h3 className="text-black font-black text-base uppercase tracking-wider pb-3 border-b border-gray-100 flex items-center gap-2">
-                  <LayoutGrid className="w-5 h-5 text-[#19798d]" />
+                  <LayoutGrid className="w-5 h-5 text-[#056bfa]" />
                   Store Categories
                 </h3>
                 <div className="mt-4 space-y-1">
@@ -279,10 +279,10 @@ export default function StoresPageContent() {
                         className="flex items-center justify-between py-2 px-3 rounded-xl hover:bg-gray-50 cursor-pointer group transition-colors"
                       >
                         <div className="flex items-center gap-3 text-gray-600 group-hover:text-black transition-colors">
-                          <IconComp className="w-4 h-4 text-gray-400 group-hover:text-[#19798d] transition-colors shrink-0" />
+                          <IconComp className="w-4 h-4 text-gray-400 group-hover:text-[#056bfa] transition-colors shrink-0" />
                           <span className="text-xs font-bold">{cat.label}</span>
                         </div>
-                        <span className="text-[10px] font-black text-gray-400 bg-gray-100 px-2.5 py-1 rounded-full group-hover:bg-[#e8f6f8] group-hover:text-[#19798d] transition-colors leading-none">
+                        <span className="text-[10px] font-black text-gray-400 bg-gray-100 px-2.5 py-1 rounded-full group-hover:bg-[#e8f6f8] group-hover:text-[#056bfa] transition-colors leading-none">
                           {cat.count}
                         </span>
                       </Link>
@@ -291,14 +291,14 @@ export default function StoresPageContent() {
                 </div>
                 <Link 
                   href="/categories" 
-                  className="block text-center mt-4 pt-3 border-t border-gray-50 text-xs font-black text-[#19798d] hover:text-[#0f5a6b] transition-colors uppercase tracking-wider"
+                  className="block text-center mt-4 pt-3 border-t border-gray-50 text-xs font-black text-[#056bfa] hover:text-[#0451c4] transition-colors uppercase tracking-wider"
                 >
                   View All Categories →
                 </Link>
               </div>
 
               {/* Promo Card */}
-              <div className="bg-[#19798d] rounded-3xl p-6 text-white relative overflow-hidden shadow-xl shadow-[#19798d]/20">
+              <div className="bg-[#056bfa] rounded-3xl p-6 text-white relative overflow-hidden shadow-xl shadow-[#056bfa]/20">
                 <h3 className="font-black text-xl leading-snug">
                   Big Savings on Top Stores!
                 </h3>
@@ -314,7 +314,7 @@ export default function StoresPageContent() {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#19798d]/70 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#056bfa]/70 to-transparent pointer-events-none" />
                 </div>
 
             
@@ -346,7 +346,7 @@ export default function StoresPageContent() {
                 <h2 className="text-3xl sm:text-4xl font-black text-black leading-tight mb-3">
                 Top Store Deals, Promo Codes & Online Discounts On Couponsbit
                 </h2>
-                <p className="text-lg font-bold text-[#19798d] mb-5">Save More at Your Favorite Stores With Couponsbit</p>
+                <p className="text-lg font-bold text-[#056bfa] mb-5">Save More at Your Favorite Stores With Couponsbit</p>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Looking for the best store deals, verified promo codes, and online discounts from top brands? Couponsbit makes it easier to save money while shopping online by bringing together the latest deals, exclusive offers, and working coupon codes all in one place.
                 </p>
@@ -393,9 +393,9 @@ export default function StoresPageContent() {
     desc: "Couponsbit is completely free to use. Users can browse stores, reveal promo codes, and unlock savings instantly while shopping online." 
   },
 ].map((item, i) => (
-                    <div key={i} className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#19798d]/30 transition-all duration-300 group flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-xl bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#19798d] transition-colors duration-300">
-                        <item.icon className="w-5 h-5 text-[#19798d] group-hover:text-white transition-colors duration-300" />
+                    <div key={i} className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#056bfa]/30 transition-all duration-300 group flex gap-4 items-start">
+                      <div className="w-10 h-10 rounded-xl bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#056bfa] transition-colors duration-300">
+                        <item.icon className="w-5 h-5 text-[#056bfa] group-hover:text-white transition-colors duration-300" />
                       </div>
                       <div>
                         <h3 className="text-black font-extrabold text-sm mb-1">{item.title}</h3>
@@ -421,10 +421,10 @@ export default function StoresPageContent() {
     ].map((item, i, arr) => (
       <div key={i} className="flex gap-5 items-start">
         <div className="flex flex-col items-center shrink-0">
-          <div className="w-10 h-10 rounded-full bg-[#19798d] text-white flex items-center justify-center font-black text-sm shadow-md">
+          <div className="w-10 h-10 rounded-full bg-[#056bfa] text-white flex items-center justify-center font-black text-sm shadow-md">
             {item.step}
           </div>
-          {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#19798d]/20 my-1" />}
+          {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#056bfa]/20 my-1" />}
         </div>
         <div className="pb-7">
           <h3 className="text-black font-extrabold text-sm mb-1">{item.title}</h3>
@@ -455,12 +455,12 @@ export default function StoresPageContent() {
       { icon: Zap, title: "Mobile & Telecom Plans", desc: "Find the best deals on SIM plans, data packs and international calling packages.", color: "bg-green-50 text-green-600" },
       { icon: ShoppingBag, title: "More Top Stores", desc: "Browse all our verified partner stores and discover exclusive coupons across every category.", color: "bg-amber-50 text-amber-600" },
     ].map((item, i) => (
-      <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#19798d]/20 transition-all duration-300 group flex gap-4 items-start">
+      <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#056bfa]/20 transition-all duration-300 group flex gap-4 items-start">
         <div className={cn("w-10 h-10 rounded-xl flex items-center justify-center shrink-0", item.color.split(" ")[0])}>
           <item.icon className={cn("w-5 h-5", item.color.split(" ")[1])} />
         </div>
         <div>
-          <h3 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#19798d] transition-colors">{item.title}</h3>
+          <h3 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#056bfa] transition-colors">{item.title}</h3>
           <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
         </div>
       </div>
@@ -539,7 +539,7 @@ export default function StoresPageContent() {
       "Labor Day Discounts", 
       "End-of-Season Clearance Sales"
     ].map((event) => (
-      <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#19798d]/20 text-[#19798d] font-bold text-xs rounded-full hover:bg-[#19798d] hover:text-white transition-all duration-200 cursor-default">
+      <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#056bfa]/20 text-[#056bfa] font-bold text-xs rounded-full hover:bg-[#056bfa] hover:text-white transition-all duration-200 cursor-default">
         {event}
       </span>
     ))}
@@ -575,7 +575,7 @@ export default function StoresPageContent() {
       "100% free access for shoppers",
     ].map((point, i) => (
       <div key={i} className="flex items-center gap-2.5">
-        <CheckCircle className="w-4 h-4 text-[#19798d] shrink-0" />
+        <CheckCircle className="w-4 h-4 text-[#056bfa] shrink-0" />
         <span className="text-gray-600 text-xs font-semibold">{point}</span>
       </div>
     ))}
@@ -588,7 +588,7 @@ export default function StoresPageContent() {
 </div>
 
               {/* G — CTA Card */}
-             <div className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] rounded-2xl p-6 text-white">
+             <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] rounded-2xl p-6 text-white">
   {/* Main Heading */}
   <h3 className="font-black text-lg mb-2">Start Saving at Your Favorite Stores Today</h3>
   
@@ -609,7 +609,7 @@ export default function StoresPageContent() {
   
   {/* Link & Button with Updated Content */}
   <Link href="/stores" className="block">
-    <button className="w-full bg-white text-[#19798d] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
+    <button className="w-full bg-white text-[#056bfa] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
      Shop & Save Now →
     </button>
   </Link>

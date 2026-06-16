@@ -74,15 +74,15 @@ export default function AmazonProductsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Breadcrumb */}
       <div className="bg-white border-b border-[#f0f0f0] mt-[64px]">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm overflow-x-auto whitespace-nowrap scrollbar-hide">
-          <Link href="/" className="text-[#19798d] hover:underline shrink-0">Home</Link>
+          <Link href="/" className="text-[#056bfa] hover:underline shrink-0">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
-          <Link href="/products" className="text-[#19798d] hover:underline shrink-0">Products</Link>
+          <Link href="/products" className="text-[#056bfa] hover:underline shrink-0">Products</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
           <span className="text-gray-700 font-medium shrink-0">Amazon</span>
         </div>
@@ -103,8 +103,8 @@ export default function AmazonProductsContent() {
                   Explore 15,000+ amazing products across multiple categories. Shop the best. Save more.
                 </p>
                 <div className="flex flex-wrap items-center gap-3 mt-4">
-                   <button className="border-1.5 border-[#f0f0f0] rounded-full px-4 py-2 flex items-center gap-2 text-gray-600 text-sm hover:border-[#19798d] hover:text-[#19798d] transition-all">
-                     <Heart className="w-4 h-4 text-gray-400 group-hover:text-[#19798d]" />
+                   <button className="border-1.5 border-[#f0f0f0] rounded-full px-4 py-2 flex items-center gap-2 text-gray-600 text-sm hover:border-[#056bfa] hover:text-[#056bfa] transition-all">
+                     <Heart className="w-4 h-4 text-gray-400 group-hover:text-[#056bfa]" />
                      Add to Favorites
                    </button>
                    <div className="flex items-center gap-1.5">
@@ -128,7 +128,7 @@ export default function AmazonProductsContent() {
                 { icon: BadgeCheck, val: "100%", label: "Original Products" }
               ].map((stat, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <stat.icon className={cn("w-4 h-4", stat.color || "text-[#19798d]")} />
+                  <stat.icon className={cn("w-4 h-4", stat.color || "text-[#056bfa]")} />
                   <div>
                     <span className="text-black font-bold text-sm block leading-none">{stat.val}</span>
                     <span className="text-gray-500 text-[10px] uppercase font-bold">{stat.label}</span>
@@ -148,7 +148,7 @@ export default function AmazonProductsContent() {
              <div className="absolute bottom-[20%] left-[30%] text-5xl animate-pulse">📷</div>
              <div className="absolute bottom-[25%] right-[25%] text-5xl animate-bounce" style={{ animationDuration: '5s' }}>⌚</div>
 
-             <div className="absolute top-6 right-8 w-[90px] h-[90px] bg-[#19798d] rounded-full flex flex-col items-center justify-center text-white p-3 text-center leading-tight shadow-xl shadow-[#19798d]/20 animate-wiggle">
+             <div className="absolute top-6 right-8 w-[90px] h-[90px] bg-[#056bfa] rounded-full flex flex-col items-center justify-center text-white p-3 text-center leading-tight shadow-xl shadow-[#056bfa]/20 animate-wiggle">
                <span className="text-[10px] font-black uppercase">Best Brands</span>
                <span className="text-[10px] font-black mt-0.5">Lowest Prices</span>
              </div>
@@ -172,7 +172,7 @@ export default function AmazonProductsContent() {
               { icon: Shield, title: "Secure Payments", sub: "100% secure payment methods" }
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 lg:pl-6 first:lg:pl-0">
-                <div className="w-11 h-11 bg-[#e8f6f8] rounded-full shrink-0 flex items-center justify-center text-[#19798d]">
+                <div className="w-11 h-11 bg-[#e8f6f8] rounded-full shrink-0 flex items-center justify-center text-[#056bfa]">
                   <item.icon className="w-5 h-5" />
                 </div>
                 <div>
@@ -206,7 +206,7 @@ export default function AmazonProductsContent() {
                     { icon: Trophy, name: "Sports & Outdoors", count: "1,100", color: "text-[#F39C12]" },
                     { icon: Gamepad, name: "Toys & Games", count: "900", color: "text-[#E91E63]" },
                   ].map((cat, i) => (
-                    <div key={i} className="flex justify-between items-center py-2.5 border-b border-[#f0f0f0] last:border-0 cursor-pointer group text-gray-700 hover:text-[#19798d] transition-all">
+                    <div key={i} className="flex justify-between items-center py-2.5 border-b border-[#f0f0f0] last:border-0 cursor-pointer group text-gray-700 hover:text-[#056bfa] transition-all">
                       <div className="flex items-center gap-2.5">
                         <cat.icon className={cn("w-3.5 h-3.5 transition-colors", cat.color)} />
                         <span className="text-sm font-medium">{cat.name}</span>
@@ -215,7 +215,7 @@ export default function AmazonProductsContent() {
                     </div>
                   ))}
                 </div>
-                <button className="flex items-center gap-1.5 text-[#19798d] text-[11px] font-black uppercase tracking-widest mt-4 hover:underline">
+                <button className="flex items-center gap-1.5 text-[#056bfa] text-[11px] font-black uppercase tracking-widest mt-4 hover:underline">
                   View All Categories <ChevronDown className="w-3 h-3" />
                 </button>
               </div>
@@ -227,7 +227,7 @@ export default function AmazonProductsContent() {
                   {["Under ₹500", "₹500 - ₹1,000", "₹1,000 - ₹5,000", "₹5,000 - ₹10,000", "Above ₹10,000"].map((opt) => (
                     <label key={opt} className="flex items-center justify-between cursor-pointer group">
                       <div className="flex items-center gap-2.5">
-                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#19798d] focus:ring-[#19798d]" />
+                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#056bfa] focus:ring-[#056bfa]" />
                         <span className="text-gray-700 text-sm font-medium group-hover:text-black transition-colors">{opt}</span>
                       </div>
                       <span className="text-gray-400 text-[10px] font-bold">(2,150)</span>
@@ -235,7 +235,7 @@ export default function AmazonProductsContent() {
                   ))}
                 </div>
                 <div className="mt-6">
-                  <input type="range" className="w-full h-1.5 bg-[#f0f0f0] rounded-lg appearance-none cursor-pointer accent-[#19798d]" />
+                  <input type="range" className="w-full h-1.5 bg-[#f0f0f0] rounded-lg appearance-none cursor-pointer accent-[#056bfa]" />
                   <div className="flex justify-between mt-2 text-gray-500 font-bold text-[10px]">
                     <span>₹0</span>
                     <span>₹50,000+</span>
@@ -250,7 +250,7 @@ export default function AmazonProductsContent() {
                   {[5, 4, 3, 2].map((num) => (
                     <label key={num} className="flex items-center justify-between cursor-pointer group">
                       <div className="flex items-center gap-2.5">
-                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#19798d] focus:ring-[#19798d]" />
+                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#056bfa] focus:ring-[#056bfa]" />
                         <div className="flex items-center gap-1">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className={cn("w-3 h-3", i < num ? "fill-yellow-400 text-yellow-400" : "text-gray-200")} />
@@ -271,7 +271,7 @@ export default function AmazonProductsContent() {
                   {["10%", "20%", "30%", "40%"].map(d => (
                     <label key={d} className="flex items-center justify-between cursor-pointer group">
                       <div className="flex items-center gap-2.5">
-                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#19798d] focus:ring-[#19798d]" />
+                        <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-[#056bfa] focus:ring-[#056bfa]" />
                         <span className="text-gray-700 text-sm font-medium">{d} and above</span>
                       </div>
                       <span className="text-gray-400 text-[10px] font-bold">(4,520)</span>
@@ -301,7 +301,7 @@ export default function AmazonProductsContent() {
                      onClick={() => setActiveTab(tab)}
                      className={cn(
                        "px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all whitespace-nowrap",
-                       activeTab === tab ? "bg-[#19798d] text-white shadow-lg shadow-[#19798d]/20" : "bg-white border border-[#e0e0e0] text-gray-600 hover:bg-gray-50"
+                       activeTab === tab ? "bg-[#056bfa] text-white shadow-lg shadow-[#056bfa]/20" : "bg-white border border-[#e0e0e0] text-gray-600 hover:bg-gray-50"
                      )}
                    >
                      {tab}
@@ -311,12 +311,12 @@ export default function AmazonProductsContent() {
                <div className="flex items-center gap-3 shrink-0">
                   <div className="flex items-center gap-2 group cursor-pointer">
                     <span className="text-gray-400 text-[10px] uppercase font-black tracking-widest">Sort by:</span>
-                    <div className="border border-[#e0e0e0] rounded-lg px-3 py-1.5 flex items-center gap-2 bg-white group-hover:border-[#19798d] transition-all">
+                    <div className="border border-[#e0e0e0] rounded-lg px-3 py-1.5 flex items-center gap-2 bg-white group-hover:border-[#056bfa] transition-all">
                        <span className="text-black text-xs font-bold">Most Popular</span>
-                       <ChevronDown className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#19798d]" />
+                       <ChevronDown className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#056bfa]" />
                     </div>
                   </div>
-                  <button className="border border-[#e0e0e0] rounded-lg px-3 py-1.5 flex items-center gap-2 bg-white hover:border-[#19798d] transition-all">
+                  <button className="border border-[#e0e0e0] rounded-lg px-3 py-1.5 flex items-center gap-2 bg-white hover:border-[#056bfa] transition-all">
                     <Filter className="w-3.5 h-3.5 text-gray-400" />
                     <span className="text-black text-xs font-bold">Filter</span>
                   </button>
@@ -328,7 +328,7 @@ export default function AmazonProductsContent() {
               {AMAZON_PRODUCTS.map((product) => (
                 <div 
                   key={product.id} 
-                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:border-[#19798d] hover:-translate-y-1 transition-all duration-300"
+                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1 transition-all duration-300"
                 >
                   <div className="h-[180px] sm:h-[200px] bg-white relative flex items-center justify-center p-4">
                     <img 
@@ -365,11 +365,11 @@ export default function AmazonProductsContent() {
                     <div className="mt-auto flex items-center gap-2">
                        <button 
                          onClick={() => setSelectedProduct(product)}
-                         className="flex-1 border-1.5 border-[#19798d] text-[#19798d] rounded-xl text-xs font-black uppercase tracking-widest py-2 hover:bg-[#19798d] hover:text-white transition-all active:scale-95"
+                         className="flex-1 border-1.5 border-[#056bfa] text-[#056bfa] rounded-xl text-xs font-black uppercase tracking-widest py-2 hover:bg-[#056bfa] hover:text-white transition-all active:scale-95"
                        >
                          View Product
                        </button>
-                       <button className="w-9 h-9 shrink-0 border border-[#f0f0f0] rounded-xl flex items-center justify-center text-[#19798d] hover:bg-[#e8f6f8] hover:border-[#19798d] transition-all">
+                       <button className="w-9 h-9 shrink-0 border border-[#f0f0f0] rounded-xl flex items-center justify-center text-[#056bfa] hover:bg-[#e8f6f8] hover:border-[#056bfa] transition-all">
                          <ShoppingCart className="w-4 h-4" />
                        </button>
                     </div>
@@ -380,7 +380,7 @@ export default function AmazonProductsContent() {
 
             {/* Pagination */}
             <div className="mt-12 flex items-center justify-center gap-2 overflow-x-auto no-scrollbar py-2">
-              <button className="border border-[#f0f0f0] rounded-lg p-2.5 text-gray-400 hover:border-[#19798d] hover:text-[#19798d] transition-all bg-white">
+              <button className="border border-[#f0f0f0] rounded-lg p-2.5 text-gray-400 hover:border-[#056bfa] hover:text-[#056bfa] transition-all bg-white">
                 <ChevronLeft className="w-4 h-4" />
               </button>
               {[1, 2, 3, 4, 5, "...", 750].map((page, i) => (
@@ -388,13 +388,13 @@ export default function AmazonProductsContent() {
                   key={i} 
                   className={cn(
                     "min-w-[40px] h-10 border border-[#f0f0f0] rounded-lg text-sm font-bold flex items-center justify-center transition-all px-2",
-                    page === 1 ? "bg-[#19798d] text-white border-[#19798d] shadow-lg shadow-[#19798d]/20" : "bg-white text-gray-500 hover:border-[#19798d] hover:text-[#19798d]"
+                    page === 1 ? "bg-[#056bfa] text-white border-[#056bfa] shadow-lg shadow-[#056bfa]/20" : "bg-white text-gray-500 hover:border-[#056bfa] hover:text-[#056bfa]"
                   )}
                 >
                   {page}
                 </button>
               ))}
-              <button className="border border-[#f0f0f0] rounded-lg p-2.5 text-gray-400 hover:border-[#19798d] hover:text-[#19798d] transition-all bg-white">
+              <button className="border border-[#f0f0f0] rounded-lg p-2.5 text-gray-400 hover:border-[#056bfa] hover:text-[#056bfa] transition-all bg-white">
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -404,14 +404,14 @@ export default function AmazonProductsContent() {
       </div>
 
       {/* Section 6 Bottom Promo */}
-      <section className="bg-[#19798d] py-12 relative overflow-hidden">
+      <section className="bg-[#056bfa] py-12 relative overflow-hidden">
         <div className="absolute right-[-5%] bottom-[-20%] text-9xl opacity-10 pointer-events-none select-none">🛍️</div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
               <div className="flex items-center gap-6 text-center md:text-left flex-col md:flex-row">
                  <div className="relative shrink-0">
                     <span className="text-6xl md:text-7xl drop-shadow-xl">🛍️</span>
-                    <div className="absolute -top-1 -right-1 w-10 h-10 bg-[#FF9900] rounded-full flex items-center justify-center text-white text-base font-black border-4 border-[#19798d] shadow-lg">
+                    <div className="absolute -top-1 -right-1 w-10 h-10 bg-[#FF9900] rounded-full flex items-center justify-center text-white text-base font-black border-4 border-[#056bfa] shadow-lg">
                       %
                     </div>
                  </div>
@@ -424,7 +424,7 @@ export default function AmazonProductsContent() {
               </div>
               <Link 
                 href="/stores/amazon" 
-                className="bg-white text-[#19798d] px-8 py-4 rounded-2xl font-black text-sm md:text-base flex items-center gap-3 hover:shadow-2xl hover:scale-105 transition-all active:scale-95 whitespace-nowrap shadow-xl"
+                className="bg-white text-[#056bfa] px-8 py-4 rounded-2xl font-black text-sm md:text-base flex items-center gap-3 hover:shadow-2xl hover:scale-105 transition-all active:scale-95 whitespace-nowrap shadow-xl"
               >
                 Explore Amazon Deals <ArrowRight className="w-5 h-5" />
               </Link>
@@ -443,7 +443,7 @@ export default function AmazonProductsContent() {
               { icon: Shield, title: "Secure Payments", sub: "100% secure checkout" }
             ].map((item, i) => (
               <div key={i} className="flex gap-3.5 items-center">
-                <div className="w-10 h-10 bg-[#e8f6f8] rounded-full shrink-0 flex items-center justify-center text-[#19798d]">
+                <div className="w-10 h-10 bg-[#e8f6f8] rounded-full shrink-0 flex items-center justify-center text-[#056bfa]">
                   <item.icon className="w-4 h-4" />
                 </div>
                 <div>
@@ -519,11 +519,11 @@ export default function AmazonProductsContent() {
                  <div className="space-y-2">
                     <span className="text-gray-400 text-[10px] font-black uppercase tracking-[2px]">APPLY COUPON FOR EXTRA SAVINGS</span>
                     <div 
-                      className="bg-[#e8f6f8] border-2 border-dashed border-[#19798d] rounded-2xl p-4 flex items-center justify-between group cursor-pointer active:scale-95 transition-transform"
+                      className="bg-[#e8f6f8] border-2 border-dashed border-[#056bfa] rounded-2xl p-4 flex items-center justify-between group cursor-pointer active:scale-95 transition-transform"
                       onClick={() => handleCopy("AMAZON60")}
                     >
-                       <span className="text-[#19798d] font-mono font-black text-2xl tracking-widest shrink-0">AMAZON60</span>
-                       <div className="flex items-center gap-2 bg-[#19798d] text-white px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-[#19798d]/20 transition-all group-hover:scale-105">
+                       <span className="text-[#056bfa] font-mono font-black text-2xl tracking-widest shrink-0">AMAZON60</span>
+                       <div className="flex items-center gap-2 bg-[#056bfa] text-white px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-[#056bfa]/20 transition-all group-hover:scale-105">
                          <Copy className="w-3.5 h-3.5" /> Copy Code
                        </div>
                     </div>
@@ -552,7 +552,7 @@ export default function AmazonProductsContent() {
                     </button>
                     <button 
                       onClick={() => setSelectedProduct(null)}
-                      className="w-full text-[#19798d] font-black text-xs uppercase tracking-widest hover:underline text-center"
+                      className="w-full text-[#056bfa] font-black text-xs uppercase tracking-widest hover:underline text-center"
                     >
                       ← Back to Products
                     </button>
@@ -572,7 +572,7 @@ export default function AmazonProductsContent() {
         </div>
         <div>
           <p className="text-black font-black text-sm">Code Copied!</p>
-          <p className="text-[#19798d] font-mono font-black text-xs mt-0.5 tracking-widest">AMAZON60</p>
+          <p className="text-[#056bfa] font-mono font-black text-xs mt-0.5 tracking-widest">AMAZON60</p>
         </div>
       </div>
 

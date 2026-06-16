@@ -55,11 +55,11 @@ export default function ArticleInteractive() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
 
       {/* Reading Progress Bar */}
       <div
-        className="fixed top-0 left-0 h-[3px] bg-[#19798d] z-[60] transition-all duration-100 ease-out"
+        className="fixed top-0 left-0 h-[3px] bg-[#056bfa] z-[60] transition-all duration-100 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -76,13 +76,13 @@ export default function ArticleInteractive() {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-[#f0f0f0] mt-24">
         <div className="container mx-auto px-4 lg:px-0 max-w-7xl py-3 flex items-center gap-2">
-          <Link href="/" className="text-[#19798d] text-sm hover:underline">
+          <Link href="/" className="text-[#056bfa] text-sm hover:underline">
             Home
           </Link>
           <ChevronRight className="w-[14px] h-[14px] text-gray-400" />
           <Link
             href="/blog"
-            className="text-[#19798d] text-sm hover:underline"
+            className="text-[#056bfa] text-sm hover:underline"
           >
             Blog
           </Link>
@@ -102,7 +102,7 @@ export default function ArticleInteractive() {
             {/* Post Header */}
             <header className="mb-10">
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-[#e8f6f8] text-[#19798d] rounded-full text-[10px] font-bold px-3.5 py-1 tracking-wider uppercase">
+                <span className="bg-[#e8f6f8] text-[#056bfa] rounded-full text-[10px] font-bold px-3.5 py-1 tracking-wider uppercase">
                   COUPON GUIDES
                 </span>
                 <div className="flex items-center gap-1.5 grayscale opacity-60">
@@ -134,8 +134,8 @@ export default function ArticleInteractive() {
                 Verified codes plus bank card offers can cut your Amazon bill in half
               </p>
 
-              <div className="mt-8 mb-8 border-l-4 border-[#19798d] bg-[#e8f6f8] rounded-r-2xl p-5 md:p-6">
-                <p className="text-[#19798d] font-medium text-lg italic leading-relaxed">
+              <div className="mt-8 mb-8 border-l-4 border-[#056bfa] bg-[#e8f6f8] rounded-r-2xl p-5 md:p-6">
+                <p className="text-[#056bfa] font-medium text-lg italic leading-relaxed">
                   "Shoppers who stack a verified Amazon India coupon code with a bank card offer and Amazon Pay cashback land between 35–80% off the original price — on the same order."
                 </p>
               </div>
@@ -153,14 +153,14 @@ export default function ArticleInteractive() {
                 id="why-codes-fail"
                 className="flex items-center text-black font-extrabold text-2xl mt-10 mb-4"
               >
-                <span className="w-1 h-7 bg-[#19798d] rounded mr-3 inline-block"></span>
+                <span className="w-1 h-7 bg-[#056bfa] rounded mr-3 inline-block"></span>
                 Why Amazon Shoppers Overpay
               </h2>
               <p className="mb-5">
                 Most Amazon shoppers skip coupon codes. They exist across fashion, electronics, and grocery — but search results are full of listings that haven't been updated since last year. Coupon sites earn traffic whether their codes work or not, so they list 47 codes per brand and never check which ones are dead.{" "}
                 <Link
                   href="/blog/amazon-savings-guide"
-                  className="text-[#19798d] font-semibold hover:underline"
+                  className="text-[#056bfa] font-semibold hover:underline"
                 >
                   Verified codes beat 47 dead ones every time
                 </Link>
@@ -169,31 +169,31 @@ export default function ArticleInteractive() {
 
               {/* Main section */}
               <h2 className="flex items-center text-black font-extrabold text-2xl mt-10 mb-6">
-                <span className="w-1 h-7 bg-[#19798d] rounded mr-3 inline-block"></span>
+                <span className="w-1 h-7 bg-[#056bfa] rounded mr-3 inline-block"></span>
                 8 Ways to Use Amazon India Coupon Codes Right
               </h2>
 
               {/* Tip 1 */}
               <div id="find-codes" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   1
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Find Verified Codes First
                   </h3>
                   <p className="text-[#4b5563] mb-4">
                     Before you open your Amazon cart, check{" "}
                     <Link
                       href="/blog"
-                      className="text-[#19798d] font-semibold hover:underline"
+                      className="text-[#056bfa] font-semibold hover:underline"
                     >
                       Couponsbit
                     </Link>{" "}
                     for the latest Amazon India codes. Our team updates listings every day and removes expired codes the same day they stop working. The 92.4% success rate means almost every code you copy and paste will apply at checkout. We test them so you don't waste four tries finding out a code died in March.
                   </p>
-                  <div className="bg-[#e8f6f8] border-l-4 border-[#19798d] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#19798d] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                  <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
+                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -209,11 +209,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 2 */}
               <div id="apply-checkout" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   2
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Apply the Code at Checkout — Not on the Product Page
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -223,8 +223,8 @@ export default function ArticleInteractive() {
                     field below the address section. Scroll down if you can't find
                     it. (The code is case-sensitive. Ask us how we know.)
                   </p>
-                  <div className="bg-[#e8f6f8] border-l-4 border-[#19798d] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#19798d] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                  <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
+                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -238,11 +238,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 3 */}
               <div id="stack-bank" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   3
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Stack with Bank Card Offers
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -253,8 +253,8 @@ export default function ArticleInteractive() {
                     with two fields filled in. Most shoppers use one layer. Smart
                     shoppers use three.
                   </p>
-                  <div className="bg-[#e8f6f8] border-l-4 border-[#19798d] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#19798d] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                  <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
+                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -268,11 +268,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 4 */}
               <div id="amazon-pay" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   4
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Use Amazon Pay for Extra Cashback
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -288,11 +288,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 5 */}
               <div id="sale-events" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   5
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Use Codes During Sale Events
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -304,8 +304,8 @@ export default function ArticleInteractive() {
                     deepest discounts on the most popular items. After that,
                     sold-out notices pile up fast.
                   </p>
-                  <div className="bg-[#e8f6f8] border-l-4 border-[#19798d] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#19798d] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                  <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
+                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -319,11 +319,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 6 */}
               <div id="best-categories" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   6
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Know Which Categories Give the Best Codes
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -339,11 +339,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 7 */}
               <div id="spot-fake" className="flex gap-4 mb-6">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   7
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     Spot an Expired or Fake Code
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -360,11 +360,11 @@ export default function ArticleInteractive() {
 
               {/* Tip 8 */}
               <div id="exclusions" className="flex gap-4 mb-10">
-                <div className="w-8 h-8 bg-[#19798d] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
+                <div className="w-8 h-8 bg-[#056bfa] text-white font-bold text-sm rounded-full flex-shrink-0 flex items-center justify-center mt-1 outline outline-4 outline-[#e8f6f8]">
                   8
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#19798d] font-bold text-xl mb-3">
+                  <h3 className="text-[#056bfa] font-bold text-xl mb-3">
                     When Codes Legitimately Don't Apply
                   </h3>
                   <p className="text-[#4b5563] mb-4">
@@ -383,7 +383,7 @@ export default function ArticleInteractive() {
                 id="how-much"
                 className="flex items-center text-black font-extrabold text-2xl mt-12 mb-4"
               >
-                <span className="w-1 h-7 bg-[#19798d] rounded mr-3 inline-block"></span>
+                <span className="w-1 h-7 bg-[#056bfa] rounded mr-3 inline-block"></span>
                 How Much Can You Save?
               </h2>
               <p className="mb-5">
@@ -399,14 +399,14 @@ export default function ArticleInteractive() {
 
               {/* Sign-off */}
               <h2 className="flex items-center text-black font-extrabold text-2xl mt-10 mb-4">
-                <span className="w-1 h-7 bg-[#19798d] rounded mr-3 inline-block"></span>
+                <span className="w-1 h-7 bg-[#056bfa] rounded mr-3 inline-block"></span>
                 Start Saving on Your Next Amazon Order
               </h2>
               <p className="mb-5">
                 Copy a code from{" "}
                 <Link
                   href="/blog"
-                  className="text-[#19798d] font-semibold hover:underline"
+                  className="text-[#056bfa] font-semibold hover:underline"
                 >
                   Couponsbit
                 </Link>
@@ -430,7 +430,7 @@ export default function ArticleInteractive() {
               ].map((tag, i) => (
                 <span
                   key={i}
-                  className="bg-[#f5f5f5] text-[#4b5563] text-[11px] font-medium rounded-full px-4 py-1.5 hover:bg-[#e8f6f8] hover:text-[#19798d] transition-colors duration-300 cursor-pointer"
+                  className="bg-[#f5f5f5] text-[#4b5563] text-[11px] font-medium rounded-full px-4 py-1.5 hover:bg-[#e8f6f8] hover:text-[#056bfa] transition-colors duration-300 cursor-pointer"
                 >
                   {tag}
                 </span>
@@ -468,7 +468,7 @@ export default function ArticleInteractive() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <Link
                   href="/blog/amazon-savings-guide"
-                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex hover:shadow-md hover:border-[#19798d] transition-all duration-300 cursor-pointer group"
+                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex hover:shadow-md hover:border-[#056bfa] transition-all duration-300 cursor-pointer group"
                 >
                   <div className="w-[100px] shrink-0 overflow-hidden">
                     <img
@@ -478,7 +478,7 @@ export default function ArticleInteractive() {
                     />
                   </div>
                   <div className="p-4 flex-1">
-                    <span className="bg-[#e8f6f8] text-[#19798d] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">
+                    <span className="bg-[#e8f6f8] text-[#056bfa] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">
                       Shopping Tips
                     </span>
                     <h5 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">
@@ -488,7 +488,7 @@ export default function ArticleInteractive() {
                       <span className="text-gray-400 text-[10px]">
                         May 12, 2026
                       </span>
-                      <span className="text-[#19798d] text-[10px] font-bold">
+                      <span className="text-[#056bfa] text-[10px] font-bold">
                         Read →
                       </span>
                     </div>
@@ -497,7 +497,7 @@ export default function ArticleInteractive() {
 
                 <Link
                   href="/blog"
-                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex hover:shadow-md hover:border-[#19798d] transition-all duration-300 cursor-pointer group"
+                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex hover:shadow-md hover:border-[#056bfa] transition-all duration-300 cursor-pointer group"
                 >
                   <div className="w-[100px] shrink-0 overflow-hidden">
                     <img
@@ -507,7 +507,7 @@ export default function ArticleInteractive() {
                     />
                   </div>
                   <div className="p-4 flex-1">
-                    <span className="bg-[#e8f6f8] text-[#19798d] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">
+                    <span className="bg-[#e8f6f8] text-[#056bfa] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">
                       Coupon Guides
                     </span>
                     <h5 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">
@@ -517,7 +517,7 @@ export default function ArticleInteractive() {
                       <span className="text-gray-400 text-[10px]">
                         May 10, 2026
                       </span>
-                      <span className="text-[#19798d] text-[10px] font-bold">
+                      <span className="text-[#056bfa] text-[10px] font-bold">
                         Read →
                       </span>
                     </div>
@@ -557,7 +557,7 @@ export default function ArticleInteractive() {
                       i !== 2 ? "border-b border-[#f0f0f0]" : ""
                     }`}
                   >
-                    <span className="text-[#19798d] font-black text-3xl">
+                    <span className="text-[#056bfa] font-black text-3xl">
                       {stat.value}
                     </span>
                     <span className="text-gray-500 text-[11px] tracking-tight">
@@ -569,7 +569,7 @@ export default function ArticleInteractive() {
             </div>
 
             {/* CTA */}
-            <div className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] rounded-2xl p-7 mb-5 shadow-lg relative overflow-hidden group">
+            <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] rounded-2xl p-7 mb-5 shadow-lg relative overflow-hidden group">
               <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
               <div className="text-center relative z-10">
                 <span className="text-3xl block mb-3">🏷️</span>
@@ -586,7 +586,7 @@ export default function ArticleInteractive() {
                     placeholder="Enter your email"
                     className="w-full bg-white rounded-xl px-4 py-3 text-sm border-none outline-none focus:ring-2 focus:ring-[#FF9900]"
                   />
-                  <button className="w-full bg-white text-[#19798d] rounded-xl px-4 py-3 font-bold text-sm hover:shadow-xl transition-all active:scale-95">
+                  <button className="w-full bg-white text-[#056bfa] rounded-xl px-4 py-3 font-bold text-sm hover:shadow-xl transition-all active:scale-95">
                     Get Deal Alerts
                   </button>
                 </div>
@@ -618,16 +618,16 @@ export default function ArticleInteractive() {
                     <p className="text-[#374151] text-[13px] font-semibold truncate mb-2">
                       {coupon.title}
                     </p>
-                    <div className="flex items-center justify-between bg-[#e8f6f8] rounded-xl px-4 py-2.5 border border-dashed border-[#19798d]">
-                      <span className="text-[#19798d] font-mono font-black text-[12px]">
+                    <div className="flex items-center justify-between bg-[#e8f6f8] rounded-xl px-4 py-2.5 border border-dashed border-[#056bfa]">
+                      <span className="text-[#056bfa] font-mono font-black text-[12px]">
                         {coupon.code}
                       </span>
                       <Copy
-                        className="w-3.5 h-3.5 text-[#19798d] cursor-pointer hover:scale-110 active:scale-90 transition-transform"
+                        className="w-3.5 h-3.5 text-[#056bfa] cursor-pointer hover:scale-110 active:scale-90 transition-transform"
                         onClick={() => copyToClipboard(coupon.code)}
                       />
                     </div>
-                    <button className="text-[#19798d] text-[10px] font-bold mt-2 hover:underline tracking-wide uppercase">
+                    <button className="text-[#056bfa] text-[10px] font-bold mt-2 hover:underline tracking-wide uppercase">
                       Show Code
                     </button>
                   </div>
@@ -651,10 +651,10 @@ export default function ArticleInteractive() {
                         : ""
                     }`}
                   >
-                    <span className="text-[#19798d] font-bold text-[11px] mt-1 shrink-0">
+                    <span className="text-[#056bfa] font-bold text-[11px] mt-1 shrink-0">
                       {(i + 1).toString().padStart(2, "0")}
                     </span>
-                    <span className="text-gray-600 text-[13px] group-hover:text-[#19798d] transition-colors leading-[1.4]">
+                    <span className="text-gray-600 text-[13px] group-hover:text-[#056bfa] transition-colors leading-[1.4]">
                       {section.title}
                     </span>
                   </a>
@@ -667,7 +667,7 @@ export default function ArticleInteractive() {
       </div>
 
       {/* Newsletter Strip */}
-      <section className="bg-[#19798d] py-14">
+      <section className="bg-[#056bfa] py-14">
         <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex flex-col gap-2">
             <h2 className="text-white font-extrabold text-3xl md:text-4xl text-center md:text-left">

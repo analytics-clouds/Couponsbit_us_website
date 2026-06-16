@@ -180,14 +180,14 @@ export default function BlogPage() {
           __html: JSON.stringify(blogSchema),
         }}
       />
-      <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+      <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative w-full pt-20 pb-36 md:pt-24 md:pb-48 bg-gradient-to-br from-[#0f5a6b] to-[#19798d] overflow-hidden mt-[64px]">
+        <section className="relative w-full pt-20 pb-36 md:pt-24 md:pb-48 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden mt-[64px]">
           <div className="container mx-auto px-4 max-w-7xl relative z-10 text-center">
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-10 animate-pulse">
-              <span className="text-[#19798d] font-bold text-sm tracking-wide">
+              <span className="text-[#056bfa] font-bold text-sm tracking-wide">
                  Smart Shopping Starts Here
               </span>
             </div>
@@ -207,7 +207,7 @@ export default function BlogPage() {
                   key={i}
                   className="bg-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2.5 min-w-[220px]"
                 >
-                  <item.icon className="w-5 h-5 text-[#19798d]" />
+                  <item.icon className="w-5 h-5 text-[#056bfa]" />
                   <span className="text-black font-black text-sm whitespace-nowrap">
                     {item.text}
                   </span>
@@ -241,7 +241,7 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
 
               {/* Post 1 — Amazon India Coupon Codes */}
-              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#19798d] transition-all duration-300 group">
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
                 <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
                   <img
                     src="/amazon-india-coupon-codes.webp"
@@ -263,7 +263,7 @@ export default function BlogPage() {
                     </div>
                   </div>
                   <Link href="/blog/amazon-india-coupon-codes">
-                    <h3 className="text-[#19798d] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0f5a6b] transition-all cursor-pointer line-clamp-2">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
                       How to Use Amazon India Coupon Codes to Get Extra Discounts
                     </h3>
                   </Link>
@@ -274,7 +274,7 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href="/blog/amazon-india-coupon-codes"
-                    className="text-[#19798d] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
                   >
                     READ MORE <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -282,7 +282,7 @@ export default function BlogPage() {
               </div>
 
               {/* Post 2 — Amazon Savings Guide */}
-              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#19798d] transition-all duration-300 group">
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
                 <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
                   <img
                     src="/amazon-savings-guide.webp"
@@ -304,7 +304,7 @@ export default function BlogPage() {
                     </div>
                   </div>
                   <Link href="/blog/amazon-savings-guide">
-                    <h3 className="text-[#19798d] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0f5a6b] transition-all cursor-pointer line-clamp-2">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
                       10 Smart Ways to Save Money on Amazon India in 2026
                     </h3>
                   </Link>
@@ -315,7 +315,7 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href="/blog/amazon-savings-guide"
-                    className="text-[#19798d] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
                   >
                     READ MORE <ArrowRight className="w-3.5 h-3.5" />
                   </Link>

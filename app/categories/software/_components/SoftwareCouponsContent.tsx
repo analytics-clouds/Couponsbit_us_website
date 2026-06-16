@@ -31,7 +31,7 @@ const STORES = [
 
 const SIDEBAR_CATEGORIES = [
   { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
-  { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#19798d]", href: "/categories/travel" },
+  { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel" },
   { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment" },
   { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software", active: true },
   { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile" },
@@ -57,14 +57,14 @@ export default function SoftwareCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       <div className="bg-white border-b border-[#f0f0f0] mt-24">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+          <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-          <Link href="/categories" className="text-[#19798d] hover:underline">Categories</Link>
+          <Link href="/categories" className="text-[#056bfa] hover:underline">Categories</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-700 font-medium">Software & Digital</span>
         </div>
@@ -114,18 +114,18 @@ export default function SoftwareCouponsContent() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
                   {STORES.map((store) => (
-                    <div key={store.id} className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#19798d] transition-all duration-300 flex flex-col justify-between group">
+                    <div key={store.id} className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#056bfa] transition-all duration-300 flex flex-col justify-between group">
                       <div>
                         <div className="h-14 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
                           <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain" />
                         </div>
-                        <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#19798d] transition-colors line-clamp-1 truncate px-1">{store.name}</h3>
+                        <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#056bfa] transition-colors line-clamp-1 truncate px-1">{store.name}</h3>
                         <p className="text-gray-400 text-[11px] font-bold mt-0.5">{store.coupons} Coupons</p>
-                        <span className="text-xs font-black text-[#19798d] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
+                        <span className="text-xs font-black text-[#056bfa] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
                       </div>
                       <div className="mt-4">
                         <Link href={`/stores/${store.id}`} className="block w-full">
-                          <button className="w-full text-center py-2 border border-[#19798d] text-[#19798d] hover:bg-[#19798d] hover:text-white rounded-lg text-xs font-black transition-all duration-300">View Store</button>
+                          <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-xs font-black transition-all duration-300">View Store</button>
                         </Link>
                       </div>
                     </div>
@@ -150,7 +150,7 @@ export default function SoftwareCouponsContent() {
                       </Link>
                     ))}
                   </div>
-                  <Link href="/categories" className="block mt-4 text-[#19798d] font-bold text-xs hover:underline">View All Categories →</Link>
+                  <Link href="/categories" className="block mt-4 text-[#056bfa] font-bold text-xs hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-5">
@@ -204,7 +204,7 @@ export default function SoftwareCouponsContent() {
           <p className="text-gray-600 text-sm leading-relaxed mb-6">
             Software has become an essential investment for both personal and professional use. From managing projects and protecting devices to creating content and growing businesses, the right software can improve productivity and efficiency.
           </p>
-          <p className="text-[#19798d] text-sm font-bold mb-4">At Couponsbit, we help shoppers discover savings across a wide range of software categories, including:</p>
+          <p className="text-[#056bfa] text-sm font-bold mb-4">At Couponsbit, we help shoppers discover savings across a wide range of software categories, including:</p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             {[
@@ -214,9 +214,9 @@ export default function SoftwareCouponsContent() {
               "Web hosting services", "Cloud storage platforms", "Developer tools",
               "Marketing software", "Accounting and finance software", "Educational software"
             ].map((category, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-[#19798d]/30 transition-all duration-300 group flex gap-3 items-center">
-                <div className="w-8 h-8 rounded-lg bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#19798d] transition-colors duration-300">
-                  <Laptop className="w-4 h-4 text-[#19798d] group-hover:text-white transition-colors duration-300" />
+              <div key={i} className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-[#056bfa]/30 transition-all duration-300 group flex gap-3 items-center">
+                <div className="w-8 h-8 rounded-lg bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#056bfa] transition-colors duration-300">
+                  <Laptop className="w-4 h-4 text-[#056bfa] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <span className="text-black font-extrabold text-xs">{category}</span>
               </div>
@@ -242,8 +242,8 @@ export default function SoftwareCouponsContent() {
               "Notion", "Monday.com", "QuickBooks", "FreshBooks", "Avast", "Norton",
               "Kaspersky", "Sintra AI"
             ].map((brand, i) => (
-              <div key={i} className="border border-gray-100 rounded-xl p-3 text-center hover:shadow-sm hover:border-[#19798d]/20 transition-all duration-300 group">
-                <span className="text-gray-700 font-bold text-xs group-hover:text-[#19798d] transition-colors">{brand}</span>
+              <div key={i} className="border border-gray-100 rounded-xl p-3 text-center hover:shadow-sm hover:border-[#056bfa]/20 transition-all duration-300 group">
+                <span className="text-gray-700 font-bold text-xs group-hover:text-[#056bfa] transition-colors">{brand}</span>
               </div>
             ))}
           </div>
@@ -267,7 +267,7 @@ export default function SoftwareCouponsContent() {
               { title: "Better Collaboration", desc: "Many modern platforms support real-time communication and teamwork across locations." },
               { title: "Continuous Innovation", desc: "Software companies regularly release updates, new features, and improvements to enhance the user experience." }
             ].map((item, i) => (
-              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#19798d]/20 transition-all duration-300 flex gap-4 items-start">
+              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#056bfa]/20 transition-all duration-300 flex gap-4 items-start">
                 <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
                   <Code className="w-5 h-5" />
                 </div>
@@ -296,10 +296,10 @@ export default function SoftwareCouponsContent() {
             ].map((item, i, arr) => (
               <div key={i} className="flex gap-5 items-start">
                 <div className="flex flex-col items-center shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-[#19798d] text-white flex items-center justify-center font-black text-sm shadow-md">
+                  <div className="w-10 h-10 rounded-full bg-[#056bfa] text-white flex items-center justify-center font-black text-sm shadow-md">
                     {item.step}
                   </div>
-                  {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#19798d]/20 my-1" />}
+                  {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#056bfa]/20 my-1" />}
                 </div>
                 <div className="pb-7">
                   <h3 className="text-black font-extrabold text-sm mb-1">{item.title}</h3>
@@ -325,7 +325,7 @@ export default function SoftwareCouponsContent() {
               { title: "Completely Free", desc: "Couponsbit is free to use and designed to help users save on digital products and services." },
               { title: "Updated Regularly", desc: "We continually monitor offers to help users discover new savings opportunities." }
             ].map((item, i) => (
-              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#19798d]/20 transition-all duration-300 flex gap-4 items-start">
+              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#056bfa]/20 transition-all duration-300 flex gap-4 items-start">
                 <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
                   <BadgeCheck className="w-5 h-5" />
                 </div>
@@ -375,7 +375,7 @@ export default function SoftwareCouponsContent() {
               "Black Friday", "Cyber Monday", "New Year Promotions", 
               "Back-to-School Season", "Anniversary Sales", "Product Launch Events"
             ].map((event) => (
-              <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#19798d]/20 text-[#19798d] font-bold text-xs rounded-full cursor-default">
+              <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#056bfa]/20 text-[#056bfa] font-bold text-xs rounded-full cursor-default">
                 {event}
               </span>
             ))}
@@ -395,7 +395,7 @@ export default function SoftwareCouponsContent() {
               "Compare Features", "Subscribe to Brand Updates", "Look for Bundle Deals"
             ].map((point, i) => (
               <div key={i} className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#19798d] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#056bfa] shrink-0" />
                 <span className="text-gray-600 text-xs font-semibold">{point}</span>
               </div>
             ))}
@@ -403,7 +403,7 @@ export default function SoftwareCouponsContent() {
         </div>
 
         {/* G — CTA Card */}
-        <div className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] rounded-2xl p-6 text-white">
+        <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] rounded-2xl p-6 text-white">
           <h3 className="font-black text-lg mb-2">Save More on the Software You Need</h3>
           <p className="text-white/90 text-xs leading-relaxed mb-4">
             Whether you're launching a business, managing projects, creating content, improving cybersecurity, or boosting productivity, software has become an essential part of modern life.
@@ -413,7 +413,7 @@ export default function SoftwareCouponsContent() {
           </p>
           
           <Link href="/stores" className="block">
-            <button className="w-full bg-white text-[#19798d] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
+            <button className="w-full bg-white text-[#056bfa] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
               Shop & Save Now →
             </button>
           </Link>
@@ -431,7 +431,7 @@ export default function SoftwareCouponsContent() {
         <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-[#22c55e]"><CheckCircle className="w-5 h-5" /></div>
         <div>
           <p className="text-black font-black text-sm">Code Copied!</p>
-          <p className="text-[#19798d] font-mono font-bold text-xs mt-0.5">{toastCode}</p>
+          <p className="text-[#056bfa] font-mono font-bold text-xs mt-0.5">{toastCode}</p>
         </div>
       </div>
     </div>

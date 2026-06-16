@@ -73,7 +73,7 @@ export default function ProductsPageContent() {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Hero Section */}
@@ -84,14 +84,14 @@ export default function ProductsPageContent() {
             <h1 className="text-3xl md:text-5xl font-extrabold text-black leading-tight">
               Explore Top Brands.
             </h1>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-[#19798d] leading-tight mt-1">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-[#056bfa] leading-tight mt-1">
               Discover Best Products.
             </h2>
             <p className="text-gray-600 text-sm md:text-base mt-3 max-w-lg">
               Find amazing products from top brands and save more with verified coupons.
             </p>
 
-            <div className="mt-8 flex border-2 border-[#e0e0e0] rounded-xl overflow-hidden shadow-sm max-w-[400px] focus-within:border-[#19798d] transition-colors">
+            <div className="mt-8 flex border-2 border-[#e0e0e0] rounded-xl overflow-hidden shadow-sm max-w-[400px] focus-within:border-[#056bfa] transition-colors">
               <input 
                 type="text" 
                 placeholder="Search for brands or products..." 
@@ -99,7 +99,7 @@ export default function ProductsPageContent() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <button className="bg-[#19798d] text-white px-6 py-3 font-bold hover:bg-[#0f5a6b] transition-all">
+              <button className="bg-[#056bfa] text-white px-6 py-3 font-bold hover:bg-[#0451c4] transition-all">
                 Search
               </button>
             </div>
@@ -112,7 +112,7 @@ export default function ProductsPageContent() {
                 { icon: BadgeCheck, val: "100%", label: "Verified Listings" }
               ].map((stat, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <stat.icon className="w-4.5 h-4.5 text-[#19798d]" />
+                  <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                   <div>
                     <span className="text-sm font-bold text-black block leading-none">{stat.val}</span>
                     <span className="text-[10px] text-gray-500 font-medium">{stat.label}</span>
@@ -145,7 +145,7 @@ export default function ProductsPageContent() {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-[#f0f0f0] mt-6">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+          <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-700 font-medium">Products</span>
         </div>
@@ -156,14 +156,14 @@ export default function ProductsPageContent() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl font-extrabold text-black">Top Brands</h2>
-            <Link href="/stores" className="text-[#19798d] font-medium text-sm hover:underline">View All Brands →</Link>
+            <Link href="/stores" className="text-[#056bfa] font-medium text-sm hover:underline">View All Brands →</Link>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {TOP_BRANDS.map((brand, i) => {
               const content = (
                 <div 
-                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-6 text-center hover:shadow-lg hover:border-[#19798d] hover:-translate-y-1 transition-all duration-300 cursor-pointer group h-full"
+                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-6 text-center hover:shadow-lg hover:border-[#056bfa] hover:-translate-y-1 transition-all duration-300 cursor-pointer group h-full"
                 >
                   <div className="h-[60px] flex items-center justify-center mb-3">
                     <div className={cn("transition-transform group-hover:scale-110", brand.style)}>
@@ -196,7 +196,7 @@ export default function ProductsPageContent() {
              <div className="flex items-center gap-4">
                 <div className="relative">
                   <span className="text-5xl">🛍️</span>
-                  <div className="absolute -top-1 -right-1 w-7 h-7 bg-[#19798d] rounded-full flex items-center justify-center text-white text-[10px] font-black border-2 border-white shadow-sm">
+                  <div className="absolute -top-1 -right-1 w-7 h-7 bg-[#056bfa] rounded-full flex items-center justify-center text-white text-[10px] font-black border-2 border-white shadow-sm">
                     %
                   </div>
                 </div>
@@ -207,7 +207,7 @@ export default function ProductsPageContent() {
              </div>
              <Link 
                href="/deals" 
-               className="bg-[#19798d] text-white px-7 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-[#0f5a6b] shadow-md hover:shadow-lg transition-all active:scale-95 whitespace-nowrap"
+               className="bg-[#056bfa] text-white px-7 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-[#0451c4] shadow-md hover:shadow-lg transition-all active:scale-95 whitespace-nowrap"
              >
                Explore Deals <ArrowRight className="w-4 h-4" />
              </Link>
@@ -220,7 +220,7 @@ export default function ProductsPageContent() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl font-extrabold text-black">Shop by Category</h2>
-            <Link href="/categories" className="text-[#19798d] font-medium text-sm hover:underline">View All Categories →</Link>
+            <Link href="/categories" className="text-[#056bfa] font-medium text-sm hover:underline">View All Categories →</Link>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-4">
@@ -228,7 +228,7 @@ export default function ProductsPageContent() {
               <Link 
                 key={i} 
                 href={cat.href}
-                className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-5 text-center hover:shadow-md hover:border-[#19798d] hover:-translate-y-0.5 transition-all duration-300 group"
+                className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-5 text-center hover:shadow-md hover:border-[#056bfa] hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 <div 
                   className="w-[52px] h-[52px] rounded-full mx-auto flex items-center justify-center transition-transform group-hover:scale-110"
@@ -250,7 +250,7 @@ export default function ProductsPageContent() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {TRUST_ITEMS.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
-                <div className="w-11 h-11 bg-white border border-[#f0f0f0] rounded-full shrink-0 flex items-center justify-center shadow-sm text-[#19798d]">
+                <div className="w-11 h-11 bg-white border border-[#f0f0f0] rounded-full shrink-0 flex items-center justify-center shadow-sm text-[#056bfa]">
                   <item.icon className="w-5 h-5" />
                 </div>
                 <div>
@@ -290,7 +290,7 @@ export default function ProductsPageContent() {
       </section>
 
       {/* Newsletter Strip */}
-      <section className="bg-[#19798d] py-12 text-center md:text-left">
+      <section className="bg-[#056bfa] py-12 text-center md:text-left">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex flex-col md:flex-row items-center gap-4">

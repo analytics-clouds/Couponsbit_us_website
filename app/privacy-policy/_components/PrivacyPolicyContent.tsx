@@ -104,7 +104,7 @@ const AccordionItem: React.FC<{ section: PolicySection, isOpen: boolean, onToggl
         className="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-[#f9f9f9] transition-all duration-300"
       >
         <span className="text-base font-bold text-black">{section.title}</span>
-        <ChevronDown className={cn("w-5 h-5 text-[#19798d] transition-transform duration-300", isOpen && "rotate-180")} />
+        <ChevronDown className={cn("w-5 h-5 text-[#056bfa] transition-transform duration-300", isOpen && "rotate-180")} />
       </button>
       <motion.div
         initial={false}
@@ -141,18 +141,18 @@ export default function PrivacyPolicyContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#0f5a6b] to-[#19798d] mt-[64px] text-center">
+      <section className="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#0451c4] to-[#056bfa] mt-[64px] text-center">
         <div className="container mx-auto px-4 max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-8"
           >
-            <span className="text-[#19798d] font-bold text-sm tracking-wide">Your Privacy Matters to Us</span>
+            <span className="text-[#056bfa] font-bold text-sm tracking-wide">Your Privacy Matters to Us</span>
           </motion.div>
 
           <motion.h1
@@ -183,7 +183,7 @@ export default function PrivacyPolicyContent() {
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 py-4 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">Privacy Policy</span>
           </nav>
@@ -212,16 +212,16 @@ export default function PrivacyPolicyContent() {
       </section>
 
       {/* Section 4: Bottom CTA */}
-      <section className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] py-16 text-center">
+      <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-16 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-5xl mb-6">🔒</div>
           <h2 className="text-3xl font-black text-white mb-4">Your Privacy is Our Priority</h2>
           <p className="text-white/80 text-lg mb-10">Have privacy concerns? Contact our privacy team directly</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="w-full sm:w-auto px-9 py-4 bg-white text-[#19798d] rounded-full font-bold text-base shadow-lg transition-all hover:scale-105 text-center">
+            <Link href="/contact" className="w-full sm:w-auto px-9 py-4 bg-white text-[#056bfa] rounded-full font-bold text-base shadow-lg transition-all hover:scale-105 text-center">
               Contact Privacy Team
             </Link>
-            <Link href="/faqs" className="w-full sm:w-auto px-9 py-4 border-2 border-white text-white rounded-full font-bold text-base hover:bg-white hover:text-[#19798d] transition-all text-center">
+            <Link href="/faqs" className="w-full sm:w-auto px-9 py-4 border-2 border-white text-white rounded-full font-bold text-base hover:bg-white hover:text-[#056bfa] transition-all text-center">
               Read FAQs
             </Link>
           </div>

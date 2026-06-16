@@ -95,7 +95,7 @@ const AccordionItem: React.FC<{ faq: FAQ, isOpen: boolean, onToggle: () => void 
         className="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-[#f9f9f9] transition-all duration-300 group"
       >
         <span className="text-base font-semibold text-black">{faq.question}</span>
-        <div className="text-[#19798d] transition-transform duration-300">
+        <div className="text-[#056bfa] transition-transform duration-300">
           {isOpen ? <Minus className="w-5 h-5 shrink-0" /> : <Plus className="w-5 h-5 shrink-0" />}
         </div>
       </button>
@@ -118,7 +118,7 @@ const FAQGroupComponent: React.FC<{ group: FAQGroup }> = ({ group }) => {
   return (
     <div className="mb-10">
       <div className="flex items-center gap-3 mb-4">
-        {/* <group.icon className="w-6 h-6 text-[#19798d]" /> */}
+        {/* <group.icon className="w-6 h-6 text-[#056bfa]" /> */}
         {/* <h3 className="text-xl font-bold text-black">{group.title}</h3> */}
       </div>
       <div className="bg-white rounded-3xl shadow-sm border border-[#f0f0f0] overflow-hidden">
@@ -159,18 +159,18 @@ export default function FAQsContent() {
   });
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-20 pb-32 bg-gradient-to-br from-[#0f5a6b] to-[#19798d] overflow-hidden mt-[64px] text-center">
+      <section className="relative w-full pt-20 pb-32 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden mt-[64px] text-center">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-8 animate-pulse"
           >
-            <span className="text-[#19798d] font-bold text-sm tracking-wide">Got Questions? We Have Answers</span>
+            <span className="text-[#056bfa] font-bold text-sm tracking-wide">Got Questions? We Have Answers</span>
           </motion.div>
 
           <motion.h1
@@ -207,7 +207,7 @@ export default function FAQsContent() {
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 py-[14px] max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">FAQs</span>
           </nav>
@@ -230,7 +230,7 @@ export default function FAQsContent() {
                <p className="text-gray-400 mt-2">Try searching with different keywords or browse categories</p>
                <Button
                 onClick={() => { setSearchQuery(""); setActiveCategory("all"); }}
-                className="mt-6 bg-[#19798d] hover:bg-[#0f5a6b] text-white rounded-full px-6"
+                className="mt-6 bg-[#056bfa] hover:bg-[#0451c4] text-white rounded-full px-6"
                >
                 View All Questions
                </Button>
@@ -240,16 +240,16 @@ export default function FAQsContent() {
       </section>
 
       {/* Section 5: Still Have Questions CTA */}
-      <section className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] py-16 text-center">
+      <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-16 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
      
           <h2 className="text-3xl font-black text-white mb-4">Still Have Questions?</h2>
           <p className="text-white/80 text-lg mb-10">Our support team is always ready to help you</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="w-full sm:w-auto px-9 py-4 bg-white text-[#19798d] rounded-full font-bold text-base shadow-lg transition-all hover:scale-105 text-center">
+            <Link href="/contact" className="w-full sm:w-auto px-9 py-4 bg-white text-[#056bfa] rounded-full font-bold text-base shadow-lg transition-all hover:scale-105 text-center">
               Contact Us
             </Link>
-            <Link href="/deals" className="w-full sm:w-auto px-9 py-4 border-2 border-white text-white rounded-full font-bold text-base hover:bg-white hover:text-[#19798d] transition-all text-center">
+            <Link href="/deals" className="w-full sm:w-auto px-9 py-4 border-2 border-white text-white rounded-full font-bold text-base hover:bg-white hover:text-[#056bfa] transition-all text-center">
               Browse Deals
             </Link>
           </div>

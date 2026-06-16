@@ -192,7 +192,7 @@ export default function StubHubCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Toast Notification */}
@@ -215,9 +215,9 @@ export default function StubHubCouponsContent() {
         <div className="bg-white border-b border-[#f0f0f0] mt-24">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
-              <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+              <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
-              <Link href="/stores" className="text-[#19798d] hover:underline">Stores</Link>
+              <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
               <span className="text-black font-extrabold">StubHub</span>
             </nav>
@@ -258,7 +258,7 @@ export default function StubHubCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#19798d]" />
+                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
                          <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
@@ -359,7 +359,7 @@ export default function StubHubCouponsContent() {
                 { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 justify-center md:border-r last:border-0 border-[#e0e0e0] px-4">
-                  <item.icon className="w-6 h-6 text-[#19798d] shrink-0" />
+                  <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
                     <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
@@ -1347,7 +1347,7 @@ export default function StubHubCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
                     StubHub is one of the most recognized online ticket marketplaces, connecting buyers and sellers for live events across a wide range of categories. Founded in 2000, the platform has become a go-to destination for millions of fans looking to buy and sell tickets for concerts, sports, theater, comedy shows, festivals, and other live entertainment experiences.
                   </p>
-                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#19798d] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
 
@@ -1369,11 +1369,11 @@ export default function StubHubCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#19798d] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -1419,7 +1419,7 @@ export default function StubHubCouponsContent() {
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#19798d]">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
         <div>
@@ -1447,14 +1447,14 @@ export default function StubHubCouponsContent() {
                 <Link 
                   key={i} 
                   href={store.href}
-                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#19798d] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
                     <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#19798d] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#19798d] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -1481,7 +1481,7 @@ export default function StubHubCouponsContent() {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Know more About StubHub</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Know more About StubHub</h3>
           
             <p>
               The platform provides access to tickets for both upcoming and sold-out events, helping fans find seats for experiences that may be difficult to secure through primary ticket providers. StubHub's marketplace model allows ticket holders to resell tickets they can no longer use, creating additional opportunities for buyers to access highly sought-after events.
@@ -1498,7 +1498,7 @@ export default function StubHubCouponsContent() {
 
           {/* Dynamic Interactive Steps Map */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#19798d] mb-8">How to Use a StubHub Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a StubHub Coupon Code</h3>
             <div className="space-y-6">
               {[
                 "Step 1: Browse Available StubHub Deals — Visit the StubHub page on Couponsbit and explore current discounts, promo codes, and ticket offers.",
@@ -1509,7 +1509,7 @@ export default function StubHubCouponsContent() {
                 "Step 6: Complete Your Purchase — Finalize your order and get ready to enjoy your event."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#19798d] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
@@ -1519,7 +1519,7 @@ export default function StubHubCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Best Ways to Save on StubHub</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save on StubHub</h3>
             <p>Looking to maximize your savings? Here are several strategies that can help.</p>
             <p><strong>Check Couponsbit Before Buying:</strong> Always browse Couponsbit before purchasing tickets to find the latest StubHub promo codes and special offers.</p>
             <p><strong>Compare Seating Sections:</strong> Different seating areas often offer significantly different price points while still providing a great event experience.</p>
@@ -1530,7 +1530,7 @@ export default function StubHubCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Fans Choose StubHub</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Fans Choose StubHub</h3>
             <p><strong>Huge Selection of Events:</strong> StubHub offers access to millions of tickets across sports, music, theater, comedy, and live entertainment categories.</p>
             <p><strong>Access to Sold-Out Events:</strong> Fans may be able to purchase tickets for events that are no longer available through primary ticket sellers.</p>
             <p><strong>Convenient Digital Ticketing:</strong> Many tickets can be transferred electronically, making the buying process faster and more convenient.</p>
@@ -1539,7 +1539,7 @@ export default function StubHubCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Use Couponsbit for StubHub Deals?</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for StubHub Deals?</h3>
             <p>At Couponsbit, we help shoppers find genuine savings on the brands and services they use most.</p>
             <p><strong>Verified Promo Codes:</strong> We regularly update available StubHub offers to help users discover current discounts.</p>
             <p><strong>Easy Savings:</strong> Find ticket deals, promo codes, and event-related discounts in one convenient place.</p>
@@ -1548,7 +1548,7 @@ export default function StubHubCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Save More on Live Entertainment</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Live Entertainment</h3>
             <p>Whether you're attending a concert, cheering for your favorite team, enjoying a Broadway production, or planning a memorable night out, StubHub helps connect fans with the events they love.</p>
             <p>Before purchasing your tickets, visit Couponsbit to explore the latest StubHub coupon codes, promo codes, and ticket deals. With verified discounts and regularly updated offers, Couponsbit helps you enjoy more live events while spending less.</p>
           </div>
@@ -1560,7 +1560,7 @@ export default function StubHubCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1582,7 +1582,7 @@ export default function StubHubCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#19798d] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -1597,14 +1597,14 @@ export default function StubHubCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         {/* Box 1: Popular Searches */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#19798d]/5">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular StubHub Searches</h4>
           <div className="flex flex-wrap gap-2.5">
             {["StubHub Concerts", "StubHub Sports", "StubHub Theater", "StubHub Comedy", "StubHub Promo Code", "StubHub Ticket Deals", "StubHub Festivals", "StubHub Offers"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#19798d] uppercase tracking-widest shadow-sm hover:bg-[#19798d] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -1618,12 +1618,12 @@ export default function StubHubCouponsContent() {
           <div className="space-y-6">
             {COUPONS.slice(0, 7).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#19798d] font-black text-xl italic shadow-inner">S</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">S</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#19798d] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#19798d] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#19798d] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
               </div>
             ))}
           </div>

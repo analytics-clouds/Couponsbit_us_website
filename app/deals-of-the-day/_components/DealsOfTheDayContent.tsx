@@ -85,20 +85,20 @@ const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boole
           <X className="w-6 h-6" />
         </button>
         <div className="flex flex-col items-center pt-0">
-          <div className="w-24 h-24 bg-[#e8f6f8] rounded-3xl shadow-xl flex items-center justify-center text-4xl font-black text-[#19798d] -mt-12 mb-4 border-4 border-white">{deal.initial}</div>
+          <div className="w-24 h-24 bg-[#e8f6f8] rounded-3xl shadow-xl flex items-center justify-center text-4xl font-black text-[#056bfa] -mt-12 mb-4 border-4 border-white">{deal.initial}</div>
           <div className="px-4 py-1.5 bg-[#22c55e] text-white text-[10px] font-black rounded-full uppercase tracking-widest shadow-md mb-6">Verified Deal</div>
         </div>
         <div className="px-8 pb-10">
           <div className="text-center mb-8">
-            <p className="text-[#19798d] font-bold text-sm uppercase tracking-wider mb-2">{deal.store}</p>
+            <p className="text-[#056bfa] font-bold text-sm uppercase tracking-wider mb-2">{deal.store}</p>
             <h2 className="text-2xl font-black text-black leading-tight mb-3">{deal.title}</h2>
             <p className="text-gray-500 text-sm leading-relaxed">{deal.description}</p>
           </div>
           <div className="w-full h-px bg-gray-100 mb-8" />
           <div className="mb-8">
             <p className="text-gray-400 text-[10px] font-black uppercase tracking-[0.2em] text-center mb-4">Your Coupon Code</p>
-            <div onClick={copyToClipboard} className="bg-[#e8f6f8] border-2 border-dashed border-[#19798d] rounded-[32px] p-6 text-center cursor-pointer group hover:bg-[#19798d] transition-all duration-300">
-              <p className={cn("text-3xl font-black font-mono transition-colors", copied ? "text-white" : "text-[#19798d] group-hover:text-white")}>{deal.code}</p>
+            <div onClick={copyToClipboard} className="bg-[#e8f6f8] border-2 border-dashed border-[#056bfa] rounded-[32px] p-6 text-center cursor-pointer group hover:bg-[#056bfa] transition-all duration-300">
+              <p className={cn("text-3xl font-black font-mono transition-colors", copied ? "text-white" : "text-[#056bfa] group-hover:text-white")}>{deal.code}</p>
               <p className={cn("text-xs font-bold mt-2 flex items-center justify-center gap-2", copied ? "text-white/80" : "text-gray-400 group-hover:text-white/80")}>
                 {copied ? <><Check className="w-4 h-4" /> Copied!</> : "Click to Copy"}
               </p>
@@ -112,11 +112,11 @@ const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boole
               </div>
             ))}
           </div>
-          <Button onClick={handleShopNow} className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white rounded-[24px] h-16 font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
+          <Button onClick={handleShopNow} className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white rounded-[24px] h-16 font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
             View Deal on Store <ExternalLink className="w-5 h-5 ml-2" />
           </Button>
           <p className="text-center text-gray-400 text-[11px] font-bold mt-6">You will be redirected to the store's official website</p>
-          <button onClick={onClose} className="w-full text-center text-[#19798d] font-bold text-sm mt-4 hover:underline">← Back to Deals</button>
+          <button onClick={onClose} className="w-full text-center text-[#056bfa] font-bold text-sm mt-4 hover:underline">← Back to Deals</button>
         </div>
       </motion.div>
     </div>
@@ -141,7 +141,7 @@ export default function DealsOfTheDayContent() {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
 
       {/* Section 1: Hero Slider (Desktop) */}
@@ -201,7 +201,7 @@ export default function DealsOfTheDayContent() {
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 py-4 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">Deals of the Day</span>
           </nav>
@@ -215,11 +215,11 @@ export default function DealsOfTheDayContent() {
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/viagogo-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
+            <Link href="/stores/viagogo-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -228,13 +228,13 @@ export default function DealsOfTheDayContent() {
               { label: "FROM", discount: "$120", title: "World Cup Tickets – United States vs Paraguay", desc: "Get your World Cup tickets at the best available prices.",                    badge: "Trending" },
             ].map((c, i) => (
               <div key={i} className="relative bg-white rounded-[20px] overflow-visible shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style={{ filter: "drop-shadow(0 4px 16px rgba(25,121,141,0.10))" }}>
-                <div className="relative rounded-t-[20px] bg-[#19798d] px-6 pt-7 pb-8 text-center overflow-hidden">
+                <div className="relative rounded-t-[20px] bg-[#056bfa] px-6 pt-7 pb-8 text-center overflow-hidden">
                   <div className="absolute top-0 left-0 right-0 flex justify-around px-4 pt-2">
                     {Array.from({ length: 12 }).map((_, k) => <span key={k} className="w-1 h-1 rounded-full bg-white/20 block" />)}
                   </div>
                   <p className="text-white/60 text-[9px] font-black uppercase tracking-[4px] mb-1">{c.label}</p>
                   <p className="text-white font-black leading-none" style={{ fontSize: c.discount.length > 3 ? "3.5rem" : "4.5rem" }}>{c.discount}</p>
-                  <span className="absolute top-4 right-4 text-[8px] font-black uppercase bg-white text-[#19798d] px-2.5 py-1 rounded-full">{c.badge}</span>
+                  <span className="absolute top-4 right-4 text-[8px] font-black uppercase bg-white text-[#056bfa] px-2.5 py-1 rounded-full">{c.badge}</span>
                   <div className="absolute -bottom-3 left-0 right-0 flex items-center">
                     <div className="w-6 h-6 rounded-full bg-white -translate-x-1/2 shrink-0" />
                     <div className="flex-1 border-t-2 border-dashed border-white/20 mx-1" />
@@ -244,11 +244,11 @@ export default function DealsOfTheDayContent() {
                 <div className="rounded-b-[20px] bg-white px-6 pt-7 pb-6">
                   <div className="flex gap-2 mb-4">
                     <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-red-50 text-red-500 px-2.5 py-1 rounded-full"><Clock className="w-2.5 h-2.5" />Limited Time</span>
-                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#19798d] px-2.5 py-1 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>
+                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#056bfa] px-2.5 py-1 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
+                  <Link href="/stores/viagogo-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
                 </div>
               </div>
             ))}
@@ -259,11 +259,11 @@ export default function DealsOfTheDayContent() {
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-3xl font-black text-black">Reolink Coupons</h2>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/reolink-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
+            <Link href="/stores/reolink-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -286,11 +286,11 @@ export default function DealsOfTheDayContent() {
                       <span className="bg-red-50 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                       <span className="bg-green-50 text-green-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified</span>
                     </div>
-                    <p className="text-[#19798d] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
+                    <p className="text-[#056bfa] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/reolink-coupon-code"><button className="mt-3 w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/reolink-coupon-code"><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -301,11 +301,11 @@ export default function DealsOfTheDayContent() {
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/rayneo-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
+            <Link href="/stores/rayneo-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
@@ -315,14 +315,14 @@ export default function DealsOfTheDayContent() {
             ].map((c, i) => (
               <div key={i} className="bg-white border border-[#f0f0f0] rounded-[28px] p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="bg-[#19798d] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">RAYNEO</span>
+                  <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">RAYNEO</span>
                   <span className="bg-[#f5f5f5] text-gray-500 text-[10px] font-bold px-3 py-1.5 rounded-full">{c.type}</span>
                 </div>
-                <h3 className="text-[#19798d] font-black text-4xl leading-none mb-1">{c.discount}</h3>
+                <h3 className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</h3>
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
+                <Link href="/stores/rayneo-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
               </div>
             ))}
           </div>
@@ -332,11 +332,11 @@ export default function DealsOfTheDayContent() {
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#19798d] mb-0.5">Exclusive Coupons</p>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-3xl font-black text-black">Envato Elements Coupons</h2>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#19798d]/30 to-transparent" />
-            <Link href="/stores/envato-elements-coupon-code" className="shrink-0 text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200">View All →</Link>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
+            <Link href="/stores/envato-elements-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
@@ -344,13 +344,13 @@ export default function DealsOfTheDayContent() {
               { badge: "FLAT", discount: "50%",    title: "ANNUAL PLAN – Flat 50% OFF",                  desc: "Save more with Envato Elements annual subscription plans.",                         tag: "Popular" },
               { badge: "FLAT", discount: "30%",    title: "STUDENTS SPECIAL – Flat 30% OFF",              desc: "Exclusive student savings on Envato Elements subscriptions.",                       tag: "Trending" },
             ].map((c, i) => (
-              <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#19798d] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#19798d] hover:border-r-[#19798d] hover:shadow-lg transition-all duration-300">
+              <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#056bfa] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#056bfa] hover:border-r-[#056bfa] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[#19798d] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
+                  <span className="text-[#056bfa] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
                   <span className="text-[9px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-baseline text-[#19798d] mb-2">
+                  <div className="flex items-baseline text-[#056bfa] mb-2">
                     <span className="text-5xl font-black tracking-tighter">{c.discount}</span>
                     {!c.discount.includes("$") && <span className="text-lg font-extrabold ml-1 uppercase">OFF</span>}
                   </div>
@@ -358,8 +358,8 @@ export default function DealsOfTheDayContent() {
                   <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-[9px] font-bold text-[#19798d] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/envato-elements-coupon-code"><button className="bg-[#19798d] hover:bg-[#0f5a6b] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
+                  <Link href="/stores/envato-elements-coupon-code"><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -376,7 +376,7 @@ export default function DealsOfTheDayContent() {
             </div>
             <div className="flex items-center justify-between">
               <p className="text-gray-400 text-xs sm:text-sm">Exclusive AI subscription deals — save more today</p>
-              <Link href="/stores/sintra-coupon-code" className="text-[#19798d] font-black text-sm border border-[#19798d] rounded-full px-5 py-2 hover:bg-[#19798d] hover:text-white transition-all duration-200 ml-4">View All →</Link>
+              <Link href="/stores/sintra-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
             </div>
           </div>
           <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
@@ -388,8 +388,8 @@ export default function DealsOfTheDayContent() {
             ].map((c, i) => (
               <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
                 <div className="flex items-center justify-between">
-                  <span className="bg-[#19798d] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">SINTRA</span>
-                  <span className="bg-[#e8f6f8] text-[#19798d] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
+                  <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">SINTRA</span>
+                  <span className="bg-[#e8f6f8] text-[#056bfa] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
                 </div>
                 <div className="my-auto pt-4 pb-2">
                   <h3 className="text-[15px] font-black text-gray-900 leading-snug">{c.title}</h3>
@@ -401,13 +401,13 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/sintra-coupon-code"><button className="w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
+                  <Link href="/stores/sintra-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
                 </div>
               </div>
             ))}
           </div>
           <div className="w-full bg-gray-100 h-1 rounded-full mt-3 hidden sm:block">
-            <div className="bg-[#19798d] w-1/4 h-full rounded-full" />
+            <div className="bg-[#056bfa] w-1/4 h-full rounded-full" />
           </div>
         </section>
 
@@ -427,7 +427,7 @@ export default function DealsOfTheDayContent() {
           </h2>
 
           <div className="space-y-6">
-            <h3 className="text-[#19798d] font-black text-2xl mb-2">Don't Miss Today's Hottest Deals</h3>
+            <h3 className="text-[#056bfa] font-black text-2xl mb-2">Don't Miss Today's Hottest Deals</h3>
             <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">
               Looking for the best deal today? You've come to the right place. Couponsbit's Deal of the Day page highlights the most valuable discounts, limited-time offers, and exclusive savings available right now from popular online stores and trusted brands.
             </p>
@@ -438,14 +438,14 @@ export default function DealsOfTheDayContent() {
 
           <div className={cn("overflow-hidden transition-all duration-1000 ease-in-out", isSeoExpanded ? "max-h-[4000px] opacity-100" : "max-h-0 opacity-0 lg:max-h-none lg:opacity-100")}>
             <div className="pt-8 space-y-6">
-              <h3 className="text-[#19798d] font-black text-2xl mb-4">Why Shop Today's Featured Deals?</h3>
+              <h3 className="text-[#056bfa] font-black text-2xl mb-4">Why Shop Today's Featured Deals?</h3>
               <p className="text-gray-600 leading-relaxed text-lg mb-6">
                 The best discounts don't last forever. Many retailers launch flash sales, daily specials, and limited-time promotions that can disappear within hours.
               </p>
               <div className="space-y-4 mb-8">
                 {["Access to limited-time savings", "Exclusive online offers", "Trending discounts from top brands", "Daily updated promotions", "Verified promo codes and coupons", "Seasonal and holiday deals"].map((point, i) => (
                   <div key={i} className="flex items-center gap-4 py-2 border-b border-[#f0f0f0] last:border-0">
-                    <span className="w-2 h-2 rounded-full bg-[#19798d] shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
                     <p className="text-gray-700 text-lg font-medium">{point}</p>
                   </div>
                 ))}
@@ -453,7 +453,7 @@ export default function DealsOfTheDayContent() {
             </div>
 
             <div className="pt-8 space-y-6">
-              <h3 className="text-[#19798d] font-black text-2xl mb-2">Categories Featured in Today's Deals</h3>
+              <h3 className="text-[#056bfa] font-black text-2xl mb-2">Categories Featured in Today's Deals</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   { icon: Shirt, title: "Fashion & Apparel", desc: "Save on clothing, shoes, accessories, and activewear from leading brands.", bg: "bg-pink-50 text-pink-600" },
@@ -463,12 +463,12 @@ export default function DealsOfTheDayContent() {
                   { icon: Plane, title: "Travel & Experiences", desc: "Access discounts on hotels, flights, vacation packages, and travel services.", bg: "bg-teal-50 text-teal-600" },
                   { icon: Utensils, title: "Food & Delivery", desc: "Enjoy special offers on meal delivery services, groceries, and restaurant orders.", bg: "bg-red-50 text-red-600" },
                 ].map((item, i) => (
-                  <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#19798d]/20 transition-all duration-300 group flex gap-4 items-start bg-white">
+                  <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#056bfa]/20 transition-all duration-300 group flex gap-4 items-start bg-white">
                     <div className={cn("w-10 h-10 rounded-xl flex items-center justify-center shrink-0", item.bg.split(" ")[0])}>
                       <item.icon className={cn("w-5 h-5", item.bg.split(" ")[1])} />
                     </div>
                     <div>
-                      <h4 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#19798d] transition-colors">{item.title}</h4>
+                      <h4 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#056bfa] transition-colors">{item.title}</h4>
                       <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
@@ -478,11 +478,11 @@ export default function DealsOfTheDayContent() {
 
             <div className="pt-12 space-y-8">
               <div>
-                <h3 className="text-[#19798d] font-black text-2xl mb-4">How We Choose Our Daily Deals</h3>
+                <h3 className="text-[#056bfa] font-black text-2xl mb-4">How We Choose Our Daily Deals</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">Our team evaluates offers based on value, popularity, savings potential, and shopper interest.</p>
               </div>
               <div>
-                <h3 className="text-[#19798d] font-black text-2xl mb-4">Start Saving Today</h3>
+                <h3 className="text-[#056bfa] font-black text-2xl mb-4">Start Saving Today</h3>
                 <p className="text-gray-600 leading-relaxed text-lg mb-4">Great deals don't wait. Explore today's featured discounts, claim verified promo codes, and enjoy smarter shopping with Couponsbit's Deal of the Day collection.</p>
                 <p className="text-gray-600 leading-relaxed text-lg font-medium">Check back daily for fresh savings and exciting offers from your favorite brands.</p>
               </div>
@@ -490,7 +490,7 @@ export default function DealsOfTheDayContent() {
           </div>
 
           <button onClick={() => setIsSeoExpanded(!isSeoExpanded)} className="flex justify-center w-full lg:hidden mt-8">
-            <div className="flex items-center gap-3 px-8 py-3 bg-[#e8f6f8] text-[#19798d] font-black rounded-full border border-[#19798d] shadow-sm hover:bg-[#19798d] hover:text-white transition-all">
+            <div className="flex items-center gap-3 px-8 py-3 bg-[#e8f6f8] text-[#056bfa] font-black rounded-full border border-[#056bfa] shadow-sm hover:bg-[#056bfa] hover:text-white transition-all">
               {isSeoExpanded ? <>Read Less <ChevronUp className="w-5 h-5" /></> : <>Read More <ChevronDown className="w-5 h-5" /></>}
             </div>
           </button>
@@ -518,13 +518,13 @@ export default function DealsOfTheDayContent() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center justify-between group py-3 border-b border-[#f0f0f0] last:border-0 hover:bg-gray-50/50 rounded-xl transition-colors">
                   <div className="flex items-center gap-4">
-                    <div className="w-2 h-2 rounded-full bg-[#19798d] group-hover:scale-150 transition-transform" />
+                    <div className="w-2 h-2 rounded-full bg-[#056bfa] group-hover:scale-150 transition-transform" />
                     <div>
                       <p className="text-sm font-black text-black leading-tight">{item.store}</p>
                       <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">{item.deal}</p>
                     </div>
                   </div>
-                  <button className="text-[11px] font-black text-[#19798d] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">GET</button>
+                  <button className="text-[11px] font-black text-[#056bfa] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">GET</button>
                 </div>
               ))}
             </div>
@@ -541,7 +541,7 @@ export default function DealsOfTheDayContent() {
               ].map((faq, i) => (
                 <div key={i} className="border-b border-[#f0f0f0] last:border-0 pb-4 last:pb-0">
                   <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="flex items-center justify-between w-full text-left py-2 group">
-                    <span className="text-base font-black text-black group-hover:text-[#19798d] transition-colors pr-6 leading-tight">{faq.q}</span>
+                    <span className="text-base font-black text-black group-hover:text-[#056bfa] transition-colors pr-6 leading-tight">{faq.q}</span>
                     <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform shrink-0", openFaq === i && "rotate-180")} />
                   </button>
                   <AnimatePresence>

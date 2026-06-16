@@ -68,8 +68,8 @@ const OPTIONS: PartnershipOption[] = [
     id: "listing",
     name: "Store Listing",
     tagline: "Get your store discovered",
-    gradient: "from-[#19798d] to-[#1a9db5]",
-    iconGradient: "from-[#19798d] to-[#0f5a6b]",
+    gradient: "from-[#056bfa] to-[#1a9db5]",
+    iconGradient: "from-[#056bfa] to-[#0451c4]",
     icon: Store,
     features: [
       "Free basic store listing",
@@ -84,7 +84,7 @@ const OPTIONS: PartnershipOption[] = [
     id: "featured",
     name: "Featured Partner",
     tagline: "Maximum visibility & sales",
-    gradient: "from-[#FF6B9D] to-[#19798d]",
+    gradient: "from-[#FF6B9D] to-[#056bfa]",
     iconGradient: "from-[#FF6B9D] to-[#C44B8A]",
     icon: Crown,
     features: [
@@ -125,7 +125,7 @@ const TESTIMONIALS = [
     stars: 5,
     quote: "Since partnering with Coupons Clouds our monthly sales increased by 40%. The quality of traffic they send is incredible — these are real shoppers who are ready to buy. Best decision we made for our brand.",
     initials: "AK",
-    gradient: "from-[#19798d] to-[#0f5a6b]",
+    gradient: "from-[#056bfa] to-[#0451c4]",
     name: "Amit Kapoor",
     role: "Marketing Director",
     store: "FashionBrand India"
@@ -218,7 +218,7 @@ export default function PartnerPageContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
 
       {/* Style Tag for Marquee Animation */}
@@ -254,7 +254,7 @@ export default function PartnerPageContent() {
       `}</style>
 
       {/* Section 1: Hero Section */}
-      <section className="relative w-full pt-20 pb-36 md:pt-32 md:pb-52 bg-gradient-to-br from-[#0f5a6b] via-[#19798d] to-[#1a9db5] overflow-hidden mt-[64px]">
+      <section className="relative w-full pt-20 pb-36 md:pt-32 md:pb-52 bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] overflow-hidden mt-[64px]">
         {/* Decorative elements */}
         <div className="absolute top-20 right-[-10%] w-[600px] h-[600px] rounded-full border border-white/5 pointer-events-none" />
         <div className="absolute bottom-[-10%] left-[-10%] w-[800px] h-[800px] rounded-full border border-white/5 pointer-events-none" />
@@ -265,7 +265,7 @@ export default function PartnerPageContent() {
             animate={{ opacity: 1, scale: 1 }}
             className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-8 animate-pulse"
           >
-            <span className="text-[#19798d] font-bold text-sm tracking-wide">Grow Your Business With Us</span>
+            <span className="text-[#056bfa] font-bold text-sm tracking-wide">Grow Your Business With Us</span>
           </motion.div>
 
           <motion.h1 
@@ -310,7 +310,7 @@ export default function PartnerPageContent() {
                 transition={{ delay: 0.2 + (i * 0.1) }}
                 className="bg-white px-6 py-4 rounded-full shadow-xl flex items-center gap-3 justify-center"
               >
-                <item.icon className="w-5 h-5 text-[#19798d] shrink-0" />
+                <item.icon className="w-5 h-5 text-[#056bfa] shrink-0" />
                 <span className="text-black font-black text-sm whitespace-nowrap">{item.text}</span>
               </motion.div>
             ))}
@@ -323,7 +323,7 @@ export default function PartnerPageContent() {
             style={{ top: "15%", left: "5%" }}
             className="absolute bg-white rounded-2xl shadow-2xl p-5 flex items-center gap-4 floating"
           >
-            <div className="p-3 bg-[#e8f6f8] rounded-xl"><Zap className="w-6 h-6 text-[#19798d]" /></div>
+            <div className="p-3 bg-[#e8f6f8] rounded-xl"><Zap className="w-6 h-6 text-[#056bfa]" /></div>
             <div className="text-left">
               <p className="font-black text-black text-sm">Instant Visibility</p>
               <p className="text-gray-500 text-xs font-bold">Reach shoppers immediately</p>
@@ -334,7 +334,7 @@ export default function PartnerPageContent() {
             style={{ top: "10%", right: "8%", animationDelay: "0.5s" }}
             className="absolute bg-white rounded-2xl shadow-2xl p-5 flex items-center gap-4 floating"
           >
-            <div className="p-3 bg-[#e8f6f8] rounded-xl"><TrendingUp className="w-6 h-6 text-[#19798d]" /></div>
+            <div className="p-3 bg-[#e8f6f8] rounded-xl"><TrendingUp className="w-6 h-6 text-[#056bfa]" /></div>
             <div className="text-left">
               <p className="font-black text-black text-sm">More Sales</p>
               <p className="text-gray-500 text-xs font-bold">Drive qualified traffic</p>
@@ -365,7 +365,7 @@ export default function PartnerPageContent() {
       <div className="bg-white border-b border-[#f0f0f0] relative z-20">
         <div className="container mx-auto px-4 py-3.5 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-bold hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-bold hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-black">Partner With Us</span>
           </nav>
@@ -377,7 +377,7 @@ export default function PartnerPageContent() {
 
     {/* Heading */}
     <div className="text-center max-w-3xl mx-auto mb-14">
-      <span className="inline-flex items-center rounded-full bg-[#19798d]/10 px-4 py-1 text-sm font-semibold text-[#19798d] mb-4">
+      <span className="inline-flex items-center rounded-full bg-[#056bfa]/10 px-4 py-1 text-sm font-semibold text-[#056bfa] mb-4">
         Partner Benefits
       </span>
 
@@ -395,9 +395,9 @@ export default function PartnerPageContent() {
 
       {/* Card 1 */}
       <div className="group bg-white border border-slate-200 rounded-3xl p-7 shadow-sm hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 rounded-2xl bg-[#19798d]/10 flex items-center justify-center mb-6">
+        <div className="w-14 h-14 rounded-2xl bg-[#056bfa]/10 flex items-center justify-center mb-6">
           <svg
-            className="w-7 h-7 text-[#19798d]"
+            className="w-7 h-7 text-[#056bfa]"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -422,9 +422,9 @@ export default function PartnerPageContent() {
 
       {/* Card 2 */}
       <div className="group bg-white border border-slate-200 rounded-3xl p-7 shadow-sm hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 rounded-2xl bg-[#19798d]/10 flex items-center justify-center mb-6">
+        <div className="w-14 h-14 rounded-2xl bg-[#056bfa]/10 flex items-center justify-center mb-6">
           <svg
-            className="w-7 h-7 text-[#19798d]"
+            className="w-7 h-7 text-[#056bfa]"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -449,9 +449,9 @@ export default function PartnerPageContent() {
 
       {/* Card 3 */}
       <div className="group bg-white border border-slate-200 rounded-3xl p-7 shadow-sm hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 rounded-2xl bg-[#19798d]/10 flex items-center justify-center mb-6">
+        <div className="w-14 h-14 rounded-2xl bg-[#056bfa]/10 flex items-center justify-center mb-6">
           <svg
-            className="w-7 h-7 text-[#19798d]"
+            className="w-7 h-7 text-[#056bfa]"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -476,9 +476,9 @@ export default function PartnerPageContent() {
 
       {/* Card 4 */}
       <div className="group bg-white border border-slate-200 rounded-3xl p-7 shadow-sm hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 rounded-2xl bg-[#19798d]/10 flex items-center justify-center mb-6">
+        <div className="w-14 h-14 rounded-2xl bg-[#056bfa]/10 flex items-center justify-center mb-6">
           <svg
-            className="w-7 h-7 text-[#19798d]"
+            className="w-7 h-7 text-[#056bfa]"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -508,7 +508,7 @@ export default function PartnerPageContent() {
       {/* Section 3: Why Partner With Us (Stats Banner) */}
       <section className="bg-[#0f1f22] py-24">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <span className="inline-block bg-[#19798d] text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
+          <span className="inline-block bg-[#056bfa] text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
             BY THE NUMBERS
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-16">Why Brands Choose Coupons Clouds</h2>
@@ -521,13 +521,13 @@ export default function PartnerPageContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                whileHover={{ scale: 1.03, borderColor: "#19798d" }}
-                className="bg-[#1a3a3e] rounded-3xl p-10 border border-[#19798d]/30 text-center transition-all duration-300 group"
+                whileHover={{ scale: 1.03, borderColor: "#056bfa" }}
+                className="bg-[#1a3a3e] rounded-3xl p-10 border border-[#056bfa]/30 text-center transition-all duration-300 group"
               >
-                <div className="w-20 h-20 bg-[#19798d]/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#19798d]/40 transition-colors">
-                  <stat.icon className="w-10 h-10 text-[#19798d]" />
+                <div className="w-20 h-20 bg-[#056bfa]/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#056bfa]/40 transition-colors">
+                  <stat.icon className="w-10 h-10 text-[#056bfa]" />
                 </div>
-                <p className="text-[#19798d] font-black text-5xl mb-2">{stat.number}</p>
+                <p className="text-[#056bfa] font-black text-5xl mb-2">{stat.number}</p>
                 <p className="text-white font-black text-lg mb-2">{stat.label}</p>
                 <p className="text-gray-400 font-bold text-sm">{stat.subtext}</p>
               </motion.div>
@@ -539,7 +539,7 @@ export default function PartnerPageContent() {
       {/* Section 4: Partnership Options */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <span className="inline-block bg-[#e8f6f8] text-[#19798d] px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
+          <span className="inline-block bg-[#e8f6f8] text-[#056bfa] px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
             PARTNERSHIP OPTIONS
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Choose How You Want to Partner</h2>
@@ -550,12 +550,12 @@ export default function PartnerPageContent() {
               <motion.div 
                 key={opt.id}
                 whileHover={{ y: -8 }}
-                className="bg-white border border-[#f0f0f0] rounded-[48px] p-10 md:p-14 shadow-sm relative overflow-hidden group hover:shadow-2xl hover:border-[#19798d] transition-all duration-300 flex flex-col"
+                className="bg-white border border-[#f0f0f0] rounded-[48px] p-10 md:p-14 shadow-sm relative overflow-hidden group hover:shadow-2xl hover:border-[#056bfa] transition-all duration-300 flex flex-col"
               >
                 <div className={cn("absolute top-0 left-0 w-full h-[6px] bg-gradient-to-r", opt.gradient)} />
                 
                 {opt.isPopular && (
-                  <div className="absolute top-0 right-0 bg-[#19798d] text-white text-[10px] font-black tracking-widest rounded-bl-3xl px-6 py-2.5 uppercase shadow-md">
+                  <div className="absolute top-0 right-0 bg-[#056bfa] text-white text-[10px] font-black tracking-widest rounded-bl-3xl px-6 py-2.5 uppercase shadow-md">
                     MOST POPULAR
                   </div>
                 )}
@@ -565,7 +565,7 @@ export default function PartnerPageContent() {
                 </div>
 
                 <h3 className="text-3xl font-black text-black mb-2">{opt.name}</h3>
-                <p className="text-[#19798d] font-black text-sm uppercase tracking-widest mb-6">{opt.tagline}</p>
+                <p className="text-[#056bfa] font-black text-sm uppercase tracking-widest mb-6">{opt.tagline}</p>
                 
                 <div className="h-px bg-[#f0f0f0] w-full mb-8" />
                 
@@ -583,8 +583,8 @@ export default function PartnerPageContent() {
                   className={cn(
                     "w-full py-7 rounded-2xl font-black text-lg shadow-lg active:scale-95 transition-all text-center",
                     opt.buttonStyle === "solid" 
-                      ? "bg-[#19798d] text-white hover:bg-[#0f5a6b] shadow-[#19798d]/20" 
-                      : "bg-white border-2 border-[#19798d] text-[#19798d] hover:bg-[#19798d] hover:text-white"
+                      ? "bg-[#056bfa] text-white hover:bg-[#0451c4] shadow-[#056bfa]/20" 
+                      : "bg-white border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white"
                   )}
                 >
                   Get Started →
@@ -600,7 +600,7 @@ export default function PartnerPageContent() {
 
     {/* Heading */}
     <div className="text-center mb-20">
-      <span className="inline-flex items-center rounded-full bg-[#19798d] px-5 py-2 text-xs font-black uppercase tracking-wide text-white shadow-sm">
+      <span className="inline-flex items-center rounded-full bg-[#056bfa] px-5 py-2 text-xs font-black uppercase tracking-wide text-white shadow-sm">
         Brand Benefits
       </span>
 
@@ -613,13 +613,13 @@ export default function PartnerPageContent() {
     <div className="relative">
 
       {/* Line */}
-      <div className="hidden lg:block absolute top-16 left-0 right-0 border-t-2 border-dashed border-[#19798d]/25"></div>
+      <div className="hidden lg:block absolute top-16 left-0 right-0 border-t-2 border-dashed border-[#056bfa]/25"></div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-6 relative z-10">
 
         {/* Item 1 */}
         <div className="text-center relative">
-          <div className="mx-auto w-28 h-28 rounded-full bg-[#19798d] border-[6px] border-white shadow-2xl flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-full bg-[#056bfa] border-[6px] border-white shadow-2xl flex items-center justify-center">
             <span className="text-4xl font-black text-white">01</span>
           </div>
 
@@ -633,7 +633,7 @@ export default function PartnerPageContent() {
 
           <div className="mt-8 flex justify-center">
             <svg
-              className="w-10 h-10 text-[#19798d]/25"
+              className="w-10 h-10 text-[#056bfa]/25"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -650,7 +650,7 @@ export default function PartnerPageContent() {
 
         {/* Item 2 */}
         <div className="text-center relative">
-          <div className="mx-auto w-28 h-28 rounded-full bg-[#19798d] border-[6px] border-white shadow-2xl flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-full bg-[#056bfa] border-[6px] border-white shadow-2xl flex items-center justify-center">
             <span className="text-4xl font-black text-white">02</span>
           </div>
 
@@ -664,7 +664,7 @@ export default function PartnerPageContent() {
 
           <div className="mt-8 flex justify-center">
             <svg
-              className="w-10 h-10 text-[#19798d]/25"
+              className="w-10 h-10 text-[#056bfa]/25"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -681,7 +681,7 @@ export default function PartnerPageContent() {
 
         {/* Item 3 */}
         <div className="text-center relative">
-          <div className="mx-auto w-28 h-28 rounded-full bg-[#19798d] border-[6px] border-white shadow-2xl flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-full bg-[#056bfa] border-[6px] border-white shadow-2xl flex items-center justify-center">
             <span className="text-4xl font-black text-white">03</span>
           </div>
 
@@ -695,7 +695,7 @@ export default function PartnerPageContent() {
 
           <div className="mt-8 flex justify-center">
             <svg
-              className="w-10 h-10 text-[#19798d]/25"
+              className="w-10 h-10 text-[#056bfa]/25"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -712,7 +712,7 @@ export default function PartnerPageContent() {
 
         {/* Item 4 */}
         <div className="text-center relative">
-          <div className="mx-auto w-28 h-28 rounded-full bg-[#19798d] border-[6px] border-white shadow-2xl flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-full bg-[#056bfa] border-[6px] border-white shadow-2xl flex items-center justify-center">
             <span className="text-4xl font-black text-white">04</span>
           </div>
 
@@ -726,7 +726,7 @@ export default function PartnerPageContent() {
 
           <div className="mt-8 flex justify-center">
             <svg
-              className="w-10 h-10 text-[#19798d]/25"
+              className="w-10 h-10 text-[#056bfa]/25"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -743,7 +743,7 @@ export default function PartnerPageContent() {
 
         {/* Item 5 */}
         <div className="text-center relative">
-          <div className="mx-auto w-28 h-28 rounded-full bg-[#19798d] border-[6px] border-white shadow-2xl flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-full bg-[#056bfa] border-[6px] border-white shadow-2xl flex items-center justify-center">
             <span className="text-4xl font-black text-white">05</span>
           </div>
 
@@ -757,7 +757,7 @@ export default function PartnerPageContent() {
 
           <div className="mt-8 flex justify-center">
             <svg
-              className="w-10 h-10 text-[#19798d]/25"
+              className="w-10 h-10 text-[#056bfa]/25"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -795,7 +795,7 @@ export default function PartnerPageContent() {
             <div className="animate-marquee-left">
               {[...MARQUEE_ROW_1, ...MARQUEE_ROW_1].map((name, i) => (
                 <div key={i} className="bg-white px-10 py-4 mx-3 rounded-full border border-[#f0f0f0] shadow-sm flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 bg-[#19798d] rounded-full" />
+                  <div className="w-2.5 h-2.5 bg-[#056bfa] rounded-full" />
                   <span className="text-black font-black text-lg tracking-tight">{name}</span>
                 </div>
               ))}
@@ -807,7 +807,7 @@ export default function PartnerPageContent() {
             <div className="animate-marquee-right">
               {[...MARQUEE_ROW_2, ...MARQUEE_ROW_2].map((name, i) => (
                 <div key={i} className="bg-white px-10 py-4 mx-3 rounded-full border border-[#f0f0f0] shadow-sm flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 bg-[#19798d] rounded-full" />
+                  <div className="w-2.5 h-2.5 bg-[#056bfa] rounded-full" />
                   <span className="text-black font-black text-lg tracking-tight">{name}</span>
                 </div>
               ))}
@@ -819,7 +819,7 @@ export default function PartnerPageContent() {
       {/* Section 7: Testimonials */}
       <section className="py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <span className="inline-block bg-[#19798d] text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
+          <span className="inline-block bg-[#056bfa] text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
             PARTNER STORIES
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-black mb-16">What Our Partners Say</h2>
@@ -829,7 +829,7 @@ export default function PartnerPageContent() {
               <motion.div 
                 key={i}
                 whileHover={{ y: -6 }}
-                className="bg-white border border-[#f0f0f0] rounded-[48px] p-10 shadow-sm relative overflow-hidden group hover:shadow-2xl hover:border-[#19798d] transition-all duration-300 flex flex-col text-left"
+                className="bg-white border border-[#f0f0f0] rounded-[48px] p-10 shadow-sm relative overflow-hidden group hover:shadow-2xl hover:border-[#056bfa] transition-all duration-300 flex flex-col text-left"
               >
                 <div className="absolute top-10 left-8 text-[#e8f6f8] font-black text-[12rem] leading-none opacity-20 pointer-events-none select-none">“</div>
                 
@@ -852,7 +852,7 @@ export default function PartnerPageContent() {
                   <div>
                     <p className="text-black font-black text-lg leading-none mb-1">{t.name}</p>
                     <p className="text-gray-500 font-bold text-xs uppercase tracking-widest mb-1">{t.role}</p>
-                    <p className="text-[#19798d] font-black text-xs uppercase tracking-widest">{t.store}</p>
+                    <p className="text-[#056bfa] font-black text-xs uppercase tracking-widest">{t.store}</p>
                   </div>
                 </div>
               </motion.div>
@@ -864,7 +864,7 @@ export default function PartnerPageContent() {
       {/* Section 8: Partnership Contact Form */}
       <section className="py-24 bg-white scroll-mt-24" ref={formRef}>
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <span className="inline-block bg-[#e8f6f8] text-[#19798d] px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
+          <span className="inline-block bg-[#e8f6f8] text-[#056bfa] px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
             START YOUR PARTNERSHIP
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Let's Grow Together</h2>
@@ -883,13 +883,13 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Full Name</label>
                       <div className="relative">
-                        <Users className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#19798d]" />
+                        <Users className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
                         <input 
                           type="text" 
                           placeholder="Your full name"
                           className={cn(
                             "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.fullName ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                            errors.fullName ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                           )}
                           value={formData.fullName}
                           onChange={(e) => setFormData({...formData, fullName: e.target.value})}
@@ -901,13 +901,13 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Business Email</label>
                       <div className="relative">
-                        <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#19798d]" />
+                        <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
                         <input 
                           type="email" 
                           placeholder="business@yourstore.com"
                           className={cn(
                             "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.email ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                            errors.email ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                           )}
                           value={formData.email}
                           onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -921,14 +921,14 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Phone Number</label>
                       <div className="relative">
-                        <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#19798d]" />
+                        <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
                         <input 
                           type="tel" 
                           placeholder="+91 00000 00000"
                           maxLength={10}
                           className={cn(
                             "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.phone ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                            errors.phone ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                           )}
                           value={formData.phone}
                           onChange={(e) => setFormData({...formData, phone: e.target.value.replace(/\D/g, '')})}
@@ -940,13 +940,13 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Company Name</label>
                       <div className="relative">
-                        <Store className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#19798d]" />
+                        <Store className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
                         <input 
                           type="text" 
                           placeholder="Your store or brand name"
                           className={cn(
                             "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.companyName ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                            errors.companyName ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                           )}
                           value={formData.companyName}
                           onChange={(e) => setFormData({...formData, companyName: e.target.value})}
@@ -960,13 +960,13 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Website URL</label>
                       <div className="relative">
-                        <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#19798d]" />
+                        <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
                         <input 
                           type="text" 
                           placeholder="https://yourstore.com"
                           className={cn(
                             "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.websiteUrl ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                            errors.websiteUrl ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                           )}
                           value={formData.websiteUrl}
                           onChange={(e) => setFormData({...formData, websiteUrl: e.target.value})}
@@ -978,7 +978,7 @@ export default function PartnerPageContent() {
                     <div className="space-y-2">
                       <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Monthly Website Traffic</label>
                       <select 
-                        className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10 transition-all bg-white"
+                        className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10 transition-all bg-white"
                         value={formData.traffic}
                         onChange={(e) => setFormData({...formData, traffic: e.target.value})}
                       >
@@ -1005,11 +1005,11 @@ export default function PartnerPageContent() {
                           className={cn(
                             "relative border-2 rounded-2xl p-6 cursor-pointer text-center transition-all duration-300 hover:shadow-lg",
                             selectedType === opt.id 
-                              ? "border-[#19798d] bg-[#e8f6f8] shadow-[#19798d]/10" 
+                              ? "border-[#056bfa] bg-[#e8f6f8] shadow-[#056bfa]/10" 
                               : "border-[#e0e0e0] bg-white"
                           )}
                         >
-                          <opt.icon className={cn("w-10 h-10 mx-auto mb-3 transition-colors", selectedType === opt.id ? "text-[#19798d]" : "text-gray-400")} />
+                          <opt.icon className={cn("w-10 h-10 mx-auto mb-3 transition-colors", selectedType === opt.id ? "text-[#056bfa]" : "text-gray-400")} />
                           <p className="text-black font-black text-sm mb-1">{opt.name}</p>
                           <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest leading-tight">{opt.desc}</p>
                         </div>
@@ -1028,8 +1028,8 @@ export default function PartnerPageContent() {
                           className={cn(
                             "px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest border-2 transition-all duration-300",
                             selectedCategories.includes(cat)
-                              ? "bg-[#19798d] border-[#19798d] text-white shadow-md"
-                              : "bg-white border-[#19798d] text-[#19798d] hover:bg-[#e8f6f8]"
+                              ? "bg-[#056bfa] border-[#056bfa] text-white shadow-md"
+                              : "bg-white border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
                           )}
                         >
                           {cat}
@@ -1046,7 +1046,7 @@ export default function PartnerPageContent() {
                       rows={5}
                       className={cn(
                         "w-full px-6 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all resize-none",
-                        errors.message ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#19798d] focus:ring-4 focus:ring-[#19798d]/10"
+                        errors.message ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
                       )}
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -1057,7 +1057,7 @@ export default function PartnerPageContent() {
                   <div className="space-y-2">
                     <label className="text-gray-700 font-black text-sm uppercase tracking-widest">How did you hear about us?</label>
                     <select 
-                      className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#19798d] bg-white"
+                      className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#056bfa] bg-white"
                       value={formData.source}
                       onChange={(e) => setFormData({...formData, source: e.target.value})}
                     >
@@ -1088,12 +1088,12 @@ export default function PartnerPageContent() {
                             }
                           }}
                         />
-                        <div className="w-6 h-6 border-2 border-[#19798d] rounded-md peer-checked:bg-[#19798d] transition-all flex items-center justify-center">
+                        <div className="w-6 h-6 border-2 border-[#056bfa] rounded-md peer-checked:bg-[#056bfa] transition-all flex items-center justify-center">
                           <CheckCircle className="w-4 h-4 text-white opacity-0 peer-checked:opacity-100 transition-opacity" />
                         </div>
                       </div>
                       <span className="text-sm text-gray-500 font-bold leading-relaxed">
-                        I agree to the <Link href="/terms-of-use" className="text-[#19798d] hover:underline">Terms of Use</Link> and <Link href="/privacy-policy" className="text-[#19798d] hover:underline">Privacy Policy</Link> and consent to being contacted by the Coupons Clouds partnerships team
+                        I agree to the <Link href="/terms-of-use" className="text-[#056bfa] hover:underline">Terms of Use</Link> and <Link href="/privacy-policy" className="text-[#056bfa] hover:underline">Privacy Policy</Link> and consent to being contacted by the Coupons Clouds partnerships team
                       </span>
                     </label>
                     {errors.agreed && <p className="text-red-500 text-[10px] font-black uppercase tracking-widest mt-1">{errors.agreed}</p>}
@@ -1102,7 +1102,7 @@ export default function PartnerPageContent() {
                   <Button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full h-18 bg-[#19798d] hover:bg-[#0f5a6b] text-white rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-xl transition-all active:scale-[0.98] disabled:opacity-70"
+                    className="w-full h-18 bg-[#056bfa] hover:bg-[#0451c4] text-white rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-xl transition-all active:scale-[0.98] disabled:opacity-70"
                   >
                     {isSubmitting ? (
                       <>
@@ -1131,11 +1131,11 @@ export default function PartnerPageContent() {
                 <p className="text-gray-500 font-bold text-lg mb-10 max-w-lg mx-auto">
                   Thank you! Our partnerships team will contact you within 48 hours on business days at your provided email address.
                 </p>
-                <p className="text-[#19798d] font-black text-lg mb-12">business@couponsclou.ds</p>
+                <p className="text-[#056bfa] font-black text-lg mb-12">business@couponsclou.ds</p>
                 
                 <button 
                   onClick={() => setIsSuccess(false)}
-                  className="text-gray-400 font-black text-sm uppercase tracking-widest hover:text-[#19798d] transition-colors"
+                  className="text-gray-400 font-black text-sm uppercase tracking-widest hover:text-[#056bfa] transition-colors"
                 >
                   Submit Another Request
                 </button>
@@ -1146,7 +1146,7 @@ export default function PartnerPageContent() {
       </section>
 
       {/* Section 9: Bottom CTA */}
-      <section className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] py-24 text-center">
+      <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-24 text-center">
         <div className="container mx-auto px-4 max-w-4xl relative overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white opacity-5 rounded-full -translate-y-1/2 pointer-events-none" />
           
@@ -1160,11 +1160,11 @@ export default function PartnerPageContent() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button 
                 onClick={scrollToForm}
-                className="w-full sm:w-auto px-16 py-8 bg-white text-[#19798d] rounded-full font-black text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all text-center"
+                className="w-full sm:w-auto px-16 py-8 bg-white text-[#056bfa] rounded-full font-black text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all text-center"
               >
                 Apply Now
               </Button>
-              <Link href="/contact" className="w-full sm:w-auto px-16 py-8 border-[3px] border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#19798d] transition-all text-center">
+              <Link href="/contact" className="w-full sm:w-auto px-16 py-8 border-[3px] border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#056bfa] transition-all text-center">
                 Contact Us First
               </Link>
             </div>

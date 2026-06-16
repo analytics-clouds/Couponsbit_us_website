@@ -26,11 +26,11 @@ export default function CareersContent() {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-[100px] pb-[120px] bg-gradient-to-br from-[#0f5a6b] via-[#19798d] to-[#1a9db5] overflow-hidden mt-[64px]">
+      <section className="relative w-full pt-[100px] pb-[120px] bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] overflow-hidden mt-[64px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -50,7 +50,7 @@ export default function CareersContent() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-8 animate-pulse"
           >
-            <span className="text-[#19798d] font-bold text-sm tracking-wide">✦ We're Building the Future of Savings</span>
+            <span className="text-[#056bfa] font-bold text-sm tracking-wide">✦ We're Building the Future of Savings</span>
           </motion.div>
 
           <motion.h1
@@ -78,7 +78,7 @@ export default function CareersContent() {
           >
             <a
               href="#open-positions"
-              className="inline-flex items-center gap-2 bg-white text-[#19798d] px-10 py-4 rounded-full font-black text-base shadow-2xl hover:scale-105 transition-all active:scale-95"
+              className="inline-flex items-center gap-2 bg-white text-[#056bfa] px-10 py-4 rounded-full font-black text-base shadow-2xl hover:scale-105 transition-all active:scale-95"
             >
               View Open Positions <ArrowRight className="w-4 h-4" />
             </a>
@@ -97,7 +97,7 @@ export default function CareersContent() {
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 py-4 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">Careers</span>
           </nav>
@@ -108,7 +108,7 @@ export default function CareersContent() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONSBIT</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONSBIT</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Why Work With Us</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">Be part of a passionate, remote-friendly team on a mission to help millions of shoppers save money</p>
           </div>
@@ -119,13 +119,13 @@ export default function CareersContent() {
                 icon: Globe,
                 title: "Remote First",
                 desc: "Work from anywhere in the world. We are a fully distributed team that believes great work can happen from anywhere.",
-                bg: "bg-[#19798d]",
+                bg: "bg-[#056bfa]",
               },
               {
                 icon: TrendingUp,
                 title: "Fast Growing",
                 desc: "Be part of a rapidly scaling platform. We are growing fast and there is real ownership and impact at every level.",
-                bg: "bg-[#0f5a6b]",
+                bg: "bg-[#0451c4]",
               },
               {
                 icon: Heart,
@@ -143,7 +143,7 @@ export default function CareersContent() {
               <motion.div
                 key={i}
                 whileHover={{ y: -8 }}
-                className="bg-white p-10 rounded-[40px] border border-[#f0f0f0] flex flex-col group transition-all duration-300 shadow-sm hover:shadow-xl hover:border-[#19798d]"
+                className="bg-white p-10 rounded-[40px] border border-[#f0f0f0] flex flex-col group transition-all duration-300 shadow-sm hover:shadow-xl hover:border-[#056bfa]"
               >
                 <div className={cn("w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform", card.bg)}>
                   <card.icon className="w-8 h-8 text-white" />
@@ -160,7 +160,7 @@ export default function CareersContent() {
       <section id="open-positions" className="py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">JOIN US</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">JOIN US</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Open Positions</h2>
             <p className="text-gray-500 text-lg">We are always looking for great people to join our growing team</p>
           </div>
@@ -172,7 +172,7 @@ export default function CareersContent() {
             className="bg-white rounded-[48px] border border-[#f0f0f0] shadow-sm p-16 flex flex-col items-center text-center"
           >
             <div className="w-20 h-20 bg-[#e8f6f8] rounded-full flex items-center justify-center mb-8">
-              <Briefcase className="w-10 h-10 text-[#19798d]" />
+              <Briefcase className="w-10 h-10 text-[#056bfa]" />
             </div>
             <h3 className="text-2xl font-black text-black mb-4">
               No open positions right now — but we're always growing!
@@ -182,7 +182,7 @@ export default function CareersContent() {
             </p>
             <a
               href="mailto:careers@couponsbit.us"
-              className="inline-flex items-center gap-3 bg-[#19798d] hover:bg-[#0f5a6b] text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all active:scale-95"
+              className="inline-flex items-center gap-3 bg-[#056bfa] hover:bg-[#0451c4] text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all active:scale-95"
             >
               <Mail className="w-4 h-4" />
               Send Us Your CV
@@ -209,7 +209,7 @@ export default function CareersContent() {
 
             {/* Right: Culture text */}
             <div className="w-full lg:w-1/2">
-              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR CULTURE</span>
+              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR CULTURE</span>
               <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">
                 A Team That Cares About What It Builds
               </h2>
@@ -246,7 +246,7 @@ export default function CareersContent() {
       {/* Section 6: Stay Updated */}
       <section className="py-24 bg-[#e8f6f8]">
         <div className="container mx-auto px-4 max-w-2xl text-center">
-          <span className="inline-block px-4 py-1.5 bg-white text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6 shadow-sm">STAY IN THE LOOP</span>
+          <span className="inline-block px-4 py-1.5 bg-white text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6 shadow-sm">STAY IN THE LOOP</span>
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Get Notified When We Hire</h2>
           <p className="text-gray-600 text-lg mb-12 leading-relaxed">
             Leave your email and we will reach out as soon as a role that fits your skills opens up.
@@ -258,9 +258,9 @@ export default function CareersContent() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
-              className="w-full h-14 px-6 rounded-full border-2 border-[#19798d]/20 bg-white outline-none focus:border-[#19798d] transition-all font-bold text-sm text-black placeholder:text-gray-400"
+              className="w-full h-14 px-6 rounded-full border-2 border-[#056bfa]/20 bg-white outline-none focus:border-[#056bfa] transition-all font-bold text-sm text-black placeholder:text-gray-400"
             />
-            <Button className="w-full sm:w-auto h-14 bg-[#19798d] hover:bg-[#0f5a6b] text-white px-8 rounded-full font-black text-sm uppercase tracking-widest shadow-xl transition-all active:scale-95 shrink-0 flex items-center gap-2">
+            <Button className="w-full sm:w-auto h-14 bg-[#056bfa] hover:bg-[#0451c4] text-white px-8 rounded-full font-black text-sm uppercase tracking-widest shadow-xl transition-all active:scale-95 shrink-0 flex items-center gap-2">
               <Send className="w-4 h-4" />
               Notify Me
             </Button>
@@ -273,7 +273,7 @@ export default function CareersContent() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] py-24 text-center text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-24 text-center text-white relative overflow-hidden">
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#e8f6f8]/5 rounded-full blur-3xl animate-pulse delay-700" />
 
@@ -292,13 +292,13 @@ export default function CareersContent() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
               href="mailto:careers@couponsbit.us"
-              className="w-full sm:w-auto px-12 py-6 bg-white text-[#19798d] rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all text-center"
+              className="w-full sm:w-auto px-12 py-6 bg-white text-[#056bfa] rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all text-center"
             >
               Send Your CV
             </a>
             <Link
               href="/about"
-              className="w-full sm:w-auto px-12 py-6 border-2 border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#19798d] transition-all text-center"
+              className="w-full sm:w-auto px-12 py-6 border-2 border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#056bfa] transition-all text-center"
             >
               About Us
             </Link>

@@ -79,11 +79,11 @@ const CountUp = ({ end, duration = 2000, suffix = "" }: { end: string, duration?
 
 export default function AboutUsContent() {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
 
       {/* Section 1: Hero Section */}
-      <section className="relative w-full pt-[100px] pb-[100px] md:pt-[100px] md:pb-[100px] bg-gradient-to-br from-[#0f5a6b] via-[#19798d] to-[#1a9db5] overflow-hidden mt-[64px]">
+      <section className="relative w-full pt-[100px] pb-[100px] md:pt-[100px] md:pb-[100px] bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] overflow-hidden mt-[64px]">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div 
@@ -105,7 +105,7 @@ export default function AboutUsContent() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-6 py-2 bg-white rounded-full shadow-md mb-8 animate-pulse"
           >
-            <span className="text-[#19798d] font-bold text-sm tracking-wide">The Most Trusted Coupon Platform</span>
+            <span className="text-[#056bfa] font-bold text-sm tracking-wide">The Most Trusted Coupon Platform</span>
           </motion.div>
 
           <motion.h1 
@@ -143,8 +143,8 @@ export default function AboutUsContent() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-6 md:p-8 rounded-3xl shadow-2xl flex flex-col items-center justify-center relative group overflow-hidden"
               >
-                <stat.icon className="absolute top-4 right-4 w-5 h-5 text-[#19798d] opacity-40 group-hover:opacity-100 group-hover:scale-125 transition-all" />
-                <span className="text-[#19798d] font-black text-2xl md:text-4xl mb-1">
+                <stat.icon className="absolute top-4 right-4 w-5 h-5 text-[#056bfa] opacity-40 group-hover:opacity-100 group-hover:scale-125 transition-all" />
+                <span className="text-[#056bfa] font-black text-2xl md:text-4xl mb-1">
                   <CountUp end={stat.value} />
                 </span>
                 <span className="text-gray-500 text-xs md:text-sm font-bold uppercase tracking-widest">{stat.label.split(' ').slice(1).join(' ')}</span>
@@ -165,7 +165,7 @@ export default function AboutUsContent() {
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 py-4 max-w-7xl">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#19798d] font-medium hover:underline">Home</Link>
+            <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-black font-extrabold">About Us</span>
           </nav>
@@ -188,7 +188,7 @@ export default function AboutUsContent() {
 
             {/* Right Column: Story Text */}
             <div className="w-full lg:w-1/2">
-              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
+              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
               <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">We Were Tired of Fake Coupons Too - So We Built Couponsbit</h2>
               
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
@@ -211,7 +211,7 @@ export default function AboutUsContent() {
       <section className="py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHAT DRIVES US</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHAT DRIVES US</span>
             <h2 className="text-4xl md:text-5xl font-black text-black">Our Mission & Vision</h2>
           </div>
 
@@ -221,11 +221,11 @@ export default function AboutUsContent() {
               whileHover={{ y: -10 }}
               className="bg-white p-10 rounded-[48px] border border-[#f0f0f0] shadow-sm flex flex-col items-center group transition-all duration-500"
             >
-              <div className="w-20 h-20 bg-[#19798d] rounded-full flex items-center justify-center shadow-xl mb-8 group-hover:scale-110 transition-transform">
+              <div className="w-20 h-20 bg-[#056bfa] rounded-full flex items-center justify-center shadow-xl mb-8 group-hover:scale-110 transition-transform">
                 <Target className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-black text-black mb-4">Our Mission</h3>
-              <div className="w-10 h-1.5 bg-[#19798d] rounded-full mb-8" />
+              <div className="w-10 h-1.5 bg-[#056bfa] rounded-full mb-8" />
               <p className="text-gray-600 text-center text-lg leading-relaxed mb-6">
                 Our mission is to help shoppers worldwide make informed purchasing decisions while saving money through trusted discount codes and online deals.
 
@@ -242,11 +242,11 @@ export default function AboutUsContent() {
               whileHover={{ y: -10 }}
               className="bg-white p-10 rounded-[48px] border border-[#f0f0f0] shadow-sm flex flex-col items-center group transition-all duration-500"
             >
-              <div className="w-20 h-20 bg-[#0f5a6b] rounded-full flex items-center justify-center shadow-xl mb-8 group-hover:scale-110 transition-transform">
+              <div className="w-20 h-20 bg-[#0451c4] rounded-full flex items-center justify-center shadow-xl mb-8 group-hover:scale-110 transition-transform">
                 <Eye className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-black text-black mb-4">Our Vision</h3>
-              <div className="w-10 h-1.5 bg-[#0f5a6b] rounded-full mb-8" />
+              <div className="w-10 h-1.5 bg-[#0451c4] rounded-full mb-8" />
               <p className="text-gray-600 text-center text-lg leading-relaxed mb-6">
                 Couponsbit envisions becoming a trusted global destination for online shopping deals, promo codes, and digital savings opportunities.
               </p>
@@ -264,7 +264,7 @@ export default function AboutUsContent() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONS CLOUDS</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONS CLOUDS</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-6">What Makes Couponsbit Different?</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">We are not just another coupon site — here is what sets us apart</p>
           </div>
@@ -274,13 +274,13 @@ export default function AboutUsContent() {
               { 
                 title: "Verified Deals You Can Actually Use", 
                 icon: BadgeCheck, 
-                bg: "bg-[#19798d]", 
+                bg: "bg-[#056bfa]", 
                 desc: "We manually review and update our promo codes daily so you spend less time testing expired coupons and more time saving money." 
               },
               { 
                 title: "Savings From Brands People Love", 
                 icon: RefreshCw, 
-                bg: "bg-[#0f5a6b]", 
+                bg: "bg-[#0451c4]", 
                 desc: "From fashion and tech to travel and food delivery, Couponsbit brings together deals from popular U.S. and international brands in one place." 
               },
               { 
@@ -318,7 +318,7 @@ export default function AboutUsContent() {
                 </div>
                 <h3 className="text-xl font-black text-black mb-4">{feature.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-8">{feature.desc}</p>
-                <div className="mt-auto flex items-center gap-2 text-[#19798d] text-xs font-black uppercase tracking-widest">
+                <div className="mt-auto flex items-center gap-2 text-[#056bfa] text-xs font-black uppercase tracking-widest">
                   Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </motion.div>
@@ -331,13 +331,13 @@ export default function AboutUsContent() {
       <section className="py-24 bg-[#e8f6f8]">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-white text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6 shadow-sm">HOW IT WORKS</span>
+            <span className="inline-block px-4 py-1.5 bg-white text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6 shadow-sm">HOW IT WORKS</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Save Money in 3 Simple Steps</h2>
           </div>
 
           <div className="relative flex flex-col md:flex-row items-start justify-center gap-12 md:gap-0 max-w-5xl mx-auto">
             {/* Desktop Connector Line */}
-            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-px border-t-2 border-dashed border-[#19798d]/30 -z-0" />
+            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-px border-t-2 border-dashed border-[#056bfa]/30 -z-0" />
 
             {[
               { 
@@ -360,18 +360,18 @@ export default function AboutUsContent() {
               }
             ].map((step, i) => (
               <div key={i} className="flex-1 flex flex-col items-center relative z-10 w-full">
-                <div className="w-20 h-20 bg-[#19798d] rounded-full flex items-center justify-center text-white font-black text-4xl shadow-xl mb-8 border-8 border-white">
+                <div className="w-20 h-20 bg-[#056bfa] rounded-full flex items-center justify-center text-white font-black text-4xl shadow-xl mb-8 border-8 border-white">
                   {step.step}
                 </div>
                 <h3 className="text-2xl font-black text-black mb-4">{step.title}</h3>
                 <p className="text-gray-600 text-sm text-center max-w-[240px] leading-relaxed mb-8">{step.desc}</p>
-                <step.icon className="w-12 h-12 text-[#19798d] opacity-20" />
+                <step.icon className="w-12 h-12 text-[#056bfa] opacity-20" />
               </div>
             ))}
           </div>
 
           <div className="text-center mt-20">
-            <Button asChild className="bg-[#19798d] hover:bg-[#0f5a6b] text-white px-12 py-7 rounded-full text-xl font-black shadow-xl hover:shadow-2xl transition-all active:scale-95">
+            <Button asChild className="bg-[#056bfa] hover:bg-[#0451c4] text-white px-12 py-7 rounded-full text-xl font-black shadow-xl hover:shadow-2xl transition-all active:scale-95">
               <Link href="/stores">Start Saving Now →</Link>
             </Button>
           </div>
@@ -382,7 +382,7 @@ export default function AboutUsContent() {
       <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">BY THE NUMBERS</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">BY THE NUMBERS</span>
             <h2 className="text-4xl md:text-5xl font-black text-black">Coupons Clouds in Numbers</h2>
           </div>
 
@@ -399,13 +399,13 @@ export default function AboutUsContent() {
             ].map((item, i) => (
               <motion.div 
                 key={i}
-                whileHover={{ y: -8, scale: 1.03, border: "2px solid #19798d" }}
+                whileHover={{ y: -8, scale: 1.03, border: "2px solid #056bfa" }}
                 className="bg-white p-8 md:p-10 rounded-[40px] border border-[#f0f0f0] text-center shadow-sm group transition-all duration-300 flex flex-col items-center"
               >
                 <div className="w-14 h-14 bg-[#e8f6f8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-8 h-8 text-[#19798d]" />
+                  <item.icon className="w-8 h-8 text-[#056bfa]" />
                 </div>
-                <div className="text-[#19798d] font-black text-4xl md:text-5xl mb-2">
+                <div className="text-[#056bfa] font-black text-4xl md:text-5xl mb-2">
                   <CountUp end={item.value} />
                 </div>
                 <p className="text-black font-extrabold text-sm mb-1">{item.label}</p>
@@ -420,7 +420,7 @@ export default function AboutUsContent() {
       <section className="py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR TEAM</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR TEAM</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-4">The People Behind Coupons Clouds</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">A passionate team of deal hunters, developers and designers working to save India money</p>
           </div>
@@ -429,7 +429,7 @@ export default function AboutUsContent() {
             {[
               { 
                 name: "Rahul Kumar", role: "Founder & CEO", initials: "RK", 
-                grad: "from-[#19798d] to-[#0f5a6b]", bio: "Deal hunter by passion, entrepreneur by choice. Building India's best coupon platform." 
+                grad: "from-[#056bfa] to-[#0451c4]", bio: "Deal hunter by passion, entrepreneur by choice. Building India's best coupon platform." 
               },
               { 
                 name: "Priya Sharma", role: "Head of Deals", initials: "PS", 
@@ -446,18 +446,18 @@ export default function AboutUsContent() {
             ].map((member, i) => (
               <motion.div 
                 key={i}
-                whileHover={{ y: -10, border: "2px solid #19798d" }}
+                whileHover={{ y: -10, border: "2px solid #056bfa" }}
                 className="bg-white p-8 rounded-[48px] text-center border border-[#f0f0f0] shadow-sm flex flex-col items-center group transition-all duration-500"
               >
                 <div className={cn("w-24 h-24 rounded-full flex items-center justify-center text-white text-3xl font-black shadow-lg mb-6 group-hover:scale-110 transition-transform bg-gradient-to-br", member.grad)}>
                   {member.initials}
                 </div>
                 <h3 className="text-xl font-black text-black mb-1">{member.name}</h3>
-                <p className="text-[#19798d] font-bold text-sm mb-4 uppercase tracking-tighter">{member.role}</p>
+                <p className="text-[#056bfa] font-bold text-sm mb-4 uppercase tracking-tighter">{member.role}</p>
                 <p className="text-gray-500 text-xs leading-relaxed max-w-[200px] mb-8">{member.bio}</p>
                 <div className="flex gap-3 justify-center">
                    {[Linkedin, Twitter].map((Icon, idx) => (
-                     <button key={idx} className="w-10 h-10 rounded-full border border-[#f0f0f0] flex items-center justify-center text-gray-400 hover:border-[#19798d] hover:text-[#19798d] transition-all">
+                     <button key={idx} className="w-10 h-10 rounded-full border border-[#f0f0f0] flex items-center justify-center text-gray-400 hover:border-[#056bfa] hover:text-[#056bfa] transition-all">
                        <Icon className="w-4 h-4" />
                      </button>
                    ))}
@@ -472,14 +472,14 @@ export default function AboutUsContent() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHAT PEOPLE SAY</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHAT PEOPLE SAY</span>
             <h2 className="text-4xl md:text-5xl font-black text-black">Loved by 500,000+ Shoppers</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { 
-                name: "Amit Kumar", role: "Shopaholic from Delhi", initials: "AK", grad: "from-[#19798d] to-[#0f5a6b]",
+                name: "Amit Kumar", role: "Shopaholic from Delhi", initials: "AK", grad: "from-[#056bfa] to-[#0451c4]",
                 quote: "Coupons Clouds saved me over ₹8,000 last month alone! Every coupon I tried actually worked. I will never shop online without checking here first." 
               },
               { 
@@ -493,7 +493,7 @@ export default function AboutUsContent() {
             ].map((ts, i) => (
               <motion.div 
                 key={i}
-                whileHover={{ y: -10, border: "2px solid #19798d" }}
+                whileHover={{ y: -10, border: "2px solid #056bfa" }}
                 className="bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm relative group transition-all duration-300"
               >
                 <div className="absolute top-6 left-6 text-[#e8f6f8] -z-0">
@@ -546,8 +546,8 @@ export default function AboutUsContent() {
               "MakeMyTrip", "Goibibo", "Zomato", "Swiggy", "Samsung", "Dell", "HP", "Lenovo", 
               "BookMyShow", "Uber", "Redbus", "Healthkart"
             ].map((store, i) => (
-              <div key={i} className="inline-flex items-center gap-3 bg-white px-8 py-4 rounded-full shadow-sm border border-[#f0f0f0] group-hover:border-[#19798d] transition-all shrink-0">
-                <div className="w-2 h-2 rounded-full bg-[#19798d]" />
+              <div key={i} className="inline-flex items-center gap-3 bg-white px-8 py-4 rounded-full shadow-sm border border-[#f0f0f0] group-hover:border-[#056bfa] transition-all shrink-0">
+                <div className="w-2 h-2 rounded-full bg-[#056bfa]" />
                 <span className="text-black font-black text-base uppercase tracking-tighter">{store}</span>
               </div>
             ))}
@@ -557,8 +557,8 @@ export default function AboutUsContent() {
               "MakeMyTrip", "Goibibo", "Zomato", "Swiggy", "Samsung", "Dell", "HP", "Lenovo", 
               "BookMyShow", "Uber", "Redbus", "Healthkart"
             ].map((store, i) => (
-              <div key={`dup-${i}`} className="inline-flex items-center gap-3 bg-white px-8 py-4 rounded-full shadow-sm border border-[#f0f0f0] group-hover:border-[#19798d] transition-all shrink-0">
-                <div className="w-2 h-2 rounded-full bg-[#19798d]" />
+              <div key={`dup-${i}`} className="inline-flex items-center gap-3 bg-white px-8 py-4 rounded-full shadow-sm border border-[#f0f0f0] group-hover:border-[#056bfa] transition-all shrink-0">
+                <div className="w-2 h-2 rounded-full bg-[#056bfa]" />
                 <span className="text-black font-black text-base uppercase tracking-tighter">{store}</span>
               </div>
             ))}
@@ -567,7 +567,7 @@ export default function AboutUsContent() {
       </section>
 
       {/* Section 11: Bottom CTA */}
-      <section className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] py-24 text-center text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-24 text-center text-white relative overflow-hidden">
         {/* Animated Background blobs */}
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#e8f6f8]/5 rounded-full blur-3xl animate-pulse delay-700" />
@@ -580,10 +580,10 @@ export default function AboutUsContent() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link href="/deals" className="w-full sm:w-auto px-12 py-6 bg-white text-[#19798d] rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all text-center">
+            <Link href="/deals" className="w-full sm:w-auto px-12 py-6 bg-white text-[#056bfa] rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all text-center">
               Browse All Deals
             </Link>
-            <Link href="/contact" className="w-full sm:w-auto px-12 py-6 border-2 border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#19798d] transition-all text-center">
+            <Link href="/contact" className="w-full sm:w-auto px-12 py-6 border-2 border-white text-white rounded-full font-black text-xl hover:bg-white hover:text-[#056bfa] transition-all text-center">
               Contact Us
             </Link>
           </div>

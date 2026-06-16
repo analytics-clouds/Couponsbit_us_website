@@ -71,14 +71,14 @@ const Hero = () => {
             onClick={prevSlide}
             className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronLeft className="w-5 h-5 text-[#19798d]" />
+            <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
           </button>
 
           <button
             onClick={nextSlide}
             className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronRight className="w-5 h-5 text-[#19798d]" />
+            <ChevronRight className="w-5 h-5 text-[#056bfa]" />
           </button>
 
           <div
@@ -109,7 +109,7 @@ const Hero = () => {
               onClick={() => setCurrentIndex(i)}
               className={cn(
                 "h-2 rounded-full transition-all duration-300",
-                currentIndex === i ? "w-6 bg-[#19798d]" : "w-2 bg-[#e0e0e0]"
+                currentIndex === i ? "w-6 bg-[#056bfa]" : "w-2 bg-[#e0e0e0]"
               )}
             />
           ))}
@@ -143,7 +143,7 @@ const TopBrands = () => {
         <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
            Top Brands
         </h2>
-        <Link href="/stores" className="text-[#19798d] font-bold text-sm hover:underline flex items-center gap-1 group">
+        <Link href="/stores" className="text-[#056bfa] font-bold text-sm hover:underline flex items-center gap-1 group">
           View All Stores <span className="group-hover:translate-x-1 transition-transform">→</span>
         </Link>
       </div>
@@ -153,13 +153,13 @@ const TopBrands = () => {
           onClick={() => scroll(-1)}
           className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronLeft className="w-5 h-5 text-[#19798d]" />
+          <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
         </button>
         <button
           onClick={() => scroll(1)}
           className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronRight className="w-5 h-5 text-[#19798d]" />
+          <ChevronRight className="w-5 h-5 text-[#056bfa]" />
         </button>
 
         <div
@@ -171,7 +171,7 @@ const TopBrands = () => {
             <Link
               key={i}
               href={store.href}
-              className="shrink-0 w-[175px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-5 flex flex-col items-center text-center hover:border-[#19798d] hover:shadow-md transition-all duration-300 group"
+              className="shrink-0 w-[175px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-5 flex flex-col items-center text-center hover:border-[#056bfa] hover:shadow-md transition-all duration-300 group"
             >
               <div className="h-14 flex items-center justify-center mb-3">
                 <img
@@ -181,8 +181,8 @@ const TopBrands = () => {
                 />
               </div>
               <p className="text-black font-extrabold text-sm mb-1">{store.name}</p>
-              <p className="text-[#19798d] font-black text-[10px] uppercase tracking-wide mb-3">{store.discount}</p>
-              <span className="text-[#19798d] font-black text-[10px] uppercase tracking-tighter group-hover:underline">
+              <p className="text-[#056bfa] font-black text-[10px] uppercase tracking-wide mb-3">{store.discount}</p>
+              <span className="text-[#056bfa] font-black text-[10px] uppercase tracking-tighter group-hover:underline">
                 View Coupons →
               </span>
             </Link>
@@ -293,7 +293,7 @@ export default function HomePageContent() {
           <CheckCircle className="w-5 h-5 text-[#22c55e]" />
           <div>
             <p className="text-black font-extrabold text-sm">Code Copied!</p>
-            <p className="text-[#19798d] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
+            <p className="text-[#056bfa] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
           </div>
         </div>
       )}
@@ -325,8 +325,8 @@ export default function HomePageContent() {
           "
         >
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#19798d]/10 flex items-center justify-center shrink-0">
-              <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#19798d]" />
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#056bfa]/10 flex items-center justify-center shrink-0">
+              <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#056bfa]" />
             </div>
 
             <div className="text-center sm:text-left">
@@ -351,7 +351,7 @@ export default function HomePageContent() {
             <h2 className="text-black font-extrabold text-2xl md:text-3xl tracking-tight">
               Shop Beyond the Price Tag.
             </h2>
-            <div className="w-16 h-[3px] bg-[#19798D] rounded-full mx-auto mt-3"></div>
+            <div className="w-16 h-[3px] bg-[#056bfa] rounded-full mx-auto mt-3"></div>
           </div>
         </section>
 
@@ -365,7 +365,7 @@ export default function HomePageContent() {
               <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
                Shop by Categories
               </h2>
-              <Link href="/categories" className="text-[#19798d] font-bold text-sm hover:underline">
+              <Link href="/categories" className="text-[#056bfa] font-bold text-sm hover:underline">
                 View All Categories →
               </Link>
             </div>
@@ -390,7 +390,7 @@ export default function HomePageContent() {
                   image: "/travel-store.webp",
                   coupons: "420+",
                   stores: "20+",
-                  accent: "#19798d",
+                  accent: "#056bfa",
                   featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
                   href: "/categories/travel"
                 },
@@ -429,7 +429,7 @@ export default function HomePageContent() {
 
                   {/* Body */}
                   <div className="p-6">
-                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#19798d] transition-colors">
+                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#056bfa] transition-colors">
                       {cat.name}
                     </h3>
                     <p className="text-gray-500 text-sm font-medium mb-4 leading-relaxed">
@@ -443,7 +443,7 @@ export default function HomePageContent() {
                       ))}
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#19798d] font-black text-sm">View All Coupons</span>
+                      <span className="text-[#056bfa] font-black text-sm">View All Coupons</span>
                       <div className="w-8 h-8 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-all duration-300" style={{ backgroundColor: `${cat.accent}15` }}>
                         <ArrowRight className="w-4 h-4" style={{ color: cat.accent }} />
                       </div>
@@ -454,7 +454,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#19798d] text-[#19798d] bg-white rounded-full font-black hover:bg-[#19798d] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
+              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
                 <LayoutGrid className="w-4 h-4" />
                 View More Categories
               </Link>
@@ -474,7 +474,7 @@ export default function HomePageContent() {
                 <h2 className="text-black font-extrabold text-2xl"> Featured & Exclusive Coupons</h2>
                 <p className="text-gray-500 text-sm mt-0.5">Hand-picked verified deals updated daily</p>
               </div>
-              <Link href="/deals" className="text-[#19798d] font-bold text-sm hover:underline">
+              <Link href="/deals" className="text-[#056bfa] font-bold text-sm hover:underline">
                 View All Deals →
               </Link>
             </div>
@@ -526,25 +526,25 @@ export default function HomePageContent() {
                         <span className="bg-red-50 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                         <span className="bg-green-50 text-green-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified Deal</span>
                       </div>
-                      <p className="text-[#19798d] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
+                      <p className="text-[#056bfa] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
                       <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                       <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                       <button
                         onClick={() => setOpenFeatured(openFeatured === i ? null : i)}
-                        className="mt-2 text-[#19798d] font-bold text-[13px] flex items-center gap-1"
+                        className="mt-2 text-[#056bfa] font-bold text-[13px] flex items-center gap-1"
                       >
                         View Details <ChevronRight className={cn("w-3.5 h-3.5 transition-transform", openFeatured === i ? "rotate-90" : "")} />
                       </button>
                       {openFeatured === i && (
                         <ul className="mt-2 space-y-1 text-gray-600 text-[12px]">
                           {c.points.map((p, pi) => (
-                            <li key={pi} className="flex gap-1"><span className="text-[#19798d]">•</span>{p}</li>
+                            <li key={pi} className="flex gap-1"><span className="text-[#056bfa]">•</span>{p}</li>
                           ))}
                         </ul>
                       )}
                     </div>
                     <Link href={c.href}>
-                      <button className="mt-3 w-full bg-[#19798d] hover:bg-[#0f5a6b] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
+                      <button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
                     </Link>
                   </div>
                 </div>
@@ -554,7 +554,7 @@ export default function HomePageContent() {
         </section>
 
         {/* Smarter Savings CTA Banner */}
-        <section className="bg-gradient-to-br from-[#0f5a6b] to-[#19798d] py-24 md:py-14">
+        <section className="bg-gradient-to-br from-[#0451c4] to-[#056bfa] py-24 md:py-14">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-white font-black text-3xl md:text-5xl leading-tight mb-6">
               Smarter Savings Start Here.
@@ -562,7 +562,7 @@ export default function HomePageContent() {
             <p className="text-white/80 text-base md:text-lg leading-relaxed mb-10">
               Discover verified discounts, exclusive offers, and money-saving deals from your favorite brands. Whether you're shopping for travel, fashion, electronics, software, entertainment, or mobile services, Couponsbit helps you find better deals and save more on every purchase.
             </p>
-            <Link href="/deals" className="inline-flex items-center gap-2 bg-white text-[#19798d] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <Link href="/deals" className="inline-flex items-center gap-2 bg-white text-[#056bfa] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
               Browse Deals <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -584,7 +584,7 @@ export default function HomePageContent() {
 
             {/* Right Column: Story Text */}
             <div className="w-full lg:w-1/2">
-              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#19798d] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
+              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
               <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">Save More on the Brands You Love</h2>
               
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
@@ -621,7 +621,7 @@ export default function HomePageContent() {
                       className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                     >
                       <span className="font-black text-black text-base md:text-lg">{faq.q}</span>
-                      <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#19798d]" : "bg-[#f0f0f0]")}>
+                      <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#056bfa]" : "bg-[#f0f0f0]")}>
                         {openFaqIndex === i ? <Minus className="w-4 h-4 text-white" /> : <Plus className="w-4 h-4 text-gray-500" />}
                       </div>
                     </button>
@@ -645,7 +645,7 @@ export default function HomePageContent() {
 
             {/* Right: Support Card */}
             <div className="bg-white rounded-3xl border border-[#f0f0f0] shadow-sm p-8 h-fit lg:sticky lg:top-28">
-              <div className="w-12 h-12 rounded-2xl bg-[#19798d] flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-[#056bfa] flex items-center justify-center mb-6">
                 <MessageCircle className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-black text-black mb-3">Still have questions?</h3>
@@ -654,7 +654,7 @@ export default function HomePageContent() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex w-full items-center justify-center gap-2 bg-[#19798D] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
+                className="inline-flex w-full items-center justify-center gap-2 bg-[#056bfa] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
               >
                 Contact Support
               </Link>
@@ -681,7 +681,7 @@ export default function HomePageContent() {
                 { kw: "coupon code discount", date: "May 10, 2026", read: "5 min read", title: "How to Stack Coupons and Bank Offers for Maximum Savings", desc: "Did you know you can combine multiple deals for even bigger discounts? This guide explains how.", href: "/blog" },
                 { kw: "fashion sale clothing", date: "May 8, 2026", read: "7 min read", title: "Myntra Grand Sale 2026 — Complete Guide to Getting the Best Deals", desc: "Myntra's biggest sale of the year is here. Here is your complete guide to saving the most money.", href: "/blog" }
               ].map((post, i) => (
-                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#19798d] hover:-translate-y-1.5 transition-all duration-300">
+                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1.5 transition-all duration-300">
                   <div className="w-full sm:w-[180px] lg:w-full h-48 sm:h-auto lg:h-44 shrink-0 overflow-hidden">
                     <img
                       src={`https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=300&h=200&sig=${i}`}
@@ -699,10 +699,10 @@ export default function HomePageContent() {
                           <span>{post.read}</span>
                         </div>
                       </div>
-                      <h3 className="text-[#19798d] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0f5a6b] transition-colors">{post.title}</h3>
+                      <h3 className="text-[#056bfa] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
                       <p className="text-gray-500 text-xs mt-2 line-clamp-2 leading-relaxed">{post.desc}</p>
                     </div>
-                    <div className="flex items-center gap-2 text-[#19798d] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
+                    <div className="flex items-center gap-2 text-[#056bfa] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
                       READ MORE <ArrowRight className="w-3 h-3" />
                     </div>
                   </div>
@@ -711,7 +711,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#19798d] text-[#19798d] bg-white rounded-full font-black hover:bg-[#19798d] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
+              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
                 <BookOpen className="w-4 h-4" />
                 View All Articles →
               </Link>

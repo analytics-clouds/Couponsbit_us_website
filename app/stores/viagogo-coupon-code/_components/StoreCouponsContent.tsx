@@ -171,7 +171,7 @@ export default function ViaggogoCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Toast Notification */}
@@ -194,9 +194,9 @@ export default function ViaggogoCouponsContent() {
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
-              <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+              <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
-              <Link href="/stores" className="text-[#19798d] hover:underline">Stores</Link>
+              <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
               <span className="text-black font-extrabold">Viagogo</span>
             </nav>
@@ -237,7 +237,7 @@ export default function ViaggogoCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#19798d]" />
+                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
                          <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
@@ -296,7 +296,7 @@ export default function ViaggogoCouponsContent() {
                 { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 justify-center md:border-r last:border-0 border-[#e0e0e0] px-4">
-                  <item.icon className="w-6 h-6 text-[#19798d] shrink-0" />
+                  <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
                     <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
@@ -327,7 +327,7 @@ export default function ViaggogoCouponsContent() {
                           onClick={() => setActiveTab(tab.split(' ')[0] as any)}
                           className={cn(
                             "px-5 py-2.5 rounded-full text-sm font-black transition-all whitespace-nowrap active:scale-95",
-                            activeTab === tab.split(' ')[0] ? "bg-[#19798d] text-white shadow-lg" : "border-2 border-[#19798d] text-[#19798d] hover:bg-[#e8f6f8]"
+                            activeTab === tab.split(' ')[0] ? "bg-[#056bfa] text-white shadow-lg" : "border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
                           )}
                         >
                           {tab}
@@ -336,7 +336,7 @@ export default function ViaggogoCouponsContent() {
                    </div>
                    <div className="flex items-center gap-3">
                      <span className="text-gray-400 font-black text-xs uppercase tracking-widest">Sort by:</span>
-                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#19798d] transition-all">
+                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#056bfa] transition-all">
                        <option>Most Popular</option>
                        <option>Latest</option>
                        <option>Expiring Soon</option>
@@ -1157,7 +1157,7 @@ export default function ViaggogoCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
                    Viagogo is one of the world's largest ticket resale marketplaces, allowing users to buy and sell tickets for live events across numerous countries. Founded in 2006, the platform serves millions of customers looking for access to concerts, sporting events, theater performances, comedy shows, festivals, and other live entertainment experiences.
                   </p>
-                  <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#19798d] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1178,11 +1178,11 @@ export default function ViaggogoCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#19798d] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
@@ -1222,7 +1222,7 @@ export default function ViaggogoCouponsContent() {
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#19798d]">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
         <div>
@@ -1252,14 +1252,14 @@ export default function ViaggogoCouponsContent() {
                 <Link 
                   key={i} 
                   href={store.href}
-                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#19798d] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
                     <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#19798d] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#19798d] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -1284,7 +1284,7 @@ export default function ViaggogoCouponsContent() {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Know More About Viagogo</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Viagogo</h3>
            
             <p>
               The marketplace operates in multiple languages and currencies, helping fans access tickets for events around the globe. Viagogo provides a platform where ticket holders can resell tickets they can no longer use, while buyers gain access to a wider inventory of event tickets.
@@ -1301,7 +1301,7 @@ export default function ViaggogoCouponsContent() {
 
           {/* How to Use Array Map */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#19798d] mb-8">How to Use a Viagogo Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Viagogo Coupon Code</h3>
             <div className="space-y-6">
               {[
                 "Step 1: Browse Available Viagogo Deals — Visit the Viagogo page on Couponsbit and explore current discounts, promo codes, and ticket offers.",
@@ -1312,7 +1312,7 @@ export default function ViaggogoCouponsContent() {
                 "Step 6: Complete Your Purchase — Finalize your order and prepare for your upcoming event."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#19798d] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
@@ -1322,7 +1322,7 @@ export default function ViaggogoCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Best Ways to Save on Viagogo</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save on Viagogo</h3>
             <p><strong>Check Couponsbit Before Buying:</strong> Always browse Couponsbit before purchasing tickets to find the latest Viagogo promo codes and special offers.</p>
             <p><strong>Compare Seating Options:</strong> Different sections within the same venue may offer significant price differences while still providing a great event experience.</p>
             <p><strong>Book Early:</strong> For high-demand events, purchasing tickets earlier may help you find better availability and pricing.</p>
@@ -1331,7 +1331,7 @@ export default function ViaggogoCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Fans Use Viagogo</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Fans Use Viagogo</h3>
             <p><strong>Global Ticket Marketplace:</strong> Viagogo operates internationally and offers access to live events around the world.</p>
             <p><strong>Wide Event Selection:</strong> The platform features tickets for concerts, sports, theater, festivals, and entertainment events.</p>
             <p><strong>Ticket Resale Flexibility:</strong> Users who can no longer attend an event may have the option to resell their tickets through the marketplace.</p>
@@ -1350,7 +1350,7 @@ export default function ViaggogoCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Use Couponsbit for Viagogo Deals?</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Viagogo Deals?</h3>
             <p><strong>Verified Discounts:</strong> We regularly update available Viagogo offers to help users find current savings opportunities.</p>
             <p><strong>Convenient Savings:</strong> Find ticket deals, promo codes, and event discounts in one place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use and helps shoppers save on travel, entertainment, technology, shopping, and more.</p>
@@ -1358,7 +1358,7 @@ export default function ViaggogoCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Get More Access to Live Events for Less</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Get More Access to Live Events for Less</h3>
             <p>Whether you're searching for concert tickets, sports events, theater performances, comedy shows, or major festivals, Viagogo provides access to a wide range of live entertainment experiences around the world.</p>
             <p>Before completing your purchase, visit Couponsbit to explore the latest Viagogo coupon codes, promo codes, and ticket deals. With verified discounts and regularly updated offers, Couponsbit helps you enjoy more live events while keeping your entertainment budget under control.</p>
           </div>
@@ -1370,7 +1370,7 @@ export default function ViaggogoCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1392,7 +1392,7 @@ export default function ViaggogoCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#19798d] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -1407,14 +1407,14 @@ export default function ViaggogoCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         {/* Box 1: Popular Searches */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#19798d]/5">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Viagogo Searches</h4>
           <div className="flex flex-wrap gap-2.5">
             {["Viagogo Concerts", "Viagogo Sports", "Viagogo Theater", "Viagogo Comedy", "Viagogo Promo Code", "Viagogo Ticket Deals", "Viagogo Festivals", "Viagogo Offers"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#19798d] uppercase tracking-widest shadow-sm hover:bg-[#19798d] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -1428,12 +1428,12 @@ export default function ViaggogoCouponsContent() {
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#19798d] font-black text-xl italic shadow-inner">V</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">V</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#19798d] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#19798d] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#19798d] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
               </div>
             ))}
           </div>
@@ -1446,7 +1446,7 @@ export default function ViaggogoCouponsContent() {
 
 
         {/* Section 6: Newsletter Strip */}
-        <section className="bg-[#19798d] py-16 text-center text-white relative overflow-hidden">
+        <section className="bg-[#056bfa] py-16 text-center text-white relative overflow-hidden">
           <div className="absolute top-0 left-1/4 w-60 h-60 bg-white/5 rounded-full -translate-y-1/2 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-4xl relative z-10">
@@ -1454,7 +1454,7 @@ export default function ViaggogoCouponsContent() {
             <p className="text-white/70 font-bold mb-10 max-w-md mx-auto">Subscribe to get the best Viagogo coupon codes directly in your inbox.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
               <input type="email" placeholder="Enter your email address" className="w-full h-14 bg-white/10 border-2 border-white/20 rounded-2xl px-6 outline-none focus:border-white transition-all text-white placeholder:text-white/40 font-bold text-sm" />
-              <button className="w-full sm:w-auto h-14 bg-white text-[#19798d] px-10 rounded-2xl font-black text-sm uppercase tracking-widest active:scale-95 transition-all shadow-xl hover:shadow-white/10">Subscribe</button>
+              <button className="w-full sm:w-auto h-14 bg-white text-[#056bfa] px-10 rounded-2xl font-black text-sm uppercase tracking-widest active:scale-95 transition-all shadow-xl hover:shadow-white/10">Subscribe</button>
             </div>
           </div>
         </section>

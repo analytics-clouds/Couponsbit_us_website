@@ -175,7 +175,7 @@ export default function DriffleCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Toast Notification */}
@@ -198,9 +198,9 @@ export default function DriffleCouponsContent() {
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
-              <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+              <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
-              <Link href="/stores" className="text-[#19798d] hover:underline">Stores</Link>
+              <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
               <span className="text-black font-extrabold">Driffle</span>
             </nav>
@@ -241,7 +241,7 @@ export default function DriffleCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#19798d]" />
+                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
                          <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
@@ -300,7 +300,7 @@ export default function DriffleCouponsContent() {
                 { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 justify-center md:border-r last:border-0 border-[#e0e0e0] px-4">
-                  <item.icon className="w-6 h-6 text-[#19798d] shrink-0" />
+                  <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
                     <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
@@ -331,7 +331,7 @@ export default function DriffleCouponsContent() {
                           onClick={() => setActiveTab(tab.split(' ')[0] as any)}
                           className={cn(
                             "px-5 py-2.5 rounded-full text-sm font-black transition-all whitespace-nowrap active:scale-95",
-                            activeTab === tab.split(' ')[0] ? "bg-[#19798d] text-white shadow-lg" : "border-2 border-[#19798d] text-[#19798d] hover:bg-[#e8f6f8]"
+                            activeTab === tab.split(' ')[0] ? "bg-[#056bfa] text-white shadow-lg" : "border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
                           )}
                         >
                           {tab}
@@ -340,7 +340,7 @@ export default function DriffleCouponsContent() {
                    </div>
                    <div className="flex items-center gap-3">
                      <span className="text-gray-400 font-black text-xs uppercase tracking-widest">Sort by:</span>
-                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#19798d] transition-all">
+                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#056bfa] transition-all">
                        <option>Most Popular</option>
                        <option>Latest</option>
                        <option>Expiring Soon</option>
@@ -728,7 +728,7 @@ export default function DriffleCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
                     Driffle is a global digital gaming marketplace that connects gamers with affordable digital products, including game keys, gift cards, gaming subscriptions, downloadable content (DLC), software licenses, and in-game currencies. The platform has gained popularity among gamers looking for convenient access to digital entertainment products while exploring opportunities to save money on their purchases.
                   </p>
-                  <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#19798d] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -749,11 +749,11 @@ export default function DriffleCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#19798d] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -794,7 +794,7 @@ export default function DriffleCouponsContent() {
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#19798d]">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
         <div>
@@ -824,14 +824,14 @@ export default function DriffleCouponsContent() {
                 <Link 
                   key={i} 
                   href={store.href}
-                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#19798d] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
                     <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#19798d] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#19798d] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -856,7 +856,7 @@ export default function DriffleCouponsContent() {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">About Driffle</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">About Driffle</h3>
           
             <p>
               Driffle caters to players across multiple gaming platforms, making it easier to find products for PC, Xbox, PlayStation, Nintendo, and other popular gaming ecosystems. In addition to video games, the marketplace offers gift cards, software products, digital memberships, and gaming-related digital content.
@@ -872,7 +872,7 @@ export default function DriffleCouponsContent() {
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#19798d] mb-8">How to Use a Driffle Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Driffle Coupon Code</h3>
             <div className="space-y-6">
               {[
                 "Step 1: Browse Available Driffle Deals — Visit the Driffle page on Couponsbit and explore the latest discounts, promo codes, and gaming offers.",
@@ -883,7 +883,7 @@ export default function DriffleCouponsContent() {
                 "Step 6: Complete Your Purchase — Finalize your order and enjoy savings on your gaming and digital products."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#19798d] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
@@ -893,7 +893,7 @@ export default function DriffleCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Best Ways to Save at Driffle</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Driffle</h3>
             <p><strong>Check Couponsbit Before Every Purchase:</strong> Always visit Couponsbit before purchasing games, gift cards, or subscriptions to find the latest Driffle promo codes.</p>
             <p><strong>Watch for Seasonal Gaming Sales:</strong> Gaming marketplaces often offer major discounts during special events throughout the year. Look for deals during: Black Friday, Cyber Monday, Summer Gaming Sales, Holiday Promotions, New Year Deals, and Back-to-School Sales.</p>
             <p><strong>Compare Available Offers:</strong> Different products may feature different promotions, making it worthwhile to review all available deals.</p>
@@ -902,7 +902,7 @@ export default function DriffleCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Gamers Choose Driffle</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Gamers Choose Driffle</h3>
             <p><strong>Wide Product Catalog:</strong> The platform offers games, gift cards, subscriptions, software, and digital products in one place.</p>
             <p><strong>Multiple Gaming Platforms:</strong> Gamers can find products compatible with PC, PlayStation, Xbox, Nintendo, and other popular platforms.</p>
             <p><strong>Digital Delivery:</strong> Many products are delivered digitally, allowing customers to access their purchases quickly.</p>
@@ -911,7 +911,7 @@ export default function DriffleCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Why Use Couponsbit for Driffle Deals?</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Driffle Deals?</h3>
             <p><strong>Verified Discounts:</strong> We regularly update available Driffle offers to help users find current promotions and coupon codes.</p>
             <p><strong>Easy Savings:</strong> Find gaming deals, digital product discounts, and promo codes in one convenient location.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use and helps consumers save on gaming, software, travel, technology, shopping, and more.</p>
@@ -919,7 +919,7 @@ export default function DriffleCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#19798d] mb-4">Level Up Your Savings with Driffle</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Level Up Your Savings with Driffle</h3>
             <p>Whether you're purchasing the latest game release, topping up your gaming wallet, renewing a subscription, or buying digital content for your favorite platform, Driffle offers a convenient marketplace for gamers and digital shoppers.</p>
             <p>Before completing your purchase, visit Couponsbit to explore the latest Driffle coupon codes, promo codes, and gaming deals. With verified discounts and regularly updated offers, Couponsbit helps you enjoy more gaming while spending less.</p>
           </div>
@@ -931,7 +931,7 @@ export default function DriffleCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#19798d] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -953,7 +953,7 @@ export default function DriffleCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#19798d] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -967,14 +967,14 @@ export default function DriffleCouponsContent() {
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#19798d]/5">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Driffle Searches</h4>
           <div className="flex flex-wrap gap-2.5">
             {["Game Keys", "PC Game Keys", "Steam Gift Card", "Xbox Live Sub", "Driffle Promo Code", "PSN Codes", "In-Game Currency", "Gaming Subscriptions"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#19798d] uppercase tracking-widest shadow-sm hover:bg-[#19798d] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -987,12 +987,12 @@ export default function DriffleCouponsContent() {
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#19798d] font-black text-xl italic shadow-inner">D</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">D</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#19798d] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#19798d] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#19798d] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
               </div>
             ))}
           </div>

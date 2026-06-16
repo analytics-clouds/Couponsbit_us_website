@@ -43,13 +43,13 @@ const categories = [
     icon: Plane,
     emoji: "✈️",
     href: "/categories/travel",
-    accent: "#19798d",
+    accent: "#056bfa",
     lightBg: "#E8F6F8",
     coupons: "420+",
     stores: "20+",
     description: "Flights, hotels & vacation packages",
     featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
-    gradient: "from-[#19798d] to-[#0f5a6b]"
+    gradient: "from-[#056bfa] to-[#0451c4]"
   },
   {
     id: "entertainment",
@@ -105,11 +105,11 @@ export default function CategoriesPageContent() {
   );
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-24 pb-0 overflow-hidden bg-gradient-to-br from-[#0f5a6b] via-[#19798d] to-[#1a9db5]">
+      <section className="relative pt-24 pb-0 overflow-hidden bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5]">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: "radial-gradient(#fff 1.5px, transparent 1.5px)", backgroundSize: "24px 24px" }} />
 
         {/* Floating blobs */}
@@ -200,7 +200,7 @@ export default function CategoriesPageContent() {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-[#19798d] hover:underline font-medium">Home</Link>
+          <Link href="/" className="text-[#056bfa] hover:underline font-medium">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-black font-semibold">Categories</span>
         </div>
@@ -217,7 +217,7 @@ export default function CategoriesPageContent() {
               </p>
             </div>
             {searchQuery && (
-              <button onClick={() => setSearchQuery("")} className="text-sm text-[#19798d] font-bold hover:underline">
+              <button onClick={() => setSearchQuery("")} className="text-sm text-[#056bfa] font-bold hover:underline">
                 Clear search
               </button>
             )}
@@ -228,7 +228,7 @@ export default function CategoriesPageContent() {
               <p className="text-5xl mb-4">🔍</p>
               <h3 className="text-black font-black text-xl mb-2">No categories found</h3>
               <p className="text-gray-500 text-sm">Try a different search term</p>
-              <button onClick={() => setSearchQuery("")} className="mt-4 text-[#19798d] font-bold text-sm hover:underline">Clear search</button>
+              <button onClick={() => setSearchQuery("")} className="mt-4 text-[#056bfa] font-bold text-sm hover:underline">Clear search</button>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -268,7 +268,7 @@ export default function CategoriesPageContent() {
 
                         {/* Card Body */}
                         <div className="p-6">
-                          <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#19798d] transition-colors">
+                          <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#056bfa] transition-colors">
                             {cat.name}
                           </h3>
                           <p className="text-gray-500 text-sm font-medium mb-5 leading-relaxed">
@@ -374,7 +374,7 @@ export default function CategoriesPageContent() {
               extra: "Explore promotions from leading mobile carriers and wireless providers."
             }
           ].map((item, i) => (
-            <div key={i} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md hover:border-[#19798d]/30 transition-all duration-300 flex flex-col justify-between">
+            <div key={i} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md hover:border-[#056bfa]/30 transition-all duration-300 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   {item.cat && (
@@ -398,7 +398,7 @@ export default function CategoriesPageContent() {
 
         {/* Why Browse Deals by Category? */}
         <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-          <h3 className="text-[#19798d] font-black text-lg mb-2">Why Browse Deals by Category?</h3>
+          <h3 className="text-[#056bfa] font-black text-lg mb-2">Why Browse Deals by Category?</h3>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed">
             Searching for discounts becomes much easier when offers are organized by shopping interests. Instead of browsing unrelated promotions, category pages allow users to quickly access relevant deals. When you shop deals by category, you can:
           </p>
@@ -411,7 +411,7 @@ export default function CategoriesPageContent() {
               { title: "Find Relevant Savings", desc: "See discounts tailored to your specific shopping needs rather than sorting through unrelated promotions." }
             ].map((benefit, i) => (
               <div key={i} className="flex items-start gap-3">
-                <CheckCircle className="w-4 h-4 text-[#19798d] shrink-0 mt-0.5" />
+                <CheckCircle className="w-4 h-4 text-[#056bfa] shrink-0 mt-0.5" />
                 <div>
                   <span className="text-black font-extrabold text-sm block">{benefit.title}</span>
                   <span className="text-gray-600 text-sm leading-relaxed">{benefit.desc}</span>
@@ -437,7 +437,7 @@ export default function CategoriesPageContent() {
               "Compare offers across categories"
             ].map((point, i) => (
               <div key={i} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#19798d]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[#056bfa]" />
                 <span className="text-gray-600 text-sm">{point}</span>
               </div>
             ))}
@@ -461,7 +461,7 @@ export default function CategoriesPageContent() {
               { title: "Back-to-School Promotions", desc: "Students and families can find discounts on technology, software, apparel, and educational products." },
               { title: "End-of-Season Sales", desc: "Fashion, travel, and lifestyle brands frequently launch special offers during seasonal transitions." }
             ].map((season, i) => (
-              <div key={i} className="border-l-2 border-[#19798d] pl-3">
+              <div key={i} className="border-l-2 border-[#056bfa] pl-3">
                 <span className="text-black font-bold text-sm block">{season.title}</span>
                 <span className="text-gray-600 text-xs leading-relaxed">{season.desc}</span>
               </div>
@@ -470,7 +470,7 @@ export default function CategoriesPageContent() {
         </div>
 
         {/* Find the Right Deals Faster (Bottom Banner Content) */}
-        <div className="p-6 bg-[#e8f6f8] rounded-2xl border border-[#19798d]/10">
+        <div className="p-6 bg-[#e8f6f8] rounded-2xl border border-[#056bfa]/10">
           <h3 className="text-black font-extrabold text-lg mb-2">Find the Right Deals Faster</h3>
           <p className="text-gray-700 text-sm leading-relaxed">
             Whether you're booking travel, shopping for fashion, upgrading your technology, purchasing software, or searching for entertainment offers, Couponsbit makes it easy to discover relevant savings. Browse our collection of online coupons by category, explore popular coupon categories USA shoppers trust, and shop deals by category to find offers that match your interests and help you save on every purchase.
@@ -485,7 +485,7 @@ export default function CategoriesPageContent() {
           {/* All Stores */}
           <div className="bg-white border border-[#f0f0f0] rounded-2xl p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-5">
-              <Store className="w-5 h-5 text-[#19798d]" />
+              <Store className="w-5 h-5 text-[#056bfa]" />
               <h3 className="text-black font-extrabold text-base">All Stores</h3>
             </div>
             <div className="space-y-1">
@@ -504,13 +504,13 @@ export default function CategoriesPageContent() {
                 <Link key={i} href={item.href} className="group block">
                   <div className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 hover:bg-gray-50 rounded-xl px-2 -mx-2 transition-colors cursor-pointer">
                     <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 rounded-full shrink-0 bg-[#19798d]" />
+                      <div className="w-2 h-2 rounded-full shrink-0 bg-[#056bfa]" />
                       <div>
                         <p className="text-sm font-black text-black leading-tight">{item.name}</p>
                         <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wide">{item.deal}</p>
                       </div>
                     </div>
-                    <span className="text-[11px] font-black uppercase tracking-tighter px-2.5 py-1 rounded-lg bg-[#e8f6f8] text-[#19798d]">GET</span>
+                    <span className="text-[11px] font-black uppercase tracking-tighter px-2.5 py-1 rounded-lg bg-[#e8f6f8] text-[#056bfa]">GET</span>
                   </div>
                 </Link>
               ))}
@@ -556,7 +556,7 @@ export default function CategoriesPageContent() {
                     className="flex items-center justify-between w-full text-left py-2 group"
                     aria-expanded={openFaq === i}
                   >
-                    <span className="text-sm font-bold text-black group-hover:text-[#19798d] transition-colors pr-4 leading-snug">{faq.q}</span>
+                    <span className="text-sm font-bold text-black group-hover:text-[#056bfa] transition-colors pr-4 leading-snug">{faq.q}</span>
                     <ChevronDown className={cn("w-4 h-4 text-gray-400 shrink-0 transition-transform duration-200", openFaq === i && "rotate-180")} />
                   </button>
                   <AnimatePresence initial={false}>
@@ -587,7 +587,7 @@ export default function CategoriesPageContent() {
       {/* Bottom CTA */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="bg-gradient-to-br from-[#0f5a6b] via-[#19798d] to-[#1a9db5] rounded-3xl p-10 md:p-14 text-center text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] rounded-3xl p-10 md:p-14 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(#fff 1.5px, transparent 1.5px)", backgroundSize: "20px 20px" }} />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-black mb-3">Start Saving Across All Categories</h2>
@@ -596,12 +596,12 @@ export default function CategoriesPageContent() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/stores">
-                  <button className="h-13 px-8 py-3.5 rounded-full bg-white text-[#19798d] hover:bg-[#e8f6f8] font-black text-sm transition-all active:scale-95 shadow-xl">
+                  <button className="h-13 px-8 py-3.5 rounded-full bg-white text-[#056bfa] hover:bg-[#e8f6f8] font-black text-sm transition-all active:scale-95 shadow-xl">
                     Browse All Stores →
                   </button>
                 </Link>
                 <Link href="/deals">
-                  <button className="h-13 px-8 py-3.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-[#19798d] font-black text-sm transition-all active:scale-95">
+                  <button className="h-13 px-8 py-3.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-[#056bfa] font-black text-sm transition-all active:scale-95">
                     Today's Top Deals
                   </button>
                 </Link>

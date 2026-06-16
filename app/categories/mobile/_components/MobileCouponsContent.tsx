@@ -28,7 +28,7 @@ const STORES = [
 
 const SIDEBAR_CATEGORIES = [
   { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
-  { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#19798d]", href: "/categories/travel" },
+  { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel" },
   { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment" },
   { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software" },
   { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile", active: true },
@@ -54,14 +54,14 @@ export default function MobileCouponsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#19798d] selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
       <div className="bg-white border-b border-[#f0f0f0] mt-24">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-[#19798d] hover:underline">Home</Link>
+          <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-          <Link href="/categories" className="text-[#19798d] hover:underline">Categories</Link>
+          <Link href="/categories" className="text-[#056bfa] hover:underline">Categories</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-700 font-medium">Mobile & Telecom</span>
         </div>
@@ -111,18 +111,18 @@ export default function MobileCouponsContent() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
                   {STORES.map((store) => (
-                    <div key={store.id} className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#19798d] transition-all duration-300 flex flex-col justify-between group">
+                    <div key={store.id} className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#056bfa] transition-all duration-300 flex flex-col justify-between group">
                       <div>
                         <div className="h-14 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
                           <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain" />
                         </div>
-                        <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#19798d] transition-colors line-clamp-1 truncate px-1">{store.name}</h3>
+                        <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#056bfa] transition-colors line-clamp-1 truncate px-1">{store.name}</h3>
                         <p className="text-gray-400 text-[11px] font-bold mt-0.5">{store.coupons} Coupons</p>
-                        <span className="text-xs font-black text-[#19798d] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
+                        <span className="text-xs font-black text-[#056bfa] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
                       </div>
                       <div className="mt-4">
                         <Link href={`/stores/${store.id}`} className="block w-full">
-                          <button className="w-full text-center py-2 border border-[#19798d] text-[#19798d] hover:bg-[#19798d] hover:text-white rounded-lg text-xs font-black transition-all duration-300">View Store</button>
+                          <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-xs font-black transition-all duration-300">View Store</button>
                         </Link>
                       </div>
                     </div>
@@ -147,7 +147,7 @@ export default function MobileCouponsContent() {
                       </Link>
                     ))}
                   </div>
-                  <Link href="/categories" className="block mt-4 text-[#19798d] font-bold text-xs hover:underline">View All Categories →</Link>
+                  <Link href="/categories" className="block mt-4 text-[#056bfa] font-bold text-xs hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-5">
@@ -187,7 +187,7 @@ export default function MobileCouponsContent() {
           <h2 className="text-3xl sm:text-4xl font-black text-black leading-tight mb-3">
             Mobile Phone Promo Codes, Cell Phone Plan Coupon Codes & Prepaid Phone Deals 2026
           </h2>
-          <p className="text-lg font-bold text-[#19798d] mb-5">Staying connected has never been more important, but mobile services and devices can quickly become expensive. If you're searching for the latest mobile phone promo codes, you've come to the right place.</p>
+          <p className="text-lg font-bold text-[#056bfa] mb-5">Staying connected has never been more important, but mobile services and devices can quickly become expensive. If you're searching for the latest mobile phone promo codes, you've come to the right place.</p>
           <p className="text-gray-600 leading-relaxed mb-4">
             At Couponsbit, we help shoppers discover valuable savings on smartphones, mobile plans, prepaid services, accessories, and wireless solutions from leading mobile carriers and technology brands.
           </p>
@@ -220,9 +220,9 @@ export default function MobileCouponsContent() {
               { title: "Device protection plans", desc: "Peace of mind hardware insurance and replacement warranties." },
               { title: "Mobile broadband services", desc: "Dedicated home or mobile travel data connectivity options." },
             ].map((item, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#19798d]/30 transition-all duration-300 group flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#19798d] transition-colors duration-300">
-                  <LayoutGrid className="w-5 h-5 text-[#19798d] group-hover:text-white transition-colors duration-300" />
+              <div key={i} className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-[#056bfa]/30 transition-all duration-300 group flex gap-4 items-start">
+                <div className="w-10 h-10 rounded-xl bg-[#e8f6f8] flex items-center justify-center shrink-0 group-hover:bg-[#056bfa] transition-colors duration-300">
+                  <LayoutGrid className="w-5 h-5 text-[#056bfa] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
                   <h3 className="text-black font-extrabold text-sm mb-1">{item.title}</h3>
@@ -245,7 +245,7 @@ export default function MobileCouponsContent() {
             {[
               "Lyca Mobile", "AT&T", "Verizon", "T-Mobile", "Mint Mobile", "Visible", "Cricket Wireless", "Boost Mobile", "Google Fi", "Metro by T-Mobile", "Samsung", "Apple", "Google Pixel", "Motorola", "OnePlus"
             ].map((brand) => (
-              <span key={brand} className="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-700 font-bold text-xs rounded-lg hover:border-[#19798d]/40 transition-all duration-200 cursor-default">
+              <span key={brand} className="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-700 font-bold text-xs rounded-lg hover:border-[#056bfa]/40 transition-all duration-200 cursor-default">
                 {brand}
               </span>
             ))}
@@ -268,12 +268,12 @@ export default function MobileCouponsContent() {
               { icon: LayoutGrid, title: "International Connectivity", desc: "Many providers offer affordable international calling and roaming options.", color: "bg-violet-50 text-violet-600" },
               { icon: Calendar, title: "Access to Advanced Technology", desc: "Consumers can enjoy faster speeds and improved performance through expanding 5G networks.", color: "bg-green-50 text-green-600" },
             ].map((item, i) => (
-              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#19798d]/20 transition-all duration-300 group flex gap-4 items-start">
+              <div key={i} className="border border-gray-100 rounded-xl p-5 hover:shadow-md hover:border-[#056bfa]/20 transition-all duration-300 group flex gap-4 items-start">
                 <div className={cn("w-10 h-10 rounded-xl flex items-center justify-center shrink-0", item.color.split(" ")[0])}>
                   <item.icon className={cn("w-5 h-5", item.color.split(" ")[1])} />
                 </div>
                 <div>
-                  <h3 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#19798d] transition-colors">{item.title}</h3>
+                  <h3 className="text-black font-extrabold text-sm mb-1 group-hover:text-[#056bfa] transition-colors">{item.title}</h3>
                   <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -297,10 +297,10 @@ export default function MobileCouponsContent() {
             ].map((item, i, arr) => (
               <div key={i} className="flex gap-5 items-start">
                 <div className="flex flex-col items-center shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-[#19798d] text-white flex items-center justify-center font-black text-sm shadow-md">
+                  <div className="w-10 h-10 rounded-full bg-[#056bfa] text-white flex items-center justify-center font-black text-sm shadow-md">
                     {item.step}
                   </div>
-                  {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#19798d]/20 my-1" />}
+                  {i < arr.length - 1 && <div className="w-0.5 h-8 bg-[#056bfa]/20 my-1" />}
                 </div>
                 <div className="pb-7">
                   <h3 className="text-black font-extrabold text-sm mb-1">{item.title}</h3>
@@ -363,7 +363,7 @@ export default function MobileCouponsContent() {
               { title: "Carrier Switching Promotions", desc: "Wireless providers frequently offer incentives to customers who transfer their service from another carrier." }
             ].map((event, i) => (
               <div key={i} className="border-t border-gray-50 pt-2 first:border-0 first:pt-0">
-                <span className="text-[#19798d] font-bold text-xs block mb-0.5">{event.title}</span>
+                <span className="text-[#056bfa] font-bold text-xs block mb-0.5">{event.title}</span>
                 <p className="text-gray-500 text-[11px] leading-relaxed">{event.desc}</p>
               </div>
             ))}
@@ -386,7 +386,7 @@ export default function MobileCouponsContent() {
               "Watch for Limited-Time Promotions"
             ].map((point, i) => (
               <div key={i} className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#19798d] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#056bfa] shrink-0" />
                 <span className="text-gray-600 text-xs font-semibold">{point}</span>
               </div>
             ))}
@@ -394,7 +394,7 @@ export default function MobileCouponsContent() {
         </div>
 
         {/* Why Use Couponsbit for Mobile Savings? */}
-        <div className="bg-gradient-to-br from-[#19798d] to-[#0f5a6b] rounded-2xl p-6 text-white">
+        <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] rounded-2xl p-6 text-white">
           <h3 className="font-black text-lg mb-2">Why Use Couponsbit for Mobile Savings?</h3>
           <p className="text-white font-bold text-xs mb-4">
             At Couponsbit, we make it easier to find savings on wireless services and mobile technology.
@@ -407,7 +407,7 @@ export default function MobileCouponsContent() {
             <p><strong>Savings Across Mobile Categories:</strong> From smartphones and accessories to service plans and international calling options, you'll find a variety of opportunities to save.</p>
           </div>
           <Link href="/stores" className="block">
-            <button className="w-full bg-white text-[#19798d] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
+            <button className="w-full bg-white text-[#056bfa] hover:bg-[#e8f6f8] font-black text-xs uppercase tracking-wider py-3 rounded-xl shadow-lg active:scale-95 transition-all duration-200">
               Shop Mobile Deals Now →
             </button>
           </Link>
@@ -427,7 +427,7 @@ export default function MobileCouponsContent() {
         <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-[#22c55e]"><CheckCircle className="w-5 h-5" /></div>
         <div>
           <p className="text-black font-black text-sm">Code Copied!</p>
-          <p className="text-[#19798d] font-mono font-bold text-xs mt-0.5">{toastCode}</p>
+          <p className="text-[#056bfa] font-mono font-bold text-xs mt-0.5">{toastCode}</p>
         </div>
       </div>
     </div>
