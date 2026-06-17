@@ -64,7 +64,7 @@ const Hero = () => {
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="bg-white py-4 mt-12">
+    <section className="bg-white py-4 mt-4">
       <div className="container mx-auto px-4 max-w-7xl relative">
         <div className="relative overflow-hidden group">
           <button
@@ -92,7 +92,7 @@ const Hero = () => {
                 key={`${slide.id}-${idx}`}
                 className={cn("shrink-0 px-2", isMobile ? "w-full" : "w-1/3")}
               >
-                <a href={slide.href} target="_blank" rel="noopener noreferrer" className="block rounded-3xl overflow-hidden">
+                <a href={slide.href} target="_blank" rel="noopener noreferrer" className="block rounded-3xl overflow-hidden" aria-hidden={idx >= slides.length ? true : undefined} tabIndex={idx >= slides.length ? -1 : undefined}>
                   <img
                     src={slide.image}
                     alt={slide.alt}
@@ -100,7 +100,7 @@ const Hero = () => {
                     height={350}
                     className="w-full h-auto block"
                     fetchPriority={idx === 0 ? "high" : undefined}
-                    loading={idx >= 3 ? "lazy" : undefined}
+                    loading={idx > 0 ? "lazy" : undefined}
                   />
                 </a>
               </div>
@@ -114,11 +114,13 @@ const Hero = () => {
               key={i}
               onClick={() => setCurrentIndex(i)}
               aria-label={`Go to slide ${i + 1}`}
-              className={cn(
-                "h-2 rounded-full transition-all duration-300",
-                currentIndex === i ? "w-6 bg-[#056bfa]" : "w-2 bg-[#e0e0e0]"
-              )}
-            />
+              className="w-6 h-6 flex items-center justify-center"
+            >
+              <span className={cn(
+                "rounded-full transition-all duration-300 block",
+                currentIndex === i ? "w-6 h-2 bg-[#056bfa]" : "w-2 h-2 bg-[#e0e0e0]"
+              )} />
+            </button>
           ))}
         </div>
       </div>
@@ -602,7 +604,7 @@ export default function HomePageContent() {
 
             {/* Right Column: Story Text */}
             <div className="w-full lg:w-1/2">
-              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
+              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#0344b0] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
               <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">Save More on the Brands You Love</h2>
               
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
