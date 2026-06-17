@@ -75,7 +75,7 @@ export const Footer = () => {
   return (
     <footer className="w-full">
       {/* Layer 1: Newsletter Banner Strip */}
-      <div className="bg-brand-primary py-8 md:py-12">
+      {/* <div className="bg-brand-primary py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-6">
@@ -111,7 +111,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Layer 2: Main Footer Body */}
       <div className="bg-[#051a33] pt-20 pb-16">
