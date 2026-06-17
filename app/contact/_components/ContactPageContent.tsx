@@ -117,15 +117,26 @@ export default function ContactPageContent() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      setIsLoading(true);
-      // Simulate API call
-      setTimeout(() => {
-        setIsLoading(false);
+    if (!validate()) return;
+    setIsLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
         setIsSuccess(true);
-      }, 2000);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      alert("Network error. Please check your connection and try again.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -169,8 +180,8 @@ export default function ContactPageContent() {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
             {[
-              { icon: Mail, text: "support@couponsclou.ds" },
-              { icon: Phone, text: "+91 98765 43210" },
+              { icon: Mail, text: "support.couponsbit@gmail.com" },
+              { icon: Phone, text: "+91 83682 16673" },
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -226,11 +237,11 @@ export default function ContactPageContent() {
               <p className="text-gray-500 text-sm leading-relaxed mb-6">
                 Send us an email and we will get back to you within 24 hours on business days
               </p>
-              <p className="text-[#056bfa] font-bold text-base">support@couponsclou.ds</p>
-              <p className="text-gray-500 text-sm mt-1">business@couponsclou.ds</p>
-              <Button 
+              <p className="text-[#056bfa] font-bold text-base">support.couponsbit@gmail.com</p>
+              <p className="text-gray-500 text-sm mt-1">support.couponsbit@gmail.com</p>
+              <Button
                 variant="outline"
-                onClick={() => window.location.href = 'mailto:support@couponsclou.ds'}
+                onClick={() => window.location.href = 'mailto:support.couponsbit@gmail.com'}
                 className="mt-8 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-full px-8 font-bold transition-all"
               >
                 Send Email
@@ -249,11 +260,11 @@ export default function ContactPageContent() {
               <p className="text-gray-500 text-sm leading-relaxed mb-6">
                 Speak directly with our support team Monday to Saturday between 9AM and 6PM IST
               </p>
-              <p className="text-[#056bfa] font-bold text-base">+91 98765 43210</p>
+              <p className="text-[#056bfa] font-bold text-base">+91 83682 16673</p>
               <p className="text-gray-500 text-sm mt-1">Mon–Sat, 9AM–6PM IST</p>
               <Button 
                 variant="outline"
-                onClick={() => window.location.href = 'tel:+919876543210'}
+                onClick={() => window.location.href = 'tel:+918368216673'}
                 className="mt-8 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-full px-8 font-bold transition-all"
               >
                 Call Now
