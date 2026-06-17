@@ -145,7 +145,7 @@ export default function PrivacyPolicyContent() {
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#0451c4] to-[#056bfa] mt-[64px] text-center">
+      <section className="relative w-full pt-20 pb-24 bg-gradient-to-br from-[#0451c4] to-[#056bfa] text-center">
         <div className="container mx-auto px-4 max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

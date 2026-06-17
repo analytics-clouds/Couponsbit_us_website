@@ -189,15 +189,15 @@ export default function SintraCouponsContent() {
       </div>
 
       {/* Main Content Start */}
-      <main className="mt-[64px]">
+      <main>
         {/* Section 1: Breadcrumb */}
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
               <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <span className="text-black font-extrabold">Sintra</span>
             </nav>
           </div>
@@ -210,9 +210,11 @@ export default function SintraCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                    <img src="/sintra-coupon-code.webp" alt="Sintra" className="w-full h-full object-contain" />
-                  </div>
+                  <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer">
+                    <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
+                      <img src="/sintra-coupon-code.webp" alt="Sintra" width={112} height={112} className="w-full h-full object-contain" />
+                    </div>
+                  </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Sintra</h1>
                     <div className="flex items-center gap-1.5 mb-3">
@@ -221,7 +223,7 @@ export default function SintraCouponsContent() {
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-50" />
                       </div>
                       <span className="text-black font-black text-sm">4.5</span>
-                      <span className="text-gray-400 font-bold text-sm">(2k Ratings)</span>
+                      <span className="text-gray-600 font-bold text-sm">(2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
                       Sintra — Powerful AI tools platform. 5 verified deals live! Save 70% on annual plan, 60% OFF 3-month & plans from $15.60/mo. Try now!
@@ -240,7 +242,7 @@ export default function SintraCouponsContent() {
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
+                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
                        </div>
                     </div>
                   ))}
@@ -250,20 +252,26 @@ export default function SintraCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[350px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <img src="/sintra-discount-code.webp" alt="Sintra Discount Code" className="w-full h-full object-cover" />
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/sintra-discount-code.webp" alt="Sintra Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <img src="/sintra-promo-code.webp" alt="Sintra Promo Code" className="w-full h-full object-cover" />
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/sintra-promo-code.webp" alt="Sintra Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <img src="/sintra-voucher-code.webp" alt="Sintra Voucher Code" className="w-full h-full object-cover" />
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/sintra-voucher-code.webp" alt="Sintra Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Controls */}
@@ -299,7 +307,7 @@ export default function SintraCouponsContent() {
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
-                    <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
+                    <p className="text-gray-500 font-bold text-[12px] mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -324,7 +332,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -336,8 +344,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra AI Plans – Starting From $15.60/Month</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Choose the perfect Sintra AI plan with powerful AI helpers and premium features.</p>
@@ -347,14 +355,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Access all 12 AI helpers</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Includes 250 monthly credits</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>15+ integrations supported</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Access all 12 AI helpers</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 250 monthly credits</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>15+ integrations supported</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -365,7 +373,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -377,8 +385,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra 1-Month Plan – Save 50%</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get started with flexible monthly access at discounted pricing.</p>
@@ -388,14 +396,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save 50% instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Price: $48.50/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>14-day money-back guarantee</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save 50% instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Price: $48.50/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>14-day money-back guarantee</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -406,7 +414,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -418,8 +426,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra 12-Month Plan – Save 70%</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Unlock maximum savings with Sintra AI's most popular annual plan.</p>
@@ -429,14 +437,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save up to 70%</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Starting at just $15.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Includes all 12 AI helpers</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 70%</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Starting at just $15.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes all 12 AI helpers</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -447,7 +455,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -459,8 +467,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra 3-Month Plan – Save 60%</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy premium AI tools with flexible mid-term pricing.</p>
@@ -470,14 +478,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save 60% on subscription</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Price: $23.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Includes 250 monthly credits</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save 60% on subscription</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Price: $23.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 250 monthly credits</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -488,7 +496,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -500,8 +508,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra Soshie – Social Media Manager 60% OFF</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Manage your social media smarter with Sintra AI's Soshie tool.</p>
@@ -511,14 +519,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Get 60% OFF on Soshie plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Basic plan starts at $15.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Redeem code at checkout</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get 60% OFF on Soshie plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Basic plan starts at $15.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Redeem code at checkout</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -529,7 +537,7 @@ export default function SintraCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -541,8 +549,8 @@ export default function SintraCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Sintra AI Money-Back Guarantee Offer</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Try Sintra AI risk-free with a full refund guarantee.</p>
@@ -552,14 +560,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Applicable on all subscription plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Full money-back guarantee included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>No promo code required</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Applicable on all subscription plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Full money-back guarantee included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>No promo code required</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -597,7 +605,7 @@ export default function SintraCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
@@ -678,11 +686,11 @@ export default function SintraCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
+                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -820,13 +828,13 @@ export default function SintraCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Sintra Searches</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Sintra Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["AI Assistants", "Content Generator", "Workflow Automation", "Sintra Software", "Sintra Promo Code", "Business AI", "Marketing Copy", "Productivity Tools"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -835,16 +843,16 @@ export default function SintraCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Sintra Deals</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Sintra Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">S</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

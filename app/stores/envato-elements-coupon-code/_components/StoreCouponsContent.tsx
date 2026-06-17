@@ -193,15 +193,15 @@ export default function EnvatoCouponsContent() {
       </div>
 
       {/* Main Content Start */}
-      <main className="mt-24">
+      <main>
         {/* Section 1: Breadcrumb */}
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
               <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <span className="text-black font-extrabold">Envato Elements</span>
             </nav>
           </div>
@@ -214,9 +214,11 @@ export default function EnvatoCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                    <img src="/envato-coupon-code.webp" alt="Envato Elements" className="w-full h-full object-contain" />
-                  </div>
+                  <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer">
+                    <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
+                      <img src="/envato-coupon-code.webp" alt="Envato Elements" width={112} height={112} className="w-full h-full object-contain" />
+                    </div>
+                  </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Envato Elements</h1>
                     <div className="flex items-center gap-1.5 mb-3">
@@ -224,7 +226,7 @@ export default function EnvatoCouponsContent() {
                         {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                       </div>
                       <span className="text-black font-black text-sm">4.8</span>
-                      <span className="text-gray-400 font-bold text-sm">(21k Ratings)</span>
+                      <span className="text-gray-600 font-bold text-sm">(21k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
                       Envato Elements — Unlimited creative assets platform. 7 verified deals live! 50% OFF annual plan, 30% student discount & assets from $16.50/mo. Subscribe now!
@@ -243,7 +245,7 @@ export default function EnvatoCouponsContent() {
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
+                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
                        </div>
                     </div>
                   ))}
@@ -253,20 +255,26 @@ export default function EnvatoCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[350px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <img src="/envato-elements-discount-code.webp" alt="Envato Elements Discount Code" className="w-full h-full object-cover" />
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/envato-elements-discount-code.webp" alt="Envato Elements Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <img src="/envato-elements-promo-code.webp" alt="Envato Elements Promo Code" className="w-full h-full object-cover" />
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/envato-elements-promo-code.webp" alt="Envato Elements Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <img src="/envato-elements-vocuher-code.webp" alt="Envato Elements Voucher Code" className="w-full h-full object-cover" />
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/envato-elements-vocuher-code.webp" alt="Envato Elements Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Controls */}
@@ -302,7 +310,7 @@ export default function EnvatoCouponsContent() {
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
-                    <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
+                    <p className="text-gray-500 font-bold text-[12px] mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -328,7 +336,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -340,8 +348,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited Creative Assets From $16.50/Month</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Access millions of creative assets with AI-powered tools and commercial licensing.</p>
@@ -351,14 +359,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited downloads of 28M+ assets</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>AI tools for video, image & audio creation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Plans starting from $16.50/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited downloads of 28M+ assets</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>AI tools for video, image & audio creation</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Plans starting from $16.50/month</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -369,7 +377,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -381,8 +389,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ANNUAL PLAN – Flat 50% OFF</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save more with Envato Elements annual subscription plans.</p>
@@ -392,14 +400,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Flat 50% OFF on annual plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Pricing starts at $16.50/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited asset downloads included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Flat 50% OFF on annual plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Pricing starts at $16.50/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited asset downloads included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -410,7 +418,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -422,8 +430,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">STUDENTS SPECIAL – Flat 30% OFF</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Exclusive student savings on Envato Elements subscriptions.</p>
@@ -433,14 +441,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Flat 30% OFF for students</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Plans available from $11.50/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Valid on online transactions only</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Flat 30% OFF for students</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Plans available from $11.50/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Valid on online transactions only</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -451,7 +459,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -463,8 +471,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 34% OFF – Team Plan Offer</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Perfect plan for creative teams and agencies.</p>
@@ -474,14 +482,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save up to 34% on team plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Plans starting from $37.25/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Centralized downloads & asset management</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 34% on team plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Plans starting from $37.25/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Centralized downloads & asset management</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -492,7 +500,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -504,8 +512,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited Downloads – Starting From $16.50/Month</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Unlock premium creative resources with unlimited access.</p>
@@ -515,14 +523,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Millions of digital assets included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>50M+ stock photos available</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Simple commercial licensing included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Millions of digital assets included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>50M+ stock photos available</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Simple commercial licensing included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -533,7 +541,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -545,8 +553,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BEST PLAN – Individual Plan Starting At $16.50/Month</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Ideal subscription for creators, freelancers & designers.</p>
@@ -556,14 +564,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited downloads included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Access premium graphics, videos & templates</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Lifetime commercial license included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited downloads included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Access premium graphics, videos & templates</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Lifetime commercial license included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -574,7 +582,7 @@ export default function EnvatoCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -585,8 +593,8 @@ export default function EnvatoCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">SIGNUP OFFER – Free Trial On Subscription Plans</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Start your creative journey with free AI tool access.</p>
@@ -596,14 +604,14 @@ export default function EnvatoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Free trial available on signup</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Includes 5 free AI generations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Access GraphicsGen, ImageGen & VideoGen</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free trial available on signup</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 5 free AI generations</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Access GraphicsGen, ImageGen & VideoGen</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -641,7 +649,7 @@ export default function EnvatoCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
@@ -753,11 +761,11 @@ export default function EnvatoCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
+                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -905,13 +913,13 @@ export default function EnvatoCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Envato Searches</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Envato Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Stock Videos", "WordPress Themes", "Graphic Templates", "Royalty Music", "Envato Promo Code", "Premium Fonts", "3D Assets", "Creative Assets"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -920,16 +928,16 @@ export default function EnvatoCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Envato Deals</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Envato Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">E</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 text-center">GET</a>
+                <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 text-center">Get Deal</a>
               </div>
             ))}
           </div>

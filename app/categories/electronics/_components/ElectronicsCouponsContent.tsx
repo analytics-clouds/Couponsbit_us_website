@@ -64,7 +64,7 @@ export default function ElectronicsCouponsContent() {
     <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
-      <div className="bg-white border-b border-[#f0f0f0] mt-24">
+      <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center gap-2 text-sm">
           <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
@@ -83,7 +83,7 @@ export default function ElectronicsCouponsContent() {
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden mb-5">
                 <div className="flex flex-col md:flex-row">
                   <div className="flex-1 p-7 md:p-8">
-                    <h1 className="text-black font-extrabold text-3xl">Electronics Coupons & Deals</h1>
+                    <h1 className="text-black font-extrabold text-xl md:text-3xl">Electronics Coupons & Deals</h1>
                     <p className="text-gray-600 text-sm mt-2 leading-relaxed">
                       Save on AR glasses, security cameras, smart devices and gadgets with verified coupon codes.
                     </p>
@@ -104,9 +104,9 @@ export default function ElectronicsCouponsContent() {
                       ))}
                     </div>
                   </div>
-                  <div className="md:w-[45%] h-[200px] md:h-auto overflow-hidden">
+                  <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
                     <img
-                      src="/electronics-coupon-codes.webp"
+                      src="https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp"
                       alt="Electronics Coupons"
                       className="w-full h-full object-cover"
                     />

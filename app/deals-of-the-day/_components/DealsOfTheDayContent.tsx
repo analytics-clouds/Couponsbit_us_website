@@ -44,19 +44,19 @@ interface Deal {
 }
 
 const slides = [
-  { id: 1, image: "/reolink-online-deals.webp",          alt: "Reolink Deals" },
-  { id: 2, image: "/Viagogo-online-deals.webp",           alt: "Viagogo Deals" },
-  { id: 3, image: "/envato-elements-online-deals.webp",   alt: "Envato Elements Deals" },
-  { id: 4, image: "/rayneo-online-deals.webp",            alt: "Rayneo Deals" },
-  { id: 5, image: "/sintra-online-deals.webp",            alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/reolink-online-deals_orblbt.webp",          alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/viagogo-online-deals_n4emtx.webp",           alt: "Viagogo Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/envato-elements-online-deals_zygflw.webp",   alt: "Envato Elements Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610275/rayneo-online-deals_egnuzp.webp",            alt: "Rayneo Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/sintra-online-deals_fglfxk.webp",            alt: "Sintra Deals" },
 ];
 
 const mobileSlides = [
-  { id: 1, image: "/reolink-online-deals-mobile.webp",         alt: "Reolink Deals" },
-  { id: 2, image: "/viagogo-online-deals-mobile.webp",         alt: "Viagogo Deals" },
-  { id: 3, image: "/envato-elements-online-deals-mobile.webp", alt: "Envato Elements Deals" },
-  { id: 4, image: "/rayneo-online-deals-mobile.webp",          alt: "Rayneo Deals" },
-  { id: 5, image: "/sintra-online-deals-mobile.webp",          alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/reolink-online-deals-mobile_k4vl5d.webp",         alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609705/viagogo-online-deals-mobile_cpezha.webp",         alt: "Viagogo Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609871/envato-elements-online-deals-mobile_ih1cdn.webp", alt: "Envato Elements Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/rayneo-online-deals-mobile_mbmtil.webp",          alt: "Rayneo Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/sintra-online-deals-mobile_lm67mf.webp",          alt: "Sintra Deals" },
 ];
 
 
@@ -145,7 +145,7 @@ export default function DealsOfTheDayContent() {
       <Navbar />
 
       {/* Section 1: Hero Slider (Desktop) */}
-      <div className="relative w-full mt-24 overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
+      <div className="relative w-full overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
         {slides.map((slide, index) => (
           <motion.div
             key={slide.id}
@@ -171,7 +171,7 @@ export default function DealsOfTheDayContent() {
       </div>
 
       {/* Section 1: Hero Slider (Mobile) */}
-      <div className="relative w-full mt-24 overflow-hidden md:hidden">
+      <div className="relative w-full overflow-hidden md:hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={mobileSlides[currentSlide].id}
@@ -273,7 +273,7 @@ export default function DealsOfTheDayContent() {
               { label: "SAVE",  discount: "$40",   cat: "Smart Accessories",  title: "Save $40 – Smart Accessories Shop",                desc: "Get exclusive savings on Reolink smart accessories including mounts, cables and add-ons." },
             ].map((c, i) => (
               <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                   <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                   <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
                   <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>

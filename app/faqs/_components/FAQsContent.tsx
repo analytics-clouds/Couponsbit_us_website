@@ -163,7 +163,7 @@ export default function FAQsContent() {
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-20 pb-32 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden mt-[64px] text-center">
+      <section className="relative w-full pt-20 pb-32 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden text-center">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

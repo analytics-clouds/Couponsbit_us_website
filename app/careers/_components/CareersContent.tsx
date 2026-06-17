@@ -30,7 +30,7 @@ export default function CareersContent() {
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="relative w-full pt-[100px] pb-[120px] bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] overflow-hidden mt-[64px]">
+      <section className="relative w-full pt-[100px] pb-[120px] bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5] overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}

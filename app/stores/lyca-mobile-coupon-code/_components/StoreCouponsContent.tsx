@@ -194,15 +194,15 @@ export default function LycaCouponsContent() {
       </div>
 
       {/* Main Content Start */}
-      <main className="mt-24">
+      <main>
         {/* Section 1: Breadcrumb */}
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
               <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <span className="text-black font-extrabold">Lyca Mobile</span>
             </nav>
           </div>
@@ -215,9 +215,11 @@ export default function LycaCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                    <img src="/lyca-mobile-coupon-code.webp" alt="Lyca Mobile" className="w-full h-full object-contain" />
-                  </div>
+                  <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer">
+                    <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
+                      <img src="/lyca-mobile-coupon-code.webp" alt="Lyca Mobile" width={112} height={112} className="w-full h-full object-contain" />
+                    </div>
+                  </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Lyca Mobile</h1>
                     <div className="flex items-center gap-1.5 mb-3">
@@ -226,7 +228,7 @@ export default function LycaCouponsContent() {
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-50" />
                       </div>
                       <span className="text-black font-black text-sm">4.3</span>
-                      <span className="text-gray-400 font-bold text-sm">(11.5k Ratings)</span>
+                      <span className="text-gray-600 font-bold text-sm">(11.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
                       Lyca Mobile — Affordable no-contract prepaid plans. 10 verified deals live! Plans from $7.50, 69% OFF & international calling from $10. Activate now!
@@ -245,7 +247,7 @@ export default function LycaCouponsContent() {
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
+                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
                        </div>
                     </div>
                   ))}
@@ -255,20 +257,26 @@ export default function LycaCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[350px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <img src="/lyca-mobile-discount-code.webp" alt="Lyca Mobile Discount Code" className="w-full h-full object-cover" />
+                    <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/lyca-mobile-discount-code.webp" alt="Lyca Mobile Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <img src="/lyca-mobile-promo-code.webp" alt="Lyca Mobile Promo Code" className="w-full h-full object-cover" />
+                    <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/lyca-mobile-promo-code.webp" alt="Lyca Mobile Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <img src="/lyca-mobile-voucher-code.webp" alt="Lyca Mobile Voucher Code" className="w-full h-full object-cover" />
+                    <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/lyca-mobile-voucher-code.webp" alt="Lyca Mobile Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Controls */}
@@ -304,7 +312,7 @@ export default function LycaCouponsContent() {
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
-                    <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
+                    <p className="text-gray-500 font-bold text-[12px] mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -324,37 +332,13 @@ export default function LycaCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">10 Coupons & Offers Available</p>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-                   <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-1">
-                      {["All (10)", "Coupons (5)", "Deals (5)"].map((tab) => (
-                        <button 
-                          key={tab} 
-                          onClick={() => setActiveTab(tab.split(' ')[0] as any)}
-                          className={cn(
-                            "px-5 py-2.5 rounded-full text-sm font-black transition-all whitespace-nowrap active:scale-95",
-                            activeTab === tab.split(' ')[0] ? "bg-[#056bfa] text-white shadow-lg" : "border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
-                          )}
-                        >
-                          {tab}
-                        </button>
-                      ))}
-                   </div>
-                   <div className="flex items-center gap-3">
-                     <span className="text-gray-400 font-black text-xs uppercase tracking-widest">Sort by:</span>
-                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#056bfa] transition-all">
-                       <option>Most Popular</option>
-                       <option>Latest</option>
-                       <option>Expiring Soon</option>
-                       <option>Highest Discount</option>
-                     </select>
-                   </div>
-                </div>
+      
 
                 {/* Coupon 1 */}
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -366,8 +350,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Summer Starts Now – Affordable Prepaid Plans</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy high-speed data, unlimited talk & text with no contracts or credit checks.</p>
@@ -377,14 +361,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>No contracts & no credit checks</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save up to 69% on selected plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Affordable prepaid mobile plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>No contracts & no credit checks</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 69% on selected plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Affordable prepaid mobile plans</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -395,7 +379,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -407,8 +391,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 60% OFF – Selected Lyca Mobile Plans</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Grab exciting savings on selected prepaid mobile plans.</p>
@@ -418,14 +402,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Get up to 60% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited talk with fast-speed data</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Budget-friendly monthly pricing</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 60% OFF instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited talk with fast-speed data</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Budget-friendly monthly pricing</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -436,7 +420,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -448,8 +432,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Better Signal Summer Offer – 18GB Plan</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay connected with high-speed data and hotspot benefits.</p>
@@ -459,14 +443,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>18GB high-speed data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>10GB hotspot data available</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide & international talk/text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>18GB high-speed data included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>10GB hotspot data available</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide & international talk/text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -477,7 +461,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -489,8 +473,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Best Prepaid Phone Plans – Unlimited Plus</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited data and international calling at affordable prices.</p>
@@ -500,14 +484,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Full-speed access for first 40GB</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited international minutes to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Full-speed access for first 40GB</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited international minutes to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -518,7 +502,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -530,8 +514,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">More Months. More Savings</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save more when you choose long-term prepaid plans.</p>
@@ -541,14 +525,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Available on 3, 6 & 12-month plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>International calling to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Save up to 60% on selected plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Available on 3, 6 & 12-month plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calling to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 60% on selected plans</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -559,7 +543,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -571,8 +555,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Stream Share Repeat – Unlimited Data Offer</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Perfect prepaid plan for streaming, browsing & sharing.</p>
@@ -582,14 +566,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>High-speed streaming data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>International calls to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>High-speed streaming data included</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calls to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -600,7 +584,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -612,8 +596,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Best-Selling $33 High Data Plan</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy fast 5G data with hotspot access at discounted pricing.</p>
@@ -623,14 +607,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>18GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Includes 10GB hotspot data</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>18GB data at up to 5G speeds</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 10GB hotspot data</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -641,7 +625,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -653,8 +637,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited Plus Plan – Promo Offer</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited data access with international calling benefits.</p>
@@ -664,14 +648,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited data with first 40GB at full speed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited talk & text nationwide</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>International minutes to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited data with first 40GB at full speed</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited talk & text nationwide</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International minutes to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -682,7 +666,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -693,8 +677,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Refer A Friend – Earn Up To $38</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Invite friends and earn rewards with every successful referral.</p>
@@ -704,14 +688,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Earn up to $38 per referral</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Friends get 50% OFF for first 3 months</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Easy refer & earn process</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Earn up to $38 per referral</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Friends get 50% OFF for first 3 months</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Easy refer & earn process</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -722,7 +706,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -734,8 +718,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">SIM-Only Unlimited Pro Plan</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get premium unlimited data with instant activation support.</p>
@@ -745,14 +729,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited data prepaid plan</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>International calling to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited data prepaid plan</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calling to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -763,7 +747,7 @@ export default function LycaCouponsContent() {
 <div className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
@@ -775,8 +759,8 @@ export default function LycaCouponsContent() {
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
         <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
           <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited International Plan – Starting At $10</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Affordable international prepaid plan with 5G data benefits.</p>
@@ -786,14 +770,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>5GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0077b6]">•</span>Unlimited international talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>5GB data at up to 5G speeds</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited international talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -832,7 +816,7 @@ export default function LycaCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
@@ -909,11 +893,11 @@ export default function LycaCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
+                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -1054,13 +1038,13 @@ export default function LycaCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Lyca Searches</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Lyca Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Prepaid Plans", "Lyca SIM Card", "International Call", "Lyca Data Plan", "Lyca Promo Code", "Unlimited Talk", "Wireless Deals", "Mobile Refill"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -1069,16 +1053,16 @@ export default function LycaCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Lyca Deals</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Lyca Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">L</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

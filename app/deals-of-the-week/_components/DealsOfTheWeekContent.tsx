@@ -34,19 +34,19 @@ interface Deal {
 }
 
 const slides = [
-  { id: 1, image: "/driffle-online-deals.webp",        alt: "Driffle Deals" },
-  { id: 2, image: "/lyca-mobile-online-deals.webp",    alt: "Lyca Mobile Deals" },
-  { id: 3, image: "/latam-airlines-online-deals.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "/bluehost-online-deals.webp",       alt: "Bluehost Deals" },
-  { id: 5, image: "/sintra-online-deals.webp",         alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/driffle-online-deals_bn9tix.webp",        alt: "Driffle Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/lyca-mobile-online-deals_gda53i.webp",    alt: "Lyca Mobile Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/latam-airlines-online-deals_zujyop.webp", alt: "LATAM Airlines Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/bluehost-online-deals_fejbsz.webp",       alt: "Bluehost Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/sintra-online-deals_fglfxk.webp",         alt: "Sintra Deals" },
 ];
 
 const mobileSlides = [
-  { id: 1, image: "/driffle-online-deals-mobile.webp",        alt: "Driffle Deals" },
-  { id: 2, image: "/lyca-mobile-online-deals-mobile.webp",    alt: "Lyca Mobile Deals" },
-  { id: 3, image: "/latam-airlines-online-deals-mobile.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "/bluehost-online-deals-mobile.webp",       alt: "Bluehost Deals" },
-  { id: 5, image: "/sintra-online-deals-mobile.webp",         alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/driffle-online-deals-mobile_zi2m9t.webp",        alt: "Driffle Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/lyca-mobile-voucher-code_yptivs.webp",    alt: "Lyca Mobile Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/latam-airlines-online-deals-mobile_v7ibke.webp", alt: "LATAM Airlines Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/bluehost-online-deals-mobile_aicetp.webp",       alt: "Bluehost Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/sintra-online-deals-mobile_lm67mf.webp",         alt: "Sintra Deals" },
 ];
 
 const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boolean, onClose: () => void }) => {
@@ -98,7 +98,7 @@ const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boole
   );
 };
 
-export default function DealsOfTheMonthContent() {
+export default function DealsOfTheWeekContent() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedDeal] = useState<Deal | null>(null);
   const [isModalOpen] = useState(false);
@@ -118,7 +118,7 @@ export default function DealsOfTheMonthContent() {
       <Navbar />
 
       {/* Section 1: Hero Slider (Desktop) */}
-      <div className="relative w-full mt-24 overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
+      <div className="relative w-full overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
         {slides.map((slide, index) => (
           <motion.div key={slide.id} initial={{ opacity: 0 }} animate={{ opacity: currentSlide === index ? 1 : 0 }} transition={{ duration: 0.8 }} className={cn("absolute inset-0 w-full h-full", currentSlide === index ? "z-10" : "z-0")}>
             <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
@@ -132,7 +132,7 @@ export default function DealsOfTheMonthContent() {
       </div>
 
       {/* Section 1: Hero Slider (Mobile) */}
-      <div className="relative w-full mt-24 overflow-hidden md:hidden">
+      <div className="relative w-full overflow-hidden md:hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={mobileSlides[currentSlide].id}
@@ -158,7 +158,7 @@ export default function DealsOfTheMonthContent() {
           <nav className="flex items-center gap-2 text-sm">
             <Link href="/" className="text-[#056bfa] font-medium hover:underline">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
-            <span className="text-black font-extrabold">Deals of the Month</span>
+            <span className="text-black font-extrabold">Deals of the Week</span>
           </nav>
         </div>
       </div>
@@ -184,7 +184,7 @@ export default function DealsOfTheMonthContent() {
               { label: "FROM",  discount: "$15.99", cat: "Online Store Plan",  title: "Online Store Plan – Starting At $15.99/Month",   desc: "Launch your online store with built-in eCommerce tools and Bluehost's secure hosting." },
             ].map((c, i) => (
               <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                   <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                   <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
                   <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
@@ -372,20 +372,20 @@ export default function DealsOfTheMonthContent() {
     <div className="flex flex-col lg:flex-row gap-16">
       <div className="lg:w-3/5">
         <div className="prose prose-slate max-w-none">
-          <h2 className="text-4xl font-black text-black mb-8 leading-tight">Deal of the Month: This Month's Best Deals, Discounts & Savings</h2>
+          <h2 className="text-4xl font-black text-black mb-8 leading-tight">Deal of the Week: This Week's Best Deals, Discounts & Savings</h2>
           <div className="space-y-6">
-            <h3 className="text-[#056bfa] font-black text-2xl mb-2">Discover This Month's Biggest Savings</h3>
-            <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">Welcome to Couponsbit's Deal of the Month page, where we showcase the best online deals, highest-value discounts, and most popular promotions available this month.</p>
-            <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">Every month brings new shopping opportunities, seasonal sales, and exclusive offers from leading brands. To help shoppers save time and money, we carefully select the most rewarding deals across multiple categories.</p>
-            <p className="text-lg text-gray-600 leading-relaxed font-medium">Whether you're shopping for fashion, electronics, beauty products, travel bookings, software subscriptions, or home essentials, our monthly deals help you maximize savings.</p>
+            <h3 className="text-[#056bfa] font-black text-2xl mb-2">Discover This Week's Biggest Savings</h3>
+            <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">Welcome to Couponsbit's Deal of the Week page, where we showcase the best online deals, highest-value discounts, and most popular promotions available this week.</p>
+            <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">Every week brings new shopping opportunities, seasonal sales, and exclusive offers from leading brands. To help shoppers save time and money, we carefully select the most rewarding deals across multiple categories.</p>
+            <p className="text-lg text-gray-600 leading-relaxed font-medium">Whether you're shopping for fashion, electronics, beauty products, travel bookings, software subscriptions, or home essentials, our weekly deals help you maximize savings.</p>
           </div>
 
           <div className={cn("overflow-hidden transition-all duration-1000 ease-in-out", isSeoExpanded ? "max-h-[4000px] opacity-100" : "max-h-0 opacity-0 lg:max-h-none lg:opacity-100")}>
             <div className="pt-8 space-y-6">
-              <h3 className="text-[#056bfa] font-black text-2xl mb-4">Why Explore Our Monthly Deals?</h3>
+              <h3 className="text-[#056bfa] font-black text-2xl mb-4">Why Explore Our Weekly Deals?</h3>
               <p className="text-gray-600 leading-relaxed text-lg mb-6">Not every promotion is worth your attention. That's why Couponsbit highlights only the most valuable deals based on popularity, savings potential, and overall shopper value.</p>
               <div className="space-y-4 mb-8">
-                {["Find the biggest savings opportunities", "Access top-rated deals from trusted brands", "Discover seasonal promotions", "Compare popular offers in one place", "Save money on planned purchases", "Shop smarter throughout the month"].map((point, i) => (
+                {["Find the biggest savings opportunities", "Access top-rated deals from trusted brands", "Discover seasonal promotions", "Compare popular offers in one place", "Save money on planned purchases", "Shop smarter throughout the week"].map((point, i) => (
                   <div key={i} className="flex items-center gap-4 py-2 border-b border-[#f0f0f0] last:border-0">
                     <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
                     <p className="text-gray-700 text-lg font-medium">{point}</p>
@@ -395,7 +395,7 @@ export default function DealsOfTheMonthContent() {
             </div>
 
             <div className="pt-8 space-y-6">
-              <h3 className="text-[#056bfa] font-black text-2xl mb-6">Featured Monthly Deal Categories</h3>
+              <h3 className="text-[#056bfa] font-black text-2xl mb-6">Featured Weekly Deal Categories</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   { icon: Shirt,       title: "Fashion & Lifestyle Deals",          desc: "Explore discounts on apparel, footwear, accessories, luxury brands, and everyday fashion essentials.", bg: "bg-pink-50 text-pink-600" },
@@ -433,9 +433,9 @@ export default function DealsOfTheMonthContent() {
                 <p className="text-gray-600 leading-relaxed text-lg">At Couponsbit, we focus on helping users find real savings through verified promo codes, exclusive offers, and carefully selected deals.</p>
               </div>
               <div>
-                <h3 className="text-[#056bfa] font-black text-2xl mb-4">Make This Month More Rewarding</h3>
-                <p className="text-gray-600 leading-relaxed text-lg mb-4">Don't miss out on this month's best savings opportunities. Browse featured monthly deals, unlock exclusive discounts, and discover smarter ways to save.</p>
-                <p className="text-gray-600 leading-relaxed text-lg font-medium">Start exploring this month's top deals today and make every purchase count.</p>
+                <h3 className="text-[#056bfa] font-black text-2xl mb-4">Make This Week More Rewarding</h3>
+                <p className="text-gray-600 leading-relaxed text-lg mb-4">Don't miss out on this week's best savings opportunities. Browse featured monthly deals, unlock exclusive discounts, and discover smarter ways to save.</p>
+                <p className="text-gray-600 leading-relaxed text-lg font-medium">Start exploring this week's top deals today and make every purchase count.</p>
               </div>
             </div>
           </div>
@@ -453,14 +453,14 @@ export default function DealsOfTheMonthContent() {
           <div className="bg-white border border-[#f0f0f0] rounded-[32px] p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-8"><Search className="w-6 h-6 text-[#056bfa]" /><h3 className="text-black font-black text-xl">Popular Searches</h3></div>
             <div className="flex flex-wrap gap-2.5">
-              {["This Month's Amazon Deal", "Flipkart Monthly Sale", "Monthly Cashback", "Featured Mega Deals", "Top Fashion Coupons", "Electronics This Month", "Monthly Travel Offers", "Best Software Deals", "Bank Cards Offers", "Brand Discount Codes"].map((pill) => (
+              {["This Week's Amazon Deal", "Flipkart Weekly Sale", "Weekly Cashback", "Featured Mega Deals", "Top Fashion Coupons", "Electronics This Week", "Weekly Travel Offers", "Best Software Deals", "Bank Cards Offers", "Brand Discount Codes"].map((pill) => (
                 <button key={pill} className="bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black px-5 py-2.5 hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm">{pill}</button>
               ))}
             </div>
           </div>
 
           <div className="bg-white border border-[#f0f0f0] rounded-[32px] p-8 shadow-sm">
-            <div className="flex items-center gap-3 mb-8"><Flame className="w-6 h-6 text-orange-500 fill-orange-500" /><h3 className="text-black font-black text-xl">This Month's Top Picks</h3></div>
+            <div className="flex items-center gap-3 mb-8"><Flame className="w-6 h-6 text-orange-500 fill-orange-500" /><h3 className="text-black font-black text-xl">This Week's Top Picks</h3></div>
             <div className="space-y-6">
               {[
                 { store: "Bluehost",       deal: "WordPress Hosting From $1.99/mo" },
@@ -487,10 +487,10 @@ export default function DealsOfTheMonthContent() {
             <h3 className="text-black font-black text-xl mb-8">Frequently Asked Questions</h3>
             <div className="space-y-6">
               {[
-                { q: "What are Deals of the Month on Couponsbit?", a: "Deals of the Month are our curated selection of high-value discounts, seasonal sales, and trending promotions valid throughout the current month." },
+                { q: "What are Deals of the Week on Couponsbit?", a: "Deals of the Week are our curated selection of high-value discounts, seasonal sales, and trending promotions valid throughout the current week." },
                 { q: "Are these monthly deals verified?", a: "Yes! All featured coupons, promotions, and deals are manually checked and verified by our dedicated team to ensure quality and accuracy." },
-                { q: "How often is the content updated?", a: "While these main offers stay relevant across the month, specific brand coupons, flash sales, and seasonal discount opportunities are regularly refreshed." },
-                { q: "Can I combine these deals with bank offers?", a: "Absolutely! You can stack these verified monthly discounts with available credit or debit card offers on partner stores." }
+                { q: "How often is the content updated?", a: "While these main offers stay relevant across the week, specific brand coupons, flash sales, and seasonal discount opportunities are regularly refreshed." },
+                { q: "Can I combine these deals with bank offers?", a: "Absolutely! You can stack these verified weekly discounts with available credit or debit card offers on partner stores." }
               ].map((faq, i) => (
                 <div key={i} className="border-b border-[#f0f0f0] last:border-0 pb-4 last:pb-0">
                   <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="flex items-center justify-between w-full text-left py-2 group">

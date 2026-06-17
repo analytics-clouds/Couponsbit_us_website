@@ -27,7 +27,6 @@ export const Footer = () => {
     { icon: Instagram, href: "#", name: "Instagram" },
     { icon: Twitter, href: "#", name: "Twitter" },
     { icon: Youtube, href: "#", name: "YouTube" },
-    { icon: MessageCircle, href: "#", name: "WhatsApp" },
     { icon: Send, href: "#", name: "Telegram" },
   ];
 
@@ -36,7 +35,7 @@ export const Footer = () => {
     { name: "Categories", href: "/categories" },
     { name: "Stores", href: "/stores" },
     { name: "Deals of the Day", href: "/deals-of-the-day" },
-    { name: "Deals of the Month", href: "/deals-of-the-month" },
+    { name: "Deals of the Week", href: "/deals-of-the-week" },
     { name: "Partner With Us", href: "/partner" }
   ];
 
@@ -85,7 +84,7 @@ export const Footer = () => {
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-white">Never Miss a Great Deal!</h3>
-                <p className="text-brand-primary-light/80 mt-1 font-medium max-w-lg">
+                <p className="text-white/90 mt-1 font-medium max-w-lg">
                   Subscribe to get the latest coupons, deals & exclusive offers straight to your inbox.
                 </p>
               </div>
@@ -105,7 +104,7 @@ export const Footer = () => {
                     Subscribe Now
                   </Button>
                 </div>
-                <p className="text-white/70 text-xs font-semibold text-center lg:text-left pl-2">
+                <p className="text-white/90 text-xs font-semibold text-center lg:text-left pl-2">
                   No spam. Unsubscribe anytime.
                 </p>
               </div>
@@ -115,7 +114,7 @@ export const Footer = () => {
       </div>
 
       {/* Layer 2: Main Footer Body */}
-      <div className="bg-[#0f1f22] pt-20 pb-16">
+      <div className="bg-[#051a33] pt-20 pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
             {/* Column 1: Brand */}
@@ -223,7 +222,7 @@ export const Footer = () => {
       </div>
 
       {/* Layer 3: Bottom Stats Bar */}
-      <div className="bg-[#162a2e] py-8 border-y border-white/5">
+      <div className="bg-[#0a2545] py-8 border-y border-white/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4 items-center">
             {stats.map((stat, idx) => (
@@ -247,7 +246,7 @@ export const Footer = () => {
       </div>
 
       {/* Layer 4: Copyright Bar */}
-      <div className="bg-[#0a1518] py-8">
+      <div className="bg-[#030f20] py-8">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-gray-500 text-sm font-semibold tracking-wide">
             © {currentYear} Couponsbit. All Rights Reserved.

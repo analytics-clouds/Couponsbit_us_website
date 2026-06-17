@@ -35,7 +35,8 @@ const categories = [
     stores: "50+",
     description: "AR glasses, cameras, gadgets & devices",
     featured: ["Rayneo", "Reolink", "Samsung", "Apple"],
-    gradient: "from-[#4A90E2] to-[#2B6CB0]"
+    gradient: "from-[#4A90E2] to-[#2B6CB0]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp"
   },
   {
     id: "travel",
@@ -49,7 +50,8 @@ const categories = [
     stores: "20+",
     description: "Flights, hotels & vacation packages",
     featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
-    gradient: "from-[#056bfa] to-[#0451c4]"
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp"
   },
   {
     id: "entertainment",
@@ -63,7 +65,8 @@ const categories = [
     stores: "15+",
     description: "Concerts, sports events & live shows",
     featured: ["StubHub", "Viagogo", "Ticketmaster", "SeatGeek"],
-    gradient: "from-[#8E44AD] to-[#6C3483]"
+    gradient: "from-[#8E44AD] to-[#6C3483]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/entertainment-store_n2svyq.webp"
   },
   {
     id: "software",
@@ -77,7 +80,8 @@ const categories = [
     stores: "30+",
     description: "Game keys, hosting, AI tools & more",
     featured: ["Driffle", "Bluehost", "Envato", "Sintra"],
-    gradient: "from-[#6B46C1] to-[#553C9A]"
+    gradient: "from-[#6B46C1] to-[#553C9A]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677501/software-store_obazsu.webp"
   },
   {
     id: "mobile",
@@ -91,7 +95,8 @@ const categories = [
     stores: "10+",
     description: "SIM plans, data packs & calling",
     featured: ["Lyca Mobile", "Mint Mobile", "Visible", "Google Fi"],
-    gradient: "from-[#00A651] to-[#007A3D]"
+    gradient: "from-[#00A651] to-[#007A3D]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/mobile-store_qo5cuh.webp"
   }
 ];
 
@@ -249,7 +254,7 @@ export default function CategoriesPageContent() {
                         <div className={cn("relative overflow-hidden bg-gradient-to-br", cat.gradient)}>
                           {/* Category image */}
                           <img
-                            src={`/${cat.id}-store.webp`}
+                            src={cat.image}
                             alt={cat.name}
                             className="w-full h-auto block group-hover:scale-105 transition-transform duration-300"
                           />

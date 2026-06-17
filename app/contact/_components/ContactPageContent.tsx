@@ -31,7 +31,7 @@ interface FormData {
   fullName: string;
   email: string;
   phone: string;
-  subject: string;
+  country: string;
   message: string;
   agree: boolean;
   inquiryType: string;
@@ -40,7 +40,7 @@ interface FormData {
 interface FormErrors {
   fullName?: string;
   email?: string;
-  subject?: string;
+  country?: string;
   message?: string;
   agree?: string;
 }
@@ -77,7 +77,7 @@ export default function ContactPageContent() {
     fullName: "",
     email: "",
     phone: "",
-    subject: "",
+    country: "",
     message: "",
     agree: false,
     inquiryType: "General"
@@ -101,8 +101,8 @@ export default function ContactPageContent() {
       newErrors.email = "Please enter a valid email address";
     }
     
-    if (!formData.subject) {
-      newErrors.subject = "Please select a subject";
+    if (!formData.country) {
+      newErrors.country = "Please select a country";
     }
     
     if (formData.message.length < 20) {
@@ -138,7 +138,7 @@ export default function ContactPageContent() {
       <Navbar />
 
       {/* Section 1: Hero Section */}
-      <section className="relative w-full pt-20 pb-32 md:pt-20 md:pb-40 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden mt-[64px]">
+      <section className="relative w-full pt-20 pb-32 md:pt-20 md:pb-40 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -365,31 +365,72 @@ export default function ContactPageContent() {
                             </div>
                           </div>
                           <div>
-                            <label className="block text-gray-700 font-bold text-sm mb-2">Subject</label>
+                            <label className="block text-gray-700 font-bold text-sm mb-2">Country</label>
                             <div className="relative">
-                              <select 
+                              <select
                                 className={cn(
                                   "w-full h-14 px-4 bg-white border-2 rounded-2xl text-sm font-medium appearance-none outline-none focus:ring-4 focus:ring-[#056bfa]/10 transition-all cursor-pointer",
-                                  errors.subject ? "border-[#ef4444]" : "border-[#e0e0e0] focus:border-[#056bfa]"
+                                  errors.country ? "border-[#ef4444]" : "border-[#e0e0e0] focus:border-[#056bfa]"
                                 )}
-                                value={formData.subject}
+                                value={formData.country}
                                 onChange={(e) => {
-                                  setFormData({...formData, subject: e.target.value});
-                                  if (errors.subject) setErrors({...errors, subject: undefined});
+                                  setFormData({...formData, country: e.target.value});
+                                  if (errors.country) setErrors({...errors, country: undefined});
                                 }}
                               >
-                                <option value="" disabled>Select Subject</option>
-                                <option>General Inquiry</option>
-                                <option>Submit a Coupon</option>
-                                <option>Partnership & Advertising</option>
-                                <option>Report a Bug</option>
-                                <option>Career Opportunity</option>
-                                <option>Press & Media</option>
+                                <option value="" disabled>Select Country</option>
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                                <option>Canada</option>
+                                <option>Australia</option>
+                                <option>India</option>
+                                <option>Germany</option>
+                                <option>France</option>
+                                <option>Italy</option>
+                                <option>Spain</option>
+                                <option>Netherlands</option>
+                                <option>Sweden</option>
+                                <option>Norway</option>
+                                <option>Denmark</option>
+                                <option>Switzerland</option>
+                                <option>Belgium</option>
+                                <option>Austria</option>
+                                <option>Portugal</option>
+                                <option>Poland</option>
+                                <option>Brazil</option>
+                                <option>Mexico</option>
+                                <option>Argentina</option>
+                                <option>Colombia</option>
+                                <option>Chile</option>
+                                <option>South Africa</option>
+                                <option>Nigeria</option>
+                                <option>Kenya</option>
+                                <option>Egypt</option>
+                                <option>United Arab Emirates</option>
+                                <option>Saudi Arabia</option>
+                                <option>Israel</option>
+                                <option>Turkey</option>
+                                <option>Pakistan</option>
+                                <option>Bangladesh</option>
+                                <option>Sri Lanka</option>
+                                <option>Nepal</option>
+                                <option>Singapore</option>
+                                <option>Malaysia</option>
+                                <option>Indonesia</option>
+                                <option>Philippines</option>
+                                <option>Thailand</option>
+                                <option>Vietnam</option>
+                                <option>Japan</option>
+                                <option>South Korea</option>
+                                <option>China</option>
+                                <option>Hong Kong</option>
+                                <option>Taiwan</option>
+                                <option>New Zealand</option>
                                 <option>Other</option>
                               </select>
                               <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#056bfa] pointer-events-none" />
                             </div>
-                            {errors.subject && <p className="text-[#ef4444] text-[10px] font-bold mt-1.5 px-2">{errors.subject}</p>}
+                            {errors.country && <p className="text-[#ef4444] text-[10px] font-bold mt-1.5 px-2">{errors.country}</p>}
                           </div>
                         </div>
 
@@ -550,13 +591,13 @@ export default function ContactPageContent() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button 
               onClick={scrollToForm}
-              className="w-full sm:w-auto px-10 py-7 bg-white text-[#056bfa] rounded-full font-black text-lg shadow-xl hover:scale-105 transition-all text-center"
+              className="w-full sm:w-auto px-10 py-7 bg-white text-[#056bfa] rounded-full font-black text-lg shadow-xl hover:scale-105 hover:text-[#ffffff] transition-all text-center"
             >
               Send Us a Message
             </Button>
             <button 
               onClick={() => document.getElementById('faqs')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto px-10 py-6 border-2 border-white text-white rounded-full font-black text-lg hover:bg-white hover:text-[#056bfa] transition-all text-center"
+              className="w-full sm:w-auto px-10 py-3 border-2 border-white text-white rounded-full font-black text-lg hover:bg-white hover:text-[#056bfa] transition-all text-center"
             >
               Browse FAQs
             </button>

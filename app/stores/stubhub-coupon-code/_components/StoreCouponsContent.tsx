@@ -210,15 +210,15 @@ export default function StubHubCouponsContent() {
       </div>
 
       {/* Main Content Start */}
-      <main className="mt-[64px]">
+      <main>
         {/* Section 1: Breadcrumb */}
-        <div className="bg-white border-b border-[#f0f0f0] mt-24">
+        <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
               <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <span className="text-black font-extrabold">StubHub</span>
             </nav>
           </div>
@@ -231,9 +231,11 @@ export default function StubHubCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                    <img src="/stubhub-coupon-code.webp" alt="StubHub" className="w-full h-full object-contain" />
-                  </div>
+                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer">
+                    <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
+                      <img src="/stubhub-coupon-code.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" />
+                    </div>
+                  </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">StubHub</h1>
                     <div className="flex items-center gap-1.5 mb-3">
@@ -242,7 +244,7 @@ export default function StubHubCouponsContent() {
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-50" />
                       </div>
                       <span className="text-black font-black text-sm">4.5</span>
-                      <span className="text-gray-400 font-bold text-sm">(18k Ratings)</span>
+                      <span className="text-gray-600 font-bold text-sm">(18k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
                       StubHub — World's largest ticket marketplace. 7 verified coupon codes live! Grab Flat 10% OFF, $25 student discount & $20 OFF for new users. Book now!
@@ -261,7 +263,7 @@ export default function StubHubCouponsContent() {
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
+                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
                        </div>
                     </div>
                   ))}
@@ -273,18 +275,20 @@ export default function StubHubCouponsContent() {
               {/* Right: Featured Banner Slider */}
               {/* Right: Featured Banner Slider */}
 <div className="hidden md:block flex-1">
-  <div className="relative rounded-2xl overflow-hidden h-[350px] md:h-[350px] shadow-lg group">
+  <div className="relative rounded-2xl overflow-hidden h-[280px] md:h-[280px] shadow-lg group">
 
     {/* Slide 1 */}
     <div
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 0 ? 1 : 0 }}
     >
-      <img
-        src="/stubhub-discount-code.webp"
-        alt="Banner 1"
-        className="w-full h-full object-cover"
-      />
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+        <img
+          src="/check-1.jpg"
+          alt="Banner 1"
+          width={800} height={280} className="w-full object-cover"
+        />
+      </a>
     </div>
 
     {/* Slide 2 */}
@@ -292,11 +296,13 @@ export default function StubHubCouponsContent() {
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 1 ? 1 : 0 }}
     >
-      <img
-        src="/stubhub-promo-code.webp"
-        alt="Banner 2"
-        className="w-full h-full object-cover"
-      />
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+        <img
+          src="/check-1.jpg"
+          alt="Banner 2"
+          width={800} height={280} className="w-full object-cover"
+        />
+      </a>
     </div>
 
     {/* Slide 3 */}
@@ -304,11 +310,13 @@ export default function StubHubCouponsContent() {
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 2 ? 1 : 0 }}
     >
-      <img
-        src="/stubhub-voucher-code.webp"
-        alt="Banner 3"
-        className="w-full h-full object-cover"
-      />
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+        <img
+          src="/check-1.jpg"
+          alt="Banner 3"
+          width={800} height={280} className="w-full object-cover"
+        />
+      </a>
     </div>
 
     {/* Controls */}
@@ -362,7 +370,7 @@ export default function StubHubCouponsContent() {
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
-                    <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
+                    <p className="text-gray-500 font-bold text-[12px] mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -390,7 +398,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -422,11 +430,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -475,17 +483,17 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Flat 10% OFF on sitewide bookings
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Applicable on orders above $40
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Covers concerts, sports & live events
                   </li>
 
@@ -502,7 +510,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -531,7 +539,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -565,11 +573,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -616,16 +624,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      - Match Date: May 24                  </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Venue: Frost Bank Center, San Antonio
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                    Western Conference Finals - Home Game 2  </li>
 
                 </ul>
@@ -641,7 +649,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -670,7 +678,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -704,11 +712,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -755,16 +763,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Ticket prices start from just $30   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Live performances by top artists & bands
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Available for all users
                   </li>
 
@@ -781,7 +789,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -809,7 +817,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -840,11 +848,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -892,16 +900,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Tickets starting from $171   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Premium theater experience
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Book now before seats sell out </li>
 
                 </ul>
@@ -917,7 +925,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -942,7 +950,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -972,11 +980,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -1022,16 +1030,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                   Tickets start at $582 </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     3-day passes available
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Offer valid for all users</li>
 
                 </ul>
@@ -1047,7 +1055,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -1074,7 +1082,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -1107,11 +1115,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -1157,16 +1165,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Flat $25 OFF with student code  </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Applicable on ticket bookings
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Special offer for students only </li>
 
                 </ul>
@@ -1182,7 +1190,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -1208,7 +1216,7 @@ export default function StubHubCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -1241,11 +1249,11 @@ export default function StubHubCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -1291,16 +1299,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                    Flat $20 OFF for new users </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                         Applicable on first order only
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      -Limited-time welcome offer </li>
 
                 </ul>
@@ -1316,7 +1324,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -1369,7 +1377,7 @@ export default function StubHubCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
@@ -1450,11 +1458,11 @@ export default function StubHubCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
+                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -1598,13 +1606,13 @@ export default function StubHubCouponsContent() {
       <div className="space-y-10">
         {/* Box 1: Popular Searches */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular StubHub Searches</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular StubHub Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["StubHub Concerts", "StubHub Sports", "StubHub Theater", "StubHub Comedy", "StubHub Promo Code", "StubHub Ticket Deals", "StubHub Festivals", "StubHub Offers"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -1614,16 +1622,16 @@ export default function StubHubCouponsContent() {
 
         {/* Box 2: Today's Top Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top StubHub Deals</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top StubHub Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 7).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">S</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

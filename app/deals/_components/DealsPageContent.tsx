@@ -13,19 +13,19 @@ import { cn } from "@/lib/utils";
 
 
 const slides = [
-  { id: 1, image: "/stubhub-online-deals.webp",       alt: "StubHub Deals" },
-  { id: 2, image: "/Viagogo-online-deals.webp",        alt: "Viagogo Deals" },
-  { id: 3, image: "/latam-airlines-online-deals.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "/rayneo-online-deals.webp",         alt: "Rayneo Deals" },
-  { id: 5, image: "/driffle-online-deals.webp",        alt: "Driffle Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610277/stubhub-online-deals_sxsccq.webp",       alt: "StubHub Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/viagogo-online-deals_n4emtx.webp",        alt: "Viagogo Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/latam-airlines-online-deals_zujyop.webp", alt: "LATAM Airlines Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610275/rayneo-online-deals_egnuzp.webp",         alt: "Rayneo Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/driffle-online-deals_bn9tix.webp",        alt: "Driffle Deals" },
 ];
 
 const mobileSlides = [
-  { id: 1, image: "/stubhub-online-deals-mobile.webp", alt: "StubHub Deals" },
-  { id: 2, image: "/viagogo-online-deals-mobile.webp", alt: "Viagogo Deals" },
-  { id: 3, image: "/latam-airlines-online-deals-mobile.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "/rayneo-online-deals-mobile.webp", alt: "Rayneo Deals" },
-  { id: 5, image: "/driffle-online-deals-mobile.webp", alt: "Driffle Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/mobile-slider-stubhub_wsstfl.webp", alt: "StubHub Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609705/viagogo-online-deals-mobile_cpezha.webp", alt: "Viagogo Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/latam-airlines-online-deals-mobile_v7ibke.webp", alt: "LATAM Airlines Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/rayneo-online-deals-mobile_mbmtil.webp", alt: "Rayneo Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/driffle-online-deals-mobile_zi2m9t.webp", alt: "Driffle Deals" },
 ];
 
 export default function DealsPageContent() {
@@ -47,7 +47,7 @@ export default function DealsPageContent() {
       <Navbar />
 
       {/* ── Hero Slider (Desktop) ── */}
-      <div className="relative w-full mt-24 overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
+      <div className="relative w-full overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
         {slides.map((slide, index) => (
           <motion.div
             key={slide.id}
@@ -73,7 +73,7 @@ export default function DealsPageContent() {
       </div>
 
       {/* ── Hero Slider (Mobile) ── */}
-      <div className="relative w-full mt-24 overflow-hidden md:hidden">
+      <div className="relative w-full overflow-hidden md:hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={mobileSlides[currentSlide].id}
@@ -132,7 +132,7 @@ export default function DealsPageContent() {
               { label: "FREE", discount: "FEES", cat: "Service Fee", title: "No Service Fee on Your Next Booking", desc: "Refer a fellow fan and unlock a full service fee waiver on any ticket transaction.", points: ["Zero service fee on any booking", "Valid for referral users only", "Works on sports & live music tickets"] },
             ].map((c, i) => (
               <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                   <div className="absolute -right-3 top-8 w-6 h-6 bg-[#f4f7f8] rounded-full" />
                   <div className="absolute -right-3 bottom-8 w-6 h-6 bg-[#f4f7f8] rounded-full" />
                   <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>

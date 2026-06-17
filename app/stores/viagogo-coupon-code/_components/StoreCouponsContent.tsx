@@ -189,15 +189,15 @@ export default function ViaggogoCouponsContent() {
       </div>
 
       {/* Main Content Start */}
-      <main className="mt-24">
+      <main>
         {/* Section 1: Breadcrumb */}
         <div className="bg-white border-b border-[#f0f0f0]">
           <div className="container mx-auto px-4 max-w-7xl py-3.5">
             <nav className="flex items-center gap-2 text-sm font-medium">
               <Link href="/" className="text-[#056bfa] hover:underline">Home</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
-              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
               <span className="text-black font-extrabold">Viagogo</span>
             </nav>
           </div>
@@ -210,9 +210,11 @@ export default function ViaggogoCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                    <img src="/viagogo-coupon-code.webp" alt="Viagogo" className="w-full h-full object-contain" />
-                  </div>
+                  <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer">
+                    <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
+                      <img src="/viagogo-coupon-code.webp" alt="Viagogo" width={112} height={112} className="w-full h-full object-contain" />
+                    </div>
+                  </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Viagogo</h1>
                     <div className="flex items-center gap-1.5 mb-3">
@@ -221,7 +223,7 @@ export default function ViaggogoCouponsContent() {
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-50" />
                       </div>
                       <span className="text-black font-black text-sm">4.4</span>
-                      <span className="text-gray-400 font-bold text-sm">(12k Ratings)</span>
+                      <span className="text-gray-600 font-bold text-sm">(12k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
                       Viagogo — Global ticket marketplace. 9 verified deals live! Grab Coachella passes from $603, World Cup tickets from $120 & concerts from $49. Book now!
@@ -240,7 +242,7 @@ export default function ViaggogoCouponsContent() {
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[10px] uppercase mt-0.5">{stat.label}</p>
+                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
                        </div>
                     </div>
                   ))}
@@ -250,20 +252,26 @@ export default function ViaggogoCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[350px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" className="w-full h-full object-cover" />
+                    <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <img src="/viagogo-promo-code.webp" alt="Viagogo Promo Code" className="w-full h-full object-cover" />
+                    <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/viagogo-promo-code.webp" alt="Viagogo Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <img src="/viagogo-voucher-code.webp" alt="Viagogo Voucher Code" className="w-full h-full object-cover" />
+                    <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="/viagogo-voucher-code.webp" alt="Viagogo Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                    </a>
                   </div>
 
                   {/* Controls */}
@@ -299,7 +307,7 @@ export default function ViaggogoCouponsContent() {
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
                   <div className="text-left">
                     <p className="text-black font-black text-sm leading-none">{item.title}</p>
-                    <p className="text-gray-500 font-bold text-[10px] mt-0.5">{item.sub}</p>
+                    <p className="text-gray-500 font-bold text-[12px] mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -319,31 +327,7 @@ export default function ViaggogoCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">9 Coupons & Offers Available</p>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-                   <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-1">
-                      {["All (9)", "Coupons (5)", "Deals (4)"].map((tab) => (
-                        <button 
-                          key={tab} 
-                          onClick={() => setActiveTab(tab.split(' ')[0] as any)}
-                          className={cn(
-                            "px-5 py-2.5 rounded-full text-sm font-black transition-all whitespace-nowrap active:scale-95",
-                            activeTab === tab.split(' ')[0] ? "bg-[#056bfa] text-white shadow-lg" : "border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
-                          )}
-                        >
-                          {tab}
-                        </button>
-                      ))}
-                   </div>
-                   <div className="flex items-center gap-3">
-                     <span className="text-gray-400 font-black text-xs uppercase tracking-widest">Sort by:</span>
-                     <select className="bg-white border-[1.5px] border-[#e0e0e0] rounded-xl px-4 py-2 text-sm font-black text-black outline-none cursor-pointer focus:border-[#056bfa] transition-all">
-                       <option>Most Popular</option>
-                       <option>Latest</option>
-                       <option>Expiring Soon</option>
-                       <option>Highest Discount</option>
-                     </select>
-                   </div>
-                </div>
+               
 
 
 
@@ -355,7 +339,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -384,11 +368,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -435,17 +419,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Tickets starting from $603
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Location: Empire Polo Field, California
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Limited-time festival deal
                   </li>
 
@@ -462,7 +446,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -488,7 +472,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -517,11 +501,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -567,17 +551,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Event Dates: June 5–7
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Location: Corona Park, Flushing Meadows, NY
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                    
                   </li>
 
@@ -594,7 +578,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -621,7 +605,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -650,11 +634,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -701,17 +685,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Tickets starting from $603
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Location: Empire Polo Field, California
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Limited-time festival deal
                   </li>
 
@@ -728,7 +712,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -755,7 +739,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -784,11 +768,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -834,17 +818,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Prices start from $109
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Available in Indonesia, Hong Kong & Singapore
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Limited seats available
                   </li>
 
@@ -861,7 +845,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -888,7 +872,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -917,11 +901,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -968,17 +952,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Ticket prices start at $49
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Artists include Blackpink, Madonna & Westlife
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Limited-time concert offer
                   </li>
 
@@ -995,7 +979,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -1021,7 +1005,7 @@ export default function ViaggogoCouponsContent() {
         <div className="flex flex-row">
 
           {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
 
             {/* CUTS */}
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
@@ -1050,11 +1034,11 @@ export default function ViaggogoCouponsContent() {
               {/* BADGES */}
               <div className="flex flex-wrap gap-2 mb-3">
 
-                <span className="bg-red-100 text-red-500 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Limited Time
                 </span>
 
-                <span className="bg-green-100 text-green-600 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
                   Verified Deal
                 </span>
 
@@ -1103,17 +1087,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                       Parking passes start at $65
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                      Garage & underground parking available
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0077b6]">•</span>
+                    <span className="text-[#056bfa]">•</span>
                     Easy access to concert venue
                   </li>
 
@@ -1130,7 +1114,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#0077b6] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
                 Get Deal
@@ -1178,7 +1162,7 @@ export default function ViaggogoCouponsContent() {
                             <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
                             <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
                           </div>
-                          <span className="bg-[#e8f6f8] text-[#056bfa] px-2.5 py-0.5 rounded-full text-[10px] font-black">{cat.count} Coupons</span>
+                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
                         </Link>
                       ))}
                    </div>
@@ -1255,11 +1239,11 @@ export default function ViaggogoCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                  <h4 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h4>
-                  <p className="text-[#056bfa] font-black text-[10px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[10px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
+                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
                 </Link>
               ))}
             </div>
@@ -1408,13 +1392,13 @@ export default function ViaggogoCouponsContent() {
       <div className="space-y-10">
         {/* Box 1: Popular Searches */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Viagogo Searches</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Viagogo Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Viagogo Concerts", "Viagogo Sports", "Viagogo Theater", "Viagogo Comedy", "Viagogo Promo Code", "Viagogo Ticket Deals", "Viagogo Festivals", "Viagogo Offers"].map(tag => (
               <Link 
                 key={tag} 
                 href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[10px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
               >
                 {tag}
               </Link>
@@ -1424,16 +1408,16 @@ export default function ViaggogoCouponsContent() {
 
         {/* Box 2: Today's Top Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h4 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Viagogo Deals</h4>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Viagogo Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">V</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-400 font-medium text-[10px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">GET</a>
+                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

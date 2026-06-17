@@ -36,14 +36,14 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    { id: 1, image: "/driffle-discount-code.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys" },
-    { id: 2, image: "/latam-airlines-promo-code.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages" },
-    { id: 3, image: "/envato-elements-promo-code.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month" },
-    { id: 4, image: "/lyca-mobile-promo-code.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans" },
-    { id: 5, image: "/rayneo-promo-code.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices" },
-    { id: 6, image: "/reolink-voucher-code.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems" },
-    { id: 7, image: "/sintra-discount-code.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings" },
-    { id: 8, image: "/stubhub-voucher-code.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets" },
+    { id: 1, image: "/driffle-discount-code.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
+    { id: 2, image: "/latam-airlines-promo-code.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
+    { id: 3, image: "/envato-elements-promo-code.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
+    { id: 4, image: "/lyca-mobile-promo-code.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 5, image: "/rayneo-promo-code.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 6, image: "/reolink-voucher-code.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
+    { id: 7, image: "/sintra-discount-code.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
+    { id: 8, image: "/stubhub-voucher-code.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ const Hero = () => {
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="bg-white py-4 mt-24">
+    <section className="bg-white py-4 mt-12">
       <div className="container mx-auto px-4 max-w-7xl relative">
         <div className="relative overflow-hidden group">
           <button
@@ -90,13 +90,13 @@ const Hero = () => {
                 key={`${slide.id}-${idx}`}
                 className={cn("shrink-0 px-2", isMobile ? "w-full" : "w-1/3")}
               >
-                <div className="rounded-3xl overflow-hidden">
+                <a href={slide.href} target="_blank" rel="noopener noreferrer" className="block rounded-3xl overflow-hidden">
                   <img
                     src={slide.image}
                     alt={slide.alt}
                     className="w-full h-auto block"
                   />
-                </div>
+                </a>
               </div>
             ))}
           </div>
@@ -376,7 +376,7 @@ export default function HomePageContent() {
                   id: "electronics",
                   name: "Electronics",
                   description: "AR glasses, cameras, gadgets & devices",
-                  image: "/electronics-store.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp",
                   coupons: "850+",
                   stores: "50+",
                   accent: "#4A90E2",
@@ -387,7 +387,7 @@ export default function HomePageContent() {
                   id: "travel",
                   name: "Travel",
                   description: "Flights, hotels & vacation packages",
-                  image: "/travel-store.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp",
                   coupons: "420+",
                   stores: "20+",
                   accent: "#056bfa",
@@ -398,7 +398,7 @@ export default function HomePageContent() {
                   id: "entertainment",
                   name: "Entertainment",
                   description: "Concerts, sports events & live shows",
-                  image: "/entertainment-store.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/entertainment-store_n2svyq.webp",
                   coupons: "210+",
                   stores: "15+",
                   accent: "#8E44AD",
@@ -512,7 +512,7 @@ export default function HomePageContent() {
               ].map((c, i) => (
                 <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                   {/* Blue left discount box */}
-                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#0388b8] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                     <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                     <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
                     <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>

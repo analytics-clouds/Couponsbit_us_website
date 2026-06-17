@@ -39,7 +39,7 @@ export const NotificationPanel = ({ isOpen }: NotificationPanelProps) => {
           initial={{ opacity: 0, y: 10, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 10, scale: 0.95 }}
-          className="absolute right-0 mt-3 w-[360px] bg-white rounded-xl shadow-2xl border border-brand-primary-light overflow-hidden z-[60]"
+          className="fixed sm:absolute top-20 sm:top-auto sm:mt-3 left-2 right-2 sm:left-auto sm:right-0 sm:w-[360px] bg-white rounded-xl shadow-2xl border border-brand-primary-light overflow-hidden z-[60]"
         >
           <div className="p-4 bg-white border-b border-brand-primary-light">
             <h4 className="text-base font-bold text-black uppercase tracking-tight">Notifications</h4>

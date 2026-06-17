@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import DealsOfTheMonthContent from "./_components/DealsOfTheMonthContent";
+import DealsOfTheWeekContent from "./_components/DealsOfTheWeekContent";
 
 export const metadata: Metadata = {
-  title: "Couponsbit Deals of the Month | Best Deals & Discount Codes",
+  title: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
   description:
     "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
 
   alternates: {
-    canonical: "https://couponsbit.us/deals-of-the-month",
+    canonical: "https://couponsbit.us/deals-of-the-week",
     languages: {
-      "en-US": "https://couponsbit.us/deals-of-the-month",
-      "x-default": "https://couponsbit.us/deals-of-the-month",
+      "en-US": "https://couponsbit.us/deals-of-the-week",
+      "x-default": "https://couponsbit.us/deals-of-the-week",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/deals-of-the-month",
-    title: "Couponsbit Deals of the Month | Best Deals & Discount Codes",
+    url: "https://couponsbit.us/deals-of-the-week",
+    title: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
     description:
       "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
     siteName: "Couponsbit",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "https://couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Couponsbit – Best Deals of the Month & Top Discount Codes",
+        alt: "Couponsbit – Best Deals of the Week & Top Discount Codes",
       },
     ],
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   // ✅ Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Couponsbit Deals of the Month | Best Deals & Discount Codes",
+    title: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
     description:
       "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
     images: ["https://couponsbit.us/og-image.png"],
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
 };
 
 // ✅ JSON-LD Schema
-const dealsOfTheMonthSchema = {
+const dealsOfTheWeekSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       // ✅ CollectionPage — correct for a curated deals listing page
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/deals-of-the-month#collectionpage",
-      url: "https://couponsbit.us/deals-of-the-month",
-      name: "Couponsbit Deals of the Month | Best Deals & Discount Codes",
+      "@id": "https://couponsbit.us/deals-of-the-week#collectionpage",
+      url: "https://couponsbit.us/deals-of-the-week",
+      name: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
       description:
         "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
       inLanguage: "en-US",
@@ -71,7 +71,7 @@ const dealsOfTheMonthSchema = {
         "@id": "https://couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/deals-of-the-month#breadcrumb",
+        "@id": "https://couponsbit.us/deals-of-the-week#breadcrumb",
       },
       // ✅ SpecialAnnouncement signals time-sensitive curated deals to Google
       speakable: {
@@ -83,7 +83,7 @@ const dealsOfTheMonthSchema = {
         name: "Best Deals This Month & Top Discount Codes",
         description:
           "A curated list of the best online deals, top discount codes, and verified promo codes this month from 2000+ stores on Couponsbit.",
-        url: "https://couponsbit.us/deals-of-the-month",
+        url: "https://couponsbit.us/deals-of-the-week",
         // ✅ Update this monthly — reflects how many deals are live this month
         numberOfItems: 500,
       },
@@ -120,7 +120,7 @@ const dealsOfTheMonthSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/deals-of-the-month#breadcrumb",
+      "@id": "https://couponsbit.us/deals-of-the-week#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -131,24 +131,24 @@ const dealsOfTheMonthSchema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Deals of the Month",
-          item: "https://couponsbit.us/deals-of-the-month",
+          name: "Deals of the Week",
+          item: "https://couponsbit.us/deals-of-the-week",
         },
       ],
     },
   ],
 };
 
-export default function DealsOfTheMonthPage() {
+export default function DealsOfTheWeekPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(dealsOfTheMonthSchema),
+          __html: JSON.stringify(dealsOfTheWeekSchema),
         }}
       />
-      <DealsOfTheMonthContent />
+      <DealsOfTheWeekContent />
     </>
   );
 }

@@ -13,7 +13,8 @@ import {
   Tv,
   Code,
   Zap,
-  LayoutGrid
+  LayoutGrid,
+  X
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -25,6 +26,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { NotificationPanel } from "./NotificationPanel";
+import { allStores } from "@/lib/stores-data";
 
 
 
@@ -35,7 +37,7 @@ export const Logo = () => (
     width={1347}
     height={542}
     priority
-    className="h-14 w-auto"
+    className="h-16 w-auto"
   />
 );
 
@@ -56,15 +58,25 @@ export const NavLinks = [
   },
   { name: "Stores", href: "/stores" },
   { name: "Deals", href: "/deals" },
-  { name: "Deals of the Month", href: "/deals-of-the-month" },
+  { name: "Deals of the Week", href: "/deals-of-the-week" },
 ];
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const notificationRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
+
+  const searchResults = isSearchOpen && searchQuery.length > 0
+    ? allStores.filter(s => s.name.toLowerCase().includes(searchQuery.toLowerCase())).slice(0, 8)
+    : [];
+
+  const closeSearch = () => { setIsSearchOpen(false); setSearchQuery(''); };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,9 +91,24 @@ export const Navbar = () => {
       if (notificationRef.current && !notificationRef.current.contains(event.target as Node)) {
         setIsNotificationOpen(false);
       }
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setIsSearchOpen(false);
+        setSearchQuery('');
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsSearchOpen(false);
+        setSearchQuery('');
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
   }, []);
 
   const handleLinkClick = () => {
@@ -89,9 +116,9 @@ export const Navbar = () => {
   };
 
   return (
-    <nav 
+    <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 border-b",
+        "fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 border-b relative",
         isScrolled ? "shadow-md border-transparent py-2" : "border-brand-primary-light py-4"
       )}
     >
@@ -136,7 +163,7 @@ export const Navbar = () => {
                             <p className="text-sm font-semibold text-gray-800 group-hover/sub-link:text-brand-primary transition-colors">
                               {subLink.name}
                             </p>
-                            <p className="text-[10px] text-gray-400 font-medium">Browse best offers</p>
+                            <p className="text-xs text-gray-600 font-medium">Browse best offers</p>
                           </div>
                         </Link>
                       ))}
@@ -150,7 +177,13 @@ export const Navbar = () => {
 
         {/* Right side CTA & Icons */}
         <div className="flex items-center gap-2 md:gap-4">
-          <Button variant="ghost" size="icon" className="text-black hover:text-brand-primary">
+          <Button
+            variant="ghost"
+            size="icon"
+            aria-label="Search"
+            className={cn("text-black hover:text-brand-primary", isSearchOpen && "text-brand-primary")}
+            onClick={() => { setIsSearchOpen(o => !o); setSearchQuery(''); }}
+          >
             <Search className="w-5 h-5" />
           </Button>
           
@@ -162,9 +195,10 @@ export const Navbar = () => {
           </Button>
 
           <div className="relative" ref={notificationRef}>
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Notifications"
               className={cn("text-black hover:text-brand-primary relative", isNotificationOpen && "text-brand-primary")}
               onClick={() => setIsNotificationOpen(!isNotificationOpen)}
             >
@@ -181,7 +215,7 @@ export const Navbar = () => {
           <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-black hover:text-brand-primary">
+                <Button variant="ghost" size="icon" aria-label="Open navigation menu" className="text-black hover:text-brand-primary">
                   <Menu className="w-6 h-6" />
                 </Button>
               </SheetTrigger>
@@ -240,6 +274,87 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Search Panel */}
+      {isSearchOpen && (
+        <div ref={searchRef} className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl z-40">
+          {/* Input row */}
+          <div className="container mx-auto px-4 md:px-6 py-3 flex items-center gap-3 border-b border-gray-100">
+            <Search className="w-5 h-5 text-gray-400 shrink-0" />
+            <input
+              ref={searchInputRef}
+              autoFocus
+              type="text"
+              placeholder="Search stores..."
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              className="flex-1 text-sm outline-none text-black placeholder:text-gray-400 font-medium bg-transparent"
+            />
+            <button
+              onClick={closeSearch}
+              aria-label="Close search"
+              className="p-1.5 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              <X className="w-4 h-4 text-gray-400" />
+            </button>
+          </div>
+
+          {/* Results when typing */}
+          {searchQuery.length > 0 && (
+            <div className="container mx-auto px-4 md:px-6 py-2 max-h-[60vh] overflow-y-auto">
+              {searchResults.length > 0 ? (
+                <>
+                  {searchResults.map(store => (
+                    <Link
+                      key={store.id}
+                      href={`/stores/${store.id}`}
+                      onClick={closeSearch}
+                      className="flex items-center gap-3 py-2.5 px-2 rounded-xl hover:bg-gray-50 transition-colors"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+                        <img src={store.logo} alt={store.name} width={28} height={28} className="w-7 h-7 object-contain" />
+                      </div>
+                      <span className="text-sm font-semibold text-black flex-1">{store.name}</span>
+                      <span className="text-xs text-gray-400 font-medium hidden sm:block">{store.discount}</span>
+                    </Link>
+                  ))}
+                  <Link
+                    href="/stores"
+                    onClick={closeSearch}
+                    className="flex items-center gap-1 mt-1 mb-1 py-2 px-2 text-xs font-bold text-brand-primary hover:underline"
+                  >
+                    View all stores →
+                  </Link>
+                </>
+              ) : (
+                <p className="text-sm text-gray-500 py-5 text-center">
+                  No stores found for &ldquo;<span className="font-semibold text-black">{searchQuery}</span>&rdquo;
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* Popular stores shown before user types */}
+          {searchQuery.length === 0 && (
+            <div className="container mx-auto px-4 md:px-6 py-3">
+              <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">Popular Stores</p>
+              <div className="flex flex-wrap gap-2">
+                {allStores.slice(0, 6).map(store => (
+                  <Link
+                    key={store.id}
+                    href={`/stores/${store.id}`}
+                    onClick={closeSearch}
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 hover:bg-brand-primary/5 border border-gray-200 transition-colors"
+                  >
+                    <img src={store.logo} alt={store.name} width={16} height={16} className="w-4 h-4 object-contain" />
+                    <span className="text-xs font-semibold text-gray-700">{store.name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </nav>
   );
 };
