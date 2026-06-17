@@ -16,7 +16,7 @@ export const allStores: StoreEntry[] = [
   { name: "Driffle",         id: "driffle-coupon-code",         category: "More",        coupons: 9,  logo: "/driffle-coupon-code.webp",         discount: "Up to 95% OFF",    popular: false },
   { name: "Lyca Mobile",     id: "lyca-mobile-coupon-code",     category: "More",        coupons: 11, logo: "/lyca-mobile-coupon-code.webp",     discount: "Up to 69% OFF",    popular: false },
   { name: "Bluehost",        id: "bluehost-coupon-code",        category: "More",        coupons: 10, logo: "/bluehost-coupon-code.webp",        discount: "Up to 69% OFF",    popular: false },
-  { name: "Reolink",         id: "reolink-coupon-code",         category: "More",        coupons: 8,  logo: "/reolink-coupon-code.webp",         discount: "Up to 50% OFF",    popular: false },
+  { name: "Reolink",         id: "reolink-coupon-code",         category: "More",        coupons: 8,  logo: "/Reolink-coupon-code.webp",         discount: "Up to 50% OFF",    popular: false },
   { name: "Envato Elements", id: "envato-elements-coupon-code", category: "More",        coupons: 7,  logo: "/envato-coupon-code.webp",          discount: "Up to 50% OFF",    popular: false },
   { name: "Sintra",          id: "sintra-coupon-code",          category: "More",        coupons: 6,  logo: "/sintra-coupon-code.webp",          discount: "Up to 70% OFF",    popular: false },
 ];

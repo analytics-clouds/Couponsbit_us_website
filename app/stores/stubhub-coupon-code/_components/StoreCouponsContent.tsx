@@ -284,7 +284,7 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/check-1.jpg"
+          src="/stubhub-discount-code.webp"
           alt="Banner 1"
           width={800} height={280} className="w-full object-cover"
         />
@@ -298,7 +298,7 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/check-1.jpg"
+          src="/stubhub-promo-code.webp"
           alt="Banner 2"
           width={800} height={280} className="w-full object-cover"
         />
@@ -312,7 +312,7 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/check-1.jpg"
+          src="/stubhub-voucher-code.webp"
           alt="Banner 3"
           width={800} height={280} className="w-full object-cover"
         />

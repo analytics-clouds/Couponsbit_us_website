@@ -68,6 +68,7 @@ export default function StoresPageContent() {
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
+      <main>
 
       {/* SECTION 1 — Hero (full-width, white bg) */}
       <section className="w-full bg-white py-4 border-b border-gray-100 mt-8">
@@ -107,7 +108,7 @@ export default function StoresPageContent() {
               {/* Stat Badges */}
               <div className="flex flex-wrap gap-2.5 mt-8">
                 {[
-                  { label: "2,000+ Stores", icon: Store, bg: "bg-teal-50 text-[#056bfa]" },
+                  { label: "2,000+ Stores", icon: Store, bg: "bg-teal-50 text-[#0344b0]" },
                   { label: "15,000+ Coupons & Deals", icon: Ticket, bg: "bg-blue-50 text-blue-700" },
                   { label: "500K+ Happy Shoppers", icon: Users, bg: "bg-purple-50 text-purple-700" },
                   { label: "100% Verified Stores", icon: CheckCircle, bg: "bg-emerald-50 text-emerald-700" }
@@ -130,9 +131,12 @@ export default function StoresPageContent() {
 <div className="lg:col-span-5 hidden lg:flex justify-end relative h-80">
   <div className="absolute inset-x-0 bottom-0 top-6 bg-gradient-to-tr from-[#e8f6f8] to-cyan-50/50 rounded-[40px] border border-gray-100 overflow-hidden">
     <img
-      src="/all-stores.webp" // replace with your image path
+      src="/all-stores.webp"
       alt="Shopping Banner"
+      width={800}
+      height={400}
       className="w-full h-full object-cover"
+      fetchPriority="high"
     />
   </div>
 </div>
@@ -183,7 +187,7 @@ export default function StoresPageContent() {
 
             {/* Store Grid (5-column responsive layout) */}
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
-              {storesToDisplay.map((store) => {
+              {storesToDisplay.map((store, storeIdx) => {
                 const storeSlug = store.id;
                 return (
                   <div 
@@ -193,7 +197,15 @@ export default function StoresPageContent() {
                     <div>
                       {/* Brand Logo Centered */}
                       <div className="h-14 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
-                        <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain" />
+                        <img
+                          src={store.logo}
+                          alt={store.name}
+                          width={120}
+                          height={48}
+                          className="max-h-12 max-w-[120px] w-auto object-contain"
+                          fetchPriority={storeIdx === 0 ? "high" : undefined}
+                          loading={storeIdx > 0 ? "lazy" : undefined}
+                        />
                       </div>
 
                       {/* Store Name */}
@@ -207,15 +219,16 @@ export default function StoresPageContent() {
                       </p>
 
                       {/* Discount display */}
-                      <span className="text-xs font-black text-[#056bfa] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">
+                      <span className="text-xs font-black text-[#0344b0] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">
                         {store.discount}
                       </span>
                     </div>
 
                     {/* Outlined Custom Link Button */}
                     <div className="mt-4">
-                      <Link 
-                        href={`/stores/${storeSlug}`} 
+                      <Link
+                        href={`/stores/${storeSlug}`}
+                        aria-label={`View ${store.name} store`}
                         className="block w-full"
                       >
                         <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-xs font-black transition-all duration-300">
@@ -296,11 +309,14 @@ export default function StoresPageContent() {
 
                 {/* Shopping Bag Woman Image representation */}
                 <div className="w-full h-28 relative mt-4 overflow-hidden rounded-2xl bg-white/10 border border-white/10 hover:border-white/20 transition-all">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=300&h=200"
                     alt="Promo Offer"
+                    width={300}
+                    height={200}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#056bfa]/70 to-transparent pointer-events-none" />
                 </div>
@@ -611,6 +627,7 @@ export default function StoresPageContent() {
 
       
 
+      </main>
       <Footer />
     </div>
   );

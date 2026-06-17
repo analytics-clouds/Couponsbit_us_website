@@ -73,8 +73,9 @@ export default function ArticleInteractive() {
         </div>
       )}
 
+      <main>
       {/* Breadcrumb Section */}
-      <div className="bg-white border-b border-[#f0f0f0] mt-24">
+      <div className="bg-white border-b border-[#f0f0f0]">
         <div className="container mx-auto px-4 lg:px-0 max-w-7xl py-3 flex items-center gap-2">
           <Link href="/" className="text-[#056bfa] text-sm hover:underline">Home</Link>
           <ChevronRight className="w-[14px] h-[14px] text-gray-400" />
@@ -92,7 +93,7 @@ export default function ArticleInteractive() {
             {/* Post Header */}
             <header className="mb-10">
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-[#e8f6f8] text-[#056bfa] rounded-full text-[10px] font-bold px-3.5 py-1 tracking-wider uppercase">SHOPPING TIPS</span>
+                <span className="bg-[#e8f6f8] text-[#0344b0] rounded-full text-[10px] font-bold px-3.5 py-1 tracking-wider uppercase">SHOPPING TIPS</span>
                 <div className="flex items-center gap-1.5 grayscale opacity-60">
                   <Clock className="w-[13px] h-[13px] text-gray-500" />
                   <span className="text-gray-500 text-[11px]">8 min read</span>
@@ -110,6 +111,9 @@ export default function ArticleInteractive() {
                 <img
                   src="/amazon-savings-guide.webp"
                   alt="Amazon shopping India online"
+                  width={800}
+                  height={420}
+                  fetchPriority="high"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -154,7 +158,7 @@ export default function ArticleInteractive() {
                     Before placing any order on Amazon visit Coupons Clouds to find verified coupon codes for your product category. Codes like <span className="bg-[#fff3e0] text-[#e65100] rounded px-1.5 py-0.5 font-semibold text-sm">AMAZON60</span> can give you up to 60% OFF on top categories. Our team tests every code before publishing so you always get working coupons.
                   </p>
                   <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                    <span className="font-bold text-[#0344b0] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -175,7 +179,7 @@ export default function ArticleInteractive() {
                     Amazon regularly runs bank card offers where you get an extra 10% to 15% cashback on top of existing discounts when you pay with specific credit or debit cards. HDFC, SBI and ICICI cards frequently have exclusive Amazon offers. Combine these with a coupon code for maximum savings.
                   </p>
                   <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                    <span className="font-bold text-[#0344b0] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -222,7 +226,7 @@ export default function ArticleInteractive() {
                     Amazon's prices fluctuate constantly. If an item is not urgently needed add it to your wishlist and monitor the price. Prices often drop significantly during sales or when new stock arrives. You can use browser extensions to track price history and set alerts for price drops.
                   </p>
                   <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                    <span className="font-bold text-[#0344b0] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -282,7 +286,7 @@ export default function ArticleInteractive() {
                     Always filter for Fulfilled by Amazon (FBA) products and compare prices from multiple sellers on the same listing. Third party sellers on Amazon sometimes offer the same product at lower prices than Amazon's own inventory especially for popular electronics and books.
                   </p>
                   <div className="bg-[#e8f6f8] border-l-4 border-[#056bfa] rounded-r-2xl p-4 md:p-5 mb-5 italic">
-                    <span className="font-bold text-[#056bfa] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
+                    <span className="font-bold text-[#0344b0] text-sm flex items-center gap-1.5 mb-1.5 uppercase tracking-wide not-italic">
                       <Lightbulb className="w-4 h-4" /> Pro Tip:
                     </span>
                     <p className="text-[#4b5563] text-sm">
@@ -364,12 +368,15 @@ export default function ArticleInteractive() {
                     <img
                       src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=200&h=120"
                       alt="Bank offers"
+                      width={200}
+                      height={120}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-4 flex-1">
-                    <span className="bg-[#e8f6f8] text-[#056bfa] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">Coupon Guides</span>
-                    <h5 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">How to Stack Coupons and Bank Offers for Maximum Savings</h5>
+                    <span className="bg-[#e8f6f8] text-[#0344b0] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">Coupon Guides</span>
+                    <h4 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">How to Stack Coupons and Bank Offers for Maximum Savings</h4>
                     <div className="flex items-center justify-between mt-3">
                       <span className="text-gray-400 text-[10px]">May 10, 2026</span>
                       <span className="text-[#056bfa] text-[10px] font-bold">Read →</span>
@@ -382,12 +389,15 @@ export default function ArticleInteractive() {
                     <img
                       src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=200&h=120"
                       alt="Flipkart sale"
+                      width={200}
+                      height={120}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-4 flex-1">
-                    <span className="bg-[#e8f6f8] text-[#056bfa] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">Shopping Tips</span>
-                    <h5 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">Flipkart Big Billion Day — Complete Survival Guide 2026</h5>
+                    <span className="bg-[#e8f6f8] text-[#0344b0] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">Shopping Tips</span>
+                    <h4 className="text-black font-bold text-sm line-clamp-2 mt-2 leading-tight">Flipkart Big Billion Day — Complete Survival Guide 2026</h4>
                     <div className="flex items-center justify-between mt-3">
                       <span className="text-gray-400 text-[10px]">May 8, 2026</span>
                       <span className="text-[#056bfa] text-[10px] font-bold">Read →</span>
@@ -420,26 +430,7 @@ export default function ArticleInteractive() {
               </div>
             </div>
 
-            {/* Box 3: CTA */}
-            <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] rounded-2xl p-7 mb-5 shadow-lg relative overflow-hidden group">
-              <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
-              <div className="text-center relative z-10">
-                <span className="text-3xl block mb-3">🛍️</span>
-                <h4 className="text-white font-bold text-base leading-tight mb-2">Want the Best Amazon Deals Daily?</h4>
-                <p className="text-white/80 text-[11px] px-2 mb-5">Get verified Amazon coupon codes delivered to your inbox every morning.</p>
-                <div className="space-y-3">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full bg-white rounded-xl px-4 py-3 text-sm border-none outline-none focus:ring-2 focus:ring-[#FF9900]"
-                  />
-                  <button className="w-full bg-white text-[#056bfa] rounded-xl px-4 py-3 font-bold text-sm hover:shadow-xl transition-all active:scale-95">
-                    Get Deal Alerts
-                  </button>
-                </div>
-                <p className="text-white/60 text-[10px] mt-4">No spam. Unsubscribe anytime.</p>
-              </div>
-            </div>
+           
 
             {/* Box 4: Top Coupons */}
             <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-6 mb-5">
@@ -456,7 +447,7 @@ export default function ArticleInteractive() {
                   <div key={i} className={`pb-4 ${i !== 3 ? 'border-b border-[#f0f0f0]' : ''}`}>
                     <p className="text-[#374151] text-[13px] font-semibold truncate mb-2">{coupon.title}</p>
                     <div className="flex items-center justify-between bg-[#e8f6f8] rounded-xl px-4 py-2.5 border border-dashed border-[#056bfa]">
-                      <span className="text-[#056bfa] font-mono font-black text-[12px]">{coupon.code}</span>
+                      <span className="text-[#0344b0] font-mono font-black text-[12px]">{coupon.code}</span>
                       <Copy
                         className="w-3.5 h-3.5 text-[#056bfa] cursor-pointer hover:scale-110 active:scale-90 transition-transform"
                         onClick={() => copyToClipboard(coupon.code)}
@@ -517,6 +508,7 @@ export default function ArticleInteractive() {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

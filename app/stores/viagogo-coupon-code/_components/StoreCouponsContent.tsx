@@ -212,7 +212,7 @@ export default function ViaggogoCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/viagogo-coupon-code.webp" alt="Viagogo" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="/viagogo-coupon-code.webp" alt="Viagogo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -256,21 +256,21 @@ export default function ViaggogoCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/viagogo-promo-code.webp" alt="Viagogo Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/viagogo-promo-code.webp" alt="Viagogo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/viagogo-voucher-code.webp" alt="Viagogo Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/viagogo-voucher-code.webp" alt="Viagogo Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -1239,7 +1239,7 @@ export default function ViaggogoCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
@@ -1354,7 +1354,7 @@ export default function ViaggogoCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1435,9 +1435,9 @@ export default function ViaggogoCouponsContent() {
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-4xl relative z-10">
             <h2 className="text-3xl md:text-4xl font-black mb-4 italic">Never Miss a Great Deal!</h2>
-            <p className="text-white/70 font-bold mb-10 max-w-md mx-auto">Subscribe to get the best Viagogo coupon codes directly in your inbox.</p>
+            <p className="text-white/90 font-bold mb-10 max-w-md mx-auto">Subscribe to get the best Viagogo coupon codes directly in your inbox.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-              <input type="email" placeholder="Enter your email address" className="w-full h-14 bg-white/10 border-2 border-white/20 rounded-2xl px-6 outline-none focus:border-white transition-all text-white placeholder:text-white/40 font-bold text-sm" />
+              <input type="email" placeholder="Enter your email address" className="w-full h-14 bg-white/10 border-2 border-white/20 rounded-2xl px-6 outline-none focus:border-white transition-all text-white placeholder:text-white/70 font-bold text-sm" />
               <button className="w-full sm:w-auto h-14 bg-white text-[#056bfa] px-10 rounded-2xl font-black text-sm uppercase tracking-widest active:scale-95 transition-all shadow-xl hover:shadow-white/10">Subscribe</button>
             </div>
           </div>

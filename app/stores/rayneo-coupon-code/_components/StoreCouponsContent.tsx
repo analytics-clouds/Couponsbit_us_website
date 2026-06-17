@@ -212,7 +212,7 @@ export default function RayneoCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/reyneo-coupon-code.webp" alt="Rayneo" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="/reyneo-coupon-code.webp" alt="Rayneo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -255,21 +255,21 @@ export default function RayneoCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/rayneo-voucher-code.webp" alt="Rayneo Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/rayneo-voucher-code.webp" alt="Rayneo Voucher Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/rayneo-promo-code.webp" alt="Rayneo Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/rayneo-promo-code.webp" alt="Rayneo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/rayneo-discount-code.webp" alt="Rayneo Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/rayneo-discount-code.webp" alt="Rayneo Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -755,7 +755,7 @@ export default function RayneoCouponsContent() {
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
@@ -848,7 +848,7 @@ export default function RayneoCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>

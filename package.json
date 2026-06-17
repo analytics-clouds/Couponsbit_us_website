@@ -22,6 +22,14 @@
     "react-dom": "^18",
     "tailwind-merge": "^3.6.0"
   },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "not IE 11",
+    "not dead"
+  ],
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",

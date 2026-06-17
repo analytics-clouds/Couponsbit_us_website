@@ -69,6 +69,7 @@ const Hero = () => {
         <div className="relative overflow-hidden group">
           <button
             onClick={prevSlide}
+            aria-label="Previous slide"
             className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
             <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
@@ -76,6 +77,7 @@ const Hero = () => {
 
           <button
             onClick={nextSlide}
+            aria-label="Next slide"
             className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
             <ChevronRight className="w-5 h-5 text-[#056bfa]" />
@@ -94,7 +96,11 @@ const Hero = () => {
                   <img
                     src={slide.image}
                     alt={slide.alt}
+                    width={800}
+                    height={350}
                     className="w-full h-auto block"
+                    fetchPriority={idx === 0 ? "high" : undefined}
+                    loading={idx >= 3 ? "lazy" : undefined}
                   />
                 </a>
               </div>
@@ -107,6 +113,7 @@ const Hero = () => {
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
               className={cn(
                 "h-2 rounded-full transition-all duration-300",
                 currentIndex === i ? "w-6 bg-[#056bfa]" : "w-2 bg-[#e0e0e0]"
@@ -151,12 +158,14 @@ const TopBrands = () => {
       <div className="container mx-auto px-4 max-w-7xl relative">
         <button
           onClick={() => scroll(-1)}
+          aria-label="Scroll left"
           className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
           <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
         </button>
         <button
           onClick={() => scroll(1)}
+          aria-label="Scroll right"
           className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
           <ChevronRight className="w-5 h-5 text-[#056bfa]" />
@@ -177,12 +186,15 @@ const TopBrands = () => {
                 <img
                   src={store.logo}
                   alt={store.name}
+                  width={120}
+                  height={48}
                   className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <p className="text-black font-extrabold text-sm mb-1">{store.name}</p>
-              <p className="text-[#056bfa] font-black text-[10px] uppercase tracking-wide mb-3">{store.discount}</p>
-              <span className="text-[#056bfa] font-black text-[10px] uppercase tracking-tighter group-hover:underline">
+              <p className="text-[#0344b0] font-black text-[10px] uppercase tracking-wide mb-3">{store.discount}</p>
+              <span className="text-[#0344b0] font-black text-[10px] uppercase tracking-tighter group-hover:underline">
                 View Coupons →
               </span>
             </Link>
@@ -416,7 +428,10 @@ export default function HomePageContent() {
                     <img
                       src={cat.image}
                       alt={`${cat.name} Coupons & Deals`}
+                      width={600}
+                      height={300}
                       className="w-full h-auto block group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
                     />
                     <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
                       {cat.coupons} Coupons
@@ -526,12 +541,12 @@ export default function HomePageContent() {
                         <span className="bg-red-50 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                         <span className="bg-green-50 text-green-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified Deal</span>
                       </div>
-                      <p className="text-[#056bfa] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
+                      <p className="text-[#0344b0] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
                       <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                       <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                       <button
                         onClick={() => setOpenFeatured(openFeatured === i ? null : i)}
-                        className="mt-2 text-[#056bfa] font-bold text-[13px] flex items-center gap-1"
+                        className="mt-2 text-[#0344b0] font-bold text-[13px] flex items-center gap-1"
                       >
                         View Details <ChevronRight className={cn("w-3.5 h-3.5 transition-transform", openFeatured === i ? "rotate-90" : "")} />
                       </button>
@@ -577,7 +592,10 @@ export default function HomePageContent() {
               <img
                 src="/our-story.webp"
                 alt="About Couponsbit"
+                width={800}
+                height={520}
                 className="w-full h-[400px] md:h-[520px] rounded-[48px] object-cover"
+                loading="lazy"
               />
               <p className="text-center text-gray-500 text-sm italic mt-8">Trusted by 500,000+ shoppers across India</p>
             </div>

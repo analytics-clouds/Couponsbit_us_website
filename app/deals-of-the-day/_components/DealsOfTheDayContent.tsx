@@ -143,6 +143,7 @@ export default function DealsOfTheDayContent() {
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
       <Navbar />
+      <main>
 
       {/* Section 1: Hero Slider (Desktop) */}
       <div className="relative w-full overflow-hidden hidden md:block" style={{ aspectRatio: "1920/400" }}>
@@ -154,18 +155,18 @@ export default function DealsOfTheDayContent() {
             transition={{ duration: 0.8 }}
             className={cn("absolute inset-0 w-full h-full", currentSlide === index ? "z-10" : "z-0")}
           >
-            <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
+            <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" loading="lazy" />
           </motion.div>
         ))}
-        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+        <button onClick={prevSlide} aria-label="Previous slide" className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
           <ArrowLeft className="w-5 h-5 text-white" />
         </button>
-        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+        <button onClick={nextSlide} aria-label="Next slide" className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
           <ArrowRight className="w-5 h-5 text-white" />
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {slides.map((_, i) => (
-            <button key={i} onClick={() => setCurrentSlide(i)} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
+            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
           ))}
         </div>
       </div>
@@ -177,6 +178,9 @@ export default function DealsOfTheDayContent() {
             key={mobileSlides[currentSlide].id}
             src={mobileSlides[currentSlide].image}
             alt={mobileSlides[currentSlide].alt}
+            width={750}
+            height={350}
+            fetchPriority={currentSlide === 0 ? "high" : undefined}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -184,15 +188,15 @@ export default function DealsOfTheDayContent() {
             className="w-full h-auto block"
           />
         </AnimatePresence>
-        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+        <button onClick={prevSlide} aria-label="Previous slide" className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
           <ArrowLeft className="w-5 h-5 text-white" />
         </button>
-        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
+        <button onClick={nextSlide} aria-label="Next slide" className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all">
           <ArrowRight className="w-5 h-5 text-white" />
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {mobileSlides.map((_, i) => (
-            <button key={i} onClick={() => setCurrentSlide(i)} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
+            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
           ))}
         </div>
       </div>
@@ -219,7 +223,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/viagogo-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/viagogo-coupon-code" aria-label="View all Viagogo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -244,7 +248,7 @@ export default function DealsOfTheDayContent() {
                 <div className="rounded-b-[20px] bg-white px-6 pt-7 pb-6">
                   <div className="flex gap-2 mb-4">
                     <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-red-50 text-red-500 px-2.5 py-1 rounded-full"><Clock className="w-2.5 h-2.5" />Limited Time</span>
-                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#056bfa] px-2.5 py-1 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>
+                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#0344b0] px-2.5 py-1 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
@@ -263,7 +267,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Reolink Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/reolink-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/reolink-coupon-code" aria-label="View all Reolink coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -305,7 +309,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/rayneo-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/rayneo-coupon-code" aria-label="View all Rayneo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
@@ -336,7 +340,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Envato Elements Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/envato-elements-coupon-code" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/envato-elements-coupon-code" aria-label="View all Envato Elements coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
@@ -346,7 +350,7 @@ export default function DealsOfTheDayContent() {
             ].map((c, i) => (
               <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#056bfa] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#056bfa] hover:border-r-[#056bfa] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[#056bfa] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
+                  <span className="text-[#0344b0] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
                   <span className="text-[9px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full uppercase">Limited Time</span>
                 </div>
                 <div className="flex-1">
@@ -376,7 +380,7 @@ export default function DealsOfTheDayContent() {
             </div>
             <div className="flex items-center justify-between">
               <p className="text-gray-400 text-xs sm:text-sm">Exclusive AI subscription deals — save more today</p>
-              <Link href="/stores/sintra-coupon-code" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
+              <Link href="/stores/sintra-coupon-code" aria-label="View all Sintra coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
             </div>
           </div>
           <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
@@ -389,7 +393,7 @@ export default function DealsOfTheDayContent() {
               <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
                 <div className="flex items-center justify-between">
                   <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">SINTRA</span>
-                  <span className="bg-[#e8f6f8] text-[#056bfa] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
+                  <span className="bg-[#e8f6f8] text-[#0344b0] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
                 </div>
                 <div className="my-auto pt-4 pb-2">
                   <h3 className="text-[15px] font-black text-gray-900 leading-snug">{c.title}</h3>
@@ -562,6 +566,7 @@ export default function DealsOfTheDayContent() {
   </div>
 </section>
 
+      </main>
       <Footer />
 
       <AnimatePresence>

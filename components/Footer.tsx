@@ -248,14 +248,14 @@ export const Footer = () => {
       {/* Layer 4: Copyright Bar */}
       <div className="bg-[#030f20] py-8">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-gray-500 text-sm font-semibold tracking-wide">
+          <p className="text-gray-300 text-sm font-semibold tracking-wide">
             © {currentYear} Couponsbit. All Rights Reserved.
           </p>
-          <div className="flex items-center gap-4 text-gray-500">
+          <div className="flex items-center gap-4 text-gray-300">
             <Link href="/privacy-policy" className="text-sm font-bold hover:text-brand-primary transition-colors">Privacy Policy</Link>
-            <span className="text-gray-700">|</span>
+            <span className="text-gray-500">|</span>
             <Link href="/terms-of-use" className="text-sm font-bold hover:text-brand-primary transition-colors">Terms of Use</Link>
-            <span className="text-gray-700">|</span>
+            <span className="text-gray-500">|</span>
             <Link href="/faqs" className="text-sm font-bold hover:text-brand-primary transition-colors">FAQs</Link>
           </div>
         </div>
