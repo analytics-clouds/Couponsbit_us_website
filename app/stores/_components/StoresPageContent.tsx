@@ -137,6 +137,7 @@ export default function StoresPageContent() {
       height={400}
       className="w-full h-full object-cover"
       fetchPriority="high"
+      loading="lazy"
     />
   </div>
 </div>
@@ -543,7 +544,7 @@ export default function StoresPageContent() {
       "Labor Day Discounts", 
       "End-of-Season Clearance Sales"
     ].map((event) => (
-      <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#056bfa]/20 text-[#056bfa] font-bold text-xs rounded-full hover:bg-[#056bfa] hover:text-white transition-all duration-200 cursor-default">
+      <span key={event} className="px-3 py-1.5 bg-[#e8f6f8] border border-[#056bfa]/20 text-[#0344b0] font-bold text-xs rounded-full hover:bg-[#056bfa] hover:text-white transition-all duration-200 cursor-default">
         {event}
       </span>
     ))}
