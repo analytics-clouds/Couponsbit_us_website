@@ -32,7 +32,7 @@ import { allStores } from "@/lib/stores-data";
 
 export const Logo = () => (
   <Image
-    src="/coupons-bit-logo.png"
+    src="/logo.png"
     alt="Couponsbit Logo"
     width={1347}
     height={542}

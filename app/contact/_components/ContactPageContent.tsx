@@ -105,10 +105,6 @@ export default function ContactPageContent() {
       newErrors.country = "Please select a country";
     }
     
-    if (formData.message.length < 20) {
-      newErrors.message = "Message must be at least 20 characters";
-    }
-    
     if (!formData.agree) {
       newErrors.agree = "You must agree to the privacy policy";
     }

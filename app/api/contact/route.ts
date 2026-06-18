@@ -151,17 +151,20 @@ function adminNotificationHtml(data: {
           <td style="background:#ffffff;padding:40px;">
             <p style="color:#111111;font-size:16px;font-weight:800;margin:0 0 24px;">Submission Details</p>
             <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
-              ${fields.map(([label, value], i) => `
-              <tr style="background:${i % 2 === 0 ? "#f9fafb" : "#ffffff"};">
-                <td style="padding:14px 16px;border:1px solid #e8e8e8;font-size:13px;font-weight:700;color:#666666;width:35%;vertical-align:top;">${label}</td>
-                <td style="padding:14px 16px;border:1px solid #e8e8e8;font-size:13px;color:#111111;vertical-align:top;">${value}</td>
-              </tr>`).join("")}
+              ${fields.map(([label, value], i) => {
+                const rowBg = i % 2 === 0 ? "#f9fafb" : "#ffffff";
+                return `
+              <tr>
+                <td style="background-color:${rowBg};padding:14px 16px;border:1px solid #e8e8e8;font-size:13px;font-weight:700;color:#666666;width:35%;vertical-align:top;"><span style="color:#666666;">${label}</span></td>
+                <td style="background-color:${rowBg};padding:14px 16px;border:1px solid #e8e8e8;font-size:13px;vertical-align:top;"><span style="color:#111111;">${value}</span></td>
+              </tr>`;
+              }).join("")}
             </table>
 
             <!-- Message -->
             <p style="color:#111111;font-size:15px;font-weight:800;margin:32px 0 12px;">Message</p>
-            <div style="background:#f9fafb;border:1px solid #e8e8e8;border-left:4px solid #056bfa;border-radius:0 12px 12px 0;padding:20px 24px;">
-              <p style="color:#333333;font-size:14px;line-height:1.8;margin:0;white-space:pre-wrap;">${data.message}</p>
+            <div style="background:#ffffff;border:1px solid #e8e8e8;border-left:4px solid #056bfa;border-radius:0 12px 12px 0;padding:20px 24px;">
+              <p style="color:#111111;font-size:14px;line-height:1.8;margin:0;white-space:pre-wrap;">${data.message}</p>
             </div>
 
             <!-- Reply Button -->
@@ -206,9 +209,6 @@ export async function POST(req: NextRequest) {
     }
     if (!country) {
       return NextResponse.json({ error: "Country is required" }, { status: 400 });
-    }
-    if (!message || message.length < 20) {
-      return NextResponse.json({ error: "Message must be at least 20 characters" }, { status: 400 });
     }
 
     await Promise.all([

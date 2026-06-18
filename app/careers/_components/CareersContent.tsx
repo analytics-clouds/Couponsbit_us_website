@@ -243,34 +243,7 @@ export default function CareersContent() {
         </div>
       </section>
 
-      {/* Section 6: Stay Updated */}
-      <section className="py-24 bg-[#e8f6f8]">
-        <div className="container mx-auto px-4 max-w-2xl text-center">
-          <span className="inline-block px-4 py-1.5 bg-white text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6 shadow-sm">STAY IN THE LOOP</span>
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Get Notified When We Hire</h2>
-          <p className="text-gray-600 text-lg mb-12 leading-relaxed">
-            Leave your email and we will reach out as soon as a role that fits your skills opens up.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
-              className="w-full h-14 px-6 rounded-full border-2 border-[#056bfa]/20 bg-white outline-none focus:border-[#056bfa] transition-all font-bold text-sm text-black placeholder:text-gray-400"
-            />
-            <Button className="w-full sm:w-auto h-14 bg-[#056bfa] hover:bg-[#0451c4] text-white px-8 rounded-full font-black text-sm uppercase tracking-widest shadow-xl transition-all active:scale-95 shrink-0 flex items-center gap-2">
-              <Send className="w-4 h-4" />
-              Notify Me
-            </Button>
-          </div>
-
-          <p className="text-gray-400 text-xs font-bold mt-6 uppercase tracking-widest">
-            We respect your privacy. No spam ever.
-          </p>
-        </div>
-      </section>
+  
 
       {/* Bottom CTA */}
       <section className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] py-24 text-center text-white relative overflow-hidden">
