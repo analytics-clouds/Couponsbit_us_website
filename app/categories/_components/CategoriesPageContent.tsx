@@ -30,6 +30,7 @@ const categories = [
     emoji: "🖥️",
     href: "/categories/electronics",
     accent: "#4A90E2",
+    accentDark: "#2B6CB0",
     lightBg: "#EBF8FF",
     coupons: "850+",
     stores: "50+",
@@ -45,6 +46,7 @@ const categories = [
     emoji: "✈️",
     href: "/categories/travel",
     accent: "#056bfa",
+    accentDark: "#0451c4",
     lightBg: "#E8F6F8",
     coupons: "420+",
     stores: "20+",
@@ -60,6 +62,7 @@ const categories = [
     emoji: "🎫",
     href: "/categories/entertainment",
     accent: "#8E44AD",
+    accentDark: "#6C3483",
     lightBg: "#F5F0FF",
     coupons: "210+",
     stores: "15+",
@@ -75,6 +78,7 @@ const categories = [
     emoji: "💻",
     href: "/categories/software",
     accent: "#6B46C1",
+    accentDark: "#553C9A",
     lightBg: "#FAF5FF",
     coupons: "300+",
     stores: "30+",
@@ -90,6 +94,7 @@ const categories = [
     emoji: "📱",
     href: "/categories/mobile",
     accent: "#00A651",
+    accentDark: "#007A3D",
     lightBg: "#F0FFF4",
     coupons: "320+",
     stores: "10+",
@@ -287,7 +292,7 @@ export default function CategoriesPageContent() {
                           {/* Featured stores */}
                           <div className="flex flex-wrap gap-1.5 mb-5">
                             {cat.featured.map(s => (
-                              <span key={s} className="text-[11px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: `${cat.accent}15`, color: cat.accent }}>
+                              <span key={s} className="text-[11px] font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: `${cat.accent}15`, color: cat.accentDark }}>
                                 {s}
                               </span>
                             ))}

@@ -156,43 +156,26 @@ const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email
 export default function PartnerPageContent() {
   const formRef = useRef<HTMLDivElement>(null);
   const [selectedType, setSelectedType] = useState<string>("featured");
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  
+
   // Controlled form state
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     companyName: "",
-    websiteUrl: "",
-    traffic: "Under 10K",
     message: "",
-    source: "Google Search",
     agreed: false
   });
-  
+
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const scrollToForm = () => {
     formRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleCategoryToggle = (category: string) => {
-    setSelectedCategories(prev => 
-      prev.includes(category) ? prev.filter(c => c !== category) : [...prev, category]
-    );
-    if (errors.categories) {
-      setErrors(prev => {
-        const newErrors = { ...prev };
-        delete newErrors.categories;
-        return newErrors;
-      });
-    }
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -200,9 +183,6 @@ export default function PartnerPageContent() {
     if (!validateEmail(formData.email)) newErrors.email = "Please enter a valid business email";
     if (formData.phone.length !== 10) newErrors.phone = "Phone Number must be exactly 10 digits";
     if (formData.companyName.length < 2) newErrors.companyName = "Company Name is required";
-    if (formData.websiteUrl && !formData.websiteUrl.startsWith("http")) newErrors.websiteUrl = "Must start with http:// or https://";
-    if (selectedCategories.length === 0) newErrors.categories = "Select at least one category";
-    if (formData.message.length < 30) newErrors.message = "Please describe your business in at least 30 characters";
     if (!formData.agreed) newErrors.agreed = "You must agree to the terms";
 
     if (Object.keys(newErrors).length > 0) {
@@ -211,10 +191,23 @@ export default function PartnerPageContent() {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      const res = await fetch("/api/partner", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, partnershipType: selectedType }),
+      });
+      if (res.ok) {
+        setIsSuccess(true);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      alert("Network error. Please check your connection and try again.");
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 2000);
+    }
   };
 
   return (
@@ -956,41 +949,6 @@ export default function PartnerPageContent() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                      <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Website URL</label>
-                      <div className="relative">
-                        <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#056bfa]" />
-                        <input 
-                          type="text" 
-                          placeholder="https://yourstore.com"
-                          className={cn(
-                            "w-full pl-12 pr-4 py-4 rounded-2xl border-2 font-bold text-sm outline-none transition-all",
-                            errors.websiteUrl ? "border-red-500 bg-red-50" : "border-[#e0e0e0] focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10"
-                          )}
-                          value={formData.websiteUrl}
-                          onChange={(e) => setFormData({...formData, websiteUrl: e.target.value})}
-                        />
-                      </div>
-                      {errors.websiteUrl && <p className="text-red-500 text-[10px] font-black uppercase tracking-widest mt-1">{errors.websiteUrl}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                      <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Monthly Website Traffic</label>
-                      <select 
-                        className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#056bfa] focus:ring-4 focus:ring-[#056bfa]/10 transition-all bg-white"
-                        value={formData.traffic}
-                        onChange={(e) => setFormData({...formData, traffic: e.target.value})}
-                      >
-                        <option>Under 10K</option>
-                        <option>10K–50K</option>
-                        <option>50K–100K</option>
-                        <option>100K–500K</option>
-                        <option>500K+</option>
-                      </select>
-                    </div>
-                  </div>
-
                   <div className="space-y-4">
                     <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Partnership Type</label>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1017,28 +975,6 @@ export default function PartnerPageContent() {
                     </div>
                   </div>
 
-                  <div className="space-y-4">
-                    <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Product/Service Categories (Select Multiple)</label>
-                    <div className="flex flex-wrap gap-2.5">
-                      {["Fashion", "Electronics", "Travel", "Beauty", "Health", "Food", "Education", "Sports", "Home & Living", "Finance"].map((cat) => (
-                        <button
-                          key={cat}
-                          type="button"
-                          onClick={() => handleCategoryToggle(cat)}
-                          className={cn(
-                            "px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest border-2 transition-all duration-300",
-                            selectedCategories.includes(cat)
-                              ? "bg-[#056bfa] border-[#056bfa] text-white shadow-md"
-                              : "bg-white border-[#056bfa] text-[#056bfa] hover:bg-[#e8f6f8]"
-                          )}
-                        >
-                          {cat}
-                        </button>
-                      ))}
-                    </div>
-                    {errors.categories && <p className="text-red-500 text-[10px] font-black uppercase tracking-widest mt-1">{errors.categories}</p>}
-                  </div>
-
                   <div className="space-y-2">
                     <label className="text-gray-700 font-black text-sm uppercase tracking-widest">Tell Us About Your Business</label>
                     <textarea 
@@ -1052,22 +988,6 @@ export default function PartnerPageContent() {
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                     />
                     {errors.message && <p className="text-red-500 text-[10px] font-black uppercase tracking-widest mt-1">{errors.message}</p>}
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-gray-700 font-black text-sm uppercase tracking-widest">How did you hear about us?</label>
-                    <select 
-                      className="w-full px-4 py-4 rounded-2xl border-2 border-[#e0e0e0] font-bold text-sm outline-none focus:border-[#056bfa] bg-white"
-                      value={formData.source}
-                      onChange={(e) => setFormData({...formData, source: e.target.value})}
-                    >
-                      <option>Google Search</option>
-                      <option>Social Media</option>
-                      <option>Friend/Colleague Referral</option>
-                      <option>Email Newsletter</option>
-                      <option>Existing Partner</option>
-                      <option>Other</option>
-                    </select>
                   </div>
 
                   <div className="space-y-4">
@@ -1131,7 +1051,7 @@ export default function PartnerPageContent() {
                 <p className="text-gray-500 font-bold text-lg mb-10 max-w-lg mx-auto">
                   Thank you! Our partnerships team will contact you within 48 hours on business days at your provided email address.
                 </p>
-                <p className="text-[#056bfa] font-black text-lg mb-12">business@couponsclou.ds</p>
+                <p className="text-[#056bfa] font-black text-lg mb-12">support.couponsbit@gmail.com</p>
                 
                 <button 
                   onClick={() => setIsSuccess(false)}

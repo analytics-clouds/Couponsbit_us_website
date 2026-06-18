@@ -182,6 +182,7 @@ export default function BlogPage() {
       />
       <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white overflow-x-hidden">
         <Navbar />
+        <main>
 
         {/* Hero Section */}
         <section className="relative w-full pt-20 pb-36 md:pt-24 md:pb-48 bg-gradient-to-br from-[#0451c4] to-[#056bfa] overflow-hidden">
@@ -248,6 +249,9 @@ export default function BlogPage() {
                   <img
                     src="/amazon-savings-guide.webp"
                     alt="How to save money online shopping"
+                    width={220}
+                    height={200}
+                    fetchPriority="high"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -256,7 +260,7 @@ export default function BlogPage() {
                     <span className="text-gray-500 text-xs font-medium uppercase">
                       MAY 12, 2026
                     </span>
-                    <span className="text-gray-300">•</span>
+                    <span className="text-gray-300" aria-hidden="true">•</span>
                     <div className="flex items-center gap-1">
                       <Clock className="w-3 h-3 text-gray-400" />
                       <span className="text-gray-500 text-xs uppercase font-medium">
@@ -276,6 +280,7 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href="/blog/amazon-savings-guide"
+                    aria-label="Read more: 10 Smart Ways to Save Money on Amazon India in 2026"
                     className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
                   >
                     READ MORE <ArrowRight className="w-3.5 h-3.5" />
@@ -287,6 +292,7 @@ export default function BlogPage() {
           </div>
         </section>
 
+        </main>
         <Footer />
       </div>
     </>

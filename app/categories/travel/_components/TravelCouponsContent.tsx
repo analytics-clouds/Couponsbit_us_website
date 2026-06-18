@@ -99,7 +99,7 @@ export default function TravelCouponsContent() {
                     </div>
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
-                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp" alt="Travel Coupons" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp" alt="Travel Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -115,11 +115,11 @@ export default function TravelCouponsContent() {
                     <div key={store.id} className="bg-white border border-gray-100 rounded-2xl p-4 text-center transform hover:-translate-y-1 hover:shadow-xl hover:border-[#056bfa] transition-all duration-300 flex flex-col justify-between group">
                       <div>
                         <div className="h-14 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
-                          <img src={store.logo} alt={store.name} className="max-h-12 max-w-[120px] w-auto object-contain" />
+                          <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain" />
                         </div>
                         <h3 className="mt-3 font-extrabold text-black text-sm group-hover:text-[#056bfa] transition-colors line-clamp-1 truncate px-1">{store.name}</h3>
                         <p className="text-gray-400 text-[11px] font-bold mt-0.5">{store.coupons} Coupons</p>
-                        <span className="text-xs font-black text-[#056bfa] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
+                        <span className="text-xs font-black text-[#0344b0] uppercase tracking-wide mt-2.5 block bg-[#e8f6f8] py-1 px-2 rounded-lg leading-normal">{store.discount}</span>
                       </div>
                       <div className="mt-4">
                         <Link href={`/stores/${store.id}`} className="block w-full">
@@ -152,7 +152,7 @@ export default function TravelCouponsContent() {
                           <cat.icon className={cn("w-4 h-4", cat.active ? "text-[#056bfa]" : cat.color)} />
                           <span className={cn("text-sm transition-colors", cat.active ? "font-bold text-[#056bfa]" : "text-gray-700 font-medium")}>{cat.name}</span>
                         </div>
-                        <span className={cn("text-xs", cat.active ? "font-extrabold text-[#056bfa]" : "text-black font-bold")}>{cat.count}</span>
+                        <span className={cn("text-xs", cat.active ? "font-extrabold text-[#0344b0]" : "text-black font-bold")}>{cat.count}</span>
                       </Link>
                     ))}
                   </div>

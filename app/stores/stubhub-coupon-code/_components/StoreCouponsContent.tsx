@@ -233,7 +233,7 @@ export default function StubHubCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -768,7 +768,7 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Ticket prices start from just $30   </li>
 
                   <li className="flex items-start gap-2">
@@ -906,7 +906,7 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Tickets starting from $171   </li>
 
                   <li className="flex items-start gap-2">
@@ -1037,7 +1037,7 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                   Tickets start at $582 </li>
 
                   <li className="flex items-start gap-2">
@@ -1173,7 +1173,7 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Flat $25 OFF with student code  </li>
 
                   <li className="flex items-start gap-2">
@@ -1308,7 +1308,7 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                    Flat $20 OFF for new users </li>
 
                   <li className="flex items-start gap-2">

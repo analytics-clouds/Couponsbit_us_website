@@ -217,7 +217,7 @@ export default function LycaCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp" alt="Lyca Mobile" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp" alt="Lyca Mobile" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -261,21 +261,21 @@ export default function LycaCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-discount-code.webp" alt="Lyca Mobile Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/lyca-mobile-discount-code.webp" alt="Lyca Mobile Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-promo-code.webp" alt="Lyca Mobile Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/lyca-mobile-promo-code.webp" alt="Lyca Mobile Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-voucher-code.webp" alt="Lyca Mobile Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/lyca-mobile-voucher-code.webp" alt="Lyca Mobile Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -361,14 +361,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>No contracts & no credit checks</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 69% on selected plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Affordable prepaid mobile plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>No contracts & no credit checks</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 69% on selected plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Affordable prepaid mobile plans</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Summer Starts Now Affordable Prepaid Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -402,14 +402,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 60% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited talk with fast-speed data</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Budget-friendly monthly pricing</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get up to 60% OFF instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited talk with fast-speed data</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Budget-friendly monthly pricing</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: UP TO 60% OFF Selected Lyca Mobile Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -443,14 +443,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>18GB high-speed data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>10GB hotspot data available</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide & international talk/text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>18GB high-speed data included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>10GB hotspot data available</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide & international talk/text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Better Signal Summer Offer 18GB Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -484,14 +484,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Full-speed access for first 40GB</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited international minutes to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Full-speed access for first 40GB</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited international minutes to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Best Prepaid Phone Plans Unlimited Plus" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -525,14 +525,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Available on 3, 6 & 12-month plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calling to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 60% on selected plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available on 3, 6 & 12-month plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calling to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 60% on selected plans</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: More Months More Savings" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -566,14 +566,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>High-speed streaming data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calls to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>High-speed streaming data included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calls to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Stream Share Repeat Unlimited Data Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -607,14 +607,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>18GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 10GB hotspot data</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>18GB data at up to 5G speeds</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 10GB hotspot data</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Best-Selling $33 High Data Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -648,14 +648,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited data with first 40GB at full speed</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited talk & text nationwide</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International minutes to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited data with first 40GB at full speed</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited talk & text nationwide</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International minutes to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Unlimited Plus Plan Promo Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -688,14 +688,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Earn up to $38 per referral</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Friends get 50% OFF for first 3 months</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Easy refer & earn process</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn up to $38 per referral</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Friends get 50% OFF for first 3 months</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Easy refer & earn process</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Refer A Friend Earn Up To $38" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -729,14 +729,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited data prepaid plan</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>International calling to 100 countries</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited data prepaid plan</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calling to 100 countries</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: SIM-Only Unlimited Pro Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -770,14 +770,14 @@ export default function LycaCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>5GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlimited international talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>5GB data at up to 5G speeds</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited international talk & text</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Unlimited International Plan Starting At $10" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -1062,7 +1062,7 @@ export default function LycaCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Lyca Mobile deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

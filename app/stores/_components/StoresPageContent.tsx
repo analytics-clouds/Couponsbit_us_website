@@ -136,7 +136,6 @@ export default function StoresPageContent() {
       width={800}
       height={400}
       className="w-full h-full object-cover"
-      fetchPriority="high"
       loading="lazy"
     />
   </div>
@@ -158,7 +157,7 @@ export default function StoresPageContent() {
                 Top Stores
               </h2>
               {searchQuery && (
-                <div className="text-xs bg-gray-100 text-[#056bfa] px-3 py-1.5 rounded-full font-bold">
+                <div className="text-xs bg-gray-100 text-[#0344b0] px-3 py-1.5 rounded-full font-bold">
                   Showing {filteredStores.length} results
                 </div>
               )}
