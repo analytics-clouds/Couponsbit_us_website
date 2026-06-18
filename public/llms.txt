@@ -43,7 +43,6 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 
 ## Resources
 - [Blog](https://couponsbit.us/blog): Shopping guides and savings tips
-- [Submit a Coupon](https://couponsbit.us/submit-coupon): Submit a coupon code for review
 - [FAQs](https://couponsbit.us/faqs): Common questions about using Couponsbit
 
 ## About

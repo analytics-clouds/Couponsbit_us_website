@@ -77,18 +77,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
 
-    // Products / submit coupon
+    // Products
     {
       url: `${BASE_URL}/products`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/submit-coupon`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
     },
 
     // Info / support pages
