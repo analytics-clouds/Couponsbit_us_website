@@ -129,16 +129,16 @@ const Hero = () => {
 };
 
 const TOP_BRANDS = [
-  { name: "StubHub",         logo: "/stubhub-coupon-code.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",         logo: "/viagogo-coupon-code.webp",         discount: "Starting at $332", href: "/stores/viagogo-coupon-code" },
-  { name: "LATAM Airlines",  logo: "/latam-airlines-coupon-code.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-coupon-code" },
-  { name: "Rayneo",          logo: "/reyneo-coupon-code.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-coupon-code" },
-  { name: "Driffle",         logo: "/driffle-coupon-code.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-coupon-code" },
-  { name: "Lyca Mobile",     logo: "/lyca-mobile-coupon-code.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Bluehost",        logo: "/bluehost-coupon-code.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-coupon-code" },
-  { name: "Reolink",         logo: "/Reolink-coupon-code.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
-  { name: "Envato Elements", logo: "/envato-coupon-code.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
-  { name: "Sintra",          logo: "/sintra-coupon-code.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
+  { name: "StubHub",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",         discount: "Starting at $332", href: "/stores/viagogo-coupon-code" },
+  { name: "LATAM Airlines",  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-coupon-code" },
+  { name: "Rayneo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-coupon-code" },
+  { name: "Driffle",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-coupon-code" },
+  { name: "Lyca Mobile",     logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Bluehost",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-coupon-code" },
+  { name: "Reolink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
+  { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
+  { name: "Sintra",          logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
 ];
 
 const TopBrands = () => {

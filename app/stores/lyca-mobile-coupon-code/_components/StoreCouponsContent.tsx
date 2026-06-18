@@ -134,12 +134,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Reolink",        logo: "/Reolink-coupon-code.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Reolink",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function LycaCouponsContent() {
@@ -217,7 +217,7 @@ export default function LycaCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/lyca-mobile-coupon-code.webp" alt="Lyca Mobile" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp" alt="Lyca Mobile" width={112} height={112} className="w-full h-full object-contain" />
                     </div>
                   </a>
                   <div>

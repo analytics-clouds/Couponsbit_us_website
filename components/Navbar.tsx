@@ -37,6 +37,7 @@ export const Logo = () => (
     width={1347}
     height={542}
     priority
+    sizes="278px"
     className="h-16 w-auto"
   />
 );

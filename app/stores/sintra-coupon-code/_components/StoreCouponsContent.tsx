@@ -129,12 +129,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function SintraCouponsContent() {
@@ -212,7 +212,7 @@ export default function SintraCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/sintra-coupon-code.webp" alt="Sintra" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp" alt="Sintra" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -256,21 +256,21 @@ export default function SintraCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/sintra-discount-code.webp" alt="Sintra Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/sintra-discount-code.webp" alt="Sintra Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/sintra-promo-code.webp" alt="Sintra Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/sintra-promo-code.webp" alt="Sintra Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/sintra-voucher-code.webp" alt="Sintra Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/sintra-voucher-code.webp" alt="Sintra Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -355,14 +355,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Access all 12 AI helpers</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 250 monthly credits</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>15+ integrations supported</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Access all 12 AI helpers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 250 monthly credits</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>15+ integrations supported</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra AI Plans Starting From $15.60/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -396,14 +396,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save 50% instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Price: $48.50/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>14-day money-back guarantee</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save 50% instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Price: $48.50/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>14-day money-back guarantee</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra 1-Month Plan Save 50%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -437,14 +437,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 70%</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Starting at just $15.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes all 12 AI helpers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 70%</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at just $15.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes all 12 AI helpers</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra 12-Month Plan Save 70%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -478,14 +478,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save 60% on subscription</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Price: $23.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 250 monthly credits</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save 60% on subscription</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Price: $23.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 250 monthly credits</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra 3-Month Plan Save 60%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -519,14 +519,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get 60% OFF on Soshie plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Basic plan starts at $15.60/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Redeem code at checkout</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 60% OFF on Soshie plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Basic plan starts at $15.60/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Redeem code at checkout</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra Soshie Social Media Manager 60% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -560,14 +560,14 @@ export default function SintraCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Applicable on all subscription plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Full money-back guarantee included</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>No promo code required</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Applicable on all subscription plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Full money-back guarantee included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>No promo code required</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Sintra deal: Sintra AI Money-Back Guarantee Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -852,7 +852,7 @@ export default function SintraCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Sintra deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

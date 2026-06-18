@@ -32,6 +32,7 @@ import {
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
 } from "lucide-react";
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -139,12 +140,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Reolink",        logo: "/Reolink-coupon-code.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Reolink",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function BluehostCouponsContent() {
@@ -222,7 +223,7 @@ export default function BluehostCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/bluehost-coupon-code.webp" alt="Bluehost" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp" alt="Bluehost" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -366,14 +367,14 @@ export default function BluehostCouponsContent() {
                           </button>
                           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>WordPress hosting from just $1.99/mo</li>
-                              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>AI-powered website builder included</li>
-                              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>24/7 WordPress support available</li>
+                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>WordPress hosting from just $1.99/mo</li>
+                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-powered website builder included</li>
+                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>24/7 WordPress support available</li>
                             </ul>
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: WordPress Hosting Starting At $1.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -407,14 +408,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 50% OFF on hosting plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Secure & high-performance hosting</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Multiple hosting plans available</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get up to 50% OFF on hosting plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Secure & high-performance hosting</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Multiple hosting plans available</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: UP TO 50% OFF Hosting Plan Savings" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -448,14 +449,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save up to 33% instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes storage, RAM & bandwidth</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Dedicated IP addresses included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 33% instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes storage, RAM & bandwidth</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Dedicated IP addresses included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: 33% OFF VPS Hosting Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -489,14 +490,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Plans starting from $15.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Continue enjoying Bluehost features</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Reliable website hosting support</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Plans starting from $15.99/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Continue enjoying Bluehost features</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Reliable website hosting support</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Hosting Renewal Plans Starting At $15.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -529,14 +530,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Plans starting at $75</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes global CDN support</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Built-in WAF security protection</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Plans starting at $75</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes global CDN support</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built-in WAF security protection</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Cloud Hosting Plans Starting From $75" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -570,14 +571,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Starting at $6.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Supports up to 50 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free SSL, CDN & domain included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $6.99/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 50 websites</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL, CDN & domain included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Business Essentials Hosting Save 50%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -611,14 +612,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Supports up to 10 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>10GB NVMe SSD storage included</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>AI-powered site creation tools</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 10 websites</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>10GB NVMe SSD storage included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-powered site creation tools</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Web Hosting Plans Starting From $1.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -652,14 +653,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Starting at $2.79/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free domain for first year</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free SSL & CDN included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $2.79/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free domain for first year</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL & CDN included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: One Site Hosting Plan Save 69%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -693,14 +694,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Starting at $4.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Supports up to 10 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free domain & SSL included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $4.99/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 10 websites</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free domain & SSL included</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Starter Hosting Plan Save 58%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -734,14 +735,14 @@ export default function BluehostCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Ideal for one website or blog</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Free SSL, CDN & AI site builder</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Weekly backups & security protection</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for one website or blog</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL, CDN & AI site builder</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Weekly backups & security protection</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluehost deal: Monthly One Site Hosting Starting At $8.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -1050,7 +1051,7 @@ export default function BluehostCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Bluehost deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

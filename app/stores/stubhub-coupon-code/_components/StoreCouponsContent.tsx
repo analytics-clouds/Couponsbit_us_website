@@ -150,12 +150,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "LATAM Airlines", logo: "/latam-airlines-coupon-code.webp", dealText: "Up to 12% OFF", href: "/stores/latam-airlines-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "LATAM Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", dealText: "Up to 12% OFF", href: "/stores/latam-airlines-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function StubHubCouponsContent() {
@@ -233,7 +233,7 @@ export default function StubHubCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/stubhub-coupon-code.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" />
                     </div>
                   </a>
                   <div>
@@ -287,6 +287,7 @@ export default function StubHubCouponsContent() {
           src="/stubhub-discount-code.webp"
           alt="Banner 1"
           width={800} height={280} className="w-full object-cover"
+          loading="lazy"
         />
       </a>
     </div>
@@ -301,6 +302,7 @@ export default function StubHubCouponsContent() {
           src="/stubhub-promo-code.webp"
           alt="Banner 2"
           width={800} height={280} className="w-full object-cover"
+          loading="lazy"
         />
       </a>
     </div>
@@ -315,6 +317,7 @@ export default function StubHubCouponsContent() {
           src="/stubhub-voucher-code.webp"
           alt="Banner 3"
           width={800} height={280} className="w-full object-cover"
+          loading="lazy"
         />
       </a>
     </div>
@@ -483,17 +486,17 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Flat 10% OFF on sitewide bookings
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Applicable on orders above $40
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Covers concerts, sports & live events
                   </li>
 
@@ -510,6 +513,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: Flat 10% OFF Sitewide On Orders Above $40"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -624,16 +628,16 @@ export default function StubHubCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      - Match Date: May 24                  </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Venue: Frost Bank Center, San Antonio
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                    Western Conference Finals - Home Game 2  </li>
 
                 </ul>
@@ -649,6 +653,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: NBA Playoffs Western Conference Finals tickets"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -767,12 +772,12 @@ export default function StubHubCouponsContent() {
                     Ticket prices start from just $30   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Live performances by top artists & bands
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Available for all users
                   </li>
 
@@ -789,6 +794,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: Rock Music Tickets Starting From $30"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -904,12 +910,12 @@ export default function StubHubCouponsContent() {
                      Tickets starting from $171   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Premium theater experience
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Book now before seats sell out </li>
 
                 </ul>
@@ -925,6 +931,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: The Lion King New York Tickets Starting At $171"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1034,12 +1041,12 @@ export default function StubHubCouponsContent() {
                   Tickets start at $582 </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     3-day passes available
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Offer valid for all users</li>
 
                 </ul>
@@ -1055,6 +1062,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: Under The Big Sky Festival Tickets Starting At $582"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1169,12 +1177,12 @@ export default function StubHubCouponsContent() {
                      Flat $25 OFF with student code  </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Applicable on ticket bookings
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Special offer for students only </li>
 
                 </ul>
@@ -1190,6 +1198,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: Student Discount Flat $25 OFF On Ticket Booking"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1303,12 +1312,12 @@ export default function StubHubCouponsContent() {
                    Flat $20 OFF for new users </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                         Applicable on first order only
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      -Limited-time welcome offer </li>
 
                 </ul>
@@ -1324,6 +1333,7 @@ export default function StubHubCouponsContent() {
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get StubHub deal: New User Offer Get $20 OFF On First Order"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1631,7 +1641,7 @@ export default function StubHubCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" aria-label={`Get StubHub deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

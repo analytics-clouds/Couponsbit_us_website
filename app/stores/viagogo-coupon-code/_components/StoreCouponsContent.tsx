@@ -129,12 +129,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "LATAM Airlines", logo: "/latam-airlines-coupon-code.webp", dealText: "Up to 12% OFF", href: "/stores/latam-airlines-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "LATAM Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", dealText: "Up to 12% OFF", href: "/stores/latam-airlines-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function ViaggogoCouponsContent() {
@@ -212,7 +212,7 @@ export default function ViaggogoCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/viagogo-coupon-code.webp" alt="Viagogo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp" alt="Viagogo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -256,7 +256,7 @@ export default function ViaggogoCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="/viagogo-discount-code.webp" alt="Viagogo Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -351,8 +351,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting At </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $603 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $603 </p>
 
              
             </div>
@@ -419,17 +419,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Tickets starting from $603
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Location: Empire Polo Field, California
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Limited-time festival deal
                   </li>
 
@@ -446,6 +446,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: Coachella Music Festival Tickets starting at $603"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -484,8 +485,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting At </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $332 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $332 </p>
 
              
             </div>
@@ -551,18 +552,18 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Event Dates: June 5–7
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Location: Corona Park, Flushing Meadows, NY
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                   
+                    <span className="text-[#0344b0]">•</span>
+
                   </li>
 
                 </ul>
@@ -578,6 +579,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: Katseye Tickets Governors Ball Festival"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -617,8 +619,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting  </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $120 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $120 </p>
 
              
             </div>
@@ -685,17 +687,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Tickets starting from $603
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Location: Empire Polo Field, California
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Limited-time festival deal
                   </li>
 
@@ -712,6 +714,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: World Cup Tickets United States vs Paraguay"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -751,8 +754,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting At  </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $109 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $109 </p>
 
              
             </div>
@@ -818,17 +821,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Prices start from $109
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Available in Indonesia, Hong Kong & Singapore
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Limited seats available
                   </li>
 
@@ -845,6 +848,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: Westlife Tickets starting at $109"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -884,8 +888,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting At $49 </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $49 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $49 </p>
 
              
             </div>
@@ -952,17 +956,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Ticket prices start at $49
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Artists include Blackpink, Madonna & Westlife
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Limited-time concert offer
                   </li>
 
@@ -979,6 +983,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: Concert Tickets starting at $49"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1017,8 +1022,8 @@ export default function ViaggogoCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting At $65 </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $65 </h2>
+              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  $65 </p>
 
              
             </div>
@@ -1087,17 +1092,17 @@ export default function ViaggogoCouponsContent() {
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                       Parking passes start at $65
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                      Garage & underground parking available
                   </li>
 
                   <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
+                    <span className="text-[#0344b0]">•</span>
                     Easy access to concert venue
                   </li>
 
@@ -1114,6 +1119,7 @@ export default function ViaggogoCouponsContent() {
                 href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Get Viagogo deal: Madonna Parking Passes starting at $65"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
 
@@ -1417,7 +1423,7 @@ export default function ViaggogoCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Viagogo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

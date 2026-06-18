@@ -23,7 +23,7 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "lyca-mobile-coupon-code", name: "Lyca Mobile", logo: "/lyca-mobile-coupon-code.webp", coupons: 10, discount: "Up to 20% OFF" }
+  { id: "lyca-mobile-coupon-code", name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", coupons: 10, discount: "Up to 20% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [
@@ -143,7 +143,7 @@ export default function MobileCouponsContent() {
                           <cat.icon className={cn("w-4 h-4", cat.active ? "text-[#00A651]" : cat.color)} />
                           <span className={cn("text-sm", cat.active ? "font-bold text-[#00A651]" : "text-gray-700 font-medium")}>{cat.name}</span>
                         </div>
-                        <span className={cn("text-xs", cat.active ? "font-extrabold text-[#00A651]" : "text-black font-bold")}>{cat.count}</span>
+                        <span className={cn("text-xs", cat.active ? "font-extrabold text-[#008542]" : "text-black font-bold")}>{cat.count}</span>
                       </Link>
                     ))}
                   </div>

@@ -113,6 +113,7 @@ export default function CategoriesPageContent() {
     <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
 
+      <main>
       {/* Hero */}
       <section className="relative pt-24 pb-0 overflow-hidden bg-gradient-to-br from-[#0451c4] via-[#056bfa] to-[#1a9db5]">
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: "radial-gradient(#fff 1.5px, transparent 1.5px)", backgroundSize: "24px 24px" }} />
@@ -231,7 +232,7 @@ export default function CategoriesPageContent() {
           {filtered.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-5xl mb-4">🔍</p>
-              <h3 className="text-black font-black text-xl mb-2">No categories found</h3>
+              <p className="text-black font-black text-xl mb-2">No categories found</p>
               <p className="text-gray-500 text-sm">Try a different search term</p>
               <button onClick={() => setSearchQuery("")} className="mt-4 text-[#056bfa] font-bold text-sm hover:underline">Clear search</button>
             </div>
@@ -256,6 +257,9 @@ export default function CategoriesPageContent() {
                           <img
                             src={cat.image}
                             alt={cat.name}
+                            width={400}
+                            height={225}
+                            loading={i > 1 ? "lazy" : undefined}
                             className="w-full h-auto block group-hover:scale-105 transition-transform duration-300"
                           />
 
@@ -515,7 +519,7 @@ export default function CategoriesPageContent() {
                         <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wide">{item.deal}</p>
                       </div>
                     </div>
-                    <span className="text-[11px] font-black uppercase tracking-tighter px-2.5 py-1 rounded-lg bg-[#e8f6f8] text-[#056bfa]">GET</span>
+                    <span className="text-[11px] font-black uppercase tracking-tighter px-2.5 py-1 rounded-lg bg-[#e8f6f8] text-[#0344b0]">GET</span>
                   </div>
                 </Link>
               ))}
@@ -615,6 +619,7 @@ export default function CategoriesPageContent() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

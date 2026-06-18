@@ -129,12 +129,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Reolink",        logo: "/Reolink-coupon-code.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Reolink",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
 ];
 
 export default function RayneoCouponsContent() {
@@ -212,7 +212,7 @@ export default function RayneoCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/reyneo-coupon-code.webp" alt="Rayneo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp" alt="Rayneo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -356,9 +356,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Enjoy UPTO $70 OFF on Air Series devices</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Premium AR viewing experience at special prices</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Limited-time offer while stocks last</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy UPTO $70 OFF on Air Series devices</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium AR viewing experience at special prices</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer while stocks last</li>
             </ul>
           </div>
         </div>
@@ -396,9 +396,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>World's first HDR10 AR Glasses at just $299</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Premium quad-speaker audio by Bang & Olufsen</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Immersive giant-screen viewing experience</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>World's first HDR10 AR Glasses at just $299</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium quad-speaker audio by Bang & Olufsen</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Immersive giant-screen viewing experience</li>
             </ul>
           </div>
         </div>
@@ -437,9 +437,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save $130 instantly on purchase</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Sale Price: $1,169 (Regular $1,299)</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Worldwide Olympic Partner product</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save $130 instantly on purchase</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $1,169 (Regular $1,299)</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Worldwide Olympic Partner product</li>
             </ul>
           </div>
         </div>
@@ -478,9 +478,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save $70 on combo purchase</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes Air 3s + HDMI Adapter</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Easy plug-and-play connectivity</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save $70 on combo purchase</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Air 3s + HDMI Adapter</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Easy plug-and-play connectivity</li>
             </ul>
           </div>
         </div>
@@ -519,9 +519,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save $70 instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Bundle Price: $309 (Regular $379)</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes Wireless Google TV Mate</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save $70 instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Bundle Price: $309 (Regular $379)</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Wireless Google TV Mate</li>
             </ul>
           </div>
         </div>
@@ -559,9 +559,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>World's First HDR10 display in AR glasses</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>201" giant virtual screen experience</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Sale Price: $254.15 (Regular $299)</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>World's First HDR10 display in AR glasses</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>201" giant virtual screen experience</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $254.15 (Regular $299)</li>
             </ul>
           </div>
         </div>
@@ -599,9 +599,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Supports customized nearsighted lenses</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>AI-powered smart features included</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Price: $1,169 (Regular $1,299)</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports customized nearsighted lenses</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-powered smart features included</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Price: $1,169 (Regular $1,299)</li>
             </ul>
           </div>
         </div>
@@ -639,9 +639,9 @@ export default function RayneoCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Ideal for immersive gaming sessions</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Portable and easy-to-use device</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Available for $89 only</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for immersive gaming sessions</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Portable and easy-to-use device</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for $89 only</li>
             </ul>
           </div>
         </div>

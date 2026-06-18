@@ -133,12 +133,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "/stubhub-coupon-code.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "/viagogo-coupon-code.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "/driffle-coupon-code.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Bluehost",       logo: "/bluehost-coupon-code.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Lyca Mobile",    logo: "/lyca-mobile-coupon-code.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "/reyneo-coupon-code.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function ReolinkCouponsContent() {
@@ -216,7 +216,7 @@ export default function ReolinkCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="/Reolink-coupon-code.webp" alt="Reolink" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp" alt="Reolink" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -259,21 +259,21 @@ export default function ReolinkCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/reolink-discount-code.webp" alt="Reolink Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/reolink-discount-code.webp" alt="Reolink Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/reolink-promo-code.webp" alt="Reolink Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/reolink-promo-code.webp" alt="Reolink Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/reolink-voucher-code.webp" alt="Reolink Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="/reolink-voucher-code.webp" alt="Reolink Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -359,14 +359,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Up to 50% OFF on selected systems</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Exclusive anniversary rewards on bundles</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Reliable home security at budget prices</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Up to 50% OFF on selected systems</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive anniversary rewards on bundles</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Reliable home security at budget prices</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: 17th Anniversary Early Access Up to 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -399,14 +399,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$260 instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Pan & Tilt Hybrid Zoom with 3000lm floodlight</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Extra Savings: US$20 OFF $400 orders</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$260 instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Pan & Tilt Hybrid Zoom with 3000lm floodlight</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Extra Savings: US$20 OFF $400 orders</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: TrackFlex Floodlight WiFi at US$338.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -439,14 +439,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$132 on 2 Duo 3 PoE Cameras</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>16MP Ultra HD with 180° panoramic view</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Smart motion tracking for outdoor security</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$132 on 2 Duo 3 PoE Cameras</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>16MP Ultra HD with 180° panoramic view</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Smart motion tracking for outdoor security</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: Reolink Duo 3 PoE at US$238.76" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -479,14 +479,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$450 instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>12MP UHD with vivid Color Night Vision</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>16-channel advanced security system</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$450 instantly</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>12MP UHD with vivid Color Night Vision</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>16-channel advanced security system</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: RLK16-1200D8-A Security System at US$1,049.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -520,14 +520,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save 20% on solar-powered camera bundle</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>150° ultra-wide 2K 4MP HD resolution</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>AI-based adaptive floodlight for night security</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save 20% on solar-powered camera bundle</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>150° ultra-wide 2K 4MP HD resolution</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-based adaptive floodlight for night security</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: Reolink Solar Floodlight Cam at US$159.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -560,14 +560,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$83 on 2 premium cameras</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>12MP UHD with 145° field of view</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>IK10 vandal-proof outdoor protection</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$83 on 2 premium cameras</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>12MP UHD with 145° field of view</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>IK10 vandal-proof outdoor protection</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: Reolink RLC-1240A at US$195.29" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -600,14 +600,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$222 on 2 premium PTZ cameras</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>16X Optical Zoom with 4K UHD quality</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Smart Auto Tracking for motion detection</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$222 on 2 premium PTZ cameras</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>16X Optical Zoom with 4K UHD quality</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Smart Auto Tracking for motion detection</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: Reolink RLC-823S2 at US$516.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -640,14 +640,14 @@ export default function ReolinkCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Save US$40 on solar-powered camera bundle</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>2K 4MP HD with AI-based adaptive floodlight</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes 2 cameras for outdoor monitoring</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save US$40 on solar-powered camera bundle</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>2K 4MP HD with AI-based adaptive floodlight</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 2 cameras for outdoor monitoring</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Reolink deal: Reolink Solar Floodlight Cam Bundle Save $40" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -944,7 +944,7 @@ export default function ReolinkCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Reolink deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

@@ -166,7 +166,9 @@ export default function DealsOfTheDayContent() {
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {slides.map((_, i) => (
-            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
+            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className="w-6 h-6 flex items-center justify-center">
+              <span className={cn("rounded-full transition-all duration-300 block", currentSlide === i ? "w-6 h-2 bg-white" : "w-2 h-2 bg-white/50")} />
+            </button>
           ))}
         </div>
       </div>
@@ -196,7 +198,9 @@ export default function DealsOfTheDayContent() {
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {mobileSlides.map((_, i) => (
-            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className={cn("h-2 rounded-full transition-all duration-300", currentSlide === i ? "w-6 bg-white" : "w-2 bg-white/50")} />
+            <button key={i} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} className="w-6 h-6 flex items-center justify-center">
+              <span className={cn("rounded-full transition-all duration-300 block", currentSlide === i ? "w-6 h-2 bg-white" : "w-2 h-2 bg-white/50")} />
+            </button>
           ))}
         </div>
       </div>
@@ -252,7 +256,7 @@ export default function DealsOfTheDayContent() {
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
+                  <Link href="/stores/viagogo-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
                 </div>
               </div>
             ))}
@@ -294,7 +298,7 @@ export default function DealsOfTheDayContent() {
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/reolink-coupon-code"><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/reolink-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -326,7 +330,7 @@ export default function DealsOfTheDayContent() {
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
+                <Link href="/stores/rayneo-coupon-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
               </div>
             ))}
           </div>
@@ -363,7 +367,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/envato-elements-coupon-code"><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/envato-elements-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -405,7 +409,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/sintra-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
+                  <Link href="/stores/sintra-coupon-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
                 </div>
               </div>
             ))}
@@ -528,7 +532,7 @@ export default function DealsOfTheDayContent() {
                       <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">{item.deal}</p>
                     </div>
                   </div>
-                  <button className="text-[11px] font-black text-[#056bfa] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">GET</button>
+                  <button className="text-[11px] font-black text-[#0344b0] hover:underline uppercase tracking-tighter bg-[#e8f6f8] px-3 py-1.5 rounded-lg">GET</button>
                 </div>
               ))}
             </div>
