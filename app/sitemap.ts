@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
+import { allStores } from "@/lib/stores-data";
 
 const BASE_URL = "https://couponsbit.us";
+
+const CATEGORIES = ["electronics", "entertainment", "mobile", "software", "travel"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -32,67 +35,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
-    // Stores listing + all store pages
+    // Stores listing + all store pages (pulled from lib/stores-data.ts)
     {
       url: `${BASE_URL}/stores`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    {
-      url: `${BASE_URL}/stores/driffle-coupon-code`,
+    ...allStores.map((store) => ({
+      url: `${BASE_URL}/stores/${store.id}`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "weekly" as const,
       priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/envato-elements-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/latam-airlines-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/lyca-mobile-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/rayneo-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/reolink-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/sintra-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/stubhub-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/stores/viagogo-coupon-code`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
+    })),
 
     // Blog
     {
@@ -115,11 +70,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...CATEGORIES.map((category) => ({
+      url: `${BASE_URL}/categories/${category}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
+
+    // Products / submit coupon
     {
-      url: `${BASE_URL}/categories/fashion`,
+      url: `${BASE_URL}/products`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/submit-coupon`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
 
     // Info / support pages
