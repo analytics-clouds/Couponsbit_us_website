@@ -275,7 +275,7 @@ export default function StubHubCouponsContent() {
               {/* Right: Featured Banner Slider */}
               {/* Right: Featured Banner Slider */}
 <div className="hidden md:block flex-1">
-  <div className="relative rounded-2xl overflow-hidden h-[280px] md:h-[280px] shadow-lg group">
+  <div className="relative rounded-2xl overflow-hidden h-[250px] md:h-[250px] shadow-lg group">
 
     {/* Slide 1 */}
     <div
@@ -284,9 +284,9 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/stubhub-discount-code.webp"
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1781851154/stubhub-voucher-code_vmfi3h.webp"
           alt="Banner 1"
-          width={800} height={280} className="w-full object-cover"
+          width={800} height={270} className="w-full object-cover"
           loading="lazy"
         />
       </a>
@@ -299,9 +299,9 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/stubhub-promo-code.webp"
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1781851154/stubhub-voucher-code_vmfi3h.webp"
           alt="Banner 2"
-          width={800} height={280} className="w-full object-cover"
+          width={800} height={270} className="w-full object-cover"
           loading="lazy"
         />
       </a>
@@ -314,9 +314,9 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="/stubhub-voucher-code.webp"
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1781851154/stubhub-voucher-code_vmfi3h.webp"
           alt="Banner 3"
-          width={800} height={280} className="w-full object-cover"
+          width={800} height={270} className="w-full object-cover"
           loading="lazy"
         />
       </a>
