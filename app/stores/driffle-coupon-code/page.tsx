@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: "Driffle Coupon Codes – Up to 95% OFF PC Games & Keys",
     description:  
       "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
-    siteName: "Couponsbit",
+    siteName: "Couponsbit", 
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",
         width: 1200,
         height: 630,
         alt: "Driffle Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Driffle Coupon Codes – Up to 95% OFF PC Games & Keys",
     description:
       "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp"],
     site: "@couponsbit",
   },
 
@@ -118,7 +118,7 @@ const driffleSchema = {
       url: "https://couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/couponsbit-logo_n2upgl.webp",
         width: 200,
         height: 60,
       },

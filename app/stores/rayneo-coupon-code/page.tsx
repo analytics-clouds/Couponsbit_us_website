@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",
         width: 1200,
         height: 630,
         alt: "Rayneo Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Rayneo Coupon Codes – Save $130 on AR Glasses & More",
     description:
       "Get verified Rayneo promo codes – Save $130 on X3 Pro AI, $70 OFF Air Series, AR Glasses from $254 & JoyDock at $89. 6 live deals. Shop now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp"],
     site: "@couponsbit",
   },
 

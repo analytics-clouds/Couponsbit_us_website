@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp",
         width: 1200,
         height: 630,
         alt: "LATAM Airlines Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "LATAM Airlines Coupon Codes – Flights From $136 & More",
     description:
       "Get verified LATAM Airlines promo codes – Flights from $136, NY to Santiago from $308, 40% OFF packages & 40,000 bonus miles. 8 live deals. Book now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp"],
     site: "@couponsbit",
   },
 

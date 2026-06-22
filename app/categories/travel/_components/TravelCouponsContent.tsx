@@ -21,7 +21,8 @@ import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
 const STORES = [
-  { id: "latam-airlines-coupon-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 8, discount: "Up to 12% OFF" }
+  { id: "latam-airlines-coupon-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 8, discount: "Up to 12% OFF" },
+  { id: "trainpal-coupon-code", name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", coupons: 9, discount: "Up to 50% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

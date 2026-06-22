@@ -131,7 +131,7 @@ export default function StoresPageContent() {
 <div className="lg:col-span-5 hidden lg:flex justify-end relative h-80">
   <div className="absolute inset-x-0 bottom-0 top-6 bg-gradient-to-tr from-[#e8f6f8] to-cyan-50/50 rounded-[40px] border border-gray-100 overflow-hidden">
     <img
-      src="/all-stores.webp"
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1782125768/all-stores_y3epw7.webp"
       alt="Shopping Banner"
       width={800}
       height={400}

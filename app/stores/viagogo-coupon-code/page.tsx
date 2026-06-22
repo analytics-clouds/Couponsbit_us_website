@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",
         width: 1200,
         height: 630,
         alt: "Viagogo Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Viagogo Coupon Codes – Tickets From $49 & More Deals",
     description:
       "Get verified Viagogo promo codes – Coachella tickets from $603, World Cup from $120, concerts from $49 & Westlife tickets from $109. 9 live deals. Book now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp"],
     site: "@couponsbit",
   },
 

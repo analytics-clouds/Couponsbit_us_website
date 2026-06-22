@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",
         width: 1200,
         height: 630,
         alt: "Reolink Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Reolink Coupon Codes – Save $450 on Security Cameras",
     description:
       "Get verified Reolink discount codes – 50% OFF anniversary sale, save $450 on RLK16 system, $260 OFF TrackFlex & solar cameras from $159. 8 live deals. Shop now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp"],
     site: "@couponsbit",
   },
 

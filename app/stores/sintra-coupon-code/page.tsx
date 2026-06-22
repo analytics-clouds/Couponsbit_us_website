@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",
         width: 1200,
         height: 630,
         alt: "Sintra Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Sintra Coupon Codes – Save 70% on AI Plans & More",
     description:
       "Get verified Sintra discount codes – 70% OFF annual plan, 60% OFF 3-month plan, 50% OFF monthly & AI plans from $15.60/mo. 5 live deals. Save now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp"],
     site: "@couponsbit",
   },
 

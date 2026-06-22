@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",
         width: 1200,
         height: 630,
         alt: "Lyca Mobile Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Lyca Mobile Coupon Codes – Plans From $7.50 & More",
     description:
       "Get verified Lyca Mobile discount codes – 69% OFF prepaid plans, unlimited data from $7.50, international plans from $10 & earn $38 referral reward. 10 live deals. Save now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp"],
     site: "@couponsbit",
   },
 

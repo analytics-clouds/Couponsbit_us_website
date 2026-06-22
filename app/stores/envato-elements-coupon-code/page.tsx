@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp",
         width: 1200,
         height: 630,
         alt: "Envato Elements Coupon Code & Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Envato Elements Coupon Codes – 50% OFF & From $16.50",
     description:
       "Get verified Envato Elements discount codes – 50% OFF annual plan, 30% OFF students, 34% OFF team plans & unlimited assets from $16.50/mo. 7 live deals. Save now!",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp"],
     site: "@couponsbit",
   },
 
