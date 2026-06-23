@@ -24,7 +24,8 @@ interface Coupon {
 
 const STORES = [
   { id: "stubhub-coupon-code", name: "Stubhub", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp", coupons: 11, discount: "Up to 15% OFF" },
-  { id: "viagogo-coupon-code", name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", coupons: 9, discount: "Up to 10% OFF" }
+  { id: "viagogo-coupon-code", name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", coupons: 9, discount: "Up to 10% OFF" },
+  { id: "unipin-coupon-code", name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp", coupons: 10, discount: "Top-Ups From $0.94" }
 ];
 
 

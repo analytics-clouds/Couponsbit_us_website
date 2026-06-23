@@ -97,7 +97,7 @@ const blogSchema = {
         {
           "@type": "BlogPosting",
           headline: "10 Smart Ways to Save Money on Amazon India in 2026",
-          url: "https://couponsbit.us/blog/amazon-savings-guide",
+          url: "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
           datePublished: "2026-05-12",
           inLanguage: "en-US",
           author: {
@@ -247,7 +247,7 @@ export default function BlogPage() {
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
                 <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
                   <img
-                    src="/amazon-savings-guide.webp"
+                    src="https://res.cloudinary.com/couponsbit/image/upload/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp"
                     alt="How to save money online shopping"
                     width={220}
                     height={200}
@@ -258,7 +258,7 @@ export default function BlogPage() {
                 <div className="p-6 flex flex-col justify-center flex-1">
                   <div className="flex items-center gap-2 mb-2.5">
                     <span className="text-gray-500 text-xs font-medium uppercase">
-                      MAY 12, 2026
+                      June 23, 2026
                     </span>
                     <span className="text-gray-300" aria-hidden="true">•</span>
                     <div className="flex items-center gap-1">
@@ -268,19 +268,17 @@ export default function BlogPage() {
                       </span>
                     </div>
                   </div>
-                  <Link href="/blog/amazon-savings-guide">
+                  <Link href="/blog/couponsbit-shopping-savings-guide">
                     <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
-                      10 Smart Ways to Save Money on Amazon India in 2026
+                      What Is CouponsBit? Why Smart Shoppers Use It
                     </h3>
                   </Link>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
-                    Amazon India is a goldmine of deals if you know where to
-                    look. Here are 10 proven online shopping tips to get maximum
-                    discounts using verified coupons and cashback offers.
+                    Online shopping has transformed the way we buy everything from clothing
                   </p>
                   <Link
-                    href="/blog/amazon-savings-guide"
-                    aria-label="Read more: 10 Smart Ways to Save Money on Amazon India in 2026"
+                    href="/blog/couponsbit-shopping-savings-guide"
+                    aria-label="Read more: What Is CouponsBit? Why Smart Shoppers Use It"
                     className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
                   >
                     READ MORE <ArrowRight className="w-3.5 h-3.5" />

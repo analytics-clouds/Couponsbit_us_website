@@ -21,4 +21,6 @@ export const allStores: StoreEntry[] = [
   { name: "Sintra",          id: "sintra-coupon-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",    popular: false },
   { name: "Fytoo",           id: "fytoo-coupon-code",           category: "Fashion",     coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp",                discount: "Frames From $1",   popular: false },
   { name: "TrainPal",        id: "trainpal-coupon-code",        category: "Travel",      coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp",             discount: "Up to 50% OFF",    popular: false },
+  { name: "Emergent",        id: "emergent-coupon-code",        category: "More",        coupons: 2,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp",       discount: "Up to 85% OFF",    popular: false },
+  { name: "Unipin",          id: "unipin-coupon-code",          category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp",       discount: "Top-Ups From $0.94", popular: false },
 ];

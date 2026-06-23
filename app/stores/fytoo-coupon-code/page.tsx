@@ -93,7 +93,7 @@ const fytooSchema = {
             seller: {
               "@type": "Organization",
               name: "Fytoo",
-              url: "https://www.bluehost.com",
+              url: "https://www.fytoo.com/",
             },
           },
         },

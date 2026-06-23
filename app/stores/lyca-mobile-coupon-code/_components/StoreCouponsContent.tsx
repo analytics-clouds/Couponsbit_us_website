@@ -257,25 +257,25 @@ export default function LycaCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-discount-code.webp" alt="Lyca Mobile Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131654/lyca_discount_code_wiubg0.webp" alt="Lyca Mobile Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-promo-code.webp" alt="Lyca Mobile Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131654/lyca_voucher_code_omppiu.webp" alt="Lyca Mobile Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/lyca-mobile-voucher-code.webp" alt="Lyca Mobile Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131654/lyca_discount_code_wiubg0.webp" alt="Lyca Mobile Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -1041,13 +1041,12 @@ export default function LycaCouponsContent() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Lyca Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Prepaid Plans", "Lyca SIM Card", "International Call", "Lyca Data Plan", "Lyca Promo Code", "Unlimited Talk", "Wireless Deals", "Mobile Refill"].map(tag => (
-              <Link 
-                key={tag} 
-                href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+              <span
+                key={tag}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </Link>
+              </span>
             ))}
           </div>
         </div>

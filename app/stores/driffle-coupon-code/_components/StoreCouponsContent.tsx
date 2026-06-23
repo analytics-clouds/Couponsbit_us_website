@@ -256,25 +256,25 @@ export default function DriffleCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[280px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[250px] md:h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/driffle-discount-code.webp" alt="Driffle Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129759/driffle_discount_code_y0ysgi.webp" alt="Driffle Discount Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/driffle-promo-code.webp" alt="Driffle Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129760/driffle_promo_code_jtopjs.webp" alt="Driffle Promo Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="/driffle-voucher-code.webp" alt="Driffle Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129759/driffle_voucher_code_iv3csa.webp" alt="Driffle Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
@@ -955,13 +955,12 @@ export default function DriffleCouponsContent() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Driffle Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Game Keys", "PC Game Keys", "Steam Gift Card", "Xbox Live Sub", "Driffle Promo Code", "PSN Codes", "In-Game Currency", "Gaming Subscriptions"].map(tag => (
-              <Link 
-                key={tag} 
-                href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+              <span
+                key={tag}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </Link>
+              </span>
             ))}
           </div>
         </div>

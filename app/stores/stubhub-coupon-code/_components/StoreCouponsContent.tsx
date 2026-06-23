@@ -299,7 +299,7 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="https://res.cloudinary.com/couponsbit/image/upload/v1781851154/stubhub-voucher-code_vmfi3h.webp"
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1782127919/Stubhub_voucher_code_wl9gvl.webp"
           alt="Banner 2"
           width={800} height={270} className="w-full object-cover"
           loading="lazy"
@@ -314,7 +314,7 @@ export default function StubHubCouponsContent() {
     >
       <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
         <img
-          src="https://res.cloudinary.com/couponsbit/image/upload/v1781851154/stubhub-voucher-code_vmfi3h.webp"
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1782127903/Stubhub_discount_code_s0bfnm.webp"
           alt="Banner 3"
           width={800} height={270} className="w-full object-cover"
           loading="lazy"
@@ -1619,13 +1619,12 @@ export default function StubHubCouponsContent() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular StubHub Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["StubHub Concerts", "StubHub Sports", "StubHub Theater", "StubHub Comedy", "StubHub Promo Code", "StubHub Ticket Deals", "StubHub Festivals", "StubHub Offers"].map(tag => (
-              <Link 
-                key={tag} 
-                href={`/search?q=${encodeURIComponent(tag)}`} 
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 border border-white"
+              <span
+                key={tag}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </Link>
+              </span>
             ))}
           </div>
         </div>

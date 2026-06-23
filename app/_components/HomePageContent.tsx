@@ -36,14 +36,14 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    { id: 1, image: "/driffle-discount-code.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
-    { id: 2, image: "/latam-airlines-promo-code.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
-    { id: 3, image: "/envato-elements-promo-code.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
-    { id: 4, image: "/lyca-mobile-promo-code.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 5, image: "/rayneo-promo-code.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 6, image: "/reolink-voucher-code.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
-    { id: 7, image: "/sintra-discount-code.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
-    { id: 8, image: "/stubhub-voucher-code.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
+    { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/envato-elements-promo-code_xf5dwf.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
+    { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
+    { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/rayneo-promo-code_lcxjg3.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
+    { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/stubhub-voucher-code_p6tesq.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/reolink-voucher-code_frnbya.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/sintra-discount-code_gmnegt.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
+    { id: 7, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/driffle-discount-code_q0pcvn.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
+    { id: 8, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/latam-airlines-promo-code_rfexah.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
   ];
 
   useEffect(() => {
@@ -697,7 +697,7 @@ export default function HomePageContent() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {[
-                { kw: "amazon online shopping india", date: "May 12, 2026", read: "6 min read", title: "10 Smart Ways to Save Money on Amazon India in 2026", desc: "Amazon India is a goldmine of deals if you know where to look. Here are 10 proven strategies.", href: "/blog/amazon-savings-guide" },
+                { kw: "amazon online shopping india", date: "May 12, 2026", read: "6 min read", title: "10 Smart Ways to Save Money on Amazon India in 2026", desc: "Amazon India is a goldmine of deals if you know where to look. Here are 10 proven strategies.", href: "/blog/couponsbit-shopping-savings-guide" },
                 { kw: "coupon code discount", date: "May 10, 2026", read: "5 min read", title: "How to Stack Coupons and Bank Offers for Maximum Savings", desc: "Did you know you can combine multiple deals for even bigger discounts? This guide explains how.", href: "/blog" },
                 { kw: "fashion sale clothing", date: "May 8, 2026", read: "7 min read", title: "Myntra Grand Sale 2026 — Complete Guide to Getting the Best Deals", desc: "Myntra's biggest sale of the year is here. Here is your complete guide to saving the most money.", href: "/blog" }
               ].map((post, i) => (

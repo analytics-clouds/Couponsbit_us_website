@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp",
         width: 1200,
         height: 630,
         alt: "TrainPal Coupon Code & Promo Codes – Couponsbit",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Up to 50% OFF UK Train Travel | TrainPal Coupon Code",
     description:
       "Unlock the latest TrainPal Coupon Code and save up to 50% on UK rail travel. Get Railcards, cheaper fares, and exclusive ticket deals.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp"],
     site: "@couponsbit",
   },
 
@@ -92,7 +92,7 @@ const trainpalSchema = {
             seller: {
               "@type": "Organization",
               name: "TrainPal",
-              url: "https://www.bluehost.com",
+              url: "https://www.mytrainpal.com/",
             },
           },
         },

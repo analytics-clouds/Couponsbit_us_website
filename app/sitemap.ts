@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
-      url: `${BASE_URL}/blog/amazon-savings-guide`,
+      url: `${BASE_URL}/blog/couponsbit-shopping-savings-guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
     },

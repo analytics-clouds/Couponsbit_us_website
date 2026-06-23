@@ -26,7 +26,8 @@ const STORES = [
   { id: "driffle-coupon-code", name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", coupons: 14, discount: "Up to 15% OFF" },
   { id: "bluehost-coupon-code", name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", coupons: 12, discount: "Up to 65% OFF" },
   { id: "envato-elements-coupon-code", name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp", coupons: 7, discount: "Up to 50% OFF" },
-  { id: "sintra-coupon-code", name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", coupons: 5, discount: "Up to 40% OFF" }
+  { id: "sintra-coupon-code", name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", coupons: 5, discount: "Up to 40% OFF" },
+  { id: "emergent-coupon-code", name: "Emergent", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp", coupons: 2, discount: "Up to 85% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [
