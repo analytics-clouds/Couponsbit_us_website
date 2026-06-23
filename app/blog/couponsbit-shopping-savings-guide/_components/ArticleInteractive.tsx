@@ -14,10 +14,16 @@ import {
   MessageCircle,
   Twitter,
   Facebook,
-  Link as LinkIcon
+  Link as LinkIcon,
+  Laptop,
+  Plane,
+  Tv,
+  Code,
+  Zap
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
 export default function ArticleInteractive() {
   const [showToast, setShowToast] = useState(false);
@@ -134,7 +140,7 @@ export default function ArticleInteractive() {
                   This is what CouponsBit is all about.
                 </p>
                 <p className="mb-5">
-                  couponsBit was created to make online savings simpler, faster and more accessible. Instead of jumping to multiple websites looking for discounts, shoppers can explore verified coupon codes, promo codes and online deals from a wide range of brands - all in one place. 
+                  couponsBit was created to make online savings simpler, faster and more accessible. Instead of jumping to multiple websites looking for discounts, shoppers can explore verified coupon codes, promo codes and <Link href="/deals" className="text-[#056bfa] hover:underline">online deals</Link> from a wide range of brands - all in one place.
 
                 </p>
                 <p className="mb-5">
@@ -153,7 +159,7 @@ export default function ArticleInteractive() {
 
                 </p>
                 <p className="mb-5">
-                  The platform brings together offers from trusted brands and organizes them into easy-to-browse categories, making it simple for shoppers to locate deals that match their needs. 
+                  The platform brings together offers from trusted brands and organizes them into easy-to-browse <Link href="/categories" className="text-[#056bfa] hover:underline">categories</Link>, making it simple for shoppers to locate deals that match their needs.
                 </p>
                 <p className="mb-5">
                   Instead of paying full price by default, users can quickly check whether a discount is available before completing their purchase. 
@@ -193,7 +199,7 @@ export default function ArticleInteractive() {
                     <span className="font-bold text-[#056bfa]">Step 1:</span>
                     <div>
                       <strong className="text-black block">Search for Your Favorite Brand</strong>
-                      <p>Users can browse stores, categories and deals directly from the website.</p>
+                      <p>Users can browse <Link href="/stores" className="text-[#056bfa] hover:underline">stores</Link>, categories and deals directly from the website.</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -237,7 +243,7 @@ export default function ArticleInteractive() {
                   </div>
                   <div>
                     <h4 className="font-bold text-black text-base">Tech Enthusiasts</h4>
-                    <p className="text-sm text-[#4b5563]">From software subscriptions to electronics and web hosting services, technology buyers can often find valuable promotions. </p>
+                    <p className="text-sm text-[#4b5563]">From software subscriptions to <Link href="/categories/electronics" className="text-[#056bfa] hover:underline">electronics</Link> and web hosting services, technology buyers can often find valuable promotions. </p>
                   </div>
                   <div>
                     <h4 className="font-bold text-black text-base">Fashion Lovers</h4>
@@ -249,7 +255,7 @@ export default function ArticleInteractive() {
                   </div>
                   <div>
                     <h4 className="font-bold text-black text-base">Small Business Owners</h4>
-                    <p className="text-sm text-[#4b5563]">Entrepreneurs and professionals can find discounts on software, business tools, marketing services and productivity platforms. </p>
+                    <p className="text-sm text-[#4b5563]">Entrepreneurs and professionals can find discounts on <Link href="/categories/software" className="text-[#056bfa] hover:underline">software</Link>, business tools, marketing services and productivity platforms. </p>
                   </div>
                 </div>
 
@@ -365,7 +371,7 @@ As shoppers look for better ways to manage spending and maximize value, platform
             </article>
 
             {/* RIGHT SIDEBAR */}
-            <aside className="w-full lg:w-[35%] lg:sticky lg:top-24 h-fit">
+            <aside className="w-full lg:w-[35%] h-fit">
 
               {/* Box 1: TOC */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-6 mb-5">
@@ -416,6 +422,31 @@ As shoppers look for better ways to manage spending and maximize value, platform
                     </Link>
                   ))}
                 </div>
+              </div>
+
+              {/* Box 3: Store Categories */}
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-6 mt-5">
+                <h4 className="text-black font-bold text-base mb-5 flex items-center gap-2">
+                  <span>🗂️</span> Store Categories
+                </h4>
+                <div className="space-y-1">
+                  {[
+                    { icon: Laptop, name: "Electronics",        count: "850+", color: "text-blue-500",   href: "/categories/electronics" },
+                    { icon: Plane,  name: "Travel",             count: "420+", color: "text-teal-500",   href: "/categories/travel" },
+                    { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                    { icon: Code,   name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                    { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-green-500",  href: "/categories/mobile" }
+                  ].map((cat, i) => (
+                    <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                      <div className="flex items-center gap-3">
+                        <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                        <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                      </div>
+                      <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                    </Link>
+                  ))}
+                </div>
+                <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
               </div>
             </aside>
           </div>
