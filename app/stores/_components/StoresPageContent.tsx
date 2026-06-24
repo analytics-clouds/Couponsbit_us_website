@@ -32,7 +32,7 @@ import { allStores } from "@/lib/stores-data";
 export default function StoresPageContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All Stores (2000+)");
-  const [showAllLimit, setShowAllLimit] = useState(16);
+  const [showAllLimit, setShowAllLimit] = useState(24);
 
   const tabs = [
     "All Stores (2000+)",
@@ -245,7 +245,7 @@ export default function StoresPageContent() {
             {filteredStores.length > showAllLimit && (
               <div className="mt-10 flex justify-center">
                 <button
-                  onClick={() => setShowAllLimit(prev => prev + 16)}
+                  onClick={() => setShowAllLimit(prev => prev + 24)}
                   className="inline-flex items-center gap-1.5 px-8 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black text-sm uppercase tracking-wider hover:bg-[#056bfa] hover:text-white shadow-md hover:shadow-lg transition-all duration-300"
                 >
                   Show More Stores ▾
