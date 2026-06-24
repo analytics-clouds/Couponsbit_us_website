@@ -376,7 +376,7 @@ export default function DealsOfTheWeekContent() {
     <div className="flex flex-col lg:flex-row gap-16">
       <div className="lg:w-3/5">
         <div className="prose prose-slate max-w-none">
-          <h2 className="text-4xl font-black text-black mb-8 leading-tight">Deal of the Week: This Week's Best Deals, Discounts & Savings</h2>
+          <h1 className="text-4xl font-black text-black mb-8 leading-tight">Deal of the Week: This Week's Best Deals, Discounts & Savings</h1>
           <div className="space-y-6">
             <h3 className="text-[#056bfa] font-black text-2xl mb-2">Discover This Week's Biggest Savings</h3>
             <p className="text-lg text-gray-600 leading-relaxed font-medium mb-4">Welcome to Couponsbit's Deal of the Week page, where we showcase the best online deals, highest-value discounts, and most popular promotions available this week.</p>

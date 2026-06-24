@@ -430,9 +430,9 @@ export default function DealsOfTheDayContent() {
       <div className="lg:w-3/5">
         <div className="prose prose-slate max-w-none">
 
-          <h2 className="text-4xl font-black text-black mb-8 leading-tight">
+          <h1 className="text-4xl font-black text-black mb-8 leading-tight">
             Deal of the Day: Today's Best Online Deals & Discounts
-          </h2>
+          </h1>
 
           <div className="space-y-6">
             <h3 className="text-[#056bfa] font-black text-2xl mb-2">Don't Miss Today's Hottest Deals</h3>

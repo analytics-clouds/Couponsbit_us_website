@@ -301,6 +301,8 @@ export default function HomePageContent() {
 
       <Navbar />
 
+      <h1 className="sr-only">Couponsbit | Coupon Codes, Promo Codes & Discount Codes</h1>
+
       {/* Toast Notification */}
       {toast.show && (
         <div className="fixed top-4 right-4 z-[100] bg-white rounded-2xl shadow-2xl border border-[#f0f0f0] p-4 pr-6 flex items-center gap-3 animate-in slide-in-from-right duration-300">

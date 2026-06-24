@@ -365,9 +365,9 @@ export default function DealsPageContent() {
             <div>
               
               {/* HEADER & INTRO */}
-              <h2 className="text-4xl font-black text-black mb-8 leading-tight">
+              <h1 className="text-4xl font-black text-black mb-8 leading-tight">
                 Best Online Deals, Promo Codes & Exclusive Discounts On Couponsbit
-              </h2>
+              </h1>
 
               <div className="space-y-6">
                 <h3 className="text-[#056bfa] font-black text-2xl mb-2">
