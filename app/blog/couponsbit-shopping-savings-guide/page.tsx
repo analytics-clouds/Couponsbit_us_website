@@ -7,10 +7,10 @@ export const metadata: Metadata = {
     "Discover how CouponsBit helps shoppers find coupon codes, promo codes and online deals to save money on travel, fashion, software and more.",
 
   alternates: {
-    canonical: "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
+    canonical: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
     languages: {
-      "en-US": "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
-      "x-default": "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
+      "en-US": "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
+      "x-default": "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
     },
   },
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "article",
-    url: "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
+    url: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
     title: "CouponsBit Shopping Savings Guide | Save More Online",
     description:
       "Discover how CouponsBit helps shoppers find coupon codes, promo codes and online deals to save money on travel, fashion, software and more.",

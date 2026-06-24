@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Get the latest UniPin Coupon Code and save on PUBG UC, Fortnite V-Bucks, Roblox Gift Cards, PSN credits, and game top-ups with instant delivery.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/unipin-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/unipin-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/unipin-coupon-code",
-      "en-ID": "https://couponsbit.us/stores/unipin-coupon-code",
-      "x-default": "https://couponsbit.us/stores/unipin-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/unipin-coupon-code",
+      "en-ID": "https://www.couponsbit.us/stores/unipin-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/unipin-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/unipin-coupon-code",
+    url: "https://www.couponsbit.us/stores/unipin-coupon-code",
     title: "Top-Ups from $0.94 | UniPin Coupon Code & Gaming Deals",
     description:
       "Get the latest UniPin Coupon Code and save on PUBG UC, Fortnite V-Bucks, Roblox Gift Cards, PSN credits, and game top-ups with instant delivery.",
@@ -57,27 +57,27 @@ const unipinSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/unipin-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/unipin-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/unipin-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/unipin-coupon-code",
       name: "Top-Ups from $0.94 | UniPin Coupon Code & Gaming Deals",
       description:
         "Get the latest UniPin Coupon Code and save on PUBG UC, Fortnite V-Bucks, Roblox Gift Cards, PSN credits, and game top-ups with instant delivery.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/unipin-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/unipin-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/unipin-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/unipin-coupon-code#offerlist",
       name: "Unipin Coupon Codes & Promo Codes",
       description:
         "Latest verified Unipin coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://couponsbit.us/stores/unipin-coupon-code",
+      url: "https://www.couponsbit.us/stores/unipin-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -88,7 +88,7 @@ const unipinSchema = {
             name: "Unipin Coupon Code",
             description:
               "Latest Unipin coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://couponsbit.us/stores/unipin-coupon-code",
+            url: "https://www.couponsbit.us/stores/unipin-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Unipin",
@@ -101,22 +101,22 @@ const unipinSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp",
@@ -132,25 +132,25 @@ const unipinSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/unipin-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/unipin-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Unipin Coupons",
-          item: "https://couponsbit.us/stores/unipin-coupon-code",
+          item: "https://www.couponsbit.us/stores/unipin-coupon-code",
         },
       ],
     },

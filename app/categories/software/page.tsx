@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Find verified software promo codes & software coupon codes for game keys, web hosting, creative assets & AI tools. Best tech software deals on Driffle, Bluehost, Envato Elements, Sintra & more.",
 
   alternates: {
-    canonical: "https://couponsbit.us/categories/software",
+    canonical: "https://www.couponsbit.us/categories/software",
     languages: {
-      "en-US": "https://couponsbit.us/categories/software",
-      "x-default": "https://couponsbit.us/categories/software",
+      "en-US": "https://www.couponsbit.us/categories/software",
+      "x-default": "https://www.couponsbit.us/categories/software",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/categories/software",
+    url: "https://www.couponsbit.us/categories/software",
     title: "Software Promo Codes & Software Coupon Codes – Tech Deals 2026",
     description:
       "Find verified software promo codes & software coupon codes for game keys, web hosting, creative assets & AI tools. Best tech software deals on Driffle, Bluehost, Envato Elements, Sintra & more.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Software Promo Codes & Software Coupon Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Software Promo Codes & Software Coupon Codes – Tech Deals 2026",
     description:
       "Find verified software promo codes & software coupon codes for game keys, web hosting, creative assets & AI tools. Best tech software deals on Driffle, Bluehost, Envato Elements, Sintra & more.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -56,28 +56,28 @@ const softwareSchema = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/categories/software#webpage",
-      url: "https://couponsbit.us/categories/software",
+      "@id": "https://www.couponsbit.us/categories/software#webpage",
+      url: "https://www.couponsbit.us/categories/software",
       name: "Software Promo Codes & Software Coupon Codes – Tech Deals 2026",
       description:
         "Find verified software promo codes & software coupon codes for game keys, web hosting, creative assets & AI tools. Best tech software deals on Driffle, Bluehost, Envato Elements, Sintra & more.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/categories/software#breadcrumb",
+        "@id": "https://www.couponsbit.us/categories/software#breadcrumb",
       },
     },
 
     // ✅ ItemList — all software stores in this category
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/categories/software#storelist",
+      "@id": "https://www.couponsbit.us/categories/software#storelist",
       name: "Software & Digital Stores – Promo Codes & Coupon Codes",
       description:
         "Verified software promo codes and coupon codes for top tech software stores including Driffle, Bluehost, Envato Elements and Sintra.",
-      url: "https://couponsbit.us/categories/software",
+      url: "https://www.couponsbit.us/categories/software",
       numberOfItems: 4,
       itemListOrder: "https://schema.org/ItemListUnordered",
       itemListElement: [
@@ -87,7 +87,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Driffle Coupon Codes",
-            url: "https://couponsbit.us/stores/driffle-coupon-code",
+            url: "https://www.couponsbit.us/stores/driffle-coupon-code",
           },
         },
         {
@@ -96,7 +96,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Bluehost Coupon Codes",
-            url: "https://couponsbit.us/stores/bluehost-coupon-code",
+            url: "https://www.couponsbit.us/stores/bluehost-coupon-code",
           },
         },
         {
@@ -105,7 +105,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Envato Elements Coupon Codes",
-            url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+            url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
           },
         },
         {
@@ -114,7 +114,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Sintra Coupon Codes",
-            url: "https://couponsbit.us/stores/sintra-coupon-code",
+            url: "https://www.couponsbit.us/stores/sintra-coupon-code",
           },
         },
         // ← add more software stores here as you onboard them
@@ -123,25 +123,25 @@ const softwareSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -154,25 +154,25 @@ const softwareSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/categories/software#breadcrumb",
+      "@id": "https://www.couponsbit.us/categories/software#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Categories",
-          item: "https://couponsbit.us/categories",
+          item: "https://www.couponsbit.us/categories",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Software & Digital",
-          item: "https://couponsbit.us/categories/software",
+          item: "https://www.couponsbit.us/categories/software",
         },
       ],
     },

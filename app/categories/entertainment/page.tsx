@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Find verified entertainment coupon codes & event ticket promo codes for concerts, sports & live shows. Best concert & ticket deals on StubHub, Viagogo & more.",
 
   alternates: {
-    canonical: "https://couponsbit.us/categories/entertainment",
+    canonical: "https://www.couponsbit.us/categories/entertainment",
     languages: {
-      "en-US": "https://couponsbit.us/categories/entertainment",
-      "x-default": "https://couponsbit.us/categories/entertainment",
+      "en-US": "https://www.couponsbit.us/categories/entertainment",
+      "x-default": "https://www.couponsbit.us/categories/entertainment",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/categories/entertainment",
+    url: "https://www.couponsbit.us/categories/entertainment",
     title: "Entertainment Coupon Codes & Event Ticket Promo Codes 2026",
     description:
       "Find verified entertainment coupon codes & event ticket promo codes for concerts, sports & live shows. Best concert & ticket deals on StubHub, Viagogo & more.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Entertainment Coupon Codes & Event Ticket Promo Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Entertainment Coupon Codes & Event Ticket Promo Codes 2026",
     description:
       "Find verified entertainment coupon codes & event ticket promo codes for concerts, sports & live shows. Best concert & ticket deals on StubHub, Viagogo & more.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -56,28 +56,28 @@ const entertainmentSchema = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/categories/entertainment#webpage",
-      url: "https://couponsbit.us/categories/entertainment",
+      "@id": "https://www.couponsbit.us/categories/entertainment#webpage",
+      url: "https://www.couponsbit.us/categories/entertainment",
       name: "Entertainment Coupon Codes & Event Ticket Promo Codes 2026",
       description:
         "Find verified entertainment coupon codes & event ticket promo codes for concerts, sports & live shows. Best concert & ticket deals on StubHub, Viagogo & more.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/categories/entertainment#breadcrumb",
+        "@id": "https://www.couponsbit.us/categories/entertainment#breadcrumb",
       },
     },
 
     // ✅ ItemList — entertainment stores in this category
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/categories/entertainment#storelist",
+      "@id": "https://www.couponsbit.us/categories/entertainment#storelist",
       name: "Entertainment Stores – Coupon Codes & Event Ticket Promo Codes",
       description:
         "Verified coupon codes and event ticket promo codes for top entertainment stores including StubHub, Viagogo and more.",
-      url: "https://couponsbit.us/categories/entertainment",
+      url: "https://www.couponsbit.us/categories/entertainment",
       numberOfItems: 2,
       itemListOrder: "https://schema.org/ItemListUnordered",
       itemListElement: [
@@ -87,7 +87,7 @@ const entertainmentSchema = {
           item: {
             "@type": "WebPage",
             name: "StubHub Coupon Codes",
-            url: "https://couponsbit.us/stores/stubhub-coupon-code",
+            url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
           },
         },
         {
@@ -96,7 +96,7 @@ const entertainmentSchema = {
           item: {
             "@type": "WebPage",
             name: "Viagogo Coupon Codes",
-            url: "https://couponsbit.us/stores/viagogo-coupon-code",
+            url: "https://www.couponsbit.us/stores/viagogo-coupon-code",
           },
         },
         // ← add more entertainment stores here as you onboard them
@@ -105,25 +105,25 @@ const entertainmentSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -136,25 +136,25 @@ const entertainmentSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/categories/entertainment#breadcrumb",
+      "@id": "https://www.couponsbit.us/categories/entertainment#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Categories",
-          item: "https://couponsbit.us/categories",
+          item: "https://www.couponsbit.us/categories",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Entertainment",
-          item: "https://couponsbit.us/categories/entertainment",
+          item: "https://www.couponsbit.us/categories/entertainment",
         },
       ],
     },

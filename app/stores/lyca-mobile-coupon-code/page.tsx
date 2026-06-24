@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified Lyca Mobile discount codes – 69% OFF prepaid plans, unlimited data from $7.50, international plans from $10 & earn $38 referral reward. 10 live deals. Save now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/lyca-mobile-coupon-code",
-      "x-default": "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+    url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
     title: "Lyca Mobile Coupon Codes – Plans From $7.50 & More",
     description:
       "Get verified Lyca Mobile discount codes – 69% OFF prepaid plans, unlimited data from $7.50, international plans from $10 & earn $38 referral reward. 10 live deals. Save now!",
@@ -56,27 +56,27 @@ const lycaSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/lyca-mobile-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
       name: "Lyca Mobile Coupon Codes – Plans From $7.50 & More",
       description:
         "Get verified Lyca Mobile discount codes – 69% OFF prepaid plans, unlimited data from $7.50, international plans from $10 & earn $38 referral reward. 10 live deals. Save now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/lyca-mobile-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/lyca-mobile-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code#offerlist",
       name: "Lyca Mobile Coupon Codes & Promo Codes",
       description:
         "Latest verified Lyca Mobile coupon codes, promo codes and discount codes for recharge, SIM plans and international calling.",
-      url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+      url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const lycaSchema = {
             name: "Lyca Mobile Coupon Code",
             description:
               "Latest Lyca Mobile coupon code for recharge and SIM plan discounts.",
-            url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Lyca Mobile",
@@ -100,25 +100,25 @@ const lycaSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -131,25 +131,25 @@ const lycaSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/lyca-mobile-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/lyca-mobile-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Lyca Mobile Coupons",
-          item: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+          item: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
         },
       ],
     },

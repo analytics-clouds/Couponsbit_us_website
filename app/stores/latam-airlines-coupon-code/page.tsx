@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified LATAM Airlines promo codes – Flights from $136, NY to Santiago from $308, 40% OFF packages & 40,000 bonus miles. 8 live deals. Book now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/latam-airlines-coupon-code",
-      "x-default": "https://couponsbit.us/stores/latam-airlines-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+    url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
     title: "LATAM Airlines Coupon Codes – Flights From $136 & More",
     description:
       "Get verified LATAM Airlines promo codes – Flights from $136, NY to Santiago from $308, 40% OFF packages & 40,000 bonus miles. 8 live deals. Book now!",
@@ -56,27 +56,27 @@ const latamSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/latam-airlines-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/latam-airlines-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
       name: "LATAM Airlines Coupon Codes – Flights From $136 & More",
       description:
         "Get verified LATAM Airlines promo codes – Flights from $136, NY to Santiago from $308, 40% OFF packages & 40,000 bonus miles. 8 live deals. Book now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/latam-airlines-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/latam-airlines-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/latam-airlines-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/latam-airlines-coupon-code#offerlist",
       name: "LATAM Airlines Coupon Codes & Promo Codes",
       description:
         "Latest verified LATAM Airlines coupon codes, promo codes and discount codes for flight bookings.",
-      url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+      url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const latamSchema = {
             name: "LATAM Airlines Coupon Code",
             description:
               "Latest LATAM Airlines coupon code for flight booking discounts.",
-            url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+            url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
             seller: {
               "@type": "Organization",
               name: "LATAM Airlines",
@@ -100,25 +100,25 @@ const latamSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -131,25 +131,25 @@ const latamSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/latam-airlines-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/latam-airlines-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "LATAM Airlines Coupons",
-          item: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+          item: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
         },
       ],
     },

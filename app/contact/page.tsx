@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Need coupon support or coupon help? Contact Couponsbit, your trusted coupon website. Our support team responds within 24 hours to all coupon-related queries.",
 
   alternates: {
-    canonical: "https://couponsbit.us/contact",
+    canonical: "https://www.couponsbit.us/contact",
     languages: {
-      "en-US": "https://couponsbit.us/contact",
-      "x-default": "https://couponsbit.us/contact",
+      "en-US": "https://www.couponsbit.us/contact",
+      "x-default": "https://www.couponsbit.us/contact",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/contact",
+    url: "https://www.couponsbit.us/contact",
     title: "Contact Couponsbit | Coupon Support & Coupon Help Center",
     description:
       "Need coupon support or coupon help? Contact Couponsbit, your trusted coupon website. Our support team responds within 24 hours to all coupon-related queries.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Contact Couponsbit – Coupon Support & Help Center",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Contact Couponsbit | Coupon Support & Coupon Help Center",
     description:
       "Need coupon support or coupon help? Contact Couponsbit, your trusted coupon website. Our support team responds within 24 hours to all coupon-related queries.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -60,39 +60,39 @@ const contactSchema = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://couponsbit.us/contact#contactpage",
-      url: "https://couponsbit.us/contact",
+      "@id": "https://www.couponsbit.us/contact#contactpage",
+      url: "https://www.couponsbit.us/contact",
       name: "Contact Couponsbit | Coupon Support & Coupon Help Center",
       description:
         "Need coupon support or coupon help? Contact Couponsbit, your trusted coupon website. Our support team responds within 24 hours to all coupon-related queries.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/contact#breadcrumb",
+        "@id": "https://www.couponsbit.us/contact#breadcrumb",
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is a trusted coupon website offering verified promo codes, coupon help, and coupon support for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -119,19 +119,19 @@ const contactSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/contact#breadcrumb",
+      "@id": "https://www.couponsbit.us/contact#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Contact",
-          item: "https://couponsbit.us/contact",
+          item: "https://www.couponsbit.us/contact",
         },
       ],
     },

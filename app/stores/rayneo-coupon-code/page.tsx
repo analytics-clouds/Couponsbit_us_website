@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified Rayneo promo codes – Save $130 on X3 Pro AI, $70 OFF Air Series, AR Glasses from $254 & JoyDock at $89. 6 live deals. Shop now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/rayneo-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/rayneo-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/rayneo-coupon-code",
-      "x-default": "https://couponsbit.us/stores/rayneo-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/rayneo-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/rayneo-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/rayneo-coupon-code",
+    url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
     title: "Rayneo Coupon Codes – Save $130 on AR Glasses & More",
     description:
       "Get verified Rayneo promo codes – Save $130 on X3 Pro AI, $70 OFF Air Series, AR Glasses from $254 & JoyDock at $89. 6 live deals. Shop now!",
@@ -56,27 +56,27 @@ const rayneoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/rayneo-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/rayneo-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/rayneo-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
       name: "Rayneo Coupon Codes – Save $130 on AR Glasses & More",
       description:
         "Get verified Rayneo promo codes – Save $130 on X3 Pro AI, $70 OFF Air Series, AR Glasses from $254 & JoyDock at $89. 6 live deals. Shop now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/rayneo-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/rayneo-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/rayneo-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/rayneo-coupon-code#offerlist",
       name: "Rayneo Coupon Codes & Promo Codes",
       description:
         "Latest verified Rayneo coupon codes, promo codes and discount codes for AR glasses and smart devices.",
-      url: "https://couponsbit.us/stores/rayneo-coupon-code",
+      url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const rayneoSchema = {
             name: "Rayneo Coupon Code",
             description:
               "Latest Rayneo coupon code for AR glasses and smart device discounts.",
-            url: "https://couponsbit.us/stores/rayneo-coupon-code",
+            url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Rayneo",
@@ -100,25 +100,25 @@ const rayneoSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -131,25 +131,25 @@ const rayneoSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/rayneo-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/rayneo-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Rayneo Coupons",
-          item: "https://couponsbit.us/stores/rayneo-coupon-code",
+          item: "https://www.couponsbit.us/stores/rayneo-coupon-code",
         },
       ],
     },

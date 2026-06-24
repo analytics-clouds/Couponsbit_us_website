@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://couponsbit.us"),
+  metadataBase: new URL("https://www.couponsbit.us"),
   title: {
     default: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
     template: "%s | Coupons Clouds",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://couponsbit.us",
+    url: "https://www.couponsbit.us",
     siteName: "Coupons Clouds",
     title: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
     description:

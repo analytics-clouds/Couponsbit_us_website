@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get the latest Factor75 Coupon Code and save up to $130 on meal plans. Plus, enjoy FREE Breakfast for 1 Year with eligible subscriptions.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/factor75-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/factor75-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/factor75-coupon-code",
-      "x-default": "https://couponsbit.us/stores/factor75-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/factor75-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/factor75-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/factor75-coupon-code",
+    url: "https://www.couponsbit.us/stores/factor75-coupon-code",
     title: "Save $130 + Free Breakfast | Factor75 Coupon Code",
     description:
       "Get the latest Factor75 Coupon Code and save up to $130 on meal plans. Plus, enjoy FREE Breakfast for 1 Year with eligible subscriptions.",
@@ -56,27 +56,27 @@ const factor75Schema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/factor75-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/factor75-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/factor75-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/factor75-coupon-code",
       name: "Save $130 + Free Breakfast | Factor75 Coupon Code",
       description:
         "Get the latest Factor75 Coupon Code and save up to $130 on meal plans. Plus, enjoy FREE Breakfast for 1 Year with eligible subscriptions.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/factor75-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/factor75-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/factor75-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/factor75-coupon-code#offerlist",
       name: "Factor75 Coupon Codes & Promo Codes",
       description:
         "Latest verified Factor75 coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://couponsbit.us/stores/factor75-coupon-code",
+      url: "https://www.couponsbit.us/stores/factor75-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const factor75Schema = {
             name: "Factor75 Coupon Code",
             description:
               "Latest Factor75 coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://couponsbit.us/stores/factor75-coupon-code",
+            url: "https://www.couponsbit.us/stores/factor75-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Factor75",
@@ -100,22 +100,22 @@ const factor75Schema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp",
@@ -131,25 +131,25 @@ const factor75Schema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/factor75-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/factor75-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Factor75 Coupons",
-          item: "https://couponsbit.us/stores/factor75-coupon-code",
+          item: "https://www.couponsbit.us/stores/factor75-coupon-code",
         },
       ],
     },

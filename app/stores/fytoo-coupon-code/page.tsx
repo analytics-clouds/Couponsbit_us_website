@@ -7,18 +7,18 @@ export const metadata: Metadata = {
     "Grab Fytoo's hottest deals with frames starting from $1, up to 40% OFF eyewear. Use the latest Fytoo Coupon Code and save on premium glasses.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/fytoo-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/fytoo-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/fytoo-coupon-code",
-      "en-CA": "https://couponsbit.us/stores/fytoo-coupon-code",
-      "en-CN": "https://couponsbit.us/stores/fytoo-coupon-code",
-      "x-default": "https://couponsbit.us/stores/fytoo-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/fytoo-coupon-code",
+      "en-CA": "https://www.couponsbit.us/stores/fytoo-coupon-code",
+      "en-CN": "https://www.couponsbit.us/stores/fytoo-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/fytoo-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/fytoo-coupon-code",
+    url: "https://www.couponsbit.us/stores/fytoo-coupon-code",
     title: "Frames Start From $1 & Up to 40% OFF | Fytoo Coupon Code",
     description:
       "Grab Fytoo's hottest deals with frames starting from $1, up to 40% OFF eyewear. Use the latest Fytoo Coupon Code and save on premium glasses.",
@@ -58,27 +58,27 @@ const fytooSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/fytoo-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/fytoo-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/fytoo-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/fytoo-coupon-code",
       name: "Frames Start From $1 & Up to 40% OFF | Fytoo Coupon Code",
       description:
         "Grab Fytoo's hottest deals with frames starting from $1, up to 40% OFF eyewear. Use the latest Fytoo Coupon Code and save on premium glasses.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/fytoo-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/fytoo-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/fytoo-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/fytoo-coupon-code#offerlist",
       name: "Fytoo Coupon Codes & Promo Codes",
       description:
         "Latest verified Fytoo coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://couponsbit.us/stores/fytoo-coupon-code",
+      url: "https://www.couponsbit.us/stores/fytoo-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -89,7 +89,7 @@ const fytooSchema = {
             name: "Fytoo Coupon Code",
             description:
               "Latest Fytoo coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://couponsbit.us/stores/fytoo-coupon-code",
+            url: "https://www.couponsbit.us/stores/fytoo-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Fytoo",
@@ -102,25 +102,25 @@ const fytooSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -133,25 +133,25 @@ const fytooSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/fytoo-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/fytoo-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Fytoo Coupons",
-          item: "https://couponsbit.us/stores/fytoo-coupon-code",
+          item: "https://www.couponsbit.us/stores/fytoo-coupon-code",
         },
       ],
     },

@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Find discount coupons and promo code today for discount online shopping on Couponsbit. Browse verified deals from Amazon, Flipkart, Nike, Samsung & 2000+ brands.",
 
   alternates: {
-    canonical: "https://couponsbit.us/products",
+    canonical: "https://www.couponsbit.us/products",
     languages: {
-      "en-US": "https://couponsbit.us/products",
-      "x-default": "https://couponsbit.us/products",
+      "en-US": "https://www.couponsbit.us/products",
+      "x-default": "https://www.couponsbit.us/products",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/products",
+    url: "https://www.couponsbit.us/products",
     title: "Couponsbit Products | Discount Coupons & Promo Code Today",
     description:
       "Find discount coupons and promo code today for discount online shopping on Couponsbit. Browse verified deals from Amazon, Flipkart, Nike, Samsung & 2000+ brands.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit Products – Discount Coupons & Promo Code Today",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Products | Discount Coupons & Promo Code Today",
     description:
       "Find discount coupons and promo code today for discount online shopping on Couponsbit. Browse verified deals from Amazon, Flipkart, Nike, Samsung & 2000+ brands.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -61,17 +61,17 @@ const productsSchema = {
     {
       // ✅ CollectionPage — parent brand listing page
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/products#collectionpage",
-      url: "https://couponsbit.us/products",
+      "@id": "https://www.couponsbit.us/products#collectionpage",
+      url: "https://www.couponsbit.us/products",
       name: "Couponsbit Products | Discount Coupons & Promo Code Today",
       description:
         "Find discount coupons and promo code today for discount online shopping on Couponsbit. Browse verified deals from Amazon, Flipkart, Nike, Samsung & 2000+ brands.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/products#breadcrumb",
+        "@id": "https://www.couponsbit.us/products#breadcrumb",
       },
       // ✅ ItemList — each brand listed as a named item
       // This is the key schema for a brand directory page
@@ -80,68 +80,68 @@ const productsSchema = {
         name: "Top Brands with Discount Coupons & Promo Codes Today",
         description:
           "Browse discount coupons and promo code today from top brands for discount online shopping on Couponsbit.",
-        url: "https://couponsbit.us/products",
+        url: "https://www.couponsbit.us/products",
         numberOfItems: 2000,
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Amazon Discount Coupons",
-            url: "https://couponsbit.us/products/amazon",
+            url: "https://www.couponsbit.us/products/amazon",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Flipkart Promo Code Today",
-            url: "https://couponsbit.us/products/flipkart",
+            url: "https://www.couponsbit.us/products/flipkart",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Nike Discount Coupons",
-            url: "https://couponsbit.us/products/nike",
+            url: "https://www.couponsbit.us/products/nike",
           },
           {
             "@type": "ListItem",
             position: 4,
             name: "Adidas Promo Code Today",
-            url: "https://couponsbit.us/products/adidas",
+            url: "https://www.couponsbit.us/products/adidas",
           },
           {
             "@type": "ListItem",
             position: 5,
             name: "Samsung Discount Online Shopping",
-            url: "https://couponsbit.us/products/samsung",
+            url: "https://www.couponsbit.us/products/samsung",
           },
           {
             "@type": "ListItem",
             position: 6,
             name: "Myntra Discount Coupons",
-            url: "https://couponsbit.us/products/myntra",
+            url: "https://www.couponsbit.us/products/myntra",
           },
           {
             "@type": "ListItem",
             position: 7,
             name: "Puma Promo Code Today",
-            url: "https://couponsbit.us/products/puma",
+            url: "https://www.couponsbit.us/products/puma",
           },
           {
             "@type": "ListItem",
             position: 8,
             name: "Nykaa Discount Online Shopping",
-            url: "https://couponsbit.us/products/nykaa",
+            url: "https://www.couponsbit.us/products/nykaa",
           },
           {
             "@type": "ListItem",
             position: 9,
             name: "Tata Cliq Discount Coupons",
-            url: "https://couponsbit.us/products/tata-cliq",
+            url: "https://www.couponsbit.us/products/tata-cliq",
           },
           {
             "@type": "ListItem",
             position: 10,
             name: "OnePlus Promo Code Today",
-            url: "https://couponsbit.us/products/oneplus",
+            url: "https://www.couponsbit.us/products/oneplus",
           },
           // ✅ Add remaining brands here following the same pattern
         ],
@@ -149,24 +149,24 @@ const productsSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit offers verified discount coupons, promo code today deals, and discount online shopping offers from 2000+ top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -179,19 +179,19 @@ const productsSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/products#breadcrumb",
+      "@id": "https://www.couponsbit.us/products#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Products",
-          item: "https://couponsbit.us/products",
+          item: "https://www.couponsbit.us/products",
         },
       ],
     },

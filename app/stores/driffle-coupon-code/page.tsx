@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/driffle-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/driffle-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/driffle-coupon-code",
-      "x-default": "https://couponsbit.us/stores/driffle-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/driffle-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/driffle-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/driffle-coupon-code",
+    url: "https://www.couponsbit.us/stores/driffle-coupon-code",
     title: "Driffle Coupon Codes – Up to 95% OFF PC Games & Keys",
     description:  
       "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
@@ -56,27 +56,27 @@ const driffleSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/driffle-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/driffle-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/driffle-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/driffle-coupon-code",
       name: "Driffle Coupon Codes – Up to 95% OFF PC Games & Keys",
       description:
         "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/driffle-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/driffle-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/driffle-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/driffle-coupon-code#offerlist",
       name: "Driffle Coupon Codes & Promo Codes",
       description:
         "Latest verified Driffle coupon codes, promo codes and discount codes for game keys, software and subscriptions.",
-      url: "https://couponsbit.us/stores/driffle-coupon-code",
+      url: "https://www.couponsbit.us/stores/driffle-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const driffleSchema = {
             name: "Driffle Coupon Code",
             description:
               "Latest Driffle coupon code for game keys, software and subscription discounts.",
-            url: "https://couponsbit.us/stores/driffle-coupon-code",
+            url: "https://www.couponsbit.us/stores/driffle-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Driffle",
@@ -100,22 +100,22 @@ const driffleSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/couponsbit-logo_n2upgl.webp",
@@ -131,25 +131,25 @@ const driffleSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/driffle-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/driffle-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Driffle Coupons",
-          item: "https://couponsbit.us/stores/driffle-coupon-code",
+          item: "https://www.couponsbit.us/stores/driffle-coupon-code",
         },
       ],
     },

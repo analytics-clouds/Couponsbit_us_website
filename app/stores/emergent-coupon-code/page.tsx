@@ -7,18 +7,18 @@ export const metadata: Metadata = {
     "Save 85% on Emergent's Standard Plan and start building apps from just $2.63/month. Access AI-powered tools, hosting, and GitHub integration.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/emergent-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/emergent-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/emergent-coupon-code",
-      "en-IN": "https://couponsbit.us/stores/emergent-coupon-code",
-      "en-GB": "https://couponsbit.us/stores/emergent-coupon-code",
-      "x-default": "https://couponsbit.us/stores/emergent-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/emergent-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/emergent-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/emergent-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/emergent-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/emergent-coupon-code",
+    url: "https://www.couponsbit.us/stores/emergent-coupon-code",
     title: "Get 85% Off AI App Builder Plans - Emergent Coupon Code",
     description:
       "Save 85% on Emergent's Standard Plan and start building apps from just $2.63/month. Access AI-powered tools, hosting, and GitHub integration.",
@@ -58,27 +58,27 @@ const emergentSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/emergent-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/emergent-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/emergent-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/emergent-coupon-code",
       name: "Get 85% Off AI App Builder Plans - Emergent Coupon Code",
       description:
         "Save 85% on Emergent's Standard Plan and start building apps from just $2.63/month. Access AI-powered tools, hosting, and GitHub integration.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/emergent-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/emergent-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/emergent-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/emergent-coupon-code#offerlist",
       name: "Emergent Coupon Codes & Promo Codes",
       description:
         "Latest verified Emergent coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://couponsbit.us/stores/emergent-coupon-code",
+      url: "https://www.couponsbit.us/stores/emergent-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -89,7 +89,7 @@ const emergentSchema = {
             name: "Emergent Coupon Code",
             description:
               "Latest Emergent coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://couponsbit.us/stores/emergent-coupon-code",
+            url: "https://www.couponsbit.us/stores/emergent-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Emergent",
@@ -102,22 +102,22 @@ const emergentSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp",
@@ -133,25 +133,25 @@ const emergentSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/emergent-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/emergent-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Emergent Coupons",
-          item: "https://couponsbit.us/stores/emergent-coupon-code",
+          item: "https://www.couponsbit.us/stores/emergent-coupon-code",
         },
       ],
     },

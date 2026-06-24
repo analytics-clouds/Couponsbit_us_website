@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Get verified StubHub promo codes – Flat 10% OFF sitewide, $25 student discount, $20 OFF for new users & tickets from $30. 11 coupons live. Grab your deal now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/stubhub-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/stubhub-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/stubhub-coupon-code",
-      "x-default": "https://couponsbit.us/stores/stubhub-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/stubhub-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/stubhub-coupon-code",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/stubhub-coupon-code",
+    url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
     title: "StubHub Coupon Codes – $20 OFF, 10% OFF & More Deals",
     description:
       "Get verified StubHub promo codes – Flat 10% OFF sitewide, $25 student discount, $20 OFF for new users & tickets from $30. 11 coupons live. Grab your deal now!",
@@ -60,28 +60,28 @@ const stubHubSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/stubhub-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/stubhub-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/stubhub-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
       name: "StubHub Coupon Codes – $20 OFF, 10% OFF & More Deals",
       description:
         "Get verified StubHub promo codes – Flat 10% OFF sitewide, $25 student discount, $20 OFF for new users & tickets from $30. 11 coupons live. Grab your deal now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/stubhub-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/stubhub-coupon-code#breadcrumb",
       },
     },
 
     // ✅ ItemList — tells Google this page contains a list of offers
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/stubhub-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/stubhub-coupon-code#offerlist",
       name: "StubHub Coupon Codes & Promo Codes",
       description:
         "Latest verified StubHub coupon codes, promo codes and discount codes for tickets.",
-      url: "https://couponsbit.us/stores/stubhub-coupon-code",
+      url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
       numberOfItems: 10, // ← update this to match actual coupon count on page
       itemListElement: [
         {
@@ -91,7 +91,7 @@ const stubHubSchema = {
             "@type": "Offer",
             name: "StubHub Coupon Code",
             description: "Latest StubHub coupon code for ticket discounts.",
-            url: "https://couponsbit.us/stores/stubhub-coupon-code",
+            url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
             seller: {
               "@type": "Organization",
               name: "StubHub",
@@ -104,25 +104,25 @@ const stubHubSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -135,25 +135,25 @@ const stubHubSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/stubhub-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/stubhub-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "StubHub Coupons",
-          item: "https://couponsbit.us/stores/stubhub-coupon-code",
+          item: "https://www.couponsbit.us/stores/stubhub-coupon-code",
         },
       ],
     },

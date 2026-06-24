@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified Sintra discount codes – 70% OFF annual plan, 60% OFF 3-month plan, 50% OFF monthly & AI plans from $15.60/mo. 5 live deals. Save now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/sintra-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/sintra-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/sintra-coupon-code",
-      "x-default": "https://couponsbit.us/stores/sintra-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/sintra-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/sintra-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/sintra-coupon-code",
+    url: "https://www.couponsbit.us/stores/sintra-coupon-code",
     title: "Sintra Coupon Codes – Save 70% on AI Plans & More",
     description:
       "Get verified Sintra discount codes – 70% OFF annual plan, 60% OFF 3-month plan, 50% OFF monthly & AI plans from $15.60/mo. 5 live deals. Save now!",
@@ -56,27 +56,27 @@ const sintraSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/sintra-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/sintra-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/sintra-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/sintra-coupon-code",
       name: "Sintra Coupon Codes – Save 70% on AI Plans & More",
       description:
         "Get verified Sintra discount codes – 70% OFF annual plan, 60% OFF 3-month plan, 50% OFF monthly & AI plans from $15.60/mo. 5 live deals. Save now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/sintra-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/sintra-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/sintra-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/sintra-coupon-code#offerlist",
       name: "Sintra Coupon Codes & Promo Codes",
       description:
         "Latest verified Sintra coupon codes, promo codes and discount codes for AI business automation plans and subscriptions.",
-      url: "https://couponsbit.us/stores/sintra-coupon-code",
+      url: "https://www.couponsbit.us/stores/sintra-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const sintraSchema = {
             name: "Sintra Coupon Code",
             description:
               "Latest Sintra coupon code for AI business tools and automation subscription discounts.",
-            url: "https://couponsbit.us/stores/sintra-coupon-code",
+            url: "https://www.couponsbit.us/stores/sintra-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Sintra",
@@ -100,25 +100,25 @@ const sintraSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -131,25 +131,25 @@ const sintraSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/sintra-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/sintra-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Sintra Coupons",
-          item: "https://couponsbit.us/stores/sintra-coupon-code",
+          item: "https://www.couponsbit.us/stores/sintra-coupon-code",
         },
       ],
     },

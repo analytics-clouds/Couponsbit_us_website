@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { allStores } from "@/lib/stores-data";
 
-const BASE_URL = "https://couponsbit.us";
+const BASE_URL = "https://www.couponsbit.us";
 
 const CATEGORIES = ["electronics", "entertainment", "mobile", "software", "travel"];
 

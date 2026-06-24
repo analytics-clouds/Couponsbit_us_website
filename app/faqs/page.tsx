@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Got questions? Couponsbit's FAQ page covers how to use promo codes, coupon help, cashback offers, and deals. Find quick answers to all your coupon queries here.",
 
   alternates: {
-    canonical: "https://couponsbit.us/faqs",
+    canonical: "https://www.couponsbit.us/faqs",
     languages: {
-      "en-US": "https://couponsbit.us/faqs",
-      "x-default": "https://couponsbit.us/faqs",
+      "en-US": "https://www.couponsbit.us/faqs",
+      "x-default": "https://www.couponsbit.us/faqs",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/faqs",
+    url: "https://www.couponsbit.us/faqs",
     title: "Couponsbit FAQs – How to Use Promo Codes & Coupon Help",
     description:
       "Got questions? Couponsbit's FAQ page covers how to use promo codes, coupon help, cashback offers, and deals. Find quick answers to all your coupon queries here.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit FAQs – How to Use Promo Codes & Coupon Help",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit FAQs – How to Use Promo Codes & Coupon Help",
     description:
       "Got questions? Couponsbit's FAQ page covers how to use promo codes, coupon help, cashback offers, and deals. Find quick answers to all your coupon queries here.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -60,15 +60,15 @@ const faqSchema = {
   "@graph": [
     {
       "@type": "FAQPage",
-      "@id": "https://couponsbit.us/faqs#faqpage",
-      url: "https://couponsbit.us/faqs",
+      "@id": "https://www.couponsbit.us/faqs#faqpage",
+      url: "https://www.couponsbit.us/faqs",
       name: "Couponsbit FAQs – How to Use Promo Codes & Coupon Help",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/faqs#breadcrumb",
+        "@id": "https://www.couponsbit.us/faqs#breadcrumb",
       },
       // ✅ Add your actual FAQ questions/answers here
       mainEntity: [
@@ -156,24 +156,24 @@ const faqSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is the best coupon site online offering verified promo codes and deals for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -185,19 +185,19 @@ const faqSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/faqs#breadcrumb",
+      "@id": "https://www.couponsbit.us/faqs#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FAQs",
-          item: "https://couponsbit.us/faqs",
+          item: "https://www.couponsbit.us/faqs",
         },
       ],
     },

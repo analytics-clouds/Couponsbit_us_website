@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get verified Envato Elements discount codes – 50% OFF annual plan, 30% OFF students, 34% OFF team plans & unlimited assets from $16.50/mo. 7 live deals. Save now!",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/envato-elements-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
     languages: {
-      "en-US": "https://couponsbit.us/stores/envato-elements-coupon-code",
-      "x-default": "https://couponsbit.us/stores/envato-elements-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+    url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
     title: "Envato Elements Coupon Codes – 50% OFF & From $16.50",
     description:
       "Get verified Envato Elements discount codes – 50% OFF annual plan, 30% OFF students, 34% OFF team plans & unlimited assets from $16.50/mo. 7 live deals. Save now!",
@@ -56,27 +56,27 @@ const envatoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/envato-elements-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/envato-elements-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
       name: "Envato Elements Coupon Codes – 50% OFF & From $16.50",
       description:
         "Get verified Envato Elements discount codes – 50% OFF annual plan, 30% OFF students, 34% OFF team plans & unlimited assets from $16.50/mo. 7 live deals. Save now!",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/envato-elements-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/envato-elements-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/envato-elements-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/envato-elements-coupon-code#offerlist",
       name: "Envato Elements Coupon Codes & Promo Codes",
       description:
         "Latest verified Envato Elements coupon codes, promo codes and discount codes for templates, graphics, fonts, and creative subscriptions.",
-      url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+      url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const envatoSchema = {
             name: "Envato Elements Coupon Code",
             description:
               "Latest Envato Elements coupon code for subscription discounts on templates, graphics and creative assets.",
-            url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+            url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Envato Elements",
@@ -100,25 +100,25 @@ const envatoSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -131,25 +131,25 @@ const envatoSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/envato-elements-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/envato-elements-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Envato Elements Coupons",
-          item: "https://couponsbit.us/stores/envato-elements-coupon-code",
+          item: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
         },
       ],
     },

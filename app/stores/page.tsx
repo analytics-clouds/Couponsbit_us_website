@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Browse verified coupon codes & promo codes for 200+ top online stores. Find the best deals and discounts across fashion, travel, electronics, beauty & more.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores",
+    canonical: "https://www.couponsbit.us/stores",
     languages: {
-      "en-US": "https://couponsbit.us/stores",
-      "x-default": "https://couponsbit.us/stores",
+      "en-US": "https://www.couponsbit.us/stores",
+      "x-default": "https://www.couponsbit.us/stores",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores",
+    url: "https://www.couponsbit.us/stores",
     title: "Coupon Codes for All Stores – Verified Promo Codes 2026",
     description:
       "Browse verified coupon codes & promo codes for 200+ top online stores. Find the best deals and discounts across fashion, travel, electronics, beauty & more.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Coupon Codes for All Stores – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Coupon Codes for All Stores – Verified Promo Codes 2026",
     description:
       "Browse verified coupon codes & promo codes for 200+ top online stores. Find the best deals and discounts across fashion, travel, electronics, beauty & more.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -57,28 +57,28 @@ const storesPageSchema = {
     // ✅ CollectionPage — correct type for a listing/directory page
     {
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/stores#webpage",
-      url: "https://couponsbit.us/stores",
+      "@id": "https://www.couponsbit.us/stores#webpage",
+      url: "https://www.couponsbit.us/stores",
       name: "Coupon Codes for All Stores – Verified Promo Codes 2026",
       description:
         "Browse verified coupon codes & promo codes for 200+ top online stores. Find the best deals and discounts across fashion, travel, electronics, beauty & more.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores#breadcrumb",
       },
     },
 
     // ✅ ItemList — tells Google this page contains a directory of stores
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores#storelist",
+      "@id": "https://www.couponsbit.us/stores#storelist",
       name: "All Stores – Coupon Codes & Promo Codes",
       description:
         "A complete directory of 200+ top online stores with verified coupon codes, promo codes and deals.",
-      url: "https://couponsbit.us/stores",
+      url: "https://www.couponsbit.us/stores",
       numberOfItems: 200,
       itemListOrder: "https://schema.org/ItemListUnordered",
       itemListElement: [
@@ -88,7 +88,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "StubHub Coupon Codes",
-            url: "https://couponsbit.us/stores/stubhub-coupon-code",
+            url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
           },
         },
         {
@@ -97,7 +97,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Viagogo Coupon Codes",
-            url: "https://couponsbit.us/stores/viagogo-coupon-code",
+            url: "https://www.couponsbit.us/stores/viagogo-coupon-code",
           },
         },
         {
@@ -106,7 +106,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "LATAM Airlines Coupon Codes",
-            url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+            url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
           },
         },
         {
@@ -115,7 +115,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Rayneo Coupon Codes",
-            url: "https://couponsbit.us/stores/rayneo-coupon-code",
+            url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
           },
         },
         {
@@ -124,7 +124,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Driffle Coupon Codes",
-            url: "https://couponsbit.us/stores/driffle-coupon-code",
+            url: "https://www.couponsbit.us/stores/driffle-coupon-code",
           },
         },
         {
@@ -133,7 +133,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Lyca Mobile Coupon Codes",
-            url: "https://couponsbit.us/stores/lyca-mobile-coupon-code",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
           },
         },
         {
@@ -142,7 +142,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Reolink Coupon Codes",
-            url: "https://couponsbit.us/stores/reolink-coupon-code",
+            url: "https://www.couponsbit.us/stores/reolink-coupon-code",
           },
         },
         {
@@ -151,7 +151,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Envato Elements Coupon Codes",
-            url: "https://couponsbit.us/stores/envato-elements-coupon-code",
+            url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
           },
         },
         {
@@ -160,7 +160,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Sintra Coupon Codes",
-            url: "https://couponsbit.us/stores/sintra-coupon-code",
+            url: "https://www.couponsbit.us/stores/sintra-coupon-code",
           },
         },
         {
@@ -169,7 +169,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Bluehost Coupon Codes",
-            url: "https://couponsbit.us/stores/bluehost-coupon-code",
+            url: "https://www.couponsbit.us/stores/bluehost-coupon-code",
           },
         },
         // ← add remaining stores here following same pattern
@@ -178,25 +178,25 @@ const storesPageSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -210,19 +210,19 @@ const storesPageSchema = {
     // ✅ 2-level BreadcrumbList — Home → Stores (no 3rd level, this IS the listing)
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "All Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
       ],
     },

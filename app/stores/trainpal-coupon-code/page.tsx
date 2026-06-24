@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Unlock the latest TrainPal Coupon Code and save up to 50% on UK rail travel. Get Railcards, cheaper fares, and exclusive ticket deals.",
 
   alternates: {
-    canonical: "https://couponsbit.us/stores/trainpal-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/trainpal-coupon-code",
     languages: {
-      "en-GB": "https://couponsbit.us/stores/trainpal-coupon-code",
-      "en-IT": "https://couponsbit.us/stores/trainpal-coupon-code",
-      "x-default": "https://couponsbit.us/stores/trainpal-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/trainpal-coupon-code",
+      "en-IT": "https://www.couponsbit.us/stores/trainpal-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/trainpal-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/stores/trainpal-coupon-code",
+    url: "https://www.couponsbit.us/stores/trainpal-coupon-code",
     title: "Up to 50% OFF UK Train Travel | TrainPal Coupon Code",
     description:
       "Unlock the latest TrainPal Coupon Code and save up to 50% on UK rail travel. Get Railcards, cheaper fares, and exclusive ticket deals.",
@@ -57,27 +57,27 @@ const trainpalSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/stores/trainpal-coupon-code#webpage",
-      url: "https://couponsbit.us/stores/trainpal-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/trainpal-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/trainpal-coupon-code",
       name: "Up to 50% OFF UK Train Travel | TrainPal Coupon Code",
       description:
         "Unlock the latest TrainPal Coupon Code and save up to 50% on UK rail travel. Get Railcards, cheaper fares, and exclusive ticket deals.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/stores/trainpal-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/trainpal-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/stores/trainpal-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/trainpal-coupon-code#offerlist",
       name: "TrainPal Coupon Codes & Promo Codes",
       description:
         "Latest verified TrainPal coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://couponsbit.us/stores/trainpal-coupon-code",
+      url: "https://www.couponsbit.us/stores/trainpal-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -88,7 +88,7 @@ const trainpalSchema = {
             name: "TrainPal Coupon Code",
             description:
               "Latest TrainPal coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://couponsbit.us/stores/trainpal-coupon-code",
+            url: "https://www.couponsbit.us/stores/trainpal-coupon-code",
             seller: {
               "@type": "Organization",
               name: "TrainPal",
@@ -101,25 +101,25 @@ const trainpalSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -132,25 +132,25 @@ const trainpalSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/stores/trainpal-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/trainpal-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Stores",
-          item: "https://couponsbit.us/stores",
+          item: "https://www.couponsbit.us/stores",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "TrainPal Coupons",
-          item: "https://couponsbit.us/stores/trainpal-coupon-code",
+          item: "https://www.couponsbit.us/stores/trainpal-coupon-code",
         },
       ],
     },

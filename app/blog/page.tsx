@@ -11,17 +11,17 @@ export const metadata: Metadata = {
     "Discover how to save money online shopping with Couponsbit. Explore tips, coupon guides, and hacks from the best coupon websites USA. Updated weekly.",
 
   alternates: {
-    canonical: "https://couponsbit.us/blog",
+    canonical: "https://www.couponsbit.us/blog",
     languages: {
-      "en-US": "https://couponsbit.us/blog",
-      "x-default": "https://couponsbit.us/blog",
+      "en-US": "https://www.couponsbit.us/blog",
+      "x-default": "https://www.couponsbit.us/blog",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/blog",
+    url: "https://www.couponsbit.us/blog",
     title: "Couponsbit Blog – How to Save Money Online Shopping Tips",
     description:
       "Discover how to save money online shopping with Couponsbit. Explore tips, coupon guides, and hacks from the best coupon websites USA. Updated weekly.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit Blog – Save Money Online Shopping Tips",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Blog – How to Save Money Online Shopping Tips",
     description:
       "Discover how to save money online shopping with Couponsbit. Explore tips, coupon guides, and hacks from the best coupon websites USA. Updated weekly.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -64,20 +64,20 @@ const blogSchema = {
   "@graph": [
     {
       "@type": "Blog",
-      "@id": "https://couponsbit.us/blog#blog",
-      url: "https://couponsbit.us/blog",
+      "@id": "https://www.couponsbit.us/blog#blog",
+      url: "https://www.couponsbit.us/blog",
       name: "Couponsbit Blog – How to Save Money Online Shopping Tips",
       description:
         "Discover how to save money online shopping with Couponsbit. Explore tips, coupon guides, and hacks from the best coupon websites USA. Updated weekly.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/blog#breadcrumb",
+        "@id": "https://www.couponsbit.us/blog#breadcrumb",
       },
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
       // ✅ Hardcoded posts — update these when posts change
       blogPost: [
@@ -85,62 +85,62 @@ const blogSchema = {
           "@type": "BlogPosting",
           headline:
             "How to Use Amazon India Coupon Codes to Get Extra Discounts",
-          url: "https://couponsbit.us/blog/amazon-india-coupon-codes",
+          url: "https://www.couponsbit.us/blog/amazon-india-coupon-codes",
           datePublished: "2026-06-09",
           inLanguage: "en-US",
           author: {
             "@type": "Organization",
             name: "Couponsbit",
-            url: "https://couponsbit.us",
+            url: "https://www.couponsbit.us",
           },
         },
         {
           "@type": "BlogPosting",
           headline: "10 Smart Ways to Save Money on Amazon India in 2026",
-          url: "https://couponsbit.us/blog/couponsbit-shopping-savings-guide",
+          url: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
           datePublished: "2026-05-12",
           inLanguage: "en-US",
           author: {
             "@type": "Organization",
             name: "Couponsbit",
-            url: "https://couponsbit.us",
+            url: "https://www.couponsbit.us",
           },
         },
         {
           "@type": "BlogPosting",
           headline:
             "How to Stack Coupons and Bank Offers for Maximum Savings",
-          url: "https://couponsbit.us/blog/stack-coupons-bank-offers",
+          url: "https://www.couponsbit.us/blog/stack-coupons-bank-offers",
           datePublished: "2026-05-10",
           inLanguage: "en-US",
           author: {
             "@type": "Organization",
             name: "Couponsbit",
-            url: "https://couponsbit.us",
+            url: "https://www.couponsbit.us",
           },
         },
       ],
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites USA offering verified promo codes and online shopping tips to help you save money.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -152,19 +152,19 @@ const blogSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/blog#breadcrumb",
+      "@id": "https://www.couponsbit.us/blog#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Blog",
-          item: "https://couponsbit.us/blog",
+          item: "https://www.couponsbit.us/blog",
         },
       ],
     },

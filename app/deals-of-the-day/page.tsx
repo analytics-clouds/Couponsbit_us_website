@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Shop today's best online deals and today discount codes on Couponsbit. Fresh deals of the day handpicked from 2000+ stores and updated daily at midnight.",
 
   alternates: {
-    canonical: "https://couponsbit.us/deals-of-the-day",
+    canonical: "https://www.couponsbit.us/deals-of-the-day",
     languages: {
-      "en-US": "https://couponsbit.us/deals-of-the-day",
-      "x-default": "https://couponsbit.us/deals-of-the-day",
+      "en-US": "https://www.couponsbit.us/deals-of-the-day",
+      "x-default": "https://www.couponsbit.us/deals-of-the-day",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/deals-of-the-day",
+    url: "https://www.couponsbit.us/deals-of-the-day",
     title: "Couponsbit Deals of the Day | Today Discount Codes Online",
     description:
       "Shop today's best online deals and today discount codes on Couponsbit. Fresh deals of the day handpicked from 2000+ stores and updated daily at midnight.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit – Deals of the Day & Today Discount Codes",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Deals of the Day | Today Discount Codes Online",
     description:
       "Shop today's best online deals and today discount codes on Couponsbit. Fresh deals of the day handpicked from 2000+ stores and updated daily at midnight.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -68,17 +68,17 @@ const dealsOfTheDaySchema = {
     {
       // ✅ CollectionPage — correct for a daily deals listing page
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/deals-of-the-day#collectionpage",
-      url: "https://couponsbit.us/deals-of-the-day",
+      "@id": "https://www.couponsbit.us/deals-of-the-day#collectionpage",
+      url: "https://www.couponsbit.us/deals-of-the-day",
       name: "Couponsbit Deals of the Day | Today Discount Codes Online",
       description:
         "Shop today's best online deals and today discount codes on Couponsbit. Fresh deals of the day handpicked from 2000+ stores and updated daily at midnight.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/deals-of-the-day#breadcrumb",
+        "@id": "https://www.couponsbit.us/deals-of-the-day#breadcrumb",
       },
       speakable: {
         "@type": "SpeakableSpecification",
@@ -89,7 +89,7 @@ const dealsOfTheDaySchema = {
         name: "Deals of the Day & Today Discount Codes",
         description:
           "Today's handpicked online deals, discount codes, and verified promo codes from 2000+ stores on Couponsbit. Updated daily at midnight.",
-        url: "https://couponsbit.us/deals-of-the-day",
+        url: "https://www.couponsbit.us/deals-of-the-day",
         // ✅ Dynamic dates — auto-updates every day, no manual work needed
         startDate: todayISO,
         endDate: tomorrowISO,
@@ -97,24 +97,24 @@ const dealsOfTheDaySchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit offers verified deals of the day, today discount codes, and online deals from 2000+ stores updated daily.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -127,19 +127,19 @@ const dealsOfTheDaySchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/deals-of-the-day#breadcrumb",
+      "@id": "https://www.couponsbit.us/deals-of-the-day#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Deals of the Day",
-          item: "https://couponsbit.us/deals-of-the-day",
+          item: "https://www.couponsbit.us/deals-of-the-day",
         },
       ],
     },

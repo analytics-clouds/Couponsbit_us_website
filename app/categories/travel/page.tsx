@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Find verified travel promo codes & flight coupon codes for flights, hotels & vacation packages. Best hotel deals online on LATAM Airlines & more with Couponsbit.",
 
   alternates: {
-    canonical: "https://couponsbit.us/categories/travel",
+    canonical: "https://www.couponsbit.us/categories/travel",
     languages: {
-      "en-US": "https://couponsbit.us/categories/travel",
-      "x-default": "https://couponsbit.us/categories/travel",
+      "en-US": "https://www.couponsbit.us/categories/travel",
+      "x-default": "https://www.couponsbit.us/categories/travel",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/categories/travel",
+    url: "https://www.couponsbit.us/categories/travel",
     title: "Travel Promo Codes & Flight Coupon Codes – Hotel Deals 2026",
     description:
       "Find verified travel promo codes & flight coupon codes for flights, hotels & vacation packages. Best hotel deals online on LATAM Airlines & more with Couponsbit.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Travel Promo Codes & Flight Coupon Codes – Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Travel Promo Codes & Flight Coupon Codes – Hotel Deals 2026",
     description:
       "Find verified travel promo codes & flight coupon codes for flights, hotels & vacation packages. Best hotel deals online on LATAM Airlines & more with Couponsbit.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -56,28 +56,28 @@ const travelSchema = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/categories/travel#webpage",
-      url: "https://couponsbit.us/categories/travel",
+      "@id": "https://www.couponsbit.us/categories/travel#webpage",
+      url: "https://www.couponsbit.us/categories/travel",
       name: "Travel Promo Codes & Flight Coupon Codes – Hotel Deals 2026",
       description:
         "Find verified travel promo codes & flight coupon codes for flights, hotels & vacation packages. Best hotel deals online on LATAM Airlines & more with Couponsbit.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/categories/travel#breadcrumb",
+        "@id": "https://www.couponsbit.us/categories/travel#breadcrumb",
       },
     },
 
     // ✅ ItemList — travel stores in this category
     {
       "@type": "ItemList",
-      "@id": "https://couponsbit.us/categories/travel#storelist",
+      "@id": "https://www.couponsbit.us/categories/travel#storelist",
       name: "Travel Stores – Promo Codes & Flight Coupon Codes",
       description:
         "Verified travel promo codes, flight coupon codes and hotel deals online for top travel brands including LATAM Airlines.",
-      url: "https://couponsbit.us/categories/travel",
+      url: "https://www.couponsbit.us/categories/travel",
       numberOfItems: 1,
       itemListOrder: "https://schema.org/ItemListUnordered",
       itemListElement: [
@@ -87,7 +87,7 @@ const travelSchema = {
           item: {
             "@type": "WebPage",
             name: "LATAM Airlines Coupon Codes",
-            url: "https://couponsbit.us/stores/latam-airlines-coupon-code",
+            url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
           },
         },
         // ← add more travel stores here as you onboard them
@@ -96,25 +96,25 @@ const travelSchema = {
 
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -127,25 +127,25 @@ const travelSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/categories/travel#breadcrumb",
+      "@id": "https://www.couponsbit.us/categories/travel#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Categories",
-          item: "https://couponsbit.us/categories",
+          item: "https://www.couponsbit.us/categories",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Travel",
-          item: "https://couponsbit.us/categories/travel",
+          item: "https://www.couponsbit.us/categories/travel",
         },
       ],
     },

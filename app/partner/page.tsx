@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Advertise on Couponsbit and list your brand on our coupon site. Reach 500K+ monthly deal hunters through a trusted coupon website partnership USA brands love.",
 
   alternates: {
-    canonical: "https://couponsbit.us/partner",
+    canonical: "https://www.couponsbit.us/partner",
     languages: {
-      "en-US": "https://couponsbit.us/partner",
-      "x-default": "https://couponsbit.us/partner",
+      "en-US": "https://www.couponsbit.us/partner",
+      "x-default": "https://www.couponsbit.us/partner",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/partner",
+    url: "https://www.couponsbit.us/partner",
     title: "Partner With Couponsbit | Coupon Website Partnership USA",
     description:
       "Advertise on Couponsbit and list your brand on our coupon site. Reach 500K+ monthly deal hunters through a trusted coupon website partnership USA brands love.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Partner With Couponsbit – Coupon Website Partnership USA",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Partner With Couponsbit | Coupon Website Partnership USA",
     description:
       "Advertise on Couponsbit and list your brand on our coupon site. Reach 500K+ monthly deal hunters through a trusted coupon website partnership USA brands love.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -60,29 +60,29 @@ const partnerSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/partner#webpage",
-      url: "https://couponsbit.us/partner",
+      "@id": "https://www.couponsbit.us/partner#webpage",
+      url: "https://www.couponsbit.us/partner",
       name: "Partner With Couponsbit | Coupon Website Partnership USA",
       description:
         "Advertise on Couponsbit and list your brand on our coupon site. Reach 500K+ monthly deal hunters through a trusted coupon website partnership USA brands love.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/partner#breadcrumb",
+        "@id": "https://www.couponsbit.us/partner#breadcrumb",
       },
     },
     {
       // ✅ Service schema — signals to Google this is a B2B offering page
       "@type": "Service",
-      "@id": "https://couponsbit.us/partner#service",
+      "@id": "https://www.couponsbit.us/partner#service",
       name: "Brand Partnership & Advertising on Couponsbit",
       description:
         "List your brand on Couponsbit to advertise on our coupon website and reach 500K+ monthly deal hunters across the USA and internationally.",
-      url: "https://couponsbit.us/partner",
+      url: "https://www.couponsbit.us/partner",
       provider: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
       serviceType: "Coupon Website Partnership",
       areaServed: {
@@ -96,24 +96,24 @@ const partnerSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is a trusted coupon website offering verified promo codes and coupon website partnership opportunities for USA brands.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -126,19 +126,19 @@ const partnerSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/partner#breadcrumb",
+      "@id": "https://www.couponsbit.us/partner#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Partner With Us",
-          item: "https://couponsbit.us/partner",
+          item: "https://www.couponsbit.us/partner",
         },
       ],
     },

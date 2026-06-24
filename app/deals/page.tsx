@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Browse 15,000+ verified online deals and shopping deals USA shoppers love. Find the best coupon websites discounts, flash sales, and exclusive offers daily.",
 
   alternates: {
-    canonical: "https://couponsbit.us/deals",
+    canonical: "https://www.couponsbit.us/deals",
     languages: {
-      "en-US": "https://couponsbit.us/deals",
-      "x-default": "https://couponsbit.us/deals",
+      "en-US": "https://www.couponsbit.us/deals",
+      "x-default": "https://www.couponsbit.us/deals",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/deals",
+    url: "https://www.couponsbit.us/deals",
     title: "Couponsbit Deals | Online Deals & Shopping Deals USA Today",
     description:
       "Browse 15,000+ verified online deals and shopping deals USA shoppers love. Find the best coupon websites discounts, flash sales, and exclusive offers daily.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit – Online Deals & Shopping Deals USA",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Deals | Online Deals & Shopping Deals USA Today",
     description:
       "Browse 15,000+ verified online deals and shopping deals USA shoppers love. Find the best coupon websites discounts, flash sales, and exclusive offers daily.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -61,17 +61,17 @@ const dealsSchema = {
     {
       // ✅ CollectionPage — correct type for a listing page of deals
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/deals#collectionpage",
-      url: "https://couponsbit.us/deals",
+      "@id": "https://www.couponsbit.us/deals#collectionpage",
+      url: "https://www.couponsbit.us/deals",
       name: "Couponsbit Deals | Online Deals & Shopping Deals USA Today",
       description:
         "Browse 15,000+ verified online deals and shopping deals USA shoppers love. Find the best coupon websites discounts, flash sales, and exclusive offers daily.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/deals#breadcrumb",
+        "@id": "https://www.couponsbit.us/deals#breadcrumb",
       },
       // ✅ ItemList signals to Google this page contains a list of offers
       mainEntity: {
@@ -79,30 +79,30 @@ const dealsSchema = {
         name: "Online Deals & Shopping Deals USA",
         description:
           "A curated list of verified online deals, shopping deals, and promo codes from the best coupon websites updated daily.",
-        url: "https://couponsbit.us/deals",
+        url: "https://www.couponsbit.us/deals",
         numberOfItems: 15000,
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is one of the best coupon websites offering verified online deals, shopping deals USA shoppers trust, and promo codes updated daily.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -115,19 +115,19 @@ const dealsSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/deals#breadcrumb",
+      "@id": "https://www.couponsbit.us/deals#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Deals",
-          item: "https://couponsbit.us/deals",
+          item: "https://www.couponsbit.us/deals",
         },
       ],
     },

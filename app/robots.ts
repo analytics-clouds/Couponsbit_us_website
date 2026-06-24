@@ -31,6 +31,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://couponsbit.us/sitemap.xml",
+    sitemap: "https://www.couponsbit.us/sitemap.xml",
   };
 }

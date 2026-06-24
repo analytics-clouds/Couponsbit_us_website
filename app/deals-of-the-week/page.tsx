@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
 
   alternates: {
-    canonical: "https://couponsbit.us/deals-of-the-week",
+    canonical: "https://www.couponsbit.us/deals-of-the-week",
     languages: {
-      "en-US": "https://couponsbit.us/deals-of-the-week",
-      "x-default": "https://couponsbit.us/deals-of-the-week",
+      "en-US": "https://www.couponsbit.us/deals-of-the-week",
+      "x-default": "https://www.couponsbit.us/deals-of-the-week",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/deals-of-the-week",
+    url: "https://www.couponsbit.us/deals-of-the-week",
     title: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
     description:
       "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit – Best Deals of the Week & Top Discount Codes",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
     description:
       "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -61,17 +61,17 @@ const dealsOfTheWeekSchema = {
     {
       // ✅ CollectionPage — correct for a curated deals listing page
       "@type": "CollectionPage",
-      "@id": "https://couponsbit.us/deals-of-the-week#collectionpage",
-      url: "https://couponsbit.us/deals-of-the-week",
+      "@id": "https://www.couponsbit.us/deals-of-the-week#collectionpage",
+      url: "https://www.couponsbit.us/deals-of-the-week",
       name: "Couponsbit Deals of the Week | Best Deals & Discount Codes",
       description:
         "Discover the best deals this month on Couponsbit. Browse top discount codes this month from 2000+ stores with verified online deals updated daily.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/deals-of-the-week#breadcrumb",
+        "@id": "https://www.couponsbit.us/deals-of-the-week#breadcrumb",
       },
       // ✅ SpecialAnnouncement signals time-sensitive curated deals to Google
       speakable: {
@@ -83,31 +83,31 @@ const dealsOfTheWeekSchema = {
         name: "Best Deals This Month & Top Discount Codes",
         description:
           "A curated list of the best online deals, top discount codes, and verified promo codes this month from 2000+ stores on Couponsbit.",
-        url: "https://couponsbit.us/deals-of-the-week",
+        url: "https://www.couponsbit.us/deals-of-the-week",
         // ✅ Update this monthly — reflects how many deals are live this month
         numberOfItems: 500,
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is a trusted coupon website offering the best online deals, top discount codes this month, and verified promo codes from 2000+ stores.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -120,19 +120,19 @@ const dealsOfTheWeekSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/deals-of-the-week#breadcrumb",
+      "@id": "https://www.couponsbit.us/deals-of-the-week#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Deals of the Week",
-          item: "https://couponsbit.us/deals-of-the-week",
+          item: "https://www.couponsbit.us/deals-of-the-week",
         },
       ],
     },

@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
 
   alternates: {
-    canonical: "https://couponsbit.us/terms-of-use",
+    canonical: "https://www.couponsbit.us/terms-of-use",
     languages: {
-      "en-US": "https://couponsbit.us/terms-of-use",
-      "x-default": "https://couponsbit.us/terms-of-use",
+      "en-US": "https://www.couponsbit.us/terms-of-use",
+      "x-default": "https://www.couponsbit.us/terms-of-use",
     },
   },
 
   // ✅ Open Graph
   openGraph: {
     type: "website",
-    url: "https://couponsbit.us/terms-of-use",
+    url: "https://www.couponsbit.us/terms-of-use",
     title: "Couponsbit Terms & Conditions | Best Coupon Site Online",
     description:
       "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://couponsbit.us/og-image.png",
+        url: "https://www.couponsbit.us/og-image.png",
         width: 1200,
         height: 630,
         alt: "Couponsbit Terms & Conditions – Best Coupon Site Online",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Couponsbit Terms & Conditions | Best Coupon Site Online",
     description:
       "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
-    images: ["https://couponsbit.us/og-image.png"],
+    images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
 
@@ -60,39 +60,39 @@ const termsOfUseSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://couponsbit.us/terms-of-use#webpage",
-      url: "https://couponsbit.us/terms-of-use",
+      "@id": "https://www.couponsbit.us/terms-of-use#webpage",
+      url: "https://www.couponsbit.us/terms-of-use",
       name: "Couponsbit Terms & Conditions | Best Coupon Site Online",
       description:
         "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
       inLanguage: "en-US",
       isPartOf: {
-        "@id": "https://couponsbit.us/#website",
+        "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://couponsbit.us/terms-of-use#breadcrumb",
+        "@id": "https://www.couponsbit.us/terms-of-use#breadcrumb",
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://couponsbit.us/#website",
-      url: "https://couponsbit.us",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
       name: "Couponsbit",
       description:
         "Couponsbit is the best coupon site online offering verified promo codes and deals for top brands worldwide.",
       inLanguage: "en-US",
       publisher: {
-        "@id": "https://couponsbit.us/#organization",
+        "@id": "https://www.couponsbit.us/#organization",
       },
     },
     {
       "@type": "Organization",
-      "@id": "https://couponsbit.us/#organization",
+      "@id": "https://www.couponsbit.us/#organization",
       name: "Couponsbit",
-      url: "https://couponsbit.us",
+      url: "https://www.couponsbit.us",
       logo: {
         "@type": "ImageObject",
-        url: "https://couponsbit.us/logo.png",
+        url: "https://www.couponsbit.us/logo.png",
         width: 200,
         height: 60,
       },
@@ -104,19 +104,19 @@ const termsOfUseSchema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://couponsbit.us/terms-of-use#breadcrumb",
+      "@id": "https://www.couponsbit.us/terms-of-use#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://couponsbit.us",
+          item: "https://www.couponsbit.us",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Terms of Use",
-          item: "https://couponsbit.us/terms-of-use",
+          item: "https://www.couponsbit.us/terms-of-use",
         },
       ],
     },
