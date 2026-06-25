@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TalkpalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Talkpal.AI Coupon Codes – Hosting From $1.99/mo & More",
+  title: "Talkpal Coupon Code – Save Up to 69% OFF AI Language Learning",
   description:
-    "Get verified Talkpal.AI discount codes – WordPress hosting from $1.99/mo, 69% OFF one site plan, 50% OFF business hosting & VPS 33% OFF. 35 live deals. Save now!",
+    "Get the latest Talkpal coupon code and save up to 69% OFF premium plans. Start your 14-day free trial and learn languages faster with AI-powered conversations.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/talkpal-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/talkpal-coupon-code",
-    title: "Talkpal.AI Coupon Codes – Hosting From $1.99/mo & More",
+    title: "Talkpal Coupon Code – Save Up to 69% OFF AI Language Learning",
     description:
-      "Get verified Talkpal.AI discount codes – WordPress hosting from $1.99/mo, 69% OFF one site plan, 50% OFF business hosting & VPS 33% OFF. 35 live deals. Save now!",
+      "Get the latest Talkpal coupon code and save up to 69% OFF premium plans. Start your 14-day free trial and learn languages faster with AI-powered conversations.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["de_DE", "ja_JP", "en_IN", "en_AU"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Talkpal.AI Coupon Codes – Hosting From $1.99/mo & More",
+    title: "Talkpal Coupon Code – Save Up to 69% OFF AI Language Learning",
     description:
-      "Get verified Talkpal.AI discount codes – WordPress hosting from $1.99/mo, 69% OFF one site plan, 50% OFF business hosting & VPS 33% OFF. 35 live deals. Save now!",
+      "Get the latest Talkpal coupon code and save up to 69% OFF premium plans. Start your 14-day free trial and learn languages faster with AI-powered conversations.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const talkpalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/talkpal-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/talkpal-coupon-code",
-      name: "Talkpal.AI Coupon Codes – Hosting From $1.99/mo & More",
+      name: "Talkpal Coupon Code – Save Up to 69% OFF AI Language Learning",
       description:
-        "Get verified Talkpal.AI discount codes – WordPress hosting from $1.99/mo, 69% OFF one site plan, 50% OFF business hosting & VPS 33% OFF. 35 live deals. Save now!",
+        "Get the latest Talkpal coupon code and save up to 69% OFF premium plans. Start your 14-day free trial and learn languages faster with AI-powered conversations.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

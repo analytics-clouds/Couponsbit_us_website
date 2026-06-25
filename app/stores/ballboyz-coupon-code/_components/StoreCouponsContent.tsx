@@ -26,9 +26,8 @@ import {
   BookOpen, 
   CheckCircle,
   X,
-  ArrowRight,
+  ArrowRight, Smile, Droplet, Target,
   Plane,
-  Hotel, Building, Palmtree, Bed, Briefcase,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
@@ -65,102 +64,102 @@ interface StoreItem {
 const COUPONS: Coupon[] = [
   {
     id: "c1",
-    discount: "£1,965",
-    label: "FROM",
+    discount: "$60",
+    label: "SAVE",
     badge: "Best Offer",
-    title: "ZenHotels New York Stay Deal – Residence Inn by Marriott JFK",
-    heading: "New York Stay Deal",
-    sub: "Rates From £1,965",
-    description: "Enjoy a comfortable city break in New York with spacious suites and airport convenience.",
+    title: "BallBoyz Full Body Acne Gameplan – Save $60",
+    heading: "Full Body Acne Gameplan",
+    sub: "$99.99 (Reg. $160.00)",
+    description: "Tackle face and body acne with BallBoyz's complete skincare system, including Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches.",
     usedCount: "112k",
     expiresIn: "2 days",
-    code: "ZENHOTELSNYC"
+    code: "BBFULLBODY60"
   },
   {
     id: "c2",
-    discount: "$35",
-    label: "OFF",
+    discount: "50%",
+    label: "SAVE",
     badge: "Popular",
-    title: "ZenHotels App Exclusive Offer – Get $35 OFF on Stays",
-    heading: "App Exclusive Offer",
-    sub: "$35 OFF Bookings $700+",
-    description: "Turn on vacation mode and save more on your next getaway with the ZenHotels mobile app.",
+    title: "BallBoyz BOYZ Face Acne Gameplan – #1 Seller",
+    heading: "Face Acne Gameplan",
+    sub: "$55.99 (Reg. $110.00)",
+    description: "Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle, backed by a confidence guarantee.",
     usedCount: "95k",
     expiresIn: "3 days",
-    code: "ZENHOTELSAPP35"
+    code: "BBFACE50"
   },
   {
     id: "c3",
-    discount: "£1,504",
-    label: "FROM",
+    discount: "40%",
+    label: "UP TO",
     badge: "Trending",
-    title: "ZenHotels Greece Beach Escape – Avra Imperial Hotel",
-    heading: "Greece Beach Escape",
-    sub: "Rates From £1,504",
-    description: "Relax at a luxurious beachfront resort on Crete's beautiful northern coast.",
+    title: "BallBoyz Summer Acne Sale – Up to 40% OFF",
+    heading: "Summer Acne Sale",
+    sub: "Up to 40% OFF",
+    description: "Beat summer breakouts with BallBoyz's bestselling pimple patches, face scrubs and skincare bundles.",
     usedCount: "88k",
     expiresIn: "1 day",
-    code: "ZENHOTELSGREECE"
+    code: "BBSUMMER40"
   },
   {
     id: "c4",
-    discount: "£1,911",
-    label: "FROM",
-    title: "ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro",
-    heading: "Portugal Luxury Stay",
-    sub: "Rates From £1,911",
-    description: "Experience breathtaking Algarve coastal views and five-star hospitality.",
+    discount: "$40",
+    label: "OFF",
+    title: "BallBoyz Pimple Pack – $40 OFF Today Only",
+    heading: "Pimple Pack",
+    sub: "$29.99 (Reg. $69.99)",
+    description: "Get everything you need for clearer skin in one convenient acne-fighting bundle, perfect for pimples, oil and clogged pores.",
     usedCount: "76k",
     expiresIn: "2 days",
-    code: "ZENHOTELSALGARVE"
+    code: "BBPIMPLE40"
   },
   {
     id: "c5",
-    discount: "£857",
-    label: "FROM",
-    title: "ZenHotels Prague Luxury Escape – Alchymist Grand Hotel",
-    heading: "Prague Luxury Escape",
-    sub: "Rates From £857",
-    description: "Indulge in a premium stay in one of Prague's most elegant hotels.",
+    discount: "$110",
+    label: "VALUE",
+    title: "BallBoyz Face Acne Gameplan – Today Only Special",
+    heading: "Face Acne Gameplan",
+    sub: "$69.99 (Reg. $110.00)",
+    description: "Upgrade your skincare routine with BallBoyz's top-rated acne solution, built to help reduce breakouts.",
     usedCount: "65k",
     expiresIn: "5 days",
-    code: "ZENHOTELSPRAGUE"
+    code: "BBTODAY69"
   },
   {
     id: "c6",
-    discount: "£638",
-    label: "FROM",
-    title: "ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra",
-    heading: "Paris City Break",
-    sub: "Rates From £638",
-    description: "Stay in the heart of Paris near iconic attractions and shopping districts.",
+    discount: "20%",
+    label: "EXTRA",
+    title: "BallBoyz Build Your Own Bundle – Extra 20% OFF",
+    heading: "Build Your Own Bundle",
+    sub: "Extra 20% OFF",
+    description: "Customize your skincare routine by mixing and matching face scrubs, body scrubs, moisturizers and pimple patches.",
     usedCount: "54k",
     expiresIn: "3 days",
-    code: "ZENHOTELSPARIS"
+    code: "BBBUNDLE20"
   },
   {
     id: "c7",
-    discount: "£612",
-    label: "FROM",
-    title: "ZenHotels Milan Romantic Getaway – Hotel Berna",
-    heading: "Milan Romantic Getaway",
-    sub: "Rates From £612",
-    description: "Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.",
-    usedCount: "48k",
+    discount: "NEW",
+    label: "ESSENTIAL",
+    title: "BallBoyz Activated Charcoal Face Scrub",
+    heading: "Activated Charcoal Face Scrub",
+    sub: "Acne Care Essential",
+    description: "Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub, removing dirt, oil and impurities for a refreshed feel.",
+    usedCount: "41k",
     expiresIn: "4 days",
-    code: "ZENHOTELSMILAN"
+    code: "BBCHARCOAL"
   },
   {
     id: "c8",
-    discount: "£218",
-    label: "FROM",
-    title: "ZenHotels UK Weekend Escape – Moxy Chester",
-    heading: "UK Weekend Escape",
-    sub: "Rates From £218",
-    description: "Plan a fun weekend getaway in the historic city of Chester.",
-    usedCount: "41k",
-    expiresIn: "5 days",
-    code: "ZENHOTELSCHESTER"
+    discount: "NEW",
+    label: "ESSENTIAL",
+    title: "BallBoyz Zit Destroyer Body Scrub",
+    heading: "Zit Destroyer Body Scrub",
+    sub: "Clearer Skin Starts Here",
+    description: "Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub, formulated to exfoliate and cleanse deeply.",
+    usedCount: "33k",
+    expiresIn: "2 days",
+    code: "BBZITDESTROY"
   }
 ];
 
@@ -173,7 +172,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function ZenHotelsCouponsContent() {
+export default function BallboyzCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -234,7 +233,7 @@ export default function ZenHotelsCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Zen Hotels</span>
+              <span className="text-black font-extrabold">Ballboyz</span>
             </nav>
           </div>
         </div>
@@ -246,13 +245,13 @@ export default function ZenHotelsCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp" alt="Zen Hotels" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782373660/ballboyz-coupon-code_rduo3k.jpg" alt="Ballboyz" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Zen Hotels</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Ballboyz</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -262,14 +261,14 @@ export default function ZenHotelsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
-                      ZenHotels Coupon Code & Deals – Get $35 OFF hotel bookings worth $700+ through the ZenHotels app. Discover exclusive deals on hotels, resorts, city breaks, and luxury stays worldwide.
+                      BallBoyz delivers powerful acne care and grooming essentials for men, featuring skincare bundles, scrubs and treatments designed for healthier-looking skin.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
                   {[
-                    { icon: Tag, val: "8", label: "Coupons" },
+                    { icon: Tag, val: "7", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -291,22 +290,22 @@ export default function ZenHotelsCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-discount-code_jf3fpe.webp" alt="Zen Hotels Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131741/bluehost_promo_code_w1og4n.webp" alt="Ballboyz Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-promo-code_tjhyjc.webp" alt="Zen Hotels Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_discount_code_hclh1n.webp" alt="Ballboyz Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-voucher-code_sfgxvo.webp" alt="Zen Hotels Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_voucher_code_xltlyy.webp" alt="Ballboyz Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -359,7 +358,7 @@ export default function ZenHotelsCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Zen Hotels Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Ballboyz Coupon Codes & Offers</h2>
                   
                 </div>
 
@@ -373,48 +372,8 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,965</h2>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels New York Stay Deal – Residence Inn by Marriott JFK</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy a comfortable city break in New York with spacious suites and airport convenience.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Residence Inn by Marriott New York JFK Airport</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £60 on selected bookings</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Complimentary shuttle access to JFK Airport terminals</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: New York Stay Deal Residence Inn JFK" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Get</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$35</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$60</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -424,22 +383,63 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels App Exclusive Offer – Get $35 OFF on Stays</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Turn on vacation mode and save more on your next getaway with ZenHotels.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Full Body Acne Gameplan – Save $60</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Tackle face and body acne with BallBoyz's complete skincare system from head to toe.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get $35 OFF on hotel bookings worth $700 or more</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive offer available through the ZenHotels mobile app</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for vacations, city breaks and luxury escapes</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $99.99 (Regular Price: $160.00) — Save $60 OFF</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer for USA customers</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: App Exclusive $35 OFF on Stays" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Full Body Acne Gameplan – Save $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Coupon 2 */}
+<div className="w-full max-w-7xl mx-auto mb-6">
+  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+    <div className="flex flex-row">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="text-center px-1">
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">50%</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+        </div>
+      </div>
+      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+          </div>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz BOYZ Face Acne Gameplan – #1 Seller</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle.</p>
+          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+            View Details
+            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes & Pimple Patches for a complete routine</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $55.99 (Regular Price: $110.00) — Save 50% OFF</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Backed by BallBoyz's confidence guarantee for clearer-looking skin</li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz BOYZ Face Acne Gameplan – #1 Seller" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -454,8 +454,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,504</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">40%</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -464,22 +465,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Greece Beach Escape – Avra Imperial Hotel</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Relax at a luxurious beachfront resort on Crete's beautiful northern coast.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Summer Acne Sale – Up to 40% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Beat summer breakouts with BallBoyz's acne-fighting essentials.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Avra Imperial Hotel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy five-star comfort and stunning seaside views</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for beach holidays and relaxing getaways</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop bestselling pimple patches, face scrubs and skincare bundles</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy Up to 40% OFF during the Summer Acne Sale</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time promotion while supplies last</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Greece Beach Escape Avra Imperial Hotel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Summer Acne Sale – Up to 40% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -494,8 +495,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,911</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">TODAY ONLY</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$40</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -504,22 +506,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience breathtaking Algarve coastal views and five-star hospitality.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Pimple Pack – $40 OFF Today Only</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get everything you need for clearer skin in one convenient acne-fighting bundle.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Tivoli Carvoeiro Algarve Resort</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Located steps away from Praia do Vale Covo</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for luxury beach escapes and romantic holidays</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Pimple Patches, Face Scrub and Skincare Essentials</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $29.99 (Regular Price: $69.99) — Save $40 OFF</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for targeting pimples, excess oil and clogged pores</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Portugal Luxury Stay Tivoli Carvoeiro" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Pimple Pack – $40 OFF Today Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -534,8 +536,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£857</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SPECIAL</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$69.99</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -544,22 +547,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Prague Luxury Escape – Alchymist Grand Hotel</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Indulge in a premium stay in one of Prague's most elegant hotels.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Face Acne Gameplan – Today Only Special</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your skincare routine with BallBoyz's top-rated acne solution.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Alchymist Grand Hotel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy luxurious suites, gourmet dining and rejuvenating spa experiences</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for romantic and luxury city breaks</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes and Pimple Patches</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $69.99 (Regular Price: $110.00)</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built to help reduce breakouts and support healthier-looking skin</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Prague Luxury Escape Alchymist Grand Hotel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Face Acne Gameplan – Today Only Special" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -574,8 +577,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£638</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">EXTRA</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">20%</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -584,22 +588,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay in the heart of Paris near iconic attractions and shopping districts.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Build Your Own Bundle – Extra 20% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Customize your skincare routine with your favorite BallBoyz products.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Comfortable rooms with easy access to the Opéra area</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for sightseeing, shopping and romantic escapes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £638</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Mix and match face scrubs, body scrubs, moisturizers and pimple patches</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 20% OFF when you build your own bundle</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for a limited time only</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Paris City Break Hotel Vacances Bleues" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Build Your Own Bundle – Extra 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -614,8 +618,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£612</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -624,22 +629,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Milan Romantic Getaway – Hotel Berna</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Activated Charcoal Face Scrub</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Close to shopping districts, attractions and public transport</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for couples and romantic holidays</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £612</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps remove dirt, oil and impurities for a refreshed feel</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for daily skincare and acne-prone skin</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Pair it with other BallBoyz products for maximum results</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Milan Romantic Getaway Hotel Berna" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Activated Charcoal Face Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -654,8 +659,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£218</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -664,22 +670,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels UK Weekend Escape – Moxy Chester</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Plan a fun weekend getaway in the historic city of Chester.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Zit Destroyer Body Scrub</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Moxy Chester</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £8 on selected stays</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy modern rooms and a vibrant social atmosphere</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Formulated to exfoliate and cleanse deeply for smoother-looking skin</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for chest, back and shoulder acne concerns</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A must-have addition to your grooming routine</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: UK Weekend Escape Moxy Chester" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Zit Destroyer Body Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -695,12 +701,11 @@ export default function ZenHotelsCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Zen Hotels</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About Ballboyz</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
-                    ZenHotels is an international hotel reservation platform that allows travelers to search, compare, and book accommodations across countless destinations worldwide. The platform brings together a vast range of lodging options, making it easier for users to find stays that fit their preferences and budget.
-
+                    Ballboyz is a sports-focused skincare brand founded by former athlete Carson Matthews after experiencing firsthand the skin issues commonly caused by sweat, equipment, and demanding training schedules. The company was created to provide skincare solutions specifically tailored to athletes rather than traditional skincare users.
                   </p>
-                  <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -729,45 +734,45 @@ export default function ZenHotelsCouponsContent() {
                 </div>
 
                 {/* Why Shop Card */}
-             <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <div className="mb-8">
-    <h3 className="text-black font-black text-lg mb-2">Accommodation Options Available on ZenHotels</h3>
+    <h3 className="text-black font-black text-lg mb-2">Popular Products Available at Ballboyz</h3>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      ZenHotels provides access to a diverse selection of properties to suit different preferences and travel styles.
+      Ballboyz offers a range of targeted skincare and hygiene products designed specifically for active individuals.
     </p>
   </div>
 
   <div className="space-y-8">
     {[
       {
-        icon: Hotel, 
-        title: "Hotels",
-        sub: "Choose from budget-friendly properties, boutique hotels, premium resorts, and luxury accommodations."
+        icon: Smile, 
+        title: "Face Acne Solutions",
+        sub: "Products created to help athletes manage facial breakouts caused by sweat and sports gear."
       },
       {
-        icon: Building, 
-        title: "Apartments",
-        sub: "Ideal for families, groups, or travelers seeking extra space and home-style comfort."
+        icon: Sparkles, 
+        title: "Body Acne Care",
+        sub: "Specialized cleansers and scrubs designed for shoulders, back, chest, and other breakout-prone areas."
       },
       {
-        icon: Palmtree, 
-        title: "Resorts",
-        sub: "Discover beachfront retreats, wellness resorts, and all-inclusive vacation destinations."
+        icon: Droplet, 
+        title: "Face Scrubs",
+        sub: "Exfoliating skincare products formulated to help remove dirt, oil, and impurities after training sessions."
       },
       {
-        icon: Home, 
-        title: "Vacation Rentals",
-        sub: "Enjoy private stays that offer greater flexibility and a personalized travel experience."
+        icon: Target, 
+        title: "Acne Patches",
+        sub: "Targeted skincare products designed to address individual blemishes."
       },
       {
-        icon: Bed, 
-        title: "Hostels",
-        sub: "Affordable lodging options designed for backpackers, solo travelers, and budget-conscious explorers."
+        icon: Package, 
+        title: "Skincare Bundles",
+        sub: "Comprehensive routines that combine multiple products into a complete skincare system."
       },
       {
-        icon: Briefcase, 
-        title: "Business Travel Accommodations",
-        sub: "Find convenient stays with amenities suited for meetings, work trips, and professional travel."
+        icon: ShieldCheck, 
+        title: "Athlete Hygiene Essentials",
+        sub: "Products developed specifically for active lifestyles and frequent physical activity."
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
@@ -825,52 +830,47 @@ export default function ZenHotelsCouponsContent() {
       {/* Left: Text Content */}
       <div className="prose max-w-none">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          ZenHotels Coupon Codes, Promo Deals & Hotel Booking Discounts
+          Ballboyz Coupon Codes, Promo Codes & Athlete Skincare Deals
         </h2>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Hotel Bookings with ZenHotels Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Sports Skincare with Ballboyz Coupon Codes</h3>
           <p>
-            A memorable trip starts with finding the right place to stay, but getting a great deal on your accommodation can make the journey even better. With the latest <strong>ZenHotels coupon codes</strong>, promo offers, and hotel booking discounts available on CouponsBit, travelers can reduce their travel expenses while enjoying comfortable stays around the world.
+            Athletes face unique skincare challenges. Sweat, dirt, sports equipment, and intense training sessions can often lead to breakouts, irritation, and body acne. That's where Ballboyz comes in. Before purchasing your next skincare bundle, check the latest <strong>Ballboyz coupon codes</strong>, promo offers, and athlete skincare discounts on CouponsBit to unlock extra savings. Ballboyz focuses on skincare products specifically formulated for athletes dealing with sports-related skin concerns.
           </p>
           <p>
-            Whether you're organizing a quick weekend escape, a family holiday, a work-related trip, or an overseas adventure, ZenHotels offers a wide selection of accommodation choices at competitive rates. Before confirming your reservation, explore CouponsBit to discover available savings opportunities that can help stretch your travel budget further.
+            Whether you're a baseball player, wrestler, football player, basketball athlete, runner, or fitness enthusiast, Ballboyz offers products designed to help keep your skin feeling fresh, clean, and healthy after workouts and competitions.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">About ZenHotels</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">About Ballboyz</h3>
+            
             <p>
-              ZenHotels is an international hotel reservation platform that allows travelers to search, compare, and book accommodations across countless destinations worldwide. The platform brings together a vast range of lodging options, making it easier for users to find stays that fit their preferences and budget.
-            </p>
-            <p>
-              From luxury resorts and city hotels to apartments, hostels, and vacation rentals, ZenHotels serves both leisure and business travelers looking for convenient booking solutions. Its user-friendly interface enables travelers to compare prices, review amenities, and manage reservations through desktop and mobile devices.
-            </p>
-            <p>
-              With access to millions of accommodation listings spread across hundreds of countries and regions, ZenHotels helps travelers find suitable lodging no matter where their journey takes them.
+              The brand specializes in skincare products designed to help combat sports-related acne, body breakouts, odor, and skin irritation using ingredient-focused formulations aimed at active individuals. Ballboyz has grown rapidly within the youth and amateur sports community and serves athletes across multiple sports disciplines.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Travelers Prefer ZenHotels</h3>
-            <p><strong>Huge Selection of Properties:</strong> Travelers gain access to millions of accommodation options located across the globe.</p>
-            <p><strong>Competitive Room Rates:</strong> ZenHotels helps users compare pricing and identify attractive accommodation deals.</p>
-            <p><strong>Exclusive Member Savings:</strong> Registered users may unlock special rates and promotions that are not always available to everyone.</p>
-            <p><strong>Easy Mobile Booking:</strong> The mobile app allows travelers to search, reserve, and manage bookings anytime and anywhere.</p>
-            <p><strong>Customer Support Assistance:</strong> Travelers can access support services whenever they need help with reservations or booking-related inquiries.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Athletes Choose Ballboyz</h3>
+            <p><strong>Designed for Athletes:</strong> Unlike many traditional skincare brands, Ballboyz focuses specifically on skin issues associated with sports participation and athletic performance.</p>
+            <p><strong>Athlete-Inspired Development:</strong> The company was founded by a former professional baseball player who experienced these challenges personally.</p>
+            <p><strong>Natural Ingredient Focus:</strong> Ballboyz emphasizes the use of naturally inspired ingredients selected to support athlete skincare needs.</p>
+            <p><strong>Solutions for Sports Acne:</strong> Many products are designed to address acne that can result from sweat, helmets, pads, uniforms, and frequent training.</p>
+            <p><strong>Growing Community of Athletes:</strong> The brand has built a following among student athletes, competitive players, and fitness enthusiasts.</p>
           </div>
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a ZenHotels Coupon Code</h3>
-            <p className="text-gray-700 font-bold -mt-4">Getting extra savings on your accommodation booking is simple.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Ballboyz Coupon Code</h3>
+            <p className="text-gray-700 font-bold -mt-4">Saving money on your next order is simple.</p>
             <div className="space-y-6">
               {[
-                "Step 1: Visit CouponsBit — Explore the latest ZenHotels deals, discounts, and promotional offers.",
-                "Step 2: Select Your Preferred Offer — Choose a coupon or deal that matches your travel requirements.",
-                "Step 3: Copy the Coupon Code — Copy the available code before heading to the ZenHotels website.",
-                "Step 4: Search for Accommodation — Enter your destination, travel dates, and preferred stay options.",
-                "Step 5: Apply the Discount — Paste the coupon code during checkout if the promotion requires one.",
-                "Step 6: Confirm Your Booking — Complete the reservation process and prepare for your upcoming trip."
+                "Step 1: Visit CouponsBit — Browse the latest Ballboyz coupon codes and promotional offers.",
+                "Step 2: Select a Deal — Choose the discount that best matches your purchase.",
+                "Step 3: Copy the Coupon Code — Copy the available code before visiting Ballboyz.",
+                "Step 4: Shop Your Products — Add your preferred skincare products or bundles to your cart.",
+                "Step 5: Apply the Promo Code — Enter the coupon code during checkout if required.",
+                "Step 6: Complete Your Purchase — Finalize your order and enjoy the savings."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -883,43 +883,26 @@ export default function ZenHotelsCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Tips to Save More on ZenHotels Bookings</h3>
-            <p><strong>Reserve Early:</strong> Booking ahead often provides access to better availability and competitive pricing.</p>
-            <p><strong>Compare Multiple Stays:</strong> Review different accommodation options before making a final choice.</p>
-            <p><strong>Use the Mobile App:</strong> Special app-only promotions and discounts may be available to mobile users.</p>
-            <p><strong>Travel During Off-Season Periods:</strong> Flexible travel dates can sometimes lead to lower room rates and better deals.</p>
-            <p><strong>Check CouponsBit Before Booking:</strong> Always browse CouponsBit for the latest ZenHotels coupon codes and hotel offers before completing your purchase.</p>
-            <p><strong>Join Membership Programs:</strong> Member-exclusive pricing and promotional benefits can provide additional savings.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More on Ballboyz</h3>
+            <p><strong>Look for Bundle Deals:</strong> Product bundles often provide better value than purchasing individual items.</p>
+            <p><strong>Check CouponsBit Before Every Purchase:</strong> New promo codes and discounts may become available regularly.</p>
+            <p><strong>Watch for Seasonal Promotions:</strong> Limited-time sales can offer significant savings opportunities.</p>
+            <p><strong>Subscribe for Brand Updates:</strong> Newsletter subscribers may receive exclusive offers and early access to promotions.</p>
+            <p><strong>Shop Special Campaigns:</strong> Ballboyz frequently highlights promotional events and discounted product packages.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Popular Travel Purposes Supported by ZenHotels</h3>
-            <p className="text-gray-700 font-bold">Travelers frequently use ZenHotels for:</p>
-            <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-              <li>Family holidays</li>
-              <li>Business travel</li>
-              <li>Weekend escapes</li>
-              <li>International vacations</li>
-              <li>Solo adventures</li>
-              <li>Romantic getaways</li>
-              <li>Long-term stays</li>
-              <li>Last-minute bookings</li>
-            </ul>
-            <p>The platform's extensive property inventory allows travelers to find accommodations tailored to different travel styles and budgets.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Ballboyz Deals?</h3>
+            <p><strong>Updated Discounts:</strong> We regularly refresh offers to help shoppers discover current savings opportunities.</p>
+            <p><strong>Easy-to-Find Coupon Codes:</strong> Find promo codes, discounts, and special offers in one convenient place.</p>
+            <p><strong>Completely Free to Use:</strong> CouponsBit helps shoppers save money without charging membership fees.</p>
+            <p><strong>Deals Across Multiple Categories:</strong> Beyond skincare, CouponsBit features savings from fashion, wellness, travel, software, fitness, and lifestyle brands.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for ZenHotels Discounts?</h3>
-            <p><strong>Regularly Updated Offers:</strong> We continuously refresh our deals to help users access current travel savings opportunities.</p>
-            <p><strong>Convenient Access to Discounts:</strong> Find coupon codes, promotional offers, and travel deals in one easy-to-use destination.</p>
-            <p><strong>Completely Free to Use:</strong> CouponsBit helps travelers save money without any subscription or membership fees.</p>
-            <p><strong>Savings Across Leading Travel Brands:</strong> In addition to ZenHotels, CouponsBit features discounts from airlines, hotel providers, tour companies, vacation services, and other travel-related brands.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Travel Smarter and Spend Less</h3>
-            <p>Whether you're planning a short city break, a dream vacation, or an important business trip, securing quality accommodation at the right price can make a significant difference to your overall travel experience.</p>
-            <p>Browse the latest ZenHotels coupon codes, promo deals, and hotel booking discounts on CouponsBit today and unlock extra savings on your next journey.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Stay Active, Stay Confident, Save More</h3>
+            <p>Training hard shouldn't mean compromising your skincare routine. Whether you're battling post-workout breakouts, body acne, or everyday athlete skincare concerns, Ballboyz offers products designed with active lifestyles in mind.</p>
+            <p>Browse the latest Ballboyz coupon codes, promo offers, and athlete skincare discounts on CouponsBit today and save on your next order.</p>
           </div>
 
           {!isReadMore && (
@@ -938,12 +921,11 @@ export default function ZenHotelsCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "What is ZenHotels?", a: "ZenHotels is an online accommodation booking platform that allows users to search, compare, and reserve hotels, apartments, resorts, hostels, and vacation rentals worldwide." },
-            { q: "What types of accommodations can I book through ZenHotels?", a: "Travelers can choose from hotels, apartments, resorts, hostels, vacation homes, and various other lodging options." },
-            { q: "Does ZenHotels have a mobile app?", a: "Yes. Travelers can use the ZenHotels app to search properties, manage bookings, and access travel information on the go." },
-            { q: "Where can I find ZenHotels coupon codes?", a: "The latest ZenHotels coupon codes, hotel deals, and promotional offers can be found on CouponsBit." },
-            { q: "Does ZenHotels provide member-only discounts?", a: "Yes. The platform occasionally offers exclusive rates and special deals for registered members." },
-            { q: "Is CouponsBit free?", a: "Absolutely. CouponsBit is completely free and helps users discover discounts, coupon codes, and special promotions from popular travel brands." }
+            { q: "What is Ballboyz?", a: "Ballboyz is an athlete-focused skincare brand that develops products designed to address sports-related acne and skincare concerns." },
+            { q: "Who are Ballboyz products designed for?", a: "The products are primarily designed for athletes and active individuals who experience skincare challenges related to sweat, training, and sports equipment." },
+            { q: "What products does Ballboyz sell?", a: "The brand offers face scrubs, body acne products, skincare bundles, acne patches, and athlete-focused skincare solutions." },
+            { q: "Where can I find Ballboyz coupon codes?", a: "You can find the latest Ballboyz coupon codes, promo offers, and athlete skincare deals on CouponsBit." },
+            { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is completely free and helps users discover valuable discounts from popular brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 
@@ -966,9 +948,9 @@ export default function ZenHotelsCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular ZenHotels Searches</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Ballboyz Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Hotel Booking Site", "ZenHotels Promo Code", "Discount Luxury Resorts", "Cheap Vacation Rental", "Last Minute Lodging", "ZenHotels App Deal", "Boutique Apartments", "CouponsBit Travel"].map(tag => (
+            {["Sports Acne Soap", "Wrestler Skin Protection", "Ballboyz Promo Code", "Body Breakout Scrub", "Athlete Hygiene", "Teen Athlete Skincare", "Lemonade Face Scrub", "CouponsBit Wellness"].map(tag => (
               <span
                 key={tag}
                 className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
@@ -980,22 +962,22 @@ export default function ZenHotelsCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top ZenHotels Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Ballboyz Deals</h3>
           <div className="space-y-6">
             {[
-              { heading: "Early Bird Discount", sub: "Save up to 15% on accommodations reserved well in advance" },
-              { heading: "App Exclusive Rate", sub: "Special pricing structures applied to first mobile reservations" },
-              { heading: "Member Reward Deal", sub: "Unlock unique loyalty price adjustments on select stays" },
-              { heading: "Long Term Lodging", sub: "Reduced pricing structures on extended weekly stays" },
-              { heading: "CouponsBit Exclusive", sub: "Limited-time destination coupon bundle deal options" }
+              { heading: "Skincare Bundle Deal", sub: "Save up to 30% on full acne care routine packs and multi-step bundles" },
+              { heading: "Sign-Up Incentive", sub: "Introductory price discounts applied to your initial athlete kit order" },
+              { heading: "Free Shipping Tiers", sub: "Complimentary standard transport options when hitting order benchmarks" },
+              { heading: "Wrestling Fight Pack", sub: "Special promo rates on antibacterial mat protection sets" },
+              { heading: "CouponsBit Exclusive", sub: "Limited-time active coupon validation adjustments at checkout" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">Z</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.zenhotels.com" target="_blank" rel="noopener noreferrer" aria-label={`Get ZenHotels deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Ballboyz deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

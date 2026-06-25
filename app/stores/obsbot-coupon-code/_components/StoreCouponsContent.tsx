@@ -26,9 +26,8 @@ import {
   BookOpen, 
   CheckCircle,
   X,
-  ArrowRight,
+  ArrowRight,Video, Camera, Disc, Sliders,
   Plane,
-  Hotel, Building, Palmtree, Bed, Briefcase,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
@@ -65,102 +64,90 @@ interface StoreItem {
 const COUPONS: Coupon[] = [
   {
     id: "c1",
-    discount: "£1,965",
+    discount: "$499",
     label: "FROM",
     badge: "Best Offer",
-    title: "ZenHotels New York Stay Deal – Residence Inn by Marriott JFK",
-    heading: "New York Stay Deal",
-    sub: "Rates From £1,965",
-    description: "Enjoy a comfortable city break in New York with spacious suites and airport convenience.",
+    title: "OBSBOT Tail Air 4K NDI Streaming Camera – From $499",
+    heading: "Tail Air 4K NDI Streaming Camera",
+    sub: "Starting From $499",
+    description: "Take your live streams and productions to the next level with AI Tracking PTZ, 4K video and NDI support for professional broadcasting.",
     usedCount: "112k",
     expiresIn: "2 days",
-    code: "ZENHOTELSNYC"
+    code: "OBSBOTTAILAIR"
   },
   {
     id: "c2",
-    discount: "$35",
-    label: "OFF",
+    discount: "$199.99",
+    label: "FROM",
     badge: "Popular",
-    title: "ZenHotels App Exclusive Offer – Get $35 OFF on Stays",
-    heading: "App Exclusive Offer",
-    sub: "$35 OFF Bookings $700+",
-    description: "Turn on vacation mode and save more on your next getaway with the ZenHotels mobile app.",
+    title: "Insta360 Link 2 4K Webcam – From $199.99",
+    heading: "Insta360 Link 2 4K Webcam",
+    sub: "Starting From $199.99",
+    description: "Upgrade your meetings and streams with a 1/2-inch sensor, AI Tracking, HDR and AI Noise-Canceling Microphone.",
     usedCount: "95k",
     expiresIn: "3 days",
-    code: "ZENHOTELSAPP35"
+    code: "OBSBOTLINK2"
   },
   {
     id: "c3",
-    discount: "£1,504",
+    discount: "$129",
     label: "FROM",
     badge: "Trending",
-    title: "ZenHotels Greece Beach Escape – Avra Imperial Hotel",
-    heading: "Greece Beach Escape",
-    sub: "Rates From £1,504",
-    description: "Relax at a luxurious beachfront resort on Crete's beautiful northern coast.",
+    title: "OBSBOT Tiny 2 Lite 4K Webcam – From $129",
+    heading: "Tiny 2 Lite 4K Webcam",
+    sub: "Starting From $129",
+    description: "Get premium webcam features at an affordable price, with 4K resolution, AI Tracking and PTZ movement.",
     usedCount: "88k",
     expiresIn: "1 day",
-    code: "ZENHOTELSGREECE"
+    code: "OBSBOTTINY2LITE"
   },
   {
     id: "c4",
-    discount: "£1,911",
+    discount: "$299",
     label: "FROM",
-    title: "ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro",
-    heading: "Portugal Luxury Stay",
-    sub: "Rates From £1,911",
-    description: "Experience breathtaking Algarve coastal views and five-star hospitality.",
+    title: "OBSBOT Tiny 2 4K AI Webcam – From $299",
+    heading: "Tiny 2 4K AI Webcam",
+    sub: "Starting From $299",
+    description: "Experience professional-grade video with Voice Control, AI Tracking, Auto Focus and a large 1/1.5-inch sensor.",
     usedCount: "76k",
     expiresIn: "2 days",
-    code: "ZENHOTELSALGARVE"
+    code: "OBSBOTTINY2"
   },
   {
     id: "c5",
-    discount: "£857",
+    discount: "$75.05",
     label: "FROM",
-    title: "ZenHotels Prague Luxury Escape – Alchymist Grand Hotel",
-    heading: "Prague Luxury Escape",
-    sub: "Rates From £857",
-    description: "Indulge in a premium stay in one of Prague's most elegant hotels.",
+    title: "OBSBOT Tiny SE 1080P AI Webcam – From $75.05",
+    heading: "Tiny SE 1080P AI Webcam",
+    sub: "Starting From $75.05",
+    description: "Upgrade your setup without breaking the budget, with 1080P resolution, 100 FPS recording and AI PTZ tracking.",
     usedCount: "65k",
     expiresIn: "5 days",
-    code: "ZENHOTELSPRAGUE"
+    code: "OBSBOTTINYSE"
   },
   {
     id: "c6",
-    discount: "£638",
+    discount: "$59",
     label: "FROM",
-    title: "ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra",
-    heading: "Paris City Break",
-    sub: "Rates From £638",
-    description: "Stay in the heart of Paris near iconic attractions and shopping districts.",
+    title: "OBSBOT VOX SE Wireless Streaming Microphone – From $59",
+    heading: "VOX SE Wireless Streaming Microphone",
+    sub: "Starting From $59",
+    description: "Enhance your audio quality for livestreaming and content creation with up to 100 meters of wireless range.",
     usedCount: "54k",
     expiresIn: "3 days",
-    code: "ZENHOTELSPARIS"
+    code: "OBSBOTVOXSE"
   },
   {
     id: "c7",
-    discount: "£612",
+    discount: "$49",
     label: "FROM",
-    title: "ZenHotels Milan Romantic Getaway – Hotel Berna",
-    heading: "Milan Romantic Getaway",
-    sub: "Rates From £612",
-    description: "Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.",
-    usedCount: "48k",
-    expiresIn: "4 days",
-    code: "ZENHOTELSMILAN"
-  },
-  {
-    id: "c8",
-    discount: "£218",
-    label: "FROM",
-    title: "ZenHotels UK Weekend Escape – Moxy Chester",
-    heading: "UK Weekend Escape",
-    sub: "Rates From £218",
-    description: "Plan a fun weekend getaway in the historic city of Chester.",
+    title: "OBSBOT Tiny 2 Remote Control – From $49",
+    heading: "Tiny 2 Remote Control",
+    sub: "Starting From $49",
+    description: "Take full control of your OBSBOT camera with wireless USB connectivity, ideal for presentations and livestreams.",
     usedCount: "41k",
-    expiresIn: "5 days",
-    code: "ZENHOTELSCHESTER"
+    expiresIn: "4 days",
+    code: "OBSBOTREMOTE"
   }
 ];
 
@@ -173,7 +160,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function ZenHotelsCouponsContent() {
+export default function ObsbotCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -234,7 +221,7 @@ export default function ZenHotelsCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Zen Hotels</span>
+              <span className="text-black font-extrabold">Obsbot</span>
             </nav>
           </div>
         </div>
@@ -246,13 +233,13 @@ export default function ZenHotelsCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp" alt="Zen Hotels" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg" alt="Obsbot" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Zen Hotels</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Obsbot</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -262,14 +249,14 @@ export default function ZenHotelsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
-                      ZenHotels Coupon Code & Deals – Get $35 OFF hotel bookings worth $700+ through the ZenHotels app. Discover exclusive deals on hotels, resorts, city breaks, and luxury stays worldwide.
+                      OBSBOT offers AI-powered webcams, streaming cameras and creator accessories. Explore verified deals on professional video equipment for content creation and livestreaming.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
                   {[
-                    { icon: Tag, val: "8", label: "Coupons" },
+                    { icon: Tag, val: "7", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -291,22 +278,22 @@ export default function ZenHotelsCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-discount-code_jf3fpe.webp" alt="Zen Hotels Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                    <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131741/bluehost_promo_code_w1og4n.webp" alt="Obsbot Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-promo-code_tjhyjc.webp" alt="Zen Hotels Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_discount_code_hclh1n.webp" alt="Obsbot Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782374308/zen-hotels-voucher-code_sfgxvo.webp" alt="Zen Hotels Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_voucher_code_xltlyy.webp" alt="Obsbot Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -359,7 +346,7 @@ export default function ZenHotelsCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Zen Hotels Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Obsbot Coupon Codes & Offers</h2>
                   
                 </div>
 
@@ -373,8 +360,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,965</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$499</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -383,27 +371,27 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels New York Stay Deal – Residence Inn by Marriott JFK</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy a comfortable city break in New York with spacious suites and airport convenience.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Residence Inn by Marriott New York JFK Airport</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £60 on selected bookings</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Complimentary shuttle access to JFK Airport terminals</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: New York Stay Deal Residence Inn JFK" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tail Air 4K NDI Streaming Camera – From $499</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take your live streams and productions to the next level with the OBSBOT Tail Air.</p>
+          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+            View Details
+            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $499</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features AI Tracking PTZ technology, 4K video quality, and NDI support for professional broadcasting</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for content creators, churches, events and professional streaming setups</li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tail Air 4K NDI Streaming Camera – From $499" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {/* Coupon 2 */}
 <div className="w-full max-w-7xl mx-auto mb-6">
@@ -413,9 +401,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Get</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$35</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$199.99</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -424,22 +412,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels App Exclusive Offer – Get $35 OFF on Stays</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Turn on vacation mode and save more on your next getaway with ZenHotels.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Insta360 Link 2 4K Webcam – From $199.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your meetings and streams with the Insta360 Link 2 PTZ 4K Webcam.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get $35 OFF on hotel bookings worth $700 or more</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive offer available through the ZenHotels mobile app</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for vacations, city breaks and luxury escapes</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $199.99</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Equipped with a 1/2" sensor, AI Tracking, HDR, and AI Noise-Canceling Microphone</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Gesture control makes presentations and video calls effortless</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: App Exclusive $35 OFF on Stays" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: Insta360 Link 2 4K Webcam – From $199.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -454,8 +442,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,504</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$129</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -464,22 +453,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Greece Beach Escape – Avra Imperial Hotel</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Relax at a luxurious beachfront resort on Crete's beautiful northern coast.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 Lite 4K Webcam – From $129</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get premium webcam features at an affordable price with the OBSBOT Tiny 2 Lite.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Avra Imperial Hotel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy five-star comfort and stunning seaside views</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for beach holidays and relaxing getaways</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $129</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features 4K resolution, AI Tracking, PTZ movement, and a 1/2" sensor</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for Zoom meetings, content creation and livestreaming</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Greece Beach Escape Avra Imperial Hotel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 Lite 4K Webcam – From $129" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -494,8 +483,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,911</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$299</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -504,22 +494,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience breathtaking Algarve coastal views and five-star hospitality.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 4K AI Webcam – From $299</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience professional-grade video with the OBSBOT Tiny 2 4K Webcam.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Tivoli Carvoeiro Algarve Resort</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Located steps away from Praia do Vale Covo</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for luxury beach escapes and romantic holidays</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $299</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features Voice Control, AI Tracking, Auto Focus, and a large 1/1.5" sensor</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Smart tracking keeps you perfectly framed during every call</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Portugal Luxury Stay Tivoli Carvoeiro" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 4K AI Webcam – From $299" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -534,8 +524,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£857</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$75.05</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -544,22 +535,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Prague Luxury Escape – Alchymist Grand Hotel</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Indulge in a premium stay in one of Prague's most elegant hotels.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny SE 1080P AI Webcam – From $75.05</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your setup without breaking the budget with the OBSBOT Tiny SE.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Alchymist Grand Hotel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy luxurious suites, gourmet dining and rejuvenating spa experiences</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for romantic and luxury city breaks</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $75.05</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features 1080P resolution, 100 FPS recording, and AI PTZ tracking</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes gesture control and Dual ISO technology for smoother video</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Prague Luxury Escape Alchymist Grand Hotel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny SE 1080P AI Webcam – From $75.05" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -574,8 +565,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£638</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$59</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -584,22 +576,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay in the heart of Paris near iconic attractions and shopping districts.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT VOX SE Wireless Streaming Microphone – From $59</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enhance your audio quality with the OBSBOT VOX SE Wireless Microphone.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Comfortable rooms with easy access to the Opéra area</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for sightseeing, shopping and romantic escapes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £638</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $59</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for livestreaming, recording and content creation</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Offers a wireless range of up to 100 meters for flexible recording</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Paris City Break Hotel Vacances Bleues" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT VOX SE Wireless Streaming Microphone – From $59" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -614,8 +606,9 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£612</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
+          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$49</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -624,62 +617,22 @@ export default function ZenHotelsCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels Milan Romantic Getaway – Hotel Berna</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 Remote Control – From $49</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take full control of your OBSBOT camera with the Tiny 2 Smart Remote Control.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Close to shopping districts, attractions and public transport</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for couples and romantic holidays</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £612</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $49</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Compatible with Tiny 2, Tiny 2 Lite, Tiny 4K and Tiny 1080P webcams</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Wireless USB connectivity for easy operation</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: Milan Romantic Getaway Hotel Berna" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£218</h2>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">ZenHotels UK Weekend Escape – Moxy Chester</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Plan a fun weekend getaway in the historic city of Chester.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Moxy Chester</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £8 on selected stays</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy modern rooms and a vibrant social atmosphere</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Zen Hotels deal: UK Weekend Escape Moxy Chester" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 Remote Control – From $49" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -695,12 +648,11 @@ export default function ZenHotelsCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Zen Hotels</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About Obsbot</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
-                    ZenHotels is an international hotel reservation platform that allows travelers to search, compare, and book accommodations across countless destinations worldwide. The platform brings together a vast range of lodging options, making it easier for users to find stays that fit their preferences and budget.
-
+                    OBSBOT is an artificial intelligence camera brand founded in 2016 with a mission to transform the way people create and capture video content. The company specializes in AI-powered cameras and webcams that use smart tracking, gesture control, and automated framing technologies to simplify video production.
                   </p>
-                  <a href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -729,45 +681,35 @@ export default function ZenHotelsCouponsContent() {
                 </div>
 
                 {/* Why Shop Card */}
-             <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <div className="mb-8">
-    <h3 className="text-black font-black text-lg mb-2">Accommodation Options Available on ZenHotels</h3>
+    <h3 className="text-black font-black text-lg mb-2">Popular OBSBOT Products</h3>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      ZenHotels provides access to a diverse selection of properties to suit different preferences and travel styles.
+      OBSBOT offers a range of innovative camera systems and production solutions designed for content creators, remote professionals, and live broadcasters.
     </p>
   </div>
 
   <div className="space-y-8">
     {[
       {
-        icon: Hotel, 
-        title: "Hotels",
-        sub: "Choose from budget-friendly properties, boutique hotels, premium resorts, and luxury accommodations."
+        icon: Video, 
+        title: "AI-Powered Webcams",
+        sub: "OBSBOT's webcam lineup is designed for video conferencing, online teaching, content creation, and live streaming. Many models feature AI auto-tracking and gesture controls that automatically keep users in frame."
       },
       {
-        icon: Building, 
-        title: "Apartments",
-        sub: "Ideal for families, groups, or travelers seeking extra space and home-style comfort."
+        icon: Camera, 
+        title: "Tiny Series Cameras",
+        sub: "The Tiny series is among OBSBOT's most popular product lines, featuring compact PTZ (Pan-Tilt-Zoom) webcams with intelligent tracking capabilities and high-resolution video performance."
       },
       {
-        icon: Palmtree, 
-        title: "Resorts",
-        sub: "Discover beachfront retreats, wellness resorts, and all-inclusive vacation destinations."
+        icon: Disc, 
+        title: "Tail Series Cameras",
+        sub: "Designed for professional creators and live productions, the Tail series offers advanced AI tracking, remote control capabilities, and compatibility with professional streaming workflows."
       },
       {
-        icon: Home, 
-        title: "Vacation Rentals",
-        sub: "Enjoy private stays that offer greater flexibility and a personalized travel experience."
-      },
-      {
-        icon: Bed, 
-        title: "Hostels",
-        sub: "Affordable lodging options designed for backpackers, solo travelers, and budget-conscious explorers."
-      },
-      {
-        icon: Briefcase, 
-        title: "Business Travel Accommodations",
-        sub: "Find convenient stays with amenities suited for meetings, work trips, and professional travel."
+        icon: Sliders, 
+        title: "Streaming & Production Tools",
+        sub: "OBSBOT also offers accessories and production-focused solutions that help creators build more efficient recording and live-streaming setups."
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start">
@@ -825,52 +767,47 @@ export default function ZenHotelsCouponsContent() {
       {/* Left: Text Content */}
       <div className="prose max-w-none">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          ZenHotels Coupon Codes, Promo Deals & Hotel Booking Discounts
+          OBSBOT Coupon Codes, Promo Codes & AI Camera Deals
         </h2>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Hotel Bookings with ZenHotels Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Smart Cameras with OBSBOT Coupon Codes</h3>
           <p>
-            A memorable trip starts with finding the right place to stay, but getting a great deal on your accommodation can make the journey even better. With the latest <strong>ZenHotels coupon codes</strong>, promo offers, and hotel booking discounts available on CouponsBit, travelers can reduce their travel expenses while enjoying comfortable stays around the world.
+            High-quality video has become essential for content creators, remote professionals, educators, and streamers. Whether you're hosting virtual meetings, creating YouTube content, live streaming, or recording online courses, OBSBOT offers innovative AI-powered camera solutions designed to make video production easier and more professional. Before making your purchase, check the latest <strong>OBSBOT coupon codes</strong>, promo offers, and camera discounts on CouponsBit to maximize your savings.
           </p>
           <p>
-            Whether you're organizing a quick weekend escape, a family holiday, a work-related trip, or an overseas adventure, ZenHotels offers a wide selection of accommodation choices at competitive rates. Before confirming your reservation, explore CouponsBit to discover available savings opportunities that can help stretch your travel budget further.
+            From intelligent webcams to advanced AI tracking cameras, OBSBOT combines cutting-edge technology with user-friendly features that help creators stay in focus without requiring complex camera setups.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">About ZenHotels</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">About OBSBOT</h3>
+           
             <p>
-              ZenHotels is an international hotel reservation platform that allows travelers to search, compare, and book accommodations across countless destinations worldwide. The platform brings together a vast range of lodging options, making it easier for users to find stays that fit their preferences and budget.
-            </p>
-            <p>
-              From luxury resorts and city hotels to apartments, hostels, and vacation rentals, ZenHotels serves both leisure and business travelers looking for convenient booking solutions. Its user-friendly interface enables travelers to compare prices, review amenities, and manage reservations through desktop and mobile devices.
-            </p>
-            <p>
-              With access to millions of accommodation listings spread across hundreds of countries and regions, ZenHotels helps travelers find suitable lodging no matter where their journey takes them.
+              Today, OBSBOT products are used by content creators, educators, remote workers, streamers, and businesses in more than 120 countries worldwide. The brand has earned recognition for its innovative approach to AI-driven imaging and camera technology.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Travelers Prefer ZenHotels</h3>
-            <p><strong>Huge Selection of Properties:</strong> Travelers gain access to millions of accommodation options located across the globe.</p>
-            <p><strong>Competitive Room Rates:</strong> ZenHotels helps users compare pricing and identify attractive accommodation deals.</p>
-            <p><strong>Exclusive Member Savings:</strong> Registered users may unlock special rates and promotions that are not always available to everyone.</p>
-            <p><strong>Easy Mobile Booking:</strong> The mobile app allows travelers to search, reserve, and manage bookings anytime and anywhere.</p>
-            <p><strong>Customer Support Assistance:</strong> Travelers can access support services whenever they need help with reservations or booking-related inquiries.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Creators Choose OBSBOT</h3>
+            <p><strong>AI Auto Tracking:</strong> One of OBSBOT's standout features is intelligent subject tracking, which automatically follows users as they move, helping maintain professional-looking video without requiring a camera operator.</p>
+            <p><strong>Gesture & Voice Controls:</strong> Many OBSBOT products support hands-free controls, allowing creators to manage tracking, zoom, and camera functions through simple gestures or voice commands.</p>
+            <p><strong>High-Quality Video Performance:</strong> Several OBSBOT cameras support 4K video recording and advanced image processing technologies designed to improve clarity and low-light performance.</p>
+            <p><strong>Ideal for Content Creation:</strong> The brand's products are widely used by streamers, educators, online presenters, and creators looking for professional-quality video solutions.</p>
+            <p><strong>Innovative Camera Technology:</strong> OBSBOT has earned numerous industry awards and recognition for innovation in AI camera development and imaging technology.</p>
           </div>
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a ZenHotels Coupon Code</h3>
-            <p className="text-gray-700 font-bold -mt-4">Getting extra savings on your accommodation booking is simple.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an OBSBOT Coupon Code</h3>
+            <p className="text-gray-700 font-bold -mt-4">Saving money on your next OBSBOT purchase is simple.</p>
             <div className="space-y-6">
               {[
-                "Step 1: Visit CouponsBit — Explore the latest ZenHotels deals, discounts, and promotional offers.",
-                "Step 2: Select Your Preferred Offer — Choose a coupon or deal that matches your travel requirements.",
-                "Step 3: Copy the Coupon Code — Copy the available code before heading to the ZenHotels website.",
-                "Step 4: Search for Accommodation — Enter your destination, travel dates, and preferred stay options.",
-                "Step 5: Apply the Discount — Paste the coupon code during checkout if the promotion requires one.",
-                "Step 6: Confirm Your Booking — Complete the reservation process and prepare for your upcoming trip."
+                "Step 1: Visit CouponsBit — Browse the latest OBSBOT coupon codes and promotional offers.",
+                "Step 2: Select a Deal — Choose the discount that best fits your purchase.",
+                "Step 3: Copy the Promo Code — Copy the available coupon code before visiting OBSBOT.",
+                "Step 4: Shop Your Products — Add your preferred camera, webcam, or accessory to your cart.",
+                "Step 5: Apply the Discount — Enter the promo code during checkout if required.",
+                "Step 6: Complete Your Purchase — Finalize your order and enjoy your savings."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -883,43 +820,42 @@ export default function ZenHotelsCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Tips to Save More on ZenHotels Bookings</h3>
-            <p><strong>Reserve Early:</strong> Booking ahead often provides access to better availability and competitive pricing.</p>
-            <p><strong>Compare Multiple Stays:</strong> Review different accommodation options before making a final choice.</p>
-            <p><strong>Use the Mobile App:</strong> Special app-only promotions and discounts may be available to mobile users.</p>
-            <p><strong>Travel During Off-Season Periods:</strong> Flexible travel dates can sometimes lead to lower room rates and better deals.</p>
-            <p><strong>Check CouponsBit Before Booking:</strong> Always browse CouponsBit for the latest ZenHotels coupon codes and hotel offers before completing your purchase.</p>
-            <p><strong>Join Membership Programs:</strong> Member-exclusive pricing and promotional benefits can provide additional savings.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More on OBSBOT</h3>
+            <p><strong>Check CouponsBit Before Every Purchase:</strong> New OBSBOT coupon codes and exclusive deals may become available regularly.</p>
+            <p><strong>Shop During Seasonal Sales:</strong> Major shopping events often feature significant discounts on cameras and creator tools.</p>
+            <p><strong>Consider Product Bundles:</strong> Bundles may provide additional value compared to purchasing products individually.</p>
+            <p><strong>Subscribe to Brand Updates:</strong> Email subscribers may gain access to exclusive promotions and early sale announcements.</p>
+            <p><strong>Watch for Product Launch Promotions:</strong> New camera releases are sometimes accompanied by special introductory offers.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Popular Travel Purposes Supported by ZenHotels</h3>
-            <p className="text-gray-700 font-bold">Travelers frequently use ZenHotels for:</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Who Uses OBSBOT?</h3>
+            <p className="text-gray-700 font-bold">OBSBOT products are popular among:</p>
             <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-              <li>Family holidays</li>
-              <li>Business travel</li>
-              <li>Weekend escapes</li>
-              <li>International vacations</li>
-              <li>Solo adventures</li>
-              <li>Romantic getaways</li>
-              <li>Long-term stays</li>
-              <li>Last-minute bookings</li>
+              <li>Content creators</li>
+              <li>YouTubers</li>
+              <li>Livestreamers</li>
+              <li>Online educators</li>
+              <li>Remote professionals</li>
+              <li>Business teams</li>
+              <li>Event producers</li>
+              <li>Video podcasters</li>
             </ul>
-            <p>The platform's extensive property inventory allows travelers to find accommodations tailored to different travel styles and budgets.</p>
+            <p>Its AI-powered technology helps users create professional-looking video content with less effort and equipment.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for ZenHotels Discounts?</h3>
-            <p><strong>Regularly Updated Offers:</strong> We continuously refresh our deals to help users access current travel savings opportunities.</p>
-            <p><strong>Convenient Access to Discounts:</strong> Find coupon codes, promotional offers, and travel deals in one easy-to-use destination.</p>
-            <p><strong>Completely Free to Use:</strong> CouponsBit helps travelers save money without any subscription or membership fees.</p>
-            <p><strong>Savings Across Leading Travel Brands:</strong> In addition to ZenHotels, CouponsBit features discounts from airlines, hotel providers, tour companies, vacation services, and other travel-related brands.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for OBSBOT Deals?</h3>
+            <p><strong>Regularly Updated Offers:</strong> We continuously update deals to help shoppers find current savings opportunities.</p>
+            <p><strong>Easy-to-Find Discounts:</strong> Find coupon codes, promotional offers, and camera deals in one place.</p>
+            <p><strong>Completely Free to Use:</strong> CouponsBit helps users save money without requiring memberships or subscriptions.</p>
+            <p><strong>Savings Across Multiple Categories:</strong> In addition to OBSBOT, CouponsBit features discounts from technology, software, travel, lifestyle, education, and productivity brands.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Travel Smarter and Spend Less</h3>
-            <p>Whether you're planning a short city break, a dream vacation, or an important business trip, securing quality accommodation at the right price can make a significant difference to your overall travel experience.</p>
-            <p>Browse the latest ZenHotels coupon codes, promo deals, and hotel booking discounts on CouponsBit today and unlock extra savings on your next journey.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Create Better Content for Less</h3>
+            <p>Whether you're launching a YouTube channel, upgrading your streaming setup, teaching online classes, or improving your video conference experience, OBSBOT offers innovative AI-powered camera solutions designed to keep you looking your best.</p>
+            <p>Browse the latest OBSBOT coupon codes, promo offers, and AI camera deals on CouponsBit today and save on your next content creation upgrade.</p>
           </div>
 
           {!isReadMore && (
@@ -938,12 +874,11 @@ export default function ZenHotelsCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "What is ZenHotels?", a: "ZenHotels is an online accommodation booking platform that allows users to search, compare, and reserve hotels, apartments, resorts, hostels, and vacation rentals worldwide." },
-            { q: "What types of accommodations can I book through ZenHotels?", a: "Travelers can choose from hotels, apartments, resorts, hostels, vacation homes, and various other lodging options." },
-            { q: "Does ZenHotels have a mobile app?", a: "Yes. Travelers can use the ZenHotels app to search properties, manage bookings, and access travel information on the go." },
-            { q: "Where can I find ZenHotels coupon codes?", a: "The latest ZenHotels coupon codes, hotel deals, and promotional offers can be found on CouponsBit." },
-            { q: "Does ZenHotels provide member-only discounts?", a: "Yes. The platform occasionally offers exclusive rates and special deals for registered members." },
-            { q: "Is CouponsBit free?", a: "Absolutely. CouponsBit is completely free and helps users discover discounts, coupon codes, and special promotions from popular travel brands." }
+            { q: "What is OBSBOT?", a: "OBSBOT is an AI camera company that develops intelligent webcams, tracking cameras, and video production tools for creators, businesses, and professionals." },
+            { q: "What is OBSBOT best known for?", a: "The brand is best known for its AI-powered tracking webcams and smart camera technology that automatically follows users during recording and streaming." },
+            { q: "Are OBSBOT cameras suitable for streaming?", a: "Yes. Many OBSBOT products are designed specifically for livestreaming, content creation, video conferencing, and online presentations." },
+            { q: "Where can I find OBSBOT coupon codes?", a: "You can find the latest OBSBOT coupon codes, promo offers, and camera discounts on CouponsBit." },
+            { q: "Is CouponsBit free to use?", a: "Absolutely. CouponsBit is completely free and helps shoppers discover savings from popular brands across multiple categories." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 
@@ -966,9 +901,9 @@ export default function ZenHotelsCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular ZenHotels Searches</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular OBSBOT Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Hotel Booking Site", "ZenHotels Promo Code", "Discount Luxury Resorts", "Cheap Vacation Rental", "Last Minute Lodging", "ZenHotels App Deal", "Boutique Apartments", "CouponsBit Travel"].map(tag => (
+            {["AI Tracking Webcam", "OBSBOT Promo Code", "4K Streaming Camera", "Gesture Control PTZ", "Auto Framing Studio", "Remote Work Webcam", "Live Production Gear", "CouponsBit Technology"].map(tag => (
               <span
                 key={tag}
                 className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
@@ -980,22 +915,22 @@ export default function ZenHotelsCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top ZenHotels Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top OBSBOT Deals</h3>
           <div className="space-y-6">
             {[
-              { heading: "Early Bird Discount", sub: "Save up to 15% on accommodations reserved well in advance" },
-              { heading: "App Exclusive Rate", sub: "Special pricing structures applied to first mobile reservations" },
-              { heading: "Member Reward Deal", sub: "Unlock unique loyalty price adjustments on select stays" },
-              { heading: "Long Term Lodging", sub: "Reduced pricing structures on extended weekly stays" },
-              { heading: "CouponsBit Exclusive", sub: "Limited-time destination coupon bundle deal options" }
+              { heading: "Hardware Bundle Savings", sub: "Save significantly on hardware bundles containing tripod modules and webcams" },
+              { heading: "Welcome Order Code", sub: "Introductory percentage adjustments applied directly to your initial purchase" },
+              { heading: "Free Standard Transport", sub: "Complimentary package handling options when meeting structural tier pricing" },
+              { heading: "Creator Studio Promo", sub: "Special pricing metrics on dedicated vertical video configuration options" },
+              { heading: "CouponsBit Exclusive", sub: "Limited-time active validation voucher discounts code configurations" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">Z</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.zenhotels.com" target="_blank" rel="noopener noreferrer" aria-label={`Get ZenHotels deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get OBSBOT deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
