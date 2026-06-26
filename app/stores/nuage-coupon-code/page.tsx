@@ -7,16 +7,16 @@ export const metadata: Metadata = {
     "Get the latest Nuage coupon code and save up to 39% OFF on lingerie, undergarments, shapewear and everyday essentials. Plus, enjoy FREE worldwide shipping on orders over $60.",
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+    canonical: "https://www.couponsbit.us/stores/nuage-coupon-code",
     languages: {
-      "en-US": "https://www.couponsbit.us/stores/nuagewear-coupon-code",
-      "x-default": "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/nuage-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/nuage-coupon-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+    url: "https://www.couponsbit.us/stores/nuage-coupon-code",
     title: "Nuage Coupon Code – Up to 39% OFF Lingerie & Shapewear",
     description:
       "Get the latest Nuage coupon code and save up to 39% OFF on lingerie, undergarments, shapewear and everyday essentials. Plus, enjoy FREE worldwide shipping on orders over $60.",
@@ -56,8 +56,8 @@ const nuagewearSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/nuagewear-coupon-code#webpage",
-      url: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+      "@id": "https://www.couponsbit.us/stores/nuage-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/nuage-coupon-code",
       name: "Nuage Coupon Code – Up to 39% OFF Lingerie & Shapewear",
       description:
         "Get the latest Nuage coupon code and save up to 39% OFF on lingerie, undergarments, shapewear and everyday essentials. Plus, enjoy FREE worldwide shipping on orders over $60.",
@@ -66,17 +66,17 @@ const nuagewearSchema = {
         "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://www.couponsbit.us/stores/nuagewear-coupon-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/nuage-coupon-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/nuagewear-coupon-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/nuage-coupon-code#offerlist",
       name: "Nuagewear Coupon Codes & Promo Codes",
       description:
         "Latest verified Nuagewear coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+      url: "https://www.couponsbit.us/stores/nuage-coupon-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -87,7 +87,7 @@ const nuagewearSchema = {
             name: "Nuagewear Coupon Code",
             description:
               "Latest Nuagewear coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+            url: "https://www.couponsbit.us/stores/nuage-coupon-code",
             seller: {
               "@type": "Organization",
               name: "Nuagewear",
@@ -131,7 +131,7 @@ const nuagewearSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/nuagewear-coupon-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/nuage-coupon-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -149,7 +149,7 @@ const nuagewearSchema = {
           "@type": "ListItem",
           position: 3,
           name: "Nuagewear Coupons",
-          item: "https://www.couponsbit.us/stores/nuagewear-coupon-code",
+          item: "https://www.couponsbit.us/stores/nuage-coupon-code",
         },
       ],
     },

@@ -27,10 +27,12 @@ export const allStores: StoreEntry[] = [
   { name: "Factor75",        id: "factor75-coupon-code",        category: "More",        coupons: 2,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp",        discount: "Up to $130 OFF",   popular: false },
   { name: "Openart.AI",      id: "openart-coupon-code",         category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", discount: "Up to 27% OFF",    popular: false },
   { name: "Talkpal.AI",      id: "talkpal-coupon-code",         category: "More",        coupons: 2,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp",        discount: "Save Up to 69%",   popular: false },
-  { name: "Nuagewear",       id: "nuagewear-coupon-code",       category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg",          discount: "Up to 39% OFF",    popular: false },
+  { name: "Nuagewear",       id: "nuage-coupon-code",       category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg",          discount: "Up to 39% OFF",    popular: false },
   { name: "Ballboyz",        id: "ballboyz-coupon-code",        category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373660/ballboyz-coupon-code_rduo3k.jpg",        discount: "Up to 50% OFF",    popular: false },
   { name: "Cariloha",        id: "cariloha-coupon-code",        category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373660/cariloha-coupon-code_t4bwl4.jpg",        discount: "Up to 50% OFF",    popular: false },
   { name: "Obsbot",          id: "obsbot-coupon-code",          category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg",          discount: "From $75",         popular: false },
+  { name: "Outfitr",         id: "outfitr-coupon-code",         category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg",        discount: "Up to 62% OFF",    popular: false },
+  { name: "DeerValley",      id: "deer-valley-coupon-code",     category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/deervalley-coupon-code_yohcn4.jpg",     discount: "Up to 60% OFF",    popular: false },
 ];
 
 
