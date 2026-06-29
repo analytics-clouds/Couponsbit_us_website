@@ -33,7 +33,16 @@ export const allStores: StoreEntry[] = [
   { name: "Obsbot",          id: "obsbot-coupon-code",          category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg",          discount: "From $75",         popular: false },
   { name: "Outfitr",         id: "outfitr-coupon-code",         category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg",        discount: "Up to 62% OFF",    popular: false },
   { name: "DeerValley",      id: "deer-valley-coupon-code",     category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/deervalley-coupon-code_yohcn4.jpg",     discount: "Up to 60% OFF",    popular: false },
+  { name: "Lumibrick",       id: "lumibrick-coupon-code",       category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/lumricks-logo_a84nyo.webp",            discount: "From $56.99",      popular: false },
+  { name: "Krisp.AI",        id: "krisp-coupon-code",           category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp",               discount: "Save 50% OFF",     popular: false },
+  { name: "Kiwi.com",        id: "kiwi-coupon-code",            category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp",                discount: "Up to $580 Rewards", popular: false },
 ];
+
+
+
+
+
+
 
 
 

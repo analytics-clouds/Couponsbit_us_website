@@ -15,10 +15,12 @@ import {
   RefreshCw, 
   Clock, 
   Copy, 
-  ChevronDown, 
+  Blocks,
+  ChevronDown,
   Package, 
   Truck, 
   Shield, 
+  Lightbulb, Building2, Palette,
   Laptop, 
   Shirt, 
   Home, 
@@ -26,7 +28,7 @@ import {
   BookOpen, 
   CheckCircle,
   X,
-  ArrowRight, Smile, Droplet, Target,
+  ArrowRight,
   Plane,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
@@ -64,102 +66,101 @@ interface StoreItem {
 const COUPONS: Coupon[] = [
   {
     id: "c1",
-    discount: "$60",
-    label: "SAVE",
+    discount: "$169.99",
+    label: "ONLY",
     badge: "Best Offer",
-    title: "BallBoyz Full Body Acne Gameplan – Save $60",
-    heading: "Full Body Acne Gameplan",
-    sub: "$99.99 (Reg. $160.00)",
-    description: "Tackle face and body acne with BallBoyz's complete skincare system, including Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "BBFULLBODY60"
+    title: "Modular Apartment Building Set – Starting at $169.99",
+    heading: "Modular Apartment Building Set",
+    sub: "$169.99",
+    description: "Build your own futuristic city with the Modular Apartment Building Set, featuring USB-powered modular lighting.",
+    usedCount: "100k",
+    expiresIn: "1 days",
+    code: "LUMIBRICKC1"
   },
   {
     id: "c2",
-    discount: "50%",
-    label: "SAVE",
+    discount: "$159.99",
+    label: "ONLY",
     badge: "Popular",
-    title: "BallBoyz BOYZ Face Acne Gameplan – #1 Seller",
-    heading: "Face Acne Gameplan",
-    sub: "$55.99 (Reg. $110.00)",
-    description: "Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle, backed by a confidence guarantee.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "BBFACE50"
+    title: "Interactive Toy Store Building Set – Starting at $159.99",
+    heading: "Interactive Toy Store Building Set",
+    sub: "$159.99",
+    description: "Create fun-filled adventures with the Interactive Toy Store Building Set, featuring interactive mini scenes.",
+    usedCount: "93k",
+    expiresIn: "2 days",
+    code: "LUMIBRICKC2"
   },
   {
     id: "c3",
-    discount: "40%",
-    label: "UP TO",
-    badge: "Trending",
-    title: "BallBoyz Summer Acne Sale – Up to 40% OFF",
-    heading: "Summer Acne Sale",
-    sub: "Up to 40% OFF",
-    description: "Beat summer breakouts with BallBoyz's bestselling pimple patches, face scrubs and skincare bundles.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "BBSUMMER40"
+    discount: "$109.99",
+    label: "ONLY",
+    title: "Cyberpunk Police HQ – Starting at $109.99",
+    heading: "Cyberpunk Police HQ",
+    sub: "$109.99",
+    description: "Defend your futuristic city with the Cyberpunk Police HQ Building Set, packed with detailed interiors and vehicles.",
+    usedCount: "86k",
+    expiresIn: "3 days",
+    code: "LUMIBRICKC3"
   },
   {
     id: "c4",
-    discount: "$40",
-    label: "OFF",
-    title: "BallBoyz Pimple Pack – $40 OFF Today Only",
-    heading: "Pimple Pack",
-    sub: "$29.99 (Reg. $69.99)",
-    description: "Get everything you need for clearer skin in one convenient acne-fighting bundle, perfect for pimples, oil and clogged pores.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "BBPIMPLE40"
+    discount: "$129.99",
+    label: "ONLY",
+    title: "Izakaya Japanese Street Restaurant – Starting at $129.99",
+    heading: "Izakaya Japanese Street Restaurant",
+    sub: "$129.99",
+    description: "Recreate an authentic Japanese street scene with the Izakaya Building Set, featuring vibrant lighting effects.",
+    usedCount: "79k",
+    expiresIn: "4 days",
+    code: "LUMIBRICKC4"
   },
   {
     id: "c5",
-    discount: "$110",
-    label: "VALUE",
-    title: "BallBoyz Face Acne Gameplan – Today Only Special",
-    heading: "Face Acne Gameplan",
-    sub: "$69.99 (Reg. $110.00)",
-    description: "Upgrade your skincare routine with BallBoyz's top-rated acne solution, built to help reduce breakouts.",
-    usedCount: "65k",
+    discount: "$119.99",
+    label: "ONLY",
+    title: "Luna Cottage Building Set – Starting at $119.99",
+    heading: "Luna Cottage Building Set",
+    sub: "$119.99",
+    description: "Discover cozy living with the Luna Cottage Building Set, part of the latest New Arrivals collection.",
+    usedCount: "72k",
     expiresIn: "5 days",
-    code: "BBTODAY69"
+    code: "LUMIBRICKC5"
   },
   {
     id: "c6",
-    discount: "20%",
-    label: "EXTRA",
-    title: "BallBoyz Build Your Own Bundle – Extra 20% OFF",
-    heading: "Build Your Own Bundle",
-    sub: "Extra 20% OFF",
-    description: "Customize your skincare routine by mixing and matching face scrubs, body scrubs, moisturizers and pimple patches.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "BBBUNDLE20"
+    discount: "$74.99",
+    label: "ONLY",
+    title: "Streetball Tour Bus Building Set – Starting at $74.99",
+    heading: "Streetball Tour Bus Building Set",
+    sub: "$74.99",
+    description: "Hit the road with the Streetball Tour Bus Building Set, inspired by street basketball culture.",
+    usedCount: "65k",
+    expiresIn: "1 days",
+    code: "LUMIBRICKC6"
   },
   {
     id: "c7",
-    discount: "NEW",
-    label: "ESSENTIAL",
-    title: "BallBoyz Activated Charcoal Face Scrub",
-    heading: "Activated Charcoal Face Scrub",
-    sub: "Acne Care Essential",
-    description: "Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub, removing dirt, oil and impurities for a refreshed feel.",
-    usedCount: "41k",
-    expiresIn: "4 days",
-    code: "BBCHARCOAL"
+    discount: "$89.99",
+    label: "ONLY",
+    title: "Book Café Building Set – Starting at $89.99",
+    heading: "Book Café Building Set",
+    sub: "$89.99",
+    description: "Build your dream reading corner with the Book Café Building Set, featuring detailed interiors and café décor.",
+    usedCount: "58k",
+    expiresIn: "2 days",
+    code: "LUMIBRICKC7"
   },
   {
     id: "c8",
-    discount: "NEW",
-    label: "ESSENTIAL",
-    title: "BallBoyz Zit Destroyer Body Scrub",
-    heading: "Zit Destroyer Body Scrub",
-    sub: "Clearer Skin Starts Here",
-    description: "Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub, formulated to exfoliate and cleanse deeply.",
-    usedCount: "33k",
-    expiresIn: "2 days",
-    code: "BBZITDESTROY"
+    discount: "$56.99",
+    label: "ONLY",
+    title: "Horse Stable Building Set – Starting at $56.99",
+    heading: "Horse Stable Building Set",
+    sub: "$56.99",
+    description: "Bring the countryside to life with the Horse Stable Building Set, featuring touch-adjustable lighting.",
+    usedCount: "51k",
+    expiresIn: "3 days",
+    code: "LUMIBRICKC8"
   }
 ];
 
@@ -172,7 +173,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function BallboyzCouponsContent() {
+export default function LumibrickCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -233,7 +234,7 @@ export default function BallboyzCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Ballboyz</span>
+              <span className="text-black font-extrabold">Lumibrick</span>
             </nav>
           </div>
         </div>
@@ -245,13 +246,13 @@ export default function BallboyzCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782373660/ballboyz-coupon-code_rduo3k.jpg" alt="Ballboyz" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782730730/lumricks-logo_a84nyo.webp" alt="Lumibrick" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Ballboyz</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Lumibrick</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -261,14 +262,15 @@ export default function BallboyzCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
-                      BallBoyz delivers powerful acne care and grooming essentials for men, featuring skincare bundles, scrubs and treatments designed for healthier-looking skin.
+                      Lumibrick Coupon Code & Deals – Explore exclusive offers on modular city buildings, Japanese street collections, cafés, cottages, and collectible building sets for every brick enthusiast.
+
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
                   {[
-                    { icon: Tag, val: "7", label: "Coupons" },
+                    { icon: Tag, val: "35", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -290,22 +292,22 @@ export default function BallboyzCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782732051/ballboyz-promo-code_fimwom.webp" alt="Ballboyz Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                    <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131741/bluehost_promo_code_w1og4n.webp" alt="Lumibrick Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782732049/ballboyz-voucher-code_ewno7f.webp" alt="Ballboyz Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_discount_code_hclh1n.webp" alt="Lumibrick Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782732049/ballboyz-discount-code_um0dzm.webp" alt="Ballboyz Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_voucher_code_xltlyy.webp" alt="Lumibrick Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -358,7 +360,7 @@ export default function BallboyzCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Ballboyz Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Lumibrick Coupon Codes & Offers</h2>
                   
                 </div>
 
@@ -372,9 +374,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$60</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$169.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -383,22 +384,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Full Body Acne Gameplan – Save $60</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Tackle face and body acne with BallBoyz's complete skincare system from head to toe.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Modular Apartment Building Set – Starting at $169.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Build your own futuristic city with the Modular Apartment Building Set, featuring USB-powered modular lighting.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $99.99 (Regular Price: $160.00) — Save $60 OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer for USA customers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features an innovative USB-powered modular lighting system with no extra wires</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Expand your cyberpunk city horizontally with endless modular connections</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A perfect collectible for building block enthusiasts and display lovers</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Full Body Acne Gameplan – Save $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Modular Apartment Building Set – Starting at $169.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -413,9 +414,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">50%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$159.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -424,22 +424,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz BOYZ Face Acne Gameplan – #1 Seller</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Interactive Toy Store Building Set – Starting at $159.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Create fun-filled adventures with the Interactive Toy Store Building Set, featuring interactive mini scenes.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes & Pimple Patches for a complete routine</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $55.99 (Regular Price: $110.00) — Save 50% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Backed by BallBoyz's confidence guarantee for clearer-looking skin</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features interactive mini scenes and detailed interior accessories</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for immersive storytelling and creative play</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great gift for collectors and brick-building fans</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz BOYZ Face Acne Gameplan – #1 Seller" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Interactive Toy Store Building Set – Starting at $159.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -454,9 +454,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">40%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$109.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -465,22 +464,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Summer Acne Sale – Up to 40% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Beat summer breakouts with BallBoyz's acne-fighting essentials.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Cyberpunk Police HQ – Starting at $109.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Defend your futuristic city with the Cyberpunk Police HQ Building Set, packed with detailed interiors and vehicles.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop bestselling pimple patches, face scrubs and skincare bundles</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy Up to 40% OFF during the Summer Acne Sale</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time promotion while supplies last</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Packed with detailed interiors, vehicles and action-packed accessories</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect addition to any cyberpunk city collection</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for builders, collectors and display enthusiasts</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Summer Acne Sale – Up to 40% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Cyberpunk Police HQ – Starting at $109.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -495,9 +494,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">TODAY ONLY</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$40</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$129.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -506,22 +504,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Pimple Pack – $40 OFF Today Only</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get everything you need for clearer skin in one convenient acne-fighting bundle.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Izakaya Japanese Street Restaurant – Starting at $129.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Recreate an authentic Japanese street scene with the Izakaya Building Set, featuring vibrant lighting effects.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Pimple Patches, Face Scrub and Skincare Essentials</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $29.99 (Regular Price: $69.99) — Save $40 OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for targeting pimples, excess oil and clogged pores</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Beautifully detailed architecture with vibrant lighting effects</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for collectors and Japanese culture enthusiasts</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium display-worthy construction model</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Pimple Pack – $40 OFF Today Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Izakaya Japanese Street Restaurant – Starting at $129.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -536,9 +534,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SPECIAL</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$69.99</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$119.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -547,22 +544,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Face Acne Gameplan – Today Only Special</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your skincare routine with BallBoyz's top-rated acne solution.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Luna Cottage Building Set – Starting at $119.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Discover cozy living with the Luna Cottage Building Set, part of the latest New Arrivals collection.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes and Pimple Patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $69.99 (Regular Price: $110.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built to help reduce breakouts and support healthier-looking skin</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Beautiful cottage-inspired architecture with charming details</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for display or creative building fun</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Part of the latest New Arrivals collection</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Face Acne Gameplan – Today Only Special" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Luna Cottage Building Set – Starting at $119.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -577,9 +574,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">EXTRA</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">20%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$74.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -588,22 +584,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Build Your Own Bundle – Extra 20% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Customize your skincare routine with your favorite BallBoyz products.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Streetball Tour Bus Building Set – Starting at $74.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Hit the road with the Streetball Tour Bus Building Set, inspired by street basketball culture.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Mix and match face scrubs, body scrubs, moisturizers and pimple patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 20% OFF when you build your own bundle</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for a limited time only</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 1,170 pieces, 6 minifigures, collectible card and premium printed elements</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Inspired by street basketball culture with realistic details</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Covered by a 2-Year Warranty</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Build Your Own Bundle – Extra 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Streetball Tour Bus Building Set – Starting at $74.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -618,9 +614,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$89.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -629,22 +624,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Activated Charcoal Face Scrub</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Book Café Building Set – Starting at $89.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Build your dream reading corner with the Book Café Building Set, featuring detailed interiors and café décor.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps remove dirt, oil and impurities for a refreshed feel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for daily skincare and acne-prone skin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Pair it with other BallBoyz products for maximum results</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features detailed interiors, bookshelves and café décor</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for display, gifting and creative building</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium collectible building experience</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Activated Charcoal Face Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Book Café Building Set – Starting at $89.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -659,9 +654,8 @@ export default function BallboyzCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$56.99</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -670,22 +664,22 @@ export default function BallboyzCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Zit Destroyer Body Scrub</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Horse Stable Building Set – Starting at $56.99</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Bring the countryside to life with the Horse Stable Building Set, featuring touch-adjustable lighting.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Formulated to exfoliate and cleanse deeply for smoother-looking skin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for chest, back and shoulder acne concerns</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A must-have addition to your grooming routine</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features innovative touch-adjustable lighting and red light therapy simulation</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes realistic stable details for an immersive building experience</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for animal lovers and building block collectors</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Zit Destroyer Body Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lumibrick deal: Horse Stable Building Set – Starting at $56.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -701,11 +695,17 @@ export default function BallboyzCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Ballboyz</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About Lumibrick</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
-                    Ballboyz is a sports-focused skincare brand founded by former athlete Carson Matthews after experiencing firsthand the skin issues commonly caused by sweat, equipment, and demanding training schedules. The company was created to provide skincare solutions specifically tailored to athletes rather than traditional skincare users.
+                    Lumibricks is a creative building block brand that combines detailed brick construction with integrated LED lighting, offering an immersive building and display experience. Unlike traditional building sets that require separate lighting kits, Lumibricks designs its models with built-in lighting systems from the start, allowing each creation to shine day and night.
                   </p>
-                  <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                    Founded by a team of passionate builders, Lumibricks believes that building bricks are more than toys. They're a creative outlet for adults, collectors, and hobbyists. Every collection features original designs, patented components, and story-driven themes that transform finished models into eye-catching display pieces.
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                    Today, Lumibricks offers a growing catalog of themed building sets inspired by architecture, city life, fantasy, nature, retro streets, and futuristic worlds.
+                  </p>
+                  <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -734,59 +734,86 @@ export default function BallboyzCouponsContent() {
                 </div>
 
                 {/* Why Shop Card */}
-              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-2xl mx-auto">
   <div className="mb-8">
-    <h3 className="text-black font-black text-lg mb-2">Popular Products Available at Ballboyz</h3>
+    <h2 className="text-black font-black text-xl mb-2">What Can You Buy at Lumibricks?</h2>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Ballboyz offers a range of targeted skincare and hygiene products designed specifically for active individuals.
+      Lumibricks features an expanding collection of premium building block sets suitable for collectors and creative builders alike.
     </p>
   </div>
 
   <div className="space-y-8">
-    {[
-      {
-        icon: Smile, 
-        title: "Face Acne Solutions",
-        sub: "Products created to help athletes manage facial breakouts caused by sweat and sports gear."
-      },
-      {
-        icon: Sparkles, 
-        title: "Body Acne Care",
-        sub: "Specialized cleansers and scrubs designed for shoulders, back, chest, and other breakout-prone areas."
-      },
-      {
-        icon: Droplet, 
-        title: "Face Scrubs",
-        sub: "Exfoliating skincare products formulated to help remove dirt, oil, and impurities after training sessions."
-      },
-      {
-        icon: Target, 
-        title: "Acne Patches",
-        sub: "Targeted skincare products designed to address individual blemishes."
-      },
-      {
-        icon: Package, 
-        title: "Skincare Bundles",
-        sub: "Comprehensive routines that combine multiple products into a complete skincare system."
-      },
-      {
-        icon: ShieldCheck, 
-        title: "Athlete Hygiene Essentials",
-        sub: "Products developed specifically for active lifestyles and frequent physical activity."
-      }
-    ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Lightbulb className="w-5 h-5" />
       </div>
-    ))}
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Light-Up Building Sets</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Signature models with integrated LED lighting that create stunning day-and-night displays.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Building2 className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Modular Buildings</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Construct cafés, bookstores, clinics, apartments, townhouses, and other detailed architectural scenes.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Zap className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Cyberpunk Collection</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Build futuristic cityscapes filled with neon lighting, high-tech buildings, and urban storytelling.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Shield className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Medieval & Fantasy Sets</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Explore castles, ranger camps, forest outposts, and other imaginative historical settings.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Truck className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Vehicles & Accessories</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Expand your collection with trains, vehicles, expansion tracks, and themed accessories.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Palette className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Art & Display Models</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Create collectible display pieces inspired by architecture, landscapes, and artistic masterpieces. 
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -823,57 +850,51 @@ export default function BallboyzCouponsContent() {
         {/* Section 7: SEO Text Section */}
       
 
-       <section className="py-24 bg-[#f5f5f5]">
+        <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
       <div className="prose max-w-none">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Ballboyz Coupon Codes, Promo Codes & Athlete Skincare Deals
+          Lumibricks Coupon Codes, Promo Codes & Building Block Set Deals
         </h2>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Sports Skincare with Ballboyz Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056BFA] mb-4">Build, Display, and Save with Lumibricks Coupon Codes</h3>
           <p>
-            Athletes face unique skincare challenges. Sweat, dirt, sports equipment, and intense training sessions can often lead to breakouts, irritation, and body acne. That's where Ballboyz comes in. Before purchasing your next skincare bundle, check the latest <strong>Ballboyz coupon codes</strong>, promo offers, and athlete skincare discounts on CouponsBit to unlock extra savings. Ballboyz focuses on skincare products specifically formulated for athletes dealing with sports-related skin concerns.
+            If you're passionate about creative building sets, detailed architecture, or collectible display models, Lumibricks offers a unique experience that goes beyond traditional building bricks. With the latest <strong>Lumibricks coupon codes</strong>, Couponsbit helps builders and collectors discover savings on innovative light-up building block sets designed for adults and hobbyists.
           </p>
           <p>
-            Whether you're a baseball player, wrestler, football player, basketball athlete, runner, or fitness enthusiast, Ballboyz offers products designed to help keep your skin feeling fresh, clean, and healthy after workouts and competitions.
+            From cyberpunk cityscapes and medieval villages to cozy cafés, vintage houses, and artistic displays, Lumibricks combines premium building bricks with integrated lighting to create models that look just as impressive after dark as they do during the day. Before placing your next order, visit Couponsbit to explore the latest promo codes, discounts, and exclusive deals.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">About Ballboyz</h3>
-            
-            <p>
-              The brand specializes in skincare products designed to help combat sports-related acne, body breakouts, odor, and skin irritation using ingredient-focused formulations aimed at active individuals. Ballboyz has grown rapidly within the youth and amateur sports community and serves athletes across multiple sports disciplines.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Athletes Choose Ballboyz</h3>
-            <p><strong>Designed for Athletes:</strong> Unlike many traditional skincare brands, Ballboyz focuses specifically on skin issues associated with sports participation and athletic performance.</p>
-            <p><strong>Athlete-Inspired Development:</strong> The company was founded by a former professional baseball player who experienced these challenges personally.</p>
-            <p><strong>Natural Ingredient Focus:</strong> Ballboyz emphasizes the use of naturally inspired ingredients selected to support athlete skincare needs.</p>
-            <p><strong>Solutions for Sports Acne:</strong> Many products are designed to address acne that can result from sweat, helmets, pads, uniforms, and frequent training.</p>
-            <p><strong>Growing Community of Athletes:</strong> The brand has built a following among student athletes, competitive players, and fitness enthusiasts.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Choose Lumibricks?</h3>
+            <p><strong>Integrated Lighting System:</strong> Unlike many building sets that require separate lighting accessories, Lumibricks incorporates lighting directly into the design for a seamless display experience.</p>
+            <p><strong>Original Designs:</strong> Every collection features original themes, custom brick elements, and creative storytelling.</p>
+            <p><strong>Built for Adult Builders:</strong> Many sets are designed specifically for hobbyists, collectors, and display enthusiasts rather than young children.</p>
+            <p><strong>High-Quality Construction:</strong> The company focuses on durable components and precision manufacturing to create satisfying building experiences.</p>
+            <p><strong>Compatible with Other Major Brick Brands:</strong> Lumibricks building blocks are compatible with many leading brick systems, giving builders additional creative flexibility.</p>
           </div>
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Ballboyz Coupon Code</h3>
-            <p className="text-gray-700 font-bold -mt-4">Saving money on your next order is simple.</p>
+            <div>
+              <h3 className="text-xl font-black text-[#056BFA] mb-2">How to Use a Lumibricks Coupon Code</h3>
+              <p className="text-gray-500 text-sm font-bold">Saving on your next building set is easy.</p>
+            </div>
             <div className="space-y-6">
               {[
-                "Step 1: Visit CouponsBit — Browse the latest Ballboyz coupon codes and promotional offers.",
-                "Step 2: Select a Deal — Choose the discount that best matches your purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available code before visiting Ballboyz.",
-                "Step 4: Shop Your Products — Add your preferred skincare products or bundles to your cart.",
-                "Step 5: Apply the Promo Code — Enter the coupon code during checkout if required.",
-                "Step 6: Complete Your Purchase — Finalize your order and enjoy the savings."
+                "Step 1: Visit Couponsbit — Browse the latest Lumibricks coupon codes and promotional offers.",
+                "Step 2: Choose an Offer — Select the deal that best matches your purchase.",
+                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Lumibricks.",
+                "Step 4: Shop Your Favorite Building Sets — Add your preferred collections to your shopping cart.",
+                "Step 5: Apply the Discount — Enter the coupon code during checkout if applicable.",
+                "Step 6: Complete Your Purchase — Finish your order and start building your next illuminated masterpiece."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056BFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-orange-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
@@ -883,26 +904,33 @@ export default function BallboyzCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More on Ballboyz</h3>
-            <p><strong>Look for Bundle Deals:</strong> Product bundles often provide better value than purchasing individual items.</p>
-            <p><strong>Check CouponsBit Before Every Purchase:</strong> New promo codes and discounts may become available regularly.</p>
-            <p><strong>Watch for Seasonal Promotions:</strong> Limited-time sales can offer significant savings opportunities.</p>
-            <p><strong>Subscribe for Brand Updates:</strong> Newsletter subscribers may receive exclusive offers and early access to promotions.</p>
-            <p><strong>Shop Special Campaigns:</strong> Ballboyz frequently highlights promotional events and discounted product packages.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Smart Ways to Save More at Lumibricks</h3>
+            <p><strong>Check Couponsbit Before Every Purchase:</strong> We regularly update Lumibricks coupon codes and promotional offers.</p>
+            <p><strong>Shop Seasonal Sales:</strong> Holiday events and special promotions often feature discounts on selected collections.</p>
+            <p><strong>Join the Rewards Program:</strong> Lumibricks offers a member rewards program where shoppers can earn points and access exclusive perks.</p>
+            <p><strong>Browse New Arrivals:</strong> New collections are introduced throughout the year, giving builders fresh themes to explore.</p>
+            <p><strong>Build a Collection Over Time:</strong> Many themed sets are designed to complement one another, making it easy to expand your display.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Ballboyz Deals?</h3>
-            <p><strong>Updated Discounts:</strong> We regularly refresh offers to help shoppers discover current savings opportunities.</p>
-            <p><strong>Easy-to-Find Coupon Codes:</strong> Find promo codes, discounts, and special offers in one convenient place.</p>
-            <p><strong>Completely Free to Use:</strong> CouponsBit helps shoppers save money without charging membership fees.</p>
-            <p><strong>Deals Across Multiple Categories:</strong> Beyond skincare, CouponsBit features savings from fashion, wellness, travel, software, fitness, and lifestyle brands.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Popular Lumibricks Collections</h3>
+            <p>Collectors can explore a variety of creative themes, including: Cyberpunk Neon City, Town Life, Street Fusion, Steampunk World, Medieval Collection, Farm Life, Road Trip Series, Retro Houses, Art & Architecture Models, Vehicle Collection.</p>
+            <p>Each collection features highly detailed designs enhanced with integrated lighting for an immersive display experience.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Stay Active, Stay Confident, Save More</h3>
-            <p>Training hard shouldn't mean compromising your skincare routine. Whether you're battling post-workout breakouts, body acne, or everyday athlete skincare concerns, Ballboyz offers products designed with active lifestyles in mind.</p>
-            <p>Browse the latest Ballboyz coupon codes, promo offers, and athlete skincare discounts on CouponsBit today and save on your next order.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Use Couponsbit for Lumibricks Deals?</h3>
+            <p>Couponsbit helps shoppers discover verified savings from leading brands across hobbies, technology, gaming, travel, home improvement, and lifestyle categories.</p>
+            <p><strong>Updated Promotions:</strong> We regularly refresh available Lumibricks offers to help shoppers find current savings.</p>
+            <p><strong>Easy-to-Find Discounts:</strong> Browse coupon codes, promo offers, and exclusive deals in one convenient place.</p>
+            <p><strong>Completely Free:</strong> Couponsbit is always free to use.</p>
+            <p><strong>Trusted Savings Platform:</strong> Our goal is to help shoppers save more while purchasing products they genuinely enjoy.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Bring Your Creations to Life for Less</h3>
+            <p>Whether you're a lifelong building block enthusiast, a collector of architectural models, or someone looking for a unique display piece, Lumibricks offers an engaging building experience with a creative twist.</p>
+            <p>Explore the latest Lumibricks coupon codes, promo offers, and building set deals on Couponsbit today, and save on your next illuminated masterpiece.</p>
           </div>
 
           {!isReadMore && (
@@ -912,7 +940,7 @@ export default function BallboyzCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056BFA] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -921,11 +949,12 @@ export default function BallboyzCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "What is Ballboyz?", a: "Ballboyz is an athlete-focused skincare brand that develops products designed to address sports-related acne and skincare concerns." },
-            { q: "Who are Ballboyz products designed for?", a: "The products are primarily designed for athletes and active individuals who experience skincare challenges related to sweat, training, and sports equipment." },
-            { q: "What products does Ballboyz sell?", a: "The brand offers face scrubs, body acne products, skincare bundles, acne patches, and athlete-focused skincare solutions." },
-            { q: "Where can I find Ballboyz coupon codes?", a: "You can find the latest Ballboyz coupon codes, promo offers, and athlete skincare deals on CouponsBit." },
-            { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is completely free and helps users discover valuable discounts from popular brands." }
+            { q: "What is Lumibricks?", a: "Lumibricks is a building block brand that creates premium construction sets with integrated LED lighting, designed primarily for adult builders and collectors." },
+            { q: "What makes Lumibricks different?", a: "Unlike many traditional building block brands, Lumibricks integrates lighting directly into its models, creating display pieces that look impressive both during the day and at night." },
+            { q: "Are Lumibricks sets compatible with other building brick brands?", a: "Yes. Lumibricks states that its products are compatible with many other brick systems available on the market." },
+            { q: "What kinds of building sets does Lumibricks offer?", a: "The company offers modular buildings, cyberpunk cities, medieval scenes, vehicles, art-inspired models, and other themed collections with built-in lighting." },
+            { q: "Where can I find Lumibricks coupon codes?", a: "You can find the latest Lumibricks coupon codes, promo codes, and exclusive deals on Couponsbit." },
+            { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps shoppers discover verified coupon codes, discounts, and promotional offers from hundreds of trusted brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 
@@ -933,7 +962,7 @@ export default function BallboyzCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056BFA] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -947,13 +976,13 @@ export default function BallboyzCouponsContent() {
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Ballboyz Searches</h3>
+        <div className="bg-[#fff7f2] rounded-[40px] p-10 border border-[#056BFA]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Lumibricks Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Sports Acne Soap", "Wrestler Skin Protection", "Ballboyz Promo Code", "Body Breakout Scrub", "Athlete Hygiene", "Teen Athlete Skincare", "Lemonade Face Scrub", "CouponsBit Wellness"].map(tag => (
+            {["Cyberpunk Neon", "Steampunk World", "Medieval Bricks", "LED Building Blocks", "Adult Brick Sets", "Lumibricks Promo Code", "Modular Buildings", "Toy Light Kits"].map(tag => (
               <span
                 key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056BFA] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
               </span>
@@ -962,28 +991,32 @@ export default function BallboyzCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Ballboyz Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Lumibricks Deals</h3>
           <div className="space-y-6">
-            {[
-              { heading: "Skincare Bundle Deal", sub: "Save up to 30% on full acne care routine packs and multi-step bundles" },
-              { heading: "Sign-Up Incentive", sub: "Introductory price discounts applied to your initial athlete kit order" },
-              { heading: "Free Shipping Tiers", sub: "Complimentary standard transport options when hitting order benchmarks" },
-              { heading: "Wrestling Fight Pack", sub: "Special promo rates on antibacterial mat protection sets" },
-              { heading: "CouponsBit Exclusive", sub: "Limited-time active coupon validation adjustments at checkout" }
-            ].map((deal, i) => (
+            {COUPONS.map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056BFA] font-black text-xl italic shadow-inner">
+                  <Blocks className="w-5 h-5" />
                 </div>
-                <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Ballboyz deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056BFA] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                </div>
+                <a 
+                  href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`Get Lumibricks deal: ${deal.heading}`} 
+                  className="bg-[#fff7f2] text-[#056BFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all active:scale-90"
+                >
+                  Get Deal
+                </a>
               </div>
             ))}
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
