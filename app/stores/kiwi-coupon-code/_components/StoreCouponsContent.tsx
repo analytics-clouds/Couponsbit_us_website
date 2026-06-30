@@ -245,21 +245,21 @@ export default function KiwiCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131741/bluehost_promo_code_w1og4n.webp" alt="Kiwi.com Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807018/kiwi-voucher-code_hwqawp.png" alt="Kiwi.com Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_discount_code_hclh1n.webp" alt="Kiwi.com Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807018/kiwi-promo-code_dtxeff.png" alt="Kiwi.com Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_voucher_code_xltlyy.webp" alt="Kiwi.com Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807017/kiwi-discount-code_eycdnm.png" alt="Kiwi.com Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -305,12 +305,12 @@ export default function KiwiCouponsContent() {
         </section>
 
         {/* Section 4: Coupons Section + Right Sidebar */}
-        <section className="py-6 md:py-16 bg-white overflow-hidden">
+        <section className="py-6 md:py-16 bg-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Kiwi.com Coupon Codes & Offers</h2>
                   

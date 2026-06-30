@@ -253,6 +253,7 @@ export default function KrispCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
+                      
                        <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
                        <div>
                          <p className="text-black font-black text-xs leading-none">{stat.val}</p>
@@ -270,23 +271,24 @@ export default function KrispCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131741/bluehost_promo_code_w1og4n.webp" alt="Krisp.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807017/krisp-vouher-code_jylogd.png" alt="Krisp.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_discount_code_hclh1n.webp" alt="Krisp.AI Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807017/krisp-promo-code_c9bo2e.png" alt="Krisp.AI Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782131740/bluehost_voucher_code_xltlyy.webp" alt="Krisp.AI Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782807017/krisp-vouher-code_jylogd.png" alt="Krisp.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
+
 
                   {/* Controls */}
                   <button onClick={() => setActiveSlide((prev) => (prev - 1 + 3) % 3)} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -330,12 +332,12 @@ export default function KrispCouponsContent() {
         </section>
 
         {/* Section 4: Coupons Section + Right Sidebar */}
-        <section className="py-6 md:py-16 bg-white overflow-hidden">
+        <section className="py-6 md:py-16 bg-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
                 <div className="mb-8">
                   <h2 className="text-2xl font-black text-black leading-tight">Krisp.AI Pricing – Meeting AI</h2>
                   <p className="text-gray-500 text-sm font-medium mt-2">Supercharge your meetings with AI. Flexible plans for teams of all sizes.</p>

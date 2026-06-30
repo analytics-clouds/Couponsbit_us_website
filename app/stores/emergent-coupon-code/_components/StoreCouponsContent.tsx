@@ -280,12 +280,12 @@ export default function EmergentCouponsContent() {
         </section>
 
         {/* Section 4: Coupons Section + Right Sidebar */}
-        <section className="py-6 md:py-16 bg-white overflow-hidden">
+        <section className="py-6 md:py-16 bg-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Emergent Pricing Plans</h2>
                   
