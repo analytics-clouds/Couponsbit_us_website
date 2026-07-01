@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/bluehost-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/bluehost-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/bluehost-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/bluehost-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/bluehost-coupon-code",
     },
   },
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
       "Get verified Bluehost discount codes – WordPress hosting from $1.99/mo, 69% OFF one site plan, 50% OFF business hosting & VPS 33% OFF. 35 live deals. Save now!",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",
@@ -88,6 +91,11 @@ const bluehostSchema = {
             description:
               "Latest Bluehost coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/bluehost-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Bluehost",

@@ -14,6 +14,8 @@ export const metadata: Metadata = {
       "ja-JP": "https://www.couponsbit.us/stores/talkpal-coupon-code",
       "en-IN": "https://www.couponsbit.us/stores/talkpal-coupon-code",
       "en-AU": "https://www.couponsbit.us/stores/talkpal-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/talkpal-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/talkpal-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/talkpal-coupon-code",
     },
   },
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
       "Get the latest Talkpal coupon code and save up to 69% OFF premium plans. Start your 14-day free trial and learn languages faster with AI-powered conversations.",
     siteName: "Couponsbit",
     locale: "en_US",
-    alternateLocale: ["de_DE", "ja_JP", "en_IN", "en_AU"],
+    alternateLocale: ["de_DE", "ja_JP", "en_IN", "en_AU", "en_GB", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp",
@@ -99,6 +101,8 @@ const talkpalSchema = {
               { "@type": "Country", name: "Japan" },
               { "@type": "Country", name: "India" },
               { "@type": "Country", name: "Australia" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Pakistan" },
             ],
             seller: {
               "@type": "Organization",

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/envato-elements-coupon-code",
     },
   },
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
       "Get verified Envato Elements discount codes – 50% OFF annual plan, 30% OFF students, 34% OFF team plans & unlimited assets from $16.50/mo. 7 live deals. Save now!",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp",
@@ -88,6 +92,12 @@ const envatoSchema = {
             description:
               "Latest Envato Elements coupon code for subscription discounts on templates, graphics and creative assets.",
             url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+              { "@type": "Country", name: "Pakistan" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Envato Elements",

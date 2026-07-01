@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       "en-IN": "https://www.couponsbit.us/stores/zen-hotels-coupon-code",
       "de-DE": "https://www.couponsbit.us/stores/zen-hotels-coupon-code",
       "en-GB": "https://www.couponsbit.us/stores/zen-hotels-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/zen-hotels-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/zen-hotels-coupon-code",
     },
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       "Get the latest ZenHotels Coupon Code and save $35 on hotel bookings over $700. Find exclusive deals on luxury resorts, city breaks, and hotels worldwide.",
     siteName: "Couponsbit",
     locale: "en_US",
-    alternateLocale: ["tr_TR", "en_IN", "de_DE", "en_GB"],
+    alternateLocale: ["tr_TR", "en_IN", "de_DE", "en_GB", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp",
@@ -99,6 +100,7 @@ const zenhotelsSchema = {
               { "@type": "Country", name: "India" },
               { "@type": "Country", name: "Germany" },
               { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Pakistan" },
             ],
             seller: {
               "@type": "Organization",

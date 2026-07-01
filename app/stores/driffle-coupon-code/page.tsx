@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/driffle-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/driffle-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/driffle-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/driffle-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/driffle-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/driffle-coupon-code",
     },
   },
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
       "Get verified Driffle discount codes – 95% OFF XCOM 2, 81% OFF EA FC 26, 57% OFF Roblox Gift Cards & 55% OFF Ghost of Tsushima. 14 live deals. Save now!",
     siteName: "Couponsbit", 
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",
@@ -88,6 +92,12 @@ const driffleSchema = {
             description:
               "Latest Driffle coupon code for game keys, software and subscription discounts.",
             url: "https://www.couponsbit.us/stores/driffle-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+              { "@type": "Country", name: "Pakistan" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Driffle",

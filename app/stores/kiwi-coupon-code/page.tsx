@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/kiwi-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/kiwi-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/kiwi-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/kiwi-coupon-code",
     },
   },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
       "Join Kiwi.com Club for free and unlock exclusive flight deals, promo discounts, and travel rewards worth up to $580 with the latest Kiwi Coupon Code.",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp",
@@ -88,6 +90,10 @@ const kiwiSchema = {
             description:
               "Latest Kiwi.com coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/kiwi-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Kiwi.com",

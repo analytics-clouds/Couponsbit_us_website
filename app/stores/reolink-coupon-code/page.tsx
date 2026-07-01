@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/reolink-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/reolink-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/reolink-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/reolink-coupon-code",
     },
   },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
       "Get verified Reolink discount codes – 50% OFF anniversary sale, save $450 on RLK16 system, $260 OFF TrackFlex & solar cameras from $159. 8 live deals. Shop now!",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",
@@ -88,6 +90,10 @@ const reolinkSchema = {
             description:
               "Latest Reolink coupon code for security cameras and smart home device discounts.",
             url: "https://www.couponsbit.us/stores/reolink-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Reolink",

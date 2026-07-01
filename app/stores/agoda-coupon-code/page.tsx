@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/agoda-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/agoda-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/agoda-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/agoda-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/agoda-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/agoda-coupon-code",
     },
   },
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
       "Get the latest Agoda Coupon Code for July 2026 and save up to 50% on NYC Explorer Pass, 20% OFF Anaheim attractions, plus hotels from just $5/night.",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg",
@@ -88,6 +92,12 @@ const agodaSchema = {
             description:
               "Latest Agoda coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/agoda-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+              { "@type": "Country", name: "Pakistan" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Agoda",

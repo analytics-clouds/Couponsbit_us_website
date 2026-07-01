@@ -186,7 +186,7 @@ export default function StoresPageContent() {
             )}
 
             {/* Store Grid (5-column responsive layout) */}
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {storesToDisplay.map((store, storeIdx) => {
                 const storeSlug = store.id;
                 return (
@@ -196,13 +196,13 @@ export default function StoresPageContent() {
                   >
                     <div>
                       {/* Brand Logo Centered */}
-                      <div className="h-14 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
+                      <div className="h-20 flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300">
                         <img
                           src={store.logo}
                           alt={store.name}
-                          width={120}
-                          height={48}
-                          className="max-h-12 max-w-[120px] w-auto object-contain"
+                          width={160}
+                          height={64}
+                          className="max-h-16 max-w-[160px] w-auto object-contain"
                           fetchPriority={storeIdx === 0 ? "high" : undefined}
                           loading={storeIdx > 0 ? "lazy" : undefined}
                         />
@@ -231,7 +231,7 @@ export default function StoresPageContent() {
                         aria-label={`View ${store.name} store`}
                         className="block w-full"
                       >
-                        <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-xs font-black transition-all duration-300">
+                        <button className="w-full text-center py-2 border border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-lg text-sm font-black transition-all duration-300">
                           View Store
                         </button>
                       </Link>

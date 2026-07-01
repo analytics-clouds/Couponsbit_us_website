@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/krisp-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/krisp-coupon-code",
+      "en-PH": "https://www.couponsbit.us/stores/krisp-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/krisp-coupon-code",
+      "de-DE": "https://www.couponsbit.us/stores/krisp-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/krisp-coupon-code",
     },
   },
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
       "Save 50% on Krisp AI annual plans with the latest Krisp AI Coupon Code, promo code, and exclusive deals. Start your 7-day free trial today.",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_PH", "en_IN", "de_DE"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp",
@@ -88,6 +92,12 @@ const krispSchema = {
             description:
               "Latest Krisp.AI coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/krisp-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "Philippines" },
+              { "@type": "Country", name: "India" },
+              { "@type": "Country", name: "Germany" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Krisp.AI",

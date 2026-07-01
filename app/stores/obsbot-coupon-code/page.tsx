@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/obsbot-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/obsbot-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/obsbot-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/obsbot-coupon-code",
     },
   },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
       "Get the latest OBSBOT coupon code and shop AI-powered webcams, 4K streaming cameras and creator gear from just $75. Explore verified OBSBOT deals today.",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg",
@@ -88,6 +90,10 @@ const obsbotSchema = {
             description:
               "Latest Obsbot coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/obsbot-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Obsbot",

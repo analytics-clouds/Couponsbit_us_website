@@ -182,21 +182,21 @@ const TopBrands = () => {
             <Link
               key={i}
               href={store.href}
-              className="shrink-0 w-[175px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-5 flex flex-col items-center text-center hover:border-[#056bfa] hover:shadow-md transition-all duration-300 group"
+              className="shrink-0 w-[210px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-6 flex flex-col items-center text-center hover:border-[#056bfa] hover:shadow-md transition-all duration-300 group"
             >
-              <div className="h-14 flex items-center justify-center mb-3">
+              <div className="h-20 flex items-center justify-center mb-3">
                 <img
                   src={store.logo}
                   alt={store.name}
-                  width={120}
-                  height={48}
-                  className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  width={160}
+                  height={64}
+                  className="max-h-16 max-w-[160px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
               </div>
-              <p className="text-black font-extrabold text-sm mb-1">{store.name}</p>
-              <p className="text-[#0344b0] font-black text-[10px] uppercase tracking-wide mb-3">{store.discount}</p>
-              <span className="text-[#0344b0] font-black text-[10px] uppercase tracking-tighter group-hover:underline">
+              <p className="text-black font-extrabold text-base mb-1">{store.name}</p>
+              <p className="text-[#0344b0] font-black text-xs uppercase tracking-wide mb-3">{store.discount}</p>
+              <span className="text-[#0344b0] font-black text-xs uppercase tracking-tighter group-hover:underline">
                 View Coupons →
               </span>
             </Link>

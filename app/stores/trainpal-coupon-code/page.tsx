@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       "en-GB": "https://www.couponsbit.us/stores/trainpal-coupon-code",
       "en-IT": "https://www.couponsbit.us/stores/trainpal-coupon-code",
+      "en-US": "https://www.couponsbit.us/stores/trainpal-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/trainpal-coupon-code",
     },
   },
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
       "Unlock the latest TrainPal Coupon Code and save up to 50% on UK rail travel. Get Railcards, cheaper fares, and exclusive ticket deals.",
     siteName: "Couponsbit",
     locale: "en_GB",
+    alternateLocale: ["en_IT", "en_US"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp",
@@ -89,6 +91,11 @@ const trainpalSchema = {
             description:
               "Latest TrainPal coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/trainpal-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Italy" },
+              { "@type": "Country", name: "United States" },
+            ],
             seller: {
               "@type": "Organization",
               name: "TrainPal",

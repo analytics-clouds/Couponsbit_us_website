@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
     },
   },
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
       "Get verified LATAM Airlines promo codes – Flights from $136, NY to Santiago from $308, 40% OFF packages & 40,000 bonus miles. 8 live deals. Book now!",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp",
@@ -88,6 +91,11 @@ const latamSchema = {
             description:
               "Latest LATAM Airlines coupon code for flight booking discounts.",
             url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+            ],
             seller: {
               "@type": "Organization",
               name: "LATAM Airlines",

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/sintra-coupon-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/sintra-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/sintra-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/sintra-coupon-code",
+      "en-PK": "https://www.couponsbit.us/stores/sintra-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/sintra-coupon-code",
     },
   },
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
       "Get verified Sintra discount codes – 70% OFF annual plan, 60% OFF 3-month plan, 50% OFF monthly & AI plans from $15.60/mo. 5 live deals. Save now!",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN", "en_PK"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",
@@ -88,6 +92,12 @@ const sintraSchema = {
             description:
               "Latest Sintra coupon code for AI business tools and automation subscription discounts.",
             url: "https://www.couponsbit.us/stores/sintra-coupon-code",
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "India" },
+              { "@type": "Country", name: "Pakistan" },
+            ],
             seller: {
               "@type": "Organization",
               name: "Sintra",
