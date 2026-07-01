@@ -296,13 +296,13 @@ export default function OutfitrCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Outfitr Coupon Code & Deals – Save on premium bike racks, e-bike carriers, cargo carriers, and outdoor gear with verified coupon codes, promo codes, and the latest Outfitr deals.
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "11", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -861,10 +861,10 @@ export default function OutfitrCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Outfitr</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     OutfitR is an outdoor gear brand created by adventure enthusiasts with a mission to provide dependable equipment for people who love exploring the outdoors. Inspired by real-world adventures, the brand develops products that combine durability, functionality, and modern design for camping, hiking, road trips, and everyday outdoor activities. 
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     By focusing on quality materials and practical designs, OutfitR aims to equip travelers, campers, hikers, and outdoor explorers with gear that performs well in demanding environments. Every product is designed to withstand outdoor conditions while helping adventurers stay prepared wherever their journey takes them. 
                   </p>
 
@@ -933,7 +933,7 @@ export default function OutfitrCouponsContent() {
         sub: "Explore equipment designed for outdoor enthusiasts who enjoy nature, exploration, and active lifestyles."
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -986,7 +986,7 @@ export default function OutfitrCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           OutfitR Coupon Codes, Promo Codes & Outdoor Gear Deals
         </h2>

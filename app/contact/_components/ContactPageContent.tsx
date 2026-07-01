@@ -217,7 +217,7 @@ export default function ContactPageContent() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-black text-black mb-2">How to Reach Us</h2>
-            <p className="text-gray-500">Multiple ways to connect with the Coupons Clouds team</p>
+            <p className="text-gray-500">Multiple ways to connect with the Couponsbit team</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -277,13 +277,13 @@ export default function ContactPageContent() {
               </div>
               <h3 className="text-xl font-black text-black mb-3">Visit Us</h3>
               <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                We are based in the heart of India's startup capital. Come say hello anytime during office hours
+                Come say hello at our office anytime during business hours
               </p>
-              <p className="text-[#056bfa] font-bold text-base">Bangalore, Karnataka</p>
-              <p className="text-gray-500 text-sm mt-1">India — 560001</p>
-              <Button 
+              <p className="text-[#056bfa] font-bold text-base">31 Windsor Avenue</p>
+              <p className="text-gray-500 text-sm mt-1">Stoke Gifford, Bristol BS34 8BU</p>
+              <Button
                 variant="outline"
-                onClick={() => window.open('https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9539974,77.4908527,11z/', '_blank')}
+                onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU', '_blank')}
                 className="mt-8 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-full px-8 font-bold transition-all"
               >
                 Get Directions
@@ -502,7 +502,7 @@ export default function ContactPageContent() {
                             </div>
                           </div>
                           <label className="text-sm text-gray-600 font-medium">
-                            I agree to the Privacy Policy and consent to being contacted by the Coupons Clouds team
+                            I agree to the Privacy Policy and consent to being contacted by the Couponsbit team
                           </label>
                         </div>
                         {errors.agree && <p className="text-[#ef4444] text-[10px] font-bold px-1">{errors.agree}</p>}
@@ -555,11 +555,11 @@ export default function ContactPageContent() {
                 <div className="p-6 flex items-center justify-between border-b border-[#f0f0f0] bg-white">
                    <div className="flex items-center gap-3">
                      <MapPin className="w-5 h-5 text-[#056bfa]" />
-                     <span className="text-black font-black text-sm">Coupons Clouds HQ — Bangalore, India</span>
+                     <span className="text-black font-black text-sm">Couponsbit HQ — Bristol, UK</span>
                    </div>
-                   <a 
-                    href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9539974,77.4908527,11z/" 
-                    target="_blank" 
+                   <a
+                    href="https://www.google.com/maps/search/?api=1&query=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#056bfa] text-xs font-black hover:underline"
                    >
@@ -567,10 +567,10 @@ export default function ContactPageContent() {
                    </a>
                 </div>
                 <div className="flex-1 w-full relative">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d77.4908527!3d12.9539974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
-                    width="100%" 
-                    height="100%" 
+                  <iframe
+                    src="https://www.google.com/maps?q=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU&output=embed"
+                    width="100%"
+                    height="100%"
                     className="border-none min-h-[440px]"
                     loading="lazy"
                   />

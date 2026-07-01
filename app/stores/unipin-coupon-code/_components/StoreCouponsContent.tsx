@@ -285,14 +285,14 @@ export default function UnipinCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       UniPin Coupon Code & Deals – Top up your favorite games from just $0.94. Shop PUBG UC, Fortnite V-Bucks, Roblox Gift Cards, PlayStation credits, and more with instant delivery.
 
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "35", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -800,7 +800,7 @@ export default function UnipinCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Unipin</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     UniPin is a leading digital entertainment payment platform that allows gamers to purchase in-game credits, virtual currencies, gift cards, and digital content quickly and securely. Founded to simplify gaming transactions, UniPin has grown into one of the most recognized top-up platforms for players across multiple countries.
                   </p>
                   <a href="https://unipin.sjv.io/c/4303217/1151699/14562?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -878,7 +878,7 @@ export default function UnipinCouponsContent() {
         sub: "Purchase vouchers that can be redeemed across supported gaming platforms."
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -931,7 +931,7 @@ export default function UnipinCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           UniPin Coupon Codes, Promo Codes & Gaming Top-Up Deals
         </h2>

@@ -308,13 +308,13 @@ export default function NuagewearCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Nuagewear — Shop premium lingerie, undergarments and shapewear designed for everyday comfort and confidence. Explore 12+ verified deals, save up to 39% OFF on bestselling collections, and enjoy FREE worldwide shipping on orders over $60. Discover comfortable bras, briefs, shapewear and essentials at great prices today.
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "10", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -914,7 +914,7 @@ export default function NuagewearCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Nuagewear</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Nuagewear is a women's underwear brand focused on redefining comfort through seamless design and performance-driven fabrics. Inspired by the French word "Nuage," meaning cloud, the brand aims to deliver lightweight, soft, and comfortable underwear that feels almost invisible when worn.
                   </p>
                   <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -982,7 +982,7 @@ export default function NuagewearCouponsContent() {
         sub: "Comfortable designs that provide support without the discomfort of traditional underwires."
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -1035,7 +1035,7 @@ export default function NuagewearCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Nuagewear Coupon Codes, Promo Codes & Seamless Underwear Deals
         </h2>

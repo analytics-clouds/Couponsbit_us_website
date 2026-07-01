@@ -225,13 +225,13 @@ export default function SintraCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(2k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Sintra — Powerful AI tools platform. 5 verified deals live! Save 70% on annual plan, 60% OFF 3-month & plans from $15.60/mo. Try now!
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "5", label: "Coupons" },
                     { icon: Percent, val: "50+", label: "Deals" },
@@ -581,7 +581,7 @@ export default function SintraCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Sintra</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Sintra is an AI-powered business productivity platform that provides users with a team of virtual AI assistants designed to support various business functions. Instead of relying on a single AI tool, Sintra offers multiple specialized AI helpers that can assist with marketing, content creation, customer communication, research, business planning, website optimization, and workflow management.
                   </p>
                   <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -653,7 +653,7 @@ export default function SintraCouponsContent() {
         sub: "Sintra provides features designed to support online businesses, marketing efforts, and digital growth initiatives." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -701,7 +701,7 @@ export default function SintraCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Sintra Coupon Codes, Promo Codes & AI Business Assistant Deals 2026
         </h2>

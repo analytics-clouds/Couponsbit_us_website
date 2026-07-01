@@ -246,13 +246,14 @@ export default function StubHubCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(18k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-7 max-w-[400px] text-justify">
                       StubHub — World's largest ticket marketplace. 7 verified coupon codes live! Grab Flat 10% OFF, $25 student discount & $20 OFF for new users. Book now!
                     </p>
+                    
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-32">
                   {[
                     { icon: Tag, val: "7", label: "Coupons" },
                     { icon: Percent, val: "150+", label: "Deals" },
@@ -1362,7 +1363,7 @@ export default function StubHubCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About StubHub</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     StubHub is one of the most recognized online ticket marketplaces, connecting buyers and sellers for live events across a wide range of categories. Founded in 2000, the platform has become a go-to destination for millions of fans looking to buy and sell tickets for concerts, sports, theater, comedy shows, festivals, and other live entertainment experiences.
                   </p>
                   <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -1436,7 +1437,7 @@ export default function StubHubCouponsContent() {
         sub: "StubHub also features tickets for family entertainment, live experiences, exhibitions, and unique events throughout the year." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -1485,7 +1486,7 @@ export default function StubHubCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           StubHub Coupon Codes, Promo Codes & Ticket Deals 2026
         </h2>

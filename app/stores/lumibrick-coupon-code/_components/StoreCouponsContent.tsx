@@ -261,14 +261,14 @@ export default function LumibrickCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Lumibrick Coupon Code & Deals – Explore exclusive offers on modular city buildings, Japanese street collections, cafés, cottages, and collectible building sets for every brick enthusiast.
 
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "35", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -696,13 +696,13 @@ export default function LumibrickCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Lumibrick</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Lumibricks is a creative building block brand that combines detailed brick construction with integrated LED lighting, offering an immersive building and display experience. Unlike traditional building sets that require separate lighting kits, Lumibricks designs its models with built-in lighting systems from the start, allowing each creation to shine day and night.
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Founded by a team of passionate builders, Lumibricks believes that building bricks are more than toys. They're a creative outlet for adults, collectors, and hobbyists. Every collection features original designs, patented components, and story-driven themes that transform finished models into eye-catching display pieces.
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, Lumibricks offers a growing catalog of themed building sets inspired by architecture, city life, fantasy, nature, retro streets, and futuristic worlds.
                   </p>
                   <a href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -743,7 +743,7 @@ export default function LumibrickCouponsContent() {
   </div>
 
   <div className="space-y-8">
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Lightbulb className="w-5 h-5" />
       </div>
@@ -755,7 +755,7 @@ export default function LumibrickCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Building2 className="w-5 h-5" />
       </div>
@@ -767,7 +767,7 @@ export default function LumibrickCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Zap className="w-5 h-5" />
       </div>
@@ -779,7 +779,7 @@ export default function LumibrickCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Shield className="w-5 h-5" />
       </div>
@@ -791,7 +791,7 @@ export default function LumibrickCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Truck className="w-5 h-5" />
       </div>
@@ -803,7 +803,7 @@ export default function LumibrickCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Palette className="w-5 h-5" />
       </div>
@@ -855,7 +855,7 @@ export default function LumibrickCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Lumibricks Coupon Codes, Promo Codes & Building Block Set Deals
         </h2>

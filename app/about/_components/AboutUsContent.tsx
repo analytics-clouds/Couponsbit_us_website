@@ -264,7 +264,7 @@ export default function AboutUsContent() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONS CLOUDS</span>
+            <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">WHY COUPONSBIT</span>
             <h2 className="text-4xl md:text-5xl font-black text-black mb-6">What Makes Couponsbit Different?</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">We are not just another coupon site — here is what sets us apart</p>
           </div>
@@ -383,7 +383,7 @@ export default function AboutUsContent() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
             <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">BY THE NUMBERS</span>
-            <h2 className="text-4xl md:text-5xl font-black text-black">Coupons Clouds in Numbers</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-black">Couponsbit in Numbers</h2>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -421,7 +421,7 @@ export default function AboutUsContent() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-20">
             <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#056bfa] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR TEAM</span>
-            <h2 className="text-4xl md:text-5xl font-black text-black mb-4">The People Behind Coupons Clouds</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-black mb-4">The People Behind Couponsbit</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">A passionate team of deal hunters, developers and designers working to save India money</p>
           </div>
 
@@ -441,7 +441,7 @@ export default function AboutUsContent() {
               },
               { 
                 name: "Sneha Mehta", role: "Marketing Head", initials: "SM", 
-                grad: "from-[#F39C12] to-[#d35400]", bio: "Tells the world about Coupons Clouds and grows our community of savers." 
+                grad: "from-[#F39C12] to-[#d35400]", bio: "Tells the world about Couponsbit and grows our community of savers."
               }
             ].map((member, i) => (
               <motion.div 
@@ -480,15 +480,15 @@ export default function AboutUsContent() {
             {[
               { 
                 name: "Amit Kumar", role: "Shopaholic from Delhi", initials: "AK", grad: "from-[#056bfa] to-[#0451c4]",
-                quote: "Coupons Clouds saved me over ₹8,000 last month alone! Every coupon I tried actually worked. I will never shop online without checking here first." 
+                quote: "Couponsbit saved me over ₹8,000 last month alone! Every coupon I tried actually worked. I will never shop online without checking here first."
               },
               { 
                 name: "Riya Patel", role: "Fashion Lover from Mumbai", initials: "RP", grad: "from-[#FF6B9D] to-[#C44B8A]",
-                quote: "Finally a coupon site where the codes actually work! I saved ₹3,500 on my Myntra order and ₹2,000 on MakeMyTrip. Absolutely love Coupons Clouds!" 
+                quote: "Finally a coupon site where the codes actually work! I saved ₹3,500 on my Myntra order and ₹2,000 on MakeMyTrip. Absolutely love Couponsbit!"
               },
               { 
                 name: "Vikram Singh", role: "Tech Enthusiast from Bangalore", initials: "VS", grad: "from-[#4A90E2] to-[#1a5fb4]",
-                quote: "I was skeptical at first but Coupons Clouds blew me away. The deals are real, the codes work and the website is super easy to use. Highly recommended!" 
+                quote: "I was skeptical at first but Couponsbit blew me away. The deals are real, the codes work and the website is super easy to use. Highly recommended!" 
               }
             ].map((ts, i) => (
               <motion.div 

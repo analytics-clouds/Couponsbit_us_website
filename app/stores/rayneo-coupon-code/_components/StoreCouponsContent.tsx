@@ -224,13 +224,13 @@ export default function RayneoCouponsContent() {
                       <span className="text-black font-black text-sm">4.8</span>
                       <span className="text-gray-600 font-bold text-sm">(8.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Rayneo — Next-gen AR smart glasses brand. 6 verified deals live! Save $130 on X3 Pro AI & $70 OFF Air Series. Shop now!
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "6", label: "Coupons" },
                     { icon: Percent, val: "80+", label: "Deals" },
@@ -660,7 +660,7 @@ export default function RayneoCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Rayneo</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                    RayNeo is an emerging technology brand specializing in augmented reality (AR) smart glasses, wearable displays, and immersive visual solutions. The company focuses on creating products that blend advanced display technology with portability, comfort, and everyday usability.
                   </p>
                   <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -723,7 +723,7 @@ export default function RayneoCouponsContent() {
         sub: "Professionals can use RayNeo products to create private workspaces, improve focus, and increase productivity from virtually anywhere." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -770,7 +770,7 @@ export default function RayneoCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           RayNeo Coupon Codes, Promo Codes & AR Smart Glasses Deals 2026
         </h2>

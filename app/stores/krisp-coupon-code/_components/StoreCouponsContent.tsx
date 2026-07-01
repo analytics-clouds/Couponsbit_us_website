@@ -239,13 +239,13 @@ export default function KrispCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Krisp AI Coupon Code & Deals – Discover verified coupon codes, promo codes, and exclusive offers on AI meeting tools, transcription, noise cancellation, and productivity plans with Krisp AI.
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "4", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -472,14 +472,14 @@ export default function KrispCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Krisp.AI</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Krisp AI is an AI-powered meeting assistant designed to improve virtual communication. Initially recognized for its industry-leading noise cancellation technology, Krisp has evolved into a comprehensive productivity platform that automatically records meetings, generates transcripts, creates AI-powered meeting summaries, captures action items, and integrates with popular workplace tools. 
 
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Unlike traditional meeting assistants that require a bot to join calls, Krisp works directly with supported meeting platforms, allowing users to enjoy a more seamless meeting experience. It supports popular video conferencing platforms such as Zoom, Microsoft Teams, Google Meet, Slack, and many other communication tools.
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, professionals worldwide use Krisp AI to improve communication, reduce background distractions, and automate post-meeting tasks.
                   </p>
                   <a href="https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -520,7 +520,7 @@ export default function KrispCouponsContent() {
   </div>
 
   <div className="space-y-8">
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <VolumeX className="w-5 h-5" />
       </div>
@@ -532,7 +532,7 @@ export default function KrispCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <NotebookTabs className="w-5 h-5" />
       </div>
@@ -544,7 +544,7 @@ export default function KrispCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <FileText className="w-5 h-5" />
       </div>
@@ -556,7 +556,7 @@ export default function KrispCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Sparkles className="w-5 h-5" />
       </div>
@@ -568,7 +568,7 @@ export default function KrispCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Video className="w-5 h-5" />
       </div>
@@ -580,7 +580,7 @@ export default function KrispCouponsContent() {
       </div>
     </div>
 
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-justify">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
         <Languages className="w-5 h-5" />
       </div>
@@ -632,7 +632,7 @@ export default function KrispCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Krisp AI Promo Codes, Discount Codes & AI Meeting Assistant Deals
         </h2>

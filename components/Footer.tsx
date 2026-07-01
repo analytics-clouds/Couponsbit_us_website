@@ -10,7 +10,7 @@ import {
   Twitter,
   Youtube,
   MessageCircle,
-  Send,
+  Linkedin,
   Gift,
   Headset,
   Mail
@@ -24,10 +24,10 @@ export const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: "#", name: "Facebook" },
-    { icon: Instagram, href: "#", name: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/coupons_bit26/", name: "Instagram" },
     { icon: Twitter, href: "#", name: "Twitter" },
-    { icon: Youtube, href: "#", name: "YouTube" },
-    { icon: Send, href: "#", name: "Telegram" },
+    { icon: Youtube, href: "https://www.youtube.com/channel/UCr9e22fOvzGJQ4HG7lsKYyg", name: "YouTube" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/couponsbit/", name: "LinkedIn" },
   ];
 
   const quickLinks = [

@@ -228,13 +228,13 @@ export default function EnvatoCouponsContent() {
                       <span className="text-black font-black text-sm">4.8</span>
                       <span className="text-gray-600 font-bold text-sm">(21k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Envato Elements — Unlimited creative assets platform. 7 verified deals live! 50% OFF annual plan, 30% student discount & assets from $16.50/mo. Subscribe now!
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "7", label: "Coupons" },
                     { icon: Percent, val: "110+", label: "Deals" },
@@ -625,7 +625,7 @@ export default function EnvatoCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Envato</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Envato Elements is a subscription-based digital asset marketplace that gives creators unlimited access to a vast library of premium creative resources. Instead of purchasing individual assets one at a time, subscribers can download as many items as they need for a flat monthly or annual fee.
                   </p>
                   <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -729,7 +729,7 @@ export default function EnvatoCouponsContent() {
         sub: "Envato Elements continues expanding its AI toolkit, helping creators generate visuals, graphics, and creative assets more efficiently." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -776,7 +776,7 @@ export default function EnvatoCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Envato Elements Coupon Codes, Promo Codes & Creative Asset Deals 2026
         </h2>

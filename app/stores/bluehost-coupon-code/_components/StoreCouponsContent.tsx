@@ -236,13 +236,13 @@ export default function BluehostCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Bluehost — Trusted WordPress hosting provider. 35 verified deals live! Hosting from $1.99/mo, 69% OFF one site plan & 50% OFF business plans. Start now!
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "35", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -759,7 +759,7 @@ export default function BluehostCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Bluehost</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Bluehost is one of the most recognized web hosting providers in the world, serving millions of websites across various industries. Since its founding in 2003, Bluehost has helped individuals, startups, entrepreneurs, and businesses build and manage websites through its range of hosting and website management services.
                   </p>
                   <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -842,7 +842,7 @@ export default function BluehostCouponsContent() {
         sub: "Businesses can create custom email addresses that strengthen brand credibility and improve communication." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -894,7 +894,7 @@ export default function BluehostCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Bluehost Coupon Codes, Promo Codes & Web Hosting Deals 2026
         </h2>

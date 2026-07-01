@@ -248,13 +248,13 @@ export default function ObsbotCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       OBSBOT offers AI-powered webcams, streaming cameras and creator accessories. Explore verified deals on professional video equipment for content creation and livestreaming.
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "7", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -649,7 +649,7 @@ export default function ObsbotCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Obsbot</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     OBSBOT is an artificial intelligence camera brand founded in 2016 with a mission to transform the way people create and capture video content. The company specializes in AI-powered cameras and webcams that use smart tracking, gesture control, and automated framing technologies to simplify video production.
                   </p>
                   <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -712,7 +712,7 @@ export default function ObsbotCouponsContent() {
         sub: "OBSBOT also offers accessories and production-focused solutions that help creators build more efficient recording and live-streaming setups."
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -765,7 +765,7 @@ export default function ObsbotCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           OBSBOT Coupon Codes, Promo Codes & AI Camera Deals
         </h2>

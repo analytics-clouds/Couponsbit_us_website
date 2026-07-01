@@ -272,14 +272,14 @@ export default function DeerValleyCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      DeerValley Coupon Code & Deals – Explore the latest deals on premium bathroom and kitchen essentials, including smart toilets, farmhouse sinks, vanity mirrors, and modern home fixtures.
 
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "10", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
@@ -756,10 +756,10 @@ export default function DeerValleyCouponsContent() {
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Deer Valley</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Deer Valley Bath is a home improvement brand specializing in modern bathroom and kitchen fixtures. The company offers an extensive selection of products, including smart toilets, one-piece toilets, bathroom vanities, ceramic sinks, mirrors, bathtubs, shower doors, kitchen sinks, and accessories. Its collections focus on combining contemporary design, durability, and practical functionality for today's homes. 
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Serving customers across multiple regions, Deer Valley Bath continues to expand its product lineup with solutions suitable for homeowners, interior designers, contractors, and renovation professionals. Many of its products feature modern technology, space-saving designs, and easy-to-maintain finishes. 
                   </p>
                   <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -832,7 +832,7 @@ export default function DeerValleyCouponsContent() {
         sub: "Complete your renovation with bathroom mirrors, drain accessories, faucets, storage solutions, and other finishing touches."
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -885,7 +885,7 @@ export default function DeerValleyCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Deer Valley Bath Coupon Codes, Promo Codes & Bathroom Fixture Deals
         </h2>

@@ -123,7 +123,7 @@ const MARQUEE_ROW_2 = ["Lenovo", "BookMyShow", "Uber", "Redbus", "Healthkart", "
 const TESTIMONIALS = [
   {
     stars: 5,
-    quote: "Since partnering with Coupons Clouds our monthly sales increased by 40%. The quality of traffic they send is incredible — these are real shoppers who are ready to buy. Best decision we made for our brand.",
+    quote: "Since partnering with Couponsbit our monthly sales increased by 40%. The quality of traffic they send is incredible — these are real shoppers who are ready to buy. Best decision we made for our brand.",
     initials: "AK",
     gradient: "from-[#056bfa] to-[#0451c4]",
     name: "Amit Kapoor",
@@ -132,7 +132,7 @@ const TESTIMONIALS = [
   },
   {
     stars: 5,
-    quote: "Coupons Clouds helped us reach customers we simply could not reach through other channels. The featured placement drove 3x more coupon redemptions in the first month alone. Highly recommend!",
+    quote: "Couponsbit helped us reach customers we simply could not reach through other channels. The featured placement drove 3x more coupon redemptions in the first month alone. Highly recommend!",
     initials: "RP",
     gradient: "from-[#FF6B9D] to-[#C44B8A]",
     name: "Riya Patel",
@@ -141,7 +141,7 @@ const TESTIMONIALS = [
   },
   {
     stars: 5,
-    quote: "The team at Coupons Clouds is extremely professional and responsive. They set us up within 24 hours and the dashboard gives us complete visibility into our performance. Outstanding platform.",
+    quote: "The team at Couponsbit is extremely professional and responsive. They set us up within 24 hours and the dashboard gives us complete visibility into our performance. Outstanding platform.",
     initials: "VS",
     gradient: "from-[#4A90E2] to-[#1a5fb4]",
     name: "Vikram Singh",
@@ -267,7 +267,7 @@ export default function PartnerPageContent() {
             className="text-white font-extrabold text-5xl md:text-7xl mb-1 flex flex-col gap-2"
           >
             <span>Partner With</span>
-            <span className="text-[#e8f6f8]">Coupons Clouds</span>
+            <span className="text-[#e8f6f8]">Couponsbit</span>
           </motion.h1>
           
           <motion.p 
@@ -504,7 +504,7 @@ export default function PartnerPageContent() {
           <span className="inline-block bg-[#056bfa] text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-4">
             BY THE NUMBERS
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-16">Why Brands Choose Coupons Clouds</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-16">Why Brands Choose Couponsbit</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {STAT_CARDS.map((stat, i) => (
@@ -1013,7 +1013,7 @@ export default function PartnerPageContent() {
                         </div>
                       </div>
                       <span className="text-sm text-gray-500 font-bold leading-relaxed">
-                        I agree to the <Link href="/terms-of-use" className="text-[#056bfa] hover:underline">Terms of Use</Link> and <Link href="/privacy-policy" className="text-[#056bfa] hover:underline">Privacy Policy</Link> and consent to being contacted by the Coupons Clouds partnerships team
+                        I agree to the <Link href="/terms-of-use" className="text-[#056bfa] hover:underline">Terms of Use</Link> and <Link href="/privacy-policy" className="text-[#056bfa] hover:underline">Privacy Policy</Link> and consent to being contacted by the Couponsbit partnerships team
                       </span>
                     </label>
                     {errors.agreed && <p className="text-red-500 text-[10px] font-black uppercase tracking-widest mt-1">{errors.agreed}</p>}

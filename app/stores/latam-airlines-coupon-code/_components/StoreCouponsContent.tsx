@@ -230,13 +230,13 @@ export default function LatamCouponsContent() {
                       <span className="text-black font-black text-sm">4.7</span>
                       <span className="text-gray-600 font-bold text-sm">(25k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px]">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       LATAM Airlines — Top South American carrier. 8 verified deals live! Flights from $136, 40% OFF packages & earn 40,000 bonus miles. Book now!
                     </p>
                   </div>
                 </div>
 
-                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
                     { icon: Tag, val: "8", label: "Coupons" },
                     { icon: Percent, val: "200+", label: "Deals" },
@@ -1159,7 +1159,7 @@ Bonus Miles
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About LATAM</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     LATAM Airlines is one of the largest airline groups in Latin America, serving millions of passengers every year through an extensive network of domestic and international routes. The airline connects major cities across countries such as Brazil, Chile, Peru, Colombia, Ecuador, and Argentina, while also offering flights to North America, Europe, Oceania, and other global destinations.
                   </p>
                   <a href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -1227,7 +1227,7 @@ Bonus Miles
         sub: "Passengers can customize their trips with: Seat selection, Additional baggage, Travel insurance, Special assistance services, Airport services, and Flexible booking options." 
       }
     ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start">
+      <div key={item.title} className="flex gap-4 items-start text-justify">
         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
           <item.icon className="w-5 h-5" />
         </div>
@@ -1276,7 +1276,7 @@ Bonus Miles
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       {/* Left: Text Content */}
-      <div className="prose max-w-none">
+      <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           LATAM Airlines Coupon Codes, Promo Codes & Flight Deals 2026
         </h2>
