@@ -36,6 +36,9 @@ export const allStores: StoreEntry[] = [
   { name: "Lumibrick",       id: "lumibrick-coupon-code",       category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/lumricks-logo_a84nyo.webp",            discount: "From $56.99",      popular: false },
   { name: "Krisp.AI",        id: "krisp-coupon-code",           category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp",               discount: "Save 50% OFF",     popular: false },
   { name: "Kiwi.com",        id: "kiwi-coupon-code",            category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp",                discount: "Up to $580 Rewards", popular: false },
+  { name: "HP",              id: "hp-coupon-code",              category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp",           discount: "Up to 69% OFF",    popular: false },
+  { name: "Dell",            id: "dell-coupon-code",            category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp",         discount: "Up to 69% OFF",    popular: false },
+  { name: "Agoda",           id: "agoda-coupon-code",           category: "Travel",      coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg",          discount: "Up to 69% OFF",    popular: false },
 ];
 
 

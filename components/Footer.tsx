@@ -117,7 +117,7 @@ export const Footer = () => {
       <div className="bg-[#051a33] pt-20 pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
-            {/* Column 1: Brand */}
+            {/* Column 1: Brand */} 
             <div className="lg:col-span-1">
               <div className="flex flex-col items-start leading-none gap-0 mb-6">
                  <Link href="/" className="flex flex-col items-start leading-none gap-0">
