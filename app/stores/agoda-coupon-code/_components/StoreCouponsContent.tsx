@@ -30,7 +30,8 @@ import {
   Plane,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
-  Zap
+  Zap,
+  Hotel, Ticket, Car, MapPin, Compass
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
@@ -357,14 +358,14 @@ export default function AgodaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use Agoda coupon codes, promo codes and offers code to save up to 50% on attractions, book hotels from just $5/night and enjoy great USA travel deals.
+                      Agoda — Trusted destination for hotel bookings, vacation rentals & travel experiences. 16 verified deals live! Book hotels from just $5/night, save up to 50% on attractions, and unlock exclusive USA travel deals. Book now!
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "35", label: "Coupons" },
+                    { icon: Tag, val: "16", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -1122,7 +1123,13 @@ export default function AgodaCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Agoda</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Agoda is one of the most recognized web hosting providers in the world, serving millions of websites across various industries. Since its founding in 2003, Agoda has helped individuals, startups, entrepreneurs, and businesses build and manage websites through its range of hosting and website management services.
+                    Agoda is one of the world's leading online travel booking platforms, helping millions of travelers find and book hotels, vacation rentals, flights, and activities every year. Founded in 2005 and part of Booking Holdings, Agoda has grown into one of Asia's most trusted travel brands with an expanding global footprint.
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Known for competitive pricing, instant confirmation, and a vast selection of properties, Agoda partners with hundreds of thousands of hotels and accommodations worldwide. Whether you're planning a weekend getaway, a family vacation, or a business trip, Agoda helps travelers find the right stay at the right price.
+                  </p>
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Today, Agoda serves travelers across numerous countries through its website, mobile app, and global network of travel partners.
                   </p>
                   <a href="https://www.tkqlhce.com/click-101212283-17095165?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -1154,54 +1161,44 @@ export default function AgodaCouponsContent() {
 
                 {/* Why Shop Card */}
               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">Agoda Products & Services</h3>
+  <h3 className="text-black font-black text-lg mb-8">What You Can Book on Agoda</h3>
 
   <div className="space-y-8">
     {[
-      { 
-        icon: Server, 
-        title: "Shared Hosting", 
-        sub: "Ideal for beginners, bloggers, and small businesses looking for affordable website hosting." 
+      {
+        icon: Hotel,
+        title: "Hotel Bookings",
+        sub: "Choose from hundreds of thousands of hotels, resorts, and guesthouses worldwide with instant confirmation."
       },
-      { 
-        icon: Globe, 
-        title: "WordPress Hosting", 
-        sub: "Agoda provides hosting solutions specifically optimized for WordPress websites, helping users manage content more efficiently." 
+      {
+        icon: Plane,
+        title: "Flights",
+        sub: "Search and book flights from leading airlines alongside your hotel stay for added savings."
       },
-      { 
-        icon: Cloud, 
-        title: "Cloud Hosting", 
-        sub: "Cloud-based hosting solutions offer improved scalability, reliability, and performance for growing websites." 
+      {
+        icon: Home,
+        title: "Vacation Rentals",
+        sub: "Book apartments, villas, and vacation homes for longer stays or family trips."
       },
-      { 
-        icon: LayoutGrid, 
-        title: "VPS Hosting", 
-        sub: "Virtual Private Server hosting provides additional resources and control for websites that require greater performance and flexibility." 
+      {
+        icon: Ticket,
+        title: "Attractions & Activities",
+        sub: "Reserve tickets for tours, theme parks, museums, and must-see attractions at your destination."
       },
-      { 
-        icon: Cpu, 
-        title: "Dedicated Hosting", 
-        sub: "Dedicated servers offer businesses maximum control, security, and performance for demanding projects." 
+      {
+        icon: Car,
+        title: "Airport Transfers",
+        sub: "Arrange convenient airport pickup and drop-off transfers so your trip starts stress-free."
       },
-      { 
-        icon: Search, 
-        title: "Domain Registration", 
-        sub: "Agoda allows users to search, purchase, and manage domain names directly through its platform." 
+      {
+        icon: MapPin,
+        title: "City Tours & Sightseeing",
+        sub: "Explore guided city tours, boat cruises, and sightseeing packages in top destinations."
       },
-      { 
-        icon: LayoutTemplate, 
-        title: "Website Builder", 
-        sub: "The Agoda website builder helps users create professional websites without advanced coding knowledge." 
-      },
-      { 
-        icon: ShoppingBag, 
-        title: "eCommerce Solutions", 
-        sub: "Online store owners can access tools and integrations designed to support product sales, payments, and customer management." 
-      },
-      { 
-        icon: Mail, 
-        title: "Professional Email Services", 
-        sub: "Businesses can create custom email addresses that strengthen brand credibility and improve communication." 
+      {
+        icon: Compass,
+        title: "Package Deals",
+        sub: "Bundle flights, hotels, and activities together for extra savings on your next trip."
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start text-justify">
@@ -1258,33 +1255,33 @@ export default function AgodaCouponsContent() {
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Agoda Coupon Codes, Promo Codes & Web Hosting Deals 2026
+          Agoda Coupon Codes, Promo Codes & Travel Deals 2026
         </h2>
-        
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Looking for the latest <strong>Agoda coupon codes, promo codes, and web hosting deals</strong>? You've come to the right place. At Couponsbit, we help bloggers, entrepreneurs, small business owners, developers, and online creators save on web hosting, domains, website builders, and WordPress solutions with verified Agoda discounts and exclusive offers.
+            Looking for the latest <strong>Agoda coupon codes, promo codes, and travel deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on hotel bookings, vacation rentals, flights, and activities with verified Agoda discounts and exclusive offers.
           </p>
           <p>
-            Whether you're launching your first website, building an online store, starting a blog, or growing a business online, Agoda offers reliable hosting solutions designed to help you establish a strong digital presence. Before purchasing a hosting plan, check Couponsbit for the latest Agoda deals and savings opportunities.
+            Whether you're planning a weekend getaway, a family vacation, or a business trip, Agoda offers a huge selection of accommodations and travel experiences designed to fit every budget. Before booking your next stay, check Couponsbit for the latest Agoda deals and savings opportunities.
           </p>
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Agoda</h3>
             <p>
-              Agoda is one of the most recognized web hosting providers in the world, serving millions of websites across various industries. Since its founding in 2003, Agoda has helped individuals, startups, entrepreneurs, and businesses build and manage websites through its range of hosting and website management services.
+              Agoda is one of the world's leading online travel booking platforms, serving millions of travelers across the globe. Founded in 2005 and part of Booking Holdings, Agoda has helped travelers find and book hotels, vacation rentals, flights, and activities through its easy-to-use website and mobile app.
             </p>
             <p>
-              The company offers comprehensive solutions that include web hosting, WordPress hosting, cloud hosting, VPS hosting, dedicated servers, domain registration, website builders, professional email services, and eCommerce tools.
+              The company offers comprehensive travel solutions that include hotel bookings, vacation rentals, flight reservations, attraction tickets, airport transfers, and city tours.
             </p>
             <p>
-              Agoda is particularly popular among WordPress users because of its beginner-friendly setup process, website management tools, and scalable hosting options. Whether you're creating a personal blog, portfolio, online store, business website, or content platform, Agoda provides solutions that support websites at every stage of growth.
+              Agoda is particularly popular for its competitive hotel pricing, instant booking confirmation, and vast selection of properties. Whether you're booking a budget stay, a family resort, a boutique hotel, or a luxury getaway, Agoda provides options that support travel at every budget and stage of the journey.
             </p>
             <p>
-              Today, Agoda continues to be a trusted choice for website owners looking for performance, security, flexibility, and ease of use.
+              Today, Agoda continues to be a trusted choice for travelers looking for value, convenience, flexibility, and ease of use.
             </p>
             <p>
-              At Couponsbit, we help customers save more by providing access to the latest Agoda coupon codes, promo codes, and hosting deals.
+              At Couponsbit, we help customers save more by providing access to the latest Agoda coupon codes, promo codes, and travel deals.
             </p>
           </div>
 
@@ -1292,15 +1289,15 @@ export default function AgodaCouponsContent() {
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Agoda Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an Agoda Coupon Code</h3>
             <div className="space-y-6">
               {[
-                "Step 1: Browse Available Agoda Deals — Visit the Agoda page on Couponsbit and explore the latest discounts, promo codes, and hosting offers.",
-                "Step 2: Select Your Preferred Offer — Choose the deal that best fits your hosting or website-building needs.",
+                "Step 1: Browse Available Agoda Deals — Visit the Agoda page on Couponsbit and explore the latest discounts, promo codes, and travel offers.",
+                "Step 2: Select Your Preferred Offer — Choose the deal that best fits your hotel, flight, or activity booking needs.",
                 "Step 3: Copy the Coupon Code — Click to reveal and copy the coupon code if required.",
-                "Step 4: Visit Agoda — Go to the Agoda website and select your preferred hosting plan or service.",
+                "Step 4: Visit Agoda — Go to the Agoda website or app and select your preferred hotel, flight, or activity.",
                 "Step 5: Apply the Promo Code — During checkout, enter the coupon code in the designated field and verify that the discount has been applied.",
-                "Step 6: Complete Your Purchase — Finalize your order and start building your website while enjoying additional savings."
+                "Step 6: Complete Your Booking — Finalize your reservation and get ready to enjoy your trip while saving money."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -1314,35 +1311,35 @@ export default function AgodaCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Agoda</h3>
-            <p><strong>Check Couponsbit Before Buying:</strong> Always visit Couponsbit before purchasing a hosting plan to find the latest Agoda promo codes and exclusive deals.</p>
-            <p><strong>Choose Annual Plans:</strong> Longer subscription terms often provide better monthly pricing compared to month-to-month plans.</p>
+            <p><strong>Check Couponsbit Before Booking:</strong> Always visit Couponsbit before booking your hotel or trip to find the latest Agoda promo codes and exclusive deals.</p>
+            <p><strong>Book Early:</strong> Booking hotels and flights in advance often unlocks better rates compared to last-minute bookings.</p>
             <p><strong>Look for New Customer Promotions:</strong> Agoda frequently offers introductory discounts for new customers.</p>
-            <p><strong>Shop During Seasonal Sales:</strong> Major shopping events often feature some of the best Agoda deals of the year. Watch for promotions during: Black Friday, Cyber Monday, New Year Sales, Memorial Day, Labor Day, and Small Business Month.</p>
-            <p><strong>Bundle Services:</strong> Combining hosting, domains, professional email, and website tools may provide additional value.</p>
-            <p><strong>Upgrade as You Grow:</strong> Start with a plan that fits your current needs and scale your hosting solution as your website expands.</p>
+            <p><strong>Travel During Seasonal Sales:</strong> Major shopping events often feature some of the best Agoda deals of the year. Watch for promotions during: Black Friday, Cyber Monday, New Year Sales, Memorial Day, Labor Day, and summer travel season.</p>
+            <p><strong>Bundle Your Booking:</strong> Combining flights, hotels, and activities into one package may provide additional value.</p>
+            <p><strong>Join Agoda Rewards:</strong> Signing up for Agoda's loyalty program can unlock additional discounts and cashback on future bookings.</p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Agoda?</h3>
-            <p><strong>Beginner-Friendly Platform:</strong> Agoda makes it easy for first-time website owners to launch and manage their sites.</p>
-            <p><strong>Trusted WordPress Hosting:</strong> The company is widely recognized for its WordPress-focused hosting solutions and website tools.</p>
-            <p><strong>Reliable Performance:</strong> Agoda provides hosting infrastructure designed to support website speed, stability, and uptime.</p>
-            <p><strong>Scalable Solutions:</strong> Users can upgrade from shared hosting to more advanced hosting environments as their websites grow.</p>
-            <p><strong>Comprehensive Website Tools:</strong> From domains and hosting to email and eCommerce, Agoda offers everything needed to build and manage an online presence.</p>
+            <p><strong>Huge Selection of Properties:</strong> Agoda partners with hundreds of thousands of hotels, resorts, and vacation rentals worldwide.</p>
+            <p><strong>Competitive Pricing:</strong> The company is widely recognized for offering some of the best rates on hotels and travel packages.</p>
+            <p><strong>Instant Confirmation:</strong> Agoda provides fast, reliable booking confirmation so travelers can plan with confidence.</p>
+            <p><strong>Flexible Booking Options:</strong> Many bookings offer free cancellation and flexible date changes.</p>
+            <p><strong>Comprehensive Travel Tools:</strong> From hotels and flights to activities and airport transfers, Agoda offers everything needed to plan a complete trip.</p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Agoda Deals?</h3>
             <p><strong>Verified Agoda Coupons:</strong> We regularly update available Agoda offers to help users discover current discounts.</p>
-            <p><strong>Convenient Savings:</strong> Find hosting deals, promo codes, and website-related offers in one place.</p>
+            <p><strong>Convenient Savings:</strong> Find hotel deals, promo codes, and travel-related offers in one place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save on technology, software, travel, shopping, and more.</p>
             <p><strong>Updated Offers:</strong> Our team continuously monitors promotions to help users access relevant savings opportunities.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Build Your Website for Less</h3>
-            <p>Whether you're launching a personal blog, creating an online store, building a portfolio, or growing a business website, Agoda offers the tools and hosting solutions needed to succeed online.</p>
-            <p>Before purchasing a hosting plan, visit Couponsbit to explore the latest Agoda coupon codes, promo codes, and web hosting deals. With verified discounts and regularly updated offers, Couponsbit helps you create and grow your online presence while keeping costs under control.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Book Your Next Trip for Less</h3>
+            <p>Whether you're planning a weekend getaway, a family vacation, or a business trip, Agoda offers the hotels, flights, and activities needed to make your trip a success.</p>
+            <p>Before booking your next stay, visit Couponsbit to explore the latest Agoda coupon codes, promo codes, and travel deals. With verified discounts and regularly updated offers, Couponsbit helps you travel more while keeping costs under control.</p>
           </div>
 
           {!isReadMore && (
@@ -1361,11 +1358,11 @@ export default function AgodaCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "Does Agoda offer coupon codes?", a: "Yes. Agoda frequently offers promotional discounts, hosting deals, and limited-time offers for both new and existing customers." },
-            { q: "Where can I find Agoda promo codes?", a: "You can find the latest Agoda coupon codes and hosting deals directly on Couponsbit." },
-            { q: "Is Agoda good for WordPress websites?", a: "Yes. Agoda is widely known for its WordPress hosting solutions and beginner-friendly WordPress tools." },
-            { q: "Can I register a domain through Agoda?", a: "Yes. Agoda offers domain registration and management services alongside its hosting products." },
-            { q: "Does Agoda offer hosting for businesses?", a: "Absolutely. Agoda provides hosting solutions suitable for startups, small businesses, growing companies, and online stores." },
+            { q: "Does Agoda offer coupon codes?", a: "Yes. Agoda frequently offers promotional discounts, hotel deals, and limited-time offers for both new and existing customers." },
+            { q: "Where can I find Agoda promo codes?", a: "You can find the latest Agoda coupon codes and travel deals directly on Couponsbit." },
+            { q: "Can I book flights on Agoda?", a: "Yes. Agoda allows travelers to book flights alongside hotels for added convenience and savings." },
+            { q: "Does Agoda offer free cancellation?", a: "Many Agoda bookings include free cancellation options — check the specific property or booking terms before confirming." },
+            { q: "Does Agoda offer deals for vacation rentals?", a: "Absolutely. Agoda provides deals on vacation rentals, apartments, and villas in addition to hotels." },
             { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
@@ -1391,7 +1388,7 @@ export default function AgodaCouponsContent() {
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Agoda Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Shared Hosting", "WordPress Setup", "Domain Search", "Agoda Cloud", "Agoda Promo Code", "VPS Hosting", "Dedicated Server", "Web Builder"].map(tag => (
+            {["Agoda Hotels", "Vacation Rentals", "Agoda Flights", "Agoda Promo Code", "City Tours", "Airport Transfers", "Attraction Tickets", "Hotel Deals"].map(tag => (
               <span
                 key={tag}
                 className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
