@@ -133,12 +133,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Sintra",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",         dealText: "Up to 40% OFF", href: "/stores/sintra-coupon-code" },
-  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
-  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Sintra",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781776169/sintra-coupon-code_piyu2d.webp",         dealText: "Up to 40% OFF", href: "/stores/sintra-coupon-code" },
+  { name: "Bluehost",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/bluehost-coupon-code_j8pvdt.webp",       dealText: "Up to 65% OFF", href: "/stores/bluehost-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function DriffleCouponsContent() {
@@ -216,7 +216,7 @@ export default function DriffleCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp" alt="Driffle" width={112} height={112} className="w-full h-full object-contain" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/driffle-coupon-code_n2upgl.webp" alt="Driffle" width={112} height={112} className="w-full h-full object-contain" />
                     </div>
                   </a>
                   <div>
@@ -260,21 +260,21 @@ export default function DriffleCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129759/driffle_discount_code_y0ysgi.webp" alt="Driffle Discount Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782129759/driffle_discount_code_y0ysgi.webp" alt="Driffle Discount Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129760/driffle_promo_code_jtopjs.webp" alt="Driffle Promo Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782129760/driffle_promo_code_jtopjs.webp" alt="Driffle Promo Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782129759/driffle_voucher_code_iv3csa.webp" alt="Driffle Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782129759/driffle_voucher_code_iv3csa.webp" alt="Driffle Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 

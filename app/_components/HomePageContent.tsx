@@ -36,14 +36,14 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/envato-elements-promo-code_xf5dwf.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
-    { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
-    { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/rayneo-promo-code_lcxjg3.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
-    { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/stubhub-voucher-code_p6tesq.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196852/reolink-voucher-code_frnbya.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/sintra-discount-code_gmnegt.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
-    { id: 7, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/driffle-discount-code_q0pcvn.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
-    { id: 8, image: "https://res.cloudinary.com/couponsbit/image/upload/v1782196851/latam-airlines-promo-code_rfexah.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
+    { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/envato-elements-promo-code_xf5dwf.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
+    { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
+    { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/rayneo-promo-code_lcxjg3.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
+    { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/stubhub-voucher-code_p6tesq.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/reolink-voucher-code_frnbya.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
+    { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/sintra-discount-code_gmnegt.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
+    { id: 7, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/driffle-discount-code_q0pcvn.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
+    { id: 8, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/latam-airlines-promo-code_rfexah.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
   ];
 
   useEffect(() => {
@@ -129,16 +129,16 @@ const Hero = () => {
 };
 
 const TOP_BRANDS = [
-  { name: "StubHub",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",         discount: "Starting at $332", href: "/stores/viagogo-coupon-code" },
-  { name: "LATAM Airlines",  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-coupon-code" },
-  { name: "Rayneo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-coupon-code" },
-  { name: "Driffle",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-coupon-code" },
-  { name: "Lyca Mobile",     logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Bluehost",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-coupon-code" },
-  { name: "Reolink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
-  { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
-  { name: "Sintra",          logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
+  { name: "StubHub",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/viagogo-coupon-code_t65aol.webp",         discount: "Starting at $332", href: "/stores/viagogo-coupon-code" },
+  { name: "LATAM Airlines",  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/latam-airlines-coupon-code_pvcsml.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-coupon-code" },
+  { name: "Rayneo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-coupon-code" },
+  { name: "Driffle",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/driffle-coupon-code_n2upgl.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-coupon-code" },
+  { name: "Lyca Mobile",     logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/lyca-mobile-coupon-code_svvddg.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Bluehost",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/bluehost-coupon-code_j8pvdt.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-coupon-code" },
+  { name: "Reolink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/reolink-coupon-code_zsrmh1.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
+  { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/envato-coupon-code_rhfnbt.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
+  { name: "Sintra",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
 ];
 
 const TopBrands = () => {
@@ -392,7 +392,7 @@ export default function HomePageContent() {
                   id: "electronics",
                   name: "Electronics",
                   description: "AR glasses, cameras, gadgets & devices",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677503/electronics-store_lbf784.webp",
                   coupons: "850+",
                   stores: "50+",
                   accent: "#4A90E2",
@@ -403,7 +403,7 @@ export default function HomePageContent() {
                   id: "travel",
                   name: "Travel",
                   description: "Flights, hotels & vacation packages",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677503/travel-store_ppr2qr.webp",
                   coupons: "420+",
                   stores: "20+",
                   accent: "#056bfa",
@@ -414,7 +414,7 @@ export default function HomePageContent() {
                   id: "entertainment",
                   name: "Entertainment",
                   description: "Concerts, sports events & live shows",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/entertainment-store_n2svyq.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677504/entertainment-store_n2svyq.webp",
                   coupons: "210+",
                   stores: "15+",
                   accent: "#8E44AD",

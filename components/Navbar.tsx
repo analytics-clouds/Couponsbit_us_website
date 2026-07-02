@@ -34,8 +34,8 @@ export const Logo = () => (
   <Image
     src="/logo.png"
     alt="Couponsbit Logo"
-    width={1347}
-    height={542}
+    width={556}
+    height={224}
     priority
     sizes="278px"
     className="h-16 w-auto"

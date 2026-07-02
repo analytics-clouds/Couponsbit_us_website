@@ -153,12 +153,12 @@ const COUPONS: Coupon[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
-  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
-  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
-  { name: "Reolink",        logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
-  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
-  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
+  { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-coupon-code" },
+  { name: "Viagogo",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/viagogo-coupon-code_t65aol.webp",        dealText: "Up to 10% OFF", href: "/stores/viagogo-coupon-code" },
+  { name: "Driffle",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/driffle-coupon-code_n2upgl.webp",        dealText: "Up to 70% OFF", href: "/stores/driffle-coupon-code" },
+  { name: "Reolink",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/reolink-coupon-code_zsrmh1.webp",        dealText: "Up to 30% OFF", href: "/stores/reolink-coupon-code" },
+  { name: "Lyca Mobile",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/lyca-mobile-coupon-code_svvddg.webp",    dealText: "Up to 20% OFF", href: "/stores/lyca-mobile-coupon-code" },
+  { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
 export default function FytooCouponsContent() {
@@ -236,7 +236,7 @@ export default function FytooCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp" alt="Fytoo" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782114026/fytoo-logo_pp9aoo.webp" alt="Fytoo" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
@@ -280,21 +280,21 @@ export default function FytooCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782196100/fytoo_discount_code_dajcyx.webp" alt="Fytoo Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_discount_code_dajcyx.webp" alt="Fytoo Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782196100/fytoo_voucher_code_zi6hrv.webp" alt="Fytoo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_voucher_code_zi6hrv.webp" alt="Fytoo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1782196100/fytoo_promo_code_qlw5iu.webp" alt="Fytoo Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_promo_code_qlw5iu.webp" alt="Fytoo Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
