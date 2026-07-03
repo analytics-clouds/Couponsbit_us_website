@@ -65,12 +65,12 @@ interface StoreItem {
 const COUPONS: Coupon[] = [
   {
     id: "c1",
-    discount: "£1,965",
+    discount: "$2,625",
     label: "FROM",
     badge: "Best Offer",
     title: "ZenHotels New York Stay Deal – Residence Inn by Marriott JFK",
     heading: "New York Stay Deal",
-    sub: "Rates From £1,965",
+    sub: "Rates From $2,625",
     description: "Enjoy a comfortable city break in New York with spacious suites and airport convenience.",
     usedCount: "112k",
     expiresIn: "2 days",
@@ -91,12 +91,12 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c3",
-    discount: "£1,504",
+    discount: "$2,009",
     label: "FROM",
     badge: "Trending",
     title: "ZenHotels Greece Beach Escape – Avra Imperial Hotel",
     heading: "Greece Beach Escape",
-    sub: "Rates From £1,504",
+    sub: "Rates From $2,009",
     description: "Relax at a luxurious beachfront resort on Crete's beautiful northern coast.",
     usedCount: "88k",
     expiresIn: "1 day",
@@ -104,11 +104,11 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c4",
-    discount: "£1,911",
+    discount: "$2,553",
     label: "FROM",
     title: "ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro",
     heading: "Portugal Luxury Stay",
-    sub: "Rates From £1,911",
+    sub: "Rates From $2,553",
     description: "Experience breathtaking Algarve coastal views and five-star hospitality.",
     usedCount: "76k",
     expiresIn: "2 days",
@@ -116,11 +116,11 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c5",
-    discount: "£857",
+    discount: "$1,145",
     label: "FROM",
     title: "ZenHotels Prague Luxury Escape – Alchymist Grand Hotel",
     heading: "Prague Luxury Escape",
-    sub: "Rates From £857",
+    sub: "Rates From $1,145",
     description: "Indulge in a premium stay in one of Prague's most elegant hotels.",
     usedCount: "65k",
     expiresIn: "5 days",
@@ -128,11 +128,11 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c6",
-    discount: "£638",
+    discount: "$852",
     label: "FROM",
     title: "ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra",
     heading: "Paris City Break",
-    sub: "Rates From £638",
+    sub: "Rates From $852",
     description: "Stay in the heart of Paris near iconic attractions and shopping districts.",
     usedCount: "54k",
     expiresIn: "3 days",
@@ -140,11 +140,11 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c7",
-    discount: "£612",
+    discount: "$818",
     label: "FROM",
     title: "ZenHotels Milan Romantic Getaway – Hotel Berna",
     heading: "Milan Romantic Getaway",
-    sub: "Rates From £612",
+    sub: "Rates From $818",
     description: "Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.",
     usedCount: "48k",
     expiresIn: "4 days",
@@ -152,11 +152,11 @@ const COUPONS: Coupon[] = [
   },
   {
     id: "c8",
-    discount: "£218",
+    discount: "$291",
     label: "FROM",
     title: "ZenHotels UK Weekend Escape – Moxy Chester",
     heading: "UK Weekend Escape",
-    sub: "Rates From £218",
+    sub: "Rates From $291",
     description: "Plan a fun weekend getaway in the historic city of Chester.",
     usedCount: "41k",
     expiresIn: "5 days",
@@ -374,7 +374,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,965</h2>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,625</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -392,7 +392,7 @@ export default function ZenHotelsCouponsContent() {
                           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
                               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Residence Inn by Marriott New York JFK Airport</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £60 on selected bookings</li>
+                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to $80 on selected bookings</li>
                               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Complimentary shuttle access to JFK Airport terminals</li>
                             </ul>
                           </div>
@@ -455,7 +455,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,504</h2>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,009</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -495,7 +495,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£1,911</h2>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,553</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -535,7 +535,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£857</h2>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$1,145</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -575,7 +575,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£638</h2>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$852</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -594,7 +594,7 @@ export default function ZenHotelsCouponsContent() {
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Comfortable rooms with easy access to the Opéra area</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for sightseeing, shopping and romantic escapes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £638</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from $852</li>
             </ul>
           </div>
         </div>
@@ -615,7 +615,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£612</h2>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$818</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -634,7 +634,7 @@ export default function ZenHotelsCouponsContent() {
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Close to shopping districts, attractions and public transport</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for couples and romantic holidays</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from £612</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Rates starting from $818</li>
             </ul>
           </div>
         </div>
@@ -655,7 +655,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">£218</h2>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$291</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -673,7 +673,7 @@ export default function ZenHotelsCouponsContent() {
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay at Moxy Chester</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £8 on selected stays</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to $11 on selected stays</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy modern rooms and a vibrant social atmosphere</li>
             </ul>
           </div>

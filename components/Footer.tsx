@@ -25,7 +25,7 @@ export const Footer = () => {
   const socialLinks = [
     { icon: Facebook, href: "#", name: "Facebook" },
     { icon: Instagram, href: "https://www.instagram.com/coupons_bit26/", name: "Instagram" },
-    { icon: Twitter, href: "#", name: "Twitter" },
+    { icon: Twitter, href: "https://x.com/Couponsbit26", name: "Twitter" },
     { icon: Youtube, href: "https://www.youtube.com/channel/UCr9e22fOvzGJQ4HG7lsKYyg", name: "YouTube" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/couponsbit/", name: "LinkedIn" },
   ];
