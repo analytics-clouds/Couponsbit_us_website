@@ -15,7 +15,7 @@ import {
   Twitter,
   Facebook,
   Link as LinkIcon,
-  Laptop,
+  Laptop, 
   Plane,
   Tv,
   Code,
