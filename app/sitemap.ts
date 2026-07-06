@@ -72,13 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
     })),
 
-    // Products
-    {
-      url: `${BASE_URL}/products`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-    },
-
     // Info / support pages
     {
       url: `${BASE_URL}/about`,

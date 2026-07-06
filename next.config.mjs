@@ -21,6 +21,11 @@ const nextConfig = {
         source: '/index.html',
         destination: '/',
         permanent: true,
+      },
+      {
+        source: '/stores/nuagewear-coupon-code',
+        destination: '/stores/nuage-coupon-code',
+        permanent: true,
       }
     ];
   },
