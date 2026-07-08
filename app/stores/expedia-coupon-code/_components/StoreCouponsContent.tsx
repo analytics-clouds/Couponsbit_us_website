@@ -26,9 +26,8 @@ import {
   BookOpen, 
   CheckCircle,
   X,
-  ArrowRight,
+  ArrowRight, Hotel, Car, Ship, Ticket, Luggage,
   Plane,
-  Monitor,HardDrive, PlugZap, Layers,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
@@ -69,8 +68,8 @@ const COUPONS: Coupon[] = [
     label: "UP TO",
     badge: "Best Offer",
     title: "Up to 60% OFF on Top Categories",
-    heading: "Beelink ME Mini NAS PC – Up To 35% OFF",
-    sub: "35% OFF",
+    heading: "Expedia USA – Big Summer Sale: UP TO 40% OFF",
+    sub: "40% OFF",
     description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.",
     usedCount: "112k",
     expiresIn: "2 days",
@@ -82,8 +81,8 @@ const COUPONS: Coupon[] = [
     label: "FLAT",
     badge: "Popular",
     title: "Flat 50% OFF on Electronics",
-    heading: "OpenClaw SSD Upgrade Kit – Up To 30% OFF",
-    sub: "30% OFF",
+    heading: "Expedia USA – Save UP TO $464 On Tokyo Hotels",
+    sub: "$464 OFF",
     description: "Get flat 50% off on best selling electronics & accessories.",
     usedCount: "95k",
     expiresIn: "3 days",
@@ -95,8 +94,8 @@ const COUPONS: Coupon[] = [
     label: "FLAT",
     badge: "Trending",
     title: "Flat 30% OFF on Fashion",
-    heading: "Beelink AI Mini PC Sale – Save Up To 21% OFF",
-    sub: "21% OFF",
+    heading: "Expedia USA – Save UP TO $459 On Atlantic City Hotels",
+    sub: "$459 OFF",
     description: "Save big on clothing, footwear, watches & more.",
     usedCount: "88k",
     expiresIn: "1 day",
@@ -107,8 +106,8 @@ const COUPONS: Coupon[] = [
     discount: "10%",
     label: "EXTRA",
     title: "Extra 10% OFF on Prepaid Orders",
-    heading: "Beelink EQR7 Mini PC – Up To 21% OFF",
-    sub: "21% OFF",
+    heading: "Expedia USA – Save UP TO $370 On Los Angeles Hotels",
+    sub: "$370 OFF",
     description: "Pay using UPI, Cards, Net Banking & get extra 10% off.",
     usedCount: "76k",
     expiresIn: "2 days",
@@ -119,9 +118,9 @@ const COUPONS: Coupon[] = [
     discount: "FREE",
     label: "DELIVERY",
     title: "Free Delivery on First Order",
-    heading: "Beelink SER10 OpenClaw Edition – Up To 21% OFF",
-    sub: "21% OFF",
-    description: "Get FREE delivery on your first order on Beelink.",
+    heading: "Expedia USA – Save UP TO $223 On Nashville Hotels",
+    sub: "$223 OFF",
+    description: "Get FREE delivery on your first order on Expedia.",
     usedCount: "65k",
     expiresIn: "5 days",
     code: "FREESHIP"
@@ -149,7 +148,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function BeelinkCouponsContent() {
+export default function ExpediaCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -210,7 +209,7 @@ export default function BeelinkCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Beelink</span>
+              <span className="text-black font-extrabold">Expedia</span>
             </nav>
           </div>
         </div>
@@ -222,13 +221,13 @@ export default function BeelinkCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494081/beelink-coupon-code_gephnd.jpg" alt="Beelink" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783502778/Expedia-coupon-code_k8dosy.jpg" alt="Expedia" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Beelink</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Expedia</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -238,14 +237,14 @@ export default function BeelinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Beelink — Shop the latest AI Mini PCs with verified deals! Save up to 35% OFF, get $450 OFF GTR9 Pro, 21% OFF AI PCs, exclusive coupon codes & discount codes.
+                      Expedia — Discover verified travel deals & coupon codes! Save up to 40% OFF hotels, vacation rentals, flights & car rentals, plus up to $464 OFF select hotels.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "9", label: "Coupons" },
+                    { icon: Tag, val: "10", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -267,22 +266,22 @@ export default function BeelinkCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[240px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/beelink-discount-code_hvani7.webp" alt="Beelink Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                    <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/expedia-coupon-code_tsvr6h.webp" alt="Expedia Coupon Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/beelink-coupon-code_mmasja.webp" alt="Beelink Coupon Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/expedia-discount-code_sxz9sw.webp" alt="Expedia Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/beelink-promo-code_fyjgld.webp" alt="Beelink Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/expedia-promo-code_fn2apw.webp" alt="Expedia Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -335,7 +334,7 @@ export default function BeelinkCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Beelink Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Expedia Coupon Codes & Offers</h2>
                   
                 </div>
 
@@ -349,8 +348,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$450</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">40%</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -360,22 +359,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink GTR9 Pro AI Mini PC – Save $450</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the AMD Ryzen™ AI Max+ 395 powered GTR9 Pro at $4,349, with OpenClaw and Local LLM pre-installed for advanced AI workloads.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Big Summer Sale: UP TO 40% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 40% on select hotels, vacation rentals, flights, and car rentals across top USA destinations.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI Max+ 395 processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>OpenClaw and Local LLM pre-installed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Now $4,349 — built for AI, ML and professional workloads</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Hotels, vacation rentals, flights and car rentals</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Explore top USA destinations for less</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time Expedia USA offer</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink GTR9 Pro AI Mini PC – Save $450" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Big Summer Sale: UP TO 40% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -390,8 +389,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">35%</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$223</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -401,22 +400,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink ME Mini NAS PC – Up To 35% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 35% on the Beelink ME Mini 6-slot home storage NAS PC, starting at $329.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Save UP TO $223 On Nashville Hotels</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Book The Hayes Street Hotel Nashville Downtown and save up to $223 in the heart of Nashville.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>6-slot home storage NAS PC</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Powered by Intel N95/N150</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for home storage, backup and media servers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>The Hayes Street Hotel Nashville Downtown</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay in the heart of Nashville</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time Expedia hotel deal</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink ME Mini NAS PC – Up To 35% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Save UP TO $223 On Nashville Hotels" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -431,8 +430,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">30%</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$370</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -442,22 +441,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenClaw SSD Upgrade Kit – Up To 30% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 30% on the pre-installed OpenClaw SSD Upgrade Kit, starting at $189.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Save UP TO $370 On Los Angeles Hotels</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to $370 on the Beverly Laurel Hotel at West Hollywood, near Hollywood's top attractions.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>High-speed SSD storage upgrade</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for OpenClaw and Local LLM deployments</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $189</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Beverly Laurel Hotel at West Hollywood</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Near Hollywood's top attractions</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: OpenClaw SSD Upgrade Kit – Up To 30% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Save UP TO $370 On Los Angeles Hotels" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -472,9 +471,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Top</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Rated</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -483,22 +481,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink AI Mini PC Sale – Save Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% across Beelink's latest AMD Ryzen™ AI and Intel-powered Mini PCs.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Summer Of Soccer Hotel Deals</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay close to the biggest soccer matches across the USA with exclusive Expedia hotel savings.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI and Intel-powered Mini PCs</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for AI development and Local LLMs</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Also suited for gaming and content creation</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Top-rated hotels in host cities</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for sports fans and summer travelers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time soccer travel offer</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink AI Mini PC Sale – Save Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Summer Of Soccer Hotel Deals" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -513,8 +511,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$459</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -524,22 +522,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink EQR7 Mini PC – Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% on the Beelink EQR7 AMD Ryzen™ 7 7735HS/7735U mini PC, starting at $539.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Save UP TO $459 On Atlantic City Hotels</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay at Caesars Atlantic City Resort and Casino and save up to $459 on luxury stays and casino entertainment.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ 7 7735HS/7735U processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $539</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for work, entertainment and productivity</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Caesars Atlantic City Resort and Casino</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Luxury stays and casino entertainment</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time deal</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink EQR7 Mini PC – Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Save UP TO $459 On Atlantic City Hotels" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -554,9 +552,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Car</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Rentals</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -565,22 +562,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER10 OpenClaw Edition – Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% on the Beelink SER10 MAX OpenClaw Edition, starting at $1,339.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Save On Summer Car Rentals</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get great prices on car rentals across the USA, with free cancellation on select SUVs and sedans.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>OpenClaw and Local LLM pre-installed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for AI developers and local inference</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $1,339</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>SUVs, sedans and more</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free cancellation on select rentals</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Reserve early for the best summer rates</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER10 OpenClaw Edition – Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Save On Summer Car Rentals" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -595,9 +592,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">19%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Earn</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Rewards</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -606,22 +602,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER10 MAX AI PC – Up To 19% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 19% on the Beelink SER10 MAX AMD Ryzen™ AI 9 HX 470, starting at $1,299.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – One Key+ Rewards Card</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Earn travel rewards faster with the One Key+ Card, including welcome rewards and anniversary bonuses.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI 9 HX 470 with AMD XDNA 2 architecture</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available with 32GB or 64GB DDR5</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $1,299</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Welcome rewards after qualifying purchases</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Anniversary bonuses and travel benefits</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply today</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER10 MAX AI PC – Up To 19% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – One Key+ Rewards Card" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -636,8 +632,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">18%</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$464</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -647,22 +643,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER9 Pro – Up To 18% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the Beelink SER9 Pro AMD Ryzen™ 7 H 255 starting at $739 — save up to 18%.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Save UP TO $464 On Tokyo Hotels</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to $464 on select international hotel stays in Tokyo with premium Expedia accommodations.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ 7 H 255 processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $739</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great performance for creators and multitasking</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium accommodations in Tokyo</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Select international hotel stays</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time hotel savings</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER9 Pro – Up To 18% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Save UP TO $464 On Tokyo Hotels" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -677,9 +673,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">17%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Premium</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Stays</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -688,22 +683,62 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink EX Mate Pro – Up To 17% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 17% on the new Beelink EX Mate Pro laptop companion, now available for $199.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Hilton Hotel Deals</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Discover premium stays at Hilton Hotels and Resorts with exclusive Expedia pricing.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Laptop companion device</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Now available for $199</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>New launch — limited-time USA offer</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Hilton Hotels and Resorts</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive Expedia pricing</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for business and leisure travel</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink EX Mate Pro – Up To 17% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Hilton Hotel Deals" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Coupon 10 */}
+<div className="w-full max-w-7xl mx-auto mb-6">
+  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+    <div className="flex flex-row">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="text-center px-1">
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Family</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Rates</h2>
+        </div>
+      </div>
+      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+          </div>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Expedia USA – Disney Resort Deals</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Book magical stays at Disney's Grand Floridian Resort and Spa with great rates for a limited time.</p>
+          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+            View Details
+            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Disney's Grand Floridian Resort and Spa</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Luxury accommodations near Disney attractions</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great rates for a limited time</li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Expedia deal: Expedia USA – Disney Resort Deals" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -719,17 +754,17 @@ export default function BeelinkCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Beelink</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About Expedia</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Beelink is a global technology company specializing in compact computing solutions designed for both personal and professional use. While the brand initially became well known for its powerful mini PCs, it has grown into a broader hardware manufacturer offering Network Attached Storage (NAS) systems, modular laptop companions, expand docks, and other innovative desktop solutions.
+                    Expedia is one of the world's leading online travel companies, helping travelers book flights, hotels, vacation rentals, car rentals, cruises, activities, and complete vacation packages through a single platform. Founded in 1996, Expedia has grown into a globally recognized travel brand that serves millions of customers across numerous countries and regions.
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Today, Beelink develops products powered by the latest AMD Ryzen™ and Intel® Core™ processors, allowing users to enjoy desktop-class performance in significantly smaller form factors. Whether you're streaming 4K content, editing videos, managing business applications, running virtual machines, or building a home server, Beelink offers hardware designed to meet modern computing demands.
+                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    The platform partners with airlines, hotels, resorts, cruise lines, and travel providers worldwide, giving travelers access to a wide range of options for nearly every type of trip. Whether you're planning months in advance or searching for a last-minute escape, Expedia makes comparing prices and organizing your itinerary convenient.
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Its expanding product ecosystem focuses on flexibility, energy efficiency, and performance without sacrificing valuable desk space.
+                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    In addition to travel booking, Expedia offers the One Key™ rewards program, allowing eligible members to earn and redeem rewards across participating travel brands.
                   </p>
-                  <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -760,100 +795,93 @@ export default function BeelinkCouponsContent() {
                 {/* Why Shop Card */}
               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-2xl mx-auto">
   <div className="mb-8">
-    <h2 className="text-black font-black text-xl mb-2">What Can You Buy from Beelink?</h2>
+    <h2 className="text-black font-black text-xl mb-2">What Can You Book on Expedia?</h2>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Beelink now offers much more than mini desktop computers. Its growing hardware portfolio includes solutions for work, entertainment, productivity, and home networking.
+      Expedia offers a complete range of travel services to help simplify every journey.
     </p>
   </div>
 
   <div className="space-y-8">
-    {/* Mini PCs */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Monitor className="w-5 h-5" />
+        <Plane className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Mini PCs</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-3">
-          Mini PCs remain Beelink's flagship products. The lineup ranges from affordable everyday computers like the MINI S series to high-performance workstations such as the SER Series and GTR Series, featuring the latest AMD Ryzen and Intel processors.
-        </p>
-        <div className="bg-gray-50 rounded-xl p-3 border border-[#f5f5f5]">
-          <p className="text-black font-black text-[11px] mb-2">Ideal for:</p>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-gray-500 font-medium text-[11px] list-disc pl-4">
-            <li>Home offices</li>
-            <li>Business productivity</li>
-            <li>Content creation</li>
-            <li>Programming</li>
-            <li>Digital signage</li>
-            <li>Home entertainment</li>
-            <li>AI workloads</li>
-            <li>Everyday computing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    {/* AI & High-Performance Workstations */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Cpu className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">AI & High-Performance Workstations</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Flights</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          For creators, developers, engineers, and professionals, Beelink offers premium systems with powerful processors, fast SSD storage, DDR5 memory, and advanced graphics capabilities designed for demanding workflows.
+          Compare and book domestic and international flights from hundreds of airlines serving destinations around the world.
         </p>
       </div>
     </div>
 
-    {/* Network Attached Storage (NAS) */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <HardDrive className="w-5 h-5" />
+        <Hotel className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Network Attached Storage (NAS)</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Hotels & Resorts</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's NAS solutions allow users to create their own private cloud storage for photos, videos, documents, backups, and media libraries. These compact servers are ideal for households, small businesses, and anyone looking for centralized data storage without recurring cloud subscription fees.
+          Choose from millions of hotels, resorts, boutique stays, apartments, and vacation accommodations across every budget.
         </p>
       </div>
     </div>
 
-    {/* Laptop Companions */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Laptop className="w-5 h-5" />
+        <Luggage className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Laptop Companions</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Vacation Packages</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Products like the EX Mate Pro expand laptop functionality by providing additional connectivity, workspace flexibility, and enhanced productivity for professionals on the go.
+          Bundle flights, hotels, and other travel services into convenient vacation packages that can offer greater overall value.
         </p>
       </div>
     </div>
 
-    {/* Expand Docks */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <PlugZap className="w-5 h-5" />
+        <Home className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Expand Docks</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Vacation Rentals</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's expand docks bridge the gap between mobile devices and desktop workstations by adding multiple ports, display outputs, and connectivity options through a single compact device.
+          Book apartments, beach houses, villas, cabins, and other vacation homes for solo trips, family vacations, or group travel.
         </p>
       </div>
     </div>
 
-    {/* Computer Accessories */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Layers className="w-5 h-5" />
+        <Car className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Computer Accessories</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Car Rentals</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Depending on the product lineup, customers can also shop for power supplies, mounting brackets, cables, and other accessories that complement Beelink hardware.
+          Compare rental vehicles from leading providers and reserve the right car for your trip.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Ship className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Cruises</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Browse cruise vacations from popular cruise lines sailing to destinations around the world.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Ticket className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Activities & Experiences</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Book sightseeing tours, attractions, museums, guided excursions, adventure activities, and entertainment before your trip.
         </p>
       </div>
     </div>
@@ -893,50 +921,50 @@ export default function BeelinkCouponsContent() {
         {/* Section 7: SEO Text Section */}
       
 
-        <section className="py-24 bg-[#f5f5f5]">
+       <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
       
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Beelink Coupon Codes, Promo Codes & Mini PC Deals
+          Expedia Coupon Codes, Promo Codes & Travel Deals
         </h2>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bFA] mb-4">Save More on Powerful Computing with Beelink Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Every Journey with Expedia Coupon Codes</h3>
           <p>
-            Whether you're building a home office, upgrading your entertainment setup, creating a compact workstation, or exploring AI-ready computing, Beelink delivers innovative hardware that combines performance with space-saving design. Before placing your next order, visit Couponsbit to discover the latest <strong>Beelink coupon codes, Beelink promo codes, and exclusive technology deals</strong> that help you save on mini PCs, NAS systems, docking solutions, and accessories.
+            Whether you're planning a relaxing vacation, a business trip, a weekend getaway, or an international adventure, Expedia makes travel planning simple by bringing flights, hotels, vacation packages, car rentals, cruises, and activities together in one place. Before you book, visit Couponsbit to find the latest <strong>Expedia coupon codes, Expedia promo codes, and exclusive travel deals</strong> that can help you save on your next trip.
           </p>
           <p>
-            Known for pushing beyond traditional desktop computers, Beelink has expanded its lineup to include high-performance mini PCs, home storage solutions, modular laptop companions, and productivity accessories for professionals, creators, gamers, and everyday users worldwide.
+            Trusted by millions of travelers worldwide, Expedia offers flexible travel options, competitive prices, and a rewarding loyalty program, making it one of the world's most popular online travel platforms.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Choose Beelink?</h3>
-            <p><strong>Compact Yet Powerful:</strong> Beelink's signature mini PCs deliver desktop-level performance while occupying only a fraction of the space required by traditional tower computers.</p>
-            <p><strong>Diverse Hardware Ecosystem:</strong> The brand has expanded beyond mini PCs to include NAS devices, docking solutions, modular laptop companions, and productivity accessories, giving customers more ways to build efficient workspaces.</p>
-            <p><strong>Latest AMD & Intel Processors:</strong> Many Beelink systems feature current-generation AMD Ryzen™ and Intel® Core™ processors, delivering fast multitasking, responsive performance, and excellent energy efficiency.</p>
-            <p><strong>Perfect for Home & Business:</strong> Whether you're working remotely, managing a business, editing videos, running multiple displays, or setting up a home media server, Beelink offers solutions for various computing needs.</p>
-            <p><strong>Easy Workspace Setup:</strong> Compact hardware allows users to create clean, organized workspaces without compromising on computing power.</p>
-            <p><strong>Energy-Efficient Design:</strong> Mini PCs typically consume less power than traditional desktop towers, making them a practical option for everyday computing.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Choose Expedia?</h3>
+            <p><strong>One Platform for Your Entire Trip:</strong> Expedia allows you to book multiple travel services - including flights, hotels, rental cars, and activities from one convenient platform.</p>
+            <p><strong>Global Travel Options:</strong> With access to travel providers worldwide, Expedia helps travelers explore destinations across North America, Europe, Asia, Australia, Africa, South America, and beyond.</p>
+            <p><strong>One Key™ Rewards:</strong> Eligible travelers can earn and redeem rewards through Expedia's One Key™ loyalty program when booking qualifying travel products.</p>
+            <p><strong>Flexible Search Tools:</strong> Search based on destination, travel dates, budget, property type, amenities, and traveler preferences to find the option that fits your needs.</p>
+            <p><strong>Competitive Prices:</strong> Expedia frequently features member pricing, package discounts, and seasonal promotions that help travelers save more.</p>
+            <p><strong>Easy Trip Management:</strong> Manage bookings, access itineraries, receive travel updates, and make eligible changes through Expedia's website and mobile app.</p>
           </div>
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bFA] mb-8">How to Use a Beelink Coupon Code</h3>
-            <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your Beelink purchase is quick and simple.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-8">How to Use an Expedia Coupon Code</h3>
+            <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your next trip is quick and easy.</p>
             <div className="space-y-6">
               {[
-                "Step 1: Visit Couponsbit — Browse the latest Beelink coupon codes and promotional offers.",
-                "Step 2: Select an Offer — Choose the deal that best fits the product you plan to purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Beelink's website.",
-                "Step 4: Shop Your Products — Add your preferred mini PC, NAS system, docking station, or accessories to your cart.",
+                "Step 1: Visit Couponsbit — Browse the latest Expedia coupon codes and promotional offers.",
+                "Step 2: Select a Deal — Choose the coupon or offer that matches your booking.",
+                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Expedia.",
+                "Step 4: Book Your Travel — Search for flights, hotels, vacation packages, rental cars, cruises, or activities and add them to your itinerary.",
                 "Step 5: Apply the Coupon — Enter the coupon code during checkout if applicable.",
-                "Step 6: Complete Your Order — Finalize your purchase and enjoy savings on your Beelink hardware."
+                "Step 6: Complete Your Reservation — Confirm your booking and enjoy savings on your upcoming trip."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-sky-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056BFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-blue-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
@@ -946,33 +974,34 @@ export default function BeelinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Smart Ways to Save More at Beelink</h3>
-            <p><strong>Check Couponsbit Before Every Purchase:</strong> Couponsbit regularly updates Beelink coupon codes and promotional offers to help you find current savings.</p>
-            <p><strong>Shop During Seasonal Sales:</strong> Technology promotions often appear during major shopping events and holiday sales.</p>
-            <p><strong>Compare Product Series:</strong> Whether you're considering the MINI S, SER, GT, or GTR Series, comparing specifications helps ensure you choose the right system for your workload and budget.</p>
-            <p><strong>Bundle Your Workspace:</strong> If you're purchasing a mini PC, consider adding compatible accessories or docking solutions to complete your setup.</p>
-            <p><strong>Subscribe to Brand Updates:</strong> Joining Beelink's newsletter can help you stay informed about product launches, firmware updates, and special promotions.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Smart Ways to Save More on Expedia</h3>
+            <p><strong>Check Couponsbit Before Every Booking:</strong> Visit Couponsbit to browse the latest Expedia promo codes before completing your reservation.</p>
+            <p><strong>Join One Key™:</strong> Sign up for Expedia's loyalty program to earn rewards on eligible bookings and enjoy member-exclusive pricing.</p>
+            <p><strong>Bundle Your Trip:</strong> Booking flights and hotels together through vacation packages may provide better overall value than booking separately.</p>
+            <p><strong>Book Early:</strong> Planning ahead often gives you more choices and access to competitive rates.</p>
+            <p><strong>Stay Flexible:</strong> Adjusting your travel dates or nearby airports may help you find better prices.</p>
+            <p><strong>Watch for Seasonal Sales:</strong> Travel promotions often appear during holiday sales, seasonal events, and special booking campaigns.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Who Can Benefit from Beelink?</h3>
-            <p>Beelink develops compact computing solutions for a wide range of users, including: Remote professionals, Students, Home office users, Software developers, Content creators, Graphic designers, Video editors, Small business owners, IT professionals, Home server enthusiasts, Media center users, Gamers looking for compact systems.</p>
-            <p>Whether you need an everyday desktop, a powerful workstation, or a personal cloud storage solution, Beelink offers hardware that balances performance, flexibility, and space efficiency.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Who Can Benefit from Expedia?</h3>
+            <p>Expedia serves travelers with a wide range of travel needs, including: Vacation travelers, Business professionals, Families, Couples, Solo travelers, Students, Digital nomads, Frequent travelers, Luxury travelers, Budget-conscious travelers.</p>
+            <p>Whether you're planning a short weekend escape or an extended international vacation, Expedia offers travel solutions for nearly every itinerary.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Use Couponsbit for Beelink Deals?</h3>
-            <p>Couponsbit helps shoppers discover verified savings on technology, software, travel, fashion, electronics, and lifestyle brands.</p>
-            <p><strong>Updated Offers:</strong> We regularly update Beelink coupon codes and promotional deals.</p>
-            <p><strong>Verified Discounts:</strong> Browse coupon codes, limited-time offers, and exclusive savings in one convenient place.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Use Couponsbit for Expedia Deals?</h3>
+            <p>Couponsbit helps travelers discover verified savings across travel, technology, software, fashion, entertainment, and lifestyle brands.</p>
+            <p><strong>Updated Offers:</strong> We regularly update Expedia coupon codes and travel promotions.</p>
+            <p><strong>Verified Discounts:</strong> Browse coupon codes, promo offers, and exclusive travel deals in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>More Than Technology Deals:</strong> In addition to Beelink, Couponsbit features offers from hundreds of global brands across computing, software, travel, home improvement, and online shopping.</p>
+            <p><strong>More Than Travel Deals:</strong> In addition to Expedia, Couponsbit features savings from airlines, hotels, cruise providers, travel agencies, vacation brands, car rental companies, and hundreds of other global brands.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Upgrade Your Workspace While Spending Less</h3>
-            <p>Whether you're investing in a compact mini PC, building a home server with a NAS device, or expanding your productivity with Beelink's latest hardware, there's never been a better time to upgrade your setup.</p>
-            <p>Browse the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit today and save more on innovative computing solutions designed for modern work and everyday life.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Plan Your Next Adventure While Saving More</h3>
+            <p>Whether you're booking a luxury resort, an international flight, a family vacation package, or a last-minute getaway, Expedia makes travel planning easy with millions of travel options around the world.</p>
+            <p>Browse the latest Expedia coupon codes, promo codes, and exclusive travel deals on Couponsbit today and make every journey more affordable.</p>
           </div>
 
           {!isReadMore && (
@@ -982,7 +1011,7 @@ export default function BeelinkCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bFA] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056BFA] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -991,12 +1020,12 @@ export default function BeelinkCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "What is Beelink?", a: "Beelink is a global technology brand that manufactures mini PCs, AI-ready workstations, Network Attached Storage (NAS) systems, laptop companions, docking stations, and other compact computing solutions." },
-            { q: "Is Beelink only known for mini PCs?", a: "No. While mini PCs remain its flagship products, Beelink has expanded its product lineup to include NAS servers, modular laptop companions like the EX Mate Pro, expand docks, and other hardware designed to improve productivity and connectivity." },
-            { q: "What can I use a Beelink mini PC for?", a: "Beelink mini PCs are suitable for office work, home entertainment, programming, media streaming, content creation, business applications, software development, digital signage, virtualization, and everyday computing." },
-            { q: "Does Beelink sell NAS devices?", a: "Yes. Beelink offers compact NAS solutions that allow users to create private cloud storage, manage backups, and centralize files for home or business use." },
-            { q: "Where can I find Beelink coupon codes?", a: "You can find the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit." },
-            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted brands worldwide." }
+            { q: "What is Expedia?", a: "Expedia is a global online travel platform that allows travelers to book flights, hotels, vacation rentals, car rentals, cruises, activities, and vacation packages through one website." },
+            { q: "What can I book on Expedia?", a: "You can book flights, hotels, vacation rentals, vacation packages, rental cars, cruises, airport transportation, and travel activities." },
+            { q: "What is One Key™?", a: "One Key™ is Expedia's loyalty and rewards program that allows eligible members to earn and redeem rewards across participating travel brands." },
+            { q: "Where can I find Expedia coupon codes?", a: "You can find the latest Expedia coupon codes, Expedia promo codes, and exclusive travel deals on Couponsbit." },
+            { q: "Does Expedia offer vacation packages?", a: "Yes. Expedia allows travelers to bundle flights, hotels, rental cars, and other travel services into vacation packages that may provide additional savings." },
+            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps travelers discover verified coupon codes, promo offers, and discounts from trusted brands worldwide." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 
@@ -1004,7 +1033,7 @@ export default function BeelinkCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bFA] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056BFA] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -1018,13 +1047,13 @@ export default function BeelinkCouponsContent() {
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#f0f9ff] rounded-[40px] p-10 border border-[#056bFA]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Beelink Searches</h3>
+        <div className="bg-[#eff6ff] rounded-[40px] p-10 border border-[#056BFA]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Expedia Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Mini PCs", "SER Series", "GTR Workstation", "Beelink NAS", "Beelink Promo Code", "Expand Docks", "AI Computing", "Compact Desktops"].map(tag => (
+            {["Flights", "Hotels", "Vacation Packages", "Car Rentals", "Expedia Promo Code", "Cruises", "One Key", "Activities"].map(tag => (
               <span
                 key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bFA] uppercase tracking-widest shadow-sm border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056BFA] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
               </span>
@@ -1033,16 +1062,16 @@ export default function BeelinkCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Beelink Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Expedia Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bFA] font-black text-xl italic shadow-inner">B</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056BFA] font-black text-xl italic shadow-inner">E</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bFA] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056BFA] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Beelink deal: ${deal.heading}`} className="bg-[#f0f9ff] text-[#056bFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bFA] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.dpbolvw.net/click-100938140-13852770?sid=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Expedia deal: ${deal.heading}`} className="bg-[#eff6ff] text-[#056BFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

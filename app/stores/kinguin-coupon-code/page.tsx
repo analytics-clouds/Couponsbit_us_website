@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     languages: {
       "en-US": "https://www.couponsbit.us/stores/kinguin-coupon-code",
       "en-GB": "https://www.couponsbit.us/stores/kinguin-coupon-code",
+      "en-AU": "https://www.couponsbit.us/stores/kinguin-coupon-code",
+      "en-CA": "https://www.couponsbit.us/stores/kinguin-coupon-code",
       "en-IN": "https://www.couponsbit.us/stores/kinguin-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/kinguin-coupon-code",
     },
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
       "Get the latest Kinguin Coupon Code & discount code to save up to 97% OFF games, 67% OFF gift cards, games from $1.86, KING'S Pass deals & more.",
     siteName: "Couponsbit",
     locale: "en_US",
-    alternateLocale: ["en_GB", "en_IN"],
+    alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/kinguin-coupon-code_ugjj9s.jpg",
@@ -94,6 +96,8 @@ const kinguinSchema = {
             areaServed: [
               { "@type": "Country", name: "United States" },
               { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Australia" },
+              { "@type": "Country", name: "Canada" },
               { "@type": "Country", name: "India" },
             ],
             seller: {

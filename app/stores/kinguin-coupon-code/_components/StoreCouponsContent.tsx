@@ -263,25 +263,25 @@ export default function KinguinCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[240px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://kinguin.sjv.io/c/4303217/3827272/50048?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/kinguin-coupon-code_ugjj9s.jpg" alt="Kinguin Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/kinguin-coupon-code_g6bmn9.webp" alt="Kinguin Coupon Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://kinguin.sjv.io/c/4303217/3827272/50048?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/kinguin-coupon-code_ugjj9s.jpg" alt="Kinguin Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/kinguin-promo-code_kmbrzg.webp" alt="Kinguin Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://kinguin.sjv.io/c/4303217/3827272/50048?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/kinguin-coupon-code_ugjj9s.jpg" alt="Kinguin Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/kinguin-discount-code_izvpg5.webp" alt="Kinguin Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 

@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     languages: {
       "en-US": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
       "en-GB": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
+      "en-AU": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
+      "en-CA": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
       "en-IN": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/cheapflights-coupon-code",
     },
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
       "Get the latest CheapFlights Coupon Code & discount code to book flights under $99, save up to 25% OFF cruises, earn $100 travel credits, hotels from $11 & more.",
     siteName: "Couponsbit",
     locale: "en_US",
-    alternateLocale: ["en_GB", "en_IN"],
+    alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg",
@@ -94,6 +96,8 @@ const cheapflightsSchema = {
             areaServed: [
               { "@type": "Country", name: "United States" },
               { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Australia" },
+              { "@type": "Country", name: "Canada" },
               { "@type": "Country", name: "India" },
             ],
             seller: {

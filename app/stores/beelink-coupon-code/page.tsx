@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     languages: {
       "en-US": "https://www.couponsbit.us/stores/beelink-coupon-code",
       "en-GB": "https://www.couponsbit.us/stores/beelink-coupon-code",
+      "en-AU": "https://www.couponsbit.us/stores/beelink-coupon-code",
+      "en-CA": "https://www.couponsbit.us/stores/beelink-coupon-code",
       "en-IN": "https://www.couponsbit.us/stores/beelink-coupon-code",
       "x-default": "https://www.couponsbit.us/stores/beelink-coupon-code",
     },
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
       "Get the latest Beelink Coupon Code & discount code to save up to 35% OFF on Mini PCs, NAS PCs & SSD kits. Enjoy $450 OFF GTR9 Pro and 21% OFF AI PCs.",
     siteName: "Couponsbit",
     locale: "en_US",
-    alternateLocale: ["en_GB", "en_IN"],
+    alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg",
@@ -94,6 +96,8 @@ const beelinkSchema = {
             areaServed: [
               { "@type": "Country", name: "United States" },
               { "@type": "Country", name: "United Kingdom" },
+              { "@type": "Country", name: "Australia" },
+              { "@type": "Country", name: "Canada" },
               { "@type": "Country", name: "India" },
             ],
             seller: {

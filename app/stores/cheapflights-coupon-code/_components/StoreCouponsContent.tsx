@@ -264,25 +264,25 @@ export default function CheapflightsCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[240px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://www.anrdoezrs.net/click-100938140-15524726?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/Cheepflights-coupon-code_cbqikz.jpg" alt="Cheapflights Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/Cheapflights-promo-code_dxkv42.webp" alt="Cheapflights Promo Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://www.anrdoezrs.net/click-100938140-15524726?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/Cheepflights-coupon-code_cbqikz.jpg" alt="Cheapflights Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/Cheapflights-coupon-code_e0m6kq.webp" alt="Cheapflights Coupon Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://www.anrdoezrs.net/click-100938140-15524726?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494079/Cheepflights-coupon-code_cbqikz.jpg" alt="Cheapflights Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/Cheapflights-discount-code_l7kxgm.webp" alt="Cheapflights Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 

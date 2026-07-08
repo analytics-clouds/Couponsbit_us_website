@@ -23,12 +23,12 @@ import {
   Shirt, 
   Home, 
   Sparkles, 
+  Hotel, Car, Ticket, Crown, Luggage,
   BookOpen, 
   CheckCircle,
   X,
   ArrowRight,
   Plane,
-  Monitor,HardDrive, PlugZap, Layers,
   Tv,
   Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
@@ -69,8 +69,8 @@ const COUPONS: Coupon[] = [
     label: "UP TO",
     badge: "Best Offer",
     title: "Up to 60% OFF on Top Categories",
-    heading: "Beelink ME Mini NAS PC – Up To 35% OFF",
-    sub: "35% OFF",
+    heading: "Qatar Holidays – UP TO 40% OFF On Doha Holiday Packages",
+    sub: "40% OFF",
     description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.",
     usedCount: "112k",
     expiresIn: "2 days",
@@ -82,8 +82,8 @@ const COUPONS: Coupon[] = [
     label: "FLAT",
     badge: "Popular",
     title: "Flat 50% OFF on Electronics",
-    heading: "OpenClaw SSD Upgrade Kit – Up To 30% OFF",
-    sub: "30% OFF",
+    heading: "Qatar Holidays – Save UP TO 20% On Formula 1 Qatar Grand Prix",
+    sub: "20% OFF",
     description: "Get flat 50% off on best selling electronics & accessories.",
     usedCount: "95k",
     expiresIn: "3 days",
@@ -95,8 +95,8 @@ const COUPONS: Coupon[] = [
     label: "FLAT",
     badge: "Trending",
     title: "Flat 30% OFF on Fashion",
-    heading: "Beelink AI Mini PC Sale – Save Up To 21% OFF",
-    sub: "21% OFF",
+    heading: "Qatar Holidays – Doha Stopover Packages From $76",
+    sub: "$76",
     description: "Save big on clothing, footwear, watches & more.",
     usedCount: "88k",
     expiresIn: "1 day",
@@ -107,8 +107,8 @@ const COUPONS: Coupon[] = [
     discount: "10%",
     label: "EXTRA",
     title: "Extra 10% OFF on Prepaid Orders",
-    heading: "Beelink EQR7 Mini PC – Up To 21% OFF",
-    sub: "21% OFF",
+    heading: "Qatar Holidays – Dubai City Breaks From $74/Night",
+    sub: "$74/night",
     description: "Pay using UPI, Cards, Net Banking & get extra 10% off.",
     usedCount: "76k",
     expiresIn: "2 days",
@@ -119,9 +119,9 @@ const COUPONS: Coupon[] = [
     discount: "FREE",
     label: "DELIVERY",
     title: "Free Delivery on First Order",
-    heading: "Beelink SER10 OpenClaw Edition – Up To 21% OFF",
-    sub: "21% OFF",
-    description: "Get FREE delivery on your first order on Beelink.",
+    heading: "Qatar Holidays – Phuket Beach Holidays From $69/Night",
+    sub: "$69/night",
+    description: "Get FREE delivery on your first order on Qatar Holidays.",
     usedCount: "65k",
     expiresIn: "5 days",
     code: "FREESHIP"
@@ -149,7 +149,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function BeelinkCouponsContent() {
+export default function QatarHolidaysCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -210,7 +210,7 @@ export default function BeelinkCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Beelink</span>
+              <span className="text-black font-extrabold">Qatar Holidays</span>
             </nav>
           </div>
         </div>
@@ -222,13 +222,13 @@ export default function BeelinkCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494081/beelink-coupon-code_gephnd.jpg" alt="Beelink" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783502778/qatar-coupon-code_maxmdi.jpg" alt="Qatar Holidays" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Beelink</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Qatar Holidays</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -238,14 +238,14 @@ export default function BeelinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Beelink — Shop the latest AI Mini PCs with verified deals! Save up to 35% OFF, get $450 OFF GTR9 Pro, 21% OFF AI PCs, exclusive coupon codes & discount codes.
+                      Expedia — Discover verified travel deals & coupon codes! Save up to 40% OFF hotels, vacation rentals, flights & car rentals, plus up to $464 OFF select hotels.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "9", label: "Coupons" },
+                    { icon: Tag, val: "8", label: "Coupons" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -264,25 +264,25 @@ export default function BeelinkCouponsContent() {
 
               {/* Right: Featured Banner Slider */}
               <div className="hidden md:block flex-1">
-                <div className="relative rounded-2xl overflow-hidden h-[240px] shadow-lg group">
+                <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512560/beelink-discount-code_hvani7.webp" alt="Beelink Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                    <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783502778/qatar-coupon-code_maxmdi.jpg" alt="Qatar Holidays Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/beelink-coupon-code_mmasja.webp" alt="Beelink Coupon Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783502778/qatar-coupon-code_maxmdi.jpg" alt="Qatar Holidays Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783512559/beelink-promo-code_fyjgld.webp" alt="Beelink Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                    <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783502778/qatar-coupon-code_maxmdi.jpg" alt="Qatar Holidays Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -335,7 +335,7 @@ export default function BeelinkCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Beelink Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Qatar Holidays Coupon Codes & Offers</h2>
                   
                 </div>
 
@@ -349,8 +349,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$450</h2>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">40%</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -360,22 +360,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink GTR9 Pro AI Mini PC – Save $450</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the AMD Ryzen™ AI Max+ 395 powered GTR9 Pro at $4,349, with OpenClaw and Local LLM pre-installed for advanced AI workloads.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays – UP TO 40% OFF On Doha Holiday Packages</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 40% on Doha holiday packages from the USA, including premium hotels, flights and experiences.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI Max+ 395 processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>OpenClaw and Local LLM pre-installed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Now $4,349 — built for AI, ML and professional workloads</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium hotels, flights and experiences</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Doha holiday packages from the USA</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time Qatar Holidays USA offer</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink GTR9 Pro AI Mini PC – Save $450" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays – UP TO 40% OFF On Doha Holiday Packages" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -390,9 +390,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">35%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$76</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -401,22 +400,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink ME Mini NAS PC – Up To 35% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 35% on the Beelink ME Mini 6-slot home storage NAS PC, starting at $329.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays – Doha Stopover Packages From $76</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Explore Doha with stopover packages from just $76, staying in carefully selected 4-star hotels.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>6-slot home storage NAS PC</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Powered by Intel N95/N150</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for home storage, backup and media servers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Carefully selected 4-star hotels</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for travelers flying through Qatar</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>From just $76</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink ME Mini NAS PC – Up To 35% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays – Doha Stopover Packages From $76" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -431,9 +430,9 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">30%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$74</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/night</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -442,22 +441,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenClaw SSD Upgrade Kit – Up To 30% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 30% on the pre-installed OpenClaw SSD Upgrade Kit, starting at $189.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays – Dubai City Breaks From $74/Night</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Escape to Dubai with stays from just $74 per night, earning Avios and Qpoints on eligible bookings.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>High-speed SSD storage upgrade</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for OpenClaw and Local LLM deployments</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $189</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Dubai stays from $74 per night</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn Avios and Qpoints</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Book with cash or Avios</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: OpenClaw SSD Upgrade Kit – Up To 30% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays – Dubai City Breaks From $74/Night" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -472,9 +471,9 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$69</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/night</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -483,22 +482,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink AI Mini PC Sale – Save Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% across Beelink's latest AMD Ryzen™ AI and Intel-powered Mini PCs.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays – Phuket Beach Holidays From $69/Night</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Relax in Phuket with stays from just $69 per night, earning Avios and Qpoints on eligible bookings.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI and Intel-powered Mini PCs</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for AI development and Local LLMs</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Also suited for gaming and content creation</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Phuket stays from $69 per night</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn Avios and Qpoints</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Book with cash or Avios</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink AI Mini PC Sale – Save Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays – Phuket Beach Holidays From $69/Night" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -514,7 +513,7 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
+          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</h2>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -524,22 +523,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink EQR7 Mini PC – Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% on the Beelink EQR7 AMD Ryzen™ 7 7735HS/7735U mini PC, starting at $539.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays – Save UP TO 20% On Formula 1 Qatar Grand Prix</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 20% on Formula 1 Qatar Grand Prix 2026 packages, including flights, hotels and race tickets.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ 7 7735HS/7735U processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $539</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for work, entertainment and productivity</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Flights, hotels and 3-day race tickets</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Lusail International Circuit</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Book now before packages sell out</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink EQR7 Mini PC – Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays – Save UP TO 20% On Formula 1 Qatar Grand Prix" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -554,9 +553,9 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">21%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$67</h2>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/night</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -565,22 +564,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER10 OpenClaw Edition – Up To 21% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 21% on the Beelink SER10 MAX OpenClaw Edition, starting at $1,339.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays USA – Maldives Escapes From $67/Night</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Discover the Maldives with stays from just $67 per night, earning Avios and Qpoints on eligible stays.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>OpenClaw and Local LLM pre-installed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for AI developers and local inference</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $1,339</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Maldives stays from $67 per night</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn Avios and Qpoints</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Book with cash or Avios</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER10 OpenClaw Edition – Up To 21% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays USA – Maldives Escapes From $67/Night" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -595,9 +594,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">19%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
+          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$111</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -606,22 +604,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER10 MAX AI PC – Up To 19% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 19% on the Beelink SER10 MAX AMD Ryzen™ AI 9 HX 470, starting at $1,299.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays USA – Premium Doha Stopover From $111</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your journey with premium 5-star Doha stopover packages, starting from $111 for 4 nights.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ AI 9 HX 470 with AMD XDNA 2 architecture</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available with 32GB or 64GB DDR5</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $1,299</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium 5-star Doha stopover</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>From $111 for 4 nights</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>World-class luxury in Qatar</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER10 MAX AI PC – Up To 19% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays USA – Premium Doha Stopover From $111" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -636,9 +634,8 @@ export default function BeelinkCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">18%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Signature</p>
+          <h2 className="text-[15px] sm:text-3xl font-extrabold leading-none mt-2">Collection</h2>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -647,63 +644,22 @@ export default function BeelinkCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink SER9 Pro – Up To 18% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the Beelink SER9 Pro AMD Ryzen™ 7 H 255 starting at $739 — save up to 18%.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Qatar Holidays USA – Bangkok Signature Collection</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Book luxury Bangkok holiday packages including return flights, premium hotel stays and airport transfers.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AMD Ryzen™ 7 H 255 processor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $739</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great performance for creators and multitasking</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Return flights and airport transfers</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium hotel stays</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive Privilege Club benefits</li>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink SER9 Pro – Up To 18% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">17%</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beelink EX Mate Pro – Up To 17% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 17% on the new Beelink EX Mate Pro laptop companion, now available for $199.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Laptop companion device</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Now available for $199</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>New launch — limited-time USA offer</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Beelink deal: Beelink EX Mate Pro – Up To 17% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Qatar Holidays deal: Qatar Holidays USA – Bangkok Signature Collection" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -719,17 +675,17 @@ export default function BeelinkCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Beelink</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About Qatar Holidays</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Beelink is a global technology company specializing in compact computing solutions designed for both personal and professional use. While the brand initially became well known for its powerful mini PCs, it has grown into a broader hardware manufacturer offering Network Attached Storage (NAS) systems, modular laptop companions, expand docks, and other innovative desktop solutions.
+                    Qatar Airways Holidays is the official holiday package provider of Qatar Airways, offering travelers complete vacation experiences to destinations around the world. The platform allows customers to book flights, hotels, airport transfers, tours, and travel experiences together, creating seamless travel itineraries from a single booking.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Today, Beelink develops products powered by the latest AMD Ryzen™ and Intel® Core™ processors, allowing users to enjoy desktop-class performance in significantly smaller form factors. Whether you're streaming 4K content, editing videos, managing business applications, running virtual machines, or building a home server, Beelink offers hardware designed to meet modern computing demands.
+                    As part of the globally recognized Qatar Airways brand, Qatar Airways Holidays focuses on delivering premium travel experiences while offering travelers flexibility, convenience, and excellent value. From luxury resorts and romantic getaways to family holidays and city breaks, the platform provides carefully selected travel packages for a variety of budgets and travel styles.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Its expanding product ecosystem focuses on flexibility, energy efficiency, and performance without sacrificing valuable desk space.
+                    Members of the Qatar Airways Privilege Club may also have opportunities to earn or redeem Avios on eligible holiday bookings, depending on current program terms.
                   </p>
-                  <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -760,100 +716,81 @@ export default function BeelinkCouponsContent() {
                 {/* Why Shop Card */}
               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-2xl mx-auto">
   <div className="mb-8">
-    <h2 className="text-black font-black text-xl mb-2">What Can You Buy from Beelink?</h2>
+    <h2 className="text-black font-black text-xl mb-2">What Can You Book with Qatar Airways Holidays?</h2>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Beelink now offers much more than mini desktop computers. Its growing hardware portfolio includes solutions for work, entertainment, productivity, and home networking.
+      Qatar Airways Holidays offers complete travel solutions designed to simplify your vacation planning.
     </p>
   </div>
 
   <div className="space-y-8">
-    {/* Mini PCs */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Monitor className="w-5 h-5" />
+        <Luggage className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Mini PCs</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-3">
-          Mini PCs remain Beelink's flagship products. The lineup ranges from affordable everyday computers like the MINI S series to high-performance workstations such as the SER Series and GTR Series, featuring the latest AMD Ryzen and Intel processors.
-        </p>
-        <div className="bg-gray-50 rounded-xl p-3 border border-[#f5f5f5]">
-          <p className="text-black font-black text-[11px] mb-2">Ideal for:</p>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-gray-500 font-medium text-[11px] list-disc pl-4">
-            <li>Home offices</li>
-            <li>Business productivity</li>
-            <li>Content creation</li>
-            <li>Programming</li>
-            <li>Digital signage</li>
-            <li>Home entertainment</li>
-            <li>AI workloads</li>
-            <li>Everyday computing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    {/* AI & High-Performance Workstations */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Cpu className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">AI & High-Performance Workstations</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Vacation Packages</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          For creators, developers, engineers, and professionals, Beelink offers premium systems with powerful processors, fast SSD storage, DDR5 memory, and advanced graphics capabilities designed for demanding workflows.
+          Book complete holiday packages that combine flights and accommodations for destinations across the globe.
         </p>
       </div>
     </div>
 
-    {/* Network Attached Storage (NAS) */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <HardDrive className="w-5 h-5" />
+        <Hotel className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Network Attached Storage (NAS)</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Hotels & Resorts</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's NAS solutions allow users to create their own private cloud storage for photos, videos, documents, backups, and media libraries. These compact servers are ideal for households, small businesses, and anyone looking for centralized data storage without recurring cloud subscription fees.
+          Choose from luxury hotels, beachfront resorts, boutique accommodations, family-friendly properties, and premium city hotels.
         </p>
       </div>
     </div>
 
-    {/* Laptop Companions */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Laptop className="w-5 h-5" />
+        <Plane className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Laptop Companions</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Flights</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Products like the EX Mate Pro expand laptop functionality by providing additional connectivity, workspace flexibility, and enhanced productivity for professionals on the go.
+          Travel with Qatar Airways to hundreds of destinations through its extensive global network.
         </p>
       </div>
     </div>
 
-    {/* Expand Docks */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <PlugZap className="w-5 h-5" />
+        <Car className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Expand Docks</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Airport Transfers</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's expand docks bridge the gap between mobile devices and desktop workstations by adding multiple ports, display outputs, and connectivity options through a single compact device.
+          Add convenient airport transportation for a smoother travel experience.
         </p>
       </div>
     </div>
 
-    {/* Computer Accessories */}
     <div className="flex gap-4 items-start">
       <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Layers className="w-5 h-5" />
+        <Ticket className="w-5 h-5" />
       </div>
       <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Computer Accessories</h3>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Tours & Activities</h3>
         <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Depending on the product lineup, customers can also shop for power supplies, mounting brackets, cables, and other accessories that complement Beelink hardware.
+          Enhance your vacation with sightseeing tours, local experiences, cultural attractions, and adventure activities available in selected destinations.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex gap-4 items-start">
+      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+        <Crown className="w-5 h-5" />
+      </div>
+      <div>
+        <h3 className="text-black font-black text-sm leading-tight mb-2">Luxury Escapes</h3>
+        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+          Explore premium vacation packages featuring five-star accommodations, exclusive experiences, and luxury travel options.
         </p>
       </div>
     </div>
@@ -900,43 +837,43 @@ export default function BeelinkCouponsContent() {
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Beelink Coupon Codes, Promo Codes & Mini PC Deals
+          Qatar Airways Holidays Promo Codes, Coupon Codes & Vacation Deals
         </h2>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bFA] mb-4">Save More on Powerful Computing with Beelink Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Your Dream Vacation with Qatar Airways Holidays Promo Codes</h3>
           <p>
-            Whether you're building a home office, upgrading your entertainment setup, creating a compact workstation, or exploring AI-ready computing, Beelink delivers innovative hardware that combines performance with space-saving design. Before placing your next order, visit Couponsbit to discover the latest <strong>Beelink coupon codes, Beelink promo codes, and exclusive technology deals</strong> that help you save on mini PCs, NAS systems, docking solutions, and accessories.
+            Planning a relaxing beach escape, a luxury city break, or an unforgettable family vacation? Qatar Airways Holidays makes it easy to book complete travel packages that combine flights, hotels, and curated experiences in one convenient place. Before confirming your reservation, visit Couponsbit to discover the latest <strong>Qatar Airways Holidays promo codes, Qatar Airways Holidays coupon codes, and exclusive vacation deals</strong> that can help you save on your next getaway.
           </p>
           <p>
-            Known for pushing beyond traditional desktop computers, Beelink has expanded its lineup to include high-performance mini PCs, home storage solutions, modular laptop companions, and productivity accessories for professionals, creators, gamers, and everyday users worldwide.
+            Whether you're traveling for leisure, celebrating a special occasion, or exploring a new destination, Qatar Airways Holidays offers thoughtfully designed vacation packages backed by the award-winning service of Qatar Airways.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Choose Beelink?</h3>
-            <p><strong>Compact Yet Powerful:</strong> Beelink's signature mini PCs deliver desktop-level performance while occupying only a fraction of the space required by traditional tower computers.</p>
-            <p><strong>Diverse Hardware Ecosystem:</strong> The brand has expanded beyond mini PCs to include NAS devices, docking solutions, modular laptop companions, and productivity accessories, giving customers more ways to build efficient workspaces.</p>
-            <p><strong>Latest AMD & Intel Processors:</strong> Many Beelink systems feature current-generation AMD Ryzen™ and Intel® Core™ processors, delivering fast multitasking, responsive performance, and excellent energy efficiency.</p>
-            <p><strong>Perfect for Home & Business:</strong> Whether you're working remotely, managing a business, editing videos, running multiple displays, or setting up a home media server, Beelink offers solutions for various computing needs.</p>
-            <p><strong>Easy Workspace Setup:</strong> Compact hardware allows users to create clean, organized workspaces without compromising on computing power.</p>
-            <p><strong>Energy-Efficient Design:</strong> Mini PCs typically consume less power than traditional desktop towers, making them a practical option for everyday computing.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Choose Qatar Airways Holidays?</h3>
+            <p><strong>Complete Vacation Planning:</strong> Book flights, hotels, and selected travel services together through one trusted platform.</p>
+            <p><strong>Award-Winning Airline Experience:</strong> Holiday packages are built around Qatar Airways' extensive global route network and renowned onboard service.</p>
+            <p><strong>Worldwide Destinations:</strong> Choose from vacation packages to destinations across Europe, Asia, the Middle East, Africa, Australia, and the Americas.</p>
+            <p><strong>Carefully Selected Hotels:</strong> Qatar Airways Holidays partners with a wide range of hotels and resorts to accommodate different travel styles and budgets.</p>
+            <p><strong>Exclusive Holiday Offers:</strong> Travelers can often access seasonal promotions, limited-time vacation packages, and special travel offers throughout the year.</p>
+            <p><strong>Privilege Club Benefits:</strong> Eligible travelers may earn or redeem Avios on qualifying bookings, depending on the current Privilege Club program rules.</p>
           </div>
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bFA] mb-8">How to Use a Beelink Coupon Code</h3>
-            <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your Beelink purchase is quick and simple.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-8">How to Use a Qatar Airways Holidays Promo Code</h3>
+            <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your next vacation is quick and easy.</p>
             <div className="space-y-6">
               {[
-                "Step 1: Visit Couponsbit — Browse the latest Beelink coupon codes and promotional offers.",
-                "Step 2: Select an Offer — Choose the deal that best fits the product you plan to purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Beelink's website.",
-                "Step 4: Shop Your Products — Add your preferred mini PC, NAS system, docking station, or accessories to your cart.",
-                "Step 5: Apply the Coupon — Enter the coupon code during checkout if applicable.",
-                "Step 6: Complete Your Order — Finalize your purchase and enjoy savings on your Beelink hardware."
+                "Step 1: Visit Couponsbit — Browse the latest Qatar Airways Holidays promo codes and travel offers.",
+                "Step 2: Select an Offer — Choose the coupon or promotion that best matches your travel plans.",
+                "Step 3: Copy the Promo Code — Copy the available code before visiting Qatar Airways Holidays.",
+                "Step 4: Build Your Vacation — Select your destination, travel dates, hotel, flights, and any additional services.",
+                "Step 5: Apply the Coupon — Enter the promo code during checkout if applicable.",
+                "Step 6: Complete Your Booking — Confirm your reservation and enjoy savings on your holiday package."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-sky-100 italic">
+                  <div className="w-10 h-10 shrink-0 bg-[#056BFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-blue-100 italic">
                     {i + 1}
                   </div>
                   <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
@@ -946,33 +883,34 @@ export default function BeelinkCouponsContent() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Smart Ways to Save More at Beelink</h3>
-            <p><strong>Check Couponsbit Before Every Purchase:</strong> Couponsbit regularly updates Beelink coupon codes and promotional offers to help you find current savings.</p>
-            <p><strong>Shop During Seasonal Sales:</strong> Technology promotions often appear during major shopping events and holiday sales.</p>
-            <p><strong>Compare Product Series:</strong> Whether you're considering the MINI S, SER, GT, or GTR Series, comparing specifications helps ensure you choose the right system for your workload and budget.</p>
-            <p><strong>Bundle Your Workspace:</strong> If you're purchasing a mini PC, consider adding compatible accessories or docking solutions to complete your setup.</p>
-            <p><strong>Subscribe to Brand Updates:</strong> Joining Beelink's newsletter can help you stay informed about product launches, firmware updates, and special promotions.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Smart Ways to Save More on Qatar Airways Holidays</h3>
+            <p><strong>Check Couponsbit Before Booking:</strong> Browse Couponsbit for the latest Qatar Airways Holidays promo codes before finalizing your vacation.</p>
+            <p><strong>Book Vacation Packages:</strong> Bundling flights and hotels together may provide better overall value than booking each separately.</p>
+            <p><strong>Travel During Promotional Periods:</strong> Look for seasonal travel campaigns and holiday offers throughout the year.</p>
+            <p><strong>Join Qatar Airways Privilege Club:</strong> Eligible members can enjoy loyalty benefits and may earn or redeem Avios on qualifying holiday bookings.</p>
+            <p><strong>Plan Early:</strong> Booking your vacation in advance often provides greater availability and more accommodation choices.</p>
+            <p><strong>Stay Flexible:</strong> If your travel dates are flexible, comparing different departure periods may help you secure better pricing.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Who Can Benefit from Beelink?</h3>
-            <p>Beelink develops compact computing solutions for a wide range of users, including: Remote professionals, Students, Home office users, Software developers, Content creators, Graphic designers, Video editors, Small business owners, IT professionals, Home server enthusiasts, Media center users, Gamers looking for compact systems.</p>
-            <p>Whether you need an everyday desktop, a powerful workstation, or a personal cloud storage solution, Beelink offers hardware that balances performance, flexibility, and space efficiency.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Who Can Benefit from Qatar Airways Holidays?</h3>
+            <p>Qatar Airways Holidays serves travelers from around the world, including: Families, Couples, Honeymooners, Solo travelers, Luxury travelers, Business travelers extending their stay, Adventure travelers, Group travelers, Frequent international travelers.</p>
+            <p>Whether you're planning a romantic escape, a luxury vacation, or a memorable family holiday, Qatar Airways Holidays offers packages designed for a variety of travel preferences.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Use Couponsbit for Beelink Deals?</h3>
-            <p>Couponsbit helps shoppers discover verified savings on technology, software, travel, fashion, electronics, and lifestyle brands.</p>
-            <p><strong>Updated Offers:</strong> We regularly update Beelink coupon codes and promotional deals.</p>
-            <p><strong>Verified Discounts:</strong> Browse coupon codes, limited-time offers, and exclusive savings in one convenient place.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Why Use Couponsbit for Qatar Airways Holidays Deals?</h3>
+            <p>Couponsbit helps travelers discover verified savings across airlines, hotels, vacation providers, travel agencies, technology, fashion, software, and lifestyle brands.</p>
+            <p><strong>Updated Offers:</strong> We regularly update Qatar Airways Holidays coupon codes and promotional offers.</p>
+            <p><strong>Verified Discounts:</strong> Browse verified coupon codes, exclusive promotions, and limited-time travel deals in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>More Than Technology Deals:</strong> In addition to Beelink, Couponsbit features offers from hundreds of global brands across computing, software, travel, home improvement, and online shopping.</p>
+            <p><strong>Global Travel Savings:</strong> Along with Qatar Airways Holidays, Couponsbit features deals from hundreds of trusted travel brands, airlines, hotel chains, and online booking platforms worldwide.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Upgrade Your Workspace While Spending Less</h3>
-            <p>Whether you're investing in a compact mini PC, building a home server with a NAS device, or expanding your productivity with Beelink's latest hardware, there's never been a better time to upgrade your setup.</p>
-            <p>Browse the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit today and save more on innovative computing solutions designed for modern work and everyday life.</p>
+            <h3 className="text-xl font-black text-[#056BFA] mb-4">Make Your Next Vacation More Rewarding</h3>
+            <p>Whether you're dreaming of a tropical beach retreat, a cultural city escape, or a luxury international holiday, Qatar Airways Holidays makes planning your trip simple with expertly curated vacation packages and world-class travel experiences.</p>
+            <p>Browse the latest Qatar Airways Holidays promo codes, coupon codes, and exclusive vacation deals on Couponsbit today and enjoy greater value on your next unforgettable journey.</p>
           </div>
 
           {!isReadMore && (
@@ -982,7 +920,7 @@ export default function BeelinkCouponsContent() {
 
         <button 
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bFA] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#056BFA] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -991,12 +929,12 @@ export default function BeelinkCouponsContent() {
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
-            { q: "What is Beelink?", a: "Beelink is a global technology brand that manufactures mini PCs, AI-ready workstations, Network Attached Storage (NAS) systems, laptop companions, docking stations, and other compact computing solutions." },
-            { q: "Is Beelink only known for mini PCs?", a: "No. While mini PCs remain its flagship products, Beelink has expanded its product lineup to include NAS servers, modular laptop companions like the EX Mate Pro, expand docks, and other hardware designed to improve productivity and connectivity." },
-            { q: "What can I use a Beelink mini PC for?", a: "Beelink mini PCs are suitable for office work, home entertainment, programming, media streaming, content creation, business applications, software development, digital signage, virtualization, and everyday computing." },
-            { q: "Does Beelink sell NAS devices?", a: "Yes. Beelink offers compact NAS solutions that allow users to create private cloud storage, manage backups, and centralize files for home or business use." },
-            { q: "Where can I find Beelink coupon codes?", a: "You can find the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit." },
-            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted brands worldwide." }
+            { q: "What is Qatar Airways Holidays?", a: "Qatar Airways Holidays is the official vacation package platform of Qatar Airways, offering travelers bundled bookings that can include flights, hotels, airport transfers, and selected travel experiences." },
+            { q: "What can I book through Qatar Airways Holidays?", a: "You can book vacation packages, flights, hotels, airport transfers, and selected tours or activities for destinations around the world." },
+            { q: "Does Qatar Airways Holidays offer luxury vacations?", a: "Yes. The platform features a variety of premium hotels, luxury resorts, and curated vacation packages for travelers seeking upscale experiences." },
+            { q: "Where can I find Qatar Airways Holidays promo codes?", a: "You can find the latest Qatar Airways Holidays promo codes, coupon codes, and exclusive vacation deals on Couponsbit." },
+            { q: "Can I earn Avios when booking through Qatar Airways Holidays?", a: "Eligible travelers may earn or redeem Avios through the Qatar Airways Privilege Club on qualifying bookings, subject to the program's current terms and conditions." },
+            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps travelers discover verified coupon codes, promo offers, and discounts from trusted global brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 
@@ -1004,7 +942,7 @@ export default function BeelinkCouponsContent() {
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bFA] rotate-180")}>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056BFA] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
               </button>
@@ -1018,13 +956,13 @@ export default function BeelinkCouponsContent() {
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#f0f9ff] rounded-[40px] p-10 border border-[#056bFA]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Beelink Searches</h3>
+        <div className="bg-[#eff6ff] rounded-[40px] p-10 border border-[#056BFA]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Mini PCs", "SER Series", "GTR Workstation", "Beelink NAS", "Beelink Promo Code", "Expand Docks", "AI Computing", "Compact Desktops"].map(tag => (
+            {["Vacation Packages", "Luxury Resorts", "Flight Deals", "Holiday Promo Code", "Privilege Club", "Avios Deals", "Beach Escapes", "International Holidays"].map(tag => (
               <span
                 key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bFA] uppercase tracking-widest shadow-sm border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056BFA] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
               </span>
@@ -1033,16 +971,16 @@ export default function BeelinkCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Beelink Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bFA] font-black text-xl italic shadow-inner">B</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056BFA] font-black text-xl italic shadow-inner">Q</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bFA] transition-colors">{deal.heading}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056BFA] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Beelink deal: ${deal.heading}`} className="bg-[#f0f9ff] text-[#056bFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bFA] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Qatar Airways Holidays deal: ${deal.heading}`} className="bg-[#eff6ff] text-[#056BFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
