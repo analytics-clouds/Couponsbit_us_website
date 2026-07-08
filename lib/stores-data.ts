@@ -39,6 +39,9 @@ export const allStores: StoreEntry[] = [
   { name: "HP",              id: "hp-coupon-code",              category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp",           discount: "Up to 69% OFF",    popular: false },
   { name: "Dell",            id: "dell-coupon-code",            category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp",         discount: "Up to 69% OFF",    popular: false },
   { name: "Agoda",           id: "agoda-coupon-code",           category: "Travel",      coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg",          discount: "Up to 69% OFF",    popular: false },
+  { name: "Beelink",         id: "beelink-coupon-code",         category: "Electronics", coupons: 9, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg",       discount: "Up to 69% OFF",    popular: false },
+  { name: "Kinguin",         id: "kinguin-coupon-code",         category: "More",        coupons: 13, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/kinguin-coupon-code_ugjj9s.jpg",       discount: "Up to 69% OFF",    popular: false },
+  { name: "Cheapflights",    id: "cheapflights-coupon-code",    category: "Travel",      coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg", discount: "Up to 69% OFF",    popular: false },
 ];
 
 
