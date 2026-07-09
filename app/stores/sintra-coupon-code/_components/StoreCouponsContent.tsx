@@ -705,7 +705,65 @@ export default function SintraCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Sintra Coupon Codes, Promo Codes & AI Business Assistant Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sintra AI Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $15.60/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes 250 monthly credits</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">All 12 AI helpers</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sintra 1-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 50%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">14-day money-back guarantee</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">$48.50/month plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sintra 12-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 70%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Starting at $15.60/month</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Annual plan, all 12 AI helpers</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sintra 3-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 60%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes 250 monthly credits</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">$23.60/month plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sintra Soshie</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">60% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Redeem code at checkout</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Social media manager tool</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Money-Back Guarantee Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Full Refund</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">No promo code required</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">All subscription plans</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Sintra coupon codes, promo codes, and AI software deals</strong>? You've come to the right place. At Couponsbit, we help entrepreneurs, freelancers, marketers, creators, and small business owners save on Sintra subscriptions with verified discounts and exclusive offers.

@@ -721,7 +721,65 @@ export default function OpenartCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           OpenArt AI Coupon Codes, Promo Codes & AI Art Generator Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Wonder Annual Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 27% OFF ($175.20/seat/mo, reg. $240)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Annual billing, 106,000 credits/month</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image, Video & Audio Models</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Infinite Annual Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">22% OFF ($43.70/seat/mo, reg. $56)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Annual billing, 24,000 credits/month</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Commercial-Use AI Content</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Essential Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $14/month</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">4,000 credits/month</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image, Video & Audio Tools</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Advanced Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$29/month</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">12,000 credits/month, commercial rights</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Personalized AI Models & Characters</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Infinite Monthly Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">24,000 Credits/mo</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Monthly billing, large-scale generation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image & Video Generation</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Wonder Monthly Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">106,000 Credits/mo</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Monthly billing, unlimited creation tools</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Storytelling & Creative Tools</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on AI Creativity with OpenArt AI Coupon Codes</h3>
           <p>

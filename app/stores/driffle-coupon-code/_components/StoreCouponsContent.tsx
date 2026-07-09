@@ -830,7 +830,86 @@ export default function DriffleCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Driffle Coupon Codes, Promo Codes & Gaming Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Neverwinter Nights Enhanced Edition</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 94% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Global digital key with instant access</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Neverwinter Nights Enhanced Edition</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">XCOM 2</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 95% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available for PC, Mac & Linux</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">XCOM 2 digital key</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">EA SPORTS FC 26</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 81% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Perfect for online multiplayer fans</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">EA SPORTS FC 26 digital key</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Roblox 1000 Robux Gift Card</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 57% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant digital delivery available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">1000 Robux global gift card</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Forza Horizon 6</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 37% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available for PC & Xbox Series X|S</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Forza Horizon 6 digital key</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Enshrouded</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 32% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Europe Steam digital key available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Enshrouded digital key</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Monster Hunter Wilds</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 61% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Action-packed multiplayer gameplay</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Monster Hunter Wilds digital key</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Ghost of Tsushima Director's Cut</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 55% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes Director's Cut content</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Ghost of Tsushima Director's Cut</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">PUBG Mobile UC Pack</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 14% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">6000 UC + 2100 bonus UC</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">PUBG Mobile UC top-up</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Driffle coupon codes, promo codes, and gaming deals</strong>? You've come to the right place. At Couponsbit, we help gamers save on video games, gift cards, gaming subscriptions, in-game currency, software licenses, and digital products with verified Driffle discounts and exclusive offers.

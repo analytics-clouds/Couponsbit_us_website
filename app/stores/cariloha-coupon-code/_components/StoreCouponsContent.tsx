@@ -987,7 +987,100 @@ export default function CarilohaCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Cariloha Coupon Codes, Promo Codes & Bamboo Bedding Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">USA Offer – Free Shipping + 100-Night Trial</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">FREE Shipping</td>
+                <td className="p-5 text-gray-500 align-middle">Orders over $100</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">100-Night Trial on eligible products</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bedding & Lifestyle Essentials</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Retreat Bamboo Sheets</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $339</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sateen weave, 100% Bamboo Lyocell</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bamboo Bedding</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Clearance Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 50% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Select bedding, apparel, home products</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bedding, Apparel & Home</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Women's Bamboo Sleep Robe</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">49% OFF ($45, reg. $89)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bamboo viscose fabric</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Sleepwear</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Signature Fragrance</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $32</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Clean, relaxing home scent</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Home Fragrance</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Bamboo Comfort Polo</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 30% ($76, reg. $109)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bamboo-derived fabric</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Men's Apparel</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Bamboo Sateen Duvet Cover Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $239</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium bamboo viscose finish</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bedding</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Bamboo Bath Towel</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $39</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bamboo viscose, high absorbency</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bath</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Bamboo Boyshort Brief</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 22% ($14, reg. $18)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Soft, breathable fit</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Women's Apparel</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Men's Bamboo Woven Sleep Shorts</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">20% OFF ($35, reg. $44)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Lightweight, breathable</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Men's Sleepwear</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Resort Pillow</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $139</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bamboo-derived materials</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bedding</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Sustainable Comfort with Cariloha Coupon Codes</h3>
           <p>

@@ -84,6 +84,19 @@ const blogSchema = {
         {
           "@type": "BlogPosting",
           headline:
+            "Holiday Shopping Calendar 2026: The Best Times to Shop & Save Money in the USA",
+          url: "https://www.couponsbit.us/blog/holiday-shopping-calendar-2026",
+          datePublished: "2026-07-09",
+          inLanguage: "en-US",
+          author: {
+            "@type": "Organization",
+            name: "Couponsbit",
+            url: "https://www.couponsbit.us",
+          },
+        },
+        {
+          "@type": "BlogPosting",
+          headline:
             "How to Save Money While Shopping Online in 2026",
           url: "https://www.couponsbit.us/blog/how-to-save-money-shopping-online",
           datePublished: "2026-07-03",
@@ -253,6 +266,49 @@ export default function BlogPage() {
               <div className="w-20 h-[3px] bg-[#FF9900] rounded-full mx-auto mt-3"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+
+              {/* Post — Holiday Shopping Calendar 2026 */}
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
+                <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/couponsbit/image/upload/v1783578422/holiday-shopping-calendar-2026_ak4cju.webp"
+                    alt="Holiday Shopping Calendar 2026 – Best USA Shopping Holidays & Sales"
+                    width={220}
+                    height={200}
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-center flex-1">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="text-gray-500 text-xs font-medium uppercase">
+                      July 9, 2026
+                    </span>
+                    <span className="text-gray-300" aria-hidden="true">•</span>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs uppercase font-medium">
+                        10 MIN READ
+                      </span>
+                    </div>
+                  </div>
+                  <Link href="/blog/holiday-shopping-calendar-2026">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
+                      Holiday Shopping Calendar 2026: The Best Times to Shop & Save Money in the USA
+                    </h3>
+                  </Link>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                    Discover the complete Holiday Shopping Calendar 2026 for the USA — the best time to buy electronics, fashion, furniture and more while saving with coupon codes.
+                  </p>
+                  <Link
+                    href="/blog/holiday-shopping-calendar-2026"
+                    aria-label="Read more: Holiday Shopping Calendar 2026"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                  >
+                    READ MORE <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
 
               {/* Post 1 — How to Save Money While Shopping Online */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">

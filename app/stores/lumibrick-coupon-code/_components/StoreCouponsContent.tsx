@@ -859,7 +859,79 @@ export default function LumibrickCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Lumibricks Coupon Codes, Promo Codes & Building Block Set Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Modular Apartment Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $169.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">USB-powered modular lighting</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Building Block Sets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Interactive Toy Store Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $159.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Interactive mini scenes</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Building Block Sets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Cyberpunk Police HQ</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $109.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Detailed interiors, vehicles & accessories</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cyberpunk Collection</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Izakaya Japanese Street Restaurant</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $129.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Vibrant lighting effects</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Building Block Sets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Luna Cottage Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $119.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Cottage-inspired architecture</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">New Arrivals Collection</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Streetball Tour Bus Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $74.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">1,170 pieces, 6 minifigures, 2-Year Warranty</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Building Block Sets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Book Café Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $89.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Detailed interiors and café décor</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Modular Buildings</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Horse Stable Building Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $56.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Touch-adjustable lighting</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Building Block Sets</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Build, Display, and Save with Lumibricks Coupon Codes</h3>
           <p>

@@ -636,7 +636,51 @@ export default function KrispCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Krisp AI Promo Codes, Discount Codes & AI Meeting Assistant Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Free Trial</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$0</td>
+                <td className="p-5 text-gray-500 align-middle">New customers, no credit card required</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited Transcription, Noise Cancellation, Recording, AI Notes for 7 days</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Core Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$8/mo/user (annual) or $16/mo/user (monthly)</td>
+                <td className="p-5 text-gray-500 align-middle">Individuals & small teams</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited AI Note-taker, Noise Cancellation, Integrations</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Advanced Plan – Most Popular</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$15/mo/user (annual) or $30/mo/user (monthly)</td>
+                <td className="p-5 text-gray-500 align-middle">Teams needing advanced controls</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited Accent Conversion, Advanced Integrations, admin controls</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Enterprise Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Custom Pricing</td>
+                <td className="p-5 text-gray-500 align-middle">Org-wide rollout & security needs</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">SSO/SCIM, Advanced Security, Private On-Device Transcription</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Boost Meeting Productivity for Less with Krisp AI Promo Codes</h3>
           <p>

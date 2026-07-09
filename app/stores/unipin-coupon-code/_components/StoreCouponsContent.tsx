@@ -935,7 +935,93 @@ export default function UnipinCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           UniPin Coupon Codes, Promo Codes & Gaming Top-Up Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Eudemons Online Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $57.25</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fast digital delivery</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eudemons Online</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">PUBG Mobile UC Top-Up (8100 UC)</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $91.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant delivery, secure transactions</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PUBG Mobile</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Mobile Legends: Bang Bang Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $1.00</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Purchase Diamonds & in-game currency</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mobile Legends: Bang Bang</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Magic Chess: Go Go Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $0.94</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Quick & secure payment</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Magic Chess: Go Go</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Starfall Fantasy: Neverland Recharge</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $0.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant official game credits</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Starfall Fantasy: Neverland</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">MU ORIGIN 3 Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $4.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fast digital delivery</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">MU ORIGIN 3</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">UniPin Voucher (US)</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $25</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Usable across supported games & platforms</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Multiple Games & Platforms</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Fortnite V-Bucks Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $17.66</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlock Battle Passes, skins, emotes</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Fortnite</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">PlayStation PSN Gift Card</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $9.94</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Redeem on PlayStation Store</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PlayStation Store</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Roblox Gift Card (Roblox 50 USD)</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$49.68</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant voucher delivery via email</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Roblox</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Gaming with UniPin Coupon Codes</h3>
           <p>

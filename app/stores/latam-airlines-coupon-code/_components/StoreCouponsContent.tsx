@@ -1280,7 +1280,65 @@ Bonus Miles
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           LATAM Airlines Coupon Codes, Promo Codes & Flight Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">LATAM Airlines Credit Card Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Earn 40,000 Bonus Miles</td>
+        <td className="p-5 text-gray-500 align-middle">Approved Cardholders</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Minimum spend terms apply</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Miles redeemable for South America flights</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">New York to Santiago, Chile</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $308</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Departure 08/10/26; direct economy flight</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">New York to Santiago route</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Packages, Hotels & Car Rentals</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 40% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on complete travel bookings</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Vacation packages, hotels & car rentals</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Miami To Rio De Janeiro</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $554</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Departure 08/21/26; one-way economy, connection included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Miami to Rio De Janeiro route</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Miami To Punta Cana</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $136</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Special LATAM pricing available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Miami to Punta Cana route</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Flat 10% OFF Sitewide</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 10% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on orders above $40</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Sitewide LATAM Airlines bookings</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>LATAM Airlines coupon codes, promo codes, and flight deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on flights, vacation packages, seat upgrades, baggage services, and travel experiences with verified LATAM Airlines discounts and exclusive offers.

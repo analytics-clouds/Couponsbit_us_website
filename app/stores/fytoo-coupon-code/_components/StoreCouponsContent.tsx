@@ -776,7 +776,72 @@ export default function FytooCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           FYTOO Coupon Codes, Promo Codes & Eyewear Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Fytoo Eyewear Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Buy 1, Get 2nd at 50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">A perfect opportunity to own multiple looks for less</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prescription glasses & eyewear frames</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Premium Series Collection</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starts At $109</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Comfort, durability and timeless style</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Premium Series luxury eyewear</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Bestselling Frames</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Special Prices</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Selected bestselling styles at exclusive prices</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bestselling eyewear frames</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Fytoo Flash Sale</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $1</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited quantities available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Selected eyewear styles</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Fytoo Clearance Sale</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $1</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available while stocks last</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Clearance eyewear collection</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Prescription Glasses Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 20% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Ideal for students, professionals & everyday wear</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prescription glasses (frames + lenses)</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Weekly Savings Event</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 40% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">New deals return regularly</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Selected eyewear collections</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Stylish Eyewear with FYTOO Coupon Codes</h3>
           <p>

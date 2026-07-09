@@ -780,7 +780,72 @@ export default function EnvatoCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Envato Elements Coupon Codes, Promo Codes & Creative Asset Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited Creative Assets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $16.50/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AI tools for video, image & audio creation</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited downloads of 28M+ assets</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Annual Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Pricing starts at $16.50/month</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Annual subscription plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Students Special</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 30% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Students Only</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on online transactions only</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Student subscription plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Team Plan Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 34% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Teams & Agencies</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Plans starting from $37.25/month</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Team subscription plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited Downloads</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $16.50/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">50M+ stock photos available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited digital assets</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Best Plan – Individual Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $16.50/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Lifetime commercial license included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Individual subscription plan</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Signup Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Free Trial</td>
+        <td className="p-5 text-gray-500 align-middle">New Subscribers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes 5 free AI generations</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">New subscription signups</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Envato Elements coupon codes, promo codes, and subscription deals</strong>? You've come to the right place. At Couponsbit, we help creators, designers, marketers, developers, and business owners save on premium creative resources with verified Envato Elements discounts and exclusive offers.

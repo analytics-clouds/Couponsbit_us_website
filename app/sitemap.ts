@@ -59,6 +59,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/holiday-shopping-calendar-2026`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {

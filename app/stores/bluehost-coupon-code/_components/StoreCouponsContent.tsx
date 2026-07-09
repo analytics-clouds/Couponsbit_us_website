@@ -898,7 +898,93 @@ export default function BluehostCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Bluehost Coupon Codes, Promo Codes & Web Hosting Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">WordPress Hosting</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $1.99/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AI-powered website builder included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">WordPress hosting plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Hosting Plan Savings</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Secure & high-performance hosting</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">General hosting plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">VPS Hosting Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">33% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes storage, RAM & bandwidth</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">VPS hosting plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Hosting Renewal Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $15.99/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Renewal pricing with premium features</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hosting plan renewals</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Cloud Hosting Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $75</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes global CDN support</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cloud hosting plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Business Essentials Hosting</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 50%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Supports up to 50 websites</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Business hosting plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Web Hosting Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $1.99/Month</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">10GB NVMe SSD storage included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Personal & business web hosting</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">One Site Hosting Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 69%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free domain for first year</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Single website or blog hosting</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Starter Hosting Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 58%</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Supports up to 10 websites</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Starter hosting plan</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Monthly One Site Hosting</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $8.99</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Weekly backups & security protection</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Monthly one-site hosting plan</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Bluehost coupon codes, promo codes, and web hosting deals</strong>? You've come to the right place. At Couponsbit, we help bloggers, entrepreneurs, small business owners, developers, and online creators save on web hosting, domains, website builders, and WordPress solutions with verified Bluehost discounts and exclusive offers.

@@ -1264,7 +1264,65 @@ export default function ViaggogoCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Viagogo Coupon Codes, Promo Codes & Event Ticket Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Coachella Music Festival Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $603</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time festival deal</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Coachella at Empire Polo Field, California</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Katseye Tickets – Governors Ball Festival</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $332</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid for event dates June 5–7</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Governors Ball Festival at Corona Park, Flushing Meadows, NY</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">World Cup Tickets – United States vs Paraguay</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $120</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subject to ticket availability</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">World Cup match tickets</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Westlife Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $109</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited seats available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Westlife concerts in Indonesia, Hong Kong & Singapore</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Concert Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $49</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time concert offer</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Concerts featuring Blackpink, Madonna & Westlife</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Madonna Parking Passes</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $65</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Garage & underground parking available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Parking for Madonna concerts</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Viagogo coupon codes, promo codes, and ticket deals</strong>? You've come to the right place. At Couponsbit, we help fans save on concert tickets, sports events, theater shows, festivals, and live entertainment experiences with verified Viagogo discounts and promotional offers.

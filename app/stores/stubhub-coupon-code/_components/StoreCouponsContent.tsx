@@ -1490,6 +1490,71 @@ export default function StubHubCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           StubHub Coupon Codes, Promo Codes & Ticket Deals 2026
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Flat 10% OFF Sitewide</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 10% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on orders above $40</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Concerts, sports events, live shows & sitewide bookings</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">NBA Playoffs Tickets – Western Conference Finals</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 5% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid for Western Conference Finals – Home Game 2 (May 24)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Oklahoma City Thunder vs San Antonio Spurs tickets</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Rock Music Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $30</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time pricing</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Live rock concerts and music events</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Lion King New York Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $171</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subject to seat availability</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">The Lion King Broadway show in New York</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Under The Big Sky Festival Tickets</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $582</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">3-day passes available</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Under The Big Sky Festival</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Student Discount</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat $25 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Students Only</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Student verification/code required</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible ticket bookings</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">New User Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat $20 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New Users Only</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on first order only</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">First ticket booking</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
         
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

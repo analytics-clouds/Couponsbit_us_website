@@ -990,7 +990,100 @@ export default function OutfitrCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           OutfitR Coupon Codes, Promo Codes & Outdoor Gear Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Rack Lite Edition</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 62% ($110.99, reg. $289.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">80 lbs capacity, hitch-mount</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Single Hitch E-Bike Rack Lite Edition</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 50% ($169.99, reg. $339.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Built for stability & travel</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Single Hitch E-Bike Rack with Ramp</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$189.99 (reg. $339.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">100 lbs capacity, up to 50" wheelbase</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Sale Bonus</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$15 OFF next purchase</td>
+                <td className="p-5 text-gray-500 align-middle">Newsletter subscribers, USA customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to racks, carriers & outdoor gear</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Racks, Carriers & Outdoor Gear</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch E-Bike Rack with Ramp</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 41% ($269.99, reg. $459.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fold-and-tilt functionality</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Rack with Bike Lock</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 47% ($179.99, reg. $339.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, 200 lbs capacity</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Cargo Carrier Collection</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 47% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">For camping gear & road trips</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cargo Carriers</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Bike Rack</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 40% ($129.99, reg. $216.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Knob-folding, 80 lbs capacity</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Foldable 2-Bike E-Bike Rack with Ramp</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 36% ($304.99, reg. $479.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable design</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Tire-Clamp E-Bike Rack with Ramp</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 32% ($594.14, reg. $879.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">200 lbs capacity, tire-clamp design</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Rack with Lock</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 27% ($219.98, reg. $299.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, tiltable, integrated lock</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Gear Up for Less with OutfitR Coupon Codes</h3>
           <p>

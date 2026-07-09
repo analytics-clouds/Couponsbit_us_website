@@ -1258,6 +1258,134 @@ export default function AgodaCouponsContent() {
           Agoda Coupon Codes, Promo Codes & Travel Deals 2026
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Go City New York Explorer Pass</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 50% OFF (from $76)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant confirmation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">NYC Attractions Pass</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Miami Biscayne Bay Tour</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $140</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free cancellation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Boat Cruise & Scooter Tour</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Niagara Falls Tour</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 16% OFF (from $390)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes outlet shopping, free cancellation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">2-Day Tour from NYC</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">San Diego Zoo Safari Park</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 8% OFF (from $68)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant confirmation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Wildlife Attraction Tickets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NYC Tall Ships Lunch Cruise</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 14% OFF (from $91)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free cancellation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">New York Harbor Cruise</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Agoda USA Hotel Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Hotels from $5/Night</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">534,000+ hotels & rentals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels & Vacation Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Anaheim Attractions</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 20% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Perfect for Disneyland visitors</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Anaheim Attraction Tickets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">World of Coca-Cola Tickets</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $28</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant booking confirmation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Atlanta Attraction Tickets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Denver CityPASS</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 10% OFF (from $53)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Multiple attractions, one ticket</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Denver Attraction Pass</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NYC Sightseeing Combo</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 16% OFF (from $113)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free cancellation, instant confirmation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Empire State, Statue of Liberty & Bus Tour</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">South Beach Scooter Tour</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 14% OFF (from $75)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free cancellation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Miami Guided Scooter Tour</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Hawaii Adventure Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 2% OFF (from $157)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant booking confirmation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Atlantis Submarine Kona Experience</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">New York CityPASS</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 10% OFF (from $149)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Admission to 5 iconic attractions</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">NYC Attraction Pass</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Disneyland California Tickets</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 3% OFF (from $103)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">1-3 Day Tickets, optional Lightning Lane</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Disneyland Resort Tickets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Chicago CityPASS</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 10% OFF (from $131)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Multiple famous attractions</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Chicago Attraction Pass</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Houston CityPASS</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 10% OFF (from $75)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Admission to 5 top attractions</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Houston Attraction Pass</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Agoda coupon codes, promo codes, and travel deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on hotel bookings, vacation rentals, flights, and activities with verified Agoda discounts and exclusive offers.

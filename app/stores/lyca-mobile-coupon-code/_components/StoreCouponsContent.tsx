@@ -912,7 +912,100 @@ export default function LycaCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Lyca Mobile Coupon Codes, Promo Codes & Prepaid Plan Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Starts Now</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 69% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">No contracts & no credit checks</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Affordable prepaid plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Selected Lyca Mobile Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 60% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited talk with fast-speed data</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Selected prepaid mobile plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Better Signal Summer Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$7.50 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">18GB data + 10GB hotspot data</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">18GB prepaid plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Best Prepaid Phone Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $18 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Full-speed access for first 40GB</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited Plus plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">More Months. More Savings</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 60% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available on 3, 6 & 12-month plans</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Long-term prepaid plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Stream Share Repeat</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$18 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-speed streaming data included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited data offer</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Best-Selling High Data Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$7.50 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">18GB data at up to 5G speeds</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">$33 high data plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited Plus Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$18 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited data, first 40GB at full speed</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited Plus promo plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Refer A Friend</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Earn Up To $38</td>
+        <td className="p-5 text-gray-500 align-middle">Existing Subscribers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Friends get 50% OFF for first 3 months</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Referral rewards program</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">SIM-Only Unlimited Pro Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$29.50 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant activation support</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">SIM-only unlimited plan</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited International Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $10 / 30 Days</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">5GB data at up to 5G speeds</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">International prepaid plan</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Lyca Mobile coupon codes, promo codes, and prepaid wireless deals</strong>? You've come to the right place. At Couponsbit, we help customers save on prepaid phone plans, international calling packages, mobile data plans, and SIM card deals with verified Lyca Mobile discounts and exclusive offers.

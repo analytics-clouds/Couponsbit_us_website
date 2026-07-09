@@ -884,7 +884,86 @@ export default function TrainPalCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           TrainPal Discount Codes, Promo Codes & Rail Travel Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">TrainPal Railcards</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 1/3</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Pays for itself after 1-2 trips</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible rail journeys across England, Scotland & Wales</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">26-30 Railcard</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From £35/Year</td>
+        <td className="p-5 text-gray-500 align-middle">Ages 26-30</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Digital Railcard on smartphone</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Young professional train travel</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Two Together Railcard</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 1/3</td>
+        <td className="p-5 text-gray-500 align-middle">Two Named Travellers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available from £35 for 1 year</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Two people travelling together</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Family & Friends Railcard</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Kids 60% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Families</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Covers up to 4 adults and 4 children (5-15)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Family travel; adults save 1/3</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">16-17 Saver</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Ages 16-17</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available from £35 for 1 year</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Standard and Season Tickets</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">3-Year Railcard</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Only £80</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">3 years, no annual renewals</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Frequent UK train travellers</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">London to Manchester Deal</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From £71.95</td>
+        <td className="p-5 text-gray-500 align-middle">Railcard Holders</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save up to £35.98 vs standard price</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">London–Manchester intercity route</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Leeds to Edinburgh Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From £46.05</td>
+        <td className="p-5 text-gray-500 align-middle">Railcard Holders</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save £23.02 vs standard price</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Leeds–Edinburgh route</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Birmingham to Bristol Savings</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From £35.25</td>
+        <td className="p-5 text-gray-500 align-middle">Railcard Holders</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save up to £17.62 vs regular price</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Birmingham–Bristol route</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Rail Travel with TrainPal Discount Codes</h3>
           <p>

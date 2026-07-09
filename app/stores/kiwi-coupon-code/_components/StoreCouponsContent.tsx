@@ -637,7 +637,51 @@ export default function KiwiCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Kiwi.com Promo Codes, Coupon Codes & Flight Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kiwi.com Club Membership</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Rewards worth up to $580</td>
+                <td className="p-5 text-gray-500 align-middle">Club members (free to join)</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Members-only fares, refundable booking perks</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Flight Bookings & Club Membership</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Chicago to Los Angeles Flight Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $320</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Book early for best pricing</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Domestic Flights</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Vancouver to Los Angeles Flight Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $102</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Budget-friendly international fare</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">International Flights</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Portland to Los Angeles Flight Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $64</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Best-value domestic flight deal</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Domestic Flights</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Fly Smarter for Less with Kiwi.com Promo Codes</h3>
           <p>

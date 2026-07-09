@@ -902,7 +902,79 @@ export default function BeelinkCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Beelink Coupon Codes, Promo Codes & Mini PC Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink GTR9 Pro AI Mini PC</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $450 ($4,349)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI Max+ 395, OpenClaw & Local LLM pre-installed</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink ME Mini NAS PC</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 35% OFF (from $329)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">6-slot home storage, Intel N95/N150</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">NAS Systems</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenClaw SSD Upgrade Kit</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 30% OFF (from $189)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-speed SSD, ideal for Local LLM deployments</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Storage Upgrades</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink AI Mini PC Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI & Intel-powered Mini PCs</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink EQR7 Mini PC</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $539)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 7735HS/7735U</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 OpenClaw Edition</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $1,339)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">OpenClaw & Local LLM pre-installed</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 MAX AI PC</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 19% OFF (from $1,299)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI 9 HX 470, 32GB/64GB DDR5</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER9 Pro</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 18% OFF (from $739)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 H 255</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bFA] mb-4">Save More on Powerful Computing with Beelink Coupon Codes</h3>
           <p>

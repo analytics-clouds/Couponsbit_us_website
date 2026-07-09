@@ -1040,7 +1040,114 @@ export default function KinguinCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Kinguin Coupon Codes, Promo Codes & Digital Gaming Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Summer Gaming Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 97% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Steam, Xbox & PlayStation deals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PC Games, Gift Cards & In-Game Content</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Summer Gift Cards Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 67% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Steam, Spotify Premium, Netflix, Amazon</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Digital Gift Cards & Subscriptions</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Meccha Chameleon</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 52% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Region-free Steam activation</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PC Steam Account</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA EA SPORTS FC 26 Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $1.86</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Region-free Steam account</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PC Game Key</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Forza Horizon 6 Deluxe Edition</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 33% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bonus cars & deluxe content</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Xbox Series X|S & PC</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin KING'S Pass</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $2.99/month</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Up to 25% OFF, priority pre-orders, weekly drops</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Games, Software, Gift Cards & Digital Products</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Forza Horizon 6 Standard Edition</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 29% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Open-world racing adventure</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Xbox Series X|S & PC</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Steam Gift Cards</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Top Up & Save</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Safe, instant digital delivery</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Steam Gift Cards</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Mystery Keys</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $5.84</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Chance to receive premium titles</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mystery Game Keys</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Gothic 1 Remake</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Best Price Available</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Legendary RPG rebuilt for modern gamers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">PC Steam CD Key</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Valkyria Chronicles Bundle</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 24% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Tactical strategy gameplay</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Steam CD Key Bundle</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Whiteout Survival Top-Up</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Exclusive Savings</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fast digital delivery, secure global service</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Game Top-Ups</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinguin USA Grand Theft Auto Complete Bundle</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 14% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes classic GTA titles</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Complete Collection Bundle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Games, Software & Gift Cards with Kinguin Coupon Codes</h3>
           <p>

@@ -827,7 +827,79 @@ export default function ZenHotelsCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           ZenHotels Coupon Codes, Promo Deals & Hotel Booking Discounts
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">New York Stay Deal – Residence Inn by Marriott JFK</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $2,625</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save up to $80, complimentary JFK shuttle</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Residence Inn New York JFK</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">App Exclusive Offer – $35 OFF</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$35 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">Bookings of $700+ via mobile app</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">App-exclusive, min. booking $700</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotel Bookings via App</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Greece Beach Escape – Avra Imperial Hotel</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $2,009</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Five-star beachfront resort, Crete</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Avra Imperial Hotel, Crete</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Portugal Luxury Stay – Tivoli Carvoeiro</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $2,553</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Near Praia do Vale Covo, Algarve</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tivoli Carvoeiro, Algarve</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Prague Luxury Escape – Alchymist Grand Hotel</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $1,145</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Luxury suites, spa, gourmet dining</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Alchymist Grand Hotel, Prague</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Paris City Break – Hôtel Vacances Bleues Provinces Opéra</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $852</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Near the Opéra district</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotel near Paris Opéra</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Milan Romantic Getaway – Hotel Berna</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $818</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Close to shopping & transport</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotel Berna, Milan</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">UK Weekend Escape – Moxy Chester</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $291</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save up to $11, modern rooms</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Moxy Chester, UK</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Hotel Bookings with ZenHotels Coupon Codes</h3>
           <p>

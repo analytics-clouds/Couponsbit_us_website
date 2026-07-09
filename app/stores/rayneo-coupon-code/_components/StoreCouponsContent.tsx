@@ -774,7 +774,79 @@ export default function RayneoCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           RayNeo Coupon Codes, Promo Codes & AR Smart Glasses Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air Series Sale</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To $70 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time offer while stocks last</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air Series devices</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro – AR Glasses Deal</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $299</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">World's first HDR10 AR glasses</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $130 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $1,169 (Regular $1,299)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI smart glasses</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Air 3s + HDMI Adapter Bundle</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $70 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes Air 3s + HDMI Adapter</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Legacy device hub bundle</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 3s & Pocket TV Bundle</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $70 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bundle Price $309 (Regular $379)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Air 3s & Pocket TV wireless bundle</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro AR Glasses Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $254.15</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $254.15 (Regular $299)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Price $1,169</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Supports customized nearsighted lenses</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo JoyDock</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Only At $89</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Portable and easy-to-use device</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Giant-screen gaming companion</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>RayNeo coupon codes, promo codes, and smart glasses deals</strong>? You've come to the right place. At Couponsbit, we help tech enthusiasts, gamers, professionals, and everyday consumers save on innovative wearable technology with verified RayNeo discounts and exclusive offers.

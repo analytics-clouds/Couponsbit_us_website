@@ -930,7 +930,93 @@ export default function ExpediaCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Expedia Coupon Codes, Promo Codes & Travel Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Big Summer Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 40% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Hotels, vacation rentals, flights & car rentals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Top USA Destinations</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Nashville Hotels</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save up to $223</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">The Hayes Street Hotel Nashville Downtown</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Los Angeles Hotels</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save up to $370</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Beverly Laurel Hotel, West Hollywood</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Summer Of Soccer Hotel Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Top Rated</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Top-rated hotels in host cities</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Sports Travel Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Atlantic City Hotels</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save up to $459</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Caesars Atlantic City Resort & Casino</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Summer Car Rentals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Car Rentals</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free cancellation on select SUVs & sedans</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – One Key+ Rewards Card</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Earn Rewards</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Welcome rewards & anniversary bonuses</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Rewards Card</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Tokyo Hotels</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save up to $464</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium international accommodations</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Hilton Hotel Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Premium Stays</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Exclusive Expedia pricing</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hilton Hotels & Resorts</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Expedia USA – Disney Resort Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Family Rates</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Disney's Grand Floridian Resort and Spa</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Resort Stays</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Every Journey with Expedia Coupon Codes</h3>
           <p>

@@ -1096,7 +1096,107 @@ export default function HPCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           HP Coupon Codes, Promo Codes & Laptop Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP 4th of July Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 71% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free shipping, 30% OFF Care Packs, flexible financing</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops, Desktops, Printers & Accessories</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OmniBook 3 Laptop Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 60% OFF ($419.99, MSRP $1,049.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant savings of $630, 17.3-inch display</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OmniBook 5 Flip 2-in-1</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 58% OFF ($499.99, MSRP $1,199.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant savings of $700, touchscreen 2-in-1</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OMEN 35L Gaming Desktop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 50% OFF ($1,189.99, MSRP $2,399.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save $1,210, Intel Core i7 & RTX 4060 Ti</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Desktops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP Financing Offer</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Pay Over 24 Months</td>
+                <td className="p-5 text-gray-500 align-middle">Purchases of $2,500+</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available via HP Credit Account</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">HP Credit Account Financing</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP All-In Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $7.99/Month</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes ink delivery, 24/7 HP Support</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Printers</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OmniBook X AI Laptop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 19% OFF ($1,699.99, MSRP $2,099.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save $400, Intel Core Ultra 7, 32GB RAM, Copilot+ AI</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Adobe Software Bundle</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $129.99</td>
+                <td className="p-5 text-gray-500 align-middle">Qualifying HP PC purchase</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes Photoshop Elements, Premiere Elements, Acrobat Pro</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Software Bundle</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OmniBook 7 Laptop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 35% OFF (Save $560)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">17.3-inch touchscreen, Copilot+ AI</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP LaserJet Printer Bundle</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $30</td>
+                <td className="p-5 text-gray-500 align-middle">Add HP 138X Toner to qualify</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">No coupon required</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Printers</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HP OmniBook 7 AI Laptop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 36% OFF ($1,599.99, MSRP $2,499.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save $900, Intel Core 9, 32GB RAM, 2TB SSD</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">HyperX Cloud Alpha Wireless Headset</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 25% OFF ($149.99, MSRP $199.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save $50, long battery life</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Accessories</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on HP Products with HP Coupon Codes</h3>
           <p>

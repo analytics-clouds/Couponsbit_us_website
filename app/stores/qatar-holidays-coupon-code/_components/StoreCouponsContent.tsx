@@ -839,7 +839,79 @@ export default function QatarHolidaysCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Qatar Airways Holidays Promo Codes, Coupon Codes & Vacation Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Doha Holiday Packages</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 40% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium hotels, flights & experiences</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Doha Holiday Packages</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Doha Stopover Packages</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $76</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Carefully selected 4-star hotels</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Stopover Packages</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dubai City Breaks</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $74/night</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Earn Avios and Qpoints</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dubai Stays</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Phuket Beach Holidays</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $69/night</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Earn Avios and Qpoints</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Phuket Stays</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Formula 1 Qatar Grand Prix</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 20% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Flights, hotels & 3-day race tickets</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Lusail International Circuit Packages</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Maldives Escapes</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $67/night</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Earn Avios and Qpoints</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Maldives Stays</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Premium Doha Stopover</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $111</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium 5-star, 4 nights</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Doha Stopover Packages</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Bangkok Signature Collection</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Signature Collection</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Return flights, premium hotels, transfers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bangkok Holiday Packages</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Your Dream Vacation with Qatar Airways Holidays Promo Codes</h3>
           <p>

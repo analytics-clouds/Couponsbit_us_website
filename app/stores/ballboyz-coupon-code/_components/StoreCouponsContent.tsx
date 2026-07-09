@@ -832,7 +832,79 @@ export default function BallboyzCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Ballboyz Coupon Codes, Promo Codes & Athlete Skincare Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Full Body Acne Gameplan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $60 ($99.99, reg. $160.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Body Scrub, Face Scrub, Moisturizer, Wipes, Patches</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Full-Body Acne Skincare</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">BOYZ Face Acne Gameplan – #1 Seller</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 50% ($55.99, reg. $110.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Moisturizer, Face Scrub, Wipes & Patches</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Face Acne Skincare</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Acne Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 40% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Pimple patches, face scrubs, bundles</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Acne Skincare Bundles</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Pimple Pack – Today Only</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$40 OFF ($29.99, reg. $69.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Pimple Patches, Face Scrub, Essentials</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Acne Treatment Bundle</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Face Acne Gameplan – Today Only Special</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$69.99 (reg. $110.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Moisturizer, Face Scrub, Wipes, Patches</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Face Acne Skincare</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Build Your Own Bundle</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Extra 20% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Mix & match scrubs, moisturizers, patches</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Custom Skincare Bundle</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Activated Charcoal Face Scrub</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">New Product</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Removes dirt, oil & impurities</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Face Scrub</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Zit Destroyer Body Scrub</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">New Product</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Exfoliates chest, back & shoulders</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Body Scrub</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Sports Skincare with Ballboyz Coupon Codes</h3>
           <p>

@@ -792,7 +792,79 @@ export default function ReolinkCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Reolink Coupon Codes, Promo Codes & Security Camera Deals 2026
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">17th Anniversary Early Access</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Exclusive anniversary rewards on bundles</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Premium security cameras & surveillance systems</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">TrackFlex Floodlight WiFi</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $260 (Now $338.99)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Extra $20 OFF on $400+ orders</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">TrackFlex Floodlight WiFi camera</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Reolink Duo 3 PoE</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $132 (Now $238.76)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">16MP Ultra HD, 180° panoramic view</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Duo 3 PoE camera bundle</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">RLK16-1200D8-A Security System</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $450 (Now $1,049.99)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">16-channel advanced security system</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RLK16-1200D8-A security system</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Reolink Solar Floodlight Cam</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 20% (Now $159.99)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">150° ultra-wide 2K 4MP HD resolution</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Solar Floodlight Cam</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Reolink RLC-1240A</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $83 (Now $195.29)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">IK10 vandal-proof outdoor protection</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RLC-1240A camera bundle</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Reolink RLC-823S2</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $222 (Now $516.99)</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">16X Optical Zoom, 4K UHD quality</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RLC-823S2 PTZ camera bundle</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Solar Floodlight Cam Bundle</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save $40</td>
+        <td className="p-5 text-gray-500 align-middle">All Users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes 2 cameras for outdoor monitoring</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Solar Floodlight Cam Bundle</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Looking for the latest <strong>Reolink coupon codes, promo codes, and smart security deals</strong>? You've come to the right place. At Couponsbit, we help homeowners, renters, business owners, and tech enthusiasts save on security cameras, video doorbells, surveillance systems, and smart home security solutions with verified Reolink discounts and exclusive offers.

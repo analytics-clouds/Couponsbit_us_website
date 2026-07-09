@@ -1076,7 +1076,107 @@ export default function DellCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Dell Coupon Codes, Promo Codes & Computer Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Back to School Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $750 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Students get extra 10% OFF sitewide</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops, Desktops, Monitors & Accessories</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell XPS 13 Student Offer</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $599</td>
+                <td className="p-5 text-gray-500 align-middle">Verified students</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Regular price from $699</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Student & Teacher Discount</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 10% Sitewide</td>
+                <td className="p-5 text-gray-500 align-middle">Verified students & teachers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to eligible Dell products</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops, Desktops, Monitors & Accessories</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell XPS 16 Laptop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,100 OFF (from $2,799.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K OLED touchscreen, Intel Core Ultra, RTX graphics</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 14 Laptop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $581 OFF (from $799.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Intel processor, 1TB SSD</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Alienware Area-51 Gaming Desktop</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $970 OFF (from $5,729.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 9, RTX 5090</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Desktops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Alienware 27" QD-OLED Gaming Monitor</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $150 OFF (from $399.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">280Hz refresh rate, 0.03ms response, G-SYNC</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Monitors</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Business PC Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $700 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Select business laptops & desktops</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Business Laptops & Desktops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 14 Plus Copilot+ PC</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $640 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">All-day battery, advanced AI features</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Productivity Software Offer</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $30 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Compatible with select Dell PCs</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Productivity Software</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Gaming Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,700 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Alienware & Dell Gaming products</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Laptops, Desktops & Accessories</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 15 Laptop Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $170 OFF (from $629.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Intel processor, Windows 11</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Technology for Less with Dell Coupon Codes</h3>
           <p>

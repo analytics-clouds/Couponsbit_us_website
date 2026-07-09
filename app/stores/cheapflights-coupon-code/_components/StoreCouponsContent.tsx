@@ -960,7 +960,100 @@ export default function CheapflightsCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           CheapFlightsFares Coupon Codes, Promo Codes & Flight Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Flights Under $99</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Under $99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unbeatable limited-time pricing</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Domestic Flights</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Earn Up To $100 Travel Credits</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $100 credits</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to eligible flight bookings</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Travel Credits</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Airline Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $141</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subscribe for up to $10 OFF</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Airline Tickets</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Top Flight Deals For Summer Travel</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Top Deals</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Best fares on popular domestic routes</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Summer Flights</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Cruise Vacation Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 25% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Exclusive instant savings & guest offers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cruise Vacations</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Deals Of The Week</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Weekly Deals</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Low fares on top airlines</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Weekly Flight Deals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Business Class Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $10 (code INSTANT10)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Promo code INSTANT10 required</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Business Class Flights</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Student Flight Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $10</td>
+                <td className="p-5 text-gray-500 align-middle">Verified students</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subscribe for savings on college travel</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Student Flights</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Hotels</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $11/night</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Savings in Las Vegas, Miami & more</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Popular Hotel Deals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Top Rated</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Exclusive prices, Las Vegas & Miami</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hotels</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">CheapFlightsFares USA – Car Rentals</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $65/day</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Great rates on airport pickups</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Your Next Trip with CheapFlightsFares Coupon Codes</h3>
           <p>

@@ -1039,7 +1039,107 @@ export default function NuagewearCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Nuagewear Coupon Codes, Promo Codes & Seamless Underwear Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">USA Offer – Free Worldwide Shipping</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">FREE Shipping</td>
+                <td className="p-5 text-gray-500 align-middle">Orders over $60</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Worldwide shipping</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras, Shapewear & Essentials</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Commando Chic Shorts</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $49</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Comfort & sleek fit</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Shorts</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Wireless Soft Stay-Put Bra</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">39% OFF ($36.00, reg. $59.88)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Everyday comfort fit</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Daily Cover Comfort Guard Bra</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">35% OFF ($36.00, reg. $56.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Full coverage design</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Perfect Coverage Push-Up Bra</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">33% OFF ($36.00, reg. $54.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Support & flattering silhouette</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Pivot+ 5-Pack</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 12% ($79.00, reg. $90.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Breathable mesh 5-pack</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuCloud Red Holiday Bra Set</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">33% OFF ($59.00, reg. $89.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Holiday-edition bra set</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Flex Brief</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $16.00</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Lightweight, breathable mesh</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Flex Brief 5-Pack</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 10% ($72.00, reg. $80.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Breathable 5-pack</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh FlexShield Thong</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $18.00</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Seamless, breathable</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Thongs</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuCloud Original Bikini</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $14.00</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Second-skin comfort, yoga/pilates</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bikinis</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">NuBloom Bra</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">37% OFF ($62.00, reg. $99.00)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available in multiple colors</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Comfort Essentials with Nuagewear Coupon Codes</h3>
           <p>
