@@ -23,7 +23,7 @@ export const Footer = () => {
   const currentYear = 2026;
 
   const socialLinks = [
-    { icon: Facebook, href: "#", name: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61591738414340", name: "Facebook" },
     { icon: Instagram, href: "https://www.instagram.com/coupons_bit26/", name: "Instagram" },
     { icon: Twitter, href: "https://x.com/Couponsbit26", name: "Twitter" },
     { icon: Youtube, href: "https://www.youtube.com/channel/UCr9e22fOvzGJQ4HG7lsKYyg", name: "YouTube" },
