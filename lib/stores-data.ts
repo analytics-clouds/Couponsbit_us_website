@@ -44,6 +44,11 @@ export const allStores: StoreEntry[] = [
   { name: "Cheapflights",    id: "cheapflights-coupon-code",    category: "Travel",      coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg", discount: "Up to 25% OFF",    popular: false },
   { name: "Expedia",         id: "expedia-coupon-code",         category: "Travel",      coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg",     discount: "Up to 40% OFF",    popular: false },
   { name: "Qatar Holidays",  id: "qatar-holidays-coupon-code",  category: "Travel",      coupons: 8, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg",       discount: "Up to 40% OFF",    popular: false },
+  { name: "FlixBus Australia", id: "flixbus-australia-discount-code", category: "Travel",  coupons: 3, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", discount: "Up to 50% OFF",    popular: false },
+  { name: "McAfee",          id: "mcafee-discount-code",        category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp",              discount: "Up To 75% OFF",    popular: false },
+  { name: "Budget",          id: "budget-discount-code",        category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp",               discount: "Up To 35% OFF",    popular: false },
+  { name: "Avis",            id: "avis-discount-code",          category: "Travel",      coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp",                 discount: "Up To 20% OFF",    popular: false },
+  { name: "RingConn",        id: "ringconn-discount-code",      category: "Electronics", coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp",             discount: "Starting From $199", popular: false },
 ];
 
 
