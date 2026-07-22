@@ -793,6 +793,78 @@ export default function BudgetCouponsContent() {
           Budget Coupon Codes, Promo Codes & Car Rental Deals
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 35% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Free vehicle upgrade on eligible bookings</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Weekly Rental Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 25% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Rentals of 5 days or more</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Weekly Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">$10 OFF Rentals Over $175</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$10 OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on rentals of 3+ days</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Truck Rental – Cargo Vans</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $29.99/day</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Eligible local rentals only</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cargo Van Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Young Driver Special</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 15% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">Young drivers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Participating locations only</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Pay Now & Save</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 15% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Eligible prepaid car rentals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prepaid Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Switzerland Deal</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">7 Days for the Price of 5</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Switzerland rentals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Switzerland Car Rentals</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Weekend Special</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">3 Days for the Price of 2</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Weekend bookings</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Weekend Car Rentals</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa]">
             Save More on Your Next Trip with Budget Coupon Codes

@@ -258,21 +258,21 @@ export default function RingconnCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src={STORE_LOGO} alt="RingConn Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784716727/ringconn-promo-code_kkbnnt.webp" alt="RingConn Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src={STORE_LOGO} alt="RingConn Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784716727/ringconn-discount-code_cefryb.webp" alt="RingConn Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src={STORE_LOGO} alt="RingConn Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784716726/ringconn-voucher-code_pqidl5.webp" alt="RingConn Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
@@ -665,6 +665,57 @@ export default function RingconnCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           RingConn Coupon Codes, Promo Codes & Smart Ring Deals
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Gen 2 Smart Ring</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $299</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sleep apnea monitoring, up to 12 days battery</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Smart Rings</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Gen 3 Smart Ring</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $349</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">First 3,500 orders get exclusive collectible set</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Smart Rings</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Gen 2 Air</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $199</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">2.5g ultra-light design, up to 10 days battery</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Smart Rings</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Gen 3 Gift Card</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$369</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Recipient chooses ring size & finish</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gift Cards</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Charging Dock</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Only $39.90</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Compatible with all RingConn ring sizes</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Charging Accessories</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa]">

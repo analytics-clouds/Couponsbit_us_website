@@ -797,6 +797,78 @@ export default function McafeeCouponsContent() {
           Protect Your Devices for Less with McAfee Coupon Codes
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Total Protection</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 75% OFF ($24.99, reg. $99.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Protects up to 5 devices</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Total Protection Suite</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Total Protection Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Flat 66% OFF (from $49.99)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Covers up to 10 devices</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Total Protection Plan</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Advanced Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $110 (from $89.99/yr)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited device coverage, identity protection</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Advanced Security Plan</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Individual Ultimate Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save $80 (from $79.99/yr)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited device protection, identity monitoring</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Individual Ultimate Plan</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Family Plan</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $225 OFF (from $69.99/yr)</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Covers Premium, Advanced & Ultimate Family plans</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Family Security Plans</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Back-To-School Sale</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Extra 10% OFF (from $39.99/yr)</td>
+                <td className="p-5 text-gray-500 align-middle">Students & families</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Real-time protection, VPN, identity monitoring</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Student & Family Subscriptions</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Premium Antivirus</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $24.99</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Malware & phishing protection</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Antivirus Software</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Multi-Device Security</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $69.99/yr</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited compatible devices</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Multi-Device Security Plans</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Keeping your devices secure doesn't have to be expensive. Whether you want to protect your laptop, smartphone, tablet, or your entire family's devices, McAfee offers a range of cybersecurity solutions designed to safeguard your digital life. Before purchasing a subscription, visit CouponsBit to discover the latest McAfee coupon codes, McAfee promo codes, and exclusive antivirus deals that help you save on trusted security software.

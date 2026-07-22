@@ -620,6 +620,50 @@ export default function AvisCouponsContent() {
           Avis Coupon Codes, Promo Codes & Car Rental Deals
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Drive Gold Membership</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$19 (reg. $39)</td>
+                <td className="p-5 text-gray-500 align-middle">New members</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Member-only discounts year-round</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Avis Drive Gold Membership</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Member Savings Across The USA</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 20% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">SUVs, luxury cars, sedans & more</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Drive Gold Annual Membership</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">$99/yr</td>
+                <td className="p-5 text-gray-500 align-middle">New members</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">USA, UK & Europe discounted rentals</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Avis Drive Gold Annual Membership</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Save Up To 20% On Every Rental</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 20% OFF</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Member-exclusive pricing</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Car Rentals</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa]">
             Save More on Your Next Rental with Avis Coupon Codes

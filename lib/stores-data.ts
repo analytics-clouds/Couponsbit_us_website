@@ -49,6 +49,14 @@ export const allStores: StoreEntry[] = [
   { name: "Budget",          id: "budget-discount-code",        category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp",               discount: "Up To 35% OFF",    popular: false },
   { name: "Avis",            id: "avis-discount-code",          category: "Travel",      coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp",                 discount: "Up To 20% OFF",    popular: false },
   { name: "RingConn",        id: "ringconn-discount-code",      category: "Electronics", coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp",             discount: "Starting From $199", popular: false },
+  { name: "Oman Air",        id: "oman-air-discount-code",      category: "Travel",      coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/oman-air-logo_ozwu2c.webp",             discount: "Up To 50% OFF",    popular: false },
+  { name: "UltaHost",        id: "ultahost-discount-code",      category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/ultahost-logo_zsnpu7.webp",             discount: "Up To 62% OFF",    popular: false },
+  { name: "Wiskii",          id: "wishki-discount-code",        category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/wishki-logo_qveoyb.webp",              discount: "Up To 60% OFF",    popular: false },
+  { name: "Spirit Halloween", id: "spirit-halloween-discount-code", category: "More",     coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/spirti-logo_x4nbor.webp",              discount: "Up To 75% OFF",    popular: false },
+  { name: "Vooglam",         id: "vooglam-discount-code",       category: "Fashion",     coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/vooglam-logo_qe8mis.webp",              discount: "Eyeglasses From $65", popular: false },
+  { name: "Geekbuying",      id: "geekbuying-discount-code",    category: "Electronics", coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/geekbuying-logo_pnkeev.webp",           discount: "Up To 56% OFF",    popular: false },
+  { name: "vegas",           id: "vegas-discount-code",         category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp",                discount: "Up To 35% OFF",    popular: false },
+  { name: "Wish.com",        id: "wish-discount-code",          category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/wish-logo_n1dypa.webp",                discount: "Up To 60% OFF",    popular: false },
 ];
 
 

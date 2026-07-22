@@ -596,6 +596,47 @@ export default function FlixBusAustraliaCouponsContent() {
           FlixBus Discount Code Australia | Grab the Best Travel Savings with CouponsBit
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[950px]">
+            <thead>
+              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Coupon Code</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Sydney To Thredbo Snow Trip</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $74.99/trip</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle font-mono tracking-widest">FLXAUGND</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Extra 20% OFF with code</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Sydney–Thredbo Coach Travel</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Enjoy 50% OFF Your Next Trip</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Flat 50% OFF</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle font-mono tracking-widest">FLXAUGND</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Extra 20% OFF with code</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Australia Coach Routes</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">One-Way Fares From Just $9.99</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">From $9.99 one-way</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle font-mono tracking-widest">FLXAUGND</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Extra 20% OFF with code, selected routes only</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Selected One-Way Routes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Travelling across Australia doesn't have to come with a hefty price tag. Whether you're planning a scenic road trip from Sydney to Melbourne, heading to Brisbane for a holiday, or travelling between cities for work or study, FlixBus offers a comfortable and budget-friendly way to reach your destination. Better still, you can make every journey even more affordable by using a valid FlixBus discount code available on CouponsBit.
