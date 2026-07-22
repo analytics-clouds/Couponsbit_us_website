@@ -7,18 +7,18 @@ export const metadata: Metadata = {
     "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/wishki-discount-code",
+    canonical: "https://www.couponsbit.us/stores/wiskii-discount-code",
     languages: {
-      "en-US": "https://www.couponsbit.us/stores/wishki-discount-code",
-      "en-GB": "https://www.couponsbit.us/stores/wishki-discount-code",
-      "en-IN": "https://www.couponsbit.us/stores/wishki-discount-code",
-      "x-default": "https://www.couponsbit.us/stores/wishki-discount-code",
+      "en-US": "https://www.couponsbit.us/stores/wiskii-discount-code",
+      "en-GB": "https://www.couponsbit.us/stores/wiskii-discount-code",
+      "en-IN": "https://www.couponsbit.us/stores/wiskii-discount-code",
+      "x-default": "https://www.couponsbit.us/stores/wiskii-discount-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/wishki-discount-code",
+    url: "https://www.couponsbit.us/stores/wiskii-discount-code",
     title: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
     description:
       "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
@@ -59,8 +59,8 @@ const wishkiSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/wishki-discount-code#webpage",
-      url: "https://www.couponsbit.us/stores/wishki-discount-code",
+      "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#webpage",
+      url: "https://www.couponsbit.us/stores/wiskii-discount-code",
       name: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
       description:
         "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
@@ -69,17 +69,17 @@ const wishkiSchema = {
         "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://www.couponsbit.us/stores/wishki-discount-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/wishki-discount-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#offerlist",
       name: "Wiskii Coupon Codes & Promo Codes",
       description:
         "Latest verified Wiskii coupon codes, promo codes and discount codes.",
-      url: "https://www.couponsbit.us/stores/wishki-discount-code",
+      url: "https://www.couponsbit.us/stores/wiskii-discount-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -90,7 +90,7 @@ const wishkiSchema = {
             name: "Wiskii Coupon Code",
             description:
               "Latest Wiskii coupon code and discount offers.",
-            url: "https://www.couponsbit.us/stores/wishki-discount-code",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
             areaServed: [
               { "@type": "Country", name: "United States" },
               { "@type": "Country", name: "United Kingdom" },
@@ -139,7 +139,7 @@ const wishkiSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/wishki-discount-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -157,7 +157,7 @@ const wishkiSchema = {
           "@type": "ListItem",
           position: 3,
           name: "Wiskii Coupons",
-          item: "https://www.couponsbit.us/stores/wishki-discount-code",
+          item: "https://www.couponsbit.us/stores/wiskii-discount-code",
         },
       ],
     },
