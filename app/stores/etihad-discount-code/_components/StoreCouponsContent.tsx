@@ -252,21 +252,21 @@ export default function EtihadCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1011l58Agp/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784970/etihad-logo_lbl7mo.webp" alt="Etihad Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811571/etihad-promo-code_k5b58x.webp" alt="Etihad Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1011l58Agp/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784970/etihad-logo_lbl7mo.webp" alt="Etihad Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811570/etihad-voucher-code_xf8co2.webp" alt="Etihad Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1011l58Agp/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784970/etihad-logo_lbl7mo.webp" alt="Etihad Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811570/etihad-discount-code_tiix61.webp" alt="Etihad Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 

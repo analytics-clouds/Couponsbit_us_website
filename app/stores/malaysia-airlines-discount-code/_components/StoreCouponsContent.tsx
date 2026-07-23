@@ -252,21 +252,21 @@ export default function MalaysiaAirlinesCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://malaysiaairlines.sjv.io/c/4303217/1728493/20075?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/malaysia-logo_xso2cj.webp" alt="Malaysia Airlines Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811448/malaysia-airlines-promo-code_jx4ulf.webp" alt="Malaysia Airlines Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://malaysiaairlines.sjv.io/c/4303217/1728493/20075?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/malaysia-logo_xso2cj.webp" alt="Malaysia Airlines Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811448/malaysia-airlines-vocuher-code_ulde6l.webp" alt="Malaysia Airlines Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://malaysiaairlines.sjv.io/c/4303217/1728493/20075?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/malaysia-logo_xso2cj.webp" alt="Malaysia Airlines Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811447/malaysia-airlines-doscount-code_ibqf8a.webp" alt="Malaysia Airlines Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
