@@ -57,6 +57,11 @@ export const allStores: StoreEntry[] = [
   { name: "Geekbuying",      id: "geekbuying-discount-code",    category: "Electronics", coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/geekbuying-logo_pnkeev.webp",           discount: "Up To 56% OFF",    popular: false },
   { name: "vegas",           id: "vegas-discount-code",         category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp",                discount: "Up To 35% OFF",    popular: false },
   { name: "Wish.com",        id: "wish-discount-code",          category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/wish-logo_n1dypa.webp",                discount: "Up To 60% OFF",    popular: false },
+  { name: "Fireflyz",        id: "fireflyz-discount-code",      category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/firefly-logo_ju6n0p.webp",              discount: "One-Way Fares From $29", popular: false },
+  { name: "Etihad",          id: "etihad-discount-code",        category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/etihad-logo_lbl7mo.webp",               discount: "Up To 30% OFF",    popular: false },
+  { name: "Malaysia Airlines", id: "malaysia-airlines-discount-code", category: "Travel", coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/malaysia-logo_xso2cj.webp",             discount: "Up To 35% OFF",    popular: false },
+  { name: "Oppo",            id: "oppo-discount-code",          category: "Electronics", coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp",                 discount: "From $39",         popular: false },
+  { name: "Inspiring Vacation", id: "inspiring-vacation-discount-code", category: "Travel", coupons: 9, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp",  discount: "Up To 50% OFF",    popular: false },
 ];
 
 
