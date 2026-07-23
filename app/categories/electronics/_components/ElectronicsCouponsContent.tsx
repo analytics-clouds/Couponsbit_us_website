@@ -30,7 +30,12 @@ interface Coupon {
 
 const STORES = [
   { id: "rayneo-coupon-code", name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp", coupons: 6, discount: "Flat ₹2000 Off" },
-  { id: "reolink-coupon-code", name: "Reolink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp", coupons: 11, discount: "Up to 30% OFF" }
+  { id: "reolink-coupon-code", name: "Reolink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp", coupons: 11, discount: "Up to 30% OFF" },
+  { id: "dell-coupon-code", name: "Dell", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp", coupons: 10, discount: "Up to 69% OFF" },
+  { id: "hp-coupon-code", name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", coupons: 10, discount: "Up to 69% OFF" },
+  { id: "beelink-coupon-code", name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg", coupons: 9, discount: "Up to 35% OFF" },
+  { id: "obsbot-coupon-code", name: "Obsbot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg", coupons: 7, discount: "From $75" },
+  { id: "ringconn-discount-code", name: "RingConn", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp", coupons: 5, discount: "Starting From $199" }
 ];
 
 const SIDEBAR_CATEGORIES = [

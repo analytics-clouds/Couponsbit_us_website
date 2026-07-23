@@ -23,11 +23,15 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "driffle-coupon-code", name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", coupons: 14, discount: "Up to 15% OFF" },
   { id: "bluehost-coupon-code", name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", coupons: 12, discount: "Up to 65% OFF" },
   { id: "envato-elements-coupon-code", name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp", coupons: 7, discount: "Up to 50% OFF" },
   { id: "sintra-coupon-code", name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", coupons: 5, discount: "Up to 40% OFF" },
-  { id: "emergent-coupon-code", name: "Emergent", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp", coupons: 2, discount: "Up to 85% OFF" }
+  { id: "emergent-coupon-code", name: "Emergent", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp", coupons: 2, discount: "Up to 85% OFF" },
+  { id: "krisp-coupon-code", name: "Krisp.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp", coupons: 4, discount: "Save 50% OFF" },
+  { id: "openart-coupon-code", name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", coupons: 6, discount: "Up to 27% OFF" },
+  { id: "talkpal-coupon-code", name: "Talkpal.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp", coupons: 2, discount: "Save Up to 69%" },
+  { id: "mcafee-discount-code", name: "McAfee", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp", coupons: 8, discount: "Up To 75% OFF" },
+  { id: "ultahost-discount-code", name: "UltaHost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/ultahost-logo_zsnpu7.webp", coupons: 8, discount: "Up To 62% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

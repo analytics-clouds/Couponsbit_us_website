@@ -23,7 +23,9 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "lyca-mobile-coupon-code", name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", coupons: 10, discount: "Up to 20% OFF" }
+  { id: "lyca-mobile-coupon-code", name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", coupons: 10, discount: "Up to 20% OFF" },
+  { id: "unipin-coupon-code", name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp", coupons: 10, discount: "Top-Ups From $0.94" },
+  { id: "oppo-discount-code", name: "Oppo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp", coupons: 9, discount: "From $39" }
 ];
 
 const SIDEBAR_CATEGORIES = [
