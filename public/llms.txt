@@ -23,13 +23,16 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 ## Stores
 - [All Stores](https://www.couponsbit.us/stores): Full directory of stores with active coupon codes
 - [Agoda Coupon Code](https://www.couponsbit.us/stores/agoda-coupon-code): Hotel and travel booking discounts
+- [Airalo Discount Code](https://www.couponsbit.us/stores/airalo-discount-code): Travel eSIM discounts
 - [Avis Discount Code](https://www.couponsbit.us/stores/avis-discount-code): Car rental discounts
 - [Ballboyz Coupon Code](https://www.couponsbit.us/stores/ballboyz-coupon-code): Acne and skincare bundle discounts
 - [Beelink Coupon Code](https://www.couponsbit.us/stores/beelink-coupon-code): Mini PC and AI workstation discounts
 - [Bluehost Coupon Code](https://www.couponsbit.us/stores/bluehost-coupon-code): Web hosting discount codes
 - [Budget Discount Code](https://www.couponsbit.us/stores/budget-discount-code): Car rental discounts
+- [CarCovers Discount Code](https://www.couponsbit.us/stores/carcovers-discount-code): Car cover and detailing accessory discounts
 - [Cariloha Coupon Code](https://www.couponsbit.us/stores/cariloha-coupon-code): Bamboo bedding and apparel discounts
 - [Cheapflights Coupon Code](https://www.couponsbit.us/stores/cheapflights-coupon-code): Flight, hotel, and car rental discounts
+- [Cheapflightsfares Discount Code](https://www.couponsbit.us/stores/cheapflightsfares-discount-code): USA flight, hotel, and car rental discounts
 - [DeerValley Coupon Code](https://www.couponsbit.us/stores/deer-valley-coupon-code): Bathroom and kitchen fixture discounts
 - [Dell Coupon Code](https://www.couponsbit.us/stores/dell-coupon-code): Laptop and desktop computer discounts
 - [Driffle Coupon Code](https://www.couponsbit.us/stores/driffle-coupon-code): Digital games and Steam key discounts

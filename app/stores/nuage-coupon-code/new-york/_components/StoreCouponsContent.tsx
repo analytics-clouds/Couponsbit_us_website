@@ -6,15 +6,15 @@ import {
   ChevronRight, 
   Star, 
   Tag, 
-  Percent, 
+  Percent, Leaf, Activity,
   Users, 
   BadgeCheck, 
   ExternalLink, 
   ShieldCheck, 
   PiggyBank, 
   RefreshCw, 
-  Clock, 
-  Copy, 
+  Clock, Wind,
+  Copy, CheckCircle2,
   ChevronDown, 
   Package,Award, Monitor, Clapperboard, Smartphone, Code2,
   Truck, 
@@ -24,7 +24,7 @@ import {
   Home, 
   Sparkles, 
   BookOpen, 
-  CheckCircle,
+  CheckCircle,Feather, Layers,
   X,
   ArrowRight,
   Plane, Dumbbell, Heart, Disc,
@@ -226,7 +226,6 @@ export default function NuagewearNewYorkCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
-  const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
   const [open, setOpen] = useState(false);
@@ -316,7 +315,7 @@ export default function NuagewearNewYorkCouponsContent() {
               {/* Right: Featured Banner Slider */}
               {/* Right: Featured Banner */}
 <div className="hidden md:block flex-1">
-  <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg">
+  <div className="relative rounded-2xl overflow-hidden h-[320px] shadow-lg">
     <a 
       href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" 
       target="_blank" 
@@ -324,10 +323,10 @@ export default function NuagewearNewYorkCouponsContent() {
       className="block w-full h-full"
     >
       <img 
-        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1400,c_limit/v1782731611/nuage-voucher-code_sunxhy.webp" 
-        alt="Nuagewear Discount Code" 
-        width={800} 
-        height={350} 
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1784890972/Nuage_700x350_cf1m1w.webp" 
+        alt="Nuagewear Discount Code"  
+        width={800}
+        height={320}
         className="w-full h-full object-cover" 
         fetchPriority="high" 
       />
@@ -875,24 +874,41 @@ export default function NuagewearNewYorkCouponsContent() {
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
-               <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Searches (New York)</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["Nuagewear NYC Discount", "Shapewear Deals New York", "Seamless Underwear NYC", "New York Lingerie Promo Code", "Nuagewear Tri-State Shipping", "NYC Activewear Underwear", "Brooklyn Nuagewear Coupon", "New York Comfort Essentials"].map(tag => (
-              <span
-                key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
+               <div className="bg-[#e8f6f8] rounded-[40px] p-8 md:p-10 border border-[#056bfa]/5">
+  {/* Added mb-6 to separate heading from tags */}
+  <h3 className="text-black font-black text-lg uppercase tracking-widest mb-6">
+    Popular Searches (New York)
+  </h3>
+
+  {/* Flex layout centered with better spacing */}
+  <div className="flex flex-wrap gap-3 items-center">
+    {[
+      "Nuagewear NYC Discount",
+      "Shapewear Deals New York",
+      "Seamless Underwear NYC",
+      "New York Lingerie Promo Code",
+      "Nuagewear Tri-State Shipping",
+      "NYC Activewear Underwear",
+      "Brooklyn Nuagewear Coupon",
+      "New York Comfort Essentials",
+    ].map((tag) => (
+      <span
+        key={tag}
+        className="bg-white px-5 py-2.5 rounded-full text-xs font-extrabold text-[#056bfa] text-center uppercase tracking-wider shadow-sm border border-white hover:shadow-md transition-shadow cursor-pointer"
+      >
+        {tag}
+      </span>
+    ))}
+  </div>
+</div>
 
 <div className="bg-white p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm max-w-md my-8">
-  <h3 className="text-xl font-bold text-slate-900 mb-8">
-    How to Use StubHub Coupon Code
+  <h3 className="text-xl font-bold text-slate-900 mb-2">
+    How to Use a Nuagewear Coupon Code
   </h3>
+  <p className="text-sm text-gray-500 mb-8">
+    Saving money on your next order is simple.
+  </p>
 
   <div className="relative space-y-8">
     {/* Vertical timeline connecting line */}
@@ -901,33 +917,39 @@ export default function NuagewearNewYorkCouponsContent() {
     {[
       {
         step: "Step 1",
-        title: "Choose an offer",
-        desc: "Browse and select the best StubHub coupon or deal.",
-        icon: Tag,
+        title: "Visit CouponsBit",
+        desc: "Browse the latest Nuagewear coupon codes and promotional offers.",
+        icon: Globe,
       },
       {
         step: "Step 2",
-        title: "Copy the code",
-        desc: "Click on 'Get Code' and copy the coupon code.",
-        icon: Copy,
+        title: "Select a Deal",
+        desc: "Choose the discount that best matches your purchase.",
+        icon: Tag,
       },
       {
         step: "Step 3",
-        title: "Add tickets to cart",
-        desc: "Select your event and add tickets to your cart.",
-        icon: ShoppingBag,
+        title: "Copy the Coupon Code",
+        desc: "Copy the available promo code before visiting Nuagewear.",
+        icon: Copy,
       },
       {
         step: "Step 4",
-        title: "Apply code at checkout",
-        desc: "Paste the code at checkout to get the discount.",
-        icon: Percent,
+        title: "Shop Your Favorites",
+        desc: "Add your preferred products to the shopping cart.",
+        icon: ShoppingBag,
       },
       {
         step: "Step 5",
-        title: "Enjoy & Save",
-        desc: "Complete your purchase and enjoy the event!",
-        icon: Sparkles,
+        title: "Apply the Discount",
+        desc: "Enter the coupon code during checkout if required.",
+        icon: Percent,
+      },
+      {
+        step: "Step 6",
+        title: "Complete Your Order",
+        desc: "Finalize your purchase and enjoy your savings.",
+        icon: CheckCircle2,
       },
     ].map((item, index) => {
       const Icon = item.icon;
@@ -958,16 +980,10 @@ export default function NuagewearNewYorkCouponsContent() {
 
 <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm max-w-md my-8">
   {/* Header */}
-  <div className="flex items-center justify-between mb-6">
+  <div className="mb-6">
     <h3 className="text-xl font-bold text-slate-900">
       More Stores You'll Love
     </h3>
-    <Link 
-      href="/stores" 
-      className="text-sm font-semibold text-blue-600 hover:underline flex items-center gap-1"
-    >
-      View All Stores &rarr;
-    </Link>
   </div>
 
   {/* 2-Column Grid */}
@@ -976,19 +992,24 @@ export default function NuagewearNewYorkCouponsContent() {
       <Link
         key={i}
         href={store.href}
-        className="flex flex-col items-center justify-center p-5 rounded-2xl border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all duration-200 bg-white group"
+        className="flex flex-col items-center justify-center p-6 rounded-2xl border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all duration-200 bg-white group"
       >
         {/* Logo Container */}
-        <div className="h-10 flex items-center justify-center mb-2">
+        <div className="h-14 flex items-center justify-center mb-3">
           <img
             src={store.logo}
             alt={store.name}
-            width={120}
-            height={40}
-            className="max-h-8 max-w-[110px] w-auto object-contain group-hover:scale-105 transition-transform duration-200"
+            width={130}
+            height={52}
+            className="max-h-11 max-w-[130px] w-auto object-contain group-hover:scale-105 transition-transform duration-200"
             loading="lazy"
           />
         </div>
+
+        {/* Store Name */}
+        <span className="text-sm font-bold text-slate-900 mb-1">
+          {store.name}
+        </span>
 
         {/* Discount Text */}
         <span className="text-xs font-bold text-blue-600 tracking-tight">
@@ -997,115 +1018,26 @@ export default function NuagewearNewYorkCouponsContent() {
       </Link>
     ))}
   </div>
-</div>
 
+  {/* View All Stores Button */}
+  <div className="text-center mt-6">
+    <Link
+      href="/stores"
+      className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-[#056BFA] text-[#056BFA] font-bold text-xs uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all duration-200 gap-2 shadow-sm"
+    >
+      View All Stores &rarr;
+    </Link>
+  </div>
+</div>
 
                
-
-                {/* Categories Card */}
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Laptop, name: "Electronics",        count: "850+", color: "text-blue-500",   href: "/categories/electronics" },
-                        { icon: Plane,  name: "Travel",             count: "420+", color: "text-teal-500",   href: "/categories/travel" },
-                        { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Code,   name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-green-500",  href: "/categories/mobile" }
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-                {/* Why Shop Card */}
-             <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <div className="mb-8">
-    <h3 className="text-black font-black text-lg mb-2">Popular Products Available at Nuagewear</h3>
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Nuagewear offers a range of comfortable and functional intimate apparel designed for daily use and active lifestyles.
-    </p>
-  </div>
-
-  <div className="space-y-8">
-    {[
-      {
-        icon: Sparkles, 
-        title: "Seamless Briefs",
-        sub: "Designed for smooth coverage and everyday comfort without bulky seams or visible lines."
-      },
-      {
-        icon: Dumbbell, 
-        title: "Performance Underwear",
-        sub: "Lightweight styles engineered for workouts, outdoor activities, and active routines."
-      },
-      {
-        icon: Heart, 
-        title: "Yoga & Daily Wear Collections",
-        sub: "Soft, flexible underwear created to move naturally with your body throughout the day."
-      },
-      {
-        icon: Shield, 
-        title: "Shaping Essentials",
-        sub: "Comfort-focused styles that offer gentle support while maintaining flexibility."
-      },
-      {
-        icon: Disc, 
-        title: "Wireless Bras",
-        sub: "Comfortable designs that provide support without the discomfort of traditional underwires."
-      }
-    ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
               </div>
 
             </div>
           </div>
         </section>
 
-        {/* Section 6: More Stores You'll Love */}
-        <section className="py-20 bg-white border-t border-[#f0f0f0]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
-              {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
-                  href={store.href}
-                  className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                >
-                  <div className="h-14 flex items-center justify-center mx-auto">
-                    <img src={store.logo} alt={store.name} width={120} height={48} className="max-h-12 max-w-[120px] w-auto object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                  </div>
-                  <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
-                  <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+        
 
         {/* Section 7: SEO Text Section */}
       
@@ -1220,7 +1152,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </table>
         </div>
 
-         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+         <div className="text-gray-500 font-bold leading-relaxed space-y-6 relative">
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Comfort Essentials with Nuagewear Coupon Codes</h3>
           <p>
             Finding underwear that combines comfort, performance, and everyday confidence can be challenging. That's why many women turn to Nuagewear for innovative seamless designs that prioritize softness, flexibility, and a barely-there feel. Before placing your next order, check the latest <strong>Nuagewear coupon codes</strong>, promo offers, and exclusive discounts on CouponsBit to unlock extra savings.
@@ -1253,20 +1185,10 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
 
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative mt-6", !isReadMore && "max-h-[500px] overflow-hidden")}>
+        <div className="text-gray-500 font-bold leading-relaxed space-y-6 relative mt-6">
          
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">About Nuagewear</h3>
-
-            <p>
-              Nuagewear is a women's underwear brand focused on redefining comfort through seamless design and performance-driven fabrics. Inspired by the French word "Nuage," meaning cloud, the brand aims to deliver lightweight, soft, and comfortable underwear that feels almost invisible when worn.
-            </p>
-            
-            <p>
-              The company specializes in innovative underwear solutions designed to eliminate common issues such as visible panty lines, discomfort, pinching, rolling waistbands, and unwanted shifting during movement. By combining modern fabric technology with thoughtful design, Nuagewear creates products suitable for both active lifestyles and everyday wear.
-            </p>
-          </div>
+          {/* How to Categories */}
 
        <div className="relative bg-gradient-to-b from-[#f4f9fd] to-[#eef6fc] py-16 px-4 rounded-[40px] overflow-hidden">
   
@@ -1288,6 +1210,8 @@ export default function NuagewearNewYorkCouponsContent() {
       Explore popular categories and unlock amazing coupons & deals.
     </p>
   </div>
+
+
 
   {/* Cards Grid */}
   <div className="max-w-5xl mx-auto space-y-6">
@@ -1418,117 +1342,344 @@ export default function NuagewearNewYorkCouponsContent() {
 
 
 
-          {/* How to Use Steps */}
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Nuagewear Coupon Code</h3>
-            <p className="text-gray-700 font-bold -mt-4">Saving money on your next order is simple.</p>
-            <div className="space-y-6">
-              {[
-                "Step 1: Visit CouponsBit — Browse the latest Nuagewear coupon codes and promotional offers.",
-                "Step 2: Select a Deal — Choose the discount that best matches your purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Nuagewear.",
-                "Step 4: Shop Your Favorites — Add your preferred products to the shopping cart.",
-                "Step 5: Apply the Discount — Enter the coupon code during checkout if required.",
-                "Step 6: Complete Your Order — Finalize your purchase and enjoy your savings."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                    {i + 1}
-                  </div>
-                  <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                </div>
-              ))}
-            </div>
-          </div>
 
+          <div className="max-w-3xl mx-auto my-6 space-y-6">
+  {/* Heading */}
+  <h3 className="text-xl font-black text-[#056bfa]">
+    Tips to Save More on Nuagewear
+  </h3>
 
+  {/* List Container */}
+  <div className="space-y-5">
+    {[
+      {
+        title: "Check CouponsBit Before Every Purchase",
+        desc: "New coupon codes and promotions may be added regularly.",
+      },
+      {
+        title: "Shop Multi-Pack Deals",
+        desc: "Bundle offers can often provide better value compared to individual purchases.",
+      },
+      {
+        title: "Watch for Seasonal Sales",
+        desc: "Holiday promotions and limited-time campaigns may feature deeper discounts.",
+      },
+      {
+        title: "Join Brand Updates",
+        desc: "Newsletter subscribers may occasionally receive exclusive offers and early sale access.",
+      },
+      {
+        title: "Explore New Collection Launches",
+        desc: "Special promotions are sometimes available when new products are introduced.",
+      },
+    ].map((tip, index) => (
+      <div key={index} className="flex items-start gap-3">
+        {/* Blue Bullet Point */}
+        <span className="text-[#056bfa] text-xl font-bold leading-none mt-1">
+          •
+        </span>
 
-
-
-
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
+        {/* Content */}
+        <div>
+          <h4 className="font-bold text-[#056bfa] text-base mb-1">
+            {tip.title}
+          </h4>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {tip.desc}
+          </p>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-        <button 
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-        >
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
 
-        {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-          {[
-            { q: "What is Nuagewear?", a: "Nuagewear is a women's underwear brand focused on seamless comfort, performance fabrics, and innovative fit technology." },
-            { q: "What products does Nuagewear sell?", a: "The brand offers seamless underwear, performance briefs, shaping essentials, wireless bras, and everyday comfort collections." },
-            { q: "Is Nuagewear suitable for workouts?", a: "Many Nuagewear products are designed to support active lifestyles, including fitness training, yoga, and everyday movement." },
-            { q: "Where can I find Nuagewear coupon codes?", a: "You can find the latest Nuagewear coupon codes, promo offers, and discounts on CouponsBit." },
-            { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is completely free and helps shoppers discover valuable savings opportunities from popular brands." },
-            { q: "Does Nuagewear ship to New York?", a: "Yes. Nuagewear ships nationwide across the US, including New York City, Brooklyn, Queens, Long Island and the greater tri-state area." },
-            { q: "How long does Nuagewear delivery take to NYC?", a: "Standard delivery to New York addresses typically takes 5–7 business days, depending on the shipping method selected at checkout." },
-            { q: "Do New York orders qualify for free shipping?", a: "Yes. New York shoppers get the same FREE worldwide shipping on orders over $60 as customers anywhere else — no separate New York promo code is needed." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-              </div>
-            </div>
-          ))}
+<div className="max-w-3xl mx-auto my-6 space-y-6">
+  {/* Heading */}
+  <h3 className="text-xl font-black text-[#056bfa]">
+    Why Use CouponsBit for Nuagewear Deals?
+  </h3>
+
+  {/* List Container */}
+  <div className="space-y-5">
+    {[
+      {
+        title: "Updated Discounts",
+        desc: "We regularly update our listings to help shoppers find current offers.",
+      },
+      {
+        title: "Quick and Easy Savings",
+        desc: "Access coupon codes, promotions, and special deals in one convenient location.",
+      },
+      {
+        title: "Completely Free to Use",
+        desc: "CouponsBit helps you save money without any membership or subscription fees.",
+      },
+      {
+        title: "Discounts Across Multiple Categories",
+        desc: "In addition to fashion and apparel brands, CouponsBit features deals from travel, technology, lifestyle, beauty, and wellness companies.",
+      },
+    ].map((item, index) => (
+      <div key={index} className="flex items-start gap-3">
+        {/* Blue Bullet Point */}
+        <span className="text-[#056bfa] text-xl font-bold leading-none mt-1">
+          •
+        </span>
+
+        {/* Content */}
+        <div>
+          <h4 className="font-bold text-[#056bfa] text-base mb-1">
+            {item.title}
+          </h4>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div className="max-w-3xl mx-auto my-6 space-y-6">
+  {/* Heading */}
+  <h3 className="text-xl font-black text-[#056bfa]">
+    Upgrade Your Comfort for Less
+  </h3>
+  <p>
+    Comfort starts with the essentials you wear every day. Whether you're looking for seamless underwear, activewear-friendly designs, or lightweight everyday basics, Nuagewear offers solutions designed around comfort and movement.
+  </p>
+  <p>
+    Browse the latest Nuagewear coupon codes, promo offers, and exclusive discounts on CouponsBit today and enjoy premium comfort while spending less.
+  </p>
+
+ 
+</div>
+
+
+
         </div>
       </div>
 
       {/* Sidebar */}
       <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Searches (New York)</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["Nuagewear NYC Discount", "Shapewear Deals New York", "Seamless Underwear NYC", "New York Lingerie Promo Code", "Nuagewear Tri-State Shipping", "NYC Activewear Underwear", "Brooklyn Nuagewear Coupon", "New York Comfort Essentials"].map(tag => (
-              <span
-                key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
-              >
-                {tag}
-              </span>
-            ))}
+
+        <div className="relative bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm max-w-3xl mx-auto my-4 overflow-hidden">
+  
+  {/* Header Section */}
+  <div className="relative z-10 max-w-lg mb-10">
+    {/* Tag Badge */}
+    
+
+    {/* Title */}
+    <h2 className="text-3xl md:text-2xl font-extrabold text-[#0B192C] leading-tight mb-4">
+      Popular Products <br />
+      Available at <span className="text-[#056BFA]">Nuagewear</span>
+    </h2>
+
+    {/* Small Accent Line */}
+    <div className="w-10 h-1 bg-[#056BFA] rounded-full mb-4" />
+
+    {/* Subtitle / Description */}
+    <p className="text-gray-500 text-sm leading-relaxed">
+      Nuagewear offers a range of comfortable and functional intimate apparel designed for daily use and active lifestyles.
+    </p>
+  </div>
+
+  {/* Top Right Decorative Background */}
+  <div className="hidden md:block absolute top-6 right-6 w-64 h-64 rounded-full bg-[#f0f7ff] pointer-events-none -z-0">
+    <div className="w-full h-full flex items-center justify-center opacity-80">
+      <div className="w-40 h-40 rounded-full bg-gradient-to-tr from-[#056BFA]/10 to-[#056BFA]/20 blur-xl" />
+    </div>
+  </div>
+
+  {/* Vertical Single-Column List */}
+  <div className="relative z-10 space-y-4 mb-8">
+    {[
+      {
+        title: "Seamless Briefs",
+        desc: "Designed for smooth coverage and everyday comfort without bulky seams or visible lines.",
+        icon: Wind,
+      },
+      {
+        title: "Performance Underwear",
+        desc: "Lightweight styles engineered for workouts, outdoor activities, and active routines.",
+        icon: Dumbbell,
+      },
+      {
+        title: "Yoga & Daily Wear Collections",
+        desc: "Soft, flexible underwear created to move naturally with your body throughout the day.",
+        icon: Heart,
+      },
+      {
+        title: "Shaping Essentials",
+        desc: "Comfort-focused styles that offer gentle support while maintaining flexibility.",
+        icon: Shield,
+      },
+      {
+        title: "Wireless Bras",
+        desc: "Comfortable designs that provide support without the discomfort of traditional underwires.",
+        icon: Shirt,
+      },
+      {
+        title: "Everyday Comfort",
+        desc: "Breathable fabrics and thoughtful designs for all-day freshness and confidence.",
+        icon: Leaf,
+      },
+    ].map((item, index) => {
+      const Icon = item.icon;
+      return (
+        <div
+          key={index}
+          className="flex items-center justify-between pb-4 border-b border-dashed border-gray-100 last:border-0 group cursor-pointer"
+        >
+          {/* Icon & Text Container */}
+          <div className="flex items-center gap-5">
+            {/* Circular Icon */}
+            <div className="w-14 h-14 rounded-full bg-[#e8f6f8] text-[#056BFA] flex items-center justify-center shrink-0">
+              <Icon className="w-6 h-6" />
+            </div>
+
+            {/* Text Content */}
+            <div>
+              <h3 className="text-base font-bold text-[#0B192C] mb-1 group-hover:text-[#056BFA] transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-xs text-gray-500 leading-relaxed max-w-md">
+                {item.desc}
+              </p>
+            </div>
           </div>
+
+          {/* Right Chevron Arrow */}
+          <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#056BFA] group-hover:translate-x-1 transition-all shrink-0 ml-4" />
         </div>
+      );
+    })}
+  </div>
 
 
+</div>
 
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Nuagewear Deals</h3>
-          <div className="space-y-6">
-            {[
-              { heading: "Multi-Pack Bundle", sub: "Save significantly on underwear bundles and multipack combinations" },
-              { heading: "Welcome Order Promo", sub: "Introductory price adjustments on first-time brand configurations" },
-              { heading: "Free Standard Delivery", sub: "Complimentary shipping structures applied on minimum tier values" },
-              { heading: "Seasonal Collection Sale", sub: "Limited-time reductions on selected lounge and wireless variants" },
-              { heading: "CouponsBit Special", sub: "Exclusive checkout incentive code adjustments for active users" }
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">N</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                </div>
-                <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Nuagewear deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-              </div>
-            ))}
+<div className="relative bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm max-w-3xl mx-auto my-4 overflow-hidden">
+  
+  {/* Header Section */}
+  <div className="relative z-10 max-w-lg mb-10">
+    {/* Title */}
+    <h2 className="text-3xl md:text-2xl font-extrabold text-[#0B192C] leading-tight mb-4">
+      Why Customers <br />
+      Choose <span className="text-[#056BFA]">Nuagewear</span>
+    </h2>
+
+    {/* Small Accent Line */}
+    <div className="w-10 h-1 bg-[#056BFA] rounded-full mb-4" />
+
+    {/* Subtitle / Description */}
+    <p className="text-gray-500 text-sm leading-relaxed">
+      Discover the key features and modern technologies that make Nuagewear a favorite choice for everyday comfort and support.
+    </p>
+  </div>
+
+  {/* Top Right Decorative Background */}
+  <div className="hidden md:block absolute top-6 right-6 w-64 h-64 rounded-full bg-[#f0f7ff] pointer-events-none -z-0">
+    <div className="w-full h-full flex items-center justify-center opacity-80">
+      <div className="w-40 h-40 rounded-full bg-gradient-to-tr from-[#056BFA]/10 to-[#056BFA]/20 blur-xl" />
+    </div>
+  </div>
+
+  {/* Vertical Single-Column List */}
+  <div className="relative z-10 space-y-4 mb-8">
+    {[
+      {
+        title: "Barely-There Comfort",
+        desc: "Nuagewear products are designed to feel lightweight and unobtrusive throughout the day.",
+        icon: Feather,
+      },
+      {
+        title: "Seamless Construction",
+        desc: "The brand focuses on reducing irritation and visible lines under clothing through modern seamless technology.",
+        icon: Layers,
+      },
+      {
+        title: "Designed for Movement",
+        desc: "Many products are created with active lifestyles in mind, making them suitable for workouts, yoga sessions, and daily activities.",
+        icon: Activity,
+      },
+      {
+        title: "Breathable Materials",
+        desc: "Lightweight fabrics help promote airflow and all-day comfort.",
+        icon: Wind,
+      },
+      {
+        title: "Modern Fit Technology",
+        desc: "Innovative design features help improve fit and reduce common discomforts associated with traditional underwear.",
+        icon: Sparkles,
+      },
+    ].map((item, index) => {
+      const Icon = item.icon;
+      return (
+        <div
+          key={index}
+          className="flex items-center justify-between pb-4 border-b border-dashed border-gray-100 last:border-0 group cursor-pointer"
+        >
+          {/* Icon & Text Container */}
+          <div className="flex items-center gap-5">
+            {/* Circular Icon */}
+            <div className="w-14 h-14 rounded-full bg-[#e8f6f8] text-[#056BFA] flex items-center justify-center shrink-0">
+              <Icon className="w-6 h-6" />
+            </div>
+
+            {/* Text Content */}
+            <div>
+              <h3 className="text-base font-bold text-[#0B192C] mb-1 group-hover:text-[#056BFA] transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-xs text-gray-500 leading-relaxed max-w-md">
+                {item.desc}
+              </p>
+            </div>
           </div>
+
+          {/* Right Chevron Arrow */}
+          <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#056BFA] group-hover:translate-x-1 transition-all shrink-0 ml-4" />
         </div>
+      );
+    })}
+  </div>
+
+</div>
+
+       <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+          {[
+            { q: "What is Nuagewear?", a: "Nuagewear is a women's underwear brand focused on seamless comfort, performance fabrics, and innovative fit technology." },
+            { q: "What products does Nuagewear sell?", a: "The brand offers seamless underwear, performance briefs, shaping essentials, wireless bras, and everyday comfort collections." },
+            { q: "Is Nuagewear suitable for workouts?", a: "Many Nuagewear products are designed to support active lifestyles, including fitness training, yoga, and everyday movement." },
+            { q: "Where can I find Nuagewear coupon codes?", a: "You can find the latest Nuagewear coupon codes, promo offers, and discounts on CouponsBit." },
+            { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is completely free and helps shoppers discover valuable savings opportunities from popular brands." },
+            { q: "Does Nuagewear ship to New York?", a: "Yes. Nuagewear ships nationwide across the US, including New York City, Brooklyn, Queens, Long Island and the greater tri-state area." },
+            { q: "How long does Nuagewear delivery take to NYC?", a: "Standard delivery to New York addresses typically takes 5–7 business days, depending on the shipping method selected at checkout." },
+            { q: "Do New York orders qualify for free shipping?", a: "Yes. New York shoppers get the same FREE worldwide shipping on orders over $60 as customers anywhere else — no separate New York promo code is needed." }
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button 
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full px-4 py-2 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("w-8 h-8 shrink-0 flex items-center justify-center bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+
+      
       </div>
       
     </div>

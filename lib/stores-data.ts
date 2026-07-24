@@ -64,6 +64,9 @@ export const allStores: StoreEntry[] = [
   { name: "Inspiring Vacation", id: "inspiring-vacation-discount-code", category: "Travel", coupons: 9, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp",  discount: "Up To 50% OFF",    popular: false },
   { name: "Radisson",        id: "radisson-discount-code",      category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp",             discount: "Up To 40% OFF",    popular: false },
   { name: "Philips",         id: "philips-discount-code",       category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/philips-logo_yuwckz.webp",              discount: "Save Up To £120",  popular: false },
+  { name: "Airalo",          id: "airalo-discount-code",        category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp",               discount: "USA eSIM From $4.50", popular: false },
+  { name: "CarCovers",       id: "carcovers-discount-code",     category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/carcover-logo_eufopb.webp",             discount: "Save $30 OFF",     popular: false },
+  { name: "Cheapflightsfares", id: "cheapflightsfares-discount-code", category: "Travel", coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895741/chepflights-logo_wm46ul.webp",          discount: "Flights Under $99", popular: false },
 ];
 
 
