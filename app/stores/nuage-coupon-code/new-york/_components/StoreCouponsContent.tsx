@@ -16,7 +16,7 @@ import {
   Clock, 
   Copy, 
   ChevronDown, 
-  Package, 
+  Package,Award, Monitor, Clapperboard, Smartphone, Code2,
   Truck, 
   Shield,   
   Laptop, 
@@ -1268,50 +1268,152 @@ export default function NuagewearNewYorkCouponsContent() {
             </p>
           </div>
 
-          <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  {/* Section Header */}
-  <h3 className="text-xl font-bold text-slate-900 mb-6">Top Categories</h3>
+       <div className="relative bg-gradient-to-b from-[#f4f9fd] to-[#eef6fc] py-16 px-4 rounded-[40px] overflow-hidden">
+  
+  {/* Header Section */}
+  <div className="text-center max-w-2xl mx-auto mb-12">
+    {/* Decorative Top Badge */}
+    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#056BFA]/10 text-[#056BFA] mb-3">
+      <Award className="w-5 h-5" />
+    </div>
 
-  {/* 3 Columns Desktop Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
-    {[
-      { icon: Laptop, name: "Electronics", count: "850+ Coupons", color: "text-blue-500", href: "/categories/electronics" },
-      { icon: Plane, name: "Travel", count: "420+ Coupons", color: "text-teal-500", href: "/categories/travel" },
-      { icon: Tv, name: "Entertainment", count: "210+ Coupons", color: "text-purple-500", href: "/categories/entertainment" },
-      { icon: Code, name: "Software & Digital", count: "300+ Coupons", color: "text-violet-500", href: "/categories/software" },
-      { icon: Zap, name: "Mobile & Telecom", count: "320+ Coupons", color: "text-emerald-500", href: "/categories/mobile" },
-    ].map((cat, i) => {
-      const Icon = cat.icon;
-      return (
-        <Link
-          key={i}
-          href={cat.href}
-          className="flex items-center justify-between py-3 border-b border-[#f0f0f0] group cursor-pointer"
-        >
-          {/* Icon & Category Name */}
-          <div className="flex items-center gap-3">
-            <Icon className={`w-5 h-5 ${cat.color}`} />
-            <span className="text-gray-900 font-bold text-sm group-hover:text-blue-600 transition-colors">
-              {cat.name}
-            </span>
-          </div>
+    {/* Title with decorative dashes */}
+    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B192C] flex items-center justify-center gap-3">
+      
+      Top Categories
+    
+    </h2>
 
-          {/* Coupon Pill Badge */}
-          <span className="bg-[#e8f6f8] text-[#0451c4] px-3 py-1 rounded-full text-xs font-bold">
-            {cat.count}
-          </span>
-        </Link>
-      );
-    })}
+    <p className="text-slate-500 font-medium text-sm mt-2">
+      Explore popular categories and unlock amazing coupons & deals.
+    </p>
   </div>
 
-  {/* View All Link */}
-  <Link
-    href="/categories"
-    className="inline-block mt-8 text-[#056bfa] font-black text-xs uppercase tracking-wider hover:underline"
-  >
-    View All Categories &rarr;
-  </Link>
+  {/* Cards Grid */}
+  <div className="max-w-5xl mx-auto space-y-6">
+    
+    {/* First Row: 3 Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      {/* Electronics */}
+      <Link href="/categories/electronics" className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow overflow-hidden group">
+        <div className="absolute top-0 right-0 w-16 h-16 bg-blue-100/50 rounded-bl-full pointer-events-none" />
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full bg-blue-50 text-[#056BFA] flex items-center justify-center shrink-0">
+            <Monitor className="w-8 h-8" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-lg">Electronics</h3>
+            <span className="inline-block mt-1 px-3 py-1 rounded-full bg-blue-50 text-[#056BFA] text-xs font-bold">
+              850+ Coupons
+            </span>
+          </div>
+        </div>
+        <div className="border-t border-dashed border-slate-200 pt-4 flex items-center justify-between text-[#056BFA] font-semibold text-sm group-hover:underline">
+          <span>Explore Deals</span>
+          <span>&rarr;</span>
+        </div>
+      </Link>
+
+      {/* Travel */}
+      <Link href="/categories/travel" className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow overflow-hidden group">
+        <div className="absolute top-0 right-0 w-16 h-16 bg-emerald-100/50 rounded-bl-full pointer-events-none" />
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+            <Plane className="w-8 h-8" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-lg">Travel</h3>
+            <span className="inline-block mt-1 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold">
+              420+ Coupons
+            </span>
+          </div>
+        </div>
+        <div className="border-t border-dashed border-slate-200 pt-4 flex items-center justify-between text-[#056BFA] font-semibold text-sm group-hover:underline">
+          <span>Explore Deals</span>
+          <span>&rarr;</span>
+        </div>
+      </Link>
+
+      {/* Entertainment */}
+      <Link href="/categories/entertainment" className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow overflow-hidden group">
+        <div className="absolute top-0 right-0 w-16 h-16 bg-purple-100/50 rounded-bl-full pointer-events-none" />
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
+            <Clapperboard className="w-8 h-8" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-lg">Entertainment</h3>
+            <span className="inline-block mt-1 px-3 py-1 rounded-full bg-purple-50 text-purple-600 text-xs font-bold">
+              210+ Coupons
+            </span>
+          </div>
+        </div>
+        <div className="border-t border-dashed border-slate-200 pt-4 flex items-center justify-between text-[#056BFA] font-semibold text-sm group-hover:underline">
+          <span>Explore Deals</span>
+          <span>&rarr;</span>
+        </div>
+      </Link>
+
+    </div>
+
+    {/* Second Row: 2 Cards Centered */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-3xl md:mx-auto">
+      
+      {/* Mobile & Telecom */}
+      <Link href="/categories/mobile" className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow overflow-hidden group">
+        <div className="absolute top-0 right-0 w-16 h-16 bg-teal-100/50 rounded-bl-full pointer-events-none" />
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
+            <Smartphone className="w-8 h-8" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-lg">Mobile & Telecom</h3>
+            <span className="inline-block mt-1 px-3 py-1 rounded-full bg-teal-50 text-teal-600 text-xs font-bold">
+              320+ Coupons
+            </span>
+          </div>
+        </div>
+        <div className="border-t border-dashed border-slate-200 pt-4 flex items-center justify-between text-[#056BFA] font-semibold text-sm group-hover:underline">
+          <span>Explore Deals</span>
+          <span>&rarr;</span>
+        </div>
+      </Link>
+
+      {/* Software & Digital */}
+      <Link href="/categories/software" className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow overflow-hidden group">
+        <div className="absolute top-0 right-0 w-16 h-16 bg-amber-100/50 rounded-bl-full pointer-events-none" />
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+            <Code2 className="w-8 h-8" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-lg">Software & Digital</h3>
+            <span className="inline-block mt-1 px-3 py-1 rounded-full bg-amber-50 text-amber-600 text-xs font-bold">
+              300+ Coupons
+            </span>
+          </div>
+        </div>
+        <div className="border-t border-dashed border-slate-200 pt-4 flex items-center justify-between text-[#056BFA] font-semibold text-sm group-hover:underline">
+          <span>Explore Deals</span>
+          <span>&rarr;</span>
+        </div>
+      </Link>
+
+    </div>
+
+  </div>
+
+  {/* View All Button */}
+  <div className="text-center mt-12">
+    <Link
+      href="/categories"
+      className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-[#056BFA] text-[#056BFA] font-bold text-xs uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all duration-200 gap-2 shadow-sm"
+    >
+      View All Categories &rarr;
+    </Link>
+  </div>
+
 </div>
 
 

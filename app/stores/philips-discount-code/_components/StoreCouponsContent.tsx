@@ -252,21 +252,21 @@ export default function PhilipsCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1110lHvfP/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/philips-logo_yuwckz.webp" alt="Philips Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888343/radission-discount-code_xk0u4p.webp" alt="Philips Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1110lHvfP/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/philips-logo_yuwckz.webp" alt="Philips Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888342/radission-vocuher-code_pmt6ff.webp" alt="Philips Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://prf.hn/click/camref:1110lHvfP/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/philips-logo_yuwckz.webp" alt="Philips Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888343/philips-promo-code_kgqqna.webp" alt="Philips Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 

@@ -253,21 +253,21 @@ export default function RadissonCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://www.kqzyfj.com/click-101413330-17069342?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/radission-logo_gxjubt.webp" alt="Radisson Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888343/philips-vocuher-code_at4p8b.webp" alt="Radisson Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://www.kqzyfj.com/click-101413330-17069342?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/radission-logo_gxjubt.webp" alt="Radisson Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888343/philips-promo-code_kgqqna.webp" alt="Radisson Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://www.kqzyfj.com/click-101413330-17069342?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/radission-logo_gxjubt.webp" alt="Radisson Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784888342/philips-discount-code_xy3evt.webp" alt="Radisson Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
