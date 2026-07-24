@@ -37,7 +37,8 @@ const STORES = [
   { id: "malaysia-airlines-discount-code", name: "Malaysia Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/malaysia-logo_xso2cj.webp", coupons: 6, discount: "Up To 35% OFF" },
   { id: "inspiring-vacation-discount-code", name: "Inspiring Vacation", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp", coupons: 9, discount: "Up To 50% OFF" },
   { id: "vegas-discount-code", name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", coupons: 6, discount: "Up To 35% OFF" },
-  { id: "zen-hotels-coupon-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" }
+  { id: "zen-hotels-coupon-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" },
+  { id: "radisson-discount-code", name: "Radisson", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp", coupons: 7, discount: "Up To 40% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [

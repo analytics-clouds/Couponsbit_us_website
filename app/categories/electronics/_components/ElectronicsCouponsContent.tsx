@@ -35,7 +35,8 @@ const STORES = [
   { id: "hp-coupon-code", name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", coupons: 10, discount: "Up to 69% OFF" },
   { id: "beelink-coupon-code", name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg", coupons: 9, discount: "Up to 35% OFF" },
   { id: "obsbot-coupon-code", name: "Obsbot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg", coupons: 7, discount: "From $75" },
-  { id: "ringconn-discount-code", name: "RingConn", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp", coupons: 5, discount: "Starting From $199" }
+  { id: "ringconn-discount-code", name: "RingConn", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp", coupons: 5, discount: "Starting From $199" },
+  { id: "philips-discount-code", name: "Philips", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/philips-logo_yuwckz.webp", coupons: 10, discount: "Save Up To £120" }
 ];
 
 const SIDEBAR_CATEGORIES = [

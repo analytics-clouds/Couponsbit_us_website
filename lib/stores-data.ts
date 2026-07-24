@@ -62,6 +62,8 @@ export const allStores: StoreEntry[] = [
   { name: "Malaysia Airlines", id: "malaysia-airlines-discount-code", category: "Travel", coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/malaysia-logo_xso2cj.webp",             discount: "Up To 35% OFF",    popular: false },
   { name: "Oppo",            id: "oppo-discount-code",          category: "Electronics", coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp",                 discount: "From $39",         popular: false },
   { name: "Inspiring Vacation", id: "inspiring-vacation-discount-code", category: "Travel", coupons: 9, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp",  discount: "Up To 50% OFF",    popular: false },
+  { name: "Radisson",        id: "radisson-discount-code",      category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp",             discount: "Up To 40% OFF",    popular: false },
+  { name: "Philips",         id: "philips-discount-code",       category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/philips-logo_yuwckz.webp",              discount: "Save Up To £120",  popular: false },
 ];
 
 
