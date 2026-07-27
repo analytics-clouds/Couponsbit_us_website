@@ -67,6 +67,11 @@ export const allStores: StoreEntry[] = [
   { name: "Airalo",          id: "airalo-discount-code",        category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp",               discount: "USA eSIM From $4.50", popular: false },
   { name: "CarCovers",       id: "carcovers-discount-code",     category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/carcover-logo_eufopb.webp",             discount: "Save $30 OFF",     popular: false },
   { name: "Cheapflightsfares", id: "cheapflightsfares-discount-code", category: "Travel", coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895741/chepflights-logo_wm46ul.webp",          discount: "Flights Under $99", popular: false },
+  { name: "Sungait",         id: "sungait-discount-code",        category: "Fashion",     coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/sungait-logo_tfolql.webp",           discount: "Up To 50% OFF",   popular: false },
+  { name: "Bluetti",         id: "bluetti-discount-code",        category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/bluetti-power-logo_osmets.webp",     discount: "Save Up To $200", popular: false },
+  { name: "Dreame",          id: "dreame-discount-code",         category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130848/dreame-logo_uqesij.webp",            discount: "Up To 45% OFF",   popular: false },
+  { name: "Upwork",          id: "upwork-discount-code",         category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130860/upwork-logo_ki4h2l.webp",            discount: "Plans From $15",  popular: false },
+  { name: "Hostinger",       id: "hostinger-discount-code",      category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp",         discount: "Up To 80% OFF",   popular: false },
 ];
 
 

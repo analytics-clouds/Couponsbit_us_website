@@ -139,6 +139,11 @@ const TOP_BRANDS = [
   { name: "Reolink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/reolink-coupon-code_zsrmh1.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-coupon-code" },
   { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/envato-coupon-code_rhfnbt.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-coupon-code" },
   { name: "Sintra",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-coupon-code" },
+  { name: "Sungait",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp",                  discount: "Up To 50% OFF",   href: "/stores/sungait-discount-code" },
+  { name: "Bluetti",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp",            discount: "Save Up To $200",  href: "/stores/bluetti-discount-code" },
+  { name: "Dreame",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130848/dreame-logo_uqesij.webp",                   discount: "Up To 45% OFF",    href: "/stores/dreame-discount-code" },
+  { name: "Upwork",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130860/upwork-logo_ki4h2l.webp",                   discount: "Plans From $15",   href: "/stores/upwork-discount-code" },
+  { name: "Hostinger",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/hostinger-logo_m9ubvs.webp",                discount: "Up To 80% OFF",    href: "/stores/hostinger-discount-code" },
 ];
 
 const TopBrands = () => {
