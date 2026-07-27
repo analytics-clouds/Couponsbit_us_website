@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import NuagewearNewYorkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Nuagewear Coupon Codes for New York Shoppers – Up to 39% OFF",
+  title: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
   description:
-    "Verified Nuagewear coupon codes for New York shoppers. Save up to 39% OFF lingerie, shapewear and everyday essentials, with FREE shipping over $60 and 5–7 day delivery to NYC and the tri-state area.",
+    "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/nuage-coupon-code/new-york",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nuage-coupon-code/new-york",
-    title: "Nuagewear Coupon Codes for New York Shoppers – Up to 39% OFF",
+    title: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
     description:
-      "Verified Nuagewear coupon codes for New York shoppers. Save up to 39% OFF lingerie, shapewear and everyday essentials, with FREE shipping over $60 and 5–7 day delivery to NYC and the tri-state area.",
+      "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Nuagewear Coupon Codes for New York Shoppers – Up to 39% OFF",
+    title: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
     description:
-      "Verified Nuagewear coupon codes for New York shoppers. Save up to 39% OFF lingerie, shapewear and everyday essentials, with FREE shipping over $60 and 5–7 day delivery to NYC and the tri-state area.",
+      "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg"],
     site: "@couponsbit",
   },
@@ -58,9 +58,9 @@ const nuagewearNewYorkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/new-york#webpage",
       url: "https://www.couponsbit.us/stores/nuage-coupon-code/new-york",
-      name: "Nuagewear Coupon Codes for New York Shoppers – Up to 39% OFF",
+      name: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
       description:
-        "Verified Nuagewear coupon codes for New York shoppers. Save up to 39% OFF lingerie, shapewear and everyday essentials, with FREE shipping over $60 and 5–7 day delivery to NYC and the tri-state area.",
+        "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -166,66 +166,26 @@ const nuagewearNewYorkSchema = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is Nuagewear?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nuagewear is a women's underwear brand focused on seamless comfort, performance fabrics, and innovative fit technology.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What products does Nuagewear sell?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The brand offers seamless underwear, performance briefs, shaping essentials, wireless bras, and everyday comfort collections.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is Nuagewear suitable for workouts?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Many Nuagewear products are designed to support active lifestyles, including fitness training, yoga, and everyday movement.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Where can I find Nuagewear coupon codes?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "You can find the latest Nuagewear coupon codes, promo offers, and discounts on CouponsBit.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is CouponsBit free to use?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. CouponsBit is completely free and helps shoppers discover valuable savings opportunities from popular brands.",
-          },
-        },
-        {
-          "@type": "Question",
           name: "Does Nuagewear ship to New York?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Nuagewear ships nationwide across the US, including New York City, Brooklyn, Queens, Long Island and the greater tri-state area.",
+            text: "Yes — Nuagewear ships to all areas of New York, including New York City, Buffalo, Rochester and Yonkers. Standard delivery takes 5–7 business days via USPS or UPS. Free shipping is available on orders over $60.",
           },
         },
         {
           "@type": "Question",
-          name: "How long does Nuagewear delivery take to NYC?",
+          name: "How long does Nuagewear delivery take to New York?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Standard delivery to New York addresses typically takes 5–7 business days, depending on the shipping method selected at checkout.",
+            text: "Orders shipped to New York typically arrive within 5–7 business days via standard USPS or UPS. Orders placed by Tuesday generally arrive before the weekend for most New York addresses.",
           },
         },
         {
           "@type": "Question",
-          name: "Do New York orders qualify for free shipping?",
+          name: "Do Nuagewear coupon codes work for New York orders?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. New York shoppers get the same FREE worldwide shipping on orders over $60 as customers anywhere else — no separate New York promo code is needed.",
+            text: "Yes — all Nuagewear promo codes and deals on this page apply storewide. No separate New York code is needed. New York sales tax (~8.52%) is calculated automatically at checkout based on your zip code.",
           },
         },
       ],
