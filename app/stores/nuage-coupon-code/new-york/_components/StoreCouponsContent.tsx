@@ -1156,14 +1156,6 @@ export default function NuagewearNewYorkCouponsContent() {
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why New Yorkers Choose Nuagewear</h3>
-            <p><strong>Built for the Commute:</strong> Seamless, second-skin fits stay comfortable through subway rides, long walks and back-to-back meetings across the five boroughs.</p>
-            <p><strong>Layer-Friendly for NYC Seasons:</strong> From humid summers to layered winters, Nuagewear's breathable and shaping styles work under everything from summer dresses to winter coats.</p>
-            <p><strong>No Visible Lines, No Matter the Outfit:</strong> A go-to for New York's fashion-forward, fitted styles — from office wear to going-out looks — with zero visible panty lines.</p>
-            <p><strong>Trusted for Active NYC Lifestyles:</strong> Popular with New Yorkers who go straight from work to yoga studios, spin classes or evening runs along the Hudson.</p>
-          </div>
-
 
 
           {/* State Shopper Tips */}
