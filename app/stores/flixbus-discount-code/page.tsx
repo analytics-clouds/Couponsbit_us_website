@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import FlixBusCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+  title: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
   description:
-    "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
+    "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/flixbus-discount-code",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/flixbus-discount-code",
-    title: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+    title: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
     description:
-      "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
+      "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
     siteName: "Couponsbit",
     locale: "en_AU",
     alternateLocale: ["en_US", "en_GB", "en_CA", "de_DE", "fr_FR", "pt_BR", "tr_TR", "it_IT", "pl_PL"],
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp",
         width: 1200,
         height: 630,
-        alt: "FlixBus Australia Coupon Code & Promo Codes – Couponsbit",
+        alt: "FlixBus Coupon Code & Promo Codes – Couponsbit",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+    title: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
     description:
-      "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
+      "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp"],
     site: "@couponsbit",
   },
@@ -68,9 +68,9 @@ const flixbusSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/flixbus-discount-code",
-      name: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+      name: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
       description:
-        "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
+        "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -83,9 +83,9 @@ const flixbusSchema = {
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#offerlist",
-      name: "FlixBus Australia Coupon Codes & Promo Codes",
+      name: "FlixBus Coupon Codes & Promo Codes",
       description:
-        "Latest verified FlixBus Australia coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Latest verified FlixBus coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
       url: "https://www.couponsbit.us/stores/flixbus-discount-code",
       numberOfItems: 10,
       itemListElement: [
@@ -94,9 +94,9 @@ const flixbusSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "FlixBus Australia Coupon Code",
+            name: "FlixBus Coupon Code",
             description:
-              "Latest FlixBus Australia coupon code for web hosting, domain and WordPress plan discounts.",
+              "Latest FlixBus coupon code for web hosting, domain and WordPress plan discounts.",
             url: "https://www.couponsbit.us/stores/flixbus-discount-code",
             areaServed: [
               { "@type": "Country", name: "Australia" },
@@ -112,7 +112,7 @@ const flixbusSchema = {
             ],
             seller: {
               "@type": "Organization",
-              name: "FlixBus Australia",
+              name: "FlixBus",
               url: "https://www.flixbus.com.au/",
             },
           },
@@ -170,7 +170,7 @@ const flixbusSchema = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "FlixBus Australia Coupons",
+          name: "FlixBus Coupons",
           item: "https://www.couponsbit.us/stores/flixbus-discount-code",
         },
       ],

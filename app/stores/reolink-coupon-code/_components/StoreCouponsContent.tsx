@@ -36,7 +36,8 @@ import {
   Eye,
   Plane,Cctv, BatteryCharging, Cable, HardDrive, Lightbulb, BellElectric, Satellite,
   Code,
-  Zap
+  Zap,
+  LayoutGrid,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -777,12 +778,18 @@ export default function ReolinkCouponsContent() {
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store →</span>
                 </Link>
               ))}
             </div>
           </div>
-        </section>
+                  <div className="mt-10 flex justify-center">
+            <Link href="/stores" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
+              <LayoutGrid className="w-4 h-4" />
+              View More Stores
+            </Link>
+          </div>
+</section>
 
         <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">

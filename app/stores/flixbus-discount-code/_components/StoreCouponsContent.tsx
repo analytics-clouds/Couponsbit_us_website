@@ -84,7 +84,7 @@ const COUPONS: Coupon[] = [
     title: "Enjoy 50% OFF Your Next Trip",
     heading: "Flat 50% OFF",
     sub: "Your Next Trip",
-    description: "Save an amazing 50% OFF on your next FlixBus Australia journey. Use code FLXAUGND for an extra 20% OFF.",
+    description: "Save an amazing 50% OFF on your next FlixBus journey. Use code FLXAUGND for an extra 20% OFF.",
     usedCount: "980",
     expiresIn: "Limited Time",
     code: "FLXAUGND"
@@ -97,7 +97,7 @@ const COUPONS: Coupon[] = [
     title: "One-Way Fares From Just $9.99",
     heading: "From $9.99",
     sub: "One-Way Fares",
-    description: "Book one-way FlixBus Australia tickets from only $9.99 on selected routes. Use code FLXAUGND for an extra 20% OFF.",
+    description: "Book one-way FlixBus tickets from only $9.99 on selected routes. Use code FLXAUGND for an extra 20% OFF.",
     usedCount: "760",
     expiresIn: "Limited Time",
     code: "FLXAUGND"
@@ -174,7 +174,7 @@ export default function FlixBusCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">FlixBus Australia</span>
+              <span className="text-black font-extrabold">FlixBus</span>
             </nav>
           </div>
         </div>
@@ -188,11 +188,11 @@ export default function FlixBusCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp" alt="FlixBus Australia" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp" alt="FlixBus" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">FlixBus Australia</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">FlixBus</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -202,7 +202,7 @@ export default function FlixBusCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more on your journey with the latest FlixBus Australia Voucher. Enjoy up to 50% OFF on selected routes and unlock an Extra 20% OFF using coupon code FLXAUGND. Book affordable Australia bus travel today and explore more while spending less.
+                      Save more on your journey with the latest FlixBus Voucher. Enjoy up to 50% OFF on selected routes and unlock an Extra 20% OFF using coupon code FLXAUGND. Book affordable Australia bus travel today and explore more while spending less.
                     </p>
                   </div>
                 </div>
@@ -232,21 +232,21 @@ export default function FlixBusCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550751/flixbus-promo-code_ppp4vv.webp" alt="FlixBus Australia Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550751/flixbus-promo-code_ppp4vv.webp" alt="FlixBus Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
                     <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550750/flixbus-discount-code_p2ngvl.webp" alt="FlixBus Australia Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550750/flixbus-discount-code_p2ngvl.webp" alt="FlixBus Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550750/flixbus-voucher_bkrww6.webp" alt="FlixBus Australia Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784550750/flixbus-voucher_bkrww6.webp" alt="FlixBus Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
@@ -299,7 +299,7 @@ export default function FlixBusCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">FlixBus Australia Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">FlixBus Coupon Codes & Offers</h2>
 
                 </div>
 
@@ -339,7 +339,7 @@ export default function FlixBusCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus Australia deal: Sydney To Thredbo Snow Trip From $74.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+                          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus deal: Sydney To Thredbo Snow Trip From $74.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
                           <button type="button" onClick={() => handleCopy("FLXAUGND")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">FLXAUGND</span>
                             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -373,7 +373,7 @@ export default function FlixBusCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Enjoy 50% OFF Your Next Trip</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save an amazing 50% OFF on your next FlixBus Australia journey. Explore popular destinations across Australia at unbeatable prices.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save an amazing 50% OFF on your next FlixBus journey. Explore popular destinations across Australia at unbeatable prices.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
@@ -387,7 +387,7 @@ export default function FlixBusCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus Australia deal: Enjoy 50% OFF Your Next Trip" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus deal: Enjoy 50% OFF Your Next Trip" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("FLXAUGND")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">FLXAUGND</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -421,7 +421,7 @@ export default function FlixBusCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">One-Way Fares From Just $9.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Book one-way FlixBus Australia tickets from only $9.99 on selected routes. Travel comfortably with modern coaches and affordable fares.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Book one-way FlixBus tickets from only $9.99 on selected routes. Travel comfortably with modern coaches and affordable fares.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
@@ -435,7 +435,7 @@ export default function FlixBusCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus Australia deal: One-Way Fares From Just $9.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Get FlixBus deal: One-Way Fares From Just $9.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("FLXAUGND")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">FLXAUGND</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -458,7 +458,7 @@ export default function FlixBusCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About FlixBus Australia</h3>
+                  <h3 className="text-black font-black text-lg mb-6">About FlixBus</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     FlixBus is recognised worldwide for making long-distance coach travel more accessible and affordable. The company operates an extensive transportation network that connects major cities and regional destinations, helping millions of passengers travel comfortably every year.
                   </p>
@@ -577,12 +577,18 @@ export default function FlixBusCouponsContent() {
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">View Coupons →</span>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store →</span>
                 </Link>
               ))}
             </div>
           </div>
-        </section>
+                  <div className="mt-10 flex justify-center">
+            <Link href="/stores" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
+              <LayoutGrid className="w-4 h-4" />
+              View More Stores
+            </Link>
+          </div>
+</section>
 
         {/* Section 7: SEO Text Section */}
 
@@ -949,9 +955,9 @@ export default function FlixBusCouponsContent() {
       {/* Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular FlixBus Australia Searches</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular FlixBus Searches</h3>
           <div className="flex flex-wrap gap-2.5">
-            {["Coach Booking", "Sydney to Melbourne", "Brisbane Bus", "FlixBus Australia Deals", "FlixBus Promo Code", "Student Bus Travel", "Long Distance Coach", "FlixBus App"].map(tag => (
+            {["Coach Booking", "Sydney to Melbourne", "Brisbane Bus", "FlixBus Deals", "FlixBus Promo Code", "Student Bus Travel", "Long Distance Coach", "FlixBus App"].map(tag => (
               <span
                 key={tag}
                 className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
@@ -963,7 +969,7 @@ export default function FlixBusCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top FlixBus Australia Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top FlixBus Deals</h3>
           <div className="space-y-6">
             {COUPONS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
@@ -972,7 +978,7 @@ export default function FlixBusCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label={`Get FlixBus Australia deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.flixbus.com.au/" target="_blank" rel="noopener noreferrer" aria-label={`Get FlixBus deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
