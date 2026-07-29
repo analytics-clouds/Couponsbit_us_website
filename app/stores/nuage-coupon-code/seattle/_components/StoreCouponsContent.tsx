@@ -220,7 +220,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function NuagewearNewYorkCouponsContent() {
+export default function NuagewearSeattleCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
@@ -282,7 +282,7 @@ export default function NuagewearNewYorkCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores/nuage-coupon-code" className="text-[#056bfa] hover:underline">Nuagewear</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">New York</span>
+              <span className="text-black font-extrabold">Seattle</span>
             </nav>
           </div>
         </div>
@@ -300,10 +300,11 @@ export default function NuagewearNewYorkCouponsContent() {
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782373659/nuage-coupon-code_ggmnbf.jpg" alt="Nuagewear" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2 mt-4">Nuagewear Coupon Codes – New York</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2 mt-4">Nuagewear Coupon Codes – Seattle</h1>
                    
                     <p className="text-gray-600 text-sm leading-relaxed text-justify">
-                     Shopping for Nuagewear online in New York? Every Couponsbit-verified code below works the same whether you're ordering from Manhattan, Brooklyn, Queens or anywhere in the tri-state area. New York shoppers get the same FREE worldwide shipping on orders over $60 as everywhere else, with 12+ verified deals live and savings up to 39% OFF bestselling collections. Shipping to New York in 5–7 business days. NY sales tax (~8.52%) auto-calculated at checkout.
+                     Seattle's Nuagewear shoppers know how to dress for a city that goes from trailhead to office in the same day. Every deal on this page is storewide, whether you're ordering from Capitol Hill, Ballard or Fremont, with 12+ verified offers live and savings up to 39% OFF bestselling collections, plus free shipping over $60. Delivery to Seattle runs 5–6 business days, and Washington's ~9.3% sales tax is calculated automatically at checkout.
+                    
                     </p>
                   </div>
                 </div>
@@ -315,7 +316,7 @@ export default function NuagewearNewYorkCouponsContent() {
               {/* Right: Featured Banner Slider */}
               {/* Right: Featured Banner */}
 <div className="hidden md:block flex-1">
-  <div className="relative rounded-2xl overflow-hidden h-[320px] shadow-lg">
+  <div className="relative rounded-2xl overflow-hidden h-[375px] shadow-lg">
     <a 
       href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" 
       target="_blank" 
@@ -323,10 +324,10 @@ export default function NuagewearNewYorkCouponsContent() {
       className="block w-full h-full"
     >
       <img 
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1785134598/nuage-waer-new-york_pvvfdk.webp" 
-        alt="Nuagewear Discount Code – New York"  
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1785319392/nuage-wear-austin_myp6p9.webp" 
+        alt="Nuagewear Discount Code – Seattle"  
         width={800}
-        height={320}
+        height={375}
         className="w-full h-full object-cover" 
         fetchPriority="high" 
       />
@@ -948,7 +949,7 @@ export default function NuagewearNewYorkCouponsContent() {
       );
     })}
   </div>
-  <p className="text-xs text-gray-500 font-bold mt-6 pt-6 border-t border-gray-100">New York shoppers: your ~8.52% sales tax and delivery estimate to New York (5–7 business days) will be shown at checkout before payment.</p>
+  <p className="text-xs text-gray-500 font-bold mt-6 pt-6 border-t border-gray-100">Seattle shoppers: your Washington ~9.3% sales tax and delivery estimate to Seattle (5–6 business days) will be shown at checkout before payment.</p>
 </div>
 
 <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm max-w-md my-8">
@@ -1044,7 +1045,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">Orders over $60</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Worldwide shipping</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras, Shapewear & Essentials</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">Commando Chic Shorts</td>
@@ -1052,7 +1053,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Comfort & sleek fit</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Shorts</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">Wireless Soft Stay-Put Bra</td>
@@ -1060,7 +1061,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Everyday comfort fit</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">Daily Cover Comfort Guard Bra</td>
@@ -1068,7 +1069,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Full coverage design</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">Perfect Coverage Push-Up Bra</td>
@@ -1076,7 +1077,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Support & flattering silhouette</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Pivot+ 5-Pack</td>
@@ -1084,7 +1085,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Breathable mesh 5-pack</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuCloud Red Holiday Bra Set</td>
@@ -1092,7 +1093,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Holiday-edition bra set</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Flex Brief</td>
@@ -1100,7 +1101,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Lightweight, breathable mesh</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh Flex Brief 5-Pack</td>
@@ -1108,7 +1109,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Breathable 5-pack</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Briefs</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuAir Mesh FlexShield Thong</td>
@@ -1116,7 +1117,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Seamless, breathable</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Thongs</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuCloud Original Bikini</td>
@@ -1124,7 +1125,7 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Second-skin comfort, yoga/pilates</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bikinis</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
               <tr className="hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">NuBloom Bra</td>
@@ -1132,16 +1133,16 @@ export default function NuagewearNewYorkCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available in multiple colors</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bras</td>
-                <td className="p-5 text-gray-500 align-middle">New York</td>
+                <td className="p-5 text-gray-500 align-middle">Seattle</td>
               </tr>
             </tbody>
           </table>
         </div>
 
          <div className="text-gray-500 font-bold leading-relaxed space-y-6 relative">
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Nuagewear Coupon Codes for New York Shoppers</h3>
+          <h3 className="text-xl font-black text-[#056bfa] mb-4">Nuagewear Coupon Codes for Seattle Shoppers</h3>
           <p>
-            Shoppers across New York — from Manhattan and Brooklyn to Buffalo and Rochester — usually want the same three answers before checking out on Nuagewear: do the promo codes actually work, how long will delivery take, and is sales tax added on top? Here's the straight answer. Every verified deal on this page applies storewide, so no separate New York-only code is needed. Standard delivery to New York addresses runs 5–7 business days via USPS or UPS. New York's combined sales tax (averaging around 8.52% depending on your county) is calculated automatically at checkout based on your zip code, so the total you see before paying has no surprises.
+            Most Seattle shoppers want the same three questions answered before checkout: do the codes work, how long is shipping, and how much tax gets added? Here's the short version. Every offer on this page applies storewide, whether you're in Queen Anne, Ballard or anywhere else in the city. Standard delivery runs 5–6 business days via USPS or UPS, and Washington's sales tax (around 9.3%) is calculated automatically at checkout based on your zip code.
           </p>
 
           <div className="space-y-4">
@@ -1160,19 +1161,19 @@ export default function NuagewearNewYorkCouponsContent() {
 
           {/* State Shopper Tips */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">💡 New York Shopper Tips</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">💡 Seattle Shopper Tips</h3>
             <div className="space-y-6">
               <div>
-                <p className="text-gray-900 font-black text-sm">Seamless Styles for New York's Layered Looks</p>
-                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">New York's fashion-forward, year-round layering culture — office to evening — makes Nuagewear's seamless briefs and shaping essentials ideal for staying invisible under tailored city outfits.</p>
+                <p className="text-gray-900 font-black text-sm">Built for Trail-to-Table Days</p>
+                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">From a rainy trail run in Discovery Park to dinner in Fremont, Nuagewear's performance underwear and seamless briefs keep up without needing a wardrobe change.</p>
               </div>
               <div>
-                <p className="text-gray-900 font-black text-sm">Order Early for NYC Weekend Delivery</p>
-                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">Standard shipping to New York runs 5–7 business days. Placing your order by Tuesday gives the best chance of delivery before the weekend for most NYC-area addresses.</p>
+                <p className="text-gray-900 font-black text-sm">Order by Tuesday for Weekend Delivery</p>
+                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">Standard shipping to Seattle runs 5–6 business days. Ordering by Tuesday gives most Seattle addresses — including Capitol Hill and Ballard — the best shot at arriving before the weekend.</p>
               </div>
               <div>
-                <p className="text-gray-900 font-black text-sm">Free Shipping Beats New York's Tax Bump</p>
-                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">With New York's ~8.52% average sales tax, hitting the $60 free-shipping threshold offsets more of that tax than a smaller order would — worth bundling a second item to get there.</p>
+                <p className="text-gray-900 font-black text-sm">Free Shipping Beats Washington's Tax</p>
+                <p className="text-gray-700 font-bold text-sm leading-relaxed mt-1">With Washington's sales tax running close to 9.3%, hitting the $60 free-shipping threshold is one of the simplest ways to reduce your total spend.</p>
               </div>
             </div>
           </div>
@@ -1413,12 +1414,12 @@ export default function NuagewearNewYorkCouponsContent() {
         desc: "In addition to fashion and apparel brands, CouponsBit features deals from travel, technology, lifestyle, beauty, and wellness companies.",
       },
       {
-        title: "New York Shopper Friendly",
-        desc: "All deals on this page apply to New York orders. Delivery times, sales tax and shipping thresholds for New York are listed clearly — no guesswork before checkout.",
+        title: "Seattle Shopper Friendly",
+        desc: "All deals on this page apply to Seattle orders. Delivery times, sales tax and shipping thresholds for Seattle are listed clearly — no guesswork before checkout.",
       },
       {
-        title: "Verified for New York Checkout",
-        desc: "Every Nuagewear code on this page has been checked to confirm it applies correctly at checkout for New York addresses, including accurate tax and delivery estimates.",
+        title: "Verified for Seattle Checkout",
+        desc: "Every Nuagewear code on this page has been checked to confirm it applies correctly at checkout for Seattle addresses, including accurate tax and delivery estimates.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-3">
@@ -1498,12 +1499,12 @@ export default function NuagewearNewYorkCouponsContent() {
     {[
       {
         title: "Seamless Briefs",
-        desc: "Designed for smooth coverage and everyday comfort without bulky seams or visible lines. Popular with New York shoppers for staying invisible under fitted city and office wear.",
+        desc: "Designed for smooth coverage and everyday comfort without bulky seams or visible lines. Popular with Seattle shoppers for staying invisible under fitted layers on rainy commute days.",
         icon: Wind,
       },
       {
         title: "Performance Underwear",
-        desc: "Lightweight styles engineered for workouts, outdoor activities, and active routines. A favorite for New Yorkers commuting by subway or squeezing in a gym session between meetings.",
+        desc: "Lightweight styles engineered for workouts, outdoor activities, and active routines. A favorite for Seattleites heading from a trail run to a coffee shop without missing a beat.",
         icon: Dumbbell,
       },
       {
@@ -1513,12 +1514,12 @@ export default function NuagewearNewYorkCouponsContent() {
       },
       {
         title: "Shaping Essentials",
-        desc: "Comfort-focused styles that offer gentle support while maintaining flexibility. A go-to for New Yorkers layering under tailored looks, from work to evening.",
+        desc: "Comfort-focused styles that offer gentle support while maintaining flexibility. A go-to for Seattle professionals layering under tailored looks for the office through unpredictable weather.",
         icon: Shield,
       },
       {
         title: "Wireless Bras",
-        desc: "Comfortable designs that provide support without the discomfort of traditional underwires. Ideal for New York's four-season wardrobe, from spring layering to winter coats.",
+        desc: "Comfortable designs that provide support without the discomfort of traditional underwires. Ideal for Seattle's year-round layering, from misty mornings to clear afternoons.",
         icon: Shirt,
       },
       {
@@ -1655,9 +1656,9 @@ export default function NuagewearNewYorkCouponsContent() {
             { q: "What is Nuagewear?", a: "Nuagewear is a women's underwear brand focused on seamless comfort, performance fabrics, and innovative fit technology." },
             { q: "What products does Nuagewear sell?", a: "The brand offers seamless underwear, performance briefs, shaping essentials, wireless bras, and everyday comfort collections." },
             { q: "Is Nuagewear suitable for workouts?", a: "Many Nuagewear products are designed to support active lifestyles, including fitness training, yoga, and everyday movement." },
-            { q: "Does Nuagewear ship to New York?", a: "Yes — Nuagewear ships to all areas of New York, including New York City, Buffalo, Rochester and Yonkers. Standard delivery takes 5–7 business days via USPS or UPS. Free shipping is available on orders over $60." },
-            { q: "How long does Nuagewear delivery take to New York?", a: "Orders shipped to New York typically arrive within 5–7 business days via standard USPS or UPS. Orders placed by Tuesday generally arrive before the weekend for most New York addresses." },
-            { q: "Do Nuagewear coupon codes work for New York orders?", a: "Yes — all Nuagewear promo codes and deals on this page apply storewide. No separate New York code is needed. New York sales tax (~8.52%) is calculated automatically at checkout based on your zip code." }
+            { q: "Does Nuagewear ship to Seattle?", a: "Yes — Nuagewear ships to Seattle and surrounding areas, including Capitol Hill, Ballard, Fremont and Queen Anne. Standard delivery takes 5–6 business days via USPS or UPS. Free shipping is available on orders over $60." },
+            { q: "How long does Nuagewear delivery take to Seattle?", a: "Orders shipped to Seattle typically arrive within 5–6 business days via standard USPS or UPS. Ordering by Tuesday gives most Seattle addresses the best chance of weekend delivery." },
+            { q: "Do Nuagewear coupon codes work for Seattle orders?", a: "Yes — every Nuagewear promo code and deal on this page applies storewide, with no separate Seattle-only code required. Washington's sales tax (~9.3%) is calculated automatically at checkout based on your zip code." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button 

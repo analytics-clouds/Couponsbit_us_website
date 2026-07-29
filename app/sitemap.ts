@@ -5,6 +5,19 @@ const BASE_URL = "https://www.couponsbit.us";
 
 const CATEGORIES = ["electronics", "entertainment", "mobile", "software", "travel"];
 
+// Nuagewear location pages (state/city-specific sub-pages)
+const NUAGEWEAR_LOCATIONS = [
+  "new-york",
+  "boston",
+  "los-angeles",
+  "san-francisco",
+  "seattle",
+  "austin",
+  "miami",
+  "dallas",
+  "atlanta",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // Homepage
@@ -39,6 +52,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...allStores.map((store) => ({
       url: `${BASE_URL}/stores/${store.id}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+    })),
+
+    // Nuagewear location pages
+    ...NUAGEWEAR_LOCATIONS.map((slug) => ({
+      url: `${BASE_URL}/stores/nuage-coupon-code/${slug}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
     })),

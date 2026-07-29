@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1785134598/nuage-waer-new-york_pvvfdk.webp",
+        width: 800,
+        height: 320,
         alt: "Nuagewear Coupon Codes for New York – Couponsbit",
       },
     ],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
     description:
       "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
-    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1785134598/nuage-waer-new-york_pvvfdk.webp"],
     site: "@couponsbit",
   },
 

@@ -1207,6 +1207,22 @@ export default function NuagewearCouponsContent() {
           </div>
 
           <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Nuagewear Coupons by City</h3>
+            <p>Find city-specific delivery estimates, sales tax details and shopper tips for Nuagewear in these locations:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/stores/nuage-coupon-code/new-york" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">New York</Link>
+              <Link href="/stores/nuage-coupon-code/boston" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Boston</Link>
+              <Link href="/stores/nuage-coupon-code/los-angeles" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Los Angeles</Link>
+              <Link href="/stores/nuage-coupon-code/san-francisco" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">San Francisco</Link>
+              <Link href="/stores/nuage-coupon-code/seattle" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Seattle</Link>
+              <Link href="/stores/nuage-coupon-code/austin" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Austin</Link>
+              <Link href="/stores/nuage-coupon-code/miami" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Miami</Link>
+              <Link href="/stores/nuage-coupon-code/dallas" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Dallas</Link>
+              <Link href="/stores/nuage-coupon-code/atlanta" className="rounded-full bg-[#e8f6f8] text-[#056bfa] hover:bg-[#056bfa] hover:text-white transition-colors px-4 py-2 text-sm font-bold">Atlanta</Link>
+            </div>
+          </div>
+
+          <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Comfort for Less</h3>
             <p>Comfort starts with the essentials you wear every day. Whether you're looking for seamless underwear, activewear-friendly designs, or lightweight everyday basics, Nuagewear offers solutions designed around comfort and movement.</p>
             <p>Browse the latest Nuagewear coupon codes, promo offers, and exclusive discounts on CouponsBit today and enjoy premium comfort while spending less.</p>

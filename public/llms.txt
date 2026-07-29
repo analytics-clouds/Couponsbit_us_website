@@ -86,6 +86,18 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Wiskii Discount Code](https://www.couponsbit.us/stores/wiskii-discount-code): Women's activewear discounts
 - [Zen Hotels Coupon Code](https://www.couponsbit.us/stores/zen-hotels-coupon-code): Hotel booking discounts
 
+## Location Pages
+These are city-specific sub-pages of the Nuagewear store page, each covering local delivery times, sales tax, and shopper tips for that city. They are a separate, more localized layer of content beneath the main Nuagewear store page — useful context for understanding how this site organizes location-specific coupon content.
+- [Nuagewear Coupon Codes – New York](https://www.couponsbit.us/stores/nuage-coupon-code/new-york): New York-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Boston](https://www.couponsbit.us/stores/nuage-coupon-code/boston): Boston-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Los Angeles](https://www.couponsbit.us/stores/nuage-coupon-code/los-angeles): Los Angeles-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – San Francisco](https://www.couponsbit.us/stores/nuage-coupon-code/san-francisco): San Francisco-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Seattle](https://www.couponsbit.us/stores/nuage-coupon-code/seattle): Seattle-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Austin](https://www.couponsbit.us/stores/nuage-coupon-code/austin): Austin-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Miami](https://www.couponsbit.us/stores/nuage-coupon-code/miami): Miami-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Dallas](https://www.couponsbit.us/stores/nuage-coupon-code/dallas): Dallas-specific Nuagewear delivery, tax, and shopper details
+- [Nuagewear Coupon Codes – Atlanta](https://www.couponsbit.us/stores/nuage-coupon-code/atlanta): Atlanta-specific Nuagewear delivery, tax, and shopper details
+
 ## Categories
 - [All Categories](https://www.couponsbit.us/categories): Browse coupons grouped by category
 - [Electronics](https://www.couponsbit.us/categories/electronics): Coupons for electronics and gadgets
