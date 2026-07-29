@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FlixBusAustraliaCouponsContent from "./_components/StoreCouponsContent";
+import FlixBusCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
@@ -7,25 +7,25 @@ export const metadata: Metadata = {
     "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+    canonical: "https://www.couponsbit.us/stores/flixbus-discount-code",
     languages: {
-      "en-AU": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "en-US": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "en-CA": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "en-GB": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "de-DE": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "fr-FR": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "pt-BR": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "tr-TR": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "it-IT": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "pl-PL": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
-      "x-default": "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+      "en-AU": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "en-US": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "en-CA": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "en-GB": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "de-DE": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "fr-FR": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "pt-BR": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "tr-TR": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "it-IT": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "pl-PL": "https://www.couponsbit.us/stores/flixbus-discount-code",
+      "x-default": "https://www.couponsbit.us/stores/flixbus-discount-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+    url: "https://www.couponsbit.us/stores/flixbus-discount-code",
     title: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
     description:
       "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
@@ -61,13 +61,13 @@ export const metadata: Metadata = {
   },
 };
 
-const flixbusAustraliaSchema = {
+const flixbusSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/flixbus-australia-discount-code#webpage",
-      url: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+      "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#webpage",
+      url: "https://www.couponsbit.us/stores/flixbus-discount-code",
       name: "FlixBus Australia Voucher | 50% OFF + Extra 20% OFF with Code FLXAUGND",
       description:
         "Save more with the latest FlixBus Australia Voucher. Get up to 50% OFF on selected routes plus an Extra 20% OFF using coupon code FLXAUGND. Book today!",
@@ -76,17 +76,17 @@ const flixbusAustraliaSchema = {
         "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
-        "@id": "https://www.couponsbit.us/stores/flixbus-australia-discount-code#breadcrumb",
+        "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#breadcrumb",
       },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/flixbus-australia-discount-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#offerlist",
       name: "FlixBus Australia Coupon Codes & Promo Codes",
       description:
         "Latest verified FlixBus Australia coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
-      url: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+      url: "https://www.couponsbit.us/stores/flixbus-discount-code",
       numberOfItems: 10,
       itemListElement: [
         {
@@ -97,7 +97,7 @@ const flixbusAustraliaSchema = {
             name: "FlixBus Australia Coupon Code",
             description:
               "Latest FlixBus Australia coupon code for web hosting, domain and WordPress plan discounts.",
-            url: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+            url: "https://www.couponsbit.us/stores/flixbus-discount-code",
             areaServed: [
               { "@type": "Country", name: "Australia" },
               { "@type": "Country", name: "Germany" },
@@ -153,7 +153,7 @@ const flixbusAustraliaSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/flixbus-australia-discount-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/flixbus-discount-code#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -171,23 +171,23 @@ const flixbusAustraliaSchema = {
           "@type": "ListItem",
           position: 3,
           name: "FlixBus Australia Coupons",
-          item: "https://www.couponsbit.us/stores/flixbus-australia-discount-code",
+          item: "https://www.couponsbit.us/stores/flixbus-discount-code",
         },
       ],
     },
   ],
 };
 
-export default function FlixBusAustraliaStorePage() {
+export default function FlixBusStorePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(flixbusAustraliaSchema),
+          __html: JSON.stringify(flixbusSchema),
         }}
       />
-      <FlixBusAustraliaCouponsContent />
+      <FlixBusCouponsContent />
     </>
   );
 }

@@ -113,7 +113,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",         dealText: "Up to 30% OFF", href: "/stores/rayneo-coupon-code" },
 ];
 
-export default function FlixBusAustraliaCouponsContent() {
+export default function FlixBusCouponsContent() {
   const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);

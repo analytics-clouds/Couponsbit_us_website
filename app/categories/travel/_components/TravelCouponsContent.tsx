@@ -28,7 +28,7 @@ const STORES = [
   { id: "kiwi-coupon-code", name: "Kiwi.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp", coupons: 4, discount: "Up to $580 Rewards" },
   { id: "expedia-coupon-code", name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg", coupons: 10, discount: "Up to 40% OFF" },
   { id: "qatar-holidays-coupon-code", name: "Qatar Holidays", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg", coupons: 8, discount: "Up to 40% OFF" },
-  { id: "flixbus-australia-discount-code", name: "FlixBus Australia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", coupons: 3, discount: "Up to 50% OFF" },
+  { id: "flixbus-discount-code", name: "FlixBus Australia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", coupons: 3, discount: "Up to 50% OFF" },
   { id: "oman-air-discount-code", name: "Oman Air", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/oman-air-logo_ozwu2c.webp", coupons: 5, discount: "Up To 50% OFF" },
   { id: "budget-discount-code", name: "Budget", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp", coupons: 8, discount: "Up To 35% OFF" },
   { id: "avis-discount-code", name: "Avis", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp", coupons: 4, discount: "Up To 20% OFF" },
