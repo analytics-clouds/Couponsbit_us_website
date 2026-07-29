@@ -185,13 +185,32 @@ FAQPage — ONLY the 3 new state-specific Q&As from Step 7.
 Do NOT include the generic FAQ items in this schema even though
 they're still shown on the page.
 
+contentLocation — add to the WebPage node (right after breadcrumb):
+this is the safe, correct way to give the page a structured location
+signal without claiming a physical store exists there.
+
+  For a CITY-level page:
+    contentLocation: {
+      "@type": "City",
+      name: "[City]",
+      containedInPlace: { "@type": "State", name: "[State]" },
+    }
+
+  For a STATE-level page (no city nesting needed):
+    contentLocation: {
+      "@type": "State",
+      name: "[State]",
+    }
+
 DO NOT ADD:
 ❌ LocalBusiness schema
 ❌ Organization with aggregateRating
 ❌ Product schema
 ❌ Store schema
 (These retailers have no physical presence — adding location-business
-schema is a misuse red flag.)
+schema is a misuse red flag. contentLocation is different: it says the
+page's content is *about* a place, not that the business is located
+there, so it's safe to use.)
 ```
 
 ---
@@ -314,6 +333,8 @@ META:
 SCHEMA:
 [ ] BreadcrumbList has correct 4-level structure, parent link included
 [ ] FAQPage schema scoped to ONLY the 3 state-specific Q&As
+[ ] contentLocation added to the WebPage node (City+containedInPlace
+    for city pages, State alone for state pages)
 [ ] No LocalBusiness/Organization-with-rating/Product/Store schema added
 [ ] ItemList.numberOfItems matches actual coupon count
 [ ] ItemList/Offer descriptions aren't leftover boilerplate from another store

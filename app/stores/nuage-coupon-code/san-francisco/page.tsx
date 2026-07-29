@@ -68,6 +68,14 @@ const nuagewearSanFranciscoSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/san-francisco#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "San Francisco",
+        containedInPlace: {
+          "@type": "State",
+          name: "California",
+        },
+      },
     },
 
     {

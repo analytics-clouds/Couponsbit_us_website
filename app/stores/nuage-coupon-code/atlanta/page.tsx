@@ -68,6 +68,14 @@ const nuagewearAtlantaSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/atlanta#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Atlanta",
+        containedInPlace: {
+          "@type": "State",
+          name: "Georgia",
+        },
+      },
     },
 
     {

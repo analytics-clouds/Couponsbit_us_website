@@ -68,6 +68,14 @@ const nuagewearSeattleSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/seattle#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Seattle",
+        containedInPlace: {
+          "@type": "State",
+          name: "Washington",
+        },
+      },
     },
 
     {

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "x-default": "https://www.couponsbit.us/stores/nuage-coupon-code/boston",
     },
   },
-
+  
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nuage-coupon-code/boston",
@@ -67,6 +67,14 @@ const nuagewearBostonSchema = {
       },
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/boston#breadcrumb",
+      },
+      contentLocation: {
+        "@type": "City",
+        name: "Boston",
+        containedInPlace: {
+          "@type": "State",
+          name: "Massachusetts",
+        },
       },
     },
 

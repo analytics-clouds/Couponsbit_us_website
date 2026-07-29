@@ -68,6 +68,10 @@ const nuagewearNewYorkSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/new-york#breadcrumb",
       },
+      contentLocation: {
+        "@type": "State",
+        name: "New York",
+      },
     },
 
     {

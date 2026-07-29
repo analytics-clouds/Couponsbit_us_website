@@ -68,6 +68,14 @@ const nuagewearMiamiSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/miami#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Miami",
+        containedInPlace: {
+          "@type": "State",
+          name: "Florida",
+        },
+      },
     },
 
     {

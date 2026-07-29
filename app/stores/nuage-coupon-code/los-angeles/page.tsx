@@ -68,6 +68,14 @@ const nuagewearLosAngelesSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/los-angeles#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Los Angeles",
+        containedInPlace: {
+          "@type": "State",
+          name: "California",
+        },
+      },
     },
 
     {

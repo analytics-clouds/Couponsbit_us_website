@@ -68,6 +68,14 @@ const nuagewearDallasSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/dallas#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Dallas",
+        containedInPlace: {
+          "@type": "State",
+          name: "Texas",
+        },
+      },
     },
 
     {

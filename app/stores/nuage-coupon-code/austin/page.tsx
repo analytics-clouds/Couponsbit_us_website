@@ -68,6 +68,14 @@ const nuagewearAustinSchema = {
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/nuage-coupon-code/austin#breadcrumb",
       },
+      contentLocation: {
+        "@type": "City",
+        name: "Austin",
+        containedInPlace: {
+          "@type": "State",
+          name: "Texas",
+        },
+      },
     },
 
     {
