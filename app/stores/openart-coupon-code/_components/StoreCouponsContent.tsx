@@ -238,7 +238,7 @@ export default function OpenartCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      OpenArt Coupon Code & Deals – Save up to 27% on OpenArt annual plans and create AI-generated images, videos, and audio with access to 100+ premium AI models.
+                      Save more on your AI creativity with OpenArt Wonder Annual Plan – Up to 27% OFF, offering 106,000 credits/month and access to 100+ premium AI models. Choose the OpenArt Infinite Annual Plan – 22% OFF for commercial usage rights, or start with the OpenArt Essential Plan – Starting at $14/Month. Upgrade to the OpenArt Advanced Plan – $29/Month, explore the OpenArt Infinite Monthly Plan – 24,000 Credits/Month, or unlock the OpenArt Wonder Monthly Plan – 106,000 Credits/Month with advanced storytelling tools and premium features.
                     </p>
                   </div>
                 </div>
@@ -282,7 +282,7 @@ export default function OpenartCouponsContent() {
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
                     <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782374308/zen-hotels-promo-code_tjhyjc.webp" alt="Openart.AI Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782374309/openart-promo-code_tvtzl7.webp" alt="Openart.AI Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 

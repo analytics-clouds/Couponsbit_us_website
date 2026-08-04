@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import OpenartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "OpenArt Deals – Up to 27% OFF AI Image & Video Tools",
+  title: "openart Ai promo & deals - upto 27% off l Aug 2026",
   description:
-    "Get the latest OpenArt Coupon Code and save up to 27% on AI creator plans. Generate images, videos, and audio with 100+ premium AI models.",
+    " openart Ai promo & deals code - Enjoy 27% OFF with annual billing at $175.20 (Regular Price: $240) | Includes access to 100+ premium AI image, video and audio models | Aug 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/openart-coupon-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/openart-coupon-code",
-    title: "OpenArt Deals – Up to 27% OFF AI Image & Video Tools",
+    title: "openart Ai promo & deals - upto 27% off l Aug 2026",
     description:
-      "Get the latest OpenArt Coupon Code and save up to 27% on AI creator plans. Generate images, videos, and audio with 100+ premium AI models.",
+      " openart Ai promo & deals code - Enjoy 27% OFF with annual billing at $175.20 (Regular Price: $240) | Includes access to 100+ premium AI image, video and audio models | Aug 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_IN", "en_PK", "en_GB"],
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OpenArt Deals – Up to 27% OFF AI Image & Video Tools",
+    title: "openart Ai promo & deals - upto 27% off l Aug 2026",
     description:
-      "Get the latest OpenArt Coupon Code and save up to 27% on AI creator plans. Generate images, videos, and audio with 100+ premium AI models.",
+      " openart Ai promo & deals code - Enjoy 27% OFF with annual billing at $175.20 (Regular Price: $240) | Includes access to 100+ premium AI image, video and audio models | Aug 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp"],
     site: "@couponsbit",
   },
@@ -62,9 +62,9 @@ const openartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/openart-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/openart-coupon-code",
-      name: "OpenArt Deals – Up to 27% OFF AI Image & Video Tools",
+      name: "openart Ai promo & deals - upto 27% off l Aug 2026",
       description:
-        "Get the latest OpenArt Coupon Code and save up to 27% on AI creator plans. Generate images, videos, and audio with 100+ premium AI models.",
+        " openart Ai promo & deals code - Enjoy 27% OFF with annual billing at $175.20 (Regular Price: $240) | Includes access to 100+ premium AI image, video and audio models | Aug 2026",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
