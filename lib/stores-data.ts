@@ -73,6 +73,9 @@ export const allStores: StoreEntry[] = [
   { name: "Upwork",          id: "upwork-discount-code",         category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130860/upwork-logo_ki4h2l.webp",            discount: "Plans From $15",  popular: false },
   { name: "Hostinger",       id: "hostinger-discount-code",      category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp",         discount: "Up To 80% OFF",   popular: false },
   { name: "Kerala Ayurveda", id: "kerala-ayurveda-coupon-code",  category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785841263/kerala-ayurveda-logo_hdbbfs.jpg",     discount: "Flat 10% OFF",    popular: false },
+  { name: "Klook",           id: "klook-discount-code",          category: "Travel",      coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp",     discount: "Up To 50% OFF",   popular: false },
+  { name: "Amazon",          id: "amazon-discount-code",         category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp",    discount: "Up To 52% OFF",   popular: false },
+  { name: "Discount Tire",   id: "discounttire-discount-code",   category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/discounttie-logo_lcrloj.webp", discount: "Up To $130 OFF", popular: false },
 ];
 
 
