@@ -1040,6 +1040,100 @@ export default function AmazonCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Electronics & Smart Devices</h3>
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Electronics+%26+Smart+Devices&crid=AFEYTAKQ3LJJ&sprefix=electronics+%26+smart+devices%2Caps%2C346&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101964/Electronics_Smart_Devices_jlxq1l.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Etekcity Smart Scale for Body Weight & BMI</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,690.68</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (150.5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">FSA/HSA Eligible, 50K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Kasa Smart Plug HS103P4 (4-Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,648.79</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (150.5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Works with Alexa & Google, 15A</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Linkind Smart Color Changing Light Bulbs (4-Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,712.58</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (5.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RGBTW, Music Sync, 800LM</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Amazon Basics Smart Plug (4-Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,474.14</td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (8.1K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Alexa Only, Voice & App Control</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Roku Streaming Stick HD with Voice Remote</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,378.95</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (22.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Compact 4K Device, Long-Range Wi-Fi</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Kasa Smart Plug Ultra Mini 15A (2-Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,211.85</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (40.4K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Works with Alexa & Google Home</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Mint Mobile 17GB Data SIM Plan (3 Months)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$20.00 / mo</td>
+        <td className="p-5 text-gray-500 align-middle">4.3 ★ (1.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">5G-4G LTE + Unlimited Talk & Text</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">AI Language Translator Device (150+ Languages)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 8,566.69</td>
+        <td className="p-5 text-gray-500 align-middle">3.8 ★ (19)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">No WiFi Needed, Photo & Voice Translator</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
             <p>
 Amazon is one of the first places many shoppers visit when buying electronics. From smartphones and laptops to gaming consoles, smart TVs, headphones, tablets, cameras, and wearable technology, the platform offers products for every budget.
             </p>
@@ -1055,6 +1149,99 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Home, Kitchen & Furniture</h3>
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Home%2C+Kitchen+%26+Furniture&crid=3RVG1TRGAYXM6&sprefix=home%2C+kitchen+%26+furniture%2Caps%2C431&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Home_Kitchen_Furniture_dtmedf.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Homhedy Coffee Bar Storage Cabinet with Drawers</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.3 ★ (104)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Farmhouse style, adjustable shelves, 200+ bought last mo.</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">YOUNIKE Swivel Bar Stools (Set of 2)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (157)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Grey faux leather, adjustable height, hollow back</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Winsome Wood Suzanne Mobile Kitchen & Dining Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (8.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Square Teak, mobile table & chairs for small spaces</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">SUPERJARE Kitchen Bakers Rack with Power Outlet</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 6,329.58</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (4.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">4 Tiers with 6 S-hooks, 2K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">ThreeHio Rolling Kitchen Microwave Cart</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 3,806.89</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (1.1K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">3 Tier, lockable wheels, 1K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">5 Tier Farmhouse Corner Coffee Bar Cabinet</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 4,143.88</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (557)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes 4 S-shaped hooks, 13.43"D x 18.93"W x 53.31"H</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Panana 3 Piece Dining Table Set with Stools</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 11,803.35</td>
+        <td className="p-5 text-gray-500 align-middle">4.3 ★ (368)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Counter height table top, built-in storage shelves</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">KLM Liquor Bottle & Coffee Syrup Display Shelf</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,474.14</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (1.5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">3 Step countertop retro rack, 2K+ bought last mo.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+            
             <p>
               Creating a comfortable living space is easier with Amazon's extensive home collection. Shoppers can browse furniture, bedding, kitchen appliances, cookware, dining essentials, storage solutions, lighting, home décor, and cleaning products from hundreds of trusted brands
             </p>
@@ -1072,6 +1259,114 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Fashion for Every Style</h3>
+            
+             <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Fashion+for+Every+Style&crid=3NGUPWR85EHF8&sprefix=home%2C+kitchen+%26+furniture%2Caps%2C346&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101962/Fashion_for_Every_Style_vdjnqi.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">What to Wear Every Day: A Guide to Timeless Style</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,660.73</td>
+        <td className="p-5 text-gray-500 align-middle"><span className="text-gray-400 font-normal">—</span></td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Laurel Pantin, releasing March 2027</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Little Dictionary of Fashion</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,332.74
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 2,093.36</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (1.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Christian Dior, guide for every woman</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Girl's Fashion Guide: Learn How to Style Outfits</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 951.01</td>
+        <td className="p-5 text-gray-500 align-middle"><span className="text-gray-400 font-normal">—</span></td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Mihaela Badea, ages 8 years and up</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Little Guides to Style: Four Iconic Fashion Houses</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 3,253.80
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 6,187.74</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (2.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover boxed set by Emma Baxter-Wright et al.</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Looking Good . . . Every Day: Style Solutions</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,503.14
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 2,851.12</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (276)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Nancy Nix-Rice, real women solutions</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The White Book (Fashion, Styles & Stories)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 3,303.30
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 6,187.74</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">5.0 ★ (4)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Heide Christiansen and Martin Fraas</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Fashion Style Guide: Ultimate Mix & Match Book</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 0.00
+          <span className="block text-[12px] font-medium text-gray-400">Free with Kindle Unlimited</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">3.2 ★ (12)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Kindle Edition by Miranda H., 365 days outfit ideas</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Fashion's Stepsister, A Journey to Style: A Memoir</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,423.18</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (40)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Gayla Bentley, Kindle edition available</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
             <p>
               Amazon has become a major destination for fashion, offering clothing, shoes, handbags, jewelry, watches, and accessories for women, men, and children.
             </p>
@@ -1090,6 +1385,105 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
             <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Beauty, Skincare & Personal Care</h3>
            
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Beauty%2C+Skincare+%26+Personal+Care&crid=LESRZAPBIGMN&sprefix=%2Caps%2C318&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+<div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Anua PDRN Hyaluronic Acid Capsule 100 Serum Mask</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (440)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">10 Sheet Masks, Salmon DNA & Collagen for Glass Skin</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">BIODANCE Collagen Peptides Jelly Serum Mist</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,410.80
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,808.72</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (3.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">1.69 fl oz Hydrogel spray, anti-aging & plumping</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Anua PDRN Collagen Glow Facial Serum Spray</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (5.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">3.38 fl oz Hydrating mist, 50K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">VT COSMETICS PDRN Capsule Cream 100</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,427.94
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,903.92</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (1.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">1.69 fl oz Nourishing cream, 100,000ppm PDRN</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">e.l.f. SKIN Holy Hydration! Mini Kit</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,903.92</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (12.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">5 Piece airplane-friendly set: cleanser & cream</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">BIODANCE Bio-Collagen Real Deep Mask</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,537.42</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (44.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">4 Pack overnight hydrogel mask, pore minimizing</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">medicube Booster Pro - 6 in 1 Beauty Device</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (6.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Korean skin care glass glow facial massager</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Glow Recipe PHA + BHA Exfoliating Face Toner</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (8.9K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">150ml Watermelon & Cactus Water pore-refining toner</td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+           
            <p>
             Beauty enthusiasts can explore an extensive selection of skincare, makeup, fragrances, haircare products, grooming essentials, and wellness items from both established and emerging brands.
            </p>
@@ -1105,6 +1499,110 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Grocery & Everyday Essentials</h3>
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Grocery+%26+Everyday+Essentials&crid=3HKLDRYOWG8CO&sprefix=%2Caps%2C371&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Grocery_Everyday_Essentials_kfioid.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>   
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Awesome Everyday - Essential Daily Nutrition Gummies</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.3 ★ (40)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">10 Count for Kids, 9 Amino Acids, 55+ Superfoods</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Genuine Joe 2-Ply Household Roll Paper Towels</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 3,173.83
+          <span className="block text-[12px] font-medium text-gray-400 line-through">Typical: INR 3,374.70</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.0 ★ (3.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Pack of 30 rolls, 3K+ bought last month</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Force Factor Modern Mushrooms Gummies</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,854.93</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (123)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">90 Count, with KSM-66 Ashwagandha for calm & focus</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sparkle Professional 2-Ply Paper Towel Rolls</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 4,854.04</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (7.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">30 Rolls/Case, 70 Sheets per roll, individually wrapped</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Sparkle Pick-A-Size Paper Towels</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 753.95
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,103.32</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (54.4K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">6 Double Rolls (660 Sheets), 100K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Bounty Essentials Select-A-Size Paper Towels</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 758.71
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 951.01</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (22.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">6 Double Rolls (108 sheets/roll), 60K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Scrub Daddy BBQ Daddy Bristle Free Grill Brush</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (2.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Steel Grill Scraper, Temp controlled scrubbing, 10K+ bought</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Listerine PocketPaks Breath Strips (3 Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 544.52
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 661.61</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (37.4K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cool Mint 72 Strips total, 70K+ bought last month</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
            <p>
             Amazon makes it convenient to stock up on everyday necessities without leaving home. Customers can purchase pantry staples, snacks, beverages, household cleaning supplies, paper products, personal hygiene items, and pet essentials through various grocery services available in eligible locations.
            </p>
@@ -1116,6 +1614,120 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Books, Movies & Digital Entertainment</h3>
+           
+           <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Books%2C+Movies+%26+Digital+Entertainment&crid=18UXQTV495P5Y&sprefix=books%2C+movies+%26+digital+entertainment%2Caps%2C324&ref=nb_sb_noss" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Hollywood Dealmaking (Fourth Edition)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 2,763.54
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 3,803.08</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (12)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Dina Appleton & Daniel Yankelevits</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Biz, 6th Edition: Film Industry in a Digital World</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 2,603.61
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 2,851.12</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (13)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Schuyler Moore, legal & financial guide</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Visual Story: Creating Visual Structure</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 4,663.65</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (192)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Bruce Block, Film/TV/Digital media guide</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Famesick: A Memoir</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,523.14
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 3,046.27</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (5.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Lena Dunham, Best Seller</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Star Wars Timelines</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 2,243.77
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 4,759.80</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (790)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Kristin Baver, Jason Fry, et al.</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Phases: A Memoir</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 2,165.71
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 3,093.87</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (495)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Hardcover by Brandy</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">How to Write a Movie in 21 Days (Revised Edition)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,293.71
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,712.58</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (765)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Viki King, The Inner Movie Method</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Making Movies</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,294.67
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,808.72</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (1.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback by Sidney Lumet, Best Seller</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
            <p>
             Although Amazon has expanded into nearly every retail category, books remain an important part of its identity.
            </p>
@@ -1132,6 +1744,105 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Toys, Games & Collectibles</h3>
+           
+          <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Toys%2C+Games+%26+Collectibles&crid=AAU4I8XY5IC8&sprefix=%2Caps%2C330&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101965/Toys_Games_Collectibles_dfyp9y.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">THE FIDGET GAME Unicorns vs Dragons</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (183)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">ABC educational toys for Pre-K & Kindergarten, ages 3-8</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Funko POP! Games: Pokemon - Charizard</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,518.38</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (8.5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Official collectible vinyl figurine, 1K+ bought last month</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Desktop Skee-Ball: Give it a roll! (RP Minis)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,076.67
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,327.98</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.2 ★ (2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Paperback mini desktop game by Running Press</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">SUSSED The Wacky 'What Would You Do' Social Card Game</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (6.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Yellow Deck, family travel card game, ages 6 & up</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">2-in-1 Fidget Spinner Maze Cube 3D Puzzle</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.1 ★ (39)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Handheld 2-level brain teaser sensory toy for stress relief</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">KESS: Giant D20 Foam Dice - Purple (5" Oversized)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,902.97</td>
+        <td className="p-5 text-gray-500 align-middle">4.9 ★ (154)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">20-sided tabletop RPG accessory & collectible decor</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Poen Mini Inflatable Tube Man with Blower</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.1 ★ (177)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Desktop animated dancing tube guy gag gift with fan</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Ixiaoyoo Air Dry Clay (30 Colors Foam Modeling)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 951.01
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,426.99</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (3.9K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Safe & non-toxic soft craft clay for ages 3-12, 3K+ bought</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
            <p>
             From educational toys and puzzles to action figures, LEGO sets, board games, trading cards, and collectibles, Amazon provides entertainment options for children and adults alike.
            </p>
@@ -1150,6 +1861,111 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Sports, Fitness & Outdoor Gear</h3>
+           
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Sports%2C+Fitness+%26+Outdoor+Gear&crid=14WLQTA8PDR3U&sprefix=sports%2C+fitness+%26+outdoor+gea%2Caps%2C318&ref=nb_sb_noss" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Champion Sports Leather Medicine Balls</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,912.05</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (875)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Durable weighted balls for strength & conditioning, 200+ bought</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Slim Running Belt for Women & Men</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 951.01
+          <span className="block text-[12px] font-medium text-emerald-600">Save 5% with coupon</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (814)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Fanny pack phone holder with 3 pockets, 1K+ bought</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Teenitor Agility Speed Ladder Training Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,331.79</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (3.9K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">13 rungs, 23 feet with carry bag for soccer/fitness, 2K+ bought</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Men’s Lightweight Hiking Quick Dry Pants</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,522.18
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,902.97</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.1 ★ (55)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Water resistant, zipper pockets, breathable stretch jogger</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">3 Pack Men's Long Sleeve Quick Dry Shirts</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,166.15
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 1,522.18</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (3.7K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Moisture wicking UV sun protection athletic tees, 3K+ bought</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Pudolla Men's Lightweight Hiking Outdoor Pants</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,617.38
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 2,474.14</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (1.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Quick dry workout sweatpants with zipper pockets, 1K+ bought</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">5PCS Men's Gym Clothes Workout Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 3,521.30</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (1.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Compression shirt, pants, jacket & leggings gear set</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Kinghouse Sport Equipment Storage Organizer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 8,109.75</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (1.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Steel garage rack with bat holder & hooks for home gym</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
            <p>
             Whether you're beginning a fitness journey or preparing for your next outdoor adventure, Amazon offers equipment for nearly every activity.
            </p>
@@ -1167,6 +1983,102 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Pet Supplies</h3>
            
+            <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Pet+Supplies&crid=214SVMHJTCZDQ&sprefix=sports%2C+fitness+%26+outdoor+gear%2Caps%2C336&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Pet_Supplies_ucyl0r.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Amazon Basics Leak-Proof Dog & Puppy Pee Pads</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,807.77</td>
+        <td className="p-5 text-gray-500 align-middle">4.4 ★ (221.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">100 Count, 22x22 inch, 5-layer quick-dry, 80K+ bought</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Docrok Pet Grooming Combo Deshedding Brush</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,902.02
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 2,378.95</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (11.9K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Metal comb & undercoat rake for cats & dogs, 20K+ bought</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Whisper Quiet Dog Nail Grinder</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,378.95</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (9.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">4 LED lights, 3 speeds, rechargeable painless grooming kit</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Ring Pet Tag with QR Code</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Real-time scan alerts, shareable pet profile, no fees</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Amazon Basics Dog Poop Leak Proof Bags</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 885.32</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (241.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">300 Count unscented with dispenser, 60K+ bought</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">ChomChom Roller Pet Hair Remover</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 2,378.95</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (205.1K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Reusable lint roller for furniture & carpet, 20K+ bought</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Hypoallergenic Pet Wipes for Dogs & Cats</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">5.0 ★ (16)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">80 Count, extra large, unscented wipes</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">ORAVET Dental Chews for Dogs (30 Count)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (14.4K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">For small dogs 10-24 lbs, reduces plaque & tartar, 10K+ bought</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
            <p>
             Pet owners can shop for food, treats, grooming products, toys, beds, carriers, health supplements, and training accessories for dogs, cats, birds, fish, and other household pets.
            </p>
@@ -1181,7 +2093,99 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
           
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Baby Products</h3>
-          
+           <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Baby+Products&crid=38SM6XQ9LTD82&sprefix=%2Caps%2C300&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101969/Baby_Products_zmjhvm.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Grownsy EaseClean Bottle Washer, Sterilizer & Dryer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (1.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">All-in-one washer, sterilizer & dryer, 2K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Owlet Dream Sock Smart Baby Monitor</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.1 ★ (5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">FDA-cleared, tracks pulse & oxygen, 4K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">NUK Timeless Comfy Silicone Pacifier (5-Pack)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 903.41</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (19.5K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">100% Silicone, one-piece BPA-free design for 6-18M</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Huggies Overnites Diapers Size 3 (132 Count)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 5,044.44</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (28.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">2 Packs of 66, overnight protection, 1K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Huggies Natural Care Sensitive Baby Wipes</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,883.93</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (127.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">768 Wipes total (12 flip-top packs), 70K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Infant Safety Baby Grooming Kit</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 950.06</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (1.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes brush, comb, nail clipper & nasal aspirator</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Aveeno Baby Welcome Little One Gift Set (5 Items)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,901.06</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes body wash, shampoo, lotion, bath & wipes</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Momcozy KleanPal Pro Bottle Washer & Sterilizer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 22,846.09</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (4.1K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">9 Cleaning modes, 26 spray jets, 10K+ bought last mo.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
            <p>
             Preparing for a growing family becomes simpler with Amazon's comprehensive baby category.
 Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery furniture, car seats, strollers, toys, clothing, baby monitors, and developmental products from trusted manufacturers.
@@ -1197,6 +2201,101 @@ Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery 
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Automotive & Tools</h3>
           
+           <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Automotive+%26+Tools&crid=2JK7FQM0ZVON8&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Car Clip Pliers & Fastener Removal Tool Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (114)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes 2pcs stainless steel remover, 300+ bought last mo.</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Craftsman 262-Piece Mechanic Tool Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 14,184.20
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 23,703.80</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (1.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes 3-drawer VERSASTACK box, SAE & Metric sockets</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Rindion 10PCS Mechanic Pick & Hook Tool Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 665.42</td>
+        <td className="p-5 text-gray-500 align-middle">4.8 ★ (218)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Non-slip grip, long & mini picks for O-rings/seals, 4K+ bought</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">16 Pcs Hose Clamp Pliers & Removal Tool Set</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.2 ★ (55)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">With long flexible plier & electrical disconnect pliers</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">KingTool 325 Piece Home & Auto Repair Tool Kit</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (2.3K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Includes storage case with drawer for DIYers, 900+ bought</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">VEVOR Ratcheting Wrench Set (30-Piece)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 8,558.12</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (281)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">72 teeth, SAE & Metric Cr-V steel with organizer rack</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">WORKPRO 322-Piece Home Repair Tool Kit</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (1.2K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Basic household hand tools with carrying bag</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">18PCS Hose Clamp Pliers & Removal Kit</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (55)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Long reach & flexible wire tools for fuel/coolant hoses</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
            <p>
             Amazon also caters to vehicle owners and DIY enthusiasts by offering automotive accessories, replacement parts, maintenance products, garage equipment, power tools, hand tools, and workshop essentials.
            </p>
@@ -1210,6 +2309,111 @@ Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery 
            <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Office, School & Business Essentials</h3>
           
+           <div className="w-full rounded-2xl overflow-hidden shadow-md my-4">
+    <a 
+      href="https://www.amazon.com/s?k=Office%2C+School+%26+Business+Essentials&crid=13EVBM0MIE445&sprefix=%2Caps%2C324&ref=nb_sb_noss_2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-full group overflow-hidden"
+    >
+      <img
+        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png"
+        alt="Amazon Smart Electronics and Devices"
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+  </div>
+
+  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Product / Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Rating & Reviews</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Details</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {/* Product 1 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Alitte Legal Notepads 8.5 x 11 (Pack of 12)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (1.1K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Perforated wide ruled, 50 sheets/notebook, 2K+ bought last mo.</td>
+      </tr>
+
+      {/* Product 2 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">ORGSTA S001 Portable Bluetooth Label Maker</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">INR 1,712.58</td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (3.9K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Thermal printer with tape & multiple templates (Pink)</td>
+      </tr>
+
+      {/* Product 3 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">#10 Security Envelopes Self Seal (500 Count)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">4.7 ★ (79)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Windowless, security tinted, 4-1/8" x 9-1/2" letter size</td>
+      </tr>
+
+      {/* Product 4 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Vegan Leather Portfolio with Anti-RFID Protection</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">See Options</td>
+        <td className="p-5 text-gray-500 align-middle">3.7 ★ (13)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Zippered padfolio folder with anti-scam embedded technology</td>
+      </tr>
+
+      {/* Product 5 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">AILZFEI 5pcs Colored Note Pads (5x8 College Ruled)</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 655.90
+          <span className="block text-[12px] font-medium text-emerald-600">Save 5% with coupon</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (5.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Perforated narrow ruled paper pads, 30 sheets/pack</td>
+      </tr>
+
+      {/* Product 6 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">5 Pack Small Note Pads 5x8 Color Notepads</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 655.90
+          <span className="block text-[12px] font-medium text-emerald-600">Save 5% with coupon</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (5.8K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">College ruled legal pads for school & office, 10K+ bought</td>
+      </tr>
+
+      {/* Product 7 */}
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">5 Trays Mesh Paper Organizer & Letter Tray</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 1,807.77
+          <span className="block text-[12px] font-medium text-gray-400 line-through">Typical: INR 1,902.97</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.6 ★ (4.6K)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Steel mesh desk file holder with handle, 6K+ bought</td>
+      </tr>
+
+      {/* Product 8 */}
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">ROZZBY Meeting Planner Notebook for Work</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">
+          INR 855.81
+          <span className="block text-[12px] font-medium text-gray-400 line-through">List: INR 951.01</span>
+        </td>
+        <td className="p-5 text-gray-500 align-middle">4.5 ★ (53)</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Project agenda planner with action items, 160 pages (6.9"x9.9")</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
            <p>Students, teachers, remote workers, and businesses can purchase office furniture, printers, stationery, school supplies, monitors, ergonomic accessories, storage solutions, and productivity tools from Amazon.</p>
            <p>
             As hybrid work continues to grow, many professionals rely on Amazon to create comfortable and efficient workspaces at home.
