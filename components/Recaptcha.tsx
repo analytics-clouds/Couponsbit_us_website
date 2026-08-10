@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import Script from "next/script";
+import React, { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
@@ -17,9 +16,10 @@ declare global {
       ) => number;
       reset: (widgetId?: number) => void;
     };
-    onRecaptchaLoad?: () => void;
   }
 }
+
+const SCRIPT_ID = "google-recaptcha-script";
 
 interface RecaptchaProps {
   onVerify: (token: string) => void;
@@ -29,16 +29,15 @@ interface RecaptchaProps {
 export const Recaptcha = ({ onVerify, onExpire }: RecaptchaProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<number | null>(null);
-  const [scriptReady, setScriptReady] = useState(false);
 
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   useEffect(() => {
-    if (!scriptReady || !siteKey || !containerRef.current) return;
-    if (widgetIdRef.current !== null) return;
+    if (!siteKey) return;
 
     const renderWidget = () => {
-      if (!window.grecaptcha || !containerRef.current) return;
+      if (!containerRef.current || widgetIdRef.current !== null) return;
+      if (!window.grecaptcha?.render) return;
       widgetIdRef.current = window.grecaptcha.render(containerRef.current, {
         sitekey: siteKey,
         callback: onVerify,
@@ -46,26 +45,37 @@ export const Recaptcha = ({ onVerify, onExpire }: RecaptchaProps) => {
       });
     };
 
-    if (window.grecaptcha) {
+    if (window.grecaptcha?.render) {
       renderWidget();
-    } else {
-      window.onRecaptchaLoad = renderWidget;
+      return;
     }
+
+    // Poll instead of relying on a named global onload callback — avoids
+    // the race where Google's script tries to call that callback before
+    // React has finished mounting and defined it.
+    const interval = setInterval(() => {
+      if (window.grecaptcha?.render) {
+        clearInterval(interval);
+        renderWidget();
+      }
+    }, 200);
+
+    if (!document.getElementById(SCRIPT_ID)) {
+      const script = document.createElement("script");
+      script.id = SCRIPT_ID;
+      script.src = "https://www.google.com/recaptcha/api.js?render=explicit";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+
+    return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scriptReady, siteKey]);
+  }, [siteKey]);
 
   if (!siteKey) return null;
 
-  return (
-    <>
-      <Script
-        src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit"
-        strategy="afterInteractive"
-        onReady={() => setScriptReady(true)}
-      />
-      <div ref={containerRef} />
-    </>
-  );
+  return <div ref={containerRef} />;
 };
 
 export default Recaptcha;
