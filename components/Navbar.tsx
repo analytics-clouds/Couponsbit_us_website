@@ -205,7 +205,7 @@ export const Navbar = () => {
             >
               <Bell className="w-6 h-6" />
               <span className="absolute top-1.5 right-1.5 w-4 h-4 bg-[#ef4444] text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
-                2
+                1
               </span>
             </Button>
 

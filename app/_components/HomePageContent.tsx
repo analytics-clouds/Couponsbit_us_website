@@ -19,6 +19,7 @@ import {
   BookOpen,
   ChevronLeft,
   ChevronRight,
+  ExternalLink,
   Plus,
   Minus,
   MessageCircle
@@ -268,6 +269,45 @@ export default function HomePageContent() {
   const [openFeatured, setOpenFeatured] = useState<number | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
+  // Amazon category carousel
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(4);
+  const affiliateUrl = "https://amzn.to/4fFl3VP";
+  const categories = [
+    { title: "Electronics & Smart Devices", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101964/Electronics_Smart_Devices_jlxq1l.png" },
+    { title: "Home, Kitchen & Furniture", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Home_Kitchen_Furniture_dtmedf.png" },
+    { title: "Fashion for Every Style", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101962/Fashion_for_Every_Style_vdjnqi.png" },
+    { title: "Beauty, Skincare & Personal Care", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png" },
+    { title: "Grocery & Everyday Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Grocery_Everyday_Essentials_kfioid.png" },
+    { title: "Books, Movies & Digital Entertainment", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
+    { title: "Toys, Games & Collectibles", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101965/Toys_Games_Collectibles_dfyp9y.png" },
+    { title: "Sports, Fitness & Outdoor Gear", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png" },
+    { title: "Pet Supplies", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Pet_Supplies_ucyl0r.png" },
+    { title: "Baby Products", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101969/Baby_Products_zmjhvm.png" },
+    { title: "Automotive & Tools", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png" },
+    { title: "Office, School & Business Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
+  ];
+  const maxIndex = Math.max(0, categories.length - cardsToShow);
+
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      const width = window.innerWidth;
+      if (width < 640) setCardsToShow(1);
+      else if (width < 1024) setCardsToShow(2);
+      else setCardsToShow(3);
+    };
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
+  useEffect(() => {
+    setCurrentIndex((prev) => Math.min(prev, maxIndex));
+  }, [maxIndex]);
+
+  const nextSlide = () => setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
+  const prevSlide = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => (prev > 0 ? prev - 1 : 43200));
@@ -361,6 +401,114 @@ export default function HomePageContent() {
             </div>
           </div>
         </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section className="bg-gradient-to-b from-gray-50 to-white py-14 border-y border-gray-100">
+  <div className="container mx-auto px-4 max-w-7xl">
+    {/* Tagline / Header */}
+    <div className="text-center max-w-2xl mx-auto mb-10">
+      <span className="text-[#056bfa] font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-full border border-blue-100">
+        Exclusive Amazon Deals
+      </span>
+      <h2 className="text-gray-900 font-black text-3xl md:text-4xl tracking-tight mt-3">
+        Unbeatable Savings Across Top Categories
+      </h2>
+      <p className="text-gray-500 text-sm md:text-base mt-2">
+        Handpicked Amazon discounts updated daily—shop smarter, save bigger.
+      </p>
+      <div className="w-16 h-1 bg-[#056bfa] rounded-full mx-auto mt-4"></div>
+    </div>
+
+    {/* Carousel Container */}
+    <div className="relative group/carousel px-2 sm:px-4">
+      <div className="overflow-hidden rounded-2xl py-2">
+        <div
+          className="flex transition-transform duration-500 ease-out gap-6"
+          style={{
+            transform: `translateX(-${
+              currentIndex * (100 / cardsToShow)
+            }%)`,
+          }}
+        >
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 flex flex-col justify-between bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group/card"
+              style={{
+                width: `calc(${100 / cardsToShow}% - ${
+                  ((cardsToShow - 1) * 24) / cardsToShow
+                }px)`,
+              }}
+            >
+              {/* 1. Fully Used Image */}
+              <div className="relative w-full aspect-[16/10] bg-gray-100 overflow-hidden">
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  className="w-full h-full object-cover object-center group-hover/card:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Card Body */}
+              <div className="p-5 flex flex-col flex-grow justify-between text-center bg-white">
+                {/* 2. Category Title */}
+                <h3 className="text-base md:text-lg font-bold text-gray-800 line-clamp-2 mb-5 min-h-[3rem] flex items-center justify-center group-hover/card:text-[#056bfa] transition-colors duration-200">
+                  {category.title}
+                </h3>
+
+                {/* 3. Button */}
+                <a
+                  href={affiliateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 px-4 bg-[#056bfa] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
+                >
+                  <span>Explore Deals</span>
+                  <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Prev Button */}
+      <button
+        onClick={prevSlide}
+        aria-label="Previous Slide"
+        className="absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
+      >
+        <ChevronLeft className="w-6 h-6 text-[#056bfa]" />
+      </button>
+
+      {/* Next Button */}
+      <button
+        onClick={nextSlide}
+        aria-label="Next Slide"
+        className="absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
+      >
+        <ChevronRight className="w-6 h-6 text-[#056bfa]" />
+      </button>
+    </div>
+
+    {/* Dots Navigation */}
+    <div className="flex justify-center items-center gap-2 mt-8">
+      {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+        <button
+          key={idx}
+          onClick={() => setCurrentIndex(idx)}
+          aria-label={`Go to slide ${idx + 1}`}
+          className={`h-2.5 rounded-full transition-all duration-300 ${
+            currentIndex === idx
+              ? "w-8 bg-[#056bfa]"
+              : "w-2.5 bg-gray-300 hover:bg-gray-400"
+          }`}
+        />
       ))}
     </div>
   </div>

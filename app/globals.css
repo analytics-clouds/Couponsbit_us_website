@@ -92,3 +92,23 @@
 .marquee-right:hover {
   animation-play-state: paused;
 }
+
+/* Google Translate widget: suppress Google's own top banner + tooltip/highlight
+   chrome so the page layout never shifts; only the footer dropdown is visible. */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}

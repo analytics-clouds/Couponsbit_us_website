@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import {
-  ShoppingBag, 
-  Ticket, 
-  Users, 
-  BadgeCheck, 
+  ShoppingBag,
+  Ticket,
+  Users,
+  BadgeCheck,
   Facebook,
   Instagram,
   Twitter,
@@ -13,14 +15,58 @@ import {
   Linkedin,
   Gift,
   Headset,
-  Mail
+  Mail,
+  Globe
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "./Navbar";
 
+type TranslateLanguage = { code: string; label: string };
+
+const TRANSLATE_LANGUAGES: TranslateLanguage[] = [
+  { code: "en", label: "English" },
+  { code: "es", label: "Spanish" },
+  { code: "fr", label: "French" },
+  { code: "de", label: "German" },
+  { code: "it", label: "Italian" },
+  { code: "pt", label: "Portuguese" },
+  { code: "nl", label: "Dutch" },
+  { code: "pl", label: "Polish" },
+  { code: "ro", label: "Romanian" },
+  { code: "el", label: "Greek" },
+  { code: "sv", label: "Swedish" },
+  { code: "da", label: "Danish" },
+  { code: "fi", label: "Finnish" },
+  { code: "no", label: "Norwegian" },
+  { code: "cs", label: "Czech" },
+  { code: "hu", label: "Hungarian" },
+  { code: "uk", label: "Ukrainian" },
+  { code: "ru", label: "Russian" },
+  { code: "tr", label: "Turkish" },
+  { code: "ar", label: "Arabic" },
+];
+
 export const Footer = () => {
   const currentYear = 2026;
+  const [selectedLang, setSelectedLang] = useState("en");
+
+  useEffect(() => {
+    const match = document.cookie.match(/googtrans=\/en\/([a-zA-Z-]+)/);
+    if (match && match[1]) {
+      setSelectedLang(match[1]);
+    }
+  }, []);
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const code = e.target.value;
+    if (code === "en") {
+      document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    } else {
+      document.cookie = `googtrans=/en/${code}; path=/`;
+    }
+    window.location.reload();
+  };
 
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61591738414340", name: "Facebook" },
@@ -258,6 +304,22 @@ export const Footer = () => {
             <span className="text-gray-500">|</span>
             <Link href="/faqs" className="text-sm font-bold hover:text-brand-primary transition-colors">FAQs</Link>
           </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <Globe className="w-4 h-4 text-gray-400" />
+            <select
+              onChange={handleLanguageChange}
+              value={selectedLang}
+              aria-label="Select language"
+              className="notranslate bg-transparent border border-gray-700 rounded-full text-gray-300 text-xs font-semibold px-3 py-1.5 focus:outline-none focus:border-brand-primary cursor-pointer max-w-[150px]"
+            >
+              {TRANSLATE_LANGUAGES.map((lang) => (
+                <option key={lang.code} value={lang.code} className="bg-[#051a33] text-gray-300">
+                  {lang.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div id="google_translate_element" className="notranslate fixed -top-[9999px] -left-[9999px]" />
         </div>
       </div>
     </footer>

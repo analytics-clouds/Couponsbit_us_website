@@ -58,16 +58,10 @@ export const NotificationPanel = ({ isOpen }: NotificationPanelProps) => {
           </div>
           <div className="max-h-[400px] overflow-y-auto">
             <NotificationItem
-              text="FIFA World Cup 2026 Tickets — Now Trending! Book Verified Match Tickets via StubHub"
-              image="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&q=80&w=100"
-              ctaLabel="Book Ticket"
-              ctaHref="/stores/stubhub-coupon-code"
-            />
-            <NotificationItem
-              text="FIFA World Cup 2026 Tickets — Book Now via Viagogo"
-              image="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&q=80&w=100"
-              ctaLabel="Book Ticket"
-              ctaHref="/stores/viagogo-coupon-code"
+              text="Amazon Sale is LIVE! Shop Verified Deals & Discount Codes"
+              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"
+              ctaLabel="Shop Now"
+              ctaHref="/stores/amazon-discount-code"
             />
           </div>
         </motion.div>
