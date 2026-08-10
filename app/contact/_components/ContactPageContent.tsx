@@ -23,6 +23,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Recaptcha } from "@/components/Recaptcha";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -43,6 +44,7 @@ interface FormErrors {
   country?: string;
   message?: string;
   agree?: string;
+  recaptcha?: string;
 }
 
 // --- Components ---
@@ -86,29 +88,34 @@ export default function ContactPageContent() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+
   const formRef = useRef<HTMLDivElement>(null);
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
-    
+
     if (formData.fullName.length < 3) {
       newErrors.fullName = "Full name must be at least 3 characters";
     }
-    
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
-    
+
     if (!formData.country) {
       newErrors.country = "Please select a country";
     }
-    
+
     if (!formData.agree) {
       newErrors.agree = "You must agree to the privacy policy";
     }
-    
+
+    if (!recaptchaToken) {
+      newErrors.recaptcha = "Please verify you're not a robot";
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -121,7 +128,7 @@ export default function ContactPageContent() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
       if (res.ok) {
         setIsSuccess(true);
@@ -483,32 +490,22 @@ export default function ContactPageContent() {
                           </div>
                         </div>
 
-                        <div className="flex items-start gap-3">
-                          <div className="relative w-5 h-5 mt-0.5">
-                            <input 
-                              type="checkbox"
-                              className="peer absolute opacity-0 w-full h-full cursor-pointer z-10"
-                              checked={formData.agree}
-                              onChange={(e) => {
-                                setFormData({...formData, agree: e.target.checked});
-                                if (errors.agree) setErrors({...errors, agree: undefined});
-                              }}
-                            />
-                            <div className={cn(
-                              "w-5 h-5 rounded border-2 transition-all flex items-center justify-center",
-                              formData.agree ? "bg-[#056bfa] border-[#056bfa]" : "bg-white border-[#e0e0e0] peer-hover:border-[#056bfa]"
-                            )}>
-                              {formData.agree && <CheckCircle className="w-3.5 h-3.5 text-white" />}
-                            </div>
-                          </div>
-                          <label className="text-sm text-gray-600 font-medium">
-                            I agree to the Privacy Policy and consent to being contacted by the Couponsbit team
-                          </label>
-                        </div>
+                       
                         {errors.agree && <p className="text-[#ef4444] text-[10px] font-bold px-1">{errors.agree}</p>}
 
-                        <Button 
-                          type="submit" 
+                        <div>
+                          <Recaptcha
+                            onVerify={(token) => {
+                              setRecaptchaToken(token);
+                              if (errors.recaptcha) setErrors({ ...errors, recaptcha: undefined });
+                            }}
+                            onExpire={() => setRecaptchaToken(null)}
+                          />
+                          {errors.recaptcha && <p className="text-[#ef4444] text-[10px] font-bold mt-1.5 px-1">{errors.recaptcha}</p>}
+                        </div>
+
+                        <Button
+                          type="submit"
                           disabled={isLoading}
                           className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white rounded-2xl h-14 font-black transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2"
                         >

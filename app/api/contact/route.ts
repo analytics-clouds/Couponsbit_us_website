@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { verifyRecaptcha } from "@/lib/verifyRecaptcha";
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -197,7 +198,7 @@ function adminNotificationHtml(data: {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { fullName, email, phone, country, message, inquiryType } = body;
+    const { fullName, email, phone, country, message, inquiryType, recaptchaToken } = body;
 
     // Server-side validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -209,6 +210,11 @@ export async function POST(req: NextRequest) {
     }
     if (!country) {
       return NextResponse.json({ error: "Country is required" }, { status: 400 });
+    }
+
+    const isHuman = await verifyRecaptcha(recaptchaToken);
+    if (!isHuman) {
+      return NextResponse.json({ error: "reCAPTCHA verification failed" }, { status: 400 });
     }
 
     await Promise.all([
