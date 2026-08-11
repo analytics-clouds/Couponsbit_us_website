@@ -272,7 +272,7 @@ export default function HomePageContent() {
   // Amazon category carousel
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(4);
-  const affiliateUrl = "https://amzn.to/4fFl3VP";
+  const affiliateUrl = "https://www.amazon.com?&linkCode=ll2&tag=analytics0922-20&linkId=9a29e2639a93ee0a01cbc9eb8d14bdf1&language=en_US&ref_=as_li_ss_tl";
   const categories = [
     { title: "Electronics & Smart Devices", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101964/Electronics_Smart_Devices_jlxq1l.png" },
     { title: "Home, Kitchen & Furniture", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Home_Kitchen_Furniture_dtmedf.png" },
