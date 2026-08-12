@@ -26,6 +26,12 @@ type TranslateLanguage = { code: string; label: string };
 
 const TRANSLATE_LANGUAGES: TranslateLanguage[] = [
   { code: "en", label: "English" },
+  { code: "zh-CN", label: "Chinese (Simplified)" },
+  { code: "vi", label: "Vietnamese" },
+  { code: "ko", label: "Korean" },
+  { code: "tl", label: "Tagalog" },
+  { code: "hi", label: "Hindi" },
+  { code: "ja", label: "Japanese" },
   { code: "es", label: "Spanish" },
   { code: "fr", label: "French" },
   { code: "de", label: "German" },
