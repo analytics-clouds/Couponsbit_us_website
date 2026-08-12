@@ -76,6 +76,11 @@ export const allStores: StoreEntry[] = [
   { name: "Klook",           id: "klook-discount-code",          category: "Travel",      coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp",     discount: "Up To 50% OFF",   popular: false },
   { name: "Amazon",          id: "amazon-discount-code",         category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp",    discount: "Up To 52% OFF",   popular: false },
   { name: "Discount Tire",   id: "discounttire-discount-code",   category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/discounttie-logo_lcrloj.webp", discount: "Up To $130 OFF", popular: false },
+  { name: "Chewy",           id: "chewy-promo-code",             category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/chewy-logo_nadir3.webp",       discount: "Up To 50% OFF",  popular: false },
+  { name: "DoorDash",        id: "doordash-promo-code",          category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp",     discount: "Up To 30% OFF",  popular: false },
+  { name: "Hosting",         id: "hosting-discount-code",        category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/Hosting_logo_c17yhb.webp",     discount: "Up To 75% OFF",  popular: false },
+  { name: "LovesJerkyCo",    id: "lovejurky-discount-code",       category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp",   discount: "From $10",       popular: false },
+  { name: "Merachfit",       id: "merachfit-discount-code",       category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp",   discount: "Save Up To $260", popular: false },
 ];
 
 
