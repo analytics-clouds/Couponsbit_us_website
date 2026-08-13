@@ -21,13 +21,13 @@ import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
 const STORES = [
-  { id: "latam-airlines-coupon-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 8, discount: "Up to 12% OFF" },
-  { id: "trainpal-coupon-code", name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", coupons: 9, discount: "Up to 50% OFF" },
-  { id: "agoda-coupon-code", name: "Agoda", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg", coupons: 10, discount: "Up to 69% OFF" },
-  { id: "cheapflights-coupon-code", name: "Cheapflights", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg", coupons: 11, discount: "Up to 25% OFF" },
-  { id: "kiwi-coupon-code", name: "Kiwi.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp", coupons: 4, discount: "Up to $580 Rewards" },
-  { id: "expedia-coupon-code", name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg", coupons: 10, discount: "Up to 40% OFF" },
-  { id: "qatar-holidays-coupon-code", name: "Qatar Holidays", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg", coupons: 8, discount: "Up to 40% OFF" },
+  { id: "latam-airlines-discount-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 8, discount: "Up to 12% OFF" },
+  { id: "trainpal-discount-code", name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", coupons: 9, discount: "Up to 50% OFF" },
+  { id: "agoda-discount-code", name: "Agoda", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg", coupons: 10, discount: "Up to 69% OFF" },
+  { id: "cheapflights-discount-code", name: "Cheapflights", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg", coupons: 11, discount: "Up to 25% OFF" },
+  { id: "kiwi-discount-code", name: "Kiwi.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp", coupons: 4, discount: "Up to $580 Rewards" },
+  { id: "expedia-discount-code", name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg", coupons: 10, discount: "Up to 40% OFF" },
+  { id: "qatar-holidays-discount-code", name: "Qatar Holidays", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg", coupons: 8, discount: "Up to 40% OFF" },
   { id: "flixbus-discount-code", name: "FlixBus Australia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", coupons: 3, discount: "Up to 50% OFF" },
   { id: "oman-air-discount-code", name: "Oman Air", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/oman-air-logo_ozwu2c.webp", coupons: 5, discount: "Up To 50% OFF" },
   { id: "budget-discount-code", name: "Budget", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp", coupons: 8, discount: "Up To 35% OFF" },
@@ -37,7 +37,7 @@ const STORES = [
   { id: "malaysia-airlines-discount-code", name: "Malaysia Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/malaysia-logo_xso2cj.webp", coupons: 6, discount: "Up To 35% OFF" },
   { id: "inspiring-vacation-discount-code", name: "Inspiring Vacation", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp", coupons: 9, discount: "Up To 50% OFF" },
   { id: "vegas-discount-code", name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", coupons: 6, discount: "Up To 35% OFF" },
-  { id: "zen-hotels-coupon-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" },
+  { id: "zen-hotels-discount-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" },
   { id: "radisson-discount-code", name: "Radisson", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp", coupons: 7, discount: "Up To 40% OFF" }
 ];
 

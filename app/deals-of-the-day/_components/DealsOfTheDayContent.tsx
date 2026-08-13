@@ -227,7 +227,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/viagogo-coupon-code" aria-label="View all Viagogo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/viagogo-discount-code" aria-label="View all Viagogo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -256,7 +256,7 @@ export default function DealsOfTheDayContent() {
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
+                  <Link href="/stores/viagogo-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
                 </div>
               </div>
             ))}
@@ -271,7 +271,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Reolink Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/reolink-coupon-code" aria-label="View all Reolink coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/reolink-discount-code" aria-label="View all Reolink coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -298,7 +298,7 @@ export default function DealsOfTheDayContent() {
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/reolink-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/reolink-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -313,7 +313,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/rayneo-coupon-code" aria-label="View all Rayneo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/rayneo-discount-code" aria-label="View all Rayneo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
@@ -330,7 +330,7 @@ export default function DealsOfTheDayContent() {
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo-coupon-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
+                <Link href="/stores/rayneo-discount-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
               </div>
             ))}
           </div>
@@ -344,7 +344,7 @@ export default function DealsOfTheDayContent() {
               <h2 className="text-3xl font-black text-black">Envato Elements Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/envato-elements-coupon-code" aria-label="View all Envato Elements coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/envato-elements-discount-code" aria-label="View all Envato Elements coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
@@ -367,7 +367,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/envato-elements-coupon-code" aria-label={`Get coupon: ${c.title}`}><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/envato-elements-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
@@ -384,7 +384,7 @@ export default function DealsOfTheDayContent() {
             </div>
             <div className="flex items-center justify-between">
               <p className="text-gray-400 text-xs sm:text-sm">Exclusive AI subscription deals — save more today</p>
-              <Link href="/stores/sintra-coupon-code" aria-label="View all Sintra coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
+              <Link href="/stores/sintra-discount-code" aria-label="View all Sintra coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
             </div>
           </div>
           <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
@@ -409,7 +409,7 @@ export default function DealsOfTheDayContent() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/sintra-coupon-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
+                  <Link href="/stores/sintra-discount-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
                 </div>
               </div>
             ))}

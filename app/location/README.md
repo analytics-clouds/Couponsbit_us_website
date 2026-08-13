@@ -10,7 +10,7 @@
 >  Search the web for missing state data (tax rate, delivery days, top cities)."
 
 The worked example throughout is **Nuagewear → New York**
-(`app/stores/nuage-coupon-code/new-york/`). Every rule below was
+(`app/stores/nuage-discount-code/new-york/`). Every rule below was
 checked against that shipped file, not against a plan that was never
 fully built — if you see a mismatch between this doc and the Nuagewear
 NY page, the page is correct and this doc should be fixed.
@@ -469,5 +469,5 @@ verbatim blocks directly from parent without modification."
 ---
 
 *CouponsBit Internal Guide — Location Pages, Physical Product Stores*
-*Verified against: Nuagewear → New York (app/stores/nuage-coupon-code/new-york/)*
+*Verified against: Nuagewear → New York (app/stores/nuage-discount-code/new-york/)*
 *Supersedes physical-product-store.md as the working reference*

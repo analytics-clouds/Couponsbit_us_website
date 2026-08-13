@@ -88,7 +88,7 @@ const electronicsSchema = {
           item: {
             "@type": "WebPage",
             name: "Rayneo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
+            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
           },
         },
         {
@@ -97,7 +97,7 @@ const electronicsSchema = {
           item: {
             "@type": "WebPage",
             name: "Reolink Coupon Codes",
-            url: "https://www.couponsbit.us/stores/reolink-coupon-code",
+            url: "https://www.couponsbit.us/stores/reolink-discount-code",
           },
         },
         // ← add more electronics stores here as you onboard them

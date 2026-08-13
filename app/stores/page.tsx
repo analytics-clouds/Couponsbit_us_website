@@ -88,7 +88,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "StubHub Coupon Codes",
-            url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
           },
         },
         {
@@ -97,7 +97,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Viagogo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/viagogo-coupon-code",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
           },
         },
         {
@@ -106,7 +106,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "LATAM Airlines Coupon Codes",
-            url: "https://www.couponsbit.us/stores/latam-airlines-coupon-code",
+            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
           },
         },
         {
@@ -115,7 +115,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Rayneo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/rayneo-coupon-code",
+            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
           },
         },
         {
@@ -124,7 +124,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Driffle Coupon Codes",
-            url: "https://www.couponsbit.us/stores/driffle-coupon-code",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
           },
         },
         {
@@ -133,7 +133,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Lyca Mobile Coupon Codes",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-coupon-code",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
           },
         },
         {
@@ -142,7 +142,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Reolink Coupon Codes",
-            url: "https://www.couponsbit.us/stores/reolink-coupon-code",
+            url: "https://www.couponsbit.us/stores/reolink-discount-code",
           },
         },
         {
@@ -151,7 +151,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Envato Elements Coupon Codes",
-            url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
           },
         },
         {
@@ -160,7 +160,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Sintra Coupon Codes",
-            url: "https://www.couponsbit.us/stores/sintra-coupon-code",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
           },
         },
         {
@@ -169,7 +169,7 @@ const storesPageSchema = {
           item: {
             "@type": "WebPage",
             name: "Bluehost Coupon Codes",
-            url: "https://www.couponsbit.us/stores/bluehost-coupon-code",
+            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
           },
         },
         // ← add remaining stores here following same pattern

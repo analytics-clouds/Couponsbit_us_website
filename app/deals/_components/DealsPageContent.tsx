@@ -125,7 +125,7 @@ export default function DealsPageContent() {
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#0344b0] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">StubHub Coupons</h2>
             </div>
-            <Link href="/stores/stubhub-coupon-code" aria-label="View all StubHub coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/stubhub-discount-code" aria-label="View all StubHub coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -161,7 +161,7 @@ export default function DealsPageContent() {
                       </ul>
                     )}
                   </div>
-                  <Link href="/stores/stubhub-coupon-code">
+                  <Link href="/stores/stubhub-discount-code">
                     <button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
                   </Link>
                 </div>
@@ -212,7 +212,7 @@ export default function DealsPageContent() {
                 {/* Footer */}
                 <div>
                   <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/latam-airlines-coupon-code">
+                  <Link href="/stores/latam-airlines-discount-code">
                     <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button>
                   </Link>
                 </div>
@@ -235,7 +235,7 @@ export default function DealsPageContent() {
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#0344b0] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Rayneo Coupons</h2>
             </div>
-            <Link href="/stores/rayneo-coupon-code" aria-label="View all Rayneo coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/rayneo-discount-code" aria-label="View all Rayneo coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -253,7 +253,7 @@ export default function DealsPageContent() {
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo-coupon-code">
+                <Link href="/stores/rayneo-discount-code">
                   <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button>
                 </Link>
               </div>
@@ -270,7 +270,7 @@ export default function DealsPageContent() {
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#0344b0] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Driffle Coupons</h2>
             </div>
-            <Link href="/stores/driffle-coupon-code" aria-label="View all Driffle coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/driffle-discount-code" aria-label="View all Driffle coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -294,7 +294,7 @@ export default function DealsPageContent() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/driffle-coupon-code">
+                  <Link href="/stores/driffle-discount-code">
                     <button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button>
                   </Link>
                 </div>
@@ -312,7 +312,7 @@ export default function DealsPageContent() {
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#0344b0] mb-0.5">Exclusive Coupons</p>
               <h2 className="text-2xl sm:text-3xl font-black text-black">Viagogo Coupons</h2>
             </div>
-            <Link href="/stores/viagogo-coupon-code" aria-label="View all Viagogo coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
+            <Link href="/stores/viagogo-discount-code" aria-label="View all Viagogo coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all">View All →</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -344,7 +344,7 @@ export default function DealsPageContent() {
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo-coupon-code">
+                  <Link href="/stores/viagogo-discount-code">
                     <button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button>
                   </Link>
                 </div>

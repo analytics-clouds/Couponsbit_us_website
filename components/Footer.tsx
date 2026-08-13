@@ -99,14 +99,14 @@ export const Footer = () => {
     { name: "Mobile & Telecom",   href: "/categories/mobile" },
   ];
   const topStores = [
-    { name: "StubHub",        href: "/stores/stubhub-coupon-code" },
-    { name: "Viagogo",        href: "/stores/viagogo-coupon-code" },
-    { name: "LATAM Airlines", href: "/stores/latam-airlines-coupon-code" },
-    { name: "Driffle",        href: "/stores/driffle-coupon-code" },
-    { name: "Bluehost",       href: "/stores/bluehost-coupon-code" },
-    { name: "Lyca Mobile",    href: "/stores/lyca-mobile-coupon-code" },
-    { name: "Reolink",        href: "/stores/reolink-coupon-code" },
-    { name: "Sintra",         href: "/stores/sintra-coupon-code" },
+    { name: "StubHub",        href: "/stores/stubhub-discount-code" },
+    { name: "Viagogo",        href: "/stores/viagogo-discount-code" },
+    { name: "LATAM Airlines", href: "/stores/latam-airlines-discount-code" },
+    { name: "Driffle",        href: "/stores/driffle-discount-code" },
+    { name: "Bluehost",       href: "/stores/bluehost-discount-code" },
+    { name: "Lyca Mobile",    href: "/stores/lyca-mobile-discount-code" },
+    { name: "Reolink",        href: "/stores/reolink-discount-code" },
+    { name: "Sintra",         href: "/stores/sintra-discount-code" },
   ];
   
   const companyLinks = [

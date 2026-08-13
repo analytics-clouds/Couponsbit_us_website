@@ -58,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Nuagewear location pages
     ...NUAGEWEAR_LOCATIONS.map((slug) => ({
-      url: `${BASE_URL}/stores/nuage-coupon-code/${slug}`,
+      url: `${BASE_URL}/stores/nuage-discount-code/${slug}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
     })),

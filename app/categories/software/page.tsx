@@ -87,7 +87,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Driffle Coupon Codes",
-            url: "https://www.couponsbit.us/stores/driffle-coupon-code",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
           },
         },
         {
@@ -96,7 +96,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Bluehost Coupon Codes",
-            url: "https://www.couponsbit.us/stores/bluehost-coupon-code",
+            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
           },
         },
         {
@@ -105,7 +105,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Envato Elements Coupon Codes",
-            url: "https://www.couponsbit.us/stores/envato-elements-coupon-code",
+            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
           },
         },
         {
@@ -114,7 +114,7 @@ const softwareSchema = {
           item: {
             "@type": "WebPage",
             name: "Sintra Coupon Codes",
-            url: "https://www.couponsbit.us/stores/sintra-coupon-code",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
           },
         },
         // ← add more software stores here as you onboard them

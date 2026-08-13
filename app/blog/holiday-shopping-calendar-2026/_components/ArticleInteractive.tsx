@@ -82,7 +82,7 @@ export default function ArticleInteractive() {
   const faqs = [
     { q: "What is the biggest shopping holiday in the USA?", a: <><Link href="/deals" className="text-[#056bfa] hover:underline">Black Friday</Link> is widely considered the biggest shopping event in the United States, followed closely by Cyber Monday.</> },
     { q: "When is the best time to buy electronics?", a: <>The best times are <Link href="/categories/electronics" className="text-[#056bfa] hover:underline">Independence Day sales</Link> in July, Back-to-School promotions in August and Black Friday and Cyber Monday in November.</> },
-    { q: "Which month has the best furniture deals?", a: <><Link href="/stores/deer-valley-coupon-code" className="text-[#056bfa] hover:underline">Furniture</Link> shoppers can usually find excellent discounts during Memorial Day, Labor Day and New Year clearance sales.</> },
+    { q: "Which month has the best furniture deals?", a: <><Link href="/stores/deer-valley-discount-code" className="text-[#056bfa] hover:underline">Furniture</Link> shoppers can usually find excellent discounts during Memorial Day, Labor Day and New Year clearance sales.</> },
     { q: "How can I save more during holiday sales?", a: "Plan your purchases in advance, compare prices and use verified coupon codes and promo codes before completing purchase." },
   ];
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -204,7 +204,7 @@ export default function ArticleInteractive() {
                 <ul className="list-disc list-inside space-y-1 mb-4 pl-2">
                   <li>Winter jackets</li>
                   <li>Bedding</li>
-                  <li><Link href="/stores/deer-valley-coupon-code" className="text-[#056bfa] hover:underline">Mattresses</Link></li>
+                  <li><Link href="/stores/deer-valley-discount-code" className="text-[#056bfa] hover:underline">Mattresses</Link></li>
                   <li>Fitness equipment</li>
                   <li>Home organization products</li>
                 </ul>
@@ -314,7 +314,7 @@ export default function ArticleInteractive() {
                   <li>Backpacks</li>
                 </ul>
                 <p className="mb-3">Many retailers also offer student discounts during August.</p>
-                <p className="mb-5">Brands like <Link href="/stores/dell-coupon-code" className="text-[#056bfa] hover:underline">Dell</Link> and <Link href="/stores/hp-coupon-code" className="text-[#056bfa] hover:underline">HP</Link> offer student discounts during this period.</p>
+                <p className="mb-5">Brands like <Link href="/stores/dell-discount-code" className="text-[#056bfa] hover:underline">Dell</Link> and <Link href="/stores/hp-discount-code" className="text-[#056bfa] hover:underline">HP</Link> offer student discounts during this period.</p>
 
                 <h2 id="september-labor-day" className="flex items-center text-black font-extrabold text-2xl mt-10 mb-4">
                   <span className="w-1 h-7 bg-[#056bfa] rounded mr-3 inline-block"></span>
@@ -340,7 +340,7 @@ export default function ArticleInteractive() {
                 <ul className="list-disc list-inside space-y-1 mb-4 pl-2">
                   <li>Halloween costumes</li>
                   <li>Decorations</li>
-                  <li><Link href="/stores/driffle-coupon-code" className="text-[#056bfa] hover:underline">Gaming</Link> <Link href="/stores/kinguin-coupon-code" className="text-[#056bfa] hover:underline">accessories</Link></li>
+                  <li><Link href="/stores/driffle-discount-code" className="text-[#056bfa] hover:underline">Gaming</Link> <Link href="/stores/kinguin-discount-code" className="text-[#056bfa] hover:underline">accessories</Link></li>
                   <li>Gift items</li>
                   <li>Collectibles</li>
                 </ul>
@@ -354,7 +354,7 @@ export default function ArticleInteractive() {
                 <p className="mb-2">Best things to buy:</p>
                 <ul className="list-disc list-inside space-y-1 mb-4 pl-2">
                   <li><Link href="/categories/electronics" className="text-[#056bfa] hover:underline">Smartphones</Link></li>
-                  <li><Link href="/stores/driffle-coupon-code" className="text-[#056bfa] hover:underline">Gaming consoles</Link></li>
+                  <li><Link href="/stores/driffle-discount-code" className="text-[#056bfa] hover:underline">Gaming consoles</Link></li>
                   <li><Link href="/categories/electronics" className="text-[#056bfa] hover:underline">Televisions</Link></li>
                   <li>Fashion</li>
                   <li>Beauty products</li>
@@ -496,12 +496,12 @@ export default function ArticleInteractive() {
                 </h4>
                 <div className="space-y-4">
                   {[
-                    { name: "StubHub", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp", dealText: "Flat 10% OFF", href: "/stores/stubhub-coupon-code" },
-                    { name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", dealText: "Starting at $332", href: "/stores/viagogo-coupon-code" },
-                    { name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", dealText: "Up to 69% OFF", href: "/stores/bluehost-coupon-code" },
-                    { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-coupon-code" },
-                    { name: "Fytoo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp", dealText: "Frames From $1", href: "/stores/fytoo-coupon-code" },
-                    { name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", dealText: "Up to 95% OFF", href: "/stores/driffle-coupon-code" },
+                    { name: "StubHub", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp", dealText: "Flat 10% OFF", href: "/stores/stubhub-discount-code" },
+                    { name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", dealText: "Starting at $332", href: "/stores/viagogo-discount-code" },
+                    { name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", dealText: "Up to 69% OFF", href: "/stores/bluehost-discount-code" },
+                    { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-discount-code" },
+                    { name: "Fytoo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp", dealText: "Frames From $1", href: "/stores/fytoo-discount-code" },
+                    { name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", dealText: "Up to 95% OFF", href: "/stores/driffle-discount-code" },
                   ].map((store, i) => (
                     <Link
                       key={store.name}

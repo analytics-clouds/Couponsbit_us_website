@@ -87,7 +87,7 @@ const entertainmentSchema = {
           item: {
             "@type": "WebPage",
             name: "StubHub Coupon Codes",
-            url: "https://www.couponsbit.us/stores/stubhub-coupon-code",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
           },
         },
         {
@@ -96,7 +96,7 @@ const entertainmentSchema = {
           item: {
             "@type": "WebPage",
             name: "Viagogo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/viagogo-coupon-code",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
           },
         },
         // ← add more entertainment stores here as you onboard them
