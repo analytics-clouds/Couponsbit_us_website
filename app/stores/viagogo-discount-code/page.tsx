@@ -77,15 +77,90 @@ const viagogoSchema = {
       description:
         "Latest verified Viagogo coupon codes, promo codes and discount codes for tickets.",
       url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 6,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Viagogo Coupon Code",
-            description: "Latest Viagogo coupon code for ticket discounts.",
+            name: "BEST OFFER – Coachella Music Festival Tickets.",
+            description: "Secure your Coachella festival passes at the best available price.",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Viagogo",
+              url: "https://www.viagogo.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Katseye Tickets – Governors Ball Festival",
+            description: "Enjoy an unforgettable music festival experience with Katseye and top global artists.",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Viagogo",
+              url: "https://www.viagogo.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "World Cup Tickets – United States vs Paraguay",
+            description: "Secure your Coachella festival passes at the best available price.",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Viagogo",
+              url: "https://www.viagogo.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "HOT DEAL – Westlife Tickets.",
+            description: "Grab Westlife concert tickets at special discounted prices.",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Viagogo",
+              url: "https://www.viagogo.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "HOT DEAL – Concert Tickets.",
+            description: "Enjoy live concerts from top global artists at affordable prices.",
+            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Viagogo",
+              url: "https://www.viagogo.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "HOT DEAL – Madonna Parking Passes.",
+            description: "Book convenient parking passes for Madonna concerts at the best rates.",
             url: "https://www.couponsbit.us/stores/viagogo-discount-code",
             seller: {
               "@type": "Organization",
@@ -149,6 +224,61 @@ const viagogoSchema = {
           position: 3,
           name: "Viagogo Coupons",
           item: "https://www.couponsbit.us/stores/viagogo-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/viagogo-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Viagogo offer coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Viagogo occasionally offers promotional discounts, special offers, and event-related savings opportunities.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Viagogo promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Viagogo coupon codes and ticket deals directly on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Viagogo a ticket marketplace?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Viagogo operates as a ticket resale marketplace where buyers and sellers can exchange event tickets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What types of events are available on Viagogo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The platform offers tickets for concerts, sports events, theater productions, comedy shows, festivals, and other live entertainment experiences.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Viagogo provide a buyer guarantee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Viagogo advertises a 100% order guarantee and customer support for ticket purchases made through its platform.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers.",
+          },
         },
       ],
     },

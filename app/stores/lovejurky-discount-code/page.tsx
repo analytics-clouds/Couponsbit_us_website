@@ -80,22 +80,106 @@ const loveJerkySchema = {
       description:
         "Latest verified LoveJerky coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "LoveJerky Coupon Code",
-            description:
-              "Latest LoveJerky coupon code and discount offers.",
+            name: "LovesJerkyCo Discount Code – Free Shipping on Orders Over $66",
+            description: "Stock up on jerky, seasonings, and favorite snacks while saving on delivery",
             url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo Discount Code – 6-Flavour Sample Packs for $50",
+            description: "Try 6 different flavors for $50 with the sample pack collection",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo USA – Redmond Real Salt 5 oz for $32",
+            description: "Get 5 oz Redmond Real Salt for $32",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo USA – 6-Flavour Sample Collection for $50",
+            description: "Explore the 6 Flavors Sample Pack for $50",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo USA – Teriyaki Seasoning for $24",
+            description: "Shop Teriyaki seasoning for $24",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo USA – Lemon Pepper Seasoning for $24",
+            description: "Get Lemon Pepper seasoning for $24",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "LoveJerky",
+              url: "https://www.LovesJerky.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "LovesJerkyCo USA – Red Chili Powder from $10",
+            description: "Add bold flavor and heat to your favorite recipes",
+            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
             seller: {
               "@type": "Organization",
               name: "LoveJerky",
@@ -158,6 +242,69 @@ const loveJerkySchema = {
           position: 3,
           name: "LoveJerky Coupons",
           item: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/lovejurky-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What does Love's Jerky Co sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Love's Jerky Co specializes in jerky and meat-snack products in a variety of flavors and options.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a Love's Jerky Co promo code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can check CouponsBit for the latest Love's Jerky Co promo code, coupon code, and discount code before placing your order.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use a Love's Jerky Co coupon code on any product?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "That depends on the individual promotion. Some offers may apply only to selected products or orders, so check the terms before using a code.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Love's Jerky Co offer different jerky flavors?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, shoppers can explore different flavor profiles and varieties depending on the brand's current selection.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is jerky suitable for travel?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jerky is a convenient snack for road trips, outdoor activities, and travel because it is compact and easy to carry.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How can I save money when shopping at Love's Jerky Co?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Look for a current Love's Jerky Co discount code, promotional offers, bundles, and shipping deals before completing your order.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is free for shoppers looking for promo codes, coupon codes, vouchers, and other discounts.",
+          },
         },
       ],
     },

@@ -76,7 +76,7 @@ const unipinSchema = {
       "@id": "https://www.couponsbit.us/stores/unipin-discount-code#offerlist",
       name: "Unipin Coupon Codes & Promo Codes",
       description:
-        "Latest verified Unipin coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
       url: "https://www.couponsbit.us/stores/unipin-discount-code",
       numberOfItems: 10,
       itemListElement: [
@@ -85,9 +85,143 @@ const unipinSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Unipin Coupon Code",
-            description:
-              "Latest Unipin coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "Boost Your Eudemons Experience with UniPin Top-Ups",
+            description: "Top up your Eudemons Online account quickly and securely through UniPin.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "UniPin PUBG Mobile UC Top-Up – 8100 UC Available",
+            description: "Recharge your PUBG Mobile account with official UC credits.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Mobile Legends: Bang Bang Top-Up",
+            description: "Power up your Mobile Legends account with fast and reliable top-ups.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Magic Chess: Go Go Top-Up",
+            description: "Enjoy seamless top-ups for Magic Chess: Go Go.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Starfall Fantasy: Neverland Recharge",
+            description: "Enhance your adventure with quick top-ups for Starfall Fantasy: Neverland.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "UniPin MU ORIGIN 3 Top-Up",
+            description: "Boost your gameplay with official MU ORIGIN 3 game credits.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Voucher (US) – Flexible Gaming Credits",
+            description: "Purchase official UniPin Vouchers for convenient gaming top-ups.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Fortnite V-Bucks Top-Up",
+            description: "Get official Fortnite V-Bucks quickly and securely.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "UniPin PlayStation PSN Gift Card",
+            description: "Add funds to your PlayStation account instantly.",
+            url: "https://www.couponsbit.us/stores/unipin-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Unipin",
+              url: "https://www.unipin.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 10,
+          item: {
+            "@type": "Offer",
+            name: "UniPin Roblox Gift Card – Roblox 50 USD",
+            description: "Purchase Roblox credits quickly through UniPin.",
             url: "https://www.couponsbit.us/stores/unipin-discount-code",
             seller: {
               "@type": "Organization",
@@ -151,6 +285,61 @@ const unipinSchema = {
           position: 3,
           name: "Unipin Coupons",
           item: "https://www.couponsbit.us/stores/unipin-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/unipin-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is UniPin?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UniPin is a digital entertainment payment platform that allows users to purchase gaming currencies, digital content, game credits, and gift cards for popular games and services.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What games can I top up on UniPin?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UniPin supports a variety of games, including Mobile Legends, Free Fire, PUBG Mobile, Roblox, and many other popular gaming titles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find UniPin coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest UniPin coupon codes, promo offers, and gaming deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is UniPin safe to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UniPin is a widely recognized gaming payment platform used by millions of players worldwide for digital purchases and game top-ups.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does UniPin offer digital gift cards?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. UniPin offers access to various gaming-related digital products and gift card options.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover coupon codes, promo offers, and discounts from leading brands and digital platforms.",
+          },
         },
       ],
     },

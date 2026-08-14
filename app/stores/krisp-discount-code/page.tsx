@@ -79,18 +79,68 @@ const krispSchema = {
       "@id": "https://www.couponsbit.us/stores/krisp-discount-code#offerlist",
       name: "Krisp.AI Coupon Codes & Promo Codes",
       description:
-        "Latest verified Krisp.AI coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
       url: "https://www.couponsbit.us/stores/krisp-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 4,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Krisp.AI Coupon Code",
-            description:
-              "Latest Krisp.AI coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "Free Trial",
+            description: "Explore Krisp on your own. 7-day free trial, no credit card required.",
+            priceCurrency: "USD",
+            price: "0",
+            url: "https://www.couponsbit.us/stores/krisp-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Krisp.AI",
+              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Core Plan",
+            description: "Best for individuals and small teams.",
+            priceCurrency: "USD",
+            price: "16",
+            url: "https://www.couponsbit.us/stores/krisp-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Krisp.AI",
+              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Advanced Plan",
+            description: "For advanced features and controls. Most popular.",
+            priceCurrency: "USD",
+            price: "30",
+            url: "https://www.couponsbit.us/stores/krisp-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Krisp.AI",
+              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Enterprise Plan",
+            description: "Best for org-wide rollout & security. Custom pricing — talk to sales.",
             url: "https://www.couponsbit.us/stores/krisp-discount-code",
             areaServed: [
               { "@type": "Country", name: "United States" },
@@ -160,6 +210,61 @@ const krispSchema = {
           position: 3,
           name: "Krisp.AI Coupons",
           item: "https://www.couponsbit.us/stores/krisp-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/krisp-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Krisp AI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Krisp AI is an AI-powered meeting assistant that offers noise cancellation, meeting transcription, AI-generated summaries, recordings, and productivity tools for virtual meetings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Krisp AI only remove background noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. In addition to AI noise cancellation, Krisp also provides meeting recordings, AI notes, transcripts, summaries, action items, and accent conversion.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which meeting platforms work with Krisp AI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Krisp works with many popular communication platforms, including Zoom, Microsoft Teams, Google Meet, Slack, Webex, and others.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Krisp AI promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Krisp AI promo codes, discount offers, and software deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Krisp AI suitable for remote teams?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Krisp AI is widely used by remote workers, distributed teams, freelancers, and businesses to improve meeting quality and collaboration.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, promo offers, and discounts from leading software and technology brands.",
+          },
         },
       ],
     },

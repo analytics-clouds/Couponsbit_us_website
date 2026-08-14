@@ -80,22 +80,106 @@ const etihadSchema = {
       description:
         "Latest verified Etihad coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/etihad-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Etihad Coupon Code",
-            description:
-              "Latest Etihad coupon code and discount offers.",
+            name: "Global Sale – SAVE UP TO 20%",
+            description: "Save UP TO 20% on international flight bookings during the Global Sale.",
             url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Málaga Round Trip – Fares From $522",
+            description: "Fly round-trip to Málaga from just $522.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Business Class Sale – SAVE UP TO 30%",
+            description: "Save UP TO 30% on Business Class fares from the USA.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Europe Hotel Sale – SAVE 25%",
+            description: "Enjoy 25% OFF on selected hotel stays across Europe.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Economy Fare Sale – Fares From $769",
+            description: "Fly internationally with Economy fares starting from just $769.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Student Offer – SAVE UP TO 10%",
+            description: "Students receive UP TO 10% OFF Economy Class fares.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Etihad",
+              url: "https://www.etihad.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Early Bird Sale – SAVE UP TO 15%",
+            description: "Book early and save UP TO 15% on selected flights.",
+            url: "https://www.couponsbit.us/stores/etihad-discount-code",
             seller: {
               "@type": "Organization",
               name: "Etihad",
@@ -158,6 +242,61 @@ const etihadSchema = {
           position: 3,
           name: "Etihad Coupons",
           item: "https://www.couponsbit.us/stores/etihad-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/etihad-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Etihad Airways?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Etihad Airways is the national airline of the United Arab Emirates, headquartered in Abu Dhabi, offering international flights to destinations across six continents.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Etihad Airways fly internationally?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Etihad operates an extensive international network connecting destinations across Europe, Asia, Africa, Australia, North America, and the Middle East.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I buy extra baggage online?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Etihad allows passengers to purchase additional baggage online before departure, often at lower rates than airport prices.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find an Etihad Airways discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Etihad Airways discount code, Etihad Airways voucher, Etihad Airways promo code, and Etihad Airways coupon code on CouponsBit before booking your flight.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Etihad Airways have a loyalty program?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Travelers can join Etihad Guest to earn and redeem miles on flights and partner services.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps travelers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted travel brands.",
+          },
         },
       ],
     },

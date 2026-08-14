@@ -87,15 +87,144 @@ const discountTireSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Discount Tire Coupon Code",
-            description:
-              "Latest Discount Tire coupon code and discount offers.",
+            name: "Discount Tire – Combined Instant Savings up to $130 on Select Tires",
+            description: "Save up to $130 with limited-time instant savings on select tire brands.",
             url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Save $80 on Select Sets of 4 Tires",
+            description: "Get $80 OFF on select sets of four tires.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Save $50 at Checkout on $599+ Purchases",
+            description: "Save $50 instantly at checkout on purchases of $599 or more.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Mickey Thompson Tires | Save $80 Instantly",
+            description: "Save $80 instantly on select Mickey Thompson tires.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Yokohama YK-GTX Tires from $129",
+            description: "Shop Yokohama YK-GTX all-season tires starting from $129.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Bridgestone Dueler LX Tires from $197",
+            description: "Buy Bridgestone Dueler LX tires starting from $197.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Continental CrossContact LX20 Tire Deal",
+            description: "Shop Continental CrossContact LX20 touring tires at special prices.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Milestar Interceptor AS810 Tires from $95",
+            description: "Buy Milestar Interceptor AS810 tires starting from $95.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Peerless Tire Chains from $70",
+            description: "Shop Peerless Tire Chains starting at just $70.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Discount Tire",
+              url: "https://www.discounttire.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 10,
+          item: {
+            "@type": "Offer",
+            name: "Discount Tire – Choose $50 Instant Savings or Promotional Financing",
+            description: "Enjoy $50 instant savings or choose flexible promotional financing.",
+            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
             seller: {
               "@type": "Organization",
               name: "Discount Tire",
@@ -158,6 +287,61 @@ const discountTireSchema = {
           position: 3,
           name: "Discount Tire Coupons",
           item: "https://www.couponsbit.us/stores/discounttire-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/discounttire-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What does Discount Tire sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Discount Tire offers tires, aftermarket wheels, tire and wheel packages, and a variety of tire maintenance services for passenger vehicles, SUVs, trucks, and other vehicles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Discount Tire repair flat tires?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Discount Tire provides flat tire repair for safely repairable punctures following industry guidelines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Discount Tire offer free tire services?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many locations offer complimentary services such as tire pressure checks, tire inspections, flat tire repairs for eligible tires, and tire rotations or balancing under qualifying conditions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Discount Tire price match?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Discount Tire offers a Low Price Promise and may match or beat qualifying competitor pricing that meets its policy requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a Discount Tire discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can browse the latest Discount Tire discount code, Discount Tire promo code, and Discount Tire coupon code on CouponsBit before completing your purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is free to use and helps shoppers discover verified coupons, promo codes, and deals from hundreds of leading brands.",
+          },
         },
       ],
     },

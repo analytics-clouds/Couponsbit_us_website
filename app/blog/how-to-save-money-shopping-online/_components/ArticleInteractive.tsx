@@ -114,7 +114,7 @@ export default function ArticleInteractive() {
 
                 <div className="rounded-2xl overflow-hidden w-full h-[220px] md:h-[420px]">
                   <img
-                    src="https://res.cloudinary.com/couponsbit/image/upload/v1783077516/how-to-save-money-shopping-online_h5gv1z.webp"
+                    src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1783077516/how-to-save-money-shopping-online_h5gv1z.webp"
                     alt="How to save money while shopping online in 2026"
                     width={800}
                     height={420}

@@ -81,23 +81,136 @@ const driffleSchema = {
       description:
         "Latest verified Driffle coupon codes, promo codes and discount codes for game keys, software and subscriptions.",
       url: "https://www.couponsbit.us/stores/driffle-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 9,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Driffle Coupon Code",
-            description:
-              "Latest Driffle coupon code for game keys, software and subscription discounts.",
+            name: "UP TO 94% OFF – Neverwinter Nights Enhanced Edition",
+            description: "Grab exciting savings on selected PC games & digital keys.",
             url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-              { "@type": "Country", name: "Pakistan" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 95% OFF – XCOM 2",
+            description: "Enjoy huge discounts on top-rated strategy games.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 81% OFF – EA SPORTS FC 26",
+            description: "Score massive savings on the latest football gaming experience.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 57% OFF – Roblox 1000 Robux Gift Card",
+            description: "Unlock exciting Roblox rewards at discounted prices.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 37% OFF – Forza Horizon 6",
+            description: "Experience high-speed racing with exclusive savings.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 32% OFF – Enshrouded",
+            description: "Explore fantasy survival gaming at a special price.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 61% OFF – Monster Hunter Wilds",
+            description: "Hunt powerful creatures with exciting gaming discounts.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 55% OFF – Ghost of Tsushima Director's Cut",
+            description: "Experience cinematic samurai action for less.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Driffle",
+              url: "https://www.driffle.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 14% OFF – PUBG Mobile UC Pack",
+            description: "Boost your PUBG Mobile experience with bonus UC rewards.",
+            url: "https://www.couponsbit.us/stores/driffle-discount-code",
             seller: {
               "@type": "Organization",
               name: "Driffle",
@@ -160,6 +273,61 @@ const driffleSchema = {
           position: 3,
           name: "Driffle Coupons",
           item: "https://www.couponsbit.us/stores/driffle-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/driffle-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Driffle offer coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Driffle occasionally provides promo codes, discounts, and special offers on gaming products and digital content.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Driffle promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Driffle coupon codes and gaming deals directly on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products does Driffle sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Driffle offers video game keys, gift cards, gaming subscriptions, software licenses, downloadable content, and in-game currencies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I buy products for multiple gaming platforms?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Driffle supports a variety of gaming ecosystems, including PC and major console platforms.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are Driffle products delivered digitally?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many products available through Driffle are delivered digitally, allowing for convenient access after purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers.",
+          },
         },
       ],
     },

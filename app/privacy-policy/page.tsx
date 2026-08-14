@@ -4,7 +4,7 @@ import PrivacyPolicyContent from "./_components/PrivacyPolicyContent";
 export const metadata: Metadata = {
   title: "Couponsbit Privacy Policy | Best Coupon Website You Trust",
   description:
-    "Read the Coupons Clouds Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
+    "Read the Couponsbit Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
   
   alternates: {
     canonical: "https://www.couponsbit.us/privacy-policy",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/privacy-policy",
     title: "Couponsbit Privacy Policy | Best Coupon Website You Trust",
     description:
-      "Read the Coupons Clouds Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
+      "Read the Couponsbit Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Couponsbit Privacy Policy | Best Coupon Website You Trust",
     description:
-      "Read the Coupons Clouds Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
+      "Read the Couponsbit Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
     images: ["https://www.couponsbit.us/og-image.png"], // ✅ Same OG image works here
     site: "@couponsbit", // ✅ Replace with your actual Twitter handle if you have one
   },
@@ -64,7 +64,7 @@ const privacyPolicySchema = {
       url: "https://www.couponsbit.us/privacy-policy",
       name: "Couponsbit Privacy Policy | Best Coupon Website You Trust",
       description:
-        "Read the Coupons Clouds Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
+        "Read the Couponsbit Privacy Policy for details on data collection, usage, and protection. One of the best coupon websites for trusted deals.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

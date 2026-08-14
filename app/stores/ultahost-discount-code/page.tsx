@@ -80,22 +80,121 @@ const ultahostSchema = {
       description:
         "Latest verified UltaHost coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 8,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "UltaHost Coupon Code",
-            description:
-              "Latest UltaHost coupon code and discount offers.",
+            name: "Game Hosting – SAVE UP TO 62%",
+            description: "Host your favorite games from only $2.00/month (Regular Price $5.30/month).",
             url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Windows Hosting – SAVE 45%",
+            description: "Get Windows Hosting from just $13.99/month (Regular Price $25.50/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Flash Sale – All Hosting Services",
+            description: "Get UP TO 40% OFF on UltaHost hosting plans starting from just $3.29/month.",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Power Plus VPS Hosting – SAVE 40%",
+            description: "Get the Power Plus VPS plan for only $32.80/month (Regular Price $54.80/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "VPS Basic Hosting – SAVE 40%",
+            description: "Start with VPS Basic for just $4.80/month (Regular Price $7.99/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Ulta-X1 Dedicated Server – SAVE 20%",
+            description: "Get the Ulta-X1 Dedicated Server for only $74.80/month (Regular Price $93.50/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Shared Starter Hosting – SAVE 40%",
+            description: "Launch your website for only $3.80/month (Regular Price $5.99/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "UltaHost",
+              url: "https://ultahost.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Mac Hosting – SAVE 40%",
+            description: "Get premium Mac Hosting from just $16.50/month (Regular Price $27.50/month).",
+            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
             seller: {
               "@type": "Organization",
               name: "UltaHost",
@@ -158,6 +257,61 @@ const ultahostSchema = {
           position: 3,
           name: "UltaHost Coupons",
           item: "https://www.couponsbit.us/stores/ultahost-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/ultahost-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is UltaHost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UltaHost is an international web hosting provider offering shared hosting, WordPress hosting, VPS hosting, dedicated servers, cloud hosting, reseller hosting, domain registration, and professional email hosting.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is UltaHost suitable for WordPress websites?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. UltaHost provides optimized WordPress hosting with enhanced speed, one-click installation, automatic updates, and features designed specifically for WordPress users.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does UltaHost provide VPS hosting?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Customers can choose from both managed and unmanaged VPS hosting plans with scalable resources, root access on eligible plans, and flexible server configurations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find the latest UltaHost coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can discover updated UltaHost coupon codes, UltaHost promo codes, and exclusive hosting discounts on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does UltaHost include website security?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many hosting plans include free SSL certificates, malware scanning, automated backups, firewall protection, and DDoS mitigation to help keep websites secure.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and helps users find verified coupon codes, promotional offers, and discounts from trusted brands worldwide.",
+          },
         },
       ],
     },

@@ -334,7 +334,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">14%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">14%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -375,7 +375,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">52%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">52%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -416,7 +416,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -457,7 +457,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">33%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">33%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -498,7 +498,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">33%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">33%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -539,7 +539,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$78.91</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$78.91</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -580,7 +580,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.99</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.99</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -621,7 +621,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.24</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.24</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -662,7 +662,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,556</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,556</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -703,7 +703,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$149.99</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$149.99</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -744,7 +744,7 @@ export default function AmazonCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$29.99</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$29.99</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -1048,7 +1048,7 @@ export default function AmazonCouponsContent() {
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101964/Electronics_Smart_Devices_jlxq1l.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101964/Electronics_Smart_Devices_jlxq1l.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1157,7 +1157,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Home_Kitchen_Furniture_dtmedf.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101966/Home_Kitchen_Furniture_dtmedf.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1268,7 +1268,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101962/Fashion_for_Every_Style_vdjnqi.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101962/Fashion_for_Every_Style_vdjnqi.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1393,7 +1393,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1507,7 +1507,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Grocery_Everyday_Essentials_kfioid.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101966/Grocery_Everyday_Essentials_kfioid.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1623,7 +1623,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101963/Office_School_Business_Essentials_spmkuj.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1753,7 +1753,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101965/Toys_Games_Collectibles_dfyp9y.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101965/Toys_Games_Collectibles_dfyp9y.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1870,7 +1870,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -1991,7 +1991,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Pet_Supplies_ucyl0r.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101966/Pet_Supplies_ucyl0r.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -2101,7 +2101,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101969/Baby_Products_zmjhvm.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101969/Baby_Products_zmjhvm.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -2209,7 +2209,7 @@ Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery 
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -2317,7 +2317,7 @@ Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery 
       className="block w-full group overflow-hidden"
     >
       <img
-        src="https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png"
+        src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1786101963/Office_School_Business_Essentials_spmkuj.png"
         alt="Amazon Smart Electronics and Devices"
         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
       />

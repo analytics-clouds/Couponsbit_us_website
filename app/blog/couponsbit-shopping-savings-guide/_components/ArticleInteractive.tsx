@@ -112,7 +112,7 @@ export default function ArticleInteractive() {
 
                 <div className="rounded-2xl overflow-hidden w-full h-[220px] md:h-[420px]">
                   <img
-                    src="https://res.cloudinary.com/couponsbit/image/upload/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp"
+                    src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp"
                     alt="Smarter shopping with CouponsBit"
                     width={800}
                     height={420}

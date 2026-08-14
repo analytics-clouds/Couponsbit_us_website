@@ -334,7 +334,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -376,7 +376,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FREE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">eGift Card</p>
         </div>
       </div>
@@ -460,7 +460,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -502,7 +502,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$12.74</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$12.74</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -544,7 +544,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FREE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">eGift Card</p>
         </div>
       </div>
@@ -586,7 +586,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -628,7 +628,7 @@ export default function ChewyCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$40.98</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$40.98</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>

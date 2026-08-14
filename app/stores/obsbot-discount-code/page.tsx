@@ -77,23 +77,108 @@ const obsbotSchema = {
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#offerlist",
       name: "Obsbot Coupon Codes & Promo Codes",
       description:
-        "Latest verified Obsbot coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Obsbot Coupon Code",
-            description:
-              "Latest Obsbot coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "OBSBOT Tail Air 4K NDI Streaming Camera – From $499",
+            description: "Take your live streams and productions to the next level with the OBSBOT Tail Air.",
             url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Insta360 Link 2 4K Webcam – From $199.99",
+            description: "Upgrade your meetings and streams with the Insta360 Link 2 PTZ 4K Webcam.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "OBSBOT Tiny 2 Lite 4K Webcam – From $129",
+            description: "Get premium webcam features at an affordable price with the OBSBOT Tiny 2 Lite.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "OBSBOT Tiny 2 4K AI Webcam – From $299",
+            description: "Experience professional-grade video with the OBSBOT Tiny 2 4K Webcam.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "OBSBOT Tiny SE 1080P AI Webcam – From $75.05",
+            description: "Upgrade your setup without breaking the budget with the OBSBOT Tiny SE.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "OBSBOT VOX SE Wireless Streaming Microphone – From $59",
+            description: "Enhance your audio quality with the OBSBOT VOX SE Wireless Microphone.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Obsbot",
+              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "OBSBOT Tiny 2 Remote Control – From $49",
+            description: "Take full control of your OBSBOT camera with the Tiny 2 Smart Remote Control.",
+            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
             seller: {
               "@type": "Organization",
               name: "Obsbot",
@@ -156,6 +241,53 @@ const obsbotSchema = {
           position: 3,
           name: "Obsbot Coupons",
           item: "https://www.couponsbit.us/stores/obsbot-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is OBSBOT?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "OBSBOT is an AI camera company that develops intelligent webcams, tracking cameras, and video production tools for creators, businesses, and professionals.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is OBSBOT best known for?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The brand is best known for its AI-powered tracking webcams and smart camera technology that automatically follows users during recording and streaming.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are OBSBOT cameras suitable for streaming?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many OBSBOT products are designed specifically for livestreaming, content creation, video conferencing, and online presentations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find OBSBOT coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest OBSBOT coupon codes, promo offers, and camera discounts on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps shoppers discover savings from popular brands across multiple categories.",
+          },
         },
       ],
     },

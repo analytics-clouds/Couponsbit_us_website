@@ -32,7 +32,11 @@ import { allStores } from "@/lib/stores-data";
 export default function StoresPageContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All Stores (2000+)");
-  const [showAllLimit, setShowAllLimit] = useState(24);
+  // Render the full catalog in the initial server-rendered HTML so every
+  // store page has a real, crawlable <a href> path from /stores — the
+  // previous 24-item cap + JS-only "Show More" button (no href fallback)
+  // left ~48 store pages reachable only via the sitemap.
+  const [showAllLimit, setShowAllLimit] = useState(allStores.length);
 
   const tabs = [
     "All Stores (2000+)",

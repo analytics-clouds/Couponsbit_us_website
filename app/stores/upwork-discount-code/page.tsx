@@ -80,22 +80,106 @@ const upworkSchema = {
       description:
         "Latest verified Upwork coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/upwork-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Upwork Coupon Code",
-            description:
-              "Latest Upwork coupon code and discount offers.",
+            name: "Upwork – Plus Plan, Unlock Premium Freelancing For $19.99/Month",
+            description: "Upgrade to Upwork Plus for enhanced freelancer benefits, starting at $19.99/month.",
             url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Starter Plan, Begin Your Freelance Journey From $15",
+            description: "Affordable plan designed for new freelancers, starting from just $15.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Basic Plan, Start Freelancing For Free",
+            description: "Create a free Upwork account in minutes and connect with clients worldwide.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Freelancer Plus, Get 100 Monthly Connects",
+            description: "Receive 100 Connects every month to apply to more freelance jobs without limits.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Business Plus, Premium Hiring Solution",
+            description: "Enjoy exclusive savings on the Business Plus subscription for confident, priority hiring.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Free Basic Membership, Join At No Cost",
+            description: "Sign up with a completely free Basic membership and start hiring or freelancing today.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Upwork",
+              url: "https://www.upwork.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Upwork – Marketplace, Find Top Freelance Talent",
+            description: "Explore expert freelancers across hundreds of skill categories on the Upwork Marketplace.",
+            url: "https://www.couponsbit.us/stores/upwork-discount-code",
             seller: {
               "@type": "Organization",
               name: "Upwork",
@@ -158,6 +242,61 @@ const upworkSchema = {
           position: 3,
           name: "Upwork Coupons",
           item: "https://www.couponsbit.us/stores/upwork-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/upwork-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Upwork?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Upwork is a global freelance marketplace where businesses can hire professionals for projects such as software development, writing, design, marketing, customer support, accounting, and more.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who can use Upwork?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Both businesses and freelancers can use Upwork. Clients hire professionals for projects, while freelancers use the platform to find work and grow their careers.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What services are available on Upwork?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Upwork offers services across software development, design, writing, digital marketing, AI, finance, legal support, customer service, virtual assistance, engineering, and many other professional categories.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find an Upwork discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Upwork discount code, Upwork voucher, Upwork promo code, and Upwork coupon code on CouponsBit before purchasing eligible services or memberships.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Upwork offer secure payments?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Upwork provides secure payment processing, milestone payments for fixed-price projects, hourly payment protection, and contract management tools.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps users discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands.",
+          },
         },
       ],
     },

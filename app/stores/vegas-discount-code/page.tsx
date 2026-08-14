@@ -80,22 +80,91 @@ const vegasSchema = {
       description:
         "Latest verified Vegas.com coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/vegas-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 6,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Vegas.com Coupon Code",
-            description:
-              "Latest Vegas.com coupon code and discount offers.",
+            name: "Flamingo Las Vegas Hotel – SAVE UP TO 35%",
+            description: "Book your stay at Flamingo Las Vegas from just $49 per night (Approx. $118 Total).",
             url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Vegas.com",
+              url: "https://www.vegas.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Cirque du Soleil Tickets – SAVE UP TO 30%",
+            description: "Book Cirque du Soleil tickets from just $162 (Regular Price $232).",
+            url: "https://www.couponsbit.us/stores/vegas-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vegas.com",
+              url: "https://www.vegas.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Grand Canyon West Rim Bus Tour – SAVE 9%",
+            description: "Book the Grand Canyon West Rim & Hoover Dam Bus Tour from just $146 (Regular Price $160).",
+            url: "https://www.couponsbit.us/stores/vegas-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vegas.com",
+              url: "https://www.vegas.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Michael Jackson ONE by Cirque du Soleil – SAVE UP TO 19%",
+            description: "Get Michael Jackson ONE tickets from only $126 (Regular Price $156).",
+            url: "https://www.couponsbit.us/stores/vegas-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vegas.com",
+              url: "https://www.vegas.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Paris Las Vegas Hotel – SAVE 17%",
+            description: "Stay at Paris Las Vegas from just $40 per night (Approx. $190 Total).",
+            url: "https://www.couponsbit.us/stores/vegas-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vegas.com",
+              url: "https://www.vegas.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Titanic: The Artifact Exhibition – SAVE 18%",
+            description: "Get Titanic: The Artifact Exhibition tickets from just $36 (Regular Price $44).",
+            url: "https://www.couponsbit.us/stores/vegas-discount-code",
             seller: {
               "@type": "Organization",
               name: "Vegas.com",
@@ -158,6 +227,61 @@ const vegasSchema = {
           position: 3,
           name: "Vegas.com Coupons",
           item: "https://www.couponsbit.us/stores/vegas-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/vegas-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is vegas?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "vegas is a Las Vegas-focused online travel platform that allows users to book hotels, vacation packages, show tickets, tours, attractions, dining experiences, and entertainment.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I book Las Vegas hotels through vegas?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. vegas offers reservations for a wide range of hotels and resorts located both on and off the Las Vegas Strip.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does vegas sell show tickets?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. You can purchase tickets for concerts, comedy shows, magic performances, theatrical productions, and many other Las Vegas entertainment experiences.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a vegas discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest vegas discount code, voucher, promo code, and coupon code offers on CouponsBit before completing your booking.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does vegas offer vacation packages?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. The platform allows travelers to book vacation packages that may include hotels, flights, attractions, and entertainment.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps users discover verified discount codes, vouchers, promo codes, and coupon codes from trusted travel and lifestyle brands.",
+          },
         },
       ],
     },

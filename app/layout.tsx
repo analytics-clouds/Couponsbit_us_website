@@ -14,8 +14,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.couponsbit.us"),
   title: {
-    default: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
-    template: "%s | Coupons Clouds",
+    default: "Couponsbit — India's #1 Verified Coupon & Deal Platform",
+    template: "%s | Couponsbit",
   },
   description:
     "Find verified coupons, promo codes and deals for 2000+ top stores in India. Save money on fashion, electronics, travel, food & more. Updated daily.",
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     "online shopping deals",
     "cashback offers",
   ],
-  authors: [{ name: "Coupons Clouds" }],
-  creator: "Coupons Clouds",
-  publisher: "Coupons Clouds",
+  authors: [{ name: "Couponsbit" }],
+  creator: "Couponsbit",
+  publisher: "Couponsbit",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://www.couponsbit.us",
-    siteName: "Coupons Clouds",
-    title: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
+    siteName: "Couponsbit",
+    title: "Couponsbit — India's #1 Verified Coupon & Deal Platform",
     description:
       "Find verified coupons, promo codes and deals for 2000+ top stores in India. Save money on fashion, electronics, travel, food & more.",
     images: [
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Coupons Clouds — India's #1 Coupon Platform",
+        alt: "Couponsbit — India's #1 Coupon Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coupons Clouds — India's #1 Verified Coupon & Deal Platform",
+    title: "Couponsbit — India's #1 Verified Coupon & Deal Platform",
     description:
       "Find verified coupons, promo codes and deals for 2000+ top stores in India.",
     images: ["/og-image.jpg"],

@@ -274,18 +274,18 @@ export default function HomePageContent() {
   const [cardsToShow, setCardsToShow] = useState(4);
   const affiliateUrl = "https://www.amazon.com?&linkCode=ll2&tag=analytics0922-20&linkId=9a29e2639a93ee0a01cbc9eb8d14bdf1&language=en_US&ref_=as_li_ss_tl";
   const categories = [
-    { title: "Electronics & Smart Devices", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101964/Electronics_Smart_Devices_jlxq1l.png" },
-    { title: "Home, Kitchen & Furniture", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Home_Kitchen_Furniture_dtmedf.png" },
-    { title: "Fashion for Every Style", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101962/Fashion_for_Every_Style_vdjnqi.png" },
-    { title: "Beauty, Skincare & Personal Care", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png" },
-    { title: "Grocery & Everyday Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Grocery_Everyday_Essentials_kfioid.png" },
-    { title: "Books, Movies & Digital Entertainment", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
-    { title: "Toys, Games & Collectibles", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101965/Toys_Games_Collectibles_dfyp9y.png" },
-    { title: "Sports, Fitness & Outdoor Gear", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png" },
-    { title: "Pet Supplies", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101966/Pet_Supplies_ucyl0r.png" },
-    { title: "Baby Products", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101969/Baby_Products_zmjhvm.png" },
-    { title: "Automotive & Tools", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png" },
-    { title: "Office, School & Business Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
+    { title: "Electronics & Smart Devices", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101964/Electronics_Smart_Devices_jlxq1l.png" },
+    { title: "Home, Kitchen & Furniture", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101966/Home_Kitchen_Furniture_dtmedf.png" },
+    { title: "Fashion for Every Style", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101962/Fashion_for_Every_Style_vdjnqi.png" },
+    { title: "Beauty, Skincare & Personal Care", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101967/Beauty_Skincare_Personal_Care_dfffkw.png" },
+    { title: "Grocery & Everyday Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101966/Grocery_Everyday_Essentials_kfioid.png" },
+    { title: "Books, Movies & Digital Entertainment", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
+    { title: "Toys, Games & Collectibles", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101965/Toys_Games_Collectibles_dfyp9y.png" },
+    { title: "Sports, Fitness & Outdoor Gear", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101967/Sports_Fitness_Outdoor_Gear_aztv9j.png" },
+    { title: "Pet Supplies", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101966/Pet_Supplies_ucyl0r.png" },
+    { title: "Baby Products", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101969/Baby_Products_zmjhvm.png" },
+    { title: "Automotive & Tools", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786103286/e27e72e8-33bf-4110-8ee1-cbeffec39fd2_hexm03.png" },
+    { title: "Office, School & Business Essentials", image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_800,c_limit/v1786101963/Office_School_Business_Essentials_spmkuj.png" },
   ];
   const maxIndex = Math.max(0, categories.length - cardsToShow);
 
@@ -391,9 +391,9 @@ export default function HomePageContent() {
             </div>
 
             <div className="text-center sm:text-left">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-none">
+              <div className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-none">
                 {stat.val}
-              </h3>
+              </div>
 
               <p className="text-xs md:text-sm text-gray-500 mt-1">
                 {stat.label}

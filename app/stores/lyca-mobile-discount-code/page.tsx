@@ -77,16 +77,165 @@ const lycaSchema = {
       description:
         "Latest verified Lyca Mobile coupon codes, promo codes and discount codes for recharge, SIM plans and international calling.",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 11,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Lyca Mobile Coupon Code",
-            description:
-              "Latest Lyca Mobile coupon code for recharge and SIM plan discounts.",
+            name: "Summer Starts Now – Affordable Prepaid Plans",
+            description: "Enjoy high-speed data, unlimited talk & text with no contracts or credit checks.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "UP TO 60% OFF – Selected Lyca Mobile Plans",
+            description: "Grab exciting savings on selected prepaid mobile plans.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Better Signal Summer Offer – 18GB Plan",
+            description: "Stay connected with high-speed data and hotspot benefits.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Best Prepaid Phone Plans – Unlimited Plus",
+            description: "Get unlimited data and international calling at affordable prices.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "More Months. More Savings",
+            description: "Save more when you choose long-term prepaid plans.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Stream Share Repeat – Unlimited Data Offer",
+            description: "Perfect prepaid plan for streaming, browsing & sharing.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Best-Selling $33 High Data Plan",
+            description: "Enjoy fast 5G data with hotspot access at discounted pricing.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Unlimited Plus Plan – Promo Offer",
+            description: "Get unlimited data access with international calling benefits.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Refer A Friend – Earn Up To $38",
+            description: "Invite friends and earn rewards with every successful referral.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 10,
+          item: {
+            "@type": "Offer",
+            name: "SIM-Only Unlimited Pro Plan",
+            description: "Get premium unlimited data with instant activation support.",
+            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Lyca Mobile",
+              url: "https://www.lycamobile.us",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 11,
+          item: {
+            "@type": "Offer",
+            name: "Unlimited International Plan – Starting At $10",
+            description: "Affordable international prepaid plan with 5G data benefits.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
@@ -150,6 +299,61 @@ const lycaSchema = {
           position: 3,
           name: "Lyca Mobile Coupons",
           item: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Lyca Mobile offer coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Lyca Mobile occasionally offers promo codes, discounts, and promotional pricing on prepaid plans and SIM card activations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Lyca Mobile promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Lyca Mobile coupon codes and prepaid wireless deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Lyca Mobile offer international calling?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. International calling is one of Lyca Mobile's most popular features, with plans designed for global communication.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are Lyca Mobile plans prepaid?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Lyca Mobile primarily offers prepaid wireless plans without long-term contracts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I keep my phone number when switching to Lyca Mobile?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In many cases, customers may be able to transfer or port their existing number, subject to eligibility requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers.",
+          },
         },
       ],
     },

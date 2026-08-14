@@ -80,22 +80,136 @@ const vooglamSchema = {
       description:
         "Latest verified Vooglam coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/vooglam-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 9,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Vooglam Coupon Code",
-            description:
-              "Latest Vooglam coupon code and discount offers.",
+            name: "Razor Rectangle Black Sunglasses – New In",
+            description: "Shop the new Razor Rectangle Black Sunglasses for only $108.50 (Regular Price $115.00).",
             url: "https://www.couponsbit.us/stores/vooglam-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Charisse Eyeglasses – SAVE 20%",
+            description: "Get the stylish Charisse Eyeglasses for just $36.00 (Regular Price $45.00).",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Ando Aviator Eyeglasses",
+            description: "Buy the Ando Aviator Eyeglasses for just $65.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Loos Geometric Silver Eyeglasses – New In",
+            description: "Get the Loos Geometric Silver Eyeglasses for only $65.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Scarpa Rectangle Silver Eyeglasses – New In",
+            description: "Shop the Scarpa Rectangle Silver Eyeglasses for just $65.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Ando Aviator Silver Sunglasses – New Arrival",
+            description: "Own the Ando Aviator Silver Sunglasses for only $100.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Meridian Square Tortoise Eyeglasses – Nomads Collection",
+            description: "Buy the Meridian Square Tortoise Eyeglasses for just $65.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Color Tint Lab™ – 20 Stylish Lens Tints",
+            description: "Personalize your glasses with 20 unique color tint options.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Vooglam",
+              url: "https://vooglam.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Pierce Eyeglasses – Best Seller",
+            description: "Shop the bestselling Pierce Eyeglasses for just $85.00.",
+            url: "https://www.couponsbit.us/stores/vooglam-discount-code",
             seller: {
               "@type": "Organization",
               name: "Vooglam",
@@ -158,6 +272,61 @@ const vooglamSchema = {
           position: 3,
           name: "Vooglam Coupons",
           item: "https://www.couponsbit.us/stores/vooglam-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/vooglam-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Vooglam?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vooglam is an online eyewear retailer offering fashionable prescription glasses, blue light glasses, sunglasses, and customizable lenses for customers worldwide.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Vooglam sell prescription glasses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Customers can order prescription eyeglasses and customize lenses according to their vision requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I buy blue light glasses from Vooglam?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Vooglam offers a variety of blue light filtering glasses designed for people who spend extended hours using digital devices.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Vooglam offer sunglasses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. The brand offers both standard sunglasses and prescription sunglasses in a wide range of styles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Vooglam coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Vooglam coupon codes, promo codes, and exclusive eyewear deals on CouponsBit before placing your order.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and helps shoppers discover verified coupon codes and promotional offers from trusted online brands.",
+          },
         },
       ],
     },

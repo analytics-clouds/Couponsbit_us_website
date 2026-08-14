@@ -361,7 +361,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$499</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$499</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -402,7 +402,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$199.99</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$199.99</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -443,7 +443,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$129</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$129</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -484,7 +484,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$299</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$299</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -525,7 +525,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$75.05</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$75.05</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -566,7 +566,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$59</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$59</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -607,7 +607,7 @@ export default function ObsbotCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$49</h2>
+          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$49</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>

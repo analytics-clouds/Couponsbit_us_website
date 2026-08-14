@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     authors: ["Couponsbit"],
     images: [
       {
-        url: "https://res.cloudinary.com/couponsbit/image/upload/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp",
         width: 1200,
         height: 630,
         alt: "CouponsBit Shopping Savings Guide | Save More Online",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "CouponsBit Shopping Savings Guide | Save More Online",
     description:
       "Discover how CouponsBit helps shoppers find coupon codes, promo codes and online deals to save money on travel, fashion, software and more.",
-    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp"],
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp"],
     site: "@couponsbit",
   },
 
@@ -55,6 +55,72 @@ export const metadata: Metadata = {
   },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide#article",
+      headline: "CouponsBit Shopping Savings Guide",
+      description:
+        "Discover how CouponsBit helps shoppers find coupon codes, promo codes and online deals to save money on travel, fashion, software and more.",
+      url: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
+      inLanguage: "en-US",
+      datePublished: "2026-06-23T00:00:00.000Z",
+      dateModified: "2026-06-23T00:00:00.000Z",
+      author: {
+        "@type": "Organization",
+        name: "Couponsbit",
+        url: "https://www.couponsbit.us",
+      },
+      publisher: {
+        "@id": "https://www.couponsbit.us/#organization",
+      },
+      image: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp",
+        width: 1200,
+        height: 630,
+      },
+      mainEntityOfPage: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide#breadcrumb",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.couponsbit.us" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.couponsbit.us/blog" },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "CouponsBit Shopping Savings Guide",
+          item: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
+        },
+      ],
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/#organization",
+      name: "Couponsbit",
+      url: "https://www.couponsbit.us",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp",
+        width: 200,
+        height: 60,
+      },
+    },
+  ],
+};
+
 export default function CouponsBitShoppingSavingsGuidePage() {
-  return <ArticleInteractive />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <ArticleInteractive />
+    </>
+  );
 }

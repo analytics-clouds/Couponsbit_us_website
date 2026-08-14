@@ -84,9 +84,68 @@ const ringconnSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "RingConn Coupon Code",
-            description:
-              "Latest RingConn coupon code for smart ring and accessory discounts.",
+            name: "RingConn Gen 2 Smart Ring – Starting From $299 USD",
+            description: "Get the RingConn Gen 2 Smart Ring for just $299 USD.",
+            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "RingConn",
+              url: "https://ringconn.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "RingConn Gen 3 Smart Ring – Starting From $349 USD",
+            description: "Buy the all-new RingConn Gen 3 Smart Ring for only $349 USD.",
+            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "RingConn",
+              url: "https://ringconn.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "RingConn Gen 2 Air – Starting From $199 USD",
+            description: "Get the lightweight RingConn Gen 2 Air for just $199 USD.",
+            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "RingConn",
+              url: "https://ringconn.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "RingConn Gen 3 Gift Card – $369 USD",
+            description: "Gift the RingConn Gen 3 with a $369 USD gift card.",
+            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "RingConn",
+              url: "https://ringconn.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "RingConn Charging Dock – Only $39.90 USD",
+            description: "Buy the RingConn Charging Dock for just $39.90 USD.",
             url: "https://www.couponsbit.us/stores/ringconn-discount-code",
             seller: {
               "@type": "Organization",
@@ -150,6 +209,61 @@ const ringconnSchema = {
           position: 3,
           name: "RingConn Coupons",
           item: "https://www.couponsbit.us/stores/ringconn-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/ringconn-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is RingConn?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "RingConn is a wearable technology brand that develops smart rings capable of tracking sleep, activity, heart rate, stress, blood oxygen, recovery, and other health metrics.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does RingConn require a monthly subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. RingConn allows users to access health tracking features through its app without a recurring subscription fee.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What health metrics does RingConn track?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Depending on the model, RingConn can monitor sleep, heart rate, blood oxygen, stress, daily activity, recovery, sleep apnea indicators, and women's health metrics.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does the battery last?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Battery life varies by model, but many RingConn smart rings can operate for several days on a single charge, with newer models offering up to two weeks under typical use.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find RingConn coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest RingConn coupon codes, RingConn promo codes, and exclusive smart ring deals on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted global brands.",
+          },
         },
       ],
     },

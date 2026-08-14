@@ -421,7 +421,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">71%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">71%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -462,7 +462,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">60%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">60%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -503,7 +503,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">58%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">58%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -544,7 +544,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -585,7 +585,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">PAY OVER</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">24</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">24</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">MONTHS</p>
         </div>
       </div>
@@ -626,7 +626,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.99</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.99</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/MO</p>
         </div>
       </div>
@@ -667,7 +667,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">19%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">19%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -708,7 +708,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">STARTING AT</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$129.99</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$129.99</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -748,7 +748,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">35%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">35%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -789,7 +789,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$30</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$30</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -829,7 +829,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">36%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">36%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -870,7 +870,7 @@ export default function HPCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">25%</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">25%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>

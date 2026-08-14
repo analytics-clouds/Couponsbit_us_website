@@ -4,7 +4,7 @@ import TermsOfUseContent from "./_components/TermsOfUseContent";
 export const metadata: Metadata = {
   title: "Couponsbit Terms & Conditions | Best Coupon Site Online",
   description:
-    "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
+    "Read Couponsbit Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/terms-of-use",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/terms-of-use",
     title: "Couponsbit Terms & Conditions | Best Coupon Site Online",
     description:
-      "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
+      "Read Couponsbit Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Couponsbit Terms & Conditions | Best Coupon Site Online",
     description:
-      "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
+      "Read Couponsbit Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
     images: ["https://www.couponsbit.us/og-image.png"],
     site: "@couponsbit",
   },
@@ -64,7 +64,7 @@ const termsOfUseSchema = {
       url: "https://www.couponsbit.us/terms-of-use",
       name: "Couponsbit Terms & Conditions | Best Coupon Site Online",
       description:
-        "Read Coupons Clouds Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
+        "Read Couponsbit Terms and Conditions before using our platform. As the best coupon site online, we provide verified deals, promo codes, and user guidelines.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

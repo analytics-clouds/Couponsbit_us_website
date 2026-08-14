@@ -326,7 +326,7 @@ export default function AvisCouponsContent() {
                         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                         <div className="text-center px-1">
                           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Join For</p>
-                          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$19</h2>
+                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$19</div>
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -366,7 +366,7 @@ export default function AvisCouponsContent() {
                         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                         <div className="text-center px-1">
                           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-                          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</h2>
+                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
                           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
                         </div>
                       </div>
@@ -407,7 +407,7 @@ export default function AvisCouponsContent() {
                         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                         <div className="text-center px-1">
                           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-                          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$99</h2>
+                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$99</div>
                           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/yr</p>
                         </div>
                       </div>
@@ -448,7 +448,7 @@ export default function AvisCouponsContent() {
                         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                         <div className="text-center px-1">
                           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-                          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</h2>
+                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
                           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
                         </div>
                       </div>

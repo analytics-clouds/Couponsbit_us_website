@@ -77,23 +77,63 @@ const kiwiSchema = {
       "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#offerlist",
       name: "Kiwi Coupon Codes & Promo Codes",
       description:
-        "Latest verified Kiwi coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for August 2026.",
       url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 4,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Kiwi Coupon Code",
-            description:
-              "Latest Kiwi coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "Kiwi.com Club Membership – Unlock Travel Rewards Worth Up to $580",
+            description: "Join the Kiwi.com Club for FREE and enjoy exclusive travel benefits and member-only flight fares.",
             url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Kiwi",
+              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Chicago to Los Angeles Flight Deal – Fares Starting at $320",
+            description: "Fly from Chicago to Los Angeles with fares starting at $320 — great for business trips and weekend vacations.",
+            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Kiwi",
+              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Vancouver to Los Angeles Flight Deal – Fares Starting at $102",
+            description: "Travel from Vancouver, Canada to Los Angeles, USA from just $102 on this budget-friendly international fare.",
+            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Kiwi",
+              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Portland to Los Angeles Flight Deal – Fares Starting at $64",
+            description: "Fly from Portland to Los Angeles starting at only $64 — one of the best-value domestic flight deals available.",
+            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
             seller: {
               "@type": "Organization",
               name: "Kiwi",
@@ -156,6 +196,61 @@ const kiwiSchema = {
           position: 3,
           name: "Kiwi Coupons",
           item: "https://www.couponsbit.us/stores/kiwi-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Kiwi.com?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kiwi.com is an online travel booking platform that helps travelers compare and book flights while using advanced technology to create unique flight combinations across hundreds of airlines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the Kiwi.com Guarantee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Kiwi.com Guarantee is an optional service that provides benefits such as disruption protection, automatic check-in, real-time travel updates, and customer support for eligible bookings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Kiwi.com support multi-city trips?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Kiwi.com's Nomad feature helps travelers build cost-effective multi-city itineraries automatically.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Kiwi.com promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Kiwi.com promo codes, coupon codes, and travel deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I book international flights through Kiwi.com?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Kiwi.com offers domestic and international flight options across hundreds of airlines and destinations worldwide.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps travelers discover verified coupon codes, promo offers, and travel discounts from trusted brands.",
+          },
         },
       ],
     },

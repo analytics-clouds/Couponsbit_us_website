@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import StoresPageContent from "./_components/StoresPageContent";
+import { allStores } from "@/lib/stores-data";
 
 export const metadata: Metadata = {
   title: "Coupon Codes for All Stores – Verified Promo Codes 2026",
@@ -79,101 +80,17 @@ const storesPageSchema = {
       description:
         "A complete directory of 200+ top online stores with verified coupon codes, promo codes and deals.",
       url: "https://www.couponsbit.us/stores",
-      numberOfItems: 200,
+      numberOfItems: allStores.length,
       itemListOrder: "https://schema.org/ItemListUnordered",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "WebPage",
-            name: "StubHub Coupon Codes",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-          },
+      itemListElement: allStores.map((store, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "WebPage",
+          name: `${store.name} Discount Codes`,
+          url: `https://www.couponsbit.us/stores/${store.id}`,
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "WebPage",
-            name: "Viagogo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "WebPage",
-            name: "LATAM Airlines Coupon Codes",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "WebPage",
-            name: "Rayneo Coupon Codes",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "WebPage",
-            name: "Driffle Coupon Codes",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "WebPage",
-            name: "Lyca Mobile Coupon Codes",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "WebPage",
-            name: "Reolink Coupon Codes",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "WebPage",
-            name: "Envato Elements Coupon Codes",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "WebPage",
-            name: "Sintra Coupon Codes",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "WebPage",
-            name: "Bluehost Coupon Codes",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-          },
-        },
-        // ← add remaining stores here following same pattern
-      ],
+      })),
     },
 
     {

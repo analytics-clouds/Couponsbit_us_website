@@ -87,15 +87,144 @@ const dreameSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Dreame Coupon Code",
-            description:
-              "Latest Dreame coupon code and discount offers.",
+            name: "Dreametech – AirStyle Pro Hair Styler At 45% OFF",
+            description: "Get salon-perfect hair styling at home with the AirStyle Pro, now just $219.99 (save $180).",
             url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – T3 Professional Grooming Trimmer At 31% OFF",
+            description: "Precision T-Blade delivers sharp lines and clean fades with the T3 Trimmer, now 31% OFF.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – R20 TangleX Cordless Stick Vacuum At $159.99",
+            description: "Engineered to cut through hair tangles effortlessly, now just $159.99.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – AirStyle Era 8-in-1 Hair Styler At $309.99",
+            description: "Complete 8-in-1 drying and styling kit for professional hairstyles at home, now $309.99.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – L60 Ultra PE Robot Vacuum At 18% OFF",
+            description: "Powerful 30,000Pa suction for deep cleaning performance, now 18% OFF.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – L60 Pro Ultra Robot Vacuum At 15% OFF",
+            description: "Hot-water mopping helps remove stubborn grease and dirt, now 15% OFF.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – DZ601 Pro Built-In Dishwasher From $1,699",
+            description: "Premium 24-inch built-in stainless steel dishwasher, starting from $1,699.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – X60 Max Ultra Complete Robot Vacuum From $1,699.99",
+            description: "Premium robot vacuum built for complete home cleaning, starting from $1,699.99.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – Chrona LED Light Therapy Mask At 17% OFF",
+            description: "Enjoy professional LED skincare treatments at home — save $50 and get it for $249.99.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Dreame",
+              url: "https://www.dreametech.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 10,
+          item: {
+            "@type": "Offer",
+            name: "Dreametech – Get 10% OFF Your First Order",
+            description: "Sign up and enjoy an instant 10% discount on your first Dreametech purchase.",
+            url: "https://www.couponsbit.us/stores/dreame-discount-code",
             seller: {
               "@type": "Organization",
               name: "Dreame",
@@ -158,6 +287,61 @@ const dreameSchema = {
           position: 3,
           name: "Dreame Coupons",
           item: "https://www.couponsbit.us/stores/dreame-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/dreame-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Dreame Global?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Dreame Global is a smart home appliance brand that develops robot vacuum cleaners, cordless vacuums, wet and dry vacuums, robotic lawn mowers, hair dryers, and related accessories.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products does Dreame sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Dreame offers robot vacuums, cordless vacuum cleaners, wet and dry vacuums, robotic lawn mowers, hair dryers, and replacement accessories.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are Dreame robot vacuums suitable for pet owners?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many Dreame robot vacuums feature powerful suction, smart navigation, and efficient cleaning capabilities that help remove pet hair, dust, and debris from various floor types.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a Dreame Global discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Dreame Global discount code, Dreame Global voucher, Dreame Global promo code, and Dreame Global coupon code on CouponsBit before making your purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Dreame sell replacement accessories?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Dreame offers replacement filters, brushes, mop pads, dust bags, batteries, and other accessories for compatible products.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps shoppers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands.",
+          },
         },
       ],
     },

@@ -553,7 +553,7 @@ export default function AmazonCouponsContent() {
                <div className="prose max-w-none">
                  <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">Amazon Coupon Codes & Offers — Save Up to 60% in 2026</h2>
                  <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                    <p>Looking for the latest <strong>Amazon India coupons</strong>? You've come to the right place. At Coupons Clouds, we track and verify the best deals available on Amazon.in to ensure you never pay full price again. Whether it's electronics, fashion, home essentials, or books, our community of savvy shoppers shares the best working promo codes daily.</p>
+                    <p>Looking for the latest <strong>Amazon India coupons</strong>? You've come to the right place. At Couponsbit, we track and verify the best deals available on Amazon.in to ensure you never pay full price again. Whether it's electronics, fashion, home essentials, or books, our community of savvy shoppers shares the best working promo codes daily.</p>
                     
                     <div className="space-y-4">
                       <h3 className="text-xl font-black text-[#19798d] mb-4">Amazon Great Indian Sale Coupons</h3>
@@ -569,7 +569,7 @@ export default function AmazonCouponsContent() {
                        <h3 className="text-xl font-black text-[#19798d] mb-8">How to Use Amazon Coupon Codes?</h3>
                        <div className="space-y-6">
                          {[
-                           "Visit Coupons Clouds and find the best Amazon coupon code",
+                           "Visit Couponsbit and find the best Amazon coupon code",
                            "Click Show Code to reveal the full coupon code",
                            "Copy the code with one click",
                            "Visit Amazon India and add items to your cart",
@@ -601,10 +601,10 @@ export default function AmazonCouponsContent() {
                  <div className="mt-20 space-y-4">
                    <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                    {[
-                     { q: "Does Amazon give coupon codes?", a: "Yes! Amazon regularly offers coupon codes for electronics, fashion, home and more. Coupons Clouds lists all verified Amazon coupon codes updated daily." },
-                     { q: "How do I apply a coupon on Amazon?", a: "Add items to your cart on Amazon, proceed to checkout, find the coupon or promo code field and paste your code from Coupons Clouds to get instant discount." },
-                     { q: "What is the best Amazon coupon today?", a: "The best Amazon coupon today is AMAZON60 giving up to 60% OFF on top categories. Check Coupons Clouds daily for the latest and highest value Amazon codes." },
-                     { q: "Does Amazon offer cashback?", a: "Yes! Amazon offers cashback through various bank card deals, Amazon Pay offers and wallet cashback. Check Coupons Clouds for all active Amazon cashback offers." }
+                     { q: "Does Amazon give coupon codes?", a: "Yes! Amazon regularly offers coupon codes for electronics, fashion, home and more. Couponsbit lists all verified Amazon coupon codes updated daily." },
+                     { q: "How do I apply a coupon on Amazon?", a: "Add items to your cart on Amazon, proceed to checkout, find the coupon or promo code field and paste your code from Couponsbit to get instant discount." },
+                     { q: "What is the best Amazon coupon today?", a: "The best Amazon coupon today is AMAZON60 giving up to 60% OFF on top categories. Check Couponsbit daily for the latest and highest value Amazon codes." },
+                     { q: "Does Amazon offer cashback?", a: "Yes! Amazon offers cashback through various bank card deals, Amazon Pay offers and wallet cashback. Check Couponsbit for all active Amazon cashback offers." }
                    ].map((faq, i) => (
                      <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                         <button 

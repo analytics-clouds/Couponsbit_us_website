@@ -80,22 +80,136 @@ const spiritHalloweenSchema = {
       description:
         "Latest verified Spirit Halloween coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 9,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Spirit Halloween Coupon Code",
-            description:
-              "Latest Spirit Halloween coupon code and discount offers.",
+            name: "Lil Skelly Bones Collectible Statue – SAVE 75%",
+            description: "Grab the Lil Skelly Bones Collectible Statue for just $9.97 (Regular Price $39.99).",
             url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Killer Cornfield Garage Double Door Cover – SAVE 72%",
+            description: "Get the Killer Cornfield Garage Double Door Cover for only $49.97 (Regular Price $179.99).",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "21-Inch LED Black Jumping Spider Animatronic – SAVE 50%",
+            description: "Buy the 21-Inch LED Black Jumping Spider Animatronic for just $49.99 (Regular Price $99.99).",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Beetlejuice \"My Art Is Dangerous\" Sign – SAVE 66%",
+            description: "Save 66% OFF on officially inspired Halloween décor.",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Trick 'r Treat Lollipop Crossbody Bag – SAVE 60%",
+            description: "Grab the Trick 'r Treat Lollipop Crossbody Bag for just $9.97 (Regular Price $24.99).",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36%",
+            description: "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99).",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "3 Ft Bog Monster Animatronic",
+            description: "Bring home the 3 Ft Bog Monster Animatronic for just $299.99.",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "10 Ft Wolfie Animatronic – SAVE 32%",
+            description: "Own the giant 10 Ft Wolfie Animatronic for only $249.98 (Regular Price $369.99).",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Spirit Halloween",
+              url: "https://www.spirithalloween.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Free Shipping Offer",
+            description: "Enjoy FREE Shipping on all orders over $40.",
+            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
             seller: {
               "@type": "Organization",
               name: "Spirit Halloween",
@@ -158,6 +272,61 @@ const spiritHalloweenSchema = {
           position: 3,
           name: "Spirit Halloween Coupons",
           item: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/spirit-halloween-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Spirit Halloween?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Spirit Halloween is North America's largest seasonal Halloween retailer, offering costumes, decorations, animatronics, party supplies, and accessories through thousands of temporary retail stores and its online shop.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Spirit Halloween offer costumes for every age group?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. You'll find costumes and accessories for babies, children, teens, adults, couples, groups, and pets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I purchase Halloween decorations from Spirit Halloween?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. The store offers indoor and outdoor decorations, animatronics, lighting, haunted house props, inflatables, pumpkins, skeletons, and many other seasonal décor items.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Spirit Halloween sell licensed costumes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Spirit Halloween carries officially licensed costumes inspired by popular films, TV shows, comic books, anime, and video games.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Spirit Halloween coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Visit CouponsBit to discover the latest Spirit Halloween coupon codes, promo codes, and exclusive Halloween deals before you shop.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and provides verified coupons, promotional offers, and discounts from trusted brands.",
+          },
         },
       ],
     },

@@ -80,22 +80,106 @@ const fireflyzSchema = {
       description:
         "Latest verified Fireflyz coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Fireflyz Coupon Code",
-            description:
-              "Latest Fireflyz coupon code and discount offers.",
+            name: "Pre-Book Extra Baggage – SAVE UP TO 60%",
+            description: "Save UP TO 60% when you pre-book extra baggage online.",
             url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Student Travel Offer – UP TO 30% OFF Flights",
+            description: "Students can enjoy UP TO 30% OFF on selected domestic and international flights.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Book Now, Pay Later – SAVE 10%",
+            description: "Save 10% OFF when you book your flight using eligible Buy Now, Pay Later payment options.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "One-Way Fares From $29",
+            description: "Fly across popular U.S. destinations from just $29 one-way.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Hotel Rewards – Save 3,500 Reward Points",
+            description: "Redeem 3,500 Reward Points on eligible hotel bookings.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Rewards Bonus – Earn 10% Extra Reward Points",
+            description: "Convert eligible bank reward points and earn an extra 10% Bonus Points.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Fireflyz",
+              url: "https://www.fireflyz.com.my",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Summer Travel Sale – Extra 5% OFF + 2X Reward Points",
+            description: "Get an Extra 5% OFF on eligible U.S. flight bookings.",
+            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
             seller: {
               "@type": "Organization",
               name: "Fireflyz",
@@ -158,6 +242,61 @@ const fireflyzSchema = {
           position: 3,
           name: "Fireflyz Coupons",
           item: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/fireflyz-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Firefly?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Firefly is a Malaysian regional airline owned by Malaysia Aviation Group that operates domestic and international flights across Malaysia and selected Southeast Asian destinations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where does Firefly fly?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Firefly serves destinations across Malaysia as well as selected cities in Singapore, Thailand, and Indonesia through its regional network.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a Firefly discount code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Firefly discount code, Firefly voucher, Firefly promo code, and Firefly coupon code on CouponsBit before booking your flight.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I book domestic and international flights with Firefly?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Firefly offers both domestic flights within Malaysia and international services to selected destinations across Southeast Asia.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Firefly offer promotional fares?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Firefly regularly launches promotional fares and seasonal travel offers on selected routes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps travelers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted travel brands.",
+          },
         },
       ],
     },

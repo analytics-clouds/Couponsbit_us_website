@@ -334,7 +334,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FLAT</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$0</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$0</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">DELIVERY FEE</p>
         </div>
       </div>
@@ -376,7 +376,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">30%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">30%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -418,7 +418,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -459,7 +459,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">15%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">15%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -501,7 +501,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.15</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.15</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -543,7 +543,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$5</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$5</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -584,7 +584,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -626,7 +626,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -667,7 +667,7 @@ export default function DoorDashCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$6</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$6</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>

@@ -84,9 +84,53 @@ const avisSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Avis Coupon Code",
-            description:
-              "Latest Avis coupon code for car rental discounts.",
+            name: "Avis Drive Gold Membership – Limited-Time Offer",
+            description: "Join Avis Drive Gold for just $19 (regular price $39) for a limited time.",
+            url: "https://www.couponsbit.us/stores/avis-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Avis",
+              url: "https://www.avis.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Avis – Member Savings Across The USA",
+            description: "Rent your favorite vehicle and save up to 20% off on eligible bookings.",
+            url: "https://www.couponsbit.us/stores/avis-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Avis",
+              url: "https://www.avis.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Avis Drive Gold Annual Membership – Just $99",
+            description: "Get Avis Drive Gold Annual Membership for only $99 for a full year of exclusive savings.",
+            url: "https://www.couponsbit.us/stores/avis-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Avis",
+              url: "https://www.avis.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Avis – Save Up To 20% On Every Rental",
+            description: "Save up to 20% off on every eligible car rental across the USA.",
             url: "https://www.couponsbit.us/stores/avis-discount-code",
             seller: {
               "@type": "Organization",
@@ -150,6 +194,61 @@ const avisSchema = {
           position: 3,
           name: "Avis Coupons",
           item: "https://www.couponsbit.us/stores/avis-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/avis-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Avis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Avis is a global car rental company offering vehicles for business travel, vacations, airport transportation, road trips, and long-term rentals.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What types of vehicles does Avis offer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Avis provides economy cars, sedans, SUVs, luxury vehicles, pickup trucks, vans, and premium rental options, depending on the location.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I book an Avis rental online?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Customers can search for available vehicles, compare rental options, and complete reservations through the Avis website or mobile app.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Avis coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Avis coupon codes, Avis promo codes, and exclusive car rental deals on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Avis have airport rental locations?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Avis operates at many major airports worldwide, making it easy for travelers to pick up and return rental vehicles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps users discover verified coupon codes, promotional offers, and discounts from trusted global brands.",
+          },
         },
       ],
     },

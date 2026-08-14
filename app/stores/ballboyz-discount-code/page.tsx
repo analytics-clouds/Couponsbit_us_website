@@ -75,18 +75,122 @@ const ballboyzSchema = {
       "@id": "https://www.couponsbit.us/stores/ballboyz-discount-code#offerlist",
       name: "Ballboyz Coupon Codes & Promo Codes",
       description:
-        "Latest verified Ballboyz coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Find the latest BallBoyz discount codes and skincare deals for Aug 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
       url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 8,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Ballboyz Coupon Code",
-            description:
-              "Latest Ballboyz coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "BallBoyz Full Body Acne Gameplan – Save $60",
+            description: "Tackle face and body acne with BallBoyz's complete skincare system from head to toe.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz BOYZ Face Acne Gameplan – #1 Seller",
+            description: "Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Summer Acne Sale – Up to 40% OFF",
+            description: "Beat summer breakouts with BallBoyz's acne-fighting essentials.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Pimple Pack – $40 OFF Today Only",
+            description: "Get everything you need for clearer skin in one convenient acne-fighting bundle.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Face Acne Gameplan – Today Only Special",
+            description: "Upgrade your skincare routine with BallBoyz's top-rated acne solution.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Build Your Own Bundle – Extra 20% OFF",
+            description: "Customize your skincare routine with your favorite BallBoyz products.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Activated Charcoal Face Scrub",
+            description: "Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub.",
+            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Ballboyz",
+              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "BallBoyz Zit Destroyer Body Scrub",
+            description: "Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub.",
             url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
             seller: {
               "@type": "Organization",
@@ -150,6 +254,53 @@ const ballboyzSchema = {
           position: 3,
           name: "Ballboyz Coupons",
           item: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/ballboyz-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Ballboyz?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ballboyz is an athlete-focused skincare brand that develops products designed to address sports-related acne and skincare concerns.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who are Ballboyz products designed for?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The products are primarily designed for athletes and active individuals who experience skincare challenges related to sweat, training, and sports equipment.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products does Ballboyz sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The brand offers face scrubs, body acne products, skincare bundles, acne patches, and athlete-focused skincare solutions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Ballboyz coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Ballboyz coupon codes, promo offers, and athlete skincare deals on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and helps users discover valuable discounts from popular brands.",
+          },
         },
       ],
     },

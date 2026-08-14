@@ -14,7 +14,7 @@ import {
   PiggyBank, 
   RefreshCw, 
   Clock, 
-  Copy, 
+  Copy, Search, CheckSquare,CheckCircle2,
   ChevronDown, 
   Package, 
   Truck, 
@@ -415,8 +415,8 @@ export default function StubHubCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Flat   </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  10%  </h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  10%  </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF
@@ -558,9 +558,9 @@ export default function StubHubCouponsContent() {
                 Save Up To
               </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
                 5%
-              </h2>
+              </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF
@@ -699,9 +699,9 @@ export default function StubHubCouponsContent() {
 
               </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
                 $30
-              </h2>
+              </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
               </p>
@@ -838,9 +838,9 @@ export default function StubHubCouponsContent() {
                Starting At
               </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
               $171
-              </h2>
+              </div>
 
            
             </div>
@@ -972,8 +972,8 @@ export default function StubHubCouponsContent() {
                  Starting At
               </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $582  </h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                 $582  </div>
 
           
             </div>
@@ -1104,9 +1104,9 @@ export default function StubHubCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
                Flat              </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
                 $25
-              </h2>
+              </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF
@@ -1239,9 +1239,9 @@ export default function StubHubCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
                  GET $20 OFF </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
                 $20
-              </h2>
+              </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF
@@ -1363,9 +1363,23 @@ export default function StubHubCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About StubHub</h3>
+                  <h3 className="text-black font-black text-lg mb-6">StubHub Discount Code & StubHub Promo Code
+</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    StubHub is one of the most recognized online ticket marketplaces, connecting buyers and sellers for live events across a wide range of categories. Founded in 2000, the platform has become a go-to destination for millions of fans looking to buy and sell tickets for concerts, sports, theater, comedy shows, festivals, and other live entertainment experiences.
+                    A StubHub discount code can help eligible shoppers save on ticket purchases when a promotion is available. StubHub promotions may change depending on the event, campaign, season, or other offer conditions, so it's worth checking for a current deal before checkout.
+
+                  </p>
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    If you're specifically searching for a StubHub promo code, CouponsBit brings available offers together in one place. You can browse current promotions, check the terms, and then head to StubHub to purchase your tickets.
+
+                  </p>
+                    <h3 className="text-black font-black text-lg mb-6">Real StubHub Discount Code Offers</h3>
+                     <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Searching for a real StubHub discount code? Always check the offer details before applying a code. A promotion may have restrictions based on the event, ticket type, purchase amount, expiration date, or other conditions.
+                  </p>
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Checking CouponsBit before buying gives you an opportunity to find an available StubHub offer before spending on your tickets.
+
                   </p>
                   <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -1397,55 +1411,76 @@ export default function StubHubCouponsContent() {
                 </div>
 
                 {/* Why Shop Card */}
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">What Can You Buy on StubHub?</h3>
-  
-  {/* Client Approved Description */}
-  <p className="text-gray-500 font-medium text-sm mb-8 leading-relaxed">
-    StubHub offers access to a wide variety of live event tickets.
-  </p>
+                <div className="rounded-[32px] border border-[#f0f0f0] bg-white p-8 shadow-sm">
+  {/* Header */}
+  <div className="mb-8">
+    <span className="mb-2 inline-block rounded-full bg-[#e8f6f8] px-3 py-1 text-xs font-bold text-[#056bfa]">
+      CouponsBit Guide
+    </span>
+    <h3 className="text-xl font-black text-black sm:text-2xl">
+      How to Use a StubHub Coupon Code
+    </h3>
+    <p className="mt-2 text-sm font-medium text-gray-500">
+      Using a StubHub coupon code is simple when an eligible promotion is available.
+    </p>
+  </div>
 
-  <div className="space-y-8">
+  {/* Steps List */}
+  <div className="relative space-y-6 before:absolute before:left-[19px] before:top-3 before:h-[calc(100%-24px)] before:w-[2px] before:bg-gray-100">
     {[
-      { 
-        icon: Music, 
-        title: "Concert Tickets", 
-        sub: "Find tickets for: Pop concerts, Rock tours, Country music events, Hip-hop performances, EDM festivals, International music tours. Whether you're looking for front-row seats or affordable options, StubHub offers access to events of all sizes." 
+      {
+        step: "01",
+        icon: Search,
+        title: "Find a StubHub Coupon Code",
+        desc: "Visit the StubHub page on CouponsBit and browse available coupon codes, promo offers, and ticket deals.",
       },
-      { 
-        icon: Trophy, 
-        title: "Sports Tickets", 
-        sub: "Sports fans can find tickets for: NFL games, NBA games, MLB games, NHL games, MLS matches, College sports, Golf tournaments, Tennis events, Motorsports." 
+      {
+        step: "02",
+        icon: CheckSquare,
+        title: "Select Your StubHub Deal",
+        desc: "Choose an offer that matches your planned ticket purchase and read the applicable terms.",
       },
-      { 
-        icon: Theater, 
-        title: "Theater Tickets", 
-        sub: "Enjoy access to: Broadway shows, Touring productions, Musicals, Plays, Performing arts events." 
+      {
+        step: "03",
+        icon: Copy,
+        title: "Copy the StubHub Promo Code",
+        desc: "If the offer requires a code, reveal it and copy the StubHub promo code.",
       },
-      { 
-        icon: Laugh, 
-        title: "Comedy Shows", 
-        sub: "Purchase tickets to see popular comedians and stand-up performances nationwide." 
+      {
+        step: "04",
+        icon: Ticket,
+        title: "Find Your StubHub Tickets",
+        desc: "Visit StubHub, search for your event, and select the tickets you want to purchase.",
       },
-      { 
-        icon: Tent, 
-        title: "Festival Tickets", 
-        sub: "Explore tickets for music festivals, food festivals, cultural celebrations, and seasonal events." 
+      {
+        step: "05",
+        icon: Tag,
+        title: "Apply the Discount Code",
+        desc: "Proceed through checkout and enter the applicable coupon or promotional code in the designated field.",
       },
-      { 
-        icon: Sparkles, 
-        title: "Special Events", 
-        sub: "StubHub also features tickets for family entertainment, live experiences, exhibitions, and unique events throughout the year." 
-      }
-    ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
+      {
+        step: "06",
+        icon: CheckCircle2,
+        title: "Complete Your Purchase",
+        desc: "Check your order total to confirm that the applicable discount has been reflected before completing your purchase.",
+      },
+    ].map((item) => (
+      <div key={item.step} className="relative flex items-start gap-4">
+        {/* Step Icon Badge */}
+        <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#e8f6f8] text-[#056bfa] ring-4 ring-white">
+          <item.icon className="h-5 w-5" />
         </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
+
+        {/* Step Content */}
+        <div className="pt-1">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-black uppercase tracking-wider text-[#056bfa]">
+              Step {item.step}
+            </span>
+            <h4 className="text-sm font-black text-black">{item.title}</h4>
+          </div>
+          <p className="mt-1 text-xs font-medium leading-relaxed text-gray-500">
+            {item.desc}
           </p>
         </div>
       </div>
@@ -1492,156 +1527,251 @@ export default function StubHubCouponsContent() {
         <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      {/* Left: Text Content */}
+      
+      {/* Left Column: Main Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          StubHub Coupon Codes, Promo Codes & Ticket Deals 2026
+          StubHub Discount Codes, Promo Codes & Ticket Deals 2026
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-gray-600 font-bold text-[14px]">
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Flat 10% OFF Sitewide</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Flat 10% OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on orders above $40</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Concerts, sports events, live shows & sitewide bookings</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">NBA Playoffs Tickets – Western Conference Finals</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 5% OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid for Western Conference Finals – Home Game 2 (May 24)</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Oklahoma City Thunder vs San Antonio Spurs tickets</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Rock Music Tickets</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting From $30</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time pricing</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Live rock concerts and music events</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">The Lion King New York Tickets</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $171</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subject to seat availability</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">The Lion King Broadway show in New York</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Under The Big Sky Festival Tickets</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $582</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">3-day passes available</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Under The Big Sky Festival</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Student Discount</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Flat $25 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">Students Only</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Student verification/code required</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible ticket bookings</td>
-      </tr>
-      <tr className="hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">New User Offer</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Flat $20 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">New Users Only</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on first order only</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">First ticket booking</td>
-      </tr>
-    </tbody>
-  </table>
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full text-left border-collapse min-w-[850px]">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Offer</th>
+          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-gray-600 font-bold text-[14px]">
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">Flat 10% OFF Sitewide</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Flat 10% OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on orders above $40</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Concerts, sports events, live shows & sitewide bookings</td>
+        </tr>
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">NBA Playoffs Tickets – Western Conference Finals</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Save Up To 5% OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid for Western Conference Finals – Home Game 2 (May 24)</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Oklahoma City Thunder vs San Antonio Spurs tickets</td>
+        </tr>
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">Rock Music Tickets</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Starting From $30</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time pricing</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Live rock concerts and music events</td>
+        </tr>
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">The Lion King New York Tickets</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Starting At $171</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Subject to seat availability</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">The Lion King Broadway show in New York</td>
+        </tr>
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">Under The Big Sky Festival Tickets</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Starting At $582</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">3-day passes available</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Under The Big Sky Festival</td>
+        </tr>
+        <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">Student Discount</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Flat $25 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">Students Only</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Student verification/code required</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible ticket bookings</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">New User Offer</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Flat $20 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">New Users Only</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Valid on first order only</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">First ticket booking</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-        
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+
+        <div
+          className={cn(
+            "text-gray-500 font-bold leading-relaxed space-y-6 relative transition-all duration-500",
+            !isReadMore && "max-h-[500px] overflow-hidden"
+          )}
+        >
           <p>
-            Looking for the latest <strong>StubHub coupon codes, promo codes, and ticket deals</strong>? You've come to the right place. At Couponsbit, we help fans save on concert tickets, sports events, theater performances, comedy shows, festivals, and live entertainment experiences with verified StubHub discounts and exclusive offers.
+            Looking for the latest StubHub coupon code, StubHub promo code, or StubHub discount code? CouponsBit helps you find current StubHub offers and ticket deals so you can save on concerts, sports, theater, festivals, comedy shows, and other live events.
           </p>
           <p>
-            Whether you're planning to attend a major sporting event, see your favorite artist live, catch a Broadway show, or experience a sold-out event, StubHub makes it easier to find tickets for some of the most popular events across the United States and around the world. Before purchasing your next ticket, check Couponsbit for the latest StubHub deals and savings opportunities.
+            Whether you're searching for StubHub tickets to see your favorite team, attending a major concert, or planning ahead for a major sporting event, checking for a coupon or promotional offer before you buy can help you get better value.
+          </p>
+          <p>
+            From NFL and NBA games to concerts, Broadway shows, and major international sporting events, StubHub gives fans access to tickets for a wide range of live experiences. Before completing your purchase, check CouponsBit for the latest StubHub deals and available savings.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Know more About StubHub</h3>
-          
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub Tickets for Sports, Concerts & Live Events
+            </h3>
             <p>
-              The platform provides access to tickets for both upcoming and sold-out events, helping fans find seats for experiences that may be difficult to secure through primary ticket providers. StubHub's marketplace model allows ticket holders to resell tickets they can no longer use, creating additional opportunities for buyers to access highly sought-after events.
-            </p>
-            <p>
-              Today, StubHub serves customers across multiple markets and continues to be a trusted name in event ticketing, offering convenient ticket transfers, digital delivery options, and customer support services.
-            </p>
-            <p>
-              At Couponsbit, we help shoppers find the latest StubHub coupon codes, promo codes, and ticket deals to make live entertainment more affordable.
+              StubHub tickets cover a wide range of live entertainment and sporting events. The marketplace allows fans to browse available tickets and compare options based on event, seating location, and price.
             </p>
           </div>
 
-        
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub Sports Tickets
+            </h3>
+            <p>
+              Sports fans can use StubHub to find tickets for major professional and college sporting events across the U.S.
+            </p>
+            <p>Popular categories include:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>NFL, NBA, MLB, NHL, MLS</li>
+              <li>College sports</li>
+              <li>Golf, Tennis, and Motorsports</li>
+            </ul>
+            <p>
+              Whether you're looking for tickets to a regular-season game, rivalry matchup, playoff game, or championship event, availability and prices can vary based on demand.
+            </p>
+          </div>
 
-          {/* Dynamic Interactive Steps Map */}
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a StubHub Coupon Code</h3>
-            <div className="space-y-6">
-              {[
-                "Step 1: Browse Available StubHub Deals — Visit the StubHub page on Couponsbit and explore current discounts, promo codes, and ticket offers.",
-                "Step 2: Choose an Offer — Select the deal that best matches your ticket purchase.",
-                "Step 3: Copy the Coupon Code — Click to reveal and copy the coupon code if one is available.",
-                "Step 4: Visit StubHub — Search for your desired event and select the tickets you'd like to purchase.",
-                "Step 5: Apply the Promo Code — Enter the coupon code during checkout and confirm that the discount has been applied.",
-                "Step 6: Complete Your Purchase — Finalize your order and get ready to enjoy your event."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                    {i + 1}
-                  </div>
-                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                </div>
-              ))}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub Concert Tickets
+            </h3>
+            <p>
+              Looking for StubHub concert tickets? The platform offers tickets for artists and tours across a variety of music genres, including Pop concerts, Rock shows, Country music, Hip-hop and rap, R&B, EDM, Music festivals, and International tours.
+            </p>
+            <p>
+              Ticket prices can vary significantly depending on the artist, venue, seating section, event date, and demand.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub Theater Tickets
+            </h3>
+            <p>
+              StubHub also gives fans an opportunity to find tickets for theater productions, musicals, Broadway shows, comedy performances, and other live entertainment.
+            </p>
+            <p>
+              If you're planning a special night out, comparing available seating and prices can help you find an option that fits your budget.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub World Cup Tickets
+            </h3>
+            <p>
+              Major international sporting events can generate significant interest in the ticket marketplace. Searches for StubHub World Cup tickets and StubHub FIFA World Cup tickets have seen particularly strong interest in the keyword data, making major soccer events an important part of the StubHub search landscape.
+            </p>
+            <p>
+              If you're looking for tickets to a major tournament or international sporting event, check the event details carefully and compare available listings before purchasing.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              FIFA World Cup Tickets on StubHub
+            </h3>
+            <p>
+              For shoppers searching for FIFA World Cup tickets StubHub, availability can depend heavily on the event, match, location, and demand.
+            </p>
+            <p>
+              Since major sporting events can sell quickly and prices may fluctuate, it's useful to monitor listings and compare different seating options before making a purchase.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub NFL Tickets & Sports Deals
+            </h3>
+            <p>
+              NFL games are among the most popular sporting events searched by ticket buyers, and StubHub offers a marketplace for fans looking for available seats.
+            </p>
+            <p>
+              If you're searching for a StubHub NFL promo code, check CouponsBit before purchasing your football tickets. A promotional offer, when available and applicable, could help reduce your overall ticket cost.
+            </p>
+            <p>
+              Compare the available ticket prices and seating sections along with any applicable promotion rather than focusing only on the coupon amount.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub New York Yankees Tickets
+            </h3>
+            <p>
+              Baseball fans searching for StubHub New York Yankees or StubHub NY Yankees tickets can browse available listings for Yankees games.
+            </p>
+            <p>
+              When searching for NY Yankees tickets StubHub, consider both the ticket price and the location of the seats. A slightly different section may offer a better balance between price and viewing experience.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              StubHub Concert Deals & Popular Artists
+            </h3>
+            <p>
+              StubHub's concert marketplace includes tickets for some of the biggest artists and tours, such as Bruno Mars and Morgan Wallen. Search interest around artists can change quickly as tours, album releases, and event dates are announced.
+            </p>
+            <p>
+              If you're planning to attend high-demand shows, compare ticket listings and seating sections to find an option that matches your budget.
+            </p>
+          </div>
+
+          {/* Best Ways to Save Card */}
+          <div className="space-y-6 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa]">
+              Best Ways to Save on StubHub Tickets
+            </h3>
+            <p className="text-gray-600">
+              Finding a coupon isn't the only way to save. A few smart shopping strategies can make a difference when buying event tickets:
+            </p>
+            
+            <div className="space-y-4 text-gray-700">
+              <p><strong>Compare StubHub Ticket Prices:</strong> Ticket prices can vary considerably between seating sections and listings. Compare multiple options before choosing your seats.</p>
+              <p><strong>Check StubHub Deals Before Buying:</strong> Always search for a StubHub coupon code, StubHub promo code, or StubHub discount code before checkout.</p>
+              <p><strong>Consider Different Seating Sections:</strong> If you're flexible about where you sit, compare different sections. Moving slightly farther from the stage, field, or court can significantly reduce the ticket price.</p>
+              <p><strong>Look at Different Event Dates:</strong> For tours, sports seasons, and recurring performances, attending a different date may offer more affordable options.</p>
+              <p><strong>Monitor Prices for High-Demand Events:</strong> Prices can change based on demand and availability. Monitoring ticket listings before purchasing helps you see how prices move.</p>
             </div>
           </div>
 
+          {/* Why Choose StubHub Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save on StubHub</h3>
-            <p>Looking to maximize your savings? Here are several strategies that can help.</p>
-            <p><strong>Check Couponsbit Before Buying:</strong> Always browse Couponsbit before purchasing tickets to find the latest StubHub promo codes and special offers.</p>
-            <p><strong>Compare Seating Sections:</strong> Different seating areas often offer significantly different price points while still providing a great event experience.</p>
-            <p><strong>Buy Early for Popular Events:</strong> For high-demand concerts and sporting events, purchasing tickets early may provide more seating options and competitive pricing.</p>
-            <p><strong>Monitor Ticket Prices:</strong> Ticket prices can fluctuate based on event demand, venue capacity, and ticket availability.</p>
-            <p><strong>Look for Seasonal Promotions:</strong> StubHub may participate in major shopping and promotional events, including: Black Friday, Cyber Monday, Holiday Sales, Summer Promotions, Back-to-School Deals, New Year Events.</p>
-            <p><strong>Consider Weekday Events:</strong> Tickets for weekday performances and games may sometimes be priced lower than weekend events.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Why Choose StubHub for Tickets?
+            </h3>
+            <p>StubHub is a well-known ticket marketplace where buyers can search for tickets across sports, music, theater, and other live events.</p>
+            <p><strong>Wide Selection:</strong> Offers tickets across numerous event categories, making it easy to search for concerts, sports, comedy shows, and more.</p>
+            <p><strong>Access to High-Demand Events:</strong> Provides additional options for events that may have limited availability through primary ticket sellers.</p>
+            <p><strong>Multiple Seating Options:</strong> Buyers can compare different sections, rows, and price points before selecting their tickets.</p>
+            <p><strong>Convenient Online Shopping:</strong> Search for an event, compare available listings, select tickets, and complete your purchase online.</p>
+            <p><strong>Ticket Resale Marketplace:</strong> Provides a space where eligible ticket holders can list tickets they no longer need.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Fans Choose StubHub</h3>
-            <p><strong>Huge Selection of Events:</strong> StubHub offers access to millions of tickets across sports, music, theater, comedy, and live entertainment categories.</p>
-            <p><strong>Access to Sold-Out Events:</strong> Fans may be able to purchase tickets for events that are no longer available through primary ticket sellers.</p>
-            <p><strong>Convenient Digital Ticketing:</strong> Many tickets can be transferred electronically, making the buying process faster and more convenient.</p>
-            <p><strong>User-Friendly Marketplace:</strong> The platform allows buyers to browse seating options, compare prices, and complete purchases online.</p>
-            <p><strong>Ticket Resale Opportunities:</strong> Ticket holders who can no longer attend an event may be able to list their tickets for sale through the marketplace.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for StubHub Deals?</h3>
-            <p>At Couponsbit, we help shoppers find genuine savings on the brands and services they use most.</p>
-            <p><strong>Verified Promo Codes:</strong> We regularly update available StubHub offers to help users discover current discounts.</p>
-            <p><strong>Easy Savings:</strong> Find ticket deals, promo codes, and event-related discounts in one convenient place.</p>
-            <p><strong>Completely Free:</strong> Couponsbit is free to use and helps consumers save on entertainment, travel, technology, shopping, and more.</p>
-            <p><strong>Updated Offers:</strong> Our team continually monitors promotions to help users access the latest savings opportunities.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Live Entertainment</h3>
-            <p>Whether you're attending a concert, cheering for your favorite team, enjoying a Broadway production, or planning a memorable night out, StubHub helps connect fans with the events they love.</p>
-            <p>Before purchasing your tickets, visit Couponsbit to explore the latest StubHub coupon codes, promo codes, and ticket deals. With verified discounts and regularly updated offers, Couponsbit helps you enjoy more live events while spending less.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Save More With StubHub Coupon Codes & Ticket Deals
+            </h3>
+            <p>
+              Whether you're looking for StubHub tickets to see your favorite team, attending a major concert, planning a theater night, or searching for tickets to a major international sporting event, comparing available offers can help you make a smarter purchase.
+            </p>
+            <p>
+              Before buying, check CouponsBit for the latest StubHub coupon code, StubHub promo code, StubHub discount code, and StubHub ticket deals. Compare ticket prices, review the offer terms, and choose the option that gives you the best overall value.
+            </p>
           </div>
 
           {!isReadMore && (
@@ -1649,52 +1779,96 @@ export default function StubHubCouponsContent() {
           )}
         </div>
 
-        <button 
+        {/* Read More / Read Less Toggle */}
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline focus:outline-none"
         >
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+          {isReadMore ? "Read Less" : "Read More"}{" "}
+          <ChevronDown
+            className={cn(
+              "w-4 h-4 transition-transform duration-300",
+              isReadMore && "rotate-180"
+            )}
+          />
         </button>
 
-        {/* FAQs Accordion */}
+        {/* Dynamic FAQ Accordion */}
         <div className="mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+          <h3 className="text-2xl font-black text-black mb-8">
+            StubHub Coupon Code FAQs
+          </h3>
           {[
-            { q: "Does StubHub offer coupon codes?", a: "Yes. StubHub occasionally offers promo codes, ticket discounts, and limited-time promotions on select events and purchases." },
-            { q: "Where can I find StubHub promo codes?", a: "You can find the latest StubHub coupon codes and ticket deals directly on Couponsbit." },
-            { q: "Is StubHub a ticket marketplace?", a: "Yes. StubHub operates as an online ticket marketplace that connects buyers and sellers for live events." },
-            { q: "What types of tickets are available on StubHub?", a: "StubHub offers tickets for concerts, sports events, theater performances, comedy shows, festivals, and many other live experiences." },
-            { q: "Can I sell tickets on StubHub?", a: "Yes. Eligible users may list tickets for sale if they can no longer attend an event." },
-            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers." }
+            { q: "Does StubHub Have a Coupon Code?", a: "StubHub may offer promotional codes, discounts, and special offers at different times. Check CouponsBit for currently available StubHub coupon codes before purchasing tickets." },
+            { q: "Where Can I Find a StubHub Promo Code?", a: "You can check CouponsBit for available StubHub promo codes, discount codes, and ticket offers before completing your order." },
+            { q: "Is There a Real StubHub Discount Code?", a: "Available promotions can change, so check the current StubHub offers on CouponsBit and review the terms of each deal before using it." },
+            { q: "What Can I Buy With StubHub Tickets?", a: "StubHub offers tickets for concerts, professional and college sports, theater, comedy, festivals, and other live entertainment events." },
+            { q: "Can I Find StubHub World Cup Tickets?", a: "StubHub may have listings for major international sporting events, including World Cup-related events. Availability and pricing can vary significantly depending on the match and demand." },
+            { q: "Can I Find StubHub NFL Tickets?", a: "Yes, StubHub features listings for NFL games. Search by team, matchup, location, or event date to find available tickets." },
+            { q: "Can I Find StubHub Concert Tickets?", a: "Yes. StubHub offers tickets for numerous concerts, tours, and music events. Availability depends on the artist, venue, date, and current listings." },
+            { q: "Can I Sell Tickets on StubHub?", a: "Eligible ticket holders may be able to list tickets they can no longer use through StubHub's marketplace, subject to the platform's applicable requirements." },
+            { q: "Is CouponsBit Free to Use?", a: "Yes. CouponsBit is free to use. You can browse available coupon codes, promotions, and deals across entertainment, travel, fashion, technology, and other categories." }
           ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+            <div
+              key={i}
+              className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300"
+            >
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors focus:outline-none"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div
+                  className={cn(
+                    "bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300",
+                    openFaq === i && "bg-[#056bfa]"
+                  )}
+                >
+                  <ChevronDown
+                    className={cn(
+                      "w-4 h-4 text-gray-500 transition-transform duration-300",
+                      openFaq === i && "text-white rotate-180"
+                    )}
+                  />
                 </div>
               </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              <div
+                className={cn(
+                  "overflow-hidden transition-all duration-300 px-8 bg-white",
+                  openFaq === i
+                    ? "max-h-[500px] pb-8 opacity-100"
+                    : "max-h-0 opacity-0 pb-0"
+                )}
+              >
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                  {faq.a}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Sidebar */}
+      {/* Right Column: Sidebar */}
       <div className="space-y-10">
-        {/* Box 1: Popular Searches */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular StubHub Searches</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular StubHub Searches
+          </h3>
           <div className="flex flex-wrap gap-2.5">
-            {["StubHub Concerts", "StubHub Sports", "StubHub Theater", "StubHub Comedy", "StubHub Promo Code", "StubHub Ticket Deals", "StubHub Festivals", "StubHub Offers"].map(tag => (
+            {[
+              "NFL Tickets",
+              "World Cup Tickets",
+              "Concert Tickets",
+              "Yankees Tickets",
+              "Broadway Shows",
+              "Bruno Mars Tour",
+              "Morgan Wallen",
+              "StubHub Deals",
+            ].map((tag) => (
               <span
                 key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors"
               >
                 {tag}
               </span>
@@ -1702,23 +1876,41 @@ export default function StubHubCouponsContent() {
           </div>
         </div>
 
-        {/* Box 2: Today's Top Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top StubHub Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Today's Top StubHub Deals
+          </h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 7).map((deal, i) => (
+            {(typeof COUPONS !== "undefined" ? COUPONS : [
+              { heading: "EXCLUSIVE PROMO", sub: "Save up to 15% on Live Sports" },
+              { heading: "CONCERT DEALS", sub: "Get 10% off top tour events" }
+            ]).slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">S</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                  S
                 </div>
-                <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" aria-label={`Get StubHub deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {deal.heading}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1 normal-case">
+                    {deal.sub}
+                  </p>
+                </div>
+                <a
+                  href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                >
+                  Get Deal
+                </a>
               </div>
             ))}
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

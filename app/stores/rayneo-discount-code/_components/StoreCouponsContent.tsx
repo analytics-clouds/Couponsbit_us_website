@@ -27,6 +27,7 @@ import {
   CheckCircle,
   X,
   ArrowRight,
+  Search, CheckSquare,ShoppingBag, CheckCircle2,AlertCircle,
   Ticket,
   Flame,
   Tv,
@@ -323,7 +324,7 @@ export default function RayneoCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-8">
-                  <h2 className="text-2xl font-black text-black leading-tight">Rayneo Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Rayneo discount Codes & Offers</h2>
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">6 Coupons & Offers Available</p>
                 </div>
 
@@ -339,7 +340,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UPTO</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -380,7 +381,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$299</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$299</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -420,7 +421,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$130</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$130</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -461,7 +462,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -502,7 +503,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$70</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -543,7 +544,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$254.15</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$254.15</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -583,7 +584,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Price</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$1,169</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$1,169</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -623,7 +624,7 @@ export default function RayneoCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only At</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$89</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$89</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -660,9 +661,27 @@ export default function RayneoCouponsContent() {
               <div className="lg:w-[35%] space-y-8">
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Rayneo</h3>
+                  <h3 className="text-black font-black text-lg mb-6">RayNeo Coupon Code & RayNeo Promo Code
+</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   RayNeo is an emerging technology brand specializing in augmented reality (AR) smart glasses, wearable displays, and immersive visual solutions. The company focuses on creating products that blend advanced display technology with portability, comfort, and everyday usability.
+                   A RayNeo coupon code can help shoppers save when purchasing eligible RayNeo products. RayNeo promotions can vary throughout the year, so it's worth checking for available offers before completing your order.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                   CouponsBit makes it easier to find RayNeo promo codes, discount offers, and other promotions in one place. Instead of searching multiple websites, shoppers can browse available offers before heading to checkout.
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                   Whether you're purchasing smart glasses for entertainment, gaming, travel, work, or simply exploring wearable technology, checking for a coupon is a simple step that could reduce your overall purchase cost.
+                  </p>
+                  <h3 className="text-black font-black text-lg mb-6">RayNeo Discount Code Offers
+
+</h3>
+
+ <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                   If you're specifically searching for a RayNeo discount code, check CouponsBit before buying. Available offers may include percentage discounts, fixed-amount savings, special promotions, or other limited-time deals.
+                  </p>
+                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                   Always check the terms of an offer, including its expiration date, eligible products, minimum purchase requirements, and other restrictions.
                   </p>
                   <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -693,51 +712,93 @@ export default function RayneoCouponsContent() {
                 </div>
 
                 {/* Why Shop Card */}
-              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">Popular RayNeo Products</h3>
+              <div className="rounded-[32px] border border-[#f0f0f0] bg-white p-8 shadow-sm">
+  {/* Header */}
+  <div className="mb-8">
+    <span className="mb-2 inline-block rounded-full bg-[#e8f6f8] px-3 py-1 text-xs font-bold text-[#056bfa]">
+      CouponsBit Guide
+    </span>
+    <h3 className="text-xl font-black text-black sm:text-2xl">
+      How to Use a RayNeo Coupon Code
+    </h3>
+    <p className="mt-2 text-sm font-medium text-gray-500">
+      Using a RayNeo coupon code through CouponsBit is straightforward.
+    </p>
+  </div>
 
-  <div className="space-y-8">
+  {/* Steps List */}
+  <div className="relative space-y-6 before:absolute before:left-[19px] before:top-3 before:h-[calc(100%-24px)] before:w-[2px] before:bg-gray-100">
     {[
-      { 
-        icon: Glasses, 
-        title: "AR Smart Glasses", 
-        sub: "RayNeo's flagship products provide immersive visual experiences through advanced augmented reality and display technologies." 
+      {
+        step: "01",
+        icon: Search,
+        title: "Find a RayNeo Coupon Code",
+        desc: "Visit CouponsBit and browse the latest RayNeo coupon codes, promo codes, and available discounts.",
       },
-      { 
-        icon: Monitor, 
-        title: "Wearable Displays", 
-        sub: "Enjoy large virtual screens for work, entertainment, content consumption, and multitasking." 
+      {
+        step: "02",
+        icon: CheckSquare,
+        title: "Select Your RayNeo Deal",
+        desc: "Choose an offer that matches the RayNeo product you're planning to purchase. Review its terms before proceeding.",
       },
-      { 
-        icon: Gamepad2, 
-        title: "Gaming Accessories", 
-        sub: "Many RayNeo devices are compatible with gaming consoles, handheld gaming systems, laptops, and smartphones." 
+      {
+        step: "03",
+        icon: Copy,
+        title: "Copy Your RayNeo Promo Code",
+        desc: "If the offer requires a code, reveal it on CouponsBit and copy the RayNeo promo code.",
       },
-      { 
-        icon: Tv, 
-        title: "Portable Entertainment Solutions", 
-        sub: "Watch movies, stream content, and enjoy media on a cinematic virtual display experience while traveling or relaxing at home." 
+      {
+        step: "04",
+        icon: ShoppingBag,
+        title: "Shop on RayNeo",
+        desc: "Visit the RayNeo website, choose your preferred product, and add it to your shopping cart.",
       },
-      { 
-        icon: Briefcase, 
-        title: "Productivity Tools", 
-        sub: "Professionals can use RayNeo products to create private workspaces, improve focus, and increase productivity from virtually anywhere." 
-      }
-    ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
+      {
+        step: "05",
+        icon: Tag,
+        title: "Apply the Coupon Code",
+        desc: "Proceed to checkout and enter the RayNeo coupon code in the applicable promotional or discount code field.",
+      },
+      {
+        step: "06",
+        icon: CheckCircle2,
+        title: "Complete Your Purchase",
+        desc: "Confirm that the discount has been applied to your order total, then complete your purchase.",
+      },
+    ].map((item) => (
+      <div key={item.step} className="relative flex items-start gap-4">
+        {/* Step Icon Badge */}
+        <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#e8f6f8] text-[#056bfa] ring-4 ring-white">
+          <item.icon className="h-5 w-5" />
         </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
+
+        {/* Step Content */}
+        <div className="pt-1">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-black uppercase tracking-wider text-[#056bfa]">
+              Step {item.step}
+            </span>
+            <h4 className="text-sm font-black text-black">{item.title}</h4>
+          </div>
+          <p className="mt-1 text-xs font-medium leading-relaxed text-gray-500">
+            {item.desc}
           </p>
         </div>
       </div>
     ))}
   </div>
+
+  {/* Troubleshooting Footer Callout */}
+  <div className="mt-8 flex items-start gap-3 rounded-2xl border border-amber-100 bg-amber-50/50 p-4">
+    <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />
+    <div className="text-xs leading-relaxed text-amber-900">
+      <span className="font-bold">If a code doesn't work:</span> Check whether
+      it has expired, whether your product qualifies, or whether a minimum
+      purchase requirement applies.
+    </div>
+  </div>
 </div>
+
               </div>
 
             </div>
@@ -776,148 +837,221 @@ export default function RayneoCouponsContent() {
    <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      {/* Left: Text Content */}
+      
+      {/* Left Column: Main Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          RayNeo Coupon Codes, Promo Codes & AR Smart Glasses Deals 2026
+          RayNeo Discount Codes, Promo Codes & Smart Glasses Deals 2026
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-gray-600 font-bold text-[14px]">
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air Series Sale</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Up To $70 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time offer while stocks last</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air Series devices</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro – AR Glasses Deal</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $299</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">World's first HDR10 AR glasses</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save $130 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $1,169 (Regular $1,299)</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI smart glasses</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Air 3s + HDMI Adapter Bundle</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save $70 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes Air 3s + HDMI Adapter</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Legacy device hub bundle</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 3s & Pocket TV Bundle</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save $70 OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bundle Price $309 (Regular $379)</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Air 3s & Pocket TV wireless bundle</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro AR Glasses Offer</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $254.15</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $254.15 (Regular $299)</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Price $1,169</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Supports customized nearsighted lenses</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
-      </tr>
-      <tr className="hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo JoyDock</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Only At $89</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Portable and easy-to-use device</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Giant-screen gaming companion</td>
-      </tr>
-    </tbody>
-  </table>
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full text-left border-collapse min-w-[750px]">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th className="p-5 text-[14px] font-black text-white uppercase tracking-wider">Offer</th>
+          <th className="p-5 text-[14px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+          <th className="p-5 text-[14px] font-black text-white uppercase tracking-wider">Eligibility</th>
+          <th className="p-5 text-[14px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+          <th className="p-5 text-[14px] font-black text-white uppercase tracking-wider">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-gray-600 font-bold text-[14px] divide-y divide-gray-100">
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air Series Sale</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Up To $70 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time offer while stocks last</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air Series devices</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro – AR Glasses Deal</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Starting At $299</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">World's first HDR10 AR glasses</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Save $130 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $1,169 (Regular $1,299)</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI smart glasses</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">Air 3s + HDMI Adapter Bundle</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Save $70 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes Air 3s + HDMI Adapter</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Legacy device hub bundle</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 3s & Pocket TV Bundle</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Save $70 OFF</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Bundle Price $309 (Regular $379)</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Air 3s & Pocket TV wireless bundle</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo Air 4 Pro AR Glasses Offer</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Starting At $254.15</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sale Price $254.15 (Regular $299)</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo Air 4 Pro AR Glasses</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Price $1,169</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Supports customized nearsighted lenses</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">RayNeo X3 Pro AI + AR Smart Glasses</td>
+        </tr>
+        <tr className="hover:bg-gray-50/50 transition-colors">
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">RayNeo JoyDock</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle whitespace-nowrap">Only At $89</td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">All Users</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">Portable and easy-to-use device</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">Giant-screen gaming companion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+        <div
+          className={cn(
+            "text-gray-500 font-bold leading-relaxed space-y-6 relative transition-all duration-500",
+            !isReadMore && "max-h-[500px] overflow-hidden"
+          )}
+        >
           <p>
-            Looking for the latest <strong>RayNeo coupon codes, promo codes, and smart glasses deals</strong>? You've come to the right place. At Couponsbit, we help tech enthusiasts, gamers, professionals, and everyday consumers save on innovative wearable technology with verified RayNeo discounts and exclusive offers.
+            Looking for the latest RayNeo discount code, RayNeo promo code, or RayNeo deals? CouponsBit helps you discover current discounts, promotional offers, and savings opportunities on RayNeo smart glasses and wearable display technology.
           </p>
           <p>
-            Whether you're shopping for AR smart glasses, wearable displays, immersive entertainment devices, or next-generation productivity tools, RayNeo offers cutting-edge technology designed to transform how you work, play, and connect. Before making your purchase, explore the latest RayNeo promo codes and deals on Couponsbit to maximize your savings.
+            RayNeo has built a name in the wearable technology space with products designed around augmented reality, immersive viewing, entertainment, gaming, and portable productivity. From RayNeo AR smart glasses to the TCL RayNeo X2, its products offer an alternative to traditional screens for consumers interested in next-generation displays.
+          </p>
+          <p>
+            Before buying, check CouponsBit for the latest RayNeo coupon codes and promotional offers. A valid discount can help you save on your purchase and get more value from your RayNeo technology.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About RayNeo</h3>
-           
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Ray Neo Smart Glasses & Wearable Technology
+            </h3>
             <p>
-              Unlike traditional screens and monitors, RayNeo smart glasses create a large virtual display experience that users can enjoy from almost anywhere. Whether you're streaming movies, playing games, working remotely, or multitasking on the go, RayNeo products offer a unique way to access digital content without carrying bulky equipment.
+              RayNeo specializes in AR smart glasses, wearable displays, and immersive visual technology. Its products are designed to provide users with a more portable way to experience digital content without depending entirely on traditional televisions or computer monitors.
             </p>
             <p>
-              The brand continues to innovate in the fields of augmented reality, wearable computing, and smart display technology, helping users experience the future of digital interaction.
+              RayNeo smart glasses can appeal to gamers, movie enthusiasts, frequent travelers, remote professionals, and technology enthusiasts looking to explore wearable displays.
             </p>
           </div>
 
-        
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              RayNeo AR Smart Glasses
+            </h3>
+            <p>
+              RayNeo AR smart glasses provide a wearable viewing experience that can make compatible movies, videos, games, and other digital content feel more immersive.
+            </p>
+            <p>
+              One of the biggest advantages of wearable displays is portability. Instead of carrying a separate monitor, users can take their glasses with them and use them with compatible devices in different locations.
+            </p>
+          </div>
 
-          {/* How to Use Steps */}
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a RayNeo Coupon Code</h3>
-            <div className="space-y-6">
-              {[
-                "Step 1: Browse Available RayNeo Deals — Visit the RayNeo page on Couponsbit and explore current discounts, promo codes, and promotional offers.",
-                "Step 2: Choose an Offer — Select the deal that best matches the product you want to purchase.",
-                "Step 3: Copy the Coupon Code — Click to reveal and copy the coupon code if one is available.",
-                "Step 4: Visit RayNeo — Go to the RayNeo website and add your preferred products to your shopping cart.",
-                "Step 5: Apply the Promo Code — During checkout, enter the coupon code in the designated discount field and verify the savings.",
-                "Step 6: Complete Your Order — Finalize your purchase and enjoy your new wearable technology while spending less."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                    {i + 1}
-                  </div>
-                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                </div>
-              ))}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              TCL RayNeo X2 AR Glasses
+            </h3>
+            <p>
+              The TCL RayNeo X2 AR glasses are designed around augmented reality and wearable computing. The glasses bring digital information and visual experiences into a compact wearable format.
+            </p>
+            <p>
+              If you're researching the TCL RayNeo X2, consider factors such as display capabilities, connectivity, supported devices, battery performance, software compatibility, comfort, and available features before purchasing.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Ray Neo X2 Glasses
+            </h3>
+            <p>
+              Searches for Ray Neo X2 glasses, RayNeo X2 glasses, and TCL Ray Neo X2 glasses generally relate to RayNeo's X2 AR glasses. When comparing products or listings, check the exact model name and specifications to make sure you're looking at the right device.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              RayNeo X2 Price & Product Information
+            </h3>
+            <p>
+              The RayNeo X2 price is an important consideration for shoppers researching AR glasses. However, the price alone doesn't tell the complete story. Available promotions, bundles, accessories, product configuration, and compatibility can all affect the overall value of a purchase.
+            </p>
+            <p>
+              The RayNeo X2 price can vary depending on availability, promotions, retailer, and region. U.S. shoppers should check the current listing before purchasing and compare any available discounts with the regular price. If you find a RayNeo coupon code that applies to your order, the resulting discount may make the purchase more attractive.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              RayNeo X2 AR Features
+            </h3>
+            <p>
+              The RayNeo X2 AR experience is designed around wearable augmented reality and hands-free digital interaction. AR glasses can offer applications across entertainment, information, communication, and productivity.
+            </p>
+            <p>
+              When comparing the RayNeo X2 with other smart glasses, consider the features that matter most to you rather than choosing solely based on price.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Ray Neo 2 vs. RayNeo X2
+            </h3>
+            <p>
+              If you're searching for Ray Neo 2, Ray Neo X2, or RayNeo X2, make sure you're comparing the exact products you're interested in. Product names can be searched in several variations, so checking specifications is important before placing an order.
+            </p>
+          </div>
+
+          {/* Best Ways to Save Card */}
+          <div className="space-y-6 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa]">
+              Best Ways to Save on RayNeo
+            </h3>
+            <p className="text-gray-600">
+              A coupon isn't the only way to save when shopping for RayNeo products. Combining smart shopping strategies can help you find better overall value.
+            </p>
+            
+            <div className="space-y-4 text-gray-700">
+              <p><strong>Check RayNeo Discount Code Offers:</strong> Before checkout, search CouponsBit for a current RayNeo discount code. Promotions can change, so checking immediately before purchasing is worthwhile.</p>
+              <p><strong>Shop During Major U.S. Sales:</strong> Major shopping events can bring discounts across consumer electronics. Look for RayNeo promotions during Black Friday, Cyber Monday, Memorial Day, Labor Day, Fourth of July, Back-to-School season, and Holiday sales.</p>
+              <p><strong>Look for RayNeo Deals and Bundles:</strong> Product bundles can sometimes provide better value than buying accessories separately. Check what accessories and extras are included in the offer.</p>
+              <p><strong>Compare RayNeo Prices:</strong> Compare current product prices, available discount codes, included accessories, shipping costs, and return policies to get a clear picture of actual value.</p>
             </div>
           </div>
 
+          {/* Why Choose RayNeo Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at RayNeo</h3>
-            <p><strong>Check Couponsbit Before Buying:</strong> Always browse Couponsbit before placing an order to find the latest RayNeo promo codes and technology deals.</p>
-            <p><strong>Shop Major Sales Events:</strong> Look for significant technology discounts during Black Friday, Cyber Monday, Memorial Day, Labor Day, and Holiday Sales.</p>
-            <p><strong>Watch for Launch Promotions:</strong> New product releases often come with introductory discounts and limited-time offers.</p>
-            <p><strong>Bundle Accessories:</strong> Purchasing accessories together with your device may provide additional value and savings opportunities.</p>
-            <p><strong>Subscribe for Updates:</strong> Email subscribers may gain access to special promotions and exclusive product announcements.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Why Choose RayNeo Smart Glasses?
+            </h3>
+            <p>RayNeo combines wearable technology with immersive displays, giving consumers a different way to experience digital content.</p>
+            <p><strong>Immersive Viewing Experience:</strong> RayNeo smart glasses can create a large virtual display in a compact wearable format, making them appealing for movies, videos, gaming, and other supported content.</p>
+            <p><strong>Portable Entertainment:</strong> Because they are designed as wearable devices, RayNeo glasses can be easier to carry than a traditional monitor—particularly useful for travelers.</p>
+            <p><strong>Gaming:</strong> Compatible RayNeo products provide an immersive display for gaming. Consider factors such as compatibility, display quality, refresh rate, latency, and comfort.</p>
+            <p><strong>Productivity and Remote Work:</strong> A virtual screen provides an alternative to carrying a physical monitor for remote work or travel.</p>
+            <p><strong>Innovative Technology:</strong> RayNeo operates in a rapidly developing category combining augmented reality, wearable computing, and display technology.</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose RayNeo?</h3>
-            <p><strong>Immersive Viewing:</strong> RayNeo devices create large virtual screens that enhance entertainment, gaming, and productivity.</p>
-            <p><strong>Portable Design:</strong> Lightweight construction allows users to enjoy digital content virtually anywhere.</p>
-            <p><strong>Multi-Device Compatibility:</strong> Works with smartphones, tablets, laptops, and gaming consoles.</p>
-            <p><strong>Innovative Tech:</strong> Ongoing investment in advanced AR and wearable display solutions for modern digital lifestyles.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Experience the Future for Less</h3>
-            <p>Whether you're looking for AR smart glasses, wearable displays, or innovative productivity solutions, RayNeo offers technology designed to enhance how you interact with the digital world.</p>
-            <p>Before completing your purchase, visit Couponsbit to explore the latest RayNeo coupon codes, promo codes, and smart glasses deals. With verified discounts, we help you unlock more value from your next tech purchase.</p>
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">
+              Find the Latest RayNeo Coupon Code & Deals
+            </h3>
+            <p>
+              Whether you're interested in RayNeo smart glasses, TCL RayNeo X2 AR glasses, wearable displays, or augmented reality technology, checking for a discount before checkout can help you save.
+            </p>
+            <p>
+              Before purchasing, visit CouponsBit to find the latest RayNeo coupon code, RayNeo promo code, RayNeo discount code, RayNeo X2 deals, and smart glasses offers. Compare available promotions, review the terms, and choose the offer that provides the best value for your purchase.
+            </p>
           </div>
 
           {!isReadMore && (
@@ -925,51 +1059,95 @@ export default function RayneoCouponsContent() {
           )}
         </div>
 
-        <button 
+        {/* Read More / Read Less Toggle */}
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline focus:outline-none"
         >
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+          {isReadMore ? "Read Less" : "Read More"}{" "}
+          <ChevronDown
+            className={cn(
+              "w-4 h-4 transition-transform duration-300",
+              isReadMore && "rotate-180"
+            )}
+          />
         </button>
 
-        {/* FAQs Accordion */}
+        {/* Dynamic FAQ Accordion */}
         <div className="mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+          <h3 className="text-2xl font-black text-black mb-8">
+            RayNeo promo Code FAQs
+          </h3>
           {[
-            { q: "Does RayNeo offer coupon codes?", a: "Yes. RayNeo occasionally offers promo codes, discounts, and special promotions on smart glasses and wearable technology products." },
-            { q: "Where can I find RayNeo promo codes?", a: "You can find the latest RayNeo coupon codes and technology deals directly on Couponsbit." },
-            { q: "What does RayNeo sell?", a: "RayNeo specializes in AR smart glasses, wearable displays, immersive entertainment devices, and productivity-focused technology products." },
-            { q: "Are RayNeo smart glasses compatible with smartphones?", a: "Many RayNeo products are designed to work with compatible smartphones, tablets, laptops, gaming devices, and other supported hardware." },
-            { q: "Who should use RayNeo products?", a: "RayNeo products are ideal for gamers, remote workers, content creators, travelers, and technology early adopters." },
-            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers." }
+            { q: "Does RayNeo Have a Coupon Code?", a: "RayNeo may offer promotional codes, discounts, and special offers at different times. Check CouponsBit for currently available RayNeo coupon codes before shopping." },
+            { q: "Where Can I Find a RayNeo Promo Code?", a: "You can check CouponsBit for available RayNeo promo codes, discount codes, and promotional offers. New deals may appear during seasonal sales and special promotional events." },
+            { q: "What Is a RayNeo Coupon Code?", a: "A RayNeo coupon code is a promotional code that may provide a discount or other benefit on an eligible RayNeo purchase. Each promotion has its own terms and conditions." },
+            { q: "What Is the RayNeo X2 Price?", a: "The RayNeo X2 price can vary based on availability, promotions, retailer, region, and product configuration. Check the latest price before purchasing." },
+            { q: "What Are TCL Ray Neo X2 Glasses?", a: "TCL Ray Neo X2 glasses are AR glasses designed to provide augmented reality and digital viewing experiences through a wearable device." },
+            { q: "Are RayNeo Smart Glasses Compatible With Smartphones?", a: "Compatibility varies by model. Check the specifications for the particular RayNeo product to confirm supported smartphones, laptops, gaming consoles, and other devices." },
+            { q: "When Is the Best Time to Buy RayNeo?", a: "Black Friday, Cyber Monday, Memorial Day, Labor Day, and holiday shopping periods can be good times to look for RayNeo deals. However, promotions may be available at other times throughout the year." },
+            { q: "Is CouponsBit Free to Use?", a: "Yes. CouponsBit is free to use. Shoppers can browse coupon codes, discounts, and promotional offers across technology, fashion, travel, beauty, and other categories." }
           ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+            <div
+              key={i}
+              className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300"
+            >
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors focus:outline-none"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div
+                  className={cn(
+                    "bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300",
+                    openFaq === i && "bg-[#056bfa]"
+                  )}
+                >
+                  <ChevronDown
+                    className={cn(
+                      "w-4 h-4 text-gray-500 transition-transform duration-300",
+                      openFaq === i && "text-white rotate-180"
+                    )}
+                  />
                 </div>
               </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              <div
+                className={cn(
+                  "overflow-hidden transition-all duration-300 px-8 bg-white",
+                  openFaq === i
+                    ? "max-h-[500px] pb-8 opacity-100"
+                    : "max-h-0 opacity-0 pb-0"
+                )}
+              >
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                  {faq.a}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Sidebar */}
+      {/* Right Column: Sidebar */}
       <div className="space-y-10">
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular RayNeo Searches</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular RayNeo Searches
+          </h3>
           <div className="flex flex-wrap gap-2.5">
-            {["AR Glasses", "RayNeo Air 2", "Wearable Display", "Smart Glasses", "RayNeo Promo Code", "Gaming Glasses", "AR Display", "Tech Deals"].map(tag => (
+            {[
+              "AR Glasses",
+              "RayNeo Air 2",
+              "Wearable Display",
+              "Smart Glasses",
+              "RayNeo Promo Code",
+              "Gaming Glasses",
+              "AR Display",
+              "Tech Deals",
+            ].map((tag) => (
               <span
                 key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors"
               >
                 {tag}
               </span>
@@ -978,21 +1156,40 @@ export default function RayneoCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top RayNeo Deals</h3>
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Today's Top RayNeo Deals
+          </h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {(typeof COUPONS !== "undefined" ? COUPONS : [
+              { heading: "EXCLUSIVE DEAL", sub: "Save up to 20% on RayNeo X2" },
+              { heading: "LIMITED TIME", sub: "Get free shipping on Smart Glasses" }
+            ]).slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">R</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                  R
                 </div>
-                <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {deal.heading}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1 normal-case">
+                    {deal.sub}
+                  </p>
+                </div>
+                <a
+                  href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                >
+                  Get Deal
+                </a>
               </div>
             ))}
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

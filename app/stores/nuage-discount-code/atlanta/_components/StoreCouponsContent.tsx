@@ -425,7 +425,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$49</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$49</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -466,7 +466,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">39%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">39%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -507,7 +507,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">35%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">35%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -548,7 +548,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -589,7 +589,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">12%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">12%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -630,7 +630,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -671,7 +671,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$16</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$16</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -712,7 +712,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">10%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">10%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -753,7 +753,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$18</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$18</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -794,7 +794,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$14</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$14</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
         </div>
       </div>
@@ -835,7 +835,7 @@ export default function NuagewearAtlantaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">37%</h2>
+          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">37%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>

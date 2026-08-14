@@ -270,21 +270,21 @@ export default function ProductsPageContent() {
             Explore the Best Products & Deals from Top Brands Worldwide
           </h2>
           <p className="text-[#555555] text-[15px] leading-relaxed mt-4">
-            Discover thousands of top-rated products across every category — from electronics and fashion to beauty, travel, and home essentials. Coupons Clouds brings you the most up-to-date deals, verified discount codes, and exclusive offers from over 2,000 trusted brands worldwide. Whether you're hunting for the latest gadgets, trending fashion, or everyday must-haves, our platform ensures you always shop smarter and save more.
+            Discover thousands of top-rated products across every category — from electronics and fashion to beauty, travel, and home essentials. Couponsbit brings you the most up-to-date deals, verified discount codes, and exclusive offers from over 2,000 trusted brands worldwide. Whether you're hunting for the latest gadgets, trending fashion, or everyday must-haves, our platform ensures you always shop smarter and save more.
           </p>
 
           <h3 className="text-[#000000] font-bold text-[17px] leading-tight mt-6">
-            Why Shop Through Coupons Clouds?
+            Why Shop Through Couponsbit?
           </h3>
           <p className="text-[#555555] text-[15px] leading-relaxed mt-4">
-            Every product deal listed on Coupons Clouds is hand-verified by our team to ensure accuracy and maximum savings. We partner directly with leading global brands like Amazon, Flipkart, Nike, Samsung, Myntra, and hundreds more to bring you real-time discounts that actually work. No fake codes, no expired offers — just genuine savings on the products you love, updated daily.
+            Every product deal listed on Couponsbit is hand-verified by our team to ensure accuracy and maximum savings. We partner directly with leading global brands like Amazon, Flipkart, Nike, Samsung, Myntra, and hundreds more to bring you real-time discounts that actually work. No fake codes, no expired offers — just genuine savings on the products you love, updated daily.
           </p>
 
           <h3 className="text-[#000000] font-bold text-[17px] leading-tight mt-6">
             Shop Across Every Category
           </h3>
           <p className="text-[#555555] text-[15px] leading-relaxed mt-4">
-            From cutting-edge electronics and stylish apparel to health & pharma, food & dining, sports equipment, and travel bookings — Coupons Clouds covers every shopping category imaginable. Use our smart search and category filters to find exactly what you need in seconds, and never pay full price again.
+            From cutting-edge electronics and stylish apparel to health & pharma, food & dining, sports equipment, and travel bookings — Couponsbit covers every shopping category imaginable. Use our smart search and category filters to find exactly what you need in seconds, and never pay full price again.
           </p>
         </div>
       </section>

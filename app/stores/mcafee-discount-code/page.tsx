@@ -84,9 +84,113 @@ const mcafeeSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "McAfee Coupon Code",
-            description:
-              "Latest McAfee coupon code for antivirus, VPN and identity protection plan discounts.",
+            name: "McAfee Total Protection – Up To 75% OFF",
+            description: "Get McAfee Total Protection for as low as $24.99 (regular price $99.99) and protect up to 5 devices.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Total Protection Plan – Flat 66% OFF",
+            description: "Save flat 66% off the McAfee Total Protection Plan, starting from just $49.99.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Advanced Plan – Save $110",
+            description: "Get the McAfee Advanced Plan from only $89.99/year and save $110 on premium security and privacy protection.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Individual Ultimate Plan – Save $80",
+            description: "Subscribe to the Individual Ultimate Plan from just $79.99/year and save $80 on McAfee's most comprehensive personal protection plan.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Family Plan – Up To $225 OFF",
+            description: "Get McAfee Family Plans starting from only $69.99/year and save up to $225 off.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Back-To-School Sale – Extra 10% OFF",
+            description: "Save an extra 10% off eligible McAfee subscriptions for students and families.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Premium Antivirus – Starting From $24.99",
+            description: "Secure your devices with McAfee Premium Antivirus starting at just $24.99.",
+            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "McAfee",
+              url: "https://www.mcafee.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "McAfee Multi-Device Security – Protect Unlimited Devices",
+            description: "Secure unlimited compatible devices with McAfee Multi-Device Security plans starting from $69.99/year.",
             url: "https://www.couponsbit.us/stores/mcafee-discount-code",
             seller: {
               "@type": "Organization",
@@ -150,6 +254,61 @@ const mcafeeSchema = {
           position: 3,
           name: "McAfee Coupons",
           item: "https://www.couponsbit.us/stores/mcafee-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/mcafee-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is McAfee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "McAfee is a global cybersecurity company that provides antivirus software, identity protection, VPN services, password management, and multi-device security solutions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does McAfee protect against viruses and malware?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. McAfee helps protect devices from viruses, malware, ransomware, spyware, phishing attacks, and other common online threats.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use McAfee on multiple devices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many McAfee subscriptions support multiple devices, including Windows PCs, Macs, Android phones, and iPhones.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does McAfee include a VPN?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many McAfee plans include a Secure VPN that helps protect your privacy while browsing online, especially on public Wi-Fi.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find McAfee coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest McAfee coupon codes, McAfee promo codes, and exclusive antivirus deals on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. CouponsBit is completely free and helps users discover verified coupon codes, promo offers, and discounts from trusted global brands.",
+          },
         },
       ],
     },

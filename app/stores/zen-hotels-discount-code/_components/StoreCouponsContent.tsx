@@ -374,7 +374,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,625</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,625</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -414,7 +414,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Get</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$35</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$35</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -455,7 +455,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,009</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,009</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -495,7 +495,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,553</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$2,553</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -535,7 +535,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$1,145</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$1,145</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -575,7 +575,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$852</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$852</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -615,7 +615,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$818</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$818</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -655,7 +655,7 @@ export default function ZenHotelsCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$291</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$291</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">

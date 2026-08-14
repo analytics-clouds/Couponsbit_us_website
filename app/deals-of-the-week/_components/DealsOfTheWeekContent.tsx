@@ -314,7 +314,7 @@ export default function DealsOfTheWeekContent() {
                   <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">LYCA</span>
                   <span className="bg-[#f5f5f5] text-gray-500 text-[10px] font-bold px-3 py-1.5 rounded-full">{c.type}</span>
                 </div>
-                <h3 className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</h3>
+                <div className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</div>
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>

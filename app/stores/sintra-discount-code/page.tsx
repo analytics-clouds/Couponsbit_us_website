@@ -81,23 +81,91 @@ const sintraSchema = {
       description:
         "Latest verified Sintra coupon codes, promo codes and discount codes for AI business automation plans and subscriptions.",
       url: "https://www.couponsbit.us/stores/sintra-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 6,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Sintra Coupon Code",
-            description:
-              "Latest Sintra coupon code for AI business tools and automation subscription discounts.",
+            name: "Sintra AI Plans – Starting From $15.60/Month",
+            description: "Choose the perfect Sintra AI plan with powerful AI helpers and premium features.",
             url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-              { "@type": "Country", name: "Pakistan" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Sintra",
+              url: "https://sintra.ai",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Sintra 1-Month Plan – Save 50%",
+            description: "Get started with flexible monthly access at discounted pricing.",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Sintra",
+              url: "https://sintra.ai",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Sintra 12-Month Plan – Save 70%",
+            description: "Unlock maximum savings with Sintra AI's most popular annual plan.",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Sintra",
+              url: "https://sintra.ai",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Sintra 3-Month Plan – Save 60%",
+            description: "Enjoy premium AI tools with flexible mid-term pricing.",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Sintra",
+              url: "https://sintra.ai",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Sintra Soshie – Social Media Manager 60% OFF",
+            description: "Manage your social media smarter with Sintra AI's Soshie tool.",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Sintra",
+              url: "https://sintra.ai",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Sintra AI Money-Back Guarantee Offer",
+            description: "Try Sintra AI risk-free with a full refund guarantee.",
+            url: "https://www.couponsbit.us/stores/sintra-discount-code",
             seller: {
               "@type": "Organization",
               name: "Sintra",
@@ -160,6 +228,61 @@ const sintraSchema = {
           position: 3,
           name: "Sintra Coupons",
           item: "https://www.couponsbit.us/stores/sintra-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/sintra-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Sintra offer coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Sintra periodically offers promo codes, subscription discounts, and promotional pricing for eligible plans.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Sintra promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find updated Sintra coupon codes and software deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Sintra used for?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sintra is used for AI-powered business productivity, content creation, workflow automation, marketing support, and business assistance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who can benefit from Sintra?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Entrepreneurs, freelancers, consultants, agencies, creators, startups, and small businesses can all use Sintra to streamline operations and improve productivity.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Sintra offer multiple AI assistants?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Sintra provides access to multiple specialized AI helpers designed for different business tasks and workflows.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and provides access to verified coupon codes, discounts, and promotional offers.",
+          },
         },
       ],
     },

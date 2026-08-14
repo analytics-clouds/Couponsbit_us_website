@@ -80,22 +80,91 @@ const malaysiaAirlinesSchema = {
       description:
         "Latest verified Malaysia Airlines coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 6,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Malaysia Airlines Coupon Code",
-            description:
-              "Latest Malaysia Airlines coupon code and discount offers.",
+            name: "Bonus Rewards – Extra 5% OFF + 2X Enrich Points",
+            description: "Enjoy an Extra 5% OFF on selected international flight bookings.",
             url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Malaysia Airlines",
+              url: "https://www.malaysiaairlines.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Malaysia Airlines – SAVE UP TO 35% On Flights",
+            description: "Save UP TO 35% OFF on selected USA international flight bookings.",
+            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Malaysia Airlines",
+              url: "https://www.malaysiaairlines.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Online Specials – SAVE UP TO 15%",
+            description: "Save UP TO 15% OFF when you book flights online.",
+            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Malaysia Airlines",
+              url: "https://www.malaysiaairlines.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Flight Sale – Fares From $399",
+            description: "Fly from the USA to Kuala Lumpur from just $399 one-way.",
+            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Malaysia Airlines",
+              url: "https://www.malaysiaairlines.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Website Exclusive – SAVE UP TO 10%",
+            description: "Save UP TO 10% OFF on selected flights booked through the Malaysia Airlines website or app.",
+            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Malaysia Airlines",
+              url: "https://www.malaysiaairlines.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Online Payment Offer – SAVE UP TO 15%",
+            description: "Pay online and enjoy UP TO 15% OFF on eligible flight bookings.",
+            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
             seller: {
               "@type": "Organization",
               name: "Malaysia Airlines",
@@ -158,6 +227,61 @@ const malaysiaAirlinesSchema = {
           position: 3,
           name: "Malaysia Airlines Coupons",
           item: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/malaysia-airlines-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Malaysia Airlines offer coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Malaysia Airlines frequently offers promotional discounts, hosting deals, and limited-time offers for both new and existing customers.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Malaysia Airlines promo codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Malaysia Airlines coupon codes and hosting deals directly on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Malaysia Airlines good for WordPress websites?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Malaysia Airlines is widely known for its WordPress hosting solutions and beginner-friendly WordPress tools.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I register a domain through Malaysia Airlines?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Malaysia Airlines offers domain registration and management services alongside its hosting products.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Malaysia Airlines offer hosting for businesses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Malaysia Airlines provides hosting solutions suitable for startups, small businesses, growing companies, and online stores.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers.",
+          },
         },
       ],
     },

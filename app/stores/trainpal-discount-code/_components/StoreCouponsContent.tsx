@@ -427,7 +427,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/Year</p>
         </div>
       </div>
@@ -509,7 +509,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Kids</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -550,7 +550,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Flat</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</h2>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -591,7 +591,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£80</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£80</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -631,7 +631,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£71.95</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£71.95</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -671,7 +671,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£46.05</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£46.05</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -711,7 +711,7 @@ export default function TrainPalCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35.25</h2>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35.25</div>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">

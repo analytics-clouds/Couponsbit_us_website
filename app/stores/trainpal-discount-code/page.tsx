@@ -78,24 +78,138 @@ const trainpalSchema = {
       "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#offerlist",
       name: "TrainPal Coupon Codes & Promo Codes",
       description:
-        "Latest verified TrainPal coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
+        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
       url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 9,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "TrainPal Coupon Code",
-            description:
-              "Latest TrainPal coupon code for web hosting, domain and WordPress plan discounts.",
+            name: "TrainPal Railcards – Save 1/3 on UK Train Travel",
+            description: "Travel smarter across the UK with TrainPal Railcards and enjoy significant savings on train tickets.",
             url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "Italy" },
-              { "@type": "Country", name: "United States" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal 26-30 Railcard – Perfect for Young Professionals",
+            description: "Enjoy discounted train travel across the UK with the popular 26-30 Railcard.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal Two Together Railcard – Save When You Travel Together",
+            description: "Get 1/3 OFF rail fares when two named people travel together.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal Family &amp; Friends Railcard – Family Travel Made Affordable",
+            description: "Save on family adventures and school holiday trips with TrainPal.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal 16-17 Saver – Half-Price Rail Travel",
+            description: "Ideal for students, apprentices and young commuters.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal 3-Year Railcard – Long-Term Savings for Frequent Travellers",
+            description: "Save more with a multi-year Railcard subscription.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal London to Manchester Deal – Save Big on Popular Routes",
+            description: "Make your journey between London and Manchester more affordable with TrainPal Railcards.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal Leeds to Edinburgh Offer – Travel for Less",
+            description: "Explore Scotland and Northern England while keeping travel costs low.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "TrainPal",
+              url: "https://www.mytrainpal.com/",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "TrainPal Birmingham to Bristol Savings – Lower Fares Every Trip",
+            description: "Enjoy affordable rail travel between Birmingham and Bristol with TrainPal.",
+            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
             seller: {
               "@type": "Organization",
               name: "TrainPal",
@@ -158,6 +272,61 @@ const trainpalSchema = {
           position: 3,
           name: "TrainPal Coupons",
           item: "https://www.couponsbit.us/stores/trainpal-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is TrainPal?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TrainPal is an online booking platform that allows users to search, compare, and book train and coach tickets across the UK and Europe.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is TrainPal available in the UK?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. TrainPal supports rail travel throughout the United Kingdom and offers access to numerous train routes and operators.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I book train tickets in Italy through TrainPal?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. TrainPal allows travelers to book rail journeys across Italy, including many popular high-speed routes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find TrainPal discount codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest TrainPal discount codes, promo offers, and travel deals on Couponsbit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does TrainPal offer mobile ticketing?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TrainPal supports digital booking services and provides convenient access to travel information through its platform.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely. Couponsbit is completely free and helps users discover discounts, promo codes, and travel savings opportunities.",
+          },
         },
       ],
     },

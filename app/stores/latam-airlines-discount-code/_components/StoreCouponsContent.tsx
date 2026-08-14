@@ -354,8 +354,8 @@ export default function LatamCouponsContent() {
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Earn</p>
 
-              <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">
-                  40,000  </h2>
+              <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">
+                  40,000  </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 
@@ -495,8 +495,8 @@ Bonus Miles
               starting
              </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $308</h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  $308</div>
 
            
             </div>
@@ -630,8 +630,8 @@ Bonus Miles
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               UPTO </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  40% </h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  40% </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF
@@ -768,8 +768,8 @@ Bonus Miles
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Starting  </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $554</h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  $554</div>
 
               
 
@@ -903,8 +903,8 @@ Bonus Miles
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               starting at</p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $136</h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  $136</div>
 
             
             </div>
@@ -1036,8 +1036,8 @@ Bonus Miles
               <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
               Flat   </p>
 
-              <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  10%  </h2>
+              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                  10%  </div>
 
               <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
                 OFF

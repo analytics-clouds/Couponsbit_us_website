@@ -80,22 +80,136 @@ const chewySchema = {
       description:
         "Latest verified Chewy coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/chewy-promo-code",
-      numberOfItems: 10,
+      numberOfItems: 9,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Chewy Coupon Code",
-            description:
-              "Latest Chewy coupon code and discount offers.",
+            name: "Chewy – 50% OFF First Autoship Order",
+            description: "Get 50% OFF your first Autoship order on eligible flea & tick medications",
             url: "https://www.couponsbit.us/stores/chewy-promo-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Chewy – FREE $15 eGift Card on $49+ Orders",
+            description: "Get a FREE $15 eGift Card with an eligible $49+ order",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Chewy – Buy 3, Get the 4th FREE on Top-Rated Toys",
+            description: "Buy 3, Get the 4th FREE on selected top-rated pet toys",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – 50% OFF Your First Order",
+            description: "Get 50% OFF your first order with Chewy",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – Nylabone Tough Chewer Dog Toy for $12.74",
+            description: "Get the Nylabone Tough Chewer Dog Toy for $12.74",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – $15 eGift Card on $49+ Orders",
+            description: "New customers can get a $15 eGift Card when spending $49 or more",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – 50% OFF First Autoship on Flea & Tick Products",
+            description: "Get 50% OFF your first Autoship on eligible prescription flea & tick products",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – Frontline Plus for Small Dogs from $40.98",
+            description: "Get Frontline Plus Flea & Tick Treatment for Small Dogs from $40.98",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
+            seller: {
+              "@type": "Organization",
+              name: "Chewy",
+              url: "https://www.chewy.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Chewy Promo Code – FREE Delivery on First Orders Over $35",
+            description: "Get FREE 1–3 day delivery on qualifying first-time orders over $35",
+            url: "https://www.couponsbit.us/stores/chewy-promo-code",
             seller: {
               "@type": "Organization",
               name: "Chewy",
@@ -158,6 +272,61 @@ const chewySchema = {
           position: 3,
           name: "Chewy Coupons",
           item: "https://www.couponsbit.us/stores/chewy-promo-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/chewy-promo-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Where can I find a Chewy promo code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest Chewy promo codes, Chewy coupon codes, and Chewy discount codes on CouponsBit before completing your purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Chewy offer discounts for new customers?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chewy may provide promotional offers for eligible new customers. Availability and terms can change, so checking current promotions is recommended.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products can I buy on Chewy?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Chewy sells pet food, treats, toys, supplies, medications, supplements, grooming products, and accessories for dogs, cats, and other pets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Chewy Autoship?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Autoship allows customers to schedule recurring deliveries of frequently purchased pet products, making regular shopping more convenient.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Chewy sell prescription pet medications?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, Chewy offers pharmacy services and eligible prescription pet medications and healthcare products.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and helps shoppers discover verified deals and promotional offers from popular brands.",
+          },
         },
       ],
     },

@@ -141,7 +141,7 @@ export default function ArticleInteractive() {
 
                 <div className="rounded-2xl overflow-hidden w-full h-[220px] md:h-[420px]">
                   <img
-                    src="https://res.cloudinary.com/couponsbit/image/upload/v1783578422/holiday-shopping-calendar-2026_ak4cju.webp"
+                    src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1000,c_limit/v1783578422/holiday-shopping-calendar-2026_ak4cju.webp"
                     alt="Holiday Shopping Calendar 2026 – Best USA Shopping Holidays & Sales"
                     width={800}
                     height={420}

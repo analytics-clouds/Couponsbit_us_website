@@ -82,15 +82,105 @@ const stubHubSchema = {
       description:
         "Latest verified StubHub coupon codes, promo codes and discount codes for tickets.",
       url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-      numberOfItems: 10, // ← update this to match actual coupon count on page
+      numberOfItems: 7, // ← update this to match actual coupon count on page
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "StubHub Coupon Code",
-            description: "Latest StubHub coupon code for ticket discounts.",
+            name: "Flat 10% OFF Sitewide On Orders Above $40",
+            description: "Unlock instant savings on concerts, sports events, live shows and more.",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "-NBA Playoffs Tickets – Western Conference Finals",
+            description: "Book your NBA Playoffs tickets now for the Oklahoma City Thunder vs San Antonio Spurs clash.",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Rock Music Tickets – Starting From $30",
+            description: "Enjoy electrifying live rock performances at affordable ticket prices.",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "The Lion King New York Tickets – Starting At $171",
+            description: "Experience the magic of The Lion King live in New York at special prices.",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Under The Big Sky Festival Tickets - Starting At $582",
+            description: "Enjoy a 3-day music festival experience packed with entertainment and live performance",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "STUDENT DISCOUNT – Flat $25 OFF On Ticket Booking",
+            description: "Students can unlock extra savings on event and concert tickets.",
+            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "StubHub",
+              url: "https://www.stubhub.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "NEW USER OFFER - Get $20 OFF On First Order",
+            description: "Sign up today and enjoy an exclusive discount on your first booking.",
             url: "https://www.couponsbit.us/stores/stubhub-discount-code",
             seller: {
               "@type": "Organization",
@@ -154,6 +244,85 @@ const stubHubSchema = {
           position: 3,
           name: "StubHub Coupons",
           item: "https://www.couponsbit.us/stores/stubhub-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/stubhub-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does StubHub Have a Coupon Code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "StubHub may offer promotional codes, discounts, and special offers at different times. Check CouponsBit for currently available StubHub coupon codes before purchasing tickets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where Can I Find a StubHub Promo Code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can check CouponsBit for available StubHub promo codes, discount codes, and ticket offers before completing your order.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is There a Real StubHub Discount Code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Available promotions can change, so check the current StubHub offers on CouponsBit and review the terms of each deal before using it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What Can I Buy With StubHub Tickets?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "StubHub offers tickets for concerts, professional and college sports, theater, comedy, festivals, and other live entertainment events.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I Find StubHub World Cup Tickets?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "StubHub may have listings for major international sporting events, including World Cup-related events. Availability and pricing can vary significantly depending on the match and demand.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I Find StubHub NFL Tickets?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, StubHub features listings for NFL games. Search by team, matchup, location, or event date to find available tickets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I Find StubHub Concert Tickets?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. StubHub offers tickets for numerous concerts, tours, and music events. Availability depends on the artist, venue, date, and current listings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I Sell Tickets on StubHub?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eligible ticket holders may be able to list tickets they can no longer use through StubHub's marketplace, subject to the platform's applicable requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit Free to Use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is free to use. You can browse available coupon codes, promotions, and deals across entertainment, travel, fashion, technology, and other categories.",
+          },
         },
       ],
     },

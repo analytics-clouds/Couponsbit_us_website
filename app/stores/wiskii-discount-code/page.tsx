@@ -87,15 +87,144 @@ const wishkiSchema = {
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Wiskii Coupon Code",
-            description:
-              "Latest Wiskii coupon code and discount offers.",
+            name: "Wiskii – Daily Deals Hub – UP TO 60% OFF",
+            description: "Discover thousands of trending products with UP TO 60% OFF every day.",
             url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "India" },
-            ],
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Flower Bee Fidget Anxiety Ring – SAVE 67%",
+            description: "Buy the Flower Bee Fidget Anxiety Ring for just $0.79 (Regular Price $2.40).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Self-Warming Pet Bed – SAVE UP TO 43%",
+            description: "Get the Self-Warming Pet Bed for only $7.29 (Regular Price $12.03).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – USB-C PD 60W Fast Charging Cable – SAVE 44%",
+            description: "Shop the USB-C PD 60W Fast Charging Cable for just $3.57 (Regular Price $6.42).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Outdoor Cooling Raised Dog Bed – SAVE 44%",
+            description: "Buy the Breathable Raised Dog Bed for only $36.23 (Regular Price $64.94).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Waterproof Scooter Handlebar Bag – SAVE UP TO 40%",
+            description: "Get the Waterproof Scooter Front Hanging Bag for just $12.75 (Regular Price $21.31).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – DIY Rhinestone Nail Art Stones – Deals Under $5",
+            description: "Shop DIY Rhinestone Nail Art Stones for only $3.12.",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Voice Activated Recorder – SAVE UP TO 22%",
+            description: "Buy the Voice Activated Recorder with MP3 Playback for just $17.35 (Regular Price $22.43).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 9,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Reinforced Cloth Headwear Storage Organizer – SAVE 21%",
+            description: "Get the Reinforced Cloth Headwear Storage Organizer for only $34.66 (Regular Price $44.15).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Wiskii",
+              url: "https://www.wishki.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 10,
+          item: {
+            "@type": "Offer",
+            name: "Wiskii – Progressive Multifocal Reading Glasses – SAVE 29%",
+            description: "Buy Progressive Multifocal Reading Glasses for just $5.42 (Regular Price $7.65).",
+            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
             seller: {
               "@type": "Organization",
               name: "Wiskii",
@@ -158,6 +287,61 @@ const wishkiSchema = {
           position: 3,
           name: "Wiskii Coupons",
           item: "https://www.couponsbit.us/stores/wiskii-discount-code",
+        },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is WISKII Active?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "WISKII Active is a women's premium activewear brand that combines fashion-forward designs with high-performance fabrics to create stylish athletic clothing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products does WISKII Active sell?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The brand offers sports bras, leggings, workout tops, matching sets, tennis apparel, dresses, skirts, jackets, swimwear, and lifestyle clothing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is WISKII Active suitable for everyday wear?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many WISKII Active collections are designed to transition seamlessly from workouts to everyday activities, making them ideal for an athleisure wardrobe.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find WISKII Active coupon codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can find the latest WISKII Active coupon codes, WISKII Active promo codes, and exclusive activewear deals on CouponsBit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does WISKII Active ship internationally?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. WISKII Active ships to customers in many countries worldwide through its online store.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is CouponsBit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. CouponsBit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted global brands.",
+          },
         },
       ],
     },
