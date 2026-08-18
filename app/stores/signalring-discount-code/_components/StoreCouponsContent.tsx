@@ -368,6 +368,36 @@ export default function SignalRingCouponsContent() {
           Signal Ring discount Codes, Promo Codes & Deals 2026
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA]">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              {[
+                ["SignalRing Discount Code – Smart Ring for $399", "$399", "All Users", "Free sizing kit included, sizes 5-13", "Signal Ring (Smart Ring)"],
+                ["SignalRing Discount Code – 5-Day Battery Smart Ring", "Up to 5-Day Battery", "All Users", "Includes charging case, no subscription required", "Signal Ring (Smart Ring)"],
+                ["SignalRing – Bluetooth Wearable Ring | $399", "$399", "All Users", "IP68 water resistance, sizes 5-13", "Signal Ring (Bluetooth Wearable Ring)"],
+                ["SignalRing – Free Sizing Kit & 30-Day Returns", "$399 + Free Sizing Kit", "All Users", "Up to 30-day returns, ships in October", "Signal Ring (Smart Ring)"],
+              ].map((row, i) => (
+                <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 3 && "border-b-0")}>
+                  <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+                  <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                  <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         {/* Collapsible Text Container */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

@@ -373,6 +373,38 @@ export default function WalmartCouponsContent() {
           Walmart Discount Codes, Promo Codes & Deals 2026
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA]">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              {[
+                ["Walmart – Acer Nitro ED0 27\" Curved Gaming Monitor | $119", "$119 (Save $50.99)", "All Users", "180Hz refresh rate, AMD FreeSync Premium", "Acer Nitro Curved Gaming Monitor"],
+                ["Walmart+ – 30-Day Trial for Just $1", "$1 Trial", "All Users", "Limited-time 30-day trial offer", "Walmart+ Membership"],
+                ["Walmart – Ball Glass Mason Jars with Lids & Bands | 12 Count", "From $14.47", "All Users", "12-count, wide-mouth 16 oz jars", "Ball Mason Jars (Kitchen Storage)"],
+                ["Walmart – Phones & More | Up to 35% OFF", "Up to 35% OFF", "All Users", "Selected smartphones & electronics", "Phones & Electronics"],
+                ["Walmart – August Style Edit | Virtu Twin XL Comforter Set $74.99", "$74.99 (Save $25)", "All Users", "Twin XL bedding, dorm-room essential", "Virtu Comforter Set"],
+                ["Walmart – Boyoun Daj Pro Noise Canceling Headphones | Up to 65% OFF", "$17.99 (Up to 65% OFF)", "All Users", "Noise-canceling, Flash Deal pricing", "Boyoun Daj Headphones"],
+              ].map((row, i) => (
+                <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
+                  <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+                  <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                  <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         {/* Collapsible Text Container */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

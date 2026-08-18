@@ -90,6 +90,9 @@ export const allStores: StoreEntry[] = [
   { name: "Superrun",        id: "superrun-discount-code",        category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037376/superrun_w6lj1n.webp",                 discount: "Save $30 OFF",    popular: false },
   { name: "SignalRing",      id: "signalring-discount-code",      category: "Electronics", coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/singnalring_i9epcf.jpg",               discount: "Starting At $399", popular: false },
   { name: "Walmart",         id: "walmart-promo-code",            category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp",             discount: "Up To 65% OFF",   popular: false },
+  { name: "Valvoline",       id: "valvoline-discount-code",       category: "More",        coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/valvoline-logo_qfdbbq.webp",           discount: "Up To 50% OFF",   popular: false },
+  { name: "GoodRx",          id: "goodrx-discount-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/goodrx-logo_ibgfjr.webp",             discount: "From $39/Month",  popular: false },
+  { name: "Nike",            id: "nike-discount-code",            category: "Fashion",     coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp",               discount: "Up To 60% OFF",   popular: false },
 ];
 
 
