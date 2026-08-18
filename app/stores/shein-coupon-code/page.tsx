@@ -236,59 +236,75 @@ const sheinSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/shein-coupon-code#faq",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is Shein?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Shein is a global online fashion and lifestyle retailer offering women's, men's, kids' and curve apparel alongside home, beauty and accessory products.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does Shein offer coupon codes?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Shein regularly runs promotions such as free shipping offers, new arrival highlights and seasonal collections.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Where can I find Shein coupon codes?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "You can find the latest Shein coupon codes and offers on Couponsbit.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does Shein have plus size clothing?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Shein's Curve collection is designed specifically for plus size shoppers.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does Shein sell more than clothing?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. In addition to apparel, Shein offers beauty products, accessories, footwear, and home & lifestyle items.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is Couponsbit free to use?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers.",
-          },
-        },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/shein-coupon-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does SHEIN Have Coupon Codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SHEIN provides promotional coupons and promo codes through different channels and campaigns. Availability, eligibility, and expiration dates can vary."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where Can I Find a SHEIN Promo Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available SHEIN promo codes, coupon offers, and discount deals before placing your order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How Do I Use a SHEIN Coupon Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add your products to your shopping bag, proceed to checkout, and enter your valid SHEIN coupon code in the promo code field. SHEIN allows one promo code per order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SHEIN Have a First Order Discount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SHEIN may provide a welcome offer to new customers. Its current U.S. first-order guidance describes a first-order voucher subject to conditions such as a minimum purchase, expiration period, and one-time use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Use More Than One SHEIN Coupon Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SHEIN's U.S. coupon policy states that only one coupon can be redeemed for a given order, so multiple coupons generally cannot be stacked together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do SHEIN Coupon Codes Expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SHEIN coupons have expiration dates, and expired coupons cannot be redeemed. Always check the expiration date and terms before using an offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Can I Buy at SHEIN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SHEIN's U.S. marketplace offers women's and men's clothing, Curve fashion, kids' products, shoes, accessories, beauty products, home and living items, sportswear, baby and maternity products, electronics, pet supplies, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit Free to Use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CouponsBit is free to use. Shoppers can browse coupon codes, discounts, and promotional offers across fashion, beauty, technology, travel, entertainment, and other categories."
+      }
+    }
+  ]
+},
   ],
 };
 

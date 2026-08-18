@@ -150,17 +150,83 @@ const uberEatsSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Uber Eats?", acceptedAnswer: { "@type": "Answer", text: "Uber Eats is a food delivery platform that connects users with restaurants for delivery and pickup orders, and also offers grocery and convenience store delivery in many markets." } },
-        { "@type": "Question", name: "Does Uber Eats offer promo codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Uber Eats regularly runs promotions such as free delivery offers and new restaurant highlights." } },
-        { "@type": "Question", name: "Where can I find Uber Eats promo codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Uber Eats promo codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Can I order groceries through Uber Eats?", acceptedAnswer: { "@type": "Answer", text: "Yes. In addition to restaurant delivery, Uber Eats offers grocery and convenience store delivery in many markets." } },
-        { "@type": "Question", name: "Can I pick up my Uber Eats order instead of getting it delivered?", acceptedAnswer: { "@type": "Answer", text: "Yes. Uber Eats offers a pickup option on eligible orders, letting you skip delivery fees." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Uber Eats Have Promo Codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Uber Eats offers promotional codes and other discounts. Available promotions can vary by location, user, restaurant, and order."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where Can I Find an Uber Eats Promo Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Uber Eats promo codes. You can also view promotions available to your account through the Uber Eats app under Account -> Promotions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is There an Uber Eats Promo Code for Existing Users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existing users may receive promotions through their Uber Eats account, restaurants, emails, or in-app notifications. Not all promotions are available to every customer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Uber Eats Have a First Order Discount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uber Eats may offer promotions specifically for first-time users. Eligibility and terms can vary, so check the current promotion before placing your first order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Use Two Uber Eats Promo Codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Uber Eats states that only one promo code can be applied to an order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Apply a Promo Code After Ordering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Promotions need to be applied before the order is placed. A promo code generally cannot be added after the order has been submitted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Uber Eats Offer Free Delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uber Eats offers $0 Delivery Fee promotions at participating restaurants, and eligible Uber One members can receive $0 Delivery Fee on qualifying orders. Availability and minimum order requirements vary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Is Uber One?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uber One is a paid membership program offering benefits across eligible Uber and Uber Eats orders and rides. The current U.S. membership page lists plans at $9.99 monthly or $96 annually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit Free to Use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CouponsBit is free to use. You can browse Uber Eats coupon codes, food delivery discounts, restaurant promotions, and other deals without paying a fee."
+      }
+    }
+  ]
+},
   ],
 };
 

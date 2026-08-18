@@ -142,17 +142,75 @@ const macysSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/macys-promo-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Macy's?", acceptedAnswer: { "@type": "Answer", text: "Macy's is a major American department store chain offering apparel, shoes, accessories, beauty, and home products for men, women, and kids." } },
-        { "@type": "Question", name: "Does Macy's offer promo codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Macy's regularly runs promotions such as free shipping offers, new arrival highlights, and brand-specific deals." } },
-        { "@type": "Question", name: "Where can I find Macy's promo codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Macy's promo codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Macy's sell home goods and furniture?", acceptedAnswer: { "@type": "Answer", text: "Yes. In addition to apparel, Macy's offers home goods, bedding, and furniture." } },
-        { "@type": "Question", name: "Can I shop beauty products at Macy's?", acceptedAnswer: { "@type": "Answer", text: "Yes. Macy's carries a wide range of beauty and fragrance brands." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/macys-promo-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Macy’s Have Coupon Codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Macy's offers coupons, promo codes, and other promotional discounts throughout the year. Availability and eligibility vary by offer."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where Can I Find a Macy’s Promo Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Macy’s promo codes, discount codes, and current deals before shopping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Is a Macy’s Discount Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Macy’s discount code is a promotional code that can provide savings on eligible purchases when the applicable terms are met."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Macy’s Have Free Shipping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Macy's currently offers free standard shipping at different thresholds depending on whether you're a Star Rewards member and, for some tiers, whether you use a Macy's Card. Other shoppers can qualify for free shipping on eligible $49+ orders in the contiguous U.S."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Is Macy’s Star Rewards?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Star Rewards is Macy's loyalty program. Free Bronze membership is available to non-cardholders, while Macy's Cardholders receive enhanced benefits based on their status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Earn Rewards at Macy’s?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Star Rewards members can earn points on qualifying purchases. The number of points earned per dollar depends on membership status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Macy’s Have Clearance Sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Macy's regularly features clearance and sale merchandise across categories including women's and men's fashion, shoes, handbags, home, luggage, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit Free to Use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CouponsBit is free to use. You can browse Macy's coupon codes, discounts, promotions, and deals without paying a fee."
+      }
+    }
+  ]
+},
   ],
 };
 

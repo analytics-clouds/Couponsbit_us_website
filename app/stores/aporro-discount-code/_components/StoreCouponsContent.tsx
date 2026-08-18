@@ -184,126 +184,127 @@ export default function AporroCouponsContent() {
 
         {/* Coupons + Sidebar */}
         <section className="py-6 md:py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Aporro Discount Codes & Offers</h2>
-                </div>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="flex flex-col lg:flex-row gap-12">
+      <div className="lg:w-[65%]">
+        <div className="mb-10">
+          <h2 className="text-2xl font-black text-black leading-tight">Aporro Discount Codes & Offers</h2>
+        </div>
 
-                {[
-                  { label: "GET", value: "$50", title: "Aporro Discount Code – Welcome Offer | $50 OFF", desc: "Sign up for the Aporro email list and unlock $50 OFF", bullets: ["Enter your email to receive access to the welcome savings", "Explore custom jewelry, chains, pendants and statement pieces", "A great first-order opportunity for new Aporro shoppers", "Aporro Discount Code, $50 Off, Welcome Offer, Jewelry Deals, USA"] },
-                  { label: "SHOP", value: "$99", title: "Aporro Discount Code – 2-Chain Combo | $99", desc: "Get the Aporro 2-Chain Combo for just $99", bullets: ["Mix and match two chains to create your own jewelry combination", "Designed for flexible styling and everyday layering", "A budget-friendly way to add multiple chains to your collection", "Aporro Discount Code, 2 Chain Combo, Chain Jewelry, Men's Jewelry, USA"] },
-                  { label: "FROM", value: "$89", title: "Aporro – Micro Custom Round Photo Pendant | From $89", desc: "Create a personalized Micro Custom Round Photo Pendant from $89", bullets: ["Add a meaningful photo to create a unique jewelry piece", "Compact design makes it suitable for everyday styling or gifting", "Choose a custom pendant that adds a personal touch to your look", "Aporro Discount Code, Custom Photo Pendant, Personalized Jewelry, USA"] },
-                  { label: "SAVE", value: "45%", title: "Aporro – S925 Baguette Mix Halo Stud Earrings | Save 45%", desc: "Save 45% on the S925 Baguette Mix Halo Stud Earring Set", bullets: ["Features a stylish halo-inspired design for an elevated look", "Crafted with S925 silver for a polished jewelry finish", "Ideal for everyday outfits, special occasions or gifting", "Aporro Discount Code, S925 Earrings, Stud Earrings, Jewelry Sale, USA"] },
-                  { label: "SHOP", value: "$70", title: "Aporro – Trove Orbit Pearl Chain in Rose Gold | $70", desc: "Shop the 8mm Trove Orbit Pearl Chain in Rose Gold for $70", bullets: ["Features a bold pearl-inspired chain design with a polished finish", "Rose gold styling adds a distinctive touch to your jewelry collection", "Suitable for statement looks, layering and special occasions", "Aporro Discount Code, Pearl Chain, Rose Gold Jewelry, Chain Necklace, USA"] },
-                  { label: "SAVE", value: "23%", title: "Aporro – Saint Mary Double Pendant Chain Set | Save 23%", desc: "Save 23% on the Saint Mary Double Pendant & Chain Layer Set", bullets: ["Features two pendant elements designed for layered styling", "Create a standout look with this detailed statement jewelry set", "Ideal for everyday outfits or occasions that call for extra style", "Aporro Discount Code, Pendant Chain Set, Layered Jewelry, Jewelry Deals, USA"] },
-                  { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Yellow Gold | $40", desc: "Get the 6mm Rope Chain with Iced Clasp in Yellow Gold for $40", bullets: ["Features an anti-tarnish finish for easier everyday wear", "Iced clasp detailing adds extra shine to the classic rope-chain design", "Wear it alone or pair it with a favorite pendant", "Aporro Discount Code, Rope Chain, Yellow Gold Jewelry, Iced Chain, USA"] },
-                  { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Rose Gold | $40", desc: "Shop the 6mm Rope Chain with Iced Clasp in Rose Gold for $40", bullets: ["Comes with an anti-tarnish finish designed for everyday styling", "Rose gold coloring gives the classic rope chain a modern appearance", "Great for layering or wearing as a standalone statement piece", "Aporro Discount Code, Rope Chain, Rose Gold Chain, Iced Jewelry, USA"] },
-                  { label: "BUNDLE", value: "$149", title: "Aporro – Pendant & 2 Chains Bundle | $149", desc: "Get 1 Pendant plus 2 Chains together for $149", bullets: ["Build a complete layered jewelry look with one convenient bundle", "Mix the pieces to create different combinations and styling options", "A value-focused choice for anyone looking to expand their jewelry collection", "Aporro Discount Code, Jewelry Bundle, Pendant and Chains, Men's Jewelry, USA"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                      <div className="flex flex-row">
-                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[24px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                            </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Aporro: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                          </div>
-                        </div>
-                      </div>
+        {[
+          { label: "GET", value: "$50", title: "Aporro Discount Code – Welcome Offer | $50 OFF", desc: "Sign up for the Aporro email list and unlock $50 OFF", bullets: ["Enter your email to receive access to the welcome savings", "Explore custom jewelry, chains, pendants and statement pieces", "A great first-order opportunity for new Aporro shoppers", "Aporro Discount Code, $50 Off, Welcome Offer, Jewelry Deals, USA"] },
+          { label: "SHOP", value: "$99", title: "Aporro Discount Code – 2-Chain Combo | $99", desc: "Get the Aporro 2-Chain Combo for just $99", bullets: ["Mix and match two chains to create your own jewelry combination", "Designed for flexible styling and everyday layering", "A budget-friendly way to add multiple chains to your collection", "Aporro Discount Code, 2 Chain Combo, Chain Jewelry, Men's Jewelry, USA"] },
+          { label: "FROM", value: "$89", title: "Aporro – Micro Custom Round Photo Pendant | From $89", desc: "Create a personalized Micro Custom Round Photo Pendant from $89", bullets: ["Add a meaningful photo to create a unique jewelry piece", "Compact design makes it suitable for everyday styling or gifting", "Choose a custom pendant that adds a personal touch to your look", "Aporro Discount Code, Custom Photo Pendant, Personalized Jewelry, USA"] },
+          { label: "SAVE", value: "45%", title: "Aporro – S925 Baguette Mix Halo Stud Earrings | Save 45%", desc: "Save 45% on the S925 Baguette Mix Halo Stud Earring Set", bullets: ["Features a stylish halo-inspired design for an elevated look", "Crafted with S925 silver for a polished jewelry finish", "Ideal for everyday outfits, special occasions or gifting", "Aporro Discount Code, S925 Earrings, Stud Earrings, Jewelry Sale, USA"] },
+          { label: "SHOP", value: "$70", title: "Aporro – Trove Orbit Pearl Chain in Rose Gold | $70", desc: "Shop the 8mm Trove Orbit Pearl Chain in Rose Gold for $70", bullets: ["Features a bold pearl-inspired chain design with a polished finish", "Rose gold styling adds a distinctive touch to your jewelry collection", "Suitable for statement looks, layering and special occasions", "Aporro Discount Code, Pearl Chain, Rose Gold Jewelry, Chain Necklace, USA"] },
+          { label: "SAVE", value: "23%", title: "Aporro – Saint Mary Double Pendant Chain Set | Save 23%", desc: "Save 23% on the Saint Mary Double Pendant & Chain Layer Set", bullets: ["Features two pendant elements designed for layered styling", "Create a standout look with this detailed statement jewelry set", "Ideal for everyday outfits or occasions that call for extra style", "Aporro Discount Code, Pendant Chain Set, Layered Jewelry, Jewelry Deals, USA"] },
+          { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Yellow Gold | $40", desc: "Get the 6mm Rope Chain with Iced Clasp in Yellow Gold for $40", bullets: ["Features an anti-tarnish finish for easier everyday wear", "Iced clasp detailing adds extra shine to the classic rope-chain design", "Wear it alone or pair it with a favorite pendant", "Aporro Discount Code, Rope Chain, Yellow Gold Jewelry, Iced Chain, USA"] },
+          { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Rose Gold | $40", desc: "Shop the 6mm Rope Chain with Iced Clasp in Rose Gold for $40", bullets: ["Comes with an anti-tarnish finish designed for everyday styling", "Rose gold coloring gives the classic rope chain a modern appearance", "Great for layering or wearing as a standalone statement piece", "Aporro Discount Code, Rope Chain, Rose Gold Chain, Iced Jewelry, USA"] },
+          { label: "BUNDLE", value: "$149", title: "Aporro – Pendant & 2 Chains Bundle | $149", desc: "Get 1 Pendant plus 2 Chains together for $149", bullets: ["Build a complete layered jewelry look with one convenient bundle", "Mix the pieces to create different combinations and styling options", "A value-focused choice for anyone looking to expand their jewelry collection", "Aporro Discount Code, Jewelry Bundle, Pendant and Chains, Men's Jewelry, USA"] },
+        ].map((c, i) => (
+          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+            <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+              <div className="flex flex-row">
+                {/* Left badge container updated to match standard sizing/typography */}
+                <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                  <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="text-center px-1">
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
+                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{c.value}</div>
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                  <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                      <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                    </div>
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                      View Details
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                      <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                        {c.bullets.map((b, bi) => (
+                          <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Sidebar */}
-              <div className="lg:w-[35%] space-y-8">
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Aporro</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Aporro is a hip-hop and streetwear jewelry brand offering custom, high-end pieces including chains, pendants, earrings, bracelets and rings. The brand is known for master craftsmanship and serves customers worldwide.
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: Sparkles, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: ShoppingBag, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Home, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Aporro Products & Categories</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Link2, title: "Chains", sub: "A wide range of chain styles across multiple metals and finishes." },
-                      { icon: Gem, title: "Pendants", sub: "Custom and ready-made pendant designs." },
-                      { icon: Sparkles, title: "Earrings", sub: "Streetwear-inspired earring styles." },
-                      { icon: Circle, title: "Bracelets", sub: "Bracelets designed for everyday wear." },
-                      { icon: Circle, title: "Rings", sub: "Ring collections spanning multiple styles." },
-                      { icon: Gem, title: "Custom Jewelry", sub: "Personalized and custom-designed jewelry pieces." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                    <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Aporro: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        ))}
+      </div>
+
+      {/* Sidebar */}
+      <div className="lg:w-[35%] space-y-8">
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">About Aporro</h3>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Aporro is a hip-hop and streetwear jewelry brand offering custom, high-end pieces including chains, pendants, earrings, bracelets and rings. The brand is known for master craftsmanship and serves customers worldwide.
+          </p>
+          <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+            Visit Store <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+           <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+           <div className="space-y-1">
+             {[
+               { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+               { icon: Sparkles, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+               { icon: ShoppingBag, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+               { icon: Home, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+               { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+             ].map((cat, i) => (
+               <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                 <div className="flex items-center gap-3">
+                   <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                   <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                 </div>
+                 <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+               </Link>
+             ))}
+           </div>
+           <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8">Aporro Products & Categories</h3>
+          <div className="space-y-8">
+            {[
+              { icon: Link2, title: "Chains", sub: "A wide range of chain styles across multiple metals and finishes." },
+              { icon: Gem, title: "Pendants", sub: "Custom and ready-made pendant designs." },
+              { icon: Sparkles, title: "Earrings", sub: "Streetwear-inspired earring styles." },
+              { icon: Circle, title: "Bracelets", sub: "Bracelets designed for everyday wear." },
+              { icon: Circle, title: "Rings", sub: "Ring collections spanning multiple styles." },
+              { icon: Gem, title: "Custom Jewelry", sub: "Personalized and custom-designed jewelry pieces." },
+            ].map((item, i) => (
+              <div key={item.title} className="flex gap-4 items-start text-justify">
+                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
+                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">
@@ -344,7 +345,7 @@ export default function AporroCouponsContent() {
                     <thead>
                       <tr className="bg-[#056BFA]">
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Highlight</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>

@@ -183,124 +183,127 @@ export default function BlueCypressCouponsContent() {
 
         {/* Coupons + Sidebar */}
         <section className="py-6 md:py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Blue Cypress Discount Codes & Offers</h2>
-                </div>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="flex flex-col lg:flex-row gap-12">
+      <div className="lg:w-[65%]">
+        <div className="mb-10">
+          <h2 className="text-2xl font-black text-black leading-tight">Blue Cypress Discount Codes & Offers</h2>
+        </div>
 
-                {[
-                  { label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Jackson Polo | $110", desc: "Shop The Jackson Polo in White/Seafoam for $110", bullets: ["Part of the Blue Cypress Summer 2026 Collection", "Ideal for golf rounds, casual outings and warm-weather styling", "Pair it with shorts or trousers for a clean summer look", "Blue Cypress Discount Code, Jackson Polo, Men's Golf Apparel, Summer Collection, USA"] },
-                  { label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Stokes Polo | $110", desc: "Get The Stokes Polo for $110 from the Summer 2026 Collection", bullets: ["Designed for a polished and comfortable golf-inspired look", "Suitable for golf, weekend outings and everyday summer wear", "A versatile polo that works well with casual or performance bottoms", "Blue Cypress Discount Code, Stokes Polo, Golf Clothing, Summer Fashion, USA"] },
-                  { label: "STARTING AT", value: "$109.95", title: "Blue Cypress Women's Essentials | $109.95", desc: "Explore Blue Cypress Women's Essentials starting at $109.95", bullets: ["Discover versatile pieces designed for active and everyday lifestyles", "Ideal for golf, travel, casual outings and seasonal styling", "Refresh your wardrobe with polished and comfortable women's apparel", "Blue Cypress Discount Code, Women's Essentials, Golf Fashion, Women's Apparel, USA"] },
-                  { label: "SHOP", value: "$110", title: "Blue Cypress – The Roberts Polo in Blue | $110", desc: "Shop The Roberts Polo in Blue for $110", bullets: ["Features a classic design suited to modern golf and casual style", "Great for golf rounds, weekends and everyday summer outfits", "Easy-to-pair style for a versatile seasonal wardrobe", "Blue Cypress Discount Code, Roberts Polo, Men's Golf Wear, Blue Polo, USA"] },
-                  { label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Navy | $114.95", desc: "Get the Hutton Hoodie in Navy for $114.95", bullets: ["Best-selling style designed for comfort on and off the golf course", "Perfect for cooler mornings, travel and casual layering", "Combines relaxed comfort with a refined athletic appearance", "Blue Cypress Discount Code, Hutton Hoodie, Golf Hoodie, Men's Apparel, USA"] },
-                  { label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Light Blue | $114.95", desc: "Shop the Hutton Hoodie in Light Blue for $114.95", bullets: ["Comfortable layering option for golf and everyday activities", "Great for cooler weather, travel and relaxed weekend looks", "Adds a casual yet polished touch to your wardrobe", "Blue Cypress Discount Code, Hutton Hoodie, Light Blue Hoodie, Golf Apparel, USA"] },
-                  { label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Quarter-Zip Navy | $124.95", desc: "Get The Isaac Quarter-Zip in Navy for $124.95", bullets: ["Smooth, lightweight design is made for comfortable movement", "Ideal for golf rounds, active days and outdoor activities", "Classic quarter-zip styling makes it easy to wear beyond the course", "Blue Cypress Discount Code, Isaac Quarter-Zip, Golf Performance Wear, Men's Clothing, USA"] },
-                  { label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Mélange Quarter-Zip Navy | $124.95", desc: "Shop The Isaac Mélange Quarter-Zip in Navy for $124.95", bullets: ["Features a stylish mélange finish with performance stretch", "Designed for comfortable movement during golf and active occasions", "Works well for the course, travel and everyday wear", "Blue Cypress Discount Code, Isaac Mélange Quarter-Zip, Golf Apparel, Performance Clothing, USA"] },
-                  { label: "SAVE", value: "20%", title: "Blue Cypress – First Order Offer | 20% OFF", desc: "Sign up and receive 20% OFF your first Blue Cypress order", bullets: ["Unlock access to exclusive offers and future promotions", "Save on polos, hoodies, quarter-zips and women's essentials", "A great opportunity for new customers to explore the collection", "Blue Cypress Discount Code, 20% Off First Order, Golf Deals, USA"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                      <div className="flex flex-row">
-                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[14px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                            </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Blue Cypress: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                          </div>
-                        </div>
-                      </div>
+        {[
+          { label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Jackson Polo | $110", desc: "Shop The Jackson Polo in White/Seafoam for $110", bullets: ["Part of the Blue Cypress Summer 2026 Collection", "Ideal for golf rounds, casual outings and warm-weather styling", "Pair it with shorts or trousers for a clean summer look", "Blue Cypress Discount Code, Jackson Polo, Men's Golf Apparel, Summer Collection, USA"] },
+          { label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Stokes Polo | $110", desc: "Get The Stokes Polo for $110 from the Summer 2026 Collection", bullets: ["Designed for a polished and comfortable golf-inspired look", "Suitable for golf, weekend outings and everyday summer wear", "A versatile polo that works well with casual or performance bottoms", "Blue Cypress Discount Code, Stokes Polo, Golf Clothing, Summer Fashion, USA"] },
+          { label: "STARTING AT", value: "$109.95", title: "Blue Cypress Women's Essentials | $109.95", desc: "Explore Blue Cypress Women's Essentials starting at $109.95", bullets: ["Discover versatile pieces designed for active and everyday lifestyles", "Ideal for golf, travel, casual outings and seasonal styling", "Refresh your wardrobe with polished and comfortable women's apparel", "Blue Cypress Discount Code, Women's Essentials, Golf Fashion, Women's Apparel, USA"] },
+          { label: "SHOP", value: "$110", title: "Blue Cypress – The Roberts Polo in Blue | $110", desc: "Shop The Roberts Polo in Blue for $110", bullets: ["Features a classic design suited to modern golf and casual style", "Great for golf rounds, weekends and everyday summer outfits", "Easy-to-pair style for a versatile seasonal wardrobe", "Blue Cypress Discount Code, Roberts Polo, Men's Golf Wear, Blue Polo, USA"] },
+          { label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Navy | $114.95", desc: "Get the Hutton Hoodie in Navy for $114.95", bullets: ["Best-selling style designed for comfort on and off the golf course", "Perfect for cooler mornings, travel and casual layering", "Combines relaxed comfort with a refined athletic appearance", "Blue Cypress Discount Code, Hutton Hoodie, Golf Hoodie, Men's Apparel, USA"] },
+          { label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Light Blue | $114.95", desc: "Shop the Hutton Hoodie in Light Blue for $114.95", bullets: ["Comfortable layering option for golf and everyday activities", "Great for cooler weather, travel and relaxed weekend looks", "Adds a casual yet polished touch to your wardrobe", "Blue Cypress Discount Code, Hutton Hoodie, Light Blue Hoodie, Golf Apparel, USA"] },
+          { label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Quarter-Zip Navy | $124.95", desc: "Get The Isaac Quarter-Zip in Navy for $124.95", bullets: ["Smooth, lightweight design is made for comfortable movement", "Ideal for golf rounds, active days and outdoor activities", "Classic quarter-zip styling makes it easy to wear beyond the course", "Blue Cypress Discount Code, Isaac Quarter-Zip, Golf Performance Wear, Men's Clothing, USA"] },
+          { label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Mélange Quarter-Zip Navy | $124.95", desc: "Shop The Isaac Mélange Quarter-Zip in Navy for $124.95", bullets: ["Features a stylish mélange finish with performance stretch", "Designed for comfortable movement during golf and active occasions", "Works well for the course, travel and everyday wear", "Blue Cypress Discount Code, Isaac Mélange Quarter-Zip, Golf Apparel, Performance Clothing, USA"] },
+          { label: "SAVE", value: "20%", title: "Blue Cypress – First Order Offer | 20% OFF", desc: "Sign up and receive 20% OFF your first Blue Cypress order", bullets: ["Unlock access to exclusive offers and future promotions", "Save on polos, hoodies, quarter-zips and women's essentials", "A great opportunity for new customers to explore the collection", "Blue Cypress Discount Code, 20% Off First Order, Golf Deals, USA"] },
+        ].map((c, i) => (
+          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+            <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+              <div className="flex flex-row">
+                {/* Updated left width container to w-[110px] sm:w-[160px] */}
+                <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                  <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="text-center px-1">
+                    {/* Increased label font size to text-[11px] sm:text-[13px] */}
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
+                    {/* Increased value font size to text-[26px] sm:text-[36px] */}
+                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{c.value}</div>
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                  <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                      <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                    </div>
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                      View Details
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                      <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                        {c.bullets.map((b, bi) => (
+                          <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Sidebar */}
-              <div className="lg:w-[35%] space-y-8">
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Blue Cypress</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Blue Cypress is a performance-focused apparel brand blending performance and style — tailored for life on the course, in the office, and everywhere in between. The lineup includes polos, signature hoodies, quarter-zips, headwear and belts.
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: Sparkles, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: ShoppingBag, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Home, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Blue Cypress Products & Categories</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Shirt, title: "Polos", sub: "Solid, striped and printed polo styles across seasonal collections." },
-                      { icon: Layers, title: "Hoodies & Quarter-Zips", sub: "Signature hoodies and quarter-zip layering pieces." },
-                      { icon: Crown, title: "Headwear", sub: "A range of headwear styles designed to pair with the apparel line." },
-                      { icon: ShoppingBag, title: "Belts & Accessories", sub: "Durable, polished belts and accessories for everyday and course wear." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                    <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Blue Cypress: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        ))}
+      </div>
+
+      {/* Sidebar */}
+      <div className="lg:w-[35%] space-y-8">
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">About Blue Cypress</h3>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Blue Cypress is a performance-focused apparel brand blending performance and style — tailored for life on the course, in the office, and everywhere in between. The lineup includes polos, signature hoodies, quarter-zips, headwear and belts.
+          </p>
+          <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+            Visit Store <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+           <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+           <div className="space-y-1">
+             {[
+               { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+               { icon: Sparkles, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+               { icon: ShoppingBag, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+               { icon: Home, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+               { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+             ].map((cat, i) => (
+               <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                 <div className="flex items-center gap-3">
+                   <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                   <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                 </div>
+                 <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+               </Link>
+             ))}
+           </div>
+           <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8">Blue Cypress Products & Categories</h3>
+          <div className="space-y-8">
+            {[
+              { icon: Shirt, title: "Polos", sub: "Solid, striped and printed polo styles across seasonal collections." },
+              { icon: Layers, title: "Hoodies & Quarter-Zips", sub: "Signature hoodies and quarter-zip layering pieces." },
+              { icon: Crown, title: "Headwear", sub: "A range of headwear styles designed to pair with the apparel line." },
+              { icon: ShoppingBag, title: "Belts & Accessories", sub: "Durable, polished belts and accessories for everyday and course wear." },
+            ].map((item, i) => (
+              <div key={item.title} className="flex gap-4 items-start text-justify">
+                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
+                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">
@@ -341,7 +344,7 @@ export default function BlueCypressCouponsContent() {
                     <thead>
                       <tr className="bg-[#056BFA]">
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Highlight</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
                         <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>

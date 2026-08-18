@@ -150,11 +150,12 @@ export default function DoreAndRoseCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp" alt="Dore & Rose Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1787034385/133_djzdfd.webp" alt="Dore & Rose Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </section>
@@ -372,7 +373,41 @@ export default function DoreAndRoseCouponsContent() {
           Dore & Rose Discount Codes, Promo Codes & Deals 2026
         </h2>
 
-      
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+          <table className="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr className="bg-[#056BFA]">
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-600 font-bold text-[14px]">
+              {[
+                ["Dore & Rose Discount Code – End of Summer Clearance | Up to 65% OFF", "65% OFF", "All Users", "Discover limited-stock bedding, sleepwear, cooling products and accessories", "Clearance offers are available for a limited time and end August 31"],
+                ["Dore & Rose Discount Code – Ultimate Cooling Sleep Bundle | Save 65%", "65% OFF", "All Users", "Save 65% on a complete cooling-focused sleep collection", "Features Aeris™ Cooling Fabric designed for a comfortable sleep experience"],
+                ["Dore & Rose – Kids Deep Sleep Bundle | Save 60%", "60% OFF", "All Users", "Enjoy 60% OFF on this kids' sleep collection", "Made with Lunara™ Silk for a soft and comfortable feel"],
+                ["Dore & Rose – Cooling Sleep Bundle | Save 55%", "55% OFF", "All Users", "Save 55% during the limited-time summer clearance", "Made with Aeris™ Cooling Fabric for a lightweight cooling feel"],
+                ["Dore & Rose – Scalloped Silk Pillowcase | $89", "$89", "All Users", "Features Lunara™ Silk with an elegant scalloped edge", "Designed to add a luxurious touch to your nighttime setup"],
+                ["Dore & Rose – Aura Silk Sleep Mask | Save 50%", "50% OFF", "All Users", "Save 50% on this Lunara™ Silk sleep accessory", "Soft silk construction makes it a comfortable addition to your bedtime routine"],
+                ["Dore & Rose – Pointelle Baby Tee & Pants Set | $75.65", "$75.65", "All Users", "Made with Cotton Pointelle for a soft and comfortable feel", "A coordinated sleepwear option for relaxed nights and lounging"],
+                ["Dore & Rose – Short Tencel PJ Set | Save 30%", "30% OFF", "All Users", "Save 30% on this Soft Soothe Tencel sleepwear", "Lightweight short-PJ design is ideal for comfortable nights"],
+                ["Dore & Rose – Lunara Silk Bridal Kimono | 35% OFF", "35% OFF", "All Users", "Save 35% on this elegant silk sleepwear piece", "Designed with a luxurious finish suitable for bridal and special occasions"],
+                ["Dore & Rose – Sleep Wellness Collection | Up to 40% OFF", "40% OFF", "All Users", "Explore individually designed products focused on comfort and nighttime relaxation", "Discover sleepwear, bedding, masks and other premium sleep accessories"],
+              ].map((row, i) => (
+                <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 9 && "border-b-0")}>
+                  <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+                  <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                  <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+                  <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         {/* Expandable Text Content */}
         <div

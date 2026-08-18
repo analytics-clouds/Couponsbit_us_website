@@ -81,6 +81,12 @@ export const allStores: StoreEntry[] = [
   { name: "Hosting",         id: "hosting-discount-code",        category: "More",        coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/Hosting_logo_c17yhb.webp",     discount: "Up To 75% OFF",  popular: false },
   { name: "LovesJerkyCo",    id: "lovejurky-discount-code",       category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp",   discount: "From $10",       popular: false },
   { name: "Merachfit",       id: "merachfit-discount-code",       category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp",   discount: "Save Up To $260", popular: false },
+  { name: "Aporro",          id: "aporro-discount-code",          category: "Fashion",     coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp",              discount: "Save Up To 45% OFF", popular: false },
+  { name: "Blue Cypress",    id: "blue-cypress-discount-code",    category: "Fashion",     coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp",         discount: "20% OFF First Order", popular: false },
+  { name: "Dore & Rose",     id: "dore-and-rose-promo-code",      category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp",        discount: "Up To 65% OFF",   popular: false },
+  { name: "Macy's",          id: "macys-promo-code",              category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp",               discount: "Up To 75% OFF",   popular: false },
+  { name: "Shein",           id: "shein-coupon-code",             category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949026/shein-logo_nukqfb.webp",               discount: "Up To 90% OFF",   popular: false },
+  { name: "Uber Eats",       id: "uber-eats-promo-code",          category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp",           discount: "Up To 60% OFF",   popular: false },
 ];
 
 
