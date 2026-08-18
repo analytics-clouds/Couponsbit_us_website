@@ -87,6 +87,9 @@ export const allStores: StoreEntry[] = [
   { name: "Macy's",          id: "macys-promo-code",              category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp",               discount: "Up To 75% OFF",   popular: false },
   { name: "Shein",           id: "shein-coupon-code",             category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949026/shein-logo_nukqfb.webp",               discount: "Up To 90% OFF",   popular: false },
   { name: "Uber Eats",       id: "uber-eats-promo-code",          category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp",           discount: "Up To 60% OFF",   popular: false },
+  { name: "Superrun",        id: "superrun-discount-code",        category: "More",        coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037376/superrun_w6lj1n.webp",                 discount: "Save $30 OFF",    popular: false },
+  { name: "SignalRing",      id: "signalring-discount-code",      category: "Electronics", coupons: 4,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/singnalring_i9epcf.jpg",               discount: "Starting At $399", popular: false },
+  { name: "Walmart",         id: "walmart-promo-code",            category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp",             discount: "Up To 65% OFF",   popular: false },
 ];
 
 
