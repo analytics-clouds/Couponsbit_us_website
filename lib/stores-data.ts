@@ -93,6 +93,9 @@ export const allStores: StoreEntry[] = [
   { name: "Valvoline",       id: "valvoline-discount-code",       category: "More",        coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/valvoline-logo_qfdbbq.webp",           discount: "Up To 50% OFF",   popular: false },
   { name: "GoodRx",          id: "goodrx-discount-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/goodrx-logo_ibgfjr.webp",             discount: "From $39/Month",  popular: false },
   { name: "Nike",            id: "nike-discount-code",            category: "Fashion",     coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp",               discount: "Up To 60% OFF",   popular: false },
+  { name: "Zara",            id: "zara-discount-code",            category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp",              discount: "Up To 80% OFF",   popular: false },
+  { name: "H&M",             id: "hm-promo-code",                 category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124418/hm-logo_nn4tfs.webp",                discount: "Up To 77% OFF",   popular: false },
+  { name: "ITC Hotels",      id: "itc-hotels-discount-code",      category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/itc-hotels-logo_ceakgl.webp",         discount: "Up To 50% OFF",   popular: false },
 ];
 
 
