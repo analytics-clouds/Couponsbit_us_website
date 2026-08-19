@@ -387,6 +387,60 @@ export default function ZaraCouponsContent() {
           Zara Discount Code, Coupon Code & Sale
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-l-lg">Offer</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider whitespace-nowrap">Discount / Price</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Key Highlights</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-r-lg">Details & Description</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-normal text-[13px] divide-y divide-gray-100">
+      {[
+        { label: "SAVE", value: "80% OFF", title: "Zara Discount Code – Short Lace Godet Dress 👗", desc: "Get the Zara Short Lace Godet Dress for just $13.98, reduced from $69.90.", bullets: ["Save an impressive 80% OFF on this Zara fashion deal.", "Use a Zara discount code when available for additional savings."] },
+        { label: "SAVE", value: "80% OFF", title: "Zara Discount Code – Ruffled Striped Shirt 👚", desc: "Grab the Zara Ruffled Striped Shirt for only $9.98, down from $49.90.", bullets: ["Enjoy 80% OFF on this stylish Zara shirt during the sale.", "Apply a Zara discount code at checkout when available."] },
+        { label: "SAVE", value: "80% OFF", title: "Zara Corset Halter Top 👗", desc: "Get the Zara Corset Halter Top for just $9.98, reduced from $49.90.", bullets: ["Save 80% OFF on this trendy Zara fashion deal.", "Add a stylish statement piece to your wardrobe."] },
+        { label: "SAVE", value: "40% OFF", title: "Zara Polka Dot Volume Halter Midi Dress 💃", desc: "Get the Zara Polka Dot Volume Halter Midi Dress for $41.94, down from $69.90.", bullets: ["Save 40% OFF on this elegant Zara dress.", "Enjoy a stylish polka-dot design with a flattering halter silhouette."] },
+        { label: "ONLY", value: "$49.90", title: "Zara Discount Code – Satin Effect Cut Out Dress 👗", desc: "Grab the Zara Satin Effect Cut Out Dress for just $49.90.", bullets: ["Enjoy a stylish midi dress with a V-neck and spaghetti straps.", "Use a Zara discount code when available."] },
+        { label: "UP TO", value: "50% OFF", title: "Zara Discount Code – Women’s Outerwear 🧥", desc: "Get selected Zara women’s outerwear styles with up to 50% OFF.", bullets: ["Shop coats and outerwear starting from just $23.96.", "Explore Zara outerwear deals."] },
+        { label: "FROM", value: "$14", title: "Zara Women’s Halter Top Collection 👚", desc: "Explore Zara’s Women’s Halter Top Collection with prices starting from $14.", bullets: ["Choose from multiple stylish designs and color options.", "Find fashionable halter tops for everyday looks."] },
+        { label: "FLAT", value: "46% OFF", title: "Zara Oversized Linen Blend Shirt 👔", desc: "Get the Zara Oversized Linen Blend Shirt for just $45.90.", bullets: ["Enjoy a comfortable oversized fit with a lapel collar.", "Features a practical front patch pocket and versatile white color."] },
+        { label: "ONLY", value: "$39.90", title: "Zara Basic Knit Sweater 🧶", desc: "Grab the Zara Basic Knit Sweater for only $39.90.", bullets: ["Features a classic round neck and long sleeves.", "Available as an offer on selected Zara products."] },
+        { label: "ONLY", value: "$49.90", title: "Zara Satin Effect Cut Out Dress ✨", desc: "Get the Zara Satin Effect Cut Out Dress for just $49.90.", bullets: ["Designed with a stylish V-neck and elegant midi length.", "Perfect for creating a sophisticated and fashionable look."] },
+      ].map((item, i) => (
+        <tr key={i} className="hover:bg-gray-50/80 transition-colors">
+          <td className="p-4 text-gray-900 font-semibold align-middle max-w-[280px]">
+            {item.title}
+          </td>
+          <td className="p-4 text-[#056BFA] font-bold align-middle whitespace-nowrap">
+            {item.label === "UP TO"
+              ? `Up to ${item.value}`
+              : item.label === "FLAT"
+              ? `Flat ${item.value}`
+              : item.label === "ONLY"
+              ? `Only ${item.value}`
+              : item.label === "FROM"
+              ? `From ${item.value}`
+              : item.value}
+          </td>
+          <td className="p-4 text-gray-500 align-middle whitespace-nowrap">
+            All Users
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[220px]">
+            {item.bullets[0]}
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[260px]">
+            {item.desc}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
       
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
@@ -417,6 +471,17 @@ export default function ZaraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Women's Clothing</h3>
+            
+            <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="https://www.zara.com/in/en/woman-mkt1000.html?v1=1881757&regionGroupId=230" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787141942/1_nlbu8r.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
             <p>
               Zara's women's collection covers a broad range of wardrobe staples and trend-led pieces. Shoppers can browse dresses, tops, bodysuits, T-shirts, tank tops, shirts, blouses, cardigans, sweaters, pants, shorts, co-ord sets, jeans, skirts, jackets, blazers, sweatshirts, sweatpants, swimwear, lingerie, and linen pieces.
             </p>
@@ -433,6 +498,18 @@ export default function ZaraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Men's Clothing</h3>
+            
+            <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="https://www.zara.com/in/en/man-l534.html?v1=1885841&regionGroupId=230" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787141943/2_g3cab3.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+            
             <p>
               Zara's men's range covers casual, smart-casual, formal, and seasonal wardrobes. Current U.S. categories include shirts, T-shirts, jeans, pants, shorts, polo shirts, matching sets, sweaters, suits, blazers, jackets, overshirts, hoodies, sweatshirts, and other wardrobe essentials.
             </p>
@@ -447,6 +524,17 @@ export default function ZaraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Zara Kids</h3>
+            
+             <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="https://www.zara.com/in/en/kids-mkt1.html?v1=2112261&regionGroupId=230" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787141943/3_r9lhlz.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
             <p>
               Zara's U.S. kids' collections cover different age groups, from newborns and babies through toddlers and children up to 14 years. The range includes clothing, shoes, accessories, and basics.
             </p>
@@ -458,6 +546,17 @@ export default function ZaraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Zara Shoes, Bags & Accessories</h3>
+             <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="https://www.zara.com/in/en/man-shoes-l769.html" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787141944/4_vnvmws.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+            
             <p>
               A new outfit is not complete without the right finishing touches. Zara offers footwear and accessories across its women's, men's, and kids' collections.
             </p>
@@ -486,6 +585,17 @@ export default function ZaraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Zara Beauty, Perfumes & Hair</h3>
+            
+             <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="https://zarabeauty.co/" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787141942/6_xnhhkq.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
             <p>
               Zara's U.S. site also has a dedicated beauty offering covering perfumes, makeup, and Zara Hair. Women's and men's collections feature fragrances, while beauty and hair products provide additional options for personal care and grooming.
             </p>

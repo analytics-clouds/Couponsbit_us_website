@@ -404,6 +404,50 @@ export default function ItcHotelsCouponsContent() {
           ITC Hotels Discount Code, Coupon Code & Offers
         </h1>
 
+        <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-l-lg">Offer</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider whitespace-nowrap">Discount / Deal</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Key Highlights</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-r-lg">Details & Description</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-normal text-[13px] divide-y divide-gray-100">
+      {[
+        { label: "UP TO", value: "35% OFF", title: "ITC Hotels – Member Exclusive Stay 🏨✨", desc: "Save UP TO 35% OFF on stays with the exclusive ITC Hotels Member Offer.", bullets: ["Members can earn 2X Green Points on eligible hotel bookings.", "Enjoy 20% OFF on selected dining, soft beverages and spa experiences."] },
+        { label: "UP TO", value: "50% OFF", title: "ITC Hotels – Exclusive Membership Savings ⭐", desc: "Join the ITC Hotels membership program and unlock UP TO 50% OFF on eligible stays.", bullets: ["Access special member-only hotel rates and exclusive hospitality benefits.", "Enjoy premium rooms, dining experiences and luxury services."] },
+        { label: "UP TO", value: "20% OFF", title: "ITC Hotels – All-In Getaway Package 🍽️🌴", desc: "Plan a relaxing luxury escape with the ITC Hotels All-In Getaway Experience.", bullets: ["Enjoy daily breakfast, lunch and dinner at the hotel's coffee shop.", "Save UP TO 20% OFF on food, soft beverages, spa, salon and laundry."] },
+        { label: "FLAT", value: "33% OFF", title: "ITC Hotels – Goa Vacation Deal 🌴☀️", desc: "Plan your next Goa vacation and enjoy FLAT 33% OFF on eligible stays.", bullets: ["Perfect for travelers looking for a tropical beach escape in India.", "Extend your Goa vacation and enjoy luxury accommodation at a better value."] },
+        { label: "FLAT", value: "20% OFF", title: "ITC Hotels – All-In Stay Savings 🍽️🧖", desc: "Enjoy FLAT 20% OFF on eligible food, beverages and hotel services.", bullets: ["Save on experiences including dining, spa and salon services during your stay.", "Designed for travelers who want to enjoy more amenities."] },
+        { label: "TOP", value: "GOLF ESCAPE", title: "ITC Hotels – Grand Golf Retreat ⛳🏨", desc: "Experience a premium golf-focused getaway with the ITC Hotels Grand Golf Retreat.", bullets: ["Enjoy a complimentary golf round at Classic Golf & Country Club.", "Get 50% OFF on spa services for a relaxing post-golf experience."] },
+        { label: "FLAT", value: "33% OFF", title: "ITC Hotels – Extended Escape 🛏️🌴", desc: "Stay longer at ITC Hotels and save FLAT 33% OFF on eligible stays.", bullets: ["Available for stays of 3 nights or more.", "Perfect for extended vacations, family trips and workcations."] },
+        { label: "FLAT", value: "15% OFF", title: "ITC Hotels – Summer Vacation Offer ☀️🏨", desc: "Make your summer travel plans with FLAT 15% OFF on eligible ITC Hotels bookings.", bullets: ["Available at participating ITC Hotels across India.", "Combine luxury accommodation with premium dining and hospitality."] },
+      ].map((item, i) => (
+        <tr key={i} className="hover:bg-gray-50/80 transition-colors">
+          <td className="p-4 text-gray-900 font-semibold align-middle max-w-[280px]">
+            {item.title}
+          </td>
+          <td className="p-4 text-[#056BFA] font-bold align-middle whitespace-nowrap">
+            {item.label === "UP TO" ? `Up to ${item.value}` : item.label === "FLAT" ? `Flat ${item.value}` : item.value}
+          </td>
+          <td className="p-4 text-gray-500 align-middle whitespace-nowrap">
+            {item.title.includes("Member") ? "Club Members" : "All Guests"}
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[220px]">
+            {item.bullets[0]}
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[260px]">
+            {item.desc}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         {/* Introductory Hero Banner / Card */}
         <div className="bg-white p-8 rounded-[32px] border border-gray-200 shadow-sm mb-10">
           <h2 className="text-2xl font-black text-[#056bfa] mb-4">
@@ -463,6 +507,14 @@ export default function ItcHotelsCouponsContent() {
           {/* ITC Hotels Stays */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black text-[#056bfa]">ITC Hotels Stays</h3>
+            <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143758/6_us5hav.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </div>
+            
             <p className="leading-relaxed">
               The accommodation experience is one of the main reasons guests choose ITC Hotels. Depending on the property, room categories can range from comfortable guest rooms to larger suites designed for guests looking for additional space and amenities.
             </p>
@@ -487,7 +539,14 @@ export default function ItcHotelsCouponsContent() {
 
           <div className="space-y-6">
   <h3 className="text-2xl font-black text-[#056bfa]">ITC Hotels Experience & Amenities</h3>
-  
+   <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143757/7_frs0yr.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </div>
+
   <div className="space-y-4">
     <div className="bg-white p-5 rounded-2xl border border-gray-100">
       <h4 className="font-black text-black mb-1">ITC Hotels for Business Travel</h4>
@@ -811,7 +870,7 @@ export default function ItcHotelsCouponsContent() {
               className="bg-white rounded-[24px] overflow-hidden border border-gray-200 shadow-sm transition-all duration-300"
             >
               <button
-                onClick={() => toggleFaq(i)}
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors focus:outline-none"
               >
                 <span className="text-black font-black text-sm pr-4">

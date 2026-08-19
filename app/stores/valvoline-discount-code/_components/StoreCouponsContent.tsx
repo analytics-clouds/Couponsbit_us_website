@@ -370,36 +370,36 @@ export default function ValvolineCouponsContent() {
           Valvoline Discount Codes, Promo Codes & Deals 2026
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA]">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              {[
-                ["Valvoline Discount Code – Up to 50% OFF Vehicle Maintenance Services", "Up to 50% OFF", "All Users", "Save on essential car care and routine maintenance", "Vehicle maintenance services"],
-                ["Valvoline Discount Code – Flat 30% OFF Service Offers", "Flat 30% OFF", "All Users", "Air filter, fuel system cleaning, tire rotation & AC", "Eligible Valvoline services"],
-                ["Valvoline – $15 OFF Synthetic Blend Oil Change", "$15 OFF", "All Users", "Limited-time oil maintenance offer", "Synthetic Blend Oil Change"],
-                ["Valvoline – $10 OFF Full-Service Conventional Oil Change", "$10 OFF", "All Users", "Professional oil change service", "Full-Service Conventional Oil Change"],
-                ["Valvoline – Up to 40% OFF Radiator Services", "Up to 40% OFF", "All Users", "Cooling-system maintenance", "Radiator services"],
-              ].map((row, i) => (
-                <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 4 && "border-b-0")}>
-                  <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                  <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                  <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                  <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                  <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-l-lg">Offer</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider whitespace-nowrap">Discount / Price</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-r-lg">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-normal text-[13px] divide-y divide-gray-100">
+      {[
+        ["Valvoline Discount Code – Vehicle Maintenance Services", "Up to 50% OFF", "All Users", "Save on essential car care and routine maintenance", "Vehicle maintenance services"],
+        ["Valvoline Discount Code – Service Offers", "Flat 30% OFF", "All Users", "Air filter, fuel system cleaning, tire rotation & AC", "Eligible Valvoline services"],
+        ["Valvoline – Synthetic Blend Oil Change", "$15 OFF", "All Users", "Limited-time oil maintenance offer", "Synthetic Blend Oil Change"],
+        ["Valvoline – Full-Service Conventional Oil Change", "$10 OFF", "All Users", "Professional oil change service", "Full-Service Conventional Oil Change"],
+        ["Valvoline – Radiator Services", "Up to 40% OFF", "All Users", "Cooling-system maintenance", "Radiator services"],
+      ].map((row, i) => (
+        <tr key={i} className="hover:bg-gray-50/80 transition-colors">
+          <td className="p-4 text-gray-900 font-semibold align-middle max-w-[280px]">{row[0]}</td>
+          <td className="p-4 text-[#056BFA] font-bold align-middle whitespace-nowrap">{row[1]}</td>
+          <td className="p-4 text-gray-500 align-middle whitespace-nowrap">{row[2]}</td>
+          <td className="p-4 text-gray-500 align-middle max-w-[220px]">{row[3]}</td>
+          <td className="p-4 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         {/* Collapsible Text Container */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>

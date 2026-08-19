@@ -379,42 +379,42 @@ export default function NikeCouponsContent() {
           Nike Discount Codes, Promo Codes & Deals 2026
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA]">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              {[
-                ["Nike Promo Code – Clearance Sale | Nike One Women’s High-Rise Leggings | 60% OFF", "60% OFF", "All Users", "Recycled materials, workouts & everyday wear", "Women’s leggings"],
-                ["Nike – Ava Rover Premium Men’s Shoes | 43% OFF", "Up to 43% OFF", "All Users", "Versatile everyday styling", "Men’s shoes"],
-                ["Nike – Nike Motiva Women’s Walking Shoes | 41% OFF", "Up to 41% OFF", "All Users", "Comfortable walking & everyday movement", "Women’s walking shoes"],
-                ["Nike – Mercurial Superfly 11 Elite Kylian Mbappé | $305", "$305", "All Users", "Firm-ground high-top soccer cleats", "Soccer cleats"],
-                ["Nike – Dri-FIT One Girls’ Leggings | 40% OFF", "40% OFF", "All Users", "Recycled materials for active kids", "Kids’ leggings"],
-                ["Nike Promo Code – Clearance Sale | Air Max Excee Men’s Shoes | 40% OFF", "40% OFF", "All Users", "Best Seller, everyday comfort & casual styling", "Men’s shoes"],
-                ["Nike – Nike Club Men’s Pullover Fleece Hoodie | 34% OFF", "34% OFF", "All Users", "Soft fleece for cooler weather", "Men’s fleece hoodie"],
-                ["Nike – Air Jordan 1 Low SE Big Kids’ Shoes | 40% OFF", "40% OFF", "All Users", "Classic low-top Jordan styling", "Kids’ shoes"],
-                ["Nike – Jordan Sport Hoop Fleece Men’s Dri-FIT Pants | 35% OFF", "35% OFF", "All Users", "Dri-FIT technology for active lifestyles", "Men’s sportswear pants"],
-                ["Nike – Sportswear Women’s Poly-Knit Track Shorts | 29% OFF", "29% OFF", "All Users", "Recycled materials for comfortable activewear", "Women’s track shorts"],
-                ["Nike – Free Shipping for Members on $50+ Orders", "Free Shipping", "Nike Members", "Eligible orders of $50 or more", "All Nike products"],
-              ].map((row, i) => (
-                <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 10 && "border-b-0")}>
-                  <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                  <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                  <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                  <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                  <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-l-lg">Offer</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider whitespace-nowrap">Discount / Price</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-r-lg">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-normal text-[13px] divide-y divide-gray-100">
+      {[
+        ["Nike Promo Code – Clearance Sale – Nike One Women’s High-Rise Leggings", "60% OFF", "All Users", "Recycled materials, workouts & everyday wear", "Women’s leggings"],
+        ["Nike – Ava Rover Premium Men’s Shoes", "Up to 43% OFF", "All Users", "Versatile everyday styling", "Men’s shoes"],
+        ["Nike – Nike Motiva Women’s Walking Shoes", "Up to 41% OFF", "All Users", "Comfortable walking & everyday movement", "Women’s walking shoes"],
+        ["Nike – Mercurial Superfly 11 Elite Kylian Mbappé", "$305", "All Users", "Firm-ground high-top soccer cleats", "Soccer cleats"],
+        ["Nike – Dri-FIT One Girls’ Leggings", "40% OFF", "All Users", "Recycled materials for active kids", "Kids’ leggings"],
+        ["Nike Promo Code – Clearance Sale – Air Max Excee Men’s Shoes", "40% OFF", "All Users", "Best Seller, everyday comfort & casual styling", "Men’s shoes"],
+        ["Nike – Nike Club Men’s Pullover Fleece Hoodie", "34% OFF", "All Users", "Soft fleece for cooler weather", "Men’s fleece hoodie"],
+        ["Nike – Air Jordan 1 Low SE Big Kids’ Shoes", "40% OFF", "All Users", "Classic low-top Jordan styling", "Kids’ shoes"],
+        ["Nike – Jordan Sport Hoop Fleece Men’s Dri-FIT Pants", "35% OFF", "All Users", "Dri-FIT technology for active lifestyles", "Men’s sportswear pants"],
+        ["Nike – Sportswear Women’s Poly-Knit Track Shorts", "29% OFF", "All Users", "Recycled materials for comfortable activewear", "Women’s track shorts"],
+        ["Nike – Free Shipping for Members on $50+ Orders", "Free Shipping", "Nike Members", "Eligible orders of $50 or more", "All Nike products"],
+      ].map((row, i) => (
+        <tr key={i} className="hover:bg-gray-50/80 transition-colors">
+          <td className="p-4 text-gray-900 font-semibold align-middle max-w-[280px]">{row[0]}</td>
+          <td className="p-4 text-[#056BFA] font-bold align-middle whitespace-nowrap">{row[1]}</td>
+          <td className="p-4 text-gray-500 align-middle whitespace-nowrap">{row[2]}</td>
+          <td className="p-4 text-gray-500 align-middle max-w-[220px]">{row[3]}</td>
+          <td className="p-4 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         {/* Collapsible Text Container */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>

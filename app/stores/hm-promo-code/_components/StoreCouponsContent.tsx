@@ -382,6 +382,60 @@ export default function HmCouponsContent() {
           H&M Discount Code, Coupon Code & Sale
         </h1>
 
+       <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-l-lg">Offer</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider whitespace-nowrap">Discount / Price</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-4 text-[14px] font-bold text-white uppercase tracking-wider rounded-r-lg">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-normal text-[13px] divide-y divide-gray-100">
+      {[
+        { label: "SAVE", value: "72% OFF", title: "H&M Discount Code – Women's Summer Sale – Layered Crop Top", desc: "Get the Layered Crop Top for just $16.99 (Regular Price $59.99).", bullets: ["Check for an H&M discount code for extra savings.", "Shop women's Summer 2026 fashion.", "Grab the deal while stock lasts."] },
+        { label: "SAVE", value: "70% OFF", title: "H&M Discount Code – MAMA 2-Piece Jersey Set", desc: "Buy the MAMA 2-Piece Textured Jersey Set for $14.99 (Regular Price $49.99).", bullets: ["Use an H&M discount code at checkout.", "Enjoy savings on selected summer styles.", "Shop before your size sells out."] },
+        { label: "UP TO", value: "72% OFF", title: "H&M Discount Code – Summer Fashion Deals", desc: "Discover women's Summer 2026 styles.", bullets: ["Check for an active H&M discount code.", "Find tops, jackets, footwear, denim and more.", "Limited-time sale prices."] },
+        { label: "SAVE", value: "70% OFF", title: "H&M – Jelly Flip-Flops", desc: "Get Jelly Flip-Flops for $7.49 (Regular Price $24.99).", bullets: ["Check H&M discount offers.", "Selected summer footwear."] },
+        { label: "UP TO", value: "70% OFF", title: "H&M – Women's Beauty Sale", desc: "Save on selected H&M beauty products.", bullets: ["Eau de Toilette for only $2.99.", "Check for an H&M discount code.", "Discounted fragrances and makeup."] },
+        { label: "SAVE", value: "62% OFF", title: "H&M – Sports Leggings", desc: "Get MOVE Sports Leggings for $16.99 (Regular Price $44.99).", bullets: ["Look for an H&M discount code.", "Selected women's activewear.", "Ideal for workouts and everyday wear."] },
+        { label: "UP TO", value: "62% OFF", title: "H&M – Preppy Printed T-Shirt", desc: "Get Relaxed-Fit Printed T-Shirt for $12.99.", bullets: ["Check current H&M discount offers.", "Selected women's fashion styles."] },
+        { label: "UP TO", value: "62% OFF", title: "H&M – Denim Edit", desc: "Shop Baggy Regular Waist Jeans for $34.99.", bullets: ["Save more on your fashion order.", "Selected women's denim and fashion."] },
+        { label: "SAVE", value: "77% OFF", title: "H&M Discount Code – Men's Resort Shirt", desc: "Get Jacquard Resort Shirt for $6.99 (Regular Price $29.99).", bullets: ["Use discount code for extra savings.", "Men's fashion deals."] },
+        { label: "SAVE", value: "70% OFF", title: "H&M Discount Code – Open-Knit Polo Shirt", desc: "Buy Open-Knit Polo Shirt for $14.99 (Regular Price $49.99).", bullets: ["Check discount code before checkout.", "Lightweight knit styling."] },
+        { label: "SAVE", value: "35% OFF", title: "H&M – Men's Accessories Sale", desc: "Get 2-Pack Socks for $6.49 (Regular Price $9.99).", bullets: ["Buy 2 Get 1 Free offer highlighted.", "Selected men's accessories."] },
+        { label: "SAVE", value: "60% OFF", title: "H&M – Men's T-Shirts & Tops", desc: "Get Linen-Blend Polo Shirt for $19.99 (Regular Price $49.99).", bullets: ["Maximize your order savings.", "Premium linen-blend styling."] },
+        { label: "SAVE", value: "67% OFF", title: "H&M – Men's Shorts Sale", desc: "Get Cotton Cargo Shorts for $14.99 (Regular Price $44.99).", bullets: ["Check H&M discount code offers.", "Selected men's shorts."] },
+        { label: "SAVE", value: "65% OFF", title: "H&M – Men's Blazers & Suits", desc: "Grab Double-Breasted Jacket for $34.99 (Regular Price $99.00).", bullets: ["Check available discount codes.", "Ideal for smart-casual occasions."] },
+        { label: "SAVE", value: "58% OFF", title: "H&M – Men's Shoes Sale", desc: "Get Canvas Espadrilles for $20.99 (Regular Price $49.99).", bullets: ["Look for a discount code.", "Perfect for summer looks."] },
+        { label: "SAVE", value: "70% OFF", title: "H&M Home – Bedding Sale", desc: "Get Linen-Blend Bedspread for $20.99 (Regular Price $69.99).", bullets: ["H&M Home product savings.", "Bedding and home essentials."] },
+        { label: "SAVE", value: "70% OFF", title: "H&M – Beauty & Makeup Sale", desc: "Get Mattifying Powder for $4.49 (Regular Price $14.99).", bullets: ["Unlock potential extra savings.", "Affordable makeup essentials."] },
+        { label: "SAVE", value: "69% OFF", title: "H&M – Fragrance & Perfume Sale", desc: "Get Eau de Toilette for $2.49 (Regular Price $7.99).", bullets: ["Low-price fragrance deals.", "Available while stock lasts."] },
+      ].map((item, i) => (
+        <tr key={i} className="hover:bg-gray-50/80 transition-colors">
+          <td className="p-4 text-gray-900 font-semibold align-middle max-w-[280px]">
+            {item.title}
+          </td>
+          <td className="p-4 text-[#056BFA] font-bold align-middle whitespace-nowrap">
+            {item.label === "UP TO" ? `Up to ${item.value}` : item.value}
+          </td>
+          <td className="p-4 text-gray-500 align-middle whitespace-nowrap">
+            All Users
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[220px]">
+            {item.bullets[0] || "Check offer details"}
+          </td>
+          <td className="p-4 text-gray-500 align-middle max-w-[260px]">
+            {item.desc}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         {/* Introductory Hero Banner / Card */}
         <div className="bg-white p-8 rounded-[32px] border border-gray-200 shadow-sm mb-10">
           <h2 className="text-2xl font-black text-[#056bfa] mb-4">
@@ -439,6 +493,17 @@ export default function HmCouponsContent() {
           {/* Women's Fashion Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black text-[#056bfa]">Women's Fashion at H&M</h3>
+            <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143281/1_lyqppz.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+            
             <p className="leading-relaxed">
               The women's department includes clothing for casual days, work, holidays, evenings, workouts, and everyday wear. Depending on the current range, shoppers can browse everything from simple T-shirts and jeans to dresses, tailoring, knitwear, swimwear, lingerie, and outerwear.
             </p>
@@ -494,6 +559,17 @@ export default function HmCouponsContent() {
           {/* Men fashion */}
           <div className="space-y-6">
   <h3 className="text-2xl font-black text-[#056bfa]">Men's Fashion at H&M</h3>
+  <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143281/2_ywq6aw.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+  
   <p className="leading-relaxed">
     Men can find clothing for relaxed weekends, office days, formal occasions, workouts, and everyday wear. The assortment covers essentials as well as seasonal and trend-led styles.
   </p>
@@ -539,6 +615,17 @@ export default function HmCouponsContent() {
 {/* clothing kids */}
 <div className="space-y-6">
   <h3 className="text-2xl font-black text-[#056bfa]">Clothing for Kids and Babies</h3>
+  <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143282/3_x80jia.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+  
   <p className="leading-relaxed">
     Families can shop for children across different age groups, with collections designed for babies, toddlers, girls, and boys. H&M's children's assortment combines everyday basics with seasonal clothing and accessories.
   </p>
@@ -568,6 +655,17 @@ export default function HmCouponsContent() {
 
 <div className="space-y-6">
   <h3 className="text-2xl font-black text-[#056bfa]">Shoes, Bags and Accessories</h3>
+  <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143282/4_ytnlfp.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+
   <p className="leading-relaxed">
     A new accessory can change an existing outfit without requiring a complete wardrobe overhaul. H&M offers various accessories and footwear options to complement its clothing collections.
   </p>
@@ -613,6 +711,17 @@ export default function HmCouponsContent() {
           {/* Explore H&M Home Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black text-[#056bfa]">Explore H&M Home</h3>
+           <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-lg">
+  {/* Hyperlink wrapping the full-size image */}
+  <a href="" className="absolute inset-0 z-10 block">
+    <img 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1787143281/5_tbss5i.webp" 
+      alt="Women's Clothing Collection" 
+      className="w-full h-full object-cover"
+    />
+  </a>
+  </div>
+           
             <p className="leading-relaxed">
               Your H&M shopping trip does not have to stop at fashion. H&M Home offers products for decorating, furnishing, organizing, and improving different areas of the house.
             </p>
@@ -887,7 +996,7 @@ export default function HmCouponsContent() {
               className="bg-white rounded-[24px] overflow-hidden border border-gray-200 shadow-sm transition-all duration-300"
             >
               <button
-                onClick={() => toggleFaq(i)}
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors focus:outline-none"
               >
                 <span className="text-black font-black text-sm pr-4">
