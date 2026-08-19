@@ -146,17 +146,92 @@ const aporroSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/aporro-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Aporro?", acceptedAnswer: { "@type": "Answer", text: "Aporro is a hip-hop and streetwear jewelry brand offering chains, pendants, earrings, bracelets, rings and custom jewelry pieces." } },
-        { "@type": "Question", name: "Does Aporro offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Aporro runs promotions such as free shipping offers and new arrival highlights." } },
-        { "@type": "Question", name: "Where can I find Aporro discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Aporro discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Aporro offer custom jewelry?", acceptedAnswer: { "@type": "Answer", text: "Yes. Aporro offers personalized and custom jewelry pieces alongside its regular catalog." } },
-        { "@type": "Question", name: "What kind of jewelry does Aporro sell?", acceptedAnswer: { "@type": "Answer", text: "Aporro specializes in hip-hop and streetwear jewelry, including chains, pendants, earrings, bracelets and rings." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/aporro-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Aporro offer a discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aporro offers sales, bundles, member rewards, and promotional offers throughout the year. Check CouponsBit for currently available savings before ordering."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where can I find an Aporro promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for current Aporro promo codes and other available offers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Aporro sell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aporro sells chains, pendants, earrings, rings, bracelets, wallet chains, watches, grillz, and custom jewelry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Aporro offer custom jewelry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Aporro offers custom pendants, necklaces, rings, bracelets, watches, and grillz. Customers can submit their own concepts and work with a jewelry consultant during the design process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Aporro sell moissanite jewelry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Aporro offers moissanite jewelry across several categories, including earrings and custom pendants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Aporro sell Cuban chains?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cuban chains are among the chain styles available through Aporro, with different widths, finishes, and designs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Aporro sell grillz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Aporro sells both pre-made and custom grillz. Custom options include different tooth counts, finishes, and stone choices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Aporro shipping take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aporro states that standard orders typically take about 2 business days to process plus approximately 4–6 business days for shipping. Custom and made-to-order products require additional time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Aporro's return policy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eligible unworn items can generally be returned within 14 days of receipt. Solid gold and custom or made-to-order products are excluded, while earrings and grillz cannot be returned for hygiene reasons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CouponsBit is free to use. You can browse available Aporro offers and other shopping deals without paying a fee."
+      }
+    }
+  ]
+},
   ],
 };
 

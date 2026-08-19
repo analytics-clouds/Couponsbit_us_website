@@ -146,17 +146,92 @@ const blueCypressSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Blue Cypress?", acceptedAnswer: { "@type": "Answer", text: "Blue Cypress is a performance-focused apparel brand offering polos, hoodies, quarter-zips, headwear and belts designed for golf, office and everyday wear." } },
-        { "@type": "Question", name: "Does Blue Cypress offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Blue Cypress runs promotions such as free shipping offers and new arrival highlights." } },
-        { "@type": "Question", name: "Where can I find Blue Cypress discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Blue Cypress discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "What does Blue Cypress sell?", acceptedAnswer: { "@type": "Answer", text: "Blue Cypress sells polos, hoodies, quarter-zips, headwear and belts, blending performance and style for golf, office and everyday wear." } },
-        { "@type": "Question", name: "Is Blue Cypress apparel suitable for golf?", acceptedAnswer: { "@type": "Answer", text: "Yes. Blue Cypress designs its apparel to work for life on the golf course as well as the office and everyday wear." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Blue Cypress offer a discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blue Cypress offers sale pricing and promotional opportunities throughout the year. Check CouponsBit for currently available offers before placing your order."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where can I find a Blue Cypress promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CouponsBit can help you find available Blue Cypress promo codes and other promotional offers in one place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Blue Cypress sell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blue Cypress sells golf and lifestyle apparel, including polos, quarter-zips, hoodies, seasonal clothing, and accessories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Blue Cypress sell golf polos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Polos are one of Blue Cypress's core categories. The brand offers solid, striped, printed, and seasonal designs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do Blue Cypress polos cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prices vary depending on the collection and style. Several Essential Stripe polos are currently priced at $89.95, reduced from $109.95, while other current polo styles are listed at $110."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much is the Blue Cypress Isaac Quarter-Zip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Isaac Quarter-Zip is currently listed at $124.95. It is made with 89% recycled polyester and 11% spandex and is available in several colors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Blue Cypress have a sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Blue Cypress currently has selected products at reduced prices, including several Essential Stripe polos. Sale availability can change as inventory and seasonal collections are updated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Blue Cypress known for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blue Cypress is known for golf-inspired apparel that combines performance-focused materials with a polished lifestyle aesthetic. Its clothing is designed to work both on and off the course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Blue Cypress clothing only for golfers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While golf is an important part of the brand's identity, Blue Cypress positions its clothing for the course, office, and everyday life."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CouponsBit is free to use. You can browse available Blue Cypress offers and other shopping deals without paying a fee."
+      }
+    }
+  ]
+},
   ],
 };
 

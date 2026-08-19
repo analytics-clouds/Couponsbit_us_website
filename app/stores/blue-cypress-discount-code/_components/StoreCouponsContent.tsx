@@ -13,7 +13,7 @@ import {
   ShieldCheck,
   PiggyBank,
   RefreshCw,
-  ChevronDown,
+  ChevronDown,Calendar, Grid,
   Shirt,
   Sparkles,
   CheckCircle,
@@ -248,9 +248,19 @@ export default function BlueCypressCouponsContent() {
       {/* Sidebar */}
       <div className="lg:w-[35%] space-y-8">
         <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-6">About Blue Cypress</h3>
+          <h3 className="text-black font-black text-lg mb-6">Blue Cypress Hoodies</h3>
           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-            Blue Cypress is a performance-focused apparel brand blending performance and style — tailored for life on the course, in the office, and everywhere in between. The lineup includes polos, signature hoodies, quarter-zips, headwear and belts.
+           For a more relaxed option, Blue Cypress offers hoodies alongside its performance-oriented polos and quarter-zips.
+
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+           The brand currently highlights The Hutton Hoodie and The Signature Hoodie among its collections. 
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+           A hoodie can be useful for warm-ups before a round, travel days, casual weekends, or simply adding another layer to your everyday wardrobe.
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+           The Hutton Hoodie is currently featured prominently on the Blue Cypress website, with the brand describing it as a premium alternative to ordinary casual layers. 
           </p>
           <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
             Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -280,26 +290,54 @@ export default function BlueCypressCouponsContent() {
         </div>
 
         <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8">Blue Cypress Products & Categories</h3>
-          <div className="space-y-8">
-            {[
-              { icon: Shirt, title: "Polos", sub: "Solid, striped and printed polo styles across seasonal collections." },
-              { icon: Layers, title: "Hoodies & Quarter-Zips", sub: "Signature hoodies and quarter-zip layering pieces." },
-              { icon: Crown, title: "Headwear", sub: "A range of headwear styles designed to pair with the apparel line." },
-              { icon: ShoppingBag, title: "Belts & Accessories", sub: "Durable, polished belts and accessories for everyday and course wear." },
-            ].map((item, i) => (
-              <div key={item.title} className="flex gap-4 items-start text-justify">
-                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                  <item.icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+  <h3 className="text-black font-black text-lg mb-8">Best Ways to Save at Blue Cypress</h3>
+  
+  <p className="text-gray-600 font-medium text-sm leading-relaxed mb-8">
+    A promotional code isn't the only way to get a better price. Using a few simple shopping strategies can help you make the most of Blue Cypress offers.
+  </p>
+
+  <div className="space-y-8">
+    {[
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before You Order",
+        sub: "Make CouponsBit part of your shopping routine. Checking for a current Blue Cypress discount code before checkout only takes a moment and can help you identify an additional saving."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Browse Sale Products First",
+        sub: "Don't immediately head for the full-price collection. Blue Cypress already has markdowns on selected products, including several Essential Stripe polos."
+      },
+      {
+        icon: Grid,
+        title: "Compare Different Collections",
+        sub: "If you're shopping primarily for a polo, compare the Essential, Stripe, Print, and seasonal collections. You may find that a different style gives you a similar look at a more attractive price."
+      },
+      {
+        icon: Calendar,
+        title: "Watch for Seasonal Promotions",
+        sub: "Golf apparel naturally follows seasonal buying patterns. Keep an eye on new-season launches as well as promotions on earlier collections."
+      },
+      {
+        icon: Layers,
+        title: "Consider Versatile Pieces",
+        sub: "A performance polo or quarter-zip that works for golf and everyday wear can provide more value than buying separate clothing for different occasions."
+      }
+    ].map((item, i) => (
+      <div key={i} className="flex gap-4 items-start">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
         </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
       </div>
     </div>
   </div>
@@ -332,183 +370,321 @@ export default function BlueCypressCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Blue Cypress Discount Codes, Promo Codes & Apparel Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Blue Cypress Discount Code, Promo Codes & Deals 2026
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["Blue Cypress Discount Code – The Jackson Polo | $110", "$110", "All Users", "Part of the Blue Cypress Summer 2026 Collection", "Ideal for golf rounds, casual outings and warm-weather styling"],
-                        ["Blue Cypress Discount Code – The Stokes Polo | $110", "$110", "All Users", "Designed for a polished and comfortable golf-inspired look", "Suitable for golf, weekend outings and everyday summer wear"],
-                        ["Blue Cypress Women's Essentials | $109.95", "$109.95", "All Users", "Discover versatile pieces designed for active and everyday lifestyles", "Ideal for golf, travel, casual outings and seasonal styling"],
-                        ["Blue Cypress – The Roberts Polo in Blue | $110", "$110", "All Users", "Features a classic design suited to modern golf and casual style", "Great for golf rounds, weekends and everyday summer outfits"],
-                        ["Blue Cypress – Hutton Hoodie Navy | $114.95", "$114.95", "All Users", "Best-selling style designed for comfort on and off the golf course", "Perfect for cooler mornings, travel and casual layering"],
-                        ["Blue Cypress – Hutton Hoodie Light Blue | $114.95", "$114.95", "All Users", "Comfortable layering option for golf and everyday activities", "Great for cooler weather, travel and relaxed weekend looks"],
-                        ["Blue Cypress – Isaac Quarter-Zip Navy | $124.95", "$124.95", "All Users", "Smooth, lightweight design is made for comfortable movement", "Ideal for golf rounds, active days and outdoor activities"],
-                        ["Blue Cypress – Isaac Mélange Quarter-Zip Navy | $124.95", "$124.95", "All Users", "Features a stylish mélange finish with performance stretch", "Designed for comfortable movement during golf and active occasions"],
-                        ["Blue Cypress – First Order Offer | 20% OFF", "20% OFF", "All Users", "Unlock access to exclusive offers and future promotions", "Save on polos, hoodies, quarter-zips and women's essentials"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 8 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-base font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-base font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-base font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-base font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-base font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 text-sm font-semibold">
+      {[
+        { title: "The Jackson Polo", val: "$110", cond: "Summer 2026 Collection", app: "Golf rounds & casual wear" },
+        { title: "The Stokes Polo", val: "$110", cond: "Summer 2026 Collection", app: "Golf & casual apparel" },
+        { title: "Women's Essentials", val: "From $109.95", cond: "Versatile activewear designs", app: "Women's active & golf apparel" },
+        { title: "The Roberts Polo (Blue)", val: "$110", cond: "Classic modern fit", app: "Men's golf wear" },
+        { title: "Hutton Hoodie (Navy)", val: "$114.95", cond: "Best-selling style", app: "Travel & casual layering" },
+        { title: "Hutton Hoodie (Light Blue)", val: "$114.95", cond: "Comfortable layering option", app: "Golf & everyday wear" },
+        { title: "Isaac Quarter-Zip (Navy)", val: "$124.95", cond: "Lightweight performance stretch", app: "Golf performance wear" },
+        { title: "Isaac Mélange Quarter-Zip (Navy)", val: "$124.95", cond: "Stylish mélange finish", app: "Performance apparel" },
+        { title: "First Order Offer", val: "20% OFF", cond: "Sign up required", app: "First-time orders" },
+      ].map((item, i, arr) => (
+        <tr 
+          key={i} 
+          className={`border-b border-gray-200 hover:bg-gray-50/50 transition-colors ${i === arr.length - 1 ? 'border-b-0' : ''}`}
+        >
+          <td className="p-5 text-black font-extrabold text-base align-middle max-w-[200px]">
+            {item.title}
+          </td>
+          <td className="p-5 text-[#056BFA] font-extrabold text-base align-middle whitespace-nowrap">
+            {item.val}
+          </td>
+          <td className="p-5 text-gray-500 align-middle whitespace-nowrap">
+            All Users
+          </td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">
+            {item.cond}
+          </td>
+          <td className="p-5 text-gray-500 align-middle max-w-[220px]">
+            {item.app}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Looking for a <strong>Blue Cypress discount code</strong> to save on your next apparel order? CouponsBit helps shoppers discover current offers, sales, and promotions from Blue Cypress, a golf-inspired clothing brand known for combining performance fabrics with polished, versatile designs.
+          </p>
+          <p>
+            Blue Cypress creates apparel for more than just the golf course. Its collections are designed to transition between golf, work, travel, and everyday wear, with products including polos, quarter-zips, hoodies, and accessories. The brand's current collection features Spring and Summer 2026 styles alongside its established essentials.
+          </p>
+          <p>
+            Whether you're looking for a new golf polo, a lightweight layer for cooler mornings, or comfortable clothing that can work beyond the course, checking CouponsBit before ordering can help you find an opportunity to save.
+          </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Discount Code</h3>
+            <p>
+              A Blue Cypress discount code can be a useful way to reduce the cost of your order when a valid promotion is available. However, shoppers don't necessarily need a code to find savings. Blue Cypress also offers products at sale prices, including selected polos from its Essential collection.
+            </p>
+            <p>
+              For example, several Essential Stripe polos are currently priced at $89.95, compared with their regular price of $109.95.
+            </p>
+            <p>
+              Before buying, compare any available discount with the product's current sale price. This helps you determine which option offers the better value.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Promo Code Offers</h3>
+            <p>
+              If you're specifically searching for a Blue Cypress promo code, check CouponsBit before visiting the store. Promotional offers can change over time, so it's worth checking the latest available deal rather than relying on an old code found elsewhere.
+            </p>
+            <p>
+              When you find an offer, review its conditions before applying it. Pay attention to:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Expiration dates</li>
+              <li>Eligible products</li>
+              <li>Minimum order requirements</li>
+              <li>Sale-item exclusions</li>
+              <li>First-order restrictions</li>
+              <li>Whether the offer can be combined with another promotion</li>
+            </ul>
+            <p>
+              If a code isn't accepted at checkout, checking these conditions is usually the best place to start.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Apparel</h3>
+            <p>
+              Blue Cypress positions itself around the idea of combining performance and style, with clothing designed for the golf course, office, and everyday life.
+            </p>
+            <p>
+              This makes the brand particularly appealing to shoppers who don't want their golf wardrobe to look overly technical or limited to the course. Its polos can be paired with golf shorts or trousers, while quarter-zips and hoodies can be layered for travel, casual outings, or cooler weather.
+            </p>
+            <p>The current Blue Cypress range includes:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Polos</li>
+              <li>Quarter-zips</li>
+              <li>Hoodies</li>
+              <li>Seasonal collections</li>
+              <li>Accessories</li>
+            </ul>
+            <p>
+              The brand's website currently highlights Summer 2026 polos, Spring 2026 styles, The Hutton Hoodie, The Signature Hoodie, and The Isaac Quarter-Zip.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Golf Apparel</h3>
+            <p>
+              Golf is central to the Blue Cypress aesthetic. The brand's clothing combines performance-oriented materials with clean silhouettes that can easily work outside the course.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Golf Polos</h3>
+            <p>
+              Polos are one of the brand's main product categories, with collections covering solid, striped, and printed styles. The current range includes names such as The Cade Polo, The Cullen Polo, The Thompson Polo, The Roberts Polo, The Hampton Polo, and other seasonal designs.
+            </p>
+            <p>
+              The Essential collection is particularly suited to shoppers looking for versatile everyday golf shirts. The Essential Stripe White/Black Polo, for instance, is made from a 92% polyester and 8% spandex blend designed to provide stretch, durability, and comfort.
+            </p>
+            <p>The current Essential Stripe range includes combinations such as:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>White and Black</li>
+              <li>White and Navy</li>
+              <li>White and Light Blue</li>
+              <li>Ibiza Blue and Island Blue</li>
+              <li>Ibiza Blue and Medieval Blue</li>
+              <li>Sweet Lavender and Blue Depths</li>
+              <li>Ethereal Blue and Party Punch</li>
+            </ul>
+            <p>
+              Several of these styles are currently marked down to $89.95.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Quarter-Zips</h3>
+            <p>
+              A quarter-zip is a practical choice when you need an extra layer on the golf course without sacrificing a polished appearance.
+            </p>
+            <p>
+              The Isaac Quarter-Zip is one of Blue Cypress's current featured pieces. It is made from 89% recycled polyester and 11% spandex and has a smooth performance fabric with stretch and a tailored silhouette. The current listed price is $124.95.
+            </p>
+            <p>
+              The quarter-zip is available in colors such as navy and gray and comes in sizes S through 2XL.
+            </p>
+            <p>
+              Its understated styling means it can be worn over a polo for a round of golf or paired with casual clothing when you're away from the course.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Sale & Deals</h3>
+            <p>
+              A Blue Cypress sale can be a good opportunity to shop the brand without necessarily needing a promotional code.
+            </p>
+            <p>
+              The current website already features markdowns across selected products. Several Essential Stripe polos, for example, have been reduced from $109.95 to $89.95.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Polo Sale</h3>
+            <p>
+              If you're shopping specifically for a Blue Cypress polo sale, the Essential Stripe collection is worth checking.
+            </p>
+            <p>
+              The current discounted selection includes multiple color combinations, giving shoppers an opportunity to choose between classic neutrals and brighter seasonal shades.
+            </p>
+            <p>
+              Blue Cypress also continues to add seasonal polo collections, so shoppers may find different styles and pricing as new collections arrive.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Blue Cypress Seasonal Deals</h3>
+            <p>
+              The brand currently features its Summer 2026 Polo collection alongside its Spring 2026 range.
+            </p>
+            <p>
+              Seasonal transitions can be worth watching if you're flexible about colors or designs. New collections may introduce fresh styles, while older products can eventually move into promotional pricing.
+            </p>
+          </div>
+
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Blue Cypress Promo Code</h3>
+            <div className="space-y-6">
+              {[
+                "Step 1: Find an Available Offer — Visit CouponsBit and check the latest Blue Cypress offers before shopping.",
+                "Step 2: Choose Your Products — Browse the Blue Cypress website and select the polos, quarter-zips, hoodies, or accessories you want.",
+                "Step 3: Copy the Promo Code — If the offer requires a code, reveal it on CouponsBit and copy it.",
+                "Step 4: Shop at Blue Cypress — Add your selected products to the shopping cart and proceed toward checkout.",
+                "Step 5: Apply the Code — Enter the promotional code in the appropriate field during checkout and apply it.",
+                "Step 6: Check Your Order Total — Make sure the expected saving has been reflected before completing the purchase.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
+                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
                 </div>
+              ))}
+            </div>
+            <p className="text-gray-500 font-bold text-sm mt-4">
+              If the promotion doesn't apply, check the offer's terms and make sure your selected products qualify.
+            </p>
+          </div>
 
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Blue Cypress discount codes and promo codes</strong>? At Couponsbit, we help shoppers find new polo arrivals, signature hoodies, quarter-zips, headwear and belts from Blue Cypress.
-                  </p>
-                  <p>
-                    Whether you're dressing for the course, the office, or everyday life, Blue Cypress offers apparel designed to blend performance and style. Before you shop, check Couponsbit for the latest Blue Cypress offers.
-                  </p>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Shop Blue Cypress Clothing?</h3>
+            <p>
+              Blue Cypress appeals to shoppers who want golf apparel that can fit naturally into the rest of their wardrobe.
+            </p>
+            <p><strong>Performance Meets Everyday Style:</strong> The brand specifically describes its clothing as combining performance and style for use on the course, in the office, and beyond.</p>
+            <p><strong>Stretch-Focused Fabrics:</strong> Selected Blue Cypress products use blends designed to provide flexibility and comfort. The Essential Stripe polo, for example, uses 92% polyester and 8% spandex, while the Isaac Quarter-Zip uses 89% recycled polyester and 11% spandex.</p>
+            <p><strong>Polished Golf Aesthetic:</strong> Blue Cypress uses relatively clean silhouettes and understated branding, making many of its pieces easy to wear away from the golf course.</p>
+            <p><strong>Seasonal Variety:</strong> The brand continues to introduce new seasonal collections, including Spring and Summer 2026 polos.</p>
+            <p><strong>Beyond Polos:</strong> Although polos are a major part of the range, Blue Cypress also offers quarter-zips, hoodies, and accessories, allowing shoppers to build a more complete golf and lifestyle wardrobe.</p>
+          </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Blue Cypress</h3>
-                    <p>
-                      Blue Cypress is a performance-focused apparel brand offering polos, signature hoodies, quarter-zips, headwear and belts. The brand is built around versatile pieces tailored for life on the golf course, in the office, and everywhere in between.
-                    </p>
-                    <p>
-                      The lineup includes multiple polo collections across solid, striped and printed styles, along with signature hoodie models and quarter-zip options for layering.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Blue Cypress offers, new arrivals and seasonal collections in one place.
-                    </p>
-                  </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next Blue Cypress Order</h3>
+            <p>
+              Blue Cypress offers a range of polished, performance-focused clothing for golfers and anyone who prefers versatile apparel. From everyday polos and seasonal styles to quarter-zips and hoodies, the collection is designed to move easily between the course and everyday life.
+            </p>
+            <p>
+              Before placing your order, check CouponsBit for a Blue Cypress discount code and compare it with any current sale pricing. A quick check before checkout can help you find a better price without compromising on the style or products you want.
+            </p>
+          </div>
 
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Shop Blue Cypress via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Blue Cypress Offers — Visit the Blue Cypress page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits what you're shopping for.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Blue Cypress collection.",
-                        "Step 4: Browse the Collection — Explore polos, hoodies, quarter-zips, headwear or belts.",
-                        "Step 5: Add Items to Your Cart — Select sizes and colors for your order.",
-                        "Step 6: Complete Your Purchase — Finalize your order at checkout on Blue Cypress.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Blue Cypress</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before checking out to see the latest Blue Cypress offers.</p>
-                    <p><strong>Watch for Free Shipping:</strong> Look out for free shipping offers on eligible orders.</p>
-                    <p><strong>Browse New Arrivals Often:</strong> Seasonal collections update regularly, so checking back helps you catch new drops.</p>
-                    <p><strong>Shop During Seasonal Sales:</strong> Watch for offers during Black Friday, Cyber Monday, New Year Sales and other seasonal events.</p>
-                    <p><strong>Explore the Full Lineup:</strong> Pair polos, hoodies, headwear and belts for a complete look.</p>
-                  </div>
+        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Blue Cypress?</h3>
-                    <p><strong>Performance & Style:</strong> Apparel designed to work on the course, in the office, and everywhere in between.</p>
-                    <p><strong>Signature Pieces:</strong> Known for its signature hoodie models and quarter-zip layering options.</p>
-                    <p><strong>Quality Craftsmanship:</strong> The brand emphasizes premium quality and durable everyday essentials.</p>
-                    <p><strong>Complete Wardrobe:</strong> From polos to headwear and belts, Blue Cypress covers a full range of apparel needs.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Blue Cypress Deals?</h3>
-                    <p><strong>Curated Blue Cypress Offers:</strong> We regularly review available Blue Cypress offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find new arrivals, free shipping offers and category highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across fashion, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Build Your Wardrobe for Less</h3>
-                    <p>Whether you're shopping polos, hoodies, quarter-zips, headwear or belts, Blue Cypress offers apparel designed for the course, the office and everyday life.</p>
-                    <p>Before you shop, visit Couponsbit to explore the latest Blue Cypress offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
+        {/* FAQ */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Blue Cypress Discount Code FAQs</h3>
+          {[
+            { q: "Does Blue Cypress offer a discount code?", a: "Blue Cypress offers sale pricing and promotional opportunities throughout the year. Check CouponsBit for currently available offers before placing your order." },
+            { q: "Where can I find a Blue Cypress promo code?", a: "CouponsBit can help you find available Blue Cypress promo codes and other promotional offers in one place." },
+            { q: "What does Blue Cypress sell?", a: "Blue Cypress sells golf and lifestyle apparel, including polos, quarter-zips, hoodies, seasonal clothing, and accessories." },
+            { q: "Does Blue Cypress sell golf polos?", a: "Yes. Polos are one of Blue Cypress's core categories. The brand offers solid, striped, printed, and seasonal designs." },
+            { q: "How much do Blue Cypress polos cost?", a: "Prices vary depending on the collection and style. Several Essential Stripe polos are currently priced at $89.95, reduced from $109.95, while other current polo styles are listed at $110." },
+            { q: "How much is the Blue Cypress Isaac Quarter-Zip?", a: "The Isaac Quarter-Zip is currently listed at $124.95. It is made with 89% recycled polyester and 11% spandex and is available in several colors." },
+            { q: "Does Blue Cypress have a sale?", a: "Yes. Blue Cypress currently has selected products at reduced prices, including several Essential Stripe polos. Sale availability can change as inventory and seasonal collections are updated." },
+            { q: "What is Blue Cypress known for?", a: "Blue Cypress is known for golf-inspired apparel that combines performance-focused materials with a polished lifestyle aesthetic. Its clothing is designed to work both on and off the course." },
+            { q: "Is Blue Cypress clothing only for golfers?", a: "No. While golf is an important part of the brand's identity, Blue Cypress positions its clothing for the course, office, and everyday life." },
+            { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is free to use. You can browse available Blue Cypress offers and other shopping deals without paying a fee." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Blue Cypress?", a: "Blue Cypress is a performance-focused apparel brand offering polos, hoodies, quarter-zips, headwear and belts designed for golf, office and everyday wear." },
-                    { q: "Does Blue Cypress offer discount codes?", a: "Yes. Blue Cypress runs promotions such as free shipping offers and new arrival highlights." },
-                    { q: "Where can I find Blue Cypress discount codes?", a: "You can find the latest Blue Cypress discount codes and offers on Couponsbit." },
-                    { q: "What does Blue Cypress sell?", a: "Blue Cypress sells polos, hoodies, quarter-zips, headwear and belts, blending performance and style for golf, office and everyday wear." },
-                    { q: "Is Blue Cypress apparel suitable for golf?", a: "Yes. Blue Cypress designs its apparel to work for life on the golf course as well as the office and everyday wear." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Blue Cypress Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["New Polos", "Signature Hoodies", "Quarter-Zips", "Headwear", "Blue Cypress Discount Code", "Belts", "Free Shipping", "New Arrivals"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Blue Cypress Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Blue Cypress: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Blue Cypress Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Golf Polos", "Quarter-Zips", "Hoodies", "Blue Cypress Discount Code", "Essential Stripe Polo", "Spring Collection", "Summer 2026", "Free Shipping"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Blue Cypress Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                </div>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Blue Cypress: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />
