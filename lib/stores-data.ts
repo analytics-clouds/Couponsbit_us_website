@@ -66,7 +66,6 @@ export const allStores: StoreEntry[] = [
   { name: "Philips",         id: "philips-discount-code",       category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/philips-logo_yuwckz.webp",              discount: "Save Up To £120",  popular: false },
   { name: "Airalo",          id: "airalo-discount-code",        category: "Travel",      coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp",               discount: "USA eSIM From $4.50", popular: false },
   { name: "CarCovers",       id: "carcovers-discount-code",     category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/carcover-logo_eufopb.webp",             discount: "Save $30 OFF",     popular: false },
-  { name: "Cheapflightsfares", id: "cheapflightsfares-discount-code", category: "Travel", coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895741/chepflights-logo_wm46ul.webp",          discount: "Flights Under $99", popular: false },
   { name: "Sungait",         id: "sungait-discount-code",        category: "Fashion",     coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/sungait-logo_tfolql.webp",           discount: "Up To 50% OFF",   popular: false },
   { name: "Bluetti",         id: "bluetti-discount-code",        category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/bluetti-power-logo_osmets.webp",     discount: "Save Up To $200", popular: false },
   { name: "Dreame",          id: "dreame-discount-code",         category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130848/dreame-logo_uqesij.webp",            discount: "Up To 45% OFF",   popular: false },
@@ -96,6 +95,10 @@ export const allStores: StoreEntry[] = [
   { name: "Zara",            id: "zara-discount-code",            category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp",              discount: "Up To 80% OFF",   popular: false },
   { name: "H&M",             id: "hm-promo-code",                 category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124418/hm-logo_nn4tfs.webp",                discount: "Up To 77% OFF",   popular: false },
   { name: "ITC Hotels",      id: "itc-hotels-discount-code",      category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/itc-hotels-logo_ceakgl.webp",         discount: "Up To 50% OFF",   popular: false },
+  { name: "Target",          id: "target-discount-code",          category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp",             discount: "Save Up To $100", popular: false },
+  { name: "Apple",           id: "apple-discount-code",           category: "Electronics", coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp",              discount: "Up To $150 Gift Card", popular: false },
+  { name: "Bamboocool",      id: "bamboocool-discount-code",      category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205194/bamboocool-logo_pzkzgu.webp",         discount: "Up To 25% OFF",   popular: false },
+  { name: "Wayfair",         id: "wayfair-discount-code",         category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/wayfair-logo_upnj98.webp",             discount: "Up To 80% OFF",   popular: false },
 ];
 
 

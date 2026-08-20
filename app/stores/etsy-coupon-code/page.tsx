@@ -1,0 +1,166 @@
+import type { Metadata } from "next";
+import EtsyCouponsContent from "./_components/StoreCouponsContent";
+
+export const metadata: Metadata = {
+  title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+  description:
+    "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+
+  alternates: {
+    canonical: "https://www.couponsbit.us/stores/etsy-coupon-code",
+    languages: {
+      "en-US": "https://www.couponsbit.us/stores/etsy-coupon-code",
+      "en-GB": "https://www.couponsbit.us/stores/etsy-coupon-code",
+      "en-IN": "https://www.couponsbit.us/stores/etsy-coupon-code",
+      "x-default": "https://www.couponsbit.us/stores/etsy-coupon-code",
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    url: "https://www.couponsbit.us/stores/etsy-coupon-code",
+    title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+    description:
+      "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+    siteName: "Couponsbit",
+    locale: "en_US",
+    alternateLocale: ["en_GB", "en_IN"],
+    images: [
+      {
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp",
+        width: 1200,
+        height: 630,
+        alt: "Etsy Coupon Code & Coupon Codes – Couponsbit",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+    description:
+      "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+    images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp"],
+    site: "@couponsbit",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+};
+
+const etsySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#webpage",
+      url: "https://www.couponsbit.us/stores/etsy-coupon-code",
+      name: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+      description:
+        "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+      inLanguage: "en-US",
+      isPartOf: { "@id": "https://www.couponsbit.us/#website" },
+      breadcrumb: { "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#breadcrumb" },
+    },
+
+    {
+      "@type": "ItemList",
+      "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#offerlist",
+      name: "Etsy Coupon Codes & Discount Codes",
+      description: "Latest Etsy coupon codes and offers for handmade goods, vintage items and craft supplies.",
+      url: "https://www.couponsbit.us/stores/etsy-coupon-code",
+      numberOfItems: 8,
+      itemListElement: [
+        {
+          "@type": "ListItem", position: 1,
+          item: { "@type": "Offer", name: "Etsy Coupon Code – Custom Neon Signs | FLAT 75% OFF ✨", description: "Save FLAT 75% OFF on selected custom neon signs available to Etsy shoppers in the USA.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 2,
+          item: { "@type": "Offer", name: "Etsy Coupon Code – Custom Keepsake Gifts | 70% OFF 🎁", description: "Get selected Custom Keepsake Gifts for $12, reduced from $40, and SAVE 70%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 3,
+          item: { "@type": "Offer", name: "Etsy – New Arrivals | UP TO 65% OFF 🛍️", description: "Discover Etsy's newest products with UP TO 65% OFF selected items.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 4,
+          item: { "@type": "Offer", name: "Etsy – Jewelry Designs | UP TO 70% OFF 💎", description: "Save UP TO 70% OFF on selected jewelry designs.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 5,
+          item: { "@type": "Offer", name: "Etsy – Willow Vine Fairy Lights | 25% OFF ✨", description: "Get Willow Vine Lights for $31.87+, reduced from $42.50+, and SAVE 25%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 6,
+          item: { "@type": "Offer", name: "Etsy – Custom Watercolor House Ornament | 50% OFF 🏠", description: "Get the Custom Watercolor House Ornament for $13.49, down from $26.99, and SAVE 50%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Etsy – Sitewide Sale | UP TO 40% OFF 🛒", description: "Enjoy UP TO 40% OFF eligible Etsy purchases across selected categories.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+        {
+          "@type": "ListItem", position: 8,
+          item: { "@type": "Offer", name: "Etsy – Rings Sale | UP TO 20% OFF 💍", description: "Save UP TO 20% OFF on selected rings available to USA shoppers.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
+        },
+      ],
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://www.couponsbit.us/#website",
+      url: "https://www.couponsbit.us",
+      name: "Couponsbit",
+      description: "Couponsbit is one of the best coupon websites offering verified coupons, deals, and coupon help for top brands worldwide.",
+      inLanguage: "en-US",
+      publisher: { "@id": "https://www.couponsbit.us/#organization" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/#organization",
+      name: "Couponsbit",
+      url: "https://www.couponsbit.us",
+      logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
+      contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#breadcrumb",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.couponsbit.us" },
+        { "@type": "ListItem", position: 2, name: "Stores", item: "https://www.couponsbit.us/stores" },
+        { "@type": "ListItem", position: 3, name: "Etsy Coupons", item: "https://www.couponsbit.us/stores/etsy-coupon-code" },
+      ],
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#faq",
+      mainEntity: [
+        { "@type": "Question", name: "What is Etsy?", acceptedAnswer: { "@type": "Answer", text: "Etsy is an online marketplace for handmade goods, vintage items, craft supplies and personalized products from independent sellers." } },
+        { "@type": "Question", name: "Does Etsy offer coupon codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Individual Etsy sellers may offer coupon codes and promotions on their shops." } },
+        { "@type": "Question", name: "Where can I find Etsy coupon codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Etsy coupon codes and offers on Couponsbit." } },
+        { "@type": "Question", name: "Does Etsy sell vintage items?", acceptedAnswer: { "@type": "Answer", text: "Yes. Etsy features vintage items alongside handmade and craft products from independent sellers." } },
+        { "@type": "Question", name: "Can I find personalized products on Etsy?", acceptedAnswer: { "@type": "Answer", text: "Yes. Many Etsy sellers offer personalized and custom-made products." } },
+        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
+      ],
+    },
+  ],
+};
+
+export default function EtsyStorePage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(etsySchema) }} />
+      <EtsyCouponsContent />
+    </>
+  );
+}

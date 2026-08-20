@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TargetCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Target Discount Code: Deals & Coupon Codes | Aug 2026",
+  title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
   description:
-    "Find the latest Target discount codes for Aug 2026. Discover general merchandise offers, grocery deals, Target Circle picks and same-day delivery offers with Couponsbit.",
+    "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/target-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/target-discount-code",
-    title: "Target Discount Code: Deals & Coupon Codes | Aug 2026",
+    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
     description:
-      "Find the latest Target discount codes for Aug 2026. Discover general merchandise offers, grocery deals, Target Circle picks and same-day delivery offers with Couponsbit.",
+      "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Target Discount Code: Deals & Coupon Codes | Aug 2026",
+    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
     description:
-      "Find the latest Target discount codes for Aug 2026. Discover general merchandise offers, grocery deals, Target Circle picks and same-day delivery offers with Couponsbit.",
+      "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const targetSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/target-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/target-discount-code",
-      name: "Target Discount Code: Deals & Coupon Codes | Aug 2026",
+      name: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
       description:
-        "Find the latest Target discount codes for Aug 2026. Discover general merchandise offers, grocery deals, Target Circle picks and same-day delivery offers with Couponsbit.",
+        "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/target-discount-code#breadcrumb" },
@@ -142,17 +142,59 @@ const targetSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/target-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Target?", acceptedAnswer: { "@type": "Answer", text: "Target is an American retail chain offering general merchandise, groceries, electronics, apparel and home goods." } },
-        { "@type": "Question", name: "Does Target offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Target runs promotions such as Target Circle offers and seasonal clearance deals." } },
-        { "@type": "Question", name: "Where can I find Target discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Target discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "What is Target Circle?", acceptedAnswer: { "@type": "Answer", text: "Target Circle is Target's free loyalty program offering members rewards, personalized offers and birthday perks." } },
-        { "@type": "Question", name: "Does Target offer same-day delivery?", acceptedAnswer: { "@type": "Answer", text: "Yes. Target offers same-day delivery and pickup options on eligible orders." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/target-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Target?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Target is one of the largest retail chains in the United States, offering groceries, electronics, clothing, beauty products, home goods, toys, pet supplies, and much more through its stores and online platform."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "What is Target Circle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Target Circle is Target's free loyalty program that provides members with automatic deals, personalized offers, rewards, and exclusive member benefits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What products can I buy at Target?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Target sells products across categories including groceries, home décor, electronics, furniture, apparel, beauty, baby products, toys, pet supplies, and household essentials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find a Target discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can find the latest Target discount code, Target voucher, Target promo code, and Target coupon code on CouponsBit before placing your order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Target offer online shopping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Customers can shop online through the Target website or app and choose shipping, in-store pickup, Drive Up, or same-day delivery for eligible orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CouponsBit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. CouponsBit is completely free and helps shoppers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands."
+      }
+    }
+  ]
+},
   ],
 };
 

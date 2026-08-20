@@ -15,6 +15,13 @@ import {
   RefreshCw,
   ChevronDown,
   CheckCircle,
+  Home, 
+  Tv, 
+  Sparkles, 
+  Baby, 
+  Gamepad2, 
+  Dumbbell, 
+  Dog,
   LayoutGrid,
   Search,
   ShoppingBag,
@@ -123,7 +130,7 @@ export default function TargetCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(88.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Target deals and offers in Aug 2026. Browse Target Circle offers, grocery deals, electronics and home picks and same-day delivery offers on Target.
+                      Find Target discount codes, promo codes, and deals for Aug 2026. Save up to $100 on select Apple devices, get up to 50% OFF clothing and bedding, 40% OFF Gucci fragrance, and shop Champion T-shirts under $20 plus clearance footwear and home deals.
                     </p>
                   </div>
                 </div>
@@ -247,7 +254,10 @@ export default function TargetCouponsContent() {
         <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
           <h3 className="text-black font-black text-lg mb-6">About Target</h3>
           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-            Target is an American retail chain offering general merchandise, groceries, electronics, apparel and home goods, along with Target Circle rewards and same-day delivery options.
+            Founded in 1902, Target Corporation is one of the largest general merchandise retailers in the United States. The company operates more than 2,000 stores nationwide and serves millions of customers through its retail locations, website, and mobile app. In addition to national brands, Target offers over 45 exclusive owned brands across categories including home, apparel, beauty, groceries, baby products, and electronics. 
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Target is known for combining affordability, quality, and convenience. Customers can shop online, choose same-day pickup, Drive Up, same-day delivery in eligible areas, or have orders shipped directly to their homes.
           </p>
           <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
             Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -276,27 +286,79 @@ export default function TargetCouponsContent() {
            <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
         </div>
 
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8">Target Products & Services</h3>
-          <div className="space-y-8">
-            {[
-              { icon: ShoppingCart, title: "General Merchandise", sub: "A wide range of everyday products across categories." },
-              { icon: Gift, title: "Groceries & Essentials", sub: "Pantry, household and personal care items." },
-              { icon: Star, title: "Target Circle", sub: "A free loyalty program offering rewards and personalized offers." },
-              { icon: Truck, title: "Same-Day Delivery", sub: "Delivery and pickup options on eligible orders." },
-            ].map((item, i) => (
-              <div key={item.title} className="flex gap-4 items-start text-justify">
-                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                  <item.icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-md mx-auto">
+  <h3 className="text-black font-black text-lg mb-2">
+    What Can You Buy from Target?
+  </h3>
+  <p className="text-gray-500 font-medium text-xs mb-8">
+    Target offers products across virtually every major shopping category.
+  </p>
+
+  <div className="space-y-8">
+    {[
+      {
+        icon: Home,
+        title: "Home & Furniture",
+        sub: "Shop furniture, bedding, home décor, kitchen essentials, storage solutions, lighting, and home improvement products."
+      },
+      {
+        icon: Tv,
+        title: "Electronics",
+        sub: "Browse TVs, laptops, gaming consoles, headphones, smart home devices, tablets, smartphones, and accessories from leading brands."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Grocery & Household Essentials",
+        sub: "Purchase fresh groceries, pantry staples, beverages, cleaning supplies, paper products, and daily household necessities."
+      },
+      {
+        icon: Sparkles,
+        title: "Beauty & Personal Care",
+        sub: "Explore skincare, makeup, fragrances, hair care, grooming products, vitamins, and wellness essentials."
+      },
+      {
+        icon: Shirt,
+        title: "Clothing & Accessories",
+        sub: "Find fashion for women, men, kids, and babies, along with shoes, handbags, jewelry, and seasonal apparel."
+      },
+      {
+        icon: Baby,
+        title: "Baby Products",
+        sub: "Shop diapers, baby gear, nursery furniture, feeding essentials, clothing, toys, and parenting must-haves."
+      },
+      {
+        icon: Gamepad2,
+        title: "Toys & Games",
+        sub: "Discover educational toys, action figures, dolls, puzzles, board games, outdoor toys, and collectibles for all ages."
+      },
+      {
+        icon: Dumbbell,
+        title: "Sports & Outdoor Living",
+        sub: "Browse fitness equipment, camping gear, bicycles, outdoor furniture, grills, travel accessories, and sporting goods."
+      },
+      {
+        icon: Dog,
+        title: "Pet Supplies",
+        sub: "Find pet food, treats, toys, beds, grooming products, and accessories for dogs, cats, and other pets."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
         </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   </div>
@@ -329,182 +391,193 @@ export default function TargetCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Target Discount Codes, Promo Codes & Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Target Discount Code, Voucher & Promo Code Offers
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["Target Promo Code – Save Up to $100 on Apple Devices", "Save Up to $100", "All Users", "Availability, exclusions and quantities may vary", "Apple devices"],
-                        ["Target Promo Code – Up to 50% OFF Pillows & Bedding", "Up to 50% OFF", "All Users", "Online-only savings, while supplies last", "Pillows & bedding"],
-                        ["Target Promo Code – Up to 50% OFF Clothing for All", "Up to 50% OFF", "All Users", "Quantities limited, exclusions may apply", "Clothing (women's, men's, kids')"],
-                        ["Target – Up to 40% OFF Storage & Home Improvement", "Up to 40% OFF", "All Users", "Shop eligible items online while offer lasts", "Storage & home improvement"],
-                        ["Target – Sharpie S-Gel Pens 4-Pack | 13% OFF", "$4.89 (13% OFF)", "All Users", "Black 0.7mm medium-tip ink", "Sharpie S-Gel Pens"],
-                        ["Target – Gucci Guilty Elixir de Parfum Pour Homme | 40% OFF", "$109.80 (40% OFF)", "All Users", "Premium men's fragrance", "Gucci Guilty Elixir de Parfum"],
-                        ["Target – Women’s Eloise Sandals | Clearance Sale", "$24.50 (Save $10.50)", "All Users", "Memory foam insole", "Women’s Eloise Sandals"],
-                        ["Target – Champion Men’s Big Script T-Shirt | Under $20", "$12.60–$18.00", "All Users", "Selected styles on clearance online", "Champion Men’s T-Shirt"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 7 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        {/* Collapsible Content Area */}
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          
+          {/* Intro Section */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa]">Save More Every Time You Shop with a Target Discount Code</h3>
+            <p>
+              Whether you're shopping for groceries, home essentials, electronics, fashion, toys, beauty products, or seasonal décor, Target offers millions of products for every lifestyle and budget. With exclusive brands, everyday low prices, and convenient shopping options, Target has become one of the most popular retail destinations in the United States.
+            </p>
+            <p>
+              Before placing your order, visit CouponsBit to find the latest Target discount code, Target voucher, Target promo code, and Target coupon code. Applying a valid offer at checkout can help you save even more on your favorite brands and everyday essentials.
+            </p>
+          </div>
+
+          {/* Why Choose Target */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Target?</h3>
+            <p><strong>Wide Product Selection:</strong> From groceries and fashion to electronics and furniture, Target offers an extensive range of products for every member of the family.</p>
+            <p><strong>Exclusive Brands:</strong> Target features dozens of exclusive in-house brands across home, apparel, food, and beauty categories that offer quality and value.</p>
+            <p><strong>Convenient Shopping Options:</strong> Customers can shop online, pick up orders in-store, use Drive Up, or enjoy same-day delivery in eligible locations.</p>
+            <p><strong>Target Circle Rewards:</strong> Join Target Circle, Target's free loyalty program, to access automatic deals, personalized offers, Target Circle Rewards, and other member benefits.</p>
+            <p><strong>Target Circle Card Benefits:</strong> Eligible customers can apply for a Target Circle Card, which offers everyday savings and additional shopping benefits on qualifying purchases.</p>
+            <p><strong>Seasonal Deals:</strong> Target regularly features promotions for holidays, back-to-school shopping, Black Friday, Cyber Monday, and other major shopping events.</p>
+          </div>
+
+          {/* How to Use Code */}
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-2">How to Use a Target Discount Code</h3>
+            <p className="text-gray-500 font-bold -mt-4">Saving on your Target order is quick and easy.</p>
+            <div className="space-y-6">
+              {[
+                "Step 1: Visit CouponsBit and browse the latest Target discount code, voucher, promo code, and coupon code offers.",
+                "Step 2: Select the promotion that best matches your purchase.",
+                "Step 3: Copy the available promotional code.",
+                "Step 4: Visit Target and add your desired products to your shopping cart.",
+                "Step 5: Enter the discount code during checkout if applicable.",
+                "Step 6: Complete your purchase and enjoy extra savings.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Target discount codes and promo codes</strong>? At Couponsbit, we help shoppers find Target Circle offers, grocery deals, electronics and home picks and same-day delivery offers.
-                  </p>
-                  <p>
-                    Whether you're stocking up on groceries or shopping for electronics and home goods, Target offers both in-store shopping and convenient delivery options. Before you shop, check Couponsbit for the latest Target offers.
-                  </p>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Target</h3>
-                    <p>
-                      Target is an American retail chain offering general merchandise across groceries, electronics, apparel, home goods and more.
-                    </p>
-                    <p>
-                      Through Target Circle, the brand's free loyalty program, shoppers can access personalized offers and rewards. Target also offers same-day delivery and pickup options for added convenience.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Target offers, seasonal picks and delivery highlights in one place.
-                    </p>
-                  </div>
-
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Target via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Target Offers — Visit the Target page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your needs.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Target page.",
-                        "Step 4: Browse Products — Explore groceries, electronics, apparel or home goods on Target.",
-                        "Step 5: Join Target Circle — Sign up for free to access member offers if eligible.",
-                        "Step 6: Complete Your Purchase — Add items to your cart and check out, or choose delivery or pickup.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Target</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before shopping to see the latest Target offers.</p>
-                    <p><strong>Join Target Circle:</strong> Free membership can unlock personalized offers and rewards.</p>
-                    <p><strong>Watch for Seasonal Clearance:</strong> Clearance pricing is updated regularly on select items.</p>
-                    <p><strong>Use Same-Day Delivery:</strong> Save time with delivery or pickup on eligible orders.</p>
-                    <p><strong>Compare Grocery Deals:</strong> Check weekly deals on pantry and household essentials.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Target?</h3>
-                    <p><strong>Wide Product Range:</strong> General merchandise, groceries and more under one roof.</p>
-                    <p><strong>Convenient Delivery:</strong> Same-day delivery and pickup options on eligible orders.</p>
-                    <p><strong>Free Loyalty Program:</strong> Target Circle offers rewards at no cost to join.</p>
-                    <p><strong>Trusted Retailer:</strong> A long-standing name in American retail.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Target Deals?</h3>
-                    <p><strong>Curated Target Offers:</strong> We regularly review available Target offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find grocery deals, electronics picks and delivery highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across retail, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Your Target Order</h3>
-                    <p>Whether you're shopping for groceries, electronics, or home goods, Target offers a range of ways to save on everyday purchases.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Target offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Target?", a: "Target is an American retail chain offering general merchandise, groceries, electronics, apparel and home goods." },
-                    { q: "Does Target offer discount codes?", a: "Yes. Target runs promotions such as Target Circle offers and seasonal clearance deals." },
-                    { q: "Where can I find Target discount codes?", a: "You can find the latest Target discount codes and offers on Couponsbit." },
-                    { q: "What is Target Circle?", a: "Target Circle is Target's free loyalty program offering members rewards, personalized offers and birthday perks." },
-                    { q: "Does Target offer same-day delivery?", a: "Yes. Target offers same-day delivery and pickup options on eligible orders." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Target Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Target Circle", "Grocery Deals", "Same-Day Delivery", "Target Discount Code", "Electronics Deals", "Home Goods", "Apparel Deals", "Clearance Picks"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Target Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">T</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Target: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+
+          {/* Smart Ways to Save */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More at Target</h3>
+            <p><strong>Check CouponsBit Before Shopping:</strong> CouponsBit regularly updates verified Target discount codes, vouchers, promo codes, and exclusive offers.</p>
+            <p><strong>Join Target Circle:</strong> Sign up for the free Target Circle program to receive automatic discounts, personalized rewards, and exclusive member-only deals.</p>
+            <p><strong>Shop Seasonal Sales:</strong> Save during Black Friday, Cyber Monday, Memorial Day, Labor Day, Back-to-School, holiday promotions, and clearance events.</p>
+            <p><strong>Buy Target-Owned Brands:</strong> Target's exclusive brands often provide excellent quality at competitive prices compared to national brands.</p>
+            <p><strong>Use Drive Up or Store Pickup:</strong> Choose free pickup options when available to save time and enjoy convenient shopping.</p>
+          </div>
+
+          {/* Who Should Shop */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Who Should Shop at Target?</h3>
+            <p>Target is ideal for:</p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+              <li>Families</li>
+              <li>Students</li>
+              <li>Homeowners</li>
+              <li>Parents</li>
+              <li>Budget-conscious shoppers</li>
+              <li>College students</li>
+              <li>Professionals</li>
+              <li>Pet owners</li>
+              <li>Gift shoppers</li>
+              <li>Anyone looking for everyday essentials in one place</li>
+            </ul>
+            <p>Whether you're buying groceries, decorating your home, shopping for gifts, or upgrading your electronics, Target offers products for nearly every need.</p>
+          </div>
+
+          {/* Why Use CouponsBit */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Target Deals?</h3>
+            <p>CouponsBit helps shoppers discover verified savings from trusted retailers and leading brands.</p>
+            <p><strong>Frequently Updated Offers:</strong> We regularly update Target discount codes, vouchers, promo codes, and exclusive promotions.</p>
+            <p><strong>Verified Discounts:</strong> Browse trusted coupon codes and limited-time offers in one convenient location.</p>
+            <p><strong>Completely Free:</strong> CouponsBit is free to use whenever you're looking to save on everyday shopping.</p>
+            <p><strong>More Than Retail Deals:</strong> Besides Target, CouponsBit features savings on fashion, electronics, home essentials, travel, software, beauty products, and hundreds of other global brands.</p>
+          </div>
+
+          {/* Shop More While Spending Less */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop More While Spending Less</h3>
+            <p>Whether you're stocking up on everyday essentials, refreshing your wardrobe, furnishing your home, or shopping for the latest electronics, Target makes it easy to find quality products at competitive prices.</p>
+            <p>Before completing your purchase, visit CouponsBit to grab the latest Target discount code, Target voucher, Target promo code, and Target coupon code. It's a simple way to save more every time you shop.</p>
+          </div>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        {/* Read More Button */}
+        <button 
+          onClick={() => setIsReadMore(!isReadMore)} 
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline focus:outline-none"
+        >
+          {isReadMore ? "Read Less" : "Read More"} 
+          <ChevronDown className={cn("w-4 h-4 transition-transform duration-200", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* FAQ Section */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+          {[
+            { q: "What is Target?", a: "Target is one of the largest retail chains in the United States, offering groceries, electronics, clothing, beauty products, home goods, toys, pet supplies, and much more through its stores and online platform." },
+            { q: "What is Target Circle?", a: "Target Circle is Target's free loyalty program that provides members with automatic deals, personalized offers, rewards, and exclusive member benefits." },
+            { q: "What products can I buy at Target?", a: "Target sells products across categories including groceries, home décor, electronics, furniture, apparel, beauty, baby products, toys, pet supplies, and household essentials." },
+            { q: "Where can I find a Target discount code?", a: "You can find the latest Target discount code, Target voucher, Target promo code, and Target coupon code on CouponsBit before placing your order." },
+            { q: "Does Target offer online shopping?", a: "Yes. Customers can shop online through the Target website or app and choose shipping, in-store pickup, Drive Up, or same-day delivery for eligible orders." },
+            { q: "Is CouponsBit free to use?", a: "Absolutely. CouponsBit is completely free and helps shoppers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button 
+                onClick={() => setOpenFaq(openFaq === i ? null : i)} 
+                aria-expanded={openFaq === i}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar Section */}
+      <aside className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Target Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Target Circle", "Grocery Deals", "Same-Day Delivery", "Target Discount Code", "Electronics Deals", "Home Goods", "Apparel Deals", "Clearance Picks"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Target Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner shrink-0">T</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                </div>
+                <a 
+                  href={STORE_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`Shop Target: ${deal.heading}`} 
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 shrink-0"
+                >
+                  Get Deal
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />
