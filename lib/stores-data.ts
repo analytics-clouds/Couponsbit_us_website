@@ -99,6 +99,7 @@ export const allStores: StoreEntry[] = [
   { name: "Apple",           id: "apple-discount-code",           category: "Electronics", coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp",              discount: "Up To $150 Gift Card", popular: false },
   { name: "Bamboocool",      id: "bamboocool-discount-code",      category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205194/bamboocool-logo_pzkzgu.webp",         discount: "Up To 25% OFF",   popular: false },
   { name: "Wayfair",         id: "wayfair-discount-code",         category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/wayfair-logo_upnj98.webp",             discount: "Up To 80% OFF",   popular: false },
+  { name: "Etsy",            id: "etsy-coupon-code",              category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp",               discount: "Flat 75% OFF",    popular: false },
 ];
 
 

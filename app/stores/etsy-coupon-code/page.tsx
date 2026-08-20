@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import EtsyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+  title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
   description:
-    "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+    "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/etsy-coupon-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-    title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
     description:
-      "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+      "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
     description:
-      "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+      "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const etsySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-      name: "Etsy Coupon Code: Handmade & Vintage Offers | Aug 2026",
+      name: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
       description:
-        "Find the latest Etsy coupon codes for Aug 2026. Discover handmade goods offers, vintage item deals, craft supply picks and personalized product offers with Couponsbit.",
+        "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#breadcrumb" },
@@ -142,17 +142,99 @@ const etsySchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Etsy?", acceptedAnswer: { "@type": "Answer", text: "Etsy is an online marketplace for handmade goods, vintage items, craft supplies and personalized products from independent sellers." } },
-        { "@type": "Question", name: "Does Etsy offer coupon codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Individual Etsy sellers may offer coupon codes and promotions on their shops." } },
-        { "@type": "Question", name: "Where can I find Etsy coupon codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Etsy coupon codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Etsy sell vintage items?", acceptedAnswer: { "@type": "Answer", text: "Yes. Etsy features vintage items alongside handmade and craft products from independent sellers." } },
-        { "@type": "Question", name: "Can I find personalized products on Etsy?", acceptedAnswer: { "@type": "Answer", text: "Yes. Many Etsy sellers offer personalized and custom-made products." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where Can I Find an Etsy Discount Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Etsy discount codes, coupons, deals, and promotional offers before placing an order."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "What Is an Etsy Coupon Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Etsy coupon code is a promotional code that may provide a discount on an eligible purchase. Depending on the promotion, it may apply to a specific seller rather than the entire Etsy marketplace."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Always Have a Discount Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Coupon availability changes, and individual sellers can create or end their own promotions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Have Sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Etsy and individual sellers run promotional campaigns throughout the year, including seasonal sales, seller-specific discounts, holiday promotions, and major shopping events."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Have a Black Friday Sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etsy participates in Black Friday and Cyber Monday shopping periods, while individual sellers can also run their own promotions during these events."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Find Personalized Gifts on Etsy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Personalized products are one of Etsy's major categories, including jewelry, home décor, clothing, wedding products, gifts, signs, and keepsakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Sell Vintage Products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Etsy has a dedicated vintage marketplace featuring clothing, jewelry, furniture, collectibles, décor, accessories, and other vintage goods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Sell Craft Supplies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Etsy offers fabric, yarn, beads, sewing supplies, patterns, tools, craft kits, paper products, and many other supplies for creative projects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Etsy Sell Digital Products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Digital products include templates, planners, invitations, artwork, craft patterns, SVG files, fonts, educational resources, and other downloadable products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Use an Etsy Discount Code on Sale Items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That depends on the specific coupon. Seller-created promotions can have their own rules regarding sale products, minimum purchases, and eligible listings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Etsy Coupons Valid Across Every Seller?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. A coupon created by an individual seller may only work on products from that seller's shop. Always check the coupon's terms before checkout."
+      }
+    }
+  ]
+},
   ],
 };
 

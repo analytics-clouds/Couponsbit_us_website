@@ -11,7 +11,7 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   metadataBase: new URL("https://www.couponsbit.us"),
   title: {
     default: "Couponsbit — India's #1 Verified Coupon & Deal Platform",

@@ -19,6 +19,12 @@ import {
   Search,
   ShoppingBag,
   Palette,
+  Ticket, 
+  Store, 
+  GitCompare,  
+  CalendarDays, 
+  Truck, 
+  FileDown,
   Gem,
   Home,
   Gift,
@@ -123,7 +129,7 @@ export default function EtsyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(68.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Etsy deals and offers in Aug 2026. Browse handmade goods offers, vintage item deals, craft supply picks and personalized product deals on Etsy.
+                      Find Etsy coupon codes, promo codes, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, 65% on new arrivals, 50% on personalized ornaments, and up to 40% on selected purchases.
                     </p>
                   </div>
                 </div>
@@ -244,9 +250,39 @@ export default function EtsyCouponsContent() {
       {/* Sidebar */}
       <div className="lg:w-[35%] space-y-8">
         <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-6">About Etsy</h3>
+          <h3 className="text-black font-black text-lg mb-6">What Is an Etsy Discount Code?
+</h3>
           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-            Etsy is an online marketplace for handmade goods, vintage items, craft supplies and personalized products from independent sellers around the world.
+            An Etsy discount code is a promotional code that can provide a discount on eligible purchases.
+
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Because Etsy is a marketplace made up of independent sellers, not every coupon applies across the entire website. A code may be created by an individual seller and only work on products from that particular shop.
+
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Other promotions can be offered directly by Etsy and may have their own eligibility requirements.
+
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Always check the conditions attached to a coupon before placing your order.
+
+          </p>
+
+          <h3 className="text-black font-black text-lg mb-6">What Is an Etsy Coupon Code?
+
+</h3>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            An Etsy coupon code is a promotional code that can be entered during checkout to receive a qualifying discount.
+
+          </p>
+           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Etsy coupons can work differently from traditional retailer coupons because individual sellers can create their own promotions.
+
+          </p>
+           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            For example, a seller may offer a percentage discount when you spend a certain amount, while another shop may provide a discount on selected products.
+
           </p>
           <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
             Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -275,27 +311,66 @@ export default function EtsyCouponsContent() {
            <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
         </div>
 
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8">Etsy Products & Services</h3>
-          <div className="space-y-8">
-            {[
-              { icon: Palette, title: "Handmade Goods", sub: "Handcrafted items from independent sellers across categories." },
-              { icon: Gem, title: "Vintage Items", sub: "Curated vintage pieces including clothing, decor and collectibles." },
-              { icon: Gift, title: "Personalized Products", sub: "Custom-made items for gifts and special occasions." },
-              { icon: Home, title: "Home Decor & Craft Supplies", sub: "Decor and craft supplies for hobbyists and small businesses." },
-            ].map((item, i) => (
-              <div key={item.title} className="flex gap-4 items-start text-justify">
-                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                  <item.icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-md mx-auto">
+  <h3 className="text-black font-black text-lg mb-8">
+    How to Save More on Etsy
+  </h3>
+
+  <div className="space-y-8">
+    {[
+      {
+        icon: Ticket,
+        title: "Check CouponsBit Before Shopping",
+        sub: "Before placing an Etsy order, check CouponsBit for an available Etsy discount code or current promotional offer."
+      },
+      {
+        icon: Store,
+        title: "Look at the Seller's Current Promotions",
+        sub: "Since Etsy shops can run their own sales, check the individual seller's shop page and product listing for additional offers."
+      },
+      {
+        icon: GitCompare,
+        title: "Compare Similar Listings",
+        sub: "Etsy often has multiple sellers offering similar products. Comparing price, shipping, customization, reviews, and delivery estimates can help you determine the best overall value."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Buy From the Same Shop",
+        sub: "If you're purchasing several items, check whether one seller offers a discount for reaching a minimum order value."
+      },
+      {
+        icon: CalendarDays,
+        title: "Watch Seasonal Events",
+        sub: "Major shopping periods such as Black Friday, Cyber Monday, Valentine's Day, Mother's Day, and Christmas can be useful times to look for promotions."
+      },
+      {
+        icon: Truck,
+        title: "Check Shipping Costs",
+        sub: "A product with a lower sticker price isn't necessarily the cheapest option if shipping costs are significantly higher."
+      },
+      {
+        icon: FileDown,
+        title: "Consider Digital Products",
+        sub: "For items such as invitations, planners, templates, and artwork, digital downloads can eliminate physical shipping costs."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
         </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   </div>
@@ -328,182 +403,486 @@ export default function EtsyCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Etsy Coupon Codes, Discount Codes & Handmade Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Etsy Discount Code, Coupon Code & Sale
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["Etsy Coupon Code – Custom Neon Signs | FLAT 75% OFF", "Flat 75% OFF", "All Users", "Availability, shipping and pricing vary by seller", "Custom neon signs"],
-                        ["Etsy Coupon Code – Custom Keepsake Gifts | 70% OFF", "$12 (from $40)", "All Users", "Check seller shipping times before ordering", "Custom Keepsake Gifts"],
-                        ["Etsy – New Arrivals | UP TO 65% OFF", "From $69", "All Users", "Prices, shipping and discounts vary by seller", "Newest Etsy products"],
-                        ["Etsy – Jewelry Designs | UP TO 70% OFF", "From $5.50", "All Users", "May include free shipping within the USA", "Rings, necklaces, bracelets"],
-                        ["Etsy – Willow Vine Fairy Lights | 25% OFF", "$31.87+ (from $42.50+)", "All Users", "Sale ends in 3 days", "Willow Vine Fairy Lights"],
-                        ["Etsy – Custom Watercolor House Ornament | 50% OFF", "$13.49 (from $26.99)", "All Users", "Check estimated delivery for holiday gifting", "Custom Watercolor House Ornament"],
-                        ["Etsy – Sitewide Sale | UP TO 40% OFF", "Up to 40% OFF", "All Users", "No promo code required for qualifying products", "Templates, rings, prints, decor & more"],
-                        ["Etsy – Rings Sale | UP TO 20% OFF", "Up to 20% OFF", "All Users", "Applies to eligible ring products", "Rings"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 7 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        {/* Collapsible Content Area */}
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          
+          {/* Intro Section */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa]">Find an Etsy Discount Code and Save on Your Next Order</h3>
+            <p>
+              Looking for an Etsy discount code before buying something special? From personalized gifts and handmade jewelry to home décor, wedding essentials, clothing, craft supplies, and vintage finds, Etsy gives shoppers access to products from independent sellers around the world.
+            </p>
+            <p>
+              Before placing an order, checking for an Etsy coupon code can help you find available seller promotions, Etsy-wide offers, or other ways to save. It is also worth comparing coupon offers with the latest Etsy sale, discounted listings, and seasonal shopping events.
+            </p>
+            <p>
+              At CouponsBit, you can check available Etsy coupons, discount codes, promo codes, deals, and promotions before completing your purchase.
+            </p>
+          </div>
+
+          {/* Why Shop at Etsy? */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Shop at Etsy?</h3>
+            <p>
+              Etsy is an online marketplace built around independent sellers and distinctive products. Unlike conventional retailers that mainly sell standardized inventory, Etsy brings together individual shops offering handmade, personalized, vintage, and creative products.
+            </p>
+            <p>You can shop for:</p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+              <li>Handmade jewelry</li>
+              <li>Personalized gifts</li>
+              <li>Clothing</li>
+              <li>Shoes and accessories</li>
+              <li>Home décor</li>
+              <li>Furniture</li>
+              <li>Wedding products</li>
+              <li>Party supplies</li>
+              <li>Art and prints</li>
+              <li>Craft supplies</li>
+              <li>Sewing and fabric</li>
+              <li>Knitting and crochet supplies</li>
+              <li>Vintage products</li>
+              <li>Toys and games</li>
+              <li>Pet products</li>
+              <li>Beauty and self-care items</li>
+              <li>Digital downloads</li>
+              <li>Holiday décor</li>
+            </ul>
+            <p>
+              Because products are sold by individual shops, prices, shipping policies, processing times, and available discounts can differ from one listing to another.
+            </p>
+          </div>
+
+          {/* Etsy Jewelry */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Jewelry</h3>
+            <p>
+              Jewelry is one of Etsy's most popular shopping categories, with products ranging from everyday pieces to personalized and occasion-specific designs.
+            </p>
+            <p><strong>Necklaces:</strong> Shoppers can find minimalist necklaces, name necklaces, birthstone designs, pendants, engraved pieces, and statement styles.</p>
+            <p><strong>Earrings:</strong> Etsy offers studs, hoops, drop earrings, handmade designs, gemstone earrings, and personalized options.</p>
+            <p><strong>Bracelets:</strong> Bracelets include charm designs, friendship bracelets, engraved pieces, gemstone styles, and custom creations.</p>
+            <p><strong>Rings:</strong> You can browse engagement rings, wedding bands, stacking rings, personalized rings, birthstone pieces, and fashion jewelry.</p>
+            <p><strong>Personalized Jewelry:</strong> Custom jewelry is particularly popular on Etsy. Many sellers offer names, initials, dates, coordinates, handwriting, birthstones, and other personalization options.</p>
+          </div>
+
+          <div className="space-y-6">
+  {/* Etsy Personalized Gifts */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Personalized Gifts</h3>
+    <p>
+      One of Etsy's biggest advantages is the ability to order products customized for a particular person or occasion.
+    </p>
+    <p>Popular personalized products include:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Name signs</li>
+      <li>Engraved gifts</li>
+      <li>Custom mugs</li>
+      <li>Personalized blankets</li>
+      <li>Photo gifts</li>
+      <li>Custom jewelry</li>
+      <li>Personalized clothing</li>
+      <li>Family gifts</li>
+      <li>Wedding gifts</li>
+      <li>Anniversary gifts</li>
+      <li>Birthday presents</li>
+      <li>Personalized home décor</li>
+    </ul>
+    <p>
+      If you're shopping for someone who is difficult to buy for, personalized Etsy products can provide alternatives to conventional gifts.
+    </p>
+  </div>
+
+  {/* Etsy Home Décor */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Home Décor</h3>
+    <p>
+      Etsy has a large selection of decorative and functional products for different rooms and interior styles.
+    </p>
+    <p><strong>Wall Art:</strong> You can find art prints, paintings, photography, posters, gallery wall sets, and downloadable artwork.</p>
+    <p><strong>Home Accessories:</strong> Decorative products include candles, vases, trays, mirrors, decorative objects, signs, and other accents.</p>
+    <p><strong>Pillows and Textiles:</strong> Shoppers can find decorative cushions, blankets, throws, rugs, curtains, and other textiles.</p>
+    <p><strong>Furniture:</strong> Independent sellers offer handmade and custom furniture, including tables, shelves, benches, cabinets, and other pieces.</p>
+    <p><strong>Lighting:</strong> Etsy also features handmade and distinctive lighting products, including lamps, pendant lights, and decorative fixtures.</p>
+  </div>
+
+  {/* Etsy Clothing */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Clothing</h3>
+    <p>
+      Etsy's fashion selection includes independent designers, handmade garments, custom pieces, vintage clothing, and accessories.
+    </p>
+    <p><strong>Dresses:</strong> You can find casual dresses, formal styles, bridesmaid dresses, vintage-inspired designs, and custom-made pieces.</p>
+    <p><strong>Tops and Shirts:</strong> Options range from graphic T-shirts and embroidered tops to handmade blouses and personalized shirts.</p>
+    <p><strong>Sweaters and Knitwear:</strong> Hand-knitted sweaters, cardigans, crochet garments, and other cozy clothing are available from independent makers.</p>
+    <p><strong>Pants and Skirts:</strong> Etsy also features handmade, vintage, custom, and alternative fashion styles.</p>
+    <p><strong>Custom Clothing:</strong> Some sellers allow customers to select measurements, colors, fabrics, embroidery, text, or other details.</p>
+  </div>
+
+  {/* Etsy Bags and Accessories */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Bags and Accessories</h3>
+    <p>
+      Accessories can make up a significant portion of Etsy's fashion marketplace.
+    </p>
+    <p>You can shop for:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Handbags</li>
+      <li>Tote bags</li>
+      <li>Backpacks</li>
+      <li>Wallets</li>
+      <li>Purses</li>
+      <li>Belts</li>
+      <li>Hats</li>
+      <li>Scarves</li>
+      <li>Hair accessories</li>
+      <li>Sunglasses</li>
+      <li>Keychains</li>
+      <li>Personalized accessories</li>
+    </ul>
+    <p>
+      Many products can also be customized with names, initials, colors, or other details.
+    </p>
+  </div>
+
+  {/* Etsy Wedding Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Wedding Products</h3>
+    <p>
+      Etsy is particularly popular for wedding planning because many sellers specialize in customizable wedding products.
+    </p>
+    <p><strong>Wedding Invitations:</strong> Couples can find printable and physical invitations in different themes and styles.</p>
+    <p><strong>Wedding Signs:</strong> Products include welcome signs, seating charts, ceremony signs, bar signs, and other wedding-day décor.</p>
+    <p><strong>Bridesmaid Gifts:</strong> Personalized robes, jewelry, tumblers, bags, makeup cases, and other gifts can be customized for members of the wedding party.</p>
+    <p><strong>Wedding Decorations:</strong> You can find table décor, centerpieces, cake toppers, banners, candles, floral accessories, and other decorative products.</p>
+    <p><strong>Wedding Favors:</strong> Small personalized gifts and keepsakes can be ordered for wedding guests.</p>
+    <p><strong>Bridal Accessories:</strong> Etsy also offers veils, hair accessories, jewelry, bridal robes, garters, and other wedding-related fashion products.</p>
+  </div>
+
+  {/* Etsy Party Supplies */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Party Supplies</h3>
+    <p>
+      Whether you're planning a birthday, baby shower, graduation, anniversary, or holiday gathering, Etsy offers a variety of party products.
+    </p>
+    <p>These can include:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Invitations</li>
+      <li>Decorations</li>
+      <li>Banners</li>
+      <li>Cake toppers</li>
+      <li>Party favors</li>
+      <li>Table décor</li>
+      <li>Gift bags</li>
+      <li>Printable games</li>
+      <li>Photo booth props</li>
+      <li>Custom signs</li>
+    </ul>
+    <p>
+      Digital party products can also be useful when you need invitations or decorations quickly.
+    </p>
+  </div>
+
+  {/* Etsy Craft Supplies */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Craft Supplies</h3>
+    <p>
+      Etsy isn't only a destination for finished products. It also has a large marketplace for people who make things themselves.
+    </p>
+    <p><strong>Fabric:</strong> Shoppers can find quilting fabric, printed fabric, specialty textiles, fabric bundles, and vintage materials.</p>
+    <p><strong>Yarn:</strong> The marketplace includes yarn for knitting, crochet, weaving, and other crafts.</p>
+    <p><strong>Beads and Jewelry Supplies:</strong> You can purchase beads, charms, clasps, findings, gemstones, chains, and other jewelry-making materials.</p>
+    <p><strong>Sewing Supplies:</strong> Products include patterns, buttons, thread, trims, sewing kits, tools, and other supplies.</p>
+    <p><strong>Scrapbooking:</strong> Paper, stickers, stamps, embellishments, templates, and other scrapbooking materials are available.</p>
+    <p><strong>DIY Kits:</strong> Craft kits can provide everything needed to complete a particular project without buying each component separately.</p>
+  </div>
+
+  {/* Etsy Art and Collectibles */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Art and Collectibles</h3>
+    <p>
+      Art lovers can browse work from independent artists and creators.
+    </p>
+    <p>Popular categories include:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Original artwork</li>
+      <li>Paintings</li>
+      <li>Illustrations</li>
+      <li>Photography</li>
+      <li>Prints</li>
+      <li>Posters</li>
+      <li>Sculptures</li>
+      <li>Ceramics</li>
+      <li>Handmade pottery</li>
+      <li>Collectibles</li>
+    </ul>
+    <p>
+      Etsy also has a substantial vintage marketplace for shoppers interested in older and hard-to-find pieces.
+    </p>
+  </div>
+
+  {/* Etsy Vintage Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Vintage Products</h3>
+    <p>
+      Vintage shopping is another important part of Etsy.
+    </p>
+    <p>Depending on the seller and available inventory, shoppers can find:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Vintage clothing</li>
+      <li>Jewelry</li>
+      <li>Furniture</li>
+      <li>Home décor</li>
+      <li>Collectibles</li>
+      <li>Books</li>
+      <li>Accessories</li>
+      <li>Kitchenware</li>
+      <li>Antique-inspired items</li>
+      <li>Retro products</li>
+    </ul>
+    <p>
+      Vintage availability changes constantly because individual pieces may be one-of-a-kind.
+    </p>
+  </div>
+
+  {/* Etsy Toys and Kids' Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Toys and Kids' Products</h3>
+    <p>
+      Etsy offers products for children, babies, and families, including handmade toys, personalized gifts, nursery décor, clothing, and educational products.
+    </p>
+    <p><strong>Handmade Toys:</strong> Wooden toys, stuffed animals, dolls, puzzles, sensory toys, and other handmade products are available from independent sellers.</p>
+    <p><strong>Baby Gifts:</strong> Popular options include personalized blankets, baby clothes, milestone products, nursery décor, and keepsakes.</p>
+    <p><strong>Kids' Clothing:</strong> Parents can find handmade and personalized children's clothing, costumes, accessories, and special-occasion outfits.</p>
+  </div>
+
+  {/* Etsy Pet Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Pet Products</h3>
+    <p>
+      Etsy also has a growing range of products for pets.
+    </p>
+    <p>You can shop for:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Personalized pet tags</li>
+      <li>Pet collars</li>
+      <li>Leashes</li>
+      <li>Pet beds</li>
+      <li>Bandanas</li>
+      <li>Pet clothing</li>
+      <li>Feeding accessories</li>
+      <li>Toys</li>
+      <li>Custom pet portraits</li>
+      <li>Memorial products</li>
+    </ul>
+  </div>
+
+  {/* Etsy Beauty and Self-Care */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Beauty and Self-Care</h3>
+    <p>
+      Independent sellers offer a range of beauty and self-care products, including handmade soaps, bath products, skincare, fragrances, candles, accessories, and wellness-related gift items.
+    </p>
+    <p>
+      Because these products are sold by individual shops, shoppers should review the listing details, ingredients, seller information, and applicable policies before purchasing.
+    </p>
+  </div>
+
+  {/* Etsy Digital Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Etsy Digital Products</h3>
+    <p>
+      Etsy isn't limited to physical merchandise. Digital downloads are another major category.
+    </p>
+    <p>These can include:</p>
+    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+      <li>Printable planners</li>
+      <li>Digital invitations</li>
+      <li>Wall art</li>
+      <li>Templates</li>
+      <li>Wedding stationery</li>
+      <li>Budget spreadsheets</li>
+      <li>Business templates</li>
+      <li>Educational resources</li>
+      <li>Craft patterns</li>
+      <li>SVG files</li>
+      <li>Fonts</li>
+      <li>Digital stickers</li>
+    </ul>
+    <p>
+      Digital products can be particularly convenient because they may be available immediately after purchase.
+    </p>
+  </div>
+</div>
+
+          {/* What Types of Etsy Sales and Offers Are Available? */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">What Types of Etsy Sales and Offers Are Available?</h3>
+            <p>
+              Etsy uses several types of promotions throughout the year. Since independent sellers can also run their own campaigns, the range of available discounts can vary significantly.
+            </p>
+            <p><strong>Etsy-Wide Sales:</strong> Etsy sometimes organizes larger promotional events where participating sellers offer discounts on qualifying products. Not every shop or listing necessarily participates, so check the individual product details.</p>
+            <p><strong>Seller-Specific Sales:</strong> Individual Etsy shops can create their own promotions. These may cover an entire shop, selected listings, or particular product categories.</p>
+            <p><strong>Percentage-Off Discounts:</strong> A seller may offer a percentage reduction on qualifying products or orders.</p>
+            <p><strong>Spend-and-Save Offers:</strong> Some promotions provide a discount after reaching a minimum order value. These offers can be particularly useful when buying several products from the same shop.</p>
+            <p><strong>Free Shipping Offers:</strong> Some sellers offer free shipping on qualifying orders or during specific promotional periods. Because shipping is controlled at the seller level, always check the final delivery cost before completing an order.</p>
+            <p><strong>Seasonal Sales:</strong> Etsy sellers frequently run promotions around seasonal shopping periods. Common occasions include:</p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+              <li>Valentine's Day</li>
+              <li>Mother's Day</li>
+              <li>Father's Day</li>
+              <li>Graduation season</li>
+              <li>Back-to-school</li>
+              <li>Halloween</li>
+              <li>Thanksgiving</li>
+              <li>Christmas</li>
+              <li>New Year</li>
+              <li>Black Friday and Cyber Monday</li>
+            </ul>
+            <p><strong>Black Friday and Cyber Monday:</strong> Black Friday and Cyber Monday are important promotional periods on Etsy, with many individual sellers offering discounts on gifts, home products, jewelry, clothing, craft supplies, and other popular categories.</p>
+            <p><strong>Holiday Gift Sales:</strong> As the holiday season approaches, sellers may introduce discounts on personalized gifts, ornaments, home décor, jewelry, stocking stuffers, and other giftable products.</p>
+            <p><strong>Clearance and End-of-Season Offers:</strong> Some shops discount older designs, seasonal merchandise, or remaining inventory to make room for new products.</p>
+          </div>
+
+          {/* How to Use an Etsy Coupon Code */}
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-2">How to Use an Etsy Coupon Code</h3>
+            <div className="space-y-6">
+              {[
+                "Step 1: Find an Etsy Offer — Start by checking CouponsBit for current Etsy coupon codes, deals, and promotions.",
+                "Step 2: Choose Your Product — Browse jewelry, personalized gifts, clothing, home décor, wedding products, craft supplies, vintage items, or another Etsy category.",
+                "Step 3: Review the Seller — Check the seller's reviews, processing time, shipping information, return policy, and product details.",
+                "Step 4: Check the Coupon Conditions — Make sure the coupon applies to your selected item or shop and review any minimum purchase requirements or expiration dates.",
+                "Step 5: Add the Product to Your Cart — Select the appropriate size, color, personalization details, and quantity.",
+                "Step 6: Apply the Coupon — Enter the Etsy coupon code during checkout if required.",
+                "Step 7: Confirm Your Total — Check the final price, shipping charges, taxes, personalization costs, and discount before placing your order.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Etsy coupon codes and discount codes</strong>? At Couponsbit, we help shoppers find handmade goods offers, vintage item deals, craft supply picks and personalized product deals.
-                  </p>
-                  <p>
-                    Whether you're shopping for a unique gift or looking for craft supplies, Etsy connects you with independent sellers offering handmade and vintage products. Before you shop, check Couponsbit for the latest Etsy offers.
-                  </p>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Etsy</h3>
-                    <p>
-                      Etsy is an online marketplace connecting shoppers with independent sellers offering handmade goods, vintage items and craft supplies.
-                    </p>
-                    <p>
-                      Many Etsy sellers also offer personalized and custom-made products, making it a popular destination for unique gifts and special-occasion items.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Etsy offers, seller picks and category highlights in one place.
-                    </p>
-                  </div>
-
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Etsy via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Etsy Offers — Visit the Etsy page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your needs.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Etsy page.",
-                        "Step 4: Browse Sellers — Explore handmade, vintage or craft supply listings.",
-                        "Step 5: Contact the Seller if Needed — Ask about personalization or custom options.",
-                        "Step 6: Complete Your Purchase — Add items to your cart and check out on Etsy.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Etsy</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before shopping to see the latest Etsy offers.</p>
-                    <p><strong>Compare Similar Listings:</strong> Multiple sellers may offer similar handmade or vintage items.</p>
-                    <p><strong>Ask About Bundle Pricing:</strong> Some sellers offer discounts for multiple item purchases.</p>
-                    <p><strong>Plan Ahead for Custom Orders:</strong> Personalized items may require extra turnaround time.</p>
-                    <p><strong>Check Seller Reviews:</strong> Reviews can help confirm quality and seller reliability.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Etsy?</h3>
-                    <p><strong>Unique, Handmade Products:</strong> Items you won't typically find at large retailers.</p>
-                    <p><strong>Support Independent Sellers:</strong> Purchases support small businesses and makers.</p>
-                    <p><strong>Personalization Options:</strong> Many sellers offer custom and made-to-order items.</p>
-                    <p><strong>Wide Product Range:</strong> From vintage finds to craft supplies and home decor.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Etsy Deals?</h3>
-                    <p><strong>Curated Etsy Offers:</strong> We regularly review available Etsy offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find handmade picks, vintage deals and gift highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across marketplaces, fashion, electronics and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find Something Unique for Less</h3>
-                    <p>Whether you're shopping for a handmade gift, vintage find, or personalized keepsake, Etsy offers a range of unique options to explore.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Etsy offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Etsy?", a: "Etsy is an online marketplace for handmade goods, vintage items, craft supplies and personalized products from independent sellers." },
-                    { q: "Does Etsy offer coupon codes?", a: "Yes. Individual Etsy sellers may offer coupon codes and promotions on their shops." },
-                    { q: "Where can I find Etsy coupon codes?", a: "You can find the latest Etsy coupon codes and offers on Couponsbit." },
-                    { q: "Does Etsy sell vintage items?", a: "Yes. Etsy features vintage items alongside handmade and craft products from independent sellers." },
-                    { q: "Can I find personalized products on Etsy?", a: "Yes. Many Etsy sellers offer personalized and custom-made products." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Etsy Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Handmade Goods", "Vintage Items", "Craft Supplies", "Etsy Coupon Code", "Personalized Gifts", "Home Decor", "Custom Jewelry", "Independent Sellers"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Etsy Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">E</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Etsy: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+
+          {/* Popular Etsy Products to Explore */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Popular Etsy Products to Explore</h3>
+            <p>Etsy is especially useful when you're looking for products that feel more personal or distinctive than mass-market alternatives.</p>
+            <p>For gifting, popular categories include personalized jewelry, custom mugs, engraved gifts, photo products, personalized blankets, signs, and handmade keepsakes.</p>
+            <p>For weddings, shoppers can explore invitations, wedding signs, bridesmaid gifts, favors, decorations, cake toppers, bridal accessories, and printable stationery.</p>
+            <p>Home shoppers can browse wall art, candles, furniture, pillows, rugs, ceramics, lighting, kitchen accessories, and decorative pieces.</p>
+            <p>Creative shoppers can explore fabric, yarn, beads, sewing supplies, craft kits, patterns, printable designs, and digital files.</p>
+            <p>Etsy's vintage section is another option for shoppers searching for retro clothing, antique décor, collectibles, jewelry, furniture, and other older items.</p>
+          </div>
+
+          {/* Shop Etsy With CouponsBit */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Etsy With CouponsBit</h3>
+            <p>From handmade jewelry and personalized gifts to wedding supplies, home décor, clothing, craft materials, vintage finds, children's products, pet accessories, and digital downloads, Etsy offers an enormous variety of products from independent sellers.</p>
+            <p>Before making your next purchase, check CouponsBit for an Etsy discount code, Etsy coupon code, or current Etsy sale. Compare seller promotions, Etsy-wide campaigns, shipping costs, and product prices to find the offer that makes the most sense for your order.</p>
+            <p>Whether you're searching for a one-of-a-kind gift, planning a wedding, decorating your home, starting a craft project, or simply looking for something different, checking available Etsy savings before checkout can help you get better value from your purchase.</p>
+          </div>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        {/* Read More Button */}
+        <button 
+          onClick={() => setIsReadMore(!isReadMore)} 
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline focus:outline-none"
+        >
+          {isReadMore ? "Read Less" : "Read More"} 
+          <ChevronDown className={cn("w-4 h-4 transition-transform duration-200", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* FAQ Section */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Etsy Discount Codes</h3>
+          {[
+            { q: "Where Can I Find an Etsy Discount Code?", a: "You can check CouponsBit for available Etsy discount codes, coupons, deals, and promotional offers before placing an order." },
+            { q: "What Is an Etsy Coupon Code?", a: "An Etsy coupon code is a promotional code that may provide a discount on an eligible purchase. Depending on the promotion, it may apply to a specific seller rather than the entire Etsy marketplace." },
+            { q: "Does Etsy Always Have a Discount Code?", a: "No. Coupon availability changes, and individual sellers can create or end their own promotions." },
+            { q: "Does Etsy Have Sales?", a: "Yes. Etsy and individual sellers run promotional campaigns throughout the year, including seasonal sales, seller-specific discounts, holiday promotions, and major shopping events." },
+            { q: "Does Etsy Have a Black Friday Sale?", a: "Etsy participates in Black Friday and Cyber Monday shopping periods, while individual sellers can also run their own promotions during these events." },
+            { q: "Can I Find Personalized Gifts on Etsy?", a: "Yes. Personalized products are one of Etsy's major categories, including jewelry, home décor, clothing, wedding products, gifts, signs, and keepsakes." },
+            { q: "Does Etsy Sell Vintage Products?", a: "Yes. Etsy has a dedicated vintage marketplace featuring clothing, jewelry, furniture, collectibles, décor, accessories, and other vintage goods." },
+            { q: "Does Etsy Sell Craft Supplies?", a: "Yes. Etsy offers fabric, yarn, beads, sewing supplies, patterns, tools, craft kits, paper products, and many other supplies for creative projects." },
+            { q: "Does Etsy Sell Digital Products?", a: "Yes. Digital products include templates, planners, invitations, artwork, craft patterns, SVG files, fonts, educational resources, and other downloadable products." },
+            { q: "Can I Use an Etsy Discount Code on Sale Items?", a: "That depends on the specific coupon. Seller-created promotions can have their own rules regarding sale products, minimum purchases, and eligible listings." },
+            { q: "Are Etsy Coupons Valid Across Every Seller?", a: "Not necessarily. A coupon created by an individual seller may only work on products from that seller's shop. Always check the coupon's terms before checkout." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button 
+                onClick={() => setOpenFaq(openFaq === i ? null : i)} 
+                aria-expanded={openFaq === i}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar Section */}
+      <aside className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Etsy Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Personalized Gifts", "Handmade Jewelry", "Wedding Decor", "Craft Supplies", "Vintage Finds", "Custom Mugs", "Wall Art", "Printable Cards"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Etsy Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner shrink-0">E</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                </div>
+                <a 
+                  href={STORE_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`Shop Etsy: ${deal.heading}`} 
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 shrink-0"
+                >
+                  Get Deal
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />
