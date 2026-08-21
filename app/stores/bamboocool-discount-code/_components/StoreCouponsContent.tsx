@@ -384,6 +384,194 @@ export default function BamboocoolCouponsContent() {
           Bamboo Cool Discount Code, Coupon Code & Sale
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Summer Collection Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 25% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Free shipping on orders over $49
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected summer underwear &amp; bamboo apparel
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Men&apos;s Short-Sleeve Polo Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $27.29
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance pricing (Reg. $45.99)
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Men&apos;s casual short-sleeve polo shirts
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women&apos;s Seamless Briefs 5-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $36.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $38.99; 5-piece multipack
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Mid-waist seamless women&apos;s briefs
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Men&apos;s Boxer Briefs 7-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $56.94
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $66.99; 7-piece daily pack
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Days of the Week men&apos;s boxer briefs
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Men&apos;s Bamboo Underwear 7-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $56.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $65.99; multipack deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Bamboo Cool men&apos;s underwear
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women&apos;s Lace Hipster Bikini 6-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $35.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $39.99; 6-piece multipack
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Lace trim hipster bikini underwear
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Seamless High-Waist Thongs 6-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $36.74
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $43.99; 6-piece multipack
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Seamless high-waist women&apos;s thongs
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Lace Trim Pajama Set
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $32.59
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $33.99; lightweight summer wear
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Lightweight women&apos;s lace trim pajamas
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women&apos;s Short-Sleeve Pajama Set
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $49.34
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $55.99
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Short-sleeve women&apos;s sleepwear sets
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            New Customer Offer
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save 20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            New Subscribers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Sign-up required; valid on first eligible order
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            First orders across bamboo apparel &amp; underwear
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         {/* Collapsible Content Area */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

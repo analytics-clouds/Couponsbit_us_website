@@ -410,6 +410,160 @@ export default function EtsyCouponsContent() {
           Etsy Discount Code, Coupon Code & Sale
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Custom Neon Signs
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat 75% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Coupon code may apply; varies by seller
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Personalized neon signs for home, events &amp; business
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Custom Keepsake Gifts
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save 70% OFF ($12)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $40; coupon code may apply
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Handmade personalized gifts for all occasions
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            New Arrivals Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 65% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Prices start from $69 (Reg. $197.14+)
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            New home, fashion, jewelry &amp; lifestyle items
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Jewelry Designs
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 70% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Select items include free shipping
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Rings, necklaces, bracelets &amp; handmade jewelry from $5.50
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Willow Vine Fairy Lights
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save 25% OFF ($31.87+)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time deal (ends in 3 days); Reg. $42.50+
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Bendable branch-style fairy lights &amp; home decor
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Custom Watercolor House Ornament
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save 50% OFF ($13.49)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Reduced from $26.99; check estimated delivery dates
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Personalized home watercolor keepsake ornaments
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Sitewide Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            No promo code required; auto-applied at checkout
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Templates, rings, prints, decor &amp; eligible items
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Rings Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time pricing from participating sellers
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Statement rings, personalized designs &amp; engagement rings
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         {/* Collapsible Content Area */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

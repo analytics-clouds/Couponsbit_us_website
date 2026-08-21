@@ -398,6 +398,160 @@ export default function TargetCouponsContent() {
           Target Discount Code, Voucher & Promo Code Offers
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Apple Devices Savings
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save Up to $100
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time online savings; quantities may vary
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select Apple devices &amp; electronics
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Pillows &amp; Bedding Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Online-only savings; available while supplies last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select pillows &amp; bedding essentials
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Clothing for All Clearance
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited quantities; exclusions apply
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select women&apos;s, men&apos;s &amp; kids&apos; apparel
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Storage &amp; Home Improvement
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Online offer while supplies last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Storage solutions &amp; home improvement items
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Sharpie S-Gel Pens 4-Pack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            13% OFF ($4.89)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Save $0.70 (Reg. $5.59); 0.7mm medium point
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Sharpie black S-Gel pens 4-pack
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Gucci Guilty Elixir Pour Homme
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            40% OFF ($109.80)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Save $73.20 (Reg. $183)
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Gucci Guilty Elixir de Parfum Pour Homme
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women’s Eloise Sandals
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Clearance ($24.50)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Save $10.50 (Reg. $35); memory foam insole
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women&apos;s Eloise memory foam sandals
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Champion Men’s Big Script T-Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Under $20 ($12.60–$18.00)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Target Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Online clearance deal on select styles
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Champion Men&apos;s Big Script t-shirts
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         {/* Collapsible Content Area */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

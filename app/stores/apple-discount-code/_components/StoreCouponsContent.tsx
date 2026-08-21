@@ -405,6 +405,228 @@ export default function AppleCouponsContent() {
           Apple Discount Code, Coupon Code & Sale
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Apple Education Savings Offer
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to $150 Gift Card
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Students &amp; Educators
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Valid with Education Savings on eligible Mac or iPad purchases
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Mac &amp; iPad models
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            MacBook Neo Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $599
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users / Students
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Monthly financing available from $49.91/mo for 12 mos
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            All-new MacBook Neo models
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Sitewide Student Discount
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat 20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Eligible Students
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Minimum order value of $129 required
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible sitewide Apple products
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            MacBook Air Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $999
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users / Students
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Education pricing available for eligible users
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            MacBook Air laptops
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            iPad Air Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $699
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Flexible monthly financing options available
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            11-inch &amp; 13-inch iPad Air models
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            MacBook Pro Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $1,899
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Multiple hardware configurations available
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            MacBook Pro laptops
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Apple Watch Series 11
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $359
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Monthly financing from $29.91/mo for 12 mos
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Apple Watch Series 11 models
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            iPhone 16 Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $799
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Trade-in options available to lower purchase cost
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            iPhone 16 smartphones
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Apple TV 4K Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $199
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Standard pricing for home streaming devices
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Apple TV 4K streaming boxes
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            iPhone 17 Pro Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $1,099
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Device trade-in options available
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            iPhone 17 Pro models
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            iPhone 17 MagSafe Case
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $49
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Electric Lavender finish; MagSafe compatible
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            iPhone 17 Silicone Case
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Native Union Ultralight Sleeve
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $39.95
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Lightweight protective sleeve design
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            13&quot; and 14&quot; MacBook models
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         {/* Collapsible Content Area */}
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           

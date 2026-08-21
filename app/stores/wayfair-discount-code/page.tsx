@@ -146,17 +146,107 @@ const wayfairSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/wayfair-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Wayfair?", acceptedAnswer: { "@type": "Answer", text: "Wayfair is an online retailer specializing in furniture, home decor and home goods." } },
-        { "@type": "Question", name: "Does Wayfair offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Wayfair runs promotions such as furniture deals and seasonal Way Day sale picks." } },
-        { "@type": "Question", name: "Where can I find Wayfair discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Wayfair discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "What is Wayfair Professional?", acceptedAnswer: { "@type": "Answer", text: "Wayfair Professional is a free program offering trade pricing and benefits for eligible business customers." } },
-        { "@type": "Question", name: "What is Way Day?", acceptedAnswer: { "@type": "Answer", text: "Way Day is Wayfair's seasonal sale event featuring deals across furniture and home decor." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/wayfair-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where Can I Find a Wayfair Discount Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Wayfair discount codes, coupon codes, deals, and promotions before placing your order."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "What Is a Wayfair Coupon Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Wayfair coupon code is a promotional code that may provide a discount or another benefit on qualifying purchases, depending on the offer's conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Always Have a Discount Code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Wayfair runs different types of promotions throughout the year, and some savings are automatically applied rather than requiring a code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Have a Sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wayfair regularly runs sales and promotional events covering furniture, décor, mattresses, appliances, rugs, lighting, outdoor products, and other categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Is Way Day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Way Day is Wayfair's major promotional shopping event, featuring offers across a broad range of home products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Have a Black Friday Sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Black Friday is a major promotional period for Wayfair, with deals across multiple home categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Sell Furniture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Furniture is one of Wayfair's core categories, including sofas, beds, dining furniture, desks, chairs, cabinets, storage, and outdoor furniture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Sell Mattresses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wayfair offers mattresses, mattress toppers, pillows, bedding, bed frames, and other bedroom products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Sell Rugs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can find area rugs, runners, outdoor rugs, washable rugs, and rugs in different sizes, patterns, and materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Sell Outdoor Furniture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Outdoor products include patio seating, dining sets, loungers, umbrellas, outdoor rugs, fire pits, and storage solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I Use a Wayfair Discount Code on Sale Items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That depends on the specific promotion. Some offers may exclude already-discounted merchandise or selected categories, so review the coupon terms before checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wayfair Sell Appliances?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wayfair offers various major and small appliances, including refrigerators, dishwashers, ranges, microwaves, washers, dryers, and other home appliances."
+      }
+    }
+  ]
+},
   ],
 };
 
