@@ -841,7 +841,7 @@ export default function RayneoCouponsContent() {
       {/* Left Column: Main Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          RayNeo Discount Codes, Promo Codes & Smart Glasses Deals 2026
+          Rayneo Discount , Voucher & promo code & Smart Glasses Deals | Aug 2026
         </h2>
 
         <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">

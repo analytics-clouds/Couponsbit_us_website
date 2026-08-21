@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import RayneoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "RayNeo Discount Code: AR Glasses From $254 + Save $130 | Aug 2026",
+  title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
   description:
-    "Use a verified RayNeo discount code or promo code — grab Air 4 Pro HDR10 AR Glasses from $254.15. Save $130 on RayNeo X3 Pro AI smart glasses at $1,169. August 2026.",
+    "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/rayneo-discount-code",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-    title: "RayNeo Discount Code: AR Glasses From $254 + Save $130 | Aug 2026",
+    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
     description:
-      "Use a verified RayNeo discount code or promo code — grab Air 4 Pro HDR10 AR Glasses from $254.15. Save $130 on RayNeo X3 Pro AI smart glasses at $1,169. August 2026.",
+      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "RayNeo Discount Code: AR Glasses From $254 + Save $130 | Aug 2026",
+    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
     description:
-      "Use a verified RayNeo discount code or promo code — grab Air 4 Pro HDR10 AR Glasses from $254.15. Save $130 on RayNeo X3 Pro AI smart glasses at $1,169. August 2026.",
+      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp"],
     site: "@couponsbit",
   },
@@ -58,9 +58,9 @@ const rayneoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/rayneo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-      name: "RayNeo Discount Code: AR Glasses From $254 + Save $130 | Aug 2026",
+      name: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
       description:
-        "Use a verified RayNeo discount code or promo code — grab Air 4 Pro HDR10 AR Glasses from $254.15. Save $130 on RayNeo X3 Pro AI smart glasses at $1,169. August 2026.",
+        "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
