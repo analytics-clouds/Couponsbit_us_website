@@ -223,7 +223,7 @@ export default function KeralaAyurvedaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Kerala Ayurveda discount codes & promo codes for August 2026. Use code COUNTNEW10 for 10% off your first order on authentic Ayurvedic supplements & skincare. Shop Kumkumadi Oil, Shilajit & more from just $27.
+                      Save more on authentic Ayurvedic wellness products with Kerala Ayurveda deals. Get Kalyanaka Ghee for $28.95, Rasnasapthakam Kwath for $22.95, Digi Eye Defense for $31.95, Indukantham Kwath for $25.95, Kumkumadi Oil from $27, Shilajit Capsules for $25.95, Brilliant Mind for $28.95, Kumkumadi Thailam from $27, Triphala Capsules for $28.95, and Dashamula Capsules for $28.95. Use COUNTNEW10 to get 10% OFF your first order and enjoy traditional Ayurvedic wellness products at better prices.
                     </p>
                   </div>
                 </div>
@@ -320,7 +320,9 @@ export default function KeralaAyurvedaCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Kerala Ayurveda Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">
+                  Use code COUNTNEW10 for 10% OFF | Aug 2026
+                  </h2>
 
                 </div>
 
