@@ -108,6 +108,11 @@ export const allStores: StoreEntry[] = [
   { name: "Little Caesars",  id: "little-caesars-promo-code",      category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp", discount: "Up To 20% OFF",   popular: false },
   { name: "Abercrombie",     id: "abercrombie-discount-code",      category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp",   discount: "Up To 50% OFF",   popular: false },
   { name: "Harbor Freight",  id: "harbor-freight-discount-code",   category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp",      discount: "Up To 50% OFF",   popular: false },
+  { name: "Burger King",     id: "burger-king-promo-code",         category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/burger-king-logo_m4nwmx.webp",   discount: "Up To 50% OFF",   popular: false },
+  { name: "Great Clips",     id: "great-clips-discount-code",      category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/great-clips_rz78rf.webp",        discount: "Up To 50% OFF",   popular: false },
+  { name: "Booking",         id: "booking-promo-code",             category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp",       discount: "Up To 40% OFF",   popular: false },
+  { name: "JCPenney",        id: "jcpenney-discount-code",         category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp",       discount: "Up To 50% OFF",   popular: false },
+  { name: "Kroger Digital",  id: "kroger-digital-discount-code",   category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp",        discount: "Up To 50% OFF",   popular: false },
 ];
 
 
