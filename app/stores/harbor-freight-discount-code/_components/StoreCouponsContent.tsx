@@ -13,7 +13,7 @@ import {
   ShieldCheck,
   PiggyBank,
   RefreshCw,
-  ChevronDown,
+  ChevronDown,FileText, Calendar,
   CheckCircle,
   LayoutGrid,
   Search,
@@ -241,9 +241,18 @@ export default function HarborFreightCouponsContent() {
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Harbor Freight</h3>
+                  <h3 className="text-black font-black text-lg mb-6">Harbor Freight Membership and Rewards Savings</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Harbor Freight is a tools and equipment retailer offering power tools, hand tools, automotive products and generators for DIY and professional use.
+                  Harbor Freight also offers membership-related savings through its loyalty programs. The specific benefits depend on the membership level and current program terms.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                  For regular Harbor Freight shoppers, membership can be another factor to consider alongside coupons and promotional offers. If you frequently purchase tools, equipment, or automotive supplies, compare the available member benefits with the promotions available for your order.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                  This is another reason not to focus exclusively on finding a Harbor Freight coupon code. Depending on the purchase, a member benefit or product promotion may provide better overall value.
+
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -273,26 +282,59 @@ export default function HarborFreightCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Harbor Freight Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Wrench, title: "Power & Hand Tools", sub: "Drills, saws, wrenches and tool sets for every project." },
-                      { icon: Car, title: "Automotive", sub: "Jacks, creepers and diagnostic tools for vehicle maintenance." },
-                      { icon: Zap, title: "Generators", sub: "Portable and standby generators for backup power." },
-                      { icon: Boxes, title: "Storage & Organization", sub: "Tool chests and storage bins to keep tools organized." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-8">
+    How to Find the Best Harbor Freight Deals
+  </h3>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before Shopping",
+        sub: "Before completing your Harbor Freight purchase, check CouponsBit for the latest Harbor Freight discount code, coupon offers, promotional codes, vouchers, and other available deals."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Compare the Promotion With Your Cart",
+        sub: "The most valuable offer depends on what you are purchasing. A product-specific deal may be better for one item, while a broader promotion may work better when buying several eligible products."
+      },
+      {
+        icon: Percent,
+        title: "Browse Clearance",
+        sub: "If you are flexible about product selection, checking clearance merchandise can reveal additional savings opportunities."
+      },
+      {
+        icon: Calendar,
+        title: "Watch Major US Shopping Events",
+        sub: "Black Friday, Cyber Monday, Father's Day, Memorial Day, Labor Day, and seasonal transitions can be useful periods to monitor for promotions on tools and equipment."
+      },
+      {
+        icon: Wrench,
+        title: "Consider the Entire Project",
+        sub: "If you are working on a home improvement or automotive project, make a list of the tools and supplies you actually need. Then compare available promotions against the complete list instead of choosing a deal based solely on its advertised discount."
+      },
+      {
+        icon: FileText,
+        title: "Read the Offer Terms",
+        sub: "Tool and equipment promotions can have exclusions. Some offers may not apply to particular brands or product categories, while others may have expiration dates or purchase requirements."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
             </div>
           </div>
@@ -325,180 +367,336 @@ export default function HarborFreightCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Harbor Freight Discount Codes, Promo Codes & Tool Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Harbor Freight Discount Code, Coupon Code & Promo Offers
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["New Power Tool Offers", "New Offers", "All Users", "Available online and in stores", "Power tools"],
-                        ["Hand Tool Deals", "Featured picks", "All Users", "Options for DIY and pro use", "Hand tools"],
-                        ["Automotive Picks", "Featured picks", "All Users", "Suited for at-home maintenance", "Automotive tools"],
-                        ["Generator Offers", "Featured picks", "All Users", "Suited for backup power & job sites", "Generators"],
-                        ["Storage & Organization Picks", "Featured picks", "All Users", "Keeps tools organized", "Storage & organization"],
-                        ["Weekly Coupon Picks", "Rotating offers", "All Users", "Updated weekly", "Various tool categories"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Harbor Freight is a popular American retailer for tools, equipment, automotive supplies, hardware, and workshop essentials. From hand tools and power tools to automotive equipment, generators, welding supplies, storage solutions, outdoor equipment, and safety gear, Harbor Freight serves DIYers, mechanics, contractors, tradespeople, and homeowners across the United States.
+          </p>
+          <p>
+            If you are planning a purchase from Harbor Freight, checking for a Harbor Freight discount code before completing your order can be a smart way to look for additional savings. CouponsBit helps shoppers find current coupon codes, promotional offers, vouchers, sales, and other deals so they can compare their options before making a purchase.
+          </p>
+          <p>
+            Whether you need a new power tool for a home project, automotive equipment for your garage, storage for your workshop, or larger equipment for professional use, checking available Harbor Freight offers before checkout can help you get more value from your shopping budget.
+          </p>
+
+          <div className={cn("text-gray-600 space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Find a Harbor Freight Discount Code</h3>
+    <p>
+      A Harbor Freight discount code can be useful when you are shopping for tools or equipment and want to see whether a current promotion applies to your purchase. Harbor Freight is known for running different types of savings campaigns, including product-specific promotions, coupon offers, seasonal events, member benefits, and clearance opportunities.
+    </p>
+    <p>
+      Not every promotion works in the same way. Some offers may require a code, while others can be automatically reflected in the price of an eligible product. Certain promotions may also be limited to particular products, brands, stores, or periods.
+    </p>
+    <p className="text-sm bg-blue-50/70 text-gray-700 p-3 rounded-xl border border-blue-100 font-medium">
+      Before applying a Harbor Freight coupon code, check the offer's terms carefully. Understanding the eligibility requirements can help you choose the promotion that is most relevant to your order.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Harbor Freight Coupon Code and Promotional Savings</h3>
+    <p>
+      When looking for a Harbor Freight coupon code, it helps to consider the type of product you are buying rather than focusing on one specific discount format.
+    </p>
+    <p>
+      For example, a shopper purchasing a hand tool may find a product-level promotion more useful, while someone buying workshop equipment may benefit from a broader offer. Clearance merchandise can also provide an opportunity to save without necessarily requiring a coupon.
+    </p>
+    <p className="font-medium text-gray-700">
+      Couponsbit allows shoppers to check for a Harbor Freight promo code, discount offer, voucher, sale, or other available promotion before heading to checkout.
+    </p>
+  </div>
+
+  <div className="space-y-6">
+    <h3 className="text-xl font-black text-[#056bfa]">Shop Harbor Freight Tools and Equipment</h3>
+    <p>
+      Harbor Freight carries a wide range of products designed for home improvement, automotive work, construction, maintenance, workshop projects, and everyday repairs.
+    </p>
+
+    <div className="space-y-4">
+      <h4 className="text-lg font-bold text-gray-900">Hand Tools</h4>
+      <p>
+        Hand tools are among Harbor Freight's core product categories. Depending on the current assortment, shoppers can find wrenches, sockets, ratchets, screwdrivers, pliers, hammers, measuring tools, cutting tools, specialty tools, and tool sets.
+      </p>
+      <p>
+        For homeowners and DIYers, tool sets can be a convenient way to build a basic collection without purchasing every tool individually.
+      </p>
+      <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+        If you are planning to purchase several tools, checking for a Harbor Freight discount code before checkout can be worthwhile.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h4 className="text-lg font-bold text-gray-900">Power Tools</h4>
+      <p>
+        Harbor Freight also offers power tools for drilling, cutting, grinding, sanding, fastening, woodworking, and other projects.
+      </p>
+      <p>
+        Its selection can include cordless and corded tools, batteries, chargers, saws, drills, impact tools, grinders, sanders, polishers, and related accessories.
+      </p>
+      <p>
+        Shoppers should check the specifications of each product to make sure the tool is appropriate for the intended project.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h4 className="text-lg font-bold text-gray-900">Tool Storage</h4>
+      <p>
+        Keeping tools organized can be just as important as buying the tools themselves. Harbor Freight offers storage solutions such as tool cabinets, tool carts, workbenches, tool boxes, bags, organizers, and storage accessories.
+      </p>
+      <p>
+        For a garage or workshop upgrade, customers may want to compare storage products with current promotions before making a larger purchase.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h4 className="text-lg font-bold text-gray-900">Automotive Tools and Equipment</h4>
+      <p>
+        Harbor Freight has an extensive automotive category for customers working on cars, trucks, motorcycles, and other vehicles.
+      </p>
+      <p>
+        Products can include jacks, jack stands, lifts, diagnostic tools, mechanics' tools, shop equipment, fluid-handling equipment, battery equipment, creepers, pressure washers, and other automotive supplies.
+      </p>
+      <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+        If you are preparing for a larger automotive project, check for a Harbor Freight coupon code before purchasing equipment and accessories.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h4 className="text-lg font-bold text-gray-900">Generators and Power Equipment</h4>
+      <p>
+        Harbor Freight sells generators and other power-related equipment for different applications. Customers can find options designed for backup power, job sites, camping, outdoor activities, and other uses.
+      </p>
+      <p>
+        The exact products and specifications vary, so shoppers should compare power requirements, fuel type, portability, capacity, and intended use before purchasing.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Welding Equipment</h5>
+        <p className="text-sm">Welders, welding helmets, protective equipment, consumables, clamps, and fabrication supplies.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Air Compressors & Tools</h5>
+        <p className="text-sm">Compressors, pneumatic air tools, hoses, fittings, and workshop accessories.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Outdoor & Lawn Equipment</h5>
+        <p className="text-sm">Garden tools, pressure washers, utility trailers, water pumps, and outdoor storage.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Safety Equipment</h5>
+        <p className="text-sm">Protective gloves, eyewear, hearing protection, workwear, and respirators for safer environments.</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Harbor Freight for DIY and Home Improvement</h3>
+    <p>
+      Harbor Freight is a practical destination for DIY enthusiasts working on home repairs, renovations, woodworking, garage projects, and general maintenance.
+    </p>
+    <p>
+      A homeowner might shop for a drill and screwdriver set for a small repair, while someone completing a larger project may need saws, sanders, ladders, workbenches, storage, extension cords, or other equipment.
+    </p>
+    <p>
+      Because DIY projects often require several tools and accessories, checking for available promotions before placing an order can help keep the overall project budget under control.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Harbor Freight for Automotive Projects</h3>
+    <p>
+      Car enthusiasts and home mechanics can use Harbor Freight for everything from basic maintenance tools to larger garage equipment.
+    </p>
+    <p>
+      Its automotive assortment can support projects such as brake work, oil changes, tire maintenance, vehicle diagnostics, detailing, and general repairs.
+    </p>
+    <p>
+      When buying automotive equipment, consider the complete cost of the project rather than focusing only on one product. A Harbor Freight voucher or promotional offer may be useful when purchasing several related items.
+    </p>
+  </div>
+
+  <div className="space-y-6">
+    <h3 className="text-xl font-black text-[#056bfa]">Harbor Freight Clearance and Sale Opportunities</h3>
+    <p>
+      Harbor Freight uses different promotional approaches throughout the year. Shoppers can find savings through coupons, product promotions, clearance merchandise, seasonal campaigns, and other limited-time offers.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Seasonal Promotions</h5>
+        <p className="text-sm">Pressure washers and lawn tools in spring/summer; generators and heaters in fall/winter.</p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Black Friday & Holiday Sales</h5>
+        <p className="text-sm">Major shopping event discounts around Thanksgiving, Christmas, and Cyber Monday.</p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Father's Day Promotions</h5>
+        <p className="text-sm">Promotional emphasis on hand tools, power tools, automotive gear, and workshop storage.</p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Spring & Garage-Season Deals</h5>
+        <p className="text-sm">Targeted savings during prime garage organization and outdoor maintenance months.</p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Clearance Events</h5>
+        <p className="text-sm">Deep markdowns on inventory transitions, discontinued models, and stock replacements.</p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Limited-Time Promotions</h5>
+        <p className="text-sm">Short-window promotional pushes focusing on single categories or urgent weekend deals.</p>
+      </div>
+    </div>
+  </div>
+
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Harbor Freight Discount Code</h3>
+            <p className="text-gray-700 font-bold mb-6">
+              If you find a Harbor Freight discount code through CouponsBit, follow these general steps:
+            </p>
+            <div className="space-y-6">
+              {[
+                "Select the Harbor Freight offer you want to use.",
+                "Visit the Harbor Freight website through the relevant offer.",
+                "Browse tools, equipment, automotive products, or other merchandise.",
+                "Add the eligible products to your shopping cart.",
+                "Proceed to checkout.",
+                "Enter the applicable promotional code in the designated field if required.",
+                "Apply the code and review your order.",
+                "Confirm that the promotion has been accepted before completing your purchase.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
                 </div>
+              ))}
+            </div>
+            <p className="text-gray-500 font-bold leading-relaxed pt-4">
+              If the code does not work, check its expiration date and eligibility conditions. The offer may be limited to selected products, brands, quantities, or purchase methods.
+            </p>
+          </div>
 
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Harbor Freight discount codes and promo codes</strong>? At Couponsbit, we help shoppers find power tool offers, hand tool deals, automotive picks and generator offers.
-                  </p>
-                  <p>
-                    Whether you're tackling a DIY project or stocking up on job-site equipment, Harbor Freight offers a wide range of tools and equipment. Before you shop, check Couponsbit for the latest Harbor Freight offers.
-                  </p>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Harbor Freight Offers?</h3>
+            <p>
+              CouponsBit helps shoppers look for savings before they complete an online purchase. Instead of searching separately for a Harbor Freight discount code, coupon, voucher, promotional offer, and sale, customers can check CouponsBit first and compare the available opportunities.
+            </p>
+            <p>
+              This is particularly useful for Harbor Freight because shoppers may be purchasing anything from a single screwdriver set to a much larger collection of tools and equipment.
+            </p>
+            <p>
+              The right offer depends on the purchase. A Harbor Freight promo code may be useful for one order, while a clearance deal, product promotion, seasonal sale, or member benefit may provide better value for another.
+            </p>
+            <p>
+              CouponsBit is designed to help customers identify those possibilities before checkout.
+            </p>
+          </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Harbor Freight</h3>
-                    <p>
-                      Harbor Freight is a tools and equipment retailer offering power tools, hand tools, automotive products and generators for both DIY shoppers and professionals.
-                    </p>
-                    <p>
-                      With a wide selection across categories, Harbor Freight serves shoppers working on everything from small repairs to larger automotive and job-site projects.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Harbor Freight offers, weekly coupon picks and category highlights in one place.
-                    </p>
-                  </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next Harbor Freight Purchase</h3>
+            <p>
+              Harbor Freight gives US shoppers access to a broad range of tools and equipment, from everyday hand tools and power tools to automotive equipment, generators, welding supplies, tool storage, outdoor equipment, and safety products.
+            </p>
+            <p>
+              With promotions changing throughout the year, there are several opportunities to look for savings. Before completing your next purchase, check CouponsBit for the latest Harbor Freight discount code, coupon offers, vouchers, promo codes, and other available deals.
+            </p>
+            <p>
+              Whether you are upgrading your garage, tackling a DIY project, maintaining your vehicle, or building a professional workshop, comparing current offers before checkout can help you get more from your Harbor Freight shopping budget.
+            </p>
+          </div>
 
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Harbor Freight via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Harbor Freight Offers — Visit the Harbor Freight page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your project.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Harbor Freight page.",
-                        "Step 4: Browse Products — Explore tools, automotive products or generators.",
-                        "Step 5: Check Weekly Coupon Picks — Review rotating offers updated weekly.",
-                        "Step 6: Complete Your Purchase — Add items to your cart and check out on Harbor Freight.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Harbor Freight</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before shopping to see the latest Harbor Freight offers.</p>
-                    <p><strong>Watch for Weekly Picks:</strong> Rotating offers are updated weekly across categories.</p>
-                    <p><strong>Compare Tool Sets:</strong> Bundled tool sets can offer better overall value.</p>
-                    <p><strong>Plan Projects Around Sales:</strong> Automotive and generator products often see seasonal promotions.</p>
-                    <p><strong>Check In-Store vs Online Pricing:</strong> Availability and pricing can vary by channel.</p>
-                  </div>
+        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Harbor Freight?</h3>
-                    <p><strong>Wide Product Range:</strong> Tools, automotive products and generators under one roof.</p>
-                    <p><strong>DIY & Professional Support:</strong> Products suited for both casual and professional projects.</p>
-                    <p><strong>Weekly Deals:</strong> Rotating coupon picks updated regularly.</p>
-                    <p><strong>Trusted Retailer:</strong> A well-known name in tools and equipment retail.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Harbor Freight Deals?</h3>
-                    <p><strong>Curated Harbor Freight Offers:</strong> We regularly review available Harbor Freight offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find tool offers, automotive picks and generator highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across home, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Your Next Project</h3>
-                    <p>Whether you're shopping for tools, automotive products, or a generator, Harbor Freight offers a range of options to explore.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Harbor Freight offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
+        {/* FAQ */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Harbor Freight Discount Codes</h3>
+          {[
+            { q: "Does Harbor Freight offer discount codes?", a: "Yes. Harbor Freight regularly provides different types of promotional savings, including coupons, product offers, seasonal promotions, clearance opportunities, and other deals. The exact promotions available can change." },
+            { q: "Where can I find a Harbor Freight discount code?", a: "You can check CouponsBit for available Harbor Freight discount codes, coupon codes, promo codes, vouchers, and other savings opportunities before shopping." },
+            { q: "How do I use a Harbor Freight coupon code?", a: "Add eligible products to your cart, proceed through checkout, enter the applicable code if required, and apply it. Always check that the promotion has been accepted before completing the purchase." },
+            { q: "Why isn't my Harbor Freight promo code working?", a: "A promotion may not work because it has expired or because your purchase does not meet its requirements. Some offers may exclude particular products, brands, categories, or purchase methods." },
+            { q: "Can I use a Harbor Freight discount code on sale items?", a: "It depends on the specific promotion. Some offers may include selected sale merchandise, while others may have exclusions. Check the terms of the individual offer before applying it." },
+            { q: "Does Harbor Freight have clearance sales?", a: "Yes. Harbor Freight offers clearance merchandise as part of its broader savings opportunities. Clearance availability can vary by product and location." },
+            { q: "When does Harbor Freight have its biggest sales?", a: "Harbor Freight promotions change throughout the year. Black Friday, Cyber Monday, Father's Day, holiday periods, seasonal transitions, and major home-improvement seasons are useful times to watch for special offers." },
+            { q: "Does Harbor Freight sell automotive tools?", a: "Yes. Harbor Freight carries a wide range of automotive tools and equipment, including jacks, stands, diagnostic equipment, mechanics' tools, shop equipment, and other automotive supplies." },
+            { q: "Does Harbor Freight sell power tools?", a: "Yes. Its assortment includes power tools for drilling, cutting, grinding, sanding, fastening, and other applications, along with batteries, chargers, and accessories." },
+            { q: "Can I find Harbor Freight deals on generators?", a: "Harbor Freight offers generators and related power equipment. Availability, models, and promotions can vary, so check the current product selection and available offers before purchasing." },
+            { q: "How can I save more at Harbor Freight?", a: "Start by checking CouponsBit for a Harbor Freight discount code, then compare the available offer with current product promotions, clearance merchandise, seasonal deals, and eligible membership benefits. Reviewing the terms can help you choose the option that provides the best value for your purchase." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Harbor Freight?", a: "Harbor Freight is a tools and equipment retailer offering power tools, hand tools, automotive products and generators." },
-                    { q: "Does Harbor Freight offer discount codes?", a: "Yes. Harbor Freight runs promotions such as weekly coupon picks and tool offers." },
-                    { q: "Where can I find Harbor Freight discount codes?", a: "You can find the latest Harbor Freight discount codes and offers on Couponsbit." },
-                    { q: "Does Harbor Freight sell automotive products?", a: "Yes. Harbor Freight offers automotive tools and accessories alongside its general tool selection." },
-                    { q: "Does Harbor Freight sell generators?", a: "Yes. Harbor Freight offers a range of generators alongside its tools and equipment." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Harbor Freight Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Power Tools", "Hand Tools", "Automotive Tools", "Harbor Freight Discount Code", "Generators", "Storage & Organization", "Weekly Coupons", "Tool Sets"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Harbor Freight Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">H</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Harbor Freight: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Harbor Freight Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Power Tools", "Automotive", "Generators", "Harbor Freight Discount Code", "Tool Storage", "Welding Supplies", "Hand Tools", "Clearance"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Harbor Freight Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">H</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                </div>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Harbor Freight: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />

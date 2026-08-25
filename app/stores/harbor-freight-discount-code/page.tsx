@@ -134,17 +134,116 @@ const harborFreightSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Harbor Freight?", acceptedAnswer: { "@type": "Answer", text: "Harbor Freight is a tools and equipment retailer offering power tools, hand tools, automotive products and generators." } },
-        { "@type": "Question", name: "Does Harbor Freight offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Harbor Freight runs promotions such as weekly coupon picks and tool offers." } },
-        { "@type": "Question", name: "Where can I find Harbor Freight discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Harbor Freight discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Harbor Freight sell automotive products?", acceptedAnswer: { "@type": "Answer", text: "Yes. Harbor Freight offers automotive tools and accessories alongside its general tool selection." } },
-        { "@type": "Question", name: "Does Harbor Freight sell generators?", acceptedAnswer: { "@type": "Answer", text: "Yes. Harbor Freight offers a range of generators alongside its tools and equipment." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Harbor Freight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harbor Freight is a tools and equipment retailer offering power tools, hand tools, automotive products and generators."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Harbor Freight offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Harbor Freight regularly provides different types of promotional savings, including weekly coupon picks, product offers, seasonal promotions, clearance opportunities, and tool deals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find a Harbor Freight discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Harbor Freight discount codes, coupon codes, promo codes, vouchers, and other savings opportunities before shopping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use a Harbor Freight coupon code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add eligible products to your cart, proceed through checkout, enter the applicable code if required, and apply it. Always check that the promotion has been accepted before completing the purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my Harbor Freight promo code working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A promotion may not work because it has expired or because your purchase does not meet its requirements. Some offers may exclude particular products, brands, categories, or purchase methods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a Harbor Freight discount code on sale items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the specific promotion. Some offers may include selected sale merchandise, while others may have exclusions. Check the terms of the individual offer before applying it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Harbor Freight have clearance sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Harbor Freight offers clearance merchandise as part of its broader savings opportunities. Clearance availability can vary by product and location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does Harbor Freight have its biggest sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harbor Freight promotions change throughout the year. Black Friday, Cyber Monday, Father's Day, holiday periods, seasonal transitions, and major home-improvement seasons are useful times to watch for special offers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Harbor Freight sell automotive tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Harbor Freight carries a wide range of automotive tools and equipment, including jacks, stands, diagnostic equipment, mechanics' tools, shop equipment, and other automotive supplies alongside its general tool selection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Harbor Freight sell power tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Its assortment includes power tools for drilling, cutting, grinding, sanding, fastening, and other applications, along with batteries, chargers, and accessories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I find Harbor Freight deals on generators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Harbor Freight offers a range of generators and related power equipment alongside its tools. Availability, models, and promotions can vary, so check current product selections and available offers before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I save more at Harbor Freight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start by checking CouponsBit for a Harbor Freight discount code, then compare the available offer with current product promotions, clearance merchandise, seasonal deals, and eligible membership benefits. Reviewing the terms can help you choose the option that provides the best value for your purchase."
+      }
+    }
+  ]
+},
   ],
 };
 

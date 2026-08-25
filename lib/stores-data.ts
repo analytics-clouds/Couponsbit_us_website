@@ -103,6 +103,11 @@ export const allStores: StoreEntry[] = [
   { name: "Home Depot",      id: "home-depot-discount-code",      category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295216/home-depot-logo_aipbiv.webp",         discount: "Up To $350 Extra", popular: false },
   { name: "Subway",          id: "subway-discount-code",          category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295215/subway-logo_eosuh6.webp",             discount: "Up To 20% OFF",   popular: false },
   { name: "The Ayurveda Experience", id: "the-ayurveda-experience-discount-code", category: "More", coupons: 6, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295215/tae-logo_dwfmfi.webp",       discount: "Flat 50% OFF",    popular: false },
+  { name: "Fashion Nova",    id: "fashion-nova-discount-code",     category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp",       discount: "Up To 50% OFF",   popular: false },
+  { name: "Old Navy",        id: "old-navy-promo-code",            category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp",       discount: "Up To 50% OFF",   popular: false },
+  { name: "Little Caesars",  id: "little-caesars-promo-code",      category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp", discount: "Up To 20% OFF",   popular: false },
+  { name: "Abercrombie",     id: "abercrombie-discount-code",      category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp",   discount: "Up To 50% OFF",   popular: false },
+  { name: "Harbor Freight",  id: "harbor-freight-discount-code",   category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp",      discount: "Up To 50% OFF",   popular: false },
 ];
 
 

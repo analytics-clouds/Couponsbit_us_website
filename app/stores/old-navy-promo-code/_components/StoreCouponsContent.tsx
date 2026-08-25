@@ -16,7 +16,7 @@ import {
   ChevronDown,
   CheckCircle,
   LayoutGrid,
-  Search,
+  Search, Calendar,Ticket,
   ShoppingBag,
   Shirt,
   Baby,
@@ -241,9 +241,20 @@ export default function OldNavyCouponsContent() {
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Old Navy</h3>
+                  <h3 className="text-black font-black text-lg mb-6">Find an Old Navy Promo Code</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Old Navy is a Gap-owned retailer offering casual apparel for men, women and kids, along with maternity and activewear lines.
+                    An Old Navy promo code can be useful when you are ready to purchase clothing or accessories and want to see whether an additional promotion is available. Old Navy frequently runs different types of promotions, with offers changing according to the season, product category, shopping event, or campaign.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Some promotions are entered as a code during checkout, while others may be applied automatically when the qualifying products are added to your cart. The brand also runs special savings events and programs that can provide another way to reduce the cost of a future purchase.
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Because promotions can have different conditions, it is always worth checking the details before placing an order. A code might apply only to selected merchandise, require a qualifying purchase, exclude certain products, or be available for a limited period.
+
+                  </p>
+                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    CouponsBit gives shoppers a convenient place to check for an Old Navy coupon code or other available offer before making their purchase.
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -273,26 +284,57 @@ export default function OldNavyCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Old Navy Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Shirt, title: "Men's, Women's & Kids' Apparel", sub: "Casual clothing and accessories across all age groups." },
-                      { icon: Heart, title: "Maternity", sub: "Comfortable apparel designed for pregnancy." },
-                      { icon: Dumbbell, title: "Activewear", sub: "Leggings, tops and sets for workouts and everyday wear." },
-                      { icon: Baby, title: "Kids' Collection", sub: "Seasonal apparel styles for boys and girls." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-8">
+    How to Find the Best Old Navy Deals
+  </h3>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
+    The best savings opportunity depends on what you are buying, so it helps to approach Old Navy promotions strategically.
+  </p>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before Checkout",
+        sub: "Before completing your order, check CouponsBit for the latest Old Navy promo code, coupon opportunities, and other available offers. This gives you a chance to compare promotions before committing to your purchase."
+      },
+      {
+        icon: Percent,
+        title: "Browse the Sale Section",
+        sub: "Don't limit your search to promotional codes. Old Navy maintains dedicated sale and clearance sections, and some products may already be discounted without requiring a code."
+      },
+      {
+        icon: Calendar,
+        title: "Shop Around Major US Retail Events",
+        sub: "If your purchase is not urgent, major US shopping periods such as Black Friday, Cyber Monday, back-to-school season, Memorial Day, Labor Day, and end-of-season periods can be worth watching. Retailers often use these occasions to introduce limited-time promotions."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Check Whether Your Cart Qualifies",
+        sub: "A discount can depend on the products in your cart, the amount you spend, or the type of promotion being used. Review the conditions before assuming that a code applies to your entire order."
+      },
+      {
+        icon: Ticket,
+        title: "Consider Future Savings",
+        sub: "Super Cash can be useful for shoppers who expect to return to Old Navy during a future redemption period. If you receive a Super Cash coupon, keep it available and check when it can be redeemed."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
             </div>
           </div>
@@ -325,180 +367,303 @@ export default function OldNavyCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Old Navy Promo Codes, Discount Codes & Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Old Navy Promo Code, Coupon Code & Discount Offers
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["New Women's Apparel Offers", "New Offers", "All Users", "New arrivals updated regularly", "Women's apparel"],
-                        ["Men's Apparel Deals", "Featured picks", "All Users", "Seasonal collections updated regularly", "Men's apparel"],
-                        ["Kids' Collection Picks", "Featured picks", "All Users", "Seasonal styles updated regularly", "Kids' apparel"],
-                        ["Denim Deals", "Featured picks", "All Users", "Various fits and washes available", "Denim"],
-                        ["Maternity Picks", "Featured picks", "All Users", "Designed for comfort throughout pregnancy", "Maternity apparel"],
-                        ["Activewear Offers", "Featured picks", "All Users", "Designed for workouts and everyday wear", "Activewear"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Old Navy is a well-known American fashion retailer offering affordable clothing, accessories, footwear, and everyday essentials for women, men, kids, toddlers, and babies. Its assortment covers everything from jeans, T-shirts, dresses, and activewear to workwear, swimwear, outerwear, pajamas, shoes, and accessories. The brand is particularly popular with shoppers who want versatile styles for everyday life without having to spend a fortune on their wardrobe.
+          </p>
+          <p>
+            If you are planning to shop at Old Navy, checking for an Old Navy promo code before completing your purchase can be a smart way to look for additional savings. CouponsBit helps shoppers discover available coupon codes, promotional offers, sales, and other opportunities to save before they head to checkout.
+          </p>
+          <p>
+            Whether you are updating your wardrobe with new denim, preparing the kids for a new school year, shopping for seasonal clothing, or simply looking for everyday basics, checking the latest Old Navy offers can help you make your shopping budget go further.
+          </p>
+
+          <div className={cn("text-gray-600 space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Ways to Save When Shopping at Old Navy</h3>
+    <p>
+      Old Navy does not rely on just one type of promotion. Its savings strategy includes a mix of everyday deals, seasonal campaigns, category-specific discounts, clearance events, promotional codes, and loyalty-related benefits.
+    </p>
+    <p>
+      For example, shoppers may encounter an offer that reduces the cost of a particular category, while another promotion may provide savings across a wider selection. Old Navy also operates its Super Cash program, through which eligible purchases can earn a coupon for a later qualifying purchase during designated redemption periods. According to Old Navy's current terms, customers can earn Super Cash on qualifying purchases of $25 or more, with redemption levels tied to the amount spent during the redemption period.
+    </p>
+    <p className="font-medium text-gray-700">
+      This means that the best way to save is not always to search for one particular type of code. Instead, compare the promotion available for your cart with the current sale, clearance selection, and any eligible rewards or Super Cash benefits.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Shop Women's Clothing at Old Navy</h3>
+    <p>
+      Old Navy's women's collection covers a broad range of styles, making it possible to build an everyday wardrobe from one retailer. Shoppers can browse jeans, pants, tops, T-shirts, sweaters, dresses, skirts, shorts, jumpsuits, activewear, swimwear, jackets, coats, pajamas, shoes, and accessories.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Women's Jeans and Denim</h4>
+    <p>
+      Denim is one of Old Navy's major fashion categories. The brand carries different rises, fits, washes, lengths, and silhouettes, giving shoppers plenty of options for casual and everyday outfits.
+    </p>
+    <p>
+      You can look for straight-leg, wide-leg, bootcut, flare, skinny, boyfriend, loose, and other denim styles, depending on the current assortment. Denim promotions are also frequently featured as individual category sales, so shoppers interested in jeans should check both the current sale section and any available Old Navy discount code before checking out.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Tops and T-Shirts</h4>
+    <p>
+      Old Navy offers everyday tops ranging from basic T-shirts and tanks to blouses, sweaters, sweatshirts, button-down shirts, and fashion-focused styles. These pieces can be paired with the brand's denim, pants, shorts, skirts, or activewear for casual and work-ready outfits.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Dresses and Skirts</h4>
+    <p>
+      For shoppers looking for one-piece outfits, Old Navy carries casual dresses, occasion styles, maxi dresses, midi dresses, mini dresses, shirt dresses, sweater dresses, and other seasonal designs. Skirts are also available in different lengths and silhouettes.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Activewear</h4>
+    <p>
+      Old Navy's activewear collection is designed for workouts as well as everyday casual wear. Shoppers can find leggings, athletic tops, sports bras, shorts, sweatshirts, jackets, and other performance-inspired pieces.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Workwear and Everyday Essentials</h4>
+    <p>
+      Old Navy also caters to shoppers looking for clothing suitable for the workplace or everyday routines. Trousers, blouses, cardigans, button-down shirts, sweaters, polos, and other versatile pieces can be used to create practical outfits for different settings.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Old Navy Men's Clothing</h3>
+    <p>
+      Old Navy offers a substantial men's selection, including jeans, pants, shorts, T-shirts, shirts, polos, sweaters, hoodies, sweatshirts, jackets, activewear, swimwear, underwear, pajamas, shoes, and accessories.
+    </p>
+    <p>
+      Men looking for wardrobe basics can shop for everyday denim and T-shirts, while seasonal collections provide options for warmer and colder weather. Shoppers can also look for category-specific promotions before purchasing several pieces.
+    </p>
+    <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+      If you are building a larger order, checking for an Old Navy coupon code or current store promotion before checkout can be particularly worthwhile.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Old Navy Kids' Clothing</h3>
+    <p>
+      Old Navy is also a popular destination for children's clothing, with collections for girls, boys, toddlers, and babies. The assortment includes everyday basics, jeans, tops, dresses, leggings, shorts, pajamas, jackets, sweaters, activewear, swimwear, shoes, and accessories.
+    </p>
+    <p>
+      Parents can also find collections designed around specific shopping occasions, including back-to-school shopping and seasonal wardrobe changes.
+    </p>
+    <p>
+      Old Navy regularly promotes kids' and baby merchandise through category-specific deals, making it useful to compare the current sale section with any available Old Navy promo code before completing a larger family order.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Old Navy Baby and Toddler Clothing</h3>
+    <p>
+      For babies and toddlers, Old Navy carries clothing designed around everyday comfort and practical dressing. Depending on the current collection, shoppers can find bodysuits, sleepers, dresses, tops, bottoms, pajamas, outerwear, accessories, and coordinated outfits.
+    </p>
+    <p>
+      Because children quickly grow out of their clothes, promotions on basics and multipiece purchases can be especially useful for parents shopping for several items at once.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Old Navy Shoes and Accessories</h3>
+    <p>
+      Old Navy's assortment extends beyond clothing. Shoppers can also find shoes and accessories to complete their outfits.
+    </p>
+    <p>
+      Depending on the season, the selection can include sneakers, sandals, flats, boots, slippers, bags, belts, socks, hats, sunglasses, jewelry, and other accessories.
+    </p>
+    <p>
+      These products can sometimes appear in separate promotions or sale collections, so checking the latest offers before purchasing can uncover savings that may not be obvious from the main clothing categories.
+    </p>
+  </div>
+
+  <div className="space-y-6">
+    <h3 className="text-xl font-black text-[#056bfa]">Old Navy Sale: What Types of Sales Can Shoppers Expect?</h3>
+    <p>
+      If you shop with Old Navy regularly, you will notice that the retailer uses several different types of sales throughout the year. These promotions are designed around both shopping seasons and specific product categories.
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Seasonal Sales</h5>
+        <p className="text-sm">Promotions around spring, summer, fall, winter, swimwear, and outerwear transitions.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Back-to-School Sales</h5>
+        <p className="text-sm">Dedicated event savings on uniforms, basic tees, denim, activewear, and backpacks.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Holiday & Black Friday</h5>
+        <p className="text-sm">Sitewide doorbusters, limited-time single-day offers, and gift promotions.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Clearance Sales</h5>
+        <p className="text-sm">Deep markdowns on end-of-season inventory, often stackable with Super Cash.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Category-Specific Sales</h5>
+        <p className="text-sm">Targeted single-category discounts focusing purely on jeans, activewear, or kids' tees.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+        <h5 className="font-bold text-gray-900 mb-1">Flash & Limited-Time Deals</h5>
+        <p className="text-sm">Urgency-driven short window sales, such as "Today Only" website promotions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="p-6 rounded-3xl bg-blue-50/70 border border-blue-100 space-y-3">
+    <h4 className="text-lg font-black text-[#056bfa]">Understanding Old Navy Super Cash</h4>
+    <p className="text-sm text-gray-700 leading-relaxed font-medium">
+      Super Cash allows eligible shoppers to earn coupons during specific periods (typically $10 off for every $25 spent). Rather than providing an instant rebate, these earned vouchers are saved for a designated future redemption period. 
+    </p>
+    <p className="text-sm text-gray-700 leading-relaxed font-medium">
+      Keep in mind that Super Cash generally cannot be combined with standard promotional discount codes, though rewards program members (such as Encore cardholders) may combine eligible points with Super Cash vouchers.
+    </p>
+  </div>
+
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an Old Navy Promo Code</h3>
+            <p className="text-gray-700 font-bold mb-6">
+              Using an Old Navy promo code at checkout is generally simple:
+            </p>
+            <div className="space-y-6">
+              {[
+                "Find the Old Navy offer you want to use.",
+                "Visit the Old Navy website through the relevant offer.",
+                "Choose your clothing, accessories, or other products.",
+                "Add the items to your shopping bag.",
+                "Proceed to checkout.",
+                "Enter the applicable promotional code in the designated field.",
+                "Apply the code and check that the expected offer has been reflected.",
+                "Review your order and complete the purchase.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
                 </div>
+              ))}
+            </div>
+            <p className="text-gray-500 font-bold leading-relaxed pt-4">
+              If the promotion does not apply, check the offer's expiration date and eligibility requirements. Some codes may exclude specific merchandise or require a minimum qualifying purchase.
+            </p>
+          </div>
 
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Old Navy promo codes and discount codes</strong>? At Couponsbit, we help shoppers find women's, men's and kids' apparel offers, denim deals and maternity picks.
-                  </p>
-                  <p>
-                    Whether you're shopping for the whole family or refreshing your own wardrobe, Old Navy offers a wide range of casual apparel. Before you shop, check Couponsbit for the latest Old Navy offers.
-                  </p>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Old Navy Offers?</h3>
+            <p>
+              CouponsBit is designed to help shoppers find savings without making the shopping process complicated. Instead of visiting Old Navy and immediately checking out, you can first look for available promotions and determine whether there is an opportunity to save.
+            </p>
+            <p>
+              When searching for an Old Navy promo code, you may also find that the best option is not necessarily a traditional percentage-off coupon. Depending on your purchase, a sale, clearance event, category promotion, limited-time offer, or Super Cash opportunity may be more relevant.
+            </p>
+            <p>
+              CouponsBit brings these possibilities together so shoppers can make a more informed decision before completing their order.
+            </p>
+          </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Old Navy</h3>
-                    <p>
-                      Old Navy is a Gap-owned retailer known for its casual apparel collections for men, women and kids, updated regularly with new styles.
-                    </p>
-                    <p>
-                      Beyond everyday apparel, Old Navy also offers maternity wear designed for comfort, along with an activewear line for workouts and everyday wear.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Old Navy offers, seasonal picks and denim highlights in one place.
-                    </p>
-                  </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next Old Navy Shopping Trip</h3>
+            <p>
+              Old Navy gives shoppers plenty of ways to refresh their wardrobes, from everyday jeans and T-shirts to dresses, activewear, workwear, children's clothing, baby essentials, shoes, and accessories. Its promotional calendar also extends beyond standard coupon codes, with seasonal campaigns, clearance events, category-specific deals, holiday promotions, back-to-school savings, limited-time offers, and Super Cash.
+            </p>
+            <p>
+              Before you complete your next order, check CouponsBit for the latest Old Navy promo code and compare it with the other savings opportunities available for your purchase. Taking a moment to check current offers can help you find a promotion that fits your cart and get more value from your Old Navy shopping experience.
+            </p>
+          </div>
 
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Old Navy via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Old Navy Offers — Visit the Old Navy page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your needs.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Old Navy page.",
-                        "Step 4: Browse Products — Explore apparel for men, women, kids or maternity.",
-                        "Step 5: Select Your Size — Choose your preferred size and style.",
-                        "Step 6: Complete Your Purchase — Add items to your cart and check out on Old Navy.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Old Navy</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before shopping to see the latest Old Navy offers.</p>
-                    <p><strong>Shop for the Whole Family:</strong> Combining orders across categories can be a convenient way to save on shipping.</p>
-                    <p><strong>Watch for Denim Deals:</strong> Denim pricing is updated regularly across fits and washes.</p>
-                    <p><strong>Check Maternity Picks:</strong> Comfortable maternity styles are updated seasonally.</p>
-                    <p><strong>Compare Kids' Sizing:</strong> Review sizing details to find the right fit for growing kids.</p>
-                  </div>
+        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Old Navy?</h3>
-                    <p><strong>Family-Friendly Apparel:</strong> Clothing for men, women and kids under one roof.</p>
-                    <p><strong>Maternity Line:</strong> Comfortable apparel designed for pregnancy.</p>
-                    <p><strong>Affordable Everyday Styles:</strong> Casual apparel suited for daily wear.</p>
-                    <p><strong>Trusted Retailer:</strong> Backed by Gap Inc., a well-known name in apparel retail.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Old Navy Deals?</h3>
-                    <p><strong>Curated Old Navy Offers:</strong> We regularly review available Old Navy offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find apparel deals, denim picks and maternity highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across fashion, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Dress the Family for Less</h3>
-                    <p>Whether you're shopping for new apparel, denim, or maternity wear, Old Navy offers a range of options to explore.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Old Navy offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
+        {/* FAQ */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Old Navy Promo Codes</h3>
+          {[
+            { q: "Does Old Navy offer promo codes?", a: "Yes. Old Navy regularly runs promotional campaigns that can include codes, category discounts, limited-time offers, and other savings opportunities. The exact promotions available can change frequently." },
+            { q: "Where can I find an Old Navy promo code?", a: "You can check CouponsBit for available Old Navy promotional offers before shopping. It is also useful to compare a code with Old Navy's current sale and clearance selections." },
+            { q: "How do I use an Old Navy coupon code?", a: "Add your selected products to your shopping bag, proceed to checkout, enter the applicable coupon code in the promotion field, and apply it. Make sure the offer has been accepted before completing your purchase." },
+            { q: "Why is my Old Navy promo code not working?", a: "A code may not work because it has expired, applies only to certain products, requires a minimum purchase, has other eligibility restrictions, or cannot be combined with another promotion. Check the specific terms of the offer before trying again." },
+            { q: "Can I use an Old Navy promo code on sale items?", a: "It depends on the individual promotion. Some Old Navy offers can apply to sale merchandise, while others have exclusions. Always read the terms of the specific offer before combining a code with a sale item." },
+            { q: "What is Old Navy Super Cash?", a: "Super Cash is an Old Navy savings program in which eligible purchases can earn a coupon for use during a later designated redemption period. Old Navy's current terms explain that qualifying purchases can earn Super Cash and that redemption discounts depend on the qualifying purchase amount." },
+            { q: "Can I combine Super Cash with another Old Navy coupon?", a: "Generally, no. Old Navy states that Super Cash cannot be redeemed with other coupons or promotions. However, eligible Encore members may redeem reward points in addition to Super Cash savings." },
+            { q: "Does Old Navy have clearance sales?", a: "Yes. Old Navy maintains clearance merchandise alongside its regular sale offerings. Clearance can be particularly useful for shoppers looking for end-of-season styles or products being phased out." },
+            { q: "When does Old Navy have its biggest sales?", a: "Old Navy promotions vary throughout the year. Major US shopping periods such as Black Friday, Cyber Monday, back-to-school season, holiday shopping, and end-of-season periods are worth watching, but Old Navy also runs shorter category-specific and limited-time promotions throughout the year." },
+            { q: "Does Old Navy have sales for kids?", a: "Yes. Old Navy regularly promotes children's and baby merchandise through sales and category-specific deals. Its current shopping pages feature dedicated offers for kids and baby products." },
+            { q: "How can I save more when shopping at Old Navy?", a: "Start by checking CouponsBit for an available Old Navy promo code, then compare it with the retailer's current sale, clearance, category promotions, and any Super Cash or other eligible savings. The best option will depend on what you are purchasing and the terms of each offer." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Old Navy?", a: "Old Navy is a Gap-owned retailer offering casual apparel for men, women and kids, along with maternity and activewear lines." },
-                    { q: "Does Old Navy offer promo codes?", a: "Yes. Old Navy runs promotions such as denim deals and seasonal apparel offers." },
-                    { q: "Where can I find Old Navy promo codes?", a: "You can find the latest Old Navy promo codes and offers on Couponsbit." },
-                    { q: "Does Old Navy sell maternity clothing?", a: "Yes. Old Navy offers a maternity line alongside its regular apparel collections." },
-                    { q: "Does Old Navy sell kids' clothing?", a: "Yes. Old Navy offers a kids' collection alongside its men's and women's apparel lines." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Old Navy Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Women's Apparel", "Men's Apparel", "Kids' Collection", "Old Navy Promo Code", "Denim Deals", "Maternity Wear", "Activewear", "Family Apparel"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Old Navy Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Old Navy: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Old Navy Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Denim Deals", "Everyday Basics", "Activewear", "Old Navy Promo Code", "Kids & Baby", "Super Cash", "Clearance", "Seasonal Sales"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Old Navy Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                </div>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Old Navy: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
 
       <Footer />

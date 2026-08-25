@@ -11,7 +11,7 @@ import {
   BadgeCheck,
   ExternalLink,
   ShieldCheck,
-  PiggyBank,
+  PiggyBank,FileText, Calendar,
   RefreshCw,
   ChevronDown,
   CheckCircle,
@@ -241,9 +241,21 @@ export default function AbercrombieCouponsContent() {
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Abercrombie</h3>
+                  <h3 className="text-black font-black text-lg mb-6">Find an Abercrombie Discount Code</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Abercrombie is an apparel retailer offering clothing for men, women and kids through its abercrombie kids line, along with a range of fragrances.
+                    An Abercrombie discount code can help shoppers look for savings when purchasing clothing, denim, accessories, or other products from the brand. Abercrombie regularly runs promotions connected to seasons, product categories, special shopping periods, and member benefits.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                   Some offers may require a code at checkout, while others can be automatically reflected in the cart when the qualifying conditions are met. The exact terms can vary from one promotion to another.
+ 
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    For example, an offer might apply to selected merchandise, require a qualifying purchase, exclude certain products, or be available only during a specified promotional period. Always review the conditions associated with an offer before relying on it.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    If you are planning an Abercrombie order, check CouponsBit first to see whether there is a current Abercrombie coupon code, discount offer, or other promotion that fits your purchase.
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -272,27 +284,57 @@ export default function AbercrombieCouponsContent() {
                    <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Abercrombie Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Shirt, title: "Men's & Women's Apparel", sub: "Tops, denim and outerwear across collections." },
-                      { icon: Baby, title: "abercrombie kids", sub: "Seasonal apparel styles for boys and girls." },
-                      { icon: Sparkles, title: "Fragrances", sub: "Men's and women's fragrances for everyday wear or gifting." },
-                      { icon: Droplet, title: "Denim", sub: "Jeans and denim jackets in various fits and washes." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+  <h3 className="text-black font-black text-lg mb-8">
+    How to Get the Best Abercrombie Deals
+  </h3>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before Checkout",
+        sub: "Before completing your Abercrombie order, visit CouponsBit and check the latest available discount codes, coupon offers, promo codes, vouchers, and deals."
+      },
+      {
+        icon: Percent,
+        title: "Browse the Sale Section",
+        sub: "A product that is already discounted may sometimes offer better value than purchasing full-price merchandise with a separate code. Check Abercrombie's sale selection before making a final decision."
+      },
+      {
+        icon: Calendar,
+        title: "Shop During Major US Sales",
+        sub: "If your purchase can wait, major US shopping events such as Black Friday, Cyber Monday, back-to-school season, Memorial Day, Labor Day, and end-of-season sales can be useful periods to monitor."
+      },
+      {
+        icon: ShoppingBag,
+        title: "Build Your Cart Carefully",
+        sub: "If a promotion requires a minimum qualifying purchase, make sure you understand what counts toward that threshold. Adding an unnecessary item just to activate a promotion does not always result in a better overall deal."
+      },
+      {
+        icon: FileText,
+        title: "Check the Offer Terms",
+        sub: "An offer can have exclusions involving categories, products, sale merchandise, or other conditions. Reading the terms before checkout can prevent surprises when you try to apply an Abercrombie promotional code."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
               </div>
             </div>
           </div>
@@ -325,180 +367,333 @@ export default function AbercrombieCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Abercrombie Discount Codes, Promo Codes & Fashion Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Abercrombie Discount Code, Coupon Code & Promo Offers
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["New Women's Apparel Offers", "New Offers", "All Users", "New arrivals updated regularly", "Women's apparel"],
-                        ["Men's Apparel Deals", "Featured picks", "All Users", "Seasonal collections updated regularly", "Men's apparel"],
-                        ["abercrombie kids Picks", "Featured picks", "All Users", "Seasonal styles updated regularly", "Kids' apparel"],
-                        ["Denim Deals", "Featured picks", "All Users", "Various fits and washes available", "Denim"],
-                        ["Fragrance Offers", "Featured picks", "All Users", "Popular for everyday wear or gifting", "Fragrances"],
-                        ["New Arrival Picks", "Featured picks", "All Users", "Available while sizes and stock last", "New collections"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Abercrombie & Fitch is a well-known American fashion retailer offering modern clothing, denim, dresses, activewear, swimwear, outerwear, accessories, and fragrances for women and men. The brand is particularly recognized for its elevated casual style, extensive denim collection, occasion-ready clothing, and wardrobe essentials designed around contemporary fits and silhouettes.
+          </p>
+          <p>
+            Whether you are searching for a new pair of jeans, putting together an outfit for a special occasion, updating your everyday wardrobe, or looking for seasonal fashion, Abercrombie offers a wide range of options. Before completing your order, checking for an Abercrombie discount code on CouponsBit can help you discover potential savings.
+          </p>
+          <p>
+            CouponsBit brings together available coupon codes, promo codes, vouchers, sales, and other promotional opportunities so shoppers can check their options before purchasing. Since Abercrombie promotions can change throughout the year, taking a moment to review the latest offers can be worthwhile.
+          </p>
+
+          <div className={cn("text-gray-600 space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Abercrombie Coupon Code and Promo Offers</h3>
+    <p>
+      Looking for an Abercrombie coupon code is only one part of finding the best available savings. The retailer can use different promotional formats throughout the year, meaning the most useful offer will depend on what you are purchasing.
+    </p>
+    <p>
+      A promotion may focus on a particular category, provide savings across eligible merchandise, or offer a special incentive around a major shopping event. Some offers may also be connected to Abercrombie's loyalty program.
+    </p>
+    <p className="font-medium text-gray-700">
+      Rather than adding a keyword-heavy list of promotion types, think of it this way: when you visit Couponsbit, you can check whether there is an Abercrombie promo code, voucher, sale offer, or other current deal that matches the products in your cart.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Shop Women's Fashion at Abercrombie</h3>
+    <p>
+      Abercrombie's women's collection covers everything from everyday basics to occasion-ready pieces. Shoppers can browse jeans, pants, dresses, tops, sweaters, skirts, shorts, activewear, swimwear, jackets, coats, loungewear, shoes, accessories, and more.
+    </p>
+    <p>
+      The brand's assortment makes it possible to build an entire wardrobe around different occasions and seasons.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Abercrombie Jeans and Denim</h4>
+    <p>
+      Denim is one of Abercrombie's most prominent categories. Shoppers can explore different fits, rises, washes, lengths, and silhouettes designed for different preferences.
+    </p>
+    <p>
+      Women's denim can include straight-leg, wide-leg, flare, bootcut, skinny, relaxed, baggy, and other contemporary styles. The selection also extends beyond jeans to denim skirts, shorts, jackets, and other pieces.
+    </p>
+    <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+      If you are shopping for multiple pairs or refreshing your denim collection, checking for an Abercrombie discount code before checkout can be particularly useful.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Dresses</h4>
+    <p>
+      Abercrombie offers dresses for casual days, vacations, work, parties, weddings, date nights, and other occasions. Depending on the season, shoppers may find mini, midi, maxi, slip, sweater, linen, denim, and other dress styles.
+    </p>
+    <p>
+      For shoppers looking for occasionwear, checking both the current sale selection and any available Abercrombie promotional offer can help identify potential savings.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Tops and Shirts</h4>
+    <p>
+      The women's collection includes T-shirts, bodysuits, blouses, button-down shirts, tanks, sweaters, cardigans, sweatshirts, and other tops.
+    </p>
+    <p>
+      These pieces can be combined with Abercrombie denim, trousers, skirts, or shorts to create casual, smart-casual, or more polished outfits.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Pants and Trousers</h4>
+    <p>
+      Abercrombie's selection extends beyond denim with trousers, tailored pants, wide-leg pants, cargo styles, linen pants, leggings, and other bottoms. This gives shoppers options for workwear, travel, everyday outfits, and seasonal dressing.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Activewear</h4>
+    <p>
+      For shoppers with active lifestyles, Abercrombie offers performance-inspired clothing including leggings, active tops, sports bras, shorts, sweatshirts, and other workout-friendly pieces.
+    </p>
+    <p>
+      Some activewear products may be included in category-specific sales or promotions, so check the current offers before purchasing.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Swimwear</h4>
+    <p>
+      Abercrombie also offers swimwear for vacations, beach days, pool trips, and warm-weather travel. Shoppers can find bikinis, one-piece swimsuits, cover-ups, and coordinating pieces depending on the current collection.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Outerwear</h4>
+    <p>
+      Jackets and coats form another part of the Abercrombie assortment. Seasonal options can include denim jackets, leather-inspired jackets, blazers, puffer styles, trench coats, wool-inspired coats, and other outerwear.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Abercrombie Men's Clothing</h3>
+    <p>
+      Abercrombie's men's collection includes denim, pants, shorts, T-shirts, shirts, polos, sweaters, sweatshirts, jackets, outerwear, activewear, swimwear, underwear, shoes, accessories, and fragrances.
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Men's Jeans</h5>
+        <p className="text-sm">Choose from straight, athletic, relaxed, slim, and contemporary fit silhouettes.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Shirts & Tops</h5>
+        <p className="text-sm">Everyday T-shirts, graphic tees, button-downs, polos, hoodies, and sweaters.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Pants & Shorts</h5>
+        <p className="text-sm">Chinos, tailored trousers, cargos, casual sweatpants, and seasonal shorts.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">Men's Swimwear</h5>
+        <p className="text-sm">Swim trunks and warm-weather essentials for travel and vacation wardrobes.</p>
+      </div>
+    </div>
+    <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+      If you are buying several pieces, check for an Abercrombie coupon code before completing your order to see whether an applicable promotion is available.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Abercrombie Activewear</h3>
+    <p>
+      Abercrombie has expanded its offering beyond traditional casual fashion with activewear designed for workouts, movement, travel, and everyday wear.
+    </p>
+    <p>
+      Shoppers can find leggings, performance tops, sports bras, shorts, sweatshirts, and other athletic-inspired pieces. The category can be particularly useful for customers who prefer clothing that works across both fitness and casual settings.
+    </p>
+    <p>
+      Before purchasing activewear, check whether there is a current category promotion or Abercrombie promo code available for your order.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Abercrombie Accessories</h3>
+    <p>
+      Accessories can help complete an outfit, and Abercrombie's selection includes items such as bags, belts, hats, sunglasses, jewelry, socks, hair accessories, and other fashion essentials.
+    </p>
+    <p className="text-sm bg-blue-50/70 text-gray-700 p-3 rounded-xl border border-blue-100 font-medium">
+      A smaller accessory purchase may not always qualify for the same promotions as clothing, so check the specific terms of any offer before applying a code.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Abercrombie Fragrances</h3>
+    <p>
+      Abercrombie is also associated with fragrances, giving shoppers another way to explore the brand beyond clothing. Fragrance collections can include perfumes, colognes, body products, and giftable items depending on the current assortment.
+    </p>
+    <p>
+      Fragrance products may have different promotional conditions from apparel, so always check whether a particular Abercrombie voucher or discount offer includes beauty and fragrance merchandise.
+    </p>
+  </div>
+
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Abercrombie Sale vs. Discount Code: Which Should You Use?</h3>
+            <p>
+              Finding a discount code does not automatically mean it will provide the best value.
+            </p>
+            <p>
+              Suppose an item is already marked down during an Abercrombie sale. A separate promotional code may or may not apply to that product. Alternatively, a broader discount could be more useful if you are purchasing full-price merchandise.
+            </p>
+            <p>
+              The best approach is to compare the available options against your actual shopping cart.
+            </p>
+            <p>Check:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Which products qualify</li>
+              <li>Whether sale items are included</li>
+              <li>Whether a minimum purchase is required</li>
+              <li>Whether the offer has an expiration date</li>
+              <li>Whether multiple promotions can be combined</li>
+              <li>Whether the promotion applies to your selected category</li>
+            </ul>
+            <p>
+              This simple comparison can help you avoid choosing an offer simply because its headline discount sounds larger.
+            </p>
+          </div>
+
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an Abercrombie Discount Code</h3>
+            <p className="text-gray-700 font-bold mb-6">
+              If you find an Abercrombie discount code through CouponsBit, you can generally use it by following these steps:
+            </p>
+            <div className="space-y-6">
+              {[
+                "Select the Abercrombie offer you want to use from CouponsBit’s website.",
+                "Visit the Abercrombie website through the relevant offer.",
+                "Browse the clothing, accessories, fragrance, or other products you want.",
+                "Add eligible items to your shopping bag.",
+                "Proceed to checkout.",
+                "Enter the applicable discount code in the promotional-code field.",
+                "Apply the code and review your order.",
+                "Confirm that the promotion has been accepted before completing your purchase.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
                 </div>
+              ))}
+            </div>
+            <p className="text-gray-500 font-bold leading-relaxed pt-4">
+              If the code does not work, check its expiration date and terms. It may be restricted to certain products, require a minimum purchase, or have other eligibility conditions.
+            </p>
+          </div>
 
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Abercrombie discount codes and promo codes</strong>? At Couponsbit, we help shoppers find women's, men's and kids' apparel offers, denim deals and fragrance offers.
-                  </p>
-                  <p>
-                    Whether you're refreshing your wardrobe or shopping for a signature scent, Abercrombie offers a range of apparel and fragrance products. Before you shop, check Couponsbit for the latest Abercrombie offers.
-                  </p>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Abercrombie Offers?</h3>
+            <p>
+              CouponsBit is built around a simple idea: shoppers should have an opportunity to check for savings before completing an online purchase.
+            </p>
+            <p>
+              When you search for an Abercrombie discount code, you may find that several types of offers are available. A coupon may suit one order, while a sale promotion, voucher, seasonal deal, or category-specific offer may work better for another.
+            </p>
+            <p>
+              CouponsBit helps bring these possibilities together so you can compare available savings before heading to checkout.
+            </p>
+            <p>
+              Whether you are shopping for Abercrombie jeans, dresses, activewear, men's clothing, swimwear, accessories, or fragrances, checking for a current promotion can be a useful final step before purchasing.
+            </p>
+          </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Abercrombie</h3>
-                    <p>
-                      Abercrombie is an apparel retailer known for its men's and women's clothing collections, updated regularly with new styles.
-                    </p>
-                    <p>
-                      Through abercrombie kids, the brand also offers apparel for children, along with a range of fragrances for men and women.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Abercrombie offers, seasonal picks and fragrance highlights in one place.
-                    </p>
-                  </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next Abercrombie Order</h3>
+            <p>
+              Abercrombie offers much more than everyday clothing. From its extensive denim range and women's dresses to men's essentials, activewear, swimwear, outerwear, accessories, and fragrances, the brand provides options for different wardrobes, seasons, and occasions.
+            </p>
+            <p>
+              Promotions can change throughout the year, so it is worth checking for current savings before completing your order. Whether you are shopping during a major US retail event, browsing an end-of-season sale, or simply looking for a better deal on your next pair of jeans, start by checking CouponsBit for an Abercrombie discount code.
+            </p>
+            <p>
+              Compare the available offer with your cart, review the terms, and choose the promotion that makes the most sense for your purchase.
+            </p>
+          </div>
 
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Abercrombie via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Abercrombie Offers — Visit the Abercrombie page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your needs.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Abercrombie page.",
-                        "Step 4: Browse Products — Explore apparel for men, women, kids or fragrances.",
-                        "Step 5: Select Your Size — Choose your preferred size and style.",
-                        "Step 6: Complete Your Purchase — Add items to your cart and check out on Abercrombie.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Abercrombie</h3>
-                    <p><strong>Check Couponsbit Before Shopping:</strong> Always visit Couponsbit before shopping to see the latest Abercrombie offers.</p>
-                    <p><strong>Watch for New Arrivals:</strong> New collections are added regularly with fresh styles.</p>
-                    <p><strong>Bundle Fragrances:</strong> Fragrances can complement an apparel purchase or make a gift.</p>
-                    <p><strong>Compare Kids' Sizing:</strong> Review sizing details to find the right fit for growing kids.</p>
-                    <p><strong>Shop Seasonal Denim:</strong> Denim styles and washes are updated regularly.</p>
-                  </div>
+        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Abercrombie?</h3>
-                    <p><strong>Trusted Apparel Brand:</strong> A well-known name in men's and women's fashion.</p>
-                    <p><strong>Kids' Line Available:</strong> abercrombie kids offers apparel for children.</p>
-                    <p><strong>Fragrance Collection:</strong> A range of fragrances for men and women.</p>
-                    <p><strong>Regularly Updated Styles:</strong> New collections added throughout the year.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Abercrombie Deals?</h3>
-                    <p><strong>Curated Abercrombie Offers:</strong> We regularly review available Abercrombie offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find apparel deals, denim picks and fragrance highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across fashion, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Refresh Your Wardrobe for Less</h3>
-                    <p>Whether you're shopping for new apparel, denim, or a fragrance, Abercrombie offers a range of options to explore.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Abercrombie offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
+        {/* FAQ */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Abercrombie Discount Codes</h3>
+          {[
+            { q: "Does Abercrombie offer discount codes?", a: "Yes. Abercrombie runs promotional campaigns throughout the year, and some offers may involve discount codes while others may be automatically applied or connected to specific products, categories, or shopping events." },
+            { q: "Where can I find an Abercrombie discount code?", a: "You can check CouponsBit for available Abercrombie discount codes, coupon codes, promo codes, vouchers, sales, and other promotional offers before shopping." },
+            { q: "How do I use an Abercrombie coupon code?", a: "Add your eligible products to your shopping bag, proceed to checkout, enter the applicable code in the promotional field, and apply it. Check your order total to make sure the promotion has been accepted before completing the purchase." },
+            { q: "Why is my Abercrombie promo code not working?", a: "A code may have expired or may only apply to selected merchandise. Other possible restrictions can include minimum purchase requirements, excluded products, or limitations on combining promotions. Check the individual offer's terms before trying again." },
+            { q: "Can I use an Abercrombie discount code on sale items?", a: "This depends on the specific promotion. Some codes may apply only to eligible full-price merchandise, while others may include selected sale products. Always check the conditions of the offer." },
+            { q: "Does Abercrombie have sales?", a: "Yes. Abercrombie runs seasonal and promotional sales throughout the year. Shoppers can also encounter markdowns around major US shopping periods and during end-of-season campaigns." },
+            { q: "When does Abercrombie have its biggest sales?", a: "There is no single permanent biggest sale because promotions change from year to year. Black Friday, Cyber Monday, holiday shopping, end-of-season periods, and major seasonal transitions are useful times to watch for larger promotional campaigns." },
+            { q: "Does Abercrombie sell men's clothing?", a: "Yes. Abercrombie has men's collections covering jeans, pants, shirts, T-shirts, sweaters, outerwear, activewear, swimwear, underwear, shoes, accessories, and fragrances." },
+            { q: "Does Abercrombie sell activewear?", a: "Yes. The brand offers women's and men's activewear, including leggings, athletic tops, sports bras, shorts, sweatshirts, and other active-inspired clothing." },
+            { q: "Does Abercrombie offer fragrances?", a: "Yes. Abercrombie offers fragrances and related products alongside its fashion collections. Availability and assortment can vary." },
+            { q: "How can I save more when shopping at Abercrombie?", a: "Start by checking CouponsBit for an Abercrombie discount code, then compare it with the current sale selection and any other applicable promotional offers. Check the terms carefully to determine which option provides the best value for your particular order." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Abercrombie?", a: "Abercrombie is an apparel retailer offering clothing for men, women and kids, along with fragrances." },
-                    { q: "Does Abercrombie offer discount codes?", a: "Yes. Abercrombie runs promotions such as denim deals and new arrival picks." },
-                    { q: "Where can I find Abercrombie discount codes?", a: "You can find the latest Abercrombie discount codes and offers on Couponsbit." },
-                    { q: "Does Abercrombie sell kids' clothing?", a: "Yes. Abercrombie offers a kids' line called abercrombie kids alongside its men's and women's collections." },
-                    { q: "Does Abercrombie sell fragrances?", a: "Yes. Abercrombie offers a range of fragrances alongside its apparel collections." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Abercrombie Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Women's Apparel", "Men's Apparel", "abercrombie kids", "Abercrombie Discount Code", "Denim Deals", "Fragrances", "New Arrivals", "Fashion Deals"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Abercrombie Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">A</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Abercrombie: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Abercrombie Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Denim Deals", "Dresses", "Activewear", "Abercrombie Discount Code", "Men's Apparel", "Swimwear", "Fragrances", "Clearance"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Abercrombie Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">A</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                </div>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Abercrombie: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />

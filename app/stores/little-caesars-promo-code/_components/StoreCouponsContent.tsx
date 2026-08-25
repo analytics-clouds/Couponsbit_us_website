@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import {
   ChevronRight,
-  Star,
+  Star,MapPin, Calculator, Clock,
   Tag,
   Percent,
   Users,
@@ -241,9 +241,18 @@ export default function LittleCaesarsCouponsContent() {
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Little Caesars</h3>
+                  <h3 className="text-black font-black text-lg mb-6">Find a Little Caesars Promo Code</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Little Caesars is a pizza restaurant chain known for its Hot-N-Ready pizzas, Crazy Bread and combo meal offers, along with a rewards app for members.
+                    A Little Caesars promo code can be useful when you are ready to order and want to check whether an additional offer is available. The restaurant regularly runs promotions around specific menu items, ordering occasions, and seasonal campaigns, so available savings can change over time.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Depending on the promotion, an offer may provide a discount on a qualifying pizza, a special price on a combination of menu items, or savings when certain requirements are met. Some deals may also be automatically applied through participating ordering channels rather than requiring a code.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    If you find a Little Caesars coupon or promotional offer, check its conditions before ordering. Some offers may be limited to participating locations, specific products, online orders, carryout, delivery, or a particular period.
+
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -273,26 +282,57 @@ export default function LittleCaesarsCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Little Caesars Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Pizza, title: "Pizza", sub: "Classic and specialty pizzas including Hot-N-Ready options." },
-                      { icon: Sandwich, title: "Crazy Bread & Sides", sub: "Crazy Bread, dipping sauces and side options." },
-                      { icon: Drumstick, title: "Wings", sub: "Wings available in a range of flavors and portion sizes." },
-                      { icon: Smartphone, title: "Rewards App", sub: "Free membership offering member-only offers and rewards." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-8">
+    How to Find the Best Little Caesars Deals
+  </h3>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
+    Finding the best deal is not always about choosing the coupon with the biggest headline discount. Consider the size and contents of your order before selecting an offer.
+  </p>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before Ordering",
+        sub: "Before placing your order, check CouponsBit for the latest Little Caesars promo codes, coupons, vouchers, discounts, and other available offers. This gives you an opportunity to see whether there is a promotion that fits your order."
+      },
+      {
+        icon: Calculator,
+        title: "Compare Deals With Your Order",
+        sub: "A discount on one pizza may not be as useful as a meal deal if you are ordering for several people. Look at the qualifying products and calculate which available promotion best matches your needs."
+      },
+      {
+        icon: Clock,
+        title: "Check Limited-Time Offers",
+        sub: "Restaurant promotions can change quickly. If you see a limited-time Little Caesars offer that fits your order, check its expiration date and restrictions before assuming it will still be available later."
+      },
+      {
+        icon: MapPin,
+        title: "Check Participating Locations",
+        sub: "Some restaurant promotions may be available only at participating locations. Enter your location and verify that the offer is valid before completing your order."
+      },
+      {
+        icon: Users,
+        title: "Look for Group-Order Savings",
+        sub: "If you are feeding several people, compare offers based on the entire order rather than one item. Pizza, wings, sides, and drinks can add up, so a qualifying bundle or combination promotion may provide better overall value."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
             </div>
           </div>
@@ -325,180 +365,320 @@ export default function LittleCaesarsCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Little Caesars Promo Codes, Discount Codes & Pizza Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Little Caesars Promo Code, Coupon Code & Discount Offers
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["New Pizza Offers", "New Offers", "All Users", "Available for pickup and delivery", "Pizza"],
-                        ["Crazy Bread & Sides Deals", "Featured picks", "All Users", "Available at participating locations", "Crazy Bread & sides"],
-                        ["Wings Picks", "Featured picks", "All Users", "Available at participating locations", "Wings"],
-                        ["Combo Meal Offers", "Value pricing", "All Users", "Available at participating locations", "Combo meals"],
-                        ["Hot-N-Ready Picks", "Featured picks", "All Users", "Availability may vary by location", "Hot-N-Ready pizzas"],
-                        ["Rewards App Offers", "Member offers", "App Members", "Free to join via the app", "Rewards app"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Craving pizza without spending more than you need to? Little Caesars is a popular American pizza chain known for convenient carryout, delivery, and a menu built around pizza, wings, sides, and other quick meal options. Whether you are ordering a classic pizza for a family dinner, grabbing a meal for game night, or looking for something easy to share with friends, Little Caesars gives customers plenty of choices.
+          </p>
+          <p>
+            Before placing an order, it is worth checking for a Little Caesars promo code on CouponsBit. A current promotion can make your order more affordable, especially when you are ordering multiple pizzas, adding sides, or feeding a group. Along with promo codes, shoppers may find Little Caesars coupon codes, discount offers, vouchers, limited-time deals, and other ways to save.
+          </p>
+          <p>
+            CouponsBit helps customers find these opportunities before they complete their purchase, making it easier to compare available offers and choose a deal that suits their order.
+          </p>
+
+          <div className={cn("text-gray-600 space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Little Caesars Coupon Code and Discount Offers</h3>
+    <p>
+      When looking for a Little Caesars coupon code, don't limit your search to one type of promotion. Restaurant chains frequently use different promotional formats to encourage customers to order particular menu combinations or try limited-time products.
+    </p>
+    <p>You may find savings connected to:</p>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-4">
+      {[
+        "Individual pizzas",
+        "Pizza & side combos",
+        "Family or group meals",
+        "Wings & sides",
+        "Online ordering",
+        "Carryout orders",
+        "Delivery orders",
+        "Limited-time items",
+        "Seasonal promotions",
+        "App / digital orders",
+        "Location offers"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-medium text-gray-700 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p>
+      A Little Caesars discount code may be especially useful when your order contains several qualifying items. However, the best offer depends on the products in your cart and the terms of the promotion.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">What Can You Order at Little Caesars?</h3>
+    <p>
+      Little Caesars is best known for pizza, but its menu includes more than traditional pizza options. Customers can build an order around pizza and add sides, wings, drinks, desserts, and other menu items depending on their location.
+    </p>
+    <p className="text-sm bg-blue-50/70 text-gray-700 p-3 rounded-xl border border-blue-100 font-medium">
+      Because menus can vary between restaurants, the exact selection available to you may depend on the Little Caesars location you choose.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Pizza</h4>
+    <p>
+      Pizza is the centerpiece of the Little Caesars menu. Customers can choose from different pizza varieties, crust styles, toppings, and specialty combinations, depending on the current menu and participating location.
+    </p>
+    <p>
+      The brand's menu has historically included popular options such as pepperoni pizza, cheese pizza, sausage pizza, and specialty pizzas featuring combinations of meats, vegetables, and other toppings.
+    </p>
+    <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+      If pizza is the main reason you are ordering, check Couponsbit for a Little Caesars promo code before finalizing your order.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Crazy Bread and Sides</h4>
+    <p>
+      Little Caesars is also known for Crazy Bread and other side options that can turn a pizza order into a larger meal. Customers can add bread, dips, cheese-based sides, and other options depending on the location.
+    </p>
+    <p>
+      A side-focused promotion can sometimes be more useful than a general discount, particularly if you are ordering pizza for a group and want to add extras.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Wings</h4>
+    <p>
+      Chicken wings are another popular part of the Little Caesars menu. Depending on the location and current menu, customers may find different flavors and preparation options.
+    </p>
+    <p>
+      If your order includes both pizza and wings, look for a deal that applies to the overall combination rather than automatically choosing the first coupon you find.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Drinks</h4>
+    <p>
+      Soft drinks and other beverages are available at participating Little Caesars restaurants. Adding drinks can be convenient when ordering for a group, particularly for parties, family meals, or sporting events.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h4 className="text-lg font-bold text-gray-900">Desserts</h4>
+    <p>
+      Little Caesars also offers dessert options that can vary by location and current availability. A dessert can be an easy addition when ordering for a celebration or group gathering.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Little Caesars Deals for Families and Groups</h3>
+    <p>
+      Pizza is naturally suited to group occasions, and Little Caesars promotions can be particularly useful when you are ordering multiple menu items at once.
+    </p>
+    <p>
+      Families may order several pizzas along with Crazy Bread, wings, drinks, or other sides. Rather than looking only for a discount on one item, compare the available offers with the full order.
+    </p>
+    <p>
+      For example, a combination promotion may be more valuable than a standalone Little Caesars coupon code if you are already planning to purchase several qualifying items.
+    </p>
+    <p>
+      This is also why it helps to check the terms of each promotion. An offer designed for one pizza may not provide the same value as a deal built around multiple menu items.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Little Caesars Carryout and Delivery</h3>
+    <p>
+      Little Caesars gives customers different ways to receive their orders, including carryout and delivery options at participating locations.
+    </p>
+    <p>
+      Carryout can be useful when you are looking for a quick pickup, while delivery can make ordering more convenient when you are staying at home or feeding a group.
+    </p>
+    <p className="text-sm bg-blue-50 text-[#056bfa] p-3 rounded-xl border border-blue-100 font-medium">
+      When looking for a Little Caesars discount code, check whether the offer applies specifically to carryout, delivery, online orders, or another ordering method. Not every promotion will work across every channel.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-xl font-black text-[#056bfa]">Little Caesars App and Online Ordering Deals</h3>
+    <p>
+      Digital ordering can make it easier to browse available menu items and promotions before completing an order. Little Caesars' online ordering experience allows customers to select a location, build an order, and review applicable offers.
+    </p>
+    <p>
+      Before completing an online order, check Couponsbit for a current Little Caesars promo code or other available promotion. If a code is listed, make sure you understand whether it must be entered manually or whether the offer is connected to a particular online ordering promotion.
+    </p>
+  </div>
+
+  <div className="space-y-6">
+    <h3 className="text-xl font-black text-[#056bfa]">Little Caesars Seasonal Promotions</h3>
+    <p>
+      Like many major US food brands, Little Caesars uses seasonal and event-based promotions to attract customers throughout the year. These offers can change according to holidays, sports seasons, product launches, and other major occasions.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h5 className="font-bold text-gray-900">Super Bowl & Game-Day Offers</h5>
+        <p className="text-sm">
+          Major sporting events feature game-day promotions encouraging group ordering, pizza-and-wing combos, and large-format deals.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h5 className="font-bold text-gray-900">Holiday Promotions</h5>
+        <p className="text-sm">
+          Special offers around New Year's, Halloween, and other holiday events when group ordering interest peaks.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h5 className="font-bold text-gray-900">Limited-Time Menu Items</h5>
+        <p className="text-sm">
+          Short-term product rollouts often debut alongside specific promo codes and bundle pricing.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h5 className="font-bold text-gray-900">National Pizza Month</h5>
+        <p className="text-sm">
+          October brings designated nationwide marketing, menu highlights, and special customer offers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Little Caesars Promo Code</h3>
+            <p className="text-gray-700 font-bold mb-6">
+              If you find a Little Caesars promo code through CouponsBit, the process of using it is generally straightforward:
+            </p>
+            <div className="space-y-6">
+              {[
+                "Select the Little Caesars offer you want to use.",
+                "Follow the offer to the appropriate Little Caesars ordering page.",
+                "Choose your preferred restaurant location.",
+                "Select your pizza, sides, wings, drinks, or other menu items.",
+                "Add the qualifying products to your order.",
+                "Enter the promotional code in the applicable field if a code is required.",
+                "Apply the offer and check that the promotion has been accepted.",
+                "Review your order and complete checkout.",
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                    {i + 1}
+                  </div>
+                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
                 </div>
+              ))}
+            </div>
+            <p className="text-gray-500 font-bold leading-relaxed pt-4">
+              If your code does not apply, check the offer's terms. It may be restricted to specific menu items, locations, ordering methods, or dates.
+            </p>
+          </div>
 
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Little Caesars promo codes and discount codes</strong>? At Couponsbit, we help shoppers find pizza offers, Crazy Bread deals, wings picks and combo meal offers.
-                  </p>
-                  <p>
-                    Whether you're grabbing a quick Hot-N-Ready pizza or ordering a combo for the family, Little Caesars offers a range of convenient options. Before you order, check Couponsbit for the latest Little Caesars offers.
-                  </p>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Little Caesars Offers?</h3>
+            <p>
+              CouponsBit is designed to help shoppers find savings before they complete an online purchase. Instead of searching separately for a Little Caesars coupon code, discount code, voucher, and other offers, customers can check CouponsBit for available promotions in one place.
+            </p>
+            <p>
+              The goal is simple: help customers find a relevant offer before they order.
+            </p>
+            <p>
+              Whether you are ordering a single pizza for dinner or putting together a larger meal for family and friends, checking for a Little Caesars promo code first can help you identify potential savings.
+            </p>
+            <p>
+              CouponsBit also helps shoppers understand that the best deal is not always a traditional coupon. Depending on the order, a limited-time promotion, meal deal, online offer, or location-specific discount may provide better value.
+            </p>
+          </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Little Caesars</h3>
-                    <p>
-                      Little Caesars is a pizza restaurant chain known for its Hot-N-Ready pizzas, offering select options ready to go without a wait at participating locations.
-                    </p>
-                    <p>
-                      Beyond pizza, Little Caesars also offers Crazy Bread, wings and combo meals, along with a rewards app offering member-only offers and personalized recommendations.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest Little Caesars offers, combo picks and rewards app highlights in one place.
-                    </p>
-                  </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next Little Caesars Order</h3>
+            <p>
+              Little Caesars makes it easy to build a meal around pizza, with options for sides, wings, drinks, and other menu favorites. Whether you are ordering dinner for your household, preparing for game day, or feeding a larger group, the right promotion can make your order more affordable.
+            </p>
+            <p>
+              Before placing your next order, check CouponsBit for the latest Little Caesars promo code along with available coupon codes, discount offers, vouchers, and other deals. Compare the options with your cart, check the terms, and choose the offer that provides the best fit for your order.
+            </p>
+          </div>
 
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Little Caesars via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Little Caesars Offers — Visit the Little Caesars page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your order.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Little Caesars page.",
-                        "Step 4: Choose Your Pizza or Combo — Browse the menu for pizza, sides and combo options.",
-                        "Step 5: Join the Rewards App — Sign up for free to access member offers if eligible.",
-                        "Step 6: Complete Your Order — Choose pickup or delivery and check out.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Little Caesars</h3>
-                    <p><strong>Check Couponsbit Before Ordering:</strong> Always visit Couponsbit before ordering to see the latest Little Caesars offers.</p>
-                    <p><strong>Join the Rewards App:</strong> Free membership can unlock member-only offers.</p>
-                    <p><strong>Choose Combo Meals:</strong> Combos can offer better value than ordering items separately.</p>
-                    <p><strong>Try Hot-N-Ready:</strong> Select pizzas are ready to go without a wait.</p>
-                    <p><strong>Add Crazy Bread:</strong> A popular, budget-friendly add-on to any order.</p>
-                  </div>
+        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
 
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Little Caesars?</h3>
-                    <p><strong>Convenient Pizza:</strong> Hot-N-Ready options for quick pickup.</p>
-                    <p><strong>Wide Menu:</strong> Pizza, Crazy Bread, wings and combo meals.</p>
-                    <p><strong>Value-Focused Pricing:</strong> Combo deals designed for everyday budgets.</p>
-                    <p><strong>Rewards Program:</strong> Free app membership with member-only offers.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Little Caesars Deals?</h3>
-                    <p><strong>Curated Little Caesars Offers:</strong> We regularly review available Little Caesars offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find pizza offers, combo picks and rewards app highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across food, electronics, travel and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Your Next Order</h3>
-                    <p>Whether you're ordering a Hot-N-Ready pizza, Crazy Bread, or a combo meal, Little Caesars offers a range of options to explore.</p>
-                    <p>Before your next order, check Couponsbit to explore the latest Little Caesars offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
+        {/* FAQ */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Little Caesars Promo Codes</h3>
+          {[
+            { q: "Does Little Caesars have promo codes?", a: "Yes. Little Caesars uses promotional offers that can provide savings on qualifying menu items or orders. Available promotions and their conditions can change, so it is worth checking for current offers before ordering." },
+            { q: "Where can I find a Little Caesars promo code?", a: "You can check CouponsBit for available Little Caesars promo codes, coupon codes, discount offers, vouchers, and other deals before placing your order." },
+            { q: "How do I use a Little Caesars coupon code?", a: "Choose your Little Caesars location, add eligible menu items to your order, and enter the coupon or promotional code in the appropriate field if one is required. Confirm that the offer has been applied before completing checkout." },
+            { q: "Why isn't my Little Caesars promo code working?", a: "A promotional code may not work if it has expired, applies only to specific menu items, is restricted to participating locations, requires a particular ordering method, or has other conditions. Review the offer's terms before trying again." },
+            { q: "Can I use a Little Caesars discount code on any pizza?", a: "Not necessarily. Some promotions apply only to specific pizzas, sizes, menu combinations, or participating locations. Check the conditions of the individual offer before ordering." },
+            { q: "Does Little Caesars offer online deals?", a: "Little Caesars provides online ordering and can feature digital promotions and special offers. The availability of specific deals can vary, so check the current promotions before placing an online order." },
+            { q: "Does Little Caesars offer deals for large orders?", a: "Little Caesars promotions can vary, but group orders may qualify for certain combination or promotional offers depending on the current campaign. If you are ordering for a family or event, compare available deals against your complete order." },
+            { q: "Does Little Caesars have seasonal promotions?", a: "Yes. Like other major US restaurant brands, Little Caesars can run promotions around holidays, sporting events, limited-time menu launches, and other seasonal occasions. The specific offers available depend on the current campaign." },
+            { q: "Can I use a Little Caesars voucher online?", a: "It depends on the type and terms of the voucher. Some offers may be designed specifically for online ordering, while others may have restrictions on how and where they can be redeemed." },
+            { q: "How can I save more on Little Caesars?", a: "Start by checking CouponsBit for the latest Little Caesars promo code, then compare available discounts, coupons, vouchers, combination deals, and limited-time offers with your planned order. Also verify the location and eligibility requirements before completing your purchase." },
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Little Caesars?", a: "Little Caesars is a pizza restaurant chain known for its Hot-N-Ready pizzas, Crazy Bread and combo meal offers." },
-                    { q: "Does Little Caesars offer promo codes?", a: "Yes. Little Caesars runs promotions such as combo meal offers and rewards app deals." },
-                    { q: "Where can I find Little Caesars promo codes?", a: "You can find the latest Little Caesars promo codes and offers on Couponsbit." },
-                    { q: "What is Hot-N-Ready?", a: "Hot-N-Ready is Little Caesars' program offering select pizzas ready to go without a wait at participating locations." },
-                    { q: "Does Little Caesars have a rewards app?", a: "Yes. Little Caesars offers a rewards app with offers and benefits for eligible members." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Little Caesars Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Pizza Deals", "Crazy Bread", "Wings", "Little Caesars Promo Code", "Combo Meals", "Hot-N-Ready", "Rewards App", "Value Meals"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Little Caesars Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">L</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Little Caesars: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Little Caesars Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Pizza Deals", "Crazy Bread", "Wings Offers", "Little Caesars Promo Code", "Meal Deals", "Family Combos", "Delivery Deals", "Online Offers"].map(tag => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Little Caesars Deals</h3>
+          <div className="space-y-6">
+            {DEALS.map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">L</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                </div>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Little Caesars: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />
