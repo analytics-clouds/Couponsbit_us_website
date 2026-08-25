@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LittleCaesarsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Little Caesars Promo Code: Pizza & Combo Offers | Aug 2026",
+  title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
   description:
-    "Find the latest Little Caesars promo codes for Aug 2026. Discover pizza offers, Crazy Bread deals, wings picks and combo offers with Couponsbit.",
+    "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/little-caesars-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/little-caesars-promo-code",
-    title: "Little Caesars Promo Code: Pizza & Combo Offers | Aug 2026",
+    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
     description:
-      "Find the latest Little Caesars promo codes for Aug 2026. Discover pizza offers, Crazy Bread deals, wings picks and combo offers with Couponsbit.",
+      "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Little Caesars Promo Code: Pizza & Combo Offers | Aug 2026",
+    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
     description:
-      "Find the latest Little Caesars promo codes for Aug 2026. Discover pizza offers, Crazy Bread deals, wings picks and combo offers with Couponsbit.",
+      "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const littleCaesarsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/little-caesars-promo-code",
-      name: "Little Caesars Promo Code: Pizza & Combo Offers | Aug 2026",
+      name: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
       description:
-        "Find the latest Little Caesars promo codes for Aug 2026. Discover pizza offers, Crazy Bread deals, wings picks and combo offers with Couponsbit.",
+        "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#breadcrumb" },
@@ -75,31 +75,27 @@ const littleCaesarsSchema = {
       name: "Little Caesars Promo Codes & Coupon Codes",
       description: "Latest Little Caesars promo codes and offers for pizza, Crazy Bread and combo deals.",
       url: "https://www.couponsbit.us/stores/little-caesars-promo-code",
-      numberOfItems: 6,
+      numberOfItems: 5,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Pizza Offers", description: "Discover the latest pizza offers from Little Caesars.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
+          item: { "@type": "Offer", name: "Little Caesars Promo Code – 2 Large Pizzas for $4.99 Each", description: "This limited-time offer is available online only at participating Little Caesars locations in the USA.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Crazy Bread & Sides Deals", description: "Browse Crazy Bread and sides deals at Little Caesars.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
+          item: { "@type": "Offer", name: "Little Caesars Promo Code – $2 OFF Webberoni", description: "Get $2 OFF Webberoni when you spend $10 or more on your Little Caesars order.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Wings Picks", description: "Shop wings picks from Little Caesars.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
+          item: { "@type": "Offer", name: "Little Caesars eClub – Get $3 OFF $15+", description: "Join the Little Caesars eClub and get $3 OFF orders of $15 or more.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Combo Meal Offers", description: "Browse combo meal offers at Little Caesars.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
+          item: { "@type": "Offer", name: "Little Caesars – $5 OFF Orders of $30+", description: "Save $5 OFF your Little Caesars order when you spend $30 or more.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Hot-N-Ready Picks", description: "Explore Hot-N-Ready picks from Little Caesars.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Rewards App Offers", description: "Find Little Caesars' rewards app offers.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
+          item: { "@type": "Offer", name: "Little Caesars – $4 OFF Delivery Orders", description: "Get $4 OFF qualifying Little Caesars delivery orders of $24 or more.", url: "https://www.couponsbit.us/stores/little-caesars-promo-code", seller: { "@type": "Organization", name: "Little Caesars", url: "https://littlecaesars.com" } },
         },
       ],
     },

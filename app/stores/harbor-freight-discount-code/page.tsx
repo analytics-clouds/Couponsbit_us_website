@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HarborFreightCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Harbor Freight Discount Code: Tools & Equipment Offers | Aug 2026",
+  title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
   description:
-    "Find the latest Harbor Freight discount codes for Aug 2026. Discover power tool offers, hand tool deals, automotive picks and generator offers with Couponsbit.",
+    "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-    title: "Harbor Freight Discount Code: Tools & Equipment Offers | Aug 2026",
+    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
     description:
-      "Find the latest Harbor Freight discount codes for Aug 2026. Discover power tool offers, hand tool deals, automotive picks and generator offers with Couponsbit.",
+      "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Harbor Freight Discount Code: Tools & Equipment Offers | Aug 2026",
+    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
     description:
-      "Find the latest Harbor Freight discount codes for Aug 2026. Discover power tool offers, hand tool deals, automotive picks and generator offers with Couponsbit.",
+      "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const harborFreightSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-      name: "Harbor Freight Discount Code: Tools & Equipment Offers | Aug 2026",
+      name: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
       description:
-        "Find the latest Harbor Freight discount codes for Aug 2026. Discover power tool offers, hand tool deals, automotive picks and generator offers with Couponsbit.",
+        "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#breadcrumb" },
@@ -75,31 +75,39 @@ const harborFreightSchema = {
       name: "Harbor Freight Discount Codes & Coupon Codes",
       description: "Latest Harbor Freight discount codes and offers for tools, automotive and equipment.",
       url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 8,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Power Tool Offers", description: "Discover the latest power tool offers from Harbor Freight.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight Discount Code – Scratch & Dent Sale", description: "Save $4.50 OFF during the Harbor Freight Scratch & Dent Sale on select ICON and U.S. GENERAL storage products.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Hand Tool Deals", description: "Browse hand tool deals and offers at Harbor Freight.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight Discount Code – 12,000 lb. Winch Super Deal", description: "Get the 12,000 lb. Winch with Steel Rope and Wireless Remote for $399.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Automotive Picks", description: "Shop automotive picks from Harbor Freight.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight Discount Code – 3 Ton Professional Floor Jack", description: "Get the 3 Ton Long-Reach Low-Profile Professional Floor Jack with RAPID PUMP for $159.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Generator Offers", description: "Browse generator offers at Harbor Freight.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight  – R134A A/C Manifold Gauge Set", description: "Shop the PITTSBURGH R134A A/C Manifold Gauge Set for $67.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Storage & Organization Picks", description: "Explore storage and organization picks from Harbor Freight.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight– 1200 Watt Handheld Steam Cleaner", description: "Get the 1200 Watt Handheld Steam Cleaner for just $19.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
         {
           "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Weekly Coupon Picks", description: "Find Harbor Freight's weekly coupon picks.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+          item: { "@type": "Offer", name: "Harbor Freight – HAUL-MASTER Utility Trailer", description: "Shop the HAUL-MASTER 2000 lb. Capacity 5 ft. x 10 ft. Custom Modular Utility Trailer for $849.97.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Harbor Freight  – BAUER 20V Cordless Band Saw", description: "Get the BAUER 20V 2-1/2 in. Cordless Compact Band Saw – Tool Only for $89.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
+        },
+        {
+          "@type": "ListItem", position: 8,
+          item: { "@type": "Offer", name: "Harbor Freight  – MIG 140 Professional Welder", description: "Get the MIG 140 Professional Welder with 120V Input for $339.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
         },
       ],
     },

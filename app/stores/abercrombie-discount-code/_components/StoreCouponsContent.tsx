@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Women's Apparel", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Men's Apparel Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "abercrombie kids Picks", sub: "Style Picks" },
-  { id: "d4", label: "TOP", heading: "Denim Deals", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Fragrance Offers", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Up to 30% OFF Almost Everything", sub: "Sitewide Sale" },
+  { id: "d2", label: "KIDS", heading: "BOGO 50% OFF Abercrombie Kids", sub: "Buy One, Get One" },
+  { id: "d3", label: "MEN", heading: "Denim Shirt Clearance – $39.99", sub: "Down from $75" },
+  { id: "d4", label: "MEN", heading: "Vintage Graphic Tee – $24.99", sub: "Reduced from $45" },
+  { id: "d5", label: "NEW", heading: "NFL Patriots Denim Shirt – $100", sub: "New Arrival" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,15 @@ export default function AbercrombieCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(36.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Abercrombie deals and offers in Aug 2026. Browse women's apparel offers, men's apparel deals, kids' picks and denim deals on Abercrombie.
+                      Save with the latest Abercrombie discount codes, promo code and deals. Get up to 30% OFF almost everything, BOGO 50% OFF at Abercrombie Kids, plus clearance savings on men’s and kids’ styles. Enjoy exclusive USA fashion offers and free shipping on qualifying orders.
+
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "7", label: "Offers" },
                     { icon: Percent, val: "2.5k", label: "Deals" },
                     { icon: Users, val: "17M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -182,163 +183,158 @@ export default function AbercrombieCouponsContent() {
 
         {/* Coupons + Sidebar */}
         <section className="py-6 md:py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Abercrombie Discount Codes & Offers</h2>
-                </div>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="flex flex-col lg:flex-row gap-12">
+      <div className="lg:w-[65%]">
+        <div className="mb-10">
+          <h2 className="text-3xl font-black text-black leading-tight">Abercrombie Discount Codes & Offers</h2>
+        </div>
 
-                {[
-                  { label: "NEW", value: "WOMEN", title: "New Women's Apparel Offers", desc: "Discover the latest women's apparel offers from Abercrombie.", bullets: ["Offers across tops, dresses and outerwear", "New arrivals updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "MEN", title: "Men's Apparel Deals", desc: "Browse men's apparel deals and offers at Abercrombie.", bullets: ["Deals across shirts, pants and outerwear", "Seasonal collections updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "KIDS", title: "abercrombie kids Picks", desc: "Shop abercrombie kids picks.", bullets: ["Options across boys' and girls' apparel", "Seasonal styles updated regularly", "Available online and in participating stores"] },
-                  { label: "TOP", value: "DENIM", title: "Denim Deals", desc: "Browse denim deals at Abercrombie.", bullets: ["Deals across jeans and denim jackets", "Options for various fits and washes", "Available online and in participating stores"] },
-                  { label: "BEST", value: "FRAGRANCE", title: "Fragrance Offers", desc: "Explore fragrance offers from Abercrombie.", bullets: ["Options across men's and women's fragrances", "Popular pick for everyday wear or gifting", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "NEW IN", title: "New Arrival Picks", desc: "Find Abercrombie's new arrival picks.", bullets: ["Curated picks from the latest collections", "Updated regularly with new styles", "Available while sizes and stock last"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                      <div className="flex flex-row">
-                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                            </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Abercrombie: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                          </div>
-                        </div>
-                      </div>
+        {[
+          { label: "SALE", value: "30% OFF", title: "Abercrombie Discount Code – Up to 30% OFF Almost Everything", desc: "Enjoy up to 30% OFF almost everything during the limited-time Abercrombie sale.", bullets: ["Shop savings across women's clothing, men's fashion, jeans, tops, dresses, and more.", "This online-only USA deal is available for a limited time.", "Don't miss the chance to refresh your wardrobe with Abercrombie styles at reduced prices."] },
+          { label: "KIDS", value: "BOGO 50%", title: "Abercrombie Kids Discount code – Buy One, Get One 50% OFF", desc: "Shop Buy One, Get One 50% OFF on almost everything at Abercrombie Kids.", bullets: ["Find stylish deals across girls, boys, baby, and toddler collections.", "Stock up on everyday kids' clothing while saving on additional items.", "Available for Abercrombie shoppers in the USA for a limited time."] },
+          { label: "MEN", value: "CLEARANCE", title: "Abercrombie Men Discount Code – 100% Cotton Denim Shirt Clearance", desc: "Get the A&F Archive 100% Cotton Short-Sleeve Denim Button-Up Shirt for $39.99, down from $75.", bullets: ["Save approximately 47% OFF during the Abercrombie men's clearance sale.", "Features a versatile 100% cotton denim design for casual everyday outfits.", "Shop this Abercrombie USA men's clearance deal while sizes last."] },
+          { label: "MEN", value: "CLEARANCE", title: "Abercrombie Men – Vintage Graphic Tee Clearance", desc: "Get the 100% Cotton Fallout Vintage-Inspired Graphic Tee for $24.99, reduced from $45.", bullets: ["Save approximately 44% OFF on this men's clearance style.", "Made with 100% cotton and featuring a vintage-inspired graphic design.", "A great Abercrombie USA deal for casual and everyday men's fashion."] },
+          { label: "NEW", value: "NFL", title: "Abercrombie – New England Patriots Denim Button-Up Shirt", desc: "Shop the NFL by Abercrombie New England Patriots Denim Button-Up Shirt for $100.", bullets: ["Made from 100% cotton for a comfortable and versatile fit.", "Part of the new NFL collection launched for the kickoff season.", "A stylish USA sports-inspired addition for New England Patriots fans."] },
+          { label: "KIDS", value: "CLEARANCE", title: "Abercrombie Kids – Lace Mini Skort Clearance", desc: "Get the Lace Mini Skort for just $18.99, down from $34.95.", bullets: ["Save approximately 46% OFF on this Abercrombie Kids clearance style.", "A versatile fashion piece that can be styled for casual and everyday looks.", "Shop the Abercrombie USA kids' clearance sale before stock runs out."] },
+          { label: "SHIP", value: "FREE $99+", title: "Abercrombie – Free Standard Shipping on $99+", desc: "Get Free Standard Shipping and Handling on orders over $99.", bullets: ["Shop your favorite Abercrombie clothing and reach the minimum order value to qualify.", "Available on qualifying orders for Abercrombie customers in the USA.", "Save on delivery costs while shopping the latest men's, women's, and kids' styles."] },
+        ].map((c, i) => (
+          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+            <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+              <div className="flex flex-row">
+                <div className="relative w-[110px] sm:w-[160px] bg-[#056bfa] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                  <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="text-center px-2">
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">{c.label}</p>
+                    <div className="text-base sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                  <div className="flex-1 px-4 sm:px-6 py-4 sm:py-6 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-red-100 text-red-700 text-[9px] sm:text-[11px] font-bold px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                      <span className="bg-green-100 text-green-700 text-[9px] sm:text-[11px] font-bold px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                    </div>
+                    <h2 className="text-[17px] sm:text-[24px] font-extrabold text-[#061b3a] leading-snug">{c.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-sm sm:text-base leading-relaxed">{c.desc}</p>
+                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-sm sm:text-base flex items-center gap-1">
+                      View Details
+                      <ChevronDown size={18} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                      <ul className="space-y-2 text-gray-700 text-sm sm:text-base leading-relaxed">
+                        {c.bullets.map((b, bi) => (
+                          <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Sidebar */}
-              <div className="lg:w-[35%] space-y-8">
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">Find an Abercrombie Discount Code</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    An Abercrombie discount code can help shoppers look for savings when purchasing clothing, denim, accessories, or other products from the brand. Abercrombie regularly runs promotions connected to seasons, product categories, special shopping periods, and member benefits.
-
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Some offers may require a code at checkout, while others can be automatically reflected in the cart when the qualifying conditions are met. The exact terms can vary from one promotion to another.
- 
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    For example, an offer might apply to selected merchandise, require a qualifying purchase, exclude certain products, or be available only during a specified promotional period. Always review the conditions associated with an offer before relying on it.
-
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    If you are planning an Abercrombie order, check CouponsBit first to see whether there is a current Abercrombie coupon code, discount offer, or other promotion that fits your purchase.
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                  <div className="w-full lg:w-[210px] flex items-center justify-center px-4 sm:px-5 py-4 sm:py-6">
+                    <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Abercrombie: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-xl sm:text-xl px-6 sm:px-10 py-3.5 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                  </div>
                 </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Baby, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Droplet, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Get the Best Abercrombie Deals
-  </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Checkout",
-        sub: "Before completing your Abercrombie order, visit CouponsBit and check the latest available discount codes, coupon offers, promo codes, vouchers, and deals."
-      },
-      {
-        icon: Percent,
-        title: "Browse the Sale Section",
-        sub: "A product that is already discounted may sometimes offer better value than purchasing full-price merchandise with a separate code. Check Abercrombie's sale selection before making a final decision."
-      },
-      {
-        icon: Calendar,
-        title: "Shop During Major US Sales",
-        sub: "If your purchase can wait, major US shopping events such as Black Friday, Cyber Monday, back-to-school season, Memorial Day, Labor Day, and end-of-season sales can be useful periods to monitor."
-      },
-      {
-        icon: ShoppingBag,
-        title: "Build Your Cart Carefully",
-        sub: "If a promotion requires a minimum qualifying purchase, make sure you understand what counts toward that threshold. Adding an unnecessary item just to activate a promotion does not always result in a better overall deal."
-      },
-      {
-        icon: FileText,
-        title: "Check the Offer Terms",
-        sub: "An offer can have exclusions involving categories, products, sale merchandise, or other conditions. Reading the terms before checkout can prevent surprises when you try to apply an Abercrombie promotional code."
-      }
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-
               </div>
             </div>
           </div>
-        </section>
+        ))}
+      </div>
+
+      {/* Sidebar */}
+      <div className="lg:w-[35%] space-y-8">
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-xl mb-6">Find an Abercrombie Discount Code</h3>
+          <p className="text-gray-600 font-bold text-base leading-relaxed mb-6 text-justify">
+            An Abercrombie discount code can help shoppers look for savings when purchasing clothing, denim, accessories, or other products from the brand. Abercrombie regularly runs promotions connected to seasons, product categories, special shopping periods, and member benefits.
+          </p>
+          <p className="text-gray-600 font-bold text-base leading-relaxed mb-6 text-justify">
+            Some offers may require a code at checkout, while others can be automatically reflected in the cart when the qualifying conditions are met. The exact terms can vary from one promotion to another.
+          </p>
+          <p className="text-gray-600 font-bold text-base leading-relaxed mb-6 text-justify">
+            For example, an offer might apply to selected merchandise, require a qualifying purchase, exclude certain products, or be available only during a specified promotional period. Always review the conditions associated with an offer before relying on it.
+          </p>
+          <p className="text-gray-600 font-bold text-base leading-relaxed mb-6 text-justify">
+            If you are planning an Abercrombie order, check CouponsBit first to see whether there is a current Abercrombie coupon code, discount offer, or other promotion that fits your purchase.
+          </p>
+          <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-base flex items-center gap-1.5 hover:underline decoration-2">
+            Visit Store <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-xl mb-6">Top Categories</h3>
+          <div className="space-y-1">
+            {[
+              { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+              { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+              { icon: Baby, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+              { icon: Droplet, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+              { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+            ].map((cat, i) => (
+              <Link key={i} href={cat.href} className="flex items-center justify-between py-3.5 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                <div className="flex items-center gap-3">
+                  <cat.icon className={cn("w-5 h-5", cat.color)} />
+                  <span className="text-gray-700 font-bold text-base group-hover:text-black transition-colors">{cat.name}</span>
+                </div>
+                <span className="bg-[#e8f6f8] text-[#0451c4] px-3 py-1 rounded-full text-xs sm:text-sm font-black">{cat.count} Coupons</span>
+              </Link>
+            ))}
+          </div>
+          <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-xs uppercase tracking-widest hover:underline">View All Categories →</Link>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-xl mb-8">
+            How to Get the Best Abercrombie Deals
+          </h3>
+          <div className="space-y-8">
+            {[
+              {
+                icon: Tag,
+                title: "Check CouponsBit Before Checkout",
+                sub: "Before completing your Abercrombie order, visit CouponsBit and check the latest available discount codes, coupon offers, promo codes, vouchers, and deals."
+              },
+              {
+                icon: Percent,
+                title: "Browse the Sale Section",
+                sub: "A product that is already discounted may sometimes offer better value than purchasing full-price merchandise with a separate code. Check Abercrombie's sale selection before making a final decision."
+              },
+              {
+                icon: Calendar,
+                title: "Shop During Major US Sales",
+                sub: "If your purchase can wait, major US shopping events such as Black Friday, Cyber Monday, back-to-school season, Memorial Day, Labor Day, and end-of-season sales can be useful periods to monitor."
+              },
+              {
+                icon: ShoppingBag,
+                title: "Build Your Cart Carefully",
+                sub: "If a promotion requires a minimum qualifying purchase, make sure you understand what counts toward that threshold. Adding an unnecessary item just to activate a promotion does not always result in a better overall deal."
+              },
+              {
+                icon: FileText,
+                title: "Check the Offer Terms",
+                sub: "An offer can have exclusions involving categories, products, sale merchandise, or other conditions. Reading the terms before checkout can prevent surprises when you try to apply an Abercrombie promotional code."
+              }
+            ].map((item) => (
+              <div key={item.title} className="flex gap-4 items-start text-justify">
+                <div className="w-11 h-11 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-black font-black text-base leading-tight mb-2">
+                    {item.title}
+                  </p>
+                  <p className="text-gray-600 font-medium text-xs sm:text-sm leading-relaxed">
+                    {item.sub}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">
@@ -373,6 +369,143 @@ export default function AbercrombieCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Abercrombie Discount Code, Coupon Code & Promo Offers
         </h2>
+
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Up to 30% OFF Almost Everything
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 30% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time, online-only deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's &amp; men's fashion, jeans, tops, dresses
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Abercrombie Kids BOGO 50% OFF
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Buy 1, Get 1 50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time offer on select styles
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Girls, boys, baby, &amp; toddler collections
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            100% Cotton Denim Shirt Clearance
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $39.99 <span className="text-xs text-gray-400 font-normal line-through">$75</span> (~47% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance deal, while sizes last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            A&amp;F Archive Short-Sleeve Denim Button-Up
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Vintage Graphic Tee Clearance
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $24.99 <span className="text-xs text-gray-400 font-normal line-through">$45</span> (~44% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance deal, limited time
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Fallout Vintage-Inspired Graphic Tee
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            New England Patriots Denim Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $100
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            New NFL collection launch
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            NFL by Abercrombie Patriots Denim Shirt
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Abercrombie Kids Lace Mini Skort
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $18.99 <span className="text-xs text-gray-400 font-normal line-through">$34.95</span> (~46% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Kids clearance, before stock runs out
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Abercrombie Kids Lace Mini Skort
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Free Standard Shipping
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            FREE Shipping
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Minimum order value of $99+
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Qualifying men's, women's, &amp; kids' orders
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

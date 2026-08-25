@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Power Tool Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Hand Tool Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Automotive Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Generator Offers", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Weekly Coupon Picks", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Scratch & Dent Sale – $4.50 OFF", sub: "ICON & U.S. GENERAL" },
+  { id: "d2", label: "DEAL", heading: "12,000 lb. Winch – $399.99", sub: "Inside Track Club" },
+  { id: "d3", label: "DEAL", heading: "3 Ton Floor Jack – $159.99", sub: "7-Day Super Deal" },
+  { id: "d4", label: "SHOP", heading: "R134A A/C Gauge Set – $67.99", sub: "PITTSBURGH" },
+  { id: "d5", label: "DEAL", heading: "Steam Cleaner – $19.99", sub: "Inside Track Club" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function HarborFreightCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(44.1k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Harbor Freight deals and offers in Aug 2026. Browse power tool offers, hand tool deals, automotive picks and generator offers on Harbor Freight.
+                     Find genuine Abercrombie discount code offers for August 2026 and save up to 30% off almost everything. Explore the latest US promo code deals on women's, men's and kids' clothing, jeans, dresses, tops and more while limited-time offers last.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "8", label: "Offers" },
                     { icon: Percent, val: "2.7k", label: "Deals" },
                     { icon: Users, val: "12M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -182,163 +182,161 @@ export default function HarborFreightCouponsContent() {
 
         {/* Coupons + Sidebar */}
         <section className="py-6 md:py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Harbor Freight Discount Codes & Offers</h2>
-                </div>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="flex flex-col lg:flex-row gap-12">
+      <div className="lg:w-[65%]">
+        <div className="mb-10">
+          <h2 className="text-2xl font-black text-black leading-tight">Harbor Freight Discount Codes & Offers</h2>
+        </div>
 
-                {[
-                  { label: "NEW", value: "POWER TOOLS", title: "New Power Tool Offers", desc: "Discover the latest power tool offers from Harbor Freight.", bullets: ["Offers across drills, saws and cordless tools", "New arrivals updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "HAND TOOLS", title: "Hand Tool Deals", desc: "Browse hand tool deals and offers at Harbor Freight.", bullets: ["Deals across wrenches, sockets and tool sets", "Options for DIY and professional use", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "AUTOMOTIVE", title: "Automotive Picks", desc: "Shop automotive picks from Harbor Freight.", bullets: ["Options across jacks, creepers and diagnostic tools", "Suited for at-home vehicle maintenance", "Available online and in participating stores"] },
-                  { label: "TOP", value: "GENERATORS", title: "Generator Offers", desc: "Browse generator offers at Harbor Freight.", bullets: ["Options across portable and standby generators", "Suited for backup power and job sites", "Available online and in participating stores"] },
-                  { label: "BEST", value: "STORAGE", title: "Storage & Organization Picks", desc: "Explore storage and organization picks from Harbor Freight.", bullets: ["Options across tool chests and storage bins", "Designed to keep tools organized", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "WEEKLY", title: "Weekly Coupon Picks", desc: "Find Harbor Freight's weekly coupon picks.", bullets: ["Rotating offers updated weekly", "Featured picks across tool categories", "Available at participating locations"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                      <div className="flex flex-row">
-                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                            </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Harbor Freight: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                          </div>
-                        </div>
-                      </div>
+        {[
+          { label: "SALE", value: "$4.50 OFF", title: "Harbor Freight Discount Code – Scratch & Dent Sale", desc: "Save $4.50 OFF during the Harbor Freight Scratch & Dent Sale on select ICON and U.S. GENERAL storage products.", bullets: ["Shop discounted tools, storage solutions, and workshop essentials at limited-time prices.", "Quantities are limited, so grab your favorite deals before they sell out.", "Use the Harbor Freight Discount Code to look for additional savings where eligible."] },
+          { label: "DEAL", value: "$399.99", title: "Harbor Freight Discount Code – 12,000 lb. Winch Super Deal", desc: "Get the 12,000 lb. Winch with Steel Rope and Wireless Remote for $399.99 for Inside Track Club members.", bullets: ["Regular Super Deal price is $599.99, offering $200 in savings.", "Member Super Deal is available through August 27.", "Check for a Harbor Freight Discount Code to maximize your savings on eligible purchases."] },
+          { label: "DEAL", value: "$159.99", title: "Harbor Freight Discount Code – 3 Ton Professional Floor Jack", desc: "Get the 3 Ton Long-Reach Low-Profile Professional Floor Jack with RAPID PUMP for $159.99.", bullets: ["Inside Track Club members can save $110 from the regular $269.99 price.", "Available as a limited-time 7-Day Super Deal through August 27.", "Look for a valid Harbor Freight Discount Code for extra savings on eligible orders."] },
+          { label: "SHOP", value: "$67.99", title: "Harbor Freight  – R134A A/C Manifold Gauge Set", desc: "Shop the PITTSBURGH R134A A/C Manifold Gauge Set for $67.99.", bullets: ["A practical choice for automotive A/C service and maintenance work.", "Take advantage of Harbor Freight's bundle savings and tool deals.", "Apply a valid Harbor Freight Discount Code when available for additional savings."] },
+          { label: "DEAL", value: "$19.99", title: "Harbor Freight– 1200 Watt Handheld Steam Cleaner", desc: "Get the 1200 Watt Handheld Steam Cleaner for just $19.99 for Inside Track Club members.", bullets: ["Save 55% compared with the regular Super Deal price of $44.99.", "This limited-time deal is ideal for cleaning and household maintenance.", "Check for a Harbor Freight Discount Code before completing your purchase."] },
+          { label: "SHOP", value: "$849.97", title: "Harbor Freight – HAUL-MASTER Utility Trailer", desc: "Shop the HAUL-MASTER 2000 lb. Capacity 5 ft. x 10 ft. Custom Modular Utility Trailer for $849.97.", bullets: ["Designed for hauling equipment, supplies, tools, and other heavy loads.", "Find it among Harbor Freight's clearance deals with limited quantities available.", "Use a Harbor Freight Discount Code where applicable for potential additional savings."] },
+          { label: "NEW", value: "$89.99", title: "Harbor Freight  – BAUER 20V Cordless Band Saw", desc: "Get the BAUER 20V 2-1/2 in. Cordless Compact Band Saw – Tool Only for $89.99.", bullets: ["Compare at $169, giving you $79 in savings.", "This new Harbor Freight tool is designed for convenient cordless cutting applications.", "Check for a Harbor Freight Discount Code to save more on eligible purchases."] },
+          { label: "DEAL", value: "$339.99", title: "Harbor Freight  – MIG 140 Professional Welder", desc: "Get the MIG 140 Professional Welder with 120V Input for $339.99 for Inside Track Club members.", bullets: ["Save $160 from the regular Super Deal price of $499.99.", "Take advantage of this limited-time 7-Day Super Deal while available.", "Use a valid Harbor Freight Discount Code where eligible to maximize your savings."] },
+        ].map((c, i) => (
+          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+            <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+              <div className="flex flex-row">
+                <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                  <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                  <div className="text-center px-2">
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold text-white leading-tight">{c.label}</p>
+                    <div className="text-lg sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                  <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                      <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                    </div>
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                      View Details
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                      <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                        {c.bullets.map((b, bi) => (
+                          <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Sidebar */}
-              <div className="lg:w-[35%] space-y-8">
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">Harbor Freight Membership and Rewards Savings</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                  Harbor Freight also offers membership-related savings through its loyalty programs. The specific benefits depend on the membership level and current program terms.
-
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                  For regular Harbor Freight shoppers, membership can be another factor to consider alongside coupons and promotional offers. If you frequently purchase tools, equipment, or automotive supplies, compare the available member benefits with the promotions available for your order.
-
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                  This is another reason not to focus exclusively on finding a Harbor Freight coupon code. Depending on the purchase, a member benefit or product promotion may provide better overall value.
-
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                  <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                    <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Harbor Freight: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                  </div>
                 </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Wrench, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Car, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Zap, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find the Best Harbor Freight Deals
-  </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Shopping",
-        sub: "Before completing your Harbor Freight purchase, check CouponsBit for the latest Harbor Freight discount code, coupon offers, promotional codes, vouchers, and other available deals."
-      },
-      {
-        icon: ShoppingBag,
-        title: "Compare the Promotion With Your Cart",
-        sub: "The most valuable offer depends on what you are purchasing. A product-specific deal may be better for one item, while a broader promotion may work better when buying several eligible products."
-      },
-      {
-        icon: Percent,
-        title: "Browse Clearance",
-        sub: "If you are flexible about product selection, checking clearance merchandise can reveal additional savings opportunities."
-      },
-      {
-        icon: Calendar,
-        title: "Watch Major US Shopping Events",
-        sub: "Black Friday, Cyber Monday, Father's Day, Memorial Day, Labor Day, and seasonal transitions can be useful periods to monitor for promotions on tools and equipment."
-      },
-      {
-        icon: Wrench,
-        title: "Consider the Entire Project",
-        sub: "If you are working on a home improvement or automotive project, make a list of the tools and supplies you actually need. Then compare available promotions against the complete list instead of choosing a deal based solely on its advertised discount."
-      },
-      {
-        icon: FileText,
-        title: "Read the Offer Terms",
-        sub: "Tool and equipment promotions can have exclusions. Some offers may not apply to particular brands or product categories, while others may have expiration dates or purchase requirements."
-      }
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
               </div>
             </div>
           </div>
-        </section>
+        ))}
+      </div>
+
+      {/* Sidebar */}
+      <div className="lg:w-[35%] space-y-8">
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">Harbor Freight Membership and Rewards Savings</h3>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Harbor Freight also offers membership-related savings through its loyalty programs. The specific benefits depend on the membership level and current program terms.
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            For regular Harbor Freight shoppers, membership can be another factor to consider alongside coupons and promotional offers. If you frequently purchase tools, equipment, or automotive supplies, compare the available member benefits with the promotions available for your order.
+          </p>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            This is another reason not to focus exclusively on finding a Harbor Freight coupon code. Depending on the purchase, a member benefit or product promotion may provide better overall value.
+          </p>
+          <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+            Visit Store <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+          <div className="space-y-1">
+            {[
+              { icon: Wrench, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+              { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+              { icon: Car, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+              { icon: Zap, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+              { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+            ].map((cat, i) => (
+              <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                <div className="flex items-center gap-3">
+                  <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                  <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                </div>
+                <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+              </Link>
+            ))}
+          </div>
+          <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8">
+            How to Find the Best Harbor Freight Deals
+          </h3>
+          <div className="space-y-8">
+            {[
+              {
+                icon: Tag,
+                title: "Check CouponsBit Before Shopping",
+                sub: "Before completing your Harbor Freight purchase, check CouponsBit for the latest Harbor Freight discount code, coupon offers, promotional codes, vouchers, and other available deals."
+              },
+              {
+                icon: ShoppingBag,
+                title: "Compare the Promotion With Your Cart",
+                sub: "The most valuable offer depends on what you are purchasing. A product-specific deal may be better for one item, while a broader promotion may work better when buying several eligible products."
+              },
+              {
+                icon: Percent,
+                title: "Browse Clearance",
+                sub: "If you are flexible about product selection, checking clearance merchandise can reveal additional savings opportunities."
+              },
+              {
+                icon: Calendar,
+                title: "Watch Major US Shopping Events",
+                sub: "Black Friday, Cyber Monday, Father's Day, Memorial Day, Labor Day, and seasonal transitions can be useful periods to monitor for promotions on tools and equipment."
+              },
+              {
+                icon: Wrench,
+                title: "Consider the Entire Project",
+                sub: "If you are working on a home improvement or automotive project, make a list of the tools and supplies you actually need. Then compare available promotions against the complete list instead of choosing a deal based solely on its advertised discount."
+              },
+              {
+                icon: FileText,
+                title: "Read the Offer Terms",
+                sub: "Tool and equipment promotions can have exclusions. Some offers may not apply to particular brands or product categories, while others may have expiration dates or purchase requirements."
+              }
+            ].map((item) => (
+              <div key={item.title} className="flex gap-4 items-start text-justify">
+                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-black font-black text-sm leading-tight mb-2">
+                    {item.title}
+                  </p>
+                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                    {item.sub}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>f
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">
@@ -373,6 +371,160 @@ export default function HarborFreightCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Harbor Freight Discount Code, Coupon Code & Promo Offers
         </h2>
+
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Harbor Freight Scratch &amp; Dent Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $4.50 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited quantities, limited-time sale
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            ICON &amp; U.S. GENERAL storage products
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            12,000 lb. Winch Super Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $399.99 <span className="text-xs text-gray-400 font-normal line-through">$599.99</span> ($200 OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Inside Track Club
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Member Super Deal through August 27
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            12,000 lb. Winch with Steel Rope &amp; Wireless Remote
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            3 Ton Professional Floor Jack
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $159.99 <span className="text-xs text-gray-400 font-normal line-through">$269.99</span> ($110 OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Inside Track Club
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            7-Day Super Deal through August 27
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            3 Ton Long-Reach Low-Profile Floor Jack
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            R134A A/C Manifold Gauge Set
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $67.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time bundle deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            PITTSBURGH R134A A/C Manifold Gauge Set
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            1200W Handheld Steam Cleaner
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $19.99 <span className="text-xs text-gray-400 font-normal line-through">$44.99</span> (55% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Inside Track Club
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time Super Deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            1200 Watt Handheld Steam Cleaner
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            HAUL-MASTER Utility Trailer
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $849.97
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance deal, limited quantities
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            2000 lb. Capacity 5x10 ft. Modular Utility Trailer
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            BAUER 20V Cordless Band Saw
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $89.99 <span className="text-xs text-gray-400 font-normal line-through">$169.00</span> ($79 OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            New tool release, limited-time price
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            BAUER 20V 2-1/2 in. Compact Band Saw (Tool Only)
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            MIG 140 Professional Welder
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $339.99 <span className="text-xs text-gray-400 font-normal line-through">$499.99</span> ($160 OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Inside Track Club
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            7-Day Super Deal, limited-time offer
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            MIG 140 Professional Welder with 120V Input
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

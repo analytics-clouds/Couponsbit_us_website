@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Women's Apparel", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Men's Apparel Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Kids' Collection", sub: "Style Picks" },
-  { id: "d4", label: "TOP", heading: "Denim Deals", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Maternity Picks", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Up to 89% Off Clearance Styles", sub: "Promo Code Offers" },
+  { id: "d2", label: "SALE", heading: "$5 & Under Clearance", sub: "Up to 89% OFF" },
+  { id: "d3", label: "SALE", heading: "60% Off Fashion + 40% Off Everything", sub: "Ends August 24" },
+  { id: "d4", label: "SALE", heading: "Up to 89% Off Women’s Dresses", sub: "From $4.97" },
+  { id: "d5", label: "SALE", heading: "Up to 83% Off Tops", sub: "From $2.97" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function OldNavyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(58.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Old Navy deals and offers in Aug 2026. Browse women's apparel offers, men's apparel deals, kids' collection picks and denim deals on Old Navy.
+                     Save with the latest Old Navy promo code , Discount code and deals. Get up to 89% OFF clearance styles, with selected women’s and kids’ fashion starting from $2.97. Shop dresses, tops, activewear, maternity wear, school uniforms, and more at reduced prices.  
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "13", label: "Offers" },
                     { icon: Percent, val: "3.2k", label: "Deals" },
                     { icon: Users, val: "19M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,19 @@ export default function OldNavyCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "WOMEN", title: "New Women's Apparel Offers", desc: "Discover the latest women's apparel offers from Old Navy.", bullets: ["Offers across tops, dresses and outerwear", "New arrivals updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "MEN", title: "Men's Apparel Deals", desc: "Browse men's apparel deals and offers at Old Navy.", bullets: ["Deals across shirts, pants and outerwear", "Seasonal collections updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "KIDS", title: "Kids' Collection Picks", desc: "Shop kids' collection picks from Old Navy.", bullets: ["Options across boys' and girls' apparel", "Seasonal styles updated regularly", "Available online and in participating stores"] },
-                  { label: "TOP", value: "DENIM", title: "Denim Deals", desc: "Browse denim deals at Old Navy.", bullets: ["Deals across jeans and denim jackets", "Options for various fits and washes", "Available online and in participating stores"] },
-                  { label: "BEST", value: "MATERNITY", title: "Maternity Picks", desc: "Explore maternity picks from Old Navy.", bullets: ["Options across tops, bottoms and dresses", "Designed for comfort throughout pregnancy", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "ACTIVE", title: "Activewear Offers", desc: "Find Old Navy's activewear offers.", bullets: ["Options across leggings, tops and sets", "Designed for workouts and everyday wear", "Available online and in participating stores"] },
+                  { label: "SALE", value: "89% OFF", title: "Old Navy Promo Code – Up to 89% Off Clearance Styles", desc: "Shop the Old Navy Promo Code offers and enjoy up to 89% OFF selected clearance styles.", bullets: ["Save on women’s, kids’ and family fashion with prices starting from just a few dollars.", "Find dresses, tops, activewear and everyday essentials at heavily reduced prices.", "A great opportunity for USA shoppers to refresh their wardrobe with Old Navy deals up to 89% OFF."] },
+                  { label: "SALE", value: "$5 & UNDER", title: "Old Navy Clearance – Up to 89% Off & $5 Under", desc: "Explore Old Navy’s $5 & Under Clearance collection with savings of up to 89% OFF.", bullets: ["Find women’s and kids’ fashion starting at just $2.97.", "Shop deeply discounted dresses, tops and everyday wardrobe essentials.", "Clearance styles are available while supplies, sizes and inventory last."] },
+                  { label: "SALE", value: "60%+40%", title: "Old Navy Promo Code – Up to 60% Off Fashion + 40% Off Everything", desc: "Use the latest Old Navy Promo Code offers to save up to 60% OFF selected fashion styles.", bullets: ["Shop the current 40% OFF Everything promotion before it ends on August 24.", "Save on women’s, men’s, kids’, maternity and activewear styles across Old Navy USA.", "Great opportunity to enjoy up to 60% OFF while updating your everyday wardrobe."] },
+                  { label: "SALE", value: "89% OFF", title: "Old Navy Clearance – Up to 89% Off Women’s Dresses", desc: "Shop Old Navy clearance and save up to 89% OFF selected women’s dresses.", bullets: ["The Smocked Puff-Sleeve Flare Mini Dress is available for just $4.97.", "Save $40.02 from the original $44.99 price on this clearance style.", "Grab this USA fashion deal while limited sizes and stock are available."] },
+                  { label: "SALE", value: "83% OFF", title: "Old Navy Clearance – Up to 83% Off Tops", desc: "Discover Old Navy clearance tops with savings of up to 83% OFF.", bullets: ["Get the Snug V-Neck Crop T-Shirt for only $2.97.", "Save from the original $16.99 price on this budget-friendly style.", "Shop affordable women’s fashion deals for casual USA outfits."] },
+                  { label: "SHOP", value: "HALLOWEEN", title: "Old Navy Halloween Shop – Seasonal Styles & Savings", desc: "Explore the Old Navy Halloween Shop for scary-cute styles for the whole family.", bullets: ["Discover Halloween-inspired clothing and seasonal looks for upcoming celebrations.", "Shop fun fashion for women, kids and the entire crew across the USA.", "Find selected styles at promotional prices while the Halloween collection is available."] },
+                  { label: "SALE", value: "55% OFF", title: "Old Navy Halloween Deal – Up to 55% Off Toddler Styles", desc: "Shop selected Old Navy Halloween styles with savings of up to 55% OFF.", bullets: ["Get the Printed Fitted Long-Sleeve Ribbed T-Shirt for Toddler Girls for just $5.", "Save from the original $10.99 price on this seasonal kids’ style.", "A budget-friendly Halloween fashion deal for USA families."] },
+                  { label: "SALE", value: "60% OFF", title: "Old Navy Activewear – Up to 60% Off Selected Styles", desc: "Shop Old Navy activewear and save up to 60% OFF selected styles.", bullets: ["Get the High-Waisted Bounce Fleece Wide-Leg Sweatpants for $17.99.", "Save from the original $44.99 price on these comfortable wide-leg sweatpants.", "Perfect for workouts, lounging and everyday casual outfits in the USA."] },
+                  { label: "SALE", value: "60% OFF", title: "Old Navy Sweatshirt Deal – Up to 60% Off", desc: "Save up to 60% OFF selected Old Navy sweatshirts and casual styles.", bullets: ["Get the Diet Coke® SoComfy Oversized Tunic Sweatshirt for $19.99.", "Save from the original $49.99 price on this oversized sweatshirt.", "A comfortable choice for relaxed everyday looks and casual USA fashion."] },
+                  { label: "SALE", value: "40% OFF", title: "Old Navy Pants Deal – 40% Off Wide-Leg Trousers", desc: "Shop selected Old Navy pants and enjoy savings of up to 40% OFF.", bullets: ["Get the High-Waisted Wide-Leg Trouser Pants for $23.99.", "Save from the original $39.99 price on this versatile wardrobe essential.", "Perfect for workwear, casual outfits and stylish everyday looks in the USA."] },
+                  { label: "SALE", value: "40% OFF", title: "Old Navy Maternity Deal – 40% Off Sleepwear", desc: "Shop selected Old Navy maternity styles with savings of up to 40% OFF.", bullets: ["Get the Maternity Sunday Sleep Knit Jersey Jumpsuit for just $23.99.", "Save from the original $39.99 price on this comfortable knit jumpsuit.", "A practical choice for shoppers looking for comfortable maternity fashion in the USA."] },
+                  { label: "SALE", value: "40% OFF", title: "Old Navy School Uniforms – Up to 40% Off", desc: "Shop Old Navy school uniforms and save up to 40% OFF selected styles.", bullets: ["Get the School Uniform Jersey Polo Shirt for Boys for only $5.99.", "Save from the original $9.99 price on this school wardrobe essential.", "A budget-friendly option for USA families preparing kids for the school year."] },
+                  { label: "SALE", value: "60% OFF", title: "Old Navy Family Fashion – Up to 60% Off Selected Styles", desc: "Shop Old Navy family fashion and find savings of up to 60% OFF selected styles.", bullets: ["Discover deals across women’s, kids’, maternity, activewear and everyday clothing.", "Find affordable options for the whole family while shopping in the USA.", "Check current Old Navy promotions and clearance offers for additional savings."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -205,7 +212,7 @@ export default function OldNavyCouponsContent() {
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
                             <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <div className="text-[10px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -373,6 +380,245 @@ export default function OldNavyCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Old Navy Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Old Navy Clearance Styles
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 89% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time clearance deals
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's, kids', &amp; family fashion clearance
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Old Navy $5 &amp; Under Clearance
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $2.97 (Up to 89% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            While supplies and sizes last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's &amp; kids' tops, dresses, &amp; essentials
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            60% Off Fashion + 40% Off Everything
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 60% OFF + 40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            40% OFF ends August 24
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's, men's, kids', maternity, &amp; activewear
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Smocked Puff-Sleeve Flare Mini Dress
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $4.97 <span className="text-xs text-gray-400 font-normal line-through">$44.99</span> (89% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance deal, limited sizes
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Smocked puff-sleeve flare mini dress
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Snug V-Neck Crop T-Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $2.97 <span className="text-xs text-gray-400 font-normal line-through">$16.99</span> (83% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Clearance top deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's V-neck crop t-shirt
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Old Navy Halloween Shop
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Special Savings
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Seasonal collection, while stock lasts
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Halloween-inspired clothing for the family
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Toddler Halloween Ribbed T-Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $5.00 <span className="text-xs text-gray-400 font-normal line-through">$10.99</span> (~55% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time seasonal deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Printed fitted long-sleeve ribbed tee for toddler girls
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            High-Waisted Bounce Fleece Sweatpants
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $17.99 <span className="text-xs text-gray-400 font-normal line-through">$44.99</span> (60% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Activewear promotion
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            High-waisted wide-leg fleece sweatpants
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Diet Coke® SoComfy Oversized Sweatshirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $19.99 <span className="text-xs text-gray-400 font-normal line-through">$49.99</span> (60% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time sweatshirt deal
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Diet Coke® oversized tunic sweatshirt
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            High-Waisted Wide-Leg Trouser Pants
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $23.99 <span className="text-xs text-gray-400 font-normal line-through">$39.99</span> (40% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Select pants promotional pricing
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            High-waisted wide-leg trouser pants
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Maternity Sunday Sleep Knit Jumpsuit
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $23.99 <span className="text-xs text-gray-400 font-normal line-through">$39.99</span> (40% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Maternity sleepwear promotion
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Maternity Sunday sleep knit jersey jumpsuit
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Boys School Uniform Jersey Polo Shirt
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $5.99 <span className="text-xs text-gray-400 font-normal line-through">$9.99</span> (40% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            School uniform sale
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            School uniform jersey polo shirt for boys
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Old Navy Family Fashion Sale
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 60% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Select family styles
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Women's, kids', maternity, &amp; activewear
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

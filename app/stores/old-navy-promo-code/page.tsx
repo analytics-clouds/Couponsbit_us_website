@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import OldNavyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Old Navy Promo Code: Family Apparel Offers | Aug 2026",
+  title: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
   description:
-    "Find the latest Old Navy promo codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals, maternity picks and activewear offers with Couponsbit.",
+    "Find the latest Old Navy promo codes, discount codes and deals for August 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/old-navy-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/old-navy-promo-code",
-    title: "Old Navy Promo Code: Family Apparel Offers | Aug 2026",
+    title: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
     description:
-      "Find the latest Old Navy promo codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals, maternity picks and activewear offers with Couponsbit.",
+      "Find the latest Old Navy promo codes, discount codes and deals for August 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Old Navy Promo Code: Family Apparel Offers | Aug 2026",
+    title: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
     description:
-      "Find the latest Old Navy promo codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals, maternity picks and activewear offers with Couponsbit.",
+      "Find the latest Old Navy promo codes, discount codes and deals for August 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const oldNavySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/old-navy-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/old-navy-promo-code",
-      name: "Old Navy Promo Code: Family Apparel Offers | Aug 2026",
+      name: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
       description:
-        "Find the latest Old Navy promo codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals, maternity picks and activewear offers with Couponsbit.",
+        "Find the latest Old Navy promo codes, discount codes and deals for August 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/old-navy-promo-code#breadcrumb" },
@@ -75,31 +75,59 @@ const oldNavySchema = {
       name: "Old Navy Promo Codes & Coupon Codes",
       description: "Latest Old Navy promo codes and offers for men's, women's and kids' apparel.",
       url: "https://www.couponsbit.us/stores/old-navy-promo-code",
-      numberOfItems: 6,
+      numberOfItems: 13,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Women's Apparel Offers", description: "Discover the latest women's apparel offers from Old Navy.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Promo Code – Up to 89% Off Clearance Styles", description: "Shop the Old Navy Promo Code offers and enjoy up to 89% OFF selected clearance styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Men's Apparel Deals", description: "Browse men's apparel deals and offers at Old Navy.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Clearance – Up to 89% Off & $5 Under", description: "Explore Old Navy’s $5 & Under Clearance collection with savings of up to 89% OFF.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Kids' Collection Picks", description: "Shop kids' collection picks from Old Navy.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Promo Code – Up to 60% Off Fashion + 40% Off Everything", description: "Use the latest Old Navy Promo Code offers to save up to 60% OFF selected fashion styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Denim Deals", description: "Browse denim deals at Old Navy.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Clearance – Up to 89% Off Women’s Dresses", description: "Shop Old Navy clearance and save up to 89% OFF selected women’s dresses.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Maternity Picks", description: "Explore maternity picks from Old Navy.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Clearance – Up to 83% Off Tops", description: "Discover Old Navy clearance tops with savings of up to 83% OFF.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
         {
           "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Activewear Offers", description: "Find Old Navy's activewear offers.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+          item: { "@type": "Offer", name: "Old Navy Halloween Shop – Seasonal Styles & Savings", description: "Explore the Old Navy Halloween Shop for scary-cute styles for the whole family.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Old Navy Halloween Deal – Up to 55% Off Toddler Styles", description: "Shop selected Old Navy Halloween styles with savings of up to 55% OFF.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 8,
+          item: { "@type": "Offer", name: "Old Navy Activewear – Up to 60% Off Selected Styles", description: "Shop Old Navy activewear and save up to 60% OFF selected styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 9,
+          item: { "@type": "Offer", name: "Old Navy Sweatshirt Deal – Up to 60% Off", description: "Save up to 60% OFF selected Old Navy sweatshirts and casual styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 10,
+          item: { "@type": "Offer", name: "Old Navy Pants Deal – 40% Off Wide-Leg Trousers", description: "Shop selected Old Navy pants and enjoy savings of up to 40% OFF.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 11,
+          item: { "@type": "Offer", name: "Old Navy Maternity Deal – 40% Off Sleepwear", description: "Shop selected Old Navy maternity styles with savings of up to 40% OFF.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 12,
+          item: { "@type": "Offer", name: "Old Navy School Uniforms – Up to 40% Off", description: "Shop Old Navy school uniforms and save up to 40% OFF selected styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
+        },
+        {
+          "@type": "ListItem", position: 13,
+          item: { "@type": "Offer", name: "Old Navy Family Fashion – Up to 60% Off Selected Styles", description: "Shop Old Navy family fashion and find savings of up to 60% OFF selected styles.", url: "https://www.couponsbit.us/stores/old-navy-promo-code", seller: { "@type": "Organization", name: "Old Navy", url: "https://oldnavy.gap.com" } },
         },
       ],
     },

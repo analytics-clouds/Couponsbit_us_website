@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Pizza Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Crazy Bread & Sides", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Wings Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Combo Meal Offers", sub: "Value Picks" },
-  { id: "d5", label: "BEST", heading: "Hot-N-Ready Picks", sub: "Ready to Go" },
+  { id: "d1", label: "NEW", heading: "2 Large Pizzas for $4.99 Each", sub: "Promo Code: PIZZAPIZZA" },
+  { id: "d2", label: "SHOP", heading: "$2 OFF Webberoni", sub: "Promo Code: WEBBERONI" },
+  { id: "d3", label: "JOIN", heading: "eClub – Get $3 OFF $15+", sub: "Little Caesars eClub" },
+  { id: "d4", label: "SAVE", heading: "$5 OFF Orders of $30+", sub: "Code: 5OFF30" },
+  { id: "d5", label: "SAVE", heading: "$4 OFF Delivery Orders", sub: "Code: DELIVERY4YOU" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function LittleCaesarsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(27.9k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Little Caesars deals and offers in Aug 2026. Browse pizza offers, Crazy Bread and sides deals, wings picks and combo meal offers on Little Caesars.
+                      Looking for the latest Little Caesars promo codes, discount code? Explore verified Little Caesars deals and save on pizzas, sides, drinks, and delivery orders across participating USA locations. Get $5 OFF orders of $30+ with code 5OFF30, $4 OFF delivery orders of $24+ with code DELIVERY4YOU, and $2 OFF Webberoni orders of $10+ with code WEBBERONI.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "5", label: "Offers" },
                     { icon: Percent, val: "1.6k", label: "Deals" },
                     { icon: Users, val: "8M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,11 @@ export default function LittleCaesarsCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "PIZZA", title: "New Pizza Offers", desc: "Discover the latest pizza offers from Little Caesars.", bullets: ["Offers across classic and specialty pizzas", "New menu items updated regularly", "Available for pickup and delivery"] },
-                  { label: "SHOP", value: "BREAD", title: "Crazy Bread & Sides Deals", desc: "Browse Crazy Bread and sides deals at Little Caesars.", bullets: ["Deals across Crazy Bread and dipping sauces", "Options to pair with any pizza order", "Available at participating locations"] },
-                  { label: "SHOP", value: "WINGS", title: "Wings Picks", desc: "Shop wings picks from Little Caesars.", bullets: ["Options across flavors and portion sizes", "A popular add-on for group orders", "Available at participating locations"] },
-                  { label: "TOP", value: "COMBO", title: "Combo Meal Offers", desc: "Browse combo meal offers at Little Caesars.", bullets: ["Options pairing pizza with sides and drinks", "Value-focused combo pricing", "Available at participating locations"] },
-                  { label: "BEST", value: "HOT-N-READY", title: "Hot-N-Ready Picks", desc: "Explore Hot-N-Ready picks from Little Caesars.", bullets: ["Select pizzas ready to go without a wait", "Convenient option for quick pickup", "Availability may vary by location"] },
-                  { label: "SHOP", value: "REWARDS", title: "Rewards App Offers", desc: "Find Little Caesars' rewards app offers.", bullets: ["Free to join via the Little Caesars app", "Access to member-only offers and rewards", "Personalized recommendations for members"] },
+                  { label: "DEAL", value: "$4.99 EA", title: "Little Caesars Promo Code – 2 Large Pizzas for $4.99 Each", desc: "This limited-time offer is available online only at participating Little Caesars locations in the USA.", bullets: ["Use Promo Code: PIZZAPIZZA when placing your online order.", "Grab this Little Caesars pizza deal for an affordable meal with family and friends."] },
+                  { label: "SAVE", value: "$2 OFF", title: "Little Caesars Promo Code – $2 OFF Webberoni", desc: "Get $2 OFF Webberoni when you spend $10 or more on your Little Caesars order.", bullets: ["Use Promo Code: WEBBERONI to claim the offer.", "Enjoy this Little Caesars USA deal on your next pizza order."] },
+                  { label: "JOIN", value: "ECLUB", title: "Little Caesars eClub – Get $3 OFF $15+", desc: "Join the Little Caesars eClub and get $3 OFF orders of $15 or more.", bullets: ["Receive access to exclusive offers, promotions, and special savings.", "Enjoy additional value on pizzas, sides, and other Little Caesars favorites.", "A convenient way for USA customers to discover future Little Caesars deals."] },
+                  { label: "SAVE", value: "$5 OFF", title: "Little Caesars – $5 OFF Orders of $30+", desc: "Save $5 OFF your Little Caesars order when you spend $30 or more.", bullets: ["Add pizzas, sides, drinks, and other menu favorites to meet the minimum order value.", "Enter Code: 5OFF30 at checkout to redeem the offer.", "A great USA deal for family meals, group orders, and pizza nights."] },
+                  { label: "SAVE", value: "$4 OFF", title: "Little Caesars – $4 OFF Delivery Orders", desc: "Get $4 OFF qualifying Little Caesars delivery orders of $24 or more.", bullets: ["Order your favorite pizzas and sides for convenient delivery.", "Use Code: DELIVERY4YOU at checkout to receive the discount.", "Save more on qualifying Little Caesars delivery orders in the USA."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -205,7 +204,7 @@ export default function LittleCaesarsCouponsContent() {
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
                             <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <div className="text-[10px] sm:text-3xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -371,6 +370,109 @@ export default function LittleCaesarsCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Little Caesars Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            2 Large Pizzas Special Deal
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $4.99 Each
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Online only with code: PIZZAPIZZA
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            2 Large Pizzas at participating locations
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Webberoni Discount
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $2 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Use code: WEBBERONI on orders $10+
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Webberoni pizza purchases
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Little Caesars eClub Signup
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $3 OFF $15+
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            eClub Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Requires eClub registration, min spend $15
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Pizzas, sides, &amp; menu favorites
+          </td>
+        </tr>
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            $5 OFF Family &amp; Group Orders
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $5 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Use code: 5OFF30 on orders $30+
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Full menu including pizzas, sides, &amp; drinks
+          </td>
+        </tr>
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Delivery Savings Discount
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $4 OFF Delivery
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            USA Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Use code: DELIVERY4YOU on orders $24+
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Qualifying Little Caesars delivery orders
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

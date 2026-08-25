@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import AbercrombieCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Abercrombie Discount Code: Apparel & Fragrance Offers | Aug 2026",
+  title: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
   description:
-    "Find the latest Abercrombie discount codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals and fragrance offers with Couponsbit.",
+    "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/abercrombie-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-    title: "Abercrombie Discount Code: Apparel & Fragrance Offers | Aug 2026",
+    title: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
     description:
-      "Find the latest Abercrombie discount codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals and fragrance offers with Couponsbit.",
+      "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Abercrombie Discount Code: Apparel & Fragrance Offers | Aug 2026",
+    title: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
     description:
-      "Find the latest Abercrombie discount codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals and fragrance offers with Couponsbit.",
+      "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const abercrombieSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-      name: "Abercrombie Discount Code: Apparel & Fragrance Offers | Aug 2026",
+      name: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
       description:
-        "Find the latest Abercrombie discount codes for Aug 2026. Discover men's, women's and kids' apparel offers, denim deals and fragrance offers with Couponsbit.",
+        "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#breadcrumb" },
@@ -75,31 +75,35 @@ const abercrombieSchema = {
       name: "Abercrombie Discount Codes & Coupon Codes",
       description: "Latest Abercrombie discount codes and offers for men's, women's and kids' apparel.",
       url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 7,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Women's Apparel Offers", description: "Discover the latest women's apparel offers from Abercrombie.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie Discount Code – Up to 30% OFF Almost Everything", description: "Enjoy up to 30% OFF almost everything during the limited-time Abercrombie sale.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Men's Apparel Deals", description: "Browse men's apparel deals and offers at Abercrombie.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie Kids Discount code – Buy One, Get One 50% OFF", description: "Shop Buy One, Get One 50% OFF on almost everything at Abercrombie Kids.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "abercrombie kids Picks", description: "Shop abercrombie kids picks.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie Men Discount Code – 100% Cotton Denim Shirt Clearance", description: "Get the A&F Archive 100% Cotton Short-Sleeve Denim Button-Up Shirt for $39.99, down from $75.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Denim Deals", description: "Browse denim deals at Abercrombie.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie Men – Vintage Graphic Tee Clearance", description: "Get the 100% Cotton Fallout Vintage-Inspired Graphic Tee for $24.99, reduced from $45.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Fragrance Offers", description: "Explore fragrance offers from Abercrombie.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie – New England Patriots Denim Button-Up Shirt", description: "Shop the NFL by Abercrombie New England Patriots Denim Button-Up Shirt for $100.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
         {
           "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "New Arrival Picks", description: "Find Abercrombie's new arrival picks.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+          item: { "@type": "Offer", name: "Abercrombie Kids – Lace Mini Skort Clearance", description: "Get the Lace Mini Skort for just $18.99, down from $34.95.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Abercrombie – Free Standard Shipping on $99+", description: "Get Free Standard Shipping and Handling on orders over $99.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
         },
       ],
     },
