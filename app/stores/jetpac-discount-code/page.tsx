@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import JetpacCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Jetpac Discount Code: Travel eSIM Offers | Aug 2026",
+  title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
   description:
-    "Find the latest Jetpac discount codes for Aug 2026. Discover eSIM data plan offers, destination eSIM deals, lounge access offers and app-exclusive offers with Couponsbit.",
+    "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/jetpac-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/jetpac-discount-code",
-    title: "Jetpac Discount Code: Travel eSIM Offers | Aug 2026",
+    title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
     description:
-      "Find the latest Jetpac discount codes for Aug 2026. Discover eSIM data plan offers, destination eSIM deals, lounge access offers and app-exclusive offers with Couponsbit.",
+      "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Jetpac Discount Code: Travel eSIM Offers | Aug 2026",
+    title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
     description:
-      "Find the latest Jetpac discount codes for Aug 2026. Discover eSIM data plan offers, destination eSIM deals, lounge access offers and app-exclusive offers with Couponsbit.",
+      "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787739252/jetpac-logo_bng0au.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const jetpacSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/jetpac-discount-code",
-      name: "Jetpac Discount Code: Travel eSIM Offers | Aug 2026",
+      name: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
       description:
-        "Find the latest Jetpac discount codes for Aug 2026. Discover eSIM data plan offers, destination eSIM deals, lounge access offers and app-exclusive offers with Couponsbit.",
+        "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#breadcrumb" },

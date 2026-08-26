@@ -114,7 +114,7 @@ export const allStores: StoreEntry[] = [
   { name: "JCPenney",        id: "jcpenney-discount-code",         category: "Fashion",     coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp",       discount: "Up To 50% OFF",   popular: false },
   { name: "Kroger Digital",  id: "kroger-digital-discount-code",   category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp",        discount: "Up To 50% OFF",   popular: false },
   { name: "GamsGo",          id: "gamsgo-discount-code",           category: "More",        coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787739252/gamesgo-logo_xo1xw9.webp",       discount: "Save Up to 85%",  popular: false },
-  { name: "Jetpac",          id: "jetpac-discount-code",           category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787739252/jetpac-logo_bng0au.webp",        discount: "Save Up To 70%",  popular: false },
+  { name: "Jetpac",          id: "jetpac-discount-code",           category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp",        discount: "Save Up To 70%",  popular: false },
 ];
 
 

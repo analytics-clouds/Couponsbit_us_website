@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Booking", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp", dealText: "Up To 40% OFF", href: "/stores/booking-promo-code" },
 ];
 
-const STORE_URL = "https://www.jetpacglobal.com/";
+const STORE_URL = "http://affiliate.jetpacglobal.com/c/4303217/1833340/21879?subId1=1015";
 
 export default function JetpacCouponsContent() {
   const [showToast, setShowToast] = useState(false);
@@ -122,7 +122,7 @@ export default function JetpacCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.7k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Jetpac deals and offers in Aug 2026. Browse eSIM data plan offers, destination eSIM deals, long-term travel picks and lounge access offers on Jetpac.
+                      Discover verified Jetpac discount codes and promo codes to save on international travel essentials. Enjoy up to 70% OFF eSIM plans, 53% OFF airport lounge access, discounted worldwide calling, fast-track airport services, referral rewards, and affordable connectivity in over 100 countries.
                     </p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function JetpacCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1787739252/jetpac-logo_bng0au.webp" alt="Jetpac Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp" alt="Jetpac Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>

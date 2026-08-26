@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Hostinger", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp", dealText: "Up To 80% OFF", href: "/stores/hostinger-discount-code" },
 ];
 
-const STORE_URL = "https://www.gamsgo.com/?im_ref=3fSTNJwT2xycUr:QFtVibWsMUkr08gzhqV790U0&sharedid=&irpid=4303217&irgwc=1&afsrc=1";
+const STORE_URL = "http://gamsgo.sjv.io/c/4303217/3806046/49319?subId1=1015";
 
 export default function GamsGoCouponsContent() {
   const [showToast, setShowToast] = useState(false);
@@ -122,7 +122,7 @@ export default function GamsGoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(14.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover GamsGo deals and offers in Aug 2026. Browse Netflix sharing offers, Spotify Premium deals, Disney+ picks and YouTube Premium offers on GamsGo.
+                      Discover verified GamsGo discount codes and promo codes to save up to 85% on premium AI tools, software, gaming services, and subscriptions. Enjoy discounted access to ChatGPT, Cursor Pro, Suno Pro, CapCut Pro, Perplexity AI, SEMrush Guru, Roblox Robux, Manus AI, and more.
                     </p>
                   </div>
                 </div>
