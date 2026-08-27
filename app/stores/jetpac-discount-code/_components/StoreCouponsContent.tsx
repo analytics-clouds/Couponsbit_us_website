@@ -10,6 +10,8 @@ import {
   Users,
   BadgeCheck,
   ExternalLink,
+  Copy,
+  Check,
   ShieldCheck,
   PiggyBank,
   RefreshCw,
@@ -61,12 +63,36 @@ const RELATED_STORES: StoreItem[] = [
 
 const STORE_URL = "http://affiliate.jetpacglobal.com/c/4303217/1833340/21879?subId1=1015";
 
+const dealsData = [
+  { label: "SALE", value: "70% OFF", title: "Jetpac Discount Code – Save Up To 70% on International eSIMs", desc: "Save Up To 70% on international eSIM plans compared with traditional roaming rates.", bullets: ["Use a Jetpac Discount Code to save more on eligible travel connectivity plans.", "Stay connected across the USA and international destinations without expensive roaming bills.", "Choose affordable eSIM plans based on your destination and travel needs.", "Enjoy reliable mobile connectivity for international trips with easy eSIM activation."], code: "ANC10" },
+  { label: "SALE", value: "53% OFF", title: "Jetpac Discount Code – Up To 53% OFF Airport Lounge Access", desc: "Enjoy Up To 53% OFF selected airport Lounge Access services.", bullets: ["Use a Jetpac Discount Code where eligible to unlock additional savings.", "Relax in premium airport lounges while travelling from or within the USA.", "Check available lounges, destinations and prices before booking.", "Make your airport experience more comfortable while saving on lounge access."], code: "ANC10" },
+  { label: "REFER", value: "$10", title: "Jetpac Discount Code – Get $10 With Refer a Friend", desc: "Refer a friend to Jetpac and give them $5 OFF their first eSIM purchase.", bullets: ["Earn $10 after your referred friend completes their first eligible purchase.", "Share your Jetpac referral offer with friends travelling across the USA or abroad.", "Use the referral opportunity to help friends save on international connectivity.", "Start referring friends and earn your $10 reward."], code: "ANC10" },
+  { label: "EARN", value: "15%", title: "Jetpac Affiliate Program – Earn Up To 15% Commission", desc: "Join the Jetpac Affiliate Program and earn Up To 15% commission on eligible Jetpac sales.", bullets: ["Promote international eSIM plans to travellers, creators and online audiences.", "Ideal for USA travel bloggers, publishers, creators and affiliate marketers.", "Start promoting Jetpac eSIM products and earn from qualifying sales."], code: "ANC10" },
+  { label: "CALLS", value: "$9.99", title: "Jetpac Worldwide Voice Calls – 30 Minutes for $9.99", desc: "Get 30 minutes of worldwide voice calls for $9.99.", bullets: ["Make calls across 99 countries with 30-day validity.", "Save Up To 15% OFF on eligible purchases when buying more.", "Ideal for travellers from the USA who need affordable international calling.", "Enjoy prepaid worldwide calling with no hidden additional fees."], code: "ANC10" },
+  { label: "CALLS", value: "$4.99", title: "Jetpac Worldwide Voice Calls – 15 Minutes for $4.99", desc: "Get 15 minutes of worldwide voice calls for just $4.99.", bullets: ["Enjoy calling coverage across 99 countries with 30-day validity.", "Save Up To 15% OFF on eligible voice pack purchases.", "Stay connected with family, friends and contacts while travelling internationally.", "Enjoy affordable prepaid calling without unexpected additional fees."], code: "ANC10" },
+  { label: "LOUNGE", value: "$35", title: "Jetpac Airport Lounge Access – 36% OFF at Madrid Airport", desc: "Get Lounge Access at Adolfo Suárez Madrid-Barajas Airport for $35.", bullets: ["Save 36% OFF the listed airport lounge access price.", "Enjoy a comfortable place to relax before your international flight.", "Jetpac provides access to 1,300+ airport lounges worldwide.", "Enjoy convenient airport lounge access without needing a traditional lounge membership."], code: "ANC10" },
+  { label: "FAST", value: "$14", title: "Jetpac Fast Track – 24% OFF at Beijing Airport", desc: "Get Fast Track at Beijing Capital International Airport for $14.", bullets: ["Save 24% OFF the listed Fast Track service.", "Skip long airport queues and enjoy a faster travel experience.", "Jetpac Fast Track services are available across 80+ locations.", "Ideal for USA travellers looking to save valuable time during international journeys."], code: "ANC10" },
+];
+
 export default function JetpacCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const toggleOpen = (i: number) => setOpenIndex(openIndex === i ? null : i);
+
+  const handleCopy = (code: string, i: number) => {
+    navigator.clipboard.writeText(code);
+    setCopiedIndex(i);
+    setToastCode(code);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 2000);
+    setTimeout(() => setCopiedIndex(null), 2000);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +148,7 @@ export default function JetpacCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.7k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Jetpac discount codes and promo codes to save on international travel essentials. Enjoy up to 70% OFF eSIM plans, 53% OFF airport lounge access, discounted worldwide calling, fast-track airport services, referral rewards, and affordable connectivity in over 100 countries.
+                      Use the verified Jetpac discount code ANC10 and latest promo codes to save up to 70% on international eSIM plans. Enjoy discounted airport lounge access, worldwide voice calls, Fast Track services, referral rewards, and affordable travel connectivity across 100+ destinations.
                     </p>
                   </div>
                 </div>
@@ -182,123 +208,213 @@ export default function JetpacCouponsContent() {
 
         {/* Coupons + Sidebar */}
         <section className="py-6 md:py-16 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Jetpac Discount Codes & Offers</h2>
-                </div>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="flex flex-col lg:flex-row gap-12">
+      {/* Main Content Area */}
+      <div className="lg:w-[65%]">
+        <div className="mb-10">
+          <h2 className="text-2xl font-black text-black leading-tight">
+            Jetpac Discount Codes & Offers
+          </h2>
+        </div>
 
-                {[
-                  { label: "SALE", value: "70% OFF", title: "Jetpac Discount Code – Save Up To 70% on International eSIMs 🌍", desc: "Save Up To 70% on international eSIM plans compared with traditional roaming rates.", bullets: ["Use a Jetpac Discount Code to save more on eligible travel connectivity plans.", "Stay connected across the USA and international destinations without expensive roaming bills.", "Choose affordable eSIM plans based on your destination and travel needs.", "Enjoy reliable mobile connectivity for international trips with easy eSIM activation."] },
-                  { label: "SALE", value: "53% OFF", title: "Jetpac Discount Code – Up To 53% OFF Airport Lounge Access ✈️", desc: "Enjoy Up To 53% OFF selected airport Lounge Access services.", bullets: ["Use a Jetpac Discount Code where eligible to unlock additional savings.", "Relax in premium airport lounges while travelling from or within the USA.", "Check available lounges, destinations and prices before booking.", "Make your airport experience more comfortable while saving on lounge access."] },
-                  { label: "REFER", value: "$10", title: "Jetpac Discount Code – Get $10 With Refer a Friend 🎁", desc: "Refer a friend to Jetpac and give them $5 OFF their first eSIM purchase.", bullets: ["Earn $10 after your referred friend completes their first eligible purchase.", "Share your Jetpac referral offer with friends travelling across the USA or abroad.", "Use the referral opportunity to help friends save on international connectivity.", "Start referring friends and earn your $10 reward."] },
-                  { label: "EARN", value: "15%", title: "Jetpac Affiliate Program – Earn Up To 15% Commission 💰", desc: "Join the Jetpac Affiliate Program and earn Up To 15% commission on eligible Jetpac sales.", bullets: ["Promote international eSIM plans to travellers, creators and online audiences.", "Ideal for USA travel bloggers, publishers, creators and affiliate marketers.", "Start promoting Jetpac eSIM products and earn from qualifying sales."] },
-                  { label: "CALLS", value: "$9.99", title: "Jetpac Worldwide Voice Calls – 30 Minutes for $9.99 📞", desc: "Get 30 minutes of worldwide voice calls for $9.99.", bullets: ["Make calls across 99 countries with 30-day validity.", "Save Up To 15% OFF on eligible purchases when buying more.", "Ideal for travellers from the USA who need affordable international calling.", "Enjoy prepaid worldwide calling with no hidden additional fees."] },
-                  { label: "CALLS", value: "$4.99", title: "Jetpac Worldwide Voice Calls – 15 Minutes for $4.99 📞", desc: "Get 15 minutes of worldwide voice calls for just $4.99.", bullets: ["Enjoy calling coverage across 99 countries with 30-day validity.", "Save Up To 15% OFF on eligible voice pack purchases.", "Stay connected with family, friends and contacts while travelling internationally.", "Enjoy affordable prepaid calling without unexpected additional fees."] },
-                  { label: "LOUNGE", value: "$35", title: "Jetpac Airport Lounge Access – 36% OFF at Madrid Airport ✈️", desc: "Get Lounge Access at Adolfo Suárez Madrid-Barajas Airport for $35.", bullets: ["Save 36% OFF the listed airport lounge access price.", "Enjoy a comfortable place to relax before your international flight.", "Jetpac provides access to 1,300+ airport lounges worldwide.", "Enjoy convenient airport lounge access without needing a traditional lounge membership."] },
-                  { label: "FAST", value: "$14", title: "Jetpac Fast Track – 24% OFF at Beijing Airport ⚡", desc: "Get Fast Track at Beijing Capital International Airport for $14.", bullets: ["Save 24% OFF the listed Fast Track service.", "Skip long airport queues and enjoy a faster travel experience.", "Jetpac Fast Track services are available across 80+ locations.", "Ideal for USA travellers looking to save valuable time during international journeys."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                      <div className="flex flex-row">
-                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-3xl font-extrabold leading-none mt-2">{c.value}</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                            </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Jetpac: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                          </div>
-                        </div>
+        {dealsData.map((c, i) => {
+          const isOpen = openIndex === i;
+          const isCopied = copiedIndex === i;
+
+          return (
+            <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+              <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                <div className="flex flex-col sm:flex-row">
+                  {/* Left Badge Header */}
+                  <div className="relative w-full sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                    <div className="hidden sm:block absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                    <div className="hidden sm:block absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                    <div className="text-center px-1">
+                      <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold leading-3">
+                        {c.label}
+                      </p>
+                      <div className="text-2xl sm:text-3xl font-extrabold leading-none mt-2">
+                        {c.value}
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
 
-              {/* Sidebar */}
-              <div className="lg:w-[35%] space-y-8">
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Jetpac</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access.
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Smartphone, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Globe2, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Briefcase, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
-                </div>
-
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Jetpac Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Globe2, title: "Destination eSIMs", sub: "Data plans for over 200 international destinations." },
-                      { icon: Smartphone, title: "App Management", sub: "Check data balance and manage your eSIM in the Jetpac app." },
-                      { icon: Armchair, title: "JetPass Perks", sub: "Discounted airport lounge access for eligible travelers." },
-                      { icon: Briefcase, title: "Business Travel", sub: "Reliable coverage suited for frequent business trips." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
+                  {/* Content Body & Actions */}
+                  <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                    {/* Information Section */}
+                    <div className="flex-1 px-4 sm:px-6 py-4 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        <span className="bg-red-100 text-red-700 text-[8px] sm:text-[9px] font-bold px-2.5 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                          Limited Time
+                        </span>
+                        <span className="bg-green-100 text-green-700 text-[8px] sm:text-[9px] font-bold px-2.5 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                          Verified Deal
+                        </span>
                       </div>
-                    ))}
+                      <h2 className="text-[16px] sm:text-[20px] font-black text-[#061b3a] leading-tight">
+                        {c.title}
+                      </h2>
+                      <p className="mt-2 text-gray-600 text-[13px] sm:text-sm leading-6">
+                        {c.desc}
+                      </p>
+
+                      {/* Accordion Toggle */}
+                      <button
+                        type="button"
+                        onClick={() => toggleOpen(i)}
+                        className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 hover:opacity-80 transition-opacity"
+                      >
+                        View Details
+                        <ChevronDown
+                          size={16}
+                          className={`transition-transform duration-300 ${
+                            isOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      {/* Collapsible Details */}
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isOpen
+                            ? "max-h-[500px] opacity-100 mt-3"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                          {c.bullets.map((b, bi) => (
+                            <li key={bi} className="flex items-start gap-2">
+                              <span className="text-[#0344b0]">•</span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Button and Coupon Code Side Box */}
+                    <div className="w-full lg:w-[220px] flex flex-col items-center justify-center gap-3 px-4 sm:px-6 py-5 sm:py-6 shrink-0">
+                      <a
+                        href={STORE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visit Website: ${c.title}`}
+                        className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-sm sm:text-base py-3 rounded-xl shadow-md transition-all duration-300 text-center block"
+                      >
+                        Visit Website
+                      </a>
+
+                      <button
+                        type="button"
+                        onClick={() => handleCopy(c.code, i)}
+                        className="w-full border-2 border-dashed border-[#056bfa] bg-white hover:bg-blue-50 text-[#056bfa] font-extrabold text-xs sm:text-sm py-2 px-3 rounded-xl flex items-center justify-between transition-colors uppercase tracking-wider"
+                      >
+                        <span>{c.code}</span>
+                        <span className="flex items-center gap-1 text-[11px] uppercase">
+                          {isCopied ? (
+                            <>
+                              <Check size={14} className="text-green-600" />
+                              <span className="text-green-600">Copied</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy size={14} />
+                              Copy
+                            </>
+                          )}
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          );
+        })}
+      </div>
+
+      {/* Sidebar */}
+      <div className="lg:w-[35%] space-y-8">
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">About Jetpac</h3>
+          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+            Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access.
+          </p>
+          <a
+            href={STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2"
+          >
+            Visit Store <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+          <div className="space-y-1">
+            {[
+              { icon: Smartphone, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+              { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+              { icon: Globe2, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+              { icon: Briefcase, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+              { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+            ].map((cat, i) => (
+              <Link
+                key={i}
+                href={cat.href}
+                className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer"
+              >
+                <div className="flex items-center gap-3">
+                  <cat.icon className={`w-4 h-4 ${cat.color}`} />
+                  <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">
+                    {cat.name}
+                  </span>
+                </div>
+                <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">
+                  {cat.count} Coupons
+                </span>
+              </Link>
+            ))}
           </div>
-        </section>
+          <Link
+            href="/categories"
+            className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
+          >
+            View All Categories →
+          </Link>
+        </div>
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8">Jetpac Products & Services</h3>
+          <div className="space-y-8">
+            {[
+              { icon: Globe2, title: "Destination eSIMs", sub: "Data plans for over 200 international destinations." },
+              { icon: Smartphone, title: "App Management", sub: "Check data balance and manage your eSIM in the Jetpac app." },
+              { icon: Armchair, title: "JetPass Perks", sub: "Discounted airport lounge access for eligible travelers." },
+              { icon: Briefcase, title: "Business Travel", sub: "Reliable coverage suited for frequent business trips." },
+            ].map((item) => (
+              <div key={item.title} className="flex gap-4 items-start text-justify">
+                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-black font-black text-sm leading-tight mb-2">
+                    {item.title}
+                  </p>
+                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                    {item.sub}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">

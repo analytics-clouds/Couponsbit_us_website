@@ -4,7 +4,7 @@ import JetpacCouponsContent from "./_components/StoreCouponsContent";
 export const metadata: Metadata = {
   title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
   description:
-    "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
+    "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/jetpac-discount-code",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/jetpac-discount-code",
     title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
     description:
-      "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
+      "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
     description:
-      "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
+      "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787739252/jetpac-logo_bng0au.webp"],
     site: "@couponsbit",
   },
@@ -63,7 +63,7 @@ const jetpacSchema = {
       url: "https://www.couponsbit.us/stores/jetpac-discount-code",
       name: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
       description:
-        "Find the latest Jetpac discount codes and promo codes for August 2026. Save up to 70% on international eSIM plans, 53% OFF airport lounge access, earn $10 with referrals, enjoy discounted worldwide calls, fast-track airport services, and affiliate rewards.",
+        "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#breadcrumb" },
