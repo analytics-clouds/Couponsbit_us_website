@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Hair System Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Thin Skin Base Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Lace Base Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Tape & Accessories Offers", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Custom Hair System Deals", sub: "Featured Picks" },
+  { id: "d1", label: "NEW", heading: "Get $40 OFF 1 Custom Hair System", sub: "Latest Deals" },
+  { id: "d2", label: "SHOP", heading: "Up to $100 OFF Exclusive Hair Systems", sub: "Featured Picks" },
+  { id: "d3", label: "SHOP", heading: "$45 OFF 1 Hair System", sub: "Featured Picks" },
+  { id: "d4", label: "TOP", heading: "Save on Hair System Maintenance Collection", sub: "Featured Picks" },
+  { id: "d5", label: "BEST", heading: "SuperSkin-V Hair System for $249", sub: "Featured Picks" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function LordhairCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.9k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Lordhair deals and offers in Aug 2026. Browse new hair system offers, thin skin base deals, lace base picks and custom hair system deals on Lordhair.
+                      Discover verified Lordhair promo codes and discount codes for Sep 2026. Save up to $100 on custom hair systems, claim new customer savings, shop maintenance kits and hair treatments, and enjoy discounts on premium men's and women's hair replacement solutions.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "13", label: "Offers" },
                     { icon: Percent, val: "1.2k", label: "Deals" },
                     { icon: Users, val: "2M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,19 @@ export default function LordhairCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "SYSTEMS", title: "New Hair System Offers", desc: "Discover the latest hair system offers from Lordhair.", bullets: ["Offers across ready-made and custom hair systems", "New styles updated regularly", "Handcrafted using 100% human hair"] },
-                  { label: "SHOP", value: "THIN SKIN", title: "Thin Skin Base Deals", desc: "Browse thin skin base deals and offers at Lordhair.", bullets: ["Deals across thin skin base hair systems", "Options for a natural-looking scalp appearance", "Customizable for color, density and length"] },
-                  { label: "SHOP", value: "LACE", title: "Lace Base Picks", desc: "Shop lace base picks from Lordhair.", bullets: ["Options across lace base hair systems", "Suited for a lightweight, breathable feel", "Customizable for color, density and length"] },
-                  { label: "TOP", value: "ACCESSORIES", title: "Tape & Accessories Offers", desc: "Browse tape and accessories offers at Lordhair.", bullets: ["Options across adhesive tapes and application tools", "Suited for at-home attachment", "Available alongside hair system orders"] },
-                  { label: "BEST", value: "CUSTOM", title: "Custom Hair System Deals", desc: "Explore custom hair system deals from Lordhair.", bullets: ["Options tailored to individual measurements and preferences", "Customizable for color, density, length and style", "Handcrafted using 100% human hair"] },
-                  { label: "SHOP", value: "HAIRPIECES", title: "Men's Hairpiece Picks", desc: "Find Lordhair's men's hairpiece picks.", bullets: ["Options across ready-made men's hairpieces", "Suited for a pain-free, non-surgical solution", "Available for at-home ordering and application"] },
+                  { label: "DEAL", value: "$40 OFF", title: "Lordhair Promo Code – Get $40 OFF 1 Custom Hair System", desc: "Get $40 OFF when you order 1 custom hair system.", bullets: ["Enjoy $90 OFF when you purchase 2 custom hair systems.", "Earn Double Points for Everyone during the promotional period.", "Get a free Refresh travel size with qualifying U.S. orders from September 1–30."] },
+                  { label: "SALE", value: "$100 OFF", title: "Lordhair Promo Code – Up to $100 OFF Exclusive Hair Systems", desc: "Save up to $100 OFF on selected exclusive hair systems.", bullets: ["Enjoy special savings during the Lordhair Brand Month promotion.", "Choose from a wide range of custom hair systems designed for a natural look.", "Limited-time offer available while promotional stock lasts."] },
+                  { label: "DEAL", value: "$45 OFF", title: "Lordhair Promo Code – $45 OFF 1 Hair System", desc: "Get $45 OFF when you purchase any 1 hair system.", bullets: ["Save $100 OFF when you purchase any 2 hair systems.", "Explore Lordhair best-sellers with built-in antibacterial comfort**.", "Take advantage of these special Brand Month savings."] },
+                  { label: "DEAL", value: "$91.92", title: "Lordhair – Save on Hair System Maintenance Collection", desc: "Get the 3R Hair System Maintenance Collection for $91.92.", bullets: ["Regular price is $114.90, offering significant savings.", "Stock up on professional-grade maintenance and styling essentials.", "Collection includes products for maintaining, securing, and styling hair systems."] },
+                  { label: "DEAL", value: "$249", title: "Lordhair  – SuperSkin-V Hair System for $249", desc: "Get the SuperSkin-V Hair System for $249.", bullets: ["Features an ultra-thin 0.06mm skin base for a realistic appearance.", "Designed with realistic V-looped hair for a natural-looking finish.", "Offers hassle-free maintenance and a stress-free application."] },
+                  { label: "SALE", value: "10% OFF", title: "Lordhair – Ruby Hair Integration System 10% OFF", desc: "Get the Ruby Hair Integration with Remy Human Hair for Women for $269.", bullets: ["Save 10% from the original $299 price.", "Made with Remy human hair for a natural and realistic appearance.", "Designed to provide comfortable hair integration for women."] },
+                  { label: "DEAL", value: "$239", title: "Lordhair – UTS Hair System for $239", desc: "Get the UTS Hair System for $239.", bullets: ["Features an ultra-thin 0.03mm base for enhanced realism.", "Lightweight design delivers a natural scalp appearance.", "Subtle V-looped strands create a seamless and realistic finish."] },
+                  { label: "DEAL", value: "$49.90", title: "Lordhair – Renewal Deep Moisture Treatment for $49.90", desc: "Get Renewal Deep Moisture Treatment for $49.90.", bullets: ["Designed to provide deep moisture for hair systems.", "Helps improve softness and reduce tangling.", "Ideal for maintaining the look and feel of your hair system."] },
+                  { label: "NEW", value: "$30 OFF", title: "Lordhair  – New Customer Offer with $30 OFF", desc: "New customers can get $30 OFF their first hair system.", bullets: ["Receive Free Tape with the promotional offer.", "Get Renewal for $19.90 with the qualifying purchase.", "Offer is available for U.S. customers only."] },
+                  { label: "DEAL", value: "$279", title: "Lordhair  – ZyroSen SuperSkin-V Starter Pack for $279", desc: "Get the ZYROSEN SuperSkin-V Starter Pack for $279.", bullets: ["Features an upgraded antimicrobial hair system.", "Includes essential hair system products designed for new users.", "Built for comfort, convenience, and everyday hair system wear."] },
+                  { label: "DEAL", value: "$79.90", title: "Lordhair  – 3R Kit for $79.90", desc: "Add the 3R Kit for $79.90 during the Brand Month promotion.", bullets: ["Designed for comprehensive hair system maintenance.", "Helps you reset, renew, and refresh your hair system routine.", "Keep your hair system looking fresh and extend its wearability."] },
+                  { label: "DEAL", value: "$329", title: "Lordhair  – French Lace Hair System for $329", desc: "Get the French Lace Hair System for $329.", bullets: ["Made with 100% French lace for softness and breathability.", "Designed to blend seamlessly with your natural hairline.", "Ideal for comfortable wear in **warm and humid climates."] },
+                  { label: "NEW", value: "$20 OFF", title: "Lordhair  – Get $20 OFF Your First Hair System", desc: "Get $20 OFF your first hair system.", bullets: ["Explore different bases, densities, hairlines, colors, and styles.", "Choose a hair system designed around your preferred look and comfort.", "A great introductory offer for new Lordhair customers."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -204,8 +211,8 @@ export default function LordhairCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-3xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -345,14 +352,21 @@ export default function LordhairCouponsContent() {
                     </thead>
                     <tbody className="text-gray-600 font-bold text-[14px]">
                       {[
-                        ["New Hair System Offers", "New Offers", "All Users", "Handcrafted with 100% human hair", "Hair systems"],
-                        ["Thin Skin Base Deals", "Featured picks", "All Users", "Natural-looking scalp appearance", "Thin skin base systems"],
-                        ["Lace Base Picks", "Featured picks", "All Users", "Lightweight, breathable feel", "Lace base systems"],
-                        ["Tape & Accessories Offers", "Featured picks", "All Users", "Suited for at-home attachment", "Tape & accessories"],
-                        ["Custom Hair System Deals", "Featured picks", "All Users", "Tailored to individual preferences", "Custom hair systems"],
-                        ["Men's Hairpiece Picks", "Featured picks", "All Users", "Non-surgical solution", "Men's hairpieces"],
+                        ["Custom Hair System", "$40 OFF", "All Users", "$90 OFF on 2 custom systems", "Custom hair systems"],
+                        ["Exclusive Hair Systems", "Up to $100 OFF", "All Users", "Lordhair Brand Month promotion", "Exclusive hair systems"],
+                        ["1 Hair System", "$45 OFF", "All Users", "$100 OFF on 2 hair systems", "Hair systems"],
+                        ["Maintenance Collection", "$91.92", "All Users", "Regular price $114.90", "Maintenance & styling"],
+                        ["SuperSkin-V Hair System", "$249", "All Users", "Ultra-thin 0.06mm skin base", "SuperSkin-V systems"],
+                        ["Ruby Hair Integration System", "10% OFF", "Women", "Remy human hair, $269", "Hair integration"],
+                        ["UTS Hair System", "$239", "All Users", "Ultra-thin 0.03mm base", "UTS systems"],
+                        ["Renewal Deep Moisture Treatment", "$49.90", "All Users", "Deep moisture for hair systems", "Maintenance products"],
+                        ["New Customer Offer", "$30 OFF", "New Customers", "U.S. customers only", "First hair system"],
+                        ["ZyroSen SuperSkin-V Starter Pack", "$279", "New Users", "Upgraded antimicrobial system", "Starter packs"],
+                        ["3R Kit", "$79.90", "All Users", "Brand Month promotion", "Maintenance kits"],
+                        ["French Lace Hair System", "$329", "All Users", "100% French lace", "French lace systems"],
+                        ["First Hair System", "$20 OFF", "New Customers", "Introductory offer", "First hair system"],
                       ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 12 && "border-b-0")}>
                           <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
                           <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
                           <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
