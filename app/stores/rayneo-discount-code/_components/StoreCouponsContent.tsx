@@ -364,8 +364,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -404,8 +411,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -445,8 +459,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -486,8 +507,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -527,8 +555,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -567,8 +602,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -607,8 +649,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -647,8 +696,15 @@ export default function RayneoCouponsContent() {
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
           <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+         <button type="button" onClick={() => handleCopy("RAYNEO10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">RAYNEO10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
