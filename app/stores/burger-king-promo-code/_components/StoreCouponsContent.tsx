@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Whopper Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Combo Meal Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Chicken Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Value Menu Offers", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Sides & Drinks Picks", sub: "Featured Picks" },
+  { id: "d1", label: "NEW", heading: "2x Crowns on King Jr. Meals", sub: "Aug 24–30, 2026" },
+  { id: "d2", label: "DEAL", heading: "The Actually $1 Menu", sub: "Select Markets" },
+  { id: "d3", label: "DEAL", heading: "Whopper Wednesday – $3.98", sub: "Royal Perks" },
+  { id: "d4", label: "BOGO", heading: "BOGO Original Chicken Sandwich", sub: "Royal Perks" },
+  { id: "d5", label: "DUO", heading: "$5 Duo – Any Two Items", sub: "Participating Restaurants" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function BurgerKingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.6k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Burger King deals and offers in Aug 2026. Browse Whopper offers, combo meal deals, chicken picks and value menu offers on Burger King.
+                      Find verified Burger King promo codes and discount codes for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, Whopper Wednesday, BOGO Chicken Sandwich, Royal Perks rewards, free fries, welcome offers, and exclusive app-only restaurant deals.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "16", label: "Offers" },
                     { icon: Percent, val: "3.4k", label: "Deals" },
                     { icon: Users, val: "18M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,22 @@ export default function BurgerKingCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "WHOPPER", title: "New Whopper Offers", desc: "Discover the latest Whopper offers from Burger King.", bullets: ["Offers across classic and specialty Whoppers", "New arrivals updated regularly", "Available online and in participating restaurants"] },
-                  { label: "SHOP", value: "COMBOS", title: "Combo Meal Deals", desc: "Browse combo meal deals and offers at Burger King.", bullets: ["Deals across burger, side and drink combos", "Options for solo and family-sized meals", "Available online and in participating restaurants"] },
-                  { label: "SHOP", value: "CHICKEN", title: "Chicken Picks", desc: "Shop chicken picks from Burger King.", bullets: ["Options across chicken sandwiches and nuggets", "Suited for spicy and classic preferences", "Available online and in participating restaurants"] },
-                  { label: "TOP", value: "VALUE", title: "Value Menu Offers", desc: "Browse value menu offers at Burger King.", bullets: ["Options across budget-friendly menu picks", "Suited for everyday cravings", "Available online and in participating restaurants"] },
-                  { label: "BEST", value: "SIDES", title: "Sides & Drinks Picks", desc: "Explore sides and drinks picks from Burger King.", bullets: ["Options across fries, onion rings and beverages", "Designed to complement any order", "Available online and in participating restaurants"] },
-                  { label: "SHOP", value: "REWARDS", title: "Royal Perks Offers", desc: "Find Burger King's Royal Perks app offers.", bullets: ["Rotating offers through the Royal Perks app", "Featured picks across the menu", "Available at participating locations"] },
+                  { label: "NEW", value: "2X CROWNS", title: "Burger King Promo Code – 2x Crowns on King Jr. Meals", desc: "Earn 2x Crowns on eligible King Jr. Kids Meals from August 24–30, 2026.", bullets: ["Activate the promotion before making your qualifying purchase.", "Available through the BK App, bk.com, kiosks, and eligible BK delivery.", "Check for a Burger King Promo Code to maximize your savings."] },
+                  { label: "DEAL", value: "$1 MENU", title: "Burger King Promo Code – The Actually $1 Menu", desc: "Enjoy selected Burger King menu items for just $1 at participating restaurants.", bullets: ["Available from August 18 through September 15, 2026, in select Portland and Louisville markets.", "Choose from Chicken Fries, fries, onion rings, drinks, cookies, coffee, and soft serve.", "Check for a Burger King Promo Code before ordering to find additional savings."] },
+                  { label: "DEAL", value: "$3.98", title: "Burger King Promo Code – Whopper Wednesday", desc: "Get a regular Whopper sandwich for $3.98 before taxes and fees every Wednesday.", bullets: ["Available at participating U.S. Burger King restaurants through Royal Perks.", "Activate the offer through the BK App or bk.com before placing your order.", "Use a Burger King Promo Code where eligible for additional savings."] },
+                  { label: "BOGO", value: "FREE", title: "Burger King – BOGO Original Chicken Sandwich", desc: "Buy one Original Chicken Sandwich at regular price and get another of equal or lesser value free.", bullets: ["Available to Royal Perks members through the BK App and bk.com.", "Activate the offer before placing your order to receive the discount.", "Check for a Burger King Promo Code to discover additional savings."] },
+                  { label: "DUO", value: "$5", title: "Burger King – $5 Duo", desc: "Choose any two featured menu items with the Burger King $5 Duo offer.", bullets: ["Select from Whopper Jr., Bacon Cheeseburger, Original Chicken Sandwich, Medium Fries, Chicken Fries, or Medium Soft Drink.", "Available at participating U.S. Burger King restaurants with prices varying by location.", "Look for a Burger King Promo Code before ordering for potential savings."] },
+                  { label: "TRIO", value: "$7", title: "Burger King – $7 Trio", desc: "Choose three featured Burger King items with the $7 Trio offer.", bullets: ["Select from Whopper Jr., Bacon Cheeseburger, Original Chicken Sandwich, Medium Fries, Chicken Fries, or Medium Soft Drink.", "Available at participating U.S. Burger King restaurants.", "Check for a Burger King Promo Code to maximize your order savings."] },
+                  { label: "PERK", value: "SPOTIFY", title: "Burger King – Free Spotify Premium", desc: "Eligible Royal Perks members can receive a promotional Spotify Premium subscription with a qualifying $10+ purchase.", bullets: ["New eligible Spotify Premium users may receive 4 months free.", "Eligible returning users may receive 2 months free under the promotion terms.", "Check for a Burger King Promo Code before making your qualifying purchase."] },
+                  { label: "PERK", value: "FREE", title: "Burger King – Free Whopper Every 3 Months", desc: "Walmart+ members can receive a free Whopper sandwich with a qualifying purchase once per calendar quarter.", bullets: ["Available through the BK App and bk.com at participating U.S. Burger King restaurants.", "Activate the offer before ordering and meet the required purchase conditions.", "Check for a Burger King Promo Code to discover more eligible offers."] },
+                  { label: "PERK", value: "40% OFF", title: "Burger King – 40% Off Walmart+ Membership", desc: "Eligible Royal Perks members can get 40% off a 1-year Walmart+ monthly membership.", bullets: ["A qualifying Royal Perks account is required to redeem the promotion.", "The promotional membership automatically renews after the promotional period unless canceled.", "Look for a Burger King Promo Code or eligible membership offer before redeeming."] },
+                  { label: "PERK", value: "FREE FRIES", title: "Burger King – Free Any Size Fries with $5 Purchase", desc: "Select Royal Perks members can get free fries of any size with a qualifying $5+ purchase.", bullets: ["Redeem the offer once per week at participating U.S. Burger King restaurants.", "Activate the offer through the BK App or bk.com before ordering.", "Check for a Burger King Promo Code to maximize your savings."] },
+                  { label: "DEAL", value: "$2", title: "Burger King – $2 Large Fries", desc: "Select Royal Perks members can get Large Fries for just $2.", bullets: ["The offer can be redeemed once per week for a limited time.", "Activate the offer through the BK App or bk.com before placing your order.", "Check for a Burger King Promo Code for additional eligible savings."] },
+                  { label: "NEW", value: "WELCOME", title: "Burger King – Welcome Offer", desc: "New Royal Perks members can choose a free Whopper Jr. or Original Chicken Sandwich with a $3+ purchase.", bullets: ["The welcome offer is available for 14 days after joining Royal Perks.", "Redeem through the BK App or bk.com at participating U.S. Burger King restaurants.", "Use a Burger King Promo Code and activate the welcome offer before ordering."] },
+                  { label: "SHOP", value: "DELIVERY", title: "Burger King – BK App & Website Delivery", desc: "Burger King delivery is available at participating U.S. restaurants through the BK App and bk.com.", bullets: ["A minimum $5 order is required before taxes and fees.", "Delivery, service, small-cart, and geographical fees may apply depending on location.", "Check for a Burger King Promo Code before placing your delivery order."] },
+                  { label: "EARN", value: "10X", title: "Burger King – Royal Perks Rewards", desc: "Royal Perks members can earn 10 Crowns for every $1 spent on eligible purchases.", bullets: ["Crowns can be redeemed for eligible Burger King menu items.", "Program availability and participation may vary by location.", "Use a Burger King Promo Code before ordering to maximize your savings."] },
+                  { label: "SURVEY", value: "FREE FOOD", title: "Burger King – My BK Experience Survey", desc: "Complete the My BK Experience survey within 48 hours of purchase for an eligible free food reward.", bullets: ["Rewards may include a Whopper, Original Chicken Sandwich, or Croissan’wich with a qualifying purchase.", "Available at participating U.S. Burger King restaurants with a validated receipt.", "Check for a Burger King Promo Code and complete the survey to claim eligible rewards."] },
+                  { label: "PERK", value: "BADGES", title: "Burger King – Royal Perks Badge Program", desc: "Royal Perks badges recognize selected activities through digital badges in the BK App and bk.com.", bullets: ["Badges have no monetary value and are not coupons, discounts, or redeemable Crowns.", "Badge availability, milestones, and campaigns may change or end at any time.", "Check your Royal Perks account for available Burger King Promo Code offers."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -204,8 +214,8 @@ export default function BurgerKingCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

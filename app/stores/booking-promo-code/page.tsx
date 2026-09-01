@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import BookingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Booking Promo Code: Hotel & Travel Booking Offers | Aug 2026",
+  title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
   description:
-    "Find the latest Booking promo codes for Aug 2026. Discover hotel stay offers, apartment deals, flight picks and car rental offers with Couponsbit.",
+    "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/booking-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/booking-promo-code",
-    title: "Booking Promo Code: Hotel & Travel Booking Offers | Aug 2026",
+    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
     description:
-      "Find the latest Booking promo codes for Aug 2026. Discover hotel stay offers, apartment deals, flight picks and car rental offers with Couponsbit.",
+      "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Booking Promo Code: Hotel & Travel Booking Offers | Aug 2026",
+    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
     description:
-      "Find the latest Booking promo codes for Aug 2026. Discover hotel stay offers, apartment deals, flight picks and car rental offers with Couponsbit.",
+      "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const bookingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/booking-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      name: "Booking Promo Code: Hotel & Travel Booking Offers | Aug 2026",
+      name: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
       description:
-        "Find the latest Booking promo codes for Aug 2026. Discover hotel stay offers, apartment deals, flight picks and car rental offers with Couponsbit.",
+        "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/booking-promo-code#breadcrumb" },
@@ -75,31 +75,39 @@ const bookingSchema = {
       name: "Booking Promo Codes & Coupon Codes",
       description: "Latest Booking promo codes and offers for hotels, apartments, flights and car rentals.",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      numberOfItems: 6,
+      numberOfItems: 8,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Hotel Stay Offers", description: "Discover the latest hotel stay offers from Booking.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking Promo Code – Save at Least 15% on Select Stays 🏨", description: "Save at least 15% OFF selected hotel stays with eligible Booking deals.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Apartment & Home Deals", description: "Browse apartment and home deals and offers at Booking.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking Promo Code – Flat 20% OFF Hotel Bookings 🔥", description: "Enjoy Flat 20% OFF on eligible hotel bookings.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Flight Picks", description: "Shop flight picks from Booking.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking Promo Code – Get 10% OFF Your First Booking 🎁", description: "Sign up and get 10% OFF your first eligible Booking reservation.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Car Rental Offers", description: "Browse car rental offers at Booking.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking – Save Up To 40% on Las Vegas Stays 🎰", description: "Save Up To 40% OFF selected stays in Las Vegas.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Attraction & Experience Picks", description: "Explore attraction and experience picks from Booking.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking  – Miami to London Flights From $567.51 ✈️", description: "Book Miami to London flights starting from $567.51 on eligible offers.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
         {
           "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Genius Loyalty Offers", description: "Find Booking's Genius loyalty program offers.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+          item: { "@type": "Offer", name: "Booking Promo Code – Las Vegas Flights From $67.47 ✈️", description: "Find flights to Las Vegas starting from $67.47", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Booking Promo Code – Guest Home Stays From $86 Per Night 🏠", description: "Enjoy comfortable guest home stays starting from $86 per night.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+        },
+        {
+          "@type": "ListItem", position: 8,
+          item: { "@type": "Offer", name: "Booking Promo Code – Carnival Cruise Line Up To 40% OFF 🚢", description: "Save Up To 40% OFF eligible Carnival Cruise Line bookings.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
         },
       ],
     },

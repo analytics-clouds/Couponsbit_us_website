@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Grocery Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Pickup & Delivery Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Pharmacy Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Digital Coupon Offers", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Household Essentials Picks", sub: "Featured Picks" },
+  { id: "d1", label: "NEW", heading: "Flat $20 OFF Your First Pickup or Delivery", sub: "New Users" },
+  { id: "d2", label: "NEW", heading: "$30 OFF First Pickup or Delivery Order", sub: "Orders $75+" },
+  { id: "d3", label: "DEAL", heading: "$10 OFF Orders of $75+", sub: "All Users" },
+  { id: "d4", label: "CANDY", heading: "Easter Candy Deal – Up to 5% OFF", sub: "Selected Candy" },
+  { id: "d5", label: "NEW", heading: "Flat $15 OFF Orders Over $75", sub: "Signup Promotion" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function KrogerDigitalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(37.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Kroger Digital deals and offers in Aug 2026. Browse grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers on Kroger Digital.
+                    Discover verified Kroger discount codes and coupon codes for Sep 2026. Save $30 OFF your first order, get free delivery, enjoy $20 OFF pickup, $15 OFF qualifying grocery orders, earn bonus Fuel Points, and save on groceries, household essentials, and seasonal deals.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "12", label: "Offers" },
                     { icon: Percent, val: "3.9k", label: "Deals" },
                     { icon: Users, val: "15M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,18 @@ export default function KrogerDigitalCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "GROCERY", title: "New Grocery Offers", desc: "Discover the latest grocery offers from Kroger Digital.", bullets: ["Offers across fresh produce, pantry and household items", "New arrivals updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "PICKUP", title: "Pickup & Delivery Deals", desc: "Browse pickup and delivery deals and offers at Kroger Digital.", bullets: ["Deals across scheduled pickup and home delivery", "Options for same-day and next-day service", "Available at participating locations"] },
-                  { label: "SHOP", value: "PHARMACY", title: "Pharmacy Picks", desc: "Shop pharmacy picks from Kroger Digital.", bullets: ["Options across prescriptions and over-the-counter items", "Suited for routine and urgent pharmacy needs", "Available at participating pharmacy locations"] },
-                  { label: "TOP", value: "DIGITAL", title: "Digital Coupon Offers", desc: "Browse digital coupon offers at Kroger Digital.", bullets: ["Options across weekly digital coupons", "Suited for everyday grocery savings", "Available through the Kroger app and website"] },
-                  { label: "BEST", value: "HOUSEHOLD", title: "Household Essentials Picks", desc: "Explore household essentials picks from Kroger Digital.", bullets: ["Options across cleaning and everyday essentials", "Designed for regular household restocking", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "REWARDS", title: "Kroger Plus Rewards Offers", desc: "Find Kroger's Plus rewards program offers.", bullets: ["Rewards for enrolled Kroger Plus members", "Featured picks across grocery categories", "Available through the Kroger Plus card"] },
+                  { label: "NEW", value: "$20 OFF", title: "Kroger Discount Code – Flat $20 OFF Your First Pickup or Delivery", desc: "Get $20 OFF your first Kroger pickup or delivery order.", bullets: ["Enjoy the offer on orders of $75 or more.", "Available for new users only on eligible pickup and delivery orders.", "Use a valid Kroger discount code at checkout to save on your first order."] },
+                  { label: "NEW", value: "$30 OFF", title: "Kroger Discount Code – $30 OFF First Pickup or Delivery Order", desc: "Save $30 OFF your first pickup or delivery order of $75 or more.", bullets: ["Offer is valid through September 15, 2026, where pickup and delivery are available.", "The minimum purchase requirement must be met after applicable discounts.", "Apply an eligible Kroger discount code and enjoy extra savings."] },
+                  { label: "DEAL", value: "$10 OFF", title: "Kroger Discount Code – $10 OFF Orders of $75+", desc: "Get a flat $10 OFF on eligible Kroger orders worth $75 or more.", bullets: ["Enjoy savings on groceries, household essentials, and other qualifying products.", "All users can take advantage of this offer.", "Use a valid Kroger discount code to save on your order."] },
+                  { label: "CANDY", value: "5% OFF", title: "Kroger Easter Candy Deal – Up to 5% OFF", desc: "Save up to 5% OFF on selected Easter candy purchases at Kroger.", bullets: ["Choose from popular flavours including almond, apple, berry, raspberry, and more.", "Enjoy sweet savings on eligible candy products.", "This offer is available to all Kroger USA users."] },
+                  { label: "NEW", value: "$15 OFF", title: "Kroger Discount Code – Flat $15 OFF Orders Over $75", desc: "Get Flat $15 OFF on eligible Kroger orders of $75 or more.", bullets: ["Enjoy savings on your qualifying grocery and household purchases.", "The offer is available as a signup/first-order promotion.", "Apply an eligible Kroger discount code to claim your savings."] },
+                  { label: "NEW", value: "$15 OFF", title: "Kroger First Order Discount – Save $15 OFF", desc: "Save $15 OFF your first Kroger order when you meet the $75 minimum purchase.", bullets: ["Shop groceries, fresh food, household essentials, and more.", "The offer is available to eligible Kroger users.", "Use a valid Kroger discount code where applicable for extra savings."] },
+                  { label: "EARN", value: "2X POINTS", title: "Kroger Fuel Points Deal – Earn 2X Points on Groceries", desc: "Earn 2 Fuel Points for every $1 spent on eligible groceries and general merchandise.", bullets: ["Redeem your Fuel Points for savings on fuel at participating Kroger locations.", "Kroger Boost membership starts at $59/year.", "A great way to earn rewards while shopping for everyday essentials."] },
+                  { label: "SHOP", value: "$2.99", title: "Kroger Red Baron Pizza Deal – From $2.99", desc: "Shop Red Baron Pizza starting from just $2.99 at Kroger.", bullets: ["Enjoy an affordable option for quick and convenient meals.", "Choose from eligible Red Baron Pizza varieties and flavours.", "This deal is available to Kroger USA shoppers."] },
+                  { label: "EARN", value: "10X POINTS", title: "Kroger Simple Truth Deal – Up to 10X Fuel Points", desc: "Earn 10X Fuel Points on eligible Simple Truth and Simple Truth Organic products.", bullets: ["Boost Members can earn 11X Fuel Points on qualifying purchases.", "Shop Simple Truth products starting from around $1.62.", "Save more while earning extra fuel rewards on everyday grocery purchases."] },
+                  { label: "NEW", value: "$30+FREE", title: "Kroger Discount Code – $30 OFF + Free Delivery for First Orders", desc: "First-order shoppers can save $30 OFF on eligible Kroger orders.", bullets: ["Get free delivery on your first 5 orders where the promotion applies.", "Shop groceries and everyday essentials conveniently from Kroger.", "Apply an eligible Kroger discount code at checkout to maximize your savings."] },
+                  { label: "SHOP", value: "LABOR DAY", title: "Kroger Labor Day Essentials – Summer Grocery Deals", desc: "Stock up on Labor Day essentials for end-of-summer cookouts and gatherings.", bullets: ["Shop groceries, snacks, beverages, and seasonal essentials at Kroger.", "Explore the Summer Finds collection for convenient holiday shopping.", "Enjoy great prices on selected products available to Kroger USA shoppers."] },
+                  { label: "SHOP", value: "$3.99", title: "Kroger Sweet Corn on the Cob – $3.99", desc: "Get Kroger Sweet Corn on the Cob for $3.99.", bullets: ["Perfect for Labor Day cookouts, BBQs, family meals, and summer gatherings.", "Add fresh corn to your grocery cart along with other seasonal essentials.", "Shop this Kroger USA grocery deal while the promotional price lasts"] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -204,8 +210,8 @@ export default function KrogerDigitalCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

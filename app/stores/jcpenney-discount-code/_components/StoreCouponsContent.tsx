@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Women's Apparel Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Men's Apparel Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Kids' Collection Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Home Goods Deals", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Salon & Beauty Offers", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Up to 70% OFF Fine Jewellery", sub: "Spend $1,500+" },
+  { id: "d2", label: "SALE", heading: "Up to 70% OFF Clearance Styles", sub: "New Markdowns Fridays" },
+  { id: "d3", label: "SALE", heading: "50% OFF on $325+ Purchases", sub: "Eligible Styles" },
+  { id: "d4", label: "SALE", heading: "Up to 60% OFF Fine Jewelry", sub: "Spend $800+" },
+  { id: "d5", label: "B2S", heading: "Back-to-School Sale – Up to $500 OFF", sub: "Last Day" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function JcpenneyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(31.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover JCPenney deals and offers in Aug 2026. Browse women's, men's and kids' apparel offers, home goods deals and salon & beauty offers on JCPenney.
+                      Discover verified JCPenney discount codes and coupon codes for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to $500 OFF Back-to-School deals, shop fall fashion, Levi's apparel, footwear, women's clothing, home essentials, and more.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "17", label: "Offers" },
                     { icon: Percent, val: "2.3k", label: "Deals" },
                     { icon: Users, val: "9M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,23 @@ export default function JcpenneyCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "WOMEN'S", title: "New Women's Apparel Offers", desc: "Discover the latest women's apparel offers from JCPenney.", bullets: ["Offers across dresses, tops and outerwear", "New arrivals updated regularly", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "MEN'S", title: "Men's Apparel Deals", desc: "Browse men's apparel deals and offers at JCPenney.", bullets: ["Deals across shirts, pants and outerwear", "Options for casual and workwear styles", "Available online and in participating stores"] },
-                  { label: "SHOP", value: "KIDS", title: "Kids' Collection Picks", desc: "Shop kids' collection picks from JCPenney.", bullets: ["Options across kids' apparel and accessories", "Suited for everyday and back-to-school wear", "Available online and in participating stores"] },
-                  { label: "TOP", value: "HOME", title: "Home Goods Deals", desc: "Browse home goods deals at JCPenney.", bullets: ["Options across bedding, decor and kitchen items", "Suited for refreshing any room", "Available online and in participating stores"] },
-                  { label: "BEST", value: "SALON", title: "Salon & Beauty Offers", desc: "Explore salon and beauty offers from JCPenney.", bullets: ["Options across haircuts and salon services", "Available at participating store locations", "Suited for a full styling visit"] },
-                  { label: "SHOP", value: "NEW", title: "New Arrival Picks", desc: "Find JCPenney's new arrival picks.", bullets: ["Rotating picks across apparel and home", "Featured items updated regularly", "Available online and in participating stores"] },
+                  { label: "SALE", value: "70% OFF", title: "JCPenney Discount Code – Up to 70% OFF Fine Jewellery", desc: "Shop Fine Jewelry online only and get up to 70% OFF when you spend $1,500 or more.", bullets: ["Enjoy bigger savings with the Buy More, Save More promotion.", "This USA offer is available online only on eligible fine jewelry styles.", "Use the JCPenney discount code at checkout where applicable and save more."] },
+                  { label: "SALE", value: "70% OFF", title: "JCPenney Discount Code – Up to 70% OFF Clearance Styles", desc: "Save up to 70% OFF on select clearance products at JCPenney.", bullets: ["Shop the Clearance – Shop All Products collection for marked-down styles.", "Enjoy new markdowns added every Friday on selected products.", "Use an eligible JCPenney discount code where applicable; some items are coupon excluded."] },
+                  { label: "SALE", value: "50% OFF", title: "JCPenney Sale – 50% OFF on $325+ Purchases", desc: "Enjoy 50% OFF on eligible styles when you spend $325 or more.", bullets: ["Unlock bigger savings on qualifying JCPenney purchases.", "Shop selected fashion and lifestyle products at discounted prices.", "Check offer terms and exclusions before placing your order."] },
+                  { label: "SALE", value: "60% OFF", title: "JCPenney Discount Code – Up to 60% OFF Fine Jewelry", desc: "Get up to 60% OFF Fine Jewelry when you spend $800 or more.", bullets: ["Save more with the Buy More, Save More online-only promotion.", "Shop eligible jewelry styles available through JCPenney USA.", "Apply a valid JCPenney discount code at checkout where eligible."] },
+                  { label: "B2S", value: "$500 OFF", title: "JCPenney Back-to-School Sale – Up to $500 OFF", desc: "Last Day! Shop the JCPenney Back-to-School collection.", bullets: ["Save up to $500 OFF on select eligible styles.", "Find fashion and essentials for the new school season.", "Shop this limited-time USA deal before it ends."] },
+                  { label: "SALE", value: "43% OFF", title: "JCPenney Sale – St. John's Bay Blouse 43% OFF", desc: "Shop the St. John's Bay Women's Split Tie Neck 3/4 Sleeve Blouse for just $24.99.", bullets: ["Save 43% OFF the original $44 price.", "Explore more stylish women's apparel from the St. John's Bay collection.", "Grab this JCPenney USA sale while the discounted price lasts."] },
+                  { label: "SALE", value: "50% OFF", title: "JCPenney Sale – Up to 50% OFF Fall Styles", desc: "Get up to 50% OFF selected fall styles at JCPenney.", bullets: ["Shop seasonal fashion and refresh your wardrobe for the upcoming fall season.", "Discover selected apparel and fashion picks at special sale prices.", "Shop the JCPenney USA sale while the offer lasts."] },
+                  { label: "SHOP", value: "$18", title: "JCPenney Women's Tops Sale – From $18", desc: "Shop Women's Tops from just $18 at JCPenney.", bullets: ["Discover stylish tops for everyday wear and seasonal outfits.", "Refresh your wardrobe with affordable women's fashion.", "Shop selected tops at special USA sale prices."] },
+                  { label: "SALE", value: "$14.99", title: "JCPenney Hairspray Sale – From $14.99", desc: "Shop the Semi-Annual Hairspray Sale at JCPenney.", bullets: ["Choose from 100+ hairsprays and styling products on sale.", "Selected products start from just $14.99.", "Sale ends October 4 on eligible hair styling products."] },
+                  { label: "SHOP", value: "$23", title: "JCPenney Women's Jeans Sale – From $23", desc: "Shop Women's Jeans from $23 during the JCPenney sale.", bullets: ["Explore a variety of fits and styles for everyday wear.", "Find denim options for casual and stylish looks.", "Shop online in the USA while sale prices last."] },
+                  { label: "SHOP", value: "$32", title: "JCPenney Women's Dresses Sale – From $32", desc: "Find Women's Dresses from $32 at JCPenney.", bullets: ["Shop dresses for casual outings, occasions, and everyday styling.", "Explore selected designs at affordable sale prices.", "Grab your favourite styles before the offer ends."] },
+                  { label: "SHOP", value: "$31", title: "JCPenney Women's Pants Sale – From $31", desc: "Shop Women's Pants from $31 at JCPenney.", bullets: ["Find versatile styles for workwear, casual outfits, and everyday looks.", "Save on selected women's pants at special sale prices.", "Shop the latest JCPenney USA fashion deals online."] },
+                  { label: "SHOP", value: "$31", title: "JCPenney Women's Dress Shoes Sale – From $31", desc: "Shop Women's Dress Shoes from $31 during the JCPenney sale.", bullets: ["Discover footwear for office looks, special occasions, and everyday wear.", "Choose from selected dress shoe styles at discounted prices.", "Shop the JCPenney USA footwear sale while stocks last."] },
+                  { label: "SALE", value: "45% OFF", title: "JCPenney Women's Cowboy Boots – 45% OFF", desc: "Shop the Pop Women's Ellary Block Heel Cowboy Boots for $54.99.", bullets: ["Save 45% OFF the original $100 price.", "Add a stylish western-inspired touch to your wardrobe.", "Grab this JCPenney footwear deal while the sale price lasts."] },
+                  { label: "SALE", value: "33% OFF", title: "JCPenney Women's Sneakers – 33% OFF", desc: "Shop the Shu by Shu Shop Samira Women's Sneakers for $59.99.", bullets: ["Save 33% OFF the original $90 price.", "Enjoy a stylish option for casual everyday outfits.", "Shop this JCPenney USA footwear deal while available."] },
+                  { label: "HOME", value: "50%+30%", title: "JCPenney Home Sale – Up to 50% + Extra 30% OFF", desc: "Shop the JCPenney Labor Day Home Sale and save up to 50% + an extra 30% OFF.", bullets: ["Get additional savings on select home styles with a discount code.", "Refresh your home with eligible furniture, décor, bedding, and more.", "Offer ends September 13; check terms and exclusions before purchase."] },
+                  { label: "SALE", value: "30% OFF", title: "JCPenney Levi's Sale – Up to 30% OFF", desc: "Shop Levi's women's and men's apparel with up to 30% OFF selected styles.", bullets: ["Discover popular Levi's fashion picks at JCPenney.", "Refresh your wardrobe with discounted Levi's apparel.", "Additional offers, discount codes, and coupons do not apply to Levi's."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -204,8 +215,8 @@ export default function JcpenneyCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

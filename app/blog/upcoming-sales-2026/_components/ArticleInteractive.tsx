@@ -253,7 +253,7 @@ export default function ArticleInteractive() {
     For many shoppers, Thanksgiving marks the beginning of the most important shopping stretch of the year.
   </p>
   <p className="mb-5">
-    Retailers know that consumers are preparing for Christmas, buying gifts, <Link href="/stores/kroger-digital-discount-code" className="text-[#056bfa] hover:underline">hosting gatherings</Link>, and taking advantage of seasonal promotions. As a result, sales can cover almost every major shopping category.
+    Retailers know that consumers are preparing for Christmas, buying gifts, <Link href="/stores/kroger-discount-code" className="text-[#056bfa] hover:underline">hosting gatherings</Link>, and taking advantage of seasonal promotions. As a result, sales can cover almost every major shopping category.
   </p>
   <p className="mb-3 font-semibold text-black">What can you shop for?</p>
   <ul className="list-disc list-inside space-y-2 mb-5 pl-2">
@@ -536,7 +536,7 @@ export default function ArticleInteractive() {
                     { name: "Target", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp", dealText: "Save Up To $100", href: "/stores/target-discount-code" },
                     { name: "Macy's", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp", dealText: "Up To 75% OFF", href: "/stores/macys-promo-code" },
                     { name: "Spirit Halloween", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/spirti-logo_x4nbor.webp", dealText: "Up To 75% OFF", href: "/stores/spirit-halloween-discount-code" },
-                    { name: "Kroger Digital", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp", dealText: "Up To 50% OFF", href: "/stores/kroger-digital-discount-code" },
+                    { name: "Kroger Digital", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp", dealText: "Up To 50% OFF", href: "/stores/kroger-discount-code" },
                   ].map((store, i) => (
                     <Link
                       key={store.name}

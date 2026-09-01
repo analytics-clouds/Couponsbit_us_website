@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
+
+
+        
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",
         width: 1200,
         height: 630,

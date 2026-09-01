@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Hotel Stay Offers", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Apartment & Home Deals", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Flight Picks", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Car Rental Offers", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Attraction & Experience Picks", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Save at Least 15% on Select Stays", sub: "Hotel Deals" },
+  { id: "d2", label: "SALE", heading: "Flat 20% OFF Hotel Bookings", sub: "Selected Hotels" },
+  { id: "d3", label: "NEW", heading: "Get 10% OFF Your First Booking", sub: "New Customers" },
+  { id: "d4", label: "SALE", heading: "Save Up To 40% on Las Vegas Stays", sub: "Las Vegas" },
+  { id: "d5", label: "FLIGHT", heading: "Miami to London Flights From $567.51", sub: "International Flights" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function BookingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(61.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover Booking deals and offers in Aug 2026. Browse hotel stay offers, apartment deals, flight picks and car rental offers on Booking.
+                     Find verified Booking promo codes and discount codes for hotels, flights, cruises, and vacation stays. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, and enjoy exclusive travel savings throughout Sep 2026.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "8", label: "Offers" },
                     { icon: Percent, val: "5.1k", label: "Deals" },
                     { icon: Users, val: "24M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,14 @@ export default function BookingCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "HOTELS", title: "New Hotel Stay Offers", desc: "Discover the latest hotel stay offers from Booking.", bullets: ["Offers across budget and luxury hotel stays", "New arrivals updated regularly", "Available worldwide across participating properties"] },
-                  { label: "SHOP", value: "STAYS", title: "Apartment & Home Deals", desc: "Browse apartment and home deals and offers at Booking.", bullets: ["Deals across apartments, villas and vacation homes", "Options for short and extended stays", "Available worldwide across participating properties"] },
-                  { label: "SHOP", value: "FLIGHTS", title: "Flight Picks", desc: "Shop flight picks from Booking.", bullets: ["Options across domestic and international routes", "Suited for one-way and round-trip travel", "Available through the Booking flights platform"] },
-                  { label: "TOP", value: "CARS", title: "Car Rental Offers", desc: "Browse car rental offers at Booking.", bullets: ["Options across economy and premium vehicles", "Suited for short and long-term rentals", "Available across participating rental partners"] },
-                  { label: "BEST", value: "EXPERIENCES", title: "Attraction & Experience Picks", desc: "Explore attraction and experience picks from Booking.", bullets: ["Options across tours, attractions and activities", "Designed to complement any trip", "Available across participating destinations"] },
-                  { label: "SHOP", value: "GENIUS", title: "Genius Loyalty Offers", desc: "Find Booking's Genius loyalty program offers.", bullets: ["Rewards for repeat Booking travelers", "Featured picks across hotels and stays", "Available to enrolled Genius members"] },
+                  { label: "SALE", value: "15% OFF", title: "Booking Promo Code – Save at Least 15% on Select Stays 🏨", desc: "Save at least 15% OFF selected hotel stays with eligible Booking deals.", bullets: ["Use a Booking Promo Code when available to unlock additional savings.", "Find discounted accommodation for your next vacation or getaway.", "Choose from hotels and stays across popular travel destinations.", "Book your stay at a better price and save more on your next trip."] },
+                  { label: "SALE", value: "20% OFF", title: "Booking Promo Code – Flat 20% OFF Hotel Bookings 🔥", desc: "Enjoy Flat 20% OFF on eligible hotel bookings.", bullets: ["Apply a Booking Promo Code where applicable to save on your reservation.", "Discover hotels and accommodation at discounted prices.", "Choose from a wide range of destinations and available properties.", "Book your preferred stay and enjoy bigger savings on hotel reservations."] },
+                  { label: "NEW", value: "10% OFF", title: "Booking Promo Code – Get 10% OFF Your First Booking 🎁", desc: "Sign up and get 10% OFF your first eligible Booking reservation.", bullets: ["Use a Booking Promo Code if required for additional promotional savings.", "Book hotels and flights at competitive prices and start saving.", "Your discount may be applied automatically on eligible bookings.", "A great way for new customers to save on their first Booking reservation."] },
+                  { label: "SALE", value: "40% OFF", title: "Booking – Save Up To 40% on Las Vegas Stays 🎰", desc: "Save Up To 40% OFF selected stays in Las Vegas.", bullets: ["Use a Booking Promo Code where eligible to maximize your hotel savings.", "Find discounted hotels across popular Las Vegas locations.", "Selected properties may offer free cancellation for added flexibility.", "Book your Las Vegas trip at a lower price and enjoy more travel savings."] },
+                  { label: "FLIGHT", value: "$567.51", title: "Booking  – Miami to London Flights From $567.51 ✈️", desc: "Book Miami to London flights starting from $567.51 on eligible offers.", bullets: ["Use a Booking Promo Code when available to save more on your flight.", "Compare flight options and choose suitable travel dates.", "Discover competitive airfares for international travel.", "Book early and secure your preferred Miami to London flight at a great price."] },
+                  { label: "FLIGHT", value: "$67.47", title: "Booking Promo Code – Las Vegas Flights From $67.47 ✈️", desc: "Find flights to Las Vegas starting from $67.47", bullets: ["Use a Booking Promo Code where applicable for additional flight savings.", "Discover affordable fares for travel to Las Vegas.", "Book your flight at a competitive price and save more on your journey."] },
+                  { label: "STAY", value: "$86/NIGHT", title: "Booking Promo Code – Guest Home Stays From $86 Per Night 🏠", desc: "Enjoy comfortable guest home stays starting from $86 per night.", bullets: ["Use a Booking Promo Code on eligible accommodation offers to save more.", "Discover budget-friendly rooms and guest homes in popular destinations.", "Selected properties may include free cancellation for added flexibility.", "Some packages may also offer breakfast, lunch and dinner options."] },
+                  { label: "CRUISE", value: "40% OFF", title: "Booking Promo Code – Carnival Cruise Line Up To 40% OFF 🚢", desc: "Save Up To 40% OFF eligible Carnival Cruise Line bookings.", bullets: ["Use a Booking Promo Code where applicable to unlock additional savings.", "Take advantage of early booking offers and limited-time cruise deals.", "Plan your cruise vacation while securing a discounted booking price.", "Book early to access available offers before the limited deals end."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -204,8 +206,8 @@ export default function BookingCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-lg font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

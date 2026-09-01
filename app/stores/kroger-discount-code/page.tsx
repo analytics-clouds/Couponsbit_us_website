@@ -7,18 +7,18 @@ export const metadata: Metadata = {
     "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/kroger-digital-discount-code",
+    canonical: "https://www.couponsbit.us/stores/kroger-discount-code",
     languages: {
-      "en-US": "https://www.couponsbit.us/stores/kroger-digital-discount-code",
-      "en-GB": "https://www.couponsbit.us/stores/kroger-digital-discount-code",
-      "en-IN": "https://www.couponsbit.us/stores/kroger-digital-discount-code",
-      "x-default": "https://www.couponsbit.us/stores/kroger-digital-discount-code",
+      "en-US": "https://www.couponsbit.us/stores/kroger-discount-code",
+      "en-GB": "https://www.couponsbit.us/stores/kroger-discount-code",
+      "en-IN": "https://www.couponsbit.us/stores/kroger-discount-code",
+      "x-default": "https://www.couponsbit.us/stores/kroger-discount-code",
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/kroger-digital-discount-code",
+    url: "https://www.couponsbit.us/stores/kroger-discount-code",
     title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
     description:
       "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
@@ -59,47 +59,71 @@ const krogerDigitalSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/kroger-digital-discount-code#webpage",
-      url: "https://www.couponsbit.us/stores/kroger-digital-discount-code",
+      "@id": "https://www.couponsbit.us/stores/kroger-discount-code#webpage",
+      url: "https://www.couponsbit.us/stores/kroger-discount-code",
       name: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
       description:
         "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
-      breadcrumb: { "@id": "https://www.couponsbit.us/stores/kroger-digital-discount-code#breadcrumb" },
+      breadcrumb: { "@id": "https://www.couponsbit.us/stores/kroger-discount-code#breadcrumb" },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/kroger-digital-discount-code#offerlist",
+      "@id": "https://www.couponsbit.us/stores/kroger-discount-code#offerlist",
       name: "Kroger Digital Discount Codes & Coupon Codes",
       description: "Latest Kroger Digital discount codes and offers for groceries, pickup, delivery and pharmacy.",
-      url: "https://www.couponsbit.us/stores/kroger-digital-discount-code",
-      numberOfItems: 6,
+      url: "https://www.couponsbit.us/stores/kroger-discount-code",
+      numberOfItems: 12,
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "New Grocery Offers", description: "Discover the latest grocery offers from Kroger Digital.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger Discount Code – Flat $20 OFF Your First Pickup or Delivery", description: "Get $20 OFF your first Kroger pickup or delivery order.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Pickup & Delivery Deals", description: "Browse pickup and delivery deals and offers at Kroger Digital.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger Discount Code – $30 OFF First Pickup or Delivery Order", description: "Save $30 OFF your first pickup or delivery order of $75 or more.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Pharmacy Picks", description: "Shop pharmacy picks from Kroger Digital.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger Discount Code – $10 OFF Orders of $75+", description: "Get a flat $10 OFF on eligible Kroger orders worth $75 or more.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
         {
           "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Digital Coupon Offers", description: "Browse digital coupon offers at Kroger Digital.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger Easter Candy Deal – Up to 5% OFF", description: "Save up to 5% OFF on selected Easter candy purchases at Kroger.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
         {
           "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Household Essentials Picks", description: "Explore household essentials picks from Kroger Digital.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger Discount Code – Flat $15 OFF Orders Over $75", description: "Get Flat $15 OFF on eligible Kroger orders of $75 or more.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
         {
           "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Kroger Plus Rewards Offers", description: "Find Kroger's Plus rewards program offers.", url: "https://www.couponsbit.us/stores/kroger-digital-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+          item: { "@type": "Offer", name: "Kroger First Order Discount – Save $15 OFF", description: "Save $15 OFF your first Kroger order when you meet the $75 minimum purchase.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 7,
+          item: { "@type": "Offer", name: "Kroger Fuel Points Deal – Earn 2X Points on Groceries", description: "Earn 2 Fuel Points for every $1 spent on eligible groceries and general merchandise.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 8,
+          item: { "@type": "Offer", name: "Kroger Red Baron Pizza Deal – From $2.99", description: "Shop Red Baron Pizza starting from just $2.99 at Kroger.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 9,
+          item: { "@type": "Offer", name: "Kroger Simple Truth Deal – Up to 10X Fuel Points", description: "Earn 10X Fuel Points on eligible Simple Truth and Simple Truth Organic products.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 10,
+          item: { "@type": "Offer", name: "Kroger Discount Code – $30 OFF + Free Delivery for First Orders", description: "First-order shoppers can save $30 OFF on eligible Kroger orders.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 11,
+          item: { "@type": "Offer", name: "Kroger Labor Day Essentials – Summer Grocery Deals", description: "Stock up on Labor Day essentials for end-of-summer cookouts and gatherings.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
+        },
+        {
+          "@type": "ListItem", position: 12,
+          item: { "@type": "Offer", name: "Kroger Sweet Corn on the Cob – $3.99", description: "Get Kroger Sweet Corn on the Cob for $3.99.", url: "https://www.couponsbit.us/stores/kroger-discount-code", seller: { "@type": "Organization", name: "Kroger", url: "https://www.kroger.com" } },
         },
       ],
     },
@@ -125,18 +149,18 @@ const krogerDigitalSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/kroger-digital-discount-code#breadcrumb",
+      "@id": "https://www.couponsbit.us/stores/kroger-discount-code#breadcrumb",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.couponsbit.us" },
         { "@type": "ListItem", position: 2, name: "Stores", item: "https://www.couponsbit.us/stores" },
-        { "@type": "ListItem", position: 3, name: "Kroger Digital Coupons", item: "https://www.couponsbit.us/stores/kroger-digital-discount-code" },
+        { "@type": "ListItem", position: 3, name: "Kroger Digital Coupons", item: "https://www.couponsbit.us/stores/kroger-discount-code" },
       ],
     },
 
     {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/kroger-digital-discount-code#faq",
+  "@id": "https://www.couponsbit.us/stores/kroger-discount-code#faq",
   "mainEntity": [
     {
       "@type": "Question",
