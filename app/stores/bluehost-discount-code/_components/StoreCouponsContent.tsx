@@ -237,7 +237,7 @@ export default function BluehostCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Bluehost discount codes and deals in Aug 2026. Get WordPress and web hosting from $1.99/month, save up to 69% on One Site Hosting, enjoy 50% off business plans, VPS discounts, AI tools, SSL, CDN and more.
+                      Save with Bluehost discount codes and deals in Sep 2026. Get WordPress and web hosting from $1.99/month, save up to 69% on One Site Hosting, enjoy 50% off business plans, VPS discounts, AI tools, SSL, CDN and more.
                     </p>
                   </div>
                 </div>

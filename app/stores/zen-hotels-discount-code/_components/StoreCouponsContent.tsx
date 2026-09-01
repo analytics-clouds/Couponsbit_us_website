@@ -262,7 +262,7 @@ export default function ZenHotelsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Grab verified Zen Hotels discount codes for August 2026 and save on luxury hotel stays worldwide. Get $35 off bookings over $700 via the app, Paris from $852, Milan from $818, Prague from $1,145 & New York JFK from $2,625.
+                      Grab verified Zen Hotels discount codes for September 2026 and save on luxury hotel stays worldwide. Get $35 off bookings over $700 via the app, Paris from $852, Milan from $818, Prague from $1,145 & New York JFK from $2,625.
                     </p>
                   </div>
                 </div>

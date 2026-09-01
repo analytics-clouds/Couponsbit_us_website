@@ -3,10 +3,10 @@ import RayneoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+    absolute: "Rayneo Disocunt & promo - UPTO $70 OFF  | Sep 2026",
   },
   description:
-    "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
+    "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Sep 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/rayneo-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Sep 2026",
     description:
-      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
+      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Sep 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Sep 2026",
     description:
-      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
+      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Sep 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const rayneoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/rayneo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-      name: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+      name: "Rayneo Disocunt & promo - UPTO $70 OFF  | Sep 2026",
       description:
-        "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
+        "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Sep 2026",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

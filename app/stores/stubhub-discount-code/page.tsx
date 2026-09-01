@@ -3,10 +3,10 @@ import StubHubCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+    absolute: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | September 2026",
   },
   description:
-    "Use a verified StubHub discount code & save big in August 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+    "Use a verified StubHub discount code & save big in September 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/stubhub-discount-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | September 2026",
     description:
-      "Use a verified StubHub discount code & save big in August 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+      "Use a verified StubHub discount code & save big in September 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   // ✅ Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | September 2026",
     description:
-      "Use a verified StubHub discount code & save big in August 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+      "Use a verified StubHub discount code & save big in September 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +64,9 @@ const stubHubSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/stubhub-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-      name: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+      name: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | September 2026",
       description:
-        "Use a verified StubHub discount code & save big in August 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+        "Use a verified StubHub discount code & save big in September 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

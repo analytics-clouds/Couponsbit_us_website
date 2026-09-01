@@ -3,10 +3,10 @@ import BluehostCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+    absolute: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Sep 2026",
   },
   description:
-    "Find the latest Bluehost discount codes and hosting deals for Aug 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+    "Find the latest Bluehost discount codes and hosting deals for Sep 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/bluehost-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Sep 2026",
     description:
-      "Find the latest Bluehost discount codes and hosting deals for Aug 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+      "Find the latest Bluehost discount codes and hosting deals for Sep 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Sep 2026",
     description:
-      "Find the latest Bluehost discount codes and hosting deals for Aug 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+      "Find the latest Bluehost discount codes and hosting deals for Sep 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const bluehostSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/bluehost-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-      name: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+      name: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Sep 2026",
       description:
-        "Find the latest Bluehost discount codes and hosting deals for Aug 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+        "Find the latest Bluehost discount codes and hosting deals for Sep 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

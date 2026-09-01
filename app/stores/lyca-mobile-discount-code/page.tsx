@@ -3,10 +3,10 @@ import LycaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+    absolute: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
   },
   description:
-    "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. August 2026.",
+    "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
     description:
-      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. August 2026.",
+      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
     description:
-      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. August 2026.",
+      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const lycaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      name: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+      name: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
       description:
-        "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. August 2026.",
+        "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

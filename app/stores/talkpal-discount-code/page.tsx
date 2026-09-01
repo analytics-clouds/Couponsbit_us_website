@@ -3,10 +3,10 @@ import TalkpalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+    absolute: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | September 2026",
   },
   description:
-    "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+    "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/talkpal-discount-code",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | September 2026",
     description:
-      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["de_DE", "ja_JP", "en_IN", "en_AU", "en_GB", "en_PK"],
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | September 2026",
     description:
-      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp"],
     site: "@couponsbit",
   },
@@ -67,9 +67,9 @@ const talkpalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/talkpal-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-      name: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+      name: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | September 2026",
       description:
-        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -84,7 +84,7 @@ const talkpalSchema = {
       "@id": "https://www.couponsbit.us/stores/talkpal-discount-code#offerlist",
       name: "Talkpal.AI Coupon Codes & Promo Codes",
       description:
-        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
       url: "https://www.couponsbit.us/stores/talkpal-discount-code",
       numberOfItems: 1,
       itemListElement: [
@@ -95,7 +95,7 @@ const talkpalSchema = {
             "@type": "Offer",
             name: "Talkpal.AI Coupon Code",
             description:
-              "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
+              "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
             url: "https://www.couponsbit.us/stores/talkpal-discount-code",
             areaServed: [
               { "@type": "Country", name: "United States" },

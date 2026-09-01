@@ -130,7 +130,7 @@ export default function TargetCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(88.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Target discount codes, promo codes, and deals for Aug 2026. Save up to $100 on select Apple devices, get up to 50% OFF clothing and bedding, 40% OFF Gucci fragrance, and shop Champion T-shirts under $20 plus clearance footwear and home deals.
+                      Find Target discount codes, promo codes, and deals for Sep 2026. Save up to $100 on select Apple devices, get up to 50% OFF clothing and bedding, 40% OFF Gucci fragrance, and shop Champion T-shirts under $20 plus clearance footwear and home deals.
                     </p>
                   </div>
                 </div>

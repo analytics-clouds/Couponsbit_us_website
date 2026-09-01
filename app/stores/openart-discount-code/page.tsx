@@ -3,10 +3,10 @@ import OpenartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+    absolute: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Sep 2026",
   },
   description:
-    " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
+    " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/openart-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/openart-discount-code",
-    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Sep 2026",
     description:
-      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
+      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_IN", "en_PK", "en_GB"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Sep 2026",
     description:
-      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
+      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +64,9 @@ const openartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/openart-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/openart-discount-code",
-      name: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+      name: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Sep 2026",
       description:
-        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
+        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -81,7 +81,7 @@ const openartSchema = {
       "@id": "https://www.couponsbit.us/stores/openart-discount-code#offerlist",
       name: "Openart.AI Coupon Codes & Promo Codes",
       description:
-        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
+        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
       url: "https://www.couponsbit.us/stores/openart-discount-code",
       numberOfItems: 6,
       itemListElement: [

@@ -3,10 +3,10 @@ import SintraCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sintra Discount Code: Up to 70% Off AI Automation Plans | August 2026",
+    absolute: "Sintra Discount Code: Up to 70% Off AI Automation Plans | September 2026",
   },
   description:
-    "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified August 2026.",
+    "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/sintra-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sintra-discount-code",
-    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | August 2026",
+    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | September 2026",
     description:
-      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified August 2026.",
+      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | August 2026",
+    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | September 2026",
     description:
-      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified August 2026.",
+      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +64,9 @@ const sintraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sintra-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/sintra-discount-code",
-      name: "Sintra Discount Code: Up to 70% Off AI Automation Plans | August 2026",
+      name: "Sintra Discount Code: Up to 70% Off AI Automation Plans | September 2026",
       description:
-        "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified August 2026.",
+        "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

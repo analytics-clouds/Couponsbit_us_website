@@ -3,10 +3,10 @@ import SheinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+    absolute: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Sep 2026",
   },
   description:
-    "Find the latest SHEIN coupon code, discount code and fashion deals for Aug 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
+    "Find the latest SHEIN coupon code, discount code and fashion deals for Sep 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/shein-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/shein-coupon-code",
-    title: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+    title: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Sep 2026",
     description:
-      "Find the latest SHEIN coupon code, discount code and fashion deals for Aug 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
+      "Find the latest SHEIN coupon code, discount code and fashion deals for Sep 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+    title: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Sep 2026",
     description:
-      "Find the latest SHEIN coupon code, discount code and fashion deals for Aug 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
+      "Find the latest SHEIN coupon code, discount code and fashion deals for Sep 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949026/shein-logo_nukqfb.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const sheinSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/shein-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/shein-coupon-code",
-      name: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+      name: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Sep 2026",
       description:
-        "Find the latest SHEIN coupon code, discount code and fashion deals for Aug 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
+        "Find the latest SHEIN coupon code, discount code and fashion deals for Sep 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

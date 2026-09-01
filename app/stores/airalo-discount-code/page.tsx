@@ -3,7 +3,7 @@ import AiraloCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+    absolute: "Airalo Discount Code : Up to 20% OFF + 15% OFF First eSIM |Sep 2026",
   },
   description:
     "Get the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF, enjoy 15% OFF your first eSIM, and earn up to 10% cashback.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/airalo-discount-code",
-    title: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+    title: "Airalo Discount Code : Up to 20% OFF + 15% OFF First eSIM |Sep 2026",
     description:
       "Get the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF, enjoy 15% OFF your first eSIM, and earn up to 10% cashback.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+    title: "Airalo Discount Code : Up to 20% OFF + 15% OFF First eSIM |Sep 2026",
     description:
       "Get the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF, enjoy 15% OFF your first eSIM, and earn up to 10% cashback.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp"],
@@ -63,7 +63,7 @@ const airaloSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/airalo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/airalo-discount-code",
-      name: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+      name: "Airalo Discount Code : Up to 20% OFF + 15% OFF First eSIM |Sep 2026",
       description:
         "Get the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF, enjoy 15% OFF your first eSIM, and earn up to 10% cashback.",
       inLanguage: "en-US",

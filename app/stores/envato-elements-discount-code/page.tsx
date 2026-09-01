@@ -3,10 +3,10 @@ import EnvatoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+    absolute: "Envato Elements Discount Code: Flat 50% Off Plans | September 2026",
   },
   description:
-    "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified August 2026.",
+    "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/envato-elements-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-    title: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+    title: "Envato Elements Discount Code: Flat 50% Off Plans | September 2026",
     description:
-      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified August 2026.",
+      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+    title: "Envato Elements Discount Code: Flat 50% Off Plans | September 2026",
     description:
-      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified August 2026.",
+      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +64,9 @@ const envatoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/envato-elements-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-      name: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+      name: "Envato Elements Discount Code: Flat 50% Off Plans | September 2026",
       description:
-        "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified August 2026.",
+        "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

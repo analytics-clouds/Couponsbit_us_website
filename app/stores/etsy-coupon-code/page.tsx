@@ -3,10 +3,10 @@ import EtsyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+    absolute: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Sep 2026  ",
   },
   description:
-    "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+    "Find the latest Etsy coupon code, promo code, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/etsy-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Sep 2026  ",
     description:
-      "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+      "Find the latest Etsy coupon code, promo code, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Sep 2026  ",
     description:
-      "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+      "Find the latest Etsy coupon code, promo code, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const etsySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-      name: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+      name: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Sep 2026  ",
       description:
-        "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+        "Find the latest Etsy coupon code, promo code, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#breadcrumb" },

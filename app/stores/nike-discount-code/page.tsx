@@ -3,10 +3,10 @@ import NikeCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+    absolute: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Sep 2026",
   },
   description:
-    "Find the latest Nike promo code, discount code, and clearance deals for Aug 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+    "Find the latest Nike promo code, discount code, and clearance deals for Sep 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/nike-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nike-discount-code",
-    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Sep 2026",
     description:
-      "Find the latest Nike promo code, discount code, and clearance deals for Aug 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+      "Find the latest Nike promo code, discount code, and clearance deals for Sep 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Sep 2026",
     description:
-      "Find the latest Nike promo code, discount code, and clearance deals for Aug 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+      "Find the latest Nike promo code, discount code, and clearance deals for Sep 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const nikeSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/nike-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/nike-discount-code",
-      name: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+      name: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Sep 2026",
       description:
-        "Find the latest Nike promo code, discount code, and clearance deals for Aug 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+        "Find the latest Nike promo code, discount code, and clearance deals for Sep 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/nike-discount-code#breadcrumb" },

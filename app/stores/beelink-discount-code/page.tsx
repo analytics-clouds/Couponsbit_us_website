@@ -3,10 +3,10 @@ import BeelinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+    absolute: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Sep 2026",
   },
   description:
-    "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
+    "Find the latest Beelink discount codes and deals for Sep 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/beelink-discount-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/beelink-discount-code",
-    title: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+    title: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Sep 2026",
     description:
-      "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
+      "Find the latest Beelink discount codes and deals for Sep 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+    title: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Sep 2026",
     description:
-      "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
+      "Find the latest Beelink discount codes and deals for Sep 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg"],
     site: "@couponsbit",
   },
@@ -65,9 +65,9 @@ const beelinkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/beelink-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/beelink-discount-code",
-      name: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+      name: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Sep 2026",
       description:
-        "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
+        "Find the latest Beelink discount codes and deals for Sep 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -82,7 +82,7 @@ const beelinkSchema = {
       "@id": "https://www.couponsbit.us/stores/beelink-discount-code#offerlist",
       name: "Beelink Coupon Codes & Promo Codes",
       description:
-        "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
+        "Find the latest Beelink discount codes and deals for Sep 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
       url: "https://www.couponsbit.us/stores/beelink-discount-code",
       numberOfItems: 9,
       itemListElement: [

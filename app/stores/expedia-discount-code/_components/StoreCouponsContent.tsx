@@ -237,7 +237,7 @@ export default function ExpediaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Expedia discount codes for August 2026. Save up to 40% on hotels, flights, and car rentals across top US destinations. Plus save up to $459 on Atlantic City hotels — limited-time Expedia deals updated daily.
+                      Get verified Expedia discount codes for September 2026. Save up to 40% on hotels, flights, and car rentals across top US destinations. Plus save up to $459 on Atlantic City hotels — limited-time Expedia deals updated daily.
                     </p>
                   </div>
                 </div>

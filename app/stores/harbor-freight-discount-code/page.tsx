@@ -3,10 +3,10 @@ import HarborFreightCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+    absolute: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Sep 2026",
   },
   description:
-    "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+    "Find genuine Abercrombie discount code offers for September 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Sep 2026",
     description:
-      "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+      "Find genuine Abercrombie discount code offers for September 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Sep 2026",
     description:
-      "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+      "Find genuine Abercrombie discount code offers for September 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const harborFreightSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-      name: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+      name: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Sep 2026",
       description:
-        "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+        "Find genuine Abercrombie discount code offers for September 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#breadcrumb" },

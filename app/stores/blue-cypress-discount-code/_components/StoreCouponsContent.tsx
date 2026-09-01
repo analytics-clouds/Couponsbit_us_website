@@ -123,7 +123,7 @@ export default function BlueCypressCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(3.1k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Blue Cypress discount codes, promo codes, and apparel deals for Aug 2026. Sign up for 20% OFF your first order, shop polos for $110, hoodies from $114.95, women's essentials from $109.95, and quarter-zips from $124.95.
+                      Find Blue Cypress discount codes, promo codes, and apparel deals for Sep 2026. Sign up for 20% OFF your first order, shop polos for $110, hoodies from $114.95, women's essentials from $109.95, and quarter-zips from $124.95.
                     </p>
                   </div>
                 </div>

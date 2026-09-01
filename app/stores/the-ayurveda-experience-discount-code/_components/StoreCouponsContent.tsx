@@ -123,7 +123,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(19.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find The Ayurveda Experience discount codes, promo codes, and Ayurvedic skincare deals for Aug 2026. Save 50% on Yauvari Youth Spring, 10% on the Day & Night Face Oil Duo, and shop body oils, neck care, face creams, and mini skincare essentials from $35.
+                     Find The Ayurveda Experience discount codes, promo codes, and Ayurvedic skincare deals for Sep 2026. Save 50% on Yauvari Youth Spring, 10% on the Day & Night Face Oil Duo, and shop body oils, neck care, face creams, and mini skincare essentials from $35.
                     </p>
                   </div>
                 </div>

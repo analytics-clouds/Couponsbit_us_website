@@ -3,10 +3,10 @@ import HmCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+    absolute: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Sep 2026",
   },
   description:
-    "Find the latest H&M promo code, discount code, and fashion deals for Aug 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
+    "Find the latest H&M promo code, discount code, and fashion deals for Sep 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hm-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hm-promo-code",
-    title: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+    title: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Sep 2026",
     description:
-      "Find the latest H&M promo code, discount code, and fashion deals for Aug 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
+      "Find the latest H&M promo code, discount code, and fashion deals for Sep 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+    title: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Sep 2026",
     description:
-      "Find the latest H&M promo code, discount code, and fashion deals for Aug 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
+      "Find the latest H&M promo code, discount code, and fashion deals for Sep 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124418/hm-logo_nn4tfs.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const hmSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hm-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/hm-promo-code",
-      name: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+      name: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Sep 2026",
       description:
-        "Find the latest H&M promo code, discount code, and fashion deals for Aug 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
+        "Find the latest H&M promo code, discount code, and fashion deals for Sep 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/hm-promo-code#breadcrumb" },

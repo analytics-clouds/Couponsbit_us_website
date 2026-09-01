@@ -3,7 +3,7 @@ import DreameCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+    absolute: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
   },
   description:
     "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/dreame-discount-code",
-    title: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+    title: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
     description:
       "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+    title: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
     description:
       "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130848/dreame-logo_uqesij.webp"],
@@ -63,7 +63,7 @@ const dreameSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dreame-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/dreame-discount-code",
-      name: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+      name: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
       description:
         "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
       inLanguage: "en-US",

@@ -122,7 +122,7 @@ export default function SignalRingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(2.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find SignalRing discount codes, promo codes, and smart ring deals for Aug 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, Bluetooth connectivity, IP68 water resistance, no monthly subscription, and 30-day returns.
+                      Find SignalRing discount codes, promo codes, and smart ring deals for Sep 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, Bluetooth connectivity, IP68 water resistance, no monthly subscription, and 30-day returns.
                     </p>
                   </div>
                 </div>

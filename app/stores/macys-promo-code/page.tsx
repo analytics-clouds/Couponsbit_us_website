@@ -3,10 +3,10 @@ import MacysCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+    absolute: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Sep 2026",
   },
   description:
-    "Find the latest Macy's promo code, discount code and deals for Aug 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
+    "Find the latest Macy's promo code, discount code and deals for Sep 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/macys-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/macys-promo-code",
-    title: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+    title: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Sep 2026",
     description:
-      "Find the latest Macy's promo code, discount code and deals for Aug 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
+      "Find the latest Macy's promo code, discount code and deals for Sep 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+    title: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Sep 2026",
     description:
-      "Find the latest Macy's promo code, discount code and deals for Aug 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
+      "Find the latest Macy's promo code, discount code and deals for Sep 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const macysSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/macys-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/macys-promo-code",
-      name: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+      name: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Sep 2026",
       description:
-        "Find the latest Macy's promo code, discount code and deals for Aug 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
+        "Find the latest Macy's promo code, discount code and deals for Sep 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/macys-promo-code#breadcrumb" },

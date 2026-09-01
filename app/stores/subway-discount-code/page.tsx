@@ -3,10 +3,10 @@ import SubwayCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+    absolute: "Subway Discount Code – 20% OFF + Meals From $4.99 | Sep 2026",
   },
   description:
-    "Find the latest Subway discount code, promo code, and deals for Aug 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
+    "Find the latest Subway discount code, promo code, and deals for Sep 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/subway-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/subway-discount-code",
-    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Sep 2026",
     description:
-      "Find the latest Subway discount code, promo code, and deals for Aug 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
+      "Find the latest Subway discount code, promo code, and deals for Sep 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Sep 2026",
     description:
-      "Find the latest Subway discount code, promo code, and deals for Aug 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
+      "Find the latest Subway discount code, promo code, and deals for Sep 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787295215/subway-logo_eosuh6.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const subwaySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/subway-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/subway-discount-code",
-      name: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+      name: "Subway Discount Code – 20% OFF + Meals From $4.99 | Sep 2026",
       description:
-        "Find the latest Subway discount code, promo code, and deals for Aug 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
+        "Find the latest Subway discount code, promo code, and deals for Sep 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/subway-discount-code#breadcrumb" },

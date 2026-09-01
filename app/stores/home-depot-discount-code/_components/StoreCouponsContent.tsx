@@ -128,7 +128,7 @@ export default function HomeDepotCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(76.8k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Home Depot discount codes, promo codes, and deals for Aug 2026. Save up to $350 on select appliances, $120 on tools, 49% on a RYOBI fan, and 62% on an M12 Crown Stapler Kit, plus furniture, bath, flooring, and security offers.
+                      Find Home Depot discount codes, promo codes, and deals for Sep 2026. Save up to $350 on select appliances, $120 on tools, 49% on a RYOBI fan, and 62% on an M12 Crown Stapler Kit, plus furniture, bath, flooring, and security offers.
                     </p>
                   </div>
                 </div>

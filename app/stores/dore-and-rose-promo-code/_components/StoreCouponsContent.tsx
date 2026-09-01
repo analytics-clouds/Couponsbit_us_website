@@ -123,7 +123,7 @@ export default function DoreAndRoseCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      DiscoveFind Dore & Rose promo codes, discount codes, and sleep deals for Aug 2026. Save up to 65% during the End of Summer Clearance, with cooling bundles from $121.95, silk sleep masks for $35.50, and sleepwear from $65.80.Lunara Silk and TENCEL.
+                      DiscoveFind Dore & Rose promo codes, discount codes, and sleep deals for Sep 2026. Save up to 65% during the End of Summer Clearance, with cooling bundles from $121.95, silk sleep masks for $35.50, and sleepwear from $65.80.Lunara Silk and TENCEL.
                     </p>
                   </div>
                 </div>

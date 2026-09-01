@@ -3,10 +3,10 @@ import ObsbotCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+    absolute: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Sep 2026",
   },
   description:
-    "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
+    "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/obsbot-discount-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Sep 2026",
     description:
-      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
+      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Sep 2026",
     description:
-      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
+      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg"],
     site: "@couponsbit",
   },
@@ -62,9 +62,9 @@ const obsbotSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-      name: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+      name: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Sep 2026",
       description:
-        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
+        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -79,7 +79,7 @@ const obsbotSchema = {
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#offerlist",
       name: "Obsbot Coupon Codes & Promo Codes",
       description:
-        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
+        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
       numberOfItems: 7,
       itemListElement: [

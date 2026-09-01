@@ -124,7 +124,7 @@ export default function AporroCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(19.6k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Aporro discount codes, promo code and jewelry deals for Aug 2026. Sign up for the Aporro email list and unlock $50 OFF , while current offers include 2 chains for $99, bundles for $149, $40 rope chains, custom pendants from $89, and up to 45% OFF on S925 Baguette Mix Halo Stud Earring Set.
+                      Find Aporro discount codes, promo code and jewelry deals for Sep 2026. Sign up for the Aporro email list and unlock $50 OFF , while current offers include 2 chains for $99, bundles for $149, $40 rope chains, custom pendants from $89, and up to 45% OFF on S925 Baguette Mix Halo Stud Earring Set.
                     </p>
                   </div>
                 </div>

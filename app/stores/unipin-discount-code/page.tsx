@@ -3,10 +3,10 @@ import UnipinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+    absolute: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Sep 2026",
   },
   description:
-    "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+    "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/unipin-discount-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/unipin-discount-code",
-    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Sep 2026",
     description:
-      "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+      "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Sep 2026",
     description:
-      "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+      "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp"],
     site: "@couponsbit",
   },
@@ -61,9 +61,9 @@ const unipinSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/unipin-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/unipin-discount-code",
-      name: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+      name: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Sep 2026",
       description:
-        "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+        "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -78,7 +78,7 @@ const unipinSchema = {
       "@id": "https://www.couponsbit.us/stores/unipin-discount-code#offerlist",
       name: "Unipin Coupon Codes & Promo Codes",
       description:
-        "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+        "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
       url: "https://www.couponsbit.us/stores/unipin-discount-code",
       numberOfItems: 10,
       itemListElement: [

@@ -130,7 +130,7 @@ export default function WayfairCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(56.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Wayfair discount codes, promo codes, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and area rugs, shop dorm essentials from $20, outdoor décor from $15, get 10% OFF for new subscribers, plus free shipping.
+                      Find Wayfair discount codes, promo codes, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and area rugs, shop dorm essentials from $20, outdoor décor from $15, get 10% OFF for new subscribers, plus free shipping.
                     </p>
                   </div>
                 </div>

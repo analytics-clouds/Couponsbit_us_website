@@ -228,7 +228,7 @@ export default function BudgetCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">Ratings</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Budget Discount Code, voucher, and coupon code to enjoy UP TO 35% OFF on Budget car rentals. Save on weekly rentals, weekend specials, truck rentals, and free vehicle upgrades while booking affordable travel with Budget worldwide.
+                      Discover verified Budget promo codes and discount codes for Sep 2026. Save up to 35% on car rentals, enjoy weekly rental discounts, weekend specials, truck rentals from $29.99/day, young driver savings, and Pay Now offers for your next trip.
                     </p>
                   </div>
                 </div>

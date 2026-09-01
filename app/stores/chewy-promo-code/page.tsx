@@ -3,10 +3,10 @@ import ChewyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+    absolute: "Chewy Promo Code: 50% Off + $15 Gift Card | Sep 2026",
   },
   description:
-    "Find the latest Chewy promo codes and coupons for August 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
+    "Find the latest Chewy promo codes and coupons for September 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/chewy-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/chewy-promo-code",
-    title: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+    title: "Chewy Promo Code: 50% Off + $15 Gift Card | Sep 2026",
     description:
-      "Find the latest Chewy promo codes and coupons for August 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
+      "Find the latest Chewy promo codes and coupons for September 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+    title: "Chewy Promo Code: 50% Off + $15 Gift Card | Sep 2026",
     description:
-      "Find the latest Chewy promo codes and coupons for August 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
+      "Find the latest Chewy promo codes and coupons for September 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/chewy-logo_nadir3.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const chewySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/chewy-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/chewy-promo-code",
-      name: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+      name: "Chewy Promo Code: 50% Off + $15 Gift Card | Sep 2026",
       description:
-        "Find the latest Chewy promo codes and coupons for August 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
+        "Find the latest Chewy promo codes and coupons for September 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

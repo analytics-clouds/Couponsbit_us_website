@@ -123,7 +123,7 @@ export default function ZaraCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(47.9k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Zara discount codes, promo codes, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, women’s outerwear up to 50% OFF, halter tops from $14, and linen shirts at 46% OFF.
+                      Find Zara discount codes, promo codes, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, women’s outerwear up to 50% OFF, halter tops from $14, and linen shirts at 46% OFF.
                     </p>
                   </div>
                 </div>

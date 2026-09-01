@@ -3,10 +3,10 @@ import ZenHotelsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+    absolute: "Zen Hotels Discount Code: $35 Off + Paris from $852 | September 2026",
   },
   description:
-    "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+    "Use a verified Zen Hotels discount code & save in September 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | September 2026",
     description:
-      "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+      "Use a verified Zen Hotels discount code & save in September 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["tr_TR", "en_IN", "de_DE", "en_GB", "en_PK"],
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | September 2026",
     description:
-      "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+      "Use a verified Zen Hotels discount code & save in September 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp"],
     site: "@couponsbit",
   },
@@ -66,9 +66,9 @@ const zenhotelsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/zen-hotels-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-      name: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+      name: "Zen Hotels Discount Code: $35 Off + Paris from $852 | September 2026",
       description:
-        "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+        "Use a verified Zen Hotels discount code & save in September 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -83,7 +83,7 @@ const zenhotelsSchema = {
       "@id": "https://www.couponsbit.us/stores/zen-hotels-discount-code#offerlist",
       name: "Zen Hotels Coupon Codes & Promo Codes",
       description:
-        "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+        "Use a verified Zen Hotels discount code & save in September 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
       url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
       numberOfItems: 8,
       itemListElement: [

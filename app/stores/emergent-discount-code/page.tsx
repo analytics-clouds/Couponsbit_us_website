@@ -3,10 +3,10 @@ import EmergentCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+    absolute: "Emergent Discount Code - Save $14.79 on monthy plan | Sep 2026",
   },
   description:
-    "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
+    "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/emergent-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/emergent-discount-code",
-    title: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+    title: "Emergent Discount Code - Save $14.79 on monthy plan | Sep 2026",
     description:
-      "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
+      "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+    title: "Emergent Discount Code - Save $14.79 on monthy plan | Sep 2026",
     description:
-      "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
+      "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp"],
     site: "@couponsbit",
   },
@@ -62,9 +62,9 @@ const emergentSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/emergent-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/emergent-discount-code",
-      name: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+      name: "Emergent Discount Code - Save $14.79 on monthy plan | Sep 2026",
       description:
-        "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
+        "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -79,7 +79,7 @@ const emergentSchema = {
       "@id": "https://www.couponsbit.us/stores/emergent-discount-code#offerlist",
       name: "Emergent Coupon Codes & Promo Codes",
       description:
-        "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
+        "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. September 2026.",
       url: "https://www.couponsbit.us/stores/emergent-discount-code",
       numberOfItems: 2,
       itemListElement: [

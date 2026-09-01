@@ -309,7 +309,7 @@ export default function NuagewearCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Get verified Nuage discount codes & NuageWear promo codes for August 2026. Save 39% on the bestselling Wireless Stay-Put Bra from just $36. Enjoy free worldwide shipping on orders above $60 — comfort-first lingerie & shapewear updated daily.
+                     Get verified Nuage discount codes & NuageWear promo codes for September 2026. Save 39% on the bestselling Wireless Stay-Put Bra from just $36. Enjoy free worldwide shipping on orders above $60 — comfort-first lingerie & shapewear updated daily.
                     </p>
                   </div>
                 </div>

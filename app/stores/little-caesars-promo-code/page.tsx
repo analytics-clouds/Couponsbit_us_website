@@ -3,10 +3,10 @@ import LittleCaesarsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+    absolute: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Sep 2026",
   },
   description:
-    "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
+    "Find the latest Little Caesars promo codes, discount code for September 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/little-caesars-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/little-caesars-promo-code",
-    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Sep 2026",
     description:
-      "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
+      "Find the latest Little Caesars promo codes, discount code for September 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+    title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Sep 2026",
     description:
-      "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
+      "Find the latest Little Caesars promo codes, discount code for September 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const littleCaesarsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/little-caesars-promo-code",
-      name: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+      name: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Sep 2026",
       description:
-        "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
+        "Find the latest Little Caesars promo codes, discount code for September 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#breadcrumb" },

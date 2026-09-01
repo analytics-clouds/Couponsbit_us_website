@@ -189,7 +189,7 @@ export default function EmergentCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use a verified Emergent discount code to get the Starter plan at just $2.63/mo — saving $14.79. Pro plan starts at $146.10/mo with free deployment, custom domain, analytics & Beast Thinking AI. Updated August 2026.
+                      Use a verified Emergent discount code to get the Starter plan at just $2.63/mo — saving $14.79. Pro plan starts at $146.10/mo with free deployment, custom domain, analytics & Beast Thinking AI. Updated September 2026.
                     </p>
                   </div>
                 </div>

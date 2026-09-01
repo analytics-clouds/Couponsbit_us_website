@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
   },
   description:
-    "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Aug 2026",
+    "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Sep 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/amazon-discount-code",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/amazon-discount-code",
     title: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
     description:
-      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Aug 2026",
+      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Sep 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
     description:
-      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Aug 2026",
+      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Sep 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const amazonSchema = {
       url: "https://www.couponsbit.us/stores/amazon-discount-code",
       name: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
       description:
-        "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Aug 2026",
+        "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Sep 2026",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

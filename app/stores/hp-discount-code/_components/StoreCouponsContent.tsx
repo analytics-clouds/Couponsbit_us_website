@@ -309,7 +309,7 @@ export default function HPCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified HP discount codes & promo codes for August 2026. Save up to 71% off laptops, desktops & printers in the HP 4th of July Sale. HP OMEN Gaming Desktop from $1,189.99 — save $1,210 instantly.
+                      Get verified HP discount codes & promo codes for September 2026. Save up to 71% off laptops, desktops & printers in the HP 4th of July Sale. HP OMEN Gaming Desktop from $1,189.99 — save $1,210 instantly.
                     </p>
                   </div>
                 </div>

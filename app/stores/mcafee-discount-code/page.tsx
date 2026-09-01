@@ -3,7 +3,7 @@ import McafeeCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+    absolute: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
   },
   description:
     "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-    title: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+    title: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
     description:
       "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+    title: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
     description:
       "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp"],
@@ -60,7 +60,7 @@ const mcafeeSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/mcafee-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-      name: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+      name: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
       description:
         "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
       inLanguage: "en-US",

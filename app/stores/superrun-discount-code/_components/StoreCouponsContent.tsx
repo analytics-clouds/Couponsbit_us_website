@@ -122,7 +122,7 @@ export default function SuperrunCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Superun discount codes, promo codes, and treadmill deals for Aug 2026. Save $30 on the RUN Pro Foldable Treadmill at $264.99, $20 on Walk&Run at $249.99, $10 on the WALK Urban at $129, plus a $39.99 replacement remote.
+                      Find Superun discount codes, promo codes, and treadmill deals for Sep 2026. Save $30 on the RUN Pro Foldable Treadmill at $264.99, $20 on Walk&Run at $249.99, $10 on the WALK Urban at $129, plus a $39.99 replacement remote.
                     </p>
                   </div>
                 </div>

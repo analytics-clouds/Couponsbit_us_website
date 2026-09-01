@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
   },
   description:
-    "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Aug 2026.",
+    "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Sep 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/klook-discount-code",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/klook-discount-code",
     title: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
     description:
-      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Aug 2026.",
+      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Sep 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
     description:
-      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Aug 2026.",
+      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Sep 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const klookSchema = {
       url: "https://www.couponsbit.us/stores/klook-discount-code",
       name: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
       description:
-        "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Aug 2026.",
+        "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Sep 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

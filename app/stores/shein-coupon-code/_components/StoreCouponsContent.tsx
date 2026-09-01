@@ -124,7 +124,7 @@ export default function SheinCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(28.9k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find SHEIN coupon codes, promo codes, and fashion deals for Aug 2026. Save up to 90% on selected items, get up to 85% OFF during Final Bell, 70% OFF summer styles, and shop women's tops from $10.99.
+                      Find SHEIN coupon codes, promo codes, and fashion deals for Sep 2026. Save up to 90% on selected items, get up to 85% OFF during Final Bell, 70% OFF summer styles, and shop women's tops from $10.99.
                     </p>
                   </div>
                 </div>

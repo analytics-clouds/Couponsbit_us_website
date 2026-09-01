@@ -3,10 +3,10 @@ import DoreAndRoseCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+    absolute: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Sep 2026",
   },
   description:
-    "Find the latest Dore & Rose promo code, discount code on sleep essentials for Aug 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+    "Find the latest Dore & Rose promo code, discount code on sleep essentials for Sep 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Sep 2026",
     description:
-      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Aug 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Sep 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Sep 2026",
     description:
-      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Aug 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Sep 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const doreAndRoseSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-      name: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+      name: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Sep 2026",
       description:
-        "Find the latest Dore & Rose promo code, discount code on sleep essentials for Aug 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+        "Find the latest Dore & Rose promo code, discount code on sleep essentials for Sep 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#breadcrumb" },

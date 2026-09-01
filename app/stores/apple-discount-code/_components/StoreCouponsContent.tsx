@@ -128,7 +128,7 @@ export default function AppleCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(112.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find Apple discount codes, promo codes, and student deals for Aug 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, 20% OFF qualifying student orders, MacBook Neo from $599, MacBook Air from $999, and iPad Air from $699.
+                     Find Apple discount codes, promo codes, and student deals for Sep 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, 20% OFF qualifying student orders, MacBook Neo from $599, MacBook Air from $999, and iPad Air from $699.
                     </p>
                   </div>
                 </div>

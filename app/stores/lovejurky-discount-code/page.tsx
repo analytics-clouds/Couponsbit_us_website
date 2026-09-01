@@ -3,10 +3,10 @@ import LoveJerkyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+    absolute: "LovesJerky Discount Code: Free Shipping + $50 Sample | Sep 2026",
   },
   description:
-    "Find the latest LovesJerky discount codes and deals for Aug 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+    "Find the latest LovesJerky discount codes and deals for Sep 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lovejurky-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Sep 2026",
     description:
-      "Find the latest LovesJerky discount codes and deals for Aug 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+      "Find the latest LovesJerky discount codes and deals for Sep 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Sep 2026",
     description:
-      "Find the latest LovesJerky discount codes and deals for Aug 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+      "Find the latest LovesJerky discount codes and deals for Sep 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const loveJerkySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lovejurky-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-      name: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+      name: "LovesJerky Discount Code: Free Shipping + $50 Sample | Sep 2026",
       description:
-        "Find the latest LovesJerky discount codes and deals for Aug 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+        "Find the latest LovesJerky discount codes and deals for Sep 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

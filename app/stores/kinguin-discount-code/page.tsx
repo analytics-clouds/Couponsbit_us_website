@@ -3,10 +3,10 @@ import KinguinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+    absolute: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | September 2026",
   },
   description:
-    "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
+    "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kinguin-discount-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kinguin-discount-code",
-    title: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+    title: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | September 2026",
     description:
-      "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
+      "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+    title: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | September 2026",
     description:
-      "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
+      "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783494079/kinguin-coupon-code_ugjj9s.jpg"],
     site: "@couponsbit",
   },
@@ -65,9 +65,9 @@ const kinguinSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kinguin-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/kinguin-discount-code",
-      name: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+      name: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | September 2026",
       description:
-        "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
+        "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -82,7 +82,7 @@ const kinguinSchema = {
       "@id": "https://www.couponsbit.us/stores/kinguin-discount-code#offerlist",
       name: "Kinguin Coupon Codes & Promo Codes",
       description:
-        "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
+        "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
       url: "https://www.couponsbit.us/stores/kinguin-discount-code",
       numberOfItems: 13,
       itemListElement: [

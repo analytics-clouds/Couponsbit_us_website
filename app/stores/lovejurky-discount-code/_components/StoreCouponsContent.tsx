@@ -222,7 +222,7 @@ export default function LoveJerkyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with LovesJerkyCo discount codes and deals in Aug 2026, including free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, Red Chili Powder from $10, and Teriyaki or Lemon Pepper seasoning for $24.
+                      Save with LovesJerkyCo discount codes and deals in Sep 2026, including free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, Red Chili Powder from $10, and Teriyaki or Lemon Pepper seasoning for $24.
                     </p>
                   </div>
                 </div>

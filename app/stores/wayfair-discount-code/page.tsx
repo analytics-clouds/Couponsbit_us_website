@@ -3,10 +3,10 @@ import WayfairCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+    absolute: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Sep 2026",
   },
   description:
-    "Find the latest Wayfair discount code, promo code, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+    "Find the latest Wayfair discount code, promo code, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/wayfair-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/wayfair-discount-code",
-    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Sep 2026",
     description:
-      "Find the latest Wayfair discount code, promo code, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+      "Find the latest Wayfair discount code, promo code, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Sep 2026",
     description:
-      "Find the latest Wayfair discount code, promo code, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+      "Find the latest Wayfair discount code, promo code, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/wayfair-logo_upnj98.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const wayfairSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/wayfair-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/wayfair-discount-code",
-      name: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+      name: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Sep 2026",
       description:
-        "Find the latest Wayfair discount code, promo code, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+        "Find the latest Wayfair discount code, promo code, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/wayfair-discount-code#breadcrumb" },

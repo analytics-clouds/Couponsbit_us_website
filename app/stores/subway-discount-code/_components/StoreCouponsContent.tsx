@@ -123,7 +123,7 @@ export default function SubwayCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.6k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Subway discount codes, promo codes, and food deals for Aug 2026. New customers and members can save 20% on eligible orders, while selected meals start at $4.99, Meal of the Day from $6.99, and bottled drinks from $2.39 at participating locations.
+                      Find Subway discount codes, promo codes, and food deals for Sep 2026. New customers and members can save 20% on eligible orders, while selected meals start at $4.99, Meal of the Day from $6.99, and bottled drinks from $2.39 at participating locations.
                     </p>
                   </div>
                 </div>

@@ -3,10 +3,10 @@ import TheAyurvedaExperienceCouponsContent from "./_components/StoreCouponsConte
 
 export const metadata: Metadata = {
   title: {
-    absolute: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+    absolute: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Sep 2026",
   },
   description:
-    "Find The Ayurveda Experience discount code, promo code, and skincare deals for Aug 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+    "Find The Ayurveda Experience discount code, promo code, and skincare deals for Sep 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
-    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Sep 2026",
     description:
-      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Aug 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Sep 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Sep 2026",
     description:
-      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Aug 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Sep 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787295215/tae-logo_dwfmfi.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const theAyurvedaExperienceSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
-      name: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+      name: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Sep 2026",
       description:
-        "Find The Ayurveda Experience discount code, promo code, and skincare deals for Aug 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+        "Find The Ayurveda Experience discount code, promo code, and skincare deals for Sep 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code#breadcrumb" },

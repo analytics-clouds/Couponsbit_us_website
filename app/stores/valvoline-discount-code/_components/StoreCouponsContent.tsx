@@ -123,7 +123,7 @@ export default function ValvolineCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(38.7k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Valvoline discount codes, promo codes, and vehicle maintenance deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, $15 OFF Synthetic Blend Oil Changes, $10 OFF Conventional Oil Changes, and up to 40% OFF radiator services.
+                      Find Valvoline discount codes, promo codes, and vehicle maintenance deals for Sep 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, $15 OFF Synthetic Blend Oil Changes, $10 OFF Conventional Oil Changes, and up to 40% OFF radiator services.
                     </p>
                   </div>
                 </div>

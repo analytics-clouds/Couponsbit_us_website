@@ -3,7 +3,7 @@ import BluettiCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+    absolute: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
   },
   description:
     "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-    title: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+    title: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
     description:
       "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+    title: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
     description:
       "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp"],
@@ -63,7 +63,7 @@ const bluettiSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/bluetti-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-      name: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+      name: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
       description:
         "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
       inLanguage: "en-US",

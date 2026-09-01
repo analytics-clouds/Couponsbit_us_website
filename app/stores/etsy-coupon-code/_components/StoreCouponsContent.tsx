@@ -129,7 +129,7 @@ export default function EtsyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(68.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Etsy coupon codes, promo codes, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, 65% on new arrivals, 50% on personalized ornaments, and up to 40% on selected purchases.
+                      Find Etsy coupon codes, promo codes, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, 65% on new arrivals, 50% on personalized ornaments, and up to 40% on selected purchases.
                     </p>
                   </div>
                 </div>

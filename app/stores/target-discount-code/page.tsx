@@ -3,10 +3,10 @@ import TargetCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+    absolute: "Target discount Code - Save Up to $100 + Up to 50% OFF | Sep 2026",
   },
   description:
-    "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+    "Find the latest Target discount code, promo code, and deals for Sep 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/target-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/target-discount-code",
-    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Sep 2026",
     description:
-      "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+      "Find the latest Target discount code, promo code, and deals for Sep 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Sep 2026",
     description:
-      "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+      "Find the latest Target discount code, promo code, and deals for Sep 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const targetSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/target-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/target-discount-code",
-      name: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+      name: "Target discount Code - Save Up to $100 + Up to 50% OFF | Sep 2026",
       description:
-        "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+        "Find the latest Target discount code, promo code, and deals for Sep 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/target-discount-code#breadcrumb" },

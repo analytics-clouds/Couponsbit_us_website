@@ -358,7 +358,7 @@ export default function AgodaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Agoda discount codes and deals in Aug 2026. Get up to 50% off attraction passes, USA hotels from $5/night, and discounts on NYC, Miami, Anaheim, Chicago, Hawaii, and other travel experiences with Agoda limited-time offers.
+                      Save with Agoda discount codes and deals in Sep 2026. Get up to 50% off attraction passes, USA hotels from $5/night, and discounts on NYC, Miami, Anaheim, Chicago, Hawaii, and other travel experiences with Agoda limited-time offers.
                     </p>
                   </div>
                 </div>

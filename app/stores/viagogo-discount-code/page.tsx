@@ -3,10 +3,10 @@ import ViaggogoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+    absolute: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Sep 2026",
   },
   description:
-    "Save with a verified Viagogo discount code — August 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+    "Save with a verified Viagogo discount code — September 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/viagogo-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Sep 2026",
     description:
-      "Save with a verified Viagogo discount code — August 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+      "Save with a verified Viagogo discount code — September 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Sep 2026",
     description:
-      "Save with a verified Viagogo discount code — August 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+      "Save with a verified Viagogo discount code — September 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const viagogoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/viagogo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-      name: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+      name: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Sep 2026",
       description:
-        "Save with a verified Viagogo discount code — August 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+        "Save with a verified Viagogo discount code — September 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

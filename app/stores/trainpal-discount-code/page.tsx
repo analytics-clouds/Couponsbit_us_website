@@ -3,10 +3,10 @@ import TrainPalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+    absolute: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Sep 2026",
   },
   description:
-    "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
+    "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/trainpal-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Sep 2026",
     description:
-      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
+      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
     siteName: "Couponsbit",
     locale: "en_GB",
     alternateLocale: ["en_IT", "en_US"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Sep 2026",
     description:
-      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
+      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const trainpalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-      name: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+      name: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Sep 2026",
       description:
-        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
+        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -80,7 +80,7 @@ const trainpalSchema = {
       "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#offerlist",
       name: "TrainPal Coupon Codes & Promo Codes",
       description:
-        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
+        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
       url: "https://www.couponsbit.us/stores/trainpal-discount-code",
       numberOfItems: 9,
       itemListElement: [

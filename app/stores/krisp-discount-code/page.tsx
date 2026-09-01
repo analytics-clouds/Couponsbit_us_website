@@ -3,10 +3,10 @@ import KrispCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+    absolute: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Sep 2026",
   },
   description:
-    "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
+    "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/krisp-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/krisp-discount-code",
-    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Sep 2026",
     description:
-      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
+      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_PH", "en_IN", "de_DE"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Sep 2026",
     description:
-      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
+      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +64,9 @@ const krispSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/krisp-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/krisp-discount-code",
-      name: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+      name: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Sep 2026",
       description:
-        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
+        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -81,7 +81,7 @@ const krispSchema = {
       "@id": "https://www.couponsbit.us/stores/krisp-discount-code#offerlist",
       name: "Krisp.AI Coupon Codes & Promo Codes",
       description:
-        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
+        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
       url: "https://www.couponsbit.us/stores/krisp-discount-code",
       numberOfItems: 4,
       itemListElement: [

@@ -124,7 +124,7 @@ export default function GoodRxCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(72.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find GoodRx discount codes, promo codes, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications with GoodRx Companion, GLP-1 options from $149, Zepbound from $299, and online care visits from $19.
+                     Find GoodRx discount codes, promo codes, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications with GoodRx Companion, GLP-1 options from $149, Zepbound from $299, and online care visits from $19.
                     </p>
                   </div>
                 </div>

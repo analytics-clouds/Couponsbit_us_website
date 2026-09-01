@@ -232,7 +232,7 @@ export default function LycaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(11.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Lyca Mobile discount codes & promo codes for August 2026. Save up to 69% on prepaid plans — no contracts, no credit checks. Grab 18GB high-speed data with hotspot access from just $7.50 per 30 days.
+                      Get verified Lyca Mobile discount codes & promo codes for September 2026. Save up to 69% on prepaid plans — no contracts, no credit checks. Grab 18GB high-speed data with hotspot access from just $7.50 per 30 days.
                     </p>
                   </div>
                 </div>

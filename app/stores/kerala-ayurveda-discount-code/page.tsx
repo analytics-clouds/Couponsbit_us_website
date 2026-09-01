@@ -3,10 +3,10 @@ import KeralaAyurvedaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+    absolute: "Kerala Ayurveda discount code - Only $28.95 | Sep 2026",
   },
   description:
-    "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Aug 2026",
+    "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Sep 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-    title: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+    title: "Kerala Ayurveda discount code - Only $28.95 | Sep 2026",
     description:
-      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Aug 2026",
+      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Sep 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+    title: "Kerala Ayurveda discount code - Only $28.95 | Sep 2026",
     description:
-      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Aug 2026",
+      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Sep 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1785841263/kerala-ayurveda-logo_hdbbfs.jpg"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const keralaAyurvedaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-      name: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+      name: "Kerala Ayurveda discount code - Only $28.95 | Sep 2026",
       description:
-        "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Aug 2026",
+        "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Sep 2026",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

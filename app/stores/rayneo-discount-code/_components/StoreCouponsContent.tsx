@@ -227,7 +227,7 @@ export default function RayneoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified RayNeo discount codes & promo codes for August 2026. Grab the world's first HDR10 AR Glasses — RayNeo Air 4 Pro from $254.15. Save $130 on the AI-powered X3 Pro smart glasses at just $1,169.
+                      Get verified RayNeo discount codes & promo codes for September 2026. Grab the world's first HDR10 AR Glasses — RayNeo Air 4 Pro from $254.15. Save $130 on the AI-powered X3 Pro smart glasses at just $1,169.
                     </p>
                   </div>
                 </div>
@@ -841,7 +841,7 @@ export default function RayneoCouponsContent() {
       {/* Left Column: Main Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Rayneo Discount , Voucher & promo code & Smart Glasses Deals | Aug 2026
+          Rayneo Discount , Voucher & promo code & Smart Glasses Deals | Sep 2026
         </h2>
 
         <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">

@@ -3,10 +3,10 @@ import HostingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Hosting Discount Code: 75% Off at $2.99/mo | Aug 2026",
+    absolute: "Hosting Discount Code: 75% Off at $2.99/mo | Sep 2026",
   },
   description:
-    "Find the latest Hosting discount codes and web hosting deals for August 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+    "Find the latest Hosting discount codes and web hosting deals for September 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hosting-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hosting-discount-code",
-    title: "Hosting Discount Code: 75% Off at $2.99/mo | Aug 2026",
+    title: "Hosting Discount Code: 75% Off at $2.99/mo | Sep 2026",
     description:
-      "Find the latest Hosting discount codes and web hosting deals for August 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+      "Find the latest Hosting discount codes and web hosting deals for September 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Hosting Discount Code: 75% Off at $2.99/mo | Aug 2026",
+    title: "Hosting Discount Code: 75% Off at $2.99/mo | Sep 2026",
     description:
-      "Find the latest Hosting discount codes and web hosting deals for August 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+      "Find the latest Hosting discount codes and web hosting deals for September 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/Hosting_logo_c17yhb.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const hostingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hosting-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/hosting-discount-code",
-      name: "Hosting Discount Code: 75% Off at $2.99/mo | Aug 2026",
+      name: "Hosting Discount Code: 75% Off at $2.99/mo | Sep 2026",
       description:
-        "Find the latest Hosting discount codes and web hosting deals for August 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+        "Find the latest Hosting discount codes and web hosting deals for September 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

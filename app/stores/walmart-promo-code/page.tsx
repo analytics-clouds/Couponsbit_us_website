@@ -3,10 +3,10 @@ import WalmartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+    absolute: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Sep 2026",
   },
   description:
-    "Find the latest Walmart promo code, discount code, and deals for Aug 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+    "Find the latest Walmart promo code, discount code, and deals for Sep 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/walmart-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/walmart-promo-code",
-    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Sep 2026",
     description:
-      "Find the latest Walmart promo code, discount code, and deals for Aug 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+      "Find the latest Walmart promo code, discount code, and deals for Sep 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Sep 2026",
     description:
-      "Find the latest Walmart promo code, discount code, and deals for Aug 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+      "Find the latest Walmart promo code, discount code, and deals for Sep 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const walmartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/walmart-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/walmart-promo-code",
-      name: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+      name: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Sep 2026",
       description:
-        "Find the latest Walmart promo code, discount code, and deals for Aug 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+        "Find the latest Walmart promo code, discount code, and deals for Sep 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/walmart-promo-code#breadcrumb" },

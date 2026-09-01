@@ -3,10 +3,10 @@ import KrogerDigitalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+    absolute: "Kroger Digital Discount Code: Grocery & Pickup Offers | Sep 2026",
   },
   description:
-    "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
+    "Find the latest Kroger Digital discount codes for Sep 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kroger-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kroger-discount-code",
-    title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+    title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Sep 2026",
     description:
-      "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
+      "Find the latest Kroger Digital discount codes for Sep 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+    title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Sep 2026",
     description:
-      "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
+      "Find the latest Kroger Digital discount codes for Sep 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const krogerDigitalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kroger-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/kroger-discount-code",
-      name: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+      name: "Kroger Digital Discount Code: Grocery & Pickup Offers | Sep 2026",
       description:
-        "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
+        "Find the latest Kroger Digital discount codes for Sep 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/kroger-discount-code#breadcrumb" },

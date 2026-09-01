@@ -124,7 +124,7 @@ export default function NikeCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(94.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Nike promo codes, discount codes, and clearance deals for Aug 2026. Save up to 60% on selected styles, get Nike One leggings for $23.97, shoes from $59.97, kids’ leggings for $17.97, and free shipping on eligible $50+ member orders.
+                      Find Nike promo codes, discount codes, and clearance deals for Sep 2026. Save up to 60% on selected styles, get Nike One leggings for $23.97, shoes from $59.97, kids’ leggings for $17.97, and free shipping on eligible $50+ member orders.
                     </p>
                   </div>
                 </div>

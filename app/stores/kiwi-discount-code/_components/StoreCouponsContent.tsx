@@ -215,7 +215,7 @@ export default function KiwiCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Get verified Kiwi.com discount codes & promo codes for August 2026. Fly Portland to Los Angeles from just $64 — one of the best domestic flight deals online. Join Kiwi Club FREE and unlock travel vouchers worth up to $580.
+                     Get verified Kiwi.com discount codes & promo codes for September 2026. Fly Portland to Los Angeles from just $64 — one of the best domestic flight deals online. Join Kiwi Club FREE and unlock travel vouchers worth up to $580.
                     </p>
                   </div>
                 </div>

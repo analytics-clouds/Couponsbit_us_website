@@ -3,10 +3,10 @@ import Factor75CouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+    absolute: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | September 2026",
   },
   description:
-    "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
+    "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/factor75-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/factor75-discount-code",
-    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | September 2026",
     description:
-      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
+      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | September 2026",
     description:
-      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
+      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const factor75Schema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/factor75-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/factor75-discount-code",
-      name: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+      name: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | September 2026",
       description:
-        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
+        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -77,7 +77,7 @@ const factor75Schema = {
       "@id": "https://www.couponsbit.us/stores/factor75-discount-code#offerlist",
       name: "Factor75 Coupon Codes & Promo Codes",
       description:
-        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
+        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
       url: "https://www.couponsbit.us/stores/factor75-discount-code",
       numberOfItems: 2,
       itemListElement: [

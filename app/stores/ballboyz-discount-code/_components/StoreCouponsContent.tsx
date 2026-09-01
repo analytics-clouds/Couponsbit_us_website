@@ -261,7 +261,7 @@ export default function BallboyzCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with BallBoyz discount codes and deals in Aug 2026. Get $60 off Full Body Acne Gameplan, 50% off bestselling Face Acne Gameplan, 40% off summer acne products, $40 off Pimple Pack, and extra bundle savings.
+                      Save with BallBoyz discount codes and deals in Sep 2026. Get $60 off Full Body Acne Gameplan, 50% off bestselling Face Acne Gameplan, 40% off summer acne products, $40 off Pimple Pack, and extra bundle savings.
                     </p>
                   </div>
                 </div>

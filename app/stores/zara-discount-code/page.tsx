@@ -3,10 +3,10 @@ import ZaraCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+    absolute: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Sep 2026",
   },
   description:
-    "Find the latest Zara discount code, promo code, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+    "Find the latest Zara discount code, promo code, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/zara-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/zara-discount-code",
-    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Sep 2026",
     description:
-      "Find the latest Zara discount code, promo code, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+      "Find the latest Zara discount code, promo code, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Sep 2026",
     description:
-      "Find the latest Zara discount code, promo code, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+      "Find the latest Zara discount code, promo code, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const zaraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/zara-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/zara-discount-code",
-      name: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+      name: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Sep 2026",
       description:
-        "Find the latest Zara discount code, promo code, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+        "Find the latest Zara discount code, promo code, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/zara-discount-code#breadcrumb" },

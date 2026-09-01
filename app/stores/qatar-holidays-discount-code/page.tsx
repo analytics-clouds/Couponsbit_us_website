@@ -3,10 +3,10 @@ import QatarHolidaysCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+    absolute: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Sep 2026",
   },
   description:
-    "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
+    "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/qatar-holidays-discount-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/qatar-holidays-discount-code",
-    title: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+    title: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Sep 2026",
     description:
-      "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
+      "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+    title: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Sep 2026",
     description:
-      "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
+      "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg"],
     site: "@couponsbit",
   },
@@ -65,9 +65,9 @@ const qatarholidaysSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/qatar-holidays-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/qatar-holidays-discount-code",
-      name: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+      name: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Sep 2026",
       description:
-        "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
+        "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -82,7 +82,7 @@ const qatarholidaysSchema = {
       "@id": "https://www.couponsbit.us/stores/qatar-holidays-discount-code#offerlist",
       name: "Qatar Holidays Coupon Codes & Promo Codes",
       description:
-        "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
+        "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. September 2026.",
       url: "https://www.couponsbit.us/stores/qatar-holidays-discount-code",
       numberOfItems: 8,
       itemListElement: [

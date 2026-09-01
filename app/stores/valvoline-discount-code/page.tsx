@@ -3,10 +3,10 @@ import ValvolineCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+    absolute: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Sep 2026",
   },
   description:
-    "Find the latest Valvoline discount code, promo code, and car service deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+    "Find the latest Valvoline discount code, promo code, and car service deals for Sep 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/valvoline-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/valvoline-discount-code",
-    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Sep 2026",
     description:
-      "Find the latest Valvoline discount code, promo code, and car service deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+      "Find the latest Valvoline discount code, promo code, and car service deals for Sep 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Sep 2026",
     description:
-      "Find the latest Valvoline discount code, promo code, and car service deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+      "Find the latest Valvoline discount code, promo code, and car service deals for Sep 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/valvoline-logo_qfdbbq.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const valvolineSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/valvoline-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/valvoline-discount-code",
-      name: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+      name: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Sep 2026",
       description:
-        "Find the latest Valvoline discount code, promo code, and car service deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+        "Find the latest Valvoline discount code, promo code, and car service deals for Sep 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/valvoline-discount-code#breadcrumb" },

@@ -3,10 +3,10 @@ import UberEatsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+    absolute: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Sep 2026 ",
   },
   description:
-    "Find the latest Uber Eats promo code, discount code and food delivery deals for Aug 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+    "Find the latest Uber Eats promo code, discount code and food delivery deals for Sep 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/uber-eats-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/uber-eats-promo-code",
-    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Sep 2026 ",
     description:
-      "Find the latest Uber Eats promo code, discount code and food delivery deals for Aug 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+      "Find the latest Uber Eats promo code, discount code and food delivery deals for Sep 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Sep 2026 ",
     description:
-      "Find the latest Uber Eats promo code, discount code and food delivery deals for Aug 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+      "Find the latest Uber Eats promo code, discount code and food delivery deals for Sep 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const uberEatsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/uber-eats-promo-code",
-      name: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+      name: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Sep 2026 ",
       description:
-        "Find the latest Uber Eats promo code, discount code and food delivery deals for Aug 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+        "Find the latest Uber Eats promo code, discount code and food delivery deals for Sep 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#breadcrumb" },

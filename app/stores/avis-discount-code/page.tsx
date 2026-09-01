@@ -3,7 +3,7 @@ import AvisCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+    absolute: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
   },
   description:
     "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/avis-discount-code",
-    title: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+    title: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
     description:
       "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+    title: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
     description:
       "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp"],
@@ -60,7 +60,7 @@ const avisSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/avis-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/avis-discount-code",
-      name: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+      name: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
       description:
         "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
       inLanguage: "en-US",

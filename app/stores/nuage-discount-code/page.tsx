@@ -3,10 +3,10 @@ import NuagewearCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+    absolute: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Sep 2026",
   },
   description:
-    "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
+    "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/nuage-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nuage-discount-code",
-    title: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+    title: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Sep 2026",
     description:
-      "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
+      "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+    title: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Sep 2026",
     description:
-      "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
+      "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/nuage-coupon-code_ggmnbf.jpg"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const nuagewearSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/nuage-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/nuage-discount-code",
-      name: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+      name: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Sep 2026",
       description:
-        "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
+        "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -77,7 +77,7 @@ const nuagewearSchema = {
       "@id": "https://www.couponsbit.us/stores/nuage-discount-code#offerlist",
       name: "Nuagewear Coupon Codes & Promo Codes",
       description:
-        "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
+        "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
       url: "https://www.couponsbit.us/stores/nuage-discount-code",
       numberOfItems: 12,
       itemListElement: [

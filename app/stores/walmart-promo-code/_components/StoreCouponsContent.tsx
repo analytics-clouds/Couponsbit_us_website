@@ -123,7 +123,7 @@ export default function WalmartCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(64.8k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Walmart promo codes, discount codes, deals, and savings for Aug 2026. Save up to 65% OFF during Flash Deals, get a Walmart+ 30-day trial for $1, Acer Nitro 27-inch monitor for $119, headphones for $17.99, and bedding for $74.99.
+                      Find Walmart promo codes, discount codes, deals, and savings for Sep 2026. Save up to 65% OFF during Flash Deals, get a Walmart+ 30-day trial for $1, Acer Nitro 27-inch monitor for $119, headphones for $17.99, and bedding for $74.99.
                     </p>
                   </div>
                 </div>

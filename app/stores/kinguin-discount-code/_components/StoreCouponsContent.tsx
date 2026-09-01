@@ -237,7 +237,7 @@ export default function KinguinCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Unlock massive savings with verified Kinguin discount codes & promo codes for August 2026. Score up to 97% off PC games, gift cards & software. Grab EA SPORTS FC 26 from just $1.86 — Steam, Xbox & PlayStation deals updated daily.
+                      Unlock massive savings with verified Kinguin discount codes & promo codes for September 2026. Score up to 97% off PC games, gift cards & software. Grab EA SPORTS FC 26 from just $1.86 — Steam, Xbox & PlayStation deals updated daily.
                     </p>
                   </div>
                 </div>

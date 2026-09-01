@@ -3,10 +3,10 @@ import OutfitrCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+    absolute: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Sep 2026",
   },
   description:
-    "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
+    "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/outfitr-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Sep 2026",
     description:
-      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
+      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Sep 2026",
     description:
-      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
+      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const outfitrSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/outfitr-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-      name: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+      name: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Sep 2026",
       description:
-        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
+        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -77,7 +77,7 @@ const outfitrSchema = {
       "@id": "https://www.couponsbit.us/stores/outfitr-discount-code#offerlist",
       name: "Outfitr Coupon Codes & Promo Codes",
       description:
-        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
+        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
       url: "https://www.couponsbit.us/stores/outfitr-discount-code",
       numberOfItems: 11,
       itemListElement: [

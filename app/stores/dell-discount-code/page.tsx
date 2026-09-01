@@ -3,10 +3,10 @@ import DellCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Aug 2026",
+    absolute: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Sep 2026",
   },
   description:
-    "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+    "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/dell-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/dell-discount-code",
-    title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptopss | Aug 2026",
+    title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptopss | Sep 2026",
     description:
-      "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+      "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Aug 2026",
+    title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Sep 2026",
     description:
-      "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+      "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const dellSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dell-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/dell-discount-code",
-      name: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Aug 2026",
+      name: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Sep 2026",
       description:
-        "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+        "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -77,7 +77,7 @@ const dellSchema = {
       "@id": "https://www.couponsbit.us/stores/dell-discount-code#offerlist",
       name: "Dell Coupon Codes & Promo Codes",
       description:
-        "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+        "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
       url: "https://www.couponsbit.us/stores/dell-discount-code",
       numberOfItems: 12,
       itemListElement: [

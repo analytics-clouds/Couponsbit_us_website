@@ -3,10 +3,10 @@ import DiscountTireCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Aug 2026",
+    absolute: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Sep 2026",
   },
   description:
-    "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Aug 2026 ",
+    "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Sep 2026 ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/discounttire-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-    title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Aug 2026",
+    title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Sep 2026",
     description:
-      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Aug 2026 ",
+      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Sep 2026 ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129",
     description:
-      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Aug 2026 ",
+      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Sep 2026 ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/discounttie-logo_lcrloj.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const discountTireSchema = {
       url: "https://www.couponsbit.us/stores/discounttire-discount-code",
       name: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129",
       description:
-        "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Aug 2026 ",
+        "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Sep 2026 ",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

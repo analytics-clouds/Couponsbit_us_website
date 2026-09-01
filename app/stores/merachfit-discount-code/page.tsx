@@ -3,10 +3,10 @@ import MerachFitCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+    absolute: "Merachfit Discount Code: Up to 69% Off + $260 Off | Sep 2026",
   },
   description:
-    "Find the latest Merachfit discount codes and deals for Aug 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+    "Find the latest Merachfit discount codes and deals for Sep 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/merachfit-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Sep 2026",
     description:
-      "Find the latest Merachfit discount codes and deals for Aug 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+      "Find the latest Merachfit discount codes and deals for Sep 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Sep 2026",
     description:
-      "Find the latest Merachfit discount codes and deals for Aug 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+      "Find the latest Merachfit discount codes and deals for Sep 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const merachFitSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/merachfit-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-      name: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+      name: "Merachfit Discount Code: Up to 69% Off + $260 Off | Sep 2026",
       description:
-        "Find the latest Merachfit discount codes and deals for Aug 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+        "Find the latest Merachfit discount codes and deals for Sep 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

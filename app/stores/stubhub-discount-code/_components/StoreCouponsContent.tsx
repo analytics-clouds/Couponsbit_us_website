@@ -248,7 +248,7 @@ export default function StubHubCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(18k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-7 max-w-[400px] text-justify">
-                      Find verified StubHub discount codes for August 2026 and save on concerts, sports & live events. Get flat 10% off sitewide, $20 off as a new user, $25 student discount & Lion King NYC tickets from just $171.
+                      Find verified StubHub discount codes for September 2026 and save on concerts, sports & live events. Get flat 10% off sitewide, $20 off as a new user, $25 student discount & Lion King NYC tickets from just $171.
                     </p>
                     
                   </div>

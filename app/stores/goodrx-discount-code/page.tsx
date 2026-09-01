@@ -3,10 +3,10 @@ import GoodRxCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026",
+    absolute: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Sep 2026",
   },
   description:
-    "Find the latest GoodRx discount code, promo code, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+    "Find the latest GoodRx discount code, promo code, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/goodrx-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/goodrx-discount-code",
-    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026  ",
+    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Sep 2026  ",
     description:
-      "Find the latest GoodRx discount code, promo code, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+      "Find the latest GoodRx discount code, promo code, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026  ",
+    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Sep 2026  ",
     description:
-      "Find the latest GoodRx discount code, promo code, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+      "Find the latest GoodRx discount code, promo code, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/goodrx-logo_ibgfjr.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const goodRxSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/goodrx-discount-code",
-      name: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026  ",
+      name: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Sep 2026  ",
       description:
-        "Find the latest GoodRx discount code, promo code, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+        "Find the latest GoodRx discount code, promo code, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#breadcrumb" },

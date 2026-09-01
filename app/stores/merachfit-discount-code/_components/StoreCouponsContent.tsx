@@ -222,7 +222,7 @@ export default function MerachFitCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Merachfit discount codes and deals in Aug 2026, including up to 69% off a simulated stair machine, $260 off the Q1S Rower, $250 off NovaRow 950, 30% off UltraWalk W60 Plus, and additional home fitness savings.
+                      Save with Merachfit discount codes and deals in Sep 2026, including up to 69% off a simulated stair machine, $260 off the Q1S Rower, $250 off NovaRow 950, 30% off UltraWalk W60 Plus, and additional home fitness savings.
                     </p>
                   </div>
                 </div>

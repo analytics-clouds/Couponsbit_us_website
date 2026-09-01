@@ -3,10 +3,10 @@ import LumibrickCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+    absolute: "Lumibrick Discount Code: Building Sets From $56.99 | September 2026",
   },
   description:
-    "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
+    "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lumibrick-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lumibrick-discount-code",
-    title: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+    title: "Lumibrick Discount Code: Building Sets From $56.99 | September 2026",
     description:
-      "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
+      "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+    title: "Lumibrick Discount Code: Building Sets From $56.99 | September 2026",
     description:
-      "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
+      "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782730730/lumricks-logo_a84nyo.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const lumibrickSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lumibrick-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/lumibrick-discount-code",
-      name: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+      name: "Lumibrick Discount Code: Building Sets From $56.99 | September 2026",
       description:
-        "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
+        "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -77,7 +77,7 @@ const lumibrickSchema = {
       "@id": "https://www.couponsbit.us/stores/lumibrick-discount-code#offerlist",
       name: "Lumibrick Coupon Codes & Promo Codes",
       description:
-        "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
+        "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
       url: "https://www.couponsbit.us/stores/lumibrick-discount-code",
       numberOfItems: 8,
       itemListElement: [

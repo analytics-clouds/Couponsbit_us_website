@@ -123,7 +123,7 @@ export default function HmCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.6k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find H&M promo codes, discount codes, and sale deals for Aug 2026. Save up to 77% on selected men’s styles, 72% on women’s fashion, 70% on beauty and bedding, and discover summer clothing, footwear, fragrance and makeup from $2.49.
+                      Find H&M promo codes, discount codes, and sale deals for Sep 2026. Save up to 77% on selected men’s styles, 72% on women’s fashion, 70% on beauty and bedding, and discover summer clothing, footwear, fragrance and makeup from $2.49.
                     </p>
                   </div>
                 </div>

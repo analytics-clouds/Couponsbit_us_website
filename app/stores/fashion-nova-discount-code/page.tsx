@@ -3,7 +3,7 @@ import FashionNovaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+    absolute: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Sep 2026",
   },
   description:
     "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
-    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Sep 2026",
     description:
       "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Sep 2026",
     description:
       "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp"],
@@ -63,7 +63,7 @@ const fashionNovaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/fashion-nova-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
-      name: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+      name: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Sep 2026",
       description:
         "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
       inLanguage: "en-US",

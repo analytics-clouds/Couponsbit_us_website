@@ -3,10 +3,10 @@ import BlueCypressCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+    absolute: "Blue Cypress Discount Code - Get 20% OFF First Order | Sep 2026",
   },
   description:
-    "Find the latest Blue Cypress discount code, promo code and deals for Aug 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+    "Find the latest Blue Cypress discount code, promo code and deals for Sep 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Sep 2026",
     description:
-      "Find the latest Blue Cypress discount code, promo code and deals for Aug 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+      "Find the latest Blue Cypress discount code, promo code and deals for Sep 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Sep 2026",
     description:
-      "Find the latest Blue Cypress discount code, promo code and deals for Aug 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+      "Find the latest Blue Cypress discount code, promo code and deals for Sep 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const blueCypressSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-      name: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+      name: "Blue Cypress Discount Code - Get 20% OFF First Order | Sep 2026",
       description:
-        "Find the latest Blue Cypress discount code, promo code and deals for Aug 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+        "Find the latest Blue Cypress discount code, promo code and deals for Sep 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#breadcrumb" },

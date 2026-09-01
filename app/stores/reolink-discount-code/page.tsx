@@ -3,10 +3,10 @@ import ReolinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+    absolute: "Reolink Discount Code: Up to 50% Off Security Cameras | September 2026",
   },
   description:
-    "Save up to 50% with the latest Reolink discount code — August 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+    "Save up to 50% with the latest Reolink discount code — September 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/reolink-discount-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/reolink-discount-code",
-    title: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+    title: "Reolink Discount Code: Up to 50% Off Security Cameras | September 2026",
     description:
-      "Save up to 50% with the latest Reolink discount code — August 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+      "Save up to 50% with the latest Reolink discount code — September 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+    title: "Reolink Discount Code: Up to 50% Off Security Cameras | September 2026",
     description:
-      "Save up to 50% with the latest Reolink discount code — August 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+      "Save up to 50% with the latest Reolink discount code — September 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp"],
     site: "@couponsbit",
   },
@@ -62,9 +62,9 @@ const reolinkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/reolink-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/reolink-discount-code",
-      name: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+      name: "Reolink Discount Code: Up to 50% Off Security Cameras | September 2026",
       description:
-        "Save up to 50% with the latest Reolink discount code — August 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+        "Save up to 50% with the latest Reolink discount code — September 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

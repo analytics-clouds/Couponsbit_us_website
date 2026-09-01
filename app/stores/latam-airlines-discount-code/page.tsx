@@ -3,10 +3,10 @@ import LatamCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+    absolute: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Sep 2026",
   },
   description:
-    "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. August 2026 deals verified daily.",
+    "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. September 2026 deals verified daily.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Sep 2026",
     description:
-      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. August 2026 deals verified daily.",
+      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. September 2026 deals verified daily.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Sep 2026",
     description:
-      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. August 2026 deals verified daily.",
+      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. September 2026 deals verified daily.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const latamSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/latam-airlines-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-      name: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+      name: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Sep 2026",
       description:
-        "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. August 2026 deals verified daily.",
+        "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. September 2026 deals verified daily.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

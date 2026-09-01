@@ -123,7 +123,7 @@ export default function UberEatsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Uber Eats promo codes, discounts, and food delivery deals for Aug 2026. Save up to 60% on $15+ orders, get 50% OFF qualifying orders, $10 OFF your first $20+ order, $15 OFF Denny’s $35+ orders, and free fries.
+                      Find Uber Eats promo codes, discounts, and food delivery deals for Sep 2026. Save up to 60% on $15+ orders, get 50% OFF qualifying orders, $10 OFF your first $20+ order, $15 OFF Denny’s $35+ orders, and free fries.
                     </p>
                   </div>
                 </div>

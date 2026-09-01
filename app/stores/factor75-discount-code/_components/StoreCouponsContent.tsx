@@ -189,7 +189,7 @@ export default function Factor75CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Factor75 discount codes & promo codes for August 2026. New customers save up to $130 off first meal deliveries plus free breakfast for 1 year. Limited-time offer — up to $126 off your first six boxes.
+                      Get verified Factor75 discount codes & promo codes for September 2026. New customers save up to $130 off first meal deliveries plus free breakfast for 1 year. Limited-time offer — up to $126 off your first six boxes.
                     </p>
                   </div>
                 </div>
