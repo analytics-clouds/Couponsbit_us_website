@@ -382,6 +382,330 @@ export default function JcpenneyCouponsContent() {
           JCPenney Coupon Code, Promo Code & Discount Offers
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Fine Jewellery Sale 💎
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 70% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Spend $1,500 or more; online only
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible Fine Jewelry styles
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Clearance Styles Sale 🏷️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 70% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            New markdowns added every Friday; some items coupon-excluded
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Clearance - Shop All Products collection
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            JCPenney $325+ Spend Sale 🛍️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Minimum spend of $325 required; check exclusions
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected fashion &amp; lifestyle products
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Fine Jewelry Buy More Save More 💍
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 60% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Spend $800 or more; online only
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible Fine Jewelry items
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Back-to-School Sale 🎒
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to $500 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time deal, last day
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Back-to-School collection &amp; school essentials
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            St. John's Bay Blouse Deal 👔
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $24.99 <span className="text-xs text-gray-400 font-normal line-through">$44.00</span> (43% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time discounted price
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            St. John's Bay Women's Split Tie Neck 3/4 Sleeve Blouse
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Fall Styles Sale 🍂
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Seasonal fashion promotion, limited-time
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected fall seasonal fashion picks
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Tops Sale 👚
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $18.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Special sale prices on selected items
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Women's Tops
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Semi-Annual Hairspray Sale 💇
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $14.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Sale ends October 4
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            100+ hairsprays &amp; styling products
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Jeans Sale 👖
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $23.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Online in the USA while stocks last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Women's Jeans styles
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Dresses Sale 👗
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $32.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited time offers on selected designs
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Women's Dresses
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Pants Sale 👖
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $31.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Special sale prices online
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Women's Pants
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Dress Shoes Sale 👠
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $31.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Available while stocks last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Women's Dress Shoes
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Cowboy Boots 👢
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $54.99 <span className="text-xs text-gray-400 font-normal line-through">$100.00</span> (45% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Limited-time sale price
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Pop Women's Ellary Block Heel Cowboy Boots
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Women's Sneakers Deal 👟
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $59.99 <span className="text-xs text-gray-400 font-normal line-through">$90.00</span> (33% OFF)
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Available while stocks last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Shu by Shu Shop Samira Women's Sneakers
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Labor Day Home Sale 🏠
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 50% + Extra 30% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Ends September 13; code required for extra discount
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select furniture, décor, bedding &amp; home styles
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Levi's Apparel Sale 👖
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 30% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Additional codes and coupons do not apply
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Levi's women's and men's apparel
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             JCPenney is a long-established American department store offering fashion, beauty, home essentials, jewelry, accessories, and everyday products for the whole family. From women's and men's clothing to kids' apparel, footwear, bedding, furniture, appliances, beauty products, and seasonal merchandise, JCPenney gives shoppers plenty of options for refreshing their wardrobe or home.

@@ -382,6 +382,311 @@ export default function BurgerKingCouponsContent() {
           Burger King Promo Code, Coupon Code & Discount Offers
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            2x Crowns on King Jr. Meals 👑
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            2x Crowns
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            August 24–30, 2026; activate before purchase
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            King Jr. Kids Meals (App, Web, Kiosk, Delivery)
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            The Actually $1 Menu 🍔
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $1.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Aug 18 – Sep 15, 2026; select Portland &amp; Louisville markets
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select sides, drinks, cookies, coffee, soft serve
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Whopper Wednesday 🍔
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $3.98 Whopper
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Wednesdays only; activate offer in App/Web
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Regular Whopper Sandwich
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            BOGO Original Chicken Sandwich 🍗
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Buy 1 Get 1 FREE
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Activate offer in App or bk.com before ordering
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Original Chicken Sandwich
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Burger King $5 Duo 🍟
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            2 Items for $5.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Prices &amp; participation may vary by location
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select 2: Whopper Jr., Bacon Cheeseburger, OCS, Fries, etc.
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Burger King $7 Trio 🥤
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            3 Items for $7.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Available at participating U.S. locations
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select 3: Whopper Jr., Bacon Cheeseburger, OCS, Fries, etc.
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Free Spotify Premium 🎵
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 4 Months FREE
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Qualifying $10+ purchase required; 4 mos new / 2 mos returning
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Spotify Premium Subscription
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Free Whopper Every 3 Months 🛒
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            FREE Whopper
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Walmart+ Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Once per calendar quarter with qualifying purchase
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Whopper Sandwich via BK App / Web
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            40% Off Walmart+ Membership 🛍️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            1-year monthly membership; auto-renews unless canceled
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Walmart+ Monthly Membership
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Free Any Size Fries 🍟
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            FREE Any Size
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Select Royal Perks
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Redeem 1x/week with qualifying $5+ purchase
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Any Size Burger King Fries
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            $2 Large Fries Deal 🍟
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $2.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Select Royal Perks
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Redeem 1x/week for a limited time; activate in App/Web
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Large Fries
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            New Member Welcome Offer 🎉
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            FREE Item w/ $3+ Spend
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            New Royal Perks
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Valid for 14 days after joining Royal Perks
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Choice of Whopper Jr. or Original Chicken Sandwich
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            BK App &amp; Web Delivery 🛵
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Standard Delivery
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            $5 min order; delivery, service, and small-cart fees apply
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            BK App &amp; bk.com orders
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Royal Perks Rewards 👑
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            10 Crowns per $1
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Earn on eligible purchases &amp; redeem for free food
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible Burger King menu items
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            My BK Experience Survey 📋
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            FREE Food Reward
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Receipt Holders
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Complete survey within 48 hours of purchase with receipt
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Whopper, Original Chicken Sandwich, or Croissan’wich
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Royal Perks Badge Program 🏅
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Digital Badges
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Royal Perks Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Badges have no cash value; awarded for completing activities
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            In-app milestone recognition
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Burger King is one of the most recognized fast-food brands in the United States, known for flame-grilled burgers, chicken sandwiches, fries, breakfast favorites, beverages, and a variety of value-focused meal options. Whether you are picking up a quick lunch, ordering dinner for the family, grabbing breakfast on the go, or looking for a satisfying meal without stretching your budget, Burger King offers a wide range of choices.

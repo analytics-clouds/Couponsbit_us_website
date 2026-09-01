@@ -380,6 +380,239 @@ export default function KrogerDigitalCouponsContent() {
           Kroger Discount Code, Coupon Code & Promo Offers
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            First Pickup or Delivery Deal 🛒
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat $20 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            New Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Minimum order value of $75 required
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            First pickup or delivery order
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            First Order Special Promo 🚚
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $30 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            First-Time Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Valid through Sep 15, 2026; $75+ min purchase post-discounts
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            First pickup or delivery reservation
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            $75+ Spend Grocery Saving 🏷️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat $10 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Minimum spend of $75 on qualifying items
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Groceries &amp; household essentials
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Easter Candy Deal 🍬
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 5% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Select flavours &amp; products; limited time
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Selected Easter candy products
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Signup / First Order Promotion 🎉
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat $15 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            New Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Requires minimum purchase of $75 or more
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Qualifying grocery &amp; household purchases
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Kroger First Order Discount 🥦
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save $15 OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Eligible New Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            $75 minimum order requirement
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Groceries, fresh food &amp; essentials
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Fuel Points Promotion ⛽
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            2X Points
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Kroger Loyalty Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Earn 2 points per $1 spent; Boost starts at $59/yr
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible groceries &amp; general merchandise
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Red Baron Pizza Deal 🍕
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $2.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Promotional pricing on selected varieties
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible Red Baron Pizza varieties
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Simple Truth Fuel Multiplier 🌿
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 10X Points
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users / Boost Members
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Boost Members get up to 11X Fuel Points
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Simple Truth &amp; Organic products (from $1.62)
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            $30 OFF + Free Delivery Offer 📦
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $30 OFF + Free Delivery
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            First-Order Shoppers
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Free delivery on first 5 orders where promo applies
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Kroger grocery &amp; everyday essentials
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Labor Day Essentials Deal ☀️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Special Sale Prices
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            End-of-summer cookout &amp; holiday specials
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Groceries, snacks, beverages &amp; seasonal finds
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Sweet Corn on the Cob 🌽
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Only $3.99
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Promotional price while supplies last
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Kroger Sweet Corn on the Cob
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Kroger is one of the largest grocery retailers in the United States, offering shoppers a convenient place to purchase groceries, household essentials, fresh foods, beverages, personal care products, pharmacy items, and more. From everyday pantry staples and fresh produce to bakery items, meat, dairy, snacks, frozen foods, and household supplies, Kroger caters to a wide range of everyday shopping needs.

@@ -375,6 +375,167 @@ export default function BookingCouponsContent() {
           Booking.com Promo Code, Coupon Code & Discount Offers
         </h2>
 
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Booking Promo Code 🏨
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save at Least 15% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Use code when available, unlock additional savings
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select hotel stays &amp; accommodation
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Hotel Bookings Deal 🔥
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Flat 20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Apply promo code where applicable
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible hotel bookings worldwide
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            First Booking Discount 🎁
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            10% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            New Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Sign up required, applied automatically on eligible bookings
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            First eligible hotel or flight reservation
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Las Vegas Stays 🎰
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Selected properties offer free cancellation
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Select Las Vegas hotels &amp; stays
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Miami to London Flights ✈️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $567.51
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Early booking offer, compare travel dates
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Miami (MIA) to London (LON) flight bookings
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Las Vegas Flights ✈️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $67.47
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Competitive fares, limited availability
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Flights to Las Vegas
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Guest Home Stays 🏠
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $86 / night
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Select properties include free cancellation &amp; meal options
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Guest homes &amp; budget-friendly rooms
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Carnival Cruise Line 🚢
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 40% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Early booking &amp; limited-time offers
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Eligible Carnival Cruise Line packages
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Booking.com is one of the world's best-known online travel platforms, helping travelers search and book accommodation, flights, rental cars, attractions, airport taxis, and other travel-related services. From hotels and resorts to apartments, vacation homes, hostels, guesthouses, and unique stays, the platform gives travelers a broad range of options for planning trips in the United States and around the world.
