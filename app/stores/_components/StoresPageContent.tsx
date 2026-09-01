@@ -261,6 +261,8 @@ export default function StoresPageContent() {
           {/* RIGHT — Sticky Sidebar (~30% space) */}
           <div className="lg:col-span-3 space-y-6">
             <aside className="sticky top-24 self-start space-y-6">
+
+              
               
               {/* Store Categories Card */}
               <div className="bg-white border border-gray-100 rounded-3xl p-5 shadow-sm">
@@ -301,6 +303,21 @@ export default function StoresPageContent() {
                   View All Categories →
                 </Link>
               </div>
+
+              <div className="w-full flex justify-center mb-6">
+      <a
+        href="https://www.google.com/preferences/source?q=couponsbit.us"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+      >
+        <img
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+          alt="Add as a preferred source on Google"
+          className="w-full max-w-[260px] h-auto object-contain"
+        />
+      </a>
+    </div>
 
               {/* Promo Card */}
               <div className="bg-[#056bfa] rounded-3xl p-6 text-white relative overflow-hidden shadow-xl shadow-[#056bfa]/20">

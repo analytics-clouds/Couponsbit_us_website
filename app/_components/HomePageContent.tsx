@@ -769,6 +769,21 @@ export default function HomePageContent() {
                 <p>
                   Our mission is simple: make online savings easier to find. Instead of spending time searching through dozens of websites, shoppers can explore the latest discounts, promotions, and money-saving opportunities all in one place. Whether you're booking a trip, upgrading your tech, refreshing your wardrobe, or purchasing everyday essentials, Couponsbit helps you shop smarter and keep more money in your pocket.
                 </p>
+
+                <div className="w-full mb-6">
+      <a
+        href="https://www.google.com/preferences/source?q=couponsbit.us"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+      >
+        <img
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+          alt="Add as a preferred source on Google"
+          className="w-full max-w-[260px] h-auto object-contain"
+        />
+      </a>
+    </div>
                 
               </div>
 

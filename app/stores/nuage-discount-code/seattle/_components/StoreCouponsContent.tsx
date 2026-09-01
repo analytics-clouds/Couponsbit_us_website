@@ -875,6 +875,25 @@ export default function NuagewearSeattleCouponsContent() {
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
+
+                <div className="w-full flex justify-center mb-6">
+                  <a
+                    href="https://www.google.com/preferences/source?q=couponsbit.us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+                  >
+                    <Image
+                      src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+                      alt="Add as a preferred source on Google"
+                      width={280}
+                      height={70}
+                      className="w-full max-w-[260px] h-auto object-contain"
+                      priority
+                    />
+                  </a>
+                </div>
+
                <div className="bg-white p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm max-w-md my-8">
   <h3 className="text-xl font-bold text-slate-900 mb-2">
     How to Use a Nuagewear Coupon Code

@@ -171,6 +171,21 @@ export default function ElectronicsCouponsContent() {
                   <Link href="/categories" className="block mt-4 text-[#056bfa] font-bold text-xs hover:underline">View All Categories →</Link>
                 </div>
 
+                <div className="w-full flex justify-center mb-6 mt-6">
+      <a
+        href="https://www.google.com/preferences/source?q=couponsbit.us"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+      >
+        <img
+          src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+          alt="Add as a preferred source on Google"
+          className="w-full max-w-[260px] h-auto object-contain"
+        />
+      </a>
+    </div>
+
                 <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm p-5">
                   <div className="space-y-5">
                     {[

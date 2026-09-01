@@ -752,6 +752,25 @@ export default function ExpediaCouponsContent() {
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
+
+                <div className="w-full flex justify-center mb-6">
+                  <a
+                    href="https://www.google.com/preferences/source?q=couponsbit.us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+                  >
+                    <Image
+                      src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+                      alt="Add as a preferred source on Google"
+                      width={280}
+                      height={70}
+                      className="w-full max-w-[260px] h-auto object-contain"
+                      priority
+                    />
+                  </a>
+                </div>
+
                 {/* About Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Expedia</h3>
