@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import GamsGoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "GamsGo Promo Code & Discount Code : Save Up to 85% OFF | Aug 2026",
+  title: {
+    absolute: "GamsGo Promo Code & Discount Code : Save Up to 85% OFF | Aug 2026",
+  },
   description:
     "Find the latest GamsGo discount codes and promo codes for August 2026. Save up to 85% on ChatGPT, Cursor Pro, Suno Pro, CapCut Pro, Perplexity AI, SEMrush Guru, Roblox Robux, Pokémon GO accounts, Manus AI, and more premium subscriptions.",
 

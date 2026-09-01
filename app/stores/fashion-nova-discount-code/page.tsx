@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import FashionNovaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+  title: {
+    absolute: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Aug 2026",
+  },
   description:
     "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
 

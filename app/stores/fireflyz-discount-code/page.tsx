@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import FireflyzCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
+  title: {
+    absolute: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
+  },
   description:
     "Get the latest Fireflyz Discount Code and Fireflyz Voucher to save up to 60% on flights, extra baggage, student fares, hotel rewards, and travel offers.",
 

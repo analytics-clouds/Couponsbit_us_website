@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import MacysCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+  title: {
+    absolute: "Macy's Promo Code - Up to 75% OFF + $20 OFF | Aug 2026",
+  },
   description:
     "Find the latest Macy's promo code, discount code and deals for Aug 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
 

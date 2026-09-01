@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import UltahostCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
+  title: {
+    absolute: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
+  },
   description:
     "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
 

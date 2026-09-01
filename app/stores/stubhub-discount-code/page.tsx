@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import StubHubCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+  title: {
+    absolute: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | August 2026",
+  },
   description:
     "Use a verified StubHub discount code & save big in August 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import OmanAirCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
+  title: {
+    absolute: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
+  },
   description:
     "Save more with the latest Oman Air Discount Code and Oman Air Voucher. Enjoy up to 50% OFF flight bookings, Flat 25% OFF selected flights, and fares starting from just $149.",
 

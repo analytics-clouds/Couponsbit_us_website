@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import OldNavyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
+  title: {
+    absolute: "Old Navy Promo Codes: Up to 89% OFF + $5 & Under Deals | Aug 2026",
+  },
   description:
     "Find the latest Old Navy promo codes, discount codes and deals for August 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
 

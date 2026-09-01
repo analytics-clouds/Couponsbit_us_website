@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SpiritHalloweenCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+  title: {
+    absolute: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+  },
   description:
     "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
 

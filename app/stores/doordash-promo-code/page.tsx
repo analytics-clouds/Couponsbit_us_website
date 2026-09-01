@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DoorDashCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "DoorDash Promo Code: 30% Off + $0 Delivery | Aug 2026",
+  title: {
+    absolute: "DoorDash Promo Code: 30% Off + $0 Delivery | Aug 2026",
+  },
   description:
     "Find the latest DoorDash promo codes and coupons for August 2026. Save 30% on eligible orders, get $0 delivery fees on your first order, $15 off select wine, $6 off $40+ orders, and more deals.",
 

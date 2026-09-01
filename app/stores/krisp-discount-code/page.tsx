@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KrispCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+  title: {
+    absolute: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Aug 2026",
+  },
   description:
     "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. August 2026.",
 

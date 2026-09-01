@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import GeekbuyingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+  title: {
+    absolute: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+  },
   description:
     "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
 

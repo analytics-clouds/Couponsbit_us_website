@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BurgerKingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+  title: {
+    absolute: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+  },
   description:
     "Discover the latest Burger King promo code and discount code for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
 

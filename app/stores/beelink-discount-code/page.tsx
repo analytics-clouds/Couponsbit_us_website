@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BeelinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+  title: {
+    absolute: "Beelink Discount Code: $450 Off + 35% OFF Mini PCs | Aug 2026",
+  },
   description:
     "Find the latest Beelink discount codes and deals for Aug 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
 

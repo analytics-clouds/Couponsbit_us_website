@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import OpenartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+  title: {
+    absolute: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Aug 2026",
+  },
   description:
     " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. August 2026.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import TplinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+  title: {
+    absolute: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+  },
   description:
     "Find the latest TP-Link promo code and discount code for Sep 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
 

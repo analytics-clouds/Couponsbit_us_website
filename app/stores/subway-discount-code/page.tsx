@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SubwayCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+  title: {
+    absolute: "Subway Discount Code – 20% OFF + Meals From $4.99 | Aug 2026",
+  },
   description:
     "Find the latest Subway discount code, promo code, and deals for Aug 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
 

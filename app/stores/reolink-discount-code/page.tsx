@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ReolinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+  title: {
+    absolute: "Reolink Discount Code: Up to 50% Off Security Cameras | August 2026",
+  },
   description:
     "Save up to 50% with the latest Reolink discount code — August 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
 

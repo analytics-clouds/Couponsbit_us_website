@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LordhairCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Lordhair Promo Code: Hair System & Toupee Offers | Aug 2026",
+  title: {
+    absolute: "Lordhair Promo Code: Hair System & Toupee Offers | Aug 2026",
+  },
   description:
     "Find the latest Lordhair promo codes for Aug 2026. Discover new hair system offers, thin skin base deals, lace base picks and custom hair system deals with Couponsbit.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AporroCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Aug 2026",
+  title: {
+    absolute: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Aug 2026",
+  },
   description:
     "Find the latest Aporro discount code, promo code and verified jewelry deals for Aug 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
 

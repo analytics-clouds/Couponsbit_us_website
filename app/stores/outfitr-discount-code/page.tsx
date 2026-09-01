@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import OutfitrCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+  title: {
+    absolute: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Aug 2026",
+  },
   description:
     "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified August 2026.",
 

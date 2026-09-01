@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import WayfairCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+  title: {
+    absolute: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Aug 2026",
+  },
   description:
     "Find the latest Wayfair discount code, promo code, and home deals for Aug 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
 

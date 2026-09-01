@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import CarilohaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Aug 2026",
+  title: {
+    absolute: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Aug 2026",
+  },
   description:
     "Find the latest Cariloha discount codes and deals for Aug 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
 

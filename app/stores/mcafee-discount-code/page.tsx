@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import McafeeCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+  title: {
+    absolute: "McAfee Discount Code | Up to 75% OFF & Save Up to $225",
+  },
   description:
     "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
 

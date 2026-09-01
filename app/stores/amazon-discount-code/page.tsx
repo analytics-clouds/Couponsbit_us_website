@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AmazonCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
+  title: {
+    absolute: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
+  },
   description:
     "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Aug 2026",
 

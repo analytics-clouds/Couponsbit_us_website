@@ -3,7 +3,9 @@ import StoresPageContent from "./_components/StoresPageContent";
 import { allStores } from "@/lib/stores-data";
 
 export const metadata: Metadata = {
-  title: "Coupon Codes for All Stores – Verified Promo Codes 2026",
+  title: {
+    absolute: "Coupon Codes for All Stores – Verified Promo Codes 2026",
+  },
   description:
     "Browse verified coupon codes & promo codes for 200+ top online stores. Find the best deals and discounts across fashion, travel, electronics, beauty & more.",
 

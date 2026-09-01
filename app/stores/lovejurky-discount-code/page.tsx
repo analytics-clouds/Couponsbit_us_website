@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LoveJerkyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+  title: {
+    absolute: "LovesJerky Discount Code: Free Shipping + $50 Sample | Aug 2026",
+  },
   description:
     "Find the latest LovesJerky discount codes and deals for Aug 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
 

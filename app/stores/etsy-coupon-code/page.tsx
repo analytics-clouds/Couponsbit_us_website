@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import EtsyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+  title: {
+    absolute: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Aug 2026  ",
+  },
   description:
     "Find the latest Etsy coupon code, promo code, and deals for Aug 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
 

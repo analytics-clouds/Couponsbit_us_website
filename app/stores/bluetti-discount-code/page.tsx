@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BluettiCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+  title: {
+    absolute: "BLUETTI Discount Code | Save $200 + FREE $249 Trolley",
+  },
   description:
     "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import UpworkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
+  title: {
+    absolute: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
+  },
   description:
     "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import EtihadCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
+  title: {
+    absolute: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
+  },
   description:
     "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
 

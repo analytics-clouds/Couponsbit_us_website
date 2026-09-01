@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import PhilipsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Philips Discount Code | 15% OFF + Save Up to £120",
+  title: {
+    absolute: "Philips Discount Code | 15% OFF + Save Up to £120",
+  },
   description:
     "Get the latest Philips Discount Code and Philips Voucher to enjoy 15% OFF your first order, save up to £120, plus get FREE shipping on orders over £40.",
 

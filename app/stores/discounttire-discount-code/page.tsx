@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DiscountTireCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Aug 2026",
+  title: {
+    absolute: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Aug 2026",
+  },
   description:
     "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Aug 2026 ",
 

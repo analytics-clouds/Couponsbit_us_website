@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AiraloCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+  title: {
+    absolute: "Airalo Discount Code | Up to 20% OFF + 15% OFF First eSIM",
+  },
   description:
     "Get the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF, enjoy 15% OFF your first eSIM, and earn up to 10% cashback.",
 

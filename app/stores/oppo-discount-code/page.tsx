@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import OppoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
+  title: {
+    absolute: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
+  },
   description:
     "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
 

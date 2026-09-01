@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DoreAndRoseCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+  title: {
+    absolute: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Aug 2026",
+  },
   description:
     "Find the latest Dore & Rose promo code, discount code on sleep essentials for Aug 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
 

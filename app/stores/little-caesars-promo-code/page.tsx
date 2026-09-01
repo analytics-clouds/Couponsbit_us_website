@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LittleCaesarsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+  title: {
+    absolute: "Little Caesars Promo Codes: $5 OFF + $4 OFF Pizza Deals | Aug 2026",
+  },
   description:
     "Find the latest Little Caesars promo codes, discount code for August 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
 

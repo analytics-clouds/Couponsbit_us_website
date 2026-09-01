@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ExpediaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Aug 2026",
+  title: {
+    absolute: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Aug 2026",
+  },
   description:
     "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. August 2026.",
 

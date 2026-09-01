@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import NuagewearCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+  title: {
+    absolute: "NuageWear Discount Code: 39% Off Bras + Free Worldwide Shipping | Aug 2026",
+  },
   description:
     "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. August 2026 deals verified daily.",
 

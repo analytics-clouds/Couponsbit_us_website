@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SuperrunCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Superun Discount Code - Save $30 on treadmill + Save $20 | Aug 2026",
+  title: {
+    absolute: "Superun Discount Code - Save $30 on treadmill + Save $20 | Aug 2026",
+  },
   description:
     "Find the latest Superun discount code, promo code, and treadmill deals for Aug 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
 

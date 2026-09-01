@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KrogerDigitalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+  title: {
+    absolute: "Kroger Digital Discount Code: Grocery & Pickup Offers | Aug 2026",
+  },
   description:
     "Find the latest Kroger Digital discount codes for Aug 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
 

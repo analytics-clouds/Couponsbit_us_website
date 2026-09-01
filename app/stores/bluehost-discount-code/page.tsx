@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BluehostCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+  title: {
+    absolute: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Aug 2026",
+  },
   description:
     "Find the latest Bluehost discount codes and hosting deals for Aug 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
 

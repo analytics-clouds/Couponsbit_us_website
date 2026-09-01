@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BudgetCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Budget Coupon Codes – Save on Car Rentals",
+  title: {
+    absolute: "Budget Coupon Codes – Save on Car Rentals",
+  },
   description:
     "Get verified Budget car rental coupon codes and promo codes. Save on daily, weekly, weekend, and one-way car rentals with regularly updated discount offers.",
 

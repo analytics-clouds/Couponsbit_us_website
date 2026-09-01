@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import CarCoversCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "CarCovers Discount Code | $30 OFF + Free $41 Care Kit",
+  title: {
+    absolute: "CarCovers Discount Code | $30 OFF + Free $41 Care Kit",
+  },
   description:
     "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
 

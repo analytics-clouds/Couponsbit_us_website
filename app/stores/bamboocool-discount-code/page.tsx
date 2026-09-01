@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BamboocoolCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "BambooCool Discount Code - Save Up to 25% OFF + 20% OFF | Aug 2026",
+  title: {
+    absolute: "BambooCool Discount Code - Save Up to 25% OFF + 20% OFF | Aug 2026",
+  },
   description:
     "Find the latest BambooCool discount code, promo code, and underwear deals for Aug 2026. Save up to 25% on summer styles, get 20% OFF your first order, and enjoy free shipping on eligible $49+ orders.",
 

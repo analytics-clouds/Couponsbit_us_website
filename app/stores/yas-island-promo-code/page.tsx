@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import YasIslandCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+  title: {
+    absolute: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+  },
   description:
     "Find the latest Yas Island promo code and discount code for Sep 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
 

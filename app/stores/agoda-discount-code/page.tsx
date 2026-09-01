@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AgodaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Aug 2026",
+  title: {
+    absolute: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Aug 2026",
+  },
   description:
     "Find the latest Agoda discount codes and travel deals for Aug 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
 

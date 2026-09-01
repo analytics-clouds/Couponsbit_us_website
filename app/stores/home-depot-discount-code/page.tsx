@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HomeDepotCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Aug 2026",
+  title: {
+    absolute: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Aug 2026",
+  },
   description:
     "Find the latest Home Depot discount code, promo code, and deals for Aug 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
 

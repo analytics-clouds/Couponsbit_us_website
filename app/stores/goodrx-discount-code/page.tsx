@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import GoodRxCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026",
+  title: {
+    absolute: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Aug 2026",
+  },
   description:
     "Find the latest GoodRx discount code, promo code, and healthcare savings for Aug 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
 

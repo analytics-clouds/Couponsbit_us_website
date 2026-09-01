@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LumibrickCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+  title: {
+    absolute: "Lumibrick Discount Code: Building Sets From $56.99 | August 2026",
+  },
   description:
     "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated August 2026.",
 

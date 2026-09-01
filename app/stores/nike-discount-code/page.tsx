@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import NikeCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+  title: {
+    absolute: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Aug 2026",
+  },
   description:
     "Find the latest Nike promo code, discount code, and clearance deals for Aug 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
 

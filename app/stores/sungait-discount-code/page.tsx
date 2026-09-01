@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SungaitCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+  title: {
+    absolute: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+  },
   description:
     "Get the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF, enjoy 15% OFF orders over $55, and shop sunglasses from $14.99.",
 

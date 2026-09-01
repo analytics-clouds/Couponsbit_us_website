@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import TargetCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+  title: {
+    absolute: "Target discount Code - Save Up to $100 + Up to 50% OFF | Aug 2026",
+  },
   description:
     "Find the latest Target discount code, promo code, and deals for Aug 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
 

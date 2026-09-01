@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LatamCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+  title: {
+    absolute: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Aug 2026",
+  },
   description:
     "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. August 2026 deals verified daily.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import WishCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
+  title: {
+    absolute: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
+  },
   description:
     "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
 

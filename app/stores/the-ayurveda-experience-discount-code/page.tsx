@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import TheAyurvedaExperienceCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+  title: {
+    absolute: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Aug 2026",
+  },
   description:
     "Find The Ayurveda Experience discount code, promo code, and skincare deals for Aug 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
 

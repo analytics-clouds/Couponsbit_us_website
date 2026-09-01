@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import MalaysiaAirlinesCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
+  title: {
+    absolute: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
+  },
   description:
     "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
 

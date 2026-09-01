@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AppleCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Apple Discount Code - $150 Gift Card + 20% OFF | Aug 2026",
+  title: {
+    absolute: "Apple Discount Code - $150 Gift Card + 20% OFF | Aug 2026",
+  },
   description:
     "Find the latest Apple discount code, promo code, and student deals for Aug 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
 

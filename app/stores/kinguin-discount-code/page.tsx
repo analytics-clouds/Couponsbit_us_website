@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KinguinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+  title: {
+    absolute: "Kinguin Discount Code: Up to 97% Off PC Games This Summer | August 2026",
+  },
   description:
     "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified August 2026.",
 

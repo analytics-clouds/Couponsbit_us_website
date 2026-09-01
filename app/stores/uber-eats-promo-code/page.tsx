@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import UberEatsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+  title: {
+    absolute: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Aug 2026 ",
+  },
   description:
     "Find the latest Uber Eats promo code, discount code and food delivery deals for Aug 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
 

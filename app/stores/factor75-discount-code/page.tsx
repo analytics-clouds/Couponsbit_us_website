@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Factor75CouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+  title: {
+    absolute: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | August 2026",
+  },
   description:
     "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. August 2026.",
 

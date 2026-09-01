@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import JcpenneyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+  title: {
+    absolute: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+  },
   description:
     "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HostingerCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
+  title: {
+    absolute: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
+  },
   description:
     "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.",
 

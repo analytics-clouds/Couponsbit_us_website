@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import VooglamCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Vooglam Discount Code | Save 20% OFF on Stylish Eyewear",
+  title: {
+    absolute: "Vooglam Discount Code | Save 20% OFF on Stylish Eyewear",
+  },
   description:
     "Discover the latest Vooglam Discount Code and Vooglam Voucher to save 20% OFF stylish eyeglasses and sunglasses. Shop new arrivals, bestselling frames, and premium eyewear for every style.",
 

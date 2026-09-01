@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ItcHotelsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Aug 2026",
+  title: {
+    absolute: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Aug 2026",
+  },
   description:
     "Find the latest ITC Hotels promo code, discount code, and hotel deals for Aug 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
 

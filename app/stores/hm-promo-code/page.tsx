@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HmCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+  title: {
+    absolute: "H&M Promo Code - Up to 77% OFF + Deals From $2.49 | Aug 2026",
+  },
   description:
     "Find the latest H&M promo code, discount code, and fashion deals for Aug 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
 

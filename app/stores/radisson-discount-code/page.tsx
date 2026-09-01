@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import RadissonCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
+  title: {
+    absolute: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
+  },
   description:
     "Get the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF, earn 2,000 Bonus Points, and book hotel stays from $68.31.",
 

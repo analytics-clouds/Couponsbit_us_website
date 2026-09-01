@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import RayneoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+  title: {
+    absolute: "Rayneo Disocunt & promo - UPTO $70 OFF  | Aug 2026",
+  },
   description:
     "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Aug 2026",
 

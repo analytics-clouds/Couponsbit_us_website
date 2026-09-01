@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ViaggogoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+  title: {
+    absolute: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Aug 2026",
+  },
   description:
     "Save with a verified Viagogo discount code — August 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
 

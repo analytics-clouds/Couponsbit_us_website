@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import RingconnCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "RingConn Discount Code | Smart Rings Starting From $199",
+  title: {
+    absolute: "RingConn Discount Code | Smart Rings Starting From $199",
+  },
   description:
     "Save with the latest RingConn Discount Code and RingConn Voucher. Shop smart rings starting from $199, enjoy advanced health tracking, and claim exclusive limited-time offers.",
 

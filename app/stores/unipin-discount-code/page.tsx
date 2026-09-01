@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import UnipinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+  title: {
+    absolute: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Aug 2026",
+  },
   description:
     "Get verified UniPin deals for August 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
 

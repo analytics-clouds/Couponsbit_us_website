@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BookingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+  title: {
+    absolute: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+  },
   description:
     "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
 

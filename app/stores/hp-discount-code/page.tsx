@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HPCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "HP Discount Code: Up to 71% Off Laptops & Desktops | August 2026",
+  title: {
+    absolute: "HP Discount Code: Up to 71% Off Laptops & Desktops | August 2026",
+  },
   description:
     "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. August 2026.",
 

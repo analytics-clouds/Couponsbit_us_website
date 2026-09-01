@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import TalkpalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+  title: {
+    absolute: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | August 2026",
+  },
   description:
     "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated August 2026.",
 

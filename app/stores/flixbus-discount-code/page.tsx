@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import FlixBusCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+  title: {
+    absolute: "FlixBus discount code | 50% OFF + Extra 20% OFF with Code FLXAUGND",
+  },
   description:
     "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
 

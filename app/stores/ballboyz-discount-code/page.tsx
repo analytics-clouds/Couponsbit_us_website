@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BallboyzCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Aug 2026",
+  title: {
+    absolute: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Aug 2026",
+  },
   description:
     "Find the latest BallBoyz discount codes and skincare deals for Aug 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
 

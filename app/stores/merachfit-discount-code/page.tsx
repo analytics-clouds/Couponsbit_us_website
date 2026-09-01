@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import MerachFitCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+  title: {
+    absolute: "Merachfit Discount Code: Up to 69% Off + $260 Off | Aug 2026",
+  },
   description:
     "Find the latest Merachfit discount codes and deals for Aug 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ObsbotCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+  title: {
+    absolute: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Aug 2026",
+  },
   description:
     "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated August 2026.",
 

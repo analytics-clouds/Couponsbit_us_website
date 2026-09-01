@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import InspiringVacationCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Inspiring Vacations Discount Code | Save Up to 50% OFF",
+  title: {
+    absolute: "Inspiring Vacations Discount Code | Save Up to 50% OFF",
+  },
   description:
     "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
 

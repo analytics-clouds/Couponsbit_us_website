@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import CheapflightsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Aug 2026",
+  title: {
+    absolute: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Aug 2026",
+  },
   description:
     "Find CheapFlights discount codes and travel deals for Aug 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
 

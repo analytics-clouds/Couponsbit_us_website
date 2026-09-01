@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DreameCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+  title: {
+    absolute: "Dreametech Discount Code | 45% OFF + 10% OFF First Order",
+  },
   description:
     "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
 

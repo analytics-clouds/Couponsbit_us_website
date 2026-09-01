@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ChewyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+  title: {
+    absolute: "Chewy Promo Code: 50% Off + $15 Gift Card | Aug 2026",
+  },
   description:
     "Find the latest Chewy promo codes and coupons for August 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import EmergentCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+  title: {
+    absolute: "Emergent Discount Code - Save $14.79 on monthy plan | Aug 2026",
+  },
   description:
     "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. August 2026.",
 

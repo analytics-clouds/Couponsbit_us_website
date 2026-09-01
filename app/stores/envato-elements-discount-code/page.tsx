@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import EnvatoCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+  title: {
+    absolute: "Envato Elements Discount Code: Flat 50% Off Plans | August 2026",
+  },
   description:
     "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified August 2026.",
 

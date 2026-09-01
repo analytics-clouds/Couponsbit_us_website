@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KiwiCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards | Aug 2026",
+  title: {
+    absolute: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards | Aug 2026",
+  },
   description:
     "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for August 2026.",
 

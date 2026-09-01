@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DeerValleyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Aug 2026",
+  title: {
+    absolute: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Aug 2026",
+  },
   description:
     "Find the latest DeerValley discount codes and home improvement deals for Aug 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
 

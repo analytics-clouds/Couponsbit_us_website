@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SignalRingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Aug 2026",
+  title: {
+    absolute: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Aug 2026",
+  },
   description:
     "Find the latest SignalRing discount code, promo code, and smart ring deals for Aug 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
 

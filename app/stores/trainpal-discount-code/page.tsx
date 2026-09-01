@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import TrainPalCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+  title: {
+    absolute: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Aug 2026",
+  },
   description:
     "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. August 2026.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HarborFreightCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+  title: {
+    absolute: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Aug 2026",
+  },
   description:
     "Find genuine Abercrombie discount code offers for August 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
 

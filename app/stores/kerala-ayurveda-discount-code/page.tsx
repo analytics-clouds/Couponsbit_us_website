@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KeralaAyurvedaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+  title: {
+    absolute: "Kerala Ayurveda discount code - Only $28.95 | Aug 2026",
+  },
   description:
     "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Aug 2026",
 

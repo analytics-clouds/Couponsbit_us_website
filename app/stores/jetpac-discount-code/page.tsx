@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import JetpacCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
+  title: {
+    absolute: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Aug 2026",
+  },
   description:
     "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
 

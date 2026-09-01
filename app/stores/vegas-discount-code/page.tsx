@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import VegasCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
+  title: {
+    absolute: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
+  },
   description:
     "Find the latest Vegas Discount Code and Vegas Voucher to save up to 35% OFF hotels, Cirque du Soleil tickets, Grand Canyon tours, and top Las Vegas attractions.",
 

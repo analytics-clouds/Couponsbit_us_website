@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import WalmartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+  title: {
+    absolute: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Aug 2026",
+  },
   description:
     "Find the latest Walmart promo code, discount code, and deals for Aug 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
 

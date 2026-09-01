@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import FytooCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | August 2026",
+  title: {
+    absolute: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | August 2026",
+  },
   description:
     "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated August 2026.",
 

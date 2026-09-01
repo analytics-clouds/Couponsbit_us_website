@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import QatarHolidaysCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+  title: {
+    absolute: "Qatar Holidays Discount Code: 40% Off + Maldives From $67/Night | Aug 2026",
+  },
   description:
     "Use a verified Qatar Holidays discount code or promo code — save up to 40% on Doha holiday packages from the USA. Maldives stays from $67/night. Earn Avios & Qpoints. August 2026.",
 

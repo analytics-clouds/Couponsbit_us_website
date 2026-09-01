@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import LycaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+  title: {
+    absolute: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Aug 2026",
+  },
   description:
     "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. August 2026.",
 

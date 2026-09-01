@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DellCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Aug 2026",
+  title: {
+    absolute: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Aug 2026",
+  },
   description:
     "Find the latest Dell discount codes and tech deals for Aug 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
 

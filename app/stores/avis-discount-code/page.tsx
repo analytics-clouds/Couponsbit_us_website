@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AvisCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+  title: {
+    absolute: "Avis Discount Code | Up to 20% OFF Car Rental Deals",
+  },
   description:
     "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
 

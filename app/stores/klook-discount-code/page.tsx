@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import KlookCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
+  title: {
+    absolute: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
+  },
   description:
     "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Aug 2026.",
 

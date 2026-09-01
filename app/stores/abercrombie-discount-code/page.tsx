@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import AbercrombieCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
+  title: {
+    absolute: "Abercrombie Discount Code – Get up to 30% Off | Aug 2026",
+  },
   description:
     "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
 

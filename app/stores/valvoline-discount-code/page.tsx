@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ValvolineCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+  title: {
+    absolute: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Aug 2026",
+  },
   description:
     "Find the latest Valvoline discount code, promo code, and car service deals for Aug 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import NuagewearNewYorkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
+  title: {
+    absolute: "Nuagewear Coupon Codes New York – 39% OFF Bras & Free Ship",
+  },
   description:
     "New York shoppers: 12+ verified Nuagewear codes live. Save up to 39% OFF Stay-Put Bra & NuBloom Bra + free shipping over $60. NY delivery in 5-7 days.",
 

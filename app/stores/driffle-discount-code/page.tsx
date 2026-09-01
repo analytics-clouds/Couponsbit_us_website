@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import DriffleCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Driffle Discount Code - Get 95% OFF on Game Deals | Aug 2026",
+  title: {
+    absolute: "Driffle Discount Code - Get 95% OFF on Game Deals | Aug 2026",
+  },
   description:
     "Find the latest Driffle discount code and verified deals for Aug 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
 

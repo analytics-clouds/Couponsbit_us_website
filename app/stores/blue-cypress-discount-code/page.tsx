@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import BlueCypressCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+  title: {
+    absolute: "Blue Cypress Discount Code - Get 20% OFF First Order | Aug 2026",
+  },
   description:
     "Find the latest Blue Cypress discount code, promo code and deals for Aug 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
 

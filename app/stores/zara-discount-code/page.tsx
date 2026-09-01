@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ZaraCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+  title: {
+    absolute: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Aug 2026",
+  },
   description:
     "Find the latest Zara discount code, promo code, and fashion deals for Aug 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
 

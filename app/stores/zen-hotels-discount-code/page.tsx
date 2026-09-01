@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import ZenHotelsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+  title: {
+    absolute: "Zen Hotels Discount Code: $35 Off + Paris from $852 | August 2026",
+  },
   description:
     "Use a verified Zen Hotels discount code & save in August 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
 

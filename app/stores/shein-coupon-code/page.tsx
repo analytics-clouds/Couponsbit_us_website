@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import SheinCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+  title: {
+    absolute: "SHEIN Coupon Code - Enjoy up to 90% OFF on items + Fashion Deals | Aug 2026",
+  },
   description:
     "Find the latest SHEIN coupon code, discount code and fashion deals for Aug 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
 

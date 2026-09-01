@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import IberiaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
-  title: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+  title: {
+    absolute: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+  },
   description:
     "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
 
