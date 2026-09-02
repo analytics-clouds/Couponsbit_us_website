@@ -149,7 +149,7 @@ export default function LordhairCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788248210/lorthair-logo_g84ojx.webp" alt="Lordhair Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788349789/7_acjcjg.webp" alt="Lordhair Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>

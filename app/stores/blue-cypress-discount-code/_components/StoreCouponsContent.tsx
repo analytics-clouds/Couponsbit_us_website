@@ -150,7 +150,7 @@ export default function BlueCypressCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp" alt="Blue Cypress Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788350345/159_p4u270.webp" alt="Blue Cypress Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
