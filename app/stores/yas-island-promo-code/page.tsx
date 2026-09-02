@@ -152,17 +152,134 @@ const yasIslandSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/yas-island-promo-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Yas Island?", acceptedAnswer: { "@type": "Answer", text: "Yas Island is Abu Dhabi's leisure and entertainment island, home to Ferrari World, Yas Waterworld, SeaWorld Abu Dhabi, Warner Bros. World and the Yas Marina F1 Circuit." } },
-        { "@type": "Question", name: "Does Yas Island offer promo codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Yas Island runs promotions such as multi-park ticket offers and hotel & stay packages." } },
-        { "@type": "Question", name: "Where can I find Yas Island promo codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Yas Island promo codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Can I visit multiple Yas Island theme parks on one ticket?", acceptedAnswer: { "@type": "Answer", text: "Yes. Yas Island offers multi-park tickets covering Ferrari World, Yas Waterworld, Warner Bros. World and SeaWorld Abu Dhabi." } },
-        { "@type": "Question", name: "Does Yas Island offer hotel packages?", acceptedAnswer: { "@type": "Answer", text: "Yes. Yas Island offers packages combining hotel stays with theme park tickets and event passes." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/yas-island-promo-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Yas Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yas Island is Abu Dhabi's leisure and entertainment island, home to Ferrari World, Yas Waterworld, SeaWorld Abu Dhabi, Warner Bros. World, and the Yas Marina F1 Circuit."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Yas Island offer promo codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Island runs promotions such as multi-park ticket offers, hotel & stay packages, and promotional discount codes on eligible experiences and bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Yas Island promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Yas Island promo code is a promotional code that may provide a discount or special offer on eligible Yas Island products, tickets, experiences, or bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find Yas Island promo codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check Couponsbit for available Yas Island discount codes, coupons, promo codes, ticket deals, and other offers before booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What attractions are available on Yas Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yas Island is home to Ferrari World Yas Island, Warner Bros. World Yas Island, Yas Waterworld, and SeaWorld Yas Island."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I visit multiple Yas Island theme parks on one ticket?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Visitors can choose from individual attraction tickets or multi-park tickets covering Ferrari World, Yas Waterworld, Warner Bros. World, and SeaWorld Abu Dhabi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Yas Island offer hotel packages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Island offers packages combining hotel stays with theme park tickets, event passes, and attraction access."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I stay at a hotel on Yas Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Island has multiple hotels, allowing visitors to stay close to the theme parks, restaurants, shopping, and other attractions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Yas Island have an annual pass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Island currently offers annual pass options with year-round access benefits and additional privileges, subject to applicable terms and blackout dates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of a Yas Annual Pass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Benefits vary by tier but can include unlimited park access, restaurant discounts, retail discounts, family and friend ticket benefits, selected experience discounts, and other island-wide privileges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Yas Island offer dining discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selected Yas Annual Pass tiers currently include discounts at participating restaurants and cafés. The exact benefits vary by pass tier and current terms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Yas Island suitable for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Island offers several family-oriented attractions, including Warner Bros. World, Yas Waterworld, SeaWorld, and selected family-friendly experiences at Ferrari World."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Yas Island have a beach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Yas Beach is one of the island's main leisure attractions, and selected annual-pass holders can receive beach-related benefits under the current program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a Yas Island promo code on every attraction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Promotional codes and offers can have restrictions regarding specific attractions, ticket types, travel dates, or booking conditions. Always check the terms before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    }
+  ]
+},
+
+    
   ],
 };
 

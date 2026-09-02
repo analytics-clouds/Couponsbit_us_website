@@ -6,7 +6,7 @@ import {
   ChevronRight,
   Star,
   Tag,
-  Percent,
+  Percent, Globe, Calendar, Sparkles,
   Users,
   BadgeCheck,
   ExternalLink,
@@ -264,9 +264,26 @@ export default function GamsGoCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About GamsGo</h3>
+                  <h3 className="text-black font-black text-lg mb-6">GamsGo Delivery & Product Access</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    GamsGo is a subscription-sharing marketplace where users can access shared slots on family and multi-user plans for services like Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll.
+                    Delivery depends on the type of digital product you purchase.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Some products are delivered through digital codes, while others may involve account credentials or direct top-up services.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    GamsGo's marketplace currently shows guaranteed delivery times on product listings, with some products marked for instant delivery and others providing longer delivery windows.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    For direct top-ups, delivery is tied to the player's UID or Player ID rather than a traditional redemption code.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Always read the product description before ordering so you know how your purchase will be delivered.
+
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -296,26 +313,62 @@ export default function GamsGoCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">GamsGo Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Clapperboard, title: "Streaming Shares", sub: "Shared Netflix, Disney+ and Crunchyroll profiles." },
-                      { icon: Music, title: "Music Shares", sub: "Shared Spotify and YouTube Premium plans." },
-                      { icon: Palette, title: "Software Shares", sub: "Shared Adobe subscription plans." },
-                      { icon: Users2, title: "Marketplace Access", sub: "Buyer and seller matching for subscription slots." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-6">
+    How to Save More on GamsGo
+  </h3>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
+    A promo code isn't the only way to improve your savings.
+  </p>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Search,
+        title: "Compare Product Listings",
+        sub: "Some categories contain multiple listings for similar products. Compare the product details, access type, duration, delivery time, warranty, and seller information rather than choosing based only on the headline offer."
+      },
+      {
+        icon: Globe,
+        title: "Check the Region",
+        sub: "A digital product may be restricted to a particular country or currency. Choosing the wrong region can make a product unsuitable for your account."
+      },
+      {
+        icon: Calendar,
+        title: "Look for Longer Durations",
+        sub: "If you already know that you'll use a service for several months, compare longer-duration products with monthly options."
+      },
+      {
+        icon: Sparkles,
+        title: "Check Current Promotions",
+        sub: "GamsGo regularly features discounted products and special campaigns, so check the marketplace before purchasing."
+      },
+      {
+        icon: Tag,
+        title: "Use a GamsGo Promo Code",
+        sub: "After finding the appropriate product, check whether a current GamsGo promo code can provide an additional saving."
+      },
+      {
+        icon: ShieldCheck,
+        title: "Review the Warranty",
+        sub: "For account-based products, check the warranty period and support terms before placing an order."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
             </div>
           </div>
@@ -347,185 +400,664 @@ export default function GamsGoCouponsContent() {
         </section>
 
         {/* SEO Text Section */}
-        <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  GamsGo Discount Codes, Coupon Codes & Shared Subscription Deals 2026
-                </h2>
+       <section className="py-24 bg-[#f5f5f5]">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      
+      {/* Main Content Area */}
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          GamsGo Promo Code, Discount Code & Coupon Deals
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["Premium AI & Subscription Deals", "Save Up to 85%", "All Users", "Selected AI, gaming and premium services", "AI & subscriptions"],
-                        ["ChatGPT GPT-5.6 Sol", "$5/Month", "All Users", "Includes DALL-E 3, Canva, Data Analyst", "ChatGPT"],
-                        ["Cursor Pro & Pro+", "From $17.99/Month", "All Users", "Unlimited code completion", "Cursor"],
-                        ["Roblox Robux", "From $7.20", "All Users", "Fast delivery", "Roblox Robux"],
-                        ["Pokémon GO Level 40 Account", "$73.90", "All Users", "Full account access after purchase", "Pokémon GO"],
-                        ["Suno Pro AI Music", "$4.99/Month", "All Users", "625 Suno credits monthly", "Suno"],
-                        ["CapCut Pro", "$7.49/Month", "All Users", "4K, HDR and AI-powered editing tools", "CapCut"],
-                        ["SEMrush Guru", "$7.99 for 1 Month", "All Users", "SEO and digital marketing tools", "SEMrush"],
-                        ["Perplexity AI Pro", "From $2.00", "All Users", "Shared Account or Full Access options", "Perplexity AI"],
-                        ["Manus AI", "From $3.99/Day", "All Users", "Credits for coding, research and automation", "Manus AI"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 9 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Category / Tag</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Features &amp; Details</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Premium AI &amp; Subscription Deals 🎁
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Save Up to 85% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            SALE
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Flexible subscription options at lower prices; tools for coding, content, research, and video
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            ChatGPT, Cursor, Suno, CapCut, Perplexity AI, etc.
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – ChatGPT GPT-5.6 Sol 🤖
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $5.00 / Month
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            AI
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Advanced execution, coding, DALL-E 3, Canva, and Data Analyst tools
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            ChatGPT Premium features
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Cursor Pro &amp; Pro+ 💻
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $17.99 / Month
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            DEV
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Unlimited code completion, AI bug fixing, and Agent Proxy features
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Cursor IDE development workflows
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Roblox Robux 🎮
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Starting at $7.20
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            GAME
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Fast delivery of gaming currency for items, upgrades, and experiences
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Roblox account balance top-up
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Pokémon GO Level 40 Account ⚡
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $73.90 Flat
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            GAME
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Fresh starter account with full access; skip early gameplay grind
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Pokémon GO gameplay
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Suno Pro AI Music 🎵
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $4.99 / Month
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            MUSIC
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Official Suno Pro plan with 625 monthly credits and up to 10 simultaneous jobs
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Suno v5.5 AI music generation
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – CapCut Pro 🎬
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $7.49 / Month
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            EDIT
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Premium assets, 4K/HDR rendering, AI upscaling, and script-to-video tools
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            CapCut Pro video editing
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – SEMrush Guru 📊
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            $7.99 / 1 Month
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            SEO
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Complete SEO suite: keyword research, competitor analysis, backlink tracking
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            SEMrush Guru platform
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Perplexity AI Pro 🔎
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $2.00
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            AI
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Shared Account or Full Access options for advanced AI search and research
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Perplexity AI Pro search engine
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            GamsGo – Manus AI 🚀
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From $3.99 / Day
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            AI
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Fast multi-tasking credits for automation, web scraping, slides, and coding
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Manus AI workflows &amp; task automation
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        {/* Expandable Content Area */}
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative transition-all", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <div className="space-y-4">
+            <p>
+              Looking for cheaper ways to access digital subscriptions, gaming products, gift cards, or online services? Before completing your next purchase, checking for a GamsGo promo code can help you find an additional way to save.
+            </p>
+            <p>
+              GamsGo is a digital marketplace offering a wide range of products across digital subscriptions, game accounts, game top-ups, gift cards, game currency, and game items. Its current marketplace includes entertainment services, AI tools, software subscriptions, gaming memberships, digital gift cards, and in-game products.
+            </p>
+            <p>
+              Instead of visiting separate websites for every digital service you use, GamsGo brings multiple categories together on one platform. Depending on what you're looking for, you can explore subscriptions such as Netflix, YouTube, Disney+, Crunchyroll, Spotify, AI platforms, VPN services, software, Xbox and PlayStation products, gift cards, and gaming top-ups.
+            </p>
+            <p>
+              Before you place an order, check CouponsBit for an available GamsGo promo code, discount code, or coupon offer and review the terms that apply to your selected product.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a GamsGo Promo Code and Save</h3>
+            <p>
+              Digital subscriptions and gaming purchases can quickly add up when you use several services at once. A streaming subscription here, an AI tool there, a gaming membership, and occasional game purchases can become a significant part of your monthly digital spending.
+            </p>
+            <p>
+              GamsGo gives shoppers a marketplace where they can compare different digital products and services in one place.
+            </p>
+            <p>Depending on what's currently available, you can find:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Streaming subscriptions</li>
+              <li>Music subscriptions</li>
+              <li>AI subscriptions</li>
+              <li>Software memberships</li>
+              <li>VPN services</li>
+              <li>Sports subscriptions</li>
+              <li>Gaming memberships</li>
+              <li>Game accounts</li>
+              <li>Gift cards</li>
+              <li>Game currency</li>
+              <li>Game items</li>
+              <li>Direct game top-ups</li>
+            </ul>
+            <p>
+              A GamsGo discount code may provide an additional saving on an eligible purchase, although the availability, discount amount, and applicable products can change. That's why it's worth checking CouponsBit before you buy.
+            </p>
+          </div>
+
+          <div className={cn("text-gray-600 space-y-8 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  {/* Header & Overview */}
+  <div className="space-y-4">
+    <h2 className="text-2xl font-black text-[#056bfa]">What Can You Buy on GamsGo?</h2>
+    <p>
+      GamsGo's marketplace covers several major categories, making it more than just a subscription website.
+    </p>
+    <p>
+      Its current catalog includes SVOD and entertainment subscriptions, music services, AI tools, sports services, software, gaming products, gift cards, game coins, and game items.
+    </p>
+    <p>Let's take a closer look at the main categories.</p>
+  </div>
+
+  {/* GamsGo Streaming Subscriptions */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo Streaming Subscriptions</h3>
+    <p>
+      Streaming is one of the largest categories available on GamsGo. The marketplace currently lists services including:
+    </p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-4">
+      {[
+        "Netflix", "Prime Video", "Disney+", "YouTube", 
+        "Crunchyroll", "Peacock", "ViX", "NBA League Pass", 
+        "Viki", "Mubi", "Plex", "Shahid", "OSN+"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p className="text-sm text-gray-500 italic">
+      * The exact products available can vary, so check the GamsGo marketplace for the latest listings.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h4 className="font-bold text-[#056bfa]">Netflix</h4>
+        <p className="text-sm">
+          Netflix is one of the most recognizable streaming services available through the marketplace. Depending on the listing, shoppers may find different account types, plans, durations, or access arrangements. Always read the individual product description carefully to understand exactly what you're purchasing.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h4 className="font-bold text-[#056bfa]">YouTube</h4>
+        <p className="text-sm">
+          YouTube-related subscriptions are also available through GamsGo, making the platform an option for users looking for digital video and entertainment services.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h4 className="font-bold text-[#056bfa]">Disney+</h4>
+        <p className="text-sm">
+          Disney+ is another entertainment subscription listed on GamsGo. If you're comparing digital subscriptions, look carefully at the duration, account type, region, and warranty information attached to each listing.
+        </p>
+      </div>
+
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <h4 className="font-bold text-[#056bfa]">Crunchyroll</h4>
+        <p className="text-sm">
+          Anime fans can explore Crunchyroll subscription products on GamsGo. This can be particularly useful for shoppers who want access to a dedicated anime streaming service rather than a general entertainment platform.
+        </p>
+      </div>
+    </div>
+
+    <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 space-y-2 mt-4">
+      <h4 className="font-bold text-gray-900">Sports Streaming</h4>
+      <p className="text-sm text-gray-700">
+        GamsGo also lists sports-oriented services such as NBA League Pass, DAZN Sports, ViX, Shahid, Peacock, and other sports or entertainment platforms. Availability varies by region and product, so verify the applicable territory before buying.
+      </p>
+    </div>
+  </div>
+
+  {/* GamsGo Music Subscriptions */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo Music Subscriptions</h3>
+    <p>
+      Music is another major category on GamsGo. The marketplace currently lists services such as:
+    </p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+      {["YouTube Music", "Apple Music", "Qobuz", "Deezer", "Anghami"].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p>
+      These products can appeal to users who want access to music streaming without purchasing individual albums or songs. When selecting a music subscription, check the plan duration, account type, region, and whether the product provides individual or shared access.
+    </p>
+  </div>
+
+  {/* GamsGo AI Subscriptions */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo AI Subscriptions</h3>
+    <p>
+      AI tools have become an increasingly important part of digital subscriptions, and GamsGo has expanded its marketplace into this category.
+    </p>
+    <div className="flex flex-wrap gap-2 my-4">
+      {[
+        "ChatGPT", "Claude", "Gemini", "Grok", "Midjourney", "Perplexity",
+        "Cursor", "GitHub Copilot", "Canva", "DeepL", "ElevenLabs",
+        "Leonardo", "Runway", "Suno", "Manus", "Lovable", "Figma"
+      ].map((tool, idx) => (
+        <span key={idx} className="bg-blue-50 text-[#056bfa] text-xs font-bold px-3 py-1.5 rounded-lg border border-blue-100">
+          {tool}
+        </span>
+      ))}
+    </div>
+    <p className="text-sm text-gray-700 font-medium">
+      This category can be particularly useful for students, creators, developers, designers, marketers, writers, and professionals who regularly use AI-powered tools.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">AI Writing & Research Tools</h5>
+        <p className="text-sm">Products such as ChatGPT, Claude, Gemini, Perplexity, and other AI platforms can support research, writing, brainstorming, coding, and productivity workflows.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">AI Image & Video Tools</h5>
+        <p className="text-sm">Tools such as Midjourney, Runway, Leonardo, and other creative platforms can be useful for image generation, video creation, design, and visual experimentation.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">AI Music Tools</h5>
+        <p className="text-sm">Platforms such as Suno provide AI-assisted music creation and can be relevant for creators experimenting with songs, audio, and other musical projects.</p>
+      </div>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
+        <h5 className="font-bold text-gray-900">AI Developer Tools</h5>
+        <p className="text-sm">Developers can explore products such as GitHub Copilot, Cursor, and other coding-focused tools listed in GamsGo's AI marketplace.</p>
+      </div>
+    </div>
+    <p className="text-xs bg-amber-50 text-amber-800 p-3 rounded-xl border border-amber-200 font-medium">
+      Before buying an AI subscription, check exactly what access the listing provides. Features can differ between plans and account types.
+    </p>
+  </div>
+
+  {/* GamsGo Software & Productivity Subscriptions */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo Software & Productivity Subscriptions</h3>
+    <p>
+      GamsGo also lists software and productivity services outside the AI category.
+    </p>
+    <div className="flex flex-wrap gap-2 my-4">
+      {[
+        "Microsoft Office", "Apple services", "ExpressVPN", "Surfshark", 
+        "Zoom", "TradingView", "Proton VPN", "Discord", "LinkedIn", 
+        "Notion", "Figma", "Autodesk", "Replit", "Canva"
+      ].map((item, idx) => (
+        <span key={idx} className="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">
+          {item}
+        </span>
+      ))}
+    </div>
+    <p>
+      This gives professionals, students, creators, and businesses another place to explore digital tools.
+    </p>
+  </div>
+
+  {/* GamsGo VPN Services */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo VPN Services</h3>
+    <p>
+      Online privacy and secure browsing tools are another category available through the marketplace. Current listings include VPN services such as ExpressVPN, Surfshark, and Proton VPN.
+    </p>
+    <p className="font-semibold text-gray-900">When comparing a VPN subscription, consider:</p>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-2">
+      {[
+        "Subscription duration", "Number of supported devices", "Server availability",
+        "Supported platforms", "Account type", "Region", "Renewal conditions"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-medium text-gray-700 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* GamsGo Gaming Products */}
+  <div className="space-y-4">
+    <h3 className="text-xl font-bold text-gray-900">GamsGo Gaming Products</h3>
+    <p>
+      Gaming is one of GamsGo's largest categories. The platform offers products related to major gaming ecosystems including:
+    </p>
+    <div className="flex flex-wrap gap-2 my-4">
+      {[
+        "Xbox", "PlayStation", "Nintendo", "Roblox", "Steam", "Razer",
+        "Valorant", "Free Fire", "PUBG", "Genshin Impact", "Fortnite",
+        "Minecraft", "EA SPORTS FC", "Call of Duty", "Pokémon GO",
+        "Diablo", "Elden Ring", "Path of Exile"
+      ].map((game, idx) => (
+        <span key={idx} className="bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-md border border-indigo-100">
+          {game}
+        </span>
+      ))}
+    </div>
+    <p>
+      Instead of purchasing every type of gaming product separately, shoppers can explore memberships, gift cards, top-ups, game currency, and digital items through the marketplace.
+    </p>
+
+    {/* Top-Ups & Direct Top-Up */}
+    <div className="space-y-4 mt-6">
+      <h4 className="text-lg font-bold text-gray-900">GamsGo Game Top-Ups</h4>
+      <p>
+        Game top-ups allow players to add currency, passes, or other eligible content to their gaming accounts across platforms like Roblox, Free Fire, Valorant, PUBG Mobile, Mobile Legends, Genshin Impact, Zenless Zone Zero, Honkai: Star Rail, Pokémon GO, Call of Duty, Xbox, PlayStation, Nintendo, Google Play, and Razer.
+      </p>
+
+      <div className="p-4 rounded-2xl bg-blue-50/50 border border-blue-100 space-y-3">
+        <h5 className="font-bold text-[#056bfa]">Direct Game Top-Up</h5>
+        <p className="text-sm">
+          Rather than purchasing a traditional gift card or redeem code, a direct top-up can send the selected game currency or item directly to the player's account using a UID or Player ID.
+        </p>
+        <p className="text-sm font-semibold text-gray-800">This can be useful for players who:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
+          <div className="flex items-center gap-2">✓ Have trouble using local payment methods</div>
+          <div className="flex items-center gap-2">✓ Want to recharge another person's account</div>
+          <div className="flex items-center gap-2">✓ Don't want to share their account password</div>
+          <div className="flex items-center gap-2">✓ Need game currency or passes</div>
+          <div className="flex items-center gap-2">✓ Prefer direct account crediting</div>
+        </div>
+      </div>
+    </div>
+
+    {/* Game Currency */}
+    <div className="space-y-4 mt-6">
+      <h4 className="text-lg font-bold text-gray-900">GamsGo Game Currency</h4>
+      <p>
+        Players can find virtual currency and other in-game balances for games such as Roblox, EA SPORTS FC, Path of Exile, Diablo IV, Elden Ring, Albion Online, Pokémon GO, Old School RuneScape, Final Fantasy XIV, and Delta Force.
+      </p>
+      <p className="text-sm text-gray-600">
+        Game currency can be used for eligible purchases within supported games, such as in-game items, passes, upgrades, or other virtual content. Always verify the game, platform, region, and currency before ordering.
+      </p>
+    </div>
+
+    {/* Game Items */}
+    <div className="space-y-4 mt-6">
+      <h4 className="text-lg font-bold text-gray-900">GamsGo Game Items</h4>
+      <p>
+        GamsGo's marketplace also includes individual game items for titles like Fortnite, Roblox, Minecraft, Pokémon GO, Genshin Impact, Valorant, Free Fire, GTA 5, Call of Duty, League of Legends, Diablo IV, Elden Ring, and others.
+      </p>
+      <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+        <p className="font-semibold text-gray-900">Before purchasing, read the listing carefully to understand:</p>
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-700 list-disc list-inside">
+          <li>What the item includes</li>
+          <li>Which game it belongs to</li>
+          <li>Which platform is supported</li>
+          <li>Whether item is account-bound</li>
+          <li>Delivery method</li>
+          <li>Warranty period</li>
+          <li>Region restrictions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {/* Truncation Gradient Overlay */}
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">GamsGo Game Accounts & PlayStation Products</h3>
+            <p>
+              GamsGo also operates a marketplace for gaming accounts and memberships. Its current gaming account categories include products associated with platforms such as Xbox and PlayStation, alongside other gaming services.
+            </p>
+            <p>
+              For example, GamsGo's PlayStation marketplace currently includes different PlayStation Plus tiers, durations, and account types, including Essential, Extra, and Premium listings.
+            </p>
+            <p>
+              PlayStation users can find several types of digital products on GamsGo, including PlayStation Plus, PlayStation gift cards, PlayStation-related game products, digital content, and other services. Because account products can have different access arrangements, shoppers should pay close attention to whether a listing offers full access or shared access and review its warranty details before purchasing.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">GamsGo Xbox Products & Gift Cards</h3>
+            <p>
+              Xbox shoppers can explore Xbox gift cards and Xbox Game Pass-related products. The current Xbox marketplace includes Game Pass Essential, Premium, Ultimate, and PC-related listings, with different durations and account types depending on the seller and product.
+            </p>
+            <p>
+              Gift cards provide another way to purchase digital products while giving you control over how the balance is used. GamsGo currently lists gift cards for platforms and brands including PlayStation, Xbox, Apple, Google Play, Nintendo, Razer, Riot, and other gaming and digital services.
+            </p>
+            <p>
+              However, gift cards are often region-specific. Always confirm that the card's currency and country match the account where you intend to redeem it before purchasing.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">GamsGo Deals & Offers</h3>
+            <p>
+              One of the biggest reasons shoppers search for a GamsGo promo code is the opportunity to combine marketplace pricing with additional promotions. GamsGo frequently features discounted digital products across its marketplace, with exact discounts varying by product, seller, category, and campaign.
+            </p>
+            <p>
+              You may find offers on streaming subscriptions, AI tools, gaming memberships, gift cards, game currency, game items, software, VPN services, and gaming top-ups. GamsGo also promotes special campaigns around major shopping and holiday periods. Always check the current listing and promotion terms before purchasing.
+            </p>
+          </div>
+
+          {/* How-To Steps Box */}
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a GamsGo Promo Code</h3>
+            <div className="space-y-6">
+              {[
+                { title: "Step 1: Visit CouponsBit", text: "Start by checking CouponsBit for the latest GamsGo promo codes and available offers." },
+                { title: "Step 2: Select an Offer", text: "Choose the promotion that best matches the digital product you're planning to purchase." },
+                { title: "Step 3: Read the Conditions", text: "Check whether the offer has any restrictions involving products, categories, minimum order values, account status, or expiration dates." },
+                { title: "Step 4: Copy the Promo Code", text: "Copy the GamsGo promo code exactly as provided." },
+                { title: "Step 5: Choose Your Product", text: "Browse GamsGo and select your subscription, gift card, game top-up, game item, account, or other digital product." },
+                { title: "Step 6: Add the Product to Your Order", text: "Select the correct duration, region, currency, platform, or account type where applicable." },
+                { title: "Step 7: Apply the Code", text: "Enter your promotional code in the appropriate field during the checkout process." },
+                { title: "Step 8: Check Your Final Total", text: "Confirm that the promotion has been applied before completing payment." }
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20 italic">
+                    {i + 1}
+                  </div>
+                  <div className="mt-1">
+                    <strong className="text-gray-900 font-black block">{step.title}</strong>
+                    <p className="text-gray-700 font-bold leading-relaxed">{step.text}</p>
+                  </div>
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>GamsGo discount codes and coupon codes</strong>? At Couponsbit, we help shoppers find Netflix sharing offers, Spotify Premium deals, Disney+ picks and YouTube Premium offers.
-                  </p>
-                  <p>
-                    Whether you're looking to save on streaming or software subscriptions, GamsGo offers a range of shared-access options. Before you sign up, check Couponsbit for the latest GamsGo offers.
-                  </p>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About GamsGo</h3>
-                    <p>
-                      GamsGo is a subscription-sharing marketplace that connects users to shared slots on family and multi-user plans for popular streaming and software services.
-                    </p>
-                    <p>
-                      With shared access across services like Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll, GamsGo serves shoppers looking to reduce subscription costs.
-                    </p>
-                    <p>
-                      At Couponsbit, we help shoppers discover the latest GamsGo offers, streaming picks and subscription highlights in one place.
-                    </p>
-                  </div>
-
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use GamsGo via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available GamsGo Offers — Visit the GamsGo page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits the subscription you need.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant GamsGo page.",
-                        "Step 4: Browse Available Plans — Explore Netflix, Spotify, Disney+, YouTube Premium, Adobe or Crunchyroll sharing.",
-                        "Step 5: Check Plan Details — Review the shared-access terms for your selected subscription.",
-                        "Step 6: Complete Your Purchase — Confirm your shared subscription slot on GamsGo.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at GamsGo</h3>
-                    <p><strong>Check Couponsbit Before Signing Up:</strong> Always visit Couponsbit before signing up to see the latest GamsGo offers.</p>
-                    <p><strong>Compare Subscription Plans:</strong> Different services can offer different levels of shared savings.</p>
-                    <p><strong>Check Plan Terms:</strong> Review shared-access terms before completing a purchase.</p>
-                    <p><strong>Bundle Multiple Services:</strong> Sharing multiple subscriptions can add up to bigger overall savings.</p>
-                    <p><strong>Check Availability Regularly:</strong> Shared slots and offers can update frequently.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose GamsGo?</h3>
-                    <p><strong>Wide Service Range:</strong> Streaming and software subscriptions under one marketplace.</p>
-                    <p><strong>Cost-Conscious Shopping:</strong> Shared-access options designed to reduce subscription costs.</p>
-                    <p><strong>Multiple Categories:</strong> Streaming, music and creative software all in one place.</p>
-                    <p><strong>Established Marketplace:</strong> A recognized name in subscription sharing.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for GamsGo Deals?</h3>
-                    <p><strong>Curated GamsGo Offers:</strong> We regularly review available GamsGo offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find streaming picks, music deals and software highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across software, home, electronics and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Your Next Subscription</h3>
-                    <p>Whether you're signing up for Netflix, Spotify, Disney+, or another supported service, GamsGo offers a range of shared-access options to explore.</p>
-                    <p>Before your next sign-up, check Couponsbit to explore the latest GamsGo offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is GamsGo?", a: "GamsGo is a subscription-sharing marketplace where users can access shared slots on family and multi-user plans for services like Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll." },
-                    { q: "Does GamsGo offer discount codes?", a: "Yes. GamsGo runs promotions such as Spotify Premium deals and Adobe subscription deals." },
-                    { q: "Where can I find GamsGo discount codes?", a: "You can find the latest GamsGo discount codes and offers on Couponsbit." },
-                    { q: "What subscriptions can I share through GamsGo?", a: "GamsGo offers shared access to services including Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll." },
-                    { q: "How does subscription sharing work on GamsGo?", a: "GamsGo connects buyers with sellers offering individual profiles or slots within multi-user subscription plans at a shared cost." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular GamsGo Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Netflix Sharing", "Spotify Premium", "Disney+ Sharing", "GamsGo Discount Code", "YouTube Premium", "Adobe Sharing", "Crunchyroll Sharing", "Subscription Deals"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top GamsGo Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">G</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop GamsGo: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Save More & Things to Check Before Buying</h3>
+            <p>A promo code isn't the only way to improve your savings on GamsGo. Consider these essential tips before checking out:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li><strong>Compare Product Listings:</strong> Compare product details, access type, duration, delivery time, warranty, and seller information rather than choosing based only on headline offers.</li>
+              <li><strong>Check the Region:</strong> Digital products may be restricted to a particular country or currency. Choosing the wrong region can make a product unsuitable for your account.</li>
+              <li><strong>Look for Longer Durations:</strong> If you know you'll use a service for several months, compare longer-duration products with monthly options for better rates.</li>
+              <li><strong>Check Account Type & Delivery:</strong> Confirm whether account products are shared or full access. Also check guaranteed delivery times—some items deliver instantly, while direct top-ups rely on your player UID/ID.</li>
+              <li><strong>Review the Warranty:</strong> For eligible products, review the warranty period and support terms on the listing prior to ordering.</li>
+            </ul>
+          </div>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        <button
+          onClick={() => setIsReadMore(!isReadMore)}
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+        >
+          {isReadMore ? "Read Less" : "Read More"}{" "}
+          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* Accordion FAQs */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About GamsGo Promo Codes</h3>
+          {[
+            { q: "What is a GamsGo promo code?", a: "A GamsGo promo code is a promotional code that may provide a discount or other offer on an eligible purchase. The exact terms depend on the promotion." },
+            { q: "Where can I find a GamsGo promo code?", a: "You can check CouponsBit for available GamsGo promo codes, discount codes, coupon offers, and deals before completing your purchase." },
+            { q: "What can I buy on GamsGo?", a: "GamsGo offers digital subscriptions, game accounts, gift cards, game top-ups, game currency, and game items. Its marketplace includes entertainment, music, AI, software, sports, gaming, and other digital products." },
+            { q: "Does GamsGo sell Netflix subscriptions?", a: "Netflix is currently listed in GamsGo's digital subscription marketplace. Product type, duration, account access, region, and other conditions can vary by listing." },
+            { q: "Does GamsGo sell AI subscriptions?", a: "Yes. GamsGo currently lists AI-related services including ChatGPT, Claude, Gemini, Grok, Midjourney, Perplexity, Cursor, GitHub Copilot, Canva, and other AI tools." },
+            { q: "Does GamsGo sell game top-ups?", a: "Yes. GamsGo has a dedicated top-up center covering games and platforms such as Roblox, Free Fire, Valorant, PUBG Mobile, Genshin Impact, Pokémon GO, Xbox, PlayStation, Nintendo, and others." },
+            { q: "What is a GamsGo direct top-up?", a: "A direct top-up allows eligible game currency or items to be credited directly to a game account using information such as a UID or Player ID rather than a traditional gift card or redeem code." },
+            { q: "Does GamsGo sell gift cards?", a: "Yes. GamsGo currently offers gift cards associated with platforms including PlayStation, Xbox, Apple, Nintendo, Google Play, Razer, and others." },
+            { q: "Can I buy PlayStation Plus on GamsGo?", a: "Yes. GamsGo currently lists PlayStation Plus products across Essential, Extra, and Premium tiers, with different durations and access arrangements." },
+            { q: "Can I buy Xbox Game Pass on GamsGo?", a: "Yes. The current GamsGo marketplace includes Xbox Game Pass-related products across different plans and durations." },
+            { q: "Are GamsGo products region-specific?", a: "Some are. Digital gift cards and subscriptions may be restricted by country, currency, platform, or account region. Always check the individual product listing before purchasing." },
+            { q: "Does GamsGo offer instant delivery?", a: "Some products are listed with instant delivery, while others have longer guaranteed delivery windows. The delivery time is shown on the individual product listing." },
+            { q: "Can I use a GamsGo discount code on every product?", a: "Not necessarily. Promotional codes can have individual terms and may apply only to selected products, categories, or campaigns. Check the promotion details before ordering." },
+            { q: "Does GamsGo have gaming products?", a: "Yes. Gaming is a major part of the marketplace, with game accounts, top-ups, gift cards, game currency, and game items available across numerous titles and platforms." }
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa]")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500 transition-transform", openFaq === i && "text-white rotate-180")} />
+                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar Area */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular GamsGo Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["GamsGo Promo Code", "Streaming Deals", "AI Subscriptions", "PS Plus Offers", "Xbox Game Pass", "Gift Cards", "Direct Top-Ups", "Game Accounts"].map((tag) => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        
       </main>
 
       <Footer />

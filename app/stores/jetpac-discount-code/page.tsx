@@ -144,17 +144,140 @@ const jetpacSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Jetpac?", acceptedAnswer: { "@type": "Answer", text: "Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access." } },
-        { "@type": "Question", name: "Does Jetpac offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jetpac runs promotions such as destination eSIM deals and app-exclusive offers." } },
-        { "@type": "Question", name: "Where can I find Jetpac discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Jetpac discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Jetpac offer airport lounge access?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jetpac offers discounted airport lounge access through its JetPass Perks program." } },
-        { "@type": "Question", name: "How does Jetpac's eSIM work?", acceptedAnswer: { "@type": "Answer", text: "Jetpac eSIMs can be downloaded and activated through the Jetpac app, providing data coverage automatically when you travel." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Jetpac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac runs promotions such as destination eSIM deals, app-exclusive offers, and special discount codes on eligible products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Jetpac promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Jetpac promo code is a promotional code that may provide a discount or special benefit when purchasing eligible Jetpac products. Availability, eligibility, and terms vary by promotion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find Jetpac discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check Couponsbit for available Jetpac discount codes, coupon codes, promotional offers, and deals before completing your purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Jetpac's eSIM work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac eSIMs can be downloaded and activated through the Jetpac app, providing data coverage automatically when you travel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac offer eSIMs for the USA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac provides dedicated eSIM plans for the United States with different data allowances and validity periods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac work in Europe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac offers Europe regional eSIM plans designed for travelers visiting supported European destinations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Jetpac in Japan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac provides Japan-specific eSIM plans with different data options and durations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Jetpac available for different countries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac provides country-specific and regional eSIM options covering numerous destinations worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac offer unlimited data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac offers unlimited plans in selected destinations. However, unlimited plans may have speed-management conditions, so check the details of your selected plan before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac include SMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac's standard eSIM service is data-only and does not include SMS. Voice options can be purchased through the Jetpac app where available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Jetpac as a hotspot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac states that its eSIM supports hotspot sharing. Check the terms of your selected plan and your device compatibility before relying on this feature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Jetpac eSIM remain available before activation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jetpac states that an unactivated data pack remains available in the user's account for three months from the date of purchase. Once activated, the plan follows the validity period selected during purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Jetpac for multiple trips?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac describes its travel eSIM as reusable for future trips, with users able to top up when traveling again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jetpac offer airport lounge access?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jetpac offers discounted airport lounge access through its JetPass Perks program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    }
+  ]
+},
   ],
 };
 

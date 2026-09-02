@@ -164,17 +164,132 @@ const lordhairSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/lordhair-promo-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Lordhair?", acceptedAnswer: { "@type": "Answer", text: "Lordhair is a hair replacement system manufacturer offering non-surgical, custom hair systems and toupees for men, handcrafted with human hair." } },
-        { "@type": "Question", name: "Does Lordhair offer promo codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Lordhair runs promotions such as thin skin base deals and custom hair system deals." } },
-        { "@type": "Question", name: "Where can I find Lordhair promo codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Lordhair promo codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "What base materials does Lordhair offer?", acceptedAnswer: { "@type": "Answer", text: "Lordhair offers hair systems with base materials including thin skin and lace, customizable for color, density, length and style." } },
-        { "@type": "Question", name: "Does Lordhair use human hair?", acceptedAnswer: { "@type": "Answer", text: "Yes. Lordhair crafts its hair systems using 100% human hair." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/lordhair-promo-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Lordhair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lordhair is a hair replacement system manufacturer offering non-surgical, custom hair systems, toupees, wigs, and hairpieces for men, handcrafted with 100% human hair."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Lordhair offer promo codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lordhair periodically provides promotional offers, discount codes, and coupon opportunities such as thin skin base deals and custom hair system deals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Lordhair promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Lordhair promo code is a promotional code that can provide a discount or other promotional benefit when used on an eligible purchase. The exact conditions depend on the offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find Lordhair promo codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check Couponsbit for available Lordhair promo codes, coupon codes, discount offers, and other promotions before placing your order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a Lordhair coupon code on every product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some Lordhair promotions are limited to specific products or categories. Many coupons apply primarily to hair systems and may not be combinable with other promotional discounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Lordhair sell products for women?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lordhair's primary catalog focuses on men's hair replacement systems, wigs, toupees, and hairpieces. Its current website is positioned around men's hair systems and hair replacement solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What base materials and hair systems does Lordhair offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lordhair offers skin, lace, hybrid, and monofilament hair systems, along with custom hair systems and premium Remy hair options customizable for color, density, length, and style."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Lordhair use human hair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lordhair crafts its hair systems using 100% human hair."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize a Lordhair hair system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lordhair's custom hair systems can be personalized according to specifications such as base size, hair density, hair length, color, hair type, and hairstyle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Lordhair sell hair system accessories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Its accessories include tapes, adhesives, removers, shampoos, conditioners, scalp-care products, and other maintenance supplies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Lordhair 3R system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 3R approach stands for Reset, Renewal, and Refresh. It is Lordhair's hair system maintenance routine covering cleansing, conditioning/treatment, and ongoing protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Lordhair ship internationally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lordhair states that it ships to more than 100 countries. However, individual products and promotional offers may have regional restrictions, so check the applicable shipping and product information for your location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can shoppers in Canada use a Lordhair promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canadian shoppers can browse Lordhair's international store and select CAD where available. However, individual promotions may have country-specific terms, so check the conditions attached to each Lordhair coupon code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can shoppers in the UK use a Lordhair discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UK shoppers can shop Lordhair and select GBP where available. As with any promotion, check the offer's terms to confirm that the discount code is valid for your order and region."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    }
+  ]
+},
   ],
 };
 

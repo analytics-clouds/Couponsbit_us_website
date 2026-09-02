@@ -144,17 +144,156 @@ const iberiaSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/iberia-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is Iberia?", acceptedAnswer: { "@type": "Answer", text: "Iberia is Spain's flag carrier airline, offering flights across Europe, Latin America and internationally as part of the IAG group." } },
-        { "@type": "Question", name: "Does Iberia offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Iberia runs promotions such as Europe route deals and Latin America flight offers." } },
-        { "@type": "Question", name: "Where can I find Iberia discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest Iberia discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "Does Iberia fly to Latin America?", acceptedAnswer: { "@type": "Answer", text: "Yes. Iberia offers flights to a range of Latin American destinations alongside its European and international routes." } },
-        { "@type": "Question", name: "Does Iberia have a loyalty program?", acceptedAnswer: { "@type": "Answer", text: "Yes. Iberia offers the Avios rewards program, allowing members to earn and redeem points on eligible flights." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/iberia-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Iberia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Iberia is Spain's flag carrier airline, offering flights across Europe, Latin America and internationally as part of the IAG group."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Iberia offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia runs promotions such as Europe route deals, Latin America flight offers, travel packages, and site-wide promo codes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an Iberia discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Iberia discount code is a promotional code that can provide a discount on an eligible Iberia booking. The exact discount, eligible flights, booking dates, and conditions depend on the promotion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find Iberia discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check Couponsbit for available Iberia discount codes, promo codes, coupon offers, and flight deals before booking. Customers can also find promotional codes on Iberia's website, social media channels, newsletters, and Iberia Club communications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use an Iberia discount code on any flight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Promotional codes can have specific terms and may apply only to selected flights, routes, travel dates, or fare classes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I enter an Iberia promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Iberia's payment page includes a designated field for vouchers, discount codes, or gift cards. Enter your eligible code there and select the option to apply it to your total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Iberia offer flight deals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia maintains an offers section featuring low-fare opportunities, monthly flight deals, travel packages, and its popular Madrid stopover program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Iberia have a loyalty program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia Club is Iberia's loyalty program. Members can earn Avios and Elite Points to unlock travel perks, discounts, and exclusive promotions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Avios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avios are the reward currency used by Iberia Club. Members can earn Avios through eligible flights and participating partners, and redeem them for flights, discounts, upgrades, hotels, car hire, and other travel rewards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Avios to reduce the cost of an Iberia flight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia allows eligible members to redeem Avios for full flight bookings or partial discounts on ticket prices, as well as for cabin upgrades and extra travel services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can travelers in the USA use an Iberia discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, depending on the promotion. U.S. travelers should select the US regional store on Iberia's website and verify the terms of the individual discount code before booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can travelers in Canada use an Iberia discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia maintains a dedicated Canadian platform and provides options for promotional codes, though individual offers may have specific regional terms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can travelers in the UK use an Iberia discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia offers a dedicated UK market store, but individual promotional codes may have specific restrictions. Always check the terms before applying a code to a UK booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Iberia offer Business Class?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia offers Business Class on eligible long-haul and short-haul routes, and Iberia Club members can use Avios for eligible cabin upgrades."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a hotel through Iberia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia's booking platform includes standalone hotel reservations as well as combined flight-plus-hotel packages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I rent a car through Iberia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia provides car rental bookings and flight-plus-car package options. Iberia Club members can also earn Avios through participating rental partners."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Iberia fly to Latin America?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Iberia offers extensive flights to a wide range of Latin American destinations alongside its European and international routes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    }
+  ]
+},
   ],
 };
 

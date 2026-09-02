@@ -152,17 +152,164 @@ const gamsGoSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/gamsgo-discount-code#faq",
-      mainEntity: [
-        { "@type": "Question", name: "What is GamsGo?", acceptedAnswer: { "@type": "Answer", text: "GamsGo is a subscription-sharing marketplace where users can access shared slots on family and multi-user plans for services like Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll." } },
-        { "@type": "Question", name: "Does GamsGo offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. GamsGo runs promotions such as Spotify Premium deals and Adobe subscription deals." } },
-        { "@type": "Question", name: "Where can I find GamsGo discount codes?", acceptedAnswer: { "@type": "Answer", text: "You can find the latest GamsGo discount codes and offers on Couponsbit." } },
-        { "@type": "Question", name: "What subscriptions can I share through GamsGo?", acceptedAnswer: { "@type": "Answer", text: "GamsGo offers shared access to services including Netflix, Spotify, Disney+, YouTube Premium, Adobe and Crunchyroll." } },
-        { "@type": "Question", name: "How does subscription sharing work on GamsGo?", acceptedAnswer: { "@type": "Answer", text: "GamsGo connects buyers with sellers offering individual profiles or slots within multi-user subscription plans at a shared cost." } },
-        { "@type": "Question", name: "Is Couponsbit free to use?", acceptedAnswer: { "@type": "Answer", text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/gamsgo-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GamsGo is a subscription-sharing marketplace and digital products platform where users can access shared slots on family and multi-user plans for services like Netflix, Spotify, Disney+, YouTube Premium, Adobe, and Crunchyroll, as well as buy game accounts, gift cards, game top-ups, game currency, and AI subscriptions."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GamsGo runs promotions such as Spotify Premium deals, Adobe subscription deals, and promotional promo codes that offer savings on eligible purchases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a GamsGo promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A GamsGo promo code is a promotional code that may provide a discount or other offer on an eligible purchase. The exact terms depend on the promotion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find GamsGo discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check Couponsbit for available GamsGo promo codes, discount codes, coupon offers, and deals before completing your purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What subscriptions can I share through GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GamsGo offers shared access to services including Netflix, Spotify, Disney+, YouTube Premium, Adobe, and Crunchyroll."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does subscription sharing work on GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GamsGo connects buyers with sellers offering individual profiles or slots within multi-user subscription plans at a shared cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I buy on GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GamsGo offers digital subscriptions, game accounts, gift cards, game top-ups, game currency, and game items across entertainment, music, AI, software, sports, and gaming categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo sell Netflix subscriptions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Netflix is currently listed in GamsGo's digital subscription marketplace, though product type, duration, account access, region, and other conditions can vary by listing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo sell AI subscriptions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GamsGo currently lists AI-related services including ChatGPT, Claude, Gemini, Grok, Midjourney, Perplexity, Cursor, GitHub Copilot, Canva, and other AI tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo sell game top-ups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GamsGo has a dedicated top-up center covering games and platforms such as Roblox, Free Fire, Valorant, PUBG Mobile, Genshin Impact, Pokémon GO, Xbox, PlayStation, Nintendo, and others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a GamsGo direct top-up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A direct top-up allows eligible game currency or items to be credited directly to a game account using information such as a UID or Player ID rather than a traditional gift card or redeem code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo sell gift cards?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GamsGo currently offers gift cards associated with platforms including PlayStation, Xbox, Apple, Nintendo, Google Play, Razer, and others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I buy PlayStation Plus on GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GamsGo currently lists PlayStation Plus products across Essential, Extra, and Premium tiers, with different durations and access arrangements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I buy Xbox Game Pass on GamsGo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The current GamsGo marketplace includes Xbox Game Pass-related products across different plans and durations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are GamsGo products region-specific?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some are. Digital gift cards and subscriptions may be restricted by country, currency, platform, or account region. Always check the individual product listing before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo offer instant delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some products are listed with instant delivery, while others have longer guaranteed delivery windows. The delivery time is shown on the individual product listing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a GamsGo discount code on every product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Promotional codes can have individual terms and may apply only to selected products, categories, or campaigns. Check the promotion details before ordering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GamsGo have gaming products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Gaming is a major part of the marketplace, with game accounts, top-ups, gift cards, game currency, and game items available across numerous titles and platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Couponsbit free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
+      }
+    }
+  ]
+},
   ],
 };
 

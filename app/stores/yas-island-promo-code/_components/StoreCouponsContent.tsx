@@ -20,7 +20,7 @@ import {
   ShoppingBag,
   Ticket,
   Waves,
-  Building2,
+  Building2,Globe, MapPin, Sparkles, Bus, Crown, Calendar, Map,
   Hotel,
 } from "lucide-react";
 import Image from "next/image";
@@ -263,15 +263,64 @@ export default function YasIslandCouponsContent() {
                   </a>
                 </div>
 
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About Yas Island</h3>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Yas Island is Abu Dhabi's leisure and entertainment island, home to Ferrari World, Yas Waterworld, SeaWorld Abu Dhabi, Warner Bros. World and the Yas Marina F1 Circuit.
-                  </p>
-                  <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
-                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
+               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+  <h3 className="text-black font-black text-lg mb-6">
+    What Is Yas Island?
+  </h3>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+    Yas Island is a major entertainment and leisure destination in Abu Dhabi, UAE. It combines theme parks, hotels, restaurants, shopping, entertainment venues, beaches, and other attractions in one location.
+  </p>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
+    For travelers, this makes Yas Island particularly convenient because you can combine multiple activities during the same trip rather than planning separate journeys across the city.
+  </p>
+  
+  <p className="text-black font-black text-sm leading-relaxed mb-6">
+    The destination's major attractions include four large theme parks:
+  </p>
+  
+  <div className="space-y-8 mb-8">
+    {[
+      {
+        icon: Globe,
+        title: "Ferrari World Yas Island",
+        sub: "Home to Formula Rossa, the world's fastest roller coaster, and iconic high-speed racing experiences."
+      },
+      {
+        icon: MapPin,
+        title: "Warner Bros. World Yas Island",
+        sub: "A massive indoor theme park featuring six immersive lands filled with iconic DC comics and cartoon characters."
+      },
+      {
+        icon: Sparkles,
+        title: "Yas Waterworld",
+        sub: "An Emirati-themed water park packed with dozens of thrilling slides, rides, and family wave pools."
+      },
+      {
+        icon: Bus,
+        title: "SeaWorld Yas Island",
+        sub: "The region's first marine life theme park, featuring eight ocean realms and up-close animal encounters."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <p className="text-gray-500 font-bold text-sm leading-relaxed text-justify">
+    Yas Island also provides transport options such as Yas Express, which connects visitors with attractions around the island.
+  </p>
+</div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
@@ -296,26 +345,63 @@ export default function YasIslandCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">Yas Island Products & Services</h3>
-                  <div className="space-y-8">
-                    {[
-                      { icon: Ticket, title: "Theme Park Tickets", sub: "Single-park and multi-park bundles across 4 parks." },
-                      { icon: Waves, title: "Yas Waterworld", sub: "Water rides and attractions for the whole family." },
-                      { icon: Building2, title: "Warner Bros. World", sub: "The region's largest indoor theme park." },
-                      { icon: Hotel, title: "Hotel Packages", sub: "Stay and play packages combining hotels with tickets." },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex gap-4 items-start text-justify">
-                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                          <item.icon className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">{item.sub}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-6">
+    Ways to Save on Yas Island
+  </h3>
+  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
+    A promo code is only one way to make your trip more budget-friendly.
+  </p>
+  <div className="space-y-8">
+    {[
+      {
+        icon: Ticket,
+        title: "Compare Individual and Multi-Park Tickets",
+        sub: "If you plan to visit multiple parks, compare combination tickets with separate admissions."
+      },
+      {
+        icon: Crown,
+        title: "Consider an Annual Pass",
+        sub: "Frequent visitors may find an annual pass more useful than purchasing individual tickets repeatedly. Yas Island's current annual-pass program includes unlimited access benefits along with additional island-wide discounts and privileges."
+      },
+      {
+        icon: Calendar,
+        title: "Look for Seasonal Offers",
+        sub: "Theme parks and travel destinations often introduce special promotions around holidays, school breaks, and major events. Check for current Yas Island offers before booking."
+      },
+      {
+        icon: Hotel,
+        title: "Check Hotel Packages",
+        sub: "If you're staying overnight, compare hotel-and-attraction packages with booking each component separately."
+      },
+      {
+        icon: Map,
+        title: "Plan Multiple Activities",
+        sub: "A multi-day itinerary can help you get more from your trip instead of trying to visit every attraction in one day."
+      },
+      {
+        icon: Tag,
+        title: "Check CouponsBit Before Every Booking",
+        sub: "Before paying for tickets, accommodation, or eligible experiences, check CouponsBit for a current Yas Island coupon code, promo code, discount, or special offer."
+      }
+    ].map((item) => (
+      <div key={item.title} className="flex gap-4 items-start text-justify">
+        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+          <item.icon className="w-5 h-5" />
+        </div>
+        <div>
+          <p className="text-black font-black text-sm leading-tight mb-2">
+            {item.title}
+          </p>
+          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+            {item.sub}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>
@@ -348,184 +434,770 @@ export default function YasIslandCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Yas Island Promo Codes, Coupon Codes & Theme Park Deals 2026
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+      
+      {/* Main Content Area */}
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Yas Island Promo Code, Discount Code & Ticket Deals
+        </h2>
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-600 font-bold text-[14px]">
-                      {[
-                        ["Annual Pass from AED 134/Month", "From AED 134/mo", "All Users", "Interest-free monthly payments via Tabby", "Annual Pass"],
-                        ["Diamond Annual Pass", "AED 3,295", "All Users", "Quick Pass + 25% OFF dining & shopping", "Annual Pass"],
-                        ["Gold Annual Pass", "AED 1,795", "All Users", "25% OFF dining, shopping & Family tickets", "Annual Pass"],
-                        ["Flying & Climbing Experiences", "Up to 50% OFF", "All Users", "50% OFF midweek, 25% OFF weekend", "Adventure experiences"],
-                        ["Silver Annual Pass", "AED 1,595", "All Users", "15% OFF dining & Family tickets", "Annual Pass"],
-                        ["Digital Photos & Gaming Promotions", "Unlimited digital photos", "All Users", "25% OFF single photo prints", "Photos & gaming"],
-                        ["FacePass First Purchase", "20% OFF", "First-Time FacePass Users", "Enroll via the Yas Island app", "Food & Beverage"],
-                        ["Kids Go FREE Summer Package", "1 Kid FREE per Adult", "All Users", "Book participating hotels until 31 October", "Hotel packages"],
-                        ["Annual Pass Dining", "25% OFF", "Annual Pass Holders", "Selected partner restaurants", "Dining"],
-                        ["CLYMB Yas Island", "20% OFF", "Valid Ticket Holders", "Requires valid Yas Theme Park tickets", "CLYMB adventures"],
-                      ].map((row, i) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 9 && "border-b-0")}>
-                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+        <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[850px] border-collapse text-left">
+      <thead>
+        <tr className="bg-[#056BFA]">
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+        </tr>
+      </thead>
+      <tbody className="text-[14px] font-bold text-gray-600">
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Annual Pass Monthly Plan 💳
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            From AED 134/mo
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Split into interest-free monthly payments via Tabby; includes exclusive Passholder perks
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Yas Annual Pass (Access to 4 theme parks)
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Diamond Annual Pass 💎
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            AED 3,295
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Includes Quick Pass line-skipping, 25% OFF dining/shopping/experiences, plus hotel &amp; spa perks
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Diamond Yas Annual Pass
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Gold Annual Pass 🥇
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            AED 1,795
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Unlimited park access, 25% OFF dining &amp; shopping, plus 25% OFF Family &amp; Friends tickets
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Gold Yas Annual Pass
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Silver Annual Pass 🥈
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            AED 1,595
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Year-round access (limited blackout dates), 15% OFF dining/shopping, 50% OFF Yas Beach
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Silver Yas Annual Pass
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Flying &amp; Climbing Adventures 🧗‍♂️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 50% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            50% OFF midweek adventures; 25% OFF selected weekend experiences
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            CLYMB indoor flying &amp; climbing
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            CLYMB Ticket Holder Discount 🧗
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Theme Park Ticket Holders
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Requires valid Yas Theme Park ticket; valid on indoor climbing &amp; flying
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            CLYMB Yas Island experience
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Kids Go FREE Summer Package 🏖️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            1 Kid FREE per Adult
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Families (Kids &lt; 12)
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Up to 2 kids stay, play &amp; dine FREE with 2 adults; book participating hotels by Oct 31
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Participating hotel &amp; park packages
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Passholder Dining Privilege 🍽️
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            25% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            Annual Passholders
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Valid at selected partner restaurants and dining venues across Yas Island
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Participating partner restaurants
+          </td>
+        </tr>
+
+        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            FacePass F&amp;B Welcome Offer 🍔
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            20% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            First-Time FacePass Users
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Must enroll via the official Yas Island app; applies to first eligible F&amp;B purchase
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            First Food &amp; Beverage order
+          </td>
+        </tr>
+
+        <tr className="transition-colors hover:bg-gray-50/50">
+          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+            Digital Photos &amp; Gaming Perks 📸
+          </td>
+          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+            Up to 25% OFF
+          </td>
+          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+            All Visitors
+          </td>
+          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+            Unlimited digital photos on select packages; 25% OFF single prints &amp; game bundles
+          </td>
+          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+            Photo prints &amp; arcade game bundles
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        {/* Expandable Content Area */}
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative transition-all", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <div className="space-y-4">
+            <p>
+              Planning an exciting getaway to Abu Dhabi? A Yas Island promo code can help you look for savings on theme park tickets, experiences, stays, and other activities across one of the UAE’s most popular entertainment destinations. Whether you are traveling with family, planning a weekend with friends, or building a complete Abu Dhabi holiday, Yas Island brings attractions, entertainment, dining, shopping, and hotels together in one destination.
+            </p>
+            <p>
+              Yas Island is home to four major theme parks: Ferrari World Yas Island, Warner Bros. World Yas Island, Yas Waterworld, and SeaWorld Yas Island. The destination also offers hotels, restaurants, shopping, beaches, live entertainment, and other experiences.
+            </p>
+            <p>
+              CouponsBit helps you find available Yas Island promo codes, Yas Island discount codes, ticket deals, coupons, offers, and travel savings before you book.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Yas Island Promo Codes & Deals</h3>
+            <p>
+              Before purchasing your next Yas Island experience, check CouponsBit for the latest promotional offers. Depending on the promotion, Yas Island deals may include:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Yas Island promo codes</li>
+              <li>Yas Island discount codes</li>
+              <li>Yas Island ticket offers</li>
+              <li>Theme park deals</li>
+              <li>Family ticket offers</li>
+              <li>Multi-park ticket promotions</li>
+              <li>Hotel and attraction packages</li>
+              <li>Annual pass offers</li>
+              <li>Dining offers</li>
+              <li>Seasonal promotions</li>
+              <li>Special event offers</li>
+              <li>Experience discounts</li>
+              <li>Shopping and entertainment deals</li>
+            </ul>
+            <p>
+              Promotions can have specific terms, dates, attraction restrictions, or eligibility requirements, so always check the conditions attached to an offer before booking.
+            </p>
+          </div>
+
+          <div className={cn("text-gray-600 space-y-8 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  {/* Ferrari World Yas Island */}
+  <div className="space-y-4">
+    <h2 className="text-2xl font-black text-[#056bfa]">Ferrari World Yas Island</h2>
+    <p>
+      If speed, roller coasters, and Ferrari-inspired experiences are on your travel list, Ferrari World is one of the main attractions to explore.
+    </p>
+    <p>
+      The park features more than 40 rides and attractions, combining high-speed thrills with family-friendly entertainment.
+    </p>
+
+    <h3 className="text-lg font-bold text-gray-900 mt-4">What to Experience at Ferrari World</h3>
+    <p>Depending on the available attractions and operating schedules, visitors can explore:</p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-4">
+      {[
+        "High-speed roller coasters", "Family rides", "Ferrari-inspired experiences",
+        "Interactive attractions", "Racing-themed activities", "Shows and entertainment",
+        "Children's attractions", "Ferrari-themed environments", "Dining venues", "Retail stores"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p>
+      Ferrari World can appeal to both serious thrill seekers and families looking for a variety of experiences in one indoor theme park.
+    </p>
+
+    <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 space-y-2 mt-4">
+      <h4 className="font-bold text-[#056bfa]">Ferrari World Ticket Deals</h4>
+      <p>
+        Before booking, check for a Yas Island discount code or multi-attraction offer that may apply to Ferrari World.
+      </p>
+      <p>
+        If your itinerary includes several Yas Island parks, compare individual admission with available multi-park options before purchasing.
+      </p>
+    </div>
+  </div>
+
+  {/* Warner Bros. World Yas Island */}
+  <div className="space-y-4">
+    <h2 className="text-2xl font-black text-[#056bfa]">Warner Bros. World Yas Island</h2>
+    <p>
+      Warner Bros. World Yas Island brings famous characters, stories, and fictional worlds into an immersive indoor theme park.
+    </p>
+    <p>
+      The park features six themed lands with attractions, entertainment, and family experiences.
+    </p>
+
+    <h3 className="text-lg font-bold text-gray-900 mt-4">Warner Bros. World Experiences</h3>
+    <p>
+      Visitors can discover themed environments inspired by popular Warner Bros. characters and franchises.
+    </p>
+    <p>The park can be particularly appealing to families and fans of:</p>
+    <div className="flex flex-wrap gap-2 my-4">
+      {[
+        "DC superheroes", "Looney Tunes", "Cartoon characters",
+        "Family entertainment", "Interactive attractions", "Themed rides", "Live entertainment"
+      ].map((item, idx) => (
+        <span key={idx} className="bg-blue-50 text-[#056bfa] text-xs font-bold px-3 py-1.5 rounded-lg border border-blue-100">
+          {item}
+        </span>
+      ))}
+    </div>
+    <p>
+      Because Warner Bros. World is an indoor park, it can also be a convenient option when you want to spend the day enjoying rides and entertainment away from Abu Dhabi's outdoor heat.
+    </p>
+  </div>
+
+  {/* Yas Waterworld */}
+  <div className="space-y-4">
+    <h2 className="text-2xl font-black text-[#056bfa]">Yas Waterworld</h2>
+    <p>
+      For travelers who would rather spend the day in the water, Yas Waterworld offers a collection of slides, rides, and aquatic experiences.
+    </p>
+    <p>
+      The park is designed for visitors of different ages, with attractions ranging from high-energy water rides to experiences suitable for families and children.
+    </p>
+
+    <h3 className="text-lg font-bold text-gray-900 mt-4">Yas Waterworld Attractions</h3>
+    <p>A visit can include:</p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-4">
+      {[
+        "Water slides", "Family rides", "Children's water attractions",
+        "Wave and water experiences", "Adventure activities", "Relaxation areas",
+        "Food and beverage outlets", "Souvenir shopping"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p>
+      If you are visiting Abu Dhabi during warmer months, a water park can be a fun addition to your itinerary.
+    </p>
+    <p className="text-sm bg-blue-50/70 text-gray-700 p-3 rounded-xl border border-blue-100 font-medium">
+      Check CouponsBit before purchasing your Yas Waterworld tickets to see whether a Yas Island promo code or current ticket promotion is available.
+    </p>
+  </div>
+
+  {/* SeaWorld Yas Island */}
+  <div className="space-y-4">
+    <h2 className="text-2xl font-black text-[#056bfa]">SeaWorld Yas Island</h2>
+    <p>
+      SeaWorld Yas Island offers a different type of theme park experience, focusing on marine life, immersive environments, attractions, and entertainment.
+    </p>
+    <p>
+      The park takes visitors through eight themed realms, ranging from polar environments to tropical areas, while showcasing marine life and ocean-inspired experiences.
+    </p>
+
+    <h3 className="text-lg font-bold text-gray-900 mt-4">SeaWorld Yas Island Experiences</h3>
+    <p>Depending on the current attractions and schedule, visitors can explore:</p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-4">
+      {[
+        "Marine-life environments", "Interactive experiences", "Educational attractions",
+        "Family activities", "Immersive themed areas", "Entertainment", "Dining", "Retail experiences"
+      ].map((item, idx) => (
+        <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+    <p>
+      SeaWorld can be a good choice for families who want to combine entertainment with opportunities to learn about marine environments and wildlife.
+    </p>
+  </div>
+
+  {/* Multi-Park & Annual Passes */}
+  <div className="space-y-6">
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Multi-Park Tickets</h3>
+      <p>
+        If you want to visit more than one attraction, look for multi-park ticket options before buying individual admissions.
+      </p>
+      <p>A multi-park approach can make sense for travelers planning to visit:</p>
+      <div className="flex flex-wrap gap-2 my-2">
+        {["Ferrari World", "Warner Bros. World", "Yas Waterworld", "SeaWorld"].map((park, idx) => (
+          <span key={idx} className="bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-md border border-indigo-100">
+            {park}
+          </span>
+        ))}
+      </div>
+      <p>
+        Instead of automatically purchasing separate tickets, compare the available combination options for your travel dates.
+      </p>
+      <p>
+        This is especially useful for families and visitors staying on Yas Island for several days.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Annual Pass</h3>
+      <p>Frequent visitors can also consider a Yas Annual Pass.</p>
+      <p>
+        Yas Island currently offers annual pass tiers that provide year-round access to its entertainment parks, subject to applicable blackout dates and terms. The official annual-pass information lists Silver, Gold, and Diamond options with different benefits.
+      </p>
+      <p>Depending on the pass, benefits can include:</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+        {[
+          "Unlimited theme park access", "Discounts at restaurants and cafés",
+          "Retail discounts", "Discounts on tickets for family and friends",
+          "Discounts on selected paid experiences", "Seasonal event access",
+          "Parking benefits", "Selected hotel benefits", "Other island-wide privileges"
+        ].map((item, idx) => (
+          <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+      <p className="text-xs text-gray-500 italic">
+        The exact benefits depend on the annual-pass tier and current terms.
+      </p>
+      <p>
+        If you plan to visit Yas Island repeatedly throughout the year, compare an annual pass with individual tickets to determine which option makes more sense for your itinerary.
+      </p>
+    </div>
+  </div>
+
+  {/* Accommodations */}
+  <div className="space-y-6">
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Hotels</h3>
+      <p>
+        Yas Island is also home to several hotels, making it possible to stay close to the theme parks and other attractions.
+      </p>
+      <p>
+        Staying on or near Yas Island can be useful if you want to spend multiple days exploring the destination.
+      </p>
+      <p>Hotel options can provide convenient access to:</p>
+      <div className="flex flex-wrap gap-2 my-2">
+        {[
+          "Theme parks", "Yas Mall", "Yas Beach", "Restaurants",
+          "Entertainment venues", "Yas Marina", "Other island attractions"
+        ].map((item, idx) => (
+          <span key={idx} className="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">
+            {item}
+          </span>
+        ))}
+      </div>
+      <p>
+        When planning a complete holiday, compare standalone hotel bookings with available hotel-and-attraction packages.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Hotel Packages</h3>
+      <p>
+        Travelers planning an extended stay can look for packages that combine accommodation with entertainment.
+      </p>
+      <p>Depending on the promotion, packages may include combinations such as:</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+        {[
+          "Hotel accommodation", "Theme park tickets", "Attraction access",
+          "Dining benefits", "Resort amenities", "Family activities", "Seasonal experiences"
+        ].map((item, idx) => (
+          <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+      <p className="text-xs text-gray-500 italic">
+        Package availability can change, so check the current terms before booking.
+      </p>
+      <p className="text-sm bg-amber-50 text-amber-800 p-3 rounded-xl border border-amber-200 font-medium">
+        A Yas Island discount code may also apply only to specific products or promotional bookings, so read the offer conditions carefully.
+      </p>
+    </div>
+  </div>
+
+  {/* Dining & Shopping */}
+  <div className="space-y-6">
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Dining</h3>
+      <p>
+        Yas Island isn't only about theme parks. The destination also offers restaurants, cafés, and other food and beverage experiences.
+      </p>
+      <p>Depending on where you visit, you can find options for:</p>
+      <div className="flex flex-wrap gap-2 my-2">
+        {[
+          "Casual dining", "Family meals", "Cafés", "International cuisine",
+          "Fast-casual food", "Fine dining", "Waterfront dining",
+          "Theme park restaurants", "Snacks and refreshments"
+        ].map((item, idx) => (
+          <span key={idx} className="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">
+            {item}
+          </span>
+        ))}
+      </div>
+      <p>
+        Annual-pass holders may also receive selected restaurant and café benefits. The current official annual-pass information lists dining discounts that vary according to the pass tier.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Shopping</h3>
+      <p>Yas Island also gives visitors opportunities to shop between attractions.</p>
+      <p>
+        Yas Mall is one of the destination's major shopping locations, while the theme parks themselves offer branded merchandise and souvenirs.
+      </p>
+      <p>Shopping categories can include:</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+        {[
+          "Fashion", "Beauty", "Electronics", "Lifestyle products",
+          "Children's products", "Theme park merchandise", "Gifts",
+          "Souvenirs", "Food and specialty products"
+        ].map((item, idx) => (
+          <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+      <p>
+        If you are visiting with children, theme park stores can also be a convenient place to find character merchandise and souvenirs from your favorite attractions.
+      </p>
+    </div>
+  </div>
+
+  {/* Beach & Entertainment */}
+  <div className="space-y-6">
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Beach</h3>
+      <p>
+        For travelers who want some downtime between theme park visits, Yas Beach provides an opportunity to enjoy a more relaxed side of the island.
+      </p>
+      <p>
+        Annual passholders may receive special benefits at Yas Beach, with the current annual-pass program listing a beach discount as one of its island-wide perks.
+      </p>
+      <p>
+        A beach day can also be combined with a theme park itinerary, giving you a balance between active attractions and relaxation.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Entertainment & Experiences</h3>
+      <p>
+        Beyond the four major theme parks, Yas Island hosts other entertainment and paid experiences.
+      </p>
+      <p>Depending on current availability, visitors can explore experiences connected with:</p>
+      <div className="flex flex-wrap gap-2 my-2">
+        {[
+          "Adventure activities", "Live entertainment", "Sports",
+          "Family activities", "Seasonal events", "Dining experiences",
+          "Shopping", "Waterfront activities"
+        ].map((item, idx) => (
+          <span key={idx} className="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-md">
+            {item}
+          </span>
+        ))}
+      </div>
+      <p>
+        The island also offers attractions and entertainment designed for different age groups, making it suitable for couples, families, groups of friends, and solo travelers.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island Events</h3>
+      <p>Yas Island regularly hosts entertainment and seasonal events.</p>
+      <p>Events can include:</p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+        {[
+          "Concerts", "Family entertainment", "Seasonal celebrations",
+          "Sporting events", "Special theme park experiences",
+          "Holiday activities", "Limited-time attractions"
+        ].map((item, idx) => (
+          <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-3 text-sm font-semibold text-gray-800 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#056bfa] shrink-0" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+      <p>
+        If your travel dates are flexible, checking the events calendar before booking can help you plan a trip around a particular experience.
+      </p>
+    </div>
+  </div>
+
+  {/* Audience Guides */}
+  <div className="space-y-6">
+    <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-3">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island for Families</h3>
+      <p className="text-sm">
+        Yas Island can be especially appealing to families because several attractions cater to different age groups.
+      </p>
+      <p className="text-sm font-semibold text-gray-800">A family itinerary could combine:</p>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm font-medium text-gray-700">
+        <div className="bg-white p-2 rounded-lg border border-gray-200">Day 1: Ferrari World</div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200">Day 2: Warner Bros. World</div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200">Day 3: Yas Waterworld</div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200">Day 4: SeaWorld</div>
+      </div>
+      <p className="text-sm">
+        You can also mix theme parks with shopping, dining, beach time, and hotel activities.
+      </p>
+      <p className="text-xs text-gray-500 italic">
+        If you have younger children, compare attraction height requirements and age recommendations before purchasing tickets.
+      </p>
+    </div>
+
+    <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-3">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island for Couples</h3>
+      <p className="text-sm">Yas Island isn't limited to family vacations.</p>
+      <p className="text-sm font-semibold text-gray-800">Couples can create an itinerary around:</p>
+      <div className="flex flex-wrap gap-2">
+        {[
+          "Theme park experiences", "Fine dining", "Waterfront restaurants",
+          "Beach time", "Shopping", "Entertainment", "Hotel stays", "Live events"
+        ].map((item, idx) => (
+          <span key={idx} className="bg-white text-gray-800 text-xs font-medium px-2.5 py-1 rounded border border-gray-200">
+            {item}
+          </span>
+        ))}
+      </div>
+      <p className="text-sm">
+        A weekend on Yas Island can combine adrenaline-filled attractions during the day with dining and entertainment in the evening.
+      </p>
+    </div>
+
+    <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+      <h3 className="text-xl font-bold text-gray-900">Yas Island for Thrill Seekers</h3>
+      <p className="text-sm">Adventure lovers have plenty to consider.</p>
+      <p className="text-sm">
+        Ferrari World is particularly suited to travelers looking for high-speed experiences, while Yas Waterworld provides water-based thrills.
+      </p>
+      <p className="text-sm">
+        You can also combine several attractions into a multi-day itinerary to experience different types of rides and entertainment.
+      </p>
+    </div>
+  </div>
+
+  {/* Truncation Gradient Overlay */}
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+  )}
+</div>
+
+
+          {/* How-To Steps Box */}
+          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Find a Yas Island Promo Code on CouponsBit</h3>
+            <div className="space-y-6">
+              {[
+                { title: "Step 1: Visit CouponsBit", text: "Open the Yas Island page on CouponsBit to check the latest available offers." },
+                { title: "Step 2: Browse Available Deals", text: "Look through the listed Yas Island coupons, ticket offers, discounts, and promotions. Pay attention to validity dates, eligible attractions, travel dates, blackout dates, and product restrictions." },
+                { title: "Step 3: Copy the Promo Code", text: "If an applicable code is available, copy it before continuing to the Yas Island booking page." },
+                { title: "Step 4: Choose Your Experience", text: "Select the attraction, ticket, package, hotel, or experience you want to purchase." },
+                { title: "Step 5: Apply the Code", text: "Enter your Yas Island promo code in the applicable promotional-code field during checkout." },
+                { title: "Step 6: Complete Your Booking", text: "Make sure the discount or promotional benefit has been applied correctly before completing the transaction." }
+              ].map((step, i) => (
+                <div key={i} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20 italic">
+                    {i + 1}
+                  </div>
+                  <div className="mt-1">
+                    <strong className="text-gray-900 font-black block">{step.title}</strong>
+                    <p className="text-gray-700 font-bold leading-relaxed">{step.text}</p>
+                  </div>
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Looking for the latest <strong>Yas Island promo codes and coupon codes</strong>? At Couponsbit, we help travelers find multi-park ticket offers, Ferrari World picks, Yas Waterworld deals and hotel packages.
-                  </p>
-                  <p>
-                    Whether you're planning a family trip or a thrill-seeking getaway, Yas Island offers a wide range of theme parks and attractions. Before you book, check Couponsbit for the latest Yas Island offers.
-                  </p>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Yas Island</h3>
-                    <p>
-                      Yas Island is Abu Dhabi's leisure and entertainment island, home to Ferrari World, Yas Waterworld, SeaWorld Abu Dhabi, Warner Bros. World and the Yas Marina F1 Circuit.
-                    </p>
-                    <p>
-                      With multiple theme parks, hotels and event venues on one island, Yas Island serves travelers looking for a complete entertainment getaway.
-                    </p>
-                    <p>
-                      At Couponsbit, we help travelers discover the latest Yas Island offers, park picks and hotel package highlights in one place.
-                    </p>
-                  </div>
-
-                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use Yas Island via Couponsbit</h3>
-                    <div className="space-y-6">
-                      {[
-                        "Step 1: Browse Available Yas Island Offers — Visit the Yas Island page on Couponsbit and explore the latest offers.",
-                        "Step 2: Select Your Preferred Offer — Choose the offer that best fits your trip.",
-                        "Step 3: Click Get Deal — You'll be taken directly to the relevant Yas Island page.",
-                        "Step 4: Choose Your Parks — Select single-park or multi-park ticket options.",
-                        "Step 5: Check Hotel & Stay Packages — Review available combined packages.",
-                        "Step 6: Complete Your Booking — Confirm your tickets or package on Yas Island.",
-                      ].map((step, i) => (
-                        <div key={i} className="flex gap-6 items-start">
-                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Best Ways to Save at Yas Island</h3>
-                    <p><strong>Check Couponsbit Before Booking:</strong> Always visit Couponsbit before booking to see the latest Yas Island offers.</p>
-                    <p><strong>Compare Multi-Park Bundles:</strong> Visiting more than one park can offer better overall value.</p>
-                    <p><strong>Bundle Hotel & Tickets:</strong> Stay and play packages can add extra value to your trip.</p>
-                    <p><strong>Plan Around Your Visit Dates:</strong> Multi-park tickets typically allow visits across several days.</p>
-                    <p><strong>Check Park-Specific Offers:</strong> Availability and pricing can vary by park and season.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Yas Island?</h3>
-                    <p><strong>Multiple World-Class Parks:</strong> Ferrari World, Yas Waterworld, Warner Bros. World and SeaWorld Abu Dhabi in one destination.</p>
-                    <p><strong>Family-Friendly:</strong> Attractions suited for all ages and interests.</p>
-                    <p><strong>Convenient Packages:</strong> Combined hotel and ticket options for extended stays.</p>
-                    <p><strong>Iconic Destination:</strong> Home to the Yas Marina F1 Circuit and major events.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use Couponsbit for Yas Island Deals?</h3>
-                    <p><strong>Curated Yas Island Offers:</strong> We regularly review available Yas Island offers to help users discover current promotions.</p>
-                    <p><strong>Convenient Browsing:</strong> Find park picks, ticket bundles and hotel highlights in one place.</p>
-                    <p><strong>Completely Free:</strong> Couponsbit is free to use and helps customers save across travel, home, electronics and more.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Your Next Trip</h3>
-                    <p>Whether you're visiting for the theme parks, the F1 circuit, or a full island getaway, Yas Island offers a range of options to explore.</p>
-                    <p>Before your next trip, check Couponsbit to explore the latest Yas Island offers and updates.</p>
-                  </div>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* FAQ */}
-                <div className="mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                  {[
-                    { q: "What is Yas Island?", a: "Yas Island is Abu Dhabi's leisure and entertainment island, home to Ferrari World, Yas Waterworld, SeaWorld Abu Dhabi, Warner Bros. World and the Yas Marina F1 Circuit." },
-                    { q: "Does Yas Island offer promo codes?", a: "Yes. Yas Island runs promotions such as multi-park ticket offers and hotel & stay packages." },
-                    { q: "Where can I find Yas Island promo codes?", a: "You can find the latest Yas Island promo codes and offers on Couponsbit." },
-                    { q: "Can I visit multiple Yas Island theme parks on one ticket?", a: "Yes. Yas Island offers multi-park tickets covering Ferrari World, Yas Waterworld, Warner Bros. World and SeaWorld Abu Dhabi." },
-                    { q: "Does Yas Island offer hotel packages?", a: "Yes. Yas Island offers packages combining hotel stays with theme park tickets and event passes." },
-                    { q: "Is Couponsbit free to use?", a: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers." },
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Yas Island Searches</h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {["Ferrari World Tickets", "Yas Waterworld", "Warner Bros. World", "Yas Island Promo Code", "SeaWorld Abu Dhabi", "Multi-Park Tickets", "Hotel Packages", "F1 Circuit"].map(tag => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Yas Island Deals</h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">Y</div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                        </div>
-                        <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Yas Island: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Tips for Planning a Yas Island Trip</h3>
+            <p>Making the most of your visit requires a bit of preparation. Keep these essential tips in mind:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li><strong>Choose Your Parks in Advance:</strong> With four major theme parks, planning your preferred attractions beforehand can make your trip easier.</li>
+              <li><strong>Allow Enough Time:</strong> Trying to experience every park in a single day can make your itinerary unnecessarily rushed. If you want to visit multiple attractions, consider staying for several days.</li>
+              <li><strong>Check Park Schedules:</strong> Operating hours, attraction availability, and event schedules can change. Check the official information for your visit dates.</li>
+              <li><strong>Compare Ticket Types:</strong> Look at individual tickets, multi-park options, and annual passes before deciding.</li>
+              <li><strong>Check Age and Height Requirements:</strong> Some rides have specific requirements. Check these before planning your family's itinerary.</li>
+              <li><strong>Keep Your Booking Details Handy:</strong> Save your tickets, confirmation details, and relevant booking information so you can access them easily during your trip.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-black text-[#056bfa] mb-4">Make Your Yas Island Trip More Rewarding</h3>
+            <p>
+              From Ferrari-powered thrills and superhero adventures to water slides, marine-life experiences, shopping, dining, beaches, and hotels, Yas Island gives travelers plenty of ways to build a complete Abu Dhabi getaway.
+            </p>
+            <p>
+              Before booking your next experience, check CouponsBit for a Yas Island promo code, Yas Island discount code, coupon, ticket deal, or special offer. Compare the available options, review the terms, and choose the combination of attractions and experiences that best fits your itinerary.
+            </p>
+            <p>
+              Whether you're visiting for a weekend or planning a longer Abu Dhabi holiday, checking for available promotions before checkout can help you get more value from your Yas Island experience.
+            </p>
+          </div>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        <button
+          onClick={() => setIsReadMore(!isReadMore)}
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+        >
+          {isReadMore ? "Read Less" : "Read More"}{" "}
+          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* Accordion FAQs */}
+        <div className="mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Yas Island Promo Codes</h3>
+          {[
+            { q: "What is a Yas Island promo code?", a: "A Yas Island promo code is a promotional code that may provide a discount or special offer on eligible Yas Island products, tickets, experiences, or bookings." },
+            { q: "Where can I find a Yas Island discount code?", a: "You can check CouponsBit for available Yas Island discount codes, coupons, promo codes, ticket deals, and other offers before booking." },
+            { q: "What attractions are available on Yas Island?", a: "Yas Island is home to Ferrari World Yas Island, Warner Bros. World Yas Island, Yas Waterworld, and SeaWorld Yas Island." },
+            { q: "Can I visit more than one Yas Island theme park?", a: "Yes. Visitors can choose from individual attraction tickets and available combination or multi-park options, depending on the current ticket selection." },
+            { q: "Does Yas Island have an annual pass?", a: "Yes. Yas Island currently offers annual pass options with year-round access benefits and additional privileges, subject to the applicable terms and blackout dates." },
+            { q: "What are the benefits of a Yas Annual Pass?", a: "Benefits vary by tier but can include unlimited park access, restaurant discounts, retail discounts, family and friend ticket benefits, selected experience discounts, and other island-wide privileges." },
+            { q: "Is Yas Island suitable for children?", a: "Yes. Yas Island offers several family-oriented attractions, including Warner Bros. World, Yas Waterworld, SeaWorld, and selected family-friendly experiences at Ferrari World." },
+            { q: "Can I stay at a hotel on Yas Island?", a: "Yes. Yas Island has multiple hotels, allowing visitors to stay close to the parks, restaurants, shopping, and other attractions." },
+            { q: "Can I use a Yas Island promo code on every attraction?", a: "Not necessarily. Promotional codes and offers can have restrictions regarding attractions, ticket types, travel dates, or booking conditions. Always check the terms before purchasing." },
+            { q: "Does Yas Island offer dining discounts?", a: "Selected Yas Annual Pass tiers currently include discounts at participating restaurants and cafés. The exact benefits vary by pass tier and current terms." },
+            { q: "Does Yas Island have a beach?", a: "Yes. Yas Beach is one of the island's leisure attractions, and selected annual-pass holders can receive beach-related benefits under the current program." }
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa]")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500 transition-transform", openFaq === i && "text-white rotate-180")} />
+                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar Area */}
+      <div className="space-y-10">
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Yas Island Searches</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {["Yas Island Promo Code", "Ferrari World Deals", "Warner Bros World", "Yas Waterworld", "SeaWorld Abu Dhabi", "Multi-Park Passes", "Yas Annual Pass", "Abu Dhabi Hotels"].map((tag) => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       <Footer />
