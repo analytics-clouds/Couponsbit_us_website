@@ -149,7 +149,7 @@ export default function YasIslandCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp" alt="Yas Island Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788436260/21_ihmt2d.webp" alt="Yas Island Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -625,7 +625,12 @@ export default function YasIslandCouponsContent() {
           <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
             Up to 25% OFF
           </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+          <td className="p-5 align-middle whites
+          
+          
+          
+          
+          pace-nowrap text-gray-500">
             All Visitors
           </td>
           <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
