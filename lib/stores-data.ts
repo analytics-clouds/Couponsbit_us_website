@@ -118,6 +118,7 @@ export const allStores: StoreEntry[] = [
   { name: "TP-Link",         id: "tplink-promo-code",              category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/tp-link-logo_y9efya.webp",        discount: "Up To 50% OFF",   popular: false },
   { name: "Yas Island",      id: "yas-island-promo-code",          category: "Travel",      coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp",     discount: "Up To 50% OFF",   popular: false },
   { name: "Lordhair",        id: "lordhair-promo-code",            category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/lorthair-logo_g84ojx.webp",       discount: "Up To 50% OFF",   popular: false },
+  { name: "OGLmove",         id: "oglmove-discount-code",          category: "Fashion",     coupons: 13, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp",           discount: "Up To 13% OFF",   popular: false },
 ];
 
 
