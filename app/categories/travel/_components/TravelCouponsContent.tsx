@@ -14,39 +14,56 @@ import {
   Star,Tag,
   PiggyBank,
   CheckCircle,
-  Code
+  Code,
+  HeartPulse, Home, UtensilsCrossed, Gamepad2, Baby, Car, BedDouble, Glasses, Shirt
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
 const STORES = [
-  { id: "latam-airlines-discount-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 8, discount: "Up to 12% OFF" },
+  { id: "latam-airlines-discount-code", name: "Latam Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp", coupons: 6, discount: "Up to 40% OFF" },
   { id: "trainpal-discount-code", name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", coupons: 9, discount: "Up to 50% OFF" },
+  { id: "zen-hotels-discount-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" },
+  { id: "kiwi-discount-code", name: "Kiwi.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp", coupons: 4, discount: "Up to $580 Rewards" },
   { id: "agoda-discount-code", name: "Agoda", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg", coupons: 10, discount: "Up to 69% OFF" },
   { id: "cheapflights-discount-code", name: "Cheapflights", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg", coupons: 11, discount: "Up to 25% OFF" },
-  { id: "kiwi-discount-code", name: "Kiwi.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp", coupons: 4, discount: "Up to $580 Rewards" },
   { id: "expedia-discount-code", name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg", coupons: 10, discount: "Up to 40% OFF" },
   { id: "qatar-holidays-discount-code", name: "Qatar Holidays", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/qatar-coupon-code_maxmdi.jpg", coupons: 8, discount: "Up to 40% OFF" },
   { id: "flixbus-discount-code", name: "FlixBus Australia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", coupons: 3, discount: "Up to 50% OFF" },
-  { id: "oman-air-discount-code", name: "Oman Air", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/oman-air-logo_ozwu2c.webp", coupons: 5, discount: "Up To 50% OFF" },
   { id: "budget-discount-code", name: "Budget", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp", coupons: 8, discount: "Up To 35% OFF" },
   { id: "avis-discount-code", name: "Avis", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp", coupons: 4, discount: "Up To 20% OFF" },
+  { id: "oman-air-discount-code", name: "Oman Air", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/oman-air-logo_ozwu2c.webp", coupons: 5, discount: "Up To 50% OFF" },
+  { id: "vegas-discount-code", name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", coupons: 6, discount: "Up To 35% OFF" },
   { id: "fireflyz-discount-code", name: "Fireflyz", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/firefly-logo_ju6n0p.webp", coupons: 7, discount: "One-Way Fares From $29" },
   { id: "etihad-discount-code", name: "Etihad", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/etihad-logo_lbl7mo.webp", coupons: 7, discount: "Up To 30% OFF" },
   { id: "malaysia-airlines-discount-code", name: "Malaysia Airlines", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/malaysia-logo_xso2cj.webp", coupons: 6, discount: "Up To 35% OFF" },
   { id: "inspiring-vacation-discount-code", name: "Inspiring Vacation", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784971/inspiring-vacation-logo_mokiew.webp", coupons: 9, discount: "Up To 50% OFF" },
-  { id: "vegas-discount-code", name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", coupons: 6, discount: "Up To 35% OFF" },
-  { id: "zen-hotels-discount-code", name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", coupons: 8, discount: "$35 OFF Bookings" },
-  { id: "radisson-discount-code", name: "Radisson", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp", coupons: 7, discount: "Up To 40% OFF" }
+  { id: "radisson-discount-code", name: "Radisson", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/radission-logo_gxjubt.webp", coupons: 7, discount: "Up To 40% OFF" },
+  { id: "airalo-discount-code", name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp", coupons: 7, discount: "USA eSIM From $4.50" },
+  { id: "klook-discount-code", name: "Klook", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp", coupons: 11, discount: "Up To 50% OFF" },
+  { id: "itc-hotels-discount-code", name: "ITC Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/itc-hotels-logo_ceakgl.webp", coupons: 8, discount: "Up To 50% OFF" },
+  { id: "booking-promo-code", name: "Booking", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp", coupons: 6, discount: "Up To 40% OFF" },
+  { id: "jetpac-discount-code", name: "Jetpac", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp", coupons: 8, discount: "Save Up To 70%" },
+  { id: "iberia-discount-code", name: "Iberia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248209/iberia-logo_ssnbjg.webp", coupons: 8, discount: "Up To 40% OFF" },
+  { id: "yas-island-promo-code", name: "Yas Island", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp", coupons: 10, discount: "Up To 50% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [
-  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
+  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#056bfa]", href: "/categories/electronics" },
   { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel", active: true },
-  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment" },
-  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software" },
-  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile" },
+  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#056bfa]", href: "/categories/entertainment" },
+  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#056bfa]", href: "/categories/software" },
+  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#056bfa]", href: "/categories/mobile" },
+  { icon: HeartPulse,      name: "Health & Wellness",       count: "90+",  color: "text-[#056bfa]", href: "/categories/health" },
+  { icon: Home,            name: "Home & Lifestyle",        count: "120+", color: "text-[#056bfa]", href: "/categories/home" },
+  { icon: UtensilsCrossed, name: "Food & Dining",           count: "150+", color: "text-[#056bfa]", href: "/categories/food" },
+  { icon: Gamepad2,        name: "Gaming & Digital Goods",  count: "70+",  color: "text-[#056bfa]", href: "/categories/gaming" },
+  { icon: Baby,            name: "Baby & Maternity",        count: "50+",  color: "text-[#056bfa]", href: "/categories/baby" },
+  { icon: Car,             name: "Automotive",              count: "60+",  color: "text-[#056bfa]", href: "/categories/automotive" },
+  { icon: BedDouble,       name: "Hotels & Accommodation",  count: "40+",  color: "text-[#056bfa]", href: "/categories/hotels" },
+  { icon: Glasses,         name: "Eyewear",                 count: "30+",  color: "text-[#056bfa]", href: "/categories/eyewear" },
+  { icon: Shirt,           name: "Fashion",                 count: "200+", color: "text-[#056bfa]", href: "/categories/fashion" },
 ];
 
 export default function TravelCouponsContent() {
@@ -116,7 +133,7 @@ export default function TravelCouponsContent() {
                     </div>
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
-                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp" alt="Travel Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788780439/travel_anniy9.png" alt="Travel Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

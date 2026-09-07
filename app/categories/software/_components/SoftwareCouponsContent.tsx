@@ -5,7 +5,8 @@ import Link from "next/link";
 import {
   ChevronRight, Store, Users, BadgeCheck,
   Laptop, Plane, Tv, Zap, Star, PiggyBank, CheckCircle,
-  Code
+  Code,
+  HeartPulse, Home, UtensilsCrossed, Gamepad2, Baby, Car, BedDouble, Glasses, Shirt
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -23,23 +24,36 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "bluehost-discount-code", name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", coupons: 12, discount: "Up to 65% OFF" },
+  { id: "bluehost-discount-code", name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", coupons: 10, discount: "Up to 69% OFF" },
   { id: "envato-elements-discount-code", name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp", coupons: 7, discount: "Up to 50% OFF" },
-  { id: "sintra-discount-code", name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", coupons: 5, discount: "Up to 40% OFF" },
+  { id: "sintra-discount-code", name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", coupons: 6, discount: "Up to 70% OFF" },
   { id: "emergent-discount-code", name: "Emergent", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198036/emergent-coupon-code_oeaxoh.webp", coupons: 2, discount: "Up to 85% OFF" },
-  { id: "krisp-discount-code", name: "Krisp.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp", coupons: 4, discount: "Save 50% OFF" },
   { id: "openart-discount-code", name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", coupons: 6, discount: "Up to 27% OFF" },
   { id: "talkpal-discount-code", name: "Talkpal.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp", coupons: 2, discount: "Save Up to 69%" },
+  { id: "krisp-discount-code", name: "Krisp.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp", coupons: 4, discount: "Save 50% OFF" },
   { id: "mcafee-discount-code", name: "McAfee", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp", coupons: 8, discount: "Up To 75% OFF" },
-  { id: "ultahost-discount-code", name: "UltaHost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/ultahost-logo_zsnpu7.webp", coupons: 8, discount: "Up To 62% OFF" }
+  { id: "ultahost-discount-code", name: "UltaHost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/ultahost-logo_zsnpu7.webp", coupons: 8, discount: "Up To 62% OFF" },
+  { id: "upwork-discount-code", name: "Upwork", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130860/upwork-logo_ki4h2l.webp", coupons: 7, discount: "Plans From $15" },
+  { id: "hostinger-discount-code", name: "Hostinger", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp", coupons: 12, discount: "Up To 80% OFF" },
+  { id: "hosting-discount-code", name: "Hosting", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/Hosting_logo_c17yhb.webp", coupons: 11, discount: "Up To 75% OFF" },
+  { id: "gamsgo-discount-code", name: "GamsGo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787739252/gamesgo-logo_xo1xw9.webp", coupons: 10, discount: "Save Up to 85%" }
 ];
 
 const SIDEBAR_CATEGORIES = [
-  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
+  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#056bfa]", href: "/categories/electronics" },
   { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel" },
-  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment" },
-  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software", active: true },
-  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile" },
+  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#056bfa]", href: "/categories/entertainment" },
+  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#056bfa]", href: "/categories/software", active: true },
+  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#056bfa]", href: "/categories/mobile" },
+  { icon: HeartPulse,      name: "Health & Wellness",       count: "90+",  color: "text-[#056bfa]", href: "/categories/health" },
+  { icon: Home,            name: "Home & Lifestyle",        count: "120+", color: "text-[#056bfa]", href: "/categories/home" },
+  { icon: UtensilsCrossed, name: "Food & Dining",           count: "150+", color: "text-[#056bfa]", href: "/categories/food" },
+  { icon: Gamepad2,        name: "Gaming & Digital Goods",  count: "70+",  color: "text-[#056bfa]", href: "/categories/gaming" },
+  { icon: Baby,            name: "Baby & Maternity",        count: "50+",  color: "text-[#056bfa]", href: "/categories/baby" },
+  { icon: Car,             name: "Automotive",              count: "60+",  color: "text-[#056bfa]", href: "/categories/automotive" },
+  { icon: BedDouble,       name: "Hotels & Accommodation",  count: "40+",  color: "text-[#056bfa]", href: "/categories/hotels" },
+  { icon: Glasses,         name: "Eyewear",                 count: "30+",  color: "text-[#056bfa]", href: "/categories/eyewear" },
+  { icon: Shirt,           name: "Fashion",                 count: "200+", color: "text-[#056bfa]", href: "/categories/fashion" },
 ];
 
 export default function SoftwareCouponsContent() {
@@ -106,7 +120,7 @@ export default function SoftwareCouponsContent() {
                     </div>
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
-                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677501/software-store_obazsu.webp" alt="Software & Digital Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788780442/software_firnew.png" alt="Software & Digital Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

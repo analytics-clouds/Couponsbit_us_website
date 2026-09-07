@@ -5,7 +5,8 @@ import Link from "next/link";
 import {
   ChevronRight, Store, Users, BadgeCheck,
   Laptop, Plane, Tv, Zap, Star, PiggyBank, CheckCircle,
-  Ticket, Code,ShoppingBag , Tag, Calendar, LayoutGrid
+  Ticket, Code,ShoppingBag , Tag, Calendar, LayoutGrid,
+  HeartPulse, Home, UtensilsCrossed, Gamepad2, Baby, Car, BedDouble, Glasses, Shirt
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -23,20 +24,30 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "stubhub-discount-code", name: "Stubhub", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp", coupons: 11, discount: "Up to 15% OFF" },
-  { id: "viagogo-discount-code", name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", coupons: 9, discount: "Up to 10% OFF" },
-  { id: "driffle-discount-code", name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", coupons: 9, discount: "Up to 95% OFF" },
-  { id: "kinguin-discount-code", name: "Kinguin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/kinguin-coupon-code_ugjj9s.jpg", coupons: 13, discount: "Up to 97% OFF" },
-  { id: "wish-discount-code", name: "Wish.com", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/wish-logo_n1dypa.webp", coupons: 10, discount: "Up To 60% OFF" }
+  { id: "stubhub-discount-code", name: "Stubhub", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp", coupons: 7, discount: "Flat 10% OFF" },
+  { id: "viagogo-discount-code", name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp", coupons: 6, discount: "Starting at $332" },
+  { id: "spirit-halloween-discount-code", name: "Spirit Halloween", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/spirti-logo_x4nbor.webp", coupons: 9, discount: "Up To 75% OFF" },
+  { id: "vegas-discount-code", name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", coupons: 6, discount: "Up To 35% OFF" },
+  { id: "klook-discount-code", name: "Klook", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp", coupons: 11, discount: "Up To 50% OFF" },
+  { id: "yas-island-promo-code", name: "Yas Island", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp", coupons: 10, discount: "Up To 50% OFF" }
 ];
 
 
 const SIDEBAR_CATEGORIES = [
-  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
+  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#056bfa]", href: "/categories/electronics" },
   { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel" },
-  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment", active: true },
-  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software" },
-  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile" },
+  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#056bfa]", href: "/categories/entertainment", active: true },
+  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#056bfa]", href: "/categories/software" },
+  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#056bfa]", href: "/categories/mobile" },
+  { icon: HeartPulse,      name: "Health & Wellness",       count: "90+",  color: "text-[#056bfa]", href: "/categories/health" },
+  { icon: Home,            name: "Home & Lifestyle",        count: "120+", color: "text-[#056bfa]", href: "/categories/home" },
+  { icon: UtensilsCrossed, name: "Food & Dining",           count: "150+", color: "text-[#056bfa]", href: "/categories/food" },
+  { icon: Gamepad2,        name: "Gaming & Digital Goods",  count: "70+",  color: "text-[#056bfa]", href: "/categories/gaming" },
+  { icon: Baby,            name: "Baby & Maternity",        count: "50+",  color: "text-[#056bfa]", href: "/categories/baby" },
+  { icon: Car,             name: "Automotive",              count: "60+",  color: "text-[#056bfa]", href: "/categories/automotive" },
+  { icon: BedDouble,       name: "Hotels & Accommodation",  count: "40+",  color: "text-[#056bfa]", href: "/categories/hotels" },
+  { icon: Glasses,         name: "Eyewear",                 count: "30+",  color: "text-[#056bfa]", href: "/categories/eyewear" },
+  { icon: Shirt,           name: "Fashion",                 count: "200+", color: "text-[#056bfa]", href: "/categories/fashion" },
 ];
 
 export default function EntertainmentCouponsContent() {
@@ -103,7 +114,7 @@ export default function EntertainmentCouponsContent() {
                     </div>
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
-                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677504/entertainment-store_n2svyq.webp" alt="Entertainment Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788780439/entertainment_q3puib.png" alt="Entertainment Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

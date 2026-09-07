@@ -147,8 +147,17 @@ These are city-specific sub-pages of the Nuagewear store page, each covering loc
 
 ## Categories
 - [All Categories](https://www.couponsbit.us/categories): Browse coupons grouped by category
+- [Automotive](https://www.couponsbit.us/categories/automotive): Coupons for car parts, accessories, and rentals
+- [Baby & Maternity](https://www.couponsbit.us/categories/baby): Coupons for baby gear, maternity wear, and nursery essentials
 - [Electronics](https://www.couponsbit.us/categories/electronics): Coupons for electronics and gadgets
 - [Entertainment](https://www.couponsbit.us/categories/entertainment): Coupons for events, tickets, and streaming
+- [Eyewear](https://www.couponsbit.us/categories/eyewear): Coupons for glasses, sunglasses, and contact lenses
+- [Fashion](https://www.couponsbit.us/categories/fashion): Coupons for clothing, shoes, and accessories
+- [Food & Dining](https://www.couponsbit.us/categories/food): Coupons for restaurants, delivery, and meal kits
+- [Gaming & Digital Goods](https://www.couponsbit.us/categories/gaming): Coupons for game keys, in-game currency, and digital goods
+- [Health & Wellness](https://www.couponsbit.us/categories/health): Coupons for supplements, fitness, and personal care
+- [Home & Lifestyle](https://www.couponsbit.us/categories/home): Coupons for furniture, decor, and home essentials
+- [Hotels & Accommodation](https://www.couponsbit.us/categories/hotels): Coupons for hotels, resorts, and vacation rentals
 - [Mobile](https://www.couponsbit.us/categories/mobile): Coupons for mobile plans and devices
 - [Software](https://www.couponsbit.us/categories/software): Coupons for software and SaaS subscriptions
 - [Travel](https://www.couponsbit.us/categories/travel): Coupons for flights, hotels, and travel bookings

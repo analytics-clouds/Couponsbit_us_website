@@ -5,7 +5,8 @@ import Link from "next/link";
 import {
   ChevronRight, Store, Users, BadgeCheck,
   Laptop, Plane, Tv, Zap, Star, PiggyBank, CheckCircle,
-  Smartphone, Code, Tag, ShoppingBag , Calendar, LayoutGrid
+  Smartphone, Code, Tag, ShoppingBag , Calendar, LayoutGrid,
+  HeartPulse, Home, UtensilsCrossed, Gamepad2, Baby, Car, BedDouble, Glasses, Shirt
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -23,17 +24,28 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "lyca-mobile-discount-code", name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", coupons: 10, discount: "Up to 20% OFF" },
-  { id: "unipin-discount-code", name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp", coupons: 10, discount: "Top-Ups From $0.94" },
-  { id: "oppo-discount-code", name: "Oppo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp", coupons: 9, discount: "From $39" }
+  { id: "lyca-mobile-discount-code", name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", coupons: 11, discount: "Up to 69% OFF" },
+  { id: "oppo-discount-code", name: "Oppo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp", coupons: 9, discount: "From $39" },
+  { id: "airalo-discount-code", name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp", coupons: 7, discount: "USA eSIM From $4.50" },
+  { id: "apple-discount-code", name: "Apple", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp", coupons: 12, discount: "Up To $150 Gift Card" },
+  { id: "jetpac-discount-code", name: "Jetpac", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp", coupons: 8, discount: "Save Up To 70%" }
 ];
 
 const SIDEBAR_CATEGORIES = [
-  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#4A90E2]", href: "/categories/electronics" },
+  { icon: Laptop, name: "Electronics",        count: "850+", color: "text-[#056bfa]", href: "/categories/electronics" },
   { icon: Plane,  name: "Travel",             count: "420+", color: "text-[#056bfa]", href: "/categories/travel" },
-  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#8E44AD]", href: "/categories/entertainment" },
-  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#6B46C1]", href: "/categories/software" },
-  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#27AE60]", href: "/categories/mobile", active: true },
+  { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-[#056bfa]", href: "/categories/entertainment" },
+  { icon: Code,   name: "Software & Digital", count: "300+", color: "text-[#056bfa]", href: "/categories/software" },
+  { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-[#056bfa]", href: "/categories/mobile", active: true },
+  { icon: HeartPulse,      name: "Health & Wellness",       count: "90+",  color: "text-[#056bfa]", href: "/categories/health" },
+  { icon: Home,            name: "Home & Lifestyle",        count: "120+", color: "text-[#056bfa]", href: "/categories/home" },
+  { icon: UtensilsCrossed, name: "Food & Dining",           count: "150+", color: "text-[#056bfa]", href: "/categories/food" },
+  { icon: Gamepad2,        name: "Gaming & Digital Goods",  count: "70+",  color: "text-[#056bfa]", href: "/categories/gaming" },
+  { icon: Baby,            name: "Baby & Maternity",        count: "50+",  color: "text-[#056bfa]", href: "/categories/baby" },
+  { icon: Car,             name: "Automotive",              count: "60+",  color: "text-[#056bfa]", href: "/categories/automotive" },
+  { icon: BedDouble,       name: "Hotels & Accommodation",  count: "40+",  color: "text-[#056bfa]", href: "/categories/hotels" },
+  { icon: Glasses,         name: "Eyewear",                 count: "30+",  color: "text-[#056bfa]", href: "/categories/eyewear" },
+  { icon: Shirt,           name: "Fashion",                 count: "200+", color: "text-[#056bfa]", href: "/categories/fashion" },
 ];
 
 export default function MobileCouponsContent() {
@@ -100,7 +112,7 @@ export default function MobileCouponsContent() {
                     </div>
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
-                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1781677504/mobile-store_qo5cuh.webp" alt="Mobile & Telecom Coupons" width={800} height={400} loading="lazy" className="w-full h-full object-cover" />
+                    <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788780441/telecom_wagtph.png" alt="Mobile & Telecom Coupons" width={700} height={500} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

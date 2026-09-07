@@ -6,12 +6,13 @@ import {
   ChevronRight, Store, Users,
   Laptop, Plane, Tv, Zap, Star, PiggyBank, CheckCircle,
   Cpu, Code,
-  LayoutGrid, 
-  Tag, 
-  ShoppingBag, 
-  Calendar, 
-  ChevronDown, 
-  ArrowRight, BadgeCheck
+  LayoutGrid,
+  Tag,
+  ShoppingBag,
+  Calendar,
+  ChevronDown,
+  ArrowRight, BadgeCheck,
+  HeartPulse, Home, UtensilsCrossed, Gamepad2, Baby, Car, BedDouble, Glasses, Shirt
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -29,22 +30,38 @@ interface Coupon {
 }
 
 const STORES = [
-  { id: "rayneo-discount-code", name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp", coupons: 6, discount: "Flat ₹2000 Off" },
-  { id: "reolink-discount-code", name: "Reolink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp", coupons: 11, discount: "Up to 30% OFF" },
-  { id: "dell-discount-code", name: "Dell", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp", coupons: 10, discount: "Up to 69% OFF" },
+  { id: "rayneo-discount-code", name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp", coupons: 8, discount: "Save $130 OFF" },
+  { id: "reolink-discount-code", name: "Reolink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp", coupons: 8, discount: "Up to 50% OFF" },
   { id: "hp-discount-code", name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", coupons: 10, discount: "Up to 69% OFF" },
+  { id: "dell-discount-code", name: "Dell", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp", coupons: 10, discount: "Up to 69% OFF" },
   { id: "beelink-discount-code", name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg", coupons: 9, discount: "Up to 35% OFF" },
-  { id: "obsbot-discount-code", name: "Obsbot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg", coupons: 7, discount: "From $75" },
   { id: "ringconn-discount-code", name: "RingConn", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp", coupons: 5, discount: "Starting From $199" },
-  { id: "philips-discount-code", name: "Philips", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784881809/philips-logo_yuwckz.webp", coupons: 10, discount: "Save Up To £120" }
+  { id: "geekbuying-discount-code", name: "Geekbuying", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/geekbuying-logo_pnkeev.webp", coupons: 8, discount: "Up To 56% OFF" },
+  { id: "oppo-discount-code", name: "Oppo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/oppo-logo_umnpx7.webp", coupons: 9, discount: "From $39" },
+  { id: "bluetti-discount-code", name: "Bluetti", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/bluetti-power-logo_osmets.webp", coupons: 10, discount: "Save Up To $200" },
+  { id: "dreame-discount-code", name: "Dreame", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130848/dreame-logo_uqesij.webp", coupons: 10, discount: "Up To 45% OFF" },
+  { id: "signalring-discount-code", name: "SignalRing", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/singnalring_i9epcf.jpg", coupons: 4, discount: "Starting At $399" },
+  { id: "apple-discount-code", name: "Apple", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp", coupons: 12, discount: "Up To $150 Gift Card" },
+  { id: "tplink-promo-code", name: "TP-Link", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/tp-link-logo_y9efya.webp", coupons: 10, discount: "Up To 50% OFF" },
+  { id: "amazon-discount-code", name: "Amazon", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp", coupons: 11, discount: "Up To 52% OFF" },
+  { id: "obsbot-discount-code", name: "Obsbot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg", coupons: 7, discount: "From $75" }
 ];
 
 const SIDEBAR_CATEGORIES = [
-  { icon: Laptop, name: "Electronics",        count: "850+",  color: "text-[#4A90E2]", href: "/categories/electronics", active: true },
+  { icon: Laptop, name: "Electronics",        count: "850+",  color: "text-[#056bfa]", href: "/categories/electronics", active: true },
   { icon: Plane,  name: "Travel",             count: "420+",  color: "text-[#056bfa]", href: "/categories/travel" },
-  { icon: Tv,     name: "Entertainment",      count: "210+",  color: "text-[#8E44AD]", href: "/categories/entertainment" },
-  { icon: Code,   name: "Software & Digital", count: "300+",  color: "text-[#6B46C1]", href: "/categories/software" },
-  { icon: Zap,    name: "Mobile & Telecom",   count: "320+",  color: "text-[#27AE60]", href: "/categories/mobile" },
+  { icon: Tv,     name: "Entertainment",      count: "210+",  color: "text-[#056bfa]", href: "/categories/entertainment" },
+  { icon: Code,   name: "Software & Digital", count: "300+",  color: "text-[#056bfa]", href: "/categories/software" },
+  { icon: Zap,    name: "Mobile & Telecom",   count: "320+",  color: "text-[#056bfa]", href: "/categories/mobile" },
+  { icon: HeartPulse,      name: "Health & Wellness",       count: "90+",  color: "text-[#056bfa]", href: "/categories/health" },
+  { icon: Home,            name: "Home & Lifestyle",        count: "120+", color: "text-[#056bfa]", href: "/categories/home" },
+  { icon: UtensilsCrossed, name: "Food & Dining",           count: "150+", color: "text-[#056bfa]", href: "/categories/food" },
+  { icon: Gamepad2,        name: "Gaming & Digital Goods",  count: "70+",  color: "text-[#056bfa]", href: "/categories/gaming" },
+  { icon: Baby,            name: "Baby & Maternity",        count: "50+",  color: "text-[#056bfa]", href: "/categories/baby" },
+  { icon: Car,             name: "Automotive",              count: "60+",  color: "text-[#056bfa]", href: "/categories/automotive" },
+  { icon: BedDouble,       name: "Hotels & Accommodation",  count: "40+",  color: "text-[#056bfa]", href: "/categories/hotels" },
+  { icon: Glasses,         name: "Eyewear",                 count: "30+",  color: "text-[#056bfa]", href: "/categories/eyewear" },
+  { icon: Shirt,           name: "Fashion",                 count: "200+", color: "text-[#056bfa]", href: "/categories/fashion" },
 ];
 
 export default function ElectronicsCouponsContent() {
@@ -112,7 +129,7 @@ export default function ElectronicsCouponsContent() {
                   </div>
                   <div className="hidden md:block md:w-[45%] md:h-auto overflow-hidden">
                     <img
-                      src="https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp"
+                      src="https://res.cloudinary.com/couponsbit/image/upload/v1788763019/electrical-categories_alw7t8.webp"
                       alt="Electronics Coupons"
                       width={700}
                       height={500}

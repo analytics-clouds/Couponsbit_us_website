@@ -15,7 +15,16 @@ import {
   BadgeCheck,
   Store,
   Users,
-  Code
+  Code,
+  HeartPulse,
+  Home,
+  UtensilsCrossed,
+  Gamepad2,
+  Baby,
+  Car,
+  BedDouble,
+  Glasses,
+  Shirt
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
@@ -29,15 +38,15 @@ const categories = [
     icon: Laptop,
     emoji: "🖥️",
     href: "/categories/electronics",
-    accent: "#4A90E2",
-    accentDark: "#2B6CB0",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
     lightBg: "#EBF8FF",
     coupons: "850+",
     stores: "50+",
     description: "AR glasses, cameras, gadgets & devices",
     featured: ["Rayneo", "Reolink", "Samsung", "Apple"],
-    gradient: "from-[#4A90E2] to-[#2B6CB0]",
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/electronics-store_lbf784.webp"
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788763019/electrical-categories_alw7t8.webp"
   },
   {
     id: "travel",
@@ -53,7 +62,7 @@ const categories = [
     description: "Flights, hotels & vacation packages",
     featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
     gradient: "from-[#056bfa] to-[#0451c4]",
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677503/travel-store_ppr2qr.webp"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/travel_anniy9.png"
   },
   {
     id: "entertainment",
@@ -61,15 +70,15 @@ const categories = [
     icon: Tv,
     emoji: "🎫",
     href: "/categories/entertainment",
-    accent: "#8E44AD",
-    accentDark: "#6C3483",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
     lightBg: "#F5F0FF",
     coupons: "210+",
     stores: "15+",
     description: "Concerts, sports events & live shows",
     featured: ["StubHub", "Viagogo", "Ticketmaster", "SeatGeek"],
-    gradient: "from-[#8E44AD] to-[#6C3483]",
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/entertainment-store_n2svyq.webp"
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/entertainment_q3puib.png"
   },
   {
     id: "software",
@@ -77,15 +86,15 @@ const categories = [
     icon: Code,
     emoji: "💻",
     href: "/categories/software",
-    accent: "#6B46C1",
-    accentDark: "#553C9A",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
     lightBg: "#FAF5FF",
     coupons: "300+",
     stores: "30+",
     description: "Game keys, hosting, AI tools & more",
     featured: ["Driffle", "Bluehost", "Envato", "Sintra"],
-    gradient: "from-[#6B46C1] to-[#553C9A]",
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677501/software-store_obazsu.webp"
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780442/software_firnew.png"
   },
   {
     id: "mobile",
@@ -93,15 +102,159 @@ const categories = [
     icon: Zap,
     emoji: "📱",
     href: "/categories/mobile",
-    accent: "#00A651",
-    accentDark: "#007A3D",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
     lightBg: "#F0FFF4",
     coupons: "320+",
     stores: "10+",
     description: "SIM plans, data packs & calling",
     featured: ["Lyca Mobile", "Mint Mobile", "Visible", "Google Fi"],
-    gradient: "from-[#00A651] to-[#007A3D]",
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1781677504/mobile-store_qo5cuh.webp"
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/telecom_wagtph.png"
+  },
+  {
+    id: "health",
+    name: "Health & Wellness",
+    icon: HeartPulse,
+    emoji: "💊",
+    href: "/categories/health",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#F0FDF4",
+    coupons: "90+",
+    stores: "10+",
+    description: "Supplements, fitness gear & personal care",
+    featured: ["Kerala Ayurveda", "GoodRx", "Philips", "RingConn"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/health_frbeyc.png"
+  },
+  {
+    id: "home",
+    name: "Home & Lifestyle",
+    icon: Home,
+    emoji: "🏠",
+    href: "/categories/home",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FFFBEB",
+    coupons: "120+",
+    stores: "15+",
+    description: "Furniture, décor & home essentials",
+    featured: ["Amazon", "Walmart", "Target", "Home Depot"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/home_dxotow.png"
+  },
+  {
+    id: "food",
+    name: "Food & Dining",
+    icon: UtensilsCrossed,
+    emoji: "🍔",
+    href: "/categories/food",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FEF2F2",
+    coupons: "150+",
+    stores: "10+",
+    description: "Restaurants, food delivery & meal kits",
+    featured: ["DoorDash", "Uber Eats", "Subway", "Burger King"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/food_ku2xz5.png"
+  },
+  {
+    id: "gaming",
+    name: "Gaming & Digital Goods",
+    icon: Gamepad2,
+    emoji: "🎮",
+    href: "/categories/gaming",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#EEF2FF",
+    coupons: "70+",
+    stores: "8+",
+    description: "Game keys, in-game currency & gift cards",
+    featured: ["Driffle", "Unipin", "Kinguin", "GamsGo"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/game_qszmf9.png"
+  },
+  {
+    id: "baby",
+    name: "Baby & Maternity",
+    icon: Baby,
+    emoji: "🍼",
+    href: "/categories/baby",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FDF2F8",
+    coupons: "50+",
+    stores: "5+",
+    description: "Baby gear, maternity wear & nursery essentials",
+    featured: ["Lumibrick", "Old Navy"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/maternity_dvzwsd.png"
+  },
+  {
+    id: "automotive",
+    name: "Automotive",
+    icon: Car,
+    emoji: "🚗",
+    href: "/categories/automotive",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FFF7ED",
+    coupons: "60+",
+    stores: "8+",
+    description: "Car parts, accessories & rental discounts",
+    featured: ["Budget", "Avis", "Discount Tire", "Valvoline"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780435/automotive_nzxvup.png"
+  },
+  {
+    id: "hotels",
+    name: "Hotels & Accommodation",
+    icon: BedDouble,
+    emoji: "🏨",
+    href: "/categories/hotels",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#ECFEFF",
+    coupons: "40+",
+    stores: "8+",
+    description: "Hotel bookings, resorts & vacation rentals",
+    featured: ["Agoda", "Expedia", "Booking", "Radisson"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/hotel_yff2bl.png"
+  },
+  {
+    id: "eyewear",
+    name: "Eyewear",
+    icon: Glasses,
+    emoji: "👓",
+    href: "/categories/eyewear",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#F0F9FF",
+    coupons: "30+",
+    stores: "5+",
+    description: "Glasses, sunglasses & contact lenses",
+    featured: ["Rayneo", "Fytoo", "Vooglam", "Sungait"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/lens_pz1by4.png"
+  },
+  {
+    id: "fashion",
+    name: "Fashion",
+    icon: Shirt,
+    emoji: "👗",
+    href: "/categories/fashion",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FFF1F2",
+    coupons: "200+",
+    stores: "20+",
+    description: "Clothing, shoes & accessories",
+    featured: ["Nike", "Zara", "H&M", "Shein"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780435/clothing_qsvqci.png"
   }
 ];
 
@@ -134,7 +287,7 @@ export default function CategoriesPageContent() {
             className="inline-flex items-center gap-2 bg-white/15 border border-white/20 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8"
           >
             <Flame className="w-3.5 h-3.5 text-yellow-300 fill-yellow-300" />
-            6 Active Categories · Updated Daily
+            14 Active Categories · Updated Daily
           </motion.div>
 
           <motion.h1
@@ -353,7 +506,7 @@ export default function CategoriesPageContent() {
               extra: "Find savings opportunities from airlines, travel providers, and booking platforms that help make every trip more affordable."
             },
             {
-              cat: categories[5] || categories[0], // Fashion
+              cat: categories.find(c => c.id === "fashion"), // Fashion
               title: "Fashion & Apparel Offers",
               desc: "Refresh your wardrobe without overspending. Explore deals on:",
               bullets: ["Clothing", "Footwear", "Accessories", "Designer brands", "Activewear", "Seasonal collections"],

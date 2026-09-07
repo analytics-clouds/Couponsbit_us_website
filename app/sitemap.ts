@@ -3,7 +3,7 @@ import { allStores } from "@/lib/stores-data";
 
 const BASE_URL = "https://www.couponsbit.us";
 
-const CATEGORIES = ["electronics", "entertainment", "mobile", "software", "travel"];
+const CATEGORIES = ["electronics", "entertainment", "mobile", "software", "travel", "health", "home", "food", "gaming", "baby", "automotive", "hotels", "eyewear", "fashion"];
 
 // Nuagewear location pages (state/city-specific sub-pages)
 const NUAGEWEAR_LOCATIONS = [

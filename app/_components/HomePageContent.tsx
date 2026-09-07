@@ -37,15 +37,49 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/envato-elements-promo-code_xf5dwf.webp",      alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",                                href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015" },
-    { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",  alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",                          href: "http://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" },
-    { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/rayneo-promo-code_lcxjg3.webp", alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",                       href: "https://elements.envato.com/?irgwc=1&afsrc=1&clickid=VlX35y3mRxyZUPhT3qXyp0onUkuTpjwJqV790U0&iradid=298927&utm_campaign=elements_af_4303217&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&utm_medium=affiliate&utm_source=impact_radius&mp=Analytics%20clouds" },
-    { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/stubhub-voucher-code_p6tesq.webp",     alt: "Lyca Mobile Promo Code – Affordable Prepaid SIM and Data Plans",                                     href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/reolink-voucher-code_frnbya.webp",          alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",                                        href: "http://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" },
-    { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/sintra-discount-code_gmnegt.webp",       alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",                    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" },
-    { id: 7, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/driffle-discount-code_q0pcvn.webp",       alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",                                  href: "http://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" },
-    { id: 8, image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/latam-airlines-promo-code_rfexah.webp",       alt: "StubHub Voucher Code – Verified Deals on Event, Concert and Sports Tickets",                         href: "https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" },
-  ];
+  {
+    id: 1,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/envato-elements-promo-code_xf5dwf.webp",
+    alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",
+    href: "http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F"
+  },
+  {
+    id: 2,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",
+    alt: "Lyca Mobile Promo Code – Save on Prepaid Plans and International Calls",
+    href: "https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015"
+  },
+  {
+    id: 3,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/rayneo-promo-code_lcxjg3.webp",
+    alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",
+    href: "https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015"
+  },
+  {
+    id: 4,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/reolink-voucher-code_frnbya.webp",
+    alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",
+    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015"
+  },
+  {
+    id: 5,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/sintra-discount-code_gmnegt.webp",
+    alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",
+    href: "https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+  },
+  {
+    id: 6,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/driffle-discount-code_q0pcvn.webp",
+    alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",
+    href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015"
+  },
+  {
+    id: 7,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/latam-airlines-promo-code_rfexah.webp",
+    alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",
+    href: "https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
+  }
+];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -545,10 +579,10 @@ export default function HomePageContent() {
                   id: "electronics",
                   name: "Electronics",
                   description: "AR glasses, cameras, gadgets & devices",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677503/electronics-store_lbf784.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788763019/electrical-categories_alw7t8.webp",
                   coupons: "850+",
                   stores: "50+",
-                  accent: "#4A90E2",
+                  accent: "#056bfa",
                   featured: ["Rayneo", "Reolink", "Samsung", "Apple"],
                   href: "/categories/electronics"
                 },
@@ -556,7 +590,7 @@ export default function HomePageContent() {
                   id: "travel",
                   name: "Travel",
                   description: "Flights, hotels & vacation packages",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677503/travel-store_ppr2qr.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/travel_anniy9.png",
                   coupons: "420+",
                   stores: "20+",
                   accent: "#056bfa",
@@ -567,12 +601,45 @@ export default function HomePageContent() {
                   id: "entertainment",
                   name: "Entertainment",
                   description: "Concerts, sports events & live shows",
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781677504/entertainment-store_n2svyq.webp",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/entertainment_q3puib.png",
                   coupons: "210+",
                   stores: "15+",
-                  accent: "#8E44AD",
+                  accent: "#056bfa",
                   featured: ["StubHub", "Viagogo", "Ticketmaster", "SeatGeek"],
                   href: "/categories/entertainment"
+                },
+                {
+                  id: "software",
+                  name: "Software & Digital",
+                  description: "Game keys, hosting, AI tools & more",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780442/software_firnew.png",
+                  coupons: "300+",
+                  stores: "30+",
+                  accent: "#056bfa",
+                  featured: ["Driffle", "Bluehost", "Envato", "Sintra"],
+                  href: "/categories/software"
+                },
+                {
+                  id: "mobile",
+                  name: "Mobile & Telecom",
+                  description: "SIM plans, data packs & calling",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/telecom_wagtph.png",
+                  coupons: "320+",
+                  stores: "10+",
+                  accent: "#056bfa",
+                  featured: ["Lyca Mobile", "Mint Mobile", "Visible", "Google Fi"],
+                  href: "/categories/mobile"
+                },
+                {
+                  id: "health",
+                  name: "Health & Wellness",
+                  description: "Supplements, fitness gear & personal care",
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/health_frbeyc.png",
+                  coupons: "90+",
+                  stores: "10+",
+                  accent: "#056bfa",
+                  featured: ["Kerala Ayurveda", "GoodRx", "Philips", "RingConn"],
+                  href: "/categories/health"
                 }
               ].map((cat) => (
                 <Link
@@ -628,7 +695,7 @@ export default function HomePageContent() {
             <div className="mt-10 flex justify-center">
               <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
                 <LayoutGrid className="w-4 h-4" />
-                View More Categories
+                Browse All Categories
               </Link>
             </div>
           </div>
