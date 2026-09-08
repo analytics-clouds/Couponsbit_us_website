@@ -16,13 +16,22 @@ import {
   Tv,
   Code,
   Zap,
-  LayoutGrid, 
+  LayoutGrid,
   Mail,
   ShieldCheck,
   Calendar,
   AlertTriangle,
   BadgeCheck,
-  Tag
+  Tag,
+  HeartPulse,
+  Home,
+  UtensilsCrossed,
+  Gamepad2,
+  Baby,
+  Car,
+  BedDouble,
+  Glasses,
+  Shirt
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -272,11 +281,20 @@ export default function StoresPageContent() {
                 </h3>
                 <div className="mt-4 space-y-1">
                   {[
-                    { label: "Electronics",        count: "850+", icon: Laptop, href: "/categories/electronics" },
-                    { label: "Travel",             count: "420+", icon: Plane,  href: "/categories/travel" },
-                    { label: "Entertainment",      count: "210+", icon: Tv,     href: "/categories/entertainment" },
-                    { label: "Software & Digital", count: "300+", icon: Code,   href: "/categories/software" },
-                    { label: "Mobile & Telecom",   count: "320+", icon: Zap,    href: "/categories/mobile" },
+                    { label: "Electronics",            count: "850+", icon: Laptop,           href: "/categories/electronics" },
+                    { label: "Travel",                 count: "420+", icon: Plane,             href: "/categories/travel" },
+                    { label: "Entertainment",           count: "210+", icon: Tv,                href: "/categories/entertainment" },
+                    { label: "Software & Digital",      count: "300+", icon: Code,              href: "/categories/software" },
+                    { label: "Mobile & Telecom",        count: "320+", icon: Zap,               href: "/categories/mobile" },
+                    { label: "Health & Wellness",       count: "90+",  icon: HeartPulse,        href: "/categories/health" },
+                    { label: "Home & Lifestyle",        count: "120+", icon: Home,              href: "/categories/home" },
+                    { label: "Food & Dining",           count: "150+", icon: UtensilsCrossed,   href: "/categories/food" },
+                    { label: "Gaming & Digital Goods",  count: "70+",  icon: Gamepad2,          href: "/categories/gaming" },
+                    { label: "Baby & Maternity",        count: "50+",  icon: Baby,              href: "/categories/baby" },
+                    { label: "Automotive",              count: "60+",  icon: Car,               href: "/categories/automotive" },
+                    { label: "Hotels & Accommodation",  count: "40+",  icon: BedDouble,         href: "/categories/hotels" },
+                    { label: "Eyewear",                 count: "30+",  icon: Glasses,           href: "/categories/eyewear" },
+                    { label: "Fashion",                 count: "200+", icon: Shirt,             href: "/categories/fashion" },
                   ].map((cat, idx) => {
                     const IconComp = cat.icon;
                     return (
