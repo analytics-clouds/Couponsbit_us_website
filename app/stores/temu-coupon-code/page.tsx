@@ -3,10 +3,10 @@ import TemuCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Temu Coupon Code: Up To 90% OFF + Free Gifts | Sep 2026",
+    absolute: "Temu Coupon Code: 70% OFF Sitewide + 15% OFF Orders Over $40 | Sept 2026",
   },
   description:
-    "Find the latest Temu coupon code and discount code for Sep 2026. Save up to 90% on fashion, home goods and electronics, plus free shipping and gifts with the latest verified Temu offers.",
+    "Find the latest Temu coupon code and Temu discount code at Maxiku Offers. Save 70% sitewide plus 15% OFF orders over $40 for new users with free shipping.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/temu-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/temu-coupon-code",
-    title: "Temu Coupon Code: Up To 90% OFF + Free Gifts | Sep 2026",
+    title: "Temu Coupon Code: 70% OFF Sitewide + 15% OFF Orders Over $40 | Sept 2026",
     description:
-      "Find the latest Temu coupon code and discount code for Sep 2026. Save up to 90% on fashion, home goods and electronics, plus free shipping and gifts with the latest verified Temu offers.",
+      "Find the latest Temu coupon code and Temu discount code at Maxiku Offers. Save 70% sitewide plus 15% OFF orders over $40 for new users with free shipping.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Temu Coupon Code: Up To 90% OFF + Free Gifts | Sep 2026",
+    title: "Temu Coupon Code: 70% OFF Sitewide + 15% OFF Orders Over $40 | Sept 2026",
     description:
-      "Find the latest Temu coupon code and discount code for Sep 2026. Save up to 90% on fashion, home goods and electronics, plus free shipping and gifts with the latest verified Temu offers.",
+      "Find the latest Temu coupon code and Temu discount code at Maxiku Offers. Save 70% sitewide plus 15% OFF orders over $40 for new users with free shipping.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783183/temu-logo_our7ig.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const temuSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/temu-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/temu-coupon-code",
-      name: "Temu Coupon Code: Up To 90% OFF + Free Gifts | Sep 2026",
+      name: "Temu Coupon Code: 70% OFF Sitewide + 15% OFF Orders Over $40 | Sept 2026",
       description:
-        "Find the latest Temu coupon code and discount code for Sep 2026. Save up to 90% on fashion, home goods and electronics, plus free shipping and gifts with the latest verified Temu offers.",
+        "Find the latest Temu coupon code and Temu discount code at Maxiku Offers. Save 70% sitewide plus 15% OFF orders over $40 for new users with free shipping.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/temu-coupon-code#breadcrumb" },
@@ -77,14 +77,19 @@ const temuSchema = {
       name: "Temu Coupon Codes & Discount Codes",
       description: "Latest Temu coupon codes and offers across fashion, home goods and electronics.",
       url: "https://www.couponsbit.us/stores/temu-coupon-code",
-      numberOfItems: 6,
+      numberOfItems: 11,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Temu – New User Welcome Offer, Up To 90% OFF", description: "New shoppers can unlock exclusive first-order discounts across categories.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Temu – Flash Deals, Up To 70% OFF", description: "Shop limited-time flash deal pricing across fashion, home and electronics.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Temu – Free Shipping On Orders", description: "Enjoy free shipping on qualifying Temu orders.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Temu – Free Gift with Purchase", description: "Get a free gift added to select qualifying orders.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Temu – Clearance Picks, Up To 80% OFF", description: "Shop clearance-priced items across multiple categories.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Temu – App-Exclusive Coupons, Extra 30% OFF", description: "Unlock extra discounts available only through the Temu app.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Temu – Women’s Casual Shoes 88% OFF", description: "Shop women’s casual sneakers and versatile everyday shoes for only $8.33.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Temu – Gel Memory Foam Mattress Up to 71% OFF", description: "Upgrade your bedroom with a luxurious gel memory foam mattress featuring a European-style top design.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Temu – 6000PA Car Vacuum Cleaner 68% OFF", description: "Get a powerful handheld car vacuum cleaner with 6000PA super-strong suction for just $12.47.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Temu – 70% OFF Sitewide + FREE Shipping", description: "Save up to 70% OFF across a wide range of products on Temu USA.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Temu Halloween Decorations – 47% OFF", description: "Decorate your home for Halloween with 24-piece 3D hollow-out bat wall decorations.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Temu Portable Projector – 57% OFF", description: "Enjoy big-screen entertainment with a portable projector featuring 1280×720 native resolution.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Temu Beauty Products – Up to 50% OFF", description: "Save up to 50% OFF a wide selection of beauty products on Temu USA.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Temu – Flat 15% OFF Orders Over $40", description: "Get a flat 15% OFF when shopping on eligible Temu orders over $40.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Temu Toys & Games – Starting at $0.96", description: "Shop a huge selection of toys and games with prices starting from just $0.96.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Temu Mini Sewing Machine – 51% OFF", description: "Get a portable mini sewing machine with 24 rolls of assorted colored thread.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
+        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Temu New User – 20% OFF Orders Over $40", description: "New Temu users can save 20% OFF their first eligible purchase.", url: "https://www.couponsbit.us/stores/temu-coupon-code", seller: { "@type": "Organization", name: "Temu", url: "https://www.temu.com" } } },
       ],
     },
 

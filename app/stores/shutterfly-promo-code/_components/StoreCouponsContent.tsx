@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Customer Offer, 50% OFF First Order", sub: "Latest Deals" },
-  { id: "d2", label: "SALE", heading: "Photo Book Sale, Up To 50% OFF", sub: "Featured Picks" },
-  { id: "d3", label: "DEAL", heading: "Free Shipping Offer", sub: "Featured Picks" },
-  { id: "d4", label: "SALE", heading: "Holiday Card Deals, Up To 40% OFF", sub: "Featured Picks" },
-  { id: "d5", label: "DEAL", heading: "Personalized Gift Discount, Extra 20% OFF", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "50% OFF Cards & Stationery", sub: "Latest Deals" },
+  { id: "d2", label: "SALE", heading: "40% OFF Photo Books + FREE Extra Pages", sub: "Featured Picks" },
+  { id: "d3", label: "NEW", heading: "Gallery of Ten Photo Mug for $13.99", sub: "Featured Picks" },
+  { id: "d4", label: "DEAL", heading: "11 oz Photo Mugs for $9.99", sub: "Featured Picks" },
+  { id: "d5", label: "DEAL", heading: "FREE Photo Prints – Code MEMS", sub: "Featured Picks" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function ShutterflyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.7k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Shutterfly promo codes and discount codes for Sep 2026. Save up to 50% on photo books, cards and personalized gifts, plus free shipping on select orders with the latest verified offers.
+                      Discover verified Shutterfly promo codes and Shutterfly discount codes at Maxiku Offers. Save 50% OFF cards and stationery, enjoy 40% OFF personalized photo books with FREE extra pages, get FREE photo prints, and unlock FREE shipping on qualifying USA orders.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "9", label: "Offers" },
                     { icon: Percent, val: "300+", label: "Deals" },
                     { icon: Users, val: "800K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,15 @@ export default function ShutterflyCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "50% OFF", title: "Shutterfly – New Customer Offer", desc: "New customers can save on their first Shutterfly order.", bullets: ["Sign up as a new Shutterfly customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible products may vary."] },
-                  { label: "SALE", value: "Up To 50% OFF", title: "Shutterfly – Photo Book Sale", desc: "Save on custom photo books across sizes and styles.", bullets: ["Enjoy markdowns across hardcover and softcover photo books.", "Discounts apply on select sizes and page counts.", "Great for capturing vacations, weddings and milestones."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Shutterfly – Free Shipping Offer", desc: "Enjoy free shipping on qualifying Shutterfly orders.", bullets: ["Shop photo books, cards and personalized gifts.", "Meet the qualifying order value at checkout.", "Get your order delivered without paying standard shipping."] },
-                  { label: "SALE", value: "Up To 40% OFF", title: "Shutterfly – Holiday Card Deals", desc: "Save on personalized holiday and greeting cards.", bullets: ["Browse a wide selection of holiday card designs.", "Personalize with your own photos and messages.", "Discounts apply during seasonal card promotions."] },
-                  { label: "DEAL", value: "Extra 20% OFF", title: "Shutterfly – Personalized Gift Discount", desc: "Get an extra discount on personalized photo gifts.", bullets: ["Shop mugs, blankets, canvas prints and more.", "Personalize gifts with your own photos and text.", "Combine with other available offers where permitted."] },
-                  { label: "DEAL", value: "Up To 60% OFF", title: "Shutterfly – Clearance Picks", desc: "Shop clearance-priced photo products and home décor.", bullets: ["Find reduced pricing on select photo products.", "Stock is limited and changes regularly.", "Great for last-minute gifting on a budget."] },
+                  { label: "SALE", value: "50% OFF", title: "Shutterfly – 50% OFF Cards & Stationery", desc: "Get a flat 50% OFF on eligible cards and stationery orders at Shutterfly.", bullets: ["Meet the minimum cart value requirement of $45 or more to qualify for the discount.", "Enjoy FREE shipping on eligible orders with this limited-time USA deal."] },
+                  { label: "SALE", value: "40% OFF", title: "Shutterfly – 40% OFF Photo Books + FREE Extra Pages", desc: "Save 40% OFF on eligible photo books at Shutterfly.", bullets: ["Enjoy unlimited FREE extra pages to create a more memorable and personalized photo book.", "This offer is available to all eligible Shutterfly customers in the USA."] },
+                  { label: "NEW", value: "$13.99", title: "Shutterfly – Gallery of Ten Photo Mug for $13.99", desc: "Create a personalized Gallery of Ten Photo Mug using favorite photos from your camera roll.", bullets: ["Get the featured 11 oz photo mug for just $13.99, reduced from $19.99.", "Personalize your mug with memorable photos for a unique everyday gift or keepsake.", "Shop this Shutterfly USA deal while the promotional price is available."] },
+                  { label: "DEAL", value: "$9.99", title: "Shutterfly – 11 oz Photo Mugs for $9.99", desc: "Get selected 11 oz White Photo Mugs for just $9.99 at Shutterfly.", bullets: ["Create a personalized mug featuring your favorite photos and memories.", "Make a thoughtful personalized gift for birthdays, holidays, family and special occasions.", "Shop the offer while selected photo mug designs remain available."] },
+                  { label: "DEAL", value: "FREE PRINTS", title: "Shutterfly FREE Photo Prints – Code MEMS", desc: "Get FREE photo prints from Shutterfly using code MEMS on eligible orders.", bullets: ["Turn your favorite digital memories into physical prints to display or share.", "Choose from Shutterfly's personalized photo printing options for your favorite moments.", "Use code MEMS at checkout and check the offer terms for eligible USA orders."] },
+                  { label: "DEAL", value: "$37.99", title: "Shutterfly 8x11 Wall Calendars – From $37.99", desc: "Shop personalized 8x11 Wall Calendars at Shutterfly starting from $37.99.", bullets: ["Add your favorite photos and memories to create a customized calendar.", "Create a practical and personal addition to your home or office.", "Order your personalized Shutterfly calendar for delivery in the USA."] },
+                  { label: "NEW", value: "$164.80", title: "Shutterfly Loving Festive Script Holiday Card – Up to 37% OFF", desc: "Shop the Loving Festive Script Holiday Card from the Shutterfly Trending Now collection.", bullets: ["Get the featured card design for $164.80 compared with the original $261.60 price.", "Save $96.80 on the selected holiday card design.", "Create personalized holiday stationery for sending festive greetings to family and friends."] },
+                  { label: "SALE", value: "20% OFF", title: "Shutterfly Fleece Blankets – Extra 20% OFF", desc: "Get an Extra 20% OFF eligible fleece blankets at Shutterfly.", bullets: ["Use code EXTRA20 at checkout to claim the additional discount.", "Personalize your fleece blanket with favorite photos, memories or custom designs.", "Shop this limited-time USA offer while eligible fleece blankets are available."] },
+                  { label: "DEAL", value: "FREE SHIP", title: "Shutterfly – FREE Shipping on Orders $99+", desc: "Get FREE shipping on qualifying Shutterfly orders of $99 or more.", bullets: ["Use code SHIP99 at checkout to claim the shipping offer.", "Save on delivery costs while ordering personalized photo books, gifts, prints and more.", "Offer applies to eligible USA orders meeting the required $99 minimum."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">

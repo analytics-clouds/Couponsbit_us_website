@@ -3,10 +3,10 @@ import ShutterflyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Shutterfly Promo Code: Up To 50% OFF Photo Gifts | Sep 2026",
+    absolute: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
   },
   description:
-    "Find the latest Shutterfly promo code and discount code for Sep 2026. Save up to 50% on photo books, cards and personalized gifts, plus free shipping on select orders with the latest verified Shutterfly offers.",
+    "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/shutterfly-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/shutterfly-promo-code",
-    title: "Shutterfly Promo Code: Up To 50% OFF Photo Gifts | Sep 2026",
+    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
     description:
-      "Find the latest Shutterfly promo code and discount code for Sep 2026. Save up to 50% on photo books, cards and personalized gifts, plus free shipping on select orders with the latest verified Shutterfly offers.",
+      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Shutterfly Promo Code: Up To 50% OFF Photo Gifts | Sep 2026",
+    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
     description:
-      "Find the latest Shutterfly promo code and discount code for Sep 2026. Save up to 50% on photo books, cards and personalized gifts, plus free shipping on select orders with the latest verified Shutterfly offers.",
+      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783181/shutterfly-logo_wvvske.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const shutterflySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/shutterfly-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/shutterfly-promo-code",
-      name: "Shutterfly Promo Code: Up To 50% OFF Photo Gifts | Sep 2026",
+      name: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
       description:
-        "Find the latest Shutterfly promo code and discount code for Sep 2026. Save up to 50% on photo books, cards and personalized gifts, plus free shipping on select orders with the latest verified Shutterfly offers.",
+        "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/shutterfly-promo-code#breadcrumb" },
@@ -77,14 +77,17 @@ const shutterflySchema = {
       name: "Shutterfly Promo Codes & Coupon Codes",
       description: "Latest Shutterfly promo codes and offers on photo books, cards and personalized gifts.",
       url: "https://www.couponsbit.us/stores/shutterfly-promo-code",
-      numberOfItems: 6,
+      numberOfItems: 9,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Shutterfly – New Customer Offer, 50% OFF First Order", description: "New customers can save on their first Shutterfly order.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Shutterfly – Photo Book Sale, Up To 50% OFF", description: "Save on custom photo books across sizes and styles.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Shutterfly – Free Shipping Offer", description: "Enjoy free shipping on qualifying Shutterfly orders.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Shutterfly – Holiday Card Deals, Up To 40% OFF", description: "Save on personalized holiday and greeting cards.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Shutterfly – Personalized Gift Discount, Extra 20% OFF", description: "Get an extra discount on personalized photo gifts.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Shutterfly – Clearance Picks, Up To 60% OFF", description: "Shop clearance-priced photo products and home décor.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Shutterfly – 50% OFF Cards & Stationery", description: "Get a flat 50% OFF on eligible cards and stationery orders at Shutterfly.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Shutterfly – 40% OFF Photo Books + FREE Extra Pages", description: "Save 40% OFF on eligible photo books at Shutterfly.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Shutterfly – Gallery of Ten Photo Mug for $13.99", description: "Create a personalized Gallery of Ten Photo Mug using favorite photos from your camera roll.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Shutterfly – 11 oz Photo Mugs for $9.99", description: "Get selected 11 oz White Photo Mugs for just $9.99 at Shutterfly.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Shutterfly FREE Photo Prints – Code MEMS", description: "Get FREE photo prints from Shutterfly using code MEMS on eligible orders.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Shutterfly 8x11 Wall Calendars – From $37.99", description: "Shop personalized 8x11 Wall Calendars at Shutterfly starting from $37.99.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Shutterfly Loving Festive Script Holiday Card – Up to 37% OFF", description: "Shop the Loving Festive Script Holiday Card from the Shutterfly Trending Now collection.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Shutterfly Fleece Blankets – Extra 20% OFF", description: "Get an Extra 20% OFF eligible fleece blankets at Shutterfly.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Shutterfly – FREE Shipping on Orders $99+", description: "Get FREE shipping on qualifying Shutterfly orders of $99 or more.", url: "https://www.couponsbit.us/stores/shutterfly-promo-code", seller: { "@type": "Organization", name: "Shutterfly", url: "https://www.shutterfly.com" } } },
       ],
     },
 

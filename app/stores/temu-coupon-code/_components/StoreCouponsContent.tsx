@@ -43,11 +43,11 @@ interface StoreItem {
 }
 
 const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New User Welcome Offer, Up To 90% OFF", sub: "Latest Deals" },
-  { id: "d2", label: "SALE", heading: "Flash Deals, Up To 70% OFF", sub: "Featured Picks" },
-  { id: "d3", label: "DEAL", heading: "Free Shipping On Orders", sub: "Featured Picks" },
-  { id: "d4", label: "DEAL", heading: "Free Gift with Purchase", sub: "Featured Picks" },
-  { id: "d5", label: "SALE", heading: "Clearance Picks, Up To 80% OFF", sub: "Featured Picks" },
+  { id: "d1", label: "SALE", heading: "Women’s Casual Shoes 88% OFF", sub: "Latest Deals" },
+  { id: "d2", label: "SALE", heading: "Gel Memory Foam Mattress Up to 71% OFF", sub: "Featured Picks" },
+  { id: "d3", label: "DEAL", heading: "6000PA Car Vacuum Cleaner 68% OFF", sub: "Featured Picks" },
+  { id: "d4", label: "SALE", heading: "70% OFF Sitewide + FREE Shipping", sub: "Featured Picks" },
+  { id: "d5", label: "NEW", heading: "Halloween Decorations – 47% OFF", sub: "Featured Picks" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
@@ -122,14 +122,14 @@ export default function TemuCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(30.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Temu coupon codes and discount codes for Sep 2026. Save up to 90% on fashion, home goods and electronics, plus free shipping and gifts with the latest verified offers.
+                      Discover verified Temu coupon codes and Temu discount codes at Maxiku Offers. Save up to 70% sitewide, get an extra 15% OFF orders over $40 for new users, enjoy free shipping, and shop fashion, home, electronics, beauty, toys, and more.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "11", label: "Offers" },
                     { icon: Percent, val: "5K+", label: "Deals" },
                     { icon: Users, val: "15M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -190,12 +190,17 @@ export default function TemuCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "Up To 90% OFF", title: "Temu – New User Welcome Offer", desc: "New shoppers can unlock exclusive first-order discounts across categories.", bullets: ["Sign up as a new Temu user to unlock welcome pricing.", "Discounts apply across fashion, home and electronics.", "Offer availability may vary by region."] },
-                  { label: "SALE", value: "Up To 70% OFF", title: "Temu – Flash Deals", desc: "Shop limited-time flash deal pricing across fashion, home and electronics.", bullets: ["Flash deals run for a limited time on select products.", "Discounts apply across multiple popular categories.", "Check back often as flash deal items rotate frequently."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Temu – Free Shipping On Orders", desc: "Enjoy free shipping on qualifying Temu orders.", bullets: ["Shop fashion, home goods and electronics.", "Look for the free shipping tag at checkout.", "Availability varies by item and destination."] },
-                  { label: "DEAL", value: "FREE GIFT", title: "Temu – Free Gift with Purchase", desc: "Get a free gift added to select qualifying orders.", bullets: ["Add qualifying items to your cart to unlock a free gift.", "Gift selection may vary and is subject to availability.", "Combine with other available offers where permitted."] },
-                  { label: "SALE", value: "Up To 80% OFF", title: "Temu – Clearance Picks", desc: "Shop clearance-priced items across multiple categories.", bullets: ["Find clearance pricing across fashion, home and electronics.", "Stock is limited and changes regularly.", "Great for finding one-off deals at reduced prices."] },
-                  { label: "DEAL", value: "Extra 30% OFF", title: "Temu – App-Exclusive Coupons", desc: "Unlock extra discounts available only through the Temu app.", bullets: ["Download the Temu app to access exclusive coupons.", "Combine app coupons with select store promotions.", "App-only pricing updates regularly."] },
+                  { label: "SALE", value: "$8.33", title: "Temu – Women’s Casual Shoes 88% OFF", desc: "Shop women’s casual sneakers and versatile everyday shoes for only $8.33.", bullets: ["Save up to 88% OFF the original listed price of $73.48 on this clearance deal.", "Comfortable styles are ideal for casual outings, shopping, and everyday wear.", "Limited stock is available, so shoppers can grab this clearance price while supplies last."] },
+                  { label: "SALE", value: "71% OFF", title: "Temu – Gel Memory Foam Mattress Up to 71% OFF", desc: "Upgrade your bedroom with a luxurious gel memory foam mattress featuring a European-style top design.", bullets: ["Available in popular USA sizes including Twin, Full, Double, Queen, and King.", "Enjoy up to 71% OFF with medium-firm support and a hypoallergenic design for comfortable sleep.", "This limited-time Temu offer is available while stock lasts."] },
+                  { label: "DEAL", value: "$12.47", title: "Temu – 6000PA Car Vacuum Cleaner 68% OFF", desc: "Get a powerful handheld car vacuum cleaner with 6000PA super-strong suction for just $12.47.", bullets: ["Save 68% OFF this limited-time deal compared with the listed price of $39.99.", "Includes five matching accessories for cleaning cars, homes, and pet areas.", "The compact cordless design and low-noise operation make it convenient for everyday cleaning."] },
+                  { label: "SALE", value: "70% OFF", title: "Temu – 70% OFF Sitewide + FREE Shipping", desc: "Save up to 70% OFF across a wide range of products on Temu USA.", bullets: ["Shop everything from fashion and electronics to home essentials, beauty, toys, and more.", "No coupon code is required to claim this sitewide discount.", "Enjoy complimentary shipping and access to the offer as an eligible Temu customer."] },
+                  { label: "NEW", value: "$1.90", title: "Temu Halloween Decorations – 47% OFF", desc: "Decorate your home for Halloween with 24-piece 3D hollow-out bat wall decorations.", bullets: ["Get the set for just $1.90, down from the listed price of $3.60.", "Save 47% OFF on spooky black bat decorations for doors, rooms, walls, and Halloween parties.", "A budget-friendly seasonal decoration deal for creating a festive Halloween atmosphere."] },
+                  { label: "DEAL", value: "$20.90", title: "Temu Portable Projector – 57% OFF", desc: "Enjoy big-screen entertainment with a portable projector featuring 1280×720 native resolution.", bullets: ["Supports up to 1080P content and works with smartphones, tablets, laptops, and TV sticks.", "Get the projector for $20.90, saving 57% OFF the listed price of $48.70.", "Includes USB connectivity and a remote control for convenient home entertainment."] },
+                  { label: "SALE", value: "50% OFF", title: "Temu Beauty Products – Up to 50% OFF", desc: "Save up to 50% OFF a wide selection of beauty products on Temu USA.", bullets: ["Shop makeup, haircare, fragrance, beauty tools, tattoo supplies, and more.", "Enjoy a variety of affordable beauty essentials with free shipping available.", "This offer is open to all eligible Temu customers in the USA."] },
+                  { label: "DEAL", value: "15% OFF", title: "Temu – Flat 15% OFF Orders Over $40", desc: "Get a flat 15% OFF when shopping on eligible Temu orders over $40.", bullets: ["Meet the $40 minimum cart value to qualify for the promotional savings.", "Shop a wide range of products while enjoying free shipping on your purchases.", "This offer is available exclusively to new Temu users in the USA."] },
+                  { label: "DEAL", value: "$0.96", title: "Temu Toys & Games – Starting at $0.96", desc: "Shop a huge selection of toys and games with prices starting from just $0.96.", bullets: ["Find affordable entertainment options for children, families, and gift shopping.", "Enjoy free shipping on eligible purchases through Temu USA.", "This low-price deal is available to all eligible customers."] },
+                  { label: "DEAL", value: "$8.69", title: "Temu Mini Sewing Machine – 51% OFF", desc: "Get a portable mini sewing machine with 24 rolls of assorted colored thread.", bullets: ["The compact handheld sewing machine is designed for easy home sewing and quick repairs.", "Pay just $8.69 instead of the listed $17.81 and save 51% OFF.", "A convenient and affordable option for basic tailoring, DIY projects, and everyday sewing needs."] },
+                  { label: "NEW", value: "20% OFF", title: "Temu New User – 20% OFF Orders Over $40", desc: "New Temu users can save 20% OFF their first eligible purchase.", bullets: ["A minimum cart value of $40 is required to qualify for the introductory discount.", "Simply sign up for the Temu app and unlock this new-user promotional offer.", "A great way for first-time shoppers in the USA to get extra savings on their first order."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
