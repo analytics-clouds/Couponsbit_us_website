@@ -119,6 +119,11 @@ export const allStores: StoreEntry[] = [
   { name: "Yas Island",      id: "yas-island-promo-code",          category: "Travel",      coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp",     discount: "Up To 50% OFF",   popular: false },
   { name: "Lordhair",        id: "lordhair-promo-code",            category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/lorthair-logo_g84ojx.webp",       discount: "Up To 50% OFF",   popular: false },
   { name: "OGLmove",         id: "oglmove-discount-code",          category: "Fashion",     coupons: 13, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp",           discount: "Up To 13% OFF",   popular: false },
+  { name: "Adidas",          id: "adidas-promo-code",              category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783181/adidas-logo_brulmo.webp",         discount: "Up To 50% OFF",   popular: false },
+  { name: "Lowe's",          id: "lowes-promo-code",               category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783184/lowes-logo_q6mswa.webp",          discount: "Up To 40% OFF",   popular: false },
+  { name: "AliExpress",      id: "aliexpress-promo-code",          category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783184/aliexpress-logo_uued0o.webp",     discount: "Up To 93% OFF",   popular: false },
+  { name: "Shutterfly",      id: "shutterfly-promo-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783181/shutterfly-logo_wvvske.webp",      discount: "Up To 50% OFF",   popular: false },
+  { name: "Temu",            id: "temu-coupon-code",               category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783183/temu-logo_our7ig.webp",            discount: "Up To 90% OFF",   popular: false },
 ];
 
 

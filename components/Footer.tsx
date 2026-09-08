@@ -21,6 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "./Navbar";
+import { LabourDayPromoPopup } from "./LabourDayPromoPopup";
 
 type TranslateLanguage = { code: string; label: string };
 
@@ -328,6 +329,8 @@ export const Footer = () => {
           <div id="google_translate_element" className="notranslate fixed -top-[9999px] -left-[9999px]" />
         </div>
       </div>
+
+      <LabourDayPromoPopup />
     </footer>
   );
 };

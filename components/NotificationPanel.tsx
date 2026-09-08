@@ -26,6 +26,8 @@ const NotificationItem = ({ text, image, isRead, ctaLabel, ctaHref }: Notificati
       {ctaLabel && ctaHref && (
         <Link
           href={ctaHref}
+          target={ctaHref.startsWith("http") ? "_blank" : undefined}
+          rel={ctaHref.startsWith("http") ? "noopener noreferrer" : undefined}
           className="inline-block mt-2 bg-[#056bfa] hover:bg-[#0451c4] text-white text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wide transition-colors"
         >
           {ctaLabel}
@@ -58,10 +60,10 @@ export const NotificationPanel = ({ isOpen }: NotificationPanelProps) => {
           </div>
           <div className="max-h-[400px] overflow-y-auto">
             <NotificationItem
-              text="Amazon Sale is LIVE! Shop Verified Deals & Discount Codes"
-              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"
+              text="AliExpress Labour Day Sale is LIVE! Save Up to 93% OFF"
+              image="https://res.cloudinary.com/couponsbit/image/upload/v1788783184/aliexpress-logo_uued0o.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/amazon-discount-code"
+              ctaHref="https://www.amazon.com/?&linkCode=ll2&tag=analytics0922-20&linkId=9a29e2639a93ee0a01cbc9eb8d14bdf1&language=en_US&ref_=as_li_ss_tl"
             />
           </div>
         </motion.div>
