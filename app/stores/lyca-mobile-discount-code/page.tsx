@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
+      "en-GB": "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
       "x-default": "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
     },
   },
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
       "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
     siteName: "Couponsbit",
     locale: "en_US",
+    alternateLocale: ["en_GB"],
     images: [
       {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp",
