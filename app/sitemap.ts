@@ -89,6 +89,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/how-to-use-gamsgo-discount-code`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {
