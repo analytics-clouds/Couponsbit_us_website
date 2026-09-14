@@ -83,6 +83,18 @@ const blogSchema = {
       blogPost: [
         {
           "@type": "BlogPosting",
+          headline: "GamsGo Discount Code: Save More on Digital Subscriptions",
+          url: "https://www.couponsbit.us/blog/how-to-use-gamsgo-discount-code",
+          datePublished: "2026-09-14",
+          inLanguage: "en-US",
+          author: {
+            "@type": "Organization",
+            name: "Couponsbit",
+            url: "https://www.couponsbit.us",
+          },
+        },
+        {
+          "@type": "BlogPosting",
           headline:
             "Holiday Shopping Calendar 2026: The Best Times to Shop & Save Money in the USA",
           url: "https://www.couponsbit.us/blog/holiday-shopping-calendar-2026",
@@ -278,6 +290,49 @@ export default function BlogPage() {
               <div className="w-20 h-[3px] bg-[#FF9900] rounded-full mx-auto mt-3"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+
+              {/* Post — GamsGo Discount Code */}
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
+                <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/couponsbit/image/upload/v1789389490/gamsgo-discount-code-and-promo-codes_uqqkua.webp"
+                    alt="GamsGo discount code and promo codes"
+                    width={220}
+                    height={200}
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-center flex-1">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="text-gray-500 text-xs font-medium uppercase">
+                      September 14, 2026
+                    </span>
+                    <span className="text-gray-300" aria-hidden="true">•</span>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs uppercase font-medium">
+                        5 MIN READ
+                      </span>
+                    </div>
+                  </div>
+                  <Link href="/blog/how-to-use-gamsgo-discount-code">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
+                      Get More Savings With a GamsGo Promo Code
+                    </h3>
+                  </Link>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                    Looking for a GamsGo discount code? Discover how to find and apply GamsGo promo codes and save more on digital subscriptions, gaming, AI tools and software.
+                  </p>
+                  <Link
+                    href="/blog/how-to-use-gamsgo-discount-code"
+                    aria-label="Read more: Get More Savings With a GamsGo Promo Code"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                  >
+                    READ MORE <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
 
               {/* Post — Holiday Shopping Calendar 2026 */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
