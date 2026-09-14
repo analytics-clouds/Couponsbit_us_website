@@ -71,66 +71,66 @@ interface StoreItem {
 const COUPONS: Coupon[] = [
   {
     id: "lyc1",
-    discount: "25%",
-    label: "UP TO",
+    discount: "50%",
+    label: "SAVE UP TO",
     badge: "Best Offer",
-    title: "Up to 25% OFF on SIM & prepaid plans",
-    heading: "Up to 25% OFF",
-    sub: "SIM & Prepaid Plans",
-    description: "Connect globally for much less. Browse monthly cellular plans, bulk internet allocations, or local calls and save up to 25%.",
+    title: "Lyca Mobile 30GB Pay Monthly Plan – Discount Code | 50% OFF + Extra 10% OFF",
+    heading: "30GB Pay Monthly Plan",
+    sub: "50% OFF + Extra 10% OFF",
+    description: "Get 30GB data for just £5 for the first month, reduced from £10 with this limited-time Lyca Mobile offer.",
     usedCount: "102k",
     expiresIn: "2 days",
-    code: "LYCA25"
+    code: "LYCA10"
   },
   {
     id: "lyc2",
-    discount: "$5",
-    label: "ONLY",
+    discount: "50%",
+    label: "UP TO",
     badge: "Popular",
-    title: "Get Your First Prepaid Month for Just $5",
-    heading: "First Month $5",
-    sub: "New Prepaid Subscribers",
-    description: "Incredible welcome deal. Try Lyca Mobile with premium data, national carrier minutes and SMS for only $5 in month one.",
+    title: "Lyca Mobile UK Unlimited Plan – Discount Code | 50% OFF",
+    heading: "UK Unlimited Plan",
+    sub: "50% OFF",
+    description: "Get unlimited data for just £12.50 per 30 days, reduced from £25, with 50% OFF for the first 3 months.",
     usedCount: "89k",
     expiresIn: "6 days",
-    code: "FIVEFIRST"
+    code: "LYCA10"
   },
   {
     id: "lyc3",
-    discount: "10%",
-    label: "EXTRA",
+    discount: "50%",
+    label: "UP TO",
     badge: "Trending",
-    title: "Extra 10% OFF on 12-Month Annual Plans",
-    heading: "Extra 10% OFF",
-    sub: "12-Month Annual Plans",
-    description: "Big cellular calling commitment, massive savings. Lock in a full 12-month cell phone plan and receive extra 10% cash off.",
+    title: "Lyca Mobile Super Extra 5G Plan – Discount Code | 50% OFF",
+    heading: "Super Extra 5G Plan",
+    sub: "50% OFF",
+    description: "Get 75GB of 5G data for just £7.50 per 30 days, reduced from £15, with 50% OFF for the first 3 months.",
     usedCount: "74k",
     expiresIn: "4 days",
-    code: "YEAR10"
+    code: "LYCA10"
   },
   {
     id: "lyc4",
-    discount: "20%",
-    label: "FLAT",
-    title: "Flat 20% OFF Global Travel Roaming Bundles",
-    heading: "Flat 20% OFF",
-    sub: "Global Travel Roaming",
-    description: "Stay fully connected on your overseas vacation. Grab flat 20% savings on Lyca high speed international roaming passes.",
+    discount: "50%",
+    label: "SAVE UP TO",
+    title: "Lyca Mobile Pay As You Go SIM – Discount Code | 50% OFF + Extra 10% OFF",
+    heading: "Pay As You Go SIM",
+    sub: "50% OFF + Extra 10% OFF",
+    description: "Enjoy 50% OFF for the first month and get 30GB data for just £5 for 30 days.",
     usedCount: "61k",
     expiresIn: "3 days",
-    code: "ROAM20"
+    code: "LYCA10"
   },
   {
     id: "lyc5",
-    discount: "FREE",
-    label: "SIM",
-    title: "Free Express SIM Card and Instant eSIM Activation",
-    heading: "Free SIM Card",
-    sub: "Express & Instant eSIM",
-    description: "Avoid standard activation costs or delivery charges. Request a free physical SIM card or activate compatible eSIMs directly.",
+    discount: "50%",
+    label: "UP TO",
+    title: "Lyca Mobile Exclusive 5G Plan | Up To 50% OFF",
+    heading: "Exclusive 5G Plan",
+    sub: "Up To 50% OFF",
+    description: "Get up to 50% OFF for the first 6 months on a 24-month contract and enjoy unlimited data at a reduced monthly price.",
     usedCount: "48k",
     expiresIn: "5 days",
-    code: "FREESIM"
+    code: "LYCA10"
   }
 ];
 
@@ -232,14 +232,14 @@ export default function LycaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(11.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Lyca Mobile discount codes & promo codes for September 2026. Save up to 69% on prepaid plans — no contracts, no credit checks. Grab 18GB high-speed data with hotspot access from just $7.50 per 30 days.
+                      Discover verified Lyca Mobile discount codes and promo codes to save 50% on selected Pay Monthly, Unlimited, 5G, and SIM plans. Use discount code LYCA10 to get an extra 10% OFF on eligible orders while enjoying generous data, international minutes, and EU roaming.
                     </p>
                   </div>
                 </div>
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "10", label: "Coupons" },
+                    { icon: Tag, val: "5", label: "Coupons" },
                     { icon: Percent, val: "180+", label: "Deals" },
                     { icon: Users, val: "1.5M+", label: "Callers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -330,7 +330,7 @@ export default function LycaCouponsContent() {
               <div className="lg:w-[65%]">
                 <div className="mb-8">
                   <h2 className="text-2xl font-black text-black leading-tight">Lyca Mobile Coupon Codes & Offers</h2>
-                  <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">10 Coupons & Offers Available</p>
+                  <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">5 Coupons & Offers Available</p>
                 </div>
 
       
@@ -344,8 +344,8 @@ export default function LycaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">69%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">+10% OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -354,22 +354,28 @@ export default function LycaCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Summer Starts Now – Affordable Prepaid Plans</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy high-speed data, unlimited talk & text with no contracts or credit checks.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lyca Mobile 30GB Pay Monthly Plan – Discount Code | 50% OFF + Extra 10% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 30GB data for just £5 for the first month, reduced from £10 with this limited-time Lyca Mobile offer.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>No contracts & no credit checks</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 69% on selected plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Affordable prepaid mobile plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 12GB EU roaming, 100 international minutes, and unlimited EU calls and texts while roaming.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use Discount Code: LYCA10 | Get an Extra 10% OFF on your order.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Summer Starts Now Affordable Prepaid Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 mb-2 lg:mb-0 gap-3">
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: 30GB Pay Monthly Plan 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("LYCA 10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">LYCA 10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -385,7 +391,7 @@ export default function LycaCouponsContent() {
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
           <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</div>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -395,22 +401,28 @@ export default function LycaCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 60% OFF – Selected Lyca Mobile Plans</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Grab exciting savings on selected prepaid mobile plans.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lyca Mobile UK Unlimited Plan – Discount Code | 50% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited data for just £12.50 per 30 days, reduced from £25, with 50% OFF for the first 3 months.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get up to 60% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited talk with fast-speed data</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Budget-friendly monthly pricing</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy unlimited UK calls and texts, 100 international minutes, plus EU & India roaming with up to 35GB data.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use Discount Code: LYCA10 | Get an Extra 10% OFF on your order.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: UP TO 60% OFF Selected Lyca Mobile Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 mb-2 lg:mb-0 gap-3">
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: 30GB Pay Monthly Plan 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("LYCA 10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">LYCA 10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -425,9 +437,9 @@ export default function LycaCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Promo Price</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.50</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -436,22 +448,28 @@ export default function LycaCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Better Signal Summer Offer – 18GB Plan</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay connected with high-speed data and hotspot benefits.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lyca Mobile Super Extra 5G Plan – Discount Code | 50% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 75GB of 5G data for just £7.50 per 30 days, reduced from £15, with 50% OFF for the first 3 months.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>18GB high-speed data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>10GB hotspot data available</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide & international talk/text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy unlimited UK calls and texts, 100 international minutes, and EU & India roaming with up to 12GB roaming data.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use Discount Code: LYCA10 | Get an Extra 10% OFF on your order.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Better Signal Summer Offer 18GB Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 mb-2 lg:mb-0 gap-3">
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: 30GB Pay Monthly Plan 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("LYCA 10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">LYCA 10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -466,9 +484,9 @@ export default function LycaCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$18</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save UP TO</p>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">+10% OFF</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -477,22 +495,28 @@ export default function LycaCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Best Prepaid Phone Plans – Unlimited Plus</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited data and international calling at affordable prices.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lyca Mobile Pay As You Go SIM – Discount Code | 50% OFF + Extra 10% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy 50% OFF for the first month and get 30GB data for just £5 for 30 days.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Full-speed access for first 40GB</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited international minutes to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 12GB EU roaming, 100 international minutes, plus 5G and eSIM support for added flexibility.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use Discount Code: LYCA10 | Get an Extra 10% OFF on your order. T&Cs apply.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Best Prepaid Phone Plans Unlimited Plus" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 mb-2 lg:mb-0 gap-3">
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: 30GB Pay Monthly Plan 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("LYCA 10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">LYCA 10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -507,8 +531,8 @@ export default function LycaCouponsContent() {
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</div>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
+          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
           <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
         </div>
       </div>
@@ -518,267 +542,28 @@ export default function LycaCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">More Months. More Savings</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save more when you choose long-term prepaid plans.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lyca Mobile Exclusive 5G Plan | Up To 50% OFF</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get up to 50% OFF for the first 6 months on a 24-month contract and enjoy unlimited data at a reduced monthly price.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available on 3, 6 & 12-month plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calling to 100 countries</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 60% on selected plans</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Pay just £9 per month and get unlimited data, 30GB EU roaming, and 100 international minutes.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use Coupon Code: LYCA10 | Get 10% OFF on your order. T&Cs apply.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: More Months More Savings" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Promo Price</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$18</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Stream Share Repeat – Unlimited Data Offer</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Perfect prepaid plan for streaming, browsing & sharing.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>High-speed streaming data included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calls to 100 countries</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Stream Share Repeat Unlimited Data Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Promo Price</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$7.50</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Best-Selling $33 High Data Plan</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy fast 5G data with hotspot access at discounted pricing.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>18GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 10GB hotspot data</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Best-Selling $33 High Data Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Promo Price</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$18</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited Plus Plan – Promo Offer</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited data access with international calling benefits.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited data with first 40GB at full speed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited talk & text nationwide</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International minutes to 100 countries</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Unlimited Plus Plan Promo Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Earn UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$38</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Refer A Friend – Earn Up To $38</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Invite friends and earn rewards with every successful referral.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn up to $38 per referral</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Friends get 50% OFF for first 3 months</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Easy refer & earn process</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Refer A Friend Earn Up To $38" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Promo Price</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$29.50</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">SIM-Only Unlimited Pro Plan</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get premium unlimited data with instant activation support.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited data prepaid plan</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>International calling to 100 countries</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: SIM-Only Unlimited Pro Plan" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 11 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$10</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 days</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Unlimited International Plan – Starting At $10</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Affordable international prepaid plan with 5G data benefits.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>5GB data at up to 5G speeds</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited nationwide talk & text</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlimited international talk & text</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: Unlimited International Plan Starting At $10" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 mb-2 lg:mb-0 gap-3">
+          <a href="https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Lyca Mobile deal: 30GB Pay Monthly Plan 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("LYCA 10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">LYCA 10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -951,81 +736,39 @@ export default function LycaCouponsContent() {
     </thead>
     <tbody className="text-gray-600 font-bold text-[14px]">
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Starts Now</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 69% OFF</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">30GB Pay Monthly Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF + Extra 10% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">No contracts & no credit checks</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Affordable prepaid plans</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">£5 first month, reduced from £10</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">30GB pay monthly plan</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Selected Lyca Mobile Plans</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 60% OFF</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">UK Unlimited Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited talk with fast-speed data</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Selected prepaid mobile plans</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">£12.50/30 days, reduced from £25</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">UK unlimited data plan</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Better Signal Summer Offer</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">$7.50 / 30 Days</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Super Extra 5G Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">18GB data + 10GB hotspot data</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">18GB prepaid plan</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">£7.50/30 days, reduced from £15</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">75GB 5G data plan</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Best Prepaid Phone Plans</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $18 / 30 Days</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Pay As You Go SIM</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF + Extra 10% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Full-speed access for first 40GB</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited Plus plan</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">More Months. More Savings</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Save Up To 60% OFF</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Available on 3, 6 & 12-month plans</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Long-term prepaid plans</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Stream Share Repeat</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">$18 / 30 Days</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-speed streaming data included</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited data offer</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Best-Selling High Data Plan</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">$7.50 / 30 Days</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">18GB data at up to 5G speeds</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">$33 high data plan</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited Plus Plan</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">$18 / 30 Days</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited data, first 40GB at full speed</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited Plus promo plan</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Refer A Friend</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Earn Up To $38</td>
-        <td className="p-5 text-gray-500 align-middle">Existing Subscribers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Friends get 50% OFF for first 3 months</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Referral rewards program</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">SIM-Only Unlimited Pro Plan</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">$29.50 / 30 Days</td>
-        <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Instant activation support</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">SIM-only unlimited plan</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">£5 for 30 days, 5G & eSIM support</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Pay As You Go SIM</td>
       </tr>
       <tr className="hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Unlimited International Plan</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">Starting At $10 / 30 Days</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Exclusive 5G Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up To 50% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">5GB data at up to 5G speeds</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">International prepaid plan</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">£9/month on a 24-month contract</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Unlimited data 5G plan</td>
       </tr>
     </tbody>
   </table>

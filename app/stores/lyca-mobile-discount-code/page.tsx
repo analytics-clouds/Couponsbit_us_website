@@ -3,10 +3,10 @@ import LycaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
+    absolute: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
   },
   description:
-    "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
+    "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
+    title: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
     description:
-      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
+      "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
+    title: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
     description:
-      "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
+      "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const lycaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      name: "Lyca Mobile Discount Code: Up to 69% Off + 18GB From $7.50 | Sep 2026",
+      name: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
       description:
-        "Use a verified Lyca Mobile discount code or promo code — save up to 69% on prepaid plans. Get 18GB high-speed data with hotspot from just $7.50/30 days. No contracts. September 2026.",
+        "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -79,15 +79,15 @@ const lycaSchema = {
       description:
         "Latest verified Lyca Mobile coupon codes, promo codes and discount codes for recharge, SIM plans and international calling.",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      numberOfItems: 11,
+      numberOfItems: 5,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           item: {
             "@type": "Offer",
-            name: "Summer Starts Now – Affordable Prepaid Plans",
-            description: "Enjoy high-speed data, unlimited talk & text with no contracts or credit checks.",
+            name: "Lyca Mobile 30GB Pay Monthly Plan – Discount Code | 50% OFF + Extra 10% OFF",
+            description: "Get 30GB data for just £5 for the first month, reduced from £10 with this limited-time Lyca Mobile offer.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
@@ -101,8 +101,8 @@ const lycaSchema = {
           position: 2,
           item: {
             "@type": "Offer",
-            name: "UP TO 60% OFF – Selected Lyca Mobile Plans",
-            description: "Grab exciting savings on selected prepaid mobile plans.",
+            name: "Lyca Mobile UK Unlimited Plan – Discount Code | 50% OFF",
+            description: "Get unlimited data for just £12.50 per 30 days, reduced from £25, with 50% OFF for the first 3 months.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
@@ -116,8 +116,8 @@ const lycaSchema = {
           position: 3,
           item: {
             "@type": "Offer",
-            name: "Better Signal Summer Offer – 18GB Plan",
-            description: "Stay connected with high-speed data and hotspot benefits.",
+            name: "Lyca Mobile Super Extra 5G Plan – Discount Code | 50% OFF",
+            description: "Get 75GB of 5G data for just £7.50 per 30 days, reduced from £15, with 50% OFF for the first 3 months.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
@@ -131,8 +131,8 @@ const lycaSchema = {
           position: 4,
           item: {
             "@type": "Offer",
-            name: "Best Prepaid Phone Plans – Unlimited Plus",
-            description: "Get unlimited data and international calling at affordable prices.",
+            name: "Lyca Mobile Pay As You Go SIM – Discount Code | 50% OFF + Extra 10% OFF",
+            description: "Enjoy 50% OFF for the first month and get 30GB data for just £5 for 30 days.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
@@ -146,98 +146,8 @@ const lycaSchema = {
           position: 5,
           item: {
             "@type": "Offer",
-            name: "More Months. More Savings",
-            description: "Save more when you choose long-term prepaid plans.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Stream Share Repeat – Unlimited Data Offer",
-            description: "Perfect prepaid plan for streaming, browsing & sharing.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Best-Selling $33 High Data Plan",
-            description: "Enjoy fast 5G data with hotspot access at discounted pricing.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Unlimited Plus Plan – Promo Offer",
-            description: "Get unlimited data access with international calling benefits.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Refer A Friend – Earn Up To $38",
-            description: "Invite friends and earn rewards with every successful referral.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "SIM-Only Unlimited Pro Plan",
-            description: "Get premium unlimited data with instant activation support.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Unlimited International Plan – Starting At $10",
-            description: "Affordable international prepaid plan with 5G data benefits.",
+            name: "Lyca Mobile Exclusive 5G Plan | Up To 50% OFF",
+            description: "Get up to 50% OFF for the first 6 months on a 24-month contract and enjoy unlimited data at a reduced monthly price.",
             url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
             seller: {
               "@type": "Organization",
