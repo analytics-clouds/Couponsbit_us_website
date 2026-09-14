@@ -66,25 +66,25 @@ const COUPONS: Coupon[] = [
     id: "c1",
     discount: "$27",
     label: "From",
-    title: "Airalo – Unlimited USA eSIM from $27 (7 Days)",
+    title: "Airalo – Unlimited USA eSIM from $27 for 7 Days",
     heading: "$27 /7 DAYS",
     sub: "Airalo",
-    description: "Enjoy unlimited high-speed data on the T-Mobile 5G network, from $27 for 7 days.",
+    description: "Get unlimited high-speed data on the T-Mobile 5G network for 7 days from just $27.",
     usedCount: "0",
     expiresIn: "TBD",
-    code: "AIRALO1"
+    code: "AC10ALL"
   },
   {
     id: "c2",
     discount: "$59",
     label: "Only",
-    title: "Airalo – 50GB USA eSIM for $59 (30 Days)",
+    title: "Airalo – 50GB USA eSIM for $59 for 30 Days",
     heading: "$59 /30 DAYS",
     sub: "Airalo",
     description: "Get 50GB of high-speed data for 30 days for just $59.",
     usedCount: "0",
     expiresIn: "TBD",
-    code: "AIRALO2"
+    code: "AC10ALL"
   },
   {
     id: "c3",
@@ -93,10 +93,10 @@ const COUPONS: Coupon[] = [
     title: "Airalo – Earn Up to 10% Cashback Rewards",
     heading: "10% CASHBACK",
     sub: "Airalo",
-    description: "Unlock up to 10% cashback with Airalo Rewards.",
+    description: "Earn up to 10% cashback through Airalo Rewards on eligible eSIM purchases.",
     usedCount: "0",
     expiresIn: "TBD",
-    code: "AIRALO3"
+    code: "AC10ALL"
   },
   {
     id: "c4",
@@ -105,22 +105,22 @@ const COUPONS: Coupon[] = [
     title: "Airalo – Existing Users Save Up to 20%",
     heading: "20% OFF",
     sub: "Airalo",
-    description: "Get up to 20% OFF on selected eSIM plans.",
+    description: "Save up to 20% on selected eSIM plans with available Airalo promotions.",
     usedCount: "0",
     expiresIn: "TBD",
-    code: "AIRALO4"
+    code: "AC10ALL"
   },
   {
     id: "c5",
     discount: "$3",
     label: "EARN",
-    title: "Airalo – Refer Friends & Earn $3 Every Time",
+    title: "Airalo – Refer Friends & Earn $3",
     heading: "$3",
     sub: "Airalo",
-    description: "Give $3 Airmoney and receive $3 for every referral.",
+    description: "Give your friends $3 in Airmoney and receive $3 for every eligible referral.",
     usedCount: "0",
     expiresIn: "TBD",
-    code: "AIRALO5"
+    code: "AC10ALL"
   }
 ];
 
@@ -206,7 +206,7 @@ export default function AiraloCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp" alt="Airalo" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -222,7 +222,7 @@ export default function AiraloCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Airalo Discount Code and Airalo Voucher to save up to 20% OFF eSIM plans, enjoy 15% OFF your first purchase, earn up to 10% cashback, get USA eSIMs from $4.50, and receive $3 for every successful referral.
+                      Discover verified Airalo discount codes and promo codes to save up to 20% on selected eSIM plans and get 15% OFF your first purchase. Use discount code AC10ALL and enjoy USA eSIM plans from $4.50, instant activation, and cashback rewards on eligible purchases.
                     </p>
                   </div>
                 </div>
@@ -251,21 +251,21 @@ export default function AiraloCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-promo-code_ipgxvz.webp" alt="Airalo Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-voucher-code_jmjhvw.webp" alt="Airalo Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-discount-code_wtxcr7.webp" alt="Airalo Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
@@ -344,22 +344,29 @@ export default function AiraloCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Unlimited USA eSIM from $27 (7 Days)</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy unlimited high-speed data on the T-Mobile 5G network, from $27 for 7 days.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Unlimited USA eSIM from $27 for 7 Days</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited high-speed data on the T-Mobile 5G network for 7 days from just $27.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for travelers visiting the United States</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Instant eSIM activation with no physical SIM required</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay connected throughout your trip</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use promo code **AC10ALL** to access the available Airalo savings.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy instant eSIM activation with no physical SIM required.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for travelers who need reliable data while visiting the United States.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -385,7 +392,7 @@ export default function AiraloCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – 50GB USA eSIM for $59 (30 Days)</h2>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – 50GB USA eSIM for $59 for 30 Days</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 50GB of high-speed data for 30 days for just $59.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
@@ -393,14 +400,21 @@ export default function AiraloCouponsContent() {
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 500 minutes and 500 SMS</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Powered by T-Mobile 5G for reliable coverage</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great value for extended USA travel</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply promo code **AC10ALL** to access the available Airalo deal.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 500 minutes and 500 SMS with reliable T-Mobile 5G coverage.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A great option for extended trips across the United States.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo 50GB USA eSIM for $59 30 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -427,21 +441,28 @@ export default function AiraloCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Earn Up to 10% Cashback Rewards</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Unlock up to 10% cashback with Airalo Rewards.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Earn up to 10% cashback through Airalo Rewards on eligible eSIM purchases.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade through Silver, Gold & Platinum tiers</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn rewards on eligible eSIM purchases</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save more every time you travel</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code **AC10ALL** to access available Airalo offers.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Progress through Silver, Gold, and Platinum reward tiers.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Keep earning rewards to save more on future travel eSIM purchases.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Earn Up to 10% Cashback Rewards" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -468,21 +489,28 @@ export default function AiraloCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Existing Users Save Up to 20%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get up to 20% OFF on selected eSIM plans.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 20% on selected eSIM plans with available Airalo promotions.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive offer for existing Airalo customers</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade your travel plan for less</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time savings on eligible purchases</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enter promo code **AC10ALL** to access eligible savings.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy exclusive savings designed for existing Airalo customers.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade your travel plan and stay connected for less.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Existing Users Save Up to 20%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -508,22 +536,29 @@ export default function AiraloCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Refer Friends & Earn $3 Every Time</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Give $3 Airmoney and receive $3 for every referral.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Refer Friends & Earn $3</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Give your friends $3 in Airmoney and receive $3 for every eligible referral.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn rewards on every successful signup</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Share Airalo with friends and save together</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>No limit on eligible referral rewards</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code **AC10ALL** to access available Airalo offers.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn rewards when friends successfully sign up through your referral.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Share Airalo with friends and enjoy extra savings on future eSIM purchases.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Refer Friends Earn $3 Every Time" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -550,21 +585,28 @@ export default function AiraloCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Get 15% OFF Your First eSIM</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save 15% on your first eSIM activation.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save 15% on your first eligible eSIM activation with Airalo.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Valid across eligible new eSIM plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Instant digital activation in minutes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-Time Offer for new users</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply promo code **AC10ALL** to access available savings.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from eligible eSIM plans and activate your service instantly.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A great way for new users to save on their first travel eSIM.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Get 15% OFF Your First eSIM" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -591,21 +633,28 @@ export default function AiraloCouponsContent() {
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – USA eSIM Plans Starting at $4.50</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">USA eSIM plans available from just $4.50.</p>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get USA eSIM plans starting from just $4.50 for affordable travel connectivity.</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Fast and reliable mobile data across the United States</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>No roaming fees or physical SIM card needed</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Activate instantly and travel worry-free</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enter code **AC10ALL** to access available Airalo savings.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Avoid roaming fees and enjoy instant digital eSIM activation.</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay connected across the United States without carrying a physical SIM.</li>
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo USA eSIM Plans Starting at $4.50" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
         </div>
       </div>
     </div>
@@ -650,7 +699,7 @@ export default function AiraloCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, Airalo serves millions of travelers worldwide and supports a wide variety of eSIM-compatible smartphones, tablets, and other connected devices. 
                   </p>
-                  <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1006,7 +1055,7 @@ export default function AiraloCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://airalo.pxf.io/YVoR4j" target="_blank" rel="noopener noreferrer" aria-label={`Get Airalo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label={`Get Airalo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
