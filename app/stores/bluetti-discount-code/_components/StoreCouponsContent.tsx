@@ -224,6 +224,15 @@ export default function BluettiCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200 on portable power stations, receive a FREE $249 Trolley with eligible bundles, and shop home backup systems, solar generators, and power stations starting from $1,199.
                     </p>
+                    <a
+                      href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

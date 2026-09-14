@@ -234,6 +234,15 @@ export default function LatamCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       LATAM Airlines — Top South American carrier. 8 verified deals live! Flights from $136, 40% OFF packages & earn 40,000 bonus miles. Book now!
                     </p>
+                    <a
+                      href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

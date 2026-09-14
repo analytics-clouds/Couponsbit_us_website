@@ -224,6 +224,15 @@ export default function SungaitCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF on selected sunglasses, enjoy 15% OFF orders over $55, get 10% OFF orders over $35, and 5% OFF your first order while shopping stylish eyewear from $14.99.
                     </p>
+                    <a
+                      href="https://sungaitcn.pxf.io/c/6434050/3933369/54145?subId1=986"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

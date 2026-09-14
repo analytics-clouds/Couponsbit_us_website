@@ -128,6 +128,15 @@ export default function BamboocoolCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Find BambooCool discount codes, promo codes, and apparel deals for Sep 2026. Save up to 25% on summer styles, get 20% OFF your first order, enjoy free shipping on eligible $49+ orders, and shop bamboo underwear, pajamas and multi-packs from $27.29.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

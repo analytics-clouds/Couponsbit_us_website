@@ -242,6 +242,15 @@ export default function KrispCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified Krisp discount codes & promo codes for September 2026. Start a 7-day free trial with no credit card required — then unlock unlimited noise cancellation, AI notes & transcription from just $8/mo per user.
                     </p>
+                    <a
+                      href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

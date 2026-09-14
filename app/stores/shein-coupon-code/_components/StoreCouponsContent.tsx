@@ -126,6 +126,15 @@ export default function SheinCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find SHEIN coupon codes, promo codes, and fashion deals for Sep 2026. Save up to 90% on selected items, get up to 85% OFF during Final Bell, 70% OFF summer styles, and shop women's tops from $10.99.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

@@ -224,6 +224,15 @@ export default function MalaysiaAirlinesCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF on flights, enjoy an extra 5% OFF, earn 2X Enrich Points, book fares from $399, and receive up to 45kg baggage allowance on eligible bookings.
                     </p>
+                    <a
+                      href="https://malaysiaairlines.sjv.io/c/4303217/1728493/20075?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

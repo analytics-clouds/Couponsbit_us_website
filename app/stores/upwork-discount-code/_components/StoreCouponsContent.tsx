@@ -224,6 +224,15 @@ export default function UpworkCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Upwork Discount Code and Upwork Voucher to explore free and premium freelancer plans, receive 100 monthly Connects, unlock advanced profile insights, and start freelancing with plans from $15 or upgrade to Plus for $19.99/month.
                     </p>
+                    <a
+                      href="https://upwork.pxf.io/OY59Mr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

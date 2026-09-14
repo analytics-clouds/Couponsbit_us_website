@@ -125,6 +125,15 @@ export default function ItcHotelsCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find ITC Hotels promo codes, discount codes, and stay deals for Sep 2026. Members can save up to 50% on eligible stays, while Goa and extended stays offer 33% OFF. Enjoy up to 20% OFF dining, spa, beverages and hotel services.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

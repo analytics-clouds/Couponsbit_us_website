@@ -127,6 +127,15 @@ export default function MacysCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Macys promo codes, discount codes, and sale deals for Sep 2026. Save up to 75% on jewelry, 60% on home and bedding, 40% on shoes, 40%-60% during Star Deals Week, plus $20 OFF eligible orders of $100 or more.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

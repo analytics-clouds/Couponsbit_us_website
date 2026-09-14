@@ -124,6 +124,15 @@ export default function ShutterflyCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Shutterfly promo codes and Shutterfly discount codes at Maxiku Offers. Save 50% OFF cards and stationery, enjoy 40% OFF personalized photo books with FREE extra pages, get FREE photo prints, and unlock FREE shipping on qualifying USA orders.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -149,7 +158,7 @@ export default function ShutterflyCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788783181/shutterfly-logo_wvvske.webp" alt="Shutterfly Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121744/29_uokcf8.webp" alt="Shutterfly Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -400,6 +409,42 @@ export default function ShutterflyCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Shutterfly Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {[
+        ["50% OFF Cards & Stationery", "50% OFF", "USA Users", "Min. spend $45; includes free shipping", "Cards & Stationery"],
+        ["40% OFF Photo Books + Free Pages", "40% OFF", "All USA Users", "Includes unlimited free extra pages", "Photo Books"],
+        ["Gallery of Ten Photo Mug", "$13.99 (30% OFF)", "All USA Users", "Was $19.99; 11 oz personalized photo mug", "Drinkware"],
+        ["11 oz White Photo Mugs", "$9.99", "All Users", "Selected mug designs; customizable with photos", "Drinkware"],
+        ["FREE Photo Prints", "FREE", "USA Users", "Use code MEMS at checkout", "Photo Prints"],
+        ["Personalized 8x11 Wall Calendars", "From $37.99", "USA Users", "Customizable photo layout for home or office", "Calendars"],
+        ["Loving Festive Script Holiday Card", "Up to 37% OFF", "All Users", "$164.80 down from $261.60 (Save $96.80)", "Holiday Cards"],
+        ["Fleece Blankets Extra Discount", "Extra 20% OFF", "USA Users", "Use code EXTRA20 at checkout", "Home Decor & Blankets"],
+        ["FREE Shipping on Orders $99+", "Free Shipping", "USA Users", "Use code SHIP99; min. spend $99", "Sitewide"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 8 && "border-b-0")}>
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

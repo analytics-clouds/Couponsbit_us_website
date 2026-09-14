@@ -232,6 +232,15 @@ export default function EnvatoCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified Envato Elements discount codes for September 2026. Save flat 50% on annual plans from $16.50/mo with unlimited downloads of 28M+ assets. Students get an exclusive 30% off from just $11.50/month.
                     </p>
+                    <a
+                      href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

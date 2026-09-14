@@ -299,6 +299,15 @@ export default function OutfitrCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified Outfitr discount codes & promo codes for September 2026. Save 62% on the 2-Bike Hitch Rack from just $110.99 — down from $289.99. Single E-Bike Rack 50% off at $169.99. Perfect for road trips & outdoor adventures.
                     </p>
+                    <a
+                      href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

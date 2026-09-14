@@ -224,6 +224,15 @@ export default function DiscountTireCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find the latest Discount Tire Discount Code and Discount Tire Promo Code to save up to $197 on select tires. Shop tire deals from $129, get $80 OFF select sets of four, and enjoy $50 OFF qualifying $599+ purchases while offers last.
                     </p>
+                    <a
+                      href="https://www.discounttire.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

@@ -225,6 +225,15 @@ export default function RadissonCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF hotel stays, enjoy up to 35% OFF on extended stays, earn 2,000 Bonus Points, and book premium accommodations from just $68.31 worldwide.
                     </p>
+                    <a
+                      href="https://www.kqzyfj.com/click-101413330-17069342?sid=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

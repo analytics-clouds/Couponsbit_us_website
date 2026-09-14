@@ -224,6 +224,15 @@ export default function EtihadCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on Business Class, 20% OFF international flights, 25% OFF Europe hotels, and book round-trip fares from just $522.
                     </p>
+                    <a
+                      href="https://prf.hn/click/camref:1011l58Agp/pubref:1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

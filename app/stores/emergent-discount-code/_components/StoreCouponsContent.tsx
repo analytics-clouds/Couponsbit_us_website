@@ -191,6 +191,15 @@ export default function EmergentCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use a verified Emergent discount code to get the Starter plan at just $2.63/mo — saving $14.79. Pro plan starts at $146.10/mo with free deployment, custom domain, analytics & Beast Thinking AI. Updated September 2026.
                     </p>
+                    <a
+                      href="https://app.emergent.sh/?via=CC"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

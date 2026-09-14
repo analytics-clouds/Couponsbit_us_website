@@ -224,6 +224,15 @@ export default function DreameCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF on premium hair stylers, enjoy 10% OFF your first order, get up to $180 OFF, and shop robot vacuums, cordless vacuums, grooming tools, and smart home appliances.
                     </p>
+                    <a
+                      href="https://dreame.sjv.io/KB9qby"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

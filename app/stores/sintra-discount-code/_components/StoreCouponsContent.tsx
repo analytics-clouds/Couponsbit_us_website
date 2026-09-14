@@ -229,6 +229,15 @@ export default function SintraCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Grab verified Sintra discount codes for September 2026 and save up to 70% on AI automation plans. Annual plan from just $15.60/month, 60% off 3-month, 50% off monthly — all 12 AI helpers included with a 14-day money-back guarantee.
                     </p>
+                    <a
+                      href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

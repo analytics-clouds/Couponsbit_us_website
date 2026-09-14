@@ -225,6 +225,15 @@ export default function KeralaAyurvedaCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save more on authentic Ayurvedic wellness products with Kerala Ayurveda deals. Get Kalyanaka Ghee for $28.95, Rasnasapthakam Kwath for $22.95, Digi Eye Defense for $31.95, Indukantham Kwath for $25.95, Kumkumadi Oil from $27, Shilajit Capsules for $25.95, Brilliant Mind for $28.95, Kumkumadi Thailam from $27, Triphala Capsules for $28.95, and Dashamula Capsules for $28.95. Use COUNTNEW10 to get 10% OFF your first order and enjoy traditional Ayurvedic wellness products at better prices.
                     </p>
+                    <a
+                      href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

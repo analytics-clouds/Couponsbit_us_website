@@ -124,6 +124,15 @@ export default function AdidasCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Discover verified Adidas promo codes and Adidas discount codes at Maxiku Offers. Save up to 50% OFF clothing and footwear, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15 across the USA.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -149,7 +158,7 @@ export default function AdidasCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788783181/adidas-logo_brulmo.webp" alt="Adidas Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121744/27_dcy5nz.webp" alt="Adidas Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -406,6 +415,50 @@ export default function AdidasCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           adidas Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {[
+        ["Adizero Control Running Short Leggings", "$78 (40% OFF)", "All Users", "Was $130; performance-focused fit", "Women's Activewear"],
+        ["Summer Sale Apparel", "Extra 30% OFF", "USA Users", "Use promo code EXTRA at checkout", "Apparel & Sportswear"],
+        ["Up to 40% OFF Favorite Styles", "Up to 40% OFF", "All Users / adiClub", "Exclusive benefits for adiClub members", "Shoes, Clothing & Accessories"],
+        ["JENNIE Superstar SQ Ballet Shoes", "$130", "USA Users", "First adidas Originals collaboration with JENNIE", "Women's Footwear"],
+        ["Samba OG C Shoes", "$70", "USA Users", "Classic silhouette; Back to School collection", "Kids / Footwear"],
+        ["Fall Refresh Sale", "Up to 50% OFF", "USA Users", "Limited-time discounts across seasonal styles", "Sitewide / Men, Women & Kids"],
+        ["Swift Run 1.0 Shoes", "$60 (25% OFF)", "All Users", "Was $80; everyday sporty sneakers", "Footwear"],
+        ["Minecraft Pro Shoes (Children)", "$45 (25% OFF)", "All Users", "Was $60; Minecraft collaboration design", "Kids' Footwear"],
+        ["Lite Racer Adapt 8.0 Wide Shoes", "$49 (30% OFF)", "USA Users", "Was $70; wide-fit comfort design", "Footwear"],
+        ["Breaknet Sleek Shoes", "$46 (25% OFF)", "All Users", "Was $65; versatile everyday style", "Footwear"],
+        ["Campus 00s Shoes", "$83 (20% OFF)", "USA Users", "Was $110; classic Originals-inspired design", "Footwear"],
+        ["Soccer Jerseys Promotion", "Extra 30% OFF", "USA Users", "Valid on selected team & national jerseys", "Soccer Apparel"],
+        ["Argentina 26 Home Authentic Jersey", "$105 (30% OFF)", "All Users", "Was $150; official authentic match jersey", "Soccer / Men's Apparel"],
+        ["Gazelle Bold Shoes", "$84 (30% OFF)", "All Users", "Was $120; available in multiple colorways", "Women's Footwear"],
+        ["New Arrivals Deals", "Starting at $15", "USA Users", "Budget-friendly options including socks, tees & gloves", "Accessories & Apparel"],
+        ["Terrex Anylander Rain.Rdy Hiking Shoes", "$75 (10% OFF)", "All Users", "Was $85; features Rain.Rdy waterproof tech", "Men's Outdoor Footwear"],
+        ["Pixar Toy Story Samba Jane Shoes", "$110", "All Users", "Ballet-inspired style with Pixar details", "Women's Footwear"],
+        ["Argentina 26 Home Jersey (Kids)", "$56 (30% OFF)", "All Users", "Was $80; national team kids' jersey", "Kids' Soccer Apparel"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 17 && "border-b-0")}>
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

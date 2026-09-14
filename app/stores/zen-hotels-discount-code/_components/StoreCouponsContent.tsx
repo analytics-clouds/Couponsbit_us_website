@@ -264,6 +264,15 @@ export default function ZenHotelsCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Grab verified Zen Hotels discount codes for September 2026 and save on luxury hotel stays worldwide. Get $35 off bookings over $700 via the app, Paris from $852, Milan from $818, Prague from $1,145 & New York JFK from $2,625.
                     </p>
+                    <a
+                      href="https://emergingtravelinc.pxf.io/c/4303217/3321365/43614?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

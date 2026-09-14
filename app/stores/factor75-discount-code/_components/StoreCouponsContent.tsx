@@ -191,6 +191,15 @@ export default function Factor75CouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified Factor75 discount codes & promo codes for September 2026. New customers save up to $130 off first meal deliveries plus free breakfast for 1 year. Limited-time offer — up to $126 off your first six boxes.
                     </p>
+                    <a
+                      href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

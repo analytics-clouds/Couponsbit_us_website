@@ -124,6 +124,15 @@ export default function LowesCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Lowe's promo codes and Lowe's discount codes at Maxiku Offers. Save up to $600 OFF major appliances, get up to 50% OFF patio furniture, power tools and bathroom vanities, plus enjoy FREE same-day delivery on eligible products for your next home improvement project.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -149,7 +158,7 @@ export default function LowesCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788783184/lowes-logo_q6mswa.webp" alt="Lowe's Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121745/28_uzaywq.webp" alt="Lowe's Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -400,6 +409,44 @@ export default function LowesCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Lowe’s Discount Code, Coupon Code & Deals
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {[
+        ["Holland Pavers Sale", "50% OFF", "All Users", "Limited-time clearance; while supplies last", "Outdoor & Landscaping"],
+        ["Vanities & Bathroom Faucets", "Up to 50% OFF", "All Users", "Includes taps, cabinets, and bathroom furniture", "Bathroom Improvement"],
+        ["Power Tools + Same-Day Delivery", "Save Up to $150", "All Users", "Includes FREE same-day delivery on select tools", "Power Tools & Equipment"],
+        ["Power Tools & Accessories", "Up to 50% OFF", "All Users", "Valid on selected tools and DIY repair accessories", "Tools & Hardware"],
+        ["Haunted Living 5-ft Skeleton Animatronic", "$199", "All Users", "Motion-activated with talking and lighted effects", "Halloween Decor"],
+        ["Lowe’s HomeCare+ Service Package", "$99", "All Users", "Includes 7 maintenance services across 2 annual visits", "Home Services"],
+        ["Ceiling Fans Sale", "Up to 35% OFF", "All Users", "Select ceiling fans starting from $56", "Lighting & Ceiling Fans"],
+        ["Major Appliances Promotion", "Up to $600 OFF", "All Users", "Select major appliances starting from $149", "Major Appliances"],
+        ["Hisense Counter-Depth Refrigerator", "Save $300", "All Users", "18-cu. ft. top-freezer counter-depth design", "Kitchen Appliances"],
+        ["Kitchen & Laundry Appliances", "Up to $300 OFF", "All Users", "Select discounted appliance items starting from $86", "Kitchen & Laundry"],
+        ["Select Patio Furniture Clearance", "Up to 50% OFF", "All Users", "Clearance pricing on backyard and deck essentials", "Patio & Outdoor Living"],
+        ["Select Kitchen Faucets + FREE Shipping", "Up to 40% OFF", "All Users", "Includes free shipping on eligible faucet purchases", "Kitchen Fixtures"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 11 && "border-b-0")}>
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

@@ -132,6 +132,15 @@ export default function WayfairCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Wayfair discount codes, promo codes, and home deals for Sep 2026. Save up to 80% on closeouts, 70% on clearance and area rugs, shop dorm essentials from $20, outdoor décor from $15, get 10% OFF for new subscribers, plus free shipping.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

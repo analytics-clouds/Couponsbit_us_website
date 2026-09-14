@@ -224,6 +224,15 @@ export default function DoorDashCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save with DoorDash promo codes offering 30% off eligible orders, $0 delivery fees on your first order, $15 off select wine, $6 off $40+ orders, 15% off Taco Bell orders $34+, and additional restaurant, grocery, and beverage deals.
                     </p>
+                    <a
+                      href="https://www.doordash.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

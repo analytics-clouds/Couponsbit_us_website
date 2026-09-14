@@ -224,6 +224,15 @@ export default function OmanAirCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Oman Air Discount Code and Oman Air Voucher to save up to 50% OFF on flight bookings. Discover Flat 25% OFF selected flights and fares starting from just $149 on domestic and international routes with Oman Air.
                     </p>
+                    <a
+                      href="https://tracking.syndicmarketing.com/c?o=21657167&m=23654&a=636605&aff_click_id=1015&sub_aff_id=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -252,21 +261,7 @@ export default function OmanAirCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://tracking.syndicmarketing.com/c?o=21657167&m=23654&a=636605&aff_click_id=1015&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/oman-air-logo_ozwu2c.webp" alt="Oman Air Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
-                    </a>
-                  </div>
-
-                  {/* Slide 2 */}
-                  <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://tracking.syndicmarketing.com/c?o=21657167&m=23654&a=636605&aff_click_id=1015&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/oman-air-logo_ozwu2c.webp" alt="Oman Air Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
-                    </a>
-                  </div>
-
-                  {/* Slide 3 */}
-                  <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://tracking.syndicmarketing.com/c?o=21657167&m=23654&a=636605&aff_click_id=1015&sub_aff_id=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/oman-air-logo_ozwu2c.webp" alt="Oman Air Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121743/25_ll1n5e.webp" alt="Oman Air Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 

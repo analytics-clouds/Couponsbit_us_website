@@ -124,6 +124,15 @@ export default function TemuCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Temu coupon codes and Temu discount codes at Maxiku Offers. Save up to 70% sitewide, get an extra 15% OFF orders over $40 for new users, enjoy free shipping, and shop fashion, home, electronics, beauty, toys, and more.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -149,7 +158,7 @@ export default function TemuCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788783183/temu-logo_our7ig.webp" alt="Temu Coupon Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121743/24_kcneym.webp" alt="Temu Coupon Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -404,6 +413,43 @@ export default function TemuCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Temu Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      {[
+        ["Women’s Casual Shoes", "$8.33 (88% OFF)", "All Users", "Was $73.48; limited stock clearance", "Footwear"],
+        ["Gel Memory Foam Mattress", "Up to 71% OFF", "All Users", "European-style top design; Twin to King sizes", "Home & Bedroom"],
+        ["6000PA Car Vacuum Cleaner", "$12.47 (68% OFF)", "All Users", "Was $39.99; includes 5 accessories", "Automotive & Home"],
+        ["70% OFF Sitewide + FREE Shipping", "Up to 70% OFF", "Eligible Users", "No coupon code required", "Sitewide"],
+        ["Halloween 3D Bat Wall Decor (24 Pcs)", "$1.90 (47% OFF)", "All Users", "Was $3.60; budget-friendly seasonal deal", "Decorations"],
+        ["Portable Projector (1280x720)", "$20.90 (57% OFF)", "All Users", "Was $48.70; supports 1080P & remote included", "Electronics"],
+        ["Beauty Products Clearance", "Up to 50% OFF", "Eligible USA Users", "Free shipping available", "Beauty & Personal Care"],
+        ["Flat 15% OFF Coupon", "15% OFF", "New USA Users", "Min. order value $40; includes free shipping", "Sitewide"],
+        ["Toys & Games Deals", "Starting at $0.96", "Eligible Users", "Free shipping on eligible orders", "Toys & Games"],
+        ["Mini Sewing Machine Set", "$8.69 (51% OFF)", "All Users", "Was $17.81; includes 24 thread rolls", "Home & Craft"],
+        ["New User Sign-Up Coupon", "20% OFF", "New App Users (USA)", "Min. order value $40; unlock via Temu app", "First Order"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 10 && "border-b-0")}>
+          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>

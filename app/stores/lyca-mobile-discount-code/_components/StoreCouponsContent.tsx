@@ -234,6 +234,15 @@ export default function LycaCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Lyca Mobile discount codes and promo codes to save 50% on selected Pay Monthly, Unlimited, 5G, and SIM plans. Use discount code LYCA10 to get an extra 10% OFF on eligible orders while enjoying generous data, international minutes, and EU roaming.
                     </p>
+                    <a
+                      href="https://www.lycamobile.co.uk/en/affiliate-coupon-code-10/?im_ref=VlX35y3mRxyZUPhT3qXyp0onUkr2fZV5qV790U0&utm_campaign=4303217&utm_content=Analytics%20clouds&utm_source=impact&utm_medium=Affiliate&irgwc=1&afsrc=1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

@@ -124,6 +124,15 @@ export default function HarborFreightCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Find genuine Abercrombie discount code offers for September 2026 and save up to 30% off almost everything. Explore the latest US promo code deals on women's, men's and kids' clothing, jeans, dresses, tops and more while limited-time offers last.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

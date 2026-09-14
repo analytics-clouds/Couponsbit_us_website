@@ -224,6 +224,15 @@ export default function HostingCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save on Hosting with up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, 69% off Node.js at $5.61/month, plus Max, WordPress, business email, AI application and managed hosting plans.
                     </p>
+                    <a
+                      href="https://hostingcom.sjv.io/jR2YPv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

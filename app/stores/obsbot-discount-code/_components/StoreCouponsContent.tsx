@@ -251,6 +251,15 @@ export default function ObsbotCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified OBSBOT discount codes & promo codes for September 2026. Shop AI-powered 4K webcams from just $129 — perfect for Zoom, streaming & content creation. Pro Tail Air 4K NDI streaming camera available from $499.
                     </p>
+                    <a
+                      href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

@@ -125,6 +125,15 @@ export default function BlueCypressCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Blue Cypress discount codes, promo codes, and apparel deals for Sep 2026. Sign up for 20% OFF your first order, shop polos for $110, hoodies from $114.95, women's essentials from $109.95, and quarter-zips from $124.95.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

@@ -124,6 +124,15 @@ export default function LittleCaesarsCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Looking for the latest Little Caesars promo codes, discount code? Explore verified Little Caesars deals and save on pizzas, sides, drinks, and delivery orders across participating USA locations. Get $5 OFF orders of $30+ with code 5OFF30, $4 OFF delivery orders of $24+ with code DELIVERY4YOU, and $2 OFF Webberoni orders of $10+ with code WEBBERONI.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

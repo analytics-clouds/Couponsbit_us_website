@@ -124,6 +124,15 @@ export default function OldNavyCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Save with the latest Old Navy promo code , Discount code and deals. Get up to 89% OFF clearance styles, with selected women’s and kids’ fashion starting from $2.97. Shop dresses, tops, activewear, maternity wear, school uniforms, and more at reduced prices.  
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

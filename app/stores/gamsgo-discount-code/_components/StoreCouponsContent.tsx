@@ -124,6 +124,15 @@ export default function GamsGoCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified GamsGo discount codes and promo codes to save up to 85% on premium AI tools, software, gaming services, and subscriptions. Enjoy discounted access to ChatGPT, Cursor Pro, Suno Pro, CapCut Pro, Perplexity AI, SEMrush Guru, Roblox Robux, Manus AI, and more.
                     </p>
+                    <a
+                      href={STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

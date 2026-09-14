@@ -229,6 +229,15 @@ export default function RayneoCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified RayNeo discount codes & promo codes for September 2026. Grab the world's first HDR10 AR Glasses — RayNeo Air 4 Pro from $254.15. Save $130 on the AI-powered X3 Pro smart glasses at just $1,169.
                     </p>
+                    <a
+                      href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

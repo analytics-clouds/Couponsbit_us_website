@@ -288,6 +288,15 @@ export default function UnipinCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find verified UniPin discount codes for September 2026 and top up your favorite games instantly. Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68, PSN Gift Cards from $9.94 & Mobile Legends Diamonds from just $1.
                     </p>
+                    <a
+                      href="https://unipin.sjv.io/c/4303217/1151699/14562?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 

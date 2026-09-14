@@ -224,6 +224,15 @@ export default function UltahostCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF on game, VPS, shared, Windows, Mac, and dedicated hosting plans. Launch or scale your website with reliable hosting at competitive monthly prices.
                     </p>
+                    <a
+                      href="https://ultahost.sjv.io/c/4303217/1888268/22575?subId1=subid&subId2=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
@@ -252,21 +261,7 @@ export default function UltahostCouponsContent() {
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
                     <a href="https://ultahost.sjv.io/c/4303217/1888268/22575?subId1=subid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/ultahost-logo_zsnpu7.webp" alt="UltaHost Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
-                    </a>
-                  </div>
-
-                  {/* Slide 2 */}
-                  <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://ultahost.sjv.io/c/4303217/1888268/22575?subId1=subid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/ultahost-logo_zsnpu7.webp" alt="UltaHost Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
-                    </a>
-                  </div>
-
-                  {/* Slide 3 */}
-                  <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://ultahost.sjv.io/c/4303217/1888268/22575?subId1=subid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/ultahost-logo_zsnpu7.webp" alt="UltaHost Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789121743/26_j640j2.webp" alt="UltaHost Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 

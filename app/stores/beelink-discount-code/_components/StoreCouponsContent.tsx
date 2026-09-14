@@ -240,6 +240,15 @@ export default function BeelinkCouponsContent() {
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Beelink — Shop the latest AI Mini PCs with verified deals! Save up to 35% OFF, get $450 OFF GTR9 Pro, 21% OFF AI PCs, exclusive coupon codes & discount codes.
                     </p>
+                    <a
+                      href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
+                    >
+                      Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
                   </div>
                 </div>
 
