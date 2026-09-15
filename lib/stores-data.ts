@@ -124,6 +124,7 @@ export const allStores: StoreEntry[] = [
   { name: "AliExpress",      id: "aliexpress-promo-code",          category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783184/aliexpress-logo_uued0o.webp",     discount: "Up To 93% OFF",   popular: false },
   { name: "Shutterfly",      id: "shutterfly-promo-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783181/shutterfly-logo_wvvske.webp",      discount: "Up To 50% OFF",   popular: false },
   { name: "Temu",            id: "temu-coupon-code",               category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783183/temu-logo_our7ig.webp",            discount: "Up To 90% OFF",   popular: false },
+  { name: "Epic",            id: "epic-discount-code",             category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789032950/epic-logo_kxo5y0.webp",           discount: "Extra 25% OFF",   popular: false },
 ];
 
 
