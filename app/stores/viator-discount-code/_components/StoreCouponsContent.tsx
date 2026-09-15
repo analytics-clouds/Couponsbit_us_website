@@ -122,7 +122,7 @@ export default function ViatorCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(19.6k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Viator discount codes and promo codes for Sep 2026. Save on tours, activities and skip-the-line tickets, plus free cancellation and last-minute experience deals.
+                      Discover verified Viator promo codes to book tours from $39 and save 15% on select experiences. Explore Las Vegas, Charleston, London, Barcelona, and Key West, plus enjoy Sagrada Familia tours from $63.68 and Montserrat wine experiences from $58 in Sept 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -138,7 +138,7 @@ export default function ViatorCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "9", label: "Offers" },
                     { icon: Percent, val: "500+", label: "Deals" },
                     { icon: Users, val: "3M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -199,12 +199,15 @@ export default function ViatorCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Viator – New Customer Offer", desc: "New customers can save on their first Viator booking.", bullets: ["Sign up as a new Viator customer to unlock this offer.", "Discount applies to your first qualifying booking.", "Terms and eligible tours may vary."] },
-                  { label: "SALE", value: "TOURS", title: "Viator – Tour & Activity Discounts", desc: "Save on select tours and activities across popular destinations.", bullets: ["Browse deals across a wide range of tours and activities.", "Discounts apply on select listings.", "Selection updates frequently, so check back often."] },
-                  { label: "SALE", value: "PASSES", title: "Viator – Sightseeing Pass Savings", desc: "Save on multi-attraction sightseeing passes in select cities.", bullets: ["Bundle multiple attractions into one discounted pass.", "Available in select popular destinations.", "Great for maximizing sightseeing on a trip."] },
-                  { label: "DEAL", value: "SKIP-LINE", title: "Viator – Skip-the-Line Ticket Deals", desc: "Save on skip-the-line tickets to popular attractions.", bullets: ["Skip general admission lines at select attractions.", "Discounts apply on select ticket listings.", "Terms and eligible attractions may vary."] },
-                  { label: "DEAL", value: "FREE CANCEL", title: "Viator – Free Cancellation Offer", desc: "Book select tours and activities with free cancellation.", bullets: ["Cancel eligible bookings for a full refund.", "Cancellation window varies by tour or activity.", "Look for the free cancellation tag before booking."] },
-                  { label: "DEAL", value: "LAST-MIN", title: "Viator – Last-Minute Experience Deals", desc: "Find discounted pricing on select last-minute experiences.", bullets: ["Shop discounted pricing on select last-minute listings.", "Availability changes frequently based on demand.", "Great for spontaneous plans while traveling."] },
+                  { label: "SALE", value: "15% OFF", title: "Viator – Promo Code for Valley of Fire & Seven Magic Mountains | 15% OFF", desc: "Save 15% OFF on a Valley of Fire & Seven Magic Mountains day tour from Las Vegas.", bullets: ["Enjoy convenient hotel pickup from downtown Las Vegas or the Vegas Strip, with free cancellation up to 24 hours before the tour.", "Use Promo Code: Check Viator checkout for any applicable promotional savings and reserve now with the option to pay later."] },
+                  { label: "FROM", value: "$39", title: "Viator – Promo Code for Las Vegas Tours & Excursions | From $39", desc: "Explore Las Vegas tours and excursions starting from just $39 per person and discover exciting experiences across the city.", bullets: ["Choose from a variety of destinations and activities, making it easy to plan your next Las Vegas adventure.", "Use Promo Code: Check for applicable Viator promotional offers and book your preferred experience at an attractive price."] },
+                  { label: "FROM", value: "$33", title: "Viator – Promo Code for Charleston Tours & Tickets | From $33", desc: "Discover the charm of Charleston with top tours and tickets starting from just $33 on Viator.", bullets: ["Explore historic landmarks, elegant architecture, Lowcountry cuisine, and scenic coastal experiences with knowledgeable guides.", "Use Promo Code: Check Viator for available promotional savings and choose an experience that matches your travel plans."] },
+                  { label: "FROM", value: "$79", title: "Viator – Promo Code for Key West Tour Tickets | From $79", desc: "Experience the tropical beauty of Key West with tour tickets starting from just $79.", bullets: ["Enjoy activities ranging from snorkeling and sightseeing to historic landmarks and relaxing beach experiences.", "Use Promo Code: Check Viator for applicable promotional offers and book your Key West experience at a great price."] },
+                  { label: "FROM", value: "$99", title: "Viator – Las Vegas Helicopter Night Flight | From $99", desc: "Take an unforgettable Las Vegas helicopter night flight starting from just $99 per person.", bullets: ["Enjoy an approximately 10–12 minute aerial experience with optional VIP transportation and taxes and fees included.", "Cancel up to 3 days in advance and secure your memorable Las Vegas experience with Viator."] },
+                  { label: "FROM", value: "$55", title: "Viator – Top Places to Visit in London | From $55", desc: "Explore some of the top places to visit in London with experiences starting from just $55 per person.", bullets: ["Discover famous attractions, sightseeing experiences, and memorable activities while planning your London adventure.", "Browse Viator experiences and book your preferred London tour at an attractive starting price."] },
+                  { label: "FROM", value: "$63.68", title: "Viator – Barcelona Sagrada Familia Guided Tour | From $63.68", desc: "Visit Barcelona’s iconic Sagrada Familia with a skip-the-line guided tour starting from $63.68 per person.", bullets: ["Enjoy an informative guided experience while exploring one of Spain’s most famous architectural landmarks.", "Book through Viator and secure your preferred tour time while availability lasts."] },
+                  { label: "FROM", value: "$58", title: "Viator – Montserrat Wine Tasting & Tapas Tour | From $58", desc: "Enjoy a 7–8 hour Montserrat experience featuring a cogwheel train journey, gourmet wine tasting, and tapas or lunch.", bullets: ["Get the experience from $58, reduced from $70, with free cancellation available.", "Explore the stunning surroundings of Montserrat while enjoying local food and wine experiences."] },
+                  { label: "SALE", value: "10% OFF", title: "Viator – Flamenco Show at Dalmases Palace | 10% Savings", desc: "Experience an authentic Flamenco show at Dalmases Palace in Barcelona with 10% savings.", bullets: ["Enjoy a captivating evening of traditional Spanish music, dance, and culture in a historic palace setting.", "Tickets start from $32, making it an exciting cultural experience to add to your travel itinerary."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -420,6 +423,118 @@ export default function ViatorCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Viator Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full min-w-[850px] border-collapse text-left">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">
+          Offer
+        </th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">
+          Discount / Price
+        </th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">
+          Eligibility
+        </th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">
+          Key Conditions
+        </th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">
+          Applicable On
+        </th>
+      </tr>
+    </thead>
+    <tbody className="text-[14px] font-bold text-gray-600">
+      {[
+        {
+          title: "Viator – Promo Code for Valley of Fire & Seven Magic Mountains",
+          discount: "15% OFF",
+          eligibility: "All Users",
+          conditions: "Hotel pickup from downtown/Strip; free cancellation up to 24 hrs before tour",
+          applicableOn: "Valley of Fire & Seven Magic Mountains Tour"
+        },
+        {
+          title: "Viator – Promo Code for Las Vegas Tours & Excursions",
+          discount: "From $39",
+          eligibility: "All Users",
+          conditions: "Choose from various city destinations; reserve now & pay later options available",
+          applicableOn: "Las Vegas Tours & Excursions"
+        },
+        {
+          title: "Viator – Promo Code for Charleston Tours & Tickets",
+          discount: "From $33",
+          eligibility: "All Users",
+          conditions: "Includes historic landmarks, food, and coastal tours with guides",
+          applicableOn: "Charleston Tours & Tickets"
+        },
+        {
+          title: "Viator – Promo Code for Key West Tour Tickets",
+          discount: "From $79",
+          eligibility: "All Users",
+          conditions: "Covers snorkeling, sightseeing, landmarks, and beach experiences",
+          applicableOn: "Key West Tour Tickets"
+        },
+        {
+          title: "Viator – Las Vegas Helicopter Night Flight",
+          discount: "From $99",
+          eligibility: "All Users",
+          conditions: "10–12 min flight; optional VIP transport; cancel up to 3 days in advance; taxes included",
+          applicableOn: "Las Vegas Helicopter Night Flight"
+        },
+        {
+          title: "Viator – Top Places to Visit in London",
+          discount: "From $55",
+          eligibility: "All Users",
+          conditions: "Covers top attractions, sightseeing tours, and activities",
+          applicableOn: "London Tours & Experiences"
+        },
+        {
+          title: "Viator – Barcelona Sagrada Familia Guided Tour",
+          discount: "From $63.68",
+          eligibility: "All Users",
+          conditions: "Includes skip-the-line guided entrance; book early for availability",
+          applicableOn: "Sagrada Familia Guided Tour"
+        },
+        {
+          title: "Viator – Montserrat Wine Tasting & Tapas Tour",
+          discount: "From $58 (Was $70)",
+          eligibility: "All Users",
+          conditions: "7–8 hr tour; includes cogwheel train, wine tasting & tapas/lunch; free cancellation",
+          applicableOn: "Montserrat Wine Tasting & Tapas Tour"
+        },
+        {
+          title: "Viator – Flamenco Show at Dalmases Palace",
+          discount: "10% OFF (From $32)",
+          eligibility: "All Users",
+          conditions: "Live traditional Spanish music and dance performance in a historic setting",
+          applicableOn: "Dalmases Palace Flamenco Tickets"
+        }
+      ].map((item, index) => (
+        <tr
+          key={index}
+          className="border-b border-gray-200 transition-colors hover:bg-gray-50/50 last:border-b-0"
+        >
+          <td className="max-w-[220px] p-5 align-middle font-black text-black">
+            {item.title}
+          </td>
+          <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+            {item.discount}
+          </td>
+          <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+            {item.eligibility}
+          </td>
+          <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+            {item.conditions}
+          </td>
+          <td className="max-w-[180px] p-5 align-middle text-gray-500">
+            {item.applicableOn}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -684,10 +799,10 @@ export default function ViatorCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "10% OFF APP BOOKINGS", sub: "Save 10% When You Book Via Viator Mobile App" },
-              { heading: "RESERVE NOW PAY LATER", sub: "Secure Your Spot With Flexible Payment Options" },
-              { heading: "FREE CANCELLATION", sub: "Cancel Up To 24 Hours Ahead For A Full Refund" },
-              { heading: "VIATOR REWARDS", sub: "Earn Points On Every Experience You Book" }
+              { heading: "15% OFF", sub: "Valley of Fire & Seven Magic Mountains | 15% OFF" },
+              { heading: "FROM $39", sub: "Las Vegas Tours & Excursions | From $39" },
+              { heading: "FROM $33", sub: "Charleston Tours & Tickets | From $33" },
+              { heading: "FROM $79", sub: "Key West Tour Tickets | From $79" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

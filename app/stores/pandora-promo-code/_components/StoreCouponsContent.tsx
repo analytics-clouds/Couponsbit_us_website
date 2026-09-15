@@ -121,7 +121,7 @@ export default function PandoraCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(13.9k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Pandora promo codes and discount codes for Sep 2026. Save on charms, bracelets, rings and earrings, plus free gift with purchase offers.
+                      Discover verified Pandora coupon codes and promo codes to save 50% on selected Marvel and Disney charms, enjoy an extra 15% OFF with the student discount, and get a FREE limited-edition tote bag with qualifying bracelet purchases in Sept 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function PandoraCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "9", label: "Offers" },
                     { icon: Percent, val: "400+", label: "Deals" },
                     { icon: Users, val: "2M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,15 @@ export default function PandoraCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Pandora – New Arrivals Discount", desc: "Save on newly arrived jewelry pieces at Pandora.", bullets: ["Discount applies to select new arrival pieces.", "Selection updates regularly with new collections.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "CHARMS", title: "Pandora – Charm Bracelet Deal", desc: "Save on select charm bracelets and charm sets.", bullets: ["Discount applies to select charm bracelets and sets.", "Mix and match from a wide range of charm designs.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "SITEWIDE", title: "Pandora – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE GIFT", title: "Pandora – Free Gift With Purchase", desc: "Receive a free gift with select qualifying purchases.", bullets: ["Free gift applies to select qualifying orders.", "Minimum purchase amount may apply.", "Availability may vary by promotion period."] },
-                  { label: "SALE", value: "RINGS", title: "Pandora – Ring & Earring Sale", desc: "Save on select rings and earrings.", bullets: ["Discount applies to select ring and earring styles.", "Choose from a variety of designs and finishes.", "Availability may vary by collection."] },
-                  { label: "DEAL", value: "CLEARANCE", title: "Pandora – Clearance Picks", desc: "Save on select clearance jewelry pieces.", bullets: ["Discount applies to select clearance items.", "Stock and styles are limited and vary.", "Great for finding jewelry at a lower price."] },
+                  { label: "SALE", value: "50% OFF", title: "Pandora Coupon Code – Marvel Spider-Man Mask Charm | 50% OFF", desc: "Shop the Marvel Spider-Man Mask Charm in sterling silver for just $24.99, reduced from $50 — save 50% on this limited-time deal.", bullets: ["Add this Spider-Man-inspired charm to your Pandora bracelet or Marvel collection for a fun and collectible touch.", "Grab this Final Sale offer at 50% OFF and get the charm for just $24.99 while stocks last."] },
+                  { label: "SALE", value: "50% OFF", title: "Pandora Coupon Code – Marvel Spider-Man Mask Charm | 50% OFF", desc: "Shop the Marvel Spider-Man Mask Charm in sterling silver for just $24.99, reduced from $50 — save 50% on this limited-time deal.", bullets: ["Add this Spider-Man-inspired charm to your Pandora bracelet or Marvel collection for a fun and collectible touch.", "Grab this Final Sale offer at 50% OFF and get the charm for just $24.99 while stocks last."] },
+                  { label: "SALE", value: "50% OFF", title: "Pandora Coupon Code – Disney Mickey & Minnie Halloween Charm | 50% OFF", desc: "Save 50% on the Disney Mickey Mouse & Minnie Mouse Halloween Pumpkin Charm, now available for $53.99 instead of $108.", bullets: ["Crafted from sterling silver with 14k rose gold plating, this seasonal charm is a perfect pick for Disney fans and festive jewellery collections.", "Take advantage of the Final Sale offer and save $54.01 on this limited-edition Disney-inspired charm while available."] },
+                  { label: "SALE", value: "30% OFF", title: "Pandora Coupon Code – Halo Heart Trilogy Ring | 30% OFF", desc: "Get the Halo Heart Trilogy Ring for just $84, reduced from $120 — save 30% on this elegant jewellery pick.", bullets: ["Crafted in sterling silver, the heart-inspired design makes a beautiful choice for everyday wear, special occasions, or thoughtful gifting.", "Enjoy 30% OFF on this stylish ring and save $36 compared with the regular $120 price."] },
+                  { label: "DEAL", value: "$28", title: "Pandora Coupon Code – Pink Murano Glass Mini Charm | Free Limited Edition Tote", desc: "Add the Pink Murano Glass Mini Charm to your collection for just $28 and give your Pandora bracelet a delicate pop of colour.", bullets: ["Made with sterling silver and beautiful Murano glass detailing, this mini charm is a stylish choice for everyday jewellery lovers.", "Get a FREE Limited-Edition Tote Bag with any qualifying full-price bracelet purchase and enjoy this special Pandora offer."] },
+                  { label: "STUDENT", value: "15% OFF", title: "Pandora Student Savings – Extra 15% OFF Your Order", desc: "Students can enjoy an exclusive 15% OFF on eligible Pandora purchases with this special student savings offer.", bullets: ["Shop Pandora charms, bracelets, rings, and jewellery while making the most of student-exclusive savings.", "Save an extra 15% on your eligible Pandora purchase with the student offer, subject to applicable eligibility terms."] },
+                  { label: "FROM", value: "$37.99", title: "Pandora Bracelets – Stylish Designs Starting From $37.99", desc: "Discover stylish Pandora bracelets starting from just $37.99 and find an option to match your personal style.", bullets: ["Choose from charm bracelets, bangles, chain bracelets, lab-created diamond bracelets, leather bracelets, link bracelets, sliding bracelets, and more.", "Get a FREE Limited-Edition Tote Bag with any full-price bracelet purchase as part of the special bracelet offer."] },
+                  { label: "FROM", value: "$55", title: "Pandora Protective Hamsa Hand Dangle Charm – Starting From $55", desc: "Get the Protective Hamsa Hand Dangle Charm starting from just $55 and add a meaningful piece to your jewellery collection.", bullets: ["Designed with sterling silver and 14k rose gold-plated detailing, this distinctive charm features elegant beading around its outline.", "Shop this stylish charm from $55 and pair it with your favourite Pandora bracelet for a personalised jewellery look."] },
+                  { label: "DEAL", value: "FREE TOTE", title: "Pandora Bracelets – Free Limited-Edition Tote Bag", desc: "Get a FREE Limited-Edition Tote Bag with any full-price bracelet purchase.", bullets: ["Explore Pandora’s stylish bracelet collection and choose a design that suits your everyday look or gifting needs.", "Enjoy Free Standard Shipping on orders of $75 or more On Pandora Shop Now ."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -418,6 +421,175 @@ export default function PandoraCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Pandora Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full min-w-[850px] border-collapse text-left" aria-label="Pandora Coupon Codes and Offers Summary">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[14px] font-bold text-gray-600">
+      
+  
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Coupon Code – Marvel Spider-Man Mask Charm | 50% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          50% OFF ($24.99)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Final Sale deal reduced from $50; sterling silver charm available while stocks last
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Marvel Spider-Man Mask Charm
+        </td>
+      </tr>
+
+   
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Coupon Code – Disney Mickey & Minnie Halloween Charm | 50% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          50% OFF ($53.99)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Final Sale offer reduced from $108; sterling silver with 14k rose gold plating
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Disney Mickey & Minnie Pumpkin Charm
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Coupon Code – Halo Heart Trilogy Ring | 30% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          30% OFF ($84)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Save $36 off regular $120 price; sterling silver heart-inspired design
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Halo Heart Trilogy Ring
+        </td>
+      </tr>
+
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Coupon Code – Pink Murano Glass Mini Charm | Free Limited Edition Tote
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $28 + Free Gift
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Get a free limited-edition tote bag with any qualifying full-price bracelet purchase
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Pink Murano Glass Mini Charm
+        </td>
+      </tr>
+
+   
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Student Savings – Extra 15% OFF Your Order
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Extra 15% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Verified Students
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Requires student verification; valid on eligible full-priced and promotional items
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Eligible Pandora Orders
+        </td>
+      </tr>
+
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Bracelets – Stylish Designs Starting From $37.99
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $37.99
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Includes free limited-edition tote bag with full-price bracelet purchases
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Pandora Bracelets Collection
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Protective Hamsa Hand Dangle Charm – Starting From $55
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $55
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Features sterling silver and 14k rose gold-plated detailing with outline beading
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Protective Hamsa Hand Charm
+        </td>
+      </tr>
+
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50 last:border-b-0">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Pandora Bracelets – Free Limited-Edition Tote Bag
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Free Gift + Free Shipping
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Free tote with full-price bracelet purchase; free standard shipping on orders $75+
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Full-Price Bracelet Purchases
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -672,10 +844,10 @@ export default function PandoraCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "10% OFF FIRST ORDER", sub: "Join Pandora Club For 10% Off Your Purchase" },
-              { heading: "BUY 2 GET 1 FREE", sub: "Select Charms & Accessories Promo" },
-              { heading: "FREE SHIPPING", sub: "Complimentary Standard Delivery On Orders $75+" },
-              { heading: "STUDENT DISCOUNT", sub: "10% Off For Eligible Students" }
+              { heading: "50% OFF", sub: "Marvel Spider-Man Mask Charm | 50% OFF" },
+              { heading: "50% OFF", sub: "Disney Mickey & Minnie Halloween Charm | 50% OFF" },
+              { heading: "30% OFF", sub: "Halo Heart Trilogy Ring | 30% OFF" },
+              { heading: "STUDENT", sub: "Extra 15% OFF Your Order" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

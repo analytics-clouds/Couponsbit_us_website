@@ -146,6 +146,14 @@ const nikeSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/nike-discount-code#brand",
+      name: "Nike",
+      url: "https://www.nike.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Nike,_Inc."],
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/nike-discount-code#breadcrumb",
       itemListElement: [

@@ -120,6 +120,14 @@ const adidasSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/adidas-promo-code#brand",
+      name: "Adidas",
+      url: "https://www.adidas.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Adidas"],
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/adidas-promo-code#breadcrumb",
       itemListElement: [

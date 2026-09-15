@@ -310,6 +310,8 @@ export const Footer = () => {
             <Link href="/terms-of-use" className="text-sm font-bold hover:text-brand-primary transition-colors">Terms of Use</Link>
             <span className="text-gray-500">|</span>
             <Link href="/faqs" className="text-sm font-bold hover:text-brand-primary transition-colors">FAQs</Link>
+            <span className="text-gray-500">|</span>
+            <Link href="/sitemap" className="text-sm font-bold hover:text-brand-primary transition-colors">Sitemap</Link>
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <Globe className="w-4 h-4 text-gray-400" />

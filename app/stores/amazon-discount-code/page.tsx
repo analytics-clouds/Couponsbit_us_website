@@ -284,6 +284,14 @@ const amazonSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/amazon-discount-code#brand",
+      name: "Amazon",
+      url: "https://www.amazon.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Amazon_(company)"],
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/amazon-discount-code#breadcrumb",
       itemListElement: [

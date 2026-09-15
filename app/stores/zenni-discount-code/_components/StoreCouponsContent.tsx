@@ -119,7 +119,7 @@ export default function ZenniCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Zenni discount codes and promo codes for Sep 2026. Save on prescription glasses, blue-light lenses and sunglasses, plus free shipping.
+                      Discover verified Zenni Optical promo codes to save up to 75% on Blokz lenses and up to 30% on selected glasses. Enjoy 15% OFF your first order over $65, free shipping on eligible orders, and affordable prescription eyewear starting under $20 in Sept 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -135,7 +135,7 @@ export default function ZenniCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "15", label: "Offers" },
                     { icon: Percent, val: "350+", label: "Deals" },
                     { icon: Users, val: "2M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -196,12 +196,21 @@ export default function ZenniCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Zenni – New Customer Glasses Discount", desc: "New customers can save on their first pair of glasses at Zenni.", bullets: ["Sign up as a new Zenni customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible frames may vary."] },
-                  { label: "DEAL", value: "BLUE-LIGHT", title: "Zenni – Blue-Light Lens Deal", desc: "Save on glasses with blue-light blocking lenses.", bullets: ["Discount applies to select blue-light lens options.", "Choose from a variety of frame styles.", "Great for screen-heavy work and study."] },
-                  { label: "SALE", value: "SITEWIDE", title: "Zenni – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Zenni – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "DEAL", value: "PROGRESSIVE", title: "Zenni – Progressive Lens Savings", desc: "Save on glasses with progressive lenses.", bullets: ["Discount applies to select progressive lens options.", "Choose from a variety of frame styles.", "Terms and eligible lens types may vary."] },
-                  { label: "SALE", value: "CLEARANCE", title: "Zenni – Frame Clearance Sale", desc: "Save on select clearance eyeglass frames.", bullets: ["Discount applies to select clearance frames.", "Stock and styles are limited and vary.", "Great for finding glasses at a lower price."] },
+                  { label: "SALE", value: "UP TO 30%", title: "Zenni Optical Promo Code – Save Up To 30% On Selected Glasses", desc: "Give your eyewear collection a fresh update with selected Zenni glasses available at up to 30% OFF.", bullets: ["Browse a mix of modern frames and everyday designs to find a pair that suits your personal style.", "Check for a Zenni optical promo code at checkout to make your eligible purchase even more rewarding."] },
+                  { label: "SALE", value: "UP TO 75%", title: "Zenni Optical Promo Code – Blokz Lenses | Up To 75% OFF", desc: "Enjoy savings of up to 75% on selected Blokz lenses and discover affordable options for your eyewear needs.", bullets: ["Choose from popular styles such as Black Bowline, Black Square, Mist/Blue Square and other eligible designs.", "Look for a Zenni optical coupon code and unlock the available promotion on qualifying lens selections."] },
+                  { label: "DEAL", value: "$10.99", title: "Zenni Optical Promo Code – Tortoiseshell Wild Sight | $10.99", desc: "Pick up the Tortoiseshell Wild Sight style for only $10.99, offering an impressive 45% reduction from its original price.", bullets: ["Its distinctive tortoiseshell appearance adds a stylish finish to your everyday eyewear collection.", "Use a Zenni glasses coupon or available Zenni discount promo code to explore extra savings on eligible purchases."] },
+                  { label: "SALE", value: "25% OFF", title: "Zenni Optical Promo Code – Get 25% OFF Orders Of $89+", desc: "Spend $89 or more and receive 25% OFF your qualifying Zenni Optical order with this special promotion.", bullets: ["From prescription eyewear to fashionable frames, there are plenty of options to build a look that works for you.", "Search for a Zenni optical promotion code before checkout and take advantage of any additional eligible savings."] },
+                  { label: "DEAL", value: "CODE: GET20", title: "Zenni Optical – Buy One, Get The Second 20% OFF", desc: "Pick your favourite Zenni eyewear and receive 20% OFF the second qualifying item with code GET20.", bullets: ["Mix and match different glasses or frames to create versatile options for your everyday wardrobe.", "Enter GET20 during checkout to activate the Buy One, Get One 20% OFF promotion on eligible purchases."] },
+                  { label: "SALE", value: "UP TO 35%", title: "Zenni Optical – Bifocal Eyewear | Up To 35% OFF", desc: "Save up to 35% on selected bifocal glasses and find a practical combination of vision support and personal style.", bullets: ["Available frame choices include Black/Violet Ion, Matte Black/Orange Ion, Matte Black/Silver and more.", "Browse Zenni prescription glasses and check for a Zenni coupon promo code before placing your eligible order."] },
+                  { label: "FROM", value: "$32.95", title: "Zenni Optical – Green Geometric Frames | Starting At $32.95", desc: "Add a bold touch to your eyewear collection with Green Geometric Glasses starting at $32.95.", bullets: ["The jewel-inspired colour and geometric shape make these frames an eye-catching choice for everyday styling.", "Explore Zenni optical frames and check for available Zenni discount coupons when shopping for your next pair."] },
+                  { label: "FROM", value: "$42.95", title: "Zenni Optical – Kittles Exclusive Collection | From $42.95", desc: "Discover the Kittles x Zenni collection with selected everyday frames and standout designs starting from $42.95.", bullets: ["Inspired by George and Claire Kittle, the range includes both sunglasses and everyday eyewear with customizable lens options.", "Explore Zenni optical prescription styles and look for a Zenni glasses discount code when eligible offers are available."] },
+                  { label: "UNDER", value: "$30", title: "Zenni Optical – Prescription Sunglasses | Under $30", desc: "Discover affordable prescription sunglasses designed to match your vision needs and personal style.", bullets: ["Shop Zenni prescription eyeglasses and sunglasses with options created for comfortable everyday wear.", "Use a Zenni online coupon or Zenni optical online coupon code to look for additional savings on eligible purchases."] },
+                  { label: "FROM", value: "$42.95", title: "Zenni Optical – The Gold Standard Glasses | From $42.95", desc: "Add this stylish frame to your collection and explore more Zenni optical glasses for everyday and statement looks.", bullets: ["Check for a Zenni optical prescription discount or Zenni glasses coupon code before completing your purchase."] },
+                  { label: "UNDER", value: "$20", title: "Zenni Optical – Complete Eyeglasses Under $20", desc: "Shop complete Zenni eyeglasses priced under $20 for an affordable eyewear option.", bullets: ["Single-vision lenses are included in the frame-and-lens combination price, while upgrades and coatings are priced separately.", "Look for discount coupons for Zenni Optical and enjoy extra savings on eligible complete eyewear purchases."] },
+                  { label: "UNDER", value: "$30", title: "Zenni Optical – Eyeglasses Under $30", desc: "Discover stylish eyeglasses priced under $30 and enjoy affordable options for your everyday eyewear needs.", bullets: ["Browse Zenni optical frames in different designs, colours and styles to find a pair that fits your look.", "Use a Zenni glasses coupon code or Zenni online coupon to make your purchase even more affordable."] },
+                  { label: "DEAL", value: "FREE SHIP", title: "Zenni Optical – Free Standard Shipping On Orders $65+", desc: "Get Free Standard Shipping when you place an eligible Zenni Optical order of $65 or more.", bullets: ["Shop Zenni optical prescription glasses, frames and other eyewear while enjoying convenient delivery savings.", "Look for a Zenni free shipping code or Zenni optical free shipping code to find additional shipping offers on eligible orders."] },
+                  { label: "SALE", value: "17% OFF", title: "Zenni Optical – Crystal Gray Round Sunglasses | 17% OFF", desc: "Get Crystal Gray Round Sunglasses starting at $19.99, reduced from $23.95 — save 17%.", bullets: ["Add this classic round design to your eyewear collection and explore more stylish Zenni glasses.", "Check for a Zenni glasses coupon or Zenni discount promo code to discover additional savings on eligible sunglasses."] },
+                  { label: "NEW", value: "15% OFF", title: "Zenni Optical – 15% OFF Your First Order", desc: "Join Zenni and get 15% OFF your first order of $65 or more.", bullets: ["Enjoy early access to deals, new styles and special offers while shopping Zenni optical prescription collections.", "Take advantage of this first-order promotion and check for a Zenni optical coupon code for additional eligible savings."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -427,6 +436,100 @@ export default function ZenniCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Zenni Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border border-gray-200 bg-white shadow-sm">
+  
+  <table className="w-full min-w-[850px] border-collapse text-left" aria-label="Zenni Optical Offers Summary">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[14px] font-bold text-gray-600">
+      
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Zenni Optical Promo Code – Save Up To 30% On Selected Glasses
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Up to 30% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Applies to selected frames and modern designs; check code at checkout
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Selected Frames & Glasses
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Zenni Optical Promo Code – Blokz Lenses | Up To 75% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Up to 75% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Valid on popular styles including Black Bowline, Black Square, Mist/Blue Square
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Selected Blokz Lenses
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Zenni Optical Promo Code – Tortoiseshell Wild Sight | $10.99
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          $10.99 (45% OFF)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Price reduced from original listing for the Tortoiseshell Wild Sight frame
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Tortoiseshell Wild Sight Glasses
+        </td>
+      </tr>
+
+   
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50 last:border-b-0">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Zenni Optical Promo Code – Get 25% OFF Orders Of $89+
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          25% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Orders $89+
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Applies to qualifying orders meeting the $89 minimum spend requirement
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Entire Order ($89+)
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -692,10 +795,10 @@ export default function ZenniCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "FRAMES STARTING AT $6.95", sub: "Affordable Prescription Glasses Online" },
-              { heading: "10% OFF FIRST ORDER", sub: "Sign Up For Zenni Email Newsletter Discounts" },
-              { heading: "STUDENT DISCOUNT AVAILABLE", sub: "Save Extra On Your Eyewear Purchase" },
-              { heading: "BLOKZ BLUE LIGHT LENSES", sub: "Protect Your Eyes During Screen Time" }
+              { heading: "UP TO 30%", sub: "Save Up To 30% On Selected Glasses" },
+              { heading: "UP TO 75%", sub: "Blokz Lenses | Up To 75% OFF" },
+              { heading: "$10.99", sub: "Tortoiseshell Wild Sight | $10.99" },
+              { heading: "25% OFF", sub: "Get 25% OFF Orders Of $89+" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

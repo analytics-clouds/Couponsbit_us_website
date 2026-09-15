@@ -58,6 +58,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Etsy Coupon Code](https://www.couponsbit.us/stores/etsy-coupon-code): Handmade goods, vintage items, and craft supply discounts
 - [Expedia Discount Code](https://www.couponsbit.us/stores/expedia-discount-code): Hotel, flight, and vacation package discounts
 - [Factor75 Discount Code](https://www.couponsbit.us/stores/factor75-discount-code): Healthy meal delivery discounts
+- [Farfetch Promo Code](https://www.couponsbit.us/stores/farfetch-promo-code): Designer fashion, footwear, and accessory discounts
 - [Fashion Nova Discount Code](https://www.couponsbit.us/stores/fashion-nova-discount-code): Women's fashion apparel, denim, and activewear discounts
 - [Fireflyz Discount Code](https://www.couponsbit.us/stores/fireflyz-discount-code): Flight booking and baggage discounts
 - [FlixBus Discount Code](https://www.couponsbit.us/stores/flixbus-discount-code): Coach travel and bus ticket discounts
@@ -104,6 +105,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [OpenArt Discount Code](https://www.couponsbit.us/stores/openart-discount-code): AI image and video generation plan discounts
 - [Oppo Discount Code](https://www.couponsbit.us/stores/oppo-discount-code): Smartphone and earbuds discounts
 - [Outfitr Discount Code](https://www.couponsbit.us/stores/outfitr-discount-code): Bike rack and cargo carrier discounts
+- [Pandora Coupon Code](https://www.couponsbit.us/stores/pandora-promo-code): Charm bracelet, ring, and jewelry discounts
 - [Papa Johns Promo Code](https://www.couponsbit.us/stores/papajohns-promo-code): Pizza, combo meal, and cashback discounts
 - [Philips Discount Code](https://www.couponsbit.us/stores/philips-discount-code): Home appliance and personal care discounts
 - [Qatar Holidays Discount Code](https://www.couponsbit.us/stores/qatar-holidays-discount-code): Holiday package and stopover deal discounts
@@ -135,6 +137,8 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Valvoline Discount Code](https://www.couponsbit.us/stores/valvoline-discount-code): Oil change and vehicle maintenance service discounts
 - [Vegas.com Discount Code](https://www.couponsbit.us/stores/vegas-discount-code): Las Vegas hotel, show ticket, and attraction discounts
 - [Viagogo Discount Code](https://www.couponsbit.us/stores/viagogo-discount-code): Live event ticket discounts
+- [Viator Promo Code](https://www.couponsbit.us/stores/viator-discount-code): Tour, activity, and sightseeing pass discounts
+- [Vivid Seats Promo Code](https://www.couponsbit.us/stores/vivid-seats-promo-code): Concert, sports, and theatre ticket discounts
 - [Vooglam Discount Code](https://www.couponsbit.us/stores/vooglam-discount-code): Eyewear and sunglasses discounts
 - [Walmart Promo Code](https://www.couponsbit.us/stores/walmart-promo-code): Grocery, electronics, and general retail discounts
 - [Wayfair Discount Code](https://www.couponsbit.us/stores/wayfair-discount-code): Furniture, home decor, and Wayfair Professional discounts
@@ -143,6 +147,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Yas Island Promo Code](https://www.couponsbit.us/stores/yas-island-promo-code): Theme park ticket and hotel package discounts
 - [Zara Discount Code](https://www.couponsbit.us/stores/zara-discount-code): Women's, men's and kids' apparel and Zara Home discounts
 - [Zen Hotels Discount Code](https://www.couponsbit.us/stores/zen-hotels-discount-code): Hotel booking discounts
+- [Zenni Optical Promo Code](https://www.couponsbit.us/stores/zenni-discount-code): Prescription glasses, sunglasses, and lens discounts
 
 ## Location Pages
 These are city-specific sub-pages of the Nuagewear store page, each covering local delivery times, sales tax, and shopper tips for that city. They are a separate, more localized layer of content beneath the main Nuagewear store page — useful context for understanding how this site organizes location-specific coupon content.

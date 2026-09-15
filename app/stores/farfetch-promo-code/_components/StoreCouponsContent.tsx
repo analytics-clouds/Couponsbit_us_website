@@ -121,7 +121,7 @@ export default function FarfetchCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(16.7k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Farfetch promo codes and discount codes for Sep 2026. Save on designer fashion, footwear and accessories, plus Access rewards perks and free shipping.
+                      Discover verified Farfetch promo codes to save 75% on the TechnoMarine Coral Legacy Watch and shop Moon Boot Icon Fleece Lace-Up Boots from $261. Enjoy 15% OFF pre-owned styles while exploring luxury clothing, footwear, bags, and designer accessories in Sept 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function FarfetchCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "15", label: "Offers" },
                     { icon: Percent, val: "600+", label: "Deals" },
                     { icon: Users, val: "3M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,21 @@ export default function FarfetchCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Farfetch – New Customer Offer", desc: "New customers can save on their first Farfetch order.", bullets: ["Sign up as a new Farfetch customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "SALE", value: "DESIGNER", title: "Farfetch – Designer Sale Picks", desc: "Save on select designer fashion, footwear and accessories.", bullets: ["Browse deals across a range of designer boutiques and brands.", "Discounts apply on select listings.", "Selection updates frequently, so check back often."] },
-                  { label: "DEAL", value: "% OFF", title: "Farfetch – Percentage Off First Order", desc: "Save a percentage on your first qualifying Farfetch order.", bullets: ["Discount applies to your first qualifying order.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Farfetch – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by region."] },
-                  { label: "REWARDS", value: "ACCESS", title: "Farfetch – Access Rewards Member Perks", desc: "Unlock member perks through the Farfetch Access rewards program.", bullets: ["Join Farfetch Access to start earning member perks.", "Enjoy benefits such as early access to select sales.", "Track your rewards progress in your Farfetch account."] },
-                  { label: "SALE", value: "CLEARANCE", title: "Farfetch – Seasonal Clearance Sale", desc: "Save on select seasonal clearance fashion items.", bullets: ["Discount applies to select seasonal clearance items.", "Stock and styles are limited and vary.", "Great for finding designer pieces at a lower price."] },
+                  { label: "SALE", value: "75% OFF", title: "Farfetch Promo Code – TechnoMarine Coral Legacy 36mm Watch | 75% OFF", desc: "Get the TechnoMarine Coral Legacy 36mm Watch for just $91, reduced from $400 — save 75% on this final-sale designer watch.", bullets: ["Shop this stylish timepiece through Farfetch and explore more designer deals available at heavily reduced prices.", "Use a promo code on Farfetch and look for a Farfetch voucher code or Farfetch discount code to unlock extra savings on eligible offers."] },
+                  { label: "SALE", value: "UP TO 70%", title: "Farfetch Promo Code – SS26 Sale | Up To 70% OFF", desc: "Explore the SS26 Sale and enjoy up to 70% OFF selected styles from Farfetch’s latest seasonal collections.", bullets: ["Discover Farfetch clothing, designer footwear and accessories with attractive seasonal discounts.", "Shop with a Farfetch sale promo code or Farfetch offer code and make the most of the latest Farfetch sale coupon offers."] },
+                  { label: "SALE", value: "70% OFF", title: "Farfetch Promo Code – Philipp Plein Logo Leather Sneakers | 70% OFF", desc: "Get the Philipp Plein logo-detail leather sneakers for just $195 with a huge 70% OFF sale discount.", bullets: ["Add premium designer footwear to your collection and discover more luxury styles across Farfetch.", "Use a Farfetch coupon promo code or Farfetch code coupon to look for additional savings on eligible designer purchases."] },
+                  { label: "SALE", value: "UP TO 70%", title: "Farfetch Designer Kidswear & Baby Essentials | Up To 70% OFF", desc: "Save up to 70% OFF selected designer kidswear and baby essentials during the Members Sale.", bullets: ["Shop Diesel tees, tanks and tracksuits, along with Lanvin infant sneakers and other stylish pieces.", "Grab this Farfetch sale offer and search for a Farfetch discount coupon or promocode for Farfetch to maximize your savings."] },
+                  { label: "SALE", value: "UP TO 60%", title: "Farfetch Women’s Clothing Sale – Up To 60% OFF", desc: "Enjoy up to 60% OFF selected women’s clothing and discover fashionable styles for every occasion.", bullets: ["Refresh your wardrobe with Farfetch clothing and explore a wide selection of designer fashion at reduced prices.", "Use a Farfetch discount code or Farfetch voucher to save more on eligible women’s fashion purchases."] },
+                  { label: "SALE", value: "50% OFF", title: "Farfetch – Maje Cropped Tweed Jacket | 50% OFF", desc: "Shop the Maje cropped tweed jacket for $280 instead of $560 and save 50% on this designer fashion pick.", bullets: ["Add this sophisticated jacket to your wardrobe and discover more premium seasonal styles on Farfetch.", "Look for a Farfetch voucher code or Farfetch sale coupon to enjoy additional savings on eligible purchases."] },
+                  { label: "DEAL", value: "$261", title: "Farfetch – Moon Boot Icon Fleece Lace-Up Boots | $261", desc: "Get the Moon Boot Icon fleece lace-up boots for $261 and add a distinctive designer style to your footwear collection.", bullets: ["Enjoy a cosy fleece design with a fashionable lace-up finish, perfect for a stylish seasonal wardrobe.", "Shop this Farfetch offer and check for a Farfetch offer code or Farfetch discount coupon before completing your purchase."] },
+                  { label: "DEAL", value: "FREE SHIP", title: "Farfetch Free Shipping Offer – Free Shipping On Orders Over $400", desc: "Enjoy Free Shipping on Farfetch orders over $400 and make your designer shopping experience even more convenient.", bullets: ["Plus, get Free Returns for 30 days on eligible purchases for added flexibility after your order.", "Look for a Farfetch free shipping code or Farfetch coupon code free shipp offer to find additional delivery savings on qualifying orders."] },
+                  { label: "SALE", value: "15% OFF", title: "Farfetch Voucher – Pre-Owned Styles | 15% OFF", desc: "Get 15% OFF the Pre-Owned Styles Collection and discover designer fashion at reduced prices.", bullets: ["Shop quality pre-owned clothing and fashion essentials while enjoying attractive savings across selected styles.", "Use a Farfetch voucher or Farfetch voucher code to explore additional savings available on eligible pre-owned purchases."] },
+                  { label: "FROM", value: "$75", title: "Farfetch Women’s Accessories – Starting From $75", desc: "Discover designer women’s accessories starting from just $75 and shop stylish pieces at attractive prices.", bullets: ["Explore a variety of accessories to complete your wardrobe, from everyday essentials to statement fashion pieces.", "Check for a Farfetch discount code or Farfetch voucher before shopping to make the most of eligible offers."] },
+                  { label: "FROM", value: "$147", title: "Farfetch Accessories – Starting From $147", desc: "Shop designer accessories starting from $147 and discover stylish pieces at competitive prices.", bullets: ["Explore hats, belts and more fashionable accessories designed to add the finishing touch to your look.", "Search for a Farfetch code coupon or Farfetch discount coupon to find extra savings on eligible accessories."] },
+                  { label: "SALE", value: "30% OFF", title: "Farfetch – Sergio Moretti Firenze Slingback Sandals | 30% OFF", desc: "Get the Sergio Moretti Firenze suede slingback sandals for $108 instead of $154 — save 30%.", bullets: ["Complete your designer wardrobe with these elegant suede sandals featuring a sophisticated slingback design.", "Use a Farfetch sale coupon or Farfetch discount code to look for additional savings on selected footwear."] },
+                  { label: "SALE", value: "25% OFF", title: "Farfetch – Palm Angels Logo Waistband Mockneck Top | 25% OFF", desc: "Shop the Palm Angels logo waistband mockneck top for $131, reduced from $185 — save 25%.", bullets: ["Explore Farfetch Palm Angels styles and add this contemporary designer top to your seasonal wardrobe.", "Check for a Farfetch sale promo code or Farfetch offer code to unlock potential savings on eligible Palm Angels purchases."] },
+                  { label: "NEW", value: "OFF-WHITE", title: "Farfetch – Off-White Designer Fashion Collection", desc: "Discover the latest Off-White designer fashion and explore statement clothing, footwear and accessories on Farfetch.", bullets: ["Shop Farfetch Off White styles and find distinctive pieces to elevate your designer wardrobe.", "Look for a Farfetch voucher, Farfetch discount code or promocode for Farfetch before placing an eligible order."] },
+                  { label: "NEW", value: "FENDI", title: "Farfetch – Fendi Baguette Collection", desc: "Explore the iconic Fendi Baguette collection and discover luxury handbags and designer accessories on Farfetch.", bullets: ["Find statement pieces from the Fendi Baguette range and shop a selection of premium designer styles.", "Check Farfetchcom for the latest Farfetch voucher code, discount offers and eligible sale promotions."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -419,6 +428,306 @@ export default function FarfetchCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Farfetch Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full min-w-[850px] border-collapse text-left" aria-label="Farfetch Offers Summary">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[14px] font-bold text-gray-600">
+      
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Promo Code – TechnoMarine Coral Legacy 36mm Watch | 75% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          75% OFF ($91)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Final-sale designer watch reduced from $400 original price
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          TechnoMarine Coral Legacy Watch
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Promo Code – SS26 Sale | Up To 70% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Up to 70% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Valid on selected seasonal styles across clothing, footwear, and accessories
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          SS26 Collection Items
+        </td>
+      </tr>
+
+  
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Promo Code – Philipp Plein Logo Leather Sneakers | 70% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          70% OFF ($195)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Limited-time sale discount applied on premium Philipp Plein footwear
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Philipp Plein Logo Leather Sneakers
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Designer Kidswear & Baby Essentials | Up To 70% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Up to 70% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Farfetch Members
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Exclusive Members Sale pricing on selected kids and baby items (Diesel, Lanvin, etc.)
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Designer Kidswear & Baby Essentials
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Women’s Clothing Sale – Up To 60% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Up to 60% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Applies to selected women's apparel and designer apparel styles
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Women's Clothing Collection
+        </td>
+      </tr>
+
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Maje Cropped Tweed Jacket | 50% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          50% OFF ($280)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Save $280 compared to the original price of $560
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Maje Cropped Tweed Jacket
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Moon Boot Icon Fleece Lace-Up Boots | $261
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $261
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Special promotional price on selected fleece lace-up footwear
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Moon Boot Icon Fleece Boots
+        </td>
+      </tr>
+
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Free Shipping Offer – Free Shipping On Orders Over $400
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Free Shipping
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Orders Over $400
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Automatically applied on qualifying totals; includes 30-day free returns
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Entire Order ($400+)
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Voucher – Pre-Owned Styles | 15% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          15% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Valid on eligible pre-owned clothing and vintage fashion styles
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Pre-Owned Styles Collection
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Women’s Accessories – Starting From $75
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $75
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Starting prices on selected women's designer fashion accessories
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Women's Designer Accessories
+        </td>
+      </tr>
+
+   
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch Accessories – Starting From $147
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $147
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Covers hats, belts, and luxury wardrobe essentials
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Farfetch Accessories Range
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Sergio Moretti Firenze Slingback Sandals | 30% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          30% OFF ($108)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Reduced from regular price of $154 on suede slingback styles
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Sergio Moretti Firenze Sandals
+        </td>
+      </tr>
+
+   
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Palm Angels Logo Waistband Mockneck Top | 25% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          25% OFF ($131)
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Reduced from $185 original price on selected designer apparel
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Palm Angels Mockneck Top
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Off-White Designer Fashion Collection
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Special Pricing
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Featured collection pricing on clothing, footwear, and accessories
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Off-White Designer Fashion
+        </td>
+      </tr>
+
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50 last:border-b-0">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Farfetch – Fendi Baguette Collection
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Special Pricing
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Check website for live promotional prices on luxury handbags and accessories
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Fendi Baguette Collection
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -670,10 +979,10 @@ export default function FarfetchCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "10% OFF FIRST ORDER", sub: "Extra 10% Off For New Customers" },
-              { heading: "DESIGNER SALE", sub: "Up To 50% Off Top Luxury Brands" },
-              { heading: "FREE SHIPPING", sub: "Complimentary Delivery On Select Orders" },
-              { heading: "STUDENT DISCOUNT", sub: "10% Student Savings Via UNiDAYS" }
+              { heading: "75% OFF", sub: "TechnoMarine Coral Legacy 36mm Watch | 75% OFF" },
+              { heading: "SS26 SALE", sub: "SS26 Sale | Up To 70% OFF" },
+              { heading: "70% OFF", sub: "Philipp Plein Logo Leather Sneakers | 70% OFF" },
+              { heading: "FREE SHIP", sub: "Free Shipping On Orders Over $400" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

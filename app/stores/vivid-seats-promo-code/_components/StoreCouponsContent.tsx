@@ -121,7 +121,7 @@ export default function VividSeatsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(10.8k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Vivid Seats promo codes and discount codes for Sep 2026. Save on concert, sports and theater tickets, plus Rewards program and last-minute deals.
+                      Discover verified Vivid Seats promo codes to get 15% OFF your first ticket purchase and save $20 on orders over $200. Students can also enjoy an extra 10% OFF through Student Beans while booking concerts, sports, theatre, and live event tickets in Sept 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function VividSeatsCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "16", label: "Offers" },
                     { icon: Percent, val: "350+", label: "Deals" },
                     { icon: Users, val: "2M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,22 @@ export default function VividSeatsCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Vivid Seats – New User Discount", desc: "New users can save on their first Vivid Seats ticket purchase.", bullets: ["Sign up as a new Vivid Seats user to unlock this offer.", "Discount applies to your first qualifying ticket purchase.", "Terms and eligible events may vary."] },
-                  { label: "SALE", value: "CONCERTS", title: "Vivid Seats – Concert Ticket Deals", desc: "Save on concert tickets across a wide range of artists and venues.", bullets: ["Browse deals across popular concert tours and venues.", "Discounts apply on select event listings.", "Selection updates frequently, so check back often."] },
-                  { label: "SALE", value: "SPORTS", title: "Vivid Seats – Sports Event Discounts", desc: "Save on tickets to select sports events and matchups.", bullets: ["Find deals across major sports leagues and matchups.", "Discounts apply on select ticket listings.", "Great for catching a game without overpaying."] },
-                  { label: "DEAL", value: "20% OFF", title: "Vivid Seats – Promo Code Savings", desc: "Apply an eligible promo code for a discount on select tickets.", bullets: ["Enter an eligible promo code at checkout.", "Discount applies to select ticket categories.", "Terms and eligible events may vary."] },
-                  { label: "DEAL", value: "REWARDS", title: "Vivid Seats – Rewards Program", desc: "Earn Vivid Seats Rewards credit toward future ticket purchases.", bullets: ["Collect rewards credit on qualifying ticket purchases.", "Redeem credit toward future ticket discounts.", "Track your rewards progress in your Vivid Seats account."] },
-                  { label: "DEAL", value: "LAST-MIN", title: "Vivid Seats – Last-Minute Ticket Deals", desc: "Find discounted last-minute tickets to select events.", bullets: ["Shop discounted pricing on select last-minute listings.", "Availability changes frequently based on events.", "Great for spontaneous plans and same-day events."] },
+                  { label: "STUDENT", value: "10% OFF", title: "Vivid Seats Promo Code – Student Tickets | 10% OFF", desc: "Students can enjoy an exclusive 10% OFF on eligible Vivid Seats tickets for concerts, sports, theatre and more.", bullets: ["Use Student Beans to unlock the student discount and save on your next ticket purchase.", "Use a promo code for Vivid Seats tickets and explore Vivid Seats discount promo code offers for additional eligible savings."] },
+                  { label: "UNDER", value: "$100", title: "Vivid Seats Promo Code – Events Under $100", desc: "Discover exciting Vivid Seats tickets for events priced under $100 and find affordable options for live entertainment.", bullets: ["Explore sports, concerts and other events with tickets across a wide range of venues and seating options.", "Look for a Vivid Seats coupon promo code to save more when purchasing eligible tickets."] },
+                  { label: "FROM", value: "$71", title: "Vivid Seats Promo Code – BYU Cougars vs Colorado State Rams | From $71", desc: "Get tickets to BYU Cougars at Colorado State Rams at Canvas Stadium in Fort Collins, with prices starting from $71.", bullets: ["The football game takes place Saturday, September 19 at 5:30 PM, with multiple seating and ticket options available.", "Grab your Vivid tickets early and check for a Vivid Seats discount promo code before completing your ticket purchase."] },
+                  { label: "DEAL", value: "$20 OFF", title: "Vivid Seats – Save $20 On Orders Over $200 Book Now On Vivid Seats ", desc: "Save $20 OFF when you spend $200 or more on eligible Vivid Seats ticket purchases.", bullets: ["Enjoy the offer across qualifying tickets and plan your next concert, sports or theatre experience for less.", "Apply this Vivid Seats offer and look for a promo code for Vivid Seats tickets to maximize your eligible savings."] },
+                  { label: "FROM", value: "$325", title: "Vivid Seats – 2026 Yahn Dawn Music Festival | From $325", desc: "Get tickets to the 2026 Yahn Dawn Music Festival 3-Day Pass starting from $325 at Meadow Creek in Buena Vista, Colorado.", bullets: ["The festival runs from September 18–20, 2026, giving music fans three days of live entertainment.", "Shop Vivid Seats concert tickets and check for a Vivid Seats coupon promo code before booking."] },
+                  { label: "FROM", value: "$5", title: "Vivid Seats – Seattle Seahawks Tickets | From $5", desc: "Catch Seattle Seahawks tickets starting from just $5 and experience the excitement of live NFL action.", bullets: ["Browse different games and seating options to find tickets that match your budget and preferred game-day experience.", "Search for a Vivid Seats discount promo code and grab your Seahawks tickets early for the best available selection."] },
+                  { label: "NEW", value: "15% OFF", title: "Vivid Seats – First Purchase Offer | 15% OFF", desc: "Get 15% OFF your first Vivid Seats ticket purchase and enjoy more live entertainment for less.", bullets: ["Shop tickets for concerts, sports, theatre and major events with transparent pricing and no surprises.", "Take advantage of this first-purchase offer and check for a promo code for Vivid Seats tickets before checkout."] },
+                  { label: "NFL", value: "SUPER BOWL", title: "Vivid Seats – Super Bowl Tickets & Major Sports Events", desc: "Explore Vivid Seats Super Bowl tickets and discover premium options for one of the biggest sporting events.", bullets: ["Browse Vivid Seats tickets for NFL, MLB and other major sporting events in a variety of seating sections.", "Look for a Vivid Seats discount promo code when shopping for high-demand sports tickets."] },
+                  { label: "MLB", value: "YANKEES", title: "Vivid Seats – Yankees Tickets & MLB Games", desc: "Find New York Yankees tickets Vivid Seats listings and explore available options for upcoming MLB games.", bullets: ["Compare Yankees tickets Vivid Seats prices, seating options and available listings before making your purchase.", "Check for a Vivid Seats coupon promo code to look for additional savings on eligible Yankees tickets."] },
+                  { label: "MLB", value: "METS", title: "Vivid Seats – New York Mets Tickets & MLB Games", desc: "Shop New York Mets tickets Vivid Seats listings and find tickets for upcoming Mets games.", bullets: ["Explore different seating options and ticket listings to experience MLB action at Citi Field.", "Use Vivid Tix to browse available tickets and check for a Vivid Seats discount promo code before checkout."] },
+                  { label: "NFL", value: "COWBOYS", title: "Vivid Seats – Dallas Cowboys Tickets & NFL Games", desc: "Find Dallas Cowboys tickets Vivid Seats listings and explore available options for upcoming NFL games.", bullets: ["Browse Cowboys tickets Vivid Seats selections across different seating sections and price ranges.", "Search for a promo code for Vivid Seats tickets to discover potential savings on eligible Cowboys tickets."] },
+                  { label: "DEAL", value: "CONCERTS", title: "Vivid Seats – Concert Tickets & Live Music", desc: "Discover Vivid Seats concert tickets for major tours, festivals and live music events.", bullets: ["Explore Vivid Seats concert listings and find tickets for your favourite artists and upcoming performances.", "Check for a Vivid Seats coupon promo code before purchasing your tickets and make the most of available offers."] },
+                  { label: "DEAL", value: "WALLEN", title: "Vivid Seats – Morgan Wallen Tickets", desc: "Find Vivid Seats Morgan Wallen tickets and explore available listings for upcoming live performances.", bullets: ["Compare ticket prices, seating options and available listings to find the right concert experience.", "Look for a Vivid Seats discount promo code and save on eligible Morgan Wallen ticket purchases."] },
+                  { label: "DEAL", value: "BTS", title: "Vivid Seats – BTS Tickets & Concert Events", desc: "Discover BTS Vivid Seats listings and explore available ticket options for fans looking to attend live performances.", bullets: ["Browse Vivid Seats concert tickets and compare available seating and pricing options.", "Check for a promo code for Vivid Seats tickets to find available savings on eligible concert purchases."] },
+                  { label: "DEAL", value: "CHRIS BROWN", title: "Vivid Seats – Chris Brown Tickets", desc: "Shop Chris Brown tickets Vivid Seats listings and explore available options for upcoming concerts and performances.", bullets: ["Find different seating choices and ticket listings to plan your next live music experience.", "Look for a Vivid Seats coupon promo code before checkout to maximize eligible ticket savings."] },
+                  { label: "MLB", value: "RED SOX", title: "Vivid Seats – Boston Red Sox Tickets", desc: "Find Vivid Seats Boston Red Sox tickets and explore available listings for upcoming MLB games.", bullets: ["Browse different ticket prices and seating options to enjoy live Red Sox baseball at Fenway Park.", "Check for a Vivid Seats discount promo code and look for additional savings on eligible sports tickets."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -418,6 +428,323 @@ export default function VividSeatsCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Vivid Seats Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border border-gray-200 bg-white shadow-sm">
+  <table className="w-full min-w-[850px] border-collapse text-left" aria-label="Vivid Seats Offers Summary">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[14px] font-bold text-gray-600">
+      
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats Promo Code – Student Tickets | 10% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          10% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Verified Students
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Must verify status via Student Beans to unlock code
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Eligible Student Tickets
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats Promo Code – Events Under $100
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Under $100
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Affordable tickets across sports, concerts, and theatre venues
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Select Live Events
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats Promo Code – BYU Cougars vs Colorado State Rams | From $71
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $71
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Valid for game on Sat, Sept 19 at Canvas Stadium, Fort Collins
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          BYU vs Colorado State Tickets
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Save $20 On Orders Over $200
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          $20 OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          Orders $200+
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Requires minimum order total of $200 on eligible bookings
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Entire Order ($200+)
+        </td>
+      </tr>
+
+ 
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – 2026 Yahn Dawn Music Festival | From $325
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $325
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          3-Day Pass for festival on Sept 18–20, 2026 at Meadow Creek, CO
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Yahn Dawn Music Festival Passes
+        </td>
+      </tr>
+
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Seattle Seahawks Tickets | From $5
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          From $5
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Starting price for select NFL game listings and seating sections
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Seattle Seahawks Game Tickets
+        </td>
+      </tr>
+
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – First Purchase Offer | 15% OFF
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          15% OFF
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          First-Time Customers
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Valid on initial ticket purchase across concerts, sports, or theatre
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          First Ticket Order
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Super Bowl Tickets & Major Sports Events
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Special Pricing
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Premium seating options for Super Bowl, NFL, MLB, and major events
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Major Sports Events & Super Bowl
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Yankees Tickets & MLB Games
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Compare prices and seating sections for upcoming MLB games
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          New York Yankees Tickets
+        </td>
+      </tr>
+
+     
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – New York Mets Tickets & MLB Games
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Browse live listings and seat choices for MLB games at Citi Field
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          New York Mets Tickets
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Dallas Cowboys Tickets & NFL Games
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Available across various price ranges and seating options
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Dallas Cowboys Tickets
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Concert Tickets & Live Music
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Varies by Event
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Covers major music tours, festivals, and live stage performances
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Concert & Festival Listings
+        </td>
+      </tr>
+
+    
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Morgan Wallen Tickets
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Compare available tour seating and live performance dates
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Morgan Wallen Tour Tickets
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – BTS Tickets & Concert Events
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Browse upcoming concert dates and live performance seating
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          BTS Concert Tickets
+        </td>
+      </tr>
+
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Chris Brown Tickets
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Check live inventory for tour seating and ticket pricing
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Chris Brown Concert Tickets
+        </td>
+      </tr>
+
+      
+      <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50 last:border-b-0">
+        <td className="max-w-[220px] p-5 align-middle font-black text-black">
+          Vivid Seats – Boston Red Sox Tickets
+        </td>
+        <td className="p-5 align-middle font-black text-[#056BFA] whitespace-nowrap">
+          Market Rates
+        </td>
+        <td className="p-5 align-middle text-gray-500 whitespace-nowrap">
+          All Users
+        </td>
+        <td className="max-w-[220px] p-5 align-middle font-medium text-gray-500">
+          Find available options for live Red Sox MLB games at Fenway Park
+        </td>
+        <td className="max-w-[180px] p-5 align-middle text-gray-500">
+          Boston Red Sox Tickets
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -697,10 +1024,10 @@ export default function VividSeatsCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "APP EXCLUSIVE DISCOUNTS", sub: "Save On Your First Order In The Mobile App" },
-              { heading: "BUY 10 GET 1 FREE", sub: "Earn Rewards Stamp Points On Ticket Purchases" },
-              { heading: "100% BUYER GUARANTEE", sub: "Valid & Authentic Tickets Delivered On Time" },
-              { heading: "TOP EVENT PROMOTIONS", sub: "Check CouponsBit For Active Coupon Offers" }
+              { heading: "10% OFF", sub: "Student Tickets | 10% OFF" },
+              { heading: "UNDER $100", sub: "Events Under $100" },
+              { heading: "FROM $71", sub: "BYU Cougars vs Colorado State Rams | From $71" },
+              { heading: "$20 OFF", sub: "Save $20 On Orders Over $200" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

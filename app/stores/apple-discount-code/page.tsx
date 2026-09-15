@@ -150,6 +150,14 @@ const appleSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/apple-discount-code#brand",
+      name: "Apple",
+      url: "https://www.apple.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Apple_Inc."],
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/apple-discount-code#breadcrumb",
       itemListElement: [
