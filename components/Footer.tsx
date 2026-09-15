@@ -21,7 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "./Navbar";
-import { LabourDayPromoPopup } from "./LabourDayPromoPopup";
+import { ScrollToTopButton } from "./ScrollToTopButton";
 
 type TranslateLanguage = { code: string; label: string };
 
@@ -332,7 +332,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <LabourDayPromoPopup />
+      <ScrollToTopButton />
     </footer>
   );
 };
