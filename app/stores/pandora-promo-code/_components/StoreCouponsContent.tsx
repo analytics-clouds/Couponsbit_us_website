@@ -50,12 +50,12 @@ const DEALS: Deal[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Aporro", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/aporro-logo_hidcto.webp", dealText: "Up To 40% OFF", href: "/stores/aporro-discount-code" },
-  { name: "Dore & Rose", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/dore-and-rose-logo_gz1o4h.webp", dealText: "Up To 30% OFF", href: "/stores/dore-and-rose-discount-code" },
-  { name: "Blue Cypress", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/blue-cypress-logo_qkfz8u.webp", dealText: "Up To 35% OFF", href: "/stores/blue-cypress-discount-code" },
-  { name: "Etsy", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/etsy-coupon-code_ttq6el.webp", dealText: "Up To 20% OFF", href: "/stores/etsy-discount-code" },
-  { name: "Macy's", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/macys-logo_wxq5jt.webp", dealText: "Up To 60% OFF", href: "/stores/macys-discount-code" },
-  { name: "JCPenney", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/jcpenney-logo_hxq9lr.webp", dealText: "Up To 50% OFF", href: "/stores/jcpenney-discount-code" },
+  { name: "Aporro", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp", dealText: "Up To 40% OFF", href: "/stores/aporro-discount-code" },
+  { name: "Dore & Rose", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp", dealText: "Up To 30% OFF", href: "/stores/dore-and-rose-promo-code" },
+  { name: "Blue Cypress", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp", dealText: "Up To 35% OFF", href: "/stores/blue-cypress-discount-code" },
+  { name: "Etsy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp", dealText: "Up To 20% OFF", href: "/stores/etsy-coupon-code" },
+  { name: "Macy's", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp", dealText: "Up To 60% OFF", href: "/stores/macys-promo-code" },
+  { name: "JCPenney", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp", dealText: "Up To 50% OFF", href: "/stores/jcpenney-discount-code" },
 ];
 
 const STORE_URL = "https://www.pandora.net";

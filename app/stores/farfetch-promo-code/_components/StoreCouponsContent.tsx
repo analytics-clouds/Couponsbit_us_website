@@ -50,12 +50,12 @@ const DEALS: Deal[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Zara", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/zara-logo_wxlqrt.webp", dealText: "Up To 50% OFF", href: "/stores/zara-discount-code" },
-  { name: "H&M", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/hm-logo_qhzxrl.webp", dealText: "Up To 60% OFF", href: "/stores/hm-discount-code" },
-  { name: "Shein", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/shein-logo_hzq8jr.webp", dealText: "Up To 90% OFF", href: "/stores/shein-discount-code" },
-  { name: "Nike", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/nike-logo_rzq7ht.webp", dealText: "Up To 50% OFF", href: "/stores/nike-discount-code" },
-  { name: "Old Navy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/old-navy-logo_wzq6ht.webp", dealText: "Up To 60% OFF", href: "/stores/old-navy-discount-code" },
-  { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/fashion-nova-logo_hzq5rt.webp", dealText: "Up To 70% OFF", href: "/stores/fashion-nova-discount-code" },
+  { name: "Zara", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp", dealText: "Up To 50% OFF", href: "/stores/zara-discount-code" },
+  { name: "H&M", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124418/hm-logo_nn4tfs.webp", dealText: "Up To 60% OFF", href: "/stores/hm-promo-code" },
+  { name: "Shein", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949026/shein-logo_nukqfb.webp", dealText: "Up To 90% OFF", href: "/stores/shein-coupon-code" },
+  { name: "Nike", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp", dealText: "Up To 50% OFF", href: "/stores/nike-discount-code" },
+  { name: "Old Navy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp", dealText: "Up To 60% OFF", href: "/stores/old-navy-promo-code" },
+  { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 70% OFF", href: "/stores/fashion-nova-discount-code" },
 ];
 
 const STORE_URL = "https://www.farfetch.com";

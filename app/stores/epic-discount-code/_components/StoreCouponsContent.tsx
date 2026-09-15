@@ -50,10 +50,10 @@ const DEALS: Deal[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/driffle-logo_hidcto.webp", dealText: "Up To 80% OFF", href: "/stores/driffle-discount-code" },
-  { name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/unipin-logo_qkfz8u.webp", dealText: "Up To 20% OFF", href: "/stores/unipin-discount-code" },
-  { name: "Kinguin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/kinguin-logo_wxq5jt.webp", dealText: "Up To 70% OFF", href: "/stores/kinguin-discount-code" },
-  { name: "GamsGo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/gamsgo-logo_hzq5rt.webp", dealText: "Up To 85% OFF", href: "/stores/gamsgo-discount-code" },
+  { name: "Driffle", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp", dealText: "Up To 80% OFF", href: "/stores/driffle-discount-code" },
+  { name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp", dealText: "Up To 20% OFF", href: "/stores/unipin-discount-code" },
+  { name: "Kinguin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494079/kinguin-coupon-code_ugjj9s.jpg", dealText: "Up To 70% OFF", href: "/stores/kinguin-discount-code" },
+  { name: "GamsGo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787739252/gamesgo-logo_xo1xw9.webp", dealText: "Up To 85% OFF", href: "/stores/gamsgo-discount-code" },
 ];
 
 const STORE_URL = "https://epic.pxf.io/c/4303217/3763127/47834?adnetwork=1&trafsrc=2";
@@ -131,7 +131,7 @@ export default function EpicCouponsContent() {
                     </a>
 
                   </div>
-                </div>
+                </div>  
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[

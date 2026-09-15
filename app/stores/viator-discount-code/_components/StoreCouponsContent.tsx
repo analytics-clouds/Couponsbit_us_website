@@ -52,11 +52,11 @@ const DEALS: Deal[] = [
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Klook", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp", dealText: "Up To 50% OFF", href: "/stores/klook-discount-code" },
-  { name: "Agoda", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/agoda-coupon-code_hqz3xk.webp", dealText: "Up To 50% OFF", href: "/stores/agoda-discount-code" },
-  { name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/expedia-coupon-code_qk6h4t.webp", dealText: "Up To 30% OFF", href: "/stores/expedia-discount-code" },
+  { name: "Agoda", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg", dealText: "Up To 50% OFF", href: "/stores/agoda-discount-code" },
+  { name: "Expedia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg", dealText: "Up To 30% OFF", href: "/stores/expedia-discount-code" },
   { name: "vegas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/vegas-logo_sifnax.webp", dealText: "Up To 35% OFF", href: "/stores/vegas-discount-code" },
   { name: "Yas Island", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp", dealText: "Up To 50% OFF", href: "/stores/yas-island-promo-code" },
-  { name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/zen-hotels-coupon-code_j2c1yq.webp", dealText: "Up To 25% OFF", href: "/stores/zen-hotels-discount-code" },
+  { name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", dealText: "Up To 25% OFF", href: "/stores/zen-hotels-discount-code" },
 ];
 
 const STORE_URL = "https://www.viator.com";

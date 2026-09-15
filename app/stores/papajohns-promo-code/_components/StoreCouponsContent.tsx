@@ -50,12 +50,12 @@ const DEALS: Deal[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Little Caesars", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/little-caesars-logo_zqfvbz.webp", dealText: "Hot-N-Ready $6.49", href: "/stores/little-caesars-promo-code" },
-  { name: "Subway", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/subway-logo_bqbdmt.webp", dealText: "Buy One Get One Free", href: "/stores/subway-promo-code" },
-  { name: "Burger King", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/burger-king-logo_h4a5wz.webp", dealText: "Up To 50% OFF", href: "/stores/burger-king-promo-code" },
-  { name: "DoorDash", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/doordash-logo_z7q2rj.webp", dealText: "Free Delivery", href: "/stores/doordash-promo-code" },
-  { name: "Uber Eats", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/uber-eats-logo_wqk1nv.webp", dealText: "40% OFF First Order", href: "/stores/uber-eats-promo-code" },
-  { name: "Kroger Digital", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/kroger-logo_hxlqvz.webp", dealText: "Up To 30% OFF", href: "/stores/kroger-digital-promo-code" },
+  { name: "Little Caesars", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp", dealText: "Hot-N-Ready $6.49", href: "/stores/little-caesars-promo-code" },
+  { name: "Subway", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295215/subway-logo_eosuh6.webp", dealText: "Buy One Get One Free", href: "/stores/subway-discount-code" },
+  { name: "Burger King", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/burger-king-logo_m4nwmx.webp", dealText: "Up To 50% OFF", href: "/stores/burger-king-promo-code" },
+  { name: "DoorDash", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp", dealText: "Free Delivery", href: "/stores/doordash-promo-code" },
+  { name: "Uber Eats", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp", dealText: "40% OFF First Order", href: "/stores/uber-eats-promo-code" },
+  { name: "Kroger Digital", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp", dealText: "Up To 30% OFF", href: "/stores/kroger-discount-code" },
 ];
 
 const STORE_URL = "https://www.papajohns.com";

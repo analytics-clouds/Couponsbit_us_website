@@ -50,10 +50,10 @@ const DEALS: Deal[] = [
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/rayneo-logo_jz1o4h.webp", dealText: "Up To 40% OFF", href: "/stores/rayneo-discount-code" },
-  { name: "Fytoo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/fytoo-logo_hidcto.webp", dealText: "Frames From $1", href: "/stores/fytoo-discount-code" },
-  { name: "Vooglam", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/vooglam-logo_qkfz8u.webp", dealText: "Eyeglasses From $65", href: "/stores/vooglam-discount-code" },
-  { name: "Sungait", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707356/sungait-logo_wxq5jt.webp", dealText: "Up To 50% OFF", href: "/stores/sungait-discount-code" },
+  { name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp", dealText: "Up To 40% OFF", href: "/stores/rayneo-discount-code" },
+  { name: "Fytoo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp", dealText: "Frames From $1", href: "/stores/fytoo-discount-code" },
+  { name: "Vooglam", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699425/vooglam-logo_qe8mis.webp", dealText: "Eyeglasses From $65", href: "/stores/vooglam-discount-code" },
+  { name: "Sungait", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/sungait-logo_tfolql.webp", dealText: "Up To 50% OFF", href: "/stores/sungait-discount-code" },
 ];
 
 const STORE_URL = "https://www.zennioptical.com";
