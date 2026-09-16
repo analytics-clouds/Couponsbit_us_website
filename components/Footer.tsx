@@ -84,12 +84,10 @@ export const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Home", href: "/" },
     { name: "Categories", href: "/categories" },
     { name: "Stores", href: "/stores" },
     { name: "Deals of the Day", href: "/deals-of-the-day" },
     { name: "Deals of the Week", href: "/deals-of-the-week" },
-    { name: "Partner With Us", href: "/partner" }
   ];
 
   const topCategories = [
@@ -111,10 +109,12 @@ export const Footer = () => {
   ];
   
   const companyLinks = [
+    { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
     { name: "Careers", href: "/careers" },
-    { name: "Blog", href: "/blog" }
+    { name: "Blog", href: "/blog" },
+    { name: "Partner With Us", href: "/partner" }
   ];
 
   const stats = [

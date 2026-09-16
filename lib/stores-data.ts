@@ -135,6 +135,7 @@ export const allStores: StoreEntry[] = [
   { name: "Zenni",           id: "zenni-discount-code",            category: "Fashion",     coupons: 15, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788951742/zenni-logo_ktqkou.webp",         discount: "Up To 75% OFF",   popular: false },
   { name: "Vivid Seats",     id: "vivid-seats-promo-code",         category: "More",        coupons: 16, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788951742/vividset-logo_pzyiuj.webp",      discount: "15% OFF First Order", popular: false },
   { name: "Viator",          id: "viator-discount-code",           category: "Travel",      coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788951742/viator-logo_tvu8qa.webp",         discount: "Up To 15% OFF",   popular: false },
+  { name: "Halara",          id: "halara-coupon-code",             category: "Fashion",     coupons: 22, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/halara_coupon_code_ujuwnv.webp", discount: "Up To 80% OFF",   popular: false },
 ];
 
 
