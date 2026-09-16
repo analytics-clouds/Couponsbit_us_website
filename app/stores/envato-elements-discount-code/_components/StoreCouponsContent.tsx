@@ -221,7 +221,7 @@ export default function EnvatoCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Envato Elements</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Envato Elements Discount Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}

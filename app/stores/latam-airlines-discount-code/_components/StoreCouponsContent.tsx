@@ -222,7 +222,7 @@ export default function LatamCouponsContent() {
                   </a>
                   <div>
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2 flex items-center gap-2">
-                      LATAM Airlines
+                      Latam Airlines Discount Code
                     </h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
