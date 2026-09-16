@@ -123,6 +123,7 @@ export default function InstacartCouponsContent() {
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Instacart promo codes and Instacart discount codes at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, enjoy up to $150 OFF your first three qualifying orders, and unlock extra savings on grocery delivery and everyday essentials.
+                    
                     </p>
                     <a
                       href={STORE_URL}
@@ -158,7 +159,7 @@ export default function InstacartCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788868873/instacart-logo_yhmlhq.webp" alt="Instacart Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789559424/39_h7vlzm.webp" alt="Instacart Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>

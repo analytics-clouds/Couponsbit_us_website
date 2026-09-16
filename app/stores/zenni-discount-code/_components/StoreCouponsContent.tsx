@@ -120,6 +120,7 @@ export default function ZenniCouponsContent() {
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Zenni Optical promo codes to save up to 75% on Blokz lenses and up to 30% on selected glasses. Enjoy 15% OFF your first order over $65, free shipping on eligible orders, and affordable prescription eyewear starting under $20 in Sept 2026.
+                    
                     </p>
                     <a
                       href={STORE_URL}
@@ -155,7 +156,7 @@ export default function ZenniCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1788951742/zenni-logo_ktqkou.webp" alt="Zenni Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789559424/37_qdc32n.webp" alt="Zenni Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
