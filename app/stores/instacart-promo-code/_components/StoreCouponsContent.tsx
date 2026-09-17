@@ -153,6 +153,7 @@ export default function InstacartCouponsContent() {
                     </div>
                   ))}
                 </div>
+                
               </div>
 
               <div className="hidden md:block flex-1">

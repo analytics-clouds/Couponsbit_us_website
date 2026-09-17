@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", dealText: "Up to 70% OFF", href: "/stores/sintra-discount-code" },
 ];
 
-const STORE_URL = "http://gamsgo.sjv.io/c/7400446/3806046/49319?subId1=776";
+const STORE_URL = "http://gamsgo.sjv.io/c/7400446/3806046/49319?subId1=1015";
 
 export default function GamsGoCouponsContent() {
   const [showToast, setShowToast] = useState(false);

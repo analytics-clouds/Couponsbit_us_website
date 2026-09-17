@@ -238,8 +238,8 @@ export default function SungaitCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "14", label: "Coupons" },
-                    { icon: Percent, val: "14", label: "Deals" },
+                    { icon: Tag, val: "11", label: "Coupons" },
+                    { icon: Percent, val: "11", label: "Deals" },
                     { icon: Users, val: "10M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
@@ -744,6 +744,47 @@ export default function SungaitCouponsContent() {
   </div>
 </div>
 
+{/* Coupon 11 */}
+<div className="w-full max-w-7xl mx-auto mb-6">
+  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+    <div className="flex flex-row">
+      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+        <div className="text-center px-1">
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Use Code</p>
+          <div className="text-[13px] sm:text-xl font-extrabold leading-none mt-2">CLOUDS15</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
+        </div>
+      </div>
+      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+          </div>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">SUNGAIT – Get 15% OFF Sitewide With Code CLOUDS15</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Use exclusive coupon code CLOUDS15 at checkout to enjoy 15% off on all SUNGAIT products sitewide.</p>
+          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+            View Details
+            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply code CLOUDS15 at checkout to save 15%</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Valid on all SUNGAIT sunglasses sitewide</li>
+              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive limited-time discount — don't miss it</li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <a href="https://sungaitcn.pxf.io/c/6434050/3933369/54145?subId1=986" target="_blank" rel="noopener noreferrer" aria-label="Get Sungait deal: SUNGAIT Get 15% OFF Sitewide With Code CLOUDS15" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -993,11 +1034,18 @@ export default function SungaitCouponsContent() {
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">Durable, premium UV protection</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">Sunglasses</td>
               </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
+              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
                 <td className="p-5 text-black font-black align-middle max-w-[220px]">Join & First Order Bonus</td>
                 <td className="p-5 text-[#056BFA] font-black align-middle">Save 5%</td>
                 <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[200px]">New customers only</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[240px]">All Products</td>
+              </tr>
+              <tr className="hover:bg-gray-50/50 transition-colors">
+                <td className="p-5 text-black font-black align-middle max-w-[220px]">Sitewide With Code CLOUDS15</td>
+                <td className="p-5 text-[#056BFA] font-black align-middle">Save 15%</td>
+                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Use code CLOUDS15 at checkout</td>
                 <td className="p-5 text-gray-500 align-middle max-w-[240px]">All Products</td>
               </tr>
             </tbody>

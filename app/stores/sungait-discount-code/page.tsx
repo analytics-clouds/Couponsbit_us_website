@@ -82,7 +82,7 @@ const sungaitSchema = {
       description:
         "Latest verified Sungait coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/sungait-discount-code",
-      numberOfItems: 10,
+      numberOfItems: 11,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -226,6 +226,21 @@ const sungaitSchema = {
             "@type": "Offer",
             name: "SUNGAIT – Join & Get 5% OFF Your First Order",
             description: "Sign up and enjoy an instant 5% discount on your first SUNGAIT purchase.",
+            url: "https://www.couponsbit.us/stores/sungait-discount-code",
+            seller: {
+              "@type": "Organization",
+              name: "Sungait",
+              url: "https://www.sungait.com",
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 11,
+          item: {
+            "@type": "Offer",
+            name: "SUNGAIT – Get 15% OFF Sitewide With Code CLOUDS15",
+            description: "Use exclusive coupon code CLOUDS15 at checkout to enjoy 15% off on all SUNGAIT products sitewide.",
             url: "https://www.couponsbit.us/stores/sungait-discount-code",
             seller: {
               "@type": "Organization",
