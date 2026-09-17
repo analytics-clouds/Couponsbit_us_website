@@ -3,10 +3,10 @@ import IsinwheelCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "iSinwheel Discount Code: Save on Electric Scooters | Sept 2026",
+    absolute: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
   },
   description:
-    "Find the latest iSinwheel discount code and coupon offers for Sept 2026. Save on electric scooters and rideables with verified iSinwheel deals.",
+    "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/isinwheel-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-    title: "iSinwheel Discount Code: Save on Electric Scooters | Sept 2026",
+    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
     description:
-      "Find the latest iSinwheel discount code and coupon offers for Sept 2026. Save on electric scooters and rideables with verified iSinwheel deals.",
+      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "iSinwheel Discount Code: Save on Electric Scooters | Sept 2026",
+    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
     description:
-      "Find the latest iSinwheel discount code and coupon offers for Sept 2026. Save on electric scooters and rideables with verified iSinwheel deals.",
+      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const isinwheelSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-      name: "iSinwheel Discount Code: Save on Electric Scooters | Sept 2026",
+      name: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
       description:
-        "Find the latest iSinwheel discount code and coupon offers for Sept 2026. Save on electric scooters and rideables with verified iSinwheel deals.",
+        "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#breadcrumb" },
@@ -74,14 +74,22 @@ const isinwheelSchema = {
       name: "iSinwheel Discount Codes & Coupon Codes",
       description: "Latest iSinwheel discount codes and offers on electric scooters.",
       url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 14,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "iSinwheel – New Customer Offer", description: "New customers can save on their first iSinwheel order.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "iSinwheel – Electric Scooter Deal", description: "Save on select electric scooter models.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "iSinwheel – Free Shipping Offer", description: "Enjoy free shipping on select qualifying orders.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "iSinwheel – Percentage Off Sitewide", description: "Save a percentage on qualifying sitewide orders.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "iSinwheel – Accessory Bundle Deal", description: "Save on select scooter accessory bundles.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "iSinwheel – Seasonal Clearance Sale", description: "Save on select seasonal clearance scooters.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT4 S Save £50", description: "Get the GT4 S for £599.99, reduced from £649.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "iSinwheel Discount Code – S-NOVA PRO Save £50", description: "The S-NOVA PRO is now £389.99, down from £439.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "iSinwheel Discount Code – H7 PRO £649.99", description: "The H7 PRO is available for £649.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT4 DUAL £829.99", description: "The GT4 DUAL is listed at £829.99, down from £1,299.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT1 DUAL £499.99", description: "Get the GT1 DUAL for £499.99, reduced from £699.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "iSinwheel Discount Code – Dremax E-Bike £1,199.99", description: "The Dremax Commuter E-Bike is now £1,199.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "iSinwheel Discount Code – M50 Electric Bike £639.99", description: "The M50 Full Suspension Electric Bike costs £639.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "iSinwheel Discount Code – EB3 Commuter Bike £498.99", description: "The EB3 Commuter Electric Bike is £498.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "iSinwheel Discount Code – Cable Lock £39.99", description: "The Cable Lock is available for £39.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "iSinwheel Discount Code – 120cm Chain Lock £23.99", description: "The 120cm Chain Lock is listed at £23.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "iSinwheel Promo Code – £20 Off £300+", description: "Spend £300 or more during the Autumn Ride Sale.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "iSinwheel Promo Code – £50 Off £500+", description: "Spend £500 or more to save £50.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "iSinwheel Promo Code – £120 Off £900+", description: "Spend £900 or more and save £120.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
+        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "iSinwheel Promo Code – Autumn Ride Sale Up to 50% Off", description: "Selected products are featured in the Autumn Ride Sale.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
       ],
     },
 

@@ -3,10 +3,10 @@ import SungaitCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+    absolute: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
   },
   description:
-    "Get the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF, enjoy 15% OFF orders over $55, and shop sunglasses from $14.99.",
+    "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/sungait-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sungait-discount-code",
-    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
     description:
-      "Get the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF, enjoy 15% OFF orders over $55, and shop sunglasses from $14.99.",
+      "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
     description:
-      "Get the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF, enjoy 15% OFF orders over $55, and shop sunglasses from $14.99.",
+      "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const sungaitSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sungait-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/sungait-discount-code",
-      name: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasses",
+      name: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
       description:
-        "Get the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF, enjoy 15% OFF orders over $55, and shop sunglasses from $14.99.",
+        "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

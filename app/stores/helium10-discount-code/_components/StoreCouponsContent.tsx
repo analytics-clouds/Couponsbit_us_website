@@ -121,7 +121,7 @@ export default function Helium10CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(11.3k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Helium 10 discount codes and coupon offers for Sep 2026. Save on Amazon, Walmart, and TikTok Shop seller software plans.
+                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months, get 10% OFF every month for life, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function Helium10CouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "7", label: "Offers" },
                     { icon: Percent, val: "150+", label: "Deals" },
                     { icon: Users, val: "2M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,13 @@ export default function Helium10CouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Helium 10 – New Customer Offer", desc: "New customers can save on their first Helium 10 plan.", bullets: ["Sign up as a new Helium 10 customer to unlock this offer.", "Discount applies to your first qualifying plan.", "Terms and eligible plans may vary."] },
-                  { label: "DEAL", value: "ANNUAL", title: "Helium 10 – Annual Plan Discount", desc: "Save on select Helium 10 annual subscription plans.", bullets: ["Discount applies to select annual plan tiers.", "Choose from a variety of plan options.", "Terms and eligible plans may vary."] },
-                  { label: "FREE", value: "TOOLS", title: "Helium 10 – Chrome Extension Free Tools", desc: "Access select free Helium 10 tools through the Chrome extension.", bullets: ["Free tools include a Chrome extension and other seller utilities.", "No subscription required for select free tools.", "Availability may vary by tool."] },
-                  { label: "DEAL", value: "DIAMOND", title: "Helium 10 – Diamond Plan Deal", desc: "Save on the Helium 10 Diamond subscription plan.", bullets: ["Discount applies to the Diamond plan tier.", "Includes access to the full Helium 10 toolkit.", "Terms and conditions may apply."] },
-                  { label: "DEAL", value: "STUDENT", title: "Helium 10 – Student & Startup Discount", desc: "Save on eligible Helium 10 plans for students and startups.", bullets: ["Discount applies to eligible student and startup sign-ups.", "Verification may be required.", "Terms and eligible plans may vary."] },
-                  { label: "SALE", value: "SEASONAL", title: "Helium 10 – Seasonal Sale Picks", desc: "Save on select Helium 10 plans during seasonal promotions.", bullets: ["Discount applies during select seasonal periods.", "Availability may vary by plan.", "Great for locking in a lower rate."] },
+                  { label: "SALE", value: "25% OFF", title: "Helium 10 Discount Code – Save 25% Today", desc: "Get 25% off Helium 10 with the current promotional offer.", bullets: ["Start using Helium 10 tools for your ecommerce business.", "Check the offer requirements before activating your plan.", "Search for a helium 10 discount before subscribing."] },
+                  { label: "PLATINUM", value: "$96.75/MO", title: "Helium 10 Discount Code – Platinum for $96.75/Month", desc: "Get 6 months of Platinum for $96.75 per month.", bullets: ["Unlock Helium 10's ecommerce research and business tools.", "The offer provides a reduced rate for the promotional period.", "Check for a coupon for helium 10 before signing up."] },
+                  { label: "SALE", value: "20% OFF", title: "Helium 10 Discount Code – 20% Off for 6 Months", desc: "Save 20% for your first 6 months on the eligible plan.", bullets: ["The offer is designed for new subscribers.", "Apply the qualifying promotion during signup.", "Look for a helium 10 coupon code 80 before completing your purchase."] },
+                  { label: "POPULAR", value: "20% OFF", title: "Helium 10 Discount Code – 20% Off the Most Popular Plan", desc: "The most popular plan is listed at $103/month.", bullets: ["Get 20% off for 6 months with the promotional offer.", "Enjoy access to Helium 10's ecommerce tools and features.", "Check for a helium 10 discount coupon before subscribing."] },
+                  { label: "SALE", value: "10% OFF", title: "Helium 10 Discount Code – 10% Off Every Month", desc: "Get 10% off every month with the qualifying promotion.", bullets: ["The offer can provide ongoing savings on your subscription.", "Check the applicable terms before activating the discount.", "Search for a helium 10 code promo before checkout."] },
+                  { label: "SALE", value: "25% OFF", title: "Helium 10 Promo Code – 25% Off Your First 6 Months", desc: "Save 25% on your first 6 months with the applicable code.", bullets: ["Unlock access to the Diamond tools at a reduced price.", "Enter the code during the eligible subscription process.", "Check the latest helium 10 discount code before signing up."] },
+                  { label: "LIFETIME", value: "10% OFF", title: "Helium 10 Promo Code – 10% Off Every Month for Life", desc: "Save 10% every month for life with the qualifying offer.", bullets: ["Designed for customers using Helium 10's powerful subscription plans.", "Apply the eligible code to unlock your ongoing discount.", "Search for a helium 10 50 off code to compare available savings."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -524,10 +525,10 @@ export default function Helium10CouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "NEW CUSTOMER", sub: "Save On Your First Helium 10 Plan" },
-              { heading: "ANNUAL PLAN", sub: "Save On Select Annual Subscriptions" },
-              { heading: "FREE TOOLS", sub: "Access Free Tools Via Chrome Extension" },
-              { heading: "DIAMOND PLAN", sub: "Save On The Diamond Subscription Tier" }
+              { heading: "SAVE 25%", sub: "Save 25% Today" },
+              { heading: "PLATINUM", sub: "6 Months Platinum For $96.75/Month" },
+              { heading: "SAVE 20%", sub: "20% Off The Most Popular Plan" },
+              { heading: "LIFETIME 10%", sub: "10% Off Every Month For Life" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

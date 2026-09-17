@@ -121,7 +121,7 @@ export default function MajorFitnessCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Major Fitness discount codes and coupon offers for Sep 2026. Save on Smith machines, power racks, and home gym equipment.
+                      Use the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026 to save $250 on the B52 PRO, get $50 OFF as a new member, enjoy the B52 Standard from $1,119.99, and claim a FREE Hoodie & Tee on orders over $2,000. Shop verified deals on home gyms, benches, dumbbells, plates, and accessories.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function MajorFitnessCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "23", label: "Offers" },
                     { icon: Percent, val: "100+", label: "Deals" },
                     { icon: Users, val: "500K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,29 @@ export default function MajorFitnessCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Major Fitness – New Customer Offer", desc: "New customers can save on their first Major Fitness order.", bullets: ["Sign up as a new Major Fitness customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "SMITH", title: "Major Fitness – Smith Machine Deal", desc: "Save on select Smith machine models.", bullets: ["Discount applies to select Smith machine models.", "Includes options for full-body workouts.", "Availability may vary by style."] },
-                  { label: "DEAL", value: "RACK", title: "Major Fitness – Power Rack Discount", desc: "Save on select power racks and cages.", bullets: ["Discount applies to select power rack and cage models.", "Choose from a variety of sizes and configurations.", "Availability may vary by collection."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Major Fitness – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "DEAL", value: "BENCH", title: "Major Fitness – Adjustable Bench Bundle", desc: "Save on select adjustable weight bench bundles.", bullets: ["Discount applies to select bench bundle packs.", "Choose from a variety of adjustable positions.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "CLEARANCE", title: "Major Fitness – Seasonal Clearance Sale", desc: "Save on select seasonal clearance equipment.", bullets: ["Discount applies to select clearance items.", "Stock and styles are limited and vary.", "Great for finding equipment at a lower price."] },
+                  { label: "SAVE", value: "$50 OFF", title: "Major Fitness Discount Code – $50 Off for New Members", desc: "New members can get $50 off their first qualifying purchase.", bullets: ["Sign up to access the new-member saving.", "Check the offer terms before completing your order.", "A useful saving for anyone building a home fitness setup."] },
+                  { label: "SAVE", value: "$250 OFF", title: "Major Fitness Discount Code – Save $250 on B52 PRO", desc: "Save $250 on the B52 PRO during the Fall Fitness Sale.", bullets: ["Build your own package and unlock additional savings.", "The promotion is designed for complete home gym setups.", "Check the latest major fitness discount code before checkout."] },
+                  { label: "ONLY", value: "$1,119.99", title: "Major Fitness Discount Code – B52 Standard for $1,119.99", desc: "The B52 Standard is available for $1,119.99.", bullets: ["The brand describes this as its lowest price ever.", "Combine it with other eligible products to build your setup.", "Check for a major fitness coupon code before ordering."] },
+                  { label: "GIFT", value: "FREE GIFT", title: "Major Fitness Discount Code – Free Hoodie & Tee on $2,000+", desc: "Spend $2,000 or more sitewide during the Fall Fitness Sale.", bullets: ["Receive a free Hoodie & Tee Gift Set.", "The offer applies to qualifying purchases.", "Check the current major fitness discount code before checkout."] },
+                  { label: "ONLY", value: "$3,999.99", title: "Major Fitness Discount Code – B17 Flying Fortress $3,999.99", desc: "The B17 Flying Fortress All-In-One is priced at $3,999.99.", bullets: ["Its previous listed price was $4,199.99.", "It is part of the Major Fitness Heritage Series.", "Look for a major fitness promo code before purchasing."] },
+                  { label: "ONLY", value: "$1,949.99", title: "Major Fitness Discount Code – Urethane Dumbbells $1,949.99", desc: "The Urethane Octagonal-Shield Dumbbells are $1,949.99.", bullets: ["The previous listed price was $2,299.99.", "They are designed for strength and home gym training.", "Check for a major fitness discount code before checkout."] },
+                  { label: "FROM", value: "$139.99", title: "Major Fitness Discount Code – Olympic Grip Plates From $139.99", desc: "Rubber Coated Olympic Cast Iron Grip Plates start at $139.99.", bullets: ["The plates are designed for Olympic-style strength training.", "Choose the appropriate weight option for your setup.", "Check for a major fitness coupon code before ordering."] },
+                  { label: "EARN", value: "$500", title: "Major Fitness Discount Code – $500 Feature Opportunity", desc: "Eligible customers can receive $500 to get featured.", bullets: ["Selected stories may appear across Major Fitness channels.", "The opportunity is part of the brand's fifth-anniversary campaign.", "Check the current promotion details before submitting."] },
+                  { label: "EARN", value: "$1,500", title: "Major Fitness Discount Code – $1,500 Filming Opportunity", desc: "Selected participants can receive $1,500 to upgrade their setup.", bullets: ["Stories may be included in the brand's fifth-anniversary film.", "The promotion offers an opportunity to share your fitness journey.", "Review the eligibility requirements before applying."] },
+                  { label: "FROM", value: "$949.99", title: "Major Fitness Discount Code – F35 Home Gym From $949.99", desc: "The F35 All-In-One Home Gym starts at $949.99.", bullets: ["It features a wall-mount folding design.", "It is designed for compact home gym spaces.", "Check for a major fitness discount code before buying."] },
+                  { label: "ONLY", value: "$379.99", title: "Major Fitness Discount Code – Lever Arms $379.99", desc: "Major Fitness Lever Arms are listed at $379.99.", bullets: ["The previous listed price was $429.99.", "They can be added to a compatible strength-training setup.", "Look for a major fitness promo code before checkout."] },
+                  { label: "ONLY", value: "$169.99", title: "Major Fitness Discount Code – Adjustable Monolift $169.99", desc: "The Adjustable Monolift Attachment is available for $169.99.", bullets: ["The previous listed price was $199.99.", "It is an attachment for compatible strength equipment.", "Check the latest major fitness discount code before ordering."] },
+                  { label: "ONLY", value: "$949.99", title: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", desc: "The Aluminum Pulley & Weight Stack Bundle costs $949.99.", bullets: ["The previous listed price was $1,079.99.", "It combines pulley equipment with a weight stack.", "Apply a major fitness promo code if an eligible offer is available."] },
+                  { label: "FROM", value: "$399.99", title: "Major Fitness Promo Code – AH64 Apache Bench From $399.99", desc: "The Heritage Series AH64 Apache Adjustable Weight Bench starts at $399.99.", bullets: ["It is part of the Major Fitness Heritage Series.", "Its adjustable design supports different training positions.", "Check for a major fitness promo code before checkout."] },
+                  { label: "ONLY", value: "$3,999.99", title: "Major Fitness Promo Code – B17 Flying Fortress $3,999.99", desc: "The Heritage Series B17 Flying Fortress is $3,999.99.", bullets: ["It was previously listed at $4,199.99.", "The all-in-one gym is designed for home strength training.", "Check the latest major fitness promo code before purchasing."] },
+                  { label: "SAVE", value: "5% OFF", title: "Major Fitness Promo Code – 5% Off for Military & First Responders", desc: "Eligible military and first responders can unlock 5% off.", bullets: ["Verification is required to access the discount.", "The offer is also presented alongside a student discount.", "Complete verification before using the major fitness promo code."] },
+                  { label: "SAVE", value: "5% OFF", title: "Major Fitness Promo Code – 5% Off for Students", desc: "Eligible students can unlock an exclusive 5% discount.", bullets: ["Verification is required before the discount becomes available.", "Check the current eligibility requirements before ordering.", "A useful option for those studying health and fitness degree programs."] },
+                  { label: "ONLY", value: "$169.99", title: "Major Fitness Discount Code – Color Change Plates $169.99", desc: "The Color Change Plates 1.25LB–10LB Set costs $169.99.", bullets: ["The previous listed price was $199.99.", "The set includes multiple weight options for training.", "Check for a major fitness coupon code before checkout."] },
+                  { label: "FROM", value: "$29.99", title: "Major Fitness Discount Code – Barbell Collars From $29.99", desc: "Major Fitness Barbell Collars start at $29.99.", bullets: ["The previous listed price was $36.99.", "They are designed for use with Olympic barbells.", "Check for a major fitness discount code before purchasing."] },
+                  { label: "ONLY", value: "$99.99", title: "Major Fitness Discount Code – Heritage J-Hooks $99.99", desc: "Heritage Series J-Hooks are available for $99.99.", bullets: ["The previous listed price was $129.99.", "They are designed as a rack accessory for strength training.", "Look for a major fitness promo code before checkout."] },
+                  { label: "ONLY", value: "$49.99", title: "Major Fitness Promo Code – Sandwich J-Hooks $49.99", desc: "Sandwich J-Hooks are listed at $49.99.", bullets: ["The previous listed price was $69.99.", "They provide an additional rack accessory for your home gym.", "Apply a major fitness promo code if eligible."] },
+                  { label: "ONLY", value: "$949.99", title: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", desc: "The Aluminum Pulley & Weight Stack Bundle is $949.99.", bullets: ["Its previous listed price was $1,079.99.", "It combines pulley equipment and a weight stack.", "Check for the latest major fitness promo code before ordering."] },
+                  { label: "SHOP", value: "ALL GEAR", title: "Major Fitness Discount Code – Fitness Equipment for Every Training Goal", desc: "Explore equipment from Major Fitness for different home training needs.", bullets: ["Options include gyms, benches, plates, dumbbells and accessories.", "People researching a fitness science degree or physical fitness degree can also find equipment relevant to strength training.", "Check the latest major fitness discount code before completing your purchase."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -528,10 +545,10 @@ export default function MajorFitnessCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "NEW CUSTOMER", sub: "Save On Your First Major Fitness Order" },
-              { heading: "SMITH MACHINE", sub: "Save On Select Smith Machine Models" },
-              { heading: "POWER RACK", sub: "Save On Select Racks & Cages" },
-              { heading: "FREE SHIPPING", sub: "On Select Qualifying Orders" }
+              { heading: "NEW MEMBERS", sub: "$50 Off Your First Qualifying Purchase" },
+              { heading: "B52 PRO", sub: "Save $250 – Fall Fitness Sale" },
+              { heading: "$2,000+ SPEND", sub: "Free Hoodie & Tee Gift Set" },
+              { heading: "B17 FLYING FORTRESS", sub: "Now $3,999.99, Was $4,199.99" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

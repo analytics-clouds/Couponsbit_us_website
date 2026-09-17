@@ -121,7 +121,7 @@ export default function IsinwheelCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified iSinwheel discount codes and coupon offers for Sep 2026. Save on electric scooters for commuting, off-road riding, and kids.
+                      Use the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026 to save up to 50% OFF during the Autumn Ride Sale, get £120 OFF orders over £900, £50 OFF orders over £500, and £20 OFF orders over £300. Shop electric scooters, e-bikes, accessories, and commuter models at verified discounted prices.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,7 +137,7 @@ export default function IsinwheelCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "14", label: "Offers" },
                     { icon: Percent, val: "80+", label: "Deals" },
                     { icon: Users, val: "300K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -198,12 +198,20 @@ export default function IsinwheelCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "iSinwheel – New Customer Offer", desc: "New customers can save on their first iSinwheel order.", bullets: ["Sign up as a new iSinwheel customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "SCOOTER", title: "iSinwheel – Electric Scooter Deal", desc: "Save on select electric scooter models.", bullets: ["Discount applies to select commuting and off-road models.", "Choose from a variety of speed and range options.", "Availability may vary by model."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "iSinwheel – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "SALE", value: "SITEWIDE", title: "iSinwheel – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "BUNDLE", title: "iSinwheel – Accessory Bundle Deal", desc: "Save on select scooter accessory bundles.", bullets: ["Discount applies to select accessory bundle packs.", "Choose from a variety of add-ons.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "CLEARANCE", title: "iSinwheel – Seasonal Clearance Sale", desc: "Save on select seasonal clearance scooters.", bullets: ["Discount applies to select clearance items.", "Stock and models are limited and vary.", "Great for finding a scooter at a lower price."] },
+                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – GT4 S Save £50", desc: "Get the GT4 S for £599.99, reduced from £649.99.", bullets: ["Save £50 with the qualifying offer.", "Features a 50-mile stated range and 12-inch off-road tyres.", "A strong option for riders comparing an isinwheel s9 pro."] },
+                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – S-NOVA PRO Save £50", desc: "The S-NOVA PRO is now £389.99, down from £439.99.", bullets: ["Save £50 on the autumn offer.", "Includes a 1000W motor and up to 38 miles of stated range.", "A practical isin wheel scooter option for urban rides."] },
+                  { label: "ONLY", value: "£649.99", title: "iSinwheel Discount Code – H7 PRO £649.99", desc: "The H7 PRO is available for £649.99.", bullets: ["It features a powerful 1200W motor.", "Comes with 16\" x 4.0\" wide pneumatic tyres and dual suspension.", "Check the latest offer on an isinwheel electric scooter before checkout."] },
+                  { label: "ONLY", value: "£829.99", title: "iSinwheel Discount Code – GT4 DUAL £829.99", desc: "The GT4 DUAL is listed at £829.99, down from £1,299.", bullets: ["It features a 2400W dual-motor setup.", "Includes 12-inch tubeless off-road tyres.", "Check for an isinwheel s9pro electric scooter deal before buying."] },
+                  { label: "ONLY", value: "£499.99", title: "iSinwheel Discount Code – GT1 DUAL £499.99", desc: "Get the GT1 DUAL for £499.99, reduced from £699.", bullets: ["It features a dual-motor off-road setup.", "Includes dual suspension and off-road tyres.", "Check the latest isinwheel s9max offers before checkout."] },
+                  { label: "ONLY", value: "£1,199.99", title: "iSinwheel Discount Code – Dremax E-Bike £1,199.99", desc: "The Dremax Commuter E-Bike is now £1,199.99.", bullets: ["It includes a 720Wh Samsung battery.", "Offers up to 93 miles of stated range.", "Check for savings when shopping for an isinwheel e-bike."] },
+                  { label: "ONLY", value: "£639.99", title: "iSinwheel Discount Code – M50 Electric Bike £639.99", desc: "The M50 Full Suspension Electric Bike costs £639.99.", bullets: ["Its previous listed price was £799.00.", "Features a 27.5\" full-suspension setup.", "Check for an isinwheel discount code before ordering."] },
+                  { label: "ONLY", value: "£498.99", title: "iSinwheel Discount Code – EB3 Commuter Bike £498.99", desc: "The EB3 Commuter Electric Bike is £498.99.", bullets: ["It was previously listed at £709.99.", "Designed for practical everyday commuting.", "Look for an isinwheel discount code before checkout."] },
+                  { label: "ONLY", value: "£39.99", title: "iSinwheel Discount Code – Cable Lock £39.99", desc: "The Cable Lock is available for £39.99.", bullets: ["Designed for electric scooters and bicycles.", "A useful accessory for everyday riders.", "Check for an isinwheel scooter charger or accessory offer when shopping."] },
+                  { label: "ONLY", value: "£23.99", title: "iSinwheel Discount Code – 120cm Chain Lock £23.99", desc: "The 120cm Chain Lock is listed at £23.99.", bullets: ["Compatible with e-bikes and scooters.", "Designed as an additional security accessory.", "Check the latest isinwheel skateboard and accessory deals."] },
+                  { label: "SAVE", value: "£20 OFF", title: "iSinwheel Promo Code – £20 Off £300+", desc: "Spend £300 or more during the Autumn Ride Sale.", bullets: ["Save £20 on qualifying purchases.", "Apply the available iSinwheel promo code at checkout.", "Useful for shoppers considering an isinwheel s8 electric scooter."] },
+                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Promo Code – £50 Off £500+", desc: "Spend £500 or more to save £50.", bullets: ["The offer is part of the Autumn Ride Sale.", "Check the available iSinwheel promo code before payment.", "Compare models such as the isinwheel i11 electric scooter."] },
+                  { label: "SAVE", value: "£120 OFF", title: "iSinwheel Promo Code – £120 Off £900+", desc: "Spend £900 or more and save £120.", bullets: ["Available as part of the Autumn Ride Sale.", "Apply an iSinwheel promo code where applicable.", "Consider options such as the isinwheel i9 electric scooter or isinwheel i9 pro e scooter."] },
+                  { label: "SALE", value: "UP TO 50%", title: "iSinwheel Promo Code – Autumn Ride Sale Up to 50% Off", desc: "Selected products are featured in the Autumn Ride Sale.", bullets: ["The promotion advertises savings of up to 50% off.", "Check for an iSinwheel promo code before checkout.", "Popular searches include isinwheel v8 electric skateboard, isinwheel v8, isinwheel skateboard, isinwheel charger, isinwheel x1, isinwheel x1 review, isinwheel s9, isinwheel s9max electric scooter and isinwheel mini electric scooter."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -528,10 +536,10 @@ export default function IsinwheelCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "NEW CUSTOMER", sub: "Save On Your First iSinwheel Order" },
-              { heading: "SCOOTER DEAL", sub: "Save On Select Electric Scooter Models" },
-              { heading: "FREE SHIPPING", sub: "On Select Qualifying Orders" },
-              { heading: "SEASONAL CLEARANCE", sub: "Save On Select Clearance Scooters" }
+              { heading: "GT4 S", sub: "Save £50 – Now £599.99" },
+              { heading: "H7 PRO", sub: "1200W Motor – £649.99" },
+              { heading: "AUTUMN SALE", sub: "£20-£120 Off £300+ Spend" },
+              { heading: "UP TO 50%", sub: "Autumn Ride Sale Selected Products" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

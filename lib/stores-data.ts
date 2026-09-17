@@ -136,6 +136,9 @@ export const allStores: StoreEntry[] = [
   { name: "Vivid Seats",     id: "vivid-seats-promo-code",         category: "More",        coupons: 16, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788951742/vividset-logo_pzyiuj.webp",      discount: "15% OFF First Order", popular: false },
   { name: "Viator",          id: "viator-discount-code",           category: "Travel",      coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788951742/viator-logo_tvu8qa.webp",         discount: "Up To 15% OFF",   popular: false },
   { name: "Halara",          id: "halara-coupon-code",             category: "Fashion",     coupons: 22, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/halara_coupon_code_ujuwnv.webp", discount: "Up To 80% OFF",   popular: false },
+  { name: "Helium 10",       id: "helium10-discount-code",         category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/helium_10_logo_gt6opp.webp",     discount: "Up To 25% OFF",   popular: false },
+  { name: "iSinwheel",       id: "isinwheel-discount-code",        category: "Electronics", coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp",    discount: "Up To 50% OFF",   popular: false },
+  { name: "Major Fitness",   id: "major-fitness-discount-code",    category: "More",        coupons: 23, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/major-fitness_aum53e.webp",     discount: "Save Up To $250", popular: false },
 ];
 
 

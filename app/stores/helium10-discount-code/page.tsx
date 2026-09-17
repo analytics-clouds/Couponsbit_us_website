@@ -3,10 +3,10 @@ import Helium10CouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Helium 10 Discount Code: Save on Amazon Seller Tools | Sept 2026",
+    absolute: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
   },
   description:
-    "Find the latest Helium 10 discount code and coupon offers for Sept 2026. Save on Amazon, Walmart, and TikTok Shop seller tools with verified Helium 10 deals.",
+    "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/helium10-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/helium10-discount-code",
-    title: "Helium 10 Discount Code: Save on Amazon Seller Tools | Sept 2026",
+    title: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
     description:
-      "Find the latest Helium 10 discount code and coupon offers for Sept 2026. Save on Amazon, Walmart, and TikTok Shop seller tools with verified Helium 10 deals.",
+      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Helium 10 Discount Code: Save on Amazon Seller Tools | Sept 2026",
+    title: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
     description:
-      "Find the latest Helium 10 discount code and coupon offers for Sept 2026. Save on Amazon, Walmart, and TikTok Shop seller tools with verified Helium 10 deals.",
+      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/helium_10_logo_gt6opp.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const helium10Schema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/helium10-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/helium10-discount-code",
-      name: "Helium 10 Discount Code: Save on Amazon Seller Tools | Sept 2026",
+      name: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
       description:
-        "Find the latest Helium 10 discount code and coupon offers for Sept 2026. Save on Amazon, Walmart, and TikTok Shop seller tools with verified Helium 10 deals.",
+        "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/helium10-discount-code#breadcrumb" },
@@ -74,14 +74,15 @@ const helium10Schema = {
       name: "Helium 10 Discount Codes & Coupon Codes",
       description: "Latest Helium 10 discount codes and offers on Amazon seller software.",
       url: "https://www.couponsbit.us/stores/helium10-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 7,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Helium 10 – New Customer Offer", description: "New customers can save on their first Helium 10 plan.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Helium 10 – Annual Plan Discount", description: "Save on select Helium 10 annual subscription plans.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Helium 10 – Chrome Extension Free Tools", description: "Access select free Helium 10 tools through the Chrome extension.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Helium 10 – Diamond Plan Deal", description: "Save on the Helium 10 Diamond subscription plan.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Helium 10 – Student & Startup Discount", description: "Save on eligible Helium 10 plans for students and startups.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Helium 10 – Seasonal Sale Picks", description: "Save on select Helium 10 plans during seasonal promotions.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Helium 10 Discount Code – Save 25% Today", description: "Get 25% off Helium 10 with the current promotional offer.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Helium 10 Discount Code – Platinum for $96.75/Month", description: "Get 6 months of Platinum for $96.75 per month.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Helium 10 Discount Code – 20% Off for 6 Months", description: "Save 20% for your first 6 months on the eligible plan.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Helium 10 Discount Code – 20% Off the Most Popular Plan", description: "The most popular plan is listed at $103/month.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Helium 10 Discount Code – 10% Off Every Month", description: "Get 10% off every month with the qualifying promotion.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Helium 10 Promo Code – 25% Off Your First 6 Months", description: "Save 25% on your first 6 months with the applicable code.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Helium 10 Promo Code – 10% Off Every Month for Life", description: "Save 10% every month for life with the qualifying offer.", url: "https://www.couponsbit.us/stores/helium10-discount-code", seller: { "@type": "Organization", name: "Helium 10", url: "https://www.helium10.com" } } },
       ],
     },
 

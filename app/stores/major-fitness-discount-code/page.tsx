@@ -3,10 +3,10 @@ import MajorFitnessCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Major Fitness Discount Code: Save on Home Gym Equipment | Sept 2026",
+    absolute: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
   },
   description:
-    "Find the latest Major Fitness discount code and coupon offers for Sept 2026. Save on Smith machines, power racks, and home gym equipment with verified Major Fitness deals.",
+    "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/major-fitness-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/major-fitness-discount-code",
-    title: "Major Fitness Discount Code: Save on Home Gym Equipment | Sept 2026",
+    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
     description:
-      "Find the latest Major Fitness discount code and coupon offers for Sept 2026. Save on Smith machines, power racks, and home gym equipment with verified Major Fitness deals.",
+      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Major Fitness Discount Code: Save on Home Gym Equipment | Sept 2026",
+    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
     description:
-      "Find the latest Major Fitness discount code and coupon offers for Sept 2026. Save on Smith machines, power racks, and home gym equipment with verified Major Fitness deals.",
+      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/major-fitness_aum53e.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const majorFitnessSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/major-fitness-discount-code",
-      name: "Major Fitness Discount Code: Save on Home Gym Equipment | Sept 2026",
+      name: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
       description:
-        "Find the latest Major Fitness discount code and coupon offers for Sept 2026. Save on Smith machines, power racks, and home gym equipment with verified Major Fitness deals.",
+        "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
       inLanguage: "en-US",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#breadcrumb" },
@@ -74,14 +74,31 @@ const majorFitnessSchema = {
       name: "Major Fitness Discount Codes & Coupon Codes",
       description: "Latest Major Fitness discount codes and offers on home gym equipment.",
       url: "https://www.couponsbit.us/stores/major-fitness-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 23,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Major Fitness – New Customer Offer", description: "New customers can save on their first Major Fitness order.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Major Fitness – Smith Machine Deal", description: "Save on select Smith machine models.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Major Fitness – Power Rack Discount", description: "Save on select power racks and cages.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Major Fitness – Free Shipping Offer", description: "Enjoy free shipping on select qualifying orders.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Major Fitness – Adjustable Bench Bundle", description: "Save on select adjustable weight bench bundles.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Major Fitness – Seasonal Clearance Sale", description: "Save on select seasonal clearance equipment.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Major Fitness Discount Code – $50 Off for New Members", description: "New members can get $50 off their first qualifying purchase.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Major Fitness Discount Code – Save $250 on B52 PRO", description: "Save $250 on the B52 PRO during the Fall Fitness Sale.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Major Fitness Discount Code – B52 Standard for $1,119.99", description: "The B52 Standard is available for $1,119.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Major Fitness Discount Code – Free Hoodie & Tee on $2,000+", description: "Spend $2,000 or more sitewide during the Fall Fitness Sale.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Major Fitness Discount Code – B17 Flying Fortress $3,999.99", description: "The B17 Flying Fortress All-In-One is priced at $3,999.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Major Fitness Discount Code – Urethane Dumbbells $1,949.99", description: "The Urethane Octagonal-Shield Dumbbells are $1,949.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Major Fitness Discount Code – Olympic Grip Plates From $139.99", description: "Rubber Coated Olympic Cast Iron Grip Plates start at $139.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Major Fitness Discount Code – $500 Feature Opportunity", description: "Eligible customers can receive $500 to get featured.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Major Fitness Discount Code – $1,500 Filming Opportunity", description: "Selected participants can receive $1,500 to upgrade their setup.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Major Fitness Discount Code – F35 Home Gym From $949.99", description: "The F35 All-In-One Home Gym starts at $949.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Major Fitness Discount Code – Lever Arms $379.99", description: "Major Fitness Lever Arms are listed at $379.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "Major Fitness Discount Code – Adjustable Monolift $169.99", description: "The Adjustable Monolift Attachment is available for $169.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", description: "The Aluminum Pulley & Weight Stack Bundle costs $949.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "Major Fitness Promo Code – AH64 Apache Bench From $399.99", description: "The Heritage Series AH64 Apache Adjustable Weight Bench starts at $399.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "Major Fitness Promo Code – B17 Flying Fortress $3,999.99", description: "The Heritage Series B17 Flying Fortress is $3,999.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 16, item: { "@type": "Offer", name: "Major Fitness Promo Code – 5% Off for Military & First Responders", description: "Eligible military and first responders can unlock 5% off.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 17, item: { "@type": "Offer", name: "Major Fitness Promo Code – 5% Off for Students", description: "Eligible students can unlock an exclusive 5% discount.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 18, item: { "@type": "Offer", name: "Major Fitness Discount Code – Color Change Plates $169.99", description: "The Color Change Plates 1.25LB–10LB Set costs $169.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 19, item: { "@type": "Offer", name: "Major Fitness Discount Code – Barbell Collars From $29.99", description: "Major Fitness Barbell Collars start at $29.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 20, item: { "@type": "Offer", name: "Major Fitness Discount Code – Heritage J-Hooks $99.99", description: "Heritage Series J-Hooks are available for $99.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 21, item: { "@type": "Offer", name: "Major Fitness Promo Code – Sandwich J-Hooks $49.99", description: "Sandwich J-Hooks are listed at $49.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 22, item: { "@type": "Offer", name: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", description: "The Aluminum Pulley & Weight Stack Bundle is $949.99.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
+        { "@type": "ListItem", position: 23, item: { "@type": "Offer", name: "Major Fitness Discount Code – Fitness Equipment for Every Training Goal", description: "Explore equipment from Major Fitness for different home training needs.", url: "https://www.couponsbit.us/stores/major-fitness-discount-code", seller: { "@type": "Organization", name: "Major Fitness", url: "https://www.majorfitness.com" } } },
       ],
     },
 
