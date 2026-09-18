@@ -17,9 +17,9 @@ import {
   CheckCircle,
   LayoutGrid,
   Search,
-  Zap,
+  Sparkles,
   Gift,
-  ShoppingBag,
+  Droplet,
   Truck,
 } from "lucide-react";
 import Image from "next/image";
@@ -43,24 +43,24 @@ interface StoreItem {
 
 const DEALS: Deal[] = [
   { id: "d1", label: "NEW", heading: "New Customer Offer", sub: "Latest Deals" },
-  { id: "d2", label: "DEAL", heading: "Electric Scooter Deal", sub: "Featured Picks" },
+  { id: "d2", label: "DEAL", heading: "Beauty Insider Rewards Deal", sub: "Featured Picks" },
   { id: "d3", label: "DEAL", heading: "Free Shipping Offer", sub: "Featured Picks" },
   { id: "d4", label: "SALE", heading: "Percentage Off Sitewide", sub: "Featured Picks" },
-  { id: "d5", label: "DEAL", heading: "Accessory Bundle Deal", sub: "Featured Picks" },
+  { id: "d5", label: "DEAL", heading: "Skincare Bundle Deal", sub: "Featured Picks" },
 ];
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Reolink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp", dealText: "Up to 50% OFF", href: "/stores/reolink-discount-code" },
-  { name: "Obsbot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg", dealText: "From $75", href: "/stores/obsbot-discount-code" },
-  { name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg", dealText: "Up to 35% OFF", href: "/stores/beelink-discount-code" },
-  { name: "RingConn", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp", dealText: "Starting From $199", href: "/stores/ringconn-discount-code" },
-  { name: "SignalRing", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/singnalring_i9epcf.jpg", dealText: "Starting At $399", href: "/stores/signalring-discount-code" },
-  { name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", dealText: "Up to 69% OFF", href: "/stores/hp-discount-code" },
+  { name: "Macy's", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp", dealText: "Up To 75% OFF", href: "/stores/macys-promo-code" },
+  { name: "JCPenney", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp", dealText: "Up To 50% OFF", href: "/stores/jcpenney-discount-code" },
+  { name: "Aporro", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp", dealText: "Save Up To 45% OFF", href: "/stores/aporro-discount-code" },
+  { name: "Blue Cypress", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp", dealText: "20% OFF First Order", href: "/stores/blue-cypress-discount-code" },
+  { name: "Dore & Rose", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp", dealText: "Up To 65% OFF", href: "/stores/dore-and-rose-promo-code" },
+  { name: "Old Navy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp", dealText: "Up To 50% OFF", href: "/stores/old-navy-promo-code" },
 ];
 
-const STORE_URL = "https://isinwheel.pxf.io/c/4303217/1289264/15800?subId1=1015";
+const STORE_URL = "https://www.sephora.com";
 
-export default function IsinwheelCouponsContent() {
+export default function SephoraCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
@@ -94,7 +94,7 @@ export default function IsinwheelCouponsContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">iSinwheel</span>
+              <span className="text-black font-extrabold">Sephora</span>
             </nav>
           </div>
         </div>
@@ -107,21 +107,21 @@ export default function IsinwheelCouponsContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp" alt="iSinwheel" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp" alt="Sephora" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">iSinwheel Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Sephora Promo Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-40" />
                       </div>
-                      <span className="text-black font-black text-sm">4.4</span>
-                      <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
+                      <span className="text-black font-black text-sm">4.6</span>
+                      <span className="text-gray-600 font-bold text-sm">(21.4k Ratings)</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026 to save up to 50% OFF during the Autumn Ride Sale, get £120 OFF orders over £900, £50 OFF orders over £500, and £20 OFF orders over £300. Shop electric scooters, e-bikes, accessories, and commuter models at verified discounted prices.
+                      Discover verified Sephora promo codes and coupon offers for Sep 2026. Save on makeup, skincare, and fragrance from top beauty brands.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,9 +137,9 @@ export default function IsinwheelCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "14", label: "Offers" },
-                    { icon: Percent, val: "80+", label: "Deals" },
-                    { icon: Users, val: "300K+", label: "Shoppers" },
+                    { icon: Tag, val: "18", label: "Offers" },
+                    { icon: Percent, val: "150+", label: "Deals" },
+                    { icon: Users, val: "6M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function IsinwheelCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789732193/47_arp1qd.webp" alt="iSinwheel Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp" alt="Sephora Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -194,24 +194,28 @@ export default function IsinwheelCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">iSinwheel Discount Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Sephora Promo Codes & Offers</h2>
                 </div>
 
                 {[
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – GT4 S Save £50", desc: "Get the GT4 S for £599.99, reduced from £649.99.", bullets: ["Save £50 with the qualifying offer.", "Features a 50-mile stated range and 12-inch off-road tyres.", "A strong option for riders comparing an isinwheel s9 pro."] },
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – S-NOVA PRO Save £50", desc: "The S-NOVA PRO is now £389.99, down from £439.99.", bullets: ["Save £50 on the autumn offer.", "Includes a 1000W motor and up to 38 miles of stated range.", "A practical isin wheel scooter option for urban rides."] },
-                  { label: "ONLY", value: "£649.99", title: "iSinwheel Discount Code – H7 PRO £649.99", desc: "The H7 PRO is available for £649.99.", bullets: ["It features a powerful 1200W motor.", "Comes with 16\" x 4.0\" wide pneumatic tyres and dual suspension.", "Check the latest offer on an isinwheel electric scooter before checkout."] },
-                  { label: "ONLY", value: "£829.99", title: "iSinwheel Discount Code – GT4 DUAL £829.99", desc: "The GT4 DUAL is listed at £829.99, down from £1,299.", bullets: ["It features a 2400W dual-motor setup.", "Includes 12-inch tubeless off-road tyres.", "Check for an isinwheel s9pro electric scooter deal before buying."] },
-                  { label: "ONLY", value: "£499.99", title: "iSinwheel Discount Code – GT1 DUAL £499.99", desc: "Get the GT1 DUAL for £499.99, reduced from £699.", bullets: ["It features a dual-motor off-road setup.", "Includes dual suspension and off-road tyres.", "Check the latest isinwheel s9max offers before checkout."] },
-                  { label: "ONLY", value: "£1,199.99", title: "iSinwheel Discount Code – Dremax E-Bike £1,199.99", desc: "The Dremax Commuter E-Bike is now £1,199.99.", bullets: ["It includes a 720Wh Samsung battery.", "Offers up to 93 miles of stated range.", "Check for savings when shopping for an isinwheel e-bike."] },
-                  { label: "ONLY", value: "£639.99", title: "iSinwheel Discount Code – M50 Electric Bike £639.99", desc: "The M50 Full Suspension Electric Bike costs £639.99.", bullets: ["Its previous listed price was £799.00.", "Features a 27.5\" full-suspension setup.", "Check for an isinwheel discount code before ordering."] },
-                  { label: "ONLY", value: "£498.99", title: "iSinwheel Discount Code – EB3 Commuter Bike £498.99", desc: "The EB3 Commuter Electric Bike is £498.99.", bullets: ["It was previously listed at £709.99.", "Designed for practical everyday commuting.", "Look for an isinwheel discount code before checkout."] },
-                  { label: "ONLY", value: "£39.99", title: "iSinwheel Discount Code – Cable Lock £39.99", desc: "The Cable Lock is available for £39.99.", bullets: ["Designed for electric scooters and bicycles.", "A useful accessory for everyday riders.", "Check for an isinwheel scooter charger or accessory offer when shopping."] },
-                  { label: "ONLY", value: "£23.99", title: "iSinwheel Discount Code – 120cm Chain Lock £23.99", desc: "The 120cm Chain Lock is listed at £23.99.", bullets: ["Compatible with e-bikes and scooters.", "Designed as an additional security accessory.", "Check the latest isinwheel skateboard and accessory deals."] },
-                  { label: "SAVE", value: "£20 OFF", title: "iSinwheel Promo Code – £20 Off £300+", desc: "Spend £300 or more during the Autumn Ride Sale.", bullets: ["Save £20 on qualifying purchases.", "Apply the available iSinwheel promo code at checkout.", "Useful for shoppers considering an isinwheel s8 electric scooter."] },
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Promo Code – £50 Off £500+", desc: "Spend £500 or more to save £50.", bullets: ["The offer is part of the Autumn Ride Sale.", "Check the available iSinwheel promo code before payment.", "Compare models such as the isinwheel i11 electric scooter."] },
-                  { label: "SAVE", value: "£120 OFF", title: "iSinwheel Promo Code – £120 Off £900+", desc: "Spend £900 or more and save £120.", bullets: ["Available as part of the Autumn Ride Sale.", "Apply an iSinwheel promo code where applicable.", "Consider options such as the isinwheel i9 electric scooter or isinwheel i9 pro e scooter."] },
-                  { label: "SALE", value: "UP TO 50%", title: "iSinwheel Promo Code – Autumn Ride Sale Up to 50% Off", desc: "Selected products are featured in the Autumn Ride Sale.", bullets: ["The promotion advertises savings of up to 50% off.", "Check for an iSinwheel promo code before checkout.", "Popular searches include isinwheel v8 electric skateboard, isinwheel v8, isinwheel skateboard, isinwheel charger, isinwheel x1, isinwheel x1 review, isinwheel s9, isinwheel s9max electric scooter and isinwheel mini electric scooter."] },
+                  { label: "SALE", value: "UP TO 50%", title: "Sephora Promo Code – Skincare Sale | Up To 50% OFF", desc: "Save up to 50% on selected Sephora skincare and skin care products during the latest beauty offers.", bullets: ["Explore cleansers, serums, moisturizers and other Sephora skincare favourites from popular brands.", "Shop the Sephora sale online and check for an eligible Sephora promo code or Sephora coupons before checkout."] },
+                  { label: "SALE", value: "UP TO 50%", title: "Sephora Promo Code – Beauty Products | Up To 50% OFF", desc: "Enjoy up to 50% OFF on selected beauty products across makeup, skincare, haircare and fragrance.", bullets: ["Discover Sephora makeup, Sephora perfume, Sephora foundation and other beauty essentials for your routine.", "Browse the latest Sephora sale and use an eligible Sephora promo code to unlock available savings."] },
+                  { label: "SALE", value: "UP TO 30%", title: "Sephora Promo Code – Value Sets | Up To 30% OFF", desc: "Save up to 30% on selected beauty value sets featuring popular skincare, makeup and personal-care picks.", bullets: ["Explore Sephora gift sets that make convenient choices for birthdays, celebrations and everyday gifting.", "Check for a Sephora promo code or Sephora voucher code when shopping eligible sets online."] },
+                  { label: "SALE", value: "20% OFF", title: "Sephora Promo Code – Beauty Essentials | 20% OFF", desc: "Get 20% OFF selected beauty essentials from Sephora's range of makeup, skincare and fragrance products.", bullets: ["Stock up on everyday favourites including Sephora lip gloss, lip balm, foundation and other makeup essentials.", "Shop Sephora online and check available Sephora coupons or a Sephora promo code for qualifying purchases."] },
+                  { label: "SALE", value: "UP TO 50%", title: "Sephora Promo Code – Haircare Collection | Up To 50% OFF", desc: "Save up to 50% on selected haircare products available through Sephora.", bullets: ["Discover shampoos, conditioners, treatments and styling products for different haircare routines.", "Explore the Sephora sale and check for an eligible Sephora promo code before placing your order."] },
+                  { label: "SALE", value: "5% OFF", title: "Sephora – Retractable Rouge Gel Lip Liner | 5% OFF", desc: "Save 5% on the Retractable Rouge Gel Lip Liner and add a defined finish to your makeup routine.", bullets: ["Pair it with your favourite Sephora lip gloss or lip balm for a complete lip look.", "Check Sephora coupons and available promo code offers for additional eligible savings."] },
+                  { label: "FROM", value: "$10", title: "Sephora – Gift Cards | Starting At $10", desc: "Shop Sephora gift cards starting from just $10 for convenient beauty gifting.", bullets: ["Give recipients the freedom to choose Sephora makeup, skincare, fragrance, perfume and more.", "Choose a Sephora eGift card or Sephora online gift card for an easy gifting option."] },
+                  { label: "FROM", value: "$15.80", title: "Sephora – Best Sellers | Starting At $15.80", desc: "Discover popular Sephora best sellers starting from $15.80.", bullets: ["Explore customer favourites across Sephora makeup, skincare, fragrance, haircare and beauty accessories.", "Shop online and check for a Sephora promo code or Sephora coupons on eligible products."] },
+                  { label: "FROM", value: "$25", title: "Sephora – E-Gift Cards | Starting At $25", desc: "Get Sephora e-gift cards starting at $25 for a simple and flexible gifting option.", bullets: ["Send a Sephora online gift card to friends or family so they can choose their favourite beauty products.", "Use the gift card toward eligible Sephora makeup, Sephora skincare, fragrance and other products."] },
+                  { label: "ONLY", value: "$25", title: "Sephora – Watermelon Glow Niacinamide Blush | $25", desc: "Get the Watermelon Glow Niacinamide Dewy Flush Brightening Serum Blush for $25.", bullets: ["Add a fresh, dewy finish to your makeup look with this multifunctional beauty pick.", "Explore Sephora makeup and check for an eligible Sephora promo code or Sephora coupons when available."] },
+                  { label: "SALE", value: "50% OFF", title: "Sephora – Colorful Blush | 50% OFF", desc: "Pick up Sephora Collection Colorful Blush for $7, reduced from $14, and save 50%.", bullets: ["Build your preferred colour intensity with a highly rated blush designed for a customizable finish.", "Shop the Sephora sale and check for a Sephora promo code to find additional eligible savings."] },
+                  { label: "PERK", value: "FREE SHIP", title: "Sephora Beauty Insider – Free Shipping Offer", desc: "Sephora Beauty Insider members can enjoy free shipping benefits on eligible orders.", bullets: ["Shop favourites including Sephora perfume, Sephora fragrance, makeup, skincare and gift sets.", "Sign in to your Sephora Beauty Insider account and check the applicable shipping terms before checkout."] },
+                  { label: "SALE", value: "UP TO 50%", title: "Sephora – Beauty Sale | Up To 50% OFF", desc: "Save up to 50% on selected beauty products during Sephora's latest promotional offers.", bullets: ["Find makeup, fragrance, skincare and haircare picks from Sephora and leading beauty brands.", "Explore Sephora coupons and check for an available Sephora promo code before ordering."] },
+                  { label: "SHOP", value: "MAKEUP", title: "Sephora – Makeup Collection", desc: "Discover a wide range of Sephora makeup for creating everyday and special-occasion looks.", bullets: ["Shop foundations, lip products, blushes and trending picks including Makeup by Mario and Wonder Skin Lip Stain.", "Browse the Sephora sale and check for eligible promo code savings on qualifying products."] },
+                  { label: "SHOP", value: "FRAGRANCE", title: "Sephora – Fragrance Collection", desc: "Explore Sephora's fragrance selection featuring perfumes and colognes for different preferences.", bullets: ["Discover Sephora perfume, Sephora fragrance and Sephora cologne options from popular beauty brands.", "Check for an available Sephora promo code or Sephora voucher code before purchasing eligible fragrances."] },
+                  { label: "SHOP", value: "GIFT SETS", title: "Sephora – Gift Sets & Birthday Gifting", desc: "Explore Sephora gift sets designed for birthdays, celebrations and thoughtful beauty gifting.", bullets: ["Find skincare, makeup, fragrance and self-care bundles suitable for different beauty routines.", "Check Sephora coupons and available promo code offers when shopping eligible gift sets."] },
+                  { label: "SHOP", value: "AT KOHL'S", title: "Sephora – Kohl's Beauty Collection", desc: "Discover selected beauty products available through Kohl's Sephora locations and the Sephora at Kohl's experience.", bullets: ["Shop makeup, skincare, fragrance and other beauty essentials from participating collections.", "Check applicable Sephora promo code and Kohl's Sephora offer terms before checkout."] },
+                  { label: "SHOP", value: "LIP PRODUCTS", title: "Sephora – Lip Products", desc: "Shop a variety of lip products including Sephora lip gloss, lip balm, liners and colour cosmetics.", bullets: ["Discover everyday shades and statement colours to complement different makeup looks.", "Browse Sephora makeup offers and check for an eligible promo code before ordering."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -245,7 +249,7 @@ export default function IsinwheelCouponsContent() {
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop iSinwheel: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Sephora: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -276,18 +280,18 @@ export default function IsinwheelCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">What Is iSinwheel?</h3>
+                  <h3 className="text-black font-black text-lg mb-6">What Is Sephora?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    iSinwheel is an electric scooter brand offering models designed for city commuting, off-road riding, and younger riders.
+                    Sephora is a beauty retailer offering makeup, skincare, haircare, and fragrance from a wide range of established and emerging brands.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand's scooters are engineered for smooth rides, long battery life, and stylish designs, covering both lightweight commuter models and higher-performance off-road options.
+                    The retailer's Beauty Insider loyalty program offers points, rewards, and member-exclusive offers based on your membership tier.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    iSinwheel is popular with shoppers looking for an affordable, US-supported alternative for personal electric transportation.
+                    Sephora is popular with shoppers looking for a wide selection of beauty products in one place, from drugstore staples to prestige brands.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Products are covered by the iSinwheel Limited Warranty with US-based support and free shipping to the contiguous US.
+                    The retailer also offers in-store services such as makeovers and skincare consultations at select locations.
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -298,11 +302,11 @@ export default function IsinwheelCouponsContent() {
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
                    <div className="space-y-1">
                       {[
-                        { icon: Zap, name: "Commuter Scooters", count: "15+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Off-Road Scooters", count: "10+", color: "text-purple-500", href: "/categories/electronics" },
-                        { icon: Gift, name: "Kids' Scooters", count: "8+", color: "text-pink-500", href: "/categories/electronics" },
-                        { icon: Truck, name: "Free Shipping", count: "20+", color: "text-teal-500", href: "/categories/electronics" },
-                        { icon: Search, name: "New Arrivals", count: "6+", color: "text-orange-500", href: "/categories/electronics" },
+                        { icon: Sparkles, name: "Makeup", count: "60+", color: "text-blue-500", href: "/categories/fashion" },
+                        { icon: Droplet, name: "Skincare", count: "45+", color: "text-purple-500", href: "/categories/fashion" },
+                        { icon: Gift, name: "Fragrance", count: "25+", color: "text-pink-500", href: "/categories/fashion" },
+                        { icon: Truck, name: "Free Shipping", count: "35+", color: "text-teal-500", href: "/categories/fashion" },
+                        { icon: Search, name: "New Arrivals", count: "15+", color: "text-orange-500", href: "/categories/fashion" },
                       ].map((cat, i) => (
                         <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
                           <div className="flex items-center gap-3">
@@ -318,39 +322,39 @@ export default function IsinwheelCouponsContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better iSinwheel Deals
+    How to Find Better Sephora Deals
   </h3>
   <div className="space-y-8">
     {[
       {
         icon: Tag,
         title: "Check CouponsBit Before Shopping",
-        sub: "Before placing your order, check CouponsBit for the latest iSinwheel discount code and current offers.",
+        sub: "Before placing your order, check CouponsBit for the latest Sephora promo code and current offers.",
       },
       {
         icon: HeartHandshake,
-        title: "Compare Range and Speed",
-        sub: "Compare battery range and top speed across models to find the scooter that fits your commute or riding style.",
+        title: "Join Beauty Insider",
+        sub: "Sign up for Sephora's free Beauty Insider program to unlock points, rewards, and member-exclusive offers.",
       },
       {
         icon: Calendar,
-        title: "Watch for Seasonal Sales",
-        sub: "Spring, summer, Black Friday, and Cyber Monday can be useful periods to check for scooter promotions.",
+        title: "Watch for Sales Events",
+        sub: "Beauty Insider sales events and Black Friday can be useful periods to check for extra discounts.",
       },
       {
         icon: ShieldAlert,
         title: "Check Promotion Restrictions",
-        sub: "A promotion may only apply to selected models or require specific conditions. Always read the terms before purchasing.",
+        sub: "A promotion may only apply to selected brands or require a specific Beauty Insider tier. Always read the terms before purchasing.",
       },
       {
         icon: Gift,
-        title: "Bundle Your Accessories",
-        sub: "Bundling accessories with your scooter purchase can often provide better value than buying separately.",
+        title: "Bundle Your Routine",
+        sub: "Bundling skincare or makeup items together can often provide better value than buying separately.",
       },
       {
-        icon: Truck,
-        title: "Check Shipping Coverage",
-        sub: "Confirm that free shipping applies to your delivery address before completing your order.",
+        icon: Sparkles,
+        title: "Try Samples First",
+        sub: "Sephora often includes samples with orders, which can help you try a product before committing to full size.",
       },
       {
         icon: Receipt,
@@ -414,43 +418,43 @@ export default function IsinwheelCouponsContent() {
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          iSinwheel Discount Code, Coupon Code & Promo Offers
+          Sephora Promo Code, Coupon Code & Discount Offers
         </h2>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're commuting across town or looking for an off-road adventure, iSinwheel offers electric scooters designed for smooth rides, long battery life, and everyday reliability.
+            Whether you're restocking your skincare routine or trying a new makeup brand, Sephora offers a wide selection of beauty products from established and emerging brands.
           </p>
           <p>
-            If you're planning your next ride purchase, checking for an iSinwheel discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover iSinwheel coupon codes, promo offers, and other ways to potentially save on their scooter purchase.
+            If you're planning your next beauty purchase, checking for a Sephora promo code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Sephora coupon codes, promo offers, and other ways to potentially save on their beauty routine.
           </p>
           <p>
-            From new-customer offers to accessory bundles and seasonal clearance picks, there are plenty of reasons to check current promotions before you check out.
+            From new-customer offers to Beauty Insider rewards and seasonal sale picks, there are plenty of reasons to check current promotions before you check out.
           </p>
 
           <div className="space-y-8">
   <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find an iSinwheel Discount Code</h3>
-    <p>An iSinwheel discount code can help you look for savings on an eligible scooter when a promotion is available.</p>
-    <p>Before completing your order, check CouponsBit to see whether there is a current iSinwheel promotional offer that matches the model you're considering.</p>
-    <p>Promotions can have specific conditions. Some may apply to selected models or collections, while others may be connected to a particular shopping event.</p>
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a Sephora Promo Code</h3>
+    <p>A Sephora promo code can help you look for savings on eligible makeup, skincare, or fragrance when a promotion is available.</p>
+    <p>Before completing your order, check CouponsBit to see whether there is a current Sephora promotional offer that matches what you're shopping for.</p>
+    <p>Promotions can have specific conditions. Some may apply to selected brands or Beauty Insider tiers, while others may be connected to a particular sales event.</p>
     <p>Always review the terms of the offer, including its expiration date and product restrictions, before expecting a discount at checkout.</p>
   </div>
 
   <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore iSinwheel's Scooter Lineup</h3>
-    <p>iSinwheel offers electric scooters across several categories, giving shoppers options for different riding styles.</p>
-    <p><strong>Commuter Scooters:</strong> Lightweight, comfortable scooters designed for urban commuting.</p>
-    <p><strong>Off-Road Scooters:</strong> Higher-performance models built for power, stability, and off-road adventures.</p>
-    <p><strong>Kids' Scooters:</strong> Scooters designed for younger riders, with age-appropriate speed and features.</p>
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Sephora's Product Lineup</h3>
+    <p>Sephora offers beauty products across several categories, giving shoppers plenty of options for their routine.</p>
+    <p><strong>Makeup:</strong> Foundation, eyeshadow, lipstick, and more from a wide range of brands.</p>
+    <p><strong>Skincare:</strong> Cleansers, serums, and moisturizers suited to different skin types.</p>
+    <p><strong>Fragrance:</strong> Perfumes and colognes from designer and niche brands.</p>
   </div>
 
   <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">iSinwheel Sale and Seasonal Promotions</h3>
-    <p>iSinwheel promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
-    <p><strong>Spring and Summer:</strong> Warmer months are a popular period for scooter promotions.</p>
+    <h3 className="text-xl font-black text-[#056bfa] mb-4">Sephora Sale and Seasonal Promotions</h3>
+    <p>Sephora promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
+    <p><strong>Beauty Insider Sales Events:</strong> Member-exclusive sales events are a popular period for savings.</p>
     <p><strong>Black Friday and Cyber Monday:</strong> These major shopping events are worth watching if you're planning a bigger purchase.</p>
-    <p>Before placing an order, check CouponsBit for an iSinwheel discount code, coupon offer, or other promotion.</p>
+    <p>Before placing an order, check CouponsBit for a Sephora promo code, coupon offer, or other promotion.</p>
   </div>
 </div>
 
@@ -470,19 +474,19 @@ export default function IsinwheelCouponsContent() {
         {/* Accordion FAQ Section */}
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About iSinwheel Discount Codes
+            Frequently Asked Questions About Sephora Promo Codes
           </h3>
           {[
-            { q: "Does iSinwheel offer discount codes?", a: "iSinwheel periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find an iSinwheel discount code?", a: "You can check CouponsBit for available iSinwheel discount codes, coupon codes, and sale promotions before shopping." },
-            { q: "How do I use an iSinwheel discount code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
-            { q: "Why isn't my iSinwheel discount code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods." },
-            { q: "What does iSinwheel sell?", a: "iSinwheel sells electric scooters designed for city commuting and off-road use, including models for kids and adults." },
-            { q: "Does iSinwheel offer free shipping?", a: "iSinwheel may offer free shipping on qualifying orders to the contiguous US. Check current offers for details." },
-            { q: "Does iSinwheel sell scooters for kids?", a: "Yes. iSinwheel offers electric scooters designed for kids in addition to its adult and off-road models." },
-            { q: "Does iSinwheel offer a warranty?", a: "iSinwheel products are covered by the iSinwheel Limited Warranty with US-based support." },
-            { q: "Does iSinwheel have Black Friday deals?", a: "iSinwheel may run promotions around Black Friday and other major shopping periods. Check current offers to see what is available." },
-            { q: "When is the best time to look for iSinwheel deals?", a: "Promotions can appear throughout the year. Major shopping periods such as Black Friday and Cyber Monday can be useful times to check." },
+            { q: "Does Sephora offer promo codes?", a: "Sephora periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
+            { q: "Where can I find a Sephora promo code?", a: "You can check CouponsBit for available Sephora promo codes, coupon codes, and sale promotions before shopping." },
+            { q: "How do I use a Sephora promo code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable promo code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
+            { q: "Why isn't my Sephora promo code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or Beauty Insider tiers." },
+            { q: "What does Sephora sell?", a: "Sephora sells makeup, skincare, haircare, and fragrance from a wide range of beauty brands." },
+            { q: "What is Sephora's Beauty Insider program?", a: "Beauty Insider is Sephora's loyalty program, offering points, rewards, and member-exclusive offers based on your membership tier." },
+            { q: "Does Sephora offer free shipping?", a: "Sephora may offer free shipping on qualifying orders or for eligible Beauty Insider members. Check current offers for minimum order requirements." },
+            { q: "Does Sephora have Black Friday deals?", a: "Sephora may run promotions around Black Friday and other major shopping periods. Check current offers to see what is available." },
+            { q: "Does Sephora sell fragrance?", a: "Yes. Sephora offers a wide selection of fragrance in addition to its makeup and skincare products." },
+            { q: "When is the best time to look for Sephora deals?", a: "Promotions can appear throughout the year, with Beauty Insider sales events often bringing additional savings." },
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button
@@ -509,18 +513,18 @@ export default function IsinwheelCouponsContent() {
         {/* Tag Cloud */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular iSinwheel Searches
+            Popular Sephora Searches
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {[
-              "iSinwheel Discount Code",
-              "Electric Scooter Deals",
-              "Off-Road Scooter",
-              "Kids' Scooter",
+              "Sephora Promo Code",
+              "Beauty Insider Rewards",
+              "Skincare Bundle",
               "Free Shipping",
-              "Accessory Bundle",
+              "Percentage Off Sitewide",
               "First Order Discount",
-              "Clearance Sale"
+              "Seasonal Sale",
+              "Fragrance Deals"
             ].map((tag) => (
               <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
                 {tag}
@@ -532,18 +536,18 @@ export default function IsinwheelCouponsContent() {
         {/* Sidebar Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top iSinwheel Deals
+            Today's Top Sephora Deals
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "GT4 S", sub: "Save £50 – Now £599.99" },
-              { heading: "H7 PRO", sub: "1200W Motor – £649.99" },
-              { heading: "AUTUMN SALE", sub: "£20-£120 Off £300+ Spend" },
-              { heading: "UP TO 50%", sub: "Autumn Ride Sale Selected Products" }
+              { heading: "SKINCARE SALE", sub: "Up To 50% OFF" },
+              { heading: "BEAUTY PRODUCTS", sub: "Up To 50% OFF" },
+              { heading: "BEAUTY INSIDER", sub: "Free Shipping On Eligible Orders" },
+              { heading: "GIFT CARDS", sub: "Starting At $10" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  i
+                  S
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
@@ -557,7 +561,7 @@ export default function IsinwheelCouponsContent() {
                   href={STORE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Shop iSinwheel: ${deal.heading}`}
+                  aria-label={`Shop Sephora: ${deal.heading}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >
                   Get Deal

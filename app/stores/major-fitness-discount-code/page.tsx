@@ -132,22 +132,108 @@ const majorFitnessSchema = {
     },
 
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does Major Fitness offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Major Fitness periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." } },
-        { "@type": "Question", name: "Where can I find a Major Fitness discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available Major Fitness discount codes, coupon codes, and sale promotions before shopping." } },
-        { "@type": "Question", name: "How do I use a Major Fitness discount code?", acceptedAnswer: { "@type": "Answer", text: "Add eligible items to your cart, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing your purchase." } },
-        { "@type": "Question", name: "Why isn't my Major Fitness discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods." } },
-        { "@type": "Question", name: "What does Major Fitness sell?", acceptedAnswer: { "@type": "Answer", text: "Major Fitness sells home gym equipment including Smith machines, power racks, adjustable weight benches, barbells, dumbbells, and accessories." } },
-        { "@type": "Question", name: "Does Major Fitness offer free shipping?", acceptedAnswer: { "@type": "Answer", text: "Major Fitness may offer free shipping on qualifying orders. Check current offers for minimum order requirements." } },
-        { "@type": "Question", name: "Does Major Fitness sell all-in-one home gyms?", acceptedAnswer: { "@type": "Answer", text: "Yes. Major Fitness offers all-in-one Smith machines and power cages designed for full-body workouts at home." } },
-        { "@type": "Question", name: "Does Major Fitness have Black Friday deals?", acceptedAnswer: { "@type": "Answer", text: "Major Fitness may run promotions around Black Friday and other major shopping periods. Check current offers to see what is available." } },
-        { "@type": "Question", name: "Does Major Fitness offer after-sales support?", acceptedAnswer: { "@type": "Answer", text: "Major Fitness provides responsive after-sales service for its home gym equipment." } },
-        { "@type": "Question", name: "When is the best time to look for Major Fitness deals?", acceptedAnswer: { "@type": "Answer", text: "Promotions can appear throughout the year. Major shopping periods such as Black Friday, Cyber Monday, and New Year's fitness season can be useful times to check." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Major Fitness offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major Fitness offers promotional codes, discounts, and seasonal offers from time to time. Available offers can vary, so check for current discount codes and compare them with active site deals before checkout."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where can I find a Major Fitness discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Major Fitness discount codes, coupon codes, and sale promotions before shopping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use a Major Fitness discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add eligible items to your cart, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing your purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my Major Fitness discount code working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a Major Fitness discount code on all products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Discount codes can have individual terms, exclusions, or product restrictions. Always review the conditions associated with the specific offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Major Fitness offer student discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major Fitness highlights an education discount program. Eligibility and terms can change, so students should check current requirements before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Major Fitness offer military or first-responder discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Major Fitness lists discount programs for military personnel and first responders, subject to applicable verification and requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What equipment does Major Fitness sell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major Fitness sells a broad range of home gym equipment, including Smith machines, power racks, adjustable weight benches, barbells, dumbbells, weight plates, specialty machines, attachments, and fitness accessories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Major Fitness sell all-in-one home gyms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Major Fitness offers all-in-one Smith machines and power cages designed for full-body workouts at home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Major Fitness good for a small home gym?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major Fitness offers space-conscious equipment, including folding and wall-mounted systems. The right choice depends on your available space, workout goals, ceiling height, and equipment needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Major Fitness offer free shipping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major Fitness may offer free shipping on qualifying orders. Check current offers for minimum order requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time to look for Major Fitness deals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Promotions appear throughout the year. Major shopping periods such as Black Friday, Cyber Monday, and the New Year's fitness season are prime times to check for deals."
+      }
+    }
+  ]
+},
   ],
 };
 

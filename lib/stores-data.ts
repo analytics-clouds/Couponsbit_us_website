@@ -139,6 +139,11 @@ export const allStores: StoreEntry[] = [
   { name: "Helium 10",       id: "helium10-discount-code",         category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/helium_10_logo_gt6opp.webp",     discount: "Up To 25% OFF",   popular: false },
   { name: "iSinwheel",       id: "isinwheel-discount-code",        category: "Electronics", coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp",    discount: "Up To 50% OFF",   popular: false },
   { name: "Major Fitness",   id: "major-fitness-discount-code",    category: "More",        coupons: 23, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789640583/major-fitness_aum53e.webp",     discount: "Save Up To $250", popular: false },
+  { name: "1800 Flowers",    id: "1800-flowers-promo-code",        category: "More",        coupons: 15, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/1800_flower_logo_uqwufx.webp", discount: "Up To 30% OFF",   popular: false },
+  { name: "AT&T",            id: "att-promo-code",                 category: "More",        coupons: 19, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/att_logo_xntyq0.webp",         discount: "Up To $1,900 OFF", popular: false },
+  { name: "LL Bean",         id: "llbean-promo-code",              category: "Fashion",     coupons: 21, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/llbean_logo_xsbw4x.webp",      discount: "Up To 60% OFF",   popular: false },
+  { name: "Coach Outlet",    id: "coach-outlet-promo-code",        category: "Fashion",     coupons: 33, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/coach_outlet_logo_ysdxtk.webp", discount: "Up To 80% OFF",   popular: false },
+  { name: "Sephora",         id: "sephora-promo-code",             category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp",     discount: "Up To 50% OFF",   popular: false },
 ];
 
 

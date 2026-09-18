@@ -116,22 +116,124 @@ const helium10Schema = {
     },
 
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/helium10-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does Helium 10 offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Helium 10 periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." } },
-        { "@type": "Question", name: "Where can I find a Helium 10 discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available Helium 10 discount codes, coupon codes, and plan promotions before subscribing." } },
-        { "@type": "Question", name: "How do I use a Helium 10 discount code?", acceptedAnswer: { "@type": "Answer", text: "Select your eligible plan, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing sign-up." } },
-        { "@type": "Question", name: "Why isn't my Helium 10 discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans or new customers." } },
-        { "@type": "Question", name: "What is Helium 10 used for?", acceptedAnswer: { "@type": "Answer", text: "Helium 10 is a software toolkit used by Amazon, Walmart, and TikTok Shop sellers for product research, keyword research, listing optimization, and operations." } },
-        { "@type": "Question", name: "Does Helium 10 have a free plan?", acceptedAnswer: { "@type": "Answer", text: "Helium 10 offers a selection of free tools, including a Chrome extension and other seller utilities, alongside its paid subscription plans." } },
-        { "@type": "Question", name: "Does Helium 10 offer annual plan discounts?", acceptedAnswer: { "@type": "Answer", text: "Helium 10 may offer savings on annual subscription plans compared to paying monthly. Check current offers for eligibility." } },
-        { "@type": "Question", name: "Does Helium 10 have a student discount?", acceptedAnswer: { "@type": "Answer", text: "Helium 10 may run promotions for students and new sellers from time to time. Check current offers for eligibility." } },
-        { "@type": "Question", name: "Is Helium 10 only for Amazon sellers?", acceptedAnswer: { "@type": "Answer", text: "No. Helium 10 also offers tools for Walmart and TikTok Shop sellers in addition to Amazon." } },
-        { "@type": "Question", name: "When is the best time to look for Helium 10 deals?", acceptedAnswer: { "@type": "Answer", text: "Promotions can appear throughout the year, with Black Friday and Cyber Monday often bringing additional subscription discounts." } },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/helium10-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Helium 10 offers promotional discounts through its website and partner campaigns. The available discount, plan eligibility, and promotional period can vary."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Where can I find a Helium 10 discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check CouponsBit for available Helium 10 discount codes, coupon codes, and plan promotions before subscribing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use a Helium 10 discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose an eligible Helium 10 plan, proceed through sign-up, and enter the promotional code in the designated promo-code field when available. Confirm the discount has been applied before completing your subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my Helium 10 discount code working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans or new customers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a Helium 10 discount code on any plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Promotional codes can be limited to specific plans, billing periods, or customer types. Always check the terms of the individual offer before subscribing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Helium 10 used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Helium 10 provides tools for product research, keyword research, listing optimization, advertising, inventory management, analytics, and other e-commerce operations across marketplaces such as Amazon, Walmart, and TikTok Shop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 work with Amazon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Amazon is one of Helium 10's primary supported marketplaces, with tools covering product research, keywords, listings, advertising, inventory, and other seller operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 work with Walmart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Helium 10 currently provides solutions for Walmart Marketplace alongside its Amazon and TikTok Shop offerings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 work with TikTok Shop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Helium 10 offers TikTok Shop tools for product research, listing conversion, influencer discovery, profitability analysis, and other seller workflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 have a free plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Helium 10 currently provides a Free option with limited access (including Chrome extension utilities), alongside paid plans such as Platinum, Diamond, and Enterprise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 offer annual plan discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Helium 10 offers annual billing for eligible plans and advertises savings compared to monthly billing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Helium 10 useful for new Amazon sellers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be useful for new sellers who need tools for product research, keyword research, listing optimization, and education. Helium 10 also provides training resources such as Freedom Ticket and Ads Academy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Helium 10 have a student discount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Helium 10 may run promotions for students and new sellers from time to time. Check current offers for eligibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time to look for Helium 10 deals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Promotions can appear throughout the year, with Black Friday and Cyber Monday often bringing additional subscription discounts."
+      }
+    }
+  ]
+},
   ],
 };
 

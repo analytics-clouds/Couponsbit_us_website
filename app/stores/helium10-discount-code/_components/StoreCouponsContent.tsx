@@ -157,7 +157,7 @@ export default function Helium10CouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789640583/helium_10_logo_gt6opp.webp" alt="Helium 10 Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1789732193/48_cjp5ai.webp" alt="Helium 10 Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -271,16 +271,20 @@ export default function Helium10CouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Helium 10?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Helium 10 is a software toolkit built for Amazon, Walmart, and TikTok Shop sellers, bundling over 30 tools for product research, keyword research, listing optimization, and operations.
+                    Helium 10 is an e-commerce software platform designed to help sellers research, launch, optimize, advertise, and manage products across online marketplaces.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Tools like Cerebro and Magnet help sellers discover keywords through reverse ASIN lookup and keyword mining, while the listing builder helps incorporate them into optimized product listings.
+                    While the platform has historically been strongly associated with Amazon sellers, Helium 10 now provides tools for businesses selling across Amazon, Walmart, and TikTok Shop. Its current platform includes more than 30 tools covering product research, keyword research, listing optimization, advertising, operations, analytics, and marketplace growth.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Helium 10 also offers a selection of free tools, including a Chrome extension, a PPC audit tool, and an anomaly tracker.
+                    The platform is designed for different stages of an e-commerce business. A new seller might use Helium 10 to research potential products and keywords, while an established brand may use its analytics, advertising, inventory, and automation tools to manage a larger operation.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    With a community of millions of sellers, Helium 10 is a popular choice for anyone managing an e-commerce business across multiple marketplaces.
+                    Helium 10 currently says its platform is used by more than 4.5 million brands worldwide and supports more than 24 marketplaces.
+
                   </p>
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -310,45 +314,43 @@ export default function Helium10CouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better Helium 10 Deals
+  <h3 className="text-black font-black text-lg mb-2">
+    How to Find More Helium 10 Savings
   </h3>
+  <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-8">
+    Finding a Helium 10 promo code is one way to reduce your subscription cost, but it's worth comparing the complete offer.
+  </p>
   <div className="space-y-8">
     {[
       {
-        icon: Tag,
-        title: "Check CouponsBit Before Signing Up",
-        sub: "Before choosing a plan, check CouponsBit for the latest Helium 10 discount code and current offers.",
-      },
-      {
-        icon: HeartHandshake,
-        title: "Compare Plan Tiers",
-        sub: "Compare Helium 10's plan tiers to find the one that matches how many tools you actually need.",
+        icon: Receipt,
+        title: "Compare plans first.",
+        sub: "A bigger discount doesn't necessarily make a plan more suitable. Start by identifying the tools your business actually needs.",
       },
       {
         icon: Calendar,
-        title: "Watch for Seasonal Sales",
-        sub: "Black Friday and Cyber Monday can be useful periods to check for extra subscription discounts.",
+        title: "Check annual billing.",
+        sub: "Helium 10 currently advertises savings on annual billing for eligible plans. Compare the annual option with monthly billing and any promotional offer available at the time.",
       },
       {
-        icon: RefreshCw,
-        title: "Consider Annual Billing",
-        sub: "Annual plans can offer better value than paying monthly if you're committed to using the tools long-term.",
+        icon: Gift,
+        title: "Look for current promotions.",
+        sub: "Helium 10 runs promotional campaigns through its own website and partner channels. Check for an active offer before subscribing.",
       },
       {
         icon: ShieldAlert,
-        title: "Check Plan Requirements",
-        sub: "Some promotions require a specific plan tier or new-customer status. Always review the requirements before signing up.",
+        title: "Check what the discount applies to.",
+        sub: "A code may apply only to a particular plan or for a specific promotional period.",
       },
       {
-        icon: Chrome,
-        title: "Try the Free Tools First",
-        sub: "Before committing to a paid plan, try Helium 10's free Chrome extension and other free tools.",
+        icon: HeartHandshake,
+        title: "Consider your business stage.",
+        sub: "A new seller may prioritize research and listing tools, while a larger brand may need advertising automation, inventory management, analytics, and multi-marketplace capabilities.",
       },
       {
-        icon: Receipt,
-        title: "Review the Final Bill",
-        sub: "Before finalizing your order, review the complete subscription cost, including any applicable taxes.",
+        icon: Tag,
+        title: "Check CouponsBit before checkout.",
+        sub: "A quick search for a current Helium 10 discount code can help you see whether an eligible offer is available before you commit to a plan.",
       },
     ].map((item) => (
       <div key={item.title} className="flex gap-4 items-start">
@@ -407,41 +409,163 @@ export default function Helium10CouponsContent() {
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Helium 10 Discount Code, Coupon Code & Promo Offers
+          Helium 10 Discount Code, Promo Code & Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["25% OFF Helium 10 Deal", "25% OFF", "All Users", "Save 25% on Helium 10 ecommerce tool suite today", "Helium 10 Plans"],
+        ["Platinum Plan Discount", "$96.75/Month", "All Users", "Get 6 months of the Platinum Plan at a reduced monthly rate", "Platinum Plan"],
+        ["20% OFF 6-Month Offer", "20% OFF", "New Subscribers", "Valid on qualifying plans for your first 6 months", "Eligible Subscription Plans"],
+        ["Popular Plan Promotion", "20% OFF ($103/Mo)", "All Users", "Save 20% for 6 months on the most popular Helium 10 plan", "Popular Subscription Plan"],
+        ["Ongoing 10% Monthly Savings", "10% OFF", "All Users", "Enjoy 10% off every month on recurring subscription fees", "Monthly Subscriptions"],
+        ["25% OFF Diamond/First 6 Months", "25% OFF", "All Users", "Apply promo code during signup to unlock Diamond tools at a discount", "Diamond Plan / First 6 Months"],
+        ["Lifetime 10% Monthly Savings", "10% OFF Lifetime", "All Users", "Get 10% off every month for life with qualifying promo code", "Ongoing Subscription Plans"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 6 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Running an Amazon, Walmart, or TikTok Shop business means juggling product research, keyword research, listing optimization, and day-to-day operations — and Helium 10 bundles tools for all of it into one platform.
+            Running an e-commerce business involves far more than putting a product on Amazon and waiting for sales. Sellers need to research products, understand customer demand, find the right keywords, optimize listings, monitor competitors, manage advertising, track inventory, and make decisions based on constantly changing marketplace data.
           </p>
           <p>
-            If you're planning to subscribe or upgrade your plan, checking for a Helium 10 discount code before signing up can be a smart way to look for savings. CouponsBit helps shoppers discover Helium 10 coupon codes, promo offers, and other ways to potentially save on their seller software subscription.
+            That is where Helium 10 comes in.
           </p>
           <p>
-            From new-customer offers to annual plan discounts and free tools, there are plenty of reasons to check current promotions before you commit to a plan.
+            If you're considering Helium 10 for your Amazon, Walmart, or TikTok Shop business, checking for a Helium 10 discount code before choosing a plan can be a smart first step. Depending on the current promotion, you may find introductory offers, subscription discounts, or other ways to reduce the cost of the software.
           </p>
+          <p>
+            On CouponsBit, you can check available Helium 10 offers before signing up and review the terms of each promotion to find an offer that fits your business and subscription needs.
+          </p>
+
+          <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+  <p>
+    If you're ready to subscribe to Helium 10, looking for a Helium 10 discount code before choosing your plan is worth doing.
+  </p>
+  <p>
+    Helium 10 frequently promotes special offers through its website, affiliate partners, and targeted campaigns. The exact discount can depend on the promotion, subscription plan, billing cycle, and customer eligibility.
+  </p>
+  <p>
+    CouponsBit gives you another place to check before heading to checkout. Rather than assuming that the standard subscription price is your only option, look for an available offer and compare it with the plan you actually need.
+  </p>
+
+  <div className="space-y-8">
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Helium 10 Coupons, Deals & Offers</h3>
+      <p>A Helium 10 coupon code isn't the only way to find a better subscription offer. Depending on the current campaign, Helium 10 may provide discounts for particular plans, limited-time promotions, annual billing incentives, or affiliate-specific offers.</p>
+      <p>Before applying a promotion, check:</p>
+      <p><strong>Qualifying Plans & Billing:</strong> Determine which plan qualifies, whether the offer applies to monthly or annual billing, and how long promotional pricing lasts.</p>
+      <p><strong>Eligibility & Terms:</strong> Check if the promotion is limited to new customers, requires a promo code at signup, or can be combined with other offers.</p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Product & Keyword Research Tools</h3>
+      <p>Finding products and driving traffic are core challenges for online sellers. Helium 10 provides research suites to streamline marketplace discovery.</p>
+      <p><strong>Product Research (Black Box & Xray):</strong> Analyze demand, competition, marketplace data, and product opportunities before investing in inventory.</p>
+      <p><strong>Keyword Research (Cerebro & Magnet):</strong> Identify high-converting search terms, analyze competitor keywords, and improve listing discoverability across Amazon categories.</p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Listing Optimization & Advertising Tools</h3>
+      <p>Convert views into sales with AI-assisted listing tools that generate optimized titles, bullet points, and A+ content efficiently.</p>
+      <p>Helium 10's advertising suite offers AI-powered and rules-based automation for bidding and dayparting, allowing sellers to manage campaign performance without continuous manual adjustments.</p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Operations, Multi-Marketplace & TikTok Support</h3>
+      <p>Beyond Amazon, Helium 10 supports cross-channel growth for Walmart and TikTok Shop.</p>
+      <p><strong>Inventory & Analytics:</strong> Track stock levels, organize restocking, analyze business profitability, and claim eligible FBA reimbursements.</p>
+      <p><strong>TikTok Shop Solutions:</strong> Features Amazon-to-TikTok Shop listing converters, trending-video research, influencer discovery, and creator outreach tools.</p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Helium 10 Subscription Plans</h3>
+      <p>Helium 10 offers tiers built for different stages of business growth: Platinum for growing sellers, Diamond for scaling operations with advanced advertising/inventory controls, and Enterprise for custom brand solutions.</p>
+      <p>New sellers can also access educational resources like Freedom Ticket and Ads Academy to build foundational marketplace knowledge.</p>
+    </div>
+
+    <div className="space-y-4">
+      <h3 className="text-xl font-black text-[#056bfa] mb-4">Annual Plan Discounts & Seasonal Opportunities</h3>
+      <p>Annual billing offers lower effective monthly rates compared to standard monthly payments. Sellers can prepare for peak shopping seasons—such as Q4 holidays, Prime Day, and back-to-school—by using Helium 10 tools ahead of time.</p>
+      <p>Before signing up, review current promo codes on CouponsBit to ensure your discount applies to the plan and billing cycle best suited for your business.</p>
+    </div>
+  </div>
+
+  {!isReadMore && (
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+  )}
+</div>
 
           <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a Helium 10 Discount Code</h3>
-    <p>A Helium 10 discount code can help you look for savings on an eligible plan when a promotion is available.</p>
-    <p>Before signing up, check CouponsBit to see whether there is a current Helium 10 offer that matches the plan you're considering.</p>
-    <p>Promotions can have specific conditions. Some may apply only to new customers or selected plan tiers, while others may be tied to annual billing.</p>
-    <p>Always review the terms of the offer before expecting a discount at checkout.</p>
-  </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Use a Helium 10 Discount Code</h3>
+              <p>Applying a Helium 10 discount code is generally straightforward when you have an eligible offer.</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Find a current Helium 10 offer on CouponsBit.</li>
+                <li>Read the promotion's eligibility and plan requirements.</li>
+                <li>Visit Helium 10 and choose the applicable subscription.</li>
+                <li>Create an account or sign in if required.</li>
+                <li>Enter the discount or promotional code in the designated field.</li>
+                <li>Confirm that the offer has been applied.</li>
+                <li>Review your subscription details before completing payment.</li>
+              </ul>
+              <p>Helium 10's current promotional landing page includes a dedicated promo-code field during the signup process.</p>
+              <p>If a code isn't accepted, review the promotion's conditions before trying another offer.</p>
+            </div>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Helium 10 Tools and Plans</h3>
-    <p>Helium 10 offers plans ranging from free tools to the full Diamond-tier toolkit, covering product research, keyword research, listing optimization, and operations.</p>
-    <p>The right plan depends on how many tools you need and how actively you're managing your seller account.</p>
-  </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Isn't My Helium 10 Discount Code Working?</h3>
+              <p>If your Helium 10 discount code isn't working, there are several possible explanations.</p>
+              <p>The promotion may have expired, may only apply to a particular plan, or may be restricted to new subscriptions.</p>
+              <p>Other possibilities include:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>The code was entered incorrectly</li>
+                <li>The promotion applies only to annual or monthly billing</li>
+                <li>Your selected plan isn't eligible</li>
+                <li>The offer is limited to a particular campaign</li>
+                <li>Another promotion has already been applied</li>
+                <li>The code has specific customer eligibility requirements</li>
+              </ul>
+              <p>The affiliate page you shared displays different promotional offers for different plans, which illustrates why checking the conditions of each offer matters before subscribing.</p>
+            </div>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Helium 10 Free Tools and Trials</h3>
-    <p>Before committing to a paid plan, Helium 10's free Chrome extension and other free tools can give you a feel for the platform.</p>
-    <p>Check CouponsBit for a current Helium 10 discount code before upgrading to make sure you're not missing an available offer.</p>
-  </div>
-</div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Helium 10 Offers?</h3>
+              <p>CouponsBit gives sellers another convenient place to check for available Helium 10 promotions before subscribing.</p>
+              <p>Instead of signing up immediately, you can compare the current plan options with any available Helium 10 coupon code, review the offer's terms, and then decide which subscription makes sense for your business.</p>
+              <p>This can be especially useful when Helium 10 is running different promotions across plans or billing periods.</p>
+              <p>Whether you're launching your first Amazon product, growing an established FBA business, expanding to Walmart, or experimenting with TikTok Shop, checking for a current offer before subscribing is a simple step worth adding to your process.</p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">Grow Your E-Commerce Business With a Helium 10 Discount Code</h3>
+              <p>Selling online involves dozens of decisions, from deciding what to sell and understanding customer demand to optimizing listings, managing advertising, and keeping inventory under control.</p>
+              <p>Helium 10 brings many of those workflows together in one e-commerce platform, with solutions covering Amazon, Walmart, and TikTok Shop.</p>
+              <p>If you're considering Helium 10 for your business, start by identifying the tools and plan that match your current stage. Then check CouponsBit for a current Helium 10 discount code, review the promotion's conditions, and compare the available subscription options before completing your purchase.</p>
+              <p>That extra check can help you find an eligible offer while making sure you're choosing a plan based on the tools your business actually needs.</p>
+            </div>
+          </div>
 
           {!isReadMore && (
             <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
@@ -459,19 +583,20 @@ export default function Helium10CouponsContent() {
         {/* Accordion FAQ Section */}
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Helium 10 Discount Codes
+            Helium 10 Discount Code FAQs
           </h3>
           {[
-            { q: "Does Helium 10 offer discount codes?", a: "Helium 10 periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find a Helium 10 discount code?", a: "You can check CouponsBit for available Helium 10 discount codes, coupon codes, and plan promotions before subscribing." },
-            { q: "How do I use a Helium 10 discount code?", a: "Select your eligible plan, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing sign-up." },
-            { q: "Why isn't my Helium 10 discount code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans or new customers." },
-            { q: "What is Helium 10 used for?", a: "Helium 10 is a software toolkit used by Amazon, Walmart, and TikTok Shop sellers for product research, keyword research, listing optimization, and operations." },
-            { q: "Does Helium 10 have a free plan?", a: "Helium 10 offers a selection of free tools, including a Chrome extension and other seller utilities, alongside its paid subscription plans." },
-            { q: "Does Helium 10 offer annual plan discounts?", a: "Helium 10 may offer savings on annual subscription plans compared to paying monthly. Check current offers for eligibility." },
-            { q: "Does Helium 10 have a student discount?", a: "Helium 10 may run promotions for students and new sellers from time to time. Check current offers for eligibility." },
-            { q: "Is Helium 10 only for Amazon sellers?", a: "No. Helium 10 also offers tools for Walmart and TikTok Shop sellers in addition to Amazon." },
-            { q: "When is the best time to look for Helium 10 deals?", a: "Promotions can appear throughout the year, with Black Friday and Cyber Monday often bringing additional subscription discounts." },
+            { q: "Does Helium 10 offer discount codes?", a: "Yes. Helium 10 offers promotional discounts through its website and partner campaigns. The available discount, plan eligibility, and promotional period can vary." },
+            { q: "Where can I find a Helium 10 discount code?", a: "You can check CouponsBit for available Helium 10 promotions before signing up for a plan." },
+            { q: "What can I use Helium 10 for?", a: "Helium 10 provides tools for product research, keyword research, listing optimization, advertising, inventory management, analytics, and other e-commerce operations across marketplaces such as Amazon, Walmart, and TikTok Shop." },
+            { q: "Does Helium 10 work with Amazon?", a: "Yes. Amazon is one of Helium 10's primary supported marketplaces, with tools covering product research, keywords, listings, advertising, inventory, and other seller operations." },
+            { q: "Does Helium 10 work with Walmart?", a: "Yes. Helium 10 currently provides solutions for Walmart Marketplace alongside its Amazon and TikTok Shop offerings." },
+            { q: "Does Helium 10 work with TikTok Shop?", a: "Yes. Helium 10 offers TikTok Shop tools for product research, listing conversion, influencer discovery, profitability analysis, and other seller workflows." },
+            { q: "Does Helium 10 have a free plan?", a: "Helium 10 currently provides a Free option with limited access, alongside paid plans such as Platinum, Diamond, and Enterprise." },
+            { q: "Can I use a Helium 10 discount code on any plan?", a: "Not necessarily. Promotional codes can be limited to specific plans, billing periods, or customer types. Always check the terms of the individual offer before subscribing." },
+            { q: "Is Helium 10 useful for new Amazon sellers?", a: "It can be useful for new sellers who need tools for product research, keyword research, listing optimization, and education. Helium 10 also provides training resources such as Freedom Ticket and Ads Academy." },
+            { q: "Does Helium 10 offer annual plans?", a: "Yes. Helium 10 offers annual billing for eligible plans and currently advertises savings compared with monthly billing." },
+            { q: "How do I apply a Helium 10 promo code?", a: "Choose an eligible Helium 10 plan, proceed through signup, and enter the promotional code in the designated promo-code field when available. The exact process can vary by promotion." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button
@@ -502,14 +627,14 @@ export default function Helium10CouponsContent() {
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {[
-              "Helium 10 Discount Code",
-              "Amazon Seller Tools",
-              "Diamond Plan Deal",
-              "Chrome Extension",
-              "Annual Plan Discount",
-              "Student Discount",
-              "Keyword Research",
-              "Free Tools"
+              "Helium 10 Promo Code",
+              "Platinum Plan Deal",
+              "Diamond Plan Discount",
+              "Annual Subscription Offer",
+              "Amazon FBA Tools",
+              "Keyword Research Deals",
+              "Walmart Seller Discount",
+              "TikTok Shop Offers"
             ].map((tag) => (
               <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
                 {tag}
@@ -525,14 +650,14 @@ export default function Helium10CouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "SAVE 25%", sub: "Save 25% Today" },
-              { heading: "PLATINUM", sub: "6 Months Platinum For $96.75/Month" },
-              { heading: "SAVE 20%", sub: "20% Off The Most Popular Plan" },
-              { heading: "LIFETIME 10%", sub: "10% Off Every Month For Life" }
+              { heading: "DEAL OF THE WEEK", sub: "Save Up to 20% OFF Monthly Plans" },
+              { heading: "ANNUAL SAVINGS", sub: "Get Up to 25% OFF Annual Subscriptions" },
+              { heading: "FREE ACCESS", sub: "Try Helium 10 Tools with a Free Account" },
+              { heading: "STARTER SPECIAL", sub: "Discounts Available on Platinum Plan" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  H
+                  {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
