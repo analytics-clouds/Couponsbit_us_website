@@ -126,21 +126,75 @@ const isinwheelSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does iSinwheel offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "iSinwheel periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." } },
-        { "@type": "Question", name: "Where can I find an iSinwheel discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available iSinwheel discount codes, coupon codes, and sale promotions before shopping." } },
-        { "@type": "Question", name: "How do I use an iSinwheel discount code?", acceptedAnswer: { "@type": "Answer", text: "Add eligible items to your cart, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing your purchase." } },
-        { "@type": "Question", name: "Why isn't my iSinwheel discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods." } },
-        { "@type": "Question", name: "What does iSinwheel sell?", acceptedAnswer: { "@type": "Answer", text: "iSinwheel sells electric scooters designed for city commuting and off-road use, including models for kids and adults." } },
-        { "@type": "Question", name: "Does iSinwheel offer free shipping?", acceptedAnswer: { "@type": "Answer", text: "iSinwheel may offer free shipping on qualifying orders to the contiguous US. Check current offers for details." } },
-        { "@type": "Question", name: "Does iSinwheel sell scooters for kids?", acceptedAnswer: { "@type": "Answer", text: "Yes. iSinwheel offers electric scooters designed for kids in addition to its adult and off-road models." } },
-        { "@type": "Question", name: "Does iSinwheel offer a warranty?", acceptedAnswer: { "@type": "Answer", text: "iSinwheel products are covered by the iSinwheel Limited Warranty with US-based support." } },
-        { "@type": "Question", name: "Does iSinwheel have Black Friday deals?", acceptedAnswer: { "@type": "Answer", text: "iSinwheel may run promotions around Black Friday and other major shopping periods. Check current offers to see what is available." } },
-        { "@type": "Question", name: "When is the best time to look for iSinwheel deals?", acceptedAnswer: { "@type": "Answer", text: "Promotions can appear throughout the year. Major shopping periods such as Black Friday and Cyber Monday can be useful times to check." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does isinwheel offer discount codes in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, isinwheel runs promotions and discount offers for UK shoppers. Available codes and their terms can change, so check the latest offer before placing your order."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "What does isinwheel sell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "isinwheel sells electric scooters, electric bikes, kids' scooters, off-road scooters, accessories, replacement parts, and other smart mobility products. The UK website also features products such as electric suitcases, walking pads, and mobility scooters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use an isinwheel discount code on any product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Individual discount codes can have their own eligibility rules, product exclusions, or promotional conditions. Check the terms of the specific offer before checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does isinwheel sell electric bikes in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The official UK store offers several types of electric bikes, including commuter/city models and electric mountain bikes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does isinwheel offer off-road electric scooters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. isinwheel's UK range includes off-road models such as the GT1, GT2, GT4, H7PRO, and Landturbo Pro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use an isinwheel electric scooter on UK roads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Privately owned e-scooters are currently subject to restrictions in the UK and generally cannot be used on public roads, pavements, cycle lanes, or other public land. They can be used on private land with the landowner's permission. Always check the latest GOV.UK rules before riding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does isinwheel offer accessories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The UK store offers accessories including helmets, locks, seats, add-ons, tyres, and model-specific replacement parts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I find an isinwheel coupon code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the latest isinwheel discount codes and promotional offers before checkout. It's also worth comparing them with the brand's current sale, flash sale, bundle, and rewards offers."
+      }
+    }
+  ]
+},
   ],
 };
 

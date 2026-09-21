@@ -278,17 +278,18 @@ export default function IsinwheelCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is iSinwheel?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    iSinwheel is an electric scooter brand offering models designed for city commuting, off-road riding, and younger riders.
+                    isinwheel is an international personal mobility brand founded in 2018 with a focus on intelligent short-distance transportation. Its brand philosophy, “Move Smart, Move Fun,” centres on making everyday mobility more convenient, technology-driven, and enjoyable. The company offers electric scooters, electric bikes, and other smart mobility products for different types of riders.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand's scooters are engineered for smooth rides, long battery life, and stylish designs, covering both lightweight commuter models and higher-performance off-road options.
+                    The official isinwheel UK website serves customers in the United Kingdom and offers products across categories including adult electric scooters, off-road scooters, kids' scooters, commuter e-bikes, mountain e-bikes, mobility products, and riding accessories.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    iSinwheel is popular with shoppers looking for an affordable, US-supported alternative for personal electric transportation.
+                    The brand has developed several generations of electric mobility products since launching its first UK scooter models in 2019. It introduced electric bikes in 2023, while more recent scooter launches include models such as the S10MAX and GT4.
+
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Products are covered by the iSinwheel Limited Warranty with US-based support and free shipping to the contiguous US.
-                  </p>
+                 
                   <a href={STORE_URL} target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
@@ -318,60 +319,52 @@ export default function IsinwheelCouponsContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better iSinwheel Deals
+    Why Isn't My isinwheel Discount Code Working?
   </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Shopping",
-        sub: "Before placing your order, check CouponsBit for the latest iSinwheel discount code and current offers.",
-      },
-      {
-        icon: HeartHandshake,
-        title: "Compare Range and Speed",
-        sub: "Compare battery range and top speed across models to find the scooter that fits your commute or riding style.",
-      },
-      {
-        icon: Calendar,
-        title: "Watch for Seasonal Sales",
-        sub: "Spring, summer, Black Friday, and Cyber Monday can be useful periods to check for scooter promotions.",
-      },
-      {
-        icon: ShieldAlert,
-        title: "Check Promotion Restrictions",
-        sub: "A promotion may only apply to selected models or require specific conditions. Always read the terms before purchasing.",
-      },
-      {
-        icon: Gift,
-        title: "Bundle Your Accessories",
-        sub: "Bundling accessories with your scooter purchase can often provide better value than buying separately.",
-      },
-      {
-        icon: Truck,
-        title: "Check Shipping Coverage",
-        sub: "Confirm that free shipping applies to your delivery address before completing your order.",
-      },
-      {
-        icon: Receipt,
-        title: "Review the Final Order",
-        sub: "Before completing your purchase, make sure any eligible promotion has been applied and review your complete order details.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
+  <div className="space-y-6">
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      If your code isn't being accepted, don't immediately assume that the code itself is invalid.
+    </p>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      There could be several reasons why an isinwheel discount code doesn't apply to your order:
+    </p>
+    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The code has expired.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The promotion applies only to selected products.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>Your chosen item is excluded.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>A minimum purchase requirement applies.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The code is limited to a particular customer group.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The promotion cannot be combined with another offer.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The code was entered incorrectly.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span>The offer is available only during a specified promotional period.</span>
+      </p>
+    </div>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Start by checking the terms associated with the offer. If you're shopping during a major sale, also compare the promotional price or bundle offer with the code before deciding which deal applies to your order.
+    </p>
   </div>
 </div>
 
@@ -414,45 +407,273 @@ export default function IsinwheelCouponsContent() {
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          iSinwheel Discount Code, Coupon Code & Promo Offers
+          isinwheel Discount Code, Promo Code & Discount Offers UK
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["GT4 S Off-Road Scooter", "£50 OFF (£599.99)", "All Users", "Was £649.99; features 50-mile range and 12-inch tyres", "GT4 S Electric Scooter"],
+        ["S-NOVA PRO Urban Scooter", "£50 OFF (£389.99)", "All Users", "Was £439.99; includes 1000W motor and up to 38-mile range", "S-NOVA PRO Electric Scooter"],
+        ["H7 PRO Electric Scooter", "£649.99", "All Users", "Features 1200W motor, 16\" x 4.0\" tyres, and dual suspension", "H7 PRO Electric Scooter"],
+        ["GT4 DUAL Off-Road Scooter", "£829.99", "All Users", "Reduced from £1,299; features 2400W dual-motor setup", "GT4 DUAL Electric Scooter"],
+        ["GT1 DUAL Off-Road Scooter", "£499.99", "All Users", "Reduced from £699; dual-motor setup with dual suspension", "GT1 DUAL Electric Scooter"],
+        ["Dremax Commuter E-Bike", "£1,199.99", "All Users", "Includes 720Wh Samsung battery with up to 93-mile range", "Dremax Commuter E-Bike"],
+        ["M50 Full Suspension E-Bike", "£639.99", "All Users", "Was £799.00; features 27.5\" full-suspension setup", "M50 Electric Bike"],
+        ["EB3 Commuter Electric Bike", "£498.99", "All Users", "Was £709.99; practical design for daily commuting", "EB3 Commuter E-Bike"],
+        ["Cable Lock Accessory", "£39.99", "All Users", "Security accessory designed for e-bikes and electric scooters", "Scooter & E-Bike Cable Lock"],
+        ["120cm Chain Lock", "£23.99", "All Users", "Heavy-duty security chain lock compatible with scooters and bikes", "120cm Security Chain Lock"],
+        ["Autumn Ride £20 Spend & Save", "£20 OFF", "Orders £300+", "Save £20 on qualifying orders during Autumn Ride Sale", "Sitewide Orders £300+"],
+        ["Autumn Ride £50 Spend & Save", "£50 OFF", "Orders £500+", "Save £50 on qualifying orders during Autumn Ride Sale", "Sitewide Orders £500+"],
+        ["Autumn Ride £120 Spend & Save", "£120 OFF", "Orders £900+", "Save £120 on qualifying orders during Autumn Ride Sale", "Sitewide Orders £900+"],
+        ["Autumn Ride Sale", "Up to 50% OFF", "All Users", "Featured seasonal discounts across electric scooters, bikes, and skateboards", "Selected Scooters, E-Bikes & Gear"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 13 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're commuting across town or looking for an off-road adventure, iSinwheel offers electric scooters designed for smooth rides, long battery life, and everyday reliability.
+            Looking for a more exciting way to get around, upgrade your daily commute, or explore electric mobility from home? isinwheel offers a growing range of electric scooters, e-bikes, and smart mobility products designed around convenience, technology, and everyday riding.
           </p>
           <p>
-            If you're planning your next ride purchase, checking for an iSinwheel discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover iSinwheel coupon codes, promo offers, and other ways to potentially save on their scooter purchase.
+            If you're planning to order from the official UK store, checking for an isinwheel discount code before checkout can be a smart step. Along with coupon codes and promotional offers, isinwheel regularly features sale events, bundle deals, flash sales, and other ways to get more value from your order.
           </p>
           <p>
-            From new-customer offers to accessory bundles and seasonal clearance picks, there are plenty of reasons to check current promotions before you check out.
+            Whether you're comparing an electric scooter for yourself, an e-bike for commuting, or accessories for an existing ride, this page can help you explore the isinwheel range and find the latest offers available to UK shoppers.
           </p>
 
           <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find an iSinwheel Discount Code</h3>
-    <p>An iSinwheel discount code can help you look for savings on an eligible scooter when a promotion is available.</p>
-    <p>Before completing your order, check CouponsBit to see whether there is a current iSinwheel promotional offer that matches the model you're considering.</p>
-    <p>Promotions can have specific conditions. Some may apply to selected models or collections, while others may be connected to a particular shopping event.</p>
-    <p>Always review the terms of the offer, including its expiration date and product restrictions, before expecting a discount at checkout.</p>
-  </div>
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Find an isinwheel Discount Code
+        </h3>
+        <p>
+          Before placing an order, check whether there is a current isinwheel discount code that can be applied to your purchase.
+        </p>
+        <p>
+          A code can be particularly useful when you're shopping for a higher-value product such as an electric scooter or e-bike. However, not every promotion works in exactly the same way. Some offers may apply only to selected products, while others may be connected to specific campaigns or shopping events.
+        </p>
+        <p>
+          It's therefore worth comparing an available discount code with isinwheel's current sale prices, bundle promotions, flash sales, and other offers before completing your order.
+        </p>
+        <p>
+          The official UK store currently separates its promotions into areas such as isinwheel Sale, Bundle Offers, Flash Sale, and Rewards, giving shoppers several ways to check for an active promotion.
+        </p>
+      </div>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore iSinwheel's Scooter Lineup</h3>
-    <p>iSinwheel offers electric scooters across several categories, giving shoppers options for different riding styles.</p>
-    <p><strong>Commuter Scooters:</strong> Lightweight, comfortable scooters designed for urban commuting.</p>
-    <p><strong>Off-Road Scooters:</strong> Higher-performance models built for power, stability, and off-road adventures.</p>
-    <p><strong>Kids' Scooters:</strong> Scooters designed for younger riders, with age-appropriate speed and features.</p>
-  </div>
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          isinwheel Coupons, Deals &amp; Offers
+        </h3>
+        <p>
+          A coupon code isn't the only way to find an attractive offer at isinwheel. Depending on when you shop, you may find different types of promotions across the UK website.
+        </p>
+        <p>
+          These can include:
+        </p>
+        <p>isinwheel discount codes</p>
+        <p>Promotional codes</p>
+        <p>Product-specific offers</p>
+        <p>Flash sales</p>
+        <p>Bundle deals</p>
+        <p>Seasonal sales</p>
+        <p>Clearance offers</p>
+        <p>Rewards and member benefits</p>
+        <p>Accessory promotions</p>
+        <p>Selected product discounts</p>
+        <p>
+          The exact promotions available can change, so it's worth checking the current offer alongside any isinwheel coupon code before ordering.
+        </p>
+        <p>
+          For larger purchases, comparing the final eligible offer rather than focusing only on the percentage attached to a code can help you understand which promotion is actually relevant to your basket.
+        </p>
+      </div>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">iSinwheel Sale and Seasonal Promotions</h3>
-    <p>iSinwheel promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
-    <p><strong>Spring and Summer:</strong> Warmer months are a popular period for scooter promotions.</p>
-    <p><strong>Black Friday and Cyber Monday:</strong> These major shopping events are worth watching if you're planning a bigger purchase.</p>
-    <p>Before placing an order, check CouponsBit for an iSinwheel discount code, coupon offer, or other promotion.</p>
-  </div>
-</div>
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Electric Scooters from isinwheel
+        </h3>
+        <p>
+          Electric scooters are one of isinwheel's main product categories, with options designed for different riding styles and experience levels.
+        </p>
+        <p>
+          The UK range includes everyday electric scooters, off-road models, and kids' electric scooters, with different motor configurations, battery capacities, suspension systems, riding ranges, and designs depending on the model.
+        </p>
+        <p>
+          <strong>Everyday Electric Scooters:</strong> For shoppers looking at personal mobility for everyday use, isinwheel offers models such as the S9PRO, S9MAX, and S10MAX. These models are positioned around practical electric transportation, with different combinations of motor power, range, speed, and overall design. When comparing scooters, consider where you intend to ride, the terrain, storage requirements, charging options, and the manufacturer's specifications rather than choosing solely on appearance.
+        </p>
+        <p>
+          <strong>Off-Road Electric Scooters:</strong> If you're interested in recreational riding or more demanding terrain, isinwheel also offers off-road models. The GT1, GT2, GT4, H7PRO, and Landturbo Pro sit within the brand's more performance-focused range, with features and specifications aimed at riders looking for increased power, larger tyres, suspension, or longer-range capabilities. When considering an off-road model, look carefully at the intended riding environment and the manufacturer's specifications. A scooter designed for off-road use isn't automatically suitable for use on public roads.
+        </p>
+        <p>
+          <strong>Kids' Electric Scooters:</strong> isinwheel also has electric scooters designed for younger riders, including models such as the S4 and S7. These products can be an option for families looking for recreational electric mobility, but parents should always check the product's recommended age, specifications, safety guidance, and the rules that apply to where the scooter will be used.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Electric Bikes from isinwheel
+        </h3>
+        <p>
+          If an electric scooter isn't the right fit, isinwheel also has a growing electric bike range.
+        </p>
+        <p>
+          The UK website divides its e-bikes into areas such as commuter and city bikes and mountain/trail bikes. Current models include options such as the EB1S commuter e-bike, U1 Mini e-bike, Ucity Cruiser, M10 e-MTB, M50 e-MTB, and other electric bike models.
+        </p>
+        <p>
+          <strong>Commuter &amp; City E-Bikes:</strong> Commuter-focused electric bikes can be useful for riders looking for pedal-assisted transportation for everyday journeys. When choosing one, consider the riding position, battery capacity, expected range, frame design, wheel size, storage, and the type of roads or paths you normally use.
+        </p>
+        <p>
+          <strong>Electric Mountain Bikes:</strong> For outdoor riding, isinwheel's electric mountain bike selection includes models designed around trail and recreational use. Features can vary considerably between models, so compare suspension, tyres, motor output, battery capacity, frame construction, and riding geometry before making a decision. If you're buying an e-bike, checking for an isinwheel discount code before checkout can be worthwhile, particularly when you're already comparing several models.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Smart Mobility Products
+        </h3>
+        <p>
+          isinwheel's UK store extends beyond scooters and e-bikes.
+        </p>
+        <p>
+          The current website also features smart mobility products such as electric suitcases, walking pads, and mobility scooters.
+        </p>
+        <p>
+          An electric suitcase can appeal to frequent travellers looking for a more convenient way to move luggage, while a walking pad can be useful for people who want to add more movement to their home or work routine.
+        </p>
+        <p>
+          This broader product range means isinwheel isn't limited to one type of electric vehicle. The brand is increasingly positioned around different forms of smart, convenient mobility.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          isinwheel Accessories &amp; Replacement Parts
+        </h3>
+        <p>
+          Buying the right accessory can be just as important as choosing the vehicle itself.
+        </p>
+        <p>
+          The UK store includes accessories such as helmets, locks, seats, add-ons, tyres, and replacement parts. It also provides model-specific parts sections for selected scooters, e-bikes, and kids' scooters.
+        </p>
+        <p>
+          If you're already an isinwheel owner, checking compatibility is particularly important. Parts and accessories can vary between models, so make sure the item you're ordering is designed for your particular scooter or e-bike.
+        </p>
+        <p>
+          This is another area where an available isinwheel coupon code or accessory promotion could be useful.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          isinwheel Rewards &amp; Other Ways to Get More Value
+        </h3>
+        <p>
+          Beyond traditional discount codes, isinwheel also operates a rewards programme.
+        </p>
+        <p>
+          The current programme includes benefits linked to membership levels, with features such as credits, rewards, delivery-related benefits, after-sales support, and other member perks depending on the customer's level and applicable terms.
+        </p>
+        <p>
+          Because reward structures can change, check the current programme terms before relying on a particular benefit.
+        </p>
+        <p>
+          For shoppers who purchase from isinwheel more than once, a loyalty programme can be worth considering alongside an isinwheel promo code.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Seasonal isinwheel Deals in the UK
+        </h3>
+        <p>
+          Electric mobility products can attract attention during major UK shopping periods, particularly when people are planning lifestyle upgrades, commuting changes, or outdoor activities.
+        </p>
+        <p>
+          Depending on the brand's promotional calendar, you may want to check for isinwheel offers around:
+        </p>
+        <p>New Year shopping</p>
+        <p>Valentine's Day</p>
+        <p>Easter</p>
+        <p>Spring sales</p>
+        <p>Bank Holiday promotions</p>
+        <p>Summer shopping</p>
+        <p>Back-to-school season</p>
+        <p>Black Friday</p>
+        <p>Cyber Monday</p>
+        <p>Christmas</p>
+        <p>Boxing Day</p>
+        <p>New Year sales</p>
+        <p>
+          isinwheel's website also features dedicated promotional areas such as seasonal sales, flash sales, and bundle offers.
+        </p>
+        <p>
+          Rather than waiting for one specific sale, check the available offers when you're ready to buy. A current isinwheel discount code may sometimes be relevant alongside a product promotion, while at other times a sale or bundle may be the more applicable offer.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-black text-[#056bfa] mb-4">
+          Important: UK Electric Scooter Rules
+        </h3>
+        <p>
+          If you're shopping for an electric scooter in the UK, it's important to understand how the law applies before purchasing.
+        </p>
+        <p>
+          Under current UK rules, privately owned e-scooters generally cannot be ridden on public roads, pavements, cycle lanes, or other public land. They can be used on private land with the landowner's permission. The rules can change, so check the latest guidance from GOV.UK before using an e-scooter.
+        </p>
+        <p>
+          This distinction matters when choosing an electric scooter. A product being sold in the UK does not automatically mean it can legally be ridden anywhere in public.
+        </p>
+        <p>
+          For road use, always check the latest UK regulations and make sure you're using the appropriate type of vehicle for your intended journey.
+        </p>
+      </div>
+    </div>
+
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Find Better isinwheel Deals</h3>
+              <p>A little comparison can make a difference when you're purchasing an electric scooter or e-bike.</p>
+              <p>Start by deciding what you actually need. A commuter may prioritise portability and everyday practicality, while an off-road rider may care more about suspension, tyres, motor performance, and battery capacity.</p>
+              <p>Once you've narrowed down the right product, check the current product promotion, sale section, bundle offers, and available isinwheel discount code.</p>
+              <p>Don't forget about accessories. If you're buying a scooter or e-bike, you may also need a helmet, lock, replacement parts, or another compatible accessory. Looking at these requirements together can make it easier to plan your complete purchase.</p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Check CouponsBit for isinwheel Offers?</h3>
+              <p>Searching for a promotion shouldn't become another task on your shopping list.</p>
+              <p>CouponsBit helps shoppers discover coupon codes, discount codes, promotional offers, deals, and other available savings opportunities before they complete an online purchase.</p>
+              <p>When you're preparing to order from isinwheel, check CouponsBit for the latest isinwheel discount code and compare it with the offers already available on the official UK store.</p>
+              <p>This gives you a simple way to check for an additional promotion before you commit to your purchase.</p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop isinwheel With a Discount Code</h3>
+              <p>Whether you're looking for an electric scooter for recreational riding, an e-bike for everyday journeys, or accessories for an existing ride, isinwheel offers a broad selection of electric mobility products through its UK store.</p>
+              <p>Before placing your order, check for an active isinwheel discount code, compare it with the current sale and promotional offers, and read the conditions attached to the deal. For electric scooters in particular, make sure you also understand the current UK rules governing where privately owned e-scooters can be used.</p>
+              <p>With the right product, the right promotion, and a little research before checkout, you can make your isinwheel shopping experience more straightforward while choosing equipment that fits the way you plan to ride.</p>
+            </div>
+          </div>
 
           {!isReadMore && (
             <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
@@ -461,37 +682,35 @@ export default function IsinwheelCouponsContent() {
 
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
         >
           {isReadMore ? "Read Less" : "Read More"}
-          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+          <ChevronDown className={cn("w-4 h-4 transition-transform duration-300", isReadMore && "rotate-180")} />
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="faq-section mt-20 space-y-4">
+        <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About iSinwheel Discount Codes
+            FAQs About isinwheel Discount Codes
           </h3>
           {[
-            { q: "Does iSinwheel offer discount codes?", a: "iSinwheel periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find an iSinwheel discount code?", a: "You can check CouponsBit for available iSinwheel discount codes, coupon codes, and sale promotions before shopping." },
-            { q: "How do I use an iSinwheel discount code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable discount code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
-            { q: "Why isn't my iSinwheel discount code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods." },
-            { q: "What does iSinwheel sell?", a: "iSinwheel sells electric scooters designed for city commuting and off-road use, including models for kids and adults." },
-            { q: "Does iSinwheel offer free shipping?", a: "iSinwheel may offer free shipping on qualifying orders to the contiguous US. Check current offers for details." },
-            { q: "Does iSinwheel sell scooters for kids?", a: "Yes. iSinwheel offers electric scooters designed for kids in addition to its adult and off-road models." },
-            { q: "Does iSinwheel offer a warranty?", a: "iSinwheel products are covered by the iSinwheel Limited Warranty with US-based support." },
-            { q: "Does iSinwheel have Black Friday deals?", a: "iSinwheel may run promotions around Black Friday and other major shopping periods. Check current offers to see what is available." },
-            { q: "When is the best time to look for iSinwheel deals?", a: "Promotions can appear throughout the year. Major shopping periods such as Black Friday and Cyber Monday can be useful times to check." },
+            { q: "Does isinwheel offer discount codes in the UK?", a: "Yes, isinwheel runs promotions and discount offers for UK shoppers. Available codes and their terms can change, so check the latest offer before placing your order." },
+            { q: "What does isinwheel sell?", a: "isinwheel sells electric scooters, electric bikes, kids' scooters, off-road scooters, accessories, replacement parts, and other smart mobility products. The UK website also features products such as electric suitcases, walking pads, and mobility scooters." },
+            { q: "Can I use an isinwheel discount code on any product?", a: "Not necessarily. Individual discount codes can have their own eligibility rules, product exclusions, or promotional conditions. Check the terms of the specific offer before checkout." },
+            { q: "Does isinwheel sell electric bikes in the UK?", a: "Yes. The official UK store offers several types of electric bikes, including commuter/city models and electric mountain bikes." },
+            { q: "Does isinwheel offer off-road electric scooters?", a: "Yes. isinwheel's UK range includes off-road models such as the GT1, GT2, GT4, H7PRO, and Landturbo Pro." },
+            { q: "Can I use an isinwheel electric scooter on UK roads?", a: "Privately owned e-scooters are currently subject to restrictions in the UK and generally cannot be used on public roads, pavements, cycle lanes, or other public land. They can be used on private land with the landowner's permission. Always check the latest GOV.UK rules before riding." },
+            { q: "Does isinwheel offer accessories?", a: "Yes. The UK store offers accessories including helmets, locks, seats, add-ons, tyres, and model-specific replacement parts." },
+            { q: "How can I find an isinwheel coupon code?", a: "Check the latest isinwheel discount codes and promotional offers before checkout. It's also worth comparing them with the brand's current sale, flash sale, bundle, and rewards offers." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors cursor-pointer"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300", openFaq === i && "bg-[#056bfa]")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500 transition-transform duration-300", openFaq === i && "text-white rotate-180")} />
                 </div>
               </button>
               <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
@@ -509,20 +728,20 @@ export default function IsinwheelCouponsContent() {
         {/* Tag Cloud */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular iSinwheel Searches
+            Popular isinwheel Searches
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {[
-              "iSinwheel Discount Code",
-              "Electric Scooter Deals",
-              "Off-Road Scooter",
-              "Kids' Scooter",
-              "Free Shipping",
-              "Accessory Bundle",
-              "First Order Discount",
-              "Clearance Sale"
+              "isinwheel Discount Code",
+              "UK E-Scooter Deals",
+              "Commuter E-Bike Offers",
+              "Off-Road Scooter Sales",
+              "GT Series Discounts",
+              "Kids Scooter Offers",
+              "Mobility Accessories",
+              "Flash Sale Deals"
             ].map((tag) => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors">
                 {tag}
               </span>
             ))}
@@ -532,18 +751,18 @@ export default function IsinwheelCouponsContent() {
         {/* Sidebar Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top iSinwheel Deals
+            Today's Top isinwheel Deals
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "GT4 S", sub: "Save £50 – Now £599.99" },
-              { heading: "H7 PRO", sub: "1200W Motor – £649.99" },
-              { heading: "AUTUMN SALE", sub: "£20-£120 Off £300+ Spend" },
-              { heading: "UP TO 50%", sub: "Autumn Ride Sale Selected Products" }
+              { heading: "DEAL OF THE WEEK", sub: "Up to £250 OFF Off-Road E-Scooters" },
+              { heading: "NEW CUSTOMER BONUS", sub: "Extra Discount on First E-Bike Order" },
+              { heading: "BUNDLE SAVINGS", sub: "Save More when Buying Scooter + Helmet" },
+              { heading: "FREE UK DELIVERY", sub: "Fast & Free UK Delivery on All Orders" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  i
+                  {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
@@ -554,11 +773,11 @@ export default function IsinwheelCouponsContent() {
                   </p>
                 </div>
                 <a
-                  href={STORE_URL}
+                  href="https://www.isinwheel.co.uk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Shop iSinwheel: ${deal.heading}`}
-                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                  aria-label={`Shop isinwheel: ${deal.heading}`}
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
                 >
                   Get Deal
                 </a>
