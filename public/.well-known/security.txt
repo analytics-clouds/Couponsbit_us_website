@@ -1,0 +1,5 @@
+Contact: mailto:support.couponsbit@gmail.com
+Contact: https://www.couponsbit.us/contact
+Expires: 2027-09-21T00:00:00.000Z
+Preferred-Languages: en-US
+Canonical: https://www.couponsbit.us/.well-known/security.txt
