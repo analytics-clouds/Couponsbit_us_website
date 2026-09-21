@@ -64,6 +64,9 @@ const nuagewearSchema = {
       description:
         "Use a verified Nuage discount code or NuageWear promo code — save 39% on the Wireless Stay-Put Bra from $36. Get free worldwide shipping on orders above $60. September 2026 deals verified daily.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

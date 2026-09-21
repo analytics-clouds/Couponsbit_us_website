@@ -64,6 +64,9 @@ const carilohaSchema = {
       description:
         "Find the latest Cariloha discount codes and deals for Sep 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

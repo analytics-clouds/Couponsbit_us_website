@@ -67,6 +67,9 @@ const instacartSchema = {
       description:
         "Find the latest Instacart promo code and Instacart discount code at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, and enjoy up to $150 OFF your first 3 qualifying orders.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/instacart-promo-code#breadcrumb" },
     },
@@ -119,7 +122,6 @@ const instacartSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/instacart-promo-code#faq",
   "mainEntity": [

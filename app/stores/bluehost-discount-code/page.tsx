@@ -67,6 +67,9 @@ const bluehostSchema = {
       description:
         "Find the latest Bluehost discount codes and hosting deals for Sep 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

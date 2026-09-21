@@ -118,7 +118,7 @@ export default function EpicCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(21.3k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Epic discount codes and Epic promo codes at Maxiku Offers. Save an extra 25% OFF the Family annual membership, start a 7-day free trial, and unlock unlimited access to 40,000+ digital books, audiobooks, and educational videos for kids.
                     </p>
                     <a
@@ -190,7 +190,7 @@ export default function EpicCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Epic Games Discount Codes & Offers</h2>
                 </div>
@@ -713,7 +713,7 @@ export default function EpicCouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             Frequently Asked Questions About Epic Promo Codes
           </h3>

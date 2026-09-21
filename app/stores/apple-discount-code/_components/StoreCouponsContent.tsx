@@ -127,7 +127,7 @@ export default function AppleCouponsContent() {
                       <span className="text-black font-black text-sm">4.7</span>
                       <span className="text-gray-600 font-bold text-sm">(112.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Find Apple discount codes, promo codes, and student deals for Sep 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, 20% OFF qualifying student orders, MacBook Neo from $599, MacBook Air from $999, and iPad Air from $699.
                     </p>
                     <a
@@ -199,7 +199,7 @@ export default function AppleCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Apple Discount Codes & Offers</h2>
         </div>
@@ -913,7 +913,7 @@ export default function AppleCouponsContent() {
         </button>
 
         {/* FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Apple Discount Codes</h3>
           {[
             { q: "Where Can I Find an Apple Discount Code?", a: "You can check CouponsBit for available Apple discount codes, coupons, deals, and promotions before making a purchase." },

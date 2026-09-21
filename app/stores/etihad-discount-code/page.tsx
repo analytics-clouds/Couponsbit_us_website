@@ -67,6 +67,9 @@ const etihadSchema = {
       description:
         "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

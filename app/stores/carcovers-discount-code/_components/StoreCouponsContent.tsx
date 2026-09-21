@@ -221,7 +221,7 @@ export default function CarCoversCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium car covers, enjoy FREE shipping, receive a FREE $41 Super Care Kit, and shop clearance deals with savings of over 40% on selected accessories.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function CarCoversCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">CarCovers Coupon Codes & Offers</h2>
                   
@@ -1123,7 +1123,7 @@ export default function CarCoversCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is CarCovers.com?", a: "CarCovers.com is an online retailer that specializes in vehicle protection products, including custom-fit and universal-fit car covers and automotive accessories." },

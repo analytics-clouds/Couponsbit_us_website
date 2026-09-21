@@ -67,6 +67,9 @@ const nikeSchema = {
       description:
         "Find the latest Nike promo code, discount code, and clearance deals for Sep 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/nike-discount-code#breadcrumb" },
     },

@@ -66,6 +66,9 @@ const obsbotSchema = {
       description:
         "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

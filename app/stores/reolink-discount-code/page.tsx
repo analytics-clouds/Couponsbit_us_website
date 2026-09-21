@@ -66,6 +66,9 @@ const reolinkSchema = {
       description:
         "Save up to 50% with the latest Reolink discount code — September 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

@@ -64,6 +64,9 @@ const keralaAyurvedaSchema = {
       description:
         "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Sep 2026",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

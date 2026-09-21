@@ -229,7 +229,7 @@ export default function EnvatoCouponsContent() {
                       <span className="text-black font-black text-sm">4.8</span>
                       <span className="text-gray-600 font-bold text-sm">(21k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Get verified Envato Elements discount codes for September 2026. Save flat 50% on annual plans from $16.50/mo with unlimited downloads of 28M+ assets. Students get an exclusive 30% off from just $11.50/month.
                     </p>
                     <a
@@ -334,7 +334,7 @@ export default function EnvatoCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Envato Elements Coupon Codes & Offers</h2>
                   
@@ -981,7 +981,7 @@ export default function EnvatoCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "Does Envato Elements offer coupon codes?", a: "Yes. Envato Elements occasionally offers promotional discounts and subscription deals throughout the year." },

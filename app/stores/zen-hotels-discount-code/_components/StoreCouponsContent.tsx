@@ -261,7 +261,7 @@ export default function ZenHotelsCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Grab verified Zen Hotels discount codes for September 2026 and save on luxury hotel stays worldwide. Get $35 off bookings over $700 via the app, Paris from $852, Milan from $818, Prague from $1,145 & New York JFK from $2,625.
                     </p>
                     <a
@@ -366,7 +366,7 @@ export default function ZenHotelsCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Zen Hotels Coupon Codes & Offers</h2>
                   
@@ -1041,7 +1041,7 @@ export default function ZenHotelsCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is ZenHotels?", a: "ZenHotels is an online accommodation booking platform that allows users to search, compare, and reserve hotels, apartments, resorts, hostels, and vacation rentals worldwide." },

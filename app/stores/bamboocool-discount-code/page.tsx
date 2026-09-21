@@ -67,6 +67,9 @@ const bamboocoolSchema = {
       description:
         "Find the latest BambooCool discount code, promo code, and underwear deals for Sep 2026. Save up to 25% on summer styles, get 20% OFF your first order, and enjoy free shipping on eligible $49+ orders.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/bamboocool-discount-code#breadcrumb" },
     },

@@ -230,7 +230,7 @@ export default function DriffleCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(14k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save more with the latest Driffle discount code and verified gaming deals. Get up to 95% OFF on PC games, digital keys, gift cards, and popular titles. Discover updated Driffle offers, instant delivery deals, and exclusive gaming discounts in Sep 2026.
                     </p>
                     <a
@@ -335,7 +335,7 @@ export default function DriffleCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
                   <h2 className="text-2xl font-black text-black leading-tight">Driffle Coupon Codes & Offers</h2>
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">14 Coupons & Offers Available</p>
@@ -1034,7 +1034,7 @@ export default function DriffleCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "Does Driffle offer coupon codes?", a: "Yes. Driffle occasionally provides promo codes, discounts, and special offers on gaming products and digital content." },

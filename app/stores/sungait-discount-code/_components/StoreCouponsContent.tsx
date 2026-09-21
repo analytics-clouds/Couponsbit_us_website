@@ -221,7 +221,7 @@ export default function SungaitCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest SUNGAIT Discount Code and SUNGAIT Voucher to save 50% OFF on selected sunglasses, enjoy 15% OFF orders over $55, get 10% OFF orders over $35, 5% OFF your first order, or apply code CLOUDS15 for 15% OFF sitewide while shopping stylish eyewear from $14.99.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function SungaitCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Sungait Coupon Codes & Offers</h2>
                   
@@ -1164,7 +1164,7 @@ export default function SungaitCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Sungait?", a: "Sungait is an eyewear brand that offers polarized sunglasses, blue light blocking glasses, reading glasses, and eyewear accessories designed for everyday use." },

@@ -67,6 +67,9 @@ const klookSchema = {
       description:
         "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Sep 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

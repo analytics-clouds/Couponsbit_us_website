@@ -67,6 +67,9 @@ const abercrombieSchema = {
       description:
         "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#breadcrumb" },
     },
@@ -140,7 +143,6 @@ const abercrombieSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#faq",
   "mainEntity": [

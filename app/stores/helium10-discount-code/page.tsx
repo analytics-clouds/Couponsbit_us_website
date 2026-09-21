@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
   },
   description:
-    "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
+    "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for the first 6 months with code ACLOUDS20, get 10% OFF for life using ACLOUDS10, and subscribe to the Platinum plan from $96.75/month.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/helium10-discount-code",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/helium10-discount-code",
     title: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
     description:
-      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
+      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for the first 6 months with code ACLOUDS20, get 10% OFF for life using ACLOUDS10, and subscribe to the Platinum plan from $96.75/month.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
     description:
-      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
+      "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for the first 6 months with code ACLOUDS20, get 10% OFF for life using ACLOUDS10, and subscribe to the Platinum plan from $96.75/month.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/helium_10_logo_gt6opp.webp"],
     site: "@couponsbit",
   },
@@ -62,8 +62,11 @@ const helium10Schema = {
       url: "https://www.couponsbit.us/stores/helium10-discount-code",
       name: "Helium 10 Discount Code: Get 25% OFF + 20% OFF for 6 Months",
       description:
-        "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for 6 months, and Platinum from $96.75/month.",
+        "Get the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026. Save 25% OFF, enjoy 20% OFF for the first 6 months with code ACLOUDS20, get 10% OFF for life using ACLOUDS10, and subscribe to the Platinum plan from $96.75/month.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/helium10-discount-code#breadcrumb" },
     },
@@ -116,7 +119,6 @@ const helium10Schema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/helium10-discount-code#faq",
   "mainEntity": [

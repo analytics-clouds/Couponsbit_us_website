@@ -121,7 +121,7 @@ export default function LittleCaesarsCouponsContent() {
                       <span className="text-black font-black text-sm">4.3</span>
                       <span className="text-gray-600 font-bold text-sm">(27.9k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Looking for the latest Little Caesars promo codes, discount code? Explore verified Little Caesars deals and save on pizzas, sides, drinks, and delivery orders across participating USA locations. Get $5 OFF orders of $30+ with code 5OFF30, $4 OFF delivery orders of $24+ with code DELIVERY4YOU, and $2 OFF Webberoni orders of $10+ with code WEBBERONI.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function LittleCaesarsCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Little Caesars Promo Codes & Offers</h2>
                 </div>
@@ -748,7 +748,7 @@ export default function LittleCaesarsCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Little Caesars Promo Codes</h3>
           {[
             { q: "Does Little Caesars have promo codes?", a: "Yes. Little Caesars uses promotional offers that can provide savings on qualifying menu items or orders. Available promotions and their conditions can change, so it is worth checking for current offers before ordering." },

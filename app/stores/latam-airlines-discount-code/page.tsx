@@ -67,6 +67,9 @@ const latamSchema = {
       description:
         "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. September 2026 deals verified daily.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

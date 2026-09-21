@@ -67,6 +67,9 @@ const superrunSchema = {
       description:
         "Find the latest Superun discount code, promo code, and treadmill deals for Sep 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/superrun-discount-code#breadcrumb" },
     },

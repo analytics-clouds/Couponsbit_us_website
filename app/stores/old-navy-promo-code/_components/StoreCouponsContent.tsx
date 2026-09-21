@@ -121,7 +121,7 @@ export default function OldNavyCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(58.3k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Save with the latest Old Navy promo code , Discount code and deals. Get up to 89% OFF clearance styles, with selected women’s and kids’ fashion starting from $2.97. Shop dresses, tops, activewear, maternity wear, school uniforms, and more at reduced prices.  
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function OldNavyCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Old Navy Promo Codes & Offers</h2>
                 </div>
@@ -877,7 +877,7 @@ export default function OldNavyCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Old Navy Promo Codes</h3>
           {[
             { q: "Does Old Navy offer promo codes?", a: "Yes. Old Navy regularly runs promotional campaigns that can include codes, category discounts, limited-time offers, and other savings opportunities. The exact promotions available can change frequently." },

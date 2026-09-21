@@ -67,6 +67,9 @@ const aliexpressSchema = {
       description:
         "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for September 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/aliexpress-promo-code#breadcrumb" },
     },
@@ -123,7 +126,6 @@ const aliexpressSchema = {
       ],
     },
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/aliexpress-promo-code#faq",
   "mainEntity": [

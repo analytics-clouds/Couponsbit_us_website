@@ -122,7 +122,7 @@ export default function ZaraCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(47.9k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Zara discount codes, promo codes, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, women’s outerwear up to 50% OFF, halter tops from $14, and linen shirts at 46% OFF.
                     </p>
                     <a
@@ -194,7 +194,7 @@ export default function ZaraCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Zara Discount Codes & Offers</h2>
         </div>
@@ -729,7 +729,7 @@ export default function ZaraCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Zara Discount Codes</h3>
           {[
             { q: "Where can I find a Zara discount code?", a: "You can check CouponsBit for available Zara promotions, coupon codes, and deals before shopping." },

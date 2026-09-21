@@ -64,6 +64,9 @@ const avisSchema = {
       description:
         "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

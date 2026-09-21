@@ -67,6 +67,9 @@ const iberiaSchema = {
       description:
         "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/iberia-discount-code#breadcrumb" },
     },
@@ -144,7 +147,6 @@ const iberiaSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/iberia-discount-code#faq",
   "mainEntity": [

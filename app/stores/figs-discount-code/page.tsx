@@ -64,6 +64,9 @@ const figsSchema = {
       description:
         "Find the latest FIGS discount code and FIGS promo code to save up to 40% on scrubs and get 20% OFF with the student discount. Explore verified FIGS deals in Sept 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/figs-discount-code#breadcrumb" },
     },
@@ -127,7 +130,6 @@ const figsSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/figs-discount-code#faq",
   "mainEntity": [

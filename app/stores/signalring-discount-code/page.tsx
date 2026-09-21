@@ -67,6 +67,9 @@ const signalRingSchema = {
       description:
         "Find the latest SignalRing discount code, promo code, and smart ring deals for Sep 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/signalring-discount-code#breadcrumb" },
     },

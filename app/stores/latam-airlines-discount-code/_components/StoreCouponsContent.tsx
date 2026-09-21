@@ -231,7 +231,7 @@ export default function LatamCouponsContent() {
                       <span className="text-black font-black text-sm">4.7</span>
                       <span className="text-gray-600 font-bold text-sm">(25k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       LATAM Airlines — Top South American carrier. 8 verified deals live! Flights from $136, 40% OFF packages & earn 40,000 bonus miles. Book now!
                     </p>
                     <a
@@ -336,7 +336,7 @@ export default function LatamCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
                   <h2 className="text-2xl font-black text-black leading-tight">LATAM Airlines Coupon Codes & Offers</h2>
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">8 Coupons & Offers Available</p>
@@ -1465,7 +1465,7 @@ Bonus Miles
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "Does LATAM Airlines offer coupon codes?", a: "Yes. LATAM Airlines occasionally offers promotional fares, discount codes, and limited-time travel deals." },

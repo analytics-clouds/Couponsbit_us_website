@@ -68,6 +68,9 @@ const stubHubSchema = {
       description:
         "Use a verified StubHub discount code & save big in September 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

@@ -67,6 +67,9 @@ const chewySchema = {
       description:
         "Find the latest Chewy promo codes and coupons for September 2026. Get 50% off your first order or Autoship on eligible products, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, plus free delivery on qualifying orders over $35.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

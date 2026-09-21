@@ -64,6 +64,9 @@ const coachOutletSchema = {
       description:
         "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/coach-outlet-promo-code#breadcrumb" },
     },
@@ -141,7 +144,6 @@ const coachOutletSchema = {
       ],
     },
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/coach-outlet-promo-code#faq",
   "mainEntity": [

@@ -67,6 +67,9 @@ const viatorSchema = {
       description:
         "Find the latest Viator promo code to book tours from $39 and save 15% on select experiences. Explore Las Vegas, London, Barcelona, and more with verified travel deals in Sept 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/viator-discount-code#breadcrumb" },
     },

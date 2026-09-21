@@ -120,7 +120,7 @@ export default function FlowersCouponsContent() {
                       <span className="text-black font-black text-sm">4.3</span>
                       <span className="text-gray-600 font-bold text-sm">(9.8k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for September 2026 to save 30% OFF on flowers and gifts, get $20 OFF with the Double Your Blooms offer, and shop the Fall Fresh Pick Bouquet from $39.99. Find verified deals on roses, plants, gift baskets, and flower delivery across the USA.
                     </p>
                     <a
@@ -192,7 +192,7 @@ export default function FlowersCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">1800 Flowers Promo Codes & Offers</h2>
                 </div>
@@ -572,7 +572,7 @@ export default function FlowersCouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             1-800-Flowers Promo Code FAQs
           </h3>

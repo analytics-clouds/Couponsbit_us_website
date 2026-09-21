@@ -67,6 +67,9 @@ const epicSchema = {
       description:
         "Find the latest Epic discount code and Epic promo code at Maxiku Offers. Save an extra 25% OFF the Family annual plan, enjoy a 7-day free trial, and access 40,000+ kids' books, videos, and audiobooks.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/epic-discount-code#breadcrumb" },
     },
@@ -118,7 +121,6 @@ const epicSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/epic-discount-code#faq",
   "mainEntity": [

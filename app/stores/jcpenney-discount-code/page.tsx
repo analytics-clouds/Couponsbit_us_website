@@ -67,6 +67,9 @@ const jcpenneySchema = {
       description:
         "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/jcpenney-discount-code#breadcrumb" },
     },
@@ -180,7 +183,6 @@ const jcpenneySchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/jcpenney-discount-code#faq",
   "mainEntity": [

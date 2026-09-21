@@ -74,6 +74,9 @@ const flixbusSchema = {
       description:
         "Get the latest FlixBus Discount Code and FlixBus Voucher to save up to 50% OFF on selected routes, plus enjoy an extra 20% OFF with coupon code FLXAUGND.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

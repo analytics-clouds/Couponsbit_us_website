@@ -67,6 +67,9 @@ const oppoSchema = {
       description:
         "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

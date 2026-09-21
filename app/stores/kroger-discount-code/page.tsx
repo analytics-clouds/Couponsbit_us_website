@@ -67,6 +67,9 @@ const krogerDigitalSchema = {
       description:
         "Find the latest Kroger Digital discount codes for Sep 2026. Discover grocery offers, pickup & delivery deals, pharmacy picks and digital coupon offers with Couponsbit.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/kroger-discount-code#breadcrumb" },
     },
@@ -160,7 +163,6 @@ const krogerDigitalSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/kroger-discount-code#faq",
   "mainEntity": [

@@ -221,7 +221,7 @@ export default function HostingerCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Hostinger Discount Code and Hostinger Voucher to save up to 80% on hosting plans, get a free domain, free SSL certificate, AI website builder, hosting from $2.99/month, and enjoy a 30-day money-back guarantee.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function HostingerCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Hostinger Coupon Codes & Offers</h2>
                   
@@ -1118,7 +1118,7 @@ export default function HostingerCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Hostinger?", a: "Hostinger is a global web hosting company that provides shared hosting, WordPress hosting, cloud hosting, VPS hosting, domain registration, email hosting, and website-building solutions." },

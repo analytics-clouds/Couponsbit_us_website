@@ -67,6 +67,9 @@ const sheinSchema = {
       description:
         "Find the latest SHEIN coupon code, discount code and fashion deals for Sep 2026. Save up to 90% on selected styles, get up to 85% OFF in the Final Bell Sale, and shop tops from $10.99.  ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

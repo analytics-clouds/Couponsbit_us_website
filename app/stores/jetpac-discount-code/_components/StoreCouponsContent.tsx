@@ -147,7 +147,7 @@ export default function JetpacCouponsContent() {
                       <span className="text-black font-black text-sm">4.4</span>
                       <span className="text-gray-600 font-bold text-sm">(9.7k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the verified Jetpac discount code ANC10 and latest promo codes to save up to 70% on international eSIM plans. Enjoy discounted airport lounge access, worldwide voice calls, Fast Track services, referral rewards, and affordable travel connectivity across 100+ destinations.
                     </p>
                     <a
@@ -220,7 +220,7 @@ export default function JetpacCouponsContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Main Content Area */}
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">
             Jetpac Discount Codes & Offers
@@ -1189,7 +1189,7 @@ export default function JetpacCouponsContent() {
         </button>
 
         {/* Accordion FAQs */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Jetpac Promo Codes</h3>
           {[
             { q: "What is a Jetpac promo code?", a: "A Jetpac promo code is a promotional code that may provide a discount or special benefit when purchasing eligible Jetpac products. Availability, eligibility, and terms vary by promotion." },

@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CouponsBit.us
 
-## Getting Started
+**CouponsBit** is a US-targeted coupon and deals aggregator covering 100+ partner stores across categories like Electronics, Travel, Fashion, Food, Gaming, Software, Health, and more — helping US shoppers find the best discount codes and promo deals in one place.
 
-First, run the development server:
+🌐 Live site: [https://www.couponsbit.us](https://www.couponsbit.us)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What We Offer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✂️ Verified coupon codes and promo deals for 100+ US stores
+- 🛍️ Daily and weekly deals updated regularly
+- 📍 City-level store pages for local deal discovery
+- 📰 Shopping guides and seasonal sale calendars for US shoppers
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Categories Covered
 
-To learn more about Next.js, take a look at the following resources:
+| Category | Category |
+|---|---|
+| Electronics | Travel |
+| Entertainment | Software |
+| Mobile | Fashion |
+| Health | Home |
+| Food | Gaming |
+| Hotels | Eyewear |
+| Automotive | Baby |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Browse all: [https://www.couponsbit.us/categories](https://www.couponsbit.us/categories)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Stores Covered (Sample)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Amazon, Walmart, Target, Nike, Adidas, SHEIN, Zara, H&M, Wayfair, Home Depot, Etsy, Chewy, DoorDash, Uber Eats, Expedia, Agoda, Booking.com, StubHub, Viagogo, Bluehost, Hostinger, McAfee, and many more.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Full store list: [https://www.couponsbit.us/stores](https://www.couponsbit.us/stores)
+
+---
+
+## Blog & Savings Guides
+
+- [CouponsBit Shopping & Savings Guide](https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide)
+- [How to Save Money Shopping Online](https://www.couponsbit.us/blog/how-to-save-money-shopping-online)
+- [Holiday Shopping Calendar 2026](https://www.couponsbit.us/blog/holiday-shopping-calendar-2026)
+- [Upcoming Sales 2026](https://www.couponsbit.us/blog/upcoming-sales-2026)
+
+---
+
+## Quick Links
+
+- [Deals of the Day](https://www.couponsbit.us/deals-of-the-day)
+- [Deals of the Week](https://www.couponsbit.us/deals-of-the-week)
+- [All Deals](https://www.couponsbit.us/deals)
+- [About Us](https://www.couponsbit.us/about)
+- [Partner With Us](https://www.couponsbit.us/partner)
+- [FAQs](https://www.couponsbit.us/faqs)
+- [Contact](https://www.couponsbit.us/contact)
+- [Privacy Policy](https://www.couponsbit.us/privacy-policy)
+- [Terms of Use](https://www.couponsbit.us/terms-of-use)

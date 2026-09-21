@@ -68,6 +68,9 @@ const driffleSchema = {
       description:
         "Find the latest Driffle discount code and verified deals for Sep 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

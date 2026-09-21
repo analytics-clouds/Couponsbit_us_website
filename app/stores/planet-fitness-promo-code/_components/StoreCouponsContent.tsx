@@ -120,7 +120,7 @@ export default function PlanetFitnessCouponsContent() {
                       <span className="text-black font-black text-sm">4.2</span>
                       <span className="text-gray-600 font-bold text-sm">(24.9k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Planet Fitness promo codes and discount codes to join for just $1 down and $10/month or get the PF Black Card from $24.99/month. Enjoy Classic Memberships from $15/month and access affordable fitness plans at participating USA clubs in Sept 2026.
                     </p>
                     <a
@@ -192,7 +192,7 @@ export default function PlanetFitnessCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Planet Fitness Promo Codes & Offers</h2>
                 </div>
@@ -728,7 +728,7 @@ export default function PlanetFitnessCouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             Frequently Asked Questions About Planet Fitness Promo Codes
           </h3>

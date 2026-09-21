@@ -64,6 +64,9 @@ const crocsSchema = {
       description:
         "Find the latest Crocs promo code and Crocs discount code to save up to 75% sitewide and shop shoes, sandals, and Jibbitz from $19.99. Explore verified Crocs deals in Sept 2026. ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/crocs-promo-code#breadcrumb" },
     },
@@ -125,7 +128,6 @@ const crocsSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {

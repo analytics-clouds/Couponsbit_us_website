@@ -68,6 +68,9 @@ const krispSchema = {
       description:
         "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

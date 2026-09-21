@@ -121,7 +121,7 @@ export default function AdidasCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(12.8k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Discover verified Adidas promo codes and Adidas discount codes at Maxiku Offers. Save up to 50% OFF clothing and footwear, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15 across the USA.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function AdidasCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Adidas Promo Codes & Offers</h2>
                 </div>
@@ -651,7 +651,7 @@ export default function AdidasCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About adidas Promo Codes</h3>
           {[
             { q: "Does adidas offer promo codes?", a: "Yes. adidas runs promotional campaigns throughout the year, and eligible customers may find promotional codes, sale offers, member benefits, and other discounts. Availability varies by promotion." },

@@ -64,6 +64,9 @@ const hpSchema = {
       description:
         "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

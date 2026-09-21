@@ -67,6 +67,9 @@ const airaloSchema = {
       description:
         "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

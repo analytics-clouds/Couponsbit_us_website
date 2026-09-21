@@ -67,6 +67,9 @@ const littleCaesarsSchema = {
       description:
         "Find the latest Little Caesars promo codes, discount code for September 2026. Save $5 OFF $30+ with 5OFF30, $4 OFF delivery with DELIVERY4YOU, and $2 OFF Webberoni with WEBBERONI.  ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#breadcrumb" },
     },
@@ -132,7 +135,6 @@ const littleCaesarsSchema = {
     },
 
    {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/little-caesars-promo-code#faq",
   "mainEntity": [

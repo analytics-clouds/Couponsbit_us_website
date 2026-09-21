@@ -64,6 +64,13 @@ const attSchema = {
       description:
         "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-06-15",
+      dateModified: "2026-09-21",
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".store-description", ".top-offers", ".faq-section"],
+      },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/att-promo-code#breadcrumb" },
     },
@@ -128,7 +135,6 @@ const attSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/att-promo-code#faq",
   "mainEntity": [

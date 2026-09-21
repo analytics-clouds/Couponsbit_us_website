@@ -67,6 +67,9 @@ const ultahostSchema = {
       description:
         "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

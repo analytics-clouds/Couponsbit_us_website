@@ -67,6 +67,9 @@ const vooglamSchema = {
       description:
         "Discover the latest Vooglam Discount Code and Vooglam Voucher to save 20% OFF stylish eyeglasses and sunglasses. Shop new arrivals, bestselling frames, and premium eyewear for every style.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

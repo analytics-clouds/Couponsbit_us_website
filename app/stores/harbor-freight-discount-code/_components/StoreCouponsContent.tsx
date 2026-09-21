@@ -121,7 +121,7 @@ export default function HarborFreightCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(44.1k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Find genuine Abercrombie discount code offers for September 2026 and save up to 30% off almost everything. Explore the latest US promo code deals on women's, men's and kids' clothing, jeans, dresses, tops and more while limited-time offers last.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function HarborFreightCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Harbor Freight Discount Codes & Offers</h2>
         </div>
@@ -815,7 +815,7 @@ export default function HarborFreightCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Harbor Freight Discount Codes</h3>
           {[
             { q: "Does Harbor Freight offer discount codes?", a: "Yes. Harbor Freight regularly provides different types of promotional savings, including coupons, product offers, seasonal promotions, clearance opportunities, and other deals. The exact promotions available can change." },

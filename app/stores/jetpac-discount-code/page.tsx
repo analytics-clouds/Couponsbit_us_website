@@ -67,6 +67,9 @@ const jetpacSchema = {
       description:
         "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#breadcrumb" },
     },
@@ -144,7 +147,6 @@ const jetpacSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#faq",
   "mainEntity": [

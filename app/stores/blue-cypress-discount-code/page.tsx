@@ -67,6 +67,9 @@ const blueCypressSchema = {
       description:
         "Find the latest Blue Cypress discount code, promo code and deals for Sep 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#breadcrumb" },
     },
@@ -148,7 +151,6 @@ const blueCypressSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#faq",
   "mainEntity": [

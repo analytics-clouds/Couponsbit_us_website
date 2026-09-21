@@ -226,7 +226,7 @@ export default function SintraCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(2k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Grab verified Sintra discount codes for September 2026 and save up to 70% on AI automation plans. Annual plan from just $15.60/month, 60% off 3-month, 50% off monthly — all 12 AI helpers included with a 14-day money-back guarantee.
                     </p>
                     <a
@@ -331,7 +331,7 @@ export default function SintraCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Sintra Coupon Codes & Offers</h2>
                   
@@ -889,7 +889,7 @@ export default function SintraCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "Does Sintra offer coupon codes?", a: "Yes. Sintra periodically offers promo codes, subscription discounts, and promotional pricing for eligible plans." },

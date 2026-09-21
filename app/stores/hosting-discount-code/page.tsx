@@ -67,6 +67,9 @@ const hostingSchema = {
       description:
         "Find the latest Hosting discount codes and web hosting deals for September 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

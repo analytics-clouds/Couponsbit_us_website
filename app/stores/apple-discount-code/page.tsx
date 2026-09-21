@@ -67,6 +67,9 @@ const appleSchema = {
       description:
         "Find the latest Apple discount code, promo code, and student deals for Sep 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/apple-discount-code#breadcrumb" },
     },

@@ -67,6 +67,9 @@ const spiritHalloweenSchema = {
       description:
         "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

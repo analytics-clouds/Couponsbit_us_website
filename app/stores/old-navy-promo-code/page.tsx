@@ -67,6 +67,9 @@ const oldNavySchema = {
       description:
         "Find the latest Old Navy promo codes, discount codes and deals for September 2026. Save up to 89% OFF clearance styles, with women’s and kids’ fashion from $2.97.  ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/old-navy-promo-code#breadcrumb" },
     },
@@ -164,7 +167,6 @@ const oldNavySchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/old-navy-promo-code#faq",
   "mainEntity": [

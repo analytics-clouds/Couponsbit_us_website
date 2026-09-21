@@ -129,7 +129,7 @@ export default function TargetCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(88.2k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Target discount codes, promo codes, and deals for Sep 2026. Save up to $100 on select Apple devices, get up to 50% OFF clothing and bedding, 40% OFF Gucci fragrance, and shop Champion T-shirts under $20 plus clearance footwear and home deals.
                     </p>
                     <a
@@ -202,7 +202,7 @@ export default function TargetCouponsContent() {
 <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Target Discount Codes & Offers</h2>
         </div>
@@ -689,7 +689,7 @@ export default function TargetCouponsContent() {
         </button>
 
         {/* FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Target?", a: "Target is one of the largest retail chains in the United States, offering groceries, electronics, clothing, beauty products, home goods, toys, pet supplies, and much more through its stores and online platform." },

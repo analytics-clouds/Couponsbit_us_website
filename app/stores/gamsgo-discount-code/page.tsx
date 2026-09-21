@@ -67,6 +67,9 @@ const gamsGoSchema = {
       description:
         "Find the latest GamsGo discount codes and promo codes for September 2026. Save up to 85% on ChatGPT, Cursor Pro, Suno Pro, CapCut Pro, Perplexity AI, SEMrush Guru, Roblox Robux, Pokémon GO accounts, Manus AI, and more premium subscriptions.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/gamsgo-discount-code#breadcrumb" },
     },
@@ -152,7 +155,6 @@ const gamsGoSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/gamsgo-discount-code#faq",
   "mainEntity": [

@@ -64,6 +64,9 @@ const llbeanSchema = {
       description:
         "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/llbean-promo-code#breadcrumb" },
     },
@@ -130,7 +133,6 @@ const llbeanSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/llbean-promo-code#faq",
   "mainEntity": [

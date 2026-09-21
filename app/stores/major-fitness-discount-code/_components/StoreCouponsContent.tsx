@@ -120,7 +120,7 @@ export default function MajorFitnessCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(6.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026 to save $250 on the B52 PRO, get $50 OFF as a new member, enjoy the B52 Standard from $1,119.99, and claim a FREE Hoodie & Tee on orders over $2,000. Shop verified deals on home gyms, benches, dumbbells, plates, and accessories.
                     </p>
                     <a
@@ -192,7 +192,7 @@ export default function MajorFitnessCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Major Fitness Discount Codes & Offers</h2>
                 </div>
@@ -596,7 +596,7 @@ export default function MajorFitnessCouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             FAQs About Major Fitness Discount Codes
           </h3>

@@ -64,6 +64,9 @@ const flowersSchema = {
       description:
         "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for September 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/1800-flowers-promo-code#breadcrumb" },
     },
@@ -124,7 +127,6 @@ const flowersSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/1800-flowers-promo-code#faq",
   "mainEntity": [

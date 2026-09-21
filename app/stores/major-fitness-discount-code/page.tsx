@@ -64,6 +64,9 @@ const majorFitnessSchema = {
       description:
         "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#breadcrumb" },
     },
@@ -132,7 +135,6 @@ const majorFitnessSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#faq",
   "mainEntity": [

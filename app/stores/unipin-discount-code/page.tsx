@@ -65,6 +65,9 @@ const unipinSchema = {
       description:
         "Get verified UniPin deals for September 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

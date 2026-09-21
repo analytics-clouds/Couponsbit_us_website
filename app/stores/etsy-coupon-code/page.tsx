@@ -67,6 +67,9 @@ const etsySchema = {
       description:
         "Find the latest Etsy coupon code, promo code, and deals for Sep 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#breadcrumb" },
     },

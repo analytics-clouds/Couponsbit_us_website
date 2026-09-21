@@ -67,6 +67,9 @@ const loveJerkySchema = {
       description:
         "Find the latest LovesJerky discount codes and deals for Sep 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

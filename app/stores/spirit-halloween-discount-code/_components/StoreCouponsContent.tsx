@@ -221,7 +221,7 @@ export default function SpiritHalloweenCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to enjoy savings of up to 75% OFF on Halloween decorations, animatronics, costumes, collectibles, and accessories. Plus, get FREE shipping on orders over $40 for even bigger seasonal savings.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function SpiritHalloweenCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Spirit Halloween Coupon Codes & Offers</h2>
                   
@@ -1074,7 +1074,7 @@ export default function SpiritHalloweenCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Spirit Halloween?", a: "Spirit Halloween is North America's largest seasonal Halloween retailer, offering costumes, decorations, animatronics, party supplies, and accessories through thousands of temporary retail stores and its online shop." },

@@ -309,7 +309,7 @@ export default function DellCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save with Dell discount codes and deals in Sep 2026. Get up to $1,700 off gaming PCs, $1,100 off XPS laptops, $750 off Back to School offers, and exclusive student, business, laptop, monitor, and accessory savings.
                     </p>
                     <a
@@ -414,7 +414,7 @@ export default function DellCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Dell Coupon Codes & Offers</h2>
                   
@@ -1295,7 +1295,7 @@ export default function DellCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What products does Dell sell?", a: "Dell offers laptops, desktop computers, gaming PCs, monitors, accessories, servers, storage solutions, workstations, networking equipment, and enterprise IT infrastructure." },

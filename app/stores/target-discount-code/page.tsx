@@ -67,6 +67,9 @@ const targetSchema = {
       description:
         "Find the latest Target discount code, promo code, and deals for Sep 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/target-discount-code#breadcrumb" },
     },

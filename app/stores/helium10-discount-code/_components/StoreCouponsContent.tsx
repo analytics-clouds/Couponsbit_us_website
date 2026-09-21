@@ -11,7 +11,7 @@ import {
   BadgeCheck,
   ExternalLink, HeartHandshake, ShieldAlert, Calendar, Receipt,
   ShieldCheck,
-  PiggyBank,
+  PiggyBank,Copy,
   RefreshCw,
   ChevronDown,
   CheckCircle,
@@ -67,6 +67,13 @@ export default function Helium10CouponsContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
 
+  const handleCopy = (code: string) => {
+    navigator.clipboard.writeText(code);
+    setToastCode(code);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 2000);
+  };
+
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
@@ -120,8 +127,8 @@ export default function Helium10CouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(11.3k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months, get 10% OFF every month for life, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months with code ACLOUDS20, get 10% OFF every month for life using code ACLOUDS10, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
                     </p>
                     <a
                       href={STORE_URL}
@@ -192,7 +199,7 @@ export default function Helium10CouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Helium 10 Discount Codes & Offers</h2>
                 </div>
@@ -237,8 +244,15 @@ export default function Helium10CouponsContent() {
                               </ul>
                             </div>
                           </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
                             <a href={STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Shop Helium 10: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button type="button" onClick={() => handleCopy("ACLOUDS10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">ACLOUDS10</span>
+                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                        <Copy className="w-3.5 h-3.5" />
+                        Copy
+                      </span>
+                    </button>
                           </div>
                         </div>
                       </div>
@@ -581,7 +595,7 @@ export default function Helium10CouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             Helium 10 Discount Code FAQs
           </h3>

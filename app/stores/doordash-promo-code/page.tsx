@@ -67,6 +67,9 @@ const doorDashSchema = {
       description:
         "Find the latest DoorDash promo codes and coupons for September 2026. Save 30% on eligible orders, get $0 delivery fees on your first order, $15 off select wine, $6 off $40+ orders, and more deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

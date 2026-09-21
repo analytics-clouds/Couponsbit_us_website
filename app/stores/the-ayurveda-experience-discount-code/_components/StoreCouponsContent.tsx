@@ -122,7 +122,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(19.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                      Find The Ayurveda Experience discount codes, promo codes, and Ayurvedic skincare deals for Sep 2026. Save 50% on Yauvari Youth Spring, 10% on the Day & Night Face Oil Duo, and shop body oils, neck care, face creams, and mini skincare essentials from $35.
                     </p>
                     <a
@@ -195,7 +195,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
 <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">
             The Ayurveda Experience Discount Codes & Offers
@@ -629,7 +629,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
                 </button>
 
                 {/* FAQ */}
-                <div className="mt-20 space-y-4">
+                <div className="faq-section mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
                     { q: "What is The Ayurveda Experience?", a: "The Ayurveda Experience is a wellness brand offering Ayurvedic hair oils, skincare, herbal supplements and wellness kits." },

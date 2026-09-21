@@ -67,6 +67,9 @@ const grubhubSchema = {
       description:
         "Find the latest Grubhub promo code and Grubhub discount code at Maxiku Offers. Save 20% OFF your first order, get unlimited FREE delivery with Grubhub+, plus enjoy $8 OFF dinner and $5 OFF select meals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/grubhub-promo-code#breadcrumb" },
     },
@@ -122,7 +125,6 @@ const grubhubSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/grubhub-promo-code#faq",
   "mainEntity": [

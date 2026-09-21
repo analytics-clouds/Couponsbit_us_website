@@ -67,6 +67,9 @@ const macysSchema = {
       description:
         "Find the latest Macy's promo code, discount code and deals for Sep 2026. Save up to 75% on jewelry, Enjoy 40%-60% OFF during Macy's Star Deals Week, and get $20 OFF eligible $100+ orders. ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/macys-promo-code#breadcrumb" },
     },

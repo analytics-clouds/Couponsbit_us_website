@@ -67,6 +67,9 @@ const trainpalSchema = {
       description:
         "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

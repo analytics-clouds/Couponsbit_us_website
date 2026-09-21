@@ -68,6 +68,9 @@ const sintraSchema = {
       description:
         "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

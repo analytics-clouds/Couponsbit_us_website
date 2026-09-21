@@ -67,6 +67,9 @@ const merachFitSchema = {
       description:
         "Find the latest Merachfit discount codes and deals for Sep 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

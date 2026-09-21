@@ -121,7 +121,7 @@ export default function IberiaCouponsContent() {
                       <span className="text-black font-black text-sm">4.4</span>
                       <span className="text-gray-600 font-bold text-sm">(19.3k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Iberia promo codes and discount codes for Sep 2026. Save on flights to Barcelona, Paris, New York, and Madrid, plus flight and hotel packages, car rental deals, and affordable international airfare with the latest Iberia travel offers.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function IberiaCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Iberia Discount Codes & Offers</h2>
                 </div>
@@ -1224,7 +1224,7 @@ export default function IberiaCouponsContent() {
         </button>
 
         {/* Accordion FAQs */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Iberia Discount Codes</h3>
           {[
             { q: "Where can I find an Iberia discount code?", a: "You can check CouponsBit for available Iberia discount codes, promo codes, coupon offers, and flight deals before booking. Iberia also states that customers can learn about its latest promotional codes through its website, social media channels, newsletters, and Iberia Club promotions." },

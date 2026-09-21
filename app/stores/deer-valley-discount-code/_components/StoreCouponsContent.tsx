@@ -272,7 +272,7 @@ export default function DeerValleyCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                     Save with DeerValley discount codes and deals in Sep 2026. Enjoy up to 60% OFF bathroom and kitchen essentials, including smart toilets, sinks, vanity mirrors, and modern home fixtures designed to upgrade your living space.
                     </p>
                     <a
@@ -377,7 +377,7 @@ export default function DeerValleyCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Deer Valley Coupon Codes & Offers</h2>
                   
@@ -1096,7 +1096,7 @@ export default function DeerValleyCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Deer Valley Bath?", a: "Deer Valley Bath is a home improvement brand offering bathroom and kitchen fixtures, including smart toilets, vanities, sinks, bathtubs, mirrors, and accessories." },

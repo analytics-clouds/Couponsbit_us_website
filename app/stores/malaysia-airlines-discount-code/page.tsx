@@ -67,6 +67,9 @@ const malaysiaAirlinesSchema = {
       description:
         "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

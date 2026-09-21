@@ -64,6 +64,9 @@ const factor75Schema = {
       description:
         "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

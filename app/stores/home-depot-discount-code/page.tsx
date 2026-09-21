@@ -67,6 +67,9 @@ const homeDepotSchema = {
       description:
         "Find the latest Home Depot discount code, promo code, and deals for Sep 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/home-depot-discount-code#breadcrumb" },
     },

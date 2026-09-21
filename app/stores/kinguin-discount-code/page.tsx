@@ -69,6 +69,9 @@ const kinguinSchema = {
       description:
         "Use a Kinguin discount code or promo code & score up to 97% off PC games, gift cards & software. EA SPORTS FC 26 from just $1.86. Steam, Xbox & PlayStation deals verified September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

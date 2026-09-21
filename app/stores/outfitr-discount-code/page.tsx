@@ -64,6 +64,9 @@ const outfitrSchema = {
       description:
         "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

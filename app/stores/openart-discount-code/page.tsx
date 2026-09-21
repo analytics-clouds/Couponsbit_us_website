@@ -68,6 +68,9 @@ const openartSchema = {
       description:
         " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

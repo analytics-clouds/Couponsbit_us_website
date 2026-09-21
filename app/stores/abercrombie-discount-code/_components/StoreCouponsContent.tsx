@@ -121,7 +121,7 @@ export default function AbercrombieCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(36.2k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save with the latest Abercrombie discount codes, promo code and deals. Get up to 30% OFF almost everything, BOGO 50% OFF at Abercrombie Kids, plus clearance savings on men’s and kids’ styles. Enjoy exclusive USA fashion offers and free shipping on qualifying orders.
 
                     </p>
@@ -194,7 +194,7 @@ export default function AbercrombieCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-3xl font-black text-black leading-tight">Abercrombie Discount Codes & Offers</h2>
         </div>
@@ -793,7 +793,7 @@ export default function AbercrombieCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Abercrombie Discount Codes</h3>
           {[
             { q: "Does Abercrombie offer discount codes?", a: "Yes. Abercrombie runs promotional campaigns throughout the year, and some offers may involve discount codes while others may be automatically applied or connected to specific products, categories, or shopping events." },

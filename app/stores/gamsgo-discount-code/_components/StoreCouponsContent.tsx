@@ -121,7 +121,7 @@ export default function GamsGoCouponsContent() {
                       <span className="text-black font-black text-sm">4.2</span>
                       <span className="text-gray-600 font-bold text-sm">(14.3k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified GamsGo discount codes and promo codes to save up to 85% on premium AI tools, software, gaming services, and subscriptions. Enjoy discounted access to ChatGPT, Cursor Pro, Suno Pro, CapCut Pro, Perplexity AI, SEMrush Guru, Roblox Robux, Manus AI, and more.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function GamsGoCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">GamsGo Discount Codes & Offers</h2>
                 </div>
@@ -1019,7 +1019,7 @@ export default function GamsGoCouponsContent() {
         </button>
 
         {/* Accordion FAQs */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About GamsGo Promo Codes</h3>
           {[
             { q: "What is a GamsGo promo code?", a: "A GamsGo promo code is a promotional code that may provide a discount or other offer on an eligible purchase. The exact terms depend on the promotion." },

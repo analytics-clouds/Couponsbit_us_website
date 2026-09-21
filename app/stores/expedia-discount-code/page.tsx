@@ -68,6 +68,9 @@ const expediaSchema = {
       description:
         "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

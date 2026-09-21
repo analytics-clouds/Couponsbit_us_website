@@ -118,7 +118,7 @@ export default function ZenniCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(12.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Zenni Optical promo codes to save up to 75% on Blokz lenses and up to 30% on selected glasses. Enjoy 15% OFF your first order over $65, free shipping on eligible orders, and affordable prescription eyewear starting under $20 in Sept 2026.
                     
                     </p>
@@ -191,7 +191,7 @@ export default function ZenniCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Zenni Discount Codes & Offers</h2>
                 </div>
@@ -725,7 +725,7 @@ export default function ZenniCouponsContent() {
         </button>
 
         {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             Frequently Asked Questions About Zenni Promo Codes
           </h3>

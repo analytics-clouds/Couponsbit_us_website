@@ -64,6 +64,9 @@ const viagogoSchema = {
       description:
         "Save with a verified Viagogo discount code — September 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

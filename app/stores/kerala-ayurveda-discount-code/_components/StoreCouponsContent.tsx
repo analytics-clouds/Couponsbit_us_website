@@ -222,7 +222,7 @@ export default function KeralaAyurvedaCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save more on authentic Ayurvedic wellness products with Kerala Ayurveda deals. Get Kalyanaka Ghee for $28.95, Rasnasapthakam Kwath for $22.95, Digi Eye Defense for $31.95, Indukantham Kwath for $25.95, Kumkumadi Oil from $27, Shilajit Capsules for $25.95, Brilliant Mind for $28.95, Kumkumadi Thailam from $27, Triphala Capsules for $28.95, and Dashamula Capsules for $28.95. Use COUNTNEW10 to get 10% OFF your first order and enjoy traditional Ayurvedic wellness products at better prices.
                     </p>
                     <a
@@ -327,7 +327,7 @@ export default function KeralaAyurvedaCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
 
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">
                   Use code COUNTNEW10 for 10% OFF | Sep 2026
@@ -1168,7 +1168,7 @@ export default function KeralaAyurvedaCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Kerala Ayurveda?", a: "Kerala Ayurveda is an Indian Ayurvedic wellness brand offering herbal products, Ayurvedic medicines, personal care essentials, and wellness solutions inspired by traditional Ayurvedic practices." },

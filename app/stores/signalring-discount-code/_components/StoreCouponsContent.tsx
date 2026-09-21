@@ -121,7 +121,7 @@ export default function SignalRingCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(2.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find SignalRing discount codes, promo codes, and smart ring deals for Sep 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, Bluetooth connectivity, IP68 water resistance, no monthly subscription, and 30-day returns.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function SignalRingCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">SignalRing Discount Codes & Offers</h2>
         </div>
@@ -651,7 +651,7 @@ export default function SignalRingCouponsContent() {
         </button>
 
         {/* Dynamic FAQ Accordion Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Signal Ring Discount Code FAQs</h3>
           {[
             { q: "Does Signal Ring Have a Coupon Code?", a: "Signal Ring may offer promotional discounts as it expands its availability. Check CouponsBit for current Signal Ring coupon codes and offers before purchasing." },

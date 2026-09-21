@@ -229,7 +229,7 @@ export default function ReolinkCouponsContent() {
                       <span className="text-black font-black text-sm">4.7</span>
                       <span className="text-gray-600 font-bold text-sm">(10.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Unlock the best Reolink discount codes for September 2026 and save up to 50% on premium security cameras & smart surveillance systems. Grab $450 off the RLK16, TrackFlex Floodlight at $338.99, and Duo 3 PoE at $238.76 — verified deals updated daily.
                     </p>
                     <a
@@ -334,7 +334,7 @@ export default function ReolinkCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Reolink Coupon Codes & Offers</h2>
                   
@@ -995,7 +995,7 @@ export default function ReolinkCouponsContent() {
         </button>
 
         {/* FAQs Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "Does Reolink offer coupon codes?", a: "Yes. Reolink frequently offers promo codes, seasonal discounts, and special promotions on security products." },

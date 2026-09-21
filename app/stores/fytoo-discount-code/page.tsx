@@ -66,6 +66,9 @@ const fytooSchema = {
       description:
         "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

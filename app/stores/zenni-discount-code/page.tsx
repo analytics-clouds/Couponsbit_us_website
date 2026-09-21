@@ -67,6 +67,9 @@ const zenniSchema = {
       description:
         "Find the latest Zenni Optical promo code to save up to 75% on Blokz lenses and up to 30% on selected glasses. Explore verified eyewear deals in Sept 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/zenni-discount-code#breadcrumb" },
     },
@@ -127,7 +130,6 @@ const zenniSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/zenni-discount-code#faq",
   "mainEntity": [

@@ -64,6 +64,9 @@ const isinwheelSchema = {
       description:
         "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#breadcrumb" },
     },
@@ -123,7 +126,6 @@ const isinwheelSchema = {
     },
 
     {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#faq",
       "mainEntity": [

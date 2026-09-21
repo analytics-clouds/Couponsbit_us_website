@@ -67,6 +67,9 @@ const adidasSchema = {
       description:
         "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for September 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/adidas-promo-code#breadcrumb" },
     },
@@ -138,7 +141,6 @@ const adidasSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/adidas-promo-code#faq",
   "mainEntity": [

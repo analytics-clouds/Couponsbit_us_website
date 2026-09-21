@@ -67,6 +67,9 @@ const goodRxSchema = {
       description:
         "Find the latest GoodRx discount code, promo code, and healthcare savings for Sep 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#breadcrumb" },
     },

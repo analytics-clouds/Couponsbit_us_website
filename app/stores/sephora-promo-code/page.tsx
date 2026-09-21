@@ -64,6 +64,9 @@ const sephoraSchema = {
       description:
         "Find the latest Sephora promo code and coupon offers for Sept 2026. Save on makeup, skincare, and fragrance with verified Sephora deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/sephora-promo-code#breadcrumb" },
     },
@@ -127,7 +130,6 @@ const sephoraSchema = {
     },
 
     {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "@id": "https://www.couponsbit.us/stores/sephora-promo-code#faq",
       "mainEntity": [

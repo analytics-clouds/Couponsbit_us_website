@@ -67,6 +67,9 @@ const lowesSchema = {
       description:
         "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for September 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/lowes-promo-code#breadcrumb" },
     },
@@ -124,7 +127,6 @@ const lowesSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/lowes-promo-code#faq",
   "mainEntity": [

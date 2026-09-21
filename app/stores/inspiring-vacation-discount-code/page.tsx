@@ -67,6 +67,9 @@ const inspiringVacationSchema = {
       description:
         "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

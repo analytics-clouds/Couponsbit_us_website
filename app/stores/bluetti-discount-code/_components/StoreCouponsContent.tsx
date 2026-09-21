@@ -221,7 +221,7 @@ export default function BluettiCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Use the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200 on portable power stations, receive a FREE $249 Trolley with eligible bundles, and shop home backup systems, solar generators, and power stations starting from $1,199.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function BluettiCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Bluetti Coupon Codes & Offers</h2>
                   
@@ -1111,7 +1111,7 @@ export default function BluettiCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is BLUETTI?", a: "BLUETTI is a clean energy company that manufactures portable power stations, solar generators, solar panels, home backup power systems, and energy storage solutions." },

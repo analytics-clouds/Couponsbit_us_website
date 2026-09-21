@@ -121,7 +121,7 @@ export default function SuperrunCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(6.2k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Superun discount codes, promo codes, and treadmill deals for Sep 2026. Save $30 on the RUN Pro Foldable Treadmill at $264.99, $20 on Walk&Run at $249.99, $10 on the WALK Urban at $129, plus a $39.99 replacement remote.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function SuperrunCouponsContent() {
 <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Superrun Discount Codes & Offers</h2>
         </div>
@@ -611,7 +611,7 @@ export default function SuperrunCouponsContent() {
         </button>
 
         {/* Dynamic FAQ Accordion Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Superun discount Code FAQs</h3>
           {[
             { q: "Does Superun Have Coupon Codes?", a: "Yes. Current coupon listings show several Superun promotional offers, including percentage discounts, fixed-dollar discounts on selected products, sale offers, and free-shipping promotions. Availability can change, so check the current terms before purchasing." },

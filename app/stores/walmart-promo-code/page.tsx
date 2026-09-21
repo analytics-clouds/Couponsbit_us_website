@@ -67,6 +67,9 @@ const walmartSchema = {
       description:
         "Find the latest Walmart promo code, discount code, and deals for Sep 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/walmart-promo-code#breadcrumb" },
     },

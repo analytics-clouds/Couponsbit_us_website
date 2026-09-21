@@ -67,6 +67,9 @@ const geekbuyingSchema = {
       description:
         "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

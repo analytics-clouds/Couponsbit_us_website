@@ -71,6 +71,9 @@ const talkpalSchema = {
       description:
         "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

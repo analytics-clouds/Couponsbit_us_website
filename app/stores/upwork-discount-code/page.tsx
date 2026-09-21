@@ -67,6 +67,9 @@ const upworkSchema = {
       description:
         "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

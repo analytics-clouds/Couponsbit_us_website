@@ -67,6 +67,9 @@ const carCoversSchema = {
       description:
         "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

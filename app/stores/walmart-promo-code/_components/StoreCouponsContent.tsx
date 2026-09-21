@@ -122,7 +122,7 @@ export default function WalmartCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(64.8k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Find Walmart promo codes, discount codes, deals, and savings for Sep 2026. Save up to 65% OFF during Flash Deals, get a Walmart+ 30-day trial for $1, Acer Nitro 27-inch monitor for $119, headphones for $17.99, and bedding for $74.99.
                     </p>
                     <a
@@ -194,7 +194,7 @@ export default function WalmartCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12">
-      <div className="lg:w-[65%]">
+      <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
           <h2 className="text-2xl font-black text-black leading-tight">Walmart Promo Codes & Offers</h2>
         </div>
@@ -668,7 +668,7 @@ export default function WalmartCouponsContent() {
         </button>
 
         {/* Dynamic FAQ Accordion Section */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Walmart Coupon Code FAQs</h3>
           {[
             { q: "Does Walmart Have Coupon Codes?", a: "Walmart offers various promotions and savings opportunities, although not every discount requires a traditional coupon code. Shoppers can also find Rollbacks, clearance prices, Marketplace promotions, and other special offers." },

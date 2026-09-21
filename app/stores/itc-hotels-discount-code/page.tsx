@@ -67,6 +67,9 @@ const itcHotelsSchema = {
       description:
         "Find the latest ITC Hotels promo code, discount code, and hotel deals for Sep 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/itc-hotels-discount-code#breadcrumb" },
     },
@@ -144,7 +147,6 @@ const itcHotelsSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/itc-hotels-discount-code#faq",
   "mainEntity": [

@@ -67,6 +67,9 @@ const vividSeatsSchema = {
       description:
         "Find the latest Vivid Seats promo code to get 15% OFF your first ticket purchase and save $20 on orders over $200. Explore verified ticket deals for concerts, sports, and theatre in Sept 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/vivid-seats-promo-code#breadcrumb" },
     },
@@ -128,7 +131,6 @@ const vividSeatsSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/vivid-seats-promo-code#faq",
   "mainEntity": [

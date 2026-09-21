@@ -67,6 +67,9 @@ const zaraSchema = {
       description:
         "Find the latest Zara discount code, promo code, and fashion deals for Sep 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/zara-discount-code#breadcrumb" },
     },
@@ -152,7 +155,6 @@ const zaraSchema = {
     },
 
    {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/zara-discount-code#faq",
   "mainEntity": [

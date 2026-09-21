@@ -64,6 +64,9 @@ const planetFitnessSchema = {
       description:
         "Find the latest Planet Fitness promo code and discount code to join for $1 down and $10/month or get the PF Black Card from $24.99/month. Explore verified gym membership deals in Sept 2026. ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/planet-fitness-promo-code#breadcrumb" },
     },
@@ -117,7 +120,6 @@ const planetFitnessSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/planet-fitness-promo-code#faq",
   "mainEntity": [

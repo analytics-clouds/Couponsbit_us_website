@@ -247,7 +247,7 @@ export default function StubHubCouponsContent() {
                       <span className="text-black font-black text-sm">4.5</span>
                       <span className="text-gray-600 font-bold text-sm">(18k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-7 max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-7 max-w-[400px] text-justify">
                       Find verified StubHub discount codes for September 2026 and save on concerts, sports & live events. Get flat 10% off sitewide, $20 off as a new user, $25 student discount & Lion King NYC tickets from just $171.
                     </p>
                     <a
@@ -397,7 +397,7 @@ export default function StubHubCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
                   <h2 className="text-2xl font-black text-black leading-tight">StubHub Coupon Codes & Offers</h2>
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">7 Coupons & Offers Available</p>
@@ -1820,7 +1820,7 @@ export default function StubHubCouponsContent() {
         </button>
 
         {/* Dynamic FAQ Accordion */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
             StubHub Coupon Code FAQs
           </h3>

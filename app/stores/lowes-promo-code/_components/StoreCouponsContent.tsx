@@ -121,7 +121,7 @@ export default function LowesCouponsContent() {
                       <span className="text-black font-black text-sm">4.3</span>
                       <span className="text-gray-600 font-bold text-sm">(8.4k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Lowe's promo codes and Lowe's discount codes at Maxiku Offers. Save up to $600 OFF major appliances, get up to 50% OFF patio furniture, power tools and bathroom vanities, plus enjoy FREE same-day delivery on eligible products for your next home improvement project.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function LowesCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Lowe's Promo Codes & Offers</h2>
                 </div>
@@ -569,7 +569,7 @@ export default function LowesCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Lowe’s Discount Codes</h3>
           {[
             { q: "Does Lowe’s offer discount codes?", a: "Yes. Lowe’s provides coupons, promotional offers, and other savings opportunities. Available promotions vary by product, customer, and promotional period, so check the current offers before purchasing." },

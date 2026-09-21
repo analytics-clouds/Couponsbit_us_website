@@ -69,6 +69,9 @@ const cheapflightsSchema = {
       description:
         "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

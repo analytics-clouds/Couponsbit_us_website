@@ -221,7 +221,7 @@ export default function GeekbuyingCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Save on electronics, gadgets, scooters and more with the latest verified Geekbuying discount codes, promo codes and flash deals.
                     </p>
                     <a
@@ -312,7 +312,7 @@ export default function GeekbuyingCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Geekbuying Coupon Codes & Offers</h2>
                   
@@ -1009,7 +1009,7 @@ export default function GeekbuyingCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Geekbuying?", a: "Geekbuying is a global online marketplace specializing in consumer electronics, smart gadgets, electric bikes, 3D printers, mini PCs, smart home devices, and other innovative technology products." },

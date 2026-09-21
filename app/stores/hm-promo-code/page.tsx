@@ -67,6 +67,9 @@ const hmSchema = {
       description:
         "Find the latest H&M promo code, discount code, and fashion deals for Sep 2026. Save up to 77% on selected styles, shop summer fashion up to 72% OFF, and find beauty, fragrance and home deals from $2.49.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/hm-promo-code#breadcrumb" },
     },
@@ -184,7 +187,6 @@ const hmSchema = {
     },
 
 {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/hm-promo-code#faq",
   "mainEntity": [

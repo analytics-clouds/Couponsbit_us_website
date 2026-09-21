@@ -67,6 +67,9 @@ const seatgeekSchema = {
       description:
         "Find the latest SeatGeek promo code and SeatGeek discount code at Maxiku Offers. Get $20 OFF your first $100+ order, save 10% on concert tickets, and enjoy 10% OFF eligible orders over $50.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/seatgeek-promo-code#breadcrumb" },
     },
@@ -127,7 +130,6 @@ const seatgeekSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/seatgeek-promo-code#faq",
   "mainEntity": [

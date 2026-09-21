@@ -64,6 +64,9 @@ const dellSchema = {
       description:
         "Find the latest Dell discount codes and tech deals for Sep 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

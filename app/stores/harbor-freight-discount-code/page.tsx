@@ -67,6 +67,9 @@ const harborFreightSchema = {
       description:
         "Find genuine Abercrombie discount code offers for September 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#breadcrumb" },
     },
@@ -144,7 +147,6 @@ const harborFreightSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#faq",
   "mainEntity": [

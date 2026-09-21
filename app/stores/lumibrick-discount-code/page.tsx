@@ -64,6 +64,9 @@ const lumibrickSchema = {
       description:
         "Use a verified Lumibrick discount code or promo code — shop premium building sets from just $56.99. Modular Apartment Set with USB lighting from $169.99. Collectible brick sets updated September 2026.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

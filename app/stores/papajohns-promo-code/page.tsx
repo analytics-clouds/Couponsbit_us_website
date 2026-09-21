@@ -67,6 +67,9 @@ const papajohnsSchema = {
       description:
         "Find the latest Papa Johns promo code and Papa Johns discount code at Maxiku Offers. Get pizzas from $9.99, earn up to $50 cashback, and enjoy pizza combo meals starting at just $399.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/papajohns-promo-code#breadcrumb" },
     },
@@ -118,7 +121,6 @@ const papajohnsSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/papajohns-promo-code#faq",
   "mainEntity": [

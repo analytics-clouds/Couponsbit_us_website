@@ -121,7 +121,7 @@ export default function ShutterflyCouponsContent() {
                       <span className="text-black font-black text-sm">4.1</span>
                       <span className="text-gray-600 font-bold text-sm">(6.7k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Shutterfly promo codes and Shutterfly discount codes at Maxiku Offers. Save 50% OFF cards and stationery, enjoy 40% OFF personalized photo books with FREE extra pages, get FREE photo prints, and unlock FREE shipping on qualifying USA orders.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function ShutterflyCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Shutterfly Promo Codes & Offers</h2>
                 </div>
@@ -586,7 +586,7 @@ export default function ShutterflyCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Shutterfly Promo Codes</h3>
           {[
             { q: "Does Shutterfly offer promo codes?", a: "Yes. Shutterfly regularly runs promotional campaigns covering different products and categories. The availability and terms of each offer can vary." },

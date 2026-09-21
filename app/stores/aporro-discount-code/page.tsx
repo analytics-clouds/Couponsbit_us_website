@@ -67,6 +67,9 @@ const aporroSchema = {
       description:
         "Find the latest Aporro discount code, promo code and verified jewelry deals for Sep 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/aporro-discount-code#breadcrumb" },
     },
@@ -148,7 +151,6 @@ const aporroSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/aporro-discount-code#faq",
   "mainEntity": [

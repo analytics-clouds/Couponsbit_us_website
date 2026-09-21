@@ -121,7 +121,7 @@ export default function AliexpressCouponsContent() {
                       <span className="text-black font-black text-sm">4.2</span>
                       <span className="text-gray-600 font-bold text-sm">(25.6k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified AliExpress promo codes and AliExpress discount codes at Maxiku Offers. Save up to 93% OFF during the Labour Day Sale with free shipping on selected products, and shop game consoles starting from just $18, including popular PlayStation deals at unbeatable prices.
                     </p>
                     <a
@@ -193,7 +193,7 @@ export default function AliexpressCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">AliExpress Promo Codes & Offers</h2>
                 </div>
@@ -635,7 +635,7 @@ export default function AliexpressCouponsContent() {
         </button>
 
         {/* FAQ */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About AliExpress Promo Codes</h3>
           {[
             { q: "Does AliExpress offer promo codes?", a: "Yes. AliExpress runs different promotional campaigns throughout the year, and eligible shoppers may find promo codes, coupons, discounts, seller offers, and other deals. The exact terms vary by promotion." },

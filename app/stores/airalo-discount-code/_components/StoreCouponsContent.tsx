@@ -221,7 +221,7 @@ export default function AiraloCouponsContent() {
                       <span className="text-black font-black text-sm">4.6</span>
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
+                    <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
                       Discover verified Airalo discount codes and promo codes to save up to 20% on selected eSIM plans and get 15% OFF your first purchase. Use discount code AC10ALL and enjoy USA eSIM plans from $4.50, instant activation, and cashback rewards on eligible purchases.
                     </p>
                     <a
@@ -326,7 +326,7 @@ export default function AiraloCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="lg:w-[65%]">
+              <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Airalo Coupon Codes & Offers</h2>
                   
@@ -1010,7 +1010,7 @@ export default function AiraloCouponsContent() {
         </button>
 
         {/* Frequently Asked Questions */}
-        <div className="mt-20 space-y-4">
+        <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
           {[
             { q: "What is Airalo?", a: "Airalo is the world's first eSIM marketplace, offering digital SIM cards for more than 200 countries and regions to help travelers stay connected without paying high roaming charges." },

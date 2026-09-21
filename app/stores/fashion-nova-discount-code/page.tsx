@@ -67,6 +67,9 @@ const fashionNovaSchema = {
       description:
         "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/fashion-nova-discount-code#breadcrumb" },
     },
@@ -164,7 +167,6 @@ const fashionNovaSchema = {
     },
 
     {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/fashion-nova-discount-code#faq",
   "mainEntity": [

@@ -67,6 +67,9 @@ const wishSchema = {
       description:
         "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },

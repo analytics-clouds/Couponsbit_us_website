@@ -67,6 +67,9 @@ const wishkiSchema = {
       description:
         "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
       inLanguage: "en-US",
+      author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      dateModified: "2026-09-21",
+      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
