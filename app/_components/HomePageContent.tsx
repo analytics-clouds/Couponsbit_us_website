@@ -36,48 +36,90 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  const slides = [
+ const slides = [
   {
     id: 1,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/envato-elements-promo-code_xf5dwf.webp",
-    alt: "Envato Elements Promo Code – Unlimited Creative Assets from $16.50 per Month",
-    href: "http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/1_p1m23a.webp",
+    alt: "OGL Moves Discount Code & Promo Deals",
+    href: "/stores/oglmove-discount-code"
   },
   {
     id: 2,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/lyca-mobile-promo-code_qvlhfe.webp",
-    alt: "Lyca Mobile Promo Code – Save on Prepaid Plans and International Calls",
-    href: "https://lycamobileusa.sjv.io/c/4303217/2047927/25589?subId1=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/2_mlqozl.webp",
+    alt: "Helium 10 Discount Code & Promo Deals",
+    href: "/stores/helium10-discount-code"
   },
   {
     id: 3,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/rayneo-promo-code_lcxjg3.webp",
-    alt: "Rayneo Promo Code – Save on AR Smart Glasses and XR Devices",
-    href: "https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/3_vu214r.webp",
+    alt: "Beelink Discount Code & Promo Deals",
+    href: "/stores/beelink-discount-code"
   },
   {
     id: 4,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196852/reolink-voucher-code_frnbya.webp",
-    alt: "Reolink Voucher Code – Deals on Smart Security Cameras and Surveillance Systems",
-    href: "https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/4_hlcmu9.webp",
+    alt: "iSinwheel Discount Code & Promo Deals",
+    href: "/stores/isinwheel-discount-code"
   },
   {
     id: 5,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/sintra-discount-code_gmnegt.webp",
-    alt: "Sintra Discount Code – AI Automation Plans with up to 70% Savings",
-    href: "https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/5_xmdpqq.webp",
+    alt: "Epic Discount Code & Promo Deals",
+    href: "/stores/epic-discount-code"
   },
   {
     id: 6,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/driffle-discount-code_q0pcvn.webp",
-    alt: "Driffle Discount Code – Up to 95% OFF on Digital Games and Steam Keys",
-    href: "https://www.tkqlhce.com/click-100938140-17275810?sid=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/6_dh8e1i.webp",
+    alt: "Airalo Discount Code & Promo Deals",
+    href: "/stores/airalo-discount-code"
   },
   {
     id: 7,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196851/latam-airlines-promo-code_rfexah.webp",
-    alt: "LATAM Airlines Promo Code – Save on Flights, Hotels and Vacation Packages",
-    href: "https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/7_b7mwm4.webp",
+    alt: "Blue Cypress Discount Code & Promo Deals",
+    href: "/stores/blue-cypress-discount-code"
+  },
+  {
+    id: 8,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/8_dblfhb.webp",
+    alt: "LovesJerkyCo Discount Code & Promo Deals",
+    href: "/stores/lovejurky-discount-code"
+  },
+  {
+    id: 9,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/10_y75loh.webp",
+    alt: "Amazon Discount Code & Promo Deals",
+    href: "/stores/amazon-discount-code"
+  },
+  {
+    id: 10,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/9_qkjxk7.webp",
+    alt: "Bluetti Discount Code & Promo Deals",
+    href: "/stores/bluetti-discount-code"
+  },
+  {
+    id: 11,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144792/11_uedwgr.webp",
+    alt: "Sungait Discount Code & Promo Deals",
+    href: "/stores/sungait-discount-code"
+  },
+  {
+    id: 12,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/12_nvvkly.webp",
+    alt: "Factor 75 Discount Code & Promo Deals",
+    href: "/stores/factor75-discount-code"
+  },
+  {
+    id: 13,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144802/13_qjiqxi.webp",
+    alt: "Trainpal Discount Code & Promo Deals",
+    href: "/stores/trainpal-discount-code"
+  },
+  {
+    id: 14,
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/14_jfmix1.webp",
+    alt: "Jetpac Discount Code & Promo Deals",
+    href: "/stores/jetpac-discount-code"
   }
 ];
 

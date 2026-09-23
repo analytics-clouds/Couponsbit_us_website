@@ -238,7 +238,7 @@ export default function BeelinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Beelink — Shop the latest AI Mini PCs with verified deals! Save up to 35% OFF, get $450 OFF GTR9 Pro, 21% OFF AI PCs, exclusive coupon codes & discount codes.
+                      Discover the latest Beelink Discount Code offers and verified Beelink promo Code deals. Save $450 on the GTR9 Pro AI Mini PC, enjoy up to 35% OFF the ME Mini NAS PC, or get up to 30% OFF the OpenClaw SSD Upgrade Kit. Compare today's best offers and maximise your savings on every purchase.
                     </p>
                     <a
                       href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
