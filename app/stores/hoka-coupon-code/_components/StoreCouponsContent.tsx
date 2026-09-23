@@ -111,7 +111,7 @@ export default function HokaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.9k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified HOKA coupon codes and coupon offers for Sep 2026. Save on running shoes, trail shoes, and everyday footwear.
+                      Save more with the latest HOKA Discount Code offers and verified HOKA promo Code deals. Enjoy up to 50% OFF selected accessories, grab the Ora Athletic Slide for $39 (30% OFF), or save 30% on the Mach 6 Men's Running Shoes for $98. Find trusted HOKA savings and shop your favourite styles for less.
                     </p>
                     <a
                       href={STORE_URL}
@@ -127,7 +127,7 @@ export default function HokaCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "8", label: "Offers" },
                     { icon: Percent, val: "90+", label: "Deals" },
                     { icon: Users, val: "1.5M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -188,12 +188,14 @@ export default function HokaCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "HOKA – New Customer Offer", desc: "New customers can save on their first HOKA order.", bullets: ["Sign up as a new HOKA customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "RUNNING", title: "HOKA – Running Shoe Deal", desc: "Save on select HOKA running shoe styles.", bullets: ["Discount applies to select road running shoe models.", "Choose from a range of cushioning levels and colors.", "Availability may vary by style and size."] },
-                  { label: "SALE", value: "SITEWIDE", title: "HOKA – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "HOKA – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "DEAL", value: "TRAIL", title: "HOKA – Trail & Hiking Picks", desc: "Save on select trail running and hiking footwear.", bullets: ["Discount applies to select trail and hiking styles.", "Designed for off-road grip and support.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "CLEARANCE", title: "HOKA – Seasonal Clearance Sale", desc: "Save on select seasonal clearance footwear and apparel.", bullets: ["Discount applies to select clearance items.", "Stock and sizes are limited and vary.", "Great for finding running gear at a lower price."] },
+                  { label: "SALE", value: "30% OFF", title: "HOKA Coupon Code – Ora Athletic Slide 30% OFF at $39", desc: "Get the Ora Athletic Slide for $39, reduced from $60.", bullets: ["Save 30% on this all-gender footwear option.", "Shop the comfortable slide for casual wear and everyday use."] },
+                  { label: "SALE", value: "UP TO 50%", title: "HOKA Coupon Code – Accessories Up To 50% OFF", desc: "Save up to 50% on selected HOKA accessories.", bullets: ["Shop socks, hats, sports bras, gaiters, arm sleeves and more.", "Free shipping is available on all qualifying orders for all users."] },
+                  { label: "SALE", value: "30% OFF", title: "HOKA Discount Code – Crescendo XC Running Shoes 30% OFF", desc: "Get the all-gender Crescendo XC for $63, reduced from $90.", bullets: ["Save 30% on this performance-focused running shoe.", "Explore HOKA footwear deals for training and running activities."] },
+                  { label: "SALE", value: "20% OFF", title: "HOKA Discount Code – Clifton 10 Women’s Running Shoes 20% OFF", desc: "Get the women’s Clifton 10 for $124, reduced from $155.", bullets: ["Save 20% on these everyday running shoes.", "Enjoy HOKA’s cushioned footwear designed for comfortable daily runs."] },
+                  { label: "SALE", value: "30% OFF", title: "HOKA Mach 6 Men’s Running Shoes – 30% OFF at $98", desc: "Get the men’s Mach 6 for $98, reduced from $140.", bullets: ["Save 30% on this everyday running footwear.", "A lightweight option for runners looking for comfortable performance shoes."] },
+                  { label: "NEW", value: "10% OFF", title: "HOKA New User Offer – Get 10% OFF & Free Standard Shipping", desc: "New members can get 10% OFF on eligible HOKA orders.", bullets: ["Enjoy FREE standard shipping with the membership offer.", "Members can also receive an additional 60 days of extended benefits on their purchases."] },
+                  { label: "FROM", value: "$70", title: "HOKA High-Cushion Shoes – Prices Starting From $70", desc: "Explore HOKA high-cushion shoes starting from $70.", bullets: ["Discover comfortable footwear designed for cushioned everyday performance.", "Shop selected styles at competitive prices while supplies last."] },
+                  { label: "SALE", value: "20% OFF", title: "HOKA Membership Offer – Buy 2 or More Items & Save 20%", desc: "Buy two or more eligible HOKA items and save 20%.", bullets: ["Combine multiple products to unlock additional savings.", "Explore footwear and accessories while building your HOKA collection."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -380,6 +382,40 @@ export default function HokaCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           HOKA Discount Code, Promo Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Ora Athletic Slide", "30% OFF ($39)", "All Users", "Save 30%; reduced from $60 regular price", "All-Gender Footwear"],
+        ["HOKA Accessories Sale", "Up To 50% OFF", "All Users", "Discounts on socks, hats, sports bras, gaiters & arm sleeves", "HOKA Accessories"],
+        ["Crescendo XC Running Shoes", "30% OFF ($63)", "All Users", "Save 30%; reduced from $90 original price", "All-Gender Running Shoes"],
+        ["Clifton 10 Women's Running Shoes", "20% OFF ($124)", "All Users", "Save 20%; reduced from $155 regular price", "Women's Footwear"],
+        ["Mach 6 Men's Running Shoes", "30% OFF ($98)", "All Users", "Save 30%; reduced from $140 regular price", "Men's Footwear"],
+        ["New User Offer", "10% OFF + Free Shipping", "New Members", "Includes free standard shipping & 60 days extended benefits", "First HOKA Orders"],
+        ["High-Cushion Shoes Collection", "From $70", "All Users", "High-cushion footwear designed for comfortable daily performance", "Selected High-Cushion Shoes"],
+        ["Membership Buy 2+ Offer", "20% OFF", "HOKA Members", "Buy 2 or more eligible items to unlock 20% savings", "Footwear & Accessories"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 7 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -734,10 +770,10 @@ export default function HokaCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "DEAL OF THE WEEK", sub: "Up to 30% OFF Sale & Clearance Styles" },
-              { heading: "WELCOME BONUS", sub: "10% OFF Your Order w/ Email Sign-Up" },
-              { heading: "FREE SHIPPING", sub: "Free Standard Shipping & Easy Returns" },
-              { heading: "TRAIL SPECIAL", sub: "Trail Running Gear Starting From $125" }
+              { heading: "ORA SLIDE", sub: "30% OFF, Now $39" },
+              { heading: "ACCESSORIES", sub: "Up To 50% OFF" },
+              { heading: "NEW MEMBER", sub: "10% OFF + Free Shipping" },
+              { heading: "MACH 6", sub: "30% OFF, Now $98" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

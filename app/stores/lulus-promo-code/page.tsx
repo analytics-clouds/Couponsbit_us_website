@@ -3,10 +3,10 @@ import LulusCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lulus Promo Code: Save on Dresses & Fashion | Sep 2026",
+    absolute: "Lulus Promo code – Buy 2 Get 1 Free & 80% OFF on Flirt Bustier | Sept 26",
   },
   description:
-    "Find the latest Lulus promo code and coupon offers for Sep 2026. Save on dresses, occasion wear, shoes, and accessories with verified Lulus deals.",
+    "Use the latest Lulus promo Code and Lulus Discount Code to get Buy 2 Get 1 FREE or save 80% on the Trendsetting Flirt Bustier Top for $5. Shop now.  ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lulus-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lulus-promo-code",
-    title: "Lulus Promo Code: Save on Dresses & Fashion | Sep 2026",
+    title: "Lulus Promo code – Buy 2 Get 1 Free & 80% OFF on Flirt Bustier | Sept 26",
     description:
-      "Find the latest Lulus promo code and coupon offers for Sep 2026. Save on dresses, occasion wear, shoes, and accessories with verified Lulus deals.",
+      "Use the latest Lulus promo Code and Lulus Discount Code to get Buy 2 Get 1 FREE or save 80% on the Trendsetting Flirt Bustier Top for $5. Shop now.  ",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lulus Promo Code: Save on Dresses & Fashion | Sep 2026",
+    title: "Lulus Promo code – Buy 2 Get 1 Free & 80% OFF on Flirt Bustier | Sept 26",
     description:
-      "Find the latest Lulus promo code and coupon offers for Sep 2026. Save on dresses, occasion wear, shoes, and accessories with verified Lulus deals.",
+      "Use the latest Lulus promo Code and Lulus Discount Code to get Buy 2 Get 1 FREE or save 80% on the Trendsetting Flirt Bustier Top for $5. Shop now.  ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/lulus-logo_pl1byq.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const lulusSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lulus-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/lulus-promo-code",
-      name: "Lulus Promo Code: Save on Dresses & Fashion | Sep 2026",
+      name: "Lulus Promo code – Buy 2 Get 1 Free & 80% OFF on Flirt Bustier | Sept 26",
       description:
-        "Find the latest Lulus promo code and coupon offers for Sep 2026. Save on dresses, occasion wear, shoes, and accessories with verified Lulus deals.",
+        "Use the latest Lulus promo Code and Lulus Discount Code to get Buy 2 Get 1 FREE or save 80% on the Trendsetting Flirt Bustier Top for $5. Shop now.  ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",
@@ -77,14 +77,18 @@ const lulusSchema = {
       name: "Lulus Promo Codes & Coupon Codes",
       description: "Latest Lulus promo codes and offers.",
       url: "https://www.couponsbit.us/stores/lulus-promo-code",
-      numberOfItems: 6,
+      numberOfItems: 10,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Lulus – New Customer Offer", description: "New customers can save on their first Lulus order.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Lulus – Dress Deal", description: "Save on select dress styles.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Lulus – Percentage Off Sitewide", description: "Save a percentage on qualifying sitewide orders.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Lulus – Free Shipping Offer", description: "Enjoy free shipping on select qualifying orders.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Lulus – Wedding & Occasion Picks", description: "Save on select wedding guest and occasion outfits.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Lulus – Seasonal Clearance Sale", description: "Save on select seasonal clearance styles.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Lulus Promo Code – Buy 2 Eligible Items & Get 1 Free", description: "Buy 2 eligible items and get 1 item FREE with the Lulus offer.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Lulus Promo Code – Trendsetting Flirt Bustier Top 80% OFF+", description: "Get the Trendsetting Flirt Light Blue Crinkled Strapless Bustier Bow Top for just $5, reduced from $25.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Lulus Promo Code – Mulvaney Burgundy Micro Shorts 70% OFF", description: "Get the Mulvaney Burgundy Tweed Textured Micro Shorts for just $10, reduced from $49.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Lulus Promo Code – Parker Black & White Bikini Bottoms for $10", description: "Get the Parker Black and White High-Waisted Bikini Bottoms for just $10, reduced from $35.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Lulus Sakira Navy Bustier Mini Dress – Under $40", description: "Get the Sakira Navy Mesh Sequin Lace-Up Bustier Mini Dress for $35, reduced from $59.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Lulus Glittery Beauty Purple Sequin Mini Dress – $35", description: "Get the Glittery Beauty Purple Sequin One-Shoulder Mini Dress for $35, reduced from $59.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Lulus Sultry Intentions Mini Dress – Save on $47.20 Price", description: "Get the Sultry Intentions Black Strapless Ruffled Mini Dress for $47.20, reduced from $59.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Lulus Alaia Satin Midi Dress – 50% OFF", description: "Get the Alaia Chartreuse Satin Backless Midi Dress for $34, reduced from $68.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Lulus Illustrious Glow Sequin Mini Dress – Save 20%", description: "Get the Illustrious Glow Black Sheer Tulle Sequin Tiered Mini Dress for $71.20, reduced from $89.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
+        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Lulus Nasia Burgundy Crop Top – Save 74%+", description: "Get the Nasia Burgundy Strapless Cutout Crop Top for just $10, reduced from $39.", url: "https://www.couponsbit.us/stores/lulus-promo-code", seller: { "@type": "Organization", name: "Lulus", url: "https://www.lulus.com" } } },
       ],
     },
 

@@ -3,10 +3,10 @@ import HokaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HOKA Coupon Code: Save on Running Shoes | Sep 2026",
+    absolute: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
   },
   description:
-    "Find the latest HOKA coupon code and coupon offers for Sep 2026. Save on running shoes, trail footwear, and apparel with verified HOKA deals.",
+    "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hoka-coupon-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hoka-coupon-code",
-    title: "HOKA Coupon Code: Save on Running Shoes | Sep 2026",
+    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
     description:
-      "Find the latest HOKA coupon code and coupon offers for Sep 2026. Save on running shoes, trail footwear, and apparel with verified HOKA deals.",
+      "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "HOKA Coupon Code: Save on Running Shoes | Sep 2026",
+    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
     description:
-      "Find the latest HOKA coupon code and coupon offers for Sep 2026. Save on running shoes, trail footwear, and apparel with verified HOKA deals.",
+      "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/hoka-logo_zrq4ot.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const hokaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hoka-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/hoka-coupon-code",
-      name: "HOKA Coupon Code: Save on Running Shoes | Sep 2026",
+      name: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
       description:
-        "Find the latest HOKA coupon code and coupon offers for Sep 2026. Save on running shoes, trail footwear, and apparel with verified HOKA deals.",
+        "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",
@@ -77,14 +77,16 @@ const hokaSchema = {
       name: "HOKA Coupon Codes & Coupon Codes",
       description: "Latest HOKA coupon codes and offers.",
       url: "https://www.couponsbit.us/stores/hoka-coupon-code",
-      numberOfItems: 6,
+      numberOfItems: 8,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "HOKA – New Customer Offer", description: "New customers can save on their first HOKA order.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "HOKA – Running Shoe Deal", description: "Save on select HOKA running shoe styles.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "HOKA – Percentage Off Sitewide", description: "Save a percentage on qualifying sitewide orders.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "HOKA – Free Shipping Offer", description: "Enjoy free shipping on select qualifying orders.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "HOKA – Trail & Hiking Picks", description: "Save on select trail running and hiking footwear.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "HOKA – Seasonal Clearance Sale", description: "Save on select seasonal clearance footwear and apparel.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "HOKA Coupon Code – Ora Athletic Slide 30% OFF at $39", description: "Get the Ora Athletic Slide for $39, reduced from $60.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "HOKA Coupon Code – Accessories Up To 50% OFF", description: "Save up to 50% on selected HOKA accessories.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "HOKA Discount Code – Crescendo XC Running Shoes 30% OFF", description: "Get the all-gender Crescendo XC for $63, reduced from $90.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "HOKA Discount Code – Clifton 10 Women’s Running Shoes 20% OFF", description: "Get the women’s Clifton 10 for $124, reduced from $155.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "HOKA Mach 6 Men’s Running Shoes – 30% OFF at $98", description: "Get the men’s Mach 6 for $98, reduced from $140.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "HOKA New User Offer – Get 10% OFF & Free Standard Shipping", description: "New members can get 10% OFF on eligible HOKA orders.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "HOKA High-Cushion Shoes – Prices Starting From $70", description: "Explore HOKA high-cushion shoes starting from $70.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "HOKA Membership Offer – Buy 2 or More Items & Save 20%", description: "Buy two or more eligible HOKA items and save 20%.", url: "https://www.couponsbit.us/stores/hoka-coupon-code", seller: { "@type": "Organization", name: "HOKA", url: "https://www.hoka.com" } } },
       ],
     },
 

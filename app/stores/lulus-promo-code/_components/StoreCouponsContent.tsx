@@ -111,7 +111,7 @@ export default function LulusCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Lulus promo codes and coupon offers for Sep 2026. Save on dresses, wedding guest outfits, shoes, and accessories.
+                      Explore the latest Lulus Discount Code offers and verified Lulus promo Code deals. Get Buy 2 Get 1 FREE with code BUY2GET1, save 80% on the Trendsetting Flirt Bustier Top for $5, or enjoy 50% OFF the Alaia Satin Midi Dress. Shop verified fashion deals and refresh your wardrobe for less.
                     </p>
                     <a
                       href={STORE_URL}
@@ -127,7 +127,7 @@ export default function LulusCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "10", label: "Offers" },
                     { icon: Percent, val: "80+", label: "Deals" },
                     { icon: Users, val: "1M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -188,12 +188,16 @@ export default function LulusCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Lulus – New Customer Offer", desc: "New customers can save on their first Lulus order.", bullets: ["Sign up as a new Lulus customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "DRESSES", title: "Lulus – Dress Deal", desc: "Save on select dress styles.", bullets: ["Discount applies to select dress styles.", "Choose from a range of lengths, colors, and occasions.", "Availability may vary by size and style."] },
-                  { label: "SALE", value: "SITEWIDE", title: "Lulus – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Lulus – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "DEAL", value: "OCCASION", title: "Lulus – Wedding & Occasion Picks", desc: "Save on select wedding guest and occasion outfits.", bullets: ["Discount applies to select occasion styles.", "Includes options for weddings, parties, and events.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "CLEARANCE", title: "Lulus – Seasonal Clearance Sale", desc: "Save on select seasonal clearance styles.", bullets: ["Discount applies to select clearance items.", "Stock and sizes are limited and vary.", "Great for finding an outfit at a lower price."] },
+                  { label: "DEAL", value: "BUY 2 GET 1", title: "Lulus Promo Code – Buy 2 Eligible Items & Get 1 Free", desc: "Buy 2 eligible items and get 1 item FREE with the Lulus offer.", bullets: ["Use promo code BUY2GET1 to unlock the free-item deal.", "Shop the Lulus sale for women’s dresses, tops, bottoms, and more in the USA."] },
+                  { label: "SALE", value: "80%+ OFF", title: "Lulus Promo Code – Trendsetting Flirt Bustier Top 80% OFF+", desc: "Get the Trendsetting Flirt Light Blue Crinkled Strapless Bustier Bow Top for just $5, reduced from $25.", bullets: ["Save 80%+ on this stylish women’s fashion pick.", "Use available Lulus promo offers to save more on eligible USA orders."] },
+                  { label: "SALE", value: "70% OFF", title: "Lulus Promo Code – Mulvaney Burgundy Micro Shorts 70% OFF", desc: "Get the Mulvaney Burgundy Tweed Textured Micro Shorts for just $10, reduced from $49.", bullets: ["Save 70% on this trendsetting fashion style.", "Shop Lulus sale items and explore additional savings on eligible USA orders."] },
+                  { label: "ONLY", value: "$10", title: "Lulus Promo Code – Parker Black & White Bikini Bottoms for $10", desc: "Get the Parker Black and White High-Waisted Bikini Bottoms for just $10, reduced from $35.", bullets: ["Enjoy major savings on this stylish swimwear pick.", "Shop Lulus for more women’s fashion and sale styles in the USA."] },
+                  { label: "ONLY", value: "$35", title: "Lulus Sakira Navy Bustier Mini Dress – Under $40", desc: "Get the Sakira Navy Mesh Sequin Lace-Up Bustier Mini Dress for $35, reduced from $59.", bullets: ["Save on this statement mini dress from the Lulus sale collection.", "Use promo code BUY2GET1 to get 1 FREE eligible item when you buy 2."] },
+                  { label: "ONLY", value: "$35", title: "Lulus Glittery Beauty Purple Sequin Mini Dress – $35", desc: "Get the Glittery Beauty Purple Sequin One-Shoulder Mini Dress for $35, reduced from $59.", bullets: ["Add a stylish sequin dress to your wardrobe at a discounted price.", "Shop Lulus Archive Sale styles and discover more USA fashion deals."] },
+                  { label: "ONLY", value: "$47.20", title: "Lulus Sultry Intentions Mini Dress – Save on $47.20 Price", desc: "Get the Sultry Intentions Black Strapless Ruffled Mini Dress for $47.20, reduced from $59.", bullets: ["Save on this elegant strapless mini dress from Lulus.", "Use code DEALS20 to unlock the listed discounted price."] },
+                  { label: "SALE", value: "50% OFF", title: "Lulus Alaia Satin Midi Dress – 50% OFF", desc: "Get the Alaia Chartreuse Satin Backless Midi Dress for $34, reduced from $68.", bullets: ["Save 50% on this stylish satin midi dress.", "Shop Lulus sale fashion for more discounted dresses and women’s styles in the USA."] },
+                  { label: "SALE", value: "20% OFF", title: "Lulus Illustrious Glow Sequin Mini Dress – Save 20%", desc: "Get the Illustrious Glow Black Sheer Tulle Sequin Tiered Mini Dress for $71.20, reduced from $89.", bullets: ["Save 20% on this glamorous sequin mini dress.", "Explore Lulus sale styles for more women’s fashion deals in the USA."] },
+                  { label: "SALE", value: "74%+ OFF", title: "Lulus Nasia Burgundy Crop Top – Save 74%+", desc: "Get the Nasia Burgundy Strapless Cutout Crop Top for just $10, reduced from $39.", bullets: ["Save 74%+ on this stylish strapless crop top.", "Shop Lulus sale items for more affordable women’s fashion in the USA."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -380,6 +384,42 @@ export default function LulusCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Lulus Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Buy 2 Get 1 FREE Offer", "Buy 2 Get 1 FREE", "All Users", "Use promo code BUY2GET1 to unlock free item on eligible items", "Women's Fashion"],
+        ["Trendsetting Flirt Bustier Top", "80%+ OFF ($5)", "All Users", "Reduced from $25 regular price; light blue strapless top", "Women's Tops"],
+        ["Mulvaney Micro Shorts", "70% OFF ($10)", "All Users", "Reduced from $49 regular price; burgundy tweed textured shorts", "Women's Bottoms"],
+        ["Parker High-Waisted Bikini Bottoms", "70%+ OFF ($10)", "All Users", "Reduced from $35 regular price; black & white bikini bottoms", "Women's Swimwear"],
+        ["Sakira Navy Bustier Mini Dress", "$35", "All Users", "Reduced from $59; eligible for BUY2GET1 promo code deal", "Mini Dresses"],
+        ["Glittery Beauty Sequin Mini Dress", "40% OFF ($35)", "All Users", "Reduced from $59; purple sequin one-shoulder mini dress", "Lulus Archive Sale"],
+        ["Sultry Intentions Mini Dress", "20% OFF ($47.20)", "All Users", "Reduced from $59; use code DEALS20 to unlock discounted price", "Black Mini Dresses"],
+        ["Alaia Satin Backless Midi Dress", "50% OFF ($34)", "All Users", "Reduced from $68 regular price; chartreuse satin backless dress", "Midi Dresses"],
+        ["Illustrious Glow Sequin Mini Dress", "20% OFF ($71.20)", "All Users", "Reduced from $89; black sheer tulle sequin tiered mini dress", "Women's Dresses"],
+        ["Nasia Burgundy Strapless Crop Top", "74%+ OFF ($10)", "All Users", "Reduced from $39 regular price; strapless cutout crop top", "Crop Tops"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 9 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -702,10 +742,10 @@ export default function LulusCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "NEW CUSTOMER OFFER", sub: "Get 15% OFF Your First Order w/ Email Sign-Up" },
-              { heading: "LOVE REWARDS PERK", sub: "Exclusive Discounts, Gifts & Early Access" },
-              { heading: "VERIFIED DISCOUNT", sub: "10% OFF for Students, Military & Healthcare" },
-              { heading: "OUTLET & CLEARANCE", sub: "Up to 70% OFF Dresses, Shoes & Accessories" }
+              { heading: "BUY 2 GET 1", sub: "Free Item With Promo Code BUY2GET1" },
+              { heading: "BUSTIER TOP", sub: "80%+ OFF, Now $5" },
+              { heading: "ALAIA MIDI DRESS", sub: "50% OFF, Now $34" },
+              { heading: "NASIA CROP TOP", sub: "74%+ OFF, Now $10" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

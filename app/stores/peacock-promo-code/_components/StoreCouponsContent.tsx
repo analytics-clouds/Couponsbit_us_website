@@ -111,7 +111,7 @@ export default function PeacockCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(15.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Peacock promo codes and coupon offers for Sep 2026. Save on streaming plans for originals, movies, and live sports.
+                      Discover the latest Peacock Discount Code offers and verified Peacock promo Code deals. Get eligible military plans from $2.99/month, enjoy Peacock Premium from $7.99/month, or access Premium Plus for $13.99/month. Compare verified streaming offers and choose the subscription that delivers the best value.
                     </p>
                     <a
                       href={STORE_URL}
@@ -127,7 +127,7 @@ export default function PeacockCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "9", label: "Offers" },
                     { icon: Percent, val: "70+", label: "Deals" },
                     { icon: Users, val: "4M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -188,12 +188,15 @@ export default function PeacockCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Peacock – New Subscriber Offer", desc: "New subscribers can save on their first Peacock plan.", bullets: ["Sign up as a new Peacock subscriber to unlock this offer.", "Discount applies to your first qualifying plan.", "Terms and eligible plans may vary."] },
-                  { label: "DEAL", value: "PREMIUM", title: "Peacock – Premium Plan Discount", desc: "Save on the Peacock Premium streaming plan.", bullets: ["Discount applies to the Premium plan tier.", "Choose monthly or annual billing where available.", "Terms and eligible plans may vary."] },
-                  { label: "DEAL", value: "PREMIUM PLUS", title: "Peacock – Premium Plus Plan Deal", desc: "Save on the Peacock Premium Plus streaming plan.", bullets: ["Discount applies to the Premium Plus plan tier.", "Plan features and availability may vary.", "Terms and conditions may apply."] },
-                  { label: "SALE", value: "ANNUAL", title: "Peacock – Annual Plan Savings", desc: "Save when you subscribe to an annual Peacock plan.", bullets: ["Discount applies to eligible annual plans.", "Annual billing may provide better value than paying monthly.", "Terms and eligible plans may vary."] },
-                  { label: "DEAL", value: "SPORTS", title: "Peacock – Live Sports Bundle Deal", desc: "Save on select Peacock plans that include live sports.", bullets: ["Discount applies to select plans with live sports access.", "Live event availability may vary.", "Terms and conditions may apply."] },
-                  { label: "SALE", value: "SEASONAL", title: "Peacock – Seasonal Streaming Sale", desc: "Save on select Peacock plans during seasonal promotions.", bullets: ["Discount applies during select seasonal periods.", "Availability may vary by plan.", "Great for locking in a lower rate."] },
+                  { label: "FROM", value: "$2.99/MO", title: "Peacock Promo Code – Military Discount Starting at $2.99/Month", desc: "Eligible military members can enjoy Peacock plans starting at $2.99 per month.", bullets: ["Access premium entertainment at a discounted monthly price.", "Check the offer requirements and eligibility before activating the plan."] },
+                  { label: "FROM", value: "$7.99/MO", title: "Peacock Promo Code – Premium Plan Starting at $7.99/Month", desc: "Get the Peacock Premium Plan starting at $7.99 per month.", bullets: ["Enjoy access to Peacock’s selection of movies, shows, sports and entertainment.", "Activate the eligible offer and choose the plan that fits your streaming needs."] },
+                  { label: "FROM", value: "$7.99", title: "Peacock Discount Code – Select Monthly Plan Starting at $7.99", desc: "Choose a qualifying Peacock monthly plan starting at $7.99.", bullets: ["Stream a variety of entertainment content with a Peacock subscription.", "Review the available plan details before activating the offer."] },
+                  { label: "ONLY", value: "$7.99", title: "Peacock Discount Code – Premium Monthly Plan for $7.99", desc: "Get the Peacock Premium Monthly Plan for $7.99.", bullets: ["Enjoy premium streaming access across eligible movies, shows and entertainment.", "Check the current subscription terms before signing up."] },
+                  { label: "ONLY", value: "$13.99/MO", title: "Peacock Premium Plus Plan – Just $13.99/Month", desc: "Get the Peacock Premium Plus Plan for just $13.99 per month.", bullets: ["Upgrade your streaming experience with the Premium Plus subscription.", "Explore the plan benefits and activate the offer if eligible."] },
+                  { label: "FROM", value: "$25", title: "Peacock Gift Cards – Starting From $25", desc: "Get Peacock Gift Cards starting from $25.", bullets: ["Choose a gift card value that works for your entertainment needs.", "Gift cards offer a convenient way to give Peacock streaming access."] },
+                  { label: "FROM", value: "$169.99", title: "Peacock Premium Plus Annual Plan – Starting From $169.99", desc: "Grab the Peacock Premium Plus Annual Plan starting from $169.99.", bullets: ["Enjoy an annual streaming subscription with eligible Premium Plus benefits.", "Choose an annual plan for convenient long-term access to Peacock entertainment."] },
+                  { label: "ONLY", value: "$6.99/MO", title: "Peacock Premium for Medical Pros & First Responders – $6.99/Month", desc: "Eligible medical professionals and first responders can get Peacock Premium for $6.99 per month.", bullets: ["Enjoy premium streaming access at a special monthly rate.", "Verify your eligibility before activating the offer."] },
+                  { label: "PERK", value: "FREE", title: "Peacock Premium Included Free With Walmart+ Membership", desc: "Get Peacock Premium included at no additional cost with an eligible Walmart+ membership.", bullets: ["Enjoy Peacock entertainment alongside your Walmart+ membership ben"] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -376,6 +379,41 @@ export default function PeacockCouponsContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Peacock Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Military Discount Plan", "From $2.99 / Month", "Eligible Military Members", "Special discounted monthly rate upon military status verification", "Peacock Subscription"],
+        ["Peacock Premium Plan", "$7.99 / Month", "All Users", "Access to movies, shows, live sports, and original entertainment", "Monthly Subscription"],
+        ["Select Monthly Plan", "From $7.99 / Month", "All Users", "Select qualifying monthly plan for full streaming access", "Peacock Plans"],
+        ["Premium Monthly Subscription", "$7.99 / Month", "All Users", "Standard premium streaming access; check current terms at signup", "Premium Streaming"],
+        ["Peacock Premium Plus Plan", "$13.99 / Month", "All Users", "Ad-free experience with offline downloads & live channel access", "Premium Plus Plan"],
+        ["Peacock Gift Cards", "From $25", "All Users", "Convenient digital or physical gift cards for streaming access", "Gift Cards"],
+        ["Premium Plus Annual Plan", "From $169.99 / Year", "All Users", "Convenient long-term annual streaming with Premium Plus perks", "Annual Subscription"],
+        ["Medical Pros & First Responders Offer", "$6.99 / Month", "Medical Pros & First Responders", "Special monthly rate available upon status verification", "Peacock Premium"],
+        ["Peacock Premium with Walmart+", "FREE with Walmart+", "Walmart+ Members", "Included at no additional cost with eligible Walmart+ membership", "Walmart+ Perk"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 8 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
@@ -639,10 +677,10 @@ export default function PeacockCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "STUDENT SPECIAL", sub: "Get Peacock Premium for Only $1.99/Month" },
-              { heading: "YOUNG ADULT PLAN", sub: "Special Pricing for Eligible Ages 18–24" },
-              { heading: "ANNUAL DISCOUNT", sub: "Save Over 15% When You Pay Annually" },
-              { heading: "LIVE SPORTS COVERAGE", sub: "Stream Premier League, NFL, NBA & More" }
+              { heading: "MILITARY DISCOUNT", sub: "Plans From $2.99/Month" },
+              { heading: "PREMIUM PLAN", sub: "From $7.99/Month" },
+              { heading: "PREMIUM PLUS", sub: "Just $13.99/Month" },
+              { heading: "GIFT CARDS", sub: "Starting From $25" }
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">

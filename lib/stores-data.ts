@@ -144,6 +144,10 @@ export const allStores: StoreEntry[] = [
   { name: "LL Bean",         id: "llbean-promo-code",              category: "Fashion",     coupons: 21, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/llbean_logo_xsbw4x.webp",      discount: "Up To 60% OFF",   popular: false },
   { name: "Coach Outlet",    id: "coach-outlet-promo-code",        category: "Fashion",     coupons: 33, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/coach_outlet_logo_ysdxtk.webp", discount: "Up To 80% OFF",   popular: false },
   { name: "Sephora",         id: "sephora-promo-code",             category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp",     discount: "Up To 50% OFF",   popular: false },
+  { name: "HOKA",            id: "hoka-coupon-code",               category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/hoka-logo_zrq4ot.webp",         discount: "Up To 50% OFF",   popular: false },
+  { name: "Lulus",           id: "lulus-promo-code",               category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/lulus-logo_pl1byq.webp",        discount: "Up To 80% OFF",   popular: false },
+  { name: "Peacock",         id: "peacock-promo-code",             category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/peacock-logo_mhfin7.webp",      discount: "From $2.99/Month", popular: false },
+  { name: "Typhur",          id: "typhur-discount-code",           category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790146959/typhur-logo_abminz.webp",      discount: "Up To 40% OFF",   popular: false },
 ];
 
 

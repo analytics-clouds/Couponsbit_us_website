@@ -206,21 +206,17 @@ const Hero = () => {
 };
 
 const TOP_BRANDS = [
-  { name: "StubHub",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        discount: "Flat 10% OFF",    href: "/stores/stubhub-discount-code" },
-  { name: "Viagogo",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/viagogo-coupon-code_t65aol.webp",         discount: "Starting at $332", href: "/stores/viagogo-discount-code" },
-  { name: "LATAM Airlines",  logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/latam-airlines-coupon-code_pvcsml.webp",  discount: "Up to 40% OFF",   href: "/stores/latam-airlines-discount-code" },
-  { name: "Rayneo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp",          discount: "Save $130 OFF",   href: "/stores/rayneo-discount-code" },
-  { name: "Driffle",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/driffle-coupon-code_n2upgl.webp",         discount: "Up to 95% OFF",   href: "/stores/driffle-discount-code" },
-  { name: "Lyca Mobile",     logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/lyca-mobile-coupon-code_svvddg.webp",     discount: "Up to 69% OFF",   href: "/stores/lyca-mobile-discount-code" },
-  { name: "Bluehost",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/bluehost-coupon-code_j8pvdt.webp",        discount: "Up to 69% OFF",   href: "/stores/bluehost-discount-code" },
-  { name: "Reolink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/reolink-coupon-code_zsrmh1.webp",         discount: "Up to 50% OFF",   href: "/stores/reolink-discount-code" },
-  { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/envato-coupon-code_rhfnbt.webp",          discount: "Up to 50% OFF",   href: "/stores/envato-elements-discount-code" },
-  { name: "Sintra",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781776169/sintra-coupon-code_piyu2d.webp",          discount: "Up to 70% OFF",   href: "/stores/sintra-discount-code" },
   { name: "Sungait",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp",                  discount: "Up To 50% OFF",   href: "/stores/sungait-discount-code" },
   { name: "Bluetti",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp",            discount: "Save Up To $200",  href: "/stores/bluetti-discount-code" },
-  { name: "Dreame",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130848/dreame-logo_uqesij.webp",                   discount: "Up To 45% OFF",    href: "/stores/dreame-discount-code" },
-  { name: "Upwork",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130860/upwork-logo_ki4h2l.webp",                   discount: "Plans From $15",   href: "/stores/upwork-discount-code" },
-  { name: "Hostinger",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/hostinger-logo_m9ubvs.webp",                discount: "Up To 80% OFF",    href: "/stores/hostinger-discount-code" },
+  { name: "OGLmove",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1788434147/ogl-logo_p8i400.webp",                        discount: "Up To 13% OFF",   href: "/stores/oglmove-discount-code" },
+  { name: "Helium 10",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/helium_10_logo_gt6opp.webp",                  discount: "Up To 25% OFF",   href: "/stores/helium10-discount-code" },
+  { name: "Beelink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494081/beelink-coupon-code_gephnd.jpg",               discount: "Up to 35% OFF",   href: "/stores/beelink-discount-code" },
+  { name: "iSinwheel",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/isinwheel_logo_wwsdeo.webp",                  discount: "Up To 50% OFF",   href: "/stores/isinwheel-discount-code" },
+  { name: "Epic",            logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789032950/epic-logo_kxo5y0.webp",                       discount: "Extra 25% OFF",   href: "/stores/epic-discount-code" },
+  { name: "Airalo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp",                     discount: "USA eSIM From $4.50", href: "/stores/airalo-discount-code" },
+  { name: "Blue Cypress",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786949027/blue-cypress-logo_ax2m7c.webp",               discount: "20% OFF First Order", href: "/stores/blue-cypress-discount-code" },
+  { name: "LovesJerkyCo",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp",                  discount: "From $10",        href: "/stores/lovejurky-discount-code" },
+  { name: "Amazon",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp",                     discount: "Up To 52% OFF",   href: "/stores/amazon-discount-code" },
 ];
 
 const TopBrands = () => {
@@ -763,32 +759,81 @@ export default function HomePageContent() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {[
                 {
-                  label: "UP TO", discount: "95%", cat: "Digital Games",
-                  title: "UP TO 95% OFF – XCOM 2 on Driffle",
-                  desc: "Enjoy huge discounts on top-rated strategy and digital games.",
-                  points: ["Up to 95% OFF on selected game titles", "Instant digital delivery", "Valid on PC & console keys"],
-                  href: "/stores/driffle-discount-code"
+                  label: "SAVE", discount: "15%", cat: "Sunglasses",
+                  title: "SUNGAIT – Get 15% OFF Sitewide With Code CLOUDS15",
+                  desc: "Use exclusive coupon code CLOUDS15 at checkout to enjoy 15% off on all SUNGAIT products sitewide.",
+                  points: ["Apply code CLOUDS15 at checkout to save 15%", "Valid on all SUNGAIT sunglasses sitewide", "Exclusive limited-time discount — don't miss it"],
+                  href: "/stores/sungait-discount-code"
                 },
                 {
-                  label: "SAVE", discount: "70%", cat: "AI Tools",
-                  title: "Sintra 12-Month Plan – Save 70%",
-                  desc: "Unlock maximum savings with Sintra AI's most popular annual plan.",
-                  points: ["Save 70% on annual plan", "Access all AI automation bots", "Best value for businesses"],
-                  href: "/stores/sintra-discount-code"
+                  label: "SAVE", discount: "$150", cat: "Power Stations",
+                  title: "BLUETTI Power – Elite 300 + Charger 2, Save $150",
+                  desc: "Save $150 on the Elite 300 + Charger 2 bundle, the world's smallest 3kWh portable power station.",
+                  points: ["2,400W output with 3,014Wh LiFePO4 battery", "Perfect for camping, RVs, and home backup", "Limited-Time Bundle Savings"],
+                  href: "/stores/bluetti-discount-code"
                 },
                 {
-                  label: "UP TO", discount: "69%", cat: "Mobile Plans",
-                  title: "Up to 69% OFF – Summer Prepaid Plans by Lyca Mobile",
-                  desc: "High-speed data, unlimited talk & text with no contracts.",
-                  points: ["Up to 69% OFF on prepaid plans", "High-speed 4G/5G data included", "No lock-in contracts"],
-                  href: "/stores/lyca-mobile-discount-code"
+                  label: "SAVE", discount: "11%", cat: "Loungewear",
+                  title: "OGL Move – Sandwashed Duo Lounge Set for $119",
+                  desc: "Get the Sandwashed Duo featuring a 2-piece boatneck batwing sleeve top and mid-rise wide-leg lounge pants.",
+                  points: ["Enjoy a relaxed and stylish matching set designed for comfortable everyday wear.", "Get the complete set for $119, reduced from the regular price of $134.", "Save 11% on this effortless Sandwashed lounge set."],
+                  href: "/stores/oglmove-discount-code"
                 },
                 {
-                  label: "UP TO", discount: "50%", cat: "Web Hosting",
-                  title: "UP TO 50% OFF – Bluehost Hosting Plan Savings",
-                  desc: "Save big on secure and reliable Bluehost hosting subscriptions.",
-                  points: ["Up to 50% OFF on hosting plans", "Free domain included", "24/7 customer support"],
-                  href: "/stores/bluehost-discount-code"
+                  label: "SAVE", discount: "25%", cat: "Seller Software",
+                  title: "Helium 10 Discount Code – Save 25% Today",
+                  desc: "Get 25% off Helium 10 with the current promotional offer.",
+                  points: ["Start using Helium 10 tools for your ecommerce business.", "Check the offer requirements before activating your plan.", "Search for a helium 10 discount before subscribing."],
+                  href: "/stores/helium10-discount-code"
+                },
+                {
+                  label: "SAVE", discount: "$450", cat: "Mini PC",
+                  title: "Beelink GTR9 Pro AI Mini PC – Save $450",
+                  desc: "Get the AMD Ryzen™ AI Max+ 395 powered GTR9 Pro at $4,349, with OpenClaw and Local LLM pre-installed for advanced AI workloads.",
+                  points: ["AMD Ryzen™ AI Max+ 395 processor", "OpenClaw and Local LLM pre-installed", "Now $4,349 — built for AI, ML and professional workloads"],
+                  href: "/stores/beelink-discount-code"
+                },
+                {
+                  label: "SAVE", discount: "£50", cat: "Electric Scooters",
+                  title: "iSinwheel Discount Code – GT4 S Save £50",
+                  desc: "Get the GT4 S for £599.99, reduced from £649.99.",
+                  points: ["Save £50 with the qualifying offer.", "Features a 50-mile stated range and 12-inch off-road tyres.", "A strong option for riders comparing an isinwheel s9 pro."],
+                  href: "/stores/isinwheel-discount-code"
+                },
+                {
+                  label: "EXTRA", discount: "25%", cat: "Kids' Reading",
+                  title: "Epic Discount Code – Extra 25% OFF Annual Family Plan",
+                  desc: "Get an Extra 25% OFF the Epic Family annual membership in the USA.",
+                  points: ["Pay $5.25/month, with the first-year annual price reduced from $84.99 to $62.99.", "Enjoy 40,000+ digital kids' books, videos and audiobooks with your family membership.", "Start your 7-day free trial and inspire kids to read, learn and discover more."],
+                  href: "/stores/epic-discount-code"
+                },
+                {
+                  label: "SAVE", discount: "20%", cat: "eSIM Travel",
+                  title: "Airalo – Existing Users Save Up to 20%",
+                  desc: "Save up to 20% on selected eSIM plans with available Airalo promotions.",
+                  points: ["Enter promo code AC10ALL to access eligible savings.", "Enjoy exclusive savings designed for existing Airalo customers.", "Upgrade your travel plan and stay connected for less."],
+                  href: "/stores/airalo-discount-code"
+                },
+                {
+                  label: "SAVE", discount: "20%", cat: "Golf Apparel",
+                  title: "Blue Cypress – First Order Offer | 20% OFF",
+                  desc: "Sign up and receive 20% OFF your first Blue Cypress order",
+                  points: ["Unlock access to exclusive offers and future promotions", "Save on polos, hoodies, quarter-zips and women's essentials", "A great opportunity for new customers to explore the collection"],
+                  href: "/stores/blue-cypress-discount-code"
+                },
+                {
+                  label: "ONLY", discount: "$50", cat: "Beef Jerky",
+                  title: "LovesJerkyCo Discount Code – 6-Flavour Sample Packs for $50",
+                  desc: "Try 6 different flavors for $50 with the sample pack collection",
+                  points: ["Includes options such as Hatch Green Chile, Teriyaki, and Garlic Powder", "FREE SHIPPING is included with the sample pack offer"],
+                  href: "/stores/lovejurky-discount-code"
+                },
+                {
+                  label: "SAVE", discount: "14%", cat: "School Supplies",
+                  title: "Amazon Discount Code – Crayola Classpack Markers for $59.99 | Save 14% on School Supplies",
+                  desc: "Get the Crayola Broad Line Markers Classpack (256 Count) for only $59.99 (Was $69.99).",
+                  points: ["Available across the USA with fast Amazon delivery", "Ideal for classrooms, teachers, preschool, kindergarten, and art projects", "A perfect Back-to-School essential for students and educators"],
+                  href: "/stores/amazon-discount-code"
                 },
               ].map((c, i) => (
                 <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
@@ -843,8 +888,8 @@ export default function HomePageContent() {
             <p className="text-white/80 text-base md:text-lg leading-relaxed mb-10">
               Discover verified discounts, exclusive offers, and money-saving deals from your favorite brands. Whether you're shopping for travel, fashion, electronics, software, entertainment, or mobile services, Couponsbit helps you find better deals and save more on every purchase.
             </p>
-            <Link href="/deals" className="inline-flex items-center gap-2 bg-white text-[#056bfa] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
-              Browse Deals <ArrowRight className="w-4 h-4" />
+            <Link href="/stores" className="inline-flex items-center gap-2 bg-white text-[#056bfa] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+              Browse Stores <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>

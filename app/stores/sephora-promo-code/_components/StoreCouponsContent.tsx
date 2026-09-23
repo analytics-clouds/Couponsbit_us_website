@@ -421,6 +421,50 @@ export default function SephoraCouponsContent() {
           Sephora Promo Code, Coupon Code & Discount Offers
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Skincare Sale", "Up To 50% OFF", "All Users", "Save up to 50% on selected skincare, cleansers, serums & moisturizers", "Sephora Skincare"],
+        ["Beauty Products Sale", "Up To 50% OFF", "All Users", "Enjoy up to 50% OFF on makeup, skincare, haircare, and fragrance", "Beauty Essentials"],
+        ["Value Sets Deal", "Up To 30% OFF", "All Users", "Save up to 30% on popular skincare, makeup, and gift value sets", "Beauty Value Sets"],
+        ["Beauty Essentials Offer", "20% OFF", "All Users", "Get 20% OFF everyday favorites like lip gloss, lip balm, and foundation", "Sephora Beauty Range"],
+        ["Haircare Collection Sale", "Up To 50% OFF", "All Users", "Save up to 50% on shampoos, conditioners, treatments & styling picks", "Sephora Haircare"],
+        ["Retractable Rouge Gel Lip Liner", "5% OFF", "All Users", "Save 5% on lip liners for a defined and long-lasting finish", "Sephora Lip Makeup"],
+        ["Sephora Gift Cards", "From $10", "All Users", "Flexible gift card options starting at $10 for convenient beauty gifting", "Gift Cards"],
+        ["Sephora Best Sellers", "From $15.80", "All Users", "Discover customer-favorite makeup, skincare, fragrance & accessories", "Best Sellers"],
+        ["Sephora E-Gift Cards", "From $25", "All Users", "Digital e-gift cards starting at $25 sent directly to friends or family", "E-Gift Cards"],
+        ["Watermelon Glow Niacinamide Blush", "$25", "All Users", "Dewy Flush Brightening Serum Blush for a fresh, luminous finish", "Sephora Makeup"],
+        ["Sephora Colorful Blush", "50% OFF ($7)", "All Users", "50% OFF; reduced from $14 regular price for buildable color", "Sephora Collection"],
+        ["Beauty Insider Free Shipping", "Free Shipping", "Beauty Insider Members", "Members enjoy free shipping on eligible orders across all categories", "All Online Orders"],
+        ["Sephora Beauty Sale", "Up To 50% OFF", "All Users", "Major sitewide discount on top makeup, skincare, and fragrance brands", "Sitewide Sale"],
+        ["Makeup Collection Deal", "Special Prices", "All Users", "Deals on foundations, blushes, and brands like Makeup by Mario", "Sephora Makeup"],
+        ["Fragrance Collection", "Special Offers", "All Users", "Savings on popular perfumes, colognes, and signature fragrances", "Perfume & Cologne"],
+        ["Gift Sets & Birthday Gifting", "Special Offers", "All Users", "Curated beauty bundles ideal for birthdays, celebrations, and gifting", "Gift Sets"],
+        ["Kohl's Sephora Collection", "Special Offers", "All Users", "Discover selected beauty essentials available via Sephora at Kohl's", "Kohl's Sephora"],
+        ["Lip Products Collection", "Special Offers", "All Users", "Discounts on lip glosses, balms, liners, and color cosmetics", "Sephora Lip Care"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 17 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Whether you're restocking your skincare routine or trying a new makeup brand, Sephora offers a wide selection of beauty products from established and emerging brands.
