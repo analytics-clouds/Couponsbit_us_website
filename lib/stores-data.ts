@@ -152,6 +152,7 @@ export const allStores: StoreEntry[] = [
   { name: "Postmates",       id: "postmates-promo-code",           category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/postmates-logo_lfkxjl.webp",    discount: "Up To 20% OFF",   popular: false },
   { name: "Costco",          id: "costco-promo-code",              category: "More",        coupons: 19, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/costoc-logo_nkxnxl.webp",       discount: "Up To $600 OFF",  popular: false },
   { name: "Kohl's",          id: "kohls-coupon-code",              category: "Fashion",     coupons: 23, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp",        discount: "Up To 70% OFF",   popular: false },
+  { name: "Saily",           id: "saily-discount-code",            category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp",       discount: "Up To 20% OFF",   popular: false },
 ];
 
 
