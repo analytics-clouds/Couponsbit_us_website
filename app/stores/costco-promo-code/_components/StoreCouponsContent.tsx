@@ -413,8 +413,33 @@ export default function CostcoContent() {
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
+      
+
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
+        
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-xl mb-8">
+  <h2 className="text-black font-black text-xl mb-4">
+    Costco Promo Code Summary
+  </h2>
+
+  <p className="text-gray-500 font-medium text-sm leading-relaxed mb-4">
+    <strong>iBUYPOWER Element Gaming PC Desktop</strong> - Get $500 OFF with this product deal.
+  </p>
+
+  <ol className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-5 list-decimal">
+    <li><strong>Brand:</strong> Costco</li>
+    <li><strong>Offer:</strong> iBUYPOWER Element Gaming PC Desktop</li>
+    <li><strong>Discount:</strong> $500 OFF</li>
+    <li><strong>Final Price:</strong> $1,299.99</li>
+    <li><strong>Offer Type:</strong> Product Deal</li>
+    <li><strong>Applicable On:</strong> All users on eligible products</li>
+    <li><strong>Availability:</strong> Active</li>
+    <li><strong>Country:</strong> USA</li>
+    <li><strong>Verified By:</strong> Couponsbit</li>
+  </ol>
+</div>     
+        
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Costco Promo Code, Coupon Code & Discount Offers
         </h2>
@@ -434,6 +459,41 @@ export default function CostcoContent() {
           <p>
             Whether you're stocking the pantry, upgrading your home, shopping for electronics, preparing for the holidays, or planning a trip through Costco Travel, checking the latest offers can help you make the most of your Costco membership.
           </p>
+
+          <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Military Discount Plan", "From $2.99 / Month", "Eligible Military Members", "Special discounted monthly rate upon military status verification", "Peacock Subscription"],
+        ["Peacock Premium Plan", "$7.99 / Month", "All Users", "Access to movies, shows, live sports, and original entertainment", "Monthly Subscription"],
+        ["Select Monthly Plan", "From $7.99 / Month", "All Users", "Select qualifying monthly plan for full streaming access", "Peacock Plans"],
+        ["Premium Monthly Subscription", "$7.99 / Month", "All Users", "Standard premium streaming access; check current terms at signup", "Premium Streaming"],
+        ["Peacock Premium Plus Plan", "$13.99 / Month", "All Users", "Ad-free experience with offline downloads & live channel access", "Premium Plus Plan"],
+        ["Peacock Gift Cards", "From $25", "All Users", "Convenient digital or physical gift cards for streaming access", "Gift Cards"],
+        ["Premium Plus Annual Plan", "From $169.99 / Year", "All Users", "Convenient long-term annual streaming with Premium Plus perks", "Annual Subscription"],
+        ["Medical Pros & First Responders Offer", "$6.99 / Month", "Medical Pros & First Responders", "Special monthly rate available upon status verification", "Peacock Premium"],
+        ["Peacock Premium with Walmart+", "FREE with Walmart+", "Walmart+ Members", "Included at no additional cost with eligible Walmart+ membership", "Walmart+ Perk"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 8 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
           <div className="max-w-5xl mx-auto space-y-12 py-8 px-4 sm:px-6">
 

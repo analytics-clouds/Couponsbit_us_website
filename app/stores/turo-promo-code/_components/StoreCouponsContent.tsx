@@ -430,6 +430,28 @@ export default function TuroContent() {
 
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-xl mb-8">
+  <h2 className="text-black font-black text-xl mb-4">
+    Turo Promo Code Summary
+  </h2>
+
+  <p className="text-gray-500 font-medium text-sm leading-relaxed mb-4">
+    <strong>Storewide Discount</strong> - Save Flat 20% OFF on eligible bookings.
+  </p>
+
+  <ol className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-5 list-decimal">
+    <li><strong>Brand:</strong> Turo</li>
+    <li><strong>Offer:</strong> Storewide Discount</li>
+    <li><strong>Discount:</strong> Flat 20% OFF</li>
+    <li><strong>Offer Type:</strong> Storewide Offer</li>
+    <li><strong>Applicable On:</strong> All users on eligible products</li>
+    <li><strong>Availability:</strong> Active</li>
+    <li><strong>Country:</strong> USA</li>
+    <li><strong>Verified By:</strong> Couponsbit</li>
+  </ol>
+</div>
+
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Turo Promo Code, Coupon Code & Discount Offers
         </h2>
@@ -449,6 +471,41 @@ export default function TuroContent() {
           <p>
             From everyday sedans and SUVs to convertibles, sports cars, luxury vehicles, classic cars, electric vehicles, trucks, and vans, Turo gives US travelers a broad selection of vehicles to choose from.
           </p>
+
+          <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Flat 20% OFF Storewide", "Flat 20% OFF", "All Users", "Flat 20% discount on eligible car rental bookings across the USA", "Storewide Bookings"],
+        ["Monthly Car Rentals", "Up To $1,000 OFF", "All Users", "Save up to $1,000 on extended monthly car rentals", "Monthly Rentals"],
+        ["Tesla Model 3 Rental", "Save $20", "All Users", "Save $20 on eligible Tesla Model 3 bookings through Turo", "Tesla Model 3"],
+        ["BMW Rental Deal", "$83 OFF", "All Users", "Save $83 on eligible BMW luxury car rental bookings", "BMW Vehicle Rentals"],
+        ["Car Rental Savings", "Up To $57 OFF", "All Users", "Save up to $57 across various vehicle categories in the USA", "Selected Vehicle Bookings"],
+        ["Turo Auto Rental Offer", "Save $25", "All Users", "$25 discount applied on qualifying vehicle rental bookings", "All Car Rentals"],
+        ["Turo Car Bookings", "Up To $16 OFF", "All Users", "Grab up to $16 OFF on trips, weekend stays, and everyday travel rentals", "Short-Term Bookings"],
+        ["Turo Gift Cards", "From $50", "All Users", "Flexible gift cards starting at $50 redeemable toward car rentals", "Turo Gift Cards"],
+        ["Car Rentals Deal", "From $62", "All Users", "Affordable vehicle rental options starting at $62/day across the USA", "USA Rental Fleet"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 8 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
           <div className="space-y-8">
       <div className="space-y-4">

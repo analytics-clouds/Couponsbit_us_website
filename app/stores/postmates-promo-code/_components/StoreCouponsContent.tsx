@@ -410,6 +410,28 @@ export default function PostmatesContent() {
 
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
+
+        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-xl mb-8">
+  <h2 className="text-black font-black text-xl mb-4">
+    Postmates Promo Code Summary
+  </h2>
+
+  <p className="text-gray-500 font-medium text-sm leading-relaxed mb-4">
+    <strong>Surf Club Sushi Chestnut</strong> - Get Flat 20% OFF on your restaurant order.
+  </p>
+
+  <ol className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-5 list-decimal">
+    <li><strong>Brand:</strong> Postmates</li>
+    <li><strong>Offer:</strong> Surf Club Sushi Chestnut</li>
+    <li><strong>Discount:</strong> Flat 20% OFF</li>
+    <li><strong>Offer Type:</strong> Restaurant Offer</li>
+    <li><strong>Applicable On:</strong> All users on eligible products</li>
+    <li><strong>Availability:</strong> Active</li>
+    <li><strong>Country:</strong> USA</li>
+    <li><strong>Verified By:</strong> Couponsbit</li>
+  </ol>
+</div>
+
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           Postmates Promo Code, Coupon Code & Discount Offers
         </h2>
@@ -429,6 +451,44 @@ export default function PostmatesContent() {
           <p>
             From quick lunches and late-night cravings to grocery runs and household essentials, Postmates gives customers access to a wide range of local businesses through its delivery platform.
           </p>
+
+          <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Surf Club Sushi Chestnut", "20% OFF", "All Users", "Flat 20% discount on eligible restaurant orders", "Surf Club Sushi Chestnut"],
+        ["Alyssas Dessert Bar", "20% OFF", "All Users", "Save 20% on eligible dessert orders via Postmates", "Alyssas Dessert Bar"],
+        ["MrBeast Burger Deal", "3% OFF", "All Users", "Flat 3% discount on eligible MrBeast Burger orders", "MrBeast Burger Orders"],
+        ["Nourish Cafe Hyde Offer", "Save $8", "All Users", "$8 discount applied on eligible cafe food orders", "Nourish Cafe Hyde"],
+        ["Pizza Orders Deal", "$5 OFF", "All Users", "Save $5 on eligible pizza orders placed through Postmates", "Pizza Orders"],
+        ["Grilled Cheese Burrito", "$8.04 Special Price", "All Users", "Get a Grilled Cheese Burrito at the promotional price of $8.04", "Select Burrito Items"],
+        ["Daily Restaurant Deals", "Under $15", "All Users", "Daily meal options from participating top restaurants under $15", "Top Restaurants"],
+        ["Breakfast & Brunch Favorites", "Meals at $15", "All Users", "Selected breakfast and brunch dishes available for $15", "Breakfast & Brunch"],
+        ["Essentials & Groceries", "Under $20", "All Users", "Order food, medicine, and grocery essentials for under $20", "Food, Medicine & Groceries"],
+        ["Thrive Kitchen BOGO", "Buy 1 Get 1 FREE", "Orders Over $30", "Buy 1 Get 1 FREE on eligible Thrive Kitchen orders over $30", "Thrive Kitchen"],
+        ["Unlimited Membership Delivery", "Free Delivery", "Postmates Unlimited Members", "Free delivery on all qualifying orders with active membership", "Unlimited Member Orders"],
+        ["Free Delivery Deal", "Free Delivery", "Orders Over $15", "Automatic free delivery applied on eligible orders above $15", "Orders Over $15"]
+      ].map((row, i) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 11 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
           <div className="max-w-5xl mx-auto space-y-12 py-8 px-4 sm:px-6">
   
