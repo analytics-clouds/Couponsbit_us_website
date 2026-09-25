@@ -169,7 +169,7 @@ const Hero = () => {
                 key={`${slide.id}-${idx}`}
                 className={cn("shrink-0 px-2", isMobile ? "w-full" : "w-1/3")}
               >
-                <a href={slide.href} target="_blank" rel="noopener noreferrer" className="block rounded-3xl overflow-hidden" aria-hidden={idx >= slides.length ? true : undefined} tabIndex={idx >= slides.length ? -1 : undefined}>
+                <a href={slide.href} target="_blank" rel="nofollow noopener noreferrer" className="block rounded-3xl overflow-hidden" aria-hidden={idx >= slides.length ? true : undefined} tabIndex={idx >= slides.length ? -1 : undefined}>
                   <img
                     src={slide.image}
                     alt={slide.alt}
@@ -537,7 +537,7 @@ export default function HomePageContent() {
                 <a
                   href={affiliateUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="w-full py-3 px-4 bg-[#056bfa] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
                 >
                   <span>Explore Deals</span>
@@ -928,7 +928,7 @@ export default function HomePageContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img

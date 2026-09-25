@@ -295,7 +295,7 @@ export default function NuagewearNewYorkCouponsContent() {
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <div>
-                    <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer">
+                    <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782373659/nuage-coupon-code_ggmnbf.jpg" alt="Nuagewear" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -319,7 +319,7 @@ export default function NuagewearNewYorkCouponsContent() {
     <a 
       href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" 
       target="_blank" 
-      rel="noopener noreferrer" 
+      rel="nofollow noopener noreferrer" 
       className="block w-full h-full"
     >
       <img 
@@ -409,7 +409,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears USA Offer – Free Worldwide Shipping Over $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears USA Offer – Free Worldwide Shipping Over $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -450,7 +450,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Commando Chic Shorts – Only $49" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Commando Chic Shorts – Only $49" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -491,7 +491,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Wireless Soft Stay-Put Bra – 39% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Wireless Soft Stay-Put Bra – 39% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -532,7 +532,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Daily Cover Comfort Guard Bra – 35% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Daily Cover Comfort Guard Bra – 35% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -573,7 +573,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Perfect Coverage Push-Up Bra – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Perfect Coverage Push-Up Bra – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -614,7 +614,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Pivot+ 5-Pack – Save 12%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Pivot+ 5-Pack – Save 12%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -655,7 +655,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Red Holiday Bra Set – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Red Holiday Bra Set – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -696,7 +696,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief – Starting at $16" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief – Starting at $16" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -737,7 +737,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief 5-Pack – Save 10%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief 5-Pack – Save 10%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -778,7 +778,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh FlexShield Thong – $18 Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh FlexShield Thong – $18 Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -819,7 +819,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Original Bikini – Only $14" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Original Bikini – Only $14" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -860,7 +860,7 @@ export default function NuagewearNewYorkCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuBloom Bra – 37% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuBloom Bra – 37% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -879,7 +879,7 @@ export default function NuagewearNewYorkCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image

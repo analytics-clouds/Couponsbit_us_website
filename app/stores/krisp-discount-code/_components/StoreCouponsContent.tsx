@@ -224,7 +224,7 @@ export default function KrispCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer">
+                  <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782730730/krisp-logo_ajv3iv.webp" alt="Krisp.AI" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -245,7 +245,7 @@ export default function KrispCouponsContent() {
                     <a
                       href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -279,21 +279,21 @@ export default function KrispCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782807017/krisp-vouher-code_jylogd.png" alt="Krisp.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782807017/krisp-promo-code_c9bo2e.png" alt="Krisp.AI Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782807017/krisp-vouher-code_jylogd.png" alt="Krisp.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
@@ -374,7 +374,7 @@ export default function KrispCouponsContent() {
                     <p className="text-black font-extrabold text-lg mb-1">Free Trial</p>
                     <p className="text-gray-500 text-[12px] mb-4">Explore Krisp on your own.</p>
                     <p className="text-black font-black text-3xl mb-4">$0</p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" aria-label="Try Krisp.AI Free Trial" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Try it Free</a>
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Try Krisp.AI Free Trial" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Try it Free</a>
                     <div className="space-y-3">
                       <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why 7-Day Free Trial</p>
                       <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
@@ -398,7 +398,7 @@ export default function KrispCouponsContent() {
                     <p className="text-black font-extrabold text-lg mb-1">Core</p>
                     <p className="text-gray-500 text-[12px] mb-4">Best for individuals and small teams.</p>
                     <p className="text-black font-black text-3xl mb-4">{billingAnnual ? "$8" : "$16"}<span className="text-gray-500 font-bold text-sm">/mo/user</span></p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" aria-label="Start with Krisp.AI Core plan" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Core</a>
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Start with Krisp.AI Core plan" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Core</a>
                     <div className="space-y-3">
                       <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Core</p>
                       <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
@@ -425,7 +425,7 @@ export default function KrispCouponsContent() {
                     <p className="text-black font-extrabold text-lg mb-1">Advanced</p>
                     <p className="text-gray-500 text-[12px] mb-4">For advanced features and controls.</p>
                     <p className="text-black font-black text-3xl mb-4">{billingAnnual ? "$15" : "$30"}<span className="text-gray-500 font-bold text-sm">/mo/user</span></p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" aria-label="Start with Krisp.AI Advanced plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Advanced</a>
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Start with Krisp.AI Advanced plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Advanced</a>
                     <div className="space-y-3">
                       <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Advanced</p>
                       <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
@@ -451,7 +451,7 @@ export default function KrispCouponsContent() {
                     <p className="text-black font-extrabold text-lg mb-1">Enterprise</p>
                     <p className="text-gray-500 text-[12px] mb-4">Best for org-wide rollout &amp; security.</p>
                     <p className="text-black font-black text-3xl mb-4">Custom Pricing</p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" aria-label="Talk to Sales about Krisp.AI Enterprise" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Talk to Sales</a>
+                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Talk to Sales about Krisp.AI Enterprise" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Talk to Sales</a>
                     <div className="space-y-3">
                       <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Enterprise</p>
                       <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
@@ -483,7 +483,7 @@ export default function KrispCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -510,7 +510,7 @@ export default function KrispCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, professionals worldwide use Krisp AI to improve communication, reduce background distractions, and automate post-meeting tasks.
                   </p>
-                  <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -859,7 +859,7 @@ export default function KrispCouponsContent() {
                 <a 
                   href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026"
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   aria-label={`Get Krisp AI deal: ${deal.heading}`} 
                   className="bg-[#e8f6f8] text-[#056bfa] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >

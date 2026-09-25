@@ -206,7 +206,7 @@ export default function InspiringVacationCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer">
+                  <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/inspiring-vacation-logo_mokiew.webp" alt="Inspiring Vacation" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -227,7 +227,7 @@ export default function InspiringVacationCouponsContent() {
                     <a
                       href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -260,21 +260,21 @@ export default function InspiringVacationCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811402/inspiring-vacation-doscount-code_mkcu0i.webp" alt="Inspiring Vacation Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811402/inspiring-vacation-promo-code_cijbs5.webp" alt="Inspiring Vacation Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1784811402/inspiring-vacation-voucher-code_ezfxm6.webp" alt="Inspiring Vacation Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
@@ -368,7 +368,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: Bring a Friend UP TO 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: Bring a Friend UP TO 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -409,7 +409,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: Fly Stay Cruise Bonus 5000 Velocity Points" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: Fly Stay Cruise Bonus 5000 Velocity Points" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -450,7 +450,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 29-Day Complete Central America Tour From $9345" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 29-Day Complete Central America Tour From $9345" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -491,7 +491,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 27-Day Timeless Stans Turkmenistan Tour From $16195" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 27-Day Timeless Stans Turkmenistan Tour From $16195" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -532,7 +532,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 21-Day Ultimate African Safari From $14095" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 21-Day Ultimate African Safari From $14095" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -573,7 +573,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 24-Day Five Stans Unveiled Tour From $7595" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 24-Day Five Stans Unveiled Tour From $7595" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -614,7 +614,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 15-Day Magical Morocco Tour From $3195" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 15-Day Magical Morocco Tour From $3195" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -655,7 +655,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: 19-Day South America Tour From $7595" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: 19-Day South America Tour From $7595" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -696,7 +696,7 @@ export default function InspiringVacationCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label="Get Inspiring Vacation deal: Canadian Rockies Alaska Cruise From $6945" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Inspiring Vacation deal: Canadian Rockies Alaska Cruise From $6945" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -715,7 +715,7 @@ export default function InspiringVacationCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -745,7 +745,7 @@ export default function InspiringVacationCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Whether you're travelling solo, as a couple, with family, or in a group, Inspiring Vacations offers a variety of options to suit different travel styles and budgets.
                   </p>
-                  <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1107,7 +1107,7 @@ export default function InspiringVacationCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="noopener noreferrer" aria-label={`Get Inspiring Vacations deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://inspiringv.prf.hn/click/camref:1011l5iy2s/pubref:publisherid/ar:cnc" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Inspiring Vacations deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

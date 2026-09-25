@@ -232,7 +232,7 @@ export default function StubHubCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp" alt="StubHub" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -253,7 +253,7 @@ export default function StubHubCouponsContent() {
                     <a
                       href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -292,7 +292,7 @@ export default function StubHubCouponsContent() {
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 0 ? 1 : 0 }}
     >
-      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full">
         <img
           src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781851154/stubhub-voucher-code_vmfi3h.webp"
           alt="Banner 1"
@@ -307,7 +307,7 @@ export default function StubHubCouponsContent() {
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 1 ? 1 : 0 }}
     >
-      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full">
         <img
           src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782127919/Stubhub_voucher_code_wl9gvl.webp"
           alt="Banner 2"
@@ -322,7 +322,7 @@ export default function StubHubCouponsContent() {
       className="absolute inset-0 transition-opacity duration-500 flex items-center justify-center"
       style={{ opacity: activeSlide === 2 ? 1 : 0 }}
     >
-      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="block w-full">
+      <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full">
         <img
           src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782127903/Stubhub_discount_code_s0bfnm.webp"
           alt="Banner 3"
@@ -522,7 +522,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: Flat 10% OFF Sitewide On Orders Above $40"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -662,7 +662,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: NBA Playoffs Western Conference Finals tickets"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -803,7 +803,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: Rock Music Tickets Starting From $30"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -940,7 +940,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: The Lion King New York Tickets Starting At $171"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -1071,7 +1071,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: Under The Big Sky Festival Tickets Starting At $582"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -1207,7 +1207,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: Student Discount Flat $25 OFF On Ticket Booking"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -1342,7 +1342,7 @@ export default function StubHubCouponsContent() {
               <a
                 href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 aria-label="Get StubHub deal: New User Offer Get $20 OFF On First Order"
                 className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
               >
@@ -1374,7 +1374,7 @@ export default function StubHubCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <img
@@ -1407,7 +1407,7 @@ export default function StubHubCouponsContent() {
                     Checking CouponsBit before buying gives you an opportunity to find an available StubHub offer before spending on your tickets.
 
                   </p>
-                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
 
@@ -1926,7 +1926,7 @@ export default function StubHubCouponsContent() {
                 <a
                   href="https://stubhub.prf.hn/click/camref:1100l4aspZ/pubref:1015"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >
                   Get Deal

@@ -222,7 +222,7 @@ export default function TalkpalCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782288847/talkpal-coupon-code_gozaoz.webp" alt="Talkpal.AI" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -243,7 +243,7 @@ export default function TalkpalCouponsContent() {
                     <a
                       href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -276,21 +276,21 @@ export default function TalkpalCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782383079/talkpalai-voucher-code_c2afdz.webp" alt="Talkpal.AI Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782383079/talkpalai-promo-code_giuvob.webp" alt="Talkpal.AI Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782383079/talkpalai-voucher-code_c2afdz.webp" alt="Talkpal.AI Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -368,7 +368,7 @@ export default function TalkpalCouponsContent() {
                 </div>
 
                   <p className="text-center mb-8">
-                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-bold text-sm underline">See more plans</a>
+                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-bold text-sm underline">See more plans</a>
                                 </p>
                 
                                 {/* Trust Badges */}
@@ -397,7 +397,7 @@ export default function TalkpalCouponsContent() {
                                     <span className="text-white/80 line-through text-xl font-bold mr-3">$329.50</span>
                                     <span className="text-white font-black text-3xl">$102.97</span>
                                   </p>
-                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Try Openart.AI Premium for $0.00" className="bg-white hover:bg-gray-100 text-[#0451c4] font-black text-base px-10 py-4 rounded-2xl shadow-md transition-all duration-300 inline-block">Try for $0.00</a>
+                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Try Openart.AI Premium for $0.00" className="bg-white hover:bg-gray-100 text-[#0451c4] font-black text-base px-10 py-4 rounded-2xl shadow-md transition-all duration-300 inline-block">Try for $0.00</a>
                                 </div>
 
                 
@@ -419,7 +419,7 @@ export default function TalkpalCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -439,7 +439,7 @@ export default function TalkpalCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Talkpal AI is an innovative language-learning platform that uses artificial intelligence to help users practice and improve their communication skills. The platform offers conversational learning experiences that allow users to engage in realistic interactions while receiving instant feedback.
                   </p>
-                  <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -737,7 +737,7 @@ export default function TalkpalCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://talkpal.ai" target="_blank" rel="noopener noreferrer" aria-label={`Get Talkpal deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://talkpal.ai" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Talkpal deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

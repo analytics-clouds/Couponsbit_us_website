@@ -206,7 +206,7 @@ export default function LoveJerkyCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer">
+                  <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp" alt="LoveJerky" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -227,7 +227,7 @@ export default function LoveJerkyCouponsContent() {
                     <a
                       href="https://lovesjerkyco.pxf.io/VOV7Ja"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -260,21 +260,21 @@ export default function LoveJerkyCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1786518247/112_t0jk0k.webp" alt="LoveJerky Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1786518247/113_esnx6d.webp" alt="LoveJerky Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1786518246/114_i8exbl.webp" alt="LoveJerky Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
@@ -368,7 +368,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo Discount Code – Free Shipping on Orders Over $66" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo Discount Code – Free Shipping on Orders Over $66" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -409,7 +409,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo Discount Code – 6-Flavour Sample Packs for $50" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo Discount Code – 6-Flavour Sample Packs for $50" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -451,7 +451,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Redmond Real Salt 5 oz for $32" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Redmond Real Salt 5 oz for $32" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -493,7 +493,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – 6-Flavour Sample Collection for $50" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – 6-Flavour Sample Collection for $50" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -535,7 +535,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Teriyaki Seasoning for $24" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Teriyaki Seasoning for $24" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -577,7 +577,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Lemon Pepper Seasoning for $24" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Lemon Pepper Seasoning for $24" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -618,7 +618,7 @@ export default function LoveJerkyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Red Chili Powder from $10" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get LovesJerkyCo deal: LovesJerkyCo USA – Red Chili Powder from $10" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -637,7 +637,7 @@ export default function LoveJerkyCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -665,7 +665,7 @@ export default function LoveJerkyCouponsContent() {
                    Whether you're shopping for yourself, putting together a snack stash, or looking for something to take on your next trip, the brand offers a simple way to add variety to your snack drawer.
 
                   </p>
-                  <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://lovesjerkyco.pxf.io/VOV7Ja" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1055,7 +1055,7 @@ export default function LoveJerkyCouponsContent() {
                 <a 
                   href="https://lovesjerkyco.pxf.io/VOV7Ja" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   aria-label={`Get Love's Jerky deal: ${deal.heading}`} 
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >

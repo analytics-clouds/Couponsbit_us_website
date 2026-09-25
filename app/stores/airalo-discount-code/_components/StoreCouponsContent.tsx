@@ -206,7 +206,7 @@ export default function AiraloCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp" alt="Airalo" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -227,7 +227,7 @@ export default function AiraloCouponsContent() {
                     <a
                       href="https://www.airalo.com/?code=AC10ALL"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -260,21 +260,21 @@ export default function AiraloCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-promo-code_ipgxvz.webp" alt="Airalo Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-voucher-code_jmjhvw.webp" alt="Airalo Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785138148/airalo-discount-code_wtxcr7.webp" alt="Airalo Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
@@ -368,7 +368,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -416,7 +416,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -464,7 +464,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -512,7 +512,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -560,7 +560,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -608,7 +608,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -656,7 +656,7 @@ export default function AiraloCouponsContent() {
           </div>
         </div>
           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
            <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
                       <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
                       <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -682,7 +682,7 @@ export default function AiraloCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -708,7 +708,7 @@ export default function AiraloCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, Airalo serves millions of travelers worldwide and supports a wide variety of eSIM-compatible smartphones, tablets, and other connected devices. 
                   </p>
-                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1064,7 +1064,7 @@ export default function AiraloCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="noopener noreferrer" aria-label={`Get Airalo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Airalo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

@@ -173,7 +173,7 @@ export default function EmergentCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer">
+                  <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782198036/emergent-coupon-code_oeaxoh.webp" alt="Emergent" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -194,7 +194,7 @@ export default function EmergentCouponsContent() {
                     <a
                       href="https://app.emergent.sh/?via=CC"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -227,21 +227,21 @@ export default function EmergentCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782209699/emergent-promo-code_yapppq.webp" alt="Emergent Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782209696/emergent-discount-code_j4d2gx.webp" alt="Emergent Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782209699/emergent-promo-code_yapppq.webp" alt="Emergent Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -340,7 +340,7 @@ export default function EmergentCouponsContent() {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" aria-label="Get Emergent deal: Standard Plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Emergent deal: Standard Plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
 
                   {/* Pro Plan */}
@@ -374,7 +374,7 @@ export default function EmergentCouponsContent() {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" aria-label="Get Emergent deal: Pro Plan" className="bg-white hover:bg-gray-100 text-[#0451c4] font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Upgrade to Pro</a>
+                    <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Emergent deal: Pro Plan" className="bg-white hover:bg-gray-100 text-[#0451c4] font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Upgrade to Pro</a>
                   </div>
                 </div>
 
@@ -390,7 +390,7 @@ export default function EmergentCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -410,7 +410,7 @@ export default function EmergentCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Emergent is an AI-powered application development platform that enables users to create full-stack web and mobile applications through natural language conversations. Instead of writing code manually, users can describe what they want to build, and Emergent's AI agents help generate the application's frontend, backend, workflows, and deployment infrastructure. 
                   </p>
-                  <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://app.emergent.sh/?via=CC" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>

@@ -215,7 +215,7 @@ export default function EnvatoCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer">
+                  <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/envato-coupon-code_rhfnbt.webp" alt="Envato Elements" width={112} height={112} className="w-full h-full object-contain" />
                     </div>
@@ -235,7 +235,7 @@ export default function EnvatoCouponsContent() {
                     <a
                       href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -268,21 +268,21 @@ export default function EnvatoCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782132079/envato_elemnets_discount_code_gfryiw.webp" alt="Envato Elements Discount Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782132078/envato_elemnets_broucher_code_jei71u.webp" alt="Envato Elements Promo Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782132078/envato_elemnets_promo_code_uqtfmq.webp" alt="Envato Elements Voucher Code" width={800} height={350} className="w-full h-full object-cover" />
                     </a>
                   </div>
@@ -376,7 +376,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -417,7 +417,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -458,7 +458,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -499,7 +499,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -540,7 +540,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -581,7 +581,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -621,7 +621,7 @@ export default function EnvatoCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
+          <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center">Get Deal</a>
         </div>
       </div>
     </div>
@@ -637,7 +637,7 @@ export default function EnvatoCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <img
@@ -656,7 +656,7 @@ export default function EnvatoCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Envato Elements is a subscription-based digital asset marketplace that gives creators unlimited access to a vast library of premium creative resources. Instead of purchasing individual assets one at a time, subscribers can download as many items as they need for a flat monthly or annual fee.
                   </p>
-                  <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1035,7 +1035,7 @@ export default function EnvatoCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 text-center">Get Deal</a>
+                <a href="http://1.envato.market/c/4303217/298927/4662?subId1=1015&u=https%3A%2F%2Felements.envato.com%2F" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 text-center">Get Deal</a>
               </div>
             ))}
           </div>

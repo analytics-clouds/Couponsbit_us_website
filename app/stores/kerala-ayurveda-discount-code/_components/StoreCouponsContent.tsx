@@ -207,7 +207,7 @@ export default function KeralaAyurvedaCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer">
+                  <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1785841263/kerala-ayurveda-logo_hdbbfs.jpg" alt="Kerala Ayurveda" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -228,7 +228,7 @@ export default function KeralaAyurvedaCouponsContent() {
                     <a
                       href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -261,21 +261,21 @@ export default function KeralaAyurvedaCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785845004/kerala-ayurveda-coupon-code_abjbpy.png" alt="Kerala Ayurveda Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785845004/kerala-ayurveda-discount-code_wugu2g.png" alt="Kerala Ayurveda Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785845004/kerala-ayurveda-promo-code_ydbhhf.png" alt="Kerala Ayurveda Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -371,7 +371,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kalyanaka Ghee Mental Wellness Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kalyanaka Ghee Mental Wellness Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -419,7 +419,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Rasnasapthakam Kwath Joint Support For $22.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Rasnasapthakam Kwath Joint Support For $22.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -467,7 +467,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Digi Eye Defense Eye Health Support For $31.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Digi Eye Defense Eye Health Support For $31.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -515,7 +515,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Indukantham Kwath Daily Wellness For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Indukantham Kwath Daily Wellness For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -563,7 +563,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Oil Radiant Skin From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Oil Radiant Skin From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -611,7 +611,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Shilajit Capsules Energy Support For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Shilajit Capsules Energy Support For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -659,7 +659,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Brilliant Mind Brain Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Brilliant Mind Brain Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -707,7 +707,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Thailam Natural Face Oil From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Thailam Natural Face Oil From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -755,7 +755,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Triphala Capsules Gut Health For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Triphala Capsules Gut Health For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -803,7 +803,7 @@ export default function KeralaAyurvedaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Dashamula Capsules Detox Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
+          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Dashamula Capsules Detox Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
           <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
             <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
             <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
@@ -829,7 +829,7 @@ export default function KeralaAyurvedaCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -858,7 +858,7 @@ export default function KeralaAyurvedaCouponsContent() {
                     With decades of experience in Ayurveda, the brand continues to serve individuals seeking natural wellness solutions for their daily lives.
 
                   </p>
-                  <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1222,7 +1222,7 @@ export default function KeralaAyurvedaCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="noopener noreferrer" aria-label={`Get McAfee deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get McAfee deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

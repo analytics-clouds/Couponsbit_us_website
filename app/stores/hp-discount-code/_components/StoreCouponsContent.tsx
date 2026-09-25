@@ -293,7 +293,7 @@ export default function HPCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782890859/hp-coupon-code_vaogna.webp" alt="HP" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -314,7 +314,7 @@ export default function HPCouponsContent() {
                     <a
                       href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -347,21 +347,21 @@ export default function HPCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1400,c_limit/v1782902078/hp-discout-code_jywwjk.webp" alt="HP Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1400,c_limit/v1782902079/hp-promo-code_ztjhn8.webp" alt="HP Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto,w_1400,c_limit/v1782902077/hp-voucher-code_pm6m2f.webp" alt="HP Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -455,7 +455,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP 4th of July Sale – Save Up to 71% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP 4th of July Sale – Save Up to 71% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -496,7 +496,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OmniBook 3 Laptop Deal – Up to 60% OFF | Starting at $419.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OmniBook 3 Laptop Deal – Up to 60% OFF | Starting at $419.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -537,7 +537,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OmniBook 5 Flip 2-in-1 – Up to 58% OFF | Starting at $499.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OmniBook 5 Flip 2-in-1 – Up to 58% OFF | Starting at $499.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -578,7 +578,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OMEN 35L Gaming Desktop – Up to 50% OFF | Starting at $1,189.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OMEN 35L Gaming Desktop – Up to 50% OFF | Starting at $1,189.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -619,7 +619,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP Financing Offer – Pay Over 24 Months" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP Financing Offer – Pay Over 24 Months" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -660,7 +660,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP All-In Plan – Printers from $7.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP All-In Plan – Printers from $7.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -701,7 +701,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OmniBook X AI Laptop – Up to 19% OFF | Starting at $1,699.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OmniBook X AI Laptop – Up to 19% OFF | Starting at $1,699.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -741,7 +741,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: Adobe Software Bundle – Starting at $129.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: Adobe Software Bundle – Starting at $129.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -782,7 +782,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OmniBook 7 Laptop – Up to 35% OFF | Save $560" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OmniBook 7 Laptop – Up to 35% OFF | Save $560" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -822,7 +822,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP LaserJet Printer Bundle – Save $30" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP LaserJet Printer Bundle – Save $30" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -863,7 +863,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HP OmniBook 7 AI Laptop – Up to 36% OFF | Starting at $1,599.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HP OmniBook 7 AI Laptop – Up to 36% OFF | Starting at $1,599.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -904,7 +904,7 @@ export default function HPCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label="Get HP deal: HyperX Cloud Alpha Wireless Headset – Up to 25% OFF | Starting at $149.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get HP deal: HyperX Cloud Alpha Wireless Headset – Up to 25% OFF | Starting at $149.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -920,7 +920,7 @@ export default function HPCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -946,7 +946,7 @@ export default function HPCouponsContent() {
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, HP products are available in numerous countries through its official website, authorized retailers, and global distribution partners.
                   </p>
-                  <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1369,7 +1369,7 @@ export default function HPCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get HP deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.anrdoezrs.net/click-100938140-17148234?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get HP deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

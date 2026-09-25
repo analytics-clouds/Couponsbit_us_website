@@ -281,7 +281,7 @@ export default function CarilohaCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782373660/cariloha-coupon-code_t4bwl4.jpg" alt="Cariloha" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -302,7 +302,7 @@ export default function CarilohaCouponsContent() {
                     <a
                       href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -335,21 +335,21 @@ export default function CarilohaCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782731927/cariloha-voucher-code_vnw3fh.webp" alt="Cariloha Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782731927/cariloha-promo-code_oen883.webp" alt="Cariloha Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782731926/cariloha-discount-code_rdjyot.webp" alt="Cariloha Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -443,7 +443,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha USA Offer – Free Shipping Over $100 + 100-Night Trial" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha USA Offer – Free Shipping Over $100 + 100-Night Trial" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -484,7 +484,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Retreat Bamboo Sheets – Luxury Bamboo Bedding" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Retreat Bamboo Sheets – Luxury Bamboo Bedding" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -525,7 +525,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Clearance Sale – Up to 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Clearance Sale – Up to 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -566,7 +566,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Women's Bamboo Sleep Robe – 49% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Women's Bamboo Sleep Robe – 49% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -607,7 +607,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Signature Fragrance – Premium Home Scent" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Signature Fragrance – Premium Home Scent" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -648,7 +648,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Comfort Polo – Save 30%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Comfort Polo – Save 30%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -689,7 +689,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Sateen Duvet Cover Set – Luxury Sleep Upgrade" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Sateen Duvet Cover Set – Luxury Sleep Upgrade" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -730,7 +730,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Bath Towel – Everyday Luxury" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Bath Towel – Everyday Luxury" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -771,7 +771,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Boyshort Brief – Save 22%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Bamboo Boyshort Brief – Save 22%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -812,7 +812,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Men's Bamboo Woven Sleep Shorts – 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Men's Bamboo Woven Sleep Shorts – 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -853,7 +853,7 @@ export default function CarilohaCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Resort Pillow – Premium Bamboo Comfort" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Cariloha deal: Cariloha Resort Pillow – Premium Bamboo Comfort" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -872,7 +872,7 @@ export default function CarilohaCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -892,7 +892,7 @@ export default function CarilohaCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Cariloha is a lifestyle brand known for creating bedding, bath products, and apparel made from bamboo-viscose fabrics. Inspired by island living and sustainable comfort, the company aims to help customers "sleep, live, and feel every day like they're on vacation." The brand is particularly recognized for its bamboo bedding collections, which emphasize softness, breathability, and comfort.
                   </p>
-                  <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1258,7 +1258,7 @@ export default function CarilohaCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get Cariloha deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Cariloha deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

@@ -206,7 +206,7 @@ export default function BluettiCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp" alt="Bluetti" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -227,7 +227,7 @@ export default function BluettiCouponsContent() {
                     <a
                       href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -260,21 +260,21 @@ export default function BluettiCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785148832/bluetti-voucher-code_ltvslv.webp" alt="Bluetti Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785148832/bluetti-promo-code_kspgff.webp" alt="Bluetti Promo Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/v1785148831/bluetti-discount-code_itn6x4.webp" alt="Bluetti Voucher Code" width={800} height={350} className="w-full h-full object-contain bg-[#f5f5f5]" loading="lazy" />
                     </a>
                   </div>
@@ -368,7 +368,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 300 Charger 2 Save $150" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 300 Charger 2 Save $150" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -409,7 +409,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 2x B300K Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 2x B300K Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -450,7 +450,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power FREE $249 Trolley With Apex 300 Bundle" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power FREE $249 Trolley With Apex 300 Bundle" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -491,7 +491,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 300 From $1199" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 300 From $1199" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -532,7 +532,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 From $1699" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 From $1699" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -573,7 +573,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 400 From $1399" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 400 From $1399" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -614,7 +614,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 2x200W Solar Generator Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 2x200W Solar Generator Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -655,7 +655,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 200 V2 Charger 2 Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Elite 200 V2 Charger 2 Save $200" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -696,7 +696,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power AC200L Charger 2 Save $150" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power AC200L Charger 2 Save $150" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -737,7 +737,7 @@ export default function BluettiCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 Home Battery Backup From $1699" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluetti deal: BLUETTI Power Apex 300 Home Battery Backup From $1699" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -756,7 +756,7 @@ export default function BluettiCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -782,7 +782,7 @@ export default function BluettiCouponsContent() {
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     By combining advanced battery technology with renewable solar energy, BLUETTI helps users stay powered while reducing their environmental impact.
                   </p>
-                  <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1165,7 +1165,7 @@ export default function BluettiCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="noopener noreferrer" aria-label={`Get BLUETTI deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get BLUETTI deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

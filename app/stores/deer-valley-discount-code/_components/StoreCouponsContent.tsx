@@ -257,7 +257,7 @@ export default function DeerValleyCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer">
+                  <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782451456/deervalley-coupon-code_yohcn4.jpg" alt="Deer Valley" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -278,7 +278,7 @@ export default function DeerValleyCouponsContent() {
                     <a
                       href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -311,21 +311,21 @@ export default function DeerValleyCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782467647/deer-valley-discount-code_pchkeq.webp" alt="Deer Valley Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782467647/deer-valley-promo-code_ogjzap.webp" alt="Deer Valley Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782467646/deer-valley-voucher-code_p7qkf7.webp" alt="Deer Valley Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -419,7 +419,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Anniversary Sale – Up to 60% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Anniversary Sale – Up to 60% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -460,7 +460,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley One-Piece Elongated Toilet – Save 48%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley One-Piece Elongated Toilet – Save 48%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -501,7 +501,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Smart Stainless Steel Kitchen Sink – Save 40%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Smart Stainless Steel Kitchen Sink – Save 40%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -542,7 +542,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley LED Bathroom Vanity Mirror – Save 41%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley LED Bathroom Vanity Mirror – Save 41%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -583,7 +583,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Farmhouse Kitchen Sink – Save 33%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Farmhouse Kitchen Sink – Save 33%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -624,7 +624,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Smart Tankless Toilet – Save 48%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Smart Tankless Toilet – Save 48%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -665,7 +665,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Dual LED Anti-Fog Vanity Mirror – Save 42%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Dual LED Anti-Fog Vanity Mirror – Save 42%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -706,7 +706,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Deep Dual Bowl Farmhouse Sink – Save 24%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Deep Dual Bowl Farmhouse Sink – Save 24%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -747,7 +747,7 @@ export default function DeerValleyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Three-Door Mirror Cabinet – Save 24%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Deer Valley deal: DeerValley Three-Door Mirror Cabinet – Save 24%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
         </div>
       </div>
     </div>
@@ -766,7 +766,7 @@ export default function DeerValleyCouponsContent() {
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
                     <Image
@@ -789,7 +789,7 @@ export default function DeerValleyCouponsContent() {
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Serving customers across multiple regions, Deer Valley Bath continues to expand its product lineup with solutions suitable for homeowners, interior designers, contractors, and renovation professionals. Many of its products feature modern technology, space-saving designs, and easy-to-maintain finishes. 
                   </p>
-                  <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1156,7 +1156,7 @@ export default function DeerValleyCouponsContent() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href="https://www.deervalleybath.com" target="_blank" rel="noopener noreferrer" aria-label={`Get Deer Valley Bath deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.deervalleybath.com" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Deer Valley Bath deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
