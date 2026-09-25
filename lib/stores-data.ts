@@ -148,6 +148,10 @@ export const allStores: StoreEntry[] = [
   { name: "Lulus",           id: "lulus-promo-code",               category: "Fashion",     coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/lulus-logo_pl1byq.webp",        discount: "Up To 80% OFF",   popular: false },
   { name: "Peacock",         id: "peacock-promo-code",             category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/peacock-logo_mhfin7.webp",      discount: "From $2.99/Month", popular: false },
   { name: "Typhur",          id: "typhur-discount-code",           category: "Electronics", coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790146959/typhur-logo_abminz.webp",      discount: "Up To 40% OFF",   popular: false },
+  { name: "Turo",            id: "turo-promo-code",                category: "Travel",      coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/turo-logo_exsf96.webp",         discount: "Up To $1,000 OFF", popular: false },
+  { name: "Postmates",       id: "postmates-promo-code",           category: "More",        coupons: 12, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/postmates-logo_lfkxjl.webp",    discount: "Up To 20% OFF",   popular: false },
+  { name: "Costco",          id: "costco-promo-code",              category: "More",        coupons: 19, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/costoc-logo_nkxnxl.webp",       discount: "Up To $600 OFF",  popular: false },
+  { name: "Kohl's",          id: "kohls-coupon-code",              category: "Fashion",     coupons: 23, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp",        discount: "Up To 70% OFF",   popular: false },
 ];
 
 

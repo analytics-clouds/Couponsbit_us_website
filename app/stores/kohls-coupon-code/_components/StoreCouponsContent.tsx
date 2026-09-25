@@ -111,7 +111,7 @@ export default function KohlsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Kohl's coupon codes and coupon offers for Sep 2026. Save on apparel, shoes, home goods, and beauty.
+                      Use the latest Kohl's Coupon Code and Kohl's Discount Code to save up to 70% OFF on clearance items, enjoy $15 OFF orders over $75, claim 15% OFF your first order, and get up to 50% OFF kitchen appliances. Explore verified Kohl's deals on clothing, footwear, home essentials, beauty, furniture, and more throughout September 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -127,7 +127,7 @@ export default function KohlsCouponsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "23", label: "Offers" },
                     { icon: Percent, val: "150+", label: "Deals" },
                     { icon: Users, val: "3M+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -188,12 +188,29 @@ export default function KohlsCouponsContent() {
                 </div>
 
                 {[
-                  { label: "NEW", value: "NEW", title: "Kohl's – New Customer Offer", desc: "New customers can save on their first Kohl's order.", bullets: ["Sign up as a new Kohl's customer to unlock this offer.", "Discount applies to your first qualifying order.", "Terms and eligible items may vary."] },
-                  { label: "DEAL", value: "KOHL'S CASH", title: "Kohl's – Kohl's Cash Deal", desc: "Earn Kohl's Cash on qualifying purchases.", bullets: ["Kohl's Cash can be redeemed on a future eligible purchase.", "Earning and redemption periods apply.", "Terms and exclusions may vary."] },
-                  { label: "SALE", value: "SITEWIDE", title: "Kohl's – Percentage Off Sitewide", desc: "Save a percentage on qualifying sitewide orders.", bullets: ["Discount applies to qualifying sitewide purchases.", "Some exclusions may apply.", "Terms and conditions may vary."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "Kohl's – Free Shipping Offer", desc: "Enjoy free shipping on select qualifying orders.", bullets: ["Discount applies to select qualifying orders.", "Minimum order value may apply.", "Terms may vary by promotion."] },
-                  { label: "DEAL", value: "PICKS", title: "Kohl's – Home & Apparel Picks", desc: "Save on select home goods and apparel.", bullets: ["Discount applies to select home and apparel items.", "Choose from a variety of brands and styles.", "Availability may vary by collection."] },
-                  { label: "SALE", value: "CLEARANCE", title: "Kohl's – Seasonal Clearance Sale", desc: "Save on select seasonal clearance items.", bullets: ["Discount applies to select clearance items.", "Stock and styles are limited and vary.", "Great for finding items at a lower price."] },
+                  { label: "UP TO", value: "70%", title: "Kohl's Coupon Code – Clearance Sale Up To 70% OFF", desc: "Save up to 70% during the Kohl's Clearance sale, with more sizes and styles available in store.", bullets: ["Explore Kohl's deals today across clothing, home, footwear, and other categories.", "Check kohlscoupons and available Kohl's offer code promotions before shopping."] },
+                  { label: "SAVE", value: "$10", title: "Kohl's Coupon Code – $10 OFF $50+ on Toys", desc: "Kohl's Rewards Members can get $10 OFF purchases of $50 or more with coupon code TOYS10.", bullets: ["The offer includes select LEGO-branded items and excludes baby gear, electronics, novelty gifts, and sporting goods.", "The offer ends October 4; check Kohl's coupon promo code options for additional savings."] },
+                  { label: "UP TO", value: "50%", title: "Kohl's Promo Code – Kitchen Appliances Up To 50% OFF", desc: "Save up to 50% on select kitchen appliances during this Kohl's Epic Deal.", bullets: ["Shop eligible kitchen essentials and selected appliance styles at reduced prices.", "Explore coupons from Kohl's and compare available deals before completing your purchase."] },
+                  { label: "ONLY", value: "$7.19", title: "Kohl's Promo Code – Croft & Barrow V-Neck Tee for $7.19", desc: "Get the Women's Croft & Barrow Essential V-Neck Tee for $7.19, reduced from $11.99.", bullets: ["Save on this everyday women's clothing essential during the Kohl's Sale & Clearance event.", "Browse Kohl's department store deals and look for a Kohl's voucher when available."] },
+                  { label: "UP TO", value: "70%", title: "Kohl's Clearance Sale – Save Up To 70% on New Markdowns", desc: "Save up to 70% on clearance items with new markdowns across selected categories.", bullets: ["Find discounted fashion, home products, accessories, and more at Kohl's.", "Shoppers searching for a kohls 30 off coupon can also check current promotions for eligible savings."] },
+                  { label: "UP TO", value: "50%", title: "Kohl's Offer – Up To 50% OFF Storewide", desc: "Get up to 50% OFF on eligible purchases across selected Kohl's categories.", bullets: ["Shop fashion, home essentials, beauty, accessories, and more.", "Explore kohls deals today for current offers and seasonal savings."] },
+                  { label: "SAVE", value: "15%", title: "Kohl's New User Offer – Flat 15% OFF First Order", desc: "New customers can get a flat 15% OFF their first order.", bullets: ["Sign up and shop eligible Kohl's products while enjoying an introductory discount.", "Check for a Kohl's offer code before placing your first order."] },
+                  { label: "UP TO", value: "30%", title: "Kohl's Deal – Levi's Clothing Up To 30% OFF", desc: "Save up to 30% on selected Levi's loose clothing styles.", bullets: ["Explore jeans, tops, casualwear, and other eligible Levi's fashion at Kohl's.", "Find the latest kohls deals today and look for applicable kohlscoupons."] },
+                  { label: "UP TO", value: "50%", title: "Kohl's Footwear Sale – Save Up To 50% OFF", desc: "Get up to 50% OFF on selected footwear at Kohl's.", bullets: ["Shop shoes and footwear styles for different occasions and everyday wear.", "Check available coupons from Kohl's before completing your purchase."] },
+                  { label: "UP TO", value: "40%", title: "Kohl's Women's Clothing Sale – Up To 40% OFF", desc: "Save up to 40% on the women's clothing collection at Kohl's.", bullets: ["Browse dresses, tops, casualwear, and other selected women's fashion.", "If you're searching for a kohls dress, explore the latest styles included in the sale."] },
+                  { label: "UP TO", value: "40%", title: "Kohl's Men's Activewear – Up To 40% OFF", desc: "Get up to 40% OFF on selected men's activewear.", bullets: ["Shop workout clothing and active styles designed for everyday movement.", "Explore Kohl's department store offers and current kohlscoupons for additional savings."] },
+                  { label: "SAVE", value: "15%", title: "Kohl's Clearance – Get 15% OFF", desc: "Grab 15% OFF on eligible clearance products at Kohl's.", bullets: ["Discover discounted fashion, home, footwear, and other clearance selections.", "Check the latest Kohl's offer code promotions before shopping."] },
+                  { label: "SAVE", value: "40%", title: "Kohl's Sweaters & Tops – Flat 40% OFF", desc: "Get a flat 40% OFF on selected sweaters and tops.", bullets: ["Refresh your wardrobe with seasonal clothing styles available at Kohl's.", "Browse kohls deals today and check for an applicable Kohl's voucher."] },
+                  { label: "SAVE", value: "30%", title: "Kohl's Outdoor & Garden Decor – Save 30% OFF", desc: "Save 30% OFF on selected outdoor and garden decor.", bullets: ["Shop decorative pieces and outdoor essentials for your home.", "Look through available coupons from Kohl's to find additional eligible savings."] },
+                  { label: "SAVE", value: "30%", title: "Kohl's Patio Furniture – Flat 30% OFF", desc: "Get a flat 30% OFF on selected patio furniture.", bullets: ["Upgrade your outdoor space with eligible furniture styles from Kohl's.", "Check current kohls deals today for more seasonal home and outdoor offers."] },
+                  { label: "SAVE", value: "35%", title: "Kohl's Card – Flat 35% OFF Orders", desc: "Kohl's Card members can get a flat 35% OFF on eligible orders.", bullets: ["Use your Kohl's Card to access this special shopping offer.", "Explore Kohl's Cash and other Kohl's Card promotions before checkout."] },
+                  { label: "SAVE", value: "30%", title: "Kohl's Kitchen & Dining – 30% OFF", desc: "Save 30% on selected kitchen and dining purchases.", bullets: ["Shop cookware, dining essentials, kitchen accessories, and more at Kohl's.", "Check available kohlscoupons and Kohl's offer code deals for eligible products."] },
+                  { label: "SAVE", value: "25%", title: "Kohl's Women's Jockey Products – Flat 25% OFF", desc: "Get a flat 25% OFF on selected women's Jockey products.", bullets: ["Shop comfortable essentials and everyday apparel from Jockey at Kohl's.", "Explore coupons from Kohl's for additional eligible savings."] },
+                  { label: "UP TO", value: "25%", title: "Kohl's Athletic Shoes – Save Up To 25% OFF", desc: "Save up to 25% on selected athletic shoes at Kohl's.", bullets: ["Find sports and active footwear for workouts, training, and everyday use.", "Check for a kohls coupon promo code before placing your order."] },
+                  { label: "SAVE", value: "$15", title: "Kohl's $15 OFF – Orders Over $75", desc: "Get a flat $15 OFF on eligible orders over $75.", bullets: ["Shop qualifying fashion, home, beauty, and lifestyle products at Kohl's.", "Look for a Kohl's voucher or current Kohl's offer code before checkout."] },
+                  { label: "SAVE", value: "$10", title: "Kohl's $10 OFF – Orders Over $25", desc: "Save $10 on eligible orders above $25.", bullets: ["Shop qualifying products across the Kohl's department store selection.", "Check kohls deals today for other available coupon and discount offers."] },
+                  { label: "EARN", value: "$10", title: "Kohl's Cash – Earn $10 With Every $50 Purchase", desc: "Earn $10 in Kohl's Cash for every $50 spent during the eligible promotional period.", bullets: ["Shop qualifying products and earn rewards toward future purchases.", "Kohl's Cash can help you save on upcoming Kohl's department store purchases."] },
+                  { label: "FROM", value: "$14", title: "Kohl's Jewelry Collection – Styles Starting From $14", desc: "Explore selected jewelry styles starting from just $14.", bullets: ["Find accessories and jewelry pieces for everyday wear and special occasions.", "Browse kohlscoupons and kohls deals today for additional eligible offers."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -678,10 +695,22 @@ export default function KohlsCouponsContent() {
           </h3>
           <div className="space-y-6">
             {[
-              { heading: "SITEWIDE DISCOUNT", sub: "Extra 20% OFF Orders w/ Promo Code" },
-              { heading: "CARDHOLDER PERK", sub: "Extra 35% OFF First Kohl's Card Purchase" },
-              { heading: "FREE SHIPPING", sub: "Free Standard Delivery on Orders $49+" },
-              { heading: "CLEARANCE EVENT", sub: "Up to 70% OFF New Markdown Items" }
+              {
+                heading: "CLEARANCE SALE UP TO 70% OFF",
+                sub: "Save up to 70% during the Kohl's Clearance sale, with more sizes and styles available in store.",
+              },
+              {
+                heading: "NEW USER OFFER – FLAT 15% OFF FIRST ORDER",
+                sub: "New customers can get a flat 15% OFF their first order.",
+              },
+              {
+                heading: "KOHL'S CARD – FLAT 35% OFF ORDERS",
+                sub: "Kohl's Card members can get a flat 35% OFF on eligible orders.",
+              },
+              {
+                heading: "JEWELRY COLLECTION – STYLES STARTING FROM $14",
+                sub: "Explore selected jewelry styles starting from just $14.",
+              },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
