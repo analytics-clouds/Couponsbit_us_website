@@ -518,7 +518,7 @@ export default function ATTCouponsContent() {
 
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Smartphone & Trade-In Offers</h3>
-      <p>Smartphone upgrades are another major reason shoppers visit AT&T. You can shop for popular devices from major manufacturers, including Apple and Samsung, as well as other compatible smartphones.</p>
+      <p>Smartphone upgrades are another major reason shoppers visit AT&T. You can shop for popular devices from major manufacturers, including <Link href="/stores/apple-discount-code">Apple</Link> and Samsung, as well as other compatible smartphones.</p>
       <p>Before buying a new phone at full price, look at the available upgrade promotions. AT&T frequently structures device promotions around qualifying plans and trade-ins, so the value of an offer can depend heavily on the phone you're trading in and the service you choose.</p>
       <p>If you have an older smartphone sitting in a drawer, don't automatically assume it's worthless. Trade-in promotions can potentially reduce the overall cost of upgrading, depending on the device, its condition, eligibility requirements, and the promotion running at the time.</p>
       <p>Evaluate the complete offer rather than focusing on one number. Look at the trade-in value, required plan, payment arrangement, promotional credits, and any other conditions.</p>

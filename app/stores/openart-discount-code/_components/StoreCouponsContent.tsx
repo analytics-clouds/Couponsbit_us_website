@@ -830,7 +830,7 @@ export default function OpenartCouponsContent() {
               Designed for beginners and experienced creators alike, OpenArt AI simplifies the creative process by offering intuitive tools for image generation, style customization, editing, and visual experimentation.
             </p>
             <p>
-              From social media graphics and concept art to marketing visuals and digital illustrations, OpenArt AI supports a variety of creative projects across different industries.
+              From social media graphics and concept art to marketing visuals and digital illustrations, OpenArt AI supports a variety of <Link href="/stores/envato-elements-discount-code">creative projects</Link> across different industries.
             </p>
           </div>
 

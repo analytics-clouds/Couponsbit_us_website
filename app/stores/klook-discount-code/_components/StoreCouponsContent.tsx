@@ -1061,7 +1061,7 @@ export default function KlookCouponsContent() {
             Explore More While Spending Less with a Klook Discount Code
           </p>
           <p>
-            Planning a vacation is exciting, but the cost of attractions, transportation, and activities can quickly add up. Whether you're booking a guided city tour, reserving tickets to a popular theme park, arranging an airport transfer, or purchasing an eSIM for your trip, Klook makes it easy to organize your travel experiences in one place.
+            Planning a vacation is exciting, but the cost of attractions, transportation, and activities can quickly add up. Whether you're booking a guided city tour, reserving tickets to a popular <Link href="/stores/yas-island-promo-code">theme park</Link>, arranging an airport transfer, or purchasing an eSIM for your trip, Klook makes it easy to organize your travel experiences in one place.
           </p>
           <p>
             Before confirming your booking, visit CouponsBit to discover the latest Klook discount code, Klook promo code, Klook voucher, and Klook coupon code. Applying a valid offer can help you save on eligible bookings, allowing you to enjoy more experiences without stretching your travel budget.

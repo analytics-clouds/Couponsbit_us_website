@@ -1017,7 +1017,7 @@ export default function WishCouponsContent() {
             Save More on Everyday Shopping with a Wish Discount Code
           </h3>
           <p>
-            Looking for budget-friendly products across fashion, home essentials, electronics, beauty, and more? Wish is a popular online shopping marketplace that connects millions of shoppers with a vast selection of affordable products from sellers around the world. Whether you're searching for trendy accessories, gadgets, home décor, or everyday essentials, Wish offers thousands of products at competitive prices.
+            Looking for budget-friendly products across fashion, home essentials, electronics, beauty, and more? Wish is a popular online shopping <Link href="/stores/amazon-discount-code">marketplace</Link> that connects millions of shoppers with a vast selection of affordable products from sellers around the world. Whether you're searching for trendy accessories, gadgets, home décor, or everyday essentials, Wish offers thousands of products at competitive prices.
           </p>
           <p>
             Before you check out, visit CouponsBit to find the latest Wish discount code, Wish voucher, Wish promo code, and Wish coupon code offers. Applying a valid discount can help you save even more on your next online purchase.

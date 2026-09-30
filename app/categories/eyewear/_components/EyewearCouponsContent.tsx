@@ -191,7 +191,7 @@ export default function EyewearCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -243,7 +243,7 @@ export default function EyewearCouponsContent() {
             A great pair of glasses can change your look, improve everyday comfort, and help you see clearly.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            And with more eyewear brands selling online, shoppers now have access to prescription glasses, sunglasses, blue-light glasses, contacts, frames, and accessories without always needing to visit a traditional store.
+            And with more eyewear brands selling online, shoppers now have access to prescription glasses, <Link href="/stores/sungait-discount-code">sunglasses</Link>, blue-light glasses, contacts, frames, and accessories without always needing to visit a traditional store.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             But eyewear can still become an expensive purchase, especially when you are buying prescription frames or shopping for multiple pairs.

@@ -458,7 +458,7 @@ export default function AliexpressCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Finding something you need online doesn't always have to mean paying full price. AliExpress gives shoppers access to an enormous selection of products across electronics, fashion, home essentials, beauty, accessories, gadgets, toys, automotive products, and countless other categories. With so many sellers and products available, shoppers can compare different options and look for attractive deals in one place.
+            Finding something you need online doesn't always have to mean paying full price. AliExpress gives shoppers access to an enormous selection of products across <Link href="/stores/geekbuying-discount-code">electronics</Link>, fashion, home essentials, beauty, accessories, gadgets, toys, automotive products, and countless other categories. With so many sellers and products available, shoppers can compare different options and look for attractive deals in one place.
           </p>
           <p>
             If you're planning to shop on AliExpress, checking for an AliExpress promo code before placing your order can be a smart way to look for additional savings. CouponsBit helps shoppers discover available promo codes, coupon codes, discount offers, vouchers, sales, and other promotional opportunities so they can check their options before completing a purchase.

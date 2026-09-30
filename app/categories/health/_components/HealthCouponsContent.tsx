@@ -198,7 +198,7 @@ export default function HealthCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -319,7 +319,7 @@ export default function HealthCouponsContent() {
         <div>
           <h2 className="text-2xl font-black text-black mb-2">Save More on Fitness and Active Lifestyle Products</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Getting fit does not necessarily mean spending a fortune. From resistance bands and yoga accessories to workout clothing and fitness equipment, there are plenty of products that can support an active lifestyle.
+            Getting fit does not necessarily mean spending a fortune. From resistance bands and yoga accessories to workout clothing and <Link href="/stores/merachfit-discount-code">fitness equipment</Link>, there are plenty of products that can support an active lifestyle.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Before purchasing fitness products online, look for a fitness coupon code or store promotion. Some retailers may offer discounts during major shopping periods, while others may provide special promotions on selected categories.

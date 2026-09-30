@@ -453,7 +453,7 @@ export default function UberEatsCouponsContent() {
             Looking for the latest <strong>Uber Eats</strong> coupon code, Uber Eats promo code, or Uber Eats discount code? <strong>CouponsBit</strong> helps you discover current Uber Eats offers, restaurant deals, delivery promotions, and other ways to save on food, groceries, and everyday essentials.
           </p>
           <p>
-            Uber Eats lets customers order from participating restaurants, stores, and other local merchants through its app and website. From a quick lunch or dinner to groceries and convenience items, you can browse nearby options, compare available deals, and have your order delivered or choose pickup where available.
+            Uber Eats lets customers order from participating <Link href="/stores/doordash-promo-code">restaurants</Link>, stores, and other local merchants through its app and website. From a quick lunch or dinner to groceries and convenience items, you can browse nearby options, compare available deals, and have your order delivered or choose pickup where available.
           </p>
           <p>
             Before placing your next order, check CouponsBit for the latest Uber Eats coupon codes and promo codes. You may find an offer that can lower your order total or help reduce delivery costs.

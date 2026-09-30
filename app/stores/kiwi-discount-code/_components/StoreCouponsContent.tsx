@@ -719,7 +719,7 @@ export default function KiwiCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Fly Smarter for Less with Kiwi.com Promo Codes</h3>
           <p>
-            Planning a trip doesn't have to mean paying premium prices. Whether you're booking a weekend getaway, a business trip, or a multi-country adventure, finding the right flight at the right price can make all the difference. With the latest <strong>Kiwi.com promo codes, Kiwi.com coupon codes, and travel deals</strong> available on Couponsbit, you can save more on flights while enjoying a seamless booking experience.
+            Planning a trip doesn't have to mean paying premium prices. Whether you're booking a weekend getaway, a business trip, or a multi-country adventure, finding the right <Link href="/stores/cheapflights-discount-code">flight</Link> at the right price can make all the difference. With the latest <strong>Kiwi.com promo codes, Kiwi.com coupon codes, and travel deals</strong> available on Couponsbit, you can save more on flights while enjoying a seamless booking experience.
           </p>
           <p>
             Kiwi.com is known for its smart travel technology that helps travelers discover unique flight combinations, flexible itineraries, and competitive fares that traditional booking platforms may not display. Before booking your next trip, check Couponsbit for the latest verified discounts and exclusive offers.

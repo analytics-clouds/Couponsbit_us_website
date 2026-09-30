@@ -441,7 +441,7 @@ export default function GoodRxCouponsContent() {
             Looking for a GoodRx discount code to lower the cost of your prescription? GoodRx helps consumers compare prescription prices at pharmacies across the U.S. and find coupons that can reduce out-of-pocket costs.
           </p>
           <p>
-            Unlike a traditional online retailer, GoodRx isn't a pharmacy where you purchase medication directly. Instead, it provides prescription pricing information and discount coupons that can be used at participating pharmacies. You can search for your medication, compare available prices, and select a coupon before heading to the pharmacy.
+            Unlike a traditional online retailer, GoodRx isn't a <Link href="/stores/kroger-discount-code">pharmacy</Link> where you purchase medication directly. Instead, it provides prescription pricing information and discount coupons that can be used at participating pharmacies. You can search for your medication, compare available prices, and select a coupon before heading to the pharmacy.
           </p>
           <p>
             GoodRx also offers additional services, including GoodRx Gold, prescription savings cards, Rewards, and GoodRx Care. Before filling a prescription, checking CouponsBit for available GoodRx offers can help you identify additional savings opportunities.

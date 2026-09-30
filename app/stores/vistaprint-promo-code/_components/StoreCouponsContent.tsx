@@ -687,7 +687,7 @@ export default function VistaprintContent() {
               VistaPrint isn't limited to business-related printing.
             </p>
             <p>
-              The platform also offers invitations, announcements, save-the-date cards, RSVP cards, wedding stationery, thank-you cards, note cards, and other personalized products.
+              The platform also offers invitations, announcements, save-the-date cards, RSVP cards, wedding stationery, thank-you cards, note cards, and other <Link href="/stores/shutterfly-promo-code">personalized products</Link>.
             </p>
             <p>
               This makes VistaPrint useful for weddings, birthdays, celebrations, family occasions, holidays, and other events where personalized stationery can make an invitation or announcement feel more distinctive.

@@ -1188,7 +1188,7 @@ export default function KinguinCouponsContent() {
             Whether you're expanding your game library, purchasing software licenses, or looking for discounted gift cards, Kinguin offers a marketplace where you can discover digital products at competitive prices. Before completing your purchase, visit Couponsbit to explore the latest <strong>Kinguin coupon codes, Kinguin promo codes, and exclusive gaming deals</strong> that help you save even more.
           </p>
           <p>
-            Trusted by millions of gamers and digital shoppers worldwide, Kinguin connects buyers with a wide selection of game keys, software licenses, gift cards, and gaming-related digital products. With Couponsbit, finding verified savings on your next purchase is quick and easy.
+            Trusted by millions of gamers and digital shoppers worldwide, Kinguin connects buyers with a wide selection of <Link href="/stores/driffle-discount-code">game keys</Link>, software licenses, gift cards, and gaming-related digital products. With Couponsbit, finding verified savings on your next purchase is quick and easy.
           </p>
 
           <div className="space-y-4">

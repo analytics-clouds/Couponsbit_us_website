@@ -189,7 +189,7 @@ export default function BabyCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -378,7 +378,7 @@ export default function BabyCouponsContent() {
             Friends and family often shop for baby showers, birthdays, newborn arrivals, and other celebrations.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            A baby gift coupon code can help you save when purchasing clothing, toys, nursery accessories, or practical gifts.
+            A baby gift coupon code can help you save when purchasing <Link href="/stores/old-navy-promo-code">clothing</Link>, <Link href="/stores/lumibrick-discount-code">toys</Link>, nursery accessories, or practical gifts.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If you are building a registry or shopping from one, compare the retailer's available promotions and any applicable registry benefits.

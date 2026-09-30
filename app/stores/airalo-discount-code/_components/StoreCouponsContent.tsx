@@ -904,7 +904,7 @@ export default function AiraloCouponsContent() {
             Stay Connected Worldwide with an Airalo Discount Code
           </h3>
           <p>
-            Traveling abroad doesn't have to mean paying expensive roaming charges. Whether you're heading out on a vacation, business trip, digital nomad journey, or international study program, Airalo makes it easy to stay connected with affordable eSIM plans in over 200 countries and regions. Airalo is the world's first eSIM marketplace, helping travelers access mobile data without swapping physical SIM cards. 
+            Traveling abroad doesn't have to mean paying expensive roaming charges. Whether you're heading out on a vacation, business trip, digital nomad journey, or international study program, Airalo makes it easy to stay connected with affordable eSIM plans in over 200 countries and regions. Airalo is the world's first <Link href="/stores/jetpac-discount-code">eSIM marketplace</Link>, helping travelers access mobile data without swapping physical SIM cards. 
           </p>
           <p>
             Before purchasing your eSIM, visit CouponsBit to find the latest Airalo discount code, Airalo voucher, Airalo promo code, and Airalo coupon code. Using a valid offer can help you save even more on your travel connectivity.

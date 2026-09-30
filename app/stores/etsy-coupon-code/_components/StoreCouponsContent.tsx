@@ -599,7 +599,7 @@ export default function EtsyCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa]">Find an Etsy Discount Code and Save on Your Next Order</h3>
             <p>
-              Looking for an Etsy discount code before buying something special? From personalized gifts and handmade jewelry to home décor, wedding essentials, clothing, craft supplies, and vintage finds, Etsy gives shoppers access to products from independent sellers around the world.
+              Looking for an Etsy discount code before buying something special? From personalized gifts and handmade <Link href="/stores/aporro-discount-code">jewelry</Link> to home décor, wedding essentials, clothing, craft supplies, and vintage finds, Etsy gives shoppers access to products from independent sellers around the world.
             </p>
             <p>
               Before placing an order, checking for an Etsy coupon code can help you find available seller promotions, Etsy-wide offers, or other ways to save. It is also worth comparing coupon offers with the latest Etsy sale, discounted listings, and seasonal shopping events.

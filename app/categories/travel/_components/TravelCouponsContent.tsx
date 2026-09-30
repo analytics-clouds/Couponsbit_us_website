@@ -197,7 +197,7 @@ export default function TravelCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -252,7 +252,7 @@ export default function TravelCouponsContent() {
             Travel opens the door to new experiences, unforgettable memories, and exciting adventures. Whether you're planning a weekend getaway, a family vacation, a business trip, or an international journey, finding ways to save can make your travel budget go much further. At Couponsbit, we help travelers discover verified travel promo codes and exclusive offers from leading airlines, hotels, vacation providers, and booking platforms.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            From flights and accommodations to tours and travel packages, there are countless opportunities to reduce travel expenses without compromising on your experience. Our goal is simple: help you spend less on travel and more on making memories.
+            From <Link href="/stores/cheapflights-discount-code">flights</Link> and accommodations to <Link href="/stores/klook-discount-code">tours</Link> and travel packages, there are countless opportunities to reduce travel expenses without compromising on your experience. Our goal is simple: help you spend less on travel and more on making memories.
           </p>
         </div>
 

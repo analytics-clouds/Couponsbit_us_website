@@ -1008,7 +1008,7 @@ export default function DreameCouponsContent() {
             Keeping your home clean is easier with intelligent cleaning technology. Whether you're looking for a robot vacuum, cordless stick vacuum, wet and dry vacuum, or a high-speed hair dryer, Dreame Global offers innovative home appliances designed to simplify everyday tasks.
           </p>
           <p>
-            Before placing your order, visit CouponsBit to find the latest Dreame Global discount code, Dreame Global voucher, Dreame Global promo code, and Dreame Global coupon code. Using a valid offer at checkout can help you save on premium smart home appliances and accessories.
+            Before placing your order, visit CouponsBit to find the latest Dreame Global discount code, Dreame Global voucher, Dreame Global promo code, and Dreame Global coupon code. Using a valid offer at checkout can help you save on premium <Link href="/stores/geekbuying-discount-code">smart home appliances</Link> and accessories.
           </p>
 
           {/* Why Choose Dreame Global? */}

@@ -937,7 +937,7 @@ export default function ZenHotelsCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Hotel Bookings with ZenHotels Coupon Codes</h3>
           <p>
-            A memorable trip starts with finding the right place to stay, but getting a great deal on your accommodation can make the journey even better. With the latest <strong>ZenHotels coupon codes</strong>, promo offers, and hotel booking discounts available on CouponsBit, travelers can reduce their travel expenses while enjoying comfortable stays around the world.
+            A memorable trip starts with finding the right place to stay, but getting a great deal on your accommodation can make the journey even better. With the latest <strong>ZenHotels coupon codes</strong>, promo offers, and <Link href="/stores/agoda-discount-code">hotel booking</Link> discounts available on CouponsBit, travelers can reduce their travel expenses while enjoying comfortable stays around the world.
           </p>
           <p>
             Whether you're organizing a quick weekend escape, a family holiday, a work-related trip, or an overseas adventure, ZenHotels offers a wide selection of accommodation choices at competitive rates. Before confirming your reservation, explore CouponsBit to discover available savings opportunities that can help stretch your travel budget further.

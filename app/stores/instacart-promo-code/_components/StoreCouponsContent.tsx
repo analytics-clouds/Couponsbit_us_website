@@ -522,7 +522,7 @@ export default function InstacartCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Grocery shopping is one of those weekly tasks that has to get done, but that doesn't mean you always have to spend more than necessary. Instacart makes it possible to shop for groceries and everyday essentials from participating retailers through one online platform, giving customers a convenient way to order what they need for delivery or pickup.
+            Grocery shopping is one of those weekly tasks that has to get done, but that doesn't mean you always have to spend more than necessary. Instacart makes it possible to shop for <Link href="/stores/kroger-discount-code">groceries</Link> and everyday essentials from participating retailers through one online platform, giving customers a convenient way to order what they need for delivery or pickup.
           </p>
           <p>
             If you're planning your next grocery order, checking for an Instacart promo code before checkout can be a simple way to look for savings. CouponsBit helps shoppers find Instacart coupon codes, discount offers, vouchers, delivery promotions, grocery deals, and other opportunities to potentially lower the cost of their orders.

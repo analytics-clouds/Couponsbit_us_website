@@ -1058,7 +1058,7 @@ export default function UnipinCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Gaming with UniPin Coupon Codes</h3>
           <p>
-            Gaming has become more than just a hobby it's a global community where players invest in in-game items, premium currencies, battle passes, and exclusive content. If you're looking for the latest <strong>UniPin coupon codes</strong>, Couponsbit helps you discover exciting savings opportunities on game top-ups and digital entertainment purchases.
+            Gaming has become more than just a hobby it's a global community where players invest in in-game items, premium currencies, battle passes, and exclusive content. If you're looking for the latest <strong>UniPin coupon codes</strong>, Couponsbit helps you discover exciting savings opportunities on <Link href="/stores/driffle-discount-code">game top-ups</Link> and digital entertainment purchases.
           </p>
           <p>
             Whether you're purchasing Mobile Legends Diamonds, Free Fire Diamonds, PUBG Mobile UC, Roblox credits, or other gaming currencies, checking available UniPin promo offers before completing your purchase can help you get more value from your gaming budget.

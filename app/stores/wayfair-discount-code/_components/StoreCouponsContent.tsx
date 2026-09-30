@@ -548,7 +548,7 @@ export default function WayfairCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Shop at Wayfair?</h3>
             <p>
-              Wayfair is an online home retailer with an extensive assortment covering furniture, décor, home improvement products, appliances, outdoor living, and everyday household essentials.
+              Wayfair is an online home retailer with an extensive assortment covering furniture, décor, <Link href="/stores/home-depot-discount-code">home improvement</Link> products, appliances, outdoor living, and everyday household essentials.
             </p>
             <p>
               Its broad catalog makes it possible to shop for a single accent piece or furnish several rooms in one place.

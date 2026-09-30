@@ -208,7 +208,7 @@ export default function FashionCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -260,7 +260,7 @@ export default function FashionCouponsContent() {
             Fashion is constantly evolving, but looking stylish doesn't have to come with a high price tag.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            If you're searching for the latest fashion promo codes, you're in the right place. At Couponsbit, we help shoppers discover exciting savings on clothing, footwear, accessories, and fashion essentials from popular brands and online retailers.
+            If you're searching for the latest fashion promo codes, you're in the right place. At Couponsbit, we help shoppers discover exciting savings on clothing, <Link href="/stores/nike-discount-code">footwear</Link>, accessories, and fashion essentials from popular brands and online retailers.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Whether you're refreshing your wardrobe, shopping for seasonal trends, investing in timeless pieces, or searching for everyday essentials, finding the right deal can make your shopping experience even better. That's why Couponsbit brings together verified clothing coupon codes, exclusive offers, and the latest apparel deals online to help fashion lovers save more on every purchase.
@@ -462,7 +462,7 @@ export default function FashionCouponsContent() {
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed mt-4">
-            <strong>Savings Across Every Style:</strong> Whether you're shopping for casual wear, activewear, luxury fashion, or everyday essentials, you'll find opportunities to save.
+            <strong>Savings Across Every Style:</strong> Whether you're shopping for casual wear, <Link href="/stores/wiskii-discount-code">activewear</Link>, luxury fashion, or everyday essentials, you'll find opportunities to save.
           </p>
         </div>
 

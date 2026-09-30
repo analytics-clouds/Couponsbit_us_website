@@ -450,7 +450,7 @@ export default function LowesCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you’re refreshing one room, tackling a weekend DIY project, upgrading your appliances, or working on a major home renovation, Lowe’s is one of the go-to destinations for home improvement in the USA. From power tools and building supplies to kitchen appliances, flooring, lighting, outdoor furniture, and lawn care products, Lowe’s has products for projects of almost every size.
+            Whether you’re refreshing one room, tackling a weekend DIY project, upgrading your appliances, or working on a major home renovation, Lowe’s is one of the go-to destinations for <Link href="/stores/home-depot-discount-code">home improvement</Link> in the USA. From power tools and building supplies to kitchen appliances, flooring, lighting, outdoor furniture, and lawn care products, Lowe’s has products for projects of almost every size.
           </p>
           <p>
             Before placing an order, it’s worth checking CouponsBit for a Lowe’s discount code that can help you save on eligible purchases. Along with coupon codes, Lowe’s regularly features sales, special promotions, online deals, rebates, member benefits, and other ways to keep your home improvement budget under control.

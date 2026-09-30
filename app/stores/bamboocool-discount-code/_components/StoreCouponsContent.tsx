@@ -621,7 +621,7 @@ export default function BamboocoolCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Shop Bamboo Cool?</h3>
             <p>
-              Bamboo Cool takes a material-first approach to everyday apparel. The brand says its products are developed around bamboo viscose, with an emphasis on softness, breathability, comfort, and responsible sourcing. Its fabrics are presented as being certified under standards including OEKO-TEX and OCS, while the brand also highlights FSC-certified sourcing and BSCI-related production standards.
+              Bamboo Cool takes a material-first approach to everyday apparel. The brand says its products are developed around <Link href="/stores/cariloha-discount-code">bamboo viscose</Link>, with an emphasis on softness, breathability, comfort, and responsible sourcing. Its fabrics are presented as being certified under standards including OEKO-TEX and OCS, while the brand also highlights FSC-certified sourcing and BSCI-related production standards.
             </p>
             <p>The current Bamboo Cool catalog includes categories such as:</p>
             <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">

@@ -1173,7 +1173,7 @@ export default function ViaggogoCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Viagogo</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Viagogo is one of the world's largest ticket resale marketplaces, allowing users to buy and sell tickets for live events across numerous countries. Founded in 2006, the platform serves millions of customers looking for access to concerts, sporting events, theater performances, comedy shows, festivals, and other live entertainment experiences.
+                   Viagogo is one of the world's largest <Link href="/stores/stubhub-discount-code">ticket resale marketplaces</Link>, allowing users to buy and sell tickets for live events across numerous countries. Founded in 2006, the platform serves millions of customers looking for access to concerts, sporting events, theater performances, comedy shows, festivals, and other live entertainment experiences.
                   </p>
                   <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />

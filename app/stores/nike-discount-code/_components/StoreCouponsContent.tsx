@@ -452,7 +452,7 @@ export default function NikeCouponsContent() {
             Looking for a Nike discount code to save on your next pair of sneakers, workout clothes, or sports gear? CouponsBit helps shoppers discover the latest Nike discounts, promo codes, sale offers, and other ways to spend less on Nike products.
           </p>
           <p>
-            From iconic sneakers and running shoes to Dri-FIT apparel, Jordan styles, training gear, and accessories, Nike offers products for athletes and everyday shoppers alike. Whether you're replacing your running shoes, refreshing your gym wardrobe, or looking for a new pair of lifestyle sneakers, checking for a current offer before you buy can help you get better value.
+            From iconic <Link href="/stores/adidas-promo-code">sneakers</Link> and running shoes to Dri-FIT apparel, Jordan styles, training gear, and accessories, Nike offers products for athletes and everyday shoppers alike. Whether you're replacing your running shoes, refreshing your gym wardrobe, or looking for a new pair of lifestyle sneakers, checking for a current offer before you buy can help you get better value.
           </p>
           <p>
             Nike regularly runs sales and promotions through its website and app. The brand also provides special savings opportunities for eligible students, teachers, military members, first responders, medical professionals, and other groups.

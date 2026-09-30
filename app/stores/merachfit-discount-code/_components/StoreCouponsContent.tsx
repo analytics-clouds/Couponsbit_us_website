@@ -916,7 +916,7 @@ export default function MerachFitCouponsContent() {
               Creating a home gym doesn't necessarily mean filling an entire room with expensive equipment. With the right fitness machine, you can bring effective cardio and strength workouts into your daily routine without relying on a commercial gym.
             </p>
             <p>
-              Merach Fit offers home fitness equipment designed for people who want to make exercise more accessible from home. From rowing machines and treadmills to bikes, ellipticals, and other workout equipment, the brand provides options for different fitness goals, workout spaces, and budgets.
+              Merach Fit offers home <Link href="/stores/superrun-discount-code">fitness equipment</Link> designed for people who want to make exercise more accessible from home. From rowing machines and treadmills to bikes, ellipticals, and other workout equipment, the brand provides options for different fitness goals, workout spaces, and budgets.
             </p>
             <p>
               If you're planning to purchase new equipment, check CouponsBit before placing your order. You may find a Merach Fit discount code, Merach Fit coupon code, Merach Fit promo code, or other promotional offer that can help reduce the cost of your purchase.

@@ -194,7 +194,7 @@ export default function HotelsCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -255,7 +255,7 @@ export default function HotelsCouponsContent() {
             The Hotels and Accommodations category on CouponsBit helps travelers across the USA discover hotel coupon codes, promo codes, discount offers, accommodation deals, and travel savings before making a booking.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            From budget-friendly stays to luxury properties, resorts, boutique hotels, and extended-stay accommodations, checking for an available hotel promo code can be a simple way to make your travel budget work harder. And let's be honest, money saved on your hotel can be spent on the things you actually traveled for.
+            From budget-friendly stays to <Link href="/stores/radisson-discount-code">luxury properties</Link>, resorts, boutique hotels, and extended-stay accommodations, checking for an available hotel promo code can be a simple way to make your travel budget work harder. And let's be honest, money saved on your hotel can be spent on the things you actually traveled for.
           </p>
         </div>
 

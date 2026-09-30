@@ -433,7 +433,7 @@ export default function ValvolineCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           
           <p>
-            Looking for a Valvoline oil change discount code to save on your next vehicle service? CouponsBit helps drivers find current Valvoline offers, oil change coupons, and automotive service deals before visiting a participating Valvoline Instant Oil Change location.
+            Looking for a Valvoline oil change discount code to save on your next vehicle service? CouponsBit helps drivers find current Valvoline offers, oil change coupons, and <Link href="/stores/discounttire-discount-code">automotive service deals</Link> before visiting a participating Valvoline Instant Oil Change location.
           </p>
           <p>
             Valvoline Instant Oil Change provides drive-through, stay-in-your-car vehicle maintenance at more than 1,900 locations across the U.S. Its service centers offer oil changes without an appointment, and Valvoline says a typical oil change takes about 15 minutes and includes an 18-point maintenance check.

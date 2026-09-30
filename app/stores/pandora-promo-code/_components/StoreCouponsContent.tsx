@@ -593,7 +593,7 @@ export default function PandoraCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            A meaningful piece of jewelry can turn an ordinary moment into something worth remembering. Whether you're looking for a charm to mark a special memory, a bracelet to build your own collection, or a thoughtful gift for someone you love, Pandora offers jewelry designed around personal expression and memorable occasions.
+            A meaningful piece of <Link href="/stores/aporro-discount-code">jewelry</Link> can turn an ordinary moment into something worth remembering. Whether you're looking for a charm to mark a special memory, a bracelet to build your own collection, or a thoughtful gift for someone you love, Pandora offers jewelry designed around personal expression and memorable occasions.
           </p>
           <p>
             If you're planning to shop for your next piece, checking for a Pandora promo code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Pandora coupon codes, discount offers, vouchers, sale promotions, gift deals, and other ways to potentially save on their jewelry purchases.

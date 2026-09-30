@@ -665,7 +665,7 @@ export default function AppleCouponsContent() {
               Looking for an Apple discount code before buying a new iPhone, Mac, iPad, Apple Watch, or another Apple product? Checking available promotions before placing an order can help you find opportunities to reduce your overall spending.
             </p>
             <p>
-              Apple's product range covers much more than smartphones and computers. You can shop for iPhone models, Mac computers, iPad tablets, Apple Watch, AirPods, Apple Vision Pro, Apple TV, HomePod, AirTag, accessories, and other products through Apple's online store.
+              Apple's product range covers much more than <Link href="/stores/oppo-discount-code">smartphones</Link> and <Link href="/stores/dell-discount-code">computers</Link>. You can shop for iPhone models, Mac computers, iPad tablets, Apple Watch, AirPods, Apple Vision Pro, Apple TV, HomePod, AirTag, accessories, and other products through Apple's online store.
             </p>
             <p>
               At CouponsBit, you can check available Apple coupon code offers, promotions, and savings opportunities before shopping. It is also useful to compare any coupon or promotion with Apple's current sale prices, education offers, trade-in opportunities, and other limited-time deals.

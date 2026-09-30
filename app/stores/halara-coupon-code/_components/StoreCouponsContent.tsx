@@ -453,7 +453,7 @@ export default function HalaraCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Cute enough for your coffee run, comfortable enough for a workout, and practical enough to survive a full day of errands - Halara has built its name around clothes that refuse to stay in just one category. From viral exercise dresses and tennis skirts to leggings, joggers, tops, loungewear, and everyday outfits, the brand brings activewear-inspired functionality into everyday fashion.
+            Cute enough for your coffee run, comfortable enough for a workout, and practical enough to survive a full day of errands - Halara has built its name around clothes that refuse to stay in just one category. From viral exercise dresses and tennis skirts to leggings, joggers, tops, loungewear, and everyday outfits, the brand brings <Link href="/stores/wiskii-discount-code">activewear</Link>-inspired functionality into everyday fashion.
           </p>
           <p>
             If you are planning a Halara haul, finding a Halara coupon code before you check out can be a smart way to make your order more affordable. Halara frequently features special promotions, seasonal sales, limited-time offers, and other opportunities to save, although availability and terms can change.

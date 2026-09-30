@@ -540,7 +540,7 @@ export default function GrubhubCouponsContent() {
             When you're hungry, the last thing you want to do is spend more than necessary on your meal. Whether you're ordering lunch during a busy workday, grabbing dinner after a long day, or getting food for a group of friends, Grubhub makes it easy to explore nearby restaurants and order online.
           </p>
           <p>
-            Before placing your next order, checking for a Grubhub promo code on CouponsBit can help you find an opportunity to save. Along with promotional codes, you can discover Grubhub coupon codes, discount offers, vouchers, restaurant deals, delivery promotions, and other ways to make your food order more affordable.
+            Before placing your next order, checking for a Grubhub promo code on CouponsBit can help you find an opportunity to save. Along with promotional codes, you can discover Grubhub coupon codes, discount offers, vouchers, restaurant deals, <Link href="/stores/doordash-promo-code">delivery promotions</Link>, and other ways to make your food order more affordable.
           </p>
 
           <div className="space-y-8">

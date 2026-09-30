@@ -623,7 +623,7 @@ export default function GamsGoCouponsContent() {
               Looking for cheaper ways to access digital subscriptions, gaming products, gift cards, or online services? Before completing your next purchase, checking for a GamsGo promo code can help you find an additional way to save.
             </p>
             <p>
-              GamsGo is a digital marketplace offering a wide range of products across digital subscriptions, game accounts, game top-ups, gift cards, game currency, and game items. Its current marketplace includes entertainment services, AI tools, software subscriptions, gaming memberships, digital gift cards, and in-game products.
+              GamsGo is a digital marketplace offering a wide range of products across digital subscriptions, game accounts, <Link href="/stores/unipin-discount-code">game top-ups</Link>, gift cards, game currency, and game items. Its current marketplace includes entertainment services, AI tools, software subscriptions, gaming memberships, digital gift cards, and in-game products.
             </p>
             <p>
               Instead of visiting separate websites for every digital service you use, GamsGo brings multiple categories together on one platform. Depending on what you're looking for, you can explore subscriptions such as Netflix, YouTube, Disney+, Crunchyroll, Spotify, AI platforms, VPN services, software, Xbox and PlayStation products, gift cards, and gaming top-ups.

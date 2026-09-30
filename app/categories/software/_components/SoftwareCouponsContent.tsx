@@ -176,7 +176,7 @@ export default function SoftwareCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -265,7 +265,7 @@ export default function SoftwareCouponsContent() {
         <div>
           <h2 className="text-2xl font-black text-black mb-2">Popular Software Brands You Can Save On</h2>
           <p className="text-gray-500 text-sm font-medium mb-6">
-            Today's software market offers solutions for virtually every need. Whether you're running a business, freelancing, studying, or managing personal projects, many software providers regularly offer discounts and promotional offers.
+            Today's software market offers solutions for virtually every need. Whether you're running a business, <Link href="/stores/upwork-discount-code">freelancing</Link>, studying, or managing personal projects, many software providers regularly offer discounts and promotional offers.
           </p>
           <p className="text-gray-500 text-xs font-bold mb-3">Popular software brands often featured on Couponsbit include:</p>
           

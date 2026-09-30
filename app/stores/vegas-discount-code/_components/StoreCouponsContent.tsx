@@ -821,7 +821,7 @@ export default function VegasCouponsContent() {
             Planning a trip to the Entertainment Capital of the World? Whether you're booking a luxury hotel on the Strip, tickets to world-famous shows, exciting tours, or complete vacation packages, vegas makes planning your Las Vegas getaway simple and convenient.
           </p>
           <p>
-            Before confirming your booking, visit CouponsBit to find the latest vegas discount code, vegas voucher, vegas promo code, and vegas coupon code offers. A valid discount code can help you reduce the cost of hotels, attractions, show tickets, tours, dining experiences, and vacation packages.
+            Before confirming your booking, visit CouponsBit to find the latest vegas discount code, vegas voucher, vegas promo code, and vegas coupon code offers. A valid discount code can help you reduce the cost of hotels, attractions, <Link href="/stores/stubhub-discount-code">show tickets</Link>, tours, dining experiences, and vacation packages.
           </p>
           <p>
             As one of the most recognized Las Vegas travel platforms, vegas provides insider recommendations, exclusive deals, and booking options designed specifically for visitors exploring Las Vegas.

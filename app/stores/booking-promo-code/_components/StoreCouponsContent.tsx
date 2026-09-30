@@ -598,7 +598,7 @@ export default function BookingCouponsContent() {
       When searching for a Booking.com coupon code, it is useful to consider all the different ways travel savings can appear on the platform.
     </p>
     <p>
-      A hotel may already have a reduced rate, while another property may participate in a special promotional campaign. Depending on the destination and booking, travelers can encounter member pricing, seasonal promotions, property-specific discounts, mobile offers, or other deals.
+      A <Link href="/stores/agoda-discount-code">hotel</Link> may already have a reduced rate, while another property may participate in a special promotional campaign. Depending on the destination and booking, travelers can encounter member pricing, seasonal promotions, property-specific discounts, mobile offers, or other deals.
     </p>
     <p>
       This means that the best option is not necessarily a traditional coupon code. Compare the available offer with the final price and booking conditions before deciding.

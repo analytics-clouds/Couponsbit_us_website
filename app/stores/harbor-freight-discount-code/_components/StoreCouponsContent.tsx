@@ -556,7 +556,7 @@ export default function HarborFreightCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Harbor Freight is a popular American retailer for tools, equipment, automotive supplies, hardware, and workshop essentials. From hand tools and power tools to automotive equipment, generators, welding supplies, storage solutions, outdoor equipment, and safety gear, Harbor Freight serves DIYers, mechanics, contractors, tradespeople, and homeowners across the United States.
+            Harbor Freight is a popular American retailer for tools, equipment, <Link href="/stores/carcovers-discount-code">automotive supplies</Link>, hardware, and workshop essentials. From hand tools and power tools to automotive equipment, generators, welding supplies, storage solutions, outdoor equipment, and safety gear, Harbor Freight serves DIYers, mechanics, contractors, tradespeople, and homeowners across the United States.
           </p>
           <p>
             If you are planning a purchase from Harbor Freight, checking for a Harbor Freight discount code before completing your order can be a smart way to look for additional savings. CouponsBit helps shoppers find current coupon codes, promotional offers, vouchers, sales, and other deals so they can compare their options before making a purchase.

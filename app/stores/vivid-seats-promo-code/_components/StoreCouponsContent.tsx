@@ -763,7 +763,7 @@ export default function VividSeatsCouponsContent() {
           <div className="space-y-8">
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">What Is Vivid Seats?</h3>
-    <p>Vivid Seats is an online ticket marketplace where fans can discover tickets for a wide variety of live entertainment events across the United States and beyond.</p>
+    <p>Vivid Seats is an online <Link href="/stores/stubhub-discount-code">ticket marketplace</Link> where fans can discover tickets for a wide variety of live entertainment events across the United States and beyond.</p>
     <p>The platform features tickets for professional and college sports, concerts, theater productions, comedy events, festivals, and other live experiences. Instead of visiting individual team, artist, venue, or event websites separately, shoppers can browse different events through one ticket marketplace.</p>
     <p>Sports fans can explore tickets for leagues and teams across the country, while music lovers can search for performances from major artists and touring acts. Theater fans can also find tickets for Broadway productions, shows, and other stage performances.</p>
     <p>Vivid Seats also provides tools that allow customers to search for events based on location, date, category, artist, team, or venue.</p>

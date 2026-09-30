@@ -736,7 +736,7 @@ export default function JcpenneyCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            JCPenney is a long-established American department store offering fashion, beauty, home essentials, jewelry, accessories, and everyday products for the whole family. From women's and men's clothing to kids' apparel, footwear, bedding, furniture, appliances, beauty products, and seasonal merchandise, JCPenney gives shoppers plenty of options for refreshing their wardrobe or home.
+            JCPenney is a long-established American <Link href="/stores/macys-promo-code">department store</Link> offering fashion, beauty, home essentials, jewelry, accessories, and everyday products for the whole family. From women's and men's clothing to kids' apparel, footwear, bedding, furniture, appliances, beauty products, and seasonal merchandise, JCPenney gives shoppers plenty of options for refreshing their wardrobe or home.
           </p>
           <p>
             If you are planning to shop at JCPenney, checking for a JCPenney coupon code before placing your order can be a useful way to look for savings. CouponsBit helps shoppers find current coupon codes, promo codes, discount offers, vouchers, sales, and other promotional opportunities so they can compare available deals before checkout.

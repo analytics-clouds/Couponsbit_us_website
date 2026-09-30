@@ -879,7 +879,7 @@ export default function FytooCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Stylish Eyewear with FYTOO Coupon Codes</h3>
           <p>
-            Looking for fashionable eyewear without paying premium prices? With the latest <strong>FYTOO coupon codes, promo codes, and eyewear deals</strong>, shoppers can enjoy savings on prescription glasses, sunglasses, reading glasses, and lens upgrades while staying on trend. At Couponsbit, we help customers discover verified promo offers and exclusive discounts that make upgrading their eyewear more affordable.
+            Looking for fashionable eyewear without paying premium prices? With the latest <strong>FYTOO coupon codes, promo codes, and eyewear deals</strong>, shoppers can enjoy savings on prescription glasses, <Link href="/stores/sungait-discount-code">sunglasses</Link>, reading glasses, and lens upgrades while staying on trend. At Couponsbit, we help customers discover verified promo offers and exclusive discounts that make upgrading their eyewear more affordable.
           </p>
           <p>
             Whether you need a new pair of prescription glasses for everyday wear, blue-light-blocking lenses for screen time, or stylish sunglasses for your next vacation, FYTOO offers a wide range of options designed to fit different lifestyles and budgets. Before checking out, be sure to browse Couponsbit for the latest deals and savings opportunities.

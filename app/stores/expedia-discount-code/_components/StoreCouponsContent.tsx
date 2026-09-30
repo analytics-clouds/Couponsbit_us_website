@@ -1054,7 +1054,7 @@ export default function ExpediaCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Every Journey with Expedia Coupon Codes</h3>
           <p>
-            Whether you're planning a relaxing vacation, a business trip, a weekend getaway, or an international adventure, Expedia makes travel planning simple by bringing flights, hotels, vacation packages, car rentals, cruises, and activities together in one place. Before you book, visit Couponsbit to find the latest <strong>Expedia coupon codes, Expedia promo codes, and exclusive travel deals</strong> that can help you save on your next trip.
+            Whether you're planning a relaxing vacation, a business trip, a weekend getaway, or an international adventure, Expedia makes travel planning simple by bringing flights, <Link href="/stores/agoda-discount-code">hotels</Link>, vacation packages, car rentals, cruises, and activities together in one place. Before you book, visit Couponsbit to find the latest <strong>Expedia coupon codes, Expedia promo codes, and exclusive travel deals</strong> that can help you save on your next trip.
           </p>
           <p>
             Trusted by millions of travelers worldwide, Expedia offers flexible travel options, competitive prices, and a rewarding loyalty program, making it one of the world's most popular online travel platforms.

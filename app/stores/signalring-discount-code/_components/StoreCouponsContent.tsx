@@ -493,7 +493,7 @@ export default function SignalRingCouponsContent() {
               The company says its technology continuously monitors changes in the pulse wave and uses algorithms to generate blood pressure readings. It also provides contextual information around readings, allowing users to see how factors such as activity and rest may relate to changes over time.
             </p>
             <p>
-              Unlike many general-purpose smart rings that focus on metrics such as sleep, activity, or recovery, Signal Ring has been designed around blood pressure monitoring as its primary function.
+              Unlike many general-purpose <Link href="/stores/ringconn-discount-code">smart rings</Link> that focus on metrics such as sleep, activity, or recovery, Signal Ring has been designed around blood pressure monitoring as its primary function.
             </p>
           </div>
 

@@ -1699,7 +1699,7 @@ export default function StubHubCouponsContent() {
               StubHub World Cup Tickets
             </h3>
             <p>
-              Major international sporting events can generate significant interest in the ticket marketplace. Searches for StubHub World Cup tickets and StubHub FIFA World Cup tickets have seen particularly strong interest in the keyword data, making major soccer events an important part of the StubHub search landscape.
+              Major international sporting events can generate significant interest in the <Link href="/stores/viagogo-discount-code">ticket marketplace</Link>. Searches for StubHub World Cup tickets and StubHub FIFA World Cup tickets have seen particularly strong interest in the keyword data, making major soccer events an important part of the StubHub search landscape.
             </p>
             <p>
               If you're looking for tickets to a major tournament or international sporting event, check the event details carefully and compare available listings before purchasing.
@@ -1780,12 +1780,12 @@ export default function StubHubCouponsContent() {
             <h3 className="text-xl font-black text-[#056bfa] mb-4">
               Why Choose StubHub for Tickets?
             </h3>
-            <p>StubHub is a well-known ticket marketplace where buyers can search for tickets across sports, music, theater, and other live events.</p>
+            <p>StubHub is a well-known <Link href="/stores/seatgeek-promo-code">ticket marketplace</Link> where buyers can search for tickets across sports, music, theater, and other live events.</p>
             <p><strong>Wide Selection:</strong> Offers tickets across numerous event categories, making it easy to search for concerts, sports, comedy shows, and more.</p>
             <p><strong>Access to High-Demand Events:</strong> Provides additional options for events that may have limited availability through primary ticket sellers.</p>
             <p><strong>Multiple Seating Options:</strong> Buyers can compare different sections, rows, and price points before selecting their tickets.</p>
             <p><strong>Convenient Online Shopping:</strong> Search for an event, compare available listings, select tickets, and complete your purchase online.</p>
-            <p><strong>Ticket Resale Marketplace:</strong> Provides a space where eligible ticket holders can list tickets they no longer need.</p>
+            <p><strong><Link href="/stores/vivid-seats-promo-code">Ticket Resale Marketplace</Link>:</strong> Provides a space where eligible ticket holders can list tickets they no longer need.</p>
           </div>
 
           <div className="space-y-4">

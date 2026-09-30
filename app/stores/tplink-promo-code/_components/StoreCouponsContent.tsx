@@ -653,7 +653,7 @@ export default function TplinkCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a TP-Link Promo Code and Save on Your Next Purchase</h3>
             <p>
-              Looking for a TP-Link promo code before upgrading your home or business network? Whether you need a faster Wi-Fi router, a whole-home mesh system, a range extender, a 4G or 5G gateway, networking accessories, or smart-home devices, checking for available promotions before you buy can help you get more value from your purchase.
+              Looking for a TP-Link promo code before upgrading your home or business network? Whether you need a faster Wi-Fi router, a whole-home mesh system, a range extender, a 4G or 5G gateway, networking accessories, or <Link href="/stores/geekbuying-discount-code">smart-home devices</Link>, checking for available promotions before you buy can help you get more value from your purchase.
             </p>
             <p>
               TP-Link offers a broad ecosystem of networking and connected-home products across its consumer, smart-home, and business ranges. Its portfolio includes Archer routers, Deco mesh Wi-Fi systems, Tapo smart-home products, Omada business networking solutions, VIGI security products, adapters, switches, access points, and more. The exact assortment varies by market, so shoppers in the USA, Canada, and UK can explore their respective TP-Link stores for region-specific products and offers.

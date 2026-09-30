@@ -1135,7 +1135,7 @@ export default function CarilohaCouponsContent() {
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Customers Choose Cariloha</h3>
             <p><strong>Exceptional Softness:</strong> The brand is widely known for creating products that emphasize softness and comfort through bamboo-viscose fabrics.</p>
             <p><strong>Cooling & Breathable Materials:</strong> Many customers choose Cariloha bedding because of its moisture-wicking and temperature-regulating properties.</p>
-            <p><strong>Sustainability Focus:</strong> Cariloha promotes renewable bamboo as an alternative material for bedding, bath products, and apparel.</p>
+            <p><strong>Sustainability Focus:</strong> Cariloha promotes renewable <Link href="/stores/bamboocool-discount-code">bamboo</Link> as an alternative material for bedding, bath products, and apparel.</p>
             <p><strong>Wide Product Selection:</strong> From mattresses and bedding to clothing and bath essentials, shoppers can find products for multiple areas of daily life.</p>
             <p><strong>Loyal Customer Following:</strong> Community discussions frequently highlight the softness and comfort of Cariloha products, particularly its bamboo sheet collections.</p>
           </div>

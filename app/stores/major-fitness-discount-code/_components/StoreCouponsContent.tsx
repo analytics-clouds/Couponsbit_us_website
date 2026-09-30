@@ -577,7 +577,7 @@ export default function MajorFitnessCouponsContent() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Major Fitness With a Discount Code</h3>
-              <p>A home gym doesn't have to be built overnight. Whether you're starting with an adjustable bench and free weights or planning a complete setup around a Smith machine or power rack, Major Fitness offers equipment for different training styles and spaces.</p>
+              <p>A home gym doesn't have to be built overnight. Whether you're starting with an adjustable bench and free weights or planning a complete setup around a Smith machine or power rack, Major Fitness offers <Link href="/stores/merachfit-discount-code">equipment</Link> for different training styles and spaces.</p>
               <p>Before you check out, take a few moments to look for a current Major Fitness discount code, compare it with available deals, and review the promotion's terms. A little research before a major equipment purchase can help you make a more informed shopping decision while building the home gym you actually want.</p>
             </div>
           </div>

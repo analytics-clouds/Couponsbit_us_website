@@ -1422,7 +1422,7 @@ export default function AgodaCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Looking for the latest <strong>Agoda coupon codes, promo codes, and travel deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on hotel bookings, vacation rentals, flights, and activities with verified Agoda discounts and exclusive offers.
+            Looking for the latest <strong>Agoda coupon codes, promo codes, and travel deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on <Link href="/stores/booking-promo-code">hotel bookings</Link>, vacation rentals, flights, and activities with verified Agoda discounts and exclusive offers.
           </p>
           <p>
             Whether you're planning a weekend getaway, a family vacation, or a business trip, Agoda offers a huge selection of accommodations and travel experiences designed to fit every budget. Before booking your next stay, check Couponsbit for the latest Agoda deals and savings opportunities.

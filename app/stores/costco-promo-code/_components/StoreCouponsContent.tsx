@@ -451,7 +451,7 @@ export default function CostcoContent() {
           )}
         >
           <p>
-            Costco is the kind of retailer where one shopping trip can cover groceries, household essentials, electronics, clothing, furniture, beauty products, and even your next vacation. With its warehouse model and extensive online selection, Costco gives members access to a wide range of products and services under one membership.
+            Costco is the kind of retailer where one shopping trip can cover groceries, household essentials, electronics, clothing, <Link href="/stores/wayfair-discount-code">furniture</Link>, beauty products, and even your next vacation. With its warehouse model and extensive online selection, Costco gives members access to a wide range of products and services under one membership.
           </p>
           <p>
             If you're already planning a Costco purchase, checking for a Costco promo code before completing your order can be worthwhile. Costco's promotions can take several forms, from product-specific savings and seasonal events to membership offers, Costco Shop Cards, warehouse promotions, and online-only deals.

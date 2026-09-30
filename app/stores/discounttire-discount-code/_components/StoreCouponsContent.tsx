@@ -1050,7 +1050,7 @@ export default function DiscountTireCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Check CouponsBit First?</h3>
             <p>Finding savings shouldn't be difficult. CouponsBit helps shoppers discover verified Discount Tire discount codes, promo codes, and limited-time offers in one convenient place.</p>
-            <p>Our team regularly updates available promotions, making it easier to save before purchasing new tires, aftermarket wheels, or vehicle services. Best of all, CouponsBit is completely free to use.</p>
+            <p>Our team regularly updates available promotions, making it easier to save before purchasing new tires, aftermarket wheels, or <Link href="/stores/valvoline-discount-code">vehicle services</Link>. Best of all, CouponsBit is completely free to use.</p>
           </div>
 
           <div className="space-y-4">

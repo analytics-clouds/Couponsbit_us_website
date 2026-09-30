@@ -449,7 +449,7 @@ export default function PostmatesContent() {
             Before you place your next order, checking for a Postmates promo code can be a simple way to look for an available offer. Depending on your account, location, restaurant, store, and current promotions, you may also find coupon codes, delivery deals, discounts, credits, and other offers that can make your order more worthwhile.
           </p>
           <p>
-            From quick lunches and late-night cravings to grocery runs and household essentials, Postmates gives customers access to a wide range of local businesses through its delivery platform.
+            From quick lunches and late-night cravings to grocery runs and household essentials, Postmates gives customers access to a wide range of local businesses through its <Link href="/stores/grubhub-promo-code">delivery platform</Link>.
           </p>
 
           <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">

@@ -589,7 +589,7 @@ export default function CoachOutletCouponsContent() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">Find Your Coach Style for Less</h3>
-              <p>Coach Outlet makes designer-inspired fashion shopping more accessible by bringing together handbags, wallets, shoes, apparel, accessories, and gifts in one destination.</p>
+              <p>Coach Outlet makes designer-inspired fashion shopping more accessible by bringing together <Link href="/stores/macys-promo-code">handbags</Link>, wallets, shoes, apparel, accessories, and gifts in one destination.</p>
               <p>Whether you're searching for a new everyday tote, upgrading your wallet, choosing a pair of shoes, or hunting for a gift, don't rush straight to checkout. Take a moment to look for an Coach Outlet promo code, compare it with current sales, and read the offer requirements carefully.</p>
               <p>With CouponsBit, finding that extra savings opportunity can become a quick part of your shopping routine. Check the latest offers, choose the deal that works for your order, and enjoy your Coach Outlet find without spending more than you need to.</p>
             </div>

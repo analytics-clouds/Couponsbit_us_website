@@ -434,7 +434,7 @@ export default function SuperrunCouponsContent() {
             Looking for the latest Superun coupon code, Superun promo code, or Superun discount code? CouponsBit helps you find current Superun offers, treadmill deals, and fitness equipment discounts so you can save more when upgrading your home workout setup.
           </p>
           <p>
-            Superun focuses on home fitness equipment, particularly treadmills and walking pads designed for indoor exercise. Its product range includes folding treadmills, under-desk walking pads, compact walking machines, and other equipment aimed at making regular movement easier at home or in a workspace. Current coupon listings also show offers on selected Superun walking pads and treadmills, including discounts on specific models and sale items.
+            Superun focuses on home <Link href="/stores/merachfit-discount-code">fitness equipment</Link>, particularly treadmills and walking pads designed for indoor exercise. Its product range includes folding treadmills, under-desk walking pads, compact walking machines, and other equipment aimed at making regular movement easier at home or in a workspace. Current coupon listings also show offers on selected Superun walking pads and treadmills, including discounts on specific models and sale items.
           </p>
           <p>
             Whether you're building a home gym, looking for a compact treadmill for daily walking, or want an under-desk walking pad for staying active while working, checking CouponsBit for a Superun coupon code before placing your order can help you find an available deal.

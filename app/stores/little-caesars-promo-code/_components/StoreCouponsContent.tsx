@@ -504,7 +504,7 @@ export default function LittleCaesarsCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Craving pizza without spending more than you need to? Little Caesars is a popular American pizza chain known for convenient carryout, delivery, and a menu built around pizza, wings, sides, and other quick meal options. Whether you are ordering a classic pizza for a family dinner, grabbing a meal for game night, or looking for something easy to share with friends, Little Caesars gives customers plenty of choices.
+            Craving pizza without spending more than you need to? Little Caesars is a popular American pizza chain known for convenient carryout, <Link href="/stores/doordash-promo-code">delivery</Link>, and a menu built around pizza, wings, sides, and other quick meal options. Whether you are ordering a classic pizza for a family dinner, grabbing a meal for game night, or looking for something easy to share with friends, Little Caesars gives customers plenty of choices.
           </p>
           <p>
             Before placing an order, it is worth checking for a Little Caesars promo code on CouponsBit. A current promotion can make your order more affordable, especially when you are ordering multiple pizzas, adding sides, or feeding a group. Along with promo codes, shoppers may find Little Caesars coupon codes, discount offers, vouchers, limited-time deals, and other ways to save.

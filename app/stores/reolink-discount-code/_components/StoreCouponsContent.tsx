@@ -690,7 +690,7 @@ export default function ReolinkCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Reolink</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Reolink is a global smart security technology company specializing in video surveillance products for homes, businesses, and outdoor properties. Known for combining advanced technology with user-friendly design, Reolink has become a trusted brand in the security camera industry.
+                    Reolink is a global smart security technology company specializing in <Link href="/stores/obsbot-discount-code">video surveillance products</Link> for homes, businesses, and outdoor properties. Known for combining advanced technology with user-friendly design, Reolink has become a trusted brand in the security camera industry.
                   </p>
                   <a href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />

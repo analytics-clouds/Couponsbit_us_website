@@ -168,7 +168,7 @@ export default function MobileCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -218,7 +218,7 @@ export default function MobileCouponsContent() {
           </h2>
           <p className="text-lg font-bold text-[#056bfa] mb-5">Staying connected has never been more important, but mobile services and devices can quickly become expensive. If you're searching for the latest mobile phone promo codes, you've come to the right place.</p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At Couponsbit, we help shoppers discover valuable savings on smartphones, mobile plans, prepaid services, accessories, and wireless solutions from leading mobile carriers and technology brands.
+            At Couponsbit, we help shoppers discover valuable savings on <Link href="/stores/apple-discount-code">smartphones</Link>, <Link href="/stores/lyca-mobile-discount-code">mobile plans</Link>, prepaid services, accessories, and wireless solutions from leading mobile carriers and technology brands.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Whether you're upgrading to a new smartphone, switching carriers, activating a family plan, or looking for affordable wireless service, finding the right deal can help you save significantly. That's why Couponsbit brings together verified cell phone plan coupon codes, exclusive discounts, and the latest prepaid phone deals to help consumers get more value from their mobile purchases.

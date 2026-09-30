@@ -459,7 +459,7 @@ export default function VerizonCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Shopping for a new phone or switching your wireless provider is a bigger decision than picking up another item online. You're choosing a network, a plan, a device, and potentially a home internet service that you'll use every day. That's why finding the right offer before signing up can make a meaningful difference.
+            Shopping for a new phone or switching your wireless provider is a bigger decision than picking up another item online. You're choosing a <Link href="/stores/lyca-mobile-discount-code">network</Link>, a plan, a device, and potentially a home internet service that you'll use every day. That's why finding the right offer before signing up can make a meaningful difference.
           </p>
           <p>
             Verizon is one of the biggest names in wireless and connectivity in the United States, offering mobile plans, smartphones, connected devices, and home internet services. If you're planning to switch providers, upgrade your phone, add a new line, or set up home internet, checking for a Verizon promo code before you buy can be a smart way to look for savings.

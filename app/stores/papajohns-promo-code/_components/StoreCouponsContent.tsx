@@ -514,7 +514,7 @@ export default function PapajohnsCouponsContent() {
             Pizza night gets even better when you can enjoy your favorite slices without stretching your food budget. Whether you're ordering a classic pizza for yourself, feeding the family, or getting a few sides for a game-night gathering, Papa Johns gives customers plenty of ways to build a meal around their favorite flavors.
           </p>
           <p>
-            Before placing your next order, checking for a Papa Johns promo code on CouponsBit can help you look for available savings. Along with promotional codes, you can find Papa Johns coupon codes, discount offers, vouchers, pizza deals, delivery promotions, and other opportunities to save on your order.
+            Before placing your next order, checking for a Papa Johns promo code on CouponsBit can help you look for available savings. Along with promotional codes, you can find Papa Johns coupon codes, discount offers, vouchers, <Link href="/stores/little-caesars-promo-code">pizza deals</Link>, delivery promotions, and other opportunities to save on your order.
           </p>
           <p>
             Promotions can change regularly and may come with specific conditions, so always check the terms of an offer before applying it to your order.

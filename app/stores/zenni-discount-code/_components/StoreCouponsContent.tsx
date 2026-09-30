@@ -534,7 +534,7 @@ export default function ZenniCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            A new pair of glasses can change more than your look. It can make everyday life more comfortable, help you express your personal style, and give you a practical accessory you'll actually use every day. Zenni makes shopping for eyewear online convenient, with a wide selection of prescription glasses, sunglasses, and other eyewear options.
+            A new pair of glasses can change more than your look. It can make everyday life more comfortable, help you express your personal style, and give you a practical accessory you'll actually use every day. Zenni makes shopping for <Link href="/stores/fytoo-discount-code">eyewear</Link> online convenient, with a wide selection of prescription glasses, sunglasses, and other eyewear options.
           </p>
           <p>
             If you're planning to update your eyewear, checking for a Zenni promo code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers find Zenni coupon codes, discount offers, vouchers, eyewear deals, sale promotions, and other opportunities to potentially spend less on their next purchase.

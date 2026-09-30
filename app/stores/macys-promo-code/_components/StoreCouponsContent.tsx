@@ -455,7 +455,7 @@ export default function MacysCouponsContent() {
             Looking for the latest <strong>Macy’s</strong> coupon code, Macy’s promo code, or Macy’s discount code? <strong>CouponsBit</strong> helps you discover current Macy’s coupons, sale offers, and savings opportunities across fashion, beauty, home, jewelry, shoes, luggage, and more.
           </p>
           <p>
-            Macy’s is one of the best-known department stores in the U.S., offering a broad selection of national and designer brands alongside its own merchandise. From refreshing your wardrobe and shopping for beauty essentials to furnishing your home or finding a gift, Macy’s gives shoppers plenty of opportunities to find deals throughout the year.
+            Macy’s is one of the best-known <Link href="/stores/jcpenney-discount-code">department stores</Link> in the U.S., offering a broad selection of national and designer brands alongside its own merchandise. From refreshing your wardrobe and shopping for beauty essentials to furnishing your home or finding a gift, Macy’s gives shoppers plenty of opportunities to find deals throughout the year.
           </p>
           <p>
             Before placing an order, check CouponsBit for the latest Macy’s coupon codes and promo codes. You can compare available offers and look for additional savings before completing your purchase.

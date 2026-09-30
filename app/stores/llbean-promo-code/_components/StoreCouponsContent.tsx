@@ -559,7 +559,7 @@ export default function LLBeanCouponsContent() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">Gear Up and Save on Your Next L.L.Bean Order</h3>
-              <p>From the iconic Bean Boot to camping equipment, flannel shirts, backpacks, winter jackets, home essentials, and everyday footwear, L.L.Bean has built a product range around comfort, practicality, and getting outside.</p>
+              <p>From the iconic Bean Boot to camping equipment, flannel shirts, backpacks, winter jackets, home essentials, and everyday <Link href="/stores/nike-discount-code">footwear</Link>, L.L.Bean has built a product range around comfort, practicality, and getting outside.</p>
               <p>Whether you're preparing for a weekend adventure or simply upgrading your everyday wardrobe, it's worth checking current offers before you buy. Search CouponsBit for an L.L.Bean promo code, compare it with available sales and promotions, and review the terms before completing your order.</p>
               <p>A little planning can make your next L.L.Bean shopping trip—and your final checkout total—a whole lot better.</p>
             </div>

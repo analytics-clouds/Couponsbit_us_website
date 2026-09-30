@@ -586,7 +586,7 @@ export default function ZaraCouponsContent() {
   </div>
             
             <p>
-              A new outfit is not complete without the right finishing touches. Zara offers footwear and accessories across its women's, men's, and kids' collections.
+              A new outfit is not complete without the right finishing touches. Zara offers <Link href="/stores/hm-promo-code">footwear</Link> and accessories across its women's, men's, and kids' collections.
             </p>
             <p>Depending on the collection, shoppers can find:</p>
             <ul className="list-disc pl-6 space-y-2">

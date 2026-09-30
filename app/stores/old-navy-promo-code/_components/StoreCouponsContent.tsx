@@ -650,7 +650,7 @@ export default function OldNavyCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Old Navy is a well-known American fashion retailer offering affordable clothing, accessories, footwear, and everyday essentials for women, men, kids, toddlers, and babies. Its assortment covers everything from jeans, T-shirts, dresses, and activewear to workwear, swimwear, outerwear, pajamas, shoes, and accessories. The brand is particularly popular with shoppers who want versatile styles for everyday life without having to spend a fortune on their wardrobe.
+            Old Navy is a well-known American <Link href="/stores/fashion-nova-discount-code">fashion retailer</Link> offering affordable clothing, accessories, footwear, and everyday essentials for women, men, kids, toddlers, and babies. Its assortment covers everything from jeans, T-shirts, dresses, and activewear to workwear, swimwear, outerwear, pajamas, shoes, and accessories. The brand is particularly popular with shoppers who want versatile styles for everyday life without having to spend a fortune on their wardrobe.
           </p>
           <p>
             If you are planning to shop at Old Navy, checking for an Old Navy promo code before completing your purchase can be a smart way to look for additional savings. CouponsBit helps shoppers discover available coupon codes, promotional offers, sales, and other opportunities to save before they head to checkout.

@@ -745,7 +745,7 @@ export default function HomeDepotCouponsContent() {
               Tools are one of Home Depot's biggest categories, with options for professional contractors, serious DIY users, and occasional home repairs.
             </p>
             <p>
-              <strong>Power Tools:</strong> Home Depot carries drills, impact drivers, saws, sanders, grinders, nailers, routers, and other powered equipment. You can shop for individual tools as well as kits that combine several pieces of equipment.
+              <strong><Link href="/stores/harbor-freight-discount-code">Power Tools</Link>:</strong> Home Depot carries drills, impact drivers, saws, sanders, grinders, nailers, routers, and other powered equipment. You can shop for individual tools as well as kits that combine several pieces of equipment.
             </p>
             <p>
               <strong>Hand Tools:</strong> The selection includes hammers, screwdrivers, wrenches, pliers, measuring tools, utility knives, levels, clamps, and other basic equipment.

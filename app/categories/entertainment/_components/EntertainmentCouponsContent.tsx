@@ -171,7 +171,7 @@ export default function EntertainmentCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -222,7 +222,7 @@ export default function EntertainmentCouponsContent() {
           </h2>
           <p className="text-lg font-bold text-[#056bfa] mb-5">Looking for the best entertainment coupon codes to save on concerts, sporting events, theater shows, festivals, and other unforgettable experiences? You're in the right place.</p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At Couponsbit, we help savvy shoppers discover the latest discounts on live entertainment, ticket purchases, and digital experiences without spending hours searching for deals.
+            At Couponsbit, we help savvy shoppers discover the latest discounts on live entertainment, <Link href="/stores/stubhub-discount-code">ticket purchases</Link>, and digital experiences without spending hours searching for deals.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Whether you're planning to attend a sold-out concert, cheer on your favorite team, enjoy a Broadway performance, or book tickets for a family attraction, finding the right savings can make the experience even more rewarding. That's why Couponsbit brings together verified event ticket promo codes, exclusive offers, and the latest concert and ticket deals from trusted entertainment brands and ticketing platforms, helping you enjoy more while spending less.

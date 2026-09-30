@@ -428,7 +428,7 @@ export default function CrocsCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Some shoes are made for a particular occasion. Crocs are made for pretty much everything. Whether you're heading out for a quick coffee, spending the day on your feet, packing for vacation, or looking for something comfortable to wear around the house, Crocs have become a go-to choice for shoppers who value comfort without giving up personality.
+            Some <Link href="/stores/nike-discount-code">shoes</Link> are made for a particular occasion. Crocs are made for pretty much everything. Whether you're heading out for a quick coffee, spending the day on your feet, packing for vacation, or looking for something comfortable to wear around the house, Crocs have become a go-to choice for shoppers who value comfort without giving up personality.
           </p>
           <p>
             And then there are the Jibbitz charms. Because apparently, regular shoes weren't expressive enough.

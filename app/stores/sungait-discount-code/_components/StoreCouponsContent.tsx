@@ -1058,7 +1058,7 @@ export default function SungaitCouponsContent() {
             Save More on Eyewear with a Sungait Discount Code
           </h3>
           <p>
-            Looking for stylish sunglasses without overspending? Sungait offers a wide selection of polarized sunglasses, blue light blocking glasses, reading glasses, and eyewear accessories designed for everyday comfort and protection. Whether you're driving, traveling, working outdoors, or spending long hours in front of a screen, Sungait provides functional eyewear for men and women.
+            Looking for stylish sunglasses without overspending? Sungait offers a wide selection of polarized <Link href="/stores/fytoo-discount-code">sunglasses</Link>, blue light blocking glasses, reading glasses, and eyewear accessories designed for everyday comfort and protection. Whether you're driving, traveling, working outdoors, or spending long hours in front of a screen, Sungait provides functional eyewear for men and women.
           </p>
           <p>
             Before you place your order, visit CouponsBit to find the latest Sungait discount code, Sungait voucher, Sungait promo code, and Sungait coupon code. Applying a valid offer at checkout can help you save on your next eyewear purchase.

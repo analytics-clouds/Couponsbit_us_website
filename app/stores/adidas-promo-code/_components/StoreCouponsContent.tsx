@@ -462,7 +462,7 @@ export default function AdidasCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're refreshing your workout wardrobe, replacing worn-out sneakers, or looking for the latest sportswear, adidas gives shoppers plenty of options to explore. The brand's lineup covers athletic shoes, clothing, accessories, and lifestyle products for men, women, and kids, with collections designed for everything from everyday wear to serious training.
+            Whether you're refreshing your workout wardrobe, replacing worn-out sneakers, or looking for the latest sportswear, adidas gives shoppers plenty of options to explore. The brand's lineup covers <Link href="/stores/nike-discount-code">athletic shoes</Link>, clothing, accessories, and lifestyle products for men, women, and kids, with collections designed for everything from everyday wear to serious training.
           </p>
           <p>
             Before placing an order, it is worth checking for an adidas promo code that could help you save on an eligible purchase. CouponsBit brings together available adidas coupon codes, discount offers, vouchers, sales, and other promotions, giving shoppers an easy way to look for savings before checkout.

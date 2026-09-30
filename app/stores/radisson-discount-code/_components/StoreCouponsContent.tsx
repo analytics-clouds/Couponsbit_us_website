@@ -860,7 +860,7 @@ export default function RadissonCouponsContent() {
             Whether you're planning a business trip, a relaxing vacation, a family getaway, or a weekend escape, Radisson Hotels offers comfortable stays in destinations around the world. From luxury hotels and upscale resorts to convenient city accommodations, Radisson provides hospitality experiences tailored to every type of traveler.
           </p>
           <p>
-            Before making your reservation, visit CouponsBit to find the latest Radisson Hotels discount code, Radisson Hotels voucher, Radisson Hotels promo code, and Radisson Hotels coupon code. Applying a valid offer during checkout can help you save on eligible hotel bookings, vacation packages, and exclusive member rates.
+            Before making your reservation, visit CouponsBit to find the latest Radisson Hotels discount code, Radisson Hotels voucher, Radisson Hotels promo code, and Radisson Hotels coupon code. Applying a valid offer during checkout can help you save on eligible <Link href="/stores/agoda-discount-code">hotel bookings</Link>, vacation packages, and exclusive member rates.
           </p>
 
           {/* Why Choose Radisson Hotels? */}

@@ -206,7 +206,7 @@ export default function HomeLifestyleCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -351,7 +351,7 @@ export default function HomeLifestyleCouponsContent() {
         <div>
           <h2 className="text-2xl font-black text-black mb-2">Save on Furniture and Bigger Purchases</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Furniture purchases require a little more planning because the total order value can be significantly higher than an everyday purchase.
+            <Link href="/stores/wayfair-discount-code">Furniture</Link> purchases require a little more planning because the total order value can be significantly higher than an everyday purchase.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Before buying a sofa, dining table, bed, desk, dresser, or other major item, look for available promotional offers.
@@ -491,7 +491,7 @@ export default function HomeLifestyleCouponsContent() {
         <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-6">
           <h3 className="text-black font-black text-lg mb-2">Smart Home Shopping Tips</h3>
           <p className="text-gray-500 text-xs leading-relaxed mb-4">
-            Maximize your home improvement budget with these simple habits.
+            Maximize your <Link href="/stores/home-depot-discount-code">home improvement</Link> budget with these simple habits.
           </p>
           <div className="flex flex-col gap-3">
             {[

@@ -195,7 +195,7 @@ export default function FoodCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -270,7 +270,7 @@ export default function FoodCouponsContent() {
             CouponsBit brings these opportunities together so you can check available savings before ordering.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
-            If you frequently use food delivery services or order from restaurants online, even a small discount can add up over several purchases.
+            If you frequently use <Link href="/stores/doordash-promo-code">food delivery services</Link> or order from restaurants online, even a small discount can add up over several purchases.
           </p>
         </div>
 
@@ -309,7 +309,7 @@ export default function FoodCouponsContent() {
             ))}
           </div>
           <p className="text-gray-600 text-sm leading-relaxed">
-            A food delivery promo code can be especially useful when ordering online, while grocery promotions can help reduce the cost of your regular shopping list.
+            A food delivery promo code can be especially useful when ordering online, while <Link href="/stores/kroger-discount-code">grocery promotions</Link> can help reduce the cost of your regular shopping list.
           </p>
         </div>
 

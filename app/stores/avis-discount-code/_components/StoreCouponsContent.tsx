@@ -703,7 +703,7 @@ export default function AvisCouponsContent() {
             Save More on Your Next Rental with Avis Coupon Codes
           </h3>
           <p>
-            Whether you're planning a business trip, family vacation, weekend getaway, or airport transfer, Avis offers reliable car rental services in destinations around the world. Before confirming your reservation, visit CouponsBit to find the latest Avis coupon codes, Avis promo codes, and exclusive car rental deals that can help you save on your next booking.
+            Whether you're planning a business trip, family vacation, weekend getaway, or airport transfer, Avis offers reliable car rental services in destinations around the world. Before confirming your reservation, visit CouponsBit to find the latest Avis coupon codes, Avis promo codes, and exclusive <Link href="/stores/budget-discount-code">car rental</Link> deals that can help you save on your next booking.
           </p>
           <p>
             Known for its premium fleet, convenient rental locations, and flexible booking options, Avis is a trusted choice for travelers seeking comfort, quality, and dependable service.

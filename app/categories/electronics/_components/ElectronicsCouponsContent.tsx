@@ -192,7 +192,7 @@ export default function ElectronicsCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -242,7 +242,7 @@ export default function ElectronicsCouponsContent() {
           </h2>
           <p className="text-lg font-bold text-[#056bfa] mb-5">Looking for the best electronics coupon codes before making your next purchase? You've come to the right place.</p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At Couponsbit, we help smart shoppers save on everything from laptops and smartphones to gaming accessories, smart home devices, headphones, cameras, and more.
+            At Couponsbit, we help smart shoppers save on everything from <Link href="/stores/dell-discount-code">laptops</Link> and <Link href="/stores/apple-discount-code">smartphones</Link> to gaming accessories, smart home devices, headphones, <Link href="/stores/reolink-discount-code">cameras</Link>, and more.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Technology has become an essential part of everyday life, but upgrading your favorite gadgets doesn't have to strain your budget. To help you save more on every purchase, we curate the latest electronics coupon codes, electronics promo codes, and electronics deals & discounts from leading electronics brands and trusted retailers—all in one easy-to-access destination.

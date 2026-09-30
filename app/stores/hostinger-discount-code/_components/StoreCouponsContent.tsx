@@ -1012,7 +1012,7 @@ export default function HostingerCouponsContent() {
             Build Your Website for Less with a Hostinger Discount Code
           </h3>
           <p>
-            Whether you're launching your first website, creating an online store, starting a blog, or managing multiple client websites, Hostinger offers affordable and high-performance web hosting solutions for individuals, businesses, developers, and agencies. From shared hosting and WordPress hosting to VPS hosting and cloud hosting, Hostinger provides everything you need to establish a strong online presence.
+            Whether you're launching your first website, creating an online store, starting a blog, or managing multiple client websites, Hostinger offers affordable and high-performance <Link href="/stores/hosting-discount-code">web hosting solutions</Link> for individuals, businesses, developers, and agencies. From shared hosting and WordPress hosting to VPS hosting and cloud hosting, Hostinger provides everything you need to establish a strong online presence.
           </p>
           <p>
             Before purchasing a hosting plan, visit CouponsBit to find the latest Hostinger discount code, Hostinger voucher, Hostinger promo code, and Hostinger coupon code. Applying a valid offer during checkout can help you save on hosting plans, domains, website builders, and other online services.

@@ -658,7 +658,7 @@ export default function YasIslandCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative transition-all", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <div className="space-y-4">
             <p>
-              Planning an exciting getaway to Abu Dhabi? A Yas Island promo code can help you look for savings on theme park tickets, experiences, stays, and other activities across one of the UAE’s most popular entertainment destinations. Whether you are traveling with family, planning a weekend with friends, or building a complete Abu Dhabi holiday, Yas Island brings attractions, entertainment, dining, shopping, and hotels together in one destination.
+              Planning an exciting getaway to Abu Dhabi? A Yas Island promo code can help you look for savings on <Link href="/stores/klook-discount-code">theme park tickets</Link>, experiences, stays, and other activities across one of the UAE’s most popular entertainment destinations. Whether you are traveling with family, planning a weekend with friends, or building a complete Abu Dhabi holiday, Yas Island brings attractions, entertainment, dining, shopping, and hotels together in one destination.
             </p>
             <p>
               Yas Island is home to four major theme parks: Ferrari World Yas Island, Warner Bros. World Yas Island, Yas Waterworld, and SeaWorld Yas Island. The destination also offers hotels, restaurants, shopping, beaches, live entertainment, and other experiences.

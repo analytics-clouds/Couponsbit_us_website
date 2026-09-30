@@ -100,7 +100,7 @@ export default function AutomotiveCouponsContent() {
                   <div className="flex-1 p-7 md:p-8">
                     <h1 className="text-black font-extrabold text-xl md:text-3xl">Automotive Coupons & Deals</h1>
                     <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                      Save on car parts, accessories, tires, car rentals and maintenance services with verified coupon codes.
+                      Save on car parts, accessories, tires, <Link href="/stores/budget-discount-code">car rentals</Link> and maintenance services with verified coupon codes.
                     </p>
                     <div className="hidden md:grid grid-cols-2 gap-y-5 gap-x-8 mt-6">
                       {[
@@ -194,7 +194,7 @@ export default function AutomotiveCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -328,7 +328,7 @@ export default function AutomotiveCouponsContent() {
             Routine maintenance is part of being a responsible vehicle owner, but that doesn't mean every maintenance purchase needs to hurt your wallet.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Many drivers regularly purchase products such as oil, filters, wiper blades, bulbs, cleaning products, fluids, batteries, and other supplies. If you handle basic maintenance yourself, shopping online can give you access to a wider selection of products and retailers.
+            Many drivers regularly purchase products such as <Link href="/stores/valvoline-discount-code">oil</Link>, filters, wiper blades, bulbs, cleaning products, fluids, batteries, and other supplies. If you handle basic maintenance yourself, shopping online can give you access to a wider selection of products and retailers.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Before placing an order, search for an applicable auto parts coupon code or store promotion.
@@ -365,7 +365,7 @@ export default function AutomotiveCouponsContent() {
         <div>
           <h2 className="text-2xl font-black text-black mb-2">Find Deals on Tires and Wheels</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Tires are among the most important purchases you make for your vehicle, so price is naturally an important consideration.
+            <Link href="/stores/discounttire-discount-code">Tires</Link> are among the most important purchases you make for your vehicle, so price is naturally an important consideration.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Online tire retailers frequently run promotions around seasonal changes, holidays, and major shopping periods. Some offers may apply to selected tire brands or sizes, while others may include shipping, installation, or additional services.
@@ -431,7 +431,7 @@ export default function AutomotiveCouponsContent() {
             Tools, diagnostic equipment, garage storage, jacks, lighting, cleaning products, replacement components, and specialty equipment can quickly turn a garage into a full workshop.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            If you're building or upgrading your collection, look for a garage tool discount code or retailer promotion before making a purchase.
+            If you're building or upgrading your collection, look for a <Link href="/stores/harbor-freight-discount-code">garage tool</Link> discount code or retailer promotion before making a purchase.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Buying quality equipment is important, particularly when you're working on a vehicle. A lower price should never be the only reason to choose a particular tool or component.

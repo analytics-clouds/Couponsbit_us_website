@@ -419,7 +419,7 @@ export default function HokaCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            A good pair of running shoes can change the way a workout feels. Whether you're training for your first 5K, logging miles every morning, heading out for a trail run, or simply looking for a comfortable pair of shoes for walking, HOKA has built its reputation around cushioned, performance-focused footwear.
+            A good pair of <Link href="/stores/nike-discount-code">running shoes</Link> can change the way a workout feels. Whether you're training for your first 5K, logging miles every morning, heading out for a trail run, or simply looking for a comfortable pair of shoes for walking, HOKA has built its reputation around cushioned, performance-focused footwear.
           </p>
           <p>
             But quality running shoes can be a significant purchase, especially when you're buying more than one pair or upgrading your gear for a new training season. That's why checking for a HOKA discount code before placing your order can be a smart part of the shopping process.

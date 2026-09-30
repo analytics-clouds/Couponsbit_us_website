@@ -1214,7 +1214,7 @@ export default function DellCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Technology for Less with Dell Coupon Codes</h3>
           <p>
-            Whether you're shopping for a powerful business laptop, a high-performance gaming desktop, a reliable home computer, or enterprise IT solutions, Dell offers innovative technology designed to meet every need. Before placing your next order, visit Couponsbit to explore the latest <strong>Dell coupon codes, Dell promo codes, and exclusive deals</strong> that can help you save on laptops, desktops, monitors, accessories, and more.
+            Whether you're shopping for a powerful business laptop, a high-performance gaming desktop, a reliable home computer, or enterprise IT solutions, Dell offers innovative technology designed to meet every need. Before placing your next order, visit Couponsbit to explore the latest <strong>Dell coupon codes, Dell promo codes, and exclusive deals</strong> that can help you save on <Link href="/stores/hp-discount-code">laptops</Link>, desktops, monitors, accessories, and more.
           </p>
           <p>
             Trusted by millions of customers worldwide, Dell has built a reputation for delivering dependable technology, exceptional performance, and cutting-edge innovation. With Couponsbit, finding verified Dell discounts has never been easier.

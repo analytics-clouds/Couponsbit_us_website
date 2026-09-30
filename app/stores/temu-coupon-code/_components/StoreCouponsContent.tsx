@@ -453,7 +453,7 @@ export default function TemuCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Finding something useful online without spending a fortune is part of the appeal of shopping on Temu. From home essentials and electronics to fashion, beauty products, gadgets, accessories, and everyday items, the marketplace brings a huge variety of products together in one place. With frequent promotions and rotating offers, there are plenty of opportunities to look for savings before you check out.
+            Finding something useful online without spending a fortune is part of the appeal of shopping on Temu. From home essentials and <Link href="/stores/geekbuying-discount-code">electronics</Link> to fashion, beauty products, gadgets, accessories, and everyday items, the marketplace brings a huge variety of products together in one place. With frequent promotions and rotating offers, there are plenty of opportunities to look for savings before you check out.
           </p>
           <p>
             If you’re planning your next Temu order, checking for a Temu promo code on CouponsBit can be a smart first step. You can compare available coupon codes and promotional offers with the deals already running on Temu to find an option that works best for your purchase.

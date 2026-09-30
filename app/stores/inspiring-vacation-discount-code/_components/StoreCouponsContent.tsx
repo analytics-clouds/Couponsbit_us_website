@@ -956,7 +956,7 @@ export default function InspiringVacationCouponsContent() {
             Planning your next holiday? Make your travel budget go further with the latest Inspiring Vacations discount codes, travel deals, and holiday offers available on Couponsbit. Whether you're dreaming of exploring Europe, cruising through Alaska, discovering Japan, or embarking on an African safari, Inspiring Vacations offers expertly curated holiday packages designed to make travel seamless and memorable.
           </p>
           <p>
-            At Couponsbit, we help Australian travellers unlock extra savings on guided tours, premium holiday packages, cruises, and once-in-a-lifetime travel experiences. Before booking your next getaway, check out the latest Inspiring Vacations deals and offers to help you save on your adventure.
+            At Couponsbit, we help Australian travellers unlock extra savings on guided <Link href="/stores/klook-discount-code">tours</Link>, premium holiday packages, cruises, and once-in-a-lifetime travel experiences. Before booking your next getaway, check out the latest Inspiring Vacations deals and offers to help you save on your adventure.
           </p>
 
           {/* How to Use Steps */}

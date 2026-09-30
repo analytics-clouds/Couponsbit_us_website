@@ -191,7 +191,7 @@ export default function GamingCouponsContent() {
       <a
         href="https://www.google.com/preferences/source?q=couponsbit.us"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
       >
         <img
@@ -246,7 +246,7 @@ export default function GamingCouponsContent() {
             For millions of players across the USA, it is entertainment, competition, social connection, and even a way to unwind after a long day.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            But building a gaming setup or keeping up with new releases can get expensive. Games, accessories, consoles, PCs, controllers, headsets, gaming chairs, subscriptions, and digital content can all add to your entertainment budget.
+            But building a gaming setup or keeping up with new releases can get expensive. Games, accessories, consoles, PCs, controllers, headsets, gaming chairs, <Link href="/stores/gamsgo-discount-code">subscriptions</Link>, and digital content can all add to your entertainment budget.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             That is where smart shopping comes in.

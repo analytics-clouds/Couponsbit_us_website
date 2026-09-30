@@ -1271,7 +1271,7 @@ Amazon is one of the first places many shoppers visit when buying electronics. F
 </div>
             
             <p>
-              Creating a comfortable living space is easier with Amazon's extensive home collection. Shoppers can browse furniture, bedding, kitchen appliances, cookware, dining essentials, storage solutions, lighting, home décor, and cleaning products from hundreds of trusted brands
+              Creating a comfortable living space is easier with Amazon's extensive <Link href="/stores/wayfair-discount-code">home collection</Link>. Shoppers can browse furniture, bedding, kitchen appliances, cookware, dining essentials, storage solutions, lighting, home décor, and cleaning products from hundreds of trusted brands
             </p>
 
             <p>
