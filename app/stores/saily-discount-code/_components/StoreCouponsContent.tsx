@@ -48,7 +48,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-discount-code" },
 ];
 
-const STORE_URL = "https://saily.com";
+const STORE_URL = "https://performance.gotrackier.com/click?campaign_id=5006&pub_id=1015";
 
 export default function SailyContent() {
   const [showToast, setShowToast] = useState(false);
