@@ -153,6 +153,8 @@ export const allStores: StoreEntry[] = [
   { name: "Costco",          id: "costco-promo-code",              category: "More",        coupons: 19, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/costoc-logo_nkxnxl.webp",       discount: "Up To $600 OFF",  popular: false },
   { name: "Kohl's",          id: "kohls-coupon-code",              category: "Fashion",     coupons: 23, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp",        discount: "Up To 70% OFF",   popular: false },
   { name: "Saily",           id: "saily-discount-code",            category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp",       discount: "Up To 20% OFF",   popular: false },
+  { name: "EcoFlow",         id: "ecoflow-discount-code",          category: "Electronics", coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790831304/ecoflow_bc7yqs.webp",         discount: "Up To 57% OFF",   popular: false },
+  { name: "YouFibre",        id: "youfibre-discount-code",         category: "More",        coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790831304/youfibre-logo_egqvo6.webp",    discount: "From £25/Month",  popular: false },
 ];
 
 
