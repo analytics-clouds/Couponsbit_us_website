@@ -121,7 +121,7 @@ export default function CostcoContent() {
                       <span className="text-gray-600 font-bold text-sm">(5,400 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Costco Promo Code and Costco Discount Code to unlock up to a $1,200 Costco Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances. Shop verified Costco deals on electronics, furniture, travel, apparel, home essentials, and more while enjoying exclusive member savings throughout September 2026.
+                      Use the latest Costco Promo Code and Costco Discount Code to unlock up to a $1,200 Costco Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances. Shop verified Costco deals on electronics, furniture, travel, apparel, home essentials, and more while enjoying exclusive member savings throughout October 2026.
                     </p>
                     <a
                       href={STORE_URL}

@@ -3,10 +3,10 @@ import OglmoveCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Sep 2026",
+    absolute: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Oct 2026",
   },
   description:
-    "Find the latest OGL Move discount code and promo code for Sep 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+    "Find the latest OGL Move discount code and promo code for Oct 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/oglmove-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/oglmove-discount-code",
-    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Sep 2026",
+    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Oct 2026",
     description:
-      "Find the latest OGL Move discount code and promo code for Sep 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+      "Find the latest OGL Move discount code and promo code for Oct 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Sep 2026",
+    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Oct 2026",
     description:
-      "Find the latest OGL Move discount code and promo code for Sep 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+      "Find the latest OGL Move discount code and promo code for Oct 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const oglmoveSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/oglmove-discount-code",
-      name: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Sep 2026",
+      name: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Oct 2026",
       description:
-        "Find the latest OGL Move discount code and promo code for Sep 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+        "Find the latest OGL Move discount code and promo code for Oct 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

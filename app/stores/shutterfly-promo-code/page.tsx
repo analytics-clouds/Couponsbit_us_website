@@ -3,10 +3,10 @@ import ShutterflyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
+    absolute: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | October 2026",
   },
   description:
-    "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
+    "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for October 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/shutterfly-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/shutterfly-promo-code",
-    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
+    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | October 2026",
     description:
-      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
+      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for October 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
+    title: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | October 2026",
     description:
-      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
+      "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for October 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783181/shutterfly-logo_wvvske.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const shutterflySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/shutterfly-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/shutterfly-promo-code",
-      name: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | September 2026",
+      name: "Shutterfly Promo Code: 50% OFF Cards + 40% OFF Photo Books | October 2026",
       description:
-        "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for September 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
+        "Find the latest Shutterfly promo code and Shutterfly discount code at Maxiku Offers for October 2026. Save 50% OFF cards and stationery, get 40% OFF photo books with FREE extra pages, enjoy FREE photo prints, and claim FREE shipping on eligible orders.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

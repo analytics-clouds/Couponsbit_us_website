@@ -230,7 +230,7 @@ export default function ReolinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(10.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Unlock the best Reolink discount codes for September 2026 and save up to 50% on premium security cameras & smart surveillance systems. Grab $450 off the RLK16, TrackFlex Floodlight at $338.99, and Duo 3 PoE at $238.76 — verified deals updated daily.
+                      Unlock the best Reolink discount codes for October 2026 and save up to 50% on premium security cameras & smart surveillance systems. Grab $450 off the RLK16, TrackFlex Floodlight at $338.99, and Duo 3 PoE at $238.76 — verified deals updated daily.
                     </p>
                     <a
                       href="https://reolink.pxf.io/c/4303217/1577849/18332?subId1=1015"

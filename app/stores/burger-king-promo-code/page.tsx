@@ -3,10 +3,10 @@ import BurgerKingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+    absolute: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Oct 2026",
   },
   description:
-    "Discover the latest Burger King promo code and discount code for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+    "Discover the latest Burger King promo code and discount code for Oct 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/burger-king-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Oct 2026",
     description:
-      "Discover the latest Burger King promo code and discount code for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+      "Discover the latest Burger King promo code and discount code for Oct 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Oct 2026",
     description:
-      "Discover the latest Burger King promo code and discount code for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+      "Discover the latest Burger King promo code and discount code for Oct 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/burger-king-logo_m4nwmx.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const burgerKingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/burger-king-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-      name: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Sep 2026",
+      name: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Oct 2026",
       description:
-        "Discover the latest Burger King promo code and discount code for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+        "Discover the latest Burger King promo code and discount code for Oct 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

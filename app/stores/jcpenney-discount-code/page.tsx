@@ -3,10 +3,10 @@ import JcpenneyCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+    absolute: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Oct 2026",
   },
   description:
-    "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+    "Find the latest JCPenney discount code and coupon code for Oct 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/jcpenney-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/jcpenney-discount-code",
-    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Oct 2026",
     description:
-      "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+      "Find the latest JCPenney discount code and coupon code for Oct 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Oct 2026",
     description:
-      "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+      "Find the latest JCPenney discount code and coupon code for Oct 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const jcpenneySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/jcpenney-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/jcpenney-discount-code",
-      name: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Sep 2026",
+      name: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Oct 2026",
       description:
-        "Find the latest JCPenney discount code and coupon code for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+        "Find the latest JCPenney discount code and coupon code for Oct 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

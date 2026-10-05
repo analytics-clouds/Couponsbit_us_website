@@ -3,10 +3,10 @@ import LLBeanCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Sep 2026",
+    absolute: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Oct 2026",
   },
   description:
-    "L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in September 2026.",
+    "L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in October 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/llbean-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/llbean-promo-code",
-    title: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Sep 2026",
+    title: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Oct 2026",
     description:
-      "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in September 2026.",
+      "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in October 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Sep 2026",
+    title: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Oct 2026",
     description:
-      "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in September 2026.",
+      "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/llbean_logo_xsbw4x.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const llbeanSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/llbean-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/llbean-promo-code",
-      name: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Sep 2026",
+      name: "L.L.Bean Promo Code: Save up to 60% OFF on styles | Oct 2026",
       description:
-        "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in September 2026.",
+        "Use the latest L.L.Bean Promo Code and L.L.Bean Discount Code to save up to 60% OFF sale styles and up to 50% OFF new markdowns in October 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

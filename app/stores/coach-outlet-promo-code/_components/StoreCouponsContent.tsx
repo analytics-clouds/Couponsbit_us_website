@@ -121,7 +121,7 @@ export default function CoachOutletCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get the latest Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF the Tonal Signature Down Jacket, 70% OFF the 3-In-1 Signature Canvas Wallet, and 60% OFF the Lara Satchel Bag. Compare verified Coach Outlet deals on handbags, wallets, shoes, accessories, and more in September 2026.
+                      Get the latest Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF the Tonal Signature Down Jacket, 70% OFF the 3-In-1 Signature Canvas Wallet, and 60% OFF the Lara Satchel Bag. Compare verified Coach Outlet deals on handbags, wallets, shoes, accessories, and more in October 2026.
                     </p>
                     <a
                       href={STORE_URL}

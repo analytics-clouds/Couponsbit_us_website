@@ -122,7 +122,7 @@ export default function BurgerKingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find verified Burger King promo codes and discount codes for Sep 2026. Save with the $1 Menu, $5 Duo, $7 Trio, Whopper Wednesday, BOGO Chicken Sandwich, Royal Perks rewards, free fries, welcome offers, and exclusive app-only restaurant deals.
+                      Find verified Burger King promo codes and discount codes for Oct 2026. Save with the $1 Menu, $5 Duo, $7 Trio, Whopper Wednesday, BOGO Chicken Sandwich, Royal Perks rewards, free fries, welcome offers, and exclusive app-only restaurant deals.
                     </p>
                     <a
                       href={STORE_URL}

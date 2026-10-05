@@ -3,7 +3,7 @@ import AiraloCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Sep 2026",
+    absolute: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Oct 2026",
   },
   description:
     "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/airalo-discount-code",
-    title: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Sep 2026",
+    title: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Oct 2026",
     description:
       "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Sep 2026",
+    title: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Oct 2026",
     description:
       "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp"],
@@ -63,7 +63,7 @@ const airaloSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/airalo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/airalo-discount-code",
-      name: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Sep 2026",
+      name: "Airalo Discount Code : US AC10ALL - To get 20% OFF + 15% OFF First eSIM |Oct 2026",
       description:
         "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
       inLanguage: "en-US",

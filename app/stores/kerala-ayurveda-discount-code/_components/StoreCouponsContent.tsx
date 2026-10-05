@@ -330,7 +330,7 @@ export default function KeralaAyurvedaCouponsContent() {
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">
-                  Use code COUNTNEW10 for 10% OFF | Sep 2026
+                  Use code COUNTNEW10 for 10% OFF | Oct 2026
                   </h2>
 
                 </div>

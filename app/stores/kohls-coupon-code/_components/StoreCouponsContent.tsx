@@ -111,7 +111,7 @@ export default function KohlsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Kohl's Coupon Code and Kohl's Discount Code to save up to 70% OFF on clearance items, enjoy $15 OFF orders over $75, claim 15% OFF your first order, and get up to 50% OFF kitchen appliances. Explore verified Kohl's deals on clothing, footwear, home essentials, beauty, furniture, and more throughout September 2026.
+                      Use the latest Kohl's Coupon Code and Kohl's Discount Code to save up to 70% OFF on clearance items, enjoy $15 OFF orders over $75, claim 15% OFF your first order, and get up to 50% OFF kitchen appliances. Explore verified Kohl's deals on clothing, footwear, home essentials, beauty, furniture, and more throughout October 2026.
                     </p>
                     <a
                       href={STORE_URL}

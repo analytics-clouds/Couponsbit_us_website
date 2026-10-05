@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Lowe's Promo Code: Get 50% OFF Patio + Up to $600 OFF Appliances | Sept 2026",
   },
   description:
-    "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for September 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
+    "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for October 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lowes-promo-code",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/lowes-promo-code",
     title: "Lowe's Promo Code: Get 50% OFF Patio + Up to $600 OFF Appliances | Sept 2026",
     description:
-      "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for September 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
+      "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for October 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lowe's Promo Code: Get 50% OFF Patio + Up to $600 OFF Appliances | Sept 2026",
     description:
-      "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for September 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
+      "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for October 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783184/lowes-logo_q6mswa.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const lowesSchema = {
       url: "https://www.couponsbit.us/stores/lowes-promo-code",
       name: "Lowe's Promo Code: Get 50% OFF Patio + Up to $600 OFF Appliances | Sept 2026",
       description:
-        "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for September 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
+        "Find the latest Lowe's promo code and Lowe's discount code at Maxiku Offers for October 2026. Save up to $600 OFF major appliances, enjoy up to 50% OFF patio furniture, power tools and bathroom essentials, plus FREE same-day delivery on eligible orders.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

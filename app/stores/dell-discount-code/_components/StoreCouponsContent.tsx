@@ -310,7 +310,7 @@ export default function DellCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Dell discount codes and deals in Sep 2026. Get up to $1,700 off gaming PCs, $1,100 off XPS laptops, $750 off Back to School offers, and exclusive student, business, laptop, monitor, and accessory savings.
+                      Save with Dell discount codes and deals in Oct 2026. Get up to $1,700 off gaming PCs, $1,100 off XPS laptops, $750 off Back to School offers, and exclusive student, business, laptop, monitor, and accessory savings.
                     </p>
                     <a
                       href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015"

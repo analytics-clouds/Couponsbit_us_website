@@ -121,7 +121,7 @@ export default function MajorFitnessCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026 to save $250 on the B52 PRO, get $50 OFF as a new member, enjoy the B52 Standard from $1,119.99, and claim a FREE Hoodie & Tee on orders over $2,000. Shop verified deals on home gyms, benches, dumbbells, plates, and accessories.
+                      Use the latest Major Fitness Discount Code and Major Fitness Promo Code for October 2026 to save $250 on the B52 PRO, get $50 OFF as a new member, enjoy the B52 Standard from $1,119.99, and claim a FREE Hoodie & Tee on orders over $2,000. Shop verified deals on home gyms, benches, dumbbells, plates, and accessories.
                     </p>
                     <a
                       href={STORE_URL}

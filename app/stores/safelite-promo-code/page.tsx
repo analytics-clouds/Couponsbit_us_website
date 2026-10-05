@@ -3,10 +3,10 @@ import SafeliteCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Safelite Promo Code: Save on Auto Glass Service | Sep 2026",
+    absolute: "Safelite Promo Code: Save on Auto Glass Service | Oct 2026",
   },
   description:
-    "Find the latest Safelite promo code and coupon offers for Sep 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+    "Find the latest Safelite promo code and coupon offers for Oct 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/safelite-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/safelite-promo-code",
-    title: "Safelite Promo Code: Save on Auto Glass Service | Sep 2026",
+    title: "Safelite Promo Code: Save on Auto Glass Service | Oct 2026",
     description:
-      "Find the latest Safelite promo code and coupon offers for Sep 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+      "Find the latest Safelite promo code and coupon offers for Oct 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Safelite Promo Code: Save on Auto Glass Service | Sep 2026",
+    title: "Safelite Promo Code: Save on Auto Glass Service | Oct 2026",
     description:
-      "Find the latest Safelite promo code and coupon offers for Sep 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+      "Find the latest Safelite promo code and coupon offers for Oct 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/safelite-logo_szoht4.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const safeliteSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/safelite-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/safelite-promo-code",
-      name: "Safelite Promo Code: Save on Auto Glass Service | Sep 2026",
+      name: "Safelite Promo Code: Save on Auto Glass Service | Oct 2026",
       description:
-        "Find the latest Safelite promo code and coupon offers for Sep 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+        "Find the latest Safelite promo code and coupon offers for Oct 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

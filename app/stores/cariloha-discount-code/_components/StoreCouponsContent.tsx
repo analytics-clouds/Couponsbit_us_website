@@ -297,7 +297,7 @@ export default function CarilohaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Cariloha discount codes and offers in Sep 2026. Enjoy up to 50% off bamboo bedding, free shipping on orders over $100, a 100-night trial, and premium bamboo sheets, apparel, towels, pillows, and home essentials.
+                      Save with Cariloha discount codes and offers in Oct 2026. Enjoy up to 50% off bamboo bedding, free shipping on orders over $100, a 100-night trial, and premium bamboo sheets, apparel, towels, pillows, and home essentials.
                     </p>
                     <a
                       href="https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015"

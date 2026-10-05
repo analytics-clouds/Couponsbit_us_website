@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "AliExpress Promo Code: Up to 93% OFF Labour Day Sale + Game Consoles from $18 | Sept 2026",
   },
   description:
-    "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for September 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
+    "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for October 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/aliexpress-promo-code",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/aliexpress-promo-code",
     title: "AliExpress Promo Code: Up to 93% OFF Labour Day Sale + Game Consoles from $18 | Sept 2026",
     description:
-      "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for September 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
+      "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for October 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AliExpress Promo Code: Up to 93% OFF Labour Day Sale + Game Consoles from $18 | Sept 2026",
     description:
-      "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for September 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
+      "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for October 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783184/aliexpress-logo_uued0o.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const aliexpressSchema = {
       url: "https://www.couponsbit.us/stores/aliexpress-promo-code",
       name: "AliExpress Promo Code: Up to 93% OFF Labour Day Sale + Game Consoles from $18 | Sept 2026",
       description:
-        "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for September 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
+        "Find the latest AliExpress promo code and AliExpress discount code at Maxiku Offers for October 2026. Save up to 93% OFF during the Labour Day Sale with free shipping on selected items, plus shop game consoles starting from just $18 with verified deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

@@ -122,7 +122,7 @@ export default function LordhairCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.9k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Lordhair promo codes and discount codes for Sep 2026. Save up to $100 on custom hair systems, claim new customer savings, shop maintenance kits and hair treatments, and enjoy discounts on premium men's and women's hair replacement solutions.
+                      Discover verified Lordhair promo codes and discount codes for Oct 2026. Save up to $100 on custom hair systems, claim new customer savings, shop maintenance kits and hair treatments, and enjoy discounts on premium men's and women's hair replacement solutions.
                     </p>
                     <a
                       href={STORE_URL}

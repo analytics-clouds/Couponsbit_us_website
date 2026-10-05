@@ -121,7 +121,7 @@ export default function LLBeanCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(14.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified L.L.Bean Promo Code and L.L.Bean Discount Code offers to save up to 60% OFF sale styles and up to 50% OFF new markdowns on clothing, jackets, footwear, and outdoor essentials in September 2026.
+                      Discover verified L.L.Bean Promo Code and L.L.Bean Discount Code offers to save up to 60% OFF sale styles and up to 50% OFF new markdowns on clothing, jackets, footwear, and outdoor essentials in October 2026.
                     </p>
                     <a
                       href={STORE_URL}

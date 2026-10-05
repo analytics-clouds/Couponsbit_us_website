@@ -122,7 +122,7 @@ export default function OglmoveCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified OGL Move discount codes and promo codes for Sep 2026. Save up to 13% on Sandwashed lounge sets, get the Off-Shoulder Airy Bra Top for just $55, and enjoy free standard shipping on orders over $69 with the latest verified offers.
+                      Discover verified OGL Move discount codes and promo codes for Oct 2026. Save up to 13% on Sandwashed lounge sets, get the Off-Shoulder Airy Bra Top for just $55, and enjoy free standard shipping on orders over $69 with the latest verified offers.
                     </p>
                     <a
                       href={STORE_URL}

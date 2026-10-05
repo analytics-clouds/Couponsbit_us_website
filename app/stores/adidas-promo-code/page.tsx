@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Adidas Promo Code: Save Up to 50% OFF + Extra 30% OFF Apparel | Sept 2026",
   },
   description:
-    "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for September 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
+    "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for October 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/adidas-promo-code",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/adidas-promo-code",
     title: "Adidas Promo Code: Save Up to 50% OFF + Extra 30% OFF Apparel | Sept 2026",
     description:
-      "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for September 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
+      "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for October 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adidas Promo Code: Save Up to 50% OFF + Extra 30% OFF Apparel | Sept 2026",
     description:
-      "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for September 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
+      "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for October 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788783181/adidas-logo_brulmo.webp"],
     site: "@couponsbit",
   },
@@ -65,7 +65,7 @@ const adidasSchema = {
       url: "https://www.couponsbit.us/stores/adidas-promo-code",
       name: "Adidas Promo Code: Save Up to 50% OFF + Extra 30% OFF Apparel | Sept 2026",
       description:
-        "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for September 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
+        "Find the latest Adidas promo code and Adidas discount code at Maxiku Offers for October 2026. Save up to 50% OFF selected styles, enjoy an extra 30% OFF apparel with code EXTRA, get up to 40% OFF shoes, and shop new arrivals starting from just $15.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

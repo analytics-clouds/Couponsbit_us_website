@@ -3,10 +3,10 @@ import MajorFitnessCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
+    absolute: "Major Fitness Discount Code – $250 OFF + $50 OFF Oct 2026",
   },
   description:
-    "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
+    "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for October 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/major-fitness-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/major-fitness-discount-code",
-    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
+    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Oct 2026",
     description:
-      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
+      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for October 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
+    title: "Major Fitness Discount Code – $250 OFF + $50 OFF Oct 2026",
     description:
-      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
+      "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for October 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/major-fitness_aum53e.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const majorFitnessSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/major-fitness-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/major-fitness-discount-code",
-      name: "Major Fitness Discount Code – $250 OFF + $50 OFF Sep 2026",
+      name: "Major Fitness Discount Code – $250 OFF + $50 OFF Oct 2026",
       description:
-        "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for September 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
+        "Get the latest Major Fitness Discount Code and Major Fitness Promo Code for October 2026. Save $250 on the B52 PRO, get $50 OFF for new members, plus exclusive gym equipment deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

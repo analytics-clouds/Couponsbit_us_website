@@ -122,7 +122,7 @@ export default function JcpenneyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(31.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified JCPenney discount codes and coupon codes for Sep 2026. Save up to 70% on fine jewelry and clearance, enjoy up to $500 OFF Back-to-School deals, shop fall fashion, Levi's apparel, footwear, women's clothing, home essentials, and more.
+                      Discover verified JCPenney discount codes and coupon codes for Oct 2026. Save up to 70% on fine jewelry and clearance, enjoy up to $500 OFF Back-to-School deals, shop fall fashion, Levi's apparel, footwear, women's clothing, home essentials, and more.
                     </p>
                     <a
                       href={STORE_URL}

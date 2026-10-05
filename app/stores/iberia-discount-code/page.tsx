@@ -3,10 +3,10 @@ import IberiaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+    absolute: "Iberia Discount Code: Flights from €87 & Madrid Packages | Oct 2026",
   },
   description:
-    "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
+    "Find the latest Iberia promo code and discount code for Oct 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/iberia-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/iberia-discount-code",
-    title: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+    title: "Iberia Discount Code: Flights from €87 & Madrid Packages | Oct 2026",
     description:
-      "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
+      "Find the latest Iberia promo code and discount code for Oct 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+    title: "Iberia Discount Code: Flights from €87 & Madrid Packages | Oct 2026",
     description:
-      "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
+      "Find the latest Iberia promo code and discount code for Oct 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788248209/iberia-logo_ssnbjg.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const iberiaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/iberia-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/iberia-discount-code",
-      name: "Iberia Discount Code: Flights from €87 & Madrid Packages | Sep 2026",
+      name: "Iberia Discount Code: Flights from €87 & Madrid Packages | Oct 2026",
       description:
-        "Find the latest Iberia promo code and discount code for Sep 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
+        "Find the latest Iberia promo code and discount code for Oct 2026. Book flights from €87, Barcelona from $550, Los Angeles to Barcelona from $865, Madrid flight and hotel packages from $1,019, plus exclusive travel deals to New York, Paris, and Tenerife.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

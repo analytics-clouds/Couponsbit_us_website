@@ -238,7 +238,7 @@ export default function OpenartCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified OpenArt discount codes & promo codes for September 2026. Save 27% on the Wonder Annual Plan — generate 106,000 AI images & 1,300 videos monthly from $175.20/mo. Essential Plan starts from just $14/mo with 4,000 credits.
+                      Get verified OpenArt discount codes & promo codes for October 2026. Save 27% on the Wonder Annual Plan — generate 106,000 AI images & 1,300 videos monthly from $175.20/mo. Essential Plan starts from just $14/mo with 4,000 credits.
                     </p>
                     <a
                       href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015"

@@ -128,7 +128,7 @@ export default function Helium10CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(11.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for September 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months with code ACLOUDS20, get 10% OFF every month for life using code ACLOUDS10, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
+                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for October 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months with code ACLOUDS20, get 10% OFF every month for life using code ACLOUDS10, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
                     </p>
                     <a
                       href={STORE_URL}

@@ -3,10 +3,10 @@ import YasIslandCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+    absolute: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Oct 2026",
   },
   description:
-    "Find the latest Yas Island promo code and discount code for Sep 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
+    "Find the latest Yas Island promo code and discount code for Oct 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/yas-island-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/yas-island-promo-code",
-    title: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+    title: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Oct 2026",
     description:
-      "Find the latest Yas Island promo code and discount code for Sep 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
+      "Find the latest Yas Island promo code and discount code for Oct 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+    title: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Oct 2026",
     description:
-      "Find the latest Yas Island promo code and discount code for Sep 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
+      "Find the latest Yas Island promo code and discount code for Oct 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788248210/yas-island-logo_krotjw.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const yasIslandSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/yas-island-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/yas-island-promo-code",
-      name: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Sep 2026",
+      name: "Yas Island Promo Code: Get 50% OFF + Annual Pass from AED 134 | Oct 2026",
       description:
-        "Find the latest Yas Island promo code and discount code for Sep 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
+        "Find the latest Yas Island promo code and discount code for Oct 2026. Save up to 50% on adventures, get Annual Passes from AED 134/month, enjoy Kids Go FREE packages, 25% OFF dining, 20% OFF CLYMB, and exclusive theme park benefits.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

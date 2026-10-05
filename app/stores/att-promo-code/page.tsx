@@ -3,10 +3,10 @@ import ATTCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Sep 2026",
+    absolute: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Oct 2026",
   },
   description:
-    "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for September 2026.",
+    "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for October 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/att-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/att-promo-code",
-    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Sep 2026",
+    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Oct 2026",
     description:
-      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for September 2026.",
+      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for October 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Sep 2026",
+    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Oct 2026",
     description:
-      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for September 2026.",
+      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/att_logo_xntyq0.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const attSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/att-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/att-promo-code",
-      name: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Sep 2026",
+      name: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Oct 2026",
       description:
-        "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for September 2026.",
+        "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for October 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       datePublished: "2026-06-15",

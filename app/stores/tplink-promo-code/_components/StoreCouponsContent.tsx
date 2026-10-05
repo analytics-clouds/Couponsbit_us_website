@@ -131,7 +131,7 @@ export default function TplinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(31.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified TP-Link promo codes and discount codes for Sep 2026. Save up to 50% on Tapo Anniversary Sale offers, Wi-Fi 7 mesh systems, robot vacuums, 4K solar security cameras, smart home products, and networking devices with the latest deals.
+                      Discover verified TP-Link promo codes and discount codes for Oct 2026. Save up to 50% on Tapo Anniversary Sale offers, Wi-Fi 7 mesh systems, robot vacuums, 4K solar security cameras, smart home products, and networking devices with the latest deals.
                     </p>
                     <a
                       href={STORE_URL}

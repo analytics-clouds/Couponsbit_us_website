@@ -227,7 +227,7 @@ export default function ViaggogoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find verified Viagogo discount codes for September 2026 and secure tickets to the biggest live events. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from just $49. Limited seats — book before they sell out.
+                      Find verified Viagogo discount codes for October 2026 and secure tickets to the biggest live events. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from just $49. Limited seats — book before they sell out.
                     </p>
                     <a
                       href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"

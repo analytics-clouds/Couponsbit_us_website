@@ -250,7 +250,7 @@ export default function FytooCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Fytoo discount codes & promo codes for September 2026. Grab stylish eyewear frames from just $1 in the flash sale & save up to 40% off selected collections. Limited-time Fytoo deals updated daily.
+                      Get verified Fytoo discount codes & promo codes for October 2026. Grab stylish eyewear frames from just $1 in the flash sale & save up to 40% off selected collections. Limited-time Fytoo deals updated daily.
                     </p>
                     <a
                       href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"

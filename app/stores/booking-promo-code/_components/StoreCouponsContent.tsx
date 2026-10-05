@@ -122,7 +122,7 @@ export default function BookingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(61.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find verified Booking promo codes and discount codes for hotels, flights, cruises, and vacation stays. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, and enjoy exclusive travel savings throughout Sep 2026.
+                     Find verified Booking promo codes and discount codes for hotels, flights, cruises, and vacation stays. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, and enjoy exclusive travel savings throughout Oct 2026.
                     </p>
                     <a
                       href={STORE_URL}

@@ -274,7 +274,7 @@ export default function TrainPalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Grab verified TrainPal discount codes for September 2026 — Two Together Railcard saves couples 1/3 on UK rail fares, Family Railcard gives kids 60% off. Railcards from just $44/year. London to Manchester from $91. Perfect for US travelers exploring the UK.
+                      Grab verified TrainPal discount codes for October 2026 — Two Together Railcard saves couples 1/3 on UK rail fares, Family Railcard gives kids 60% off. Railcards from just $44/year. London to Manchester from $91. Perfect for US travelers exploring the UK.
                     </p>
                     <a
                       href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015"

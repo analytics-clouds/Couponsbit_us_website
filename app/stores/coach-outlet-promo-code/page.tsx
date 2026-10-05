@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Coach Outlet Promo Code: 80% on men's outerwear | Sept 2026",
   },
   description:
-    "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in September 2026.",
+    "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in October 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/coach-outlet-promo-code",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/coach-outlet-promo-code",
     title: "Coach Outlet Promo Code: 80% on men's outerwear | Sept 2026",
     description:
-      "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in September 2026.",
+      "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in October 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coach Outlet Promo Code: 80% on men's outerwear | Sept 2026",
     description:
-      "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in September 2026.",
+      "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/coach_outlet_logo_ysdxtk.webp"],
     site: "@couponsbit",
   },
@@ -62,7 +62,7 @@ const coachOutletSchema = {
       url: "https://www.couponsbit.us/stores/coach-outlet-promo-code",
       name: "Coach Outlet Promo Code: 80% on men's outerwear | Sept 2026",
       description:
-        "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in September 2026.",
+        "Coach Outlet Promo Code and Coach Outlet Discount Code to save 80% OFF jackets, 70% OFF wallets, plus 60% OFF handbags in October 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

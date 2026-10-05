@@ -3,7 +3,7 @@ import HokaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
+    absolute: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings October 2026",
   },
   description:
     "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hoka-coupon-code",
-    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
+    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings October 2026",
     description:
       "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
+    title: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings October 2026",
     description:
       "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/hoka-logo_zrq4ot.webp"],
@@ -60,7 +60,7 @@ const hokaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hoka-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/hoka-coupon-code",
-      name: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings September 2026",
+      name: "HOKA Discount Code – Get Up to 50% OFF & 30% Savings October 2026",
       description:
         "Use the latest HOKA Discount Code and HOKA promo Code to save up to 50% on accessories or get 30% OFF Ora Athletic Slides for $39. Shop now.",
       inLanguage: "en-US",

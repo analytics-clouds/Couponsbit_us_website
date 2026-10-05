@@ -3,10 +3,10 @@ import BookingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+    absolute: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Oct 2026",
   },
   description:
-    "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+    "Discover the latest Booking promo code and discount code for Oct 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/booking-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/booking-promo-code",
-    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Oct 2026",
     description:
-      "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+      "Discover the latest Booking promo code and discount code for Oct 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Oct 2026",
     description:
-      "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+      "Discover the latest Booking promo code and discount code for Oct 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const bookingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/booking-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      name: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Sep 2026",
+      name: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Oct 2026",
       description:
-        "Discover the latest Booking promo code and discount code for Sep 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+        "Discover the latest Booking promo code and discount code for Oct 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

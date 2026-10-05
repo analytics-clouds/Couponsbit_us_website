@@ -122,7 +122,7 @@ export default function KrogerDigitalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(37.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                    Discover verified Kroger discount codes and coupon codes for Sep 2026. Save $30 OFF your first order, get free delivery, enjoy $20 OFF pickup, $15 OFF qualifying grocery orders, earn bonus Fuel Points, and save on groceries, household essentials, and seasonal deals.
+                    Discover verified Kroger discount codes and coupon codes for Oct 2026. Save $30 OFF your first order, get free delivery, enjoy $20 OFF pickup, $15 OFF qualifying grocery orders, earn bonus Fuel Points, and save on groceries, household essentials, and seasonal deals.
                     </p>
                     <a
                       href={STORE_URL}

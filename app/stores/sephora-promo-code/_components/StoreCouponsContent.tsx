@@ -121,7 +121,7 @@ export default function SephoraCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Sephora promo codes and coupon offers for Sep 2026. Save on makeup, skincare, and fragrance from top beauty brands.
+                      Discover verified Sephora promo codes and coupon offers for Oct 2026. Save on makeup, skincare, and fragrance from top beauty brands.
                     </p>
                     <a
                       href={STORE_URL}

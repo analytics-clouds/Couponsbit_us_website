@@ -3,7 +3,7 @@ import TyphurCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Typhur Discount Code – Save $140 & Up to 40% OFF September 2026",
+    absolute: "Typhur Discount Code – Save $140 & Up to 40% OFF October 2026",
   },
   description:
     "Use the latest Typhur Discount Code and Typhur promo Code to save $140 on the Dome 2 Bundle or enjoy up to 40% OFF during the Fall Sale. Shop now.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/typhur-discount-code",
-    title: "Typhur Discount Code – Save $140 & Up to 40% OFF September 2026",
+    title: "Typhur Discount Code – Save $140 & Up to 40% OFF October 2026",
     description:
       "Use the latest Typhur Discount Code and Typhur promo Code to save $140 on the Dome 2 Bundle or enjoy up to 40% OFF during the Fall Sale. Shop now.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Typhur Discount Code – Save $140 & Up to 40% OFF September 2026",
+    title: "Typhur Discount Code – Save $140 & Up to 40% OFF October 2026",
     description:
       "Use the latest Typhur Discount Code and Typhur promo Code to save $140 on the Dome 2 Bundle or enjoy up to 40% OFF during the Fall Sale. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1790146959/typhur-logo_abminz.webp"],
@@ -60,7 +60,7 @@ const typhurSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/typhur-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/typhur-discount-code",
-      name: "Typhur Discount Code – Save $140 & Up to 40% OFF September 2026",
+      name: "Typhur Discount Code – Save $140 & Up to 40% OFF October 2026",
       description:
         "Use the latest Typhur Discount Code and Typhur promo Code to save $140 on the Dome 2 Bundle or enjoy up to 40% OFF during the Fall Sale. Shop now.",
       inLanguage: "en-US",

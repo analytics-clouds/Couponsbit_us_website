@@ -121,7 +121,7 @@ export default function IsinwheelCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026 to save up to 50% OFF during the Autumn Ride Sale, get £120 OFF orders over £900, £50 OFF orders over £500, and £20 OFF orders over £300. Shop electric scooters, e-bikes, accessories, and commuter models at verified discounted prices.
+                      Use the latest iSinwheel Discount Code and iSinwheel Promo Code for October 2026 to save up to 50% OFF during the Autumn Ride Sale, get £120 OFF orders over £900, £50 OFF orders over £500, and £20 OFF orders over £300. Shop electric scooters, e-bikes, accessories, and commuter models at verified discounted prices.
                     </p>
                     <a
                       href={STORE_URL}

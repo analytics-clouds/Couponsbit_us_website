@@ -238,7 +238,7 @@ export default function CheapflightsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save on travel with CheapFlights discount codes and deals in Sep 2026. Find flights under $99, earn up to $100 travel credits, get $10 off with promo codes, and explore affordable hotels, cruises, and car rental offers.
+                      Save on travel with CheapFlights discount codes and deals in Oct 2026. Find flights under $99, earn up to $100 travel credits, get $10 off with promo codes, and explore affordable hotels, cruises, and car rental offers.
                     </p>
                     <a
                       href="https://www.anrdoezrs.net/click-100938140-15524726?sid=1015"

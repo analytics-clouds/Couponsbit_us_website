@@ -3,10 +3,10 @@ import IsinwheelCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
+    absolute: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Oct 2026",
   },
   description:
-    "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+    "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for October 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/isinwheel-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
+    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Oct 2026",
     description:
-      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for October 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
+    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Oct 2026",
     description:
-      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for October 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const isinwheelSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-      name: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Sep 2026",
+      name: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Oct 2026",
       description:
-        "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for September 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+        "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for October 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

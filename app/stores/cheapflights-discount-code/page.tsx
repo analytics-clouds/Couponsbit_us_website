@@ -3,10 +3,10 @@ import CheapflightsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Sep 2026",
+    absolute: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Oct 2026",
   },
   description:
-    "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
+    "Find CheapFlights discount codes and travel deals for Oct 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/cheapflights-discount-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/cheapflights-discount-code",
-    title: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Sep 2026",
+    title: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Oct 2026",
     description:
-      "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
+      "Find CheapFlights discount codes and travel deals for Oct 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_AU", "en_CA", "en_IN"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Sep 2026",
+    title: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Oct 2026",
     description:
-      "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
+      "Find CheapFlights discount codes and travel deals for Oct 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783494079/Cheepflights-coupon-code_cbqikz.jpg"],
     site: "@couponsbit",
   },
@@ -65,9 +65,9 @@ const cheapflightsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/cheapflights-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/cheapflights-discount-code",
-      name: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Sep 2026",
+      name: "CheapFlights Discount Code: Flights Under $99 + Earn $100 Credits | Oct 2026",
       description:
-        "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
+        "Find CheapFlights discount codes and travel deals for Oct 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",
@@ -85,7 +85,7 @@ const cheapflightsSchema = {
       "@id": "https://www.couponsbit.us/stores/cheapflights-discount-code#offerlist",
       name: "Cheapflights Coupon Codes & Promo Codes",
       description:
-        "Find CheapFlights discount codes and travel deals for Sep 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
+        "Find CheapFlights discount codes and travel deals for Oct 2026. Book flights under $99, earn up to $100 travel credits, save $10 with promo codes, and discover low-cost hotels, cruises, and car rentals.",
       url: "https://www.couponsbit.us/stores/cheapflights-discount-code",
       numberOfItems: 11,
       itemListElement: [

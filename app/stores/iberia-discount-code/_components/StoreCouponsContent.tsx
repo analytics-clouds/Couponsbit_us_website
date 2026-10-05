@@ -122,7 +122,7 @@ export default function IberiaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(19.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Iberia promo codes and discount codes for Sep 2026. Save on flights to Barcelona, Paris, New York, and Madrid, plus flight and hotel packages, car rental deals, and affordable international airfare with the latest Iberia travel offers.
+                      Discover verified Iberia promo codes and discount codes for Oct 2026. Save on flights to Barcelona, Paris, New York, and Madrid, plus flight and hotel packages, car rental deals, and affordable international airfare with the latest Iberia travel offers.
                     </p>
                     <a
                       href={STORE_URL}

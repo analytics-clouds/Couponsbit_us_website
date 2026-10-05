@@ -3,10 +3,10 @@ import BudgetCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Sep 2026",
+    absolute: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Oct 2026",
   },
   description:
-    "Find the latest Budget promo code and discount code for Sep 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
+    "Find the latest Budget promo code and discount code for Oct 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/budget-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/budget-discount-code",
-    title: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Sep 2026",
+    title: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Oct 2026",
     description:
-      "Find the latest Budget promo code and discount code for Sep 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
+      "Find the latest Budget promo code and discount code for Oct 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Sep 2026",
+    title: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Oct 2026",
     description:
-      "Find the latest Budget promo code and discount code for Sep 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
+      "Find the latest Budget promo code and discount code for Oct 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618847/budget-logo_pv0qhg.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const budgetSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/budget-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/budget-discount-code",
-      name: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Sep 2026",
+      name: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Oct 2026",
       description:
-        "Find the latest Budget promo code and discount code for Sep 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
+        "Find the latest Budget promo code and discount code for Oct 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

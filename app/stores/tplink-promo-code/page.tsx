@@ -3,10 +3,10 @@ import TplinkCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+    absolute: "TP-Link Promo Code & Discount Code : Save Up to 50% | Oct 2026",
   },
   description:
-    "Find the latest TP-Link promo code and discount code for Sep 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
+    "Find the latest TP-Link promo code and discount code for Oct 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/tplink-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/tplink-promo-code",
-    title: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+    title: "TP-Link Promo Code & Discount Code : Save Up to 50% | Oct 2026",
     description:
-      "Find the latest TP-Link promo code and discount code for Sep 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
+      "Find the latest TP-Link promo code and discount code for Oct 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+    title: "TP-Link Promo Code & Discount Code : Save Up to 50% | Oct 2026",
     description:
-      "Find the latest TP-Link promo code and discount code for Sep 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
+      "Find the latest TP-Link promo code and discount code for Oct 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788248210/tp-link-logo_y9efya.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const tplinkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/tplink-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/tplink-promo-code",
-      name: "TP-Link Promo Code & Discount Code : Save Up to 50% | Sep 2026",
+      name: "TP-Link Promo Code & Discount Code : Save Up to 50% | Oct 2026",
       description:
-        "Find the latest TP-Link promo code and discount code for Sep 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
+        "Find the latest TP-Link promo code and discount code for Oct 2026. Save up to 50% on the Tapo Anniversary Sale, Wi-Fi 7 Mesh Systems, robot vacuums, 4K security cameras, smart home devices, and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

@@ -122,7 +122,7 @@ export default function YasIslandCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(22.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Discover verified Yas Island promo codes and discount codes for Sep 2026. Save up to 50% on adventures, buy Annual Passes from AED 134/month, enjoy Kids Go FREE offers, dining discounts, CLYMB savings, and exclusive benefits across Yas Island attractions.
+                     Discover verified Yas Island promo codes and discount codes for Oct 2026. Save up to 50% on adventures, buy Annual Passes from AED 134/month, enjoy Kids Go FREE offers, dining discounts, CLYMB savings, and exclusive benefits across Yas Island attractions.
                     </p>
                     <a
                       href={STORE_URL}

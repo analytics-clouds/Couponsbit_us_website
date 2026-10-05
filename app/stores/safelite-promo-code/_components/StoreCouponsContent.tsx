@@ -110,7 +110,7 @@ export default function SafeliteCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(7.8k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Safelite promo codes and coupon offers for Sep 2026. Save on windshield replacement, repair, and mobile auto glass service.
+                      Discover verified Safelite promo codes and coupon offers for Oct 2026. Save on windshield replacement, repair, and mobile auto glass service.
                     </p>
                     <a
                       href={STORE_URL}

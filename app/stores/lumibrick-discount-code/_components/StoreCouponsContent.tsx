@@ -262,7 +262,7 @@ export default function LumibrickCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Lumibrick discount codes & promo codes for September 2026. Shop premium collectible building sets from just $56.99. Grab the Modular Apartment Building Set with USB-powered lighting from $169.99 — perfect for collectors, builders & display lovers.
+                      Get verified Lumibrick discount codes & promo codes for October 2026. Shop premium collectible building sets from just $56.99. Grab the Modular Apartment Building Set with USB-powered lighting from $169.99 — perfect for collectors, builders & display lovers.
                     </p>
                     <a
                       href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015"

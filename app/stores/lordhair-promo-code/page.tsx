@@ -3,10 +3,10 @@ import LordhairCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Sep 2026",
+    absolute: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Oct 2026",
   },
   description:
-    "Find the latest Lordhair promo code and discount code for Sep 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
+    "Find the latest Lordhair promo code and discount code for Oct 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lordhair-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lordhair-promo-code",
-    title: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Sep 2026",
+    title: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Oct 2026",
     description:
-      "Find the latest Lordhair promo code and discount code for Sep 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
+      "Find the latest Lordhair promo code and discount code for Oct 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Sep 2026",
+    title: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Oct 2026",
     description:
-      "Find the latest Lordhair promo code and discount code for Sep 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
+      "Find the latest Lordhair promo code and discount code for Oct 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788248210/lorthair-logo_g84ojx.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const lordhairSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lordhair-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/lordhair-promo-code",
-      name: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Sep 2026",
+      name: "Lordhair Promo Code & Discount Code : Save Up to $100 OFF | Oct 2026",
       description:
-        "Find the latest Lordhair promo code and discount code for Sep 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
+        "Find the latest Lordhair promo code and discount code for Oct 2026. Save up to $100 on custom hair systems, get $45 OFF selected hair systems, enjoy new customer discounts, and shop maintenance kits, treatments, and accessories for less.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

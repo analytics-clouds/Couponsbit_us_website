@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Costco Promo Code: Save up to $1,200 on the Gaming PC ",
   },
   description:
-    "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in September 2026.",
+    "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in October 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/costco-promo-code",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/costco-promo-code",
     title: "Costco Promo Code: Save up to $1,200 on the Gaming PC ",
     description:
-      "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in September 2026.",
+      "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in October 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Costco Promo Code: Save up to $1,200 on the Gaming PC ",
     description:
-      "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in September 2026.",
+      "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1790238446/costoc-logo_nkxnxl.webp"],
     site: "@couponsbit",
   },
@@ -62,7 +62,7 @@ const costcoSchema = {
       url: "https://www.couponsbit.us/stores/costco-promo-code",
       name: "Costco Promo Code: Save up to $1,200 on the Gaming PC ",
       description:
-        "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in September 2026.",
+        "Get the latest Costco Promo Code and Costco Discount Code to save up to a $1,200 Shop Card, $500 OFF Costco Direct, $250 OFF HP laptops, and $200 OFF appliances in October 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-24",

@@ -231,7 +231,7 @@ export default function DriffleCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(14k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Driffle discount code and verified gaming deals. Get up to 95% OFF on PC games, digital keys, gift cards, and popular titles. Discover updated Driffle offers, instant delivery deals, and exclusive gaming discounts in Sep 2026.
+                      Save more with the latest Driffle discount code and verified gaming deals. Get up to 95% OFF on PC games, digital keys, gift cards, and popular titles. Discover updated Driffle offers, instant delivery deals, and exclusive gaming discounts in Oct 2026.
                     </p>
                     <a
                       href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015"

@@ -238,7 +238,7 @@ export default function QatarHolidaysCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Qatar Holidays discount codes & promo codes for September 2026. Save up to 40% on premium Doha holiday packages from the USA. Maldives beach stays from just $67/night — earn Avios & Qpoints on every eligible booking.
+                      Get verified Qatar Holidays discount codes & promo codes for October 2026. Save up to 40% on premium Doha holiday packages from the USA. Maldives beach stays from just $67/night — earn Avios & Qpoints on every eligible booking.
                     </p>
                     <a
                       href="https://www.tkqlhce.com/click-100938140-15736270?sid=1015"

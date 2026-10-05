@@ -120,7 +120,7 @@ export default function ATTCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(18.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF the new iPhone 18 Pro Max with an eligible trade-in and 50% OFF selected Pixel accessories. Compare verified AT&T phone deals, wireless offers, and exclusive savings to maximize your purchase in September 2026.
+                      Get the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF the new iPhone 18 Pro Max with an eligible trade-in and 50% OFF selected Pixel accessories. Compare verified AT&T phone deals, wireless offers, and exclusive savings to maximize your purchase in October 2026.
                     </p>
                     <a
                       href={STORE_URL}
