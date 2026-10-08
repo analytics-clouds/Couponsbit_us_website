@@ -123,21 +123,51 @@ const ecoflowSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/ecoflow-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does EcoFlow offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "EcoFlow periodically offers promotional codes, discounts, and seasonal promotions on its power stations and solar products. Availability and eligibility can vary." } },
-        { "@type": "Question", name: "Where can I find an EcoFlow discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available EcoFlow discount codes, coupon codes, and promotions before purchasing." } },
-        { "@type": "Question", name: "How do I use an EcoFlow discount code?", acceptedAnswer: { "@type": "Answer", text: "Select your eligible product, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your order." } },
-        { "@type": "Question", name: "Why isn't my EcoFlow discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or promotional periods." } },
-        { "@type": "Question", name: "What does EcoFlow sell?", acceptedAnswer: { "@type": "Answer", text: "EcoFlow sells portable power stations, solar generators, solar panels, and home backup power systems for outdoor use, travel, and emergency preparedness." } },
-        { "@type": "Question", name: "Can EcoFlow power a home during an outage?", acceptedAnswer: { "@type": "Answer", text: "EcoFlow offers home backup systems designed to provide power during outages, with capacity depending on the specific system and household needs." } },
-        { "@type": "Question", name: "Are EcoFlow power stations solar compatible?", acceptedAnswer: { "@type": "Answer", text: "Many EcoFlow power stations support solar charging with compatible EcoFlow solar panels, subject to the specific model." } },
-        { "@type": "Question", name: "Does EcoFlow offer a warranty?", acceptedAnswer: { "@type": "Answer", text: "Warranty coverage varies by product, so check the specific terms listed for your EcoFlow product before purchasing." } },
-        { "@type": "Question", name: "Can I use EcoFlow products for camping and travel?", acceptedAnswer: { "@type": "Answer", text: "Yes, EcoFlow's portable power stations are commonly used for camping, road trips, and other outdoor activities." } },
-        { "@type": "Question", name: "How can I find EcoFlow deals?", acceptedAnswer: { "@type": "Answer", text: "Check CouponsBit for the latest EcoFlow discount code and current offers before purchasing a power station or solar product." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/ecoflow-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I find an EcoFlow Global discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can check the EcoFlow Global page on CouponsBit for currently available discount codes, coupons, and promotional offers. Always review the offer details before applying a code."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I use an EcoFlow Global discount code on every product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some promotional codes may have product exclusions or other conditions. Check the specific terms of the offer to determine whether your selected products qualify."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my EcoFlow Global coupon code working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A coupon may not work if it has expired, has usage restrictions, applies only to selected products, or requires a minimum purchase. Check the promotion's terms before trying another offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does EcoFlow Global offer deals without coupon codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, promotional savings don't always require a code. EcoFlow Global may offer product discounts, bundles, seasonal promotions, or other deals where the reduced price is applied automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should I check before buying from EcoFlow Global?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check CouponsBit before completing your purchase to look for the latest EcoFlow Global discount codes, coupons, and deals. Comparing available offers can help you identify a suitable saving opportunity before checkout."
+      }
+    }
+  ]
+},
   ],
 };
 

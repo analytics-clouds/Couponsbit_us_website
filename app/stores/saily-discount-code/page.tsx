@@ -118,21 +118,51 @@ const sailySchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/saily-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does Saily offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Saily periodically offers promotional codes, discounts, and seasonal promotions on its eSIM data plans. Availability and eligibility can vary." } },
-        { "@type": "Question", name: "Where can I find a Saily discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available Saily discount codes, coupon codes, and promotions before purchasing." } },
-        { "@type": "Question", name: "How do I use a Saily discount code?", acceptedAnswer: { "@type": "Answer", text: "Select your eligible eSIM plan, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your order." } },
-        { "@type": "Question", name: "Why isn't my Saily discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans, regions or promotional periods." } },
-        { "@type": "Question", name: "What is Saily?", acceptedAnswer: { "@type": "Answer", text: "Saily is an eSIM app that provides travel data plans for numerous countries and regions, letting you stay connected while traveling without a physical SIM card." } },
-        { "@type": "Question", name: "How does an eSIM work with Saily?", acceptedAnswer: { "@type": "Answer", text: "Saily's eSIM plans install digitally on compatible devices, so you can activate mobile data for your destination without swapping a physical SIM card." } },
-        { "@type": "Question", name: "Is my phone compatible with Saily?", acceptedAnswer: { "@type": "Answer", text: "Compatibility depends on whether your device supports eSIM technology. Check your phone's specifications or Saily's compatibility list before purchasing a plan." } },
-        { "@type": "Question", name: "Can I use Saily in multiple countries?", acceptedAnswer: { "@type": "Answer", text: "Saily offers both single-country and regional multi-country eSIM data plans, depending on your travel needs." } },
-        { "@type": "Question", name: "Does Saily offer unlimited data plans?", acceptedAnswer: { "@type": "Answer", text: "Saily offers a range of data plan sizes, including higher-data and unlimited options for select destinations, subject to availability." } },
-        { "@type": "Question", name: "How can I find Saily deals?", acceptedAnswer: { "@type": "Answer", text: "Check CouponsBit for the latest Saily discount code and current offers before purchasing an eSIM data plan." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/saily-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I find a Saily discount code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visit the Saily page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible offer and follow its redemption instructions."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I use a Saily discount code on any eSIM plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some promotions may have specific eligibility requirements or apply only to selected plans, destinations, or customers. Check the terms of the individual offer before purchasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why isn't my Saily promo code working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Saily promo code may not work if it has expired, has already reached its usage limit, or has restrictions that don't match your purchase. Review the offer conditions and make sure the code has been entered correctly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Saily offer promotions without a coupon code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Travel eSIM providers can run promotional campaigns where savings are applied automatically. Check CouponsBit for both code-based and direct Saily offers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth checking for a Saily coupon before traveling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Checking for an available coupon before purchasing your eSIM takes little time and can help you avoid paying more than necessary for your mobile data plan."
+      }
+    }
+  ]
+},
   ],
 };
 

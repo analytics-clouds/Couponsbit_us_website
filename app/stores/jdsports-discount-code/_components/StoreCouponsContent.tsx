@@ -22,10 +22,12 @@ import {
   LayoutGrid,
   Search,
   Gift,
-  Globe,
-  Smartphone,
-  Wifi,
-  Plane,
+  Footprints,
+  Shirt,
+  Backpack,
+  HelpCircle,
+  ShoppingBag,
+  Smile,
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
@@ -42,17 +44,17 @@ interface StoreItem {
 }
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp", dealText: "USA eSIM From $4.50", href: "/stores/airalo-discount-code" },
-  { name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", dealText: "Up to 69% OFF", href: "/stores/lyca-mobile-discount-code" },
-  { name: "Jetpac", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp", dealText: "Save Up To 70%", href: "/stores/jetpac-discount-code" },
-  { name: "Klook", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp", dealText: "Up To 50% OFF", href: "/stores/klook-discount-code" },
-  { name: "Apple", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp", dealText: "Up To $150 Gift Card", href: "/stores/apple-discount-code" },
-  { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-discount-code" },
+  { name: "Nike", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp", dealText: "Up To 60% OFF", href: "/stores/nike-discount-code" },
+  { name: "Adidas", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788783181/adidas-logo_brulmo.webp", dealText: "Up To 50% OFF", href: "/stores/adidas-promo-code" },
+  { name: "Halara", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/halara_coupon_code_ujuwnv.webp", dealText: "Up To 80% OFF", href: "/stores/halara-coupon-code" },
+  { name: "Old Navy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp", dealText: "Up To 50% OFF", href: "/stores/old-navy-promo-code" },
+  { name: "Abercrombie", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp", dealText: "Up To 50% OFF", href: "/stores/abercrombie-discount-code" },
+  { name: "LL Bean", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/llbean_logo_xsbw4x.webp", dealText: "Up To 60% OFF", href: "/stores/llbean-promo-code" },
 ];
 
-const STORE_URL = "https://performance.gotrackier.com/click?campaign_id=5006&pub_id=1015";
+const STORE_URL = "https://jdsportsindonesia.pxf.io/c/4303217/2317816/29551?subId1=1015";
 
-export default function SailyContent() {
+export default function JDSportsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
@@ -86,7 +88,7 @@ export default function SailyContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Saily</span>
+              <span className="text-black font-extrabold">JD Sports</span>
             </nav>
           </div>
         </div>
@@ -99,21 +101,21 @@ export default function SailyContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp" alt="Saily" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1791446502/jD-logo_lfuzxu.webp" alt="JD Sports" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Saily Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">JD Sports Discount Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-40" />
                       </div>
-                      <span className="text-black font-black text-sm">4.6</span>
-                      <span className="text-gray-600 font-bold text-sm">(1,400 Ratings)</span>
+                      <span className="text-black font-black text-sm">4.5</span>
+                      <span className="text-gray-600 font-bold text-sm">(4,200 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover the latest Saily Discount Code offers and verified Saily Coupon Code deals. Get 15% OFF your first student data plan, save 5% on all eligible Saily plans with code Saily5, or earn up to US$10 in referral credits through the Refer a Friend program. You can also choose the Saily Ultra plan with unlimited data and premium travel benefits or get a US phone number for just US$1.99/month. Compare verified offers and enjoy affordable, hassle-free connectivity wherever you travel.
+                      JD Sports is a sneaker and sportswear retailer carrying trainers, apparel, and accessories from a wide range of athletic and streetwear brands.
                     </p>
                     <a
                       href={STORE_URL}
@@ -131,7 +133,7 @@ export default function SailyContent() {
                   {[
                     { icon: Tag, val: "6", label: "Offers" },
                     { icon: Percent, val: "6", label: "Deals" },
-                    { icon: Users, val: "20K+", label: "Shoppers" },
+                    { icon: Users, val: "35K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
@@ -149,7 +151,7 @@ export default function SailyContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp" alt="Saily Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1791446502/jD-logo_lfuzxu.webp" alt="JD Sports Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -186,16 +188,16 @@ export default function SailyContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Saily Discount Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">JD Sports Discount Codes & Offers</h2>
                 </div>
 
                 {[
-                  { label: "PREMIUM", value: "Unlimited", title: "Saily Ultra – Premium Travel Plan with Unlimited Data", desc: "Get unlimited international data with the Saily Ultra plan.", bullets: ["Enjoy airport lounge access, faster security and check-in benefits.", "Get premium online protection with tools like NordVPN.", "Choose Saily Ultra for an all-in-one premium travel experience."] },
-                  { label: "SAVE", value: "15%", title: "Saily Student Discount – Get 15% Off Your First Data Plan", desc: "Students can get 15% off their first Saily data plan.", bullets: ["Enjoy reliable mobile data across 200+ destinations.", "Stay connected while traveling without expensive roaming fees.", "Save more on your international eSIM data with Saily."] },
-                  { label: "UP TO", value: "$10", title: "Saily Refer a Friend – Earn Up to US$10 in Credits", desc: "Refer friends to Saily and earn Saily credits for every successful referral.", bullets: ["Both users can get US$5 with standard plans.", "Earn up to US$10 when your friend chooses Saily Ultra.", "Share Saily with friends and get rewarded with travel credits."] },
-                  { label: "ONLY", value: "$1.99", title: "Saily US Phone Number – Get a Number for US$1.99/Month", desc: "Get a US phone number directly through the Saily eSIM app.", bullets: ["Add the number in just a few taps and pair it with mobile data.", "Stay connected with a US number while using your Saily eSIM.", "Get the service for just US$1.99 per month."] },
-                  { label: "ONLY", value: "$30", title: "Saily Voucher – Buy US$30 Credits for 12 Months", desc: "Buy a US$30 Saily voucher for future travel and data needs.", bullets: ["Use your voucher credits anytime within 12 months.", "Get US$30 worth of Saily credits for US$30.", "Earn 3% back in Saily credits with the voucher purchase."] },
-                  { label: "SAVE", value: "5%", title: "Saily Discount Code – Get 5% Off All Saily Plans", desc: "Get 5% off all eligible Saily plans with the discount code Saily5.", bullets: ["Choose your travel destination and apply the discount at checkout.", "Save on Saily eSIM data plans for international travel.", "Use Saily5 to enjoy your discount when purchasing a plan."] },
+                  { label: "SAVE", value: "New", title: "JD Sports – New Customer Offer", desc: "Sign up and check for savings on your first JD Sports order.", bullets: ["Browse sneakers and sportswear before purchasing.", "Compare sizes and styles across brands.", "Check the offer terms before confirming your purchase."] },
+                  { label: "SAVE", value: "%", title: "JD Sports – Percentage Off Sitewide", desc: "Check for a JD Sports discount code offering a percentage off eligible products.", bullets: ["Applies to select sneakers and apparel.", "Enter the code at checkout if prompted.", "Confirm the discount is applied before purchasing."] },
+                  { label: "SAVE", value: "Sneaker", title: "JD Sports – Sneaker Deal", desc: "Save on selected sneakers and trainers at JD Sports.", bullets: ["Availability varies by brand and size.", "Check for new releases and restocks.", "Confirm the offer terms before purchasing."] },
+                  { label: "FREE", value: "Shipping", title: "JD Sports – Free Shipping Offer", desc: "Check for free shipping on qualifying JD Sports orders.", bullets: ["May require a minimum order amount.", "Availability varies by item.", "Check the offer terms at checkout."] },
+                  { label: "SAVE", value: "Bundle", title: "JD Sports – Sportswear Bundle Deal", desc: "Save on sportswear and accessory bundles at JD Sports.", bullets: ["Bundles can offer better value than buying separately.", "Check available bundle combinations.", "Confirm the offer terms before purchasing."] },
+                  { label: "SAVE", value: "Seasonal", title: "JD Sports – Seasonal Clearance Sale", desc: "Check for seasonal clearance pricing on select JD Sports products.", bullets: ["Availability varies by season and location.", "Items may be limited in stock.", "Check the website regularly for new offers."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -229,7 +231,7 @@ export default function SailyContent() {
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Saily: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop JD Sports: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -260,20 +262,19 @@ export default function SailyContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">What Is Saily?</h3>
+                  <h3 className="text-black font-black text-lg mb-6">What Is JD Sports?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Saily is a global eSIM service designed for travelers who want convenient mobile data while visiting other countries. Instead of purchasing a physical SIM card after arriving at your destination, users can purchase an eSIM plan online and install it on a compatible device.
+                    JD Sports is a major sports fashion retailer known for its selection of sneakers, athletic footwear, clothing, and accessories. The retailer brings together products from well-known sportswear and lifestyle brands, making it a popular destination for shoppers looking for both performance-focused gear and everyday streetwear.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Saily offers mobile data plans across numerous destinations, making it useful for international travelers who need internet access for navigation, messaging, travel bookings, social media, and other everyday online activities.
+                    Its range covers products for men, women, and children, with categories spanning footwear, clothing, sports accessories, and fashion essentials. Shoppers can find trainers and sneakers alongside tracksuits, T-shirts, hoodies, jackets, leggings, shorts, and other activewear.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The service is particularly convenient for people who want to arrange their connectivity before leaving home. Once the eSIM is installed and activated according to the plan's requirements, travelers can use mobile data without needing to visit a local telecom store or swap their physical SIM.
-
+                    JD Sports is also known for its focus on sports-inspired fashion, giving customers the option to combine athletic styles with everyday outfits.
                   </p>
-                  
+                 
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
@@ -283,11 +284,11 @@ export default function SailyContent() {
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
                    <div className="space-y-1">
                       {[
-                        { icon: Globe, name: "Regional eSIM Plans", count: "40+", color: "text-blue-500", href: "/categories/travel" },
-                        { icon: Wifi, name: "Unlimited Data Plans", count: "20+", color: "text-purple-500", href: "/categories/travel" },
-                        { icon: Smartphone, name: "Single-Country Plans", count: "60+", color: "text-pink-500", href: "/categories/travel" },
-                        { icon: Percent, name: "Promo Offers", count: "15+", color: "text-teal-500", href: "/categories/travel" },
-                        { icon: Plane, name: "Travel Essentials", count: "35+", color: "text-orange-500", href: "/categories/travel" },
+                        { icon: Footprints, name: "Sneakers & Trainers", count: "150+", color: "text-blue-500", href: "/categories/fashion" },
+                        { icon: Shirt, name: "Sportswear & Apparel", count: "90+", color: "text-purple-500", href: "/categories/fashion" },
+                        { icon: Backpack, name: "Bags & Accessories", count: "40+", color: "text-pink-500", href: "/categories/fashion" },
+                        { icon: Percent, name: "Clearance & Sale", count: "60+", color: "text-teal-500", href: "/categories/fashion" },
+                        { icon: Gift, name: "New Releases", count: "25+", color: "text-orange-500", href: "/categories/fashion" },
                       ].map((cat, i) => (
                         <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
                           <div className="flex items-center gap-3">
@@ -303,44 +304,43 @@ export default function SailyContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    How to Use a Saily Discount Code
+    How to Use a JD Sports Discount Code
   </h3>
   <div className="space-y-6">
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      If you find an eligible Saily discount code on CouponsBit, applying it is generally simple.
+      Found a suitable JD Sports discount code on CouponsBit? Follow these general steps:
     </p>
     <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
       <p>
         <strong className="text-black font-black block mb-1">Visit CouponsBit:</strong>
-        Open the Saily page on CouponsBit and check the available offers.
+        Open the JD Sports page on CouponsBit and review the available offers.
       </p>
       <p>
         <strong className="text-black font-black block mb-1">Choose your offer:</strong>
-        Select the discount code or promotion that suits your purchase.
+        Select the coupon or promotional deal that suits your purchase.
       </p>
       <p>
         <strong className="text-black font-black block mb-1">Copy the code:</strong>
-        If the offer requires a promotional code, copy it before heading to Saily.
+        If the promotion requires a code, copy it from CouponsBit.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Choose your destination:</strong>
-        Browse Saily's available eSIM plans and select the destination you need.
+        <strong className="text-black font-black block mb-1">Shop at JD Sports:</strong>
+        Visit JD Sports and add your chosen sneakers, clothing, or accessories to your basket.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Enter the code:</strong>
-        Apply the promotional code during the relevant stage of the purchase process.
+        <strong className="text-black font-black block mb-1">Apply the code:</strong>
+        Enter the promotional code in the relevant field during checkout.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Complete your purchase:</strong>
-        Confirm that the offer has been applied and finish your order.
+        <strong className="text-black font-black block mb-1">Check your total:</strong>
+        Confirm that the discount has been applied before completing your order.
       </p>
     </div>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Always check the terms associated with a coupon before using it. If a code doesn't apply, it may have expired or may be restricted to particular customers, plans, or destinations.
+      If a code doesn't work, check its expiry date and eligibility requirements. It may also be restricted to particular products, brands, or customers.
     </p>
   </div>
 </div>
-
               </div>
             </div>
           </div>
@@ -372,47 +372,15 @@ export default function SailyContent() {
         </section>
 
         {/* SEO Text Section */}
-        <section className="py-24 bg-[#f5f5f5]">
+       <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Saily Discount Code, Coupons & Deals
+          JD Sports Discount Code, Coupons & Deals
         </h2>
-
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["Saily Ultra Premium Plan", "Unlimited Data", "All Users", "Includes airport lounge access, fast-track security, and NordVPN protection", "Saily Ultra Plans"],
-        ["Saily Student Discount", "15% OFF", "Students", "Valid on first Saily data plan across 200+ destinations", "First Data Orders"],
-        ["Refer a Friend Reward", "Up to US$10 Credits", "All Users", "Earn $5 for standard plans or up to $10 when friends choose Saily Ultra", "Referral Program"],
-        ["Saily US Phone Number", "$1.99 / month", "All Users", "Add directly via eSIM app and pair seamlessly with mobile data", "US Phone Service"],
-        ["Saily Travel Voucher", "$30 Voucher", "All Users", "Credits valid for 12 months; earn 3% back in Saily credits on purchase", "Voucher Purchases"],
-        ["Storewide Saily Discount", "5% OFF", "All Users", "Use coupon code Saily5 at checkout on eligible international data plans", "All Saily Plans"]
-      ].map((row, i, arr) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
 
         <div
           className={cn(
@@ -421,25 +389,28 @@ export default function SailyContent() {
           )}
         >
           <p>
-            Looking for a Saily discount code to save on your next eSIM plan? CouponsBit helps you discover the latest Saily discount codes, coupons, promotional offers, and deals before you purchase. Whether you're planning an international holiday, business trip, or longer stay abroad, a Saily eSIM can help you stay connected without relying on expensive traditional roaming plans.
+            Looking for a JD Sports discount code to save on your next pair of sneakers, sportswear, or activewear? CouponsBit helps shoppers find the latest JD Sports discount codes, promo codes, coupons, and deals before placing an order. Whether you're refreshing your everyday wardrobe, picking up new trainers, or looking for sportswear from popular brands, checking for a deal before checkout can help you shop for less.
           </p>
           <p>
-            Before buying your next travel eSIM, check CouponsBit for available Saily offers and see if you can get extra savings on your plan.
+            Before you complete your JD Sports purchase, visit CouponsBit to check the latest available offers and find a promotion that matches your shopping needs.
           </p>
 
           <div className="space-y-8">
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Save More on Your Next Saily Plan
+                Tips for Saving More at JD Sports
               </h3>
               <p>
-                A travel eSIM may seem like a small part of your overall holiday budget, but checking for an available promotion can make your purchase more cost-effective. This becomes even more useful if you're purchasing connectivity for several trips or choosing plans for longer stays.
+                Finding a coupon is only one way to make your JD Sports shopping more budget-friendly. Before buying, compare the available promotions and check whether the products you're interested in are already included in a sale.
               </p>
               <p>
-                CouponsBit gives you a convenient place to check for Saily discount codes before you buy. By comparing available promotions and reviewing their conditions, you can choose an offer that works for your travel plans.
+                It's also worth considering whether a promotion applies to your entire basket or only selected items. Reading the terms can help you understand the actual saving before you place your order.
               </p>
               <p>
-                Whether you're traveling for leisure, work, study, or an extended international trip, checking for a Saily coupon before checkout takes only a moment and could help you spend less.
+                If you're shopping for multiple products, adding everything you need to your basket first can also make it easier to determine which available offer provides the best value.
+              </p>
+              <p>
+                Most importantly, check CouponsBit before checkout for the latest JD Sports discount code, deals, and promotional offers.
               </p>
             </div>
 
@@ -448,23 +419,23 @@ export default function SailyContent() {
   {/* Hero / Header Section */}
   <section className="text-center space-y-4 max-w-3xl mx-auto">
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
-      Saily Travel eSIM Guide
+      JD Sports Shopping Guide
     </Badge>
     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
-      Find a Saily Discount Code on CouponsBit
+      Find a JD Sports Discount Code on CouponsBit
     </h1>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
-        Travel expenses can quickly add up when you're booking flights, accommodation, activities, and transportation. Saving on connectivity is therefore another simple way to manage your travel budget.
+        Sportswear and branded sneakers can be a significant purchase, especially when you're shopping for multiple items. Finding a JD Sports discount code before checkout can give you an opportunity to reduce your total spending when an eligible offer is available.
       </p>
       <p>
-        That's where a Saily discount code can help. CouponsBit brings available Saily coupons and promotional offers together, making it easier to check for potential savings before purchasing your eSIM plan.
+        CouponsBit makes it easier to check for current JD Sports coupons and promotions in one place. Before purchasing, head to the JD Sports page on CouponsBit and review the available offers.
       </p>
       <p>
-        Instead of buying immediately, visit the Saily page on CouponsBit and check the available promotions. Select an offer that matches your requirements, review its conditions, and follow the instructions to redeem the saving.
+        You may find a promotional code that can be entered at checkout or a deal that applies automatically to eligible products. Make sure you read the offer details carefully, as individual promotions can have different requirements.
       </p>
       <p>
-        Because promotional campaigns can change, it's always worth checking the latest available Saily offers before completing your purchase.
+        Checking CouponsBit before shopping can also help you avoid missing a limited-time promotion.
       </p>
     </div>
   </section>
@@ -474,25 +445,26 @@ export default function SailyContent() {
     <Card className="border-slate-200 shadow-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <Tag className="w-6 h-6" /> Saily Coupons, Promo Codes &amp; Offers
+          <Tag className="w-6 h-6" /> JD Sports Coupons, Promo Codes &amp; Offers
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          Saily savings aren't limited to traditional coupon codes. Depending on the current promotion, shoppers may find different types of offers that can reduce the cost of an eSIM plan or provide additional value.
+          JD Sports promotions can take different forms. Depending on the current campaign, shoppers may find discounts on selected products, promotional codes, seasonal offers, or other opportunities to save.
         </p>
         <div className="space-y-2">
           <p className="font-semibold text-gray-900">CouponsBit can help you look for:</p>
           <div className="flex flex-wrap gap-2">
             {[
-              "Saily discount codes",
-              "Saily promo codes",
-              "Saily coupons",
-              "Saily promotional offers",
-              "Saily travel deals",
-              "Limited-time Saily offers",
-              "New-user promotions",
-              "eSIM plan discounts"
+              "JD Sports discount codes",
+              "JD Sports promo codes",
+              "JD Sports coupons",
+              "JD Sports promotional offers",
+              "Sneaker and footwear deals",
+              "Sportswear offers",
+              "Seasonal sales",
+              "Selected-brand promotions",
+              "Limited-time shopping deals"
             ].map((item, index) => (
               <Badge key={index} variant="outline" className="bg-slate-50 border-slate-300 text-slate-700 py-1">
                 {item}
@@ -501,32 +473,95 @@ export default function SailyContent() {
           </div>
         </div>
         <p>
-          The availability and conditions of individual promotions can vary. Some offers may be intended for new customers, while others may apply to particular plans, destinations, or promotional periods.
+          Not every offer will apply to every product. Some promotions may have exclusions for selected brands, products, sale items, or other categories. Always check the terms before completing your purchase.
         </p>
       </CardContent>
     </Card>
   </section>
 
-  {/* Why Use a Saily eSIM? */}
+  {/* What Can You Shop at JD Sports? */}
+  <section className="space-y-6">
+    <div className="text-center space-y-2">
+      <h2 className="text-2xl font-bold text-[#056bfa]">What Can You Shop at JD Sports?</h2>
+      <p className="text-gray-600">JD Sports offers a broad selection of sports fashion and lifestyle products, making it useful for shoppers with different needs.</p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Sneakers and Trainers */}
+      <Card className="hover:shadow-md transition-shadow duration-200">
+        <CardHeader>
+          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+            <Footprints className="w-5 h-5 text-[#056bfa]" /> Sneakers and Trainers
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+          <p>
+            Footwear is one of JD Sports' key categories. Shoppers can browse sneakers and trainers designed for sports, casual wear, running, and everyday use. The selection includes popular styles from major sports and lifestyle brands.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Sportswear and Activewear */}
+      <Card className="hover:shadow-md transition-shadow duration-200">
+        <CardHeader>
+          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+            <Shirt className="w-5 h-5 text-[#056bfa]" /> Sportswear and Activewear
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+          <p>
+            You can also find clothing designed for workouts, training, and active lifestyles. Depending on the collection, this can include T-shirts, shorts, leggings, tracksuits, sweatshirts, hoodies, and performance-focused clothing.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Kids' Clothing and Footwear */}
+      <Card className="hover:shadow-md transition-shadow duration-200">
+        <CardHeader>
+          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+            <Smile className="w-5 h-5 text-[#056bfa]" /> Kids' Clothing and Footwear
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+          <p>
+            JD Sports also offers options for younger shoppers, including children's trainers, clothing, and sportswear. This makes it possible to shop for different members of the family in one place.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Accessories */}
+      <Card className="hover:shadow-md transition-shadow duration-200">
+        <CardHeader>
+          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+            <ShoppingBag className="w-5 h-5 text-[#056bfa]" /> Accessories
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+          <p>
+            Alongside footwear and apparel, shoppers can find sports and lifestyle accessories that complement their outfits and training gear.
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+  </section>
+
+  {/* Why Check for a JD Sports Promo Code? */}
   <section>
     <Card className="border-slate-200 shadow-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <Globe className="w-6 h-6" /> Why Use a Saily eSIM?
+          <HelpCircle className="w-6 h-6" /> Why Check for a JD Sports Promo Code?
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          One of the biggest advantages of an eSIM is convenience. Travelers don't need to wait until they reach their destination to find a local SIM card. With Saily, users can arrange their mobile data plan in advance and avoid carrying an additional physical SIM.
+          If you're already planning to purchase sneakers or sportswear, checking for a promotion before checkout is a simple way to look for additional value.
         </p>
         <p>
-          An eSIM can also make international travel simpler for people who want to keep their primary SIM active while using another connection for mobile data, depending on their device and carrier configuration.
+          A JD Sports promo code may be particularly useful when you're purchasing more than one item or shopping during a promotional period. Even when you don't find a suitable coupon code, checking current deals can help you identify products that are already discounted.
         </p>
         <p>
-          Saily's destination-based plans allow travelers to choose connectivity based on where they're going. This can be particularly useful for people visiting multiple countries or taking frequent international trips.
-        </p>
-        <p>
-          From checking maps and translating languages to contacting accommodation providers and sharing travel updates, reliable mobile data has become an important part of modern travel.
+          CouponsBit gives shoppers a convenient starting point for this process. Rather than searching across multiple websites for JD Sports offers, you can check available promotions before heading to checkout.
         </p>
       </CardContent>
     </Card>
@@ -536,13 +571,13 @@ export default function SailyContent() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Check CouponsBit Before Buying Saily
+                Save on Your Next JD Sports Purchase With CouponsBit
               </h3>
               <p>
-                Staying connected abroad doesn't have to mean dealing with physical SIM cards or unexpected roaming costs. Saily gives travelers a convenient way to arrange mobile data through an eSIM, while CouponsBit helps you look for opportunities to save on your purchase.
+                Whether you're looking for the latest sneakers, sportswear, activewear, or accessories, JD Sports offers plenty of options for sports and lifestyle shopping. And before you pay full price, it's worth checking whether an eligible promotion can lower your total.
               </p>
               <p>
-                Before selecting your next Saily plan, check CouponsBit for the latest Saily discount code, coupons, promo codes, and offers. Review the available deals, choose the one that fits your needs, and make your next travel connection a little more budget-friendly.
+                Visit CouponsBit before your next JD Sports purchase to find the latest JD Sports discount code, coupons, promo codes, and deals. Compare the available offers, check their terms, and choose the one that works best for your shopping basket.
               </p>
             </div>
           </div>
@@ -568,28 +603,28 @@ export default function SailyContent() {
         {/* Accordion FAQ Section */}
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Saily Discount Codes
+            Frequently Asked Questions About JD Sports Discount Codes
           </h3>
           {[
             {
-              q: "How can I find a Saily discount code?",
-              a: "Visit the Saily page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible offer and follow its redemption instructions.",
+              q: "How can I find a JD Sports discount code?",
+              a: "Visit the JD Sports page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible deal and follow its redemption instructions.",
             },
             {
-              q: "Can I use a Saily discount code on any eSIM plan?",
-              a: "Not necessarily. Some promotions may have specific eligibility requirements or apply only to selected plans, destinations, or customers. Check the terms of the individual offer before purchasing.",
+              q: "Can I use a JD Sports discount code on sale items?",
+              a: "This depends on the individual promotion. Some coupon codes may exclude sale products or selected brands, while others may have broader eligibility. Check the terms of the offer before using it.",
             },
             {
-              q: "Why isn't my Saily promo code working?",
-              a: "A Saily promo code may not work if it has expired, has already reached its usage limit, or has restrictions that don't match your purchase. Review the offer conditions and make sure the code has been entered correctly.",
+              q: "Why isn't my JD Sports promo code working?",
+              a: "A promo code may not work if it has expired, has usage restrictions, applies only to selected products, or isn't valid for your order. Check the promotion's conditions and make sure the code has been entered correctly.",
             },
             {
-              q: "Does Saily offer promotions without a coupon code?",
-              a: "Yes. Travel eSIM providers can run promotional campaigns where savings are applied automatically. Check CouponsBit for both code-based and direct Saily offers.",
+              q: "Does JD Sports offer deals without a discount code?",
+              a: "Yes. Shoppers may find sale products and other promotional offers where the discount is already reflected in the listed price and no code is required.",
             },
             {
-              q: "Is it worth checking for a Saily coupon before traveling?",
-              a: "Yes. Checking for an available coupon before purchasing your eSIM takes little time and can help you avoid paying more than necessary for your mobile data plan.",
+              q: "Should I check CouponsBit before shopping at JD Sports?",
+              a: "Yes. Checking CouponsBit before checkout lets you see whether a JD Sports discount code or another promotional offer is available for your purchase.",
             },
           ].map((faq, i) => (
             <div
@@ -637,18 +672,18 @@ export default function SailyContent() {
         {/* Tag Cloud */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular Saily Searches
+            Popular JD Sports Searches
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {[
-              "Saily Discount Code",
-              "Travel eSIM Coupons",
-              "International Data Plans",
-              "Global eSIM Deals",
-              "Saily Promo Code",
-              "CouponsBit Saily",
-              "Cheap Mobile Data",
-              "No Roaming Fees",
+              "JD Sports Promo Code",
+              "Sneakers Discount",
+              "Nike Trainer Deals",
+              "Adidas Activewear Offers",
+              "JD Sports Clearance Sale",
+              "CouponsBit JD Sports",
+              "Sportswear Coupons",
+              "Free Delivery Offers",
             ].map((tag) => (
               <span
                 key={tag}
@@ -663,25 +698,25 @@ export default function SailyContent() {
         {/* Sidebar Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top Saily Deals
+            Today's Top JD Sports Deals
           </h3>
           <div className="space-y-6">
             {[
               {
-                heading: "FIRST TRAVEL ESIM DISCOUNT",
-                sub: "Exclusive Discount For New Saily App Users",
+                heading: "STUDENT & YOUTH DISCOUNT",
+                sub: "Exclusive Extra Savings For Eligible Students",
               },
               {
-                heading: "GLOBAL DATA BUNDLES",
-                sub: "Save Big On Multi-Country Travel Packages",
+                heading: "JD SPORTS CLEARANCE SALE",
+                sub: "Up To 50% Off Top Brand Trainers & Apparel",
               },
               {
-                heading: "REGIONAL DATA PROMOTIONS",
-                sub: "Special Rates On Europe, Asia & USA Data Plans",
+                heading: "LIMITED-TIME FOOTWEAR DEALS",
+                sub: "Discounts On Nike, Adidas, Jordan & New Balance",
               },
               {
-                heading: "LONG-STAY TRAVEL OFFERS",
-                sub: "Discounted Monthly Data Packages For Digital Nomads",
+                heading: "FREE DELIVERY OFFERS",
+                sub: "Standard Free Delivery On Qualifying Orders",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
@@ -697,7 +732,7 @@ export default function SailyContent() {
                   </p>
                 </div>
                 <a
-                  href="https://saily.com"
+                  href="https://www.jdsports.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Get deal: ${deal.heading}`}
@@ -714,8 +749,6 @@ export default function SailyContent() {
     </div>
   </div>
 </section>
-
-
 
       </main>
 

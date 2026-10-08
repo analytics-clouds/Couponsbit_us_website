@@ -119,21 +119,59 @@ const youfibreSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/youfibre-discount-code#faq",
-      "mainEntity": [
-        { "@type": "Question", name: "Does YouFibre offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "YouFibre periodically offers promotional codes, discounts, and seasonal promotions on its broadband plans. Availability and eligibility can vary by location." } },
-        { "@type": "Question", name: "Where can I find a YouFibre discount code?", acceptedAnswer: { "@type": "Answer", text: "You can check CouponsBit for available YouFibre discount codes, coupon codes, and promotions before signing up." } },
-        { "@type": "Question", name: "How do I use a YouFibre discount code?", acceptedAnswer: { "@type": "Answer", text: "Select your eligible broadband plan, proceed through sign-up, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your order." } },
-        { "@type": "Question", name: "Why isn't my YouFibre discount code working?", acceptedAnswer: { "@type": "Answer", text: "The promotion may have expired, or your address may not meet the offer's requirements. Some offers can be limited to selected plans, areas or promotional periods." } },
-        { "@type": "Question", name: "What is YouFibre?", acceptedAnswer: { "@type": "Answer", text: "YouFibre is a full-fibre broadband provider that builds its own fibre network to offer home internet plans in eligible UK areas." } },
-        { "@type": "Question", name: "Is YouFibre available at my address?", acceptedAnswer: { "@type": "Answer", text: "Availability depends on whether YouFibre's network has reached your area. Check your address on the YouFibre website before signing up." } },
-        { "@type": "Question", name: "Does YouFibre require a contract?", acceptedAnswer: { "@type": "Answer", text: "Contract lengths and terms vary by plan, so check the specific details for your chosen YouFibre plan before signing up." } },
-        { "@type": "Question", name: "Does YouFibre offer different speed plans?", acceptedAnswer: { "@type": "Answer", text: "Yes, YouFibre offers a range of full-fibre broadband speeds, so you can choose a plan that matches your household's needs." } },
-        { "@type": "Question", name: "Can I bundle YouFibre with other services?", acceptedAnswer: { "@type": "Answer", text: "Bundle options can vary over time, so check YouFibre's current plans for any available bundle offers." } },
-        { "@type": "Question", name: "How can I find YouFibre deals?", acceptedAnswer: { "@type": "Answer", text: "Check CouponsBit for the latest YouFibre discount code and current offers before signing up for a broadband plan." } },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/youfibre-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does YouFibre offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YouFibre runs different promotions and offers, although availability and terms can change. Check CouponsBit for current YouFibre discount codes and deals before signing up."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I use a YouFibre discount code on any broadband plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Promotional codes can have their own eligibility conditions. Check the specific terms of the offer before completing your order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is YouFibre available throughout the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YouFibre's Full Fibre network is available in selected areas rather than across every UK postcode. You can check availability by entering your postcode on the YouFibre website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does YouFibre offer fast broadband for gaming and streaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. YouFibre offers multiple speed options, including plans reaching up to 8,000 Mbps in eligible locations. The provider also offers Wi-Fi 7 routers designed to support high-speed connections and multiple connected devices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is YouMesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YouMesh is YouFibre's mesh Wi-Fi option. It adds Wi-Fi boosters around your home to help extend coverage, particularly in areas where walls, extensions or the layout of the property affect the signal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does YouFibre have offers for existing customers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YouFibre's loyalty promise says customers nearing the end of their contract can access the same offers available to new customers, subject to the applicable terms."
+      }
+    }
+  ]
+},
   ],
 };
 

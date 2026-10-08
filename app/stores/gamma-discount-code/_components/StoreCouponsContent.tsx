@@ -22,10 +22,12 @@ import {
   LayoutGrid,
   Search,
   Gift,
+  Presentation,
+  FileText,
   Globe,
-  Smartphone,
-  Wifi,
-  Plane,
+  Users2,
+  HelpCircle,
+  Sparkles,
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
@@ -42,17 +44,17 @@ interface StoreItem {
 }
 
 const RELATED_STORES: StoreItem[] = [
-  { name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp", dealText: "USA eSIM From $4.50", href: "/stores/airalo-discount-code" },
-  { name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp", dealText: "Up to 69% OFF", href: "/stores/lyca-mobile-discount-code" },
-  { name: "Jetpac", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp", dealText: "Save Up To 70%", href: "/stores/jetpac-discount-code" },
-  { name: "Klook", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp", dealText: "Up To 50% OFF", href: "/stores/klook-discount-code" },
-  { name: "Apple", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp", dealText: "Up To $150 Gift Card", href: "/stores/apple-discount-code" },
-  { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-discount-code" },
+  { name: "Sintra", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp", dealText: "Up to 70% OFF", href: "/stores/sintra-discount-code" },
+  { name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", dealText: "Up to 27% OFF", href: "/stores/openart-discount-code" },
+  { name: "Talkpal.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp", dealText: "Save Up to 69%", href: "/stores/talkpal-discount-code" },
+  { name: "Krisp.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp", dealText: "Save 50% OFF", href: "/stores/krisp-discount-code" },
+  { name: "Envato Elements", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp", dealText: "Up to 50% OFF", href: "/stores/envato-elements-discount-code" },
+  { name: "Upwork", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130860/upwork-logo_ki4h2l.webp", dealText: "Plans From $15", href: "/stores/upwork-discount-code" },
 ];
 
-const STORE_URL = "https://performance.gotrackier.com/click?campaign_id=5006&pub_id=1015";
+const STORE_URL = "https://try.gamma.app/itnpygrzknl9";
 
-export default function SailyContent() {
+export default function GammaContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
@@ -86,7 +88,7 @@ export default function SailyContent() {
               <ChevronRight className="w-4 h-4 text-gray-600" />
               <Link href="/stores" className="text-[#056bfa] hover:underline">Stores</Link>
               <ChevronRight className="w-4 h-4 text-gray-600" />
-              <span className="text-black font-extrabold">Saily</span>
+              <span className="text-black font-extrabold">Gamma</span>
             </nav>
           </div>
         </div>
@@ -99,21 +101,21 @@ export default function SailyContent() {
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
-                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp" alt="Saily" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
+                      <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp" alt="Gamma" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Saily Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Gamma Discount Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-40" />
                       </div>
-                      <span className="text-black font-black text-sm">4.6</span>
-                      <span className="text-gray-600 font-bold text-sm">(1,400 Ratings)</span>
+                      <span className="text-black font-black text-sm">4.7</span>
+                      <span className="text-gray-600 font-bold text-sm">(2,900 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover the latest Saily Discount Code offers and verified Saily Coupon Code deals. Get 15% OFF your first student data plan, save 5% on all eligible Saily plans with code Saily5, or earn up to US$10 in referral credits through the Refer a Friend program. You can also choose the Saily Ultra plan with unlimited data and premium travel benefits or get a US phone number for just US$1.99/month. Compare verified offers and enjoy affordable, hassle-free connectivity wherever you travel.
+                      Gamma is an AI-powered tool that turns a simple prompt or outline into a polished presentation, document, or website in minutes.
                     </p>
                     <a
                       href={STORE_URL}
@@ -131,7 +133,7 @@ export default function SailyContent() {
                   {[
                     { icon: Tag, val: "6", label: "Offers" },
                     { icon: Percent, val: "6", label: "Deals" },
-                    { icon: Users, val: "20K+", label: "Shoppers" },
+                    { icon: Users, val: "25K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
@@ -149,7 +151,7 @@ export default function SailyContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
-                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1790335107/saily-logo_s5w4hl.webp" alt="Saily Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
+                      <img src="https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp" alt="Gamma Discount Code" width={800} height={350} className="w-full h-full object-contain bg-[#f8f8f8]" fetchPriority="high" />
                     </a>
                   </div>
                 </div>
@@ -186,16 +188,16 @@ export default function SailyContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Saily Discount Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Gamma Discount Codes & Offers</h2>
                 </div>
 
                 {[
-                  { label: "PREMIUM", value: "Unlimited", title: "Saily Ultra – Premium Travel Plan with Unlimited Data", desc: "Get unlimited international data with the Saily Ultra plan.", bullets: ["Enjoy airport lounge access, faster security and check-in benefits.", "Get premium online protection with tools like NordVPN.", "Choose Saily Ultra for an all-in-one premium travel experience."] },
-                  { label: "SAVE", value: "15%", title: "Saily Student Discount – Get 15% Off Your First Data Plan", desc: "Students can get 15% off their first Saily data plan.", bullets: ["Enjoy reliable mobile data across 200+ destinations.", "Stay connected while traveling without expensive roaming fees.", "Save more on your international eSIM data with Saily."] },
-                  { label: "UP TO", value: "$10", title: "Saily Refer a Friend – Earn Up to US$10 in Credits", desc: "Refer friends to Saily and earn Saily credits for every successful referral.", bullets: ["Both users can get US$5 with standard plans.", "Earn up to US$10 when your friend chooses Saily Ultra.", "Share Saily with friends and get rewarded with travel credits."] },
-                  { label: "ONLY", value: "$1.99", title: "Saily US Phone Number – Get a Number for US$1.99/Month", desc: "Get a US phone number directly through the Saily eSIM app.", bullets: ["Add the number in just a few taps and pair it with mobile data.", "Stay connected with a US number while using your Saily eSIM.", "Get the service for just US$1.99 per month."] },
-                  { label: "ONLY", value: "$30", title: "Saily Voucher – Buy US$30 Credits for 12 Months", desc: "Buy a US$30 Saily voucher for future travel and data needs.", bullets: ["Use your voucher credits anytime within 12 months.", "Get US$30 worth of Saily credits for US$30.", "Earn 3% back in Saily credits with the voucher purchase."] },
-                  { label: "SAVE", value: "5%", title: "Saily Discount Code – Get 5% Off All Saily Plans", desc: "Get 5% off all eligible Saily plans with the discount code Saily5.", bullets: ["Choose your travel destination and apply the discount at checkout.", "Save on Saily eSIM data plans for international travel.", "Use Saily5 to enjoy your discount when purchasing a plan."] },
+                  { label: "SAVE", value: "New", title: "Gamma – New Customer Offer", desc: "Sign up and check for savings on your first Gamma plan.", bullets: ["Browse Gamma's plans before subscribing.", "Compare AI credits and features across plans.", "Check the offer terms before confirming your purchase."] },
+                  { label: "SAVE", value: "%", title: "Gamma – Percentage Off Sitewide", desc: "Check for a Gamma discount code offering a percentage off eligible plans.", bullets: ["Applies to select Gamma plans.", "Enter the code at checkout if prompted.", "Confirm the discount is applied before subscribing."] },
+                  { label: "SAVE", value: "Pro", title: "Gamma – Pro Plan Discount", desc: "Save on Gamma's Pro plan for individual use.", bullets: ["Compare AI credit limits before choosing a plan.", "Check for seasonal discounts on the Pro plan.", "Confirm the offer terms before subscribing."] },
+                  { label: "SAVE", value: "Team", title: "Gamma – Team Plan Deal", desc: "Check for savings on Gamma's Team plan for collaborative workspaces.", bullets: ["Compare per-seat pricing before choosing a plan.", "Check collaboration features included in the plan.", "Confirm the offer terms before subscribing."] },
+                  { label: "SAVE", value: "Annual", title: "Gamma – Annual Plan Savings", desc: "Save by choosing an annual Gamma plan instead of paying monthly.", bullets: ["Compare annual versus monthly pricing.", "Check the cancellation terms before committing.", "Confirm the offer terms before subscribing."] },
+                  { label: "EARN", value: "Bonus", title: "Gamma – Referral Bonus", desc: "Earn credit by referring friends and colleagues to Gamma.", bullets: ["Share your referral link or code.", "Bonus terms vary by current promotion.", "Check the app for your referral details."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -229,7 +231,7 @@ export default function SailyContent() {
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Saily: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Gamma: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -260,18 +262,17 @@ export default function SailyContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">What Is Saily?</h3>
+                  <h3 className="text-black font-black text-lg mb-6">What Is Gamma AI?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Saily is a global eSIM service designed for travelers who want convenient mobile data while visiting other countries. Instead of purchasing a physical SIM card after arriving at your destination, users can purchase an eSIM plan online and install it on a compatible device.
+                    Gamma is an AI-powered content creation platform designed to help users create presentations, documents, websites, and other visual content. Instead of starting with a blank page and designing every element manually, users can provide an idea or prompt and use Gamma's AI tools to generate a structured starting point.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Saily offers mobile data plans across numerous destinations, making it useful for international travelers who need internet access for navigation, messaging, travel bookings, social media, and other everyday online activities.
+                    The platform is useful for professionals, students, marketers, entrepreneurs, educators, and teams that need to create visually engaging content quickly. Gamma combines AI-assisted writing and design with editable layouts, allowing users to refine the generated content according to their requirements.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The service is particularly convenient for people who want to arrange their connectivity before leaving home. Once the eSIM is installed and activated according to the plan's requirements, travelers can use mobile data without needing to visit a local telecom store or swap their physical SIM.
-
+                    From business presentations and sales pitches to reports, proposals, educational material, and simple websites, Gamma can be used across a variety of content needs.
                   </p>
                   
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -283,11 +284,11 @@ export default function SailyContent() {
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
                    <div className="space-y-1">
                       {[
-                        { icon: Globe, name: "Regional eSIM Plans", count: "40+", color: "text-blue-500", href: "/categories/travel" },
-                        { icon: Wifi, name: "Unlimited Data Plans", count: "20+", color: "text-purple-500", href: "/categories/travel" },
-                        { icon: Smartphone, name: "Single-Country Plans", count: "60+", color: "text-pink-500", href: "/categories/travel" },
-                        { icon: Percent, name: "Promo Offers", count: "15+", color: "text-teal-500", href: "/categories/travel" },
-                        { icon: Plane, name: "Travel Essentials", count: "35+", color: "text-orange-500", href: "/categories/travel" },
+                        { icon: Presentation, name: "AI Presentations", count: "15+", color: "text-blue-500", href: "/categories/software" },
+                        { icon: FileText, name: "AI Documents", count: "10+", color: "text-purple-500", href: "/categories/software" },
+                        { icon: Globe, name: "AI Websites", count: "8+", color: "text-pink-500", href: "/categories/software" },
+                        { icon: Users2, name: "Team Plans", count: "6+", color: "text-teal-500", href: "/categories/software" },
+                        { icon: Percent, name: "Promo Offers", count: "10+", color: "text-orange-500", href: "/categories/software" },
                       ].map((cat, i) => (
                         <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
                           <div className="flex items-center gap-3">
@@ -303,40 +304,40 @@ export default function SailyContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    How to Use a Saily Discount Code
+    How to Use a Gamma AI Discount Code
   </h3>
   <div className="space-y-6">
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      If you find an eligible Saily discount code on CouponsBit, applying it is generally simple.
+      Found a suitable Gamma AI discount code on CouponsBit? Follow these general steps to redeem it:
     </p>
     <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
       <p>
         <strong className="text-black font-black block mb-1">Visit CouponsBit:</strong>
-        Open the Saily page on CouponsBit and check the available offers.
+        Open the Gamma AI page and review the available offers.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Choose your offer:</strong>
-        Select the discount code or promotion that suits your purchase.
+        <strong className="text-black font-black block mb-1">Select a promotion:</strong>
+        Choose a discount code or deal that matches your purchase.
       </p>
       <p>
         <strong className="text-black font-black block mb-1">Copy the code:</strong>
-        If the offer requires a promotional code, copy it before heading to Saily.
+        If the offer provides a promotional code, copy it.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Choose your destination:</strong>
-        Browse Saily's available eSIM plans and select the destination you need.
+        <strong className="text-black font-black block mb-1">Visit Gamma:</strong>
+        Head to Gamma and choose the plan or service you want.
       </p>
       <p>
-        <strong className="text-black font-black block mb-1">Enter the code:</strong>
-        Apply the promotional code during the relevant stage of the purchase process.
+        <strong className="text-black font-black block mb-1">Apply the code:</strong>
+        Enter the promotional code in the designated field during the applicable stage of checkout or upgrade.
       </p>
       <p>
         <strong className="text-black font-black block mb-1">Complete your purchase:</strong>
-        Confirm that the offer has been applied and finish your order.
+        Confirm that the discount has been applied before completing your subscription.
       </p>
     </div>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Always check the terms associated with a coupon before using it. If a code doesn't apply, it may have expired or may be restricted to particular customers, plans, or destinations.
+      If the code doesn't work, check whether it has expired or whether there are restrictions on the selected plan. Some offers may also be limited to eligible customers.
     </p>
   </div>
 </div>
@@ -372,47 +373,15 @@ export default function SailyContent() {
         </section>
 
         {/* SEO Text Section */}
-        <section className="py-24 bg-[#f5f5f5]">
+       <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Saily Discount Code, Coupons & Deals
+          Gamma AI Discount Code, Coupons & Deals
         </h2>
-
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["Saily Ultra Premium Plan", "Unlimited Data", "All Users", "Includes airport lounge access, fast-track security, and NordVPN protection", "Saily Ultra Plans"],
-        ["Saily Student Discount", "15% OFF", "Students", "Valid on first Saily data plan across 200+ destinations", "First Data Orders"],
-        ["Refer a Friend Reward", "Up to US$10 Credits", "All Users", "Earn $5 for standard plans or up to $10 when friends choose Saily Ultra", "Referral Program"],
-        ["Saily US Phone Number", "$1.99 / month", "All Users", "Add directly via eSIM app and pair seamlessly with mobile data", "US Phone Service"],
-        ["Saily Travel Voucher", "$30 Voucher", "All Users", "Credits valid for 12 months; earn 3% back in Saily credits on purchase", "Voucher Purchases"],
-        ["Storewide Saily Discount", "5% OFF", "All Users", "Use coupon code Saily5 at checkout on eligible international data plans", "All Saily Plans"]
-      ].map((row, i, arr) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
 
         <div
           className={cn(
@@ -421,25 +390,28 @@ export default function SailyContent() {
           )}
         >
           <p>
-            Looking for a Saily discount code to save on your next eSIM plan? CouponsBit helps you discover the latest Saily discount codes, coupons, promotional offers, and deals before you purchase. Whether you're planning an international holiday, business trip, or longer stay abroad, a Saily eSIM can help you stay connected without relying on expensive traditional roaming plans.
+            Looking for a Gamma AI discount code to save on your next presentation, document, or website project? CouponsBit helps you find the latest Gamma AI discount codes, coupons, promo codes, and offers before you upgrade or purchase a plan. Whether you're creating presentations for work, building a pitch deck, preparing educational content, or turning an idea into a polished web page, Gamma AI can help you create professional-looking content with less manual effort.
           </p>
           <p>
-            Before buying your next travel eSIM, check CouponsBit for available Saily offers and see if you can get extra savings on your plan.
+            Before choosing a Gamma plan, check CouponsBit for available savings and promotional offers.
           </p>
 
           <div className="space-y-8">
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Save More on Your Next Saily Plan
+                Tips for Getting More Value From Gamma AI
               </h3>
               <p>
-                A travel eSIM may seem like a small part of your overall holiday budget, but checking for an available promotion can make your purchase more cost-effective. This becomes even more useful if you're purchasing connectivity for several trips or choosing plans for longer stays.
+                A discount is only one part of getting value from an AI content creation platform. Before selecting a paid plan, consider how frequently you'll use Gamma and the type of content you intend to create.
               </p>
               <p>
-                CouponsBit gives you a convenient place to check for Saily discount codes before you buy. By comparing available promotions and reviewing their conditions, you can choose an offer that works for your travel plans.
+                If you primarily need presentations for occasional projects, your requirements may differ from someone creating sales decks, reports, websites, and other content every week.
               </p>
               <p>
-                Whether you're traveling for leisure, work, study, or an extended international trip, checking for a Saily coupon before checkout takes only a moment and could help you spend less.
+                You can also prepare your prompts carefully before generating content. Providing Gamma with clear information about your audience, objective, tone, and key points can give you a stronger starting draft and reduce the amount of editing required.
+              </p>
+              <p>
+                Most importantly, check for a Gamma AI discount code before upgrading so you don't miss a potential saving.
               </p>
             </div>
 
@@ -448,23 +420,23 @@ export default function SailyContent() {
   {/* Hero / Header Section */}
   <section className="text-center space-y-4 max-w-3xl mx-auto">
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
-      Saily Travel eSIM Guide
+      Gamma AI Offers &amp; Guide
     </Badge>
     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
-      Find a Saily Discount Code on CouponsBit
+      Find a Gamma AI Discount Code on CouponsBit
     </h1>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
-        Travel expenses can quickly add up when you're booking flights, accommodation, activities, and transportation. Saving on connectivity is therefore another simple way to manage your travel budget.
+        Premium AI tools can become an additional expense, especially for professionals and teams using them regularly. Finding a Gamma AI discount code before upgrading can therefore be a useful way to reduce your overall cost.
       </p>
       <p>
-        That's where a Saily discount code can help. CouponsBit brings available Saily coupons and promotional offers together, making it easier to check for potential savings before purchasing your eSIM plan.
+        CouponsBit brings Gamma AI coupons, promotional codes, and offers together so you can check available savings before making a purchase. Rather than upgrading immediately, visit the Gamma AI page on CouponsBit and review the current promotions.
       </p>
       <p>
-        Instead of buying immediately, visit the Saily page on CouponsBit and check the available promotions. Select an offer that matches your requirements, review its conditions, and follow the instructions to redeem the saving.
+        Select an offer that matches your plan and eligibility, follow the redemption instructions, and make sure you understand any conditions attached to the promotion.
       </p>
       <p>
-        Because promotional campaigns can change, it's always worth checking the latest available Saily offers before completing your purchase.
+        Since discounts and promotional campaigns can change, checking CouponsBit before checkout can help you avoid missing a relevant offer.
       </p>
     </div>
   </section>
@@ -474,25 +446,25 @@ export default function SailyContent() {
     <Card className="border-slate-200 shadow-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <Tag className="w-6 h-6" /> Saily Coupons, Promo Codes &amp; Offers
+          <Tag className="w-6 h-6" /> Gamma AI Coupons, Promo Codes &amp; Offers
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          Saily savings aren't limited to traditional coupon codes. Depending on the current promotion, shoppers may find different types of offers that can reduce the cost of an eSIM plan or provide additional value.
+          Gamma AI savings may come in different forms. Depending on the promotion available at the time, users may find a direct discount, promotional code, subscription offer, or another limited-time deal.
         </p>
         <div className="space-y-2">
-          <p className="font-semibold text-gray-900">CouponsBit can help you look for:</p>
+          <p className="font-semibold text-gray-900">On CouponsBit, you can check for:</p>
           <div className="flex flex-wrap gap-2">
             {[
-              "Saily discount codes",
-              "Saily promo codes",
-              "Saily coupons",
-              "Saily promotional offers",
-              "Saily travel deals",
-              "Limited-time Saily offers",
+              "Gamma AI discount codes",
+              "Gamma AI promo codes",
+              "Gamma AI coupons",
+              "Gamma AI promotional offers",
+              "Subscription deals",
+              "Limited-time discounts",
               "New-user promotions",
-              "eSIM plan discounts"
+              "AI presentation and content creation offers"
             ].map((item, index) => (
               <Badge key={index} variant="outline" className="bg-slate-50 border-slate-300 text-slate-700 py-1">
                 {item}
@@ -501,32 +473,54 @@ export default function SailyContent() {
           </div>
         </div>
         <p>
-          The availability and conditions of individual promotions can vary. Some offers may be intended for new customers, while others may apply to particular plans, destinations, or promotional periods.
+          Not every promotion will apply to every account or plan. Some offers may be restricted by subscription type, billing period, eligibility, or promotional terms, so always review the conditions before applying a code.
         </p>
       </CardContent>
     </Card>
   </section>
 
-  {/* Why Use a Saily eSIM? */}
+  {/* What Can You Create With Gamma AI? */}
   <section>
     <Card className="border-slate-200 shadow-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <Globe className="w-6 h-6" /> Why Use a Saily eSIM?
+          <Sparkles className="w-6 h-6" /> What Can You Create With Gamma AI?
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          One of the biggest advantages of an eSIM is convenience. Travelers don't need to wait until they reach their destination to find a local SIM card. With Saily, users can arrange their mobile data plan in advance and avoid carrying an additional physical SIM.
+          Gamma is designed to simplify the process of turning ideas into polished visual content. Users can create presentations, documents, and websites without having to build everything from scratch.
         </p>
         <p>
-          An eSIM can also make international travel simpler for people who want to keep their primary SIM active while using another connection for mobile data, depending on their device and carrier configuration.
+          For businesses, Gamma can be useful for creating pitch decks, sales presentations, project proposals, internal reports, and marketing material. Startup founders can use it to turn business ideas into presentations, while sales teams can create customer-facing decks more efficiently.
         </p>
         <p>
-          Saily's destination-based plans allow travelers to choose connectivity based on where they're going. This can be particularly useful for people visiting multiple countries or taking frequent international trips.
+          Students and educators can also use AI-assisted creation to structure presentations and learning material. Instead of spending significant time deciding how to organize every slide or section, users can start with an AI-generated structure and customize it.
         </p>
         <p>
-          From checking maps and translating languages to contacting accommodation providers and sharing travel updates, reliable mobile data has become an important part of modern travel.
+          Gamma's website creation capabilities can also help users turn information or concepts into simple web experiences without beginning with traditional web-design workflows.
+        </p>
+      </CardContent>
+    </Card>
+  </section>
+
+  {/* Why Check for a Promo Code? */}
+  <section>
+    <Card className="border-slate-200 shadow-sm">
+      <CardHeader>
+        <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
+          <HelpCircle className="w-6 h-6" /> Why Check for a Gamma AI Promo Code?
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4 text-gray-600 leading-relaxed">
+        <p>
+          If you're planning to use Gamma regularly, even a small promotional saving can make a difference over the duration of your subscription. This is particularly relevant for freelancers, businesses, students, and teams that rely on AI-powered content creation tools frequently.
+        </p>
+        <p>
+          Checking CouponsBit before subscribing gives you the opportunity to compare available offers before committing to a paid plan.
+        </p>
+        <p>
+          You can also make the most of Gamma's capabilities by choosing a plan based on how frequently you create content and which features you need. Instead of upgrading without checking available options, review the current plans and available promotions first.
         </p>
       </CardContent>
     </Card>
@@ -536,13 +530,13 @@ export default function SailyContent() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Check CouponsBit Before Buying Saily
+                Save on Gamma AI With CouponsBit
               </h3>
               <p>
-                Staying connected abroad doesn't have to mean dealing with physical SIM cards or unexpected roaming costs. Saily gives travelers a convenient way to arrange mobile data through an eSIM, while CouponsBit helps you look for opportunities to save on your purchase.
+                Gamma AI makes it easier to turn ideas into presentations, documents, websites, and other polished visual content with AI assistance. Whether you're creating a pitch deck, business proposal, classroom presentation, or marketing material, the platform can help streamline the creative process.
               </p>
               <p>
-                Before selecting your next Saily plan, check CouponsBit for the latest Saily discount code, coupons, promo codes, and offers. Review the available deals, choose the one that fits your needs, and make your next travel connection a little more budget-friendly.
+                Before upgrading to a paid Gamma plan, visit CouponsBit to check the latest Gamma AI discount code, coupons, promo codes, and deals. Compare the available offers, review their terms, and choose the promotion that gives you the best value for your needs.
               </p>
             </div>
           </div>
@@ -568,28 +562,28 @@ export default function SailyContent() {
         {/* Accordion FAQ Section */}
         <div className="mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Saily Discount Codes
+            Frequently Asked Questions About Gamma AI Discount Codes
           </h3>
           {[
             {
-              q: "How can I find a Saily discount code?",
-              a: "Visit the Saily page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible offer and follow its redemption instructions.",
+              q: "How can I find a Gamma AI discount code?",
+              a: "Check the Gamma AI page on CouponsBit for available discount codes, coupons, and promotional offers. Review the terms of each promotion before using it.",
             },
             {
-              q: "Can I use a Saily discount code on any eSIM plan?",
-              a: "Not necessarily. Some promotions may have specific eligibility requirements or apply only to selected plans, destinations, or customers. Check the terms of the individual offer before purchasing.",
+              q: "Can I use a Gamma AI discount code on every plan?",
+              a: "Not necessarily. Promotional codes can have specific eligibility requirements and may apply only to certain plans or subscription types. Check the individual offer for its conditions.",
             },
             {
-              q: "Why isn't my Saily promo code working?",
-              a: "A Saily promo code may not work if it has expired, has already reached its usage limit, or has restrictions that don't match your purchase. Review the offer conditions and make sure the code has been entered correctly.",
+              q: "Why isn't my Gamma AI promo code working?",
+              a: "A promo code may have expired, reached its usage limit, or may not be valid for the plan you're trying to purchase. Check the promotion's terms and make sure the code is entered correctly.",
             },
             {
-              q: "Does Saily offer promotions without a coupon code?",
-              a: "Yes. Travel eSIM providers can run promotional campaigns where savings are applied automatically. Check CouponsBit for both code-based and direct Saily offers.",
+              q: "Does Gamma AI offer discounts without promo codes?",
+              a: "Gamma may run promotions where a discount is applied directly rather than through a coupon code. CouponsBit can help you check for both code-based and other promotional offers.",
             },
             {
-              q: "Is it worth checking for a Saily coupon before traveling?",
-              a: "Yes. Checking for an available coupon before purchasing your eSIM takes little time and can help you avoid paying more than necessary for your mobile data plan.",
+              q: "Should I check CouponsBit before subscribing to Gamma AI?",
+              a: "Yes. Checking for a Gamma AI discount code before subscribing takes only a moment and gives you an opportunity to find an available promotion before paying for your plan.",
             },
           ].map((faq, i) => (
             <div
@@ -637,18 +631,18 @@ export default function SailyContent() {
         {/* Tag Cloud */}
         <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular Saily Searches
+            Popular Gamma AI Searches
           </h3>
           <div className="flex flex-wrap gap-2.5">
             {[
-              "Saily Discount Code",
-              "Travel eSIM Coupons",
-              "International Data Plans",
-              "Global eSIM Deals",
-              "Saily Promo Code",
-              "CouponsBit Saily",
-              "Cheap Mobile Data",
-              "No Roaming Fees",
+              "Gamma AI Discount Code",
+              "AI Presentation Builder",
+              "Gamma Plus Discount",
+              "Gamma Pro Promo Code",
+              "AI Pitch Deck Generator",
+              "CouponsBit Gamma AI",
+              "Gamma AI Annual Deal",
+              "AI Document Creation",
             ].map((tag) => (
               <span
                 key={tag}
@@ -663,25 +657,25 @@ export default function SailyContent() {
         {/* Sidebar Deals */}
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top Saily Deals
+            Today's Top Gamma AI Deals
           </h3>
           <div className="space-y-6">
             {[
               {
-                heading: "FIRST TRAVEL ESIM DISCOUNT",
-                sub: "Exclusive Discount For New Saily App Users",
+                heading: "ANNUAL SUBSCRIPTION SAVINGS",
+                sub: "Save Up To 20% On Yearly Billing Plans",
               },
               {
-                heading: "GLOBAL DATA BUNDLES",
-                sub: "Save Big On Multi-Country Travel Packages",
+                heading: "FREE STARTER CREDIT OFFER",
+                sub: "Try AI Presentation Generation For Free",
               },
               {
-                heading: "REGIONAL DATA PROMOTIONS",
-                sub: "Special Rates On Europe, Asia & USA Data Plans",
+                heading: "GAMMA PRO PLAN DEALS",
+                sub: "Discounts On Unlimited AI Credit Subscriptions",
               },
               {
-                heading: "LONG-STAY TRAVEL OFFERS",
-                sub: "Discounted Monthly Data Packages For Digital Nomads",
+                heading: "TEAM & BUSINESS OFFERS",
+                sub: "Special Pricing For Multi-Seat Workspaces",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
@@ -697,7 +691,7 @@ export default function SailyContent() {
                   </p>
                 </div>
                 <a
-                  href="https://saily.com"
+                  href="https://gamma.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Get deal: ${deal.heading}`}
@@ -714,8 +708,6 @@ export default function SailyContent() {
     </div>
   </div>
 </section>
-
-
 
       </main>
 
