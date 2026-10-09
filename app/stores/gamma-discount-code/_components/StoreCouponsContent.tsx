@@ -115,7 +115,7 @@ export default function GammaContent() {
                       <span className="text-gray-600 font-bold text-sm">(2,900 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Gamma is an AI-powered tool that turns a simple prompt or outline into a polished presentation, document, or website in minutes.
+                      Save on AI-powered presentation tools with the latest Gamma Discount Code. Enjoy up to 28% OFF eligible annual subscription plans and start with a free trial on selected plans. Use a Gamma Promo Code to unlock verified savings and access premium templates, AI features, and professional content creation tools.
                     </p>
                     <a
                       href={STORE_URL}
@@ -131,7 +131,7 @@ export default function GammaContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "9", label: "Offers" },
                     { icon: Percent, val: "6", label: "Deals" },
                     { icon: Users, val: "25K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -192,12 +192,15 @@ export default function GammaContent() {
                 </div>
 
                 {[
-                  { label: "SAVE", value: "New", title: "Gamma – New Customer Offer", desc: "Sign up and check for savings on your first Gamma plan.", bullets: ["Browse Gamma's plans before subscribing.", "Compare AI credits and features across plans.", "Check the offer terms before confirming your purchase."] },
-                  { label: "SAVE", value: "%", title: "Gamma – Percentage Off Sitewide", desc: "Check for a Gamma discount code offering a percentage off eligible plans.", bullets: ["Applies to select Gamma plans.", "Enter the code at checkout if prompted.", "Confirm the discount is applied before subscribing."] },
-                  { label: "SAVE", value: "Pro", title: "Gamma – Pro Plan Discount", desc: "Save on Gamma's Pro plan for individual use.", bullets: ["Compare AI credit limits before choosing a plan.", "Check for seasonal discounts on the Pro plan.", "Confirm the offer terms before subscribing."] },
-                  { label: "SAVE", value: "Team", title: "Gamma – Team Plan Deal", desc: "Check for savings on Gamma's Team plan for collaborative workspaces.", bullets: ["Compare per-seat pricing before choosing a plan.", "Check collaboration features included in the plan.", "Confirm the offer terms before subscribing."] },
-                  { label: "SAVE", value: "Annual", title: "Gamma – Annual Plan Savings", desc: "Save by choosing an annual Gamma plan instead of paying monthly.", bullets: ["Compare annual versus monthly pricing.", "Check the cancellation terms before committing.", "Confirm the offer terms before subscribing."] },
-                  { label: "EARN", value: "Bonus", title: "Gamma – Referral Bonus", desc: "Earn credit by referring friends and colleagues to Gamma.", bullets: ["Share your referral link or code.", "Bonus terms vary by current promotion.", "Check the app for your referral details."] },
+                  { label: "UP TO", value: "26%", title: "Gamma – Save Up to 26% on Subscription Plans", desc: "Enjoy up to 26% off on Gamma subscription plans.", bullets: ["Choose from flexible monthly and annual plans with AI-powered tools and templates.", "Save more with special subscription offers and discounted plans.", "Sign up now and get more value from Gamma's presentation and content creation tools."] },
+                  { label: "UP TO", value: "28%", title: "Gamma Annual Subscription – Save Up to 28%", desc: "Save up to 28% on eligible Gamma annual subscription plans.", bullets: ["Enjoy access to AI-powered presentation tools and creative templates.", "Choose an annual plan for greater savings compared with monthly billing.", "Subscribe now and unlock Gamma's premium features."] },
+                  { label: "FREE", value: "Templates", title: "Gamma Signup Offer – Get Free Templates", desc: "Sign up for Gamma and get free templates on your first use.", bullets: ["Create presentations, documents and other content with Gamma's AI tools.", "Explore professionally designed templates to get started quickly.", "Join Gamma today and start creating with your signup offer."] },
+                  { label: "FROM", value: "$20", title: "Gamma Pro Monthly Plan – From $20", desc: "Get the Gamma Pro Monthly Plan starting from $20.", bullets: ["Access advanced AI tools, templates and premium creation features.", "Create professional presentations and content with greater flexibility.", "Choose the monthly plan and upgrade your Gamma experience."] },
+                  { label: "FROM", value: "$96", title: "Gamma Annual Plus Plan – From $96", desc: "Get the Gamma Annual Plus Plan starting at $96.", bullets: ["Enjoy premium AI-powered tools and templates throughout your subscription.", "Save with annual billing while accessing Gamma's advanced features.", "Choose the Plus plan for a more powerful content creation experience."] },
+                  { label: "FROM", value: "$100", title: "Gamma Monthly Ultra Plan – From $100", desc: "Get the Gamma Monthly Ultra Plan starting at $100.", bullets: ["Unlock advanced AI-powered features for creating professional content.", "Enjoy premium tools and templates with the Ultra subscription.", "Upgrade to Gamma Ultra and create more with powerful AI tools."] },
+                  { label: "FROM", value: "$180", title: "Gamma Annual Pro Plan – From $180", desc: "Get the Gamma Annual Pro Plan starting at just $180.", bullets: ["Enjoy advanced AI tools, premium templates and professional creation features.", "Choose annual billing for extended access to Gamma Pro.", "Start creating polished presentations and content with Gamma's premium tools."] },
+                  { label: "FROM", value: "$10", title: "Gamma Monthly Plus Plan – From $10", desc: "Grab the Gamma Monthly Plus Plan starting at just $10.", bullets: ["Get access to premium templates and AI-powered content creation tools.", "Create professional presentations and documents with ease.", "Choose the monthly Plus plan for flexible access to Gamma's features."] },
+                  { label: "FREE", value: "Trial", title: "Gamma – Free Trial on Subscription Plans", desc: "Enjoy a free trial on eligible Gamma subscription plans.", bullets: ["Explore Gamma's AI-powered tools, templates and content creation features.", "Try the platform before committing to a paid subscription.", "Start your Gamma journey and discover its creative tools today."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -662,20 +665,20 @@ export default function GammaContent() {
           <div className="space-y-6">
             {[
               {
-                heading: "ANNUAL SUBSCRIPTION SAVINGS",
-                sub: "Save Up To 20% On Yearly Billing Plans",
+              heading: "ANNUAL SUBSCRIPTION",
+              sub: "Save Up to 28% on eligible annual plans",
               },
               {
-                heading: "FREE STARTER CREDIT OFFER",
-                sub: "Try AI Presentation Generation For Free",
+              heading: "SIGNUP OFFER",
+              sub: "Get free templates on your first use",
               },
               {
-                heading: "GAMMA PRO PLAN DEALS",
-                sub: "Discounts On Unlimited AI Credit Subscriptions",
+              heading: "PRO MONTHLY PLAN",
+              sub: "Starting from $20",
               },
               {
-                heading: "TEAM & BUSINESS OFFERS",
-                sub: "Special Pricing For Multi-Seat Workspaces",
+              heading: "FREE TRIAL",
+              sub: "Try eligible subscription plans for free",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">

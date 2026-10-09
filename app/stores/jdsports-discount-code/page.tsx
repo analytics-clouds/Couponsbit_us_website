@@ -3,10 +3,10 @@ import JDSportsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "JD Sports Discount Code – Coupons & Deals | Couponsbit",
+    absolute: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
   },
   description:
-    "Find the latest JD Sports discount codes, coupons, and deals on Couponsbit. Save on sneakers, sportswear, and accessories.",
+    "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/jdsports-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/jdsports-discount-code",
-    title: "JD Sports Discount Code – Coupons & Deals | Couponsbit",
+    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
     description:
-      "Find the latest JD Sports discount codes, coupons, and deals on Couponsbit. Save on sneakers, sportswear, and accessories.",
+      "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "JD Sports Discount Code – Coupons & Deals | Couponsbit",
+    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
     description:
-      "Find the latest JD Sports discount codes, coupons, and deals on Couponsbit. Save on sneakers, sportswear, and accessories.",
+      "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791446502/jD-logo_lfuzxu.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const jdsportsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/jdsports-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/jdsports-discount-code",
-      name: "JD Sports Discount Code – Coupons & Deals | Couponsbit",
+      name: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
       description:
-        "Find the latest JD Sports discount codes, coupons, and deals on Couponsbit. Save on sneakers, sportswear, and accessories.",
+        "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-10-09",
@@ -77,14 +77,19 @@ const jdsportsSchema = {
       name: "JD Sports Discount Codes & Coupon Codes",
       description: "Latest JD Sports discount codes and offers.",
       url: "https://www.couponsbit.us/stores/jdsports-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 11,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "JD Sports – New Customer Offer", description: "Sign up and check for savings on your first JD Sports order.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "JD Sports – Percentage Off Sitewide", description: "Check for a JD Sports discount code offering a percentage off eligible products.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "JD Sports – Sneaker Deal", description: "Save on selected sneakers and trainers at JD Sports.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "JD Sports – Free Shipping Offer", description: "Check for free shipping on qualifying JD Sports orders.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "JD Sports – Sportswear Bundle Deal", description: "Save on sportswear and accessory bundles at JD Sports.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "JD Sports – Seasonal Clearance Sale", description: "Check for seasonal clearance pricing on select JD Sports products.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "JD Sports Accessories Sale – Up to 50% Off", description: "Save up to 50% on accessories from Nike, adidas, Jordan, Puma, New Balance, ASICS, McKenzie and more.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "JD Sports – adidas Originals Adicolor Classics Diamond Bag at Rp275,000", description: "Get the adidas Originals Adicolor Classics Diamond Bag for Rp275,000, reduced from Rp550,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "JD Sports – Jordan Cush Poly Socks 3 Pairs at Rp134,500", description: "Get the Jordan Cush Poly Socks 3 Pairs for Rp134,500, down from Rp269,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "JD Sports – Nike Aura Crescent Crossbody Bag at Rp341,400", description: "Grab the Nike Aura Crescent Crossbody Bag for Rp341,400, reduced from Rp569,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "JD Sports Clothing Sale – Up to 50% Off", description: "Save up to 50% on selected clothing during the JD Sports sale.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "JD Sports – Jordan Flight Polo Jersey at Rp729,500", description: "Get the Jordan Flight Polo Jersey for Rp729,500, reduced from Rp1,459,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "JD Sports – New Balance Core Logo Graphic T-Shirt at Rp279,300", description: "Get the New Balance Core Logo Graphic T-Shirt for Rp279,300, down from Rp399,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "JD Sports – Nike Air Max 95 at Rp1,424,500", description: "Grab the Nike Air Max 95 for Rp1,424,500 during the JD Sports sale.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "JD Sports – Nike Air Max Phoenix Junior at Rp899,500", description: "Get the Nike Air Max Phoenix Junior for Rp899,500, reduced from Rp1,799,000.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "JD Sports – Get 10% Off Your First Order", description: "Enjoy 10% off your first order at JD Sports, subject to applicable terms and conditions.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
+        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "JD Sports Members – Get Exclusive Early Access", description: "Join JD Sports membership to access exclusive early deals and promotions.", url: "https://www.couponsbit.us/stores/jdsports-discount-code", seller: { "@type": "Organization", name: "JD Sports", url: "https://www.jdsports.com" } } },
       ],
     },
 

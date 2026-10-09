@@ -115,7 +115,7 @@ export default function JDSportsContent() {
                       <span className="text-gray-600 font-bold text-sm">(4,200 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      JD Sports is a sneaker and sportswear retailer carrying trainers, apparel, and accessories from a wide range of athletic and streetwear brands.
+                      Save more with the latest JD Sports Discount Code on top sportswear and sneakers. Enjoy up to 50% OFF selected clothing, footwear, and accessories, plus 10% OFF your first order. Use a JD Sports Promo Code to unlock verified savings on Nike, adidas, Jordan, New Balance, and more.
                     </p>
                     <a
                       href={STORE_URL}
@@ -131,7 +131,7 @@ export default function JDSportsContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
+                    { icon: Tag, val: "11", label: "Offers" },
                     { icon: Percent, val: "6", label: "Deals" },
                     { icon: Users, val: "35K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
@@ -192,12 +192,17 @@ export default function JDSportsContent() {
                 </div>
 
                 {[
-                  { label: "SAVE", value: "New", title: "JD Sports – New Customer Offer", desc: "Sign up and check for savings on your first JD Sports order.", bullets: ["Browse sneakers and sportswear before purchasing.", "Compare sizes and styles across brands.", "Check the offer terms before confirming your purchase."] },
-                  { label: "SAVE", value: "%", title: "JD Sports – Percentage Off Sitewide", desc: "Check for a JD Sports discount code offering a percentage off eligible products.", bullets: ["Applies to select sneakers and apparel.", "Enter the code at checkout if prompted.", "Confirm the discount is applied before purchasing."] },
-                  { label: "SAVE", value: "Sneaker", title: "JD Sports – Sneaker Deal", desc: "Save on selected sneakers and trainers at JD Sports.", bullets: ["Availability varies by brand and size.", "Check for new releases and restocks.", "Confirm the offer terms before purchasing."] },
-                  { label: "FREE", value: "Shipping", title: "JD Sports – Free Shipping Offer", desc: "Check for free shipping on qualifying JD Sports orders.", bullets: ["May require a minimum order amount.", "Availability varies by item.", "Check the offer terms at checkout."] },
-                  { label: "SAVE", value: "Bundle", title: "JD Sports – Sportswear Bundle Deal", desc: "Save on sportswear and accessory bundles at JD Sports.", bullets: ["Bundles can offer better value than buying separately.", "Check available bundle combinations.", "Confirm the offer terms before purchasing."] },
-                  { label: "SAVE", value: "Seasonal", title: "JD Sports – Seasonal Clearance Sale", desc: "Check for seasonal clearance pricing on select JD Sports products.", bullets: ["Availability varies by season and location.", "Items may be limited in stock.", "Check the website regularly for new offers."] },
+                  { label: "UP TO", value: "50%", title: "JD Sports Accessories Sale – Up to 50% Off", desc: "Save up to 50% on accessories from Nike, adidas, Jordan, Puma, New Balance, ASICS, McKenzie and more.", bullets: ["Explore trend-forward bags, socks and everyday accessories at discounted prices.", "Enjoy free standard shipping on eligible orders, subject to applicable terms.", "Shop now before the offers end or available stock runs out."] },
+                  { label: "ONLY", value: "Rp275,000", title: "JD Sports – adidas Originals Adicolor Classics Diamond Bag at Rp275,000", desc: "Get the adidas Originals Adicolor Classics Diamond Bag for Rp275,000, reduced from Rp550,000.", bullets: ["Save 50% on this stylish adidas Originals accessory.", "Add a versatile bag to your everyday outfits with this special sale offer.", "Shop JD Sports and grab the deal while stocks last."] },
+                  { label: "ONLY", value: "Rp134,500", title: "JD Sports – Jordan Cush Poly Socks 3 Pairs at Rp134,500", desc: "Get the Jordan Cush Poly Socks 3 Pairs for Rp134,500, down from Rp269,000.", bullets: ["Save 50% on this Jordan socks multipack.", "Refresh your everyday essentials with a practical addition to your sportswear collection.", "Shop now at JD Sports while the discounted price is available."] },
+                  { label: "ONLY", value: "Rp341,400", title: "JD Sports – Nike Aura Crescent Crossbody Bag at Rp341,400", desc: "Grab the Nike Aura Crescent Crossbody Bag for Rp341,400, reduced from Rp569,000.", bullets: ["Save 40% on this stylish Nike crossbody bag.", "Complete your casual outfits with a convenient accessory for carrying everyday essentials.", "Shop the JD Sports accessories sale before the offer ends."] },
+                  { label: "UP TO", value: "50%", title: "JD Sports Clothing Sale – Up to 50% Off", desc: "Save up to 50% on selected clothing during the JD Sports sale.", bullets: ["Discover sportswear and casual styles from popular brands, including Nike, adidas, Jordan and New Balance.", "Refresh your wardrobe with discounted apparel for everyday wear and active lifestyles.", "Shop now and explore the latest clothing offers while stocks last."] },
+                  { label: "ONLY", value: "Rp729,500", title: "JD Sports – Jordan Flight Polo Jersey at Rp729,500", desc: "Get the Jordan Flight Polo Jersey for Rp729,500, reduced from Rp1,459,000.", bullets: ["Save 50% on this Jordan apparel deal.", "Add a sporty, casual style to your wardrobe with this discounted polo jersey.", "Shop JD Sports and take advantage of the limited-stock offer."] },
+                  { label: "ONLY", value: "Rp279,300", title: "JD Sports – New Balance Core Logo Graphic T-Shirt at Rp279,300", desc: "Get the New Balance Core Logo Graphic T-Shirt for Rp279,300, down from Rp399,000.", bullets: ["Save 30% on this everyday graphic T-shirt.", "Add a versatile New Balance piece to your casual wardrobe.", "Shop now at JD Sports and save on selected clothing."] },
+                  { label: "ONLY", value: "Rp1,424,500", title: "JD Sports – Nike Air Max 95 at Rp1,424,500", desc: "Grab the Nike Air Max 95 for Rp1,424,500 during the JD Sports sale.", bullets: ["The listed price drops from Rp2,049,000, offering substantial savings.", "Discover the iconic Nike Air Max design for your sneaker collection.", "Shop now while the discounted price and available sizes last."] },
+                  { label: "ONLY", value: "Rp899,500", title: "JD Sports – Nike Air Max Phoenix Junior at Rp899,500", desc: "Get the Nike Air Max Phoenix Junior for Rp899,500, reduced from Rp1,799,000.", bullets: ["Save 50% on these junior Nike sneakers.", "Explore a sporty footwear option for younger sneaker fans.", "Shop the JD Sports sale before your preferred size sells out."] },
+                  { label: "SAVE", value: "10%", title: "JD Sports – Get 10% Off Your First Order", desc: "Enjoy 10% off your first order at JD Sports, subject to applicable terms and conditions.", bullets: ["Discover sneakers, clothing and accessories from popular sportswear brands.", "Take advantage of next-day delivery where available and eligible.", "Shop online and explore convenient Click & Collect store pickup options."] },
+                  { label: "EARN", value: "Access", title: "JD Sports Members – Get Exclusive Early Access", desc: "Join JD Sports membership to access exclusive early deals and promotions.", bullets: ["Discover selected sneakers, sportswear and accessories before wider sale access.", "Enjoy convenient shopping options, including available delivery and Click & Collect services.", "Sign up or log in to check your membership benefits and claim eligible offers."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -703,20 +708,20 @@ export default function JDSportsContent() {
           <div className="space-y-6">
             {[
               {
-                heading: "STUDENT & YOUTH DISCOUNT",
-                sub: "Exclusive Extra Savings For Eligible Students",
+              heading: "ACCESSORIES SALE",
+              sub: "Save up to 50% on accessories from Nike, adidas, Jordan and more",
               },
               {
-                heading: "JD SPORTS CLEARANCE SALE",
-                sub: "Up To 50% Off Top Brand Trainers & Apparel",
+              heading: "NIKE AIR MAX 95",
+              sub: "At Rp1,424,500 during the JD Sports sale",
               },
               {
-                heading: "LIMITED-TIME FOOTWEAR DEALS",
-                sub: "Discounts On Nike, Adidas, Jordan & New Balance",
+              heading: "FIRST ORDER OFFER",
+              sub: "Enjoy 10% off your first order at JD Sports",
               },
               {
-                heading: "FREE DELIVERY OFFERS",
-                sub: "Standard Free Delivery On Qualifying Orders",
+              heading: "MEMBERS EARLY ACCESS",
+              sub: "Join JD Sports membership for exclusive early deals",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">

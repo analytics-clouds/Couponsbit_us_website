@@ -3,10 +3,10 @@ import GammaContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gamma Discount Code – Coupons & Deals | Couponsbit",
+    absolute: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
   },
   description:
-    "Find the latest Gamma discount codes, coupons, and deals on Couponsbit. Save on AI-generated presentations, documents, and websites.",
+    "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/gamma-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/gamma-discount-code",
-    title: "Gamma Discount Code – Coupons & Deals | Couponsbit",
+    title: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
     description:
-      "Find the latest Gamma discount codes, coupons, and deals on Couponsbit. Save on AI-generated presentations, documents, and websites.",
+      "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gamma Discount Code – Coupons & Deals | Couponsbit",
+    title: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
     description:
-      "Find the latest Gamma discount codes, coupons, and deals on Couponsbit. Save on AI-generated presentations, documents, and websites.",
+      "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const gammaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/gamma-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/gamma-discount-code",
-      name: "Gamma Discount Code – Coupons & Deals | Couponsbit",
+      name: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
       description:
-        "Find the latest Gamma discount codes, coupons, and deals on Couponsbit. Save on AI-generated presentations, documents, and websites.",
+        "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-10-08",
@@ -77,14 +77,17 @@ const gammaSchema = {
       name: "Gamma Discount Codes & Coupon Codes",
       description: "Latest Gamma discount codes and offers.",
       url: "https://www.couponsbit.us/stores/gamma-discount-code",
-      numberOfItems: 6,
+      numberOfItems: 9,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Gamma – New Customer Offer", description: "Sign up and check for savings on your first Gamma plan.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Gamma – Percentage Off Sitewide", description: "Check for a Gamma discount code offering a percentage off eligible plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Gamma – Pro Plan Discount", description: "Save on Gamma's Pro plan for individual use.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Gamma – Team Plan Deal", description: "Check for savings on Gamma's Team plan for collaborative workspaces.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Gamma – Annual Plan Savings", description: "Save by choosing an annual Gamma plan instead of paying monthly.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Gamma – Referral Bonus", description: "Earn credit by referring friends and colleagues to Gamma.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Gamma – Save Up to 26% on Subscription Plans", description: "Enjoy up to 26% off on Gamma subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Gamma Annual Subscription – Save Up to 28%", description: "Save up to 28% on eligible Gamma annual subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Gamma Signup Offer – Get Free Templates", description: "Sign up for Gamma and get free templates on your first use.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Gamma Pro Monthly Plan – From $20", description: "Get the Gamma Pro Monthly Plan starting from $20.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Gamma Annual Plus Plan – From $96", description: "Get the Gamma Annual Plus Plan starting at $96.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Gamma Monthly Ultra Plan – From $100", description: "Get the Gamma Monthly Ultra Plan starting at $100.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Gamma Annual Pro Plan – From $180", description: "Get the Gamma Annual Pro Plan starting at just $180.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Gamma Monthly Plus Plan – From $10", description: "Grab the Gamma Monthly Plus Plan starting at just $10.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
+        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Gamma – Free Trial on Subscription Plans", description: "Enjoy a free trial on eligible Gamma subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
       ],
     },
 
