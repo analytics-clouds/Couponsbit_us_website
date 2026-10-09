@@ -386,6 +386,42 @@ export default function GammaContent() {
           Gamma AI Discount Code, Coupons & Deals
         </h2>
 
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["Gamma Subscription Plans", "Up to 26% OFF", "All Users", "Save across flexible monthly and annual plans with AI tools and templates", "Subscription Plans"],
+        ["Gamma Annual Subscription", "Up to 28% OFF", "All Users", "Greater savings on annual billing compared to monthly plans", "Annual Plans"],
+        ["Gamma Signup Offer", "Free Templates", "New Users", "Sign up to get access to professionally designed templates on first use", "First Signup"],
+        ["Gamma Pro Monthly Plan", "From $20 / month", "All Users", "Flexible monthly plan with advanced AI tools and premium creation features", "Pro Monthly"],
+        ["Gamma Plus Annual Plan", "From $96 / year", "All Users", "Annual billing offer ($8/mo equivalent) for full year of Plus AI features", "Plus Annual"],
+        ["Gamma Ultra Monthly Plan", "From $100 / month", "All Users", "Unlock top-tier AI features, premium models, and advanced tools", "Ultra Monthly"],
+        ["Gamma Pro Annual Plan", "From $180 / year", "All Users", "Discounted annual rate ($15/mo equivalent) for full Pro feature set", "Pro Annual"],
+        ["Gamma Plus Monthly Plan", "From $10 / month", "All Users", "Flexible entry-level monthly plan with essential AI generation tools", "Plus Monthly"],
+        ["Gamma Subscription Free Trial", "Free Trial", "Eligible Users", "Try AI tools, templates, and content creation features before committing", "All Subscriptions"]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         <div
           className={cn(
             "text-gray-500 font-bold leading-relaxed space-y-6 relative",

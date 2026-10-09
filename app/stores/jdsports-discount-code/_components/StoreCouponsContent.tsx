@@ -387,6 +387,43 @@ export default function JDSportsContent() {
           JD Sports Discount Code, Coupons & Deals
         </h2>
 
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        ["JD Sports Accessories Sale", "Up to 50% OFF", "All Users", "Bags, socks & accessories from Nike, adidas, Jordan & more; free shipping eligible", "Accessories"],
+        ["adidas Originals Adicolor Diamond Bag", "50% OFF (Rp275,000)", "All Users", "Reduced from Rp550,000 original price", "adidas Accessories"],
+        ["Jordan Cush Poly Socks (3 Pairs)", "50% OFF (Rp134,500)", "All Users", "Reduced from Rp269,000 original price", "Jordan Socks"],
+        ["Nike Aura Crescent Crossbody Bag", "40% OFF (Rp341,400)", "All Users", "Reduced from Rp569,000 original price", "Nike Bags"],
+        ["JD Sports Clothing Sale", "Up to 50% OFF", "All Users", "Discounts on sportswear and casual apparel across top brands", "Selected Clothing"],
+        ["Jordan Flight Polo Jersey", "50% OFF (Rp729,500)", "All Users", "Reduced from Rp1,459,000 original price", "Jordan Apparel"],
+        ["New Balance Core Logo T-Shirt", "30% OFF (Rp279,300)", "All Users", "Reduced from Rp399,000 original price", "New Balance Clothing"],
+        ["Nike Air Max 95", "Save Rp624,500 (Rp1,424,500)", "All Users", "Reduced from Rp2,049,000 original price", "Nike Footwear"],
+        ["Nike Air Max Phoenix Junior", "50% OFF (Rp899,500)", "All Users", "Reduced from Rp1,799,000 original price for junior sizing", "Junior Footwear"],
+        ["JD Sports First Order Discount", "10% OFF", "New Customers", "Sign up to receive 10% off; next-day delivery & Click & Collect available", "First Orders"],
+        ["JD Sports Member Exclusive Access", "Early Access", "JD Sports Members", "Exclusive early access to sales, deals, and special promotions for members", "Member Deals"]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         <div
           className={cn(
             "text-gray-500 font-bold leading-relaxed space-y-6 relative",

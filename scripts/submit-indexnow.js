@@ -16,7 +16,7 @@ const path = require("path");
 const https = require("https");
 
 const HOST = "www.couponsbit.us";
-const KEY = "88f8437a96bfbaa93710d985c912b10e";
+const KEY = "56e62a562bc247859b4fe1e33d944c72";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 

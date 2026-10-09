@@ -105,6 +105,8 @@ Save up to $80 on selected items from the Naples Outdoor Collection.
 Refresh your outdoor space with eligible Costco Wholesale furniture and outdoor products.
 Shop Costco online for outdoor savings and seasonal Costco Black Friday deals.
 
+
+
 Costco Outdoor Rugs – Save Up To $50
 
 Save up to $50 on selected outdoor rugs.
