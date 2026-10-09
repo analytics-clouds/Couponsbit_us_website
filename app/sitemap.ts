@@ -94,6 +94,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/halloween-shopping-guide-2026`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {

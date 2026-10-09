@@ -450,6 +450,86 @@ purchase. </p>
           </div>
         </div>
 
+        {/* Continue Reading Section */}
+        <section className="bg-white py-20 border-t border-[#f0f0f0]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="flex items-center justify-center gap-4 mb-3">
+              <span className="h-[2px] w-10 sm:w-16 bg-[#056bfa]/20"></span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-black text-center">
+                Continue <span className="text-[#056bfa]">Reading</span>
+              </h2>
+              <span className="h-[2px] w-10 sm:w-16 bg-[#056bfa]/20"></span>
+            </div>
+            <p className="text-gray-500 text-center max-w-xl mx-auto mb-12">
+              Discover more shopping guides, coupon tips, and seasonal savings from CouponsBit.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1787725876/upcoming-sales-2026_nqxs3z.webp",
+                  date: "June 23, 2026",
+                  readTime: "6 MIN READ",
+                  title: "The Biggest U.S. Sales Coming Up in 2026",
+                  desc: "Explore the ultimate guide to upcoming sales in 2026. Find the best coupon codes, promo offers, and major shopping dates to maximize your savings.",
+                  href: "/blog/upcoming-sales-2026",
+                },
+                {
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1782215435/couponsbit-shopping-savings-guide_ihevvt.webp",
+                  date: "June 23, 2026",
+                  readTime: "8 MIN READ",
+                  title: "What Is CouponsBit? Why Smart Shoppers Use It",
+                  desc: "Online shopping has transformed the way we buy everything from clothing",
+                  href: "/blog/couponsbit-shopping-savings-guide",
+                },
+                {
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1791548920/halloween-shopping-guide-2026_ctk0zx.webp",
+                  date: "October 9, 2026",
+                  readTime: "5 MIN READ",
+                  title: "Halloween Shopping Guide 2026: Spooky Deals You Can’t Miss",
+                  desc: "Celebrate Halloween 2026 for less with the best Halloween coupon codes, promo codes, and shopping deals. Save on costumes, decorations, candy, party supplies, and beauty products with CouponsBit.",
+                  href: "/blog/halloween-shopping-guide-2026",
+                },
+              ].map((post, i) => (
+                <Link
+                  key={i}
+                  href={post.href}
+                  className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group flex flex-col"
+                >
+                  <div className="w-full h-[200px] shrink-0 relative overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      width={400}
+                      height={200}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <div className="flex items-center gap-2 mb-2.5">
+                      <Calendar className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs font-medium uppercase">{post.date}</span>
+                      <span className="text-gray-300" aria-hidden="true">•</span>
+                      <Clock className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs uppercase font-medium">{post.readTime}</span>
+                    </div>
+                    <h3 className="text-[#056bfa] font-extrabold text-lg leading-tight mb-2.5 group-hover:text-[#0451c4] transition-all line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3 flex-1">
+                      {post.desc}
+                    </p>
+                    <span className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300">
+                      READ MORE <ChevronRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
