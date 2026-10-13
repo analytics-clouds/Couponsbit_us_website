@@ -3,10 +3,10 @@ import SpiritHalloweenCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+    absolute: " Spirit halloweens Promo Code - 36 % off Code | October 2026",
   },
   description:
-    "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
+    "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | October 2026",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-    title: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+    title: " Spirit halloweens Promo Code - 36 % off Code | October 2026",
     description:
-      "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
+      "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | October 2026",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+    title: " Spirit halloweens Promo Code - 36 % off Code | October 2026",
     description:
-      "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
+      "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | October 2026",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699426/spirti-logo_x4nbor.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const spiritHalloweenSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/spirit-halloween-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-      name: "Spirit Halloween Discount Code | Save Up to 75% OFF",
+      name: " Spirit halloweens Promo Code - 36 % off Code | October 2026",
       description:
-        "Find the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to save up to 75% OFF animatronics, costumes, décor, collectibles, plus FREE shipping on orders over $40.",
+        "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | October 2026",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",

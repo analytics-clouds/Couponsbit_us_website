@@ -212,7 +212,9 @@ export default function SpiritHalloweenCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Spirit Halloween Discount Code</h1>
+                    <h1 className="text-black font-black text-2xl md:text-2xl mb-2">
+                       Spirit halloweens Promo Code - 4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36% |October 2026
+                    </h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -222,7 +224,7 @@ export default function SpiritHalloweenCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Spirit Halloween Discount Code and Spirit Halloween Voucher to enjoy savings of up to 75% OFF on Halloween decorations, animatronics, costumes, collectibles, and accessories. Plus, get FREE shipping on orders over $40 for even bigger seasonal savings.
+                      Get ready for spooky savings with these limited-time Halloween deals! Save 75% on the Lil Skelly Bones Collectible Statue for just $9.97, 72% on the Killer Cornfield Garage Door Cover for $49.97, and 50% on the 21-Inch LED Jumping Spider Animatronic for $49.99. Enjoy 66% off the Beetlejuice Sign, 60% off the Trick 'r Treat Crossbody Bag, and 36% off the Scary Sitting Scarecrow Animatronic. Plus, discover Wolfie, the Bog Monster, and FREE SHIPPING on orders over $40!
                     </p>
                     <a
                       href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015"
