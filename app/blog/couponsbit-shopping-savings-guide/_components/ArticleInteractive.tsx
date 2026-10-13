@@ -471,6 +471,14 @@ As shoppers look for better ways to manage spending and maximize value, platform
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
+                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1791895197/vivid-seats-discount-code-best-ticket-deals-2026_bnsuht.webp",
+                  date: "October 13, 2026",
+                  readTime: "8 MIN READ",
+                  title: "Vivid Seats Discount Code: Best Deals on Concerts & Sports Tickets 2026",
+                  desc: "Find Vivid Seats discount codes for October 2026 and explore concert and sports ticket deals, promo offers, rewards, and tips to save with CouponsBit.",
+                  href: "/blog/vivid-seats-discount-code-best-ticket-deals-2026",
+                },
+                {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1791548920/halloween-shopping-guide-2026_ctk0zx.webp",
                   date: "October 9, 2026",
                   readTime: "5 MIN READ",
@@ -485,14 +493,6 @@ As shoppers look for better ways to manage spending and maximize value, platform
                   title: "Why You Should Shop Through Coupon and Cashback Websites",
                   desc: "Learn how coupon and cashback websites help you save money with promo codes, cashback offers, and exclusive deals. Shop smarter and find the best savings with CouponsBit.",
                   href: "/blog/why-shop-through-coupon-and-cashback-websites",
-                },
-                {
-                  image: "https://res.cloudinary.com/couponsbit/image/upload/v1789389490/gamsgo-discount-code-and-promo-codes_uqqkua.webp",
-                  date: "September 14, 2026",
-                  readTime: "5 MIN READ",
-                  title: "Get More Savings With a GamsGo Promo Code",
-                  desc: "Looking for a GamsGo discount code? Discover how to find and apply GamsGo promo codes and save more on digital subscriptions, gaming, AI tools and software.",
-                  href: "/blog/how-to-use-gamsgo-discount-code",
                 },
               ].map((post, i) => (
                 <Link

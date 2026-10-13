@@ -40,6 +40,7 @@ const CATEGORIES = [
 ];
 
 const BLOG_POSTS = [
+  { name: "Vivid Seats Discount Code: Best Ticket Deals 2026", href: "/blog/vivid-seats-discount-code-best-ticket-deals-2026" },
   { name: "Halloween Shopping Guide 2026", href: "/blog/halloween-shopping-guide-2026" },
   { name: "Couponsbit Shopping & Savings Guide", href: "/blog/couponsbit-shopping-savings-guide" },
   { name: "How to Save Money While Shopping Online in 2026", href: "/blog/how-to-save-money-shopping-online" },
