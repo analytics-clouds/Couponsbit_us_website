@@ -36,98 +36,98 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
- const slides = [
-  {
-    id: 1,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/1_p1m23a.webp",
-    alt: "OGL Moves Discount Code & Promo Deals",
-    href: "https://eastriseinternationalgrouplimited.pxf.io/QYv3Yz"
-  },
-  {
-    id: 2,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/2_mlqozl.webp",
-    alt: "Helium 10 Discount Code & Promo Deals",
-    href: "https://i.helium10.com/c/4303217/3054775/37271?subId1=1015"
-  },
-  {
-    id: 3,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/3_vu214r.webp",
-    alt: "Beelink Discount Code & Promo Deals",
-    href: "https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
-  },
-  {
-    id: 4,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/4_hlcmu9.webp",
-    alt: "iSinwheel Discount Code & Promo Deals",
-    href: "https://isinwheel.pxf.io/c/4303217/1289264/15800?subId1=1015"
-  },
-  {
-    id: 5,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/5_xmdpqq.webp",
-    alt: "Epic Discount Code & Promo Deals",
-    href: "https://epic.pxf.io/c/4303217/3763127/47834?adnetwork=1&trafsrc=2"
-  },
-  {
-    id: 6,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/6_dh8e1i.webp",
-    alt: "Airalo Discount Code & Promo Deals",
-    href: "https://www.airalo.com/?code=AC10ALL"
-  },
-  {
-    id: 7,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/7_b7mwm4.webp",
-    alt: "Blue Cypress Discount Code & Promo Deals",
-    href: "https://bluecypress.sjv.io/3kOgBX"
-  },
-  {
-    id: 8,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/8_dblfhb.webp",
-    alt: "LovesJerkyCo Discount Code & Promo Deals",
-    href: "https://lovesjerkyco.pxf.io/VOV7Ja"
-  },
-  {
-    id: 9,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809730/5_ihwcho.webp",
-    alt: "Bluehost Discount Code & Promo Deals",
-    href: "https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015"
-  },
-  {
-    id: 10,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/9_qkjxk7.webp",
-    alt: "Bluetti Discount Code & Promo Deals",
-    href: "http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015"
-  },
-  {
-    id: 11,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144792/11_uedwgr.webp",
-    alt: "Sungait Discount Code & Promo Deals",
-    href: "https://sungaitcn.pxf.io/c/6434050/3933369/54145?subId1=986"
-  },
-  {
-    id: 12,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/12_nvvkly.webp",
-    alt: "Factor 75 Discount Code & Promo Deals",
-    href: "https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
-  },
-  {
-    id: 13,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/7_ymlcxp.webp",
-    alt: "Major Fitness Discount Code & Promo Deals",
-    href: "https://majorfitness.sjv.io/c/4303217/1835793/21930?subId1=1015"
-  },
-  {
-    id: 14,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/8_dzfhxz.webp",
-    alt: "Fytoo Discount Code & Promo Deals",
-    href: "https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
-  },
-  {
-    id: 15,
-    image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/6_arunqx.webp",
-    alt: "Dreame Discount Code & Promo Deals",
-    href: "https://dreame.sjv.io/c/4303217/1700990/19782?subId1=1015"
-  }
-];
+  const slides = [
+    {
+      id: 1,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/1_p1m23a.webp",
+      alt: "OGL Moves Discount Code & Promo Deals",
+      href: "https://eastriseinternationalgrouplimited.pxf.io/QYv3Yz"
+    },
+    {
+      id: 2,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/2_mlqozl.webp",
+      alt: "Helium 10 Discount Code & Promo Deals",
+      href: "https://i.helium10.com/c/4303217/3054775/37271?subId1=1015"
+    },
+    {
+      id: 3,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/3_vu214r.webp",
+      alt: "Beelink Discount Code & Promo Deals",
+      href: "https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
+    },
+    {
+      id: 4,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/4_hlcmu9.webp",
+      alt: "iSinwheel Discount Code & Promo Deals",
+      href: "https://isinwheel.pxf.io/c/4303217/1289264/15800?subId1=1015"
+    },
+    {
+      id: 5,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/5_xmdpqq.webp",
+      alt: "Epic Discount Code & Promo Deals",
+      href: "https://epic.pxf.io/c/4303217/3763127/47834?adnetwork=1&trafsrc=2"
+    },
+    {
+      id: 6,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/6_dh8e1i.webp",
+      alt: "Airalo Discount Code & Promo Deals",
+      href: "https://www.airalo.com/?code=AC10ALL"
+    },
+    {
+      id: 7,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/7_b7mwm4.webp",
+      alt: "Blue Cypress Discount Code & Promo Deals",
+      href: "https://bluecypress.sjv.io/3kOgBX"
+    },
+    {
+      id: 8,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/8_dblfhb.webp",
+      alt: "LovesJerkyCo Discount Code & Promo Deals",
+      href: "https://lovesjerkyco.pxf.io/VOV7Ja"
+    },
+    {
+      id: 9,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809730/5_ihwcho.webp",
+      alt: "Bluehost Discount Code & Promo Deals",
+      href: "https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015"
+    },
+    {
+      id: 10,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/9_qkjxk7.webp",
+      alt: "Bluetti Discount Code & Promo Deals",
+      href: "http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015"
+    },
+    {
+      id: 11,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144792/11_uedwgr.webp",
+      alt: "Sungait Discount Code & Promo Deals",
+      href: "https://sungaitcn.pxf.io/c/6434050/3933369/54145?subId1=986"
+    },
+    {
+      id: 12,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/12_nvvkly.webp",
+      alt: "Factor 75 Discount Code & Promo Deals",
+      href: "https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
+    },
+    {
+      id: 13,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/7_ymlcxp.webp",
+      alt: "Major Fitness Discount Code & Promo Deals",
+      href: "https://majorfitness.sjv.io/c/4303217/1835793/21930?subId1=1015"
+    },
+    {
+      id: 14,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/8_dzfhxz.webp",
+      alt: "Fytoo Discount Code & Promo Deals",
+      href: "https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+    },
+    {
+      id: 15,
+      image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/6_arunqx.webp",
+      alt: "Dreame Discount Code & Promo Deals",
+      href: "https://dreame.sjv.io/c/4303217/1700990/19782?subId1=1015"
+    }
+  ];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -155,7 +155,7 @@ const Hero = () => {
             aria-label="Previous slide"
             className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
+            <ChevronLeft className="w-5 h-5 text-[#47225a]" />
           </button>
 
           <button
@@ -163,7 +163,7 @@ const Hero = () => {
             aria-label="Next slide"
             className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronRight className="w-5 h-5 text-[#056bfa]" />
+            <ChevronRight className="w-5 h-5 text-[#47225a]" />
           </button>
 
           <div
@@ -201,7 +201,7 @@ const Hero = () => {
             >
               <span className={cn(
                 "rounded-full transition-all duration-300 block",
-                currentIndex === i ? "w-6 h-2 bg-[#056bfa]" : "w-2 h-2 bg-[#e0e0e0]"
+                currentIndex === i ? "w-6 h-2 bg-[#47225a]" : "w-2 h-2 bg-[#e0e0e0]"
               )} />
             </button>
           ))}
@@ -212,17 +212,17 @@ const Hero = () => {
 };
 
 const TOP_BRANDS = [
-  { name: "Sungait",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp",                  discount: "Up To 50% OFF",   href: "/stores/sungait-discount-code" },
-  { name: "Bluetti",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp",            discount: "Save Up To $200",  href: "/stores/bluetti-discount-code" },
-  { name: "OGLmove",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1788434147/ogl-logo_p8i400.webp",                        discount: "Up To 13% OFF",   href: "/stores/oglmove-discount-code" },
-  { name: "Helium 10",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/helium_10_logo_gt6opp.webp",                  discount: "Up To 25% OFF",   href: "/stores/helium10-discount-code" },
-  { name: "Beelink",         logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494081/beelink-coupon-code_gephnd.jpg",               discount: "Up to 35% OFF",   href: "/stores/beelink-discount-code" },
-  { name: "iSinwheel",       logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/isinwheel_logo_wwsdeo.webp",                  discount: "Up To 50% OFF",   href: "/stores/isinwheel-discount-code" },
-  { name: "Epic",            logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789032950/epic-logo_kxo5y0.webp",                       discount: "Extra 25% OFF",   href: "/stores/epic-discount-code" },
-  { name: "Airalo",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp",                     discount: "USA eSIM From $4.50", href: "/stores/airalo-discount-code" },
-  { name: "Blue Cypress",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786949027/blue-cypress-logo_ax2m7c.webp",               discount: "20% OFF First Order", href: "/stores/blue-cypress-discount-code" },
-  { name: "LovesJerkyCo",    logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp",                  discount: "From $10",        href: "/stores/lovejurky-discount-code" },
-  { name: "Amazon",          logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp",                     discount: "Up To 52% OFF",   href: "/stores/amazon-discount-code" },
+  { name: "Sungait", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp", discount: "Up To 50% OFF", href: "/stores/sungait-discount-code" },
+  { name: "Bluetti", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp", discount: "Save Up To $200", href: "/stores/bluetti-discount-code" },
+  { name: "OGLmove", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1788434147/ogl-logo_p8i400.webp", discount: "Up To 13% OFF", href: "/stores/oglmove-discount-code" },
+  { name: "Helium 10", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/helium_10_logo_gt6opp.webp", discount: "Up To 25% OFF", href: "/stores/helium10-discount-code" },
+  { name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1783494081/beelink-coupon-code_gephnd.jpg", discount: "Up to 35% OFF", href: "/stores/beelink-discount-code" },
+  { name: "iSinwheel", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789640583/isinwheel_logo_wwsdeo.webp", discount: "Up To 50% OFF", href: "/stores/isinwheel-discount-code" },
+  { name: "Epic", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1789032950/epic-logo_kxo5y0.webp", discount: "Extra 25% OFF", href: "/stores/epic-discount-code" },
+  { name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp", discount: "USA eSIM From $4.50", href: "/stores/airalo-discount-code" },
+  { name: "Blue Cypress", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786949027/blue-cypress-logo_ax2m7c.webp", discount: "20% OFF First Order", href: "/stores/blue-cypress-discount-code" },
+  { name: "LovesJerkyCo", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp", discount: "From $10", href: "/stores/lovejurky-discount-code" },
+  { name: "Amazon", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp", discount: "Up To 52% OFF", href: "/stores/amazon-discount-code" },
 ];
 
 const TopBrands = () => {
@@ -234,9 +234,9 @@ const TopBrands = () => {
     <section className="bg-white py-12">
       <div className="container mx-auto px-4 max-w-7xl mb-7 flex justify-between items-center">
         <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
-           Top Brands
+          Top Brands
         </h2>
-        <Link href="/stores" className="text-[#056bfa] font-bold text-sm hover:underline flex items-center gap-1 group">
+        <Link href="/stores" className="text-[#47225a] font-bold text-sm hover:underline flex items-center gap-1 group">
           View All Stores <span className="group-hover:translate-x-1 transition-transform">→</span>
         </Link>
       </div>
@@ -247,14 +247,14 @@ const TopBrands = () => {
           aria-label="Scroll left"
           className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
+          <ChevronLeft className="w-5 h-5 text-[#47225a]" />
         </button>
         <button
           onClick={() => scroll(1)}
           aria-label="Scroll right"
           className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronRight className="w-5 h-5 text-[#056bfa]" />
+          <ChevronRight className="w-5 h-5 text-[#47225a]" />
         </button>
 
         <div
@@ -266,7 +266,7 @@ const TopBrands = () => {
             <Link
               key={i}
               href={store.href}
-              className="shrink-0 w-[210px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-6 flex flex-col items-center text-center hover:border-[#056bfa] hover:shadow-md transition-all duration-300 group"
+              className="shrink-0 w-[210px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-6 flex flex-col items-center text-center hover:border-[#47225a] hover:shadow-md transition-all duration-300 group"
             >
               <div className="h-20 flex items-center justify-center mb-3">
                 <img
@@ -414,7 +414,8 @@ export default function HomePageContent() {
 
   return (
     <div className="min-h-screen font-sans selection:bg-brand-primary selection:text-white bg-white">
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes scroll-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }
         @keyframes scroll-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
         .marquee-left { animation: scroll-left 25s linear infinite; }
@@ -432,7 +433,7 @@ export default function HomePageContent() {
           <CheckCircle className="w-5 h-5 text-[#22c55e]" />
           <div>
             <p className="text-black font-extrabold text-sm">Code Copied!</p>
-            <p className="text-[#056bfa] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
+            <p className="text-[#47225a] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
           </div>
         </div>
       )}
@@ -442,17 +443,17 @@ export default function HomePageContent() {
 
         {/* Section 1: Trust Stats Bar */}
         <section className="bg-gradient-to-r from-slate-50 to-white py-6 md:py-8">
-  <div className="container mx-auto max-w-7xl px-4">
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-      {[
-        { icon: Store, val: "2,000+", label: "Top Stores" },
-        { icon: Tag, val: "15,000+", label: "Coupons & Deals" },
-        { icon: Users, val: "500K+", label: "Happy Shoppers" },
-        { icon: BadgeCheck, val: "100%", label: "Verified Coupons" },
-      ].map((stat, i) => (
-        <div
-          key={i}
-          className="
+          <div className="container mx-auto max-w-7xl px-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              {[
+                { icon: Store, val: "2,000+", label: "Top Stores" },
+                { icon: Tag, val: "15,000+", label: "Coupons & Deals" },
+                { icon: Users, val: "500K+", label: "Happy Shoppers" },
+                { icon: BadgeCheck, val: "100%", label: "Verified Coupons" },
+              ].map((stat, i) => (
+                <div
+                  key={i}
+                  className="
             bg-white
             rounded-xl
             border border-gray-100
@@ -462,135 +463,132 @@ export default function HomePageContent() {
             duration-300
             p-4 md:p-5
           "
-        >
-          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#056bfa]/10 flex items-center justify-center shrink-0">
-              <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#056bfa]" />
-            </div>
+                >
+                  <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3">
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#47225a]/10 flex items-center justify-center shrink-0">
+                      <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#47225a]" />
+                    </div>
 
-            <div className="text-center sm:text-left">
-              <div className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-none">
-                {stat.val}
-              </div>
+                    <div className="text-center sm:text-left">
+                      <div className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-none">
+                        {stat.val}
+                      </div>
 
-              <p className="text-xs md:text-sm text-gray-500 mt-1">
-                {stat.label}
-              </p>
+                      <p className="text-xs md:text-sm text-gray-500 mt-1">
+                        {stat.label}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+        </section>
 
-<section className="bg-gradient-to-b from-gray-50 to-white py-14 border-y border-gray-100">
-  <div className="container mx-auto px-4 max-w-7xl">
-    {/* Tagline / Header */}
-    <div className="text-center max-w-2xl mx-auto mb-10">
-      <span className="text-[#056bfa] font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-full border border-blue-100">
-        Exclusive Amazon Deals
-      </span>
-      <h2 className="text-gray-900 font-black text-3xl md:text-4xl tracking-tight mt-3">
-        Unbeatable Savings Across Top Categories
-      </h2>
-      <p className="text-gray-500 text-sm md:text-base mt-2">
-        Handpicked Amazon discounts updated daily—shop smarter, save bigger.
-      </p>
-      <div className="w-16 h-1 bg-[#056bfa] rounded-full mx-auto mt-4"></div>
-    </div>
-
-    {/* Carousel Container */}
-    <div className="relative group/carousel px-2 sm:px-4">
-      <div className="overflow-hidden rounded-2xl py-2">
-        <div
-          className="flex transition-transform duration-500 ease-out gap-6"
-          style={{
-            transform: `translateX(-${
-              currentIndex * (100 / cardsToShow)
-            }%)`,
-          }}
-        >
-          {categories.map((category, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 flex flex-col justify-between bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group/card"
-              style={{
-                width: `calc(${100 / cardsToShow}% - ${
-                  ((cardsToShow - 1) * 24) / cardsToShow
-                }px)`,
-              }}
-            >
-              {/* 1. Fully Used Image */}
-              <div className="relative w-full aspect-[16/10] bg-gray-100 overflow-hidden">
-                <img
-                  src={category.image}
-                  alt={category.title}
-                  className="w-full h-full object-cover object-center group-hover/card:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300"></div>
-              </div>
-
-              {/* Card Body */}
-              <div className="p-5 flex flex-col flex-grow justify-between text-center bg-white">
-                {/* 2. Category Title */}
-                <h3 className="text-base md:text-lg font-bold text-gray-800 line-clamp-2 mb-5 min-h-[3rem] flex items-center justify-center group-hover/card:text-[#056bfa] transition-colors duration-200">
-                  {category.title}
-                </h3>
-
-                {/* 3. Button */}
-                <a
-                  href={affiliateUrl}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="w-full py-3 px-4 bg-[#056bfa] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
-                >
-                  <span>Explore Deals</span>
-                  <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" />
-                </a>
-              </div>
+        <section className="bg-gradient-to-b from-gray-50 to-white py-14 border-y border-gray-100">
+          <div className="container mx-auto px-4 max-w-7xl">
+            {/* Tagline / Header */}
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="text-[#47225a] font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-full border border-blue-100">
+                Exclusive Amazon Deals
+              </span>
+              <h2 className="text-gray-900 font-black text-3xl md:text-4xl tracking-tight mt-3">
+                Unbeatable Savings Across Top Categories
+              </h2>
+              <p className="text-gray-500 text-sm md:text-base mt-2">
+                Handpicked Amazon discounts updated daily—shop smarter, save bigger.
+              </p>
+              <div className="w-16 h-1 bg-[#47225a] rounded-full mx-auto mt-4"></div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Prev Button */}
-      <button
-        onClick={prevSlide}
-        aria-label="Previous Slide"
-        className="absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
-      >
-        <ChevronLeft className="w-6 h-6 text-[#056bfa]" />
-      </button>
+            {/* Carousel Container */}
+            <div className="relative group/carousel px-2 sm:px-4">
+              <div className="overflow-hidden rounded-2xl py-2">
+                <div
+                  className="flex transition-transform duration-500 ease-out gap-6"
+                  style={{
+                    transform: `translateX(-${currentIndex * (100 / cardsToShow)
+                      }%)`,
+                  }}
+                >
+                  {categories.map((category, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 flex flex-col justify-between bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group/card"
+                      style={{
+                        width: `calc(${100 / cardsToShow}% - ${((cardsToShow - 1) * 24) / cardsToShow
+                          }px)`,
+                      }}
+                    >
+                      {/* 1. Fully Used Image */}
+                      <div className="relative w-full aspect-[16/10] bg-gray-100 overflow-hidden">
+                        <img
+                          src={category.image}
+                          alt={category.title}
+                          className="w-full h-full object-cover object-center group-hover/card:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300"></div>
+                      </div>
 
-      {/* Next Button */}
-      <button
-        onClick={nextSlide}
-        aria-label="Next Slide"
-        className="absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
-      >
-        <ChevronRight className="w-6 h-6 text-[#056bfa]" />
-      </button>
-    </div>
+                      {/* Card Body */}
+                      <div className="p-5 flex flex-col flex-grow justify-between text-center bg-white">
+                        {/* 2. Category Title */}
+                        <h3 className="text-base md:text-lg font-bold text-gray-800 line-clamp-2 mb-5 min-h-[3rem] flex items-center justify-center group-hover/card:text-[#47225a] transition-colors duration-200">
+                          {category.title}
+                        </h3>
 
-    {/* Dots Navigation */}
-    <div className="flex justify-center items-center gap-2 mt-8">
-      {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-        <button
-          key={idx}
-          onClick={() => setCurrentIndex(idx)}
-          aria-label={`Go to slide ${idx + 1}`}
-          className={`h-2.5 rounded-full transition-all duration-300 ${
-            currentIndex === idx
-              ? "w-8 bg-[#056bfa]"
-              : "w-2.5 bg-gray-300 hover:bg-gray-400"
-          }`}
-        />
-      ))}
-    </div>
-  </div>
-</section>
+                        {/* 3. Button */}
+                        <a
+                          href={affiliateUrl}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          className="w-full py-3 px-4 bg-[#47225a] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
+                        >
+                          <span>Explore Deals</span>
+                          <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" />
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Prev Button */}
+              <button
+                onClick={prevSlide}
+                aria-label="Previous Slide"
+                className="absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
+              >
+                <ChevronLeft className="w-6 h-6 text-[#47225a]" />
+              </button>
+
+              {/* Next Button */}
+              <button
+                onClick={nextSlide}
+                aria-label="Next Slide"
+                className="absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
+              >
+                <ChevronRight className="w-6 h-6 text-[#47225a]" />
+              </button>
+            </div>
+
+            {/* Dots Navigation */}
+            <div className="flex justify-center items-center gap-2 mt-8">
+              {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentIndex(idx)}
+                  aria-label={`Go to slide ${idx + 1}`}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${currentIndex === idx
+                      ? "w-8 bg-[#47225a]"
+                      : "w-2.5 bg-gray-300 hover:bg-gray-400"
+                    }`}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Tagline Banner */}
         <section className="bg-white py-8">
@@ -598,7 +596,7 @@ export default function HomePageContent() {
             <h2 className="text-black font-extrabold text-2xl md:text-3xl tracking-tight">
               Shop Beyond the Price Tag.
             </h2>
-            <div className="w-16 h-[3px] bg-[#056bfa] rounded-full mx-auto mt-3"></div>
+            <div className="w-16 h-[3px] bg-[#47225a] rounded-full mx-auto mt-3"></div>
           </div>
         </section>
 
@@ -610,9 +608,9 @@ export default function HomePageContent() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
-               Shop by Categories
+                Shop by Categories
               </h2>
-              <Link href="/categories" className="text-[#056bfa] font-bold text-sm hover:underline">
+              <Link href="/categories" className="text-[#47225a] font-bold text-sm hover:underline">
                 View All Categories →
               </Link>
             </div>
@@ -626,7 +624,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788763019/electrical-categories_alw7t8.webp",
                   coupons: "850+",
                   stores: "50+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["Rayneo", "Reolink", "Samsung", "Apple"],
                   href: "/categories/electronics"
                 },
@@ -637,7 +635,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/travel_anniy9.png",
                   coupons: "420+",
                   stores: "20+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
                   href: "/categories/travel"
                 },
@@ -648,7 +646,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/entertainment_q3puib.png",
                   coupons: "210+",
                   stores: "15+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["StubHub", "Viagogo", "Ticketmaster", "SeatGeek"],
                   href: "/categories/entertainment"
                 },
@@ -659,7 +657,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780442/software_firnew.png",
                   coupons: "300+",
                   stores: "30+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["Driffle", "Bluehost", "Envato", "Sintra"],
                   href: "/categories/software"
                 },
@@ -670,7 +668,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/telecom_wagtph.png",
                   coupons: "320+",
                   stores: "10+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["Lyca Mobile", "Mint Mobile", "Visible", "Google Fi"],
                   href: "/categories/mobile"
                 },
@@ -681,7 +679,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/health_frbeyc.png",
                   coupons: "90+",
                   stores: "10+",
-                  accent: "#056bfa",
+                  accent: "#47225a",
                   featured: ["Kerala Ayurveda", "GoodRx", "Philips", "RingConn"],
                   href: "/categories/health"
                 }
@@ -712,7 +710,7 @@ export default function HomePageContent() {
 
                   {/* Body */}
                   <div className="p-6">
-                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#056bfa] transition-colors">
+                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#47225a] transition-colors">
                       {cat.name}
                     </h3>
                     <p className="text-gray-500 text-sm font-medium mb-4 leading-relaxed">
@@ -726,7 +724,7 @@ export default function HomePageContent() {
                       ))}
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#056bfa] font-black text-sm">View All Coupons</span>
+                      <span className="text-[#47225a] font-black text-sm">View All Coupons</span>
                       <div className="w-8 h-8 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-all duration-300" style={{ backgroundColor: `${cat.accent}15` }}>
                         <ArrowRight className="w-4 h-4" style={{ color: cat.accent }} />
                       </div>
@@ -737,7 +735,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
+              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#47225a] text-[#47225a] bg-white rounded-full font-black hover:bg-[#47225a] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
                 <LayoutGrid className="w-4 h-4" />
                 Browse All Categories
               </Link>
@@ -745,8 +743,8 @@ export default function HomePageContent() {
           </div>
         </section>
 
-        
-      
+
+
 
 
         {/* Section 4: Featured & Exclusive Coupons */}
@@ -757,7 +755,7 @@ export default function HomePageContent() {
                 <h2 className="text-black font-extrabold text-2xl"> Featured & Exclusive Coupons</h2>
                 <p className="text-gray-500 text-sm mt-0.5">Hand-picked verified deals updated daily</p>
               </div>
-              <Link href="/deals" className="text-[#056bfa] font-bold text-sm hover:underline">
+              <Link href="/deals" className="text-[#47225a] font-bold text-sm hover:underline">
                 View All Deals →
               </Link>
             </div>
@@ -844,7 +842,7 @@ export default function HomePageContent() {
               ].map((c, i) => (
                 <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                   {/* Blue left discount box */}
-                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#47225a] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                     <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                     <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
                     <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
@@ -870,13 +868,13 @@ export default function HomePageContent() {
                       {openFeatured === i && (
                         <ul className="mt-2 space-y-1 text-gray-600 text-[12px]">
                           {c.points.map((p, pi) => (
-                            <li key={pi} className="flex gap-1"><span className="text-[#056bfa]">•</span>{p}</li>
+                            <li key={pi} className="flex gap-1"><span className="text-[#47225a]">•</span>{p}</li>
                           ))}
                         </ul>
                       )}
                     </div>
                     <Link href={c.href}>
-                      <button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
+                      <button className="mt-3 w-full bg-[#47225a] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
                     </Link>
                   </div>
                 </div>
@@ -886,7 +884,7 @@ export default function HomePageContent() {
         </section>
 
         {/* Smarter Savings CTA Banner */}
-        <section className="bg-gradient-to-br from-[#0451c4] to-[#056bfa] py-24 md:py-14">
+        <section className="bg-gradient-to-br from-[#0451c4] to-[#47225a] py-24 md:py-14">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-white font-black text-3xl md:text-5xl leading-tight mb-6">
               Smarter Savings Start Here.
@@ -894,124 +892,124 @@ export default function HomePageContent() {
             <p className="text-white/80 text-base md:text-lg leading-relaxed mb-10">
               Discover verified discounts, exclusive offers, and money-saving deals from your favorite brands. Whether you're shopping for travel, fashion, electronics, software, entertainment, or mobile services, Couponsbit helps you find better deals and save more on every purchase.
             </p>
-            <Link href="/stores" className="inline-flex items-center gap-2 bg-white text-[#056bfa] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <Link href="/stores" className="inline-flex items-center gap-2 bg-white text-[#47225a] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
               Browse Stores <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>
 
         {/* Section 3: Our Story Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            {/* Left Column: Image/Illustration */}
-            <div className="w-full lg:w-1/2">
-              <img
-                src="/our-story.webp"
-                alt="About Couponsbit"
-                width={800}
-                height={520}
-                className="w-full h-[400px] md:h-[520px] rounded-[48px] object-cover"
-                loading="lazy"
-              />
-              <p className="text-center text-gray-500 text-sm italic mt-8">Trusted by 500,000+ shoppers across India</p>
-            </div>
-
-            {/* Right Column: Story Text */}
-            <div className="w-full lg:w-1/2">
-              <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#0344b0] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
-              <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">Save More on the Brands You Love</h2>
-              
-              <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
-                <p>
-                  Couponsbit is a savings destination built for shoppers who believe paying full price should always be a choice - not the default. We help you discover verified coupon codes, exclusive promo offers, and limited-time deals from trusted brands across travel, fashion, electronics, software, entertainment, mobile services, and more.
-                </p>
-                <p>
-                  Our mission is simple: make online savings easier to find. Instead of spending time searching through dozens of websites, shoppers can explore the latest discounts, promotions, and money-saving opportunities all in one place. Whether you're booking a trip, upgrading your tech, refreshing your wardrobe, or purchasing everyday essentials, Couponsbit helps you shop smarter and keep more money in your pocket.
-                </p>
-
-                <div className="w-full mb-6">
-      <a
-        href="https://www.google.com/preferences/source?q=couponsbit.us"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
-      >
-        <img
-          src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
-          alt="Add as a preferred source on Google"
-          className="w-full max-w-[260px] h-auto object-contain"
-        />
-      </a>
-    </div>
-                
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="flex flex-col lg:flex-row items-center gap-16">
+              {/* Left Column: Image/Illustration */}
+              <div className="w-full lg:w-1/2">
+                <img
+                  src="/our-story.webp"
+                  alt="About Couponsbit"
+                  width={800}
+                  height={520}
+                  className="w-full h-[400px] md:h-[520px] rounded-[48px] object-cover"
+                  loading="lazy"
+                />
+                <p className="text-center text-gray-500 text-sm italic mt-8">Trusted by 500,000+ shoppers across India</p>
               </div>
 
-             
-            </div>
-          </div>
-        </div>
-      </section>
+              {/* Right Column: Story Text */}
+              <div className="w-full lg:w-1/2">
+                <span className="inline-block px-4 py-1.5 bg-[#e8f6f8] text-[#0344b0] rounded-full text-xs font-black uppercase tracking-widest mb-6">OUR STORY</span>
+                <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-8">Save More on the Brands You Love</h2>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
-            {/* Left: Heading + Accordion */}
-            <div>
-              <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-10">
-                Frequently Asked<br />Questions
-              </h2>
+                <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
+                  <p>
+                    Couponsbit is a savings destination built for shoppers who believe paying full price should always be a choice - not the default. We help you discover verified coupon codes, exclusive promo offers, and limited-time deals from trusted brands across travel, fashion, electronics, software, entertainment, mobile services, and more.
+                  </p>
+                  <p>
+                    Our mission is simple: make online savings easier to find. Instead of spending time searching through dozens of websites, shoppers can explore the latest discounts, promotions, and money-saving opportunities all in one place. Whether you're booking a trip, upgrading your tech, refreshing your wardrobe, or purchasing everyday essentials, Couponsbit helps you shop smarter and keep more money in your pocket.
+                  </p>
 
-              <div className="space-y-4">
-                {FAQS.map((faq, i) => (
-                  <div key={i} className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
-                      className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                  <div className="w-full mb-6">
+                    <a
+                      href="https://www.google.com/preferences/source?q=couponsbit.us"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                     >
-                      <span className="font-black text-black text-base md:text-lg">{faq.q}</span>
-                      <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#056bfa]" : "bg-[#f0f0f0]")}>
-                        {openFaqIndex === i ? <Minus className="w-4 h-4 text-white" /> : <Plus className="w-4 h-4 text-gray-500" />}
-                      </div>
-                    </button>
-                    {openFaqIndex === i && (
-                      <div className="px-6 pb-6 text-gray-500 text-sm leading-relaxed">
-                        <p>{faq.a}</p>
-                        {faq.list && (
-                          <ul className="list-disc pl-5 mt-3 space-y-1">
-                            {faq.list.map((item, j) => (
-                              <li key={j}>{item}</li>
-                            ))}
-                          </ul>
-                        )}
-                        {faq.note && <p className="mt-3">{faq.note}</p>}
-                      </div>
-                    )}
+                      <img
+                        src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+                        alt="Add as a preferred source on Google"
+                        className="w-full max-w-[260px] h-auto object-contain"
+                      />
+                    </a>
                   </div>
-                ))}
-              </div>
-            </div>
 
-            {/* Right: Support Card */}
-            <div className="bg-white rounded-3xl border border-[#f0f0f0] shadow-sm p-8 h-fit lg:sticky lg:top-28">
-              <div className="w-12 h-12 rounded-2xl bg-[#056bfa] flex items-center justify-center mb-6">
-                <MessageCircle className="w-6 h-6 text-white" />
+                </div>
+
+
               </div>
-              <h3 className="text-2xl font-black text-black mb-3">Still have questions?</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-8">
-                Can't find the answer you're looking for? Get in touch with our support team and we'll be happy to help you find the best deals.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex w-full items-center justify-center gap-2 bg-[#056bfa] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
-              >
-                Contact Support
-              </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-[#f5f5f5]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
+              {/* Left: Heading + Accordion */}
+              <div>
+                <h2 className="text-4xl md:text-5xl font-black text-black leading-tight mb-10">
+                  Frequently Asked<br />Questions
+                </h2>
+
+                <div className="space-y-4">
+                  {FAQS.map((faq, i) => (
+                    <div key={i} className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
+                        className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                      >
+                        <span className="font-black text-black text-base md:text-lg">{faq.q}</span>
+                        <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#47225a]" : "bg-[#f0f0f0]")}>
+                          {openFaqIndex === i ? <Minus className="w-4 h-4 text-white" /> : <Plus className="w-4 h-4 text-gray-500" />}
+                        </div>
+                      </button>
+                      {openFaqIndex === i && (
+                        <div className="px-6 pb-6 text-gray-500 text-sm leading-relaxed">
+                          <p>{faq.a}</p>
+                          {faq.list && (
+                            <ul className="list-disc pl-5 mt-3 space-y-1">
+                              {faq.list.map((item, j) => (
+                                <li key={j}>{item}</li>
+                              ))}
+                            </ul>
+                          )}
+                          {faq.note && <p className="mt-3">{faq.note}</p>}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right: Support Card */}
+              <div className="bg-white rounded-3xl border border-[#f0f0f0] shadow-sm p-8 h-fit lg:sticky lg:top-28">
+                <div className="w-12 h-12 rounded-2xl bg-[#47225a] flex items-center justify-center mb-6">
+                  <MessageCircle className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-black text-black mb-3">Still have questions?</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-8">
+                  Can't find the answer you're looking for? Get in touch with our support team and we'll be happy to help you find the best deals.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-[#47225a] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
+                >
+                  Contact Support
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Section 7: Latest Blog Posts */}
         {/* <section className="bg-[#f5f5f5] py-12">
@@ -1031,7 +1029,7 @@ export default function HomePageContent() {
                 { kw: "coupon code discount", date: "May 10, 2026", read: "5 min read", title: "How to Stack Coupons and Bank Offers for Maximum Savings", desc: "Did you know you can combine multiple deals for even bigger discounts? This guide explains how.", href: "/blog" },
                 { kw: "fashion sale clothing", date: "May 8, 2026", read: "7 min read", title: "Myntra Grand Sale 2026 — Complete Guide to Getting the Best Deals", desc: "Myntra's biggest sale of the year is here. Here is your complete guide to saving the most money.", href: "/blog" }
               ].map((post, i) => (
-                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1.5 transition-all duration-300">
+                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#47225a] hover:-translate-y-1.5 transition-all duration-300">
                   <div className="w-full sm:w-[180px] lg:w-full h-48 sm:h-auto lg:h-44 shrink-0 overflow-hidden">
                     <img
                       src={`https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=300&h=200&sig=${i}`}
@@ -1049,10 +1047,10 @@ export default function HomePageContent() {
                           <span>{post.read}</span>
                         </div>
                       </div>
-                      <h3 className="text-[#056bfa] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
+                      <h3 className="text-[#47225a] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
                       <p className="text-gray-500 text-xs mt-2 line-clamp-2 leading-relaxed">{post.desc}</p>
                     </div>
-                    <div className="flex items-center gap-2 text-[#056bfa] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
+                    <div className="flex items-center gap-2 text-[#47225a] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
                       READ MORE <ArrowRight className="w-3 h-3" />
                     </div>
                   </div>
@@ -1061,7 +1059,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
+              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#47225a] text-[#47225a] bg-white rounded-full font-black hover:bg-[#47225a] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
                 <BookOpen className="w-4 h-4" />
                 View All Articles →
               </Link>
