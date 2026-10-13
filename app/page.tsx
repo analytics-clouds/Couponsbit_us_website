@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import HomePageContent from "./_components/HomePageContent";
-import Season from "@/components/ui/Season";
 
 export const metadata: Metadata = {
   title: {
@@ -139,7 +138,6 @@ const homepageSchema = {
 export default function Homepage() {
   return (
     <>
-      <Season season="halloween" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

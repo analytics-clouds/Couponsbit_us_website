@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Eye, EyeOff, X, Flame, Volume2, VolumeX } from "lucide-react";
+import { Eye, EyeOff, X, Flame } from "lucide-react";
 
 // User-provided individual Left and Right transparent PNG overlays (Desktop)
 const LEFT_BORDER_OVERLAY_URL =
@@ -16,15 +16,12 @@ const LEFT_MOBILE_BORDER_OVERLAY_URL =
 const RIGHT_MOBILE_BORDER_OVERLAY_URL =
   "https://res.cloudinary.com/couponsbit/image/upload/v1791874132/Glowing_Halloween_Autumn_Tree_Frame_mobie_right_kdsipg.png";
 
-// Horror sound path located in the public directory
-const HORROR_SOUND_URL = "/horror-sound.mp3";
 
 interface SeasonProps {
   season?: string;
   enableBorderOverlay?: boolean;
   enableFlyingBats?: boolean;
   enablePurpleFog?: boolean;
-  enableSound?: boolean;
   enableButtonGlow?: boolean;
   enableControlsWidget?: boolean;
   className?: string;
@@ -80,7 +77,6 @@ export const Season: React.FC<SeasonProps> = ({
   enableBorderOverlay = true,
   enableFlyingBats = true,
   enablePurpleFog = true,
-  enableSound = true,
   enableButtonGlow = true,
   enableControlsWidget = true,
   className = "",
@@ -88,77 +84,14 @@ export const Season: React.FC<SeasonProps> = ({
   const [mounted, setMounted] = useState(false);
   const [effectsActive, setEffectsActive] = useState(true);
   const [widgetDismissed, setWidgetDismissed] = useState(false);
-  const [isAudioMuted, setIsAudioMuted] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     setMounted(true);
+  }, []);
 
-    // Audio setup for background horror sound
-    if (enableSound) {
-      const audio = new Audio(HORROR_SOUND_URL);
-      audio.loop = true;
-      audio.volume = 0.35; // Atmospheric background volume
-      audioRef.current = audio;
-
-      const attemptPlay = () => {
-        if (!audioRef.current) return;
-        audioRef.current.play().catch(() => {
-          // Autoplay blocked by browser policy -> attach listener to first user gesture
-          const playOnGesture = () => {
-            if (audioRef.current && !isAudioMuted) {
-              audioRef.current.play().catch(() => { });
-            }
-            window.removeEventListener("click", playOnGesture);
-            window.removeEventListener("scroll", playOnGesture);
-            window.removeEventListener("keydown", playOnGesture);
-            window.removeEventListener("touchstart", playOnGesture);
-          };
-
-          window.addEventListener("click", playOnGesture, { once: true });
-          window.addEventListener("scroll", playOnGesture, { once: true });
-          window.addEventListener("keydown", playOnGesture, { once: true });
-          window.addEventListener("touchstart", playOnGesture, { once: true });
-        });
-      };
-
-      attemptPlay();
-    }
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
-  }, [enableSound]);
-
-  // Handle Mute/Unmute
-  const toggleSound = () => {
-    if (!audioRef.current) return;
-    if (isAudioMuted) {
-      audioRef.current.muted = false;
-      audioRef.current.play().catch(() => { });
-      setIsAudioMuted(false);
-    } else {
-      audioRef.current.muted = true;
-      setIsAudioMuted(true);
-    }
-  };
-
-  // Handle pause/resume effects
+  // Handle pause/resume visual effects
   const toggleEffects = () => {
-    setEffectsActive((prev) => {
-      const next = !prev;
-      if (audioRef.current) {
-        if (!next) {
-          audioRef.current.pause();
-        } else if (!isAudioMuted) {
-          audioRef.current.play().catch(() => { });
-        }
-      }
-      return next;
-    });
+    setEffectsActive((prev) => !prev);
   };
 
   if (!mounted) {
@@ -549,22 +482,6 @@ export const Season: React.FC<SeasonProps> = ({
           </div>
 
           <div className="flex items-center gap-1 pl-1 border-l border-white/15">
-            {/* Audio Mute/Unmute Button */}
-            {enableSound && (
-              <button
-                data-season-ignore="true"
-                type="button"
-                onClick={toggleSound}
-                title={isAudioMuted ? "Unmute horror music" : "Mute horror music"}
-                className="p-1 rounded text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
-              >
-                {isAudioMuted ? (
-                  <VolumeX className="w-3.5 h-3.5 text-red-400" />
-                ) : (
-                  <Volume2 className="w-3.5 h-3.5 text-green-400" />
-                )}
-              </button>
-            )}
 
             {/* Toggle Visual Effects */}
             <button

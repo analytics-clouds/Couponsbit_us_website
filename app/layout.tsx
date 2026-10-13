@@ -1,7 +1,9 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CookieConsent } from "@/components/CookieConsent";
+import Season from "@/components/ui/Season";
+import Music from "@/components/ui/Music";
 import "./globals.css";
 
 const inter = Inter({
@@ -89,6 +91,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
+        <Season season="halloween" />
+        <Music src="/horror-sound.mp3" volume={0.3} />
         {children}
         <SpeedInsights />
         <CookieConsent />
