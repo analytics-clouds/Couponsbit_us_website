@@ -286,11 +286,11 @@ export default function ContactPageContent() {
               <p className="text-gray-500 text-sm leading-relaxed mb-6">
                 Come say hello at our office anytime during business hours
               </p>
-              <p className="text-[#056bfa] font-bold text-base">31 Windsor Avenue</p>
-              <p className="text-gray-500 text-sm mt-1">Stoke Gifford, Bristol BS34 8BU</p>
+              <p className="text-[#056bfa] font-bold text-base">3507 Palmilla Dr</p>
+              <p className="text-gray-500 text-sm mt-1">San Jose, CA 95134</p>
               <Button
                 variant="outline"
-                onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU', '_blank')}
+                onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=3507+Palmilla+Dr%2C+San+Jose%2C+CA+95134', '_blank')}
                 className="mt-8 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white rounded-full px-8 font-bold transition-all"
               >
                 Get Directions
@@ -552,10 +552,10 @@ export default function ContactPageContent() {
                 <div className="p-6 flex items-center justify-between border-b border-[#f0f0f0] bg-white">
                    <div className="flex items-center gap-3">
                      <MapPin className="w-5 h-5 text-[#056bfa]" />
-                     <span className="text-black font-black text-sm">Couponsbit HQ — Bristol, UK</span>
+                     <span className="text-black font-black text-sm">Couponsbit HQ — San Jose, CA</span>
                    </div>
                    <a
-                    href="https://www.google.com/maps/search/?api=1&query=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU"
+                    href="https://www.google.com/maps/search/?api=1&query=3507+Palmilla+Dr%2C+San+Jose%2C+CA+95134"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#056bfa] text-xs font-black hover:underline"
@@ -565,7 +565,7 @@ export default function ContactPageContent() {
                 </div>
                 <div className="flex-1 w-full relative">
                   <iframe
-                    src="https://www.google.com/maps?q=31+Windsor+Avenue%2C+Stoke+Gifford%2C+Bristol+BS34+8BU&output=embed"
+                    src="https://www.google.com/maps?q=3507+Palmilla+Dr%2C+San+Jose%2C+CA+95134&output=embed"
                     width="100%"
                     height="100%"
                     className="border-none min-h-[440px]"
