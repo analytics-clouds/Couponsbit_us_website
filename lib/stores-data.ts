@@ -160,6 +160,7 @@ export const allStores: StoreEntry[] = [
   { name: "Andie Swim",      id: "andie-swim-discount-code",       category: "Fashion",     coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791543378/Andie_swim_discount_code_cnars1.webp", discount: "Up To 60% OFF",   popular: false },
   { name: "U-Haul",          id: "uhaul-discount-code",            category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/uhaul-logo_qbdgyu.webp",       discount: "Up To 20% OFF",   popular: false },
   { name: "Vistaprint",      id: "vistaprint-promo-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp",       discount: "Up To 20% OFF",   popular: false },
+  { name: "Hertz",           id: "hertz-discount-code",            category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791974650/hertz-logo_geobmi.webp",       discount: "Up To 25% OFF",   popular: false },
 ];
 
 
