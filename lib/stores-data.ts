@@ -158,6 +158,8 @@ export const allStores: StoreEntry[] = [
   { name: "Gamma",           id: "gamma-discount-code",            category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp",       discount: "Up To 28% OFF",   popular: false },
   { name: "JD Sports",       id: "jdsports-discount-code",         category: "Fashion",     coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791446502/jD-logo_lfuzxu.webp",         discount: "Up To 50% OFF",   popular: false },
   { name: "Andie Swim",      id: "andie-swim-discount-code",       category: "Fashion",     coupons: 11, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791543378/Andie_swim_discount_code_cnars1.webp", discount: "Up To 60% OFF",   popular: false },
+  { name: "U-Haul",          id: "uhaul-discount-code",            category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/uhaul-logo_qbdgyu.webp",       discount: "Up To 20% OFF",   popular: false },
+  { name: "Vistaprint",      id: "vistaprint-promo-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp",       discount: "Up To 20% OFF",   popular: false },
 ];
 
 
