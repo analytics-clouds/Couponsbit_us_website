@@ -161,6 +161,7 @@ export const allStores: StoreEntry[] = [
   { name: "U-Haul",          id: "uhaul-discount-code",            category: "Travel",      coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/uhaul-logo_qbdgyu.webp",       discount: "Up To 20% OFF",   popular: false },
   { name: "Vistaprint",      id: "vistaprint-promo-code",          category: "More",        coupons: 6,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp",       discount: "Up To 20% OFF",   popular: false },
   { name: "Hertz",           id: "hertz-discount-code",            category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791974650/hertz-logo_geobmi.webp",       discount: "Up To 25% OFF",   popular: false },
+  { name: "Rest",            id: "rest-discount-code",             category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791978343/restus-logo_qyvz2a.webp",       discount: "Up To 40% OFF",   popular: false },
 ];
 
 

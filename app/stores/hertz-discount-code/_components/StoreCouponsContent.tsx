@@ -272,17 +272,9 @@ export default function HertzCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Hertz?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Hertz is a global car rental company offering economy cars, SUVs, and vans for business and leisure travel.
+                    Hertz is a global car rental company offering vehicles for leisure travel, business trips, airport pickups and everyday transportation. Its fleet and rental options vary by location, giving travellers access to vehicles suited to solo journeys, family holidays, city breaks and longer road trips. Hertz operates across the UK, US and numerous European destinations, including France, Spain, Italy, Germany, the Czech Republic, the Netherlands and Belgium. 
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    With pickup locations at airports and city centers worldwide, Hertz makes it convenient to book a vehicle for your next trip.
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Hertz is popular with travelers looking for a wide range of vehicle classes, flexible rental periods, and nationwide availability.
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The company also offers loyalty rewards and seasonal promotions throughout the year.
-                  </p>
+                 
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
@@ -312,60 +304,41 @@ export default function HertzCouponsContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better Hertz Deals
+    Explore Hertz Car Rental Deals Worldwide
   </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Booking",
-        sub: "Before confirming your rental, check CouponsBit for the latest Hertz discount code and current offers.",
-      },
-      {
-        icon: HeartHandshake,
-        title: "Join the Loyalty Program",
-        sub: "Sign up for Hertz's free loyalty program to unlock points, rewards, and member-exclusive offers.",
-      },
-      {
-        icon: Calendar,
-        title: "Book Early for Better Rates",
-        sub: "Reserving your vehicle in advance can help you secure a lower rate than booking last minute.",
-      },
-      {
-        icon: ShieldAlert,
-        title: "Check Promotion Restrictions",
-        sub: "A promotion may only apply to selected vehicle classes or locations. Always read the terms before booking.",
-      },
-      {
-        icon: Car,
-        title: "Compare Vehicle Classes",
-        sub: "Comparing economy, SUV, and van options can help you find the best value for your trip.",
-      },
-      {
-        icon: Shield,
-        title: "Review Insurance Options",
-        sub: "Check what coverage is included with your rental and whether additional insurance add-ons are worth it.",
-      },
-      {
-        icon: Receipt,
-        title: "Review the Final Order",
-        sub: "Before completing your booking, make sure any eligible promotion has been applied and review your complete order details.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
+  <div className="space-y-6">
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Hertz offers rental options for different travel plans:
+    </p>
+    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Airport car rentals:</strong> Pick up a vehicle when you arrive and explore at your own pace.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Family holidays:</strong> Choose a suitable car for luggage, passengers and longer journeys.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>City breaks:</strong> Find a convenient rental for exploring destinations beyond public transport routes.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Business travel:</strong> Arrange transportation for meetings, work trips and client visits.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Road trips:</strong> Plan scenic drives across the UK, the US and Europe.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Electric and hybrid cars:</strong> Check participating locations for available electrified vehicles.</span>
+      </p>
+    </div>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Vehicle availability, prices and promotional eligibility vary by destination, so review your chosen location's terms before booking.
+    </p>
   </div>
 </div>
 
@@ -411,38 +384,6 @@ export default function HertzCouponsContent() {
           Hertz Discount Code, Coupon Code & Discount Offers
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["New Customer Offer", "Varies", "New Customers", "Save on your first Hertz car rental booking", "First Booking"],
-        ["Percentage Off Sitewide", "Varies", "All Users", "A percentage off eligible Hertz rentals sitewide", "Sitewide"],
-        ["Weekly Rental Discount", "Varies", "All Users", "Savings on weekly car rental bookings", "Weekly Rentals"],
-        ["SUV & Van Rental Deal", "Varies", "All Users", "Save on SUV and van rentals for group travel", "SUVs & Vans"],
-        ["Free Cancellation Offer", "Free Cancellation", "All Users", "Book with free cancellation on eligible rentals", "All Online Bookings"],
-        ["Seasonal Travel Sale", "Varies", "All Users", "Discounted prices during seasonal promotions", "Seasonal Rentals"],
-      ].map((row, i) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
             Whether you're planning a business trip or a family road trip, Hertz offers a wide range of vehicles designed to fit your travel needs.
@@ -454,31 +395,7 @@ export default function HertzCouponsContent() {
             From new-customer offers to weekly rental discounts and seasonal travel picks, there are plenty of reasons to check current promotions before you check out.
           </p>
 
-          <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a Hertz Discount Code</h3>
-    <p>A Hertz discount code can help you look for savings on eligible car rentals when a promotion is available.</p>
-    <p>Before completing your booking, check CouponsBit to see whether there is a current Hertz promotional offer that matches what you're renting.</p>
-    <p>Promotions can have specific conditions. Some may apply to selected vehicle classes or locations, while others may be connected to a particular travel season.</p>
-    <p>Always review the terms of the offer, including its expiration date and vehicle restrictions, before expecting a discount at checkout.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Hertz's Rental Lineup</h3>
-    <p>Hertz offers rentals across several vehicle categories, giving travelers plenty of options for their trip.</p>
-    <p><strong>Economy Cars:</strong> Compact and fuel-efficient options for everyday travel.</p>
-    <p><strong>SUVs:</strong> Spacious vehicles suited to family trips and group travel.</p>
-    <p><strong>Vans:</strong> Extra cargo space for larger groups or moving needs.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Hertz Sale and Seasonal Promotions</h3>
-    <p>Hertz promotions can change throughout the year, with certain periods often attracting more attention from travelers.</p>
-    <p><strong>Seasonal Travel Sales:</strong> Holiday and summer travel periods are a popular time for savings.</p>
-    <p><strong>Weekly Rental Discounts:</strong> Longer bookings are often discounted compared to daily rates.</p>
-    <p>Before placing a booking, check CouponsBit for a Hertz discount code, coupon offer, or other promotion.</p>
-  </div>
-</div>
+          
 
           {!isReadMore && (
             <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
