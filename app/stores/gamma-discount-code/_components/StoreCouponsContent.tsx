@@ -461,9 +461,9 @@ export default function GammaContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       Gamma AI Offers &amp; Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a Gamma AI Discount Code on CouponsBit
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Premium AI tools can become an additional expense, especially for professionals and teams using them regularly. Finding a Gamma AI discount code before upgrading can therefore be a useful way to reduce your overall cost.

@@ -469,9 +469,9 @@ export default function EcoFlowContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       EcoFlow Energy Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find an EcoFlow Global Discount Code on CouponsBit
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Buying a portable power station or home energy system can be a significant investment, so finding an EcoFlow Global discount code before checkout can make a noticeable difference. CouponsBit helps shoppers discover available coupon codes and promotions without having to search across multiple websites.

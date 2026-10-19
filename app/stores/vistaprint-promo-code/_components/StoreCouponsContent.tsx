@@ -292,11 +292,11 @@ export default function VistaprintContent() {
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
                    <div className="space-y-1">
                       {[
-                        { icon: Tag, name: "Business Cards", count: "40+", color: "text-blue-500", href: "/categories/home-lifestyle" },
-                        { icon: Percent, name: "Marketing Materials", count: "35+", color: "text-purple-500", href: "/categories/home-lifestyle" },
-                        { icon: Truck, name: "Free Shipping Deals", count: "20+", color: "text-pink-500", href: "/categories/home-lifestyle" },
-                        { icon: Gift, name: "Custom Apparel", count: "15+", color: "text-teal-500", href: "/categories/home-lifestyle" },
-                        { icon: Calendar, name: "Seasonal Prints", count: "10+", color: "text-orange-500", href: "/categories/home-lifestyle" },
+                        { icon: Tag, name: "Business Cards", count: "40+", color: "text-blue-500", href: "/categories/home" },
+                        { icon: Percent, name: "Marketing Materials", count: "35+", color: "text-purple-500", href: "/categories/home" },
+                        { icon: Truck, name: "Free Shipping Deals", count: "20+", color: "text-pink-500", href: "/categories/home" },
+                        { icon: Gift, name: "Custom Apparel", count: "15+", color: "text-teal-500", href: "/categories/home" },
+                        { icon: Calendar, name: "Seasonal Prints", count: "10+", color: "text-orange-500", href: "/categories/home" },
                       ].map((cat, i) => (
                         <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
                           <div className="flex items-center gap-3">
@@ -518,9 +518,9 @@ export default function VistaprintContent() {
         <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
           VistaPrint Offers &amp; Guide
         </Badge>
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
           Find a VistaPrint Promo Code
-        </h1>
+        </h2>
         <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
           <p>
             Looking for a VistaPrint promo code before ordering? Start by checking the latest offers available for the products you actually need.

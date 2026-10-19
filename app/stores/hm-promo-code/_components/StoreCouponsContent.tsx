@@ -406,9 +406,9 @@ export default function HmCouponsContent() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 lg:gap-20">
       {/* Main Article Column */}
       <div className="prose max-w-none text-left">
-        <h1 className="text-3xl lg:text-4xl font-black text-black mb-6 leading-tight tracking-tight">
+        <h2 className="text-3xl lg:text-4xl font-black text-black mb-6 leading-tight tracking-tight">
           H&M Discount Code, Coupon Code & Sale
-        </h1>
+        </h2>
 
        <div className="my-12 overflow-x-auto rounded-[20px] border border-gray-200 bg-white shadow-sm">
   <table className="w-full text-left border-collapse min-w-[800px]">

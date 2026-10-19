@@ -299,11 +299,11 @@ export default function PostmatesContent() {
                    <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
                    <div className="space-y-1">
                       {[
-                        { icon: Truck, name: "Food Delivery", count: "150+", color: "text-blue-500", href: "/categories/food-dining" },
-                        { icon: Tag, name: "Grocery Delivery", count: "50+", color: "text-purple-500", href: "/categories/food-dining" },
-                        { icon: Percent, name: "First Order Deals", count: "30+", color: "text-pink-500", href: "/categories/food-dining" },
-                        { icon: Gift, name: "Restaurant Rewards", count: "40+", color: "text-teal-500", href: "/categories/food-dining" },
-                        { icon: Users, name: "Group Orders", count: "20+", color: "text-orange-500", href: "/categories/food-dining" },
+                        { icon: Truck, name: "Food Delivery", count: "150+", color: "text-blue-500", href: "/categories/food" },
+                        { icon: Tag, name: "Grocery Delivery", count: "50+", color: "text-purple-500", href: "/categories/food" },
+                        { icon: Percent, name: "First Order Deals", count: "30+", color: "text-pink-500", href: "/categories/food" },
+                        { icon: Gift, name: "Restaurant Rewards", count: "40+", color: "text-teal-500", href: "/categories/food" },
+                        { icon: Users, name: "Group Orders", count: "20+", color: "text-orange-500", href: "/categories/food" },
                       ].map((cat, i) => (
                         <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
                           <div className="flex items-center gap-3">
@@ -497,9 +497,9 @@ export default function PostmatesContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       Postmates Offers &amp; Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a Postmates Promo Code
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Before confirming an order, check whether you have an active Postmates promo code available.

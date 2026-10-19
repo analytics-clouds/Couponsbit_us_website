@@ -463,9 +463,9 @@ export default function JDSportsContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       JD Sports Shopping Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a JD Sports Discount Code on CouponsBit
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Sportswear and branded sneakers can be a significant purchase, especially when you're shopping for multiple items. Finding a JD Sports discount code before checkout can give you an opportunity to reduce your total spending when an eligible offer is available.

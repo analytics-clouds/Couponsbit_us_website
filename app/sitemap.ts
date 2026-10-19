@@ -55,6 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
     })),
+    // Store pages not yet in stores-data.ts
+    {
+      url: `${BASE_URL}/stores/planet-fitness-promo-code`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+    },
 
     // Nuagewear location pages
     ...NUAGEWEAR_LOCATIONS.map((slug) => ({
@@ -109,6 +115,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/why-shop-through-coupon-and-cashback-websites`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {
@@ -121,6 +132,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
     })),
+
+    // Sitemap page
+    {
+      url: `${BASE_URL}/sitemap`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+    },
 
     // Info / support pages
     {

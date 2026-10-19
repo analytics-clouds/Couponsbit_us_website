@@ -482,9 +482,9 @@ export default function YouFibreContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       YouFibre Broadband Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a YouFibre Discount Code on CouponsBit
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Before choosing a broadband plan, check CouponsBit for a current YouFibre discount code. Broadband promotions can change, so checking available offers before completing your order gives you a chance to see whether there is a relevant deal available.

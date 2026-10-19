@@ -410,9 +410,9 @@ export default function UhaulContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       U-Haul Offers &amp; Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a U-Haul Discount Code
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Moving expenses can involve several separate services, so finding a U-Haul discount code before you finalize your plans can be useful. Start by checking the latest U-Haul discounts available for your type of move rather than assuming every code applies to every rental.

@@ -450,9 +450,9 @@ export default function SailyContent() {
     <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
       Saily Travel eSIM Guide
     </Badge>
-    <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
       Find a Saily Discount Code on CouponsBit
-    </h1>
+    </h2>
     <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
       <p>
         Travel expenses can quickly add up when you're booking flights, accommodation, activities, and transportation. Saving on connectivity is therefore another simple way to manage your travel budget.

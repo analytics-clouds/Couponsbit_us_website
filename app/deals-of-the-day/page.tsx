@@ -54,13 +54,6 @@ export const metadata: Metadata = {
   },
 };
 
-// ✅ Get today's date dynamically for schema
-const today = new Date();
-const todayISO = today.toISOString().split("T")[0]; // e.g. 2026-05-27
-const tomorrowISO = new Date(today.getTime() + 86400000)
-  .toISOString()
-  .split("T")[0]; // e.g. 2026-05-28
-
 // ✅ JSON-LD Schema
 const dealsOfTheDaySchema = {
   "@context": "https://schema.org",
@@ -82,7 +75,7 @@ const dealsOfTheDaySchema = {
       },
       speakable: {
         "@type": "SpeakableSpecification",
-        cssSelector: ["h1", "h2", ".deal-title"],
+        cssSelector: ["h1", "h2"],
       },
       mainEntity: {
         "@type": "ItemList",
@@ -90,9 +83,6 @@ const dealsOfTheDaySchema = {
         description:
           "Today's handpicked online deals, discount codes, and verified promo codes from 2000+ stores on Couponsbit. Updated daily at midnight.",
         url: "https://www.couponsbit.us/deals-of-the-day",
-        // ✅ Dynamic dates — auto-updates every day, no manual work needed
-        startDate: todayISO,
-        endDate: tomorrowISO,
       },
     },
     {

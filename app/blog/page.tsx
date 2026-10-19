@@ -73,9 +73,6 @@ const blogSchema = {
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
-      breadcrumb: {
-        "@id": "https://www.couponsbit.us/blog#breadcrumb",
-      },
       publisher: {
         "@id": "https://www.couponsbit.us/#organization",
       },

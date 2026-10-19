@@ -199,7 +199,7 @@ export default function CareersContent() {
             <div className="w-full lg:w-1/2">
 
     <img 
-      src="/career.webp" 
+      src="https://res.cloudinary.com/couponsbit/image/upload/v1792396231/careers_as55gj.webp" 
       alt="Our Culture" 
       className="w-full h-full object-cover rounded-[36px] shadow-xl"
     />
