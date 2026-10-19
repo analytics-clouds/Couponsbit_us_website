@@ -3,7 +3,7 @@ import ExpediaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Oct 2026",
+    absolute: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
   },
   description:
     "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/expedia-discount-code",
-    title: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Oct 2026",
+    title: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
     description:
       "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
     siteName: "Couponsbit",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Oct 2026",
+    title: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
     description:
       "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg"],
@@ -64,7 +64,7 @@ const expediaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/expedia-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/expedia-discount-code",
-      name: "Expedia Discount Code: Big Summer Sale Up to 40% Off & Save $370 on Hotels | Oct 2026",
+      name: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
       description:
         "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
       inLanguage: "en-US",

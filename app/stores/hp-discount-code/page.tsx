@@ -3,7 +3,7 @@ import HPCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HP Discount Code: Up to 71% Off Laptops & Desktops | October 2026",
+    absolute: "HP Discount Code: Up to 71% Off Laptops & Desktops",
   },
   description:
     "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hp-discount-code",
-    title: "HP Discount Code: Up to 71% Off Laptops & Desktops | October 2026",
+    title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
     description:
       "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "HP Discount Code: Up to 71% Off Laptops & Desktops | October 2026",
+    title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
     description:
       "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp"],
@@ -60,7 +60,7 @@ const hpSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hp-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/hp-discount-code",
-      name: "HP Discount Code: Up to 71% Off Laptops & Desktops | October 2026",
+      name: "HP Discount Code: Up to 71% Off Laptops & Desktops",
       description:
         "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
       inLanguage: "en-US",

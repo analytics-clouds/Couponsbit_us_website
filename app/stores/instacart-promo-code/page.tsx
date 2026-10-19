@@ -3,7 +3,7 @@ import InstacartCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Instacart Promo Code: Save $20 + FREE Delivery & Up to $150 OFF | Sept 2026",
+    absolute: "Instacart Promo Code: Save $20 + FREE Delivery",
   },
   description:
     "Find the latest Instacart promo code and Instacart discount code at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, and enjoy up to $150 OFF your first 3 qualifying orders.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/instacart-promo-code",
-    title: "Instacart Promo Code: Save $20 + FREE Delivery & Up to $150 OFF | Sept 2026",
+    title: "Instacart Promo Code: Save $20 + FREE Delivery",
     description:
       "Find the latest Instacart promo code and Instacart discount code at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, and enjoy up to $150 OFF your first 3 qualifying orders.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Instacart Promo Code: Save $20 + FREE Delivery & Up to $150 OFF | Sept 2026",
+    title: "Instacart Promo Code: Save $20 + FREE Delivery",
     description:
       "Find the latest Instacart promo code and Instacart discount code at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, and enjoy up to $150 OFF your first 3 qualifying orders.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788868873/instacart-logo_yhmlhq.webp"],
@@ -63,7 +63,7 @@ const instacartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/instacart-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/instacart-promo-code",
-      name: "Instacart Promo Code: Save $20 + FREE Delivery & Up to $150 OFF | Sept 2026",
+      name: "Instacart Promo Code: Save $20 + FREE Delivery",
       description:
         "Find the latest Instacart promo code and Instacart discount code at Maxiku Offers. Save $20 with FREE delivery, get $50 OFF your first order, and enjoy up to $150 OFF your first 3 qualifying orders.",
       inLanguage: "en-US",
