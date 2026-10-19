@@ -563,7 +563,7 @@ export default function AbercrombieCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa]">Shop Women's Fashion at Abercrombie</h3>
     <p>
-      Abercrombie's women's collection covers everything from everyday basics to occasion-ready pieces. Shoppers can browse jeans, pants, dresses, tops, sweaters, skirts, shorts, activewear, swimwear, jackets, coats, loungewear, shoes, accessories, and more.
+      Abercrombie's women's collection covers everything from everyday <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">basics</Link> to occasion-ready pieces. Shoppers can browse jeans, pants, dresses, tops, sweaters, skirts, shorts, activewear, swimwear, jackets, coats, loungewear, shoes, accessories, and more.
     </p>
     <p>
       The brand's assortment makes it possible to build an entire wardrobe around different occasions and seasons.

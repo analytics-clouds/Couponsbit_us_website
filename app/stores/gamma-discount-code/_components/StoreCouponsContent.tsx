@@ -553,7 +553,7 @@ export default function GammaContent() {
       </CardHeader>
       <CardContent className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          If you're planning to use Gamma regularly, even a small promotional saving can make a difference over the duration of your subscription. This is particularly relevant for freelancers, businesses, students, and teams that rely on AI-powered content creation tools frequently.
+          If you're planning to use Gamma regularly, even a small promotional saving can make a difference over the duration of your subscription. This is particularly relevant for <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">freelancers</Link>, businesses, students, and teams that rely on AI-powered content creation tools frequently.
         </p>
         <p>
           Checking CouponsBit before subscribing gives you the opportunity to compare available offers before committing to a paid plan.

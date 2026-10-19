@@ -933,7 +933,7 @@ export default function GamsGoCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">GamsGo Game Accounts & PlayStation Products</h3>
             <p>
-              GamsGo also operates a marketplace for gaming accounts and memberships. Its current gaming account categories include products associated with platforms such as Xbox and PlayStation, alongside other gaming services.
+              GamsGo also operates a marketplace for <Link href="/stores/driffle-discount-code" className="text-[#056bfa] hover:underline">gaming accounts</Link> and memberships. Its current gaming account categories include products associated with platforms such as Xbox and PlayStation, alongside other gaming services.
             </p>
             <p>
               For example, GamsGo's PlayStation marketplace currently includes different PlayStation Plus tiers, durations, and account types, including Essential, Extra, and Premium listings.

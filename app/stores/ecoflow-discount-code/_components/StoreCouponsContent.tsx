@@ -498,7 +498,7 @@ export default function EcoFlowContent() {
           A discount code isn't the only way to save when shopping with EcoFlow Global. The brand may also run seasonal promotions, product-specific deals, bundle offers, and other limited-time campaigns.
         </p>
         <p>
-          These offers can be particularly useful when you're comparing different power stations, solar generators, batteries, or accessories. A product promotion combined with an eligible coupon can potentially provide greater value than purchasing at the standard price.
+          These offers can be particularly useful when you're comparing different <Link href="/stores/bluetti-discount-code" className="text-[#056bfa] hover:underline">power stations</Link>, solar generators, batteries, or accessories. A product promotion combined with an eligible coupon can potentially provide greater value than purchasing at the standard price.
         </p>
         <div className="space-y-2">
           <p className="font-semibold text-gray-900">On CouponsBit, you can check for:</p>

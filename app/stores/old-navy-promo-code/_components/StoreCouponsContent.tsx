@@ -676,7 +676,7 @@ export default function OldNavyCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa]">Shop Women's Clothing at Old Navy</h3>
     <p>
-      Old Navy's women's collection covers a broad range of styles, making it possible to build an everyday wardrobe from one retailer. Shoppers can browse jeans, pants, tops, T-shirts, sweaters, dresses, skirts, shorts, jumpsuits, activewear, swimwear, jackets, coats, pajamas, shoes, and accessories.
+      Old Navy's women's collection covers a broad range of styles, making it possible to build an everyday wardrobe from one retailer. Shoppers can browse jeans, pants, tops, T-shirts, sweaters, dresses, skirts, shorts, jumpsuits, activewear, swimwear, jackets, coats, <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">pajamas</Link>, shoes, and accessories.
     </p>
   </div>
 

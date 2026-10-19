@@ -471,7 +471,7 @@ export default function TemuCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">What Can You Buy on Temu?</h3>
     <p>One of the biggest attractions of Temu is its enormous selection of products. Whether you’re looking for something practical for the home or simply browsing for an interesting gadget, you can explore a wide range of categories.</p>
-    <p><strong>Home and Kitchen:</strong> Give your home a small refresh without making a major shopping trip. Temu features kitchen organizers, storage solutions, cookware, tableware, cleaning products, home décor, lighting, bathroom accessories, and other household items.</p>
+    <p><strong>Home and Kitchen:</strong> Give your home a small refresh without making a major shopping trip. Temu features kitchen organizers, storage solutions, cookware, tableware, cleaning products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home décor</Link>, lighting, bathroom accessories, and other household items.</p>
     <p>From organization products for a cluttered drawer to decorative pieces for a living room, this category is worth exploring when you’re looking for affordable everyday additions.</p>
     <p><strong>Electronics and Gadgets:</strong> If you enjoy discovering useful gadgets, Temu has plenty to browse. You can find accessories, cables, chargers, smart-home products, computer accessories, phone accessories, LED lighting, and other electronics-related items.</p>
     <p>Before buying electronics, pay attention to specifications, compatibility, reviews, and seller information rather than choosing solely based on price.</p>

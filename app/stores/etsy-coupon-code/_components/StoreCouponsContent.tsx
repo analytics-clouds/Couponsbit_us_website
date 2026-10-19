@@ -690,7 +690,7 @@ export default function EtsyCouponsContent() {
     <p><strong>Wall Art:</strong> You can find art prints, paintings, photography, posters, gallery wall sets, and downloadable artwork.</p>
     <p><strong>Home Accessories:</strong> Decorative products include candles, vases, trays, mirrors, decorative objects, signs, and other accents.</p>
     <p><strong>Pillows and Textiles:</strong> Shoppers can find decorative cushions, blankets, throws, rugs, curtains, and other textiles.</p>
-    <p><strong>Furniture:</strong> Independent sellers offer handmade and custom furniture, including tables, shelves, benches, cabinets, and other pieces.</p>
+    <p><strong>Furniture:</strong> Independent sellers offer handmade and custom <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">furniture</Link>, including tables, shelves, benches, cabinets, and other pieces.</p>
     <p><strong>Lighting:</strong> Etsy also features handmade and distinctive lighting products, including lamps, pendant lights, and decorative fixtures.</p>
   </div>
 

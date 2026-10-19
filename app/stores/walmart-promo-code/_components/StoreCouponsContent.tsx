@@ -472,7 +472,7 @@ export default function WalmartCouponsContent() {
               Walmart is known for its everyday low pricing, but shoppers can find additional savings through temporary promotions and major sales events.
             </p>
             <p>
-              Walmart's recent Deals events have included thousands of discounted products across electronics, fashion, toys, collectibles, furniture, skincare, back-to-school essentials, and other categories.
+              Walmart's recent Deals events have included thousands of discounted products across electronics, fashion, toys, collectibles, <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">furniture</Link>, skincare, back-to-school essentials, and other categories.
             </p>
           </div>
 

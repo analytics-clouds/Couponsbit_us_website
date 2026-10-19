@@ -122,51 +122,43 @@ const restSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/rest-discount-code#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How can I find a Rest discount code?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Check the Rest page on CouponsBit for available discount codes, coupons, and promotional offers. Review the terms of each promotion before using it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use a Rest discount code on every product?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not necessarily. Promotional codes can have specific eligibility requirements and may apply only to certain products or bundles. Check the individual offer for its conditions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why isn't my Rest promo code working?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A promo code may have expired, reached its usage limit, or may not be valid for the items in your cart. Check the promotion's terms and make sure the code is entered correctly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Rest offer discounts without promo codes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rest may run promotions where a discount is applied directly rather than through a coupon code. CouponsBit can help you check for both code-based and other promotional offers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I check CouponsBit before shopping at Rest?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Checking for a Rest discount code before checkout takes only a moment and gives you an opportunity to find an available promotion before paying for your order."
-          }
-        }
-      ]
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/rest-discount-code#faq",
+  "mainEntity": [
+    { 
+      "@type": "Question",
+      "name": "Does Rest offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest may feature promotional offers and seasonal deals. Check CouponsBit and the official regional website for currently available promotions."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I use a Rest promo code on every product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some codes may apply only to selected products, collections or qualifying orders. Review the offer terms before checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can shoppers in Canada and the UK order from Rest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest has a Canadian shopping website, but delivery options and product availability should be checked for your specific destination. UK shoppers should verify whether their address is supported before placing an order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Rest best known for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest is best known for its Evercool® cooling bedding, including comforters and sheets designed for a cool-to-the-touch feel."
+      }
+    }
+  ]
+},
   ],
 };
 

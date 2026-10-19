@@ -569,7 +569,7 @@ export default function ZenniCouponsContent() {
     <p>You can browse frames in different shapes and styles and select lens options based on your prescription and preferences.</p>
     <p>When ordering prescription eyewear online, make sure you enter your prescription details accurately and follow the retailer's instructions.</p>
     <p><strong>Sunglasses:</strong> Sunglasses can combine everyday eye protection with personal style.</p>
-    <p>Zenni offers a variety of sunglasses styles, including options that can be fitted with prescription lenses depending on the product.</p>
+    <p>Zenni offers a variety of <Link href="/stores/sungait-discount-code" className="text-[#056bfa] hover:underline">sunglasses</Link> styles, including options that can be fitted with prescription lenses depending on the product.</p>
     <p>They can be useful for driving, outdoor activities, vacations, beach trips, and everyday use.</p>
     <p><strong>Blue-Light Glasses:</strong> For people who spend significant amounts of time looking at digital screens, blue-light eyewear can be another option to explore.</p>
     <p>Zenni offers eyewear designed around different digital-use preferences, though shoppers should review the specific features of each lens before purchasing.</p>

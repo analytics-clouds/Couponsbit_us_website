@@ -471,7 +471,7 @@ export default function LowesCouponsContent() {
     <p><strong>Appliances:</strong> Planning a kitchen or laundry-room upgrade? Lowe’s carries refrigerators, dishwashers, ranges, microwaves, cooktops, wall ovens, freezers, washers, dryers, and other major appliances.</p>
     <p>You can also explore appliance packages and appliance-specific savings when planning a larger upgrade. If you’re buying several appliances together, compare the current promotions before checking out.</p>
     <p><strong>Tools and Hardware:</strong> For DIY enthusiasts, contractors, and anyone who likes handling home projects themselves, Lowe’s offers a huge selection of tools and hardware.</p>
-    <p>You’ll find power tools, hand tools, drills, drivers, ladders, tool storage, measuring equipment, welding supplies, hardware, fasteners, electrical products, and more.</p>
+    <p>You’ll find power tools, <Link href="/stores/harbor-freight-discount-code" className="text-[#056bfa] hover:underline">hand tools</Link>, drills, drivers, ladders, tool storage, measuring equipment, welding supplies, hardware, fasteners, electrical products, and more.</p>
     <p>Popular tool brands and Lowe’s private-label brands give shoppers plenty of options depending on the project and budget.</p>
     <p><strong>Building Supplies:</strong> Taking on a bigger renovation? Lowe’s carries building materials for projects ranging from small repairs to major construction work.</p>
     <p>Shop for lumber, drywall, insulation, roofing supplies, concrete and masonry products, decking, fencing, siding, doors, windows, and other building essentials.</p>
@@ -483,7 +483,7 @@ export default function LowesCouponsContent() {
     <p>Lowe’s also offers flooring samples and project resources that can help you compare materials before committing to a larger purchase.</p>
     <p><strong>Lawn and Garden:</strong> Your outdoor space can get just as much attention as the inside of your home. Lowe’s offers lawn mowers, plants, soil, fertilizer, garden tools, hoses, irrigation products, landscaping supplies, outdoor storage, and other lawn and garden essentials.</p>
     <p>Seasonal promotions can make this category particularly interesting for shoppers preparing their yards for spring and summer.</p>
-    <p><strong>Outdoor Living:</strong> Planning a backyard upgrade? Explore patio furniture, grills, outdoor cooking equipment, fire pits, patio heaters, gazebos, pergolas, sheds, pools, and other outdoor products.</p>
+    <p><strong>Outdoor Living:</strong> Planning a backyard upgrade? Explore <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">patio furniture</Link>, grills, outdoor cooking equipment, fire pits, patio heaters, gazebos, pergolas, sheds, pools, and other outdoor products.</p>
     <p>Lowe’s outdoor selection also includes landscaping and hardscaping supplies for customers taking on larger backyard projects.</p>
   </div>
 

@@ -488,7 +488,7 @@ export default function NikeCouponsContent() {
               Nike's lifestyle collection includes some of the brand's most recognizable silhouettes.
             </p>
             <p>
-              Shoppers can find popular styles across the Air Max, Air Force 1, Dunk, and other sneaker families. These shoes can work with casual outfits while incorporating Nike's signature design elements.
+              Shoppers can find popular styles across the Air Max, Air Force 1, Dunk, and other sneaker families. These shoes can work with <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual outfits</Link> while incorporating Nike's signature design elements.
             </p>
             <p><strong>Nike Training Shoes</strong></p>
             <p>

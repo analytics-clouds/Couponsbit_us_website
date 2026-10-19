@@ -269,7 +269,7 @@ export default function SuperrunCouponsContent() {
         <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
           <h3 className="text-black font-black text-lg mb-6">Superun Coupon Code & Superun Promo Code</h3>
           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-            A Superun coupon code can provide savings on eligible fitness equipment when a valid promotion is available. Depending on the promotion, shoppers may find percentage discounts, fixed-dollar savings, product-specific offers, or other limited-time deals.
+            A Superun coupon code can provide savings on eligible <Link href="/stores/merachfit-discount-code" className="text-[#056bfa] hover:underline">fitness equipment</Link> when a valid promotion is available. Depending on the promotion, shoppers may find percentage discounts, fixed-dollar savings, product-specific offers, or other limited-time deals.
 
           </p>
           <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

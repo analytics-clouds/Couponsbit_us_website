@@ -820,7 +820,7 @@ export default function JcpenneyCouponsContent() {
   <div className="space-y-6">
     <h3 className="text-xl font-black text-[#056bfa]">Men's Clothing at JCPenney</h3>
     <p>
-      JCPenney also offers men's clothing ranging from casual basics to workwear and occasion-ready pieces.
+      JCPenney also offers men's clothing ranging from <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual basics</Link> to workwear and occasion-ready pieces.
     </p>
     <p>
       Shoppers can find T-shirts, polo shirts, button-down shirts, sweaters, hoodies, jeans, chinos, dress pants, shorts, suits, blazers, jackets, outerwear, underwear, and other essentials.

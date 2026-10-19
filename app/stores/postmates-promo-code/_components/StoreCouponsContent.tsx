@@ -595,7 +595,7 @@ export default function PostmatesContent() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
           <p>
-            Craving a burger, fries, chicken, tacos, or another quick meal? Postmates can help you browse nearby fast-food restaurants and check which ones currently offer delivery.
+            Craving a <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">burger</Link>, fries, chicken, tacos, or another quick meal? Postmates can help you browse nearby fast-food restaurants and check which ones currently offer delivery.
           </p>
           <p>
             Fast-food promotions can be especially useful when you're ordering for multiple people, since restaurant-specific Buy One, Get One and other offers may be available.
@@ -612,7 +612,7 @@ export default function PostmatesContent() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
           <p>
-            Pizza is an easy choice for everything from a solo dinner to a movie night with friends.
+            <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">Pizza</Link> is an easy choice for everything from a solo dinner to a movie night with friends.
           </p>
           <p>
             Compare nearby pizza restaurants and look for active Postmates offers before placing your order. Depending on the restaurant, you may find bundle deals, free-item promotions, or order-value discounts.

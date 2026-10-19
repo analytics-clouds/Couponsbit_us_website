@@ -603,7 +603,7 @@ export default function ZaraCouponsContent() {
               <li>Belts</li>
               <li>Hats</li>
               <li>Jewelry</li>
-              <li>Sunglasses</li>
+              <li><Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">Sunglasses</Link></li>
               <li>Wallets and other accessories</li>
             </ul>
             <p>
@@ -635,7 +635,7 @@ export default function ZaraCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Zara Home</h3>
             <p>
-              Zara isn't limited to fashion. Zara Home offers products for decorating, furnishing, organizing, and adding finishing touches to different areas of the home. Its U.S. categories include furniture, bed linens, lighting, mirrors, rugs, décor, baskets, cushions, throws, curtains and blinds, dining, kitchen, laundry and cleaning, bathroom, dressing room, loungewear, home footwear, bags and toiletry cases, home fragrances, and pet products.
+              Zara isn't limited to fashion. Zara Home offers products for decorating, furnishing, organizing, and adding finishing touches to different areas of the home. Its U.S. categories include furniture, bed linens, lighting, mirrors, rugs, décor, baskets, cushions, throws, curtains and blinds, dining, kitchen, laundry and cleaning, bathroom, dressing room, <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">loungewear</Link>, home footwear, bags and toiletry cases, home fragrances, and pet products.
             </p>
             <p><strong>Furniture:</strong> Zara Home carries furniture and practical pieces for different rooms, including storage and seating options.</p>
             <p><strong>Bedding & Textiles:</strong> Shoppers can find bed linens, cushions, throws, rugs, curtains, and other textiles that can change the look and feel of a room.</p>

@@ -3,10 +3,10 @@ import VistaprintContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Vistaprint Promo Code – Coupons & Deals | Couponsbit",
+    absolute: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
   },
   description:
-    "Find the latest Vistaprint promo codes, coupons, and deals on Couponsbit. Save on business cards, marketing materials, and custom prints.",
+    "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/vistaprint-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-    title: "Vistaprint Promo Code – Coupons & Deals | Couponsbit",
+    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
     description:
-      "Find the latest Vistaprint promo codes, coupons, and deals on Couponsbit. Save on business cards, marketing materials, and custom prints.",
+      "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Vistaprint Promo Code – Coupons & Deals | Couponsbit",
+    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
     description:
-      "Find the latest Vistaprint promo codes, coupons, and deals on Couponsbit. Save on business cards, marketing materials, and custom prints.",
+      "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const vistaprintSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-      name: "Vistaprint Promo Code – Coupons & Deals | Couponsbit",
+      name: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
       description:
-        "Find the latest Vistaprint promo codes, coupons, and deals on Couponsbit. Save on business cards, marketing materials, and custom prints.",
+        "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-24",

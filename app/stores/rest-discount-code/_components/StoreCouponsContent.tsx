@@ -272,17 +272,14 @@ export default function RestCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Rest?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Rest is a bedding brand offering duvets and sleep essentials designed to help you get a more comfortable night's rest.
+                    Rest is a bedding brand known for its Evercool® cooling bedding collection, created with hot sleepers in mind. Its products focus on a cool-to-the-touch feel, moisture management and softness, combining functional materials with designs suited to everyday bedrooms. The collection includes cooling comforters, sheet sets, pillows, pillowcases and sleepwear. 
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand focuses on quality bedding materials suited to different seasons and sleep preferences.
+                    Rest is particularly relevant to shoppers who want bedding that feels cool and comfortable without sacrificing softness. Whether you're refreshing your own bedroom or choosing bedding as a gift, its specialised range offers alternatives to conventional sleep essentials.
+
                   </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Rest is popular with shoppers looking to upgrade their bedroom with comfortable, well-made duvets and accessories.
-                  </p>
-                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand also offers seasonal collections and bundle deals throughout the year.
-                  </p>
+                 
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
@@ -310,65 +307,7 @@ export default function RestCouponsContent() {
                    <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
-                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better Rest Deals
-  </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Shopping",
-        sub: "Before placing your order, check CouponsBit for the latest Rest discount code and current offers.",
-      },
-      {
-        icon: HeartHandshake,
-        title: "Sign Up For Emails",
-        sub: "Join Rest's email list to get notified about new arrivals, restocks, and member-exclusive offers.",
-      },
-      {
-        icon: Calendar,
-        title: "Watch for Sales Events",
-        sub: "Seasonal sales and holiday promotions can be useful periods to check for extra discounts.",
-      },
-      {
-        icon: ShieldAlert,
-        title: "Check Promotion Restrictions",
-        sub: "A promotion may only apply to selected products or bundles. Always read the terms before purchasing.",
-      },
-      {
-        icon: Gift,
-        title: "Bundle Your Order",
-        sub: "Bundling a duvet with other bedding essentials can often provide better value than buying separately.",
-      },
-      {
-        icon: Moon,
-        title: "Check the Material Guide",
-        sub: "Reviewing Rest's material and warmth guide before ordering can help you pick the right duvet for your needs.",
-      },
-      {
-        icon: Receipt,
-        title: "Review the Final Order",
-        sub: "Before completing your purchase, make sure any eligible promotion has been applied and review your complete order details.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
+          
 
               </div>
             </div>
@@ -408,35 +347,85 @@ export default function RestCouponsContent() {
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Rest Discount Code, Coupon Code & Discount Offers
+          Find a Rest Discount Code on CouponsBit
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
   <table className="w-full text-left border-collapse min-w-[850px]">
     <thead>
       <tr className="bg-[#056BFA]">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
       </tr>
     </thead>
     <tbody className="text-[#333333] font-bold text-[14px]">
       {[
-        ["New Customer Offer", "Varies", "New Customers", "Save on your first Rest order", "First Order"],
-        ["Percentage Off Sitewide", "Varies", "All Users", "A percentage off eligible Rest bedding sitewide", "Sitewide"],
-        ["Duvet Bundle Deal", "Varies", "All Users", "Save when bundling a duvet with other bedding essentials", "Duvets & Bedding"],
-        ["Free Shipping Offer", "Free Shipping", "All Users", "Free shipping on eligible orders", "All Online Orders"],
-        ["Seasonal Bedding Sale", "Varies", "All Users", "Discounted prices on seasonal bedding picks", "Seasonal Bedding"],
-        ["Referral Bonus", "Varies", "Enrolled Members", "Earn a reward for eligible referrals", "Referral Program"],
-      ].map((row, i) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 5 && "border-b-0")}>
+        [
+          "Rest End of Season Sale",
+          "Up to 30% OFF",
+          "All Users",
+          "Discover special prices across selected products and save on bedtime favourites. T&C apply.",
+          "Cooling Bedding & Sleepwear"
+        ],
+        [
+          "Rest Evercool® Cooling Pajamas Shorts Set",
+          "40% OFF ($77)",
+          "All Users",
+          "Reduced from $129 original price. Designed for people who tend to sleep hot. T&C apply.",
+          "Evercool® Cooling Pajamas Shorts Set"
+        ],
+        [
+          "Rest Evercool® Cooling Pajamas Pants Set",
+          "40% OFF (From $83)",
+          "All Users",
+          "Reduced from $139 original price. Cooling-focused pajamas for hot sleepers. T&C apply.",
+          "Evercool® Cooling Pajamas Pants Set"
+        ],
+        [
+          "Rest Evercool®+ Cooling Starter Sheet Set",
+          "25% OFF ($134)",
+          "All Users",
+          "Reduced from $179 original price. Award-winning bedding set made for hot sleepers. T&C apply.",
+          "Evercool®+ Cooling Starter Sheet Set"
+        ],
+        [
+          "Rest Evercool® Cooling Comforter",
+          "25% OFF",
+          "All Users",
+          "Customer-favourite and award-winning cooling comforter for hot sleepers. T&C apply.",
+          "Evercool® Cooling Comforter"
+        ],
+        [
+          "Rest Evercool®+ Cooling Starter Sheet Set (Rating 4.8)",
+          "25% OFF ($134)",
+          "All Users",
+          "Reduced from $179 original price with a listed rating of 4.8. T&C apply.",
+          "Evercool®+ Cooling Starter Sheet Set"
+        ],
+        [
+          "Rest Evercool® Cooling Pillow",
+          "15% OFF ($169)",
+          "All Users",
+          "Reduced from $199 original price. Cooling-focused pillow for comfortable sleep. T&C apply.",
+          "Evercool® Cooling Pillow"
+        ],
+        [
+          "Rest Evercool®+ Cooling Pillowcases",
+          "10% OFF ($71)",
+          "All Users",
+          "Reduced from $79 original price. HSA/FSA eligibility through Truemed. T&C apply.",
+          "Evercool®+ Cooling Pillowcases"
+        ]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
           <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
           <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
           <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
         </tr>
       ))}
     </tbody>
@@ -445,40 +434,62 @@ export default function RestCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're upgrading your bedroom or shopping for a new duvet, Rest offers a range of bedding essentials designed for a comfortable night's sleep.
+            Before placing an order, browse CouponsBit for a Rest discount code, promo code or current bedding deal. Promotions can change throughout the year, and different offers may apply to different products or order conditions.
           </p>
           <p>
-            If you're planning your next bedding purchase, checking for a Rest discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Rest coupon codes, promo offers, and other ways to potentially save on their order.
+            A discount can be useful when you're replacing a single item, buying a new comforter or updating several parts of your bedding at once. Compare the available offers with any promotion displayed on Rest's official website, and read the terms carefully before choosing.
           </p>
           <p>
-            From new-customer offers to bundle discounts and seasonal sale picks, there are plenty of reasons to check current promotions before you check out.
+            Rest operates regional shopping experiences, including its US and Canadian websites. Product availability, delivery options and promotional eligibility may vary by market, so shoppers in the United States, Canada and the United Kingdom should confirm the relevant terms before ordering.
           </p>
 
-          <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find a Rest Discount Code</h3>
-    <p>A Rest discount code can help you look for savings on eligible duvets and bedding essentials when a promotion is available.</p>
-    <p>Before completing your order, check CouponsBit to see whether there is a current Rest promotional offer that matches what you're shopping for.</p>
-    <p>Promotions can have specific conditions. Some may apply to selected products or bundles, while others may be connected to a particular sales event.</p>
-    <p>Always review the terms of the offer, including its expiration date and product restrictions, before expecting a discount at checkout.</p>
-  </div>
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Explore Rest's Cooling Bedding Collection
+          </h3>
+          <p>
+            <strong>Evercool® Cooling Comforter:</strong> A key product in Rest's range, this comforter features cooling fabric designed to feel cool to the touch and help manage moisture. It is worth considering if you want a softer, cooler-feeling layer for your bed.
+          </p>
+          <p>
+            <strong>Evercool®+ Cooling Sheets:</strong> Refresh your sleeping setup with cooling sheets designed to complement the brand's comforters. Depending on the collection, shoppers can explore sheet sets, starter sets and individual pieces.
+          </p>
+          <p>
+            <strong>Pillows and Pillowcases:</strong> Complete your bedding arrangement with coordinating accessories. These can also be a practical starting point if you want to try Rest products before changing your entire bed.
+          </p>
+          <p>
+            <strong>Sleepwear:</strong> Rest's collection includes cooling-focused <Link href="/stores/nuage-discount-code" className="text-[#056bfa] hover:underline">sleepwear</Link>, giving shoppers another option for building a more comfortable bedtime routine.
+          </p>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Rest's Product Lineup</h3>
-    <p>Rest offers bedding essentials designed to help you get a more comfortable night's sleep.</p>
-    <p><strong>Duvets:</strong> A range of warmth levels and materials suited to different seasons.</p>
-    <p><strong>Bedding Sets:</strong> Coordinating sets to complete your bedroom.</p>
-    <p><strong>Bundles:</strong> Combined duvet and accessory bundles for better value.</p>
-  </div>
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Use a Rest Promo Code
+          </h3>
+          <p>Follow these steps when a suitable offer is available:</p>
+          <ol className="list-decimal pl-5 space-y-2">
+            <li>Visit CouponsBit and look for a current Rest discount code.</li>
+            <li>Read the offer details, including eligible products and any minimum-spend conditions.</li>
+            <li>Open the relevant Rest regional website and select your bedding.</li>
+            <li>Add the items to your shopping cart and enter the promo code at checkout, if required.</li>
+            <li>Review the final order summary to confirm whether the discount has been applied.</li>
+          </ol>
+          <p>
+            If a code doesn't work, check its expiry date, regional restrictions and product eligibility. Some offers may not combine with other promotions.
+          </p>
 
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Rest Sale and Seasonal Promotions</h3>
-    <p>Rest promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
-    <p><strong>Seasonal Sales Events:</strong> Seasonal transitions are a popular period for bedding savings.</p>
-    <p><strong>Bundle Deals:</strong> Combining products together is often discounted compared to buying separately.</p>
-    <p>Before placing an order, check CouponsBit for a Rest discount code, coupon offer, or other promotion.</p>
-  </div>
-</div>
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Shop Smarter at Rest
+          </h3>
+          <p>
+            Start with the bedding you actually need. If overheating is your main concern, explore the cooling comforter and sheet collections first. If your current bedding is still in good condition, replacing one item may be a more practical choice than purchasing a complete set.
+          </p>
+          <p>
+            Before ordering, compare product dimensions, materials, care instructions, delivery terms and the return policy applicable to your region. These details matter just as much as the promotional discount when choosing bedding for everyday use.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Find Rest Deals With CouponsBit
+          </h3>
+          <p>
+            A comfortable bedroom doesn't always require replacing everything at once. Identify the bedding that suits your needs, compare the available options and check CouponsBit for a Rest discount code, promo code and current deals before ordering. With the right product and a suitable offer, you can make your next bedding purchase a more considered one.
+          </p>
 
           {!isReadMore && (
             <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
@@ -496,19 +507,25 @@ export default function RestCouponsContent() {
         {/* Accordion FAQ Section */}
         <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Rest Discount Codes
+            FAQs About Rest Discount Codes
           </h3>
           {[
-            { q: "Does Rest offer discount codes?", a: "Rest periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find a Rest discount code?", a: "You can check CouponsBit for available Rest discount codes, coupon codes, and sale promotions before shopping." },
-            { q: "How do I use a Rest discount code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
-            { q: "Why isn't my Rest promo code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected products or bundles." },
-            { q: "What does Rest sell?", a: "Rest sells duvets, bedding sets, and related sleep accessories." },
-            { q: "Does Rest offer free shipping?", a: "Rest may offer free shipping on qualifying orders. Check current offers for minimum order requirements." },
-            { q: "Does Rest offer bundle deals?", a: "Yes. Rest offers bundle deals that combine a duvet with other bedding essentials for better value." },
-            { q: "Does Rest have seasonal sales?", a: "Rest may run promotions around seasonal shopping periods. Check current offers to see what is available." },
-            { q: "Can I return or exchange Rest items?", a: "Rest has its own returns and exchange policy. Check the official site for current terms before ordering." },
-            { q: "When is the best time to look for Rest deals?", a: "Promotions can appear throughout the year, with seasonal sales events often bringing additional savings." },
+            {
+              q: "Does Rest offer discount codes?",
+              a: "Rest may feature promotional offers and seasonal deals. Check CouponsBit and the official regional website for currently available promotions."
+            },
+            {
+              q: "Can I use a Rest promo code on every product?",
+              a: "Not necessarily. Some codes may apply only to selected products, collections or qualifying orders. Review the offer terms before checkout."
+            },
+            {
+              q: "Can shoppers in Canada and the UK order from Rest?",
+              a: "Rest has a Canadian shopping website, but delivery options and product availability should be checked for your specific destination. UK shoppers should verify whether their address is supported before placing an order."
+            },
+            {
+              q: "What is Rest best known for?",
+              a: "Rest is best known for its Evercool® cooling bedding, including comforters and sheets designed for a cool-to-the-touch feel."
+            }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button
@@ -540,13 +557,13 @@ export default function RestCouponsContent() {
           <div className="flex flex-wrap gap-2.5">
             {[
               "Rest Discount Code",
-              "Duvet Deals",
-              "Bedding Sets",
-              "Free Shipping",
+              "Cooling Comforter Deals",
+              "Evercool Sheets",
+              "Bedding Promo Code",
               "Percentage Off Sitewide",
-              "New Customer Offer",
-              "Seasonal Sale",
-              "Bundle Deal"
+              "Cooling Sleepwear",
+              "Seasonal Bedding Sale",
+              "Free Delivery Offers"
             ].map((tag) => (
               <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
                 {tag}
@@ -563,20 +580,20 @@ export default function RestCouponsContent() {
           <div className="space-y-6">
             {[
               {
-              heading: "END OF SEASON SALE",
-              sub: "Save up to 30% on cooling bedding & sleepwear",
+                heading: "EVERCOOL COMFORTER",
+                sub: "Save on top-rated cooling bedding",
               },
               {
-              heading: "EVERCOOL COOLING COMFORTER",
-              sub: "Get 25% off the best seller",
+                heading: "SHEET SET BUNDLE",
+                sub: "Special discounts on cooling sheet sets",
               },
               {
-              heading: "EVERCOOL COOLING PILLOW",
-              sub: "Save 15%, now $169",
+                heading: "COOLING PILLOWCASES",
+                sub: "Up to 20% off selected accessories",
               },
               {
-              heading: "EVERCOOL+ PILLOWCASES",
-              sub: "Get 10% off, now $71",
+                heading: "SLEEPWEAR SPECIAL",
+                sub: "Explore discounts on cooling loungewear",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">

@@ -40,6 +40,7 @@ const CATEGORIES = [
 ];
 
 const BLOG_POSTS = [
+  { name: "Best Web Hosting Coupons 2026: Bluehost vs Hostinger", href: "/blog/best-web-hosting-coupons-2026" },
   { name: "Vivid Seats Discount Code: Best Ticket Deals 2026", href: "/blog/vivid-seats-discount-code-best-ticket-deals-2026" },
   { name: "Halloween Shopping Guide 2026", href: "/blog/halloween-shopping-guide-2026" },
   { name: "Couponsbit Shopping & Savings Guide", href: "/blog/couponsbit-shopping-savings-guide" },

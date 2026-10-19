@@ -633,7 +633,7 @@ export default function BookingCouponsContent() {
         Resorts can be a popular choice for vacations where travelers want accommodation, dining, leisure facilities, and other amenities in one destination.
       </p>
       <p>
-        Depending on the property, travelers can find beach resorts, family resorts, wellness properties, luxury resorts, and other accommodation types.
+        Depending on the property, travelers can find beach resorts, family resorts, wellness properties, <Link href="/stores/radisson-discount-code" className="text-[#056bfa] hover:underline">luxury resorts</Link>, and other accommodation types.
       </p>
     </div>
 

@@ -284,7 +284,7 @@ export default function VividSeatsCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The platform features tickets for professional and college sports, concerts, theater productions, comedy events, festivals, and other live experiences. Instead of visiting individual team, artist, venue, or event websites separately, shoppers can browse different events through one ticket marketplace.
+                    The platform features tickets for professional and college sports, concerts, theater productions, comedy events, festivals, and other live experiences. Instead of visiting individual team, artist, venue, or event websites separately, shoppers can browse different events through one <Link href="/stores/viagogo-discount-code" className="text-[#056bfa] hover:underline">ticket marketplace</Link>.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Sports fans can explore tickets for leagues and teams across the country, while music lovers can search for performances from major artists and touring acts. Theater fans can also find tickets for Broadway productions, shows, and other stage performances.
@@ -764,7 +764,7 @@ export default function VividSeatsCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">What Is Vivid Seats?</h3>
     <p>Vivid Seats is an online <Link href="/stores/stubhub-discount-code">ticket marketplace</Link> where fans can discover tickets for a wide variety of live entertainment events across the United States and beyond.</p>
-    <p>The platform features tickets for professional and college sports, concerts, theater productions, comedy events, festivals, and other live experiences. Instead of visiting individual team, artist, venue, or event websites separately, shoppers can browse different events through one ticket marketplace.</p>
+    <p>The platform features tickets for professional and college sports, concerts, theater productions, comedy events, festivals, and other live experiences. Instead of visiting individual team, artist, venue, or event websites separately, shoppers can browse different events through one <Link href="/stores/viagogo-discount-code" className="text-[#056bfa] hover:underline">ticket marketplace</Link>.</p>
     <p>Sports fans can explore tickets for leagues and teams across the country, while music lovers can search for performances from major artists and touring acts. Theater fans can also find tickets for Broadway productions, shows, and other stage performances.</p>
     <p>Vivid Seats also provides tools that allow customers to search for events based on location, date, category, artist, team, or venue.</p>
     <p>The marketplace model means ticket availability and prices can vary depending on the event, seating location, demand, and other factors. Because of this, it's useful to compare available tickets and review the complete order details before making a purchase.</p>
@@ -852,7 +852,7 @@ export default function VividSeatsCouponsContent() {
     <p>If you're planning a busy summer calendar, compare ticket options and check for a Vivid Seats coupon code before purchasing.</p>
     <p><strong>Back-to-School:</strong> College students often look for entertainment options during the new academic year.</p>
     <p>Concerts, college sports, professional sports, and comedy events can all make popular outings.</p>
-    <p><strong>Halloween:</strong> Halloween brings themed events, concerts, comedy shows, and other entertainment.</p>
+    <p><strong>Halloween:</strong> <Link href="/stores/spirit-halloween-discount-code" className="text-[#056bfa] hover:underline">Halloween</Link> brings themed events, concerts, comedy shows, and other entertainment.</p>
     <p>Depending on your city, you may find special performances and seasonal events during October.</p>
     <p><strong>Thanksgiving Weekend:</strong> Thanksgiving weekend is a popular time for family gatherings and travel.</p>
     <p>Some people also use the long weekend to attend sporting events, concerts, theater productions, or other live entertainment.</p>

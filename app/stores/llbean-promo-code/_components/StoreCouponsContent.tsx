@@ -293,7 +293,7 @@ export default function LLBeanCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand also offers plenty for shoppers who aren't heading into the wilderness. Casual clothing, sweaters, pajamas, slippers, bedding, home décor, bags, and accessories make L.L.Bean relevant for everyday shopping as well.
+                    The brand also offers plenty for shoppers who aren't heading into the wilderness. <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">Casual clothing</Link>, sweaters, pajamas, slippers, bedding, home décor, bags, and accessories make L.L.Bean relevant for everyday shopping as well.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -520,7 +520,7 @@ export default function LLBeanCouponsContent() {
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">L.L.Bean Boots & Footwear</h3>
       <p>Few L.L.Bean products are as recognizable as its footwear. The Bean Boot, also known as the Maine Hunting Shoe, is one of the company's signature products originally designed for outdoor use.</p>
-      <p>The broader footwear collection includes hiking boots, trail shoes, sneakers, sandals, slippers, casual shoes, winter boots, and other options for different conditions and activities.</p>
+      <p>The broader footwear collection includes hiking boots, trail shoes, <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">sneakers</Link>, sandals, slippers, casual shoes, winter boots, and other options for different conditions and activities.</p>
       <p>When shopping for footwear, think about where you'll actually use it. You can also check for an L.L.Bean promo code before ordering to see whether a current offer can improve the value of your purchase.</p>
     </div>
 

@@ -274,7 +274,7 @@ export default function HokaCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Today, shoppers can find HOKA running shoes for everyday training, racing, trail running, walking, recovery, and other forms of movement. The brand also offers apparel and accessories, giving customers the option to build more of their active wardrobe in one place.
+                    Today, shoppers can find HOKA running shoes for everyday training, racing, trail running, walking, recovery, and other forms of movement. The brand also offers apparel and accessories, giving customers the option to build more of their <Link href="/stores/halara-coupon-code" className="text-[#056bfa] hover:underline">active wardrobe</Link> in one place.
 
                   </p>
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -582,7 +582,7 @@ export default function HokaCouponsContent() {
           HOKA's product range extends beyond shoes.
         </p>
         <p>
-          The brand also offers apparel and accessories designed to complement its footwear and active lifestyle focus. Depending on the current collection, shoppers can explore items for running, training, outdoor activities, and everyday movement.
+          The brand also offers apparel and accessories designed to complement its footwear and active lifestyle focus. Depending on the current collection, shoppers can explore items for running, training, <Link href="/stores/llbean-promo-code" className="text-[#056bfa] hover:underline">outdoor activities</Link>, and everyday movement.
         </p>
         <p>
           If you're refreshing your entire running wardrobe, compare apparel and accessory promotions alongside footwear offers. A current HOKA promo code may have specific category restrictions, so check the terms before assuming it applies to everything in your cart.

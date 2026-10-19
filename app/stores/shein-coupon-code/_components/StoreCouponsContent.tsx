@@ -457,7 +457,7 @@ export default function SheinCouponsContent() {
 
             <h4 className="text-lg font-black text-black mt-4">SHEIN Women's Clothing Deals</h4>
             <p>
-              Women's fashion is one of the largest sections of the SHEIN marketplace. Shoppers can browse dresses, tops, bottoms, denim, jumpsuits, knitwear, coats, jackets, activewear, beachwear, underwear, sleepwear, and more.
+              Women's fashion is one of the largest sections of the SHEIN marketplace. Shoppers can browse dresses, tops, bottoms, denim, jumpsuits, knitwear, coats, jackets, <Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">activewear</Link>, beachwear, underwear, <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">sleepwear</Link>, and more.
             </p>
             <p>
               Whether you're searching for casual basics, work outfits, vacation clothing, or occasion wear, browsing the sale section alongside a SHEIN promo code can help you find additional savings opportunities.

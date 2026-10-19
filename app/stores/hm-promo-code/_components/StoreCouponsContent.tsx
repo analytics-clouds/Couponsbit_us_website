@@ -470,7 +470,7 @@ export default function HmCouponsContent() {
             Save More on Your H&M Shopping
           </h2>
           <p className="text-gray-600 font-medium leading-relaxed mb-4">
-            Planning your next H&M order? Before you head to checkout, it is worth looking for an H&M discount code that could help lower your total. Whether you are shopping for new-season fashion, basics, children's clothing, activewear, beauty products, or home accessories, a quick check for current promotions can help you find a better deal.
+            Planning your next H&M order? Before you head to checkout, it is worth looking for an H&M discount code that could help lower your total. Whether you are shopping for new-season fashion, basics, children's clothing, <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">activewear</Link>, beauty products, or home accessories, a quick check for current promotions can help you find a better deal.
           </p>
           <p className="text-gray-600 font-medium leading-relaxed mb-4">
             H&M has grown beyond a traditional clothing retailer. Its collections cover fashion for women, men, children, and babies, as well as shoes, bags, jewelry, sportswear, beauty, and home products. Shoppers can also discover specialist ranges such as H&M Move, maternity clothing, Premium Selection, and H&M Home.
@@ -574,7 +574,7 @@ export default function HmCouponsContent() {
 
               <div className="bg-white p-5 rounded-2xl border border-gray-100">
                 <h4 className="font-black text-black mb-1">Underwear and Nightwear</h4>
-                <p className="text-sm">The women's selection also includes everyday underwear, lingerie, socks, tights, pajamas, and nightwear, giving shoppers access to practical wardrobe essentials alongside fashion pieces.</p>
+                <p className="text-sm">The women's selection also includes everyday underwear, lingerie, socks, tights, <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">pajamas</Link>, and nightwear, giving shoppers access to practical wardrobe essentials alongside fashion pieces.</p>
               </div>
 
               <div className="bg-white p-5 rounded-2xl border border-gray-100">

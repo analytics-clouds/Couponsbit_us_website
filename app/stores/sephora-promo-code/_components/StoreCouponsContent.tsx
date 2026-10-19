@@ -121,7 +121,7 @@ export default function SephoraCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Sephora promo codes and coupon offers for Oct 2026. Save on makeup, skincare, and fragrance from top beauty brands.
+                      Save more with the latest Sephora Promo Code on premium beauty, skincare, makeup, and fragrance products. Enjoy up to 50% OFF selected beauty products and 30% OFF value sets from top brands. You can also use a Sephora Discount Code to unlock extra savings on skincare, haircare, gift sets, and everyday beauty essentials. Shop trending makeup, perfumes, and self-care favourites while these limited-time Sephora offers are available.
                     </p>
                     <a
                       href={STORE_URL}

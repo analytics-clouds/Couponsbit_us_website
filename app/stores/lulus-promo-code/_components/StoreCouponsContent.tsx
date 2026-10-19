@@ -555,7 +555,7 @@ export default function LulusCouponsContent() {
           Planning a night out? Cocktail dresses, going-out outfits, heels, handbags, and jewelry can help build the complete look.
         </p>
         <p>
-          For everyday wear, Lulus also offers casual clothing that can be mixed into your existing wardrobe.
+          For everyday wear, Lulus also offers <Link href="/stores/fashion-nova-discount-code" className="text-[#056bfa] hover:underline">casual clothing</Link> that can be mixed into your existing wardrobe.
         </p>
         <p>
           This occasion-based approach is part of what makes the brand different from a retailer focused purely on basics. Lulus describes its purpose around helping women get dressed for everything from graduations and brunches to major life events.

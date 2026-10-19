@@ -557,7 +557,7 @@ export default function InstacartCouponsContent() {
     <p>Availability varies by store and location, so check individual product listings before ordering.</p>
     <p><strong>Dairy and Eggs:</strong> Milk, cheese, yogurt, butter, eggs, and other refrigerated staples are among the products shoppers may order through participating grocery retailers.</p>
     <p><strong>Pantry Staples:</strong> Keep your kitchen stocked with essentials such as rice, pasta, flour, cereal, canned foods, sauces, spices, baking supplies, snacks, and other shelf-stable products.</p>
-    <p><strong>Frozen Foods:</strong> Frozen vegetables, pizzas, prepared meals, desserts, ice cream, and other frozen products can make convenient additions to your grocery order.</p>
+    <p><strong>Frozen Foods:</strong> Frozen vegetables, <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">pizzas</Link>, prepared meals, desserts, ice cream, and other frozen products can make convenient additions to your grocery order.</p>
     <p><strong>Snacks and Beverages:</strong> Whether you're preparing lunchboxes, stocking the pantry, or getting ready for a gathering, Instacart can help you browse snacks and beverages from participating retailers.</p>
     <p><strong>Household Essentials:</strong> Grocery shopping isn't just about food. Depending on the retailer, you can also order paper products, cleaning supplies, laundry products, storage items, kitchen essentials, and other household necessities.</p>
     <p><strong>Personal Care:</strong> Customers can find products such as shampoo, soap, oral-care products, skincare items, shaving products, and other personal-care essentials.</p>
@@ -605,7 +605,7 @@ export default function InstacartCouponsContent() {
     <p><strong>Valentine's Day:</strong> Valentine's Day shopping can include chocolates, flowers, desserts, beverages, ingredients for a home-cooked dinner, and other treats.</p>
     <p><strong>Easter:</strong> Easter can bring larger family grocery trips, with shoppers looking for baking ingredients, candy, seasonal foods, beverages, and items for family gatherings.</p>
     <p><strong>Mother's Day:</strong> Whether you're preparing brunch at home or buying snacks and ingredients for a family celebration, Instacart can make Mother's Day grocery shopping more convenient.</p>
-    <p><strong>Memorial Day:</strong> Memorial Day weekend is a popular time for cookouts and gatherings. Customers may shop for burgers, hot dogs, barbecue ingredients, snacks, beverages, and other outdoor-meal essentials.</p>
+    <p><strong>Memorial Day:</strong> Memorial Day weekend is a popular time for cookouts and gatherings. Customers may shop for <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">burgers</Link>, hot dogs, barbecue ingredients, snacks, beverages, and other outdoor-meal essentials.</p>
     <p><strong>Fourth of July:</strong> Independence Day can mean backyard barbecues, parties, picnics, and family gatherings. Grocery orders may include grilling supplies, drinks, desserts, snacks, and party essentials.</p>
     <p><strong>Back-to-School Season:</strong> Back-to-school shopping isn't limited to school supplies. Families also need breakfast foods, lunchbox snacks, beverages, pantry staples, cleaning products, and household essentials.</p>
     <p>Ordering groceries online can make weekly restocking easier when school and work schedules become busy.</p>

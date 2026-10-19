@@ -505,7 +505,7 @@ export default function AdidasCouponsContent() {
     <p>Depending on the model, shoppers can find shoes focused on stability, flexibility, support, or versatility.</p>
     <p><strong>Soccer Shoes:</strong> adidas has a strong presence in soccer, offering footwear designed for different playing surfaces and player preferences. Customers can explore soccer cleats and related footwear from adidas' sports collections.</p>
     <p><strong>Basketball Shoes:</strong> Basketball fans can find performance footwear designed for court movement, traction, cushioning, and support. adidas also releases basketball shoes connected to athletes and signature collections.</p>
-    <p><strong>Lifestyle Sneakers:</strong> Not every adidas shoe is designed for the gym. Lifestyle sneakers remain a major part of the brand's lineup, with classic silhouettes and modern designs that work with casual outfits.</p>
+    <p><strong>Lifestyle Sneakers:</strong> Not every adidas shoe is designed for the gym. Lifestyle sneakers remain a major part of the brand's lineup, with classic silhouettes and modern designs that work with <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual outfits</Link>.</p>
     <p>Popular styles can include retro-inspired sneakers, everyday trainers, and fashion-focused footwear.</p>
   </div>
 

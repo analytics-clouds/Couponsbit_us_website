@@ -283,7 +283,7 @@ export default function FlowersCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Today, shoppers can browse far more than traditional bouquets. The 1-800-Flowers selection includes roses, orchids, mixed arrangements, flowering plants, bonsai, gift baskets, gourmet food, chocolate-covered strawberries, balloons, keepsakes, and other gifts. The site also offers occasion-based shopping for birthdays, sympathy, romance, congratulations, new babies, get-well wishes, and those classic “just because” moments.
+                    Today, shoppers can browse far more than traditional bouquets. The 1-800-Flowers selection includes roses, orchids, mixed arrangements, flowering plants, bonsai, gift baskets, gourmet food, chocolate-covered strawberries, balloons, <Link href="/stores/etsy-coupon-code" className="text-[#056bfa] hover:underline">keepsakes</Link>, and other gifts. The site also offers occasion-based shopping for birthdays, sympathy, romance, congratulations, new babies, get-well wishes, and those classic “just because” moments.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -478,7 +478,7 @@ export default function FlowersCouponsContent() {
     What’s the Hype About 1-800-Flowers? 1-800-Flowers.com is an online gifting company known for flowers, plants, arrangements, and gifts delivered for different occasions. Its roots go back to 1976, when founder Jim McCann opened his first retail florist shop. The company later became one of the recognizable names in online flower delivery.
   </p>
   <p>
-    Today, shoppers can browse far more than traditional bouquets. The 1-800-Flowers selection includes roses, orchids, mixed arrangements, flowering plants, bonsai, gift baskets, gourmet food, chocolate-covered strawberries, balloons, keepsakes, and other gifts. The site also offers occasion-based shopping for birthdays, sympathy, romance, congratulations, new babies, get-well wishes, and those classic “just because” moments.
+    Today, shoppers can browse far more than traditional bouquets. The 1-800-Flowers selection includes roses, orchids, mixed arrangements, flowering plants, bonsai, gift baskets, gourmet food, chocolate-covered strawberries, balloons, <Link href="/stores/etsy-coupon-code" className="text-[#056bfa] hover:underline">keepsakes</Link>, and other gifts. The site also offers occasion-based shopping for birthdays, sympathy, romance, congratulations, new babies, get-well wishes, and those classic “just because” moments.
   </p>
   <p>
     One of the brand's biggest conveniences is delivery. Depending on the product and destination, customers can find same-day delivery options, while local florist partners help create and deliver many arrangements. The company's fulfillment system matches eligible orders with local florists or fulfillment partners in the recipient's area.

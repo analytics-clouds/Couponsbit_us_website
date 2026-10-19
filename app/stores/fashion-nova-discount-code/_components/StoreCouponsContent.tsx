@@ -752,7 +752,7 @@ export default function FashionNovaCouponsContent() {
   <div className="space-y-4">
     <h4 className="text-lg font-bold text-gray-900">Activewear and Swimwear</h4>
     <p>
-      For workout wardrobes, Fashion Nova offers women's activewear, while its swimwear collections include bikinis, one-piece swimsuits, cover-ups, and plus-size swim options. The brand also features sale categories for selected activewear and swimwear.
+      For workout wardrobes, Fashion Nova offers women's <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">activewear</Link>, while its swimwear collections include bikinis, one-piece swimsuits, cover-ups, and plus-size swim options. The brand also features sale categories for selected activewear and swimwear.
     </p>
   </div>
 
@@ -789,7 +789,7 @@ export default function FashionNovaCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa]">Fashion Nova Shoes and Accessories</h3>
     <p>
-      Completing an outfit does not stop with clothing. Fashion Nova also offers shoes and accessories, including sneakers, sandals, pumps, wedges, boots, flats, handbags, jewelry, sunglasses, hats, belts, and other accessories.
+      Completing an outfit does not stop with clothing. Fashion Nova also offers shoes and accessories, including sneakers, sandals, pumps, wedges, boots, flats, handbags, jewelry, <Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">sunglasses</Link>, hats, belts, and other accessories.
     </p>
     <p>
       Whether you need shoes for an occasion or accessories to finish an everyday look, check for current Fashion Nova deals before adding the final pieces to your order.

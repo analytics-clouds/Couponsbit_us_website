@@ -278,7 +278,7 @@ export default function PandoraCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Pandora's jewelry is centered around the idea of creating pieces that reflect individual stories, relationships, interests, and milestones. Its charms allow shoppers to build personalized collections, while the wider range includes bracelets, rings, necklaces, earrings, and other jewelry pieces.
+                    Pandora's jewelry is centered around the idea of creating pieces that reflect individual stories, relationships, interests, and milestones. Its charms allow shoppers to build <Link href="/stores/etsy-coupon-code" className="text-[#056bfa] hover:underline">personalized collections</Link>, while the wider range includes bracelets, rings, necklaces, earrings, and other jewelry pieces.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

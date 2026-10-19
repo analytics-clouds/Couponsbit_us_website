@@ -597,7 +597,7 @@ export default function TargetCouponsContent() {
           {/* Why Choose Target */}
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Target?</h3>
-            <p><strong>Wide Product Selection:</strong> From groceries and fashion to electronics and furniture, Target offers an extensive range of products for every member of the family.</p>
+            <p><strong>Wide Product Selection:</strong> From groceries and fashion to electronics and <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">furniture</Link>, Target offers an extensive range of products for every member of the family.</p>
             <p><strong>Exclusive Brands:</strong> Target features dozens of exclusive in-house brands across home, apparel, food, and beauty categories that offer quality and value.</p>
             <p><strong>Convenient Shopping Options:</strong> Customers can shop online, pick up orders in-store, use Drive Up, or enjoy same-day delivery in eligible locations.</p>
             <p><strong>Target Circle Rewards:</strong> Join Target Circle, Target's free loyalty program, to access automatic deals, personalized offers, Target Circle Rewards, and other member benefits.</p>

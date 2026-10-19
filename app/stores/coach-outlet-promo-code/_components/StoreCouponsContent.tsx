@@ -562,7 +562,7 @@ export default function CoachOutletCouponsContent() {
 
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Accessories & Gifts for Every Recipient</h3>
-      <p>Coach Outlet offers a variety of accessories including belts, sunglasses, scarves, jewelry, and hats. These products are ideal for experimenting with the Coach aesthetic or giving as gifts for birthdays, anniversaries, graduations, Mother's Day, Valentine's Day, and holidays.</p>
+      <p>Coach Outlet offers a variety of accessories including belts, sunglasses, scarves, <Link href="/stores/aporro-discount-code" className="text-[#056bfa] hover:underline">jewelry</Link>, and hats. These products are ideal for experimenting with the Coach aesthetic or giving as gifts for birthdays, anniversaries, graduations, Mother's Day, Valentine's Day, and holidays.</p>
     </div>
 
     <div className="space-y-4">

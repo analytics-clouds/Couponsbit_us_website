@@ -719,7 +719,7 @@ export default function KrogerDigitalCouponsContent() {
 
       <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-1">
         <h5 className="font-bold text-gray-900">Frozen Foods</h5>
-        <p className="text-sm">Frozen fruits, vegetables, prepared meals, pizza, ice cream, desserts, appetizers, and quick convenient options.</p>
+        <p className="text-sm">Frozen fruits, vegetables, prepared meals, <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">pizza</Link>, ice cream, desserts, appetizers, and quick convenient options.</p>
       </div>
     </div>
 

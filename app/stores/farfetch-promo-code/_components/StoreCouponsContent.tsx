@@ -762,10 +762,10 @@ export default function FarfetchCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Farfetch's Fashion Selection</h3>
     <p>Farfetch brings together an extensive selection of luxury and designer fashion. Product availability changes regularly, but shoppers can explore a wide range of categories.</p>
-    <p><strong>Women's Clothing:</strong> Women's collections can include dresses, tops, shirts, jackets, coats, knitwear, trousers, denim, skirts, activewear, and other designer clothing.</p>
+    <p><strong>Women's Clothing:</strong> Women's collections can include dresses, tops, shirts, jackets, coats, knitwear, trousers, denim, skirts, <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">activewear</Link>, and other designer clothing.</p>
     <p>Whether you're looking for a statement piece or something understated for everyday wear, the platform offers styles from a wide selection of fashion labels.</p>
     <p><strong>Men's Clothing:</strong> Men's fashion includes categories such as shirts, T-shirts, jackets, coats, suits, trousers, denim, knitwear, and other wardrobe essentials.</p>
-    <p>You can also explore designer collections for formal occasions, casual outfits, and contemporary streetwear-inspired looks.</p>
+    <p>You can also explore designer collections for formal occasions, <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual outfits</Link>, and contemporary streetwear-inspired looks.</p>
     <p><strong>Designer Shoes:</strong> Farfetch offers a broad selection of footwear, including sneakers, boots, loafers, sandals, heels, flats, and other designer styles.</p>
     <p>Shoes can be one of the easiest ways to introduce a designer label into your wardrobe without completely changing your everyday style.</p>
     <p><strong>Handbags:</strong> From everyday shoulder bags and crossbody styles to statement handbags and evening pieces, Farfetch offers bags from numerous luxury and contemporary designers.</p>

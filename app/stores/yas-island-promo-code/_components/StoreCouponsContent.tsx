@@ -277,7 +277,7 @@ export default function YasIslandCouponsContent() {
     What Is Yas Island?
   </h3>
   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-    Yas Island is a major entertainment and leisure destination in Abu Dhabi, UAE. It combines theme parks, hotels, restaurants, shopping, entertainment venues, beaches, and other attractions in one location.
+    Yas Island is a major entertainment and leisure destination in Abu Dhabi, UAE. It combines theme parks, <Link href="/stores/agoda-discount-code" className="text-[#056bfa] hover:underline">hotels</Link>, restaurants, shopping, entertainment venues, beaches, and other attractions in one location.
   </p>
   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-8 text-justify">
     For travelers, this makes Yas Island particularly convenient because you can combine multiple activities during the same trip rather than planning separate journeys across the city.

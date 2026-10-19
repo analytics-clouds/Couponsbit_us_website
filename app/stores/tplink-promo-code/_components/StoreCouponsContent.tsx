@@ -857,7 +857,7 @@ export default function TplinkCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa]">TP-Link Network Adapters</h3>
     <p>
-      A computer or laptop may not always have the wireless capabilities you need. TP-Link's adapters provide another way to add or upgrade connectivity.
+      A computer or <Link href="/stores/dell-discount-code" className="text-[#056bfa] hover:underline">laptop</Link> may not always have the wireless capabilities you need. TP-Link's adapters provide another way to add or upgrade connectivity.
     </p>
     <p>Its product ranges include:</p>
     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-4">
@@ -1140,7 +1140,7 @@ export default function TplinkCouponsContent() {
             <p>Start with your internet connection. If you have a high-speed fiber connection, look for networking equipment capable of taking advantage of the available bandwidth.</p>
             <p>Consider the size of your home. A single router may be sufficient for a smaller property, while a Deco mesh system can make more sense for larger or multi-level homes.</p>
             <p>Think about wired devices. If you have several computers, consoles, cameras, or other Ethernet-connected devices, you may need a router or switch with enough ports.</p>
-            <p>Consider how many devices you use. Homes with smart TVs, phones, tablets, laptops, gaming systems, cameras, smart speakers, and other connected products can benefit from networking equipment designed for multiple simultaneous connections.</p>
+            <p>Consider how many devices you use. Homes with smart TVs, <Link href="/stores/apple-discount-code" className="text-[#056bfa] hover:underline">phones</Link>, tablets, <Link href="/stores/hp-discount-code" className="text-[#056bfa] hover:underline">laptops</Link>, gaming systems, cameras, smart speakers, and other connected products can benefit from networking equipment designed for multiple simultaneous connections.</p>
             <p>Don't overlook compatibility. Check Wi-Fi standards, Ethernet speeds, broadband type, cellular compatibility, and other technical requirements before ordering.</p>
           </div>
 

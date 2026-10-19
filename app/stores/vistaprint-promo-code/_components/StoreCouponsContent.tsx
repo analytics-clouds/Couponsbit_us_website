@@ -119,7 +119,7 @@ export default function VistaprintContent() {
                       <span className="text-gray-600 font-bold text-sm">(2,100 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Vistaprint offers custom-printed business cards, marketing materials, apparel, and design services for individuals and small businesses.
+                      Save more with the latest VistaPrint Discount Code on custom printing, business cards, apparel, gifts, and promotional products. Enjoy up to 40% OFF personalised calendars or 20% OFF your first eligible order with verified offers. You can also use a VistaPrint Promo Code to unlock extra savings on premium business cards, custom merchandise, and personalised stationery. Shop quality printing solutions for business or personal projects while these limited-time offers are available.
                     </p>
                     <a
                       href={STORE_URL}
@@ -405,6 +405,95 @@ export default function VistaprintContent() {
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
           VistaPrint Promo Code, Coupon Code & Discount Offers
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        [
+          "VistaPrint Free Economy Shipping",
+          "Free Shipping",
+          "All Users",
+          "Free economy shipping on qualifying orders totaling $100 or more.",
+          "Orders $100+"
+        ],
+        [
+          "VistaPrint Calendars Sale",
+          "Up to 40% OFF",
+          "All Users",
+          "Use promo code SAVEVP at checkout. Valid until November 8, 2026. T&C apply.",
+          "Selected Personalised Calendars"
+        ],
+        [
+          "VistaPrint Premium Business Cards",
+          "Up to 15% OFF",
+          "All Users",
+          "Use promo code SAVEVP at checkout. Valid until November 8, 2026. T&C apply.",
+          "Selected Premium Business Cards"
+        ],
+        [
+          "VistaPrint First Order Discount",
+          "Up to 20% OFF",
+          "New Customers",
+          "Use promo code NEW20 at checkout for first eligible order. T&C apply.",
+          "First Qualifying Purchase"
+        ],
+        [
+          "VistaPrint Shopping Cart Discount",
+          "Up to $50 OFF",
+          "All Users",
+          "Save $20 on $100+ or $50 on $200+ with promo code SHOPCART. Valid until November 1, 2026.",
+          "Qualifying Orders $100+"
+        ],
+        [
+          "VistaPrint Champion® Powerblend® Hoodie",
+          "From $35.99",
+          "All Users",
+          "Pricing ranges from $35.99 to $54.99 per hoodie based on options chosen.",
+          "Champion® Powerblend® Unisex Hoodie"
+        ],
+        [
+          "VistaPrint JERZEES® NuBlend® Hoodie",
+          "From $25.49",
+          "All Users",
+          "Pricing ranges from $25.49 to $39.99 each. Includes Heat Transfer customisation options.",
+          "JERZEES® NuBlend® Hoodie"
+        ],
+        [
+          "VistaPrint Recycled Cotton Canvas Tote Bag",
+          "From $2.32",
+          "All Users",
+          "Pricing ranges from $2.32 to $4.02 each based on quantity and customisation choices.",
+          "Recycled Cotton Canvas Tote Bag"
+        ],
+        [
+          "VistaPrint Custom Hang Tags",
+          "From $0.13 / Tag",
+          "All Users",
+          "Listed offer is $61.00 for 500 units (~$0.13/tag). Quantities range from 25 to 5,000 units.",
+          "Custom Clothing Hang Tags"
+        ]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div
           className={cn(
@@ -710,10 +799,10 @@ export default function VistaprintContent() {
               VistaPrint also extends into personalized products for the home and gifting occasions.
             </p>
             <p>
-              Depending on the current catalog, customers can explore personalized photo products, wall art, calendars, mugs, cards, and other items that can be customized with photographs, artwork, names, or messages.
+              Depending on the current catalog, customers can explore personalized photo products, <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">wall art</Link>, calendars, mugs, cards, and other items that can be customized with photographs, artwork, names, or messages.
             </p>
             <p>
-              These products can work well for birthdays, weddings, anniversaries, holidays, family celebrations, and thoughtful personalized gifts.
+              These products can work well for birthdays, weddings, anniversaries, holidays, family celebrations, and thoughtful <Link href="/stores/etsy-coupon-code" className="text-[#056bfa] hover:underline">personalized gifts</Link>.
             </p>
           </CardContent>
         </Card>

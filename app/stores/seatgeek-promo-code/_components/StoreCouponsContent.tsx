@@ -670,7 +670,7 @@ export default function SeatgeekCouponsContent() {
     <p>If you're planning multiple concerts, checking for a SeatGeek coupon code before purchasing can be worthwhile.</p>
     <p><strong>Fourth of July:</strong> Independence Day often brings concerts, festivals, sporting events, and other live entertainment across the country.</p>
     <p><strong>Back-to-School Season:</strong> As summer comes to an end, sports seasons and concert schedules continue. College sports, professional sports, comedy tours, and fall events can all provide opportunities for live entertainment.</p>
-    <p><strong>Halloween:</strong> Halloween isn't limited to costumes and candy. Concerts, themed events, comedy shows, festivals, and other entertainment can also take place around the holiday.</p>
+    <p><strong>Halloween:</strong> <Link href="/stores/spirit-halloween-discount-code" className="text-[#056bfa] hover:underline">Halloween</Link> isn't limited to costumes and candy. Concerts, themed events, comedy shows, festivals, and other entertainment can also take place around the holiday.</p>
     <p><strong>Thanksgiving Weekend:</strong> Thanksgiving weekend can be a popular time for families and friends to get together. Depending on your location, you may find sports games, concerts, theater productions, and other events.</p>
     <p><strong>Black Friday and Cyber Monday:</strong> While these shopping events are best known for retail discounts, they can also be a good time to check entertainment platforms for available ticket promotions.</p>
     <p>If you're planning future concerts, sporting events, or shows, check SeatGeek offers during the holiday shopping period.</p>

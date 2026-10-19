@@ -696,7 +696,7 @@ export default function HarborFreightCouponsContent() {
       Car enthusiasts and home mechanics can use Harbor Freight for everything from basic maintenance tools to larger garage equipment.
     </p>
     <p>
-      Its automotive assortment can support projects such as brake work, oil changes, tire maintenance, vehicle diagnostics, detailing, and general repairs.
+      Its automotive assortment can support projects such as brake work, <Link href="/stores/valvoline-discount-code" className="text-[#056bfa] hover:underline">oil changes</Link>, <Link href="/stores/discounttire-discount-code" className="text-[#056bfa] hover:underline">tire maintenance</Link>, vehicle diagnostics, detailing, and general repairs.
     </p>
     <p>
       When buying automotive equipment, consider the complete cost of the project rather than focusing only on one product. A Harbor Freight voucher or promotional offer may be useful when purchasing several related items.

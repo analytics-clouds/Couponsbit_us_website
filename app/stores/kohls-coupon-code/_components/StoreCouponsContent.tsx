@@ -285,7 +285,7 @@ export default function KohlsCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Kohl's also has a substantial home assortment covering bedding, bath, kitchen and dining, electronics, floor care, décor, lighting, and other household categories. Its beauty selection includes products available through Kohl's as well as Sephora at Kohl's, although certain Kohl's coupons and promotions exclude Sephora merchandise.
+                    Kohl's also has a substantial home assortment covering bedding, bath, kitchen and dining, electronics, floor care, décor, lighting, and other household categories. Its beauty selection includes products available through Kohl's as well as <Link href="/stores/sephora-promo-code" className="text-[#056bfa] hover:underline">Sephora</Link> at Kohl's, although certain Kohl's coupons and promotions exclude Sephora merchandise.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

@@ -695,7 +695,7 @@ export default function HomeDepotCouponsContent() {
               Planning a home improvement project, replacing an old appliance, updating your outdoor space, or simply looking for tools and supplies? Before checking out, searching for a Home Depot discount code can help you find a better price on the products you need.
             </p>
             <p>
-              Home Depot is a major U.S. home improvement retailer with products covering construction, tools, hardware, appliances, kitchen and bath, flooring, lighting, paint, lawn and garden, outdoor living, storage, décor, and more. Its broad catalog makes it useful for everything from small DIY jobs to larger renovation projects.
+              Home Depot is a major U.S. home improvement retailer with products covering construction, <Link href="/stores/harbor-freight-discount-code" className="text-[#056bfa] hover:underline">tools</Link>, hardware, appliances, kitchen and bath, flooring, lighting, paint, lawn and garden, outdoor living, storage, décor, and more. Its broad catalog makes it useful for everything from small DIY jobs to larger renovation projects.
             </p>
             <p>
               At CouponsBit, you can check available Home Depot coupon code offers, promotions, and savings opportunities before shopping. It is also worth comparing coupon offers with the current Home Depot sale, seasonal promotions, special buys, and other retailer deals before placing an order.
@@ -723,7 +723,7 @@ export default function HomeDepotCouponsContent() {
               <li>Electrical supplies</li>
               <li>Plumbing supplies</li>
               <li>Lawn and garden products</li>
-              <li>Outdoor furniture</li>
+              <li><Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">Outdoor furniture</Link></li>
               <li>Grills</li>
               <li>Décor</li>
               <li>Storage and organization</li>

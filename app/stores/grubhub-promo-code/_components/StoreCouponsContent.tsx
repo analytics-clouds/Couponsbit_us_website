@@ -563,17 +563,17 @@ export default function GrubhubCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">Order From Restaurants on Grubhub</h3>
     <p>One of Grubhub's biggest strengths is its variety. Customers can browse restaurants based on cuisine, dish, location, and other preferences. Depending on where you live, you may find everything from local neighborhood restaurants to familiar national chains.</p>
-    <p><strong>Pizza:</strong> Pizza is a popular choice for delivery, whether you're ordering dinner for yourself or feeding a group.</p>
+    <p><strong>Pizza:</strong> <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">Pizza</Link> is a popular choice for delivery, whether you're ordering dinner for yourself or feeding a group.</p>
     <p>You can browse different pizza restaurants and explore options ranging from classic cheese and pepperoni to specialty pizzas, sides, desserts, and drinks.</p>
     <p>If you're placing a larger pizza order, checking for a Grubhub discount code beforehand can be worthwhile.</p>
-    <p><strong>Burgers and Fast Food:</strong> Looking for a quick burger, fries, chicken sandwich, or other fast-food favorite? Grubhub lets customers browse participating restaurants and order online.</p>
+    <p><strong>Burgers and Fast Food:</strong> Looking for a quick <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">burger</Link>, fries, chicken sandwich, or other fast-food favorite? Grubhub lets customers browse participating restaurants and order online.</p>
     <p>Depending on your location, you may find both major chains and local restaurants offering similar favorites.</p>
     <p><strong>Mexican Food:</strong> Tacos, burritos, quesadillas, nachos, bowls, and other Mexican dishes are widely available through participating restaurants.</p>
     <p>You can compare nearby menus and look for restaurant-specific offers before choosing where to order.</p>
     <p><strong>Chinese Food:</strong> Chinese food is another convenient option for group orders. Depending on your area, you may find everything from fried rice and noodles to dumplings, combination meals, and specialty dishes.</p>
     <p><strong>Indian Food:</strong> Grubhub also features participating Indian restaurants, where customers may find curries, biryani, naan, tandoori dishes, vegetarian meals, and other favorites.</p>
     <p><strong>Japanese and Asian Cuisine:</strong> Sushi, ramen, poke, teriyaki, Thai food, Korean dishes, and other Asian cuisines can also be available depending on your location.</p>
-    <p><strong>Breakfast and Brunch:</strong> Grubhub isn't only for lunch and dinner. Customers can also find participating restaurants offering breakfast, coffee, pastries, sandwiches, pancakes, and brunch favorites.</p>
+    <p><strong>Breakfast and Brunch:</strong> Grubhub isn't only for lunch and dinner. Customers can also find participating restaurants offering breakfast, coffee, pastries, <Link href="/stores/subway-discount-code" className="text-[#056bfa] hover:underline">sandwiches</Link>, pancakes, and brunch favorites.</p>
     <p><strong>Healthy and Vegetarian Options:</strong> Customers looking for salads, bowls, vegetarian meals, plant-based options, gluten-free dishes, and other dietary preferences can explore available menus and restaurants in their area.</p>
     <p>Because menus vary by restaurant, always check the individual listing for current ingredients and dietary information.</p>
   </div>

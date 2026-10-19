@@ -537,7 +537,7 @@ export default function YouFibreContent() {
           One of YouFibre's notable features is its approach to home Wi-Fi. The provider says Wi-Fi 7 is included as standard for new residential and business customers, rather than being restricted to premium packages.
         </p>
         <p>
-          The standard YouFibre Hub with Wi-Fi 7 is used with plans from YOU 200 through YOU 2000, while the YouFibre Hub Pro is designed for the YOU 8000 plan. The routers support features such as device management, guest networks and time limits, giving customers more control over their home network.
+          The standard YouFibre Hub with Wi-Fi 7 is used with plans from YOU 200 through YOU 2000, while the YouFibre Hub Pro is designed for the YOU 8000 plan. The <Link href="/stores/tplink-promo-code" className="text-[#056bfa] hover:underline">routers</Link> support features such as device management, guest networks and time limits, giving customers more control over their home network.
         </p>
         <p>
           This can be particularly useful for busy households where several devices need to stay connected at once.

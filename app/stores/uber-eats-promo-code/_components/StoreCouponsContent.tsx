@@ -560,7 +560,7 @@ export default function UberEatsCouponsContent() {
               Uber Eats Grocery & Convenience Deals
             </h3>
             <p>
-              Uber Eats isn't limited to restaurant meals. Depending on your location, you can also use the platform to order groceries, convenience products, household essentials, personal care items, and other products from participating merchants.
+              Uber Eats isn't limited to restaurant meals. Depending on your location, you can also use the platform to order <Link href="/stores/kroger-discount-code" className="text-[#056bfa] hover:underline">groceries</Link>, convenience products, household essentials, personal care items, and other products from participating merchants.
             </p>
 
             <h4 className="text-lg font-black text-black mt-4">Uber Eats Grocery Delivery</h4>
@@ -642,7 +642,7 @@ export default function UberEatsCouponsContent() {
               Uber Eats makes it possible to browse and order from participating restaurants, stores, and other merchants through one platform.
             </p>
             <p>
-              <strong>Wide Range of Restaurants:</strong> Depending on your location, you can discover restaurants serving different cuisines, from fast food and pizza to Indian, Mexican, Asian, Mediterranean, and more.
+              <strong>Wide Range of Restaurants:</strong> Depending on your location, you can discover restaurants serving different cuisines, from fast food and <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">pizza</Link> to Indian, Mexican, Asian, Mediterranean, and more.
             </p>
             <p>
               <strong>Food Delivery & Pickup:</strong> Uber Eats supports delivery from participating merchants and, in some locations, pickup orders.

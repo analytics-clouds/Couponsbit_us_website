@@ -285,7 +285,7 @@ export default function BurgerKingCouponsContent() {
 
                   </p>
                     <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   The available promotions may differ according to the ordering channel. An offer available through the Burger King app may not necessarily apply to a third-party delivery platform, and vice versa.
+                   The available promotions may differ according to the ordering channel. An offer available through the Burger King app may not necessarily apply to a <Link href="/stores/doordash-promo-code" className="text-[#056bfa] hover:underline">third-party delivery platform</Link>, and vice versa.
 
                   </p>
                     <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

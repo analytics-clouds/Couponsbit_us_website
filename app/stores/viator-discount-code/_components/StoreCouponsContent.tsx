@@ -538,7 +538,7 @@ export default function ViatorCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            A great trip is about more than booking a flight and finding a hotel. The experiences you have once you arrive are often what turn a vacation into a story worth remembering. From guided city tours and food experiences to outdoor adventures, cultural activities, day trips, and sightseeing excursions, Viator helps travelers discover things to do in destinations around the world.
+            A great trip is about more than booking a flight and finding a <Link href="/stores/agoda-discount-code" className="text-[#056bfa] hover:underline">hotel</Link>. The experiences you have once you arrive are often what turn a vacation into a story worth remembering. From guided city tours and food experiences to outdoor adventures, cultural activities, day trips, and sightseeing excursions, Viator helps travelers discover things to do in destinations around the world.
           </p>
           <p>
             Planning your next adventure? Before booking an activity, check CouponsBit for a Viator promo code. You can also explore Viator coupon codes, discount offers, vouchers, tour deals, activity promotions, and other opportunities to make your travel experiences more affordable.
@@ -582,7 +582,7 @@ export default function ViatorCouponsContent() {
     <p><strong>Cultural Experiences:</strong> Travelers interested in local history and culture can explore experiences such as museum visits, historical tours, traditional performances, cultural workshops, and neighborhood tours.</p>
     <p>These activities can provide more context about the destination than simply visiting its most famous landmarks.</p>
     <p><strong>Attraction Tickets:</strong> Viator can also help travelers find tickets and admission options for popular attractions.</p>
-    <p>Depending on the destination, you may find experiences involving museums, observation decks, theme parks, historic sites, monuments, and other attractions.</p>
+    <p>Depending on the destination, you may find experiences involving museums, observation decks, <Link href="/stores/yas-island-promo-code" className="text-[#056bfa] hover:underline">theme parks</Link>, historic sites, monuments, and other attractions.</p>
     <p><strong>Cruises and Water Experiences:</strong> Water-based experiences can be another great way to explore a destination.</p>
     <p>Options can include sightseeing cruises, dinner cruises, boat tours, snorkeling trips, sailing experiences, and other activities depending on the location.</p>
     <p><strong>Private Tours:</strong> If you prefer a more personalized itinerary, private tours can provide a different experience from joining a large group.</p>
@@ -604,7 +604,7 @@ export default function ViatorCouponsContent() {
     <p>Viator's marketplace covers destinations worldwide, including many popular locations across the US.</p>
     <p><strong>New York City:</strong> From Manhattan sightseeing and food tours to museums, cruises, and day trips, New York offers an enormous variety of experiences.</p>
     <p>Travelers can explore famous landmarks, neighborhoods, cultural attractions, and culinary experiences.</p>
-    <p><strong>Las Vegas:</strong> Las Vegas isn't only about casinos. Visitors can explore shows, helicopter tours, desert adventures, food experiences, attractions, and day trips to surrounding destinations.</p>
+    <p><strong>Las Vegas:</strong> <Link href="/stores/vegas-discount-code" className="text-[#056bfa] hover:underline">Las Vegas</Link> isn't only about casinos. Visitors can explore shows, helicopter tours, desert adventures, food experiences, attractions, and day trips to surrounding destinations.</p>
     <p><strong>Orlando:</strong> Orlando is a popular destination for families, with attractions, theme-park experiences, wildlife activities, and other entertainment options.</p>
     <p><strong>Los Angeles:</strong> Travelers can explore Hollywood, celebrity-focused tours, beaches, food experiences, museums, and day trips around Southern California.</p>
     <p><strong>San Francisco:</strong> San Francisco offers sightseeing tours, bay cruises, food experiences, neighborhood walks, and trips to nearby attractions.</p>

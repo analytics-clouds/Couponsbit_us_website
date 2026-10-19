@@ -129,51 +129,43 @@ const hertzSchema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/hertz-discount-code#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How can I find a Hertz discount code?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Check the Hertz page on CouponsBit for available discount codes, coupons, and promotional offers. Review the terms of each promotion before using it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use a Hertz discount code on every rental?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not necessarily. Promotional codes can have specific eligibility requirements and may apply only to certain vehicle classes or rental locations. Check the individual offer for its conditions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why isn't my Hertz promo code working?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A promo code may have expired, reached its usage limit, or may not be valid for the rental dates or location you selected. Check the promotion's terms and make sure the code is entered correctly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Hertz offer discounts without promo codes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hertz may run promotions where a discount is applied directly rather than through a coupon code. CouponsBit can help you check for both code-based and other promotional offers."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I check CouponsBit before booking with Hertz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Checking for a Hertz discount code before booking takes only a moment and gives you an opportunity to find an available promotion before paying for your rental."
-          }
-        }
-      ]
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/hertz-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Hertz offer discount codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hertz promotions and special rates can vary by country and booking conditions. Check CouponsBit for available offers before reserving."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I use the same Hertz promo code in every country?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No guarantee applies across all markets. Check the terms for your specific rental location and destination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Hertz Gold+ free to join?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Hertz describes Gold+ as a free membership programme, with benefits subject to eligibility and location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a discount code with Hertz Gold+ benefits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That depends on the specific offer and rate conditions. Some promotions exclude already-discounted or affiliated rates, so compare the terms before booking."
+      }
+    }
+  ]
+},
   ],
 };
 

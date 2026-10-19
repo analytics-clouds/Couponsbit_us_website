@@ -272,7 +272,13 @@ export default function HertzCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Hertz?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Hertz is a global car rental company offering vehicles for leisure travel, business trips, airport pickups and everyday transportation. Its fleet and rental options vary by location, giving travellers access to vehicles suited to solo journeys, family holidays, city breaks and longer road trips. Hertz operates across the UK, US and numerous European destinations, including France, Spain, Italy, Germany, the Czech Republic, the Netherlands and Belgium. 
+                    Hertz is a global car rental company serving leisure travellers, business customers and people who need temporary transportation. Its rental network includes airport locations and other pickup points, with vehicle availability varying by destination. Customers can search for cars suited to different journeys, from everyday city travel to family holidays and longer road trips.
+
+                  </p>
+
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Hertz also operates its Gold+ loyalty programme, which allows eligible members to earn points on qualifying rentals and access benefits such as member discounts and faster pickup services at participating locations. Programme benefits and eligibility depend on the market and applicable terms. 
+
                   </p>
                  
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -304,40 +310,33 @@ export default function HertzCouponsContent() {
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
   <h3 className="text-black font-black text-lg mb-8">
-    Explore Hertz Car Rental Deals Worldwide
+    Explore Hertz Car Rental Options
   </h3>
   <div className="space-y-6">
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Hertz offers rental options for different travel plans:
-    </p>
     <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>Airport car rentals:</strong> Pick up a vehicle when you arrive and explore at your own pace.</span>
+        <span><strong>Airport Car Hire:</strong> Pick up a vehicle after arriving at your destination and continue your journey without relying entirely on public transport. Check the selected airport's pickup arrangements and opening hours before booking.</span>
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>Family holidays:</strong> Choose a suitable car for luggage, passengers and longer journeys.</span>
+        <span><strong>Family and Leisure Travel:</strong> Choose a vehicle that suits the number of passengers, luggage and planned activities. For longer journeys, consider comfort, luggage space and fuel requirements.</span>
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>City breaks:</strong> Find a convenient rental for exploring destinations beyond public transport routes.</span>
+        <span><strong>City Breaks:</strong> A rental car can help you explore attractions outside the city centre or visit nearby towns at your own pace. Check local parking rules and driving restrictions before setting off.</span>
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>Business travel:</strong> Arrange transportation for meetings, work trips and client visits.</span>
+        <span><strong>Business Travel:</strong> Arrange transportation for meetings, client visits and work trips. Booking in advance can make it easier to compare vehicle categories and rental conditions.</span>
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>Road trips:</strong> Plan scenic drives across the UK, the US and Europe.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Electric and hybrid cars:</strong> Check participating locations for available electrified vehicles.</span>
+        <span><strong>Longer Road Trips:</strong> If your itinerary includes multiple stops, compare rental durations, mileage conditions and return arrangements before confirming the reservation.</span>
       </p>
     </div>
     <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Vehicle availability, prices and promotional eligibility vary by destination, so review your chosen location's terms before booking.
+      Vehicle categories and availability differ by location, so use the destination-specific Hertz booking page to check your options.
     </p>
   </div>
 </div>
@@ -381,21 +380,152 @@ export default function HertzCouponsContent() {
       {/* Main Content Area */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Hertz Discount Code, Coupon Code & Discount Offers
+          Hertz Discount Code, Car Rental Promo Codes & Deals
         </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        [
+          "Hertz Gold+ Membership Offer",
+          "Up to 10% OFF",
+          "Hertz Gold+ Members",
+          "10% off base rates in select EU countries; 5% off base rates worldwide. Excludes taxes and charges. T&C apply.",
+          "Car Rentals Worldwide"
+        ],
+        [
+          "Hertz ICAEW Partner Offer",
+          "10% OFF",
+          "ICAEW Members",
+          "Exclusive partner savings for business trips, holidays, and everyday travel. T&C apply.",
+          "Global Car Hire"
+        ],
+        [
+          "Hertz Rent2Buy – Volkswagen ID.7",
+          "From £349",
+          "All Users",
+          "Includes £500 listed figure with multiple agreement terms. Electric EV range up to 434 miles. T&C apply.",
+          "VW ID.7 Pro S Match Plus"
+        ],
+        [
+          "Hertz Rent2Buy – PCO-Ready Car",
+          "Weekly Payments",
+          "PCO / Ride-Share Drivers",
+          "Low upfront cost with weekly payments towards ownership. Visit Uber Greenlight Hub for details. T&C apply.",
+          "PCO-Ready Vehicles (London)"
+        ],
+        [
+          "Hertz SUV & Minivan Savings",
+          "$50 OFF",
+          "All Users",
+          "Save $50 on qualifying weekly rentals. Ideal for family and group trips. T&C apply.",
+          "Weekly SUV & Minivan Rentals"
+        ],
+        [
+          "Hertz Travel Savings Offer",
+          "Up to 25% OFF",
+          "All Users",
+          "Limited time promotional savings on qualifying bookings. T&C apply.",
+          "Eligible Hertz Car Rentals"
+        ],
+        [
+          "Hertz Best Available Rate Offer",
+          "20% OFF",
+          "All Users",
+          "Save 20% on the best available rate for campus visits, graduations, or travel. T&C apply.",
+          "Eligible Hertz Car Rentals"
+        ],
+        [
+          "Hertz Mastercard Partner Offer",
+          "Up to 15% OFF",
+          "Mastercard Cardholders",
+          "Valid for Standard, Gold, and Business credit/debit cardholders on eligible global bookings. T&C apply.",
+          "Global Car Hire"
+        ]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're planning a business trip or a family road trip, Hertz offers a wide range of vehicles designed to fit your travel needs.
+            Planning a holiday, organising a business trip or arranging transport after landing at the airport? Having the right rental car can make your journey more flexible. But before confirming your reservation, take a moment to look for a Hertz discount code on CouponsBit. Comparing available promotions can help you find a rental option that suits your travel plans and budget.
           </p>
           <p>
-            If you're planning your next rental, checking for a Hertz discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Hertz coupon codes, promo offers, and other ways to potentially save on their booking.
-          </p>
-          <p>
-            From new-customer offers to weekly rental discounts and seasonal travel picks, there are plenty of reasons to check current promotions before you check out.
+            From weekend drives to longer international trips, Hertz offers vehicle rental services across numerous destinations. Whether you're travelling in the UK, US, France, Spain, Italy, Germany, the Czech Republic, the Netherlands or Belgium, checking the booking terms before you reserve can help you make a more informed choice.
           </p>
 
-          
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Find a Hertz Discount Code on CouponsBit
+          </h3>
+          <p>
+            Before booking, visit CouponsBit to look for a Hertz discount code, car rental promo code or special offer. Promotions may vary according to the pickup location, destination, rental dates, vehicle category and booking conditions.
+          </p>
+          <p>
+            A Hertz promo code may be useful when arranging an airport pickup, reserving a car for a holiday or planning a business journey. However, don't compare offers on the discount alone. Check the total rental cost, included mileage, insurance options, fuel policy, taxes and any additional fees before deciding which booking offers the best overall value.
+          </p>
+          <p>
+            If you're renting across different countries, confirm that the promotion applies to the country where you'll collect the vehicle. A code available for a UK rental may not necessarily apply to a reservation in the United States or continental Europe.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Get More From Hertz Gold+
+          </h3>
+          <p>
+            If you rent cars regularly, it may be worth looking at Hertz Gold+ alongside any available promo code. The programme is free to join and offers eligible members benefits such as earning points towards rental rewards, member rates and expedited services at participating locations.
+          </p>
+          <p>
+            Hertz's UK programme information advertises savings of up to 10% on the base rate in selected European countries, including the UK, France, Germany, Spain, Italy and Benelux. The discount excludes taxes and certain other charges, and restrictions apply to affiliated or already-discounted rates. Always verify the current terms for your booking country.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Use a Hertz Promo Code
+          </h3>
+          <ol className="list-decimal pl-5 space-y-2">
+            <li>Visit CouponsBit and look for an available Hertz discount code or rental offer.</li>
+            <li>Read the terms to confirm eligible destinations, dates and vehicle categories.</li>
+            <li>Open Hertz and enter your pickup location, rental dates and return details.</li>
+            <li>Choose a suitable vehicle and enter the promotional code or offer details where required.</li>
+            <li>Review the total price and confirm that any applicable discount appears before completing your reservation.</li>
+          </ol>
+          <p>
+            If the code doesn't work, check the expiry date, destination restrictions, booking conditions and whether the offer can be combined with other discounts.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Find Better Hertz Deals
+          </h3>
+          <p>
+            Planning ahead gives you more time to compare rental durations, pickup points and vehicle types. Airport and city-centre locations may have different availability, while prices can change according to demand and travel dates.
+          </p>
+          <p>
+            Compare the full booking details rather than focusing only on the advertised rate. Check the deposit, fuel policy, mileage allowance, cancellation terms, driver requirements and optional extras. If you expect to rent more than once, compare eligible Gold+ membership benefits with any one-time promotional offer.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Book Your Next Rental With CouponsBit
+          </h3>
+          <p>
+            Whether you're planning a holiday in Europe, a road trip across the US or a weekend away in the UK, comparing rental options before booking can help you avoid surprises. Check CouponsBit for a Hertz discount code, car rental promo code and current deals, then review the conditions and total rental cost before confirming your vehicle.
+          </p>
 
           {!isReadMore && (
             <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
@@ -413,19 +543,25 @@ export default function HertzCouponsContent() {
         {/* Accordion FAQ Section */}
         <div className="faq-section mt-20 space-y-4">
           <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Hertz Discount Codes
+            FAQs About Hertz Discount Codes
           </h3>
           {[
-            { q: "Does Hertz offer discount codes?", a: "Hertz periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find a Hertz discount code?", a: "You can check CouponsBit for available Hertz discount codes, coupon codes, and sale promotions before booking." },
-            { q: "How do I use a Hertz discount code?", a: "Select your rental dates and vehicle, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your booking." },
-            { q: "Why isn't my Hertz promo code working?", a: "The promotion may have expired, or your booking may not meet its requirements. Some offers can be limited to selected vehicle classes or locations." },
-            { q: "What does Hertz offer?", a: "Hertz offers car rentals including economy cars, SUVs, and vans at locations worldwide." },
-            { q: "Does Hertz offer free cancellation?", a: "Hertz may offer free cancellation on qualifying bookings. Check current offers for applicable terms." },
-            { q: "Does Hertz have a loyalty program?", a: "Yes. Hertz offers a loyalty program with points, rewards, and member-exclusive offers." },
-            { q: "Does Hertz have seasonal deals?", a: "Hertz may run promotions around seasonal and holiday travel periods. Check current offers to see what is available." },
-            { q: "Can I rent an SUV or van from Hertz?", a: "Yes. Hertz offers SUV and van rentals suited to family trips, group travel, and extra cargo needs." },
-            { q: "When is the best time to look for Hertz deals?", a: "Promotions can appear throughout the year, with seasonal travel periods often bringing additional savings." },
+            {
+              q: "Does Hertz offer discount codes?",
+              a: "Hertz promotions and special rates can vary by country and booking conditions. Check CouponsBit for available offers before reserving."
+            },
+            {
+              q: "Can I use the same Hertz promo code in every country?",
+              a: "No guarantee applies across all markets. Check the terms for your specific rental location and destination."
+            },
+            {
+              q: "Is Hertz Gold+ free to join?",
+              a: "Yes. Hertz describes Gold+ as a free membership programme, with benefits subject to eligibility and location."
+            },
+            {
+              q: "Can I use a discount code with Hertz Gold+ benefits?",
+              a: "That depends on the specific offer and rate conditions. Some promotions exclude already-discounted or affiliated rates, so compare the terms before booking."
+            }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
               <button
@@ -480,20 +616,20 @@ export default function HertzCouponsContent() {
           <div className="space-y-6">
             {[
               {
-              heading: "GOLD+ MEMBERSHIP",
-              sub: "Save up to 10% on car rentals all year",
+                heading: "GOLD+ MEMBERSHIP",
+                sub: "Save up to 10% on car rentals all year",
               },
               {
-              heading: "RENT2BUY VW ID.7",
-              sub: "From £349 through Hertz Rent2Buy",
+                heading: "RENT2BUY VW ID.7",
+                sub: "From £349 through Hertz Rent2Buy",
               },
               {
-              heading: "WEEKLY SUV & MINIVAN",
-              sub: "Save $50 on eligible weekly rentals",
+                heading: "WEEKLY SUV & MINIVAN",
+                sub: "Save $50 on eligible weekly rentals",
               },
               {
-              heading: "MASTERCARD OFFER",
-              sub: "Save up to 15% on global car hire",
+                heading: "MASTERCARD OFFER",
+                sub: "Save up to 15% on global car hire",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">

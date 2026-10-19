@@ -628,7 +628,7 @@ export default function SamsungCouponsContent() {
     <p><strong>Samsung Smartphones:</strong> Galaxy smartphones are among Samsung's most recognizable products. From flagship devices packed with advanced features to more affordable options designed for everyday use, the Galaxy lineup covers different needs and preferences.</p>
     <p>If you're considering a new phone, compare the models carefully rather than choosing the first one you see. Look at the camera setup, processor, display, storage, battery, software features, and other specifications that matter to you.</p>
     <p>Before checking out, it can also be worth searching for a Samsung Promo Code that applies to your purchase.</p>
-    <p><strong>Samsung Tablets:</strong> Need something larger than a smartphone but more portable than a laptop?</p>
+    <p><strong>Samsung Tablets:</strong> Need something larger than a smartphone but more portable than a <Link href="/stores/dell-discount-code" className="text-[#056bfa] hover:underline">laptop</Link>?</p>
     <p>Samsung Galaxy tablets offer an option for entertainment, browsing, studying, productivity, and more. Depending on the model, you can find different screen sizes, performance levels, storage options, and accessories.</p>
     <p>If a tablet has been sitting on your wishlist, keep an eye on Samsung offers and promotions before making your purchase.</p>
     <p><strong>Samsung TVs:</strong> Samsung has a substantial television lineup, ranging from everyday smart TVs to premium models designed for shoppers who want an enhanced viewing experience.</p>
@@ -655,7 +655,7 @@ export default function SamsungCouponsContent() {
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">Don't Stop at the First Samsung Deal You See</h3>
     <p>Here's a shopping habit worth developing: don't assume the first discount you find is automatically the best deal.</p>
-    <p>If you're buying an expensive product such as a smartphone, TV, refrigerator, or laptop, take a few minutes to compare your options.</p>
+    <p>If you're buying an expensive product such as a smartphone, TV, refrigerator, or <Link href="/stores/hp-discount-code" className="text-[#056bfa] hover:underline">laptop</Link>, take a few minutes to compare your options.</p>
     <p>Look at the product's specifications.</p>
     <p>Check customer reviews.</p>
     <p>Compare similar Samsung models.</p>

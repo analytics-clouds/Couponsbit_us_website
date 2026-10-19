@@ -665,7 +665,7 @@ export default function BamboocoolCouponsContent() {
             <p><strong>Bamboo T-Shirts:</strong> The brand offers bamboo-fabric T-shirts in multipacks and different fits. These can work as standalone casual tops or as lightweight base layers.</p>
             <p><strong>Undershirts:</strong> Undershirts are another major category, with crew-neck and sleeveless styles available in different pack sizes. These basics can be worn underneath work shirts, sweaters, jackets, or casual clothing.</p>
             <p><strong>Tank Tops:</strong> Bamboo Cool also sells sleeveless undershirts and tank-style basics made with stretch bamboo fabric.</p>
-            <p><strong>Hoodies and Outdoor Tops:</strong> The brand's clothing collection includes longer-sleeve and hoodie-style pieces, including products positioned for activities such as golf, fishing, outdoor use, and casual wear.</p>
+            <p><strong>Hoodies and Outdoor Tops:</strong> The brand's clothing collection includes longer-sleeve and hoodie-style pieces, including products positioned for activities such as <Link href="/stores/blue-cypress-discount-code" className="text-[#056bfa] hover:underline">golf</Link>, fishing, outdoor use, and casual wear.</p>
           </div>
 
           {/* Bamboo Cool Lounge & Sleepwear */}

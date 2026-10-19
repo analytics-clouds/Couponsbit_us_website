@@ -761,7 +761,7 @@ export default function CostcoContent() {
           If you're furnishing a home, Costco can also be a useful destination for larger household purchases.
         </p>
         <p>
-          The retailer offers furniture, mattresses, patio products, storage solutions, home improvement products, flooring-related services, kitchen remodeling options, garage solutions, generators, windows, doors, and other home services.
+          The retailer offers furniture, mattresses, patio products, storage solutions, <Link href="/stores/home-depot-discount-code" className="text-[#056bfa] hover:underline">home improvement products</Link>, flooring-related services, kitchen remodeling options, garage solutions, generators, windows, doors, and other home services.
         </p>
         <p>
           Because many of these purchases involve significant spending, it's worth checking Costco's current promotional offers before placing an order.

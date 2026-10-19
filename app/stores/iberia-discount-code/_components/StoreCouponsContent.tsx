@@ -760,7 +760,7 @@ export default function IberiaCouponsContent() {
       A Canada-eligible Iberia discount code may have different conditions from an offer available to customers in the USA or UK.
     </p>
     <p>
-      It's also worth checking Iberia Club if you regularly travel with Iberia or its partner airlines. Members can earn Avios from flights and participating partners and redeem them for flights and other benefits.
+      It's also worth checking Iberia Club if you regularly travel with Iberia or its <Link href="/stores/latam-airlines-discount-code" className="text-[#056bfa] hover:underline">partner airlines</Link>. Members can earn Avios from flights and participating partners and redeem them for flights and other benefits.
     </p>
   </div>
 

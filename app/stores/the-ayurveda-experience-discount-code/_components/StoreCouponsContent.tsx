@@ -554,7 +554,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
                     Looking for the latest <strong>The Ayurveda Experience discount codes and promo codes</strong>? At Couponsbit, we help shoppers find hair oil offers, skincare deals, herbal supplement picks and wellness kit offers.
                   </p>
                   <p>
-                    Whether you're building a hair care routine or exploring Ayurvedic skincare, The Ayurveda Experience offers a range of products rooted in traditional formulas. Before you shop, check Couponsbit for the latest offers.
+                    Whether you're building a <Link href="/stores/lordhair-promo-code" className="text-[#056bfa] hover:underline">hair care routine</Link> or exploring Ayurvedic skincare, The Ayurveda Experience offers a range of products rooted in traditional formulas. Before you shop, check Couponsbit for the latest offers.
                   </p>
 
                   <div className="space-y-4">

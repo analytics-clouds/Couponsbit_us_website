@@ -115,7 +115,7 @@ export default function JDSportsContent() {
                       <span className="text-gray-600 font-bold text-sm">(4,200 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest JD Sports Discount Code on top sportswear and sneakers. Enjoy up to 50% OFF selected clothing, footwear, and accessories, plus 10% OFF your first order. Use a JD Sports Promo Code to unlock verified savings on Nike, adidas, Jordan, New Balance, and more.
+                      Save more with the latest JD Sports Discount Code on top sportswear and sneakers. Enjoy up to 50% OFF selected clothing, footwear, and accessories, plus 10% OFF your first order. Use a JD Sports Promo Code to unlock verified savings on <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">Nike</Link>, <Link href="/stores/adidas-promo-code" className="text-[#056bfa] hover:underline">adidas</Link>, Jordan, New Balance, and more.
                     </p>
                     <a
                       href={STORE_URL}
@@ -273,7 +273,7 @@ export default function JDSportsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Its range covers products for men, women, and children, with categories spanning footwear, clothing, sports accessories, and fashion essentials. Shoppers can find trainers and sneakers alongside tracksuits, T-shirts, hoodies, jackets, leggings, shorts, and other activewear.
+                    Its range covers products for men, women, and children, with categories spanning footwear, clothing, sports accessories, and fashion essentials. Shoppers can find trainers and sneakers alongside tracksuits, T-shirts, hoodies, jackets, leggings, shorts, and other <Link href="/stores/halara-coupon-code" className="text-[#056bfa] hover:underline">activewear</Link>.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
