@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CookieConsent } from "@/components/CookieConsent";
 import Season from "@/components/ui/Season";
@@ -94,6 +95,13 @@ export default function RootLayout({
         <Season season="halloween" />
         <Music src="/horror-sound.mp3" volume={0.3} />
         {children}
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z16flevjh0");`,
+          }}
+        />
         <SpeedInsights />
         <CookieConsent />
       </body>

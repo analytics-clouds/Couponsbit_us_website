@@ -52,11 +52,11 @@ const nextConfig = {
       "object-src 'none'",
       "form-action 'self'",
       "frame-ancestors 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google.com https://translate.google.com https://www.gstatic.com",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google.com https://translate.google.com https://www.gstatic.com https://www.clarity.ms",
       "style-src 'self' 'unsafe-inline' https://www.gstatic.com",
       "img-src 'self' data: https://res.cloudinary.com https://images.unsplash.com https://www.google.com https://www.gstatic.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://www.googletagmanager.com https://translate.googleapis.com https://translate.google.com https://vitals.vercel-insights.com",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://www.googletagmanager.com https://translate.googleapis.com https://translate.google.com https://vitals.vercel-insights.com https://www.clarity.ms https://*.clarity.ms",
       "frame-src https://www.google.com",
     ].join('; ');
 
