@@ -83,6 +83,13 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/best-web-hosting-coupons-2026",
+      citation: [
+        { "@type": "WebPage", name: "Bluehost Web Hosting", url: "https://www.bluehost.com" },
+        { "@type": "WebPage", name: "Hostinger Web Hosting", url: "https://www.hostinger.com" },
+        { "@type": "WebPage", name: "ScalaHosting", url: "https://www.scalahosting.com" },
+        { "@type": "WebPage", name: "SiteGround Web Hosting", url: "https://www.siteground.com" },
+        { "@type": "WebPage", name: "TMD Hosting", url: "https://www.tmdhosting.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

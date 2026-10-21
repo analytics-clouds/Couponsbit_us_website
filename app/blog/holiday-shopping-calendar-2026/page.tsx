@@ -83,6 +83,10 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/holiday-shopping-calendar-2026",
+      citation: [
+        { "@type": "WebPage", name: "National Retail Federation — Holiday Spending", url: "https://nrf.com" },
+        { "@type": "WebPage", name: "Adobe Analytics Holiday Forecast", url: "https://business.adobe.com/resources/holiday-shopping.html" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

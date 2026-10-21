@@ -83,6 +83,10 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/upcoming-sales-2026",
+      citation: [
+        { "@type": "WebPage", name: "National Retail Federation — Sales Events", url: "https://nrf.com" },
+        { "@type": "WebPage", name: "Adobe Analytics — Shopping Data", url: "https://business.adobe.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

@@ -83,6 +83,10 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/halloween-shopping-guide-2026",
+      citation: [
+        { "@type": "WebPage", name: "NRF — Halloween Spending Data", url: "https://nrf.com/research/halloween-spending" },
+        { "@type": "WebPage", name: "National Confectioners Association", url: "https://candyusa.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

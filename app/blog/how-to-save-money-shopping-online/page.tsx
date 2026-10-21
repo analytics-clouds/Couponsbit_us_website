@@ -83,6 +83,10 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/how-to-save-money-shopping-online",
+      citation: [
+        { "@type": "WebPage", name: "Consumer Financial Protection Bureau — Saving Money", url: "https://www.consumerfinance.gov" },
+        { "@type": "WebPage", name: "NerdWallet — Money Saving Tips", url: "https://www.nerdwallet.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

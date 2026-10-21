@@ -83,6 +83,10 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/why-shop-through-coupon-and-cashback-websites",
+      citation: [
+        { "@type": "WebPage", name: "RetailMeNot — Coupon Industry Data", url: "https://www.retailmenot.com" },
+        { "@type": "WebPage", name: "Consumer Reports — Smart Shopping", url: "https://www.consumerreports.org" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

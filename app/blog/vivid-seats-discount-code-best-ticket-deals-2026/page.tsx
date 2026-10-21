@@ -83,6 +83,9 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/vivid-seats-discount-code-best-ticket-deals-2026",
+      citation: [
+        { "@type": "WebPage", name: "Vivid Seats — Official Ticket Marketplace", url: "https://www.vividseats.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

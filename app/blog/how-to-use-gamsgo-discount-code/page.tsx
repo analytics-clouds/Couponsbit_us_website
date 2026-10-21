@@ -83,6 +83,9 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/how-to-use-gamsgo-discount-code",
+      citation: [
+        { "@type": "WebPage", name: "GamsGo — Official Website", url: "https://www.gamsgo.com" },
+      ],
     },
     {
       "@type": "BreadcrumbList",

@@ -83,6 +83,9 @@ const articleSchema = {
         height: 630,
       },
       mainEntityOfPage: "https://www.couponsbit.us/blog/couponsbit-shopping-savings-guide",
+      citation: [
+        { "@type": "WebPage", name: "US Census Bureau — E-Commerce Data", url: "https://www.census.gov/retail/" },
+      ],
     },
     {
       "@type": "BreadcrumbList",
