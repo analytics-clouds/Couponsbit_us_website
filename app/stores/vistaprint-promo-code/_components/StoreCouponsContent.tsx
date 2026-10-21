@@ -135,8 +135,8 @@ export default function VistaprintContent() {
 
                 <div className="hidden md:grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 md:pl-[136px]">
                   {[
-                    { icon: Tag, val: "6", label: "Offers" },
-                    { icon: Percent, val: "6", label: "Deals" },
+                    { icon: Tag, val: "9", label: "Offers" },
+                    { icon: Percent, val: "9", label: "Deals" },
                     { icon: Users, val: "35K+", label: "Shoppers" },
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
@@ -196,12 +196,15 @@ export default function VistaprintContent() {
                 </div>
 
                 {[
-                  { label: "SAVE", value: "New", title: "Vistaprint – New Customer Offer", desc: "Check for savings available to new Vistaprint customers on their first order.", bullets: ["Browse available products before ordering.", "Enter the code at checkout if prompted.", "Confirm the discount before completing your order."] },
-                  { label: "SAVE", value: "%", title: "Vistaprint – Percentage Off Sitewide", desc: "Look for a Vistaprint promo offering a percentage off eligible products.", bullets: ["Applies to select products.", "Enter the code at checkout if prompted.", "Confirm the discount before completing your order."] },
-                  { label: "FREE", value: "Shipping", title: "Vistaprint – Free Shipping Offer", desc: "Check for free shipping on qualifying Vistaprint orders.", bullets: ["May require a minimum order amount.", "Availability varies by product.", "Check the offer terms at checkout."] },
-                  { label: "SAVE", value: "Cards", title: "Vistaprint – Business Card Deal", desc: "Look for discounted pricing on custom business cards.", bullets: ["Pricing varies by quantity and design.", "Check the offer terms before ordering.", "Confirm the discount before checkout."] },
-                  { label: "SAVE", value: "Bundle", title: "Vistaprint – Marketing Bundle Discount", desc: "Check for savings on bundled marketing material orders.", bullets: ["Bundling may offer better per-item value.", "Availability varies by product mix.", "Confirm pricing before ordering."] },
-                  { label: "SAVE", value: "Seasonal", title: "Vistaprint – Seasonal Clearance Sale", desc: "Check for seasonal clearance pricing on select products.", bullets: ["Availability varies by season.", "Items may be limited in stock.", "Check the website regularly for new offers."] },
+                  { label: "FREE", value: "Shipping", title: "VistaPrint Free Economy Shipping – On Orders Over $100", desc: "Get free economy shipping on eligible VistaPrint orders totaling $100 or more.", bullets: ["Save on delivery costs while ordering custom business cards, promotional products, personalised gifts, and marketing materials.", "Create customised products for your business or special occasions while taking advantage of this shipping offer.", "Shop your favourite VistaPrint products and enjoy free economy shipping on qualifying orders."] },
+                  { label: "UP TO", value: "40%", title: "VistaPrint Calendars – Get Up to 40% Off", desc: "Save up to 40% on selected calendars with VistaPrint and create personalised designs featuring your favourite photos.", bullets: ["Use promo code SAVEVP at checkout to claim the eligible discount.", "Customise calendars for your home, office, or as thoughtful gifts for friends and family.", "Redeem this offer before November 8, 2026, subject to the promotion's terms and conditions."] },
+                  { label: "UP TO", value: "15%", title: "VistaPrint Premium Business Cards – Get Up to 15% Off", desc: "Enjoy up to 15% off selected premium business cards with VistaPrint using promo code SAVEVP.", bullets: ["Create professional-looking business cards that help showcase your brand and make a memorable impression.", "Choose from premium card options to suit your business identity, networking needs, and professional style.", "Apply the discount code before November 8, 2026, to take advantage of the eligible offer."] },
+                  { label: "UP TO", value: "20%", title: "VistaPrint First Order Discount – Get Up to 20% Off", desc: "New VistaPrint customers can enjoy up to 20% off their first eligible order with promo code NEW20.", bullets: ["Save on personalised products, custom stationery, business cards, and other printing essentials.", "Design products that reflect your brand identity or suit your personal gifting needs.", "Enter NEW20 at checkout to claim the applicable new-customer discount, subject to offer terms."] },
+                  { label: "SAVE", value: "$20", title: "VistaPrint Shopping Discount – Save $20 on $100+ or $50 on $200+", desc: "Save $20 on qualifying orders of $100 or more, or get $50 off purchases of $200 or more with code SHOPCART.", bullets: ["Choose customised gifts, promotional merchandise, and personalised products to make the most of your shopping budget.", "Enjoy extra savings when placing larger orders for business promotions, events, or personal occasions.", "Use the promo code before November 1, 2026, subject to the applicable terms and conditions."] },
+                  { label: "FROM", value: "$35.99", title: "VistaPrint Champion® Powerblend® Unisex Hoodie – From $35.99", desc: "Shop the Champion® Powerblend® Unisex Hoodie at prices starting from $35.99, with selected options priced up to $54.99 each.", bullets: ["Explore a comfortable casualwear option for personalised apparel, gifting, or everyday styling.", "Choose a suitable size and available customisation options when placing your order.", "Check the product page for current pricing, availability, and personalisation choices."] },
+                  { label: "FROM", value: "$25.49", title: "VistaPrint JERZEES® NuBlend® Hoodie – From $25.49", desc: "Get the JERZEES® NuBlend® Hoodie with Heat Transfer at prices ranging from $25.49 to $39.99 each.", bullets: ["Create coordinated team apparel for workplaces, clubs, events, and group activities.", "Personalise your hoodie designs to help your team display its identity with a consistent look.", "Explore available sizes and customisation options to find the right fit for your team."] },
+                  { label: "FROM", value: "$2.32", title: "VistaPrint Recycled Cotton Canvas Tote Bag – From $2.32", desc: "Shop the Recycled Cotton Canvas Tote Bag for prices starting at $2.32 and going up to $4.02 each.", bullets: ["Customise your tote bags with your brand name, logo, or artwork to create personalised promotional merchandise.", "Choose from available colours and options to suit business giveaways, events, shopping, or everyday use.", "Explore different quantities and customisation choices to find an option that fits your budget."] },
+                  { label: "FROM", value: "$0.13", title: "VistaPrint Custom Hang Tags – From $0.13 Each", desc: "Order custom hang tags for retail packaging, with the listed offer showing a price of $61.00 for 500 units, or approximately $0.13 per tag.", bullets: ["Personalise clothing hang tags with your branding to give your products a polished, retail-ready presentation.", "Select quantities ranging from 25 to 5,000 units to suit small businesses and larger product launches.", "Qualifying orders over $100 are eligible for free shipping, subject to VistaPrint's shipping terms."] },
                 ].map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
@@ -1082,20 +1085,20 @@ export default function VistaprintContent() {
           <div className="space-y-6">
             {[
               {
-                heading: "FIRST PURCHASE OFFER",
-                sub: "Exclusive Discount For New Customers",
+                heading: "CALENDARS UP TO 40% OFF",
+                sub: "Save Up To 40% On Selected Calendars With SAVEVP",
+              },
+              {
+                heading: "FIRST ORDER 20% OFF",
+                sub: "Up To 20% Off For New Customers With NEW20",
               },
               {
                 heading: "FREE ECONOMY SHIPPING",
-                sub: "On Qualifying U.S. Orders $100+",
+                sub: "On Qualifying Orders Over $100",
               },
               {
-                heading: "BUSINESS CARDS DEALS",
-                sub: "Save Big On Custom Business Card Printing",
-              },
-              {
-                heading: "CUSTOM APPAREL & MERCH",
-                sub: "Promotional Discounts On T-Shirts & Bags",
+                heading: "SHOPPING DISCOUNT",
+                sub: "Save $20 On $100+ Or $50 On $200+ With SHOPCART",
               },
             ].map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
