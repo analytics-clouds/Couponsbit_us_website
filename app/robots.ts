@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/_next/static/", "/_next/image", "/_next/data/"],
       },
       {
         // AI crawlers / assistants
