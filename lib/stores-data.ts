@@ -161,6 +161,9 @@ export const allStores: StoreEntry[] = [
   { name: "Vistaprint",      id: "vistaprint-promo-code",          category: "More",        coupons: 9,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp",       discount: "Up To 40% OFF",   popular: false },
   { name: "Hertz",           id: "hertz-discount-code",            category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791974650/hertz-logo_geobmi.webp",       discount: "Up To 25% OFF",   popular: false },
   { name: "Rest",            id: "rest-discount-code",             category: "More",        coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1791978343/restus-logo_qyvz2a.webp",       discount: "Up To 40% OFF",   popular: false },
+  { name: "Birkenstock",    id: "birkenstock-promo-code",         category: "Fashion",     coupons: 13, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648468/birkenstork_logo_nin4ru.webp",    discount: "Up To 50% OFF",   popular: false },
+  { name: "Gymshark",       id: "gymshark-discount-code",         category: "Fashion",     coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648467/gymshark-logo_hvljlf.webp",       discount: "Up To 50% OFF",   popular: false },
+  { name: "StockX",         id: "stockx-discount-code",           category: "Fashion",     coupons: 15, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648465/stock-logo_ixdvkn.webp",         discount: "Up To 60% OFF",   popular: false },
 ];
 
 

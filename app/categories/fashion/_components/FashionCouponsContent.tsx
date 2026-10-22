@@ -50,7 +50,10 @@ const STORES = [
   { id: "old-navy-promo-code", name: "Old Navy", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/old-navy-logo_qa0qp6.webp", coupons: 6, discount: "Up To 50% OFF" },
   { id: "abercrombie-discount-code", name: "Abercrombie", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp", coupons: 6, discount: "Up To 50% OFF" },
   { id: "jcpenney-discount-code", name: "JCPenney", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp", coupons: 6, discount: "Up To 50% OFF" },
-  { id: "oglmove-discount-code", name: "OGLmove", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp", coupons: 13, discount: "Up To 13% OFF" }
+  { id: "oglmove-discount-code", name: "OGLmove", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp", coupons: 13, discount: "Up To 13% OFF" },
+  { id: "birkenstock-promo-code", name: "Birkenstock", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648468/birkenstork_logo_nin4ru.webp", coupons: 13, discount: "Up To 50% OFF" },
+  { id: "gymshark-discount-code", name: "Gymshark", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648467/gymshark-logo_hvljlf.webp", coupons: 18, discount: "Up To 50% OFF" },
+  { id: "stockx-discount-code", name: "StockX", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648465/stock-logo_ixdvkn.webp", coupons: 15, discount: "Up To 60% OFF" }
 ];
 
 const SIDEBAR_CATEGORIES = [
