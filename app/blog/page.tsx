@@ -80,6 +80,18 @@ const blogSchema = {
       blogPost: [
         {
           "@type": "BlogPosting",
+          headline: "Spirit Halloween vs Amazon vs Wish: Halloween Deals 2026",
+          url: "https://www.couponsbit.us/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes",
+          datePublished: "2026-10-23",
+          inLanguage: "en-US",
+          author: {
+            "@type": "Organization",
+            name: "Couponsbit",
+            url: "https://www.couponsbit.us",
+          },
+        },
+        {
+          "@type": "BlogPosting",
           headline: "Best Web Hosting Coupons 2026: Bluehost vs Hostinger vs Scala — Who Wins?",
           url: "https://www.couponsbit.us/blog/best-web-hosting-coupons-2026",
           datePublished: "2026-10-16",
@@ -335,6 +347,49 @@ export default function BlogPage() {
               <div className="w-20 h-[3px] bg-[#FF9900] rounded-full mx-auto mt-3"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+
+              {/* Post — Spirit Halloween vs Amazon vs Wish */}
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
+                <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/couponsbit/image/upload/v1792742394/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes_bvz06w.webp"
+                    alt="Spirit Halloween vs Amazon vs Wish.com: Budget Halloween Costumes 2026"
+                    width={220}
+                    height={200}
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-center flex-1">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="text-gray-500 text-xs font-medium uppercase">
+                      October 23, 2026
+                    </span>
+                    <span className="text-gray-300" aria-hidden="true">•</span>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs uppercase font-medium">
+                        6 MIN READ
+                      </span>
+                    </div>
+                  </div>
+                  <Link href="/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
+                      Spirit Halloween vs Amazon vs Wish.com: Budget Costumes
+                    </h3>
+                  </Link>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                    Compare Spirit Halloween, Amazon, and Wish.com for budget Halloween costumes in 2026. Explore affordable costume ideas and tips to save with CouponsBit.
+                  </p>
+                  <Link
+                    href="/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes"
+                    aria-label="Read more: Spirit Halloween vs Amazon vs Wish.com Budget Costumes"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                  >
+                    READ MORE <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
 
               {/* Post — Best Web Hosting Coupons 2026 */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
