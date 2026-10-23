@@ -892,13 +892,13 @@ export default function EnvatoCouponsContent() {
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Envato Elements</h3>
            
             <p>
-              The platform serves freelancers, agencies, marketers, content creators, web designers, developers, video editors, photographers, and businesses looking to streamline their creative workflows while reducing production costs.
+              The platform serves <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">freelancers</Link>, agencies, marketers, content creators, web designers, developers, video editors, photographers, and businesses looking to streamline their creative workflows while reducing production costs.
             </p>
             <p>
               What makes Envato Elements stand out is its all-in-one approach. Members gain access to millions of high-quality digital assets across multiple creative categories, making it easier to find everything needed for a project in one place.
             </p>
             <p>
-              From stock videos and royalty-free music to WordPress themes, graphic templates, presentation designs, and AI-powered creative tools, Envato Elements helps users create professional content faster and more efficiently.
+              From stock videos and royalty-free music to <Link href="/stores/bluehost-discount-code" className="text-[#056bfa] hover:underline">WordPress themes</Link>, graphic templates, presentation designs, and AI-powered creative tools, Envato Elements helps users create professional content faster and more efficiently.
             </p>
             <p>
               At Couponsbit, we help users unlock additional savings with the latest Envato Elements promo codes, coupon codes, and subscription deals.

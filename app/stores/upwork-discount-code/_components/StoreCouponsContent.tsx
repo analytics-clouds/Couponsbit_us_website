@@ -869,7 +869,7 @@ export default function UpworkCouponsContent() {
             Save More on Freelance Services with an Upwork Discount Code
           </h3>
           <p>
-            Whether you're hiring a freelancer for a one-time project or building a long-term remote team, Upwork connects businesses with talented professionals from around the world. From graphic design and content writing to web development, marketing, customer support, and AI services, Upwork makes it easy to find skilled freelancers for projects of every size.
+            Whether you're hiring a freelancer for a one-time project or building a long-term remote team, Upwork connects businesses with talented professionals from around the world. From <Link href="/stores/envato-elements-discount-code" className="text-[#056bfa] hover:underline">graphic design</Link> and content writing to web development, marketing, customer support, and <Link href="/stores/sintra-discount-code" className="text-[#056bfa] hover:underline">AI services</Link>, Upwork makes it easy to find skilled freelancers for projects of every size.
           </p>
           <p>
             Before purchasing services or upgrading your membership, visit CouponsBit to discover the latest Upwork discount code, Upwork voucher, Upwork promo code, and Upwork coupon code. Using a valid offer can help you save on eligible Upwork services and plans.

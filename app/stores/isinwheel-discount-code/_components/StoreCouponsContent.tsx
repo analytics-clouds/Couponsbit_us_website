@@ -558,7 +558,7 @@ export default function IsinwheelCouponsContent() {
           The current website also features smart mobility products such as electric suitcases, walking pads, and mobility scooters.
         </p>
         <p>
-          An electric suitcase can appeal to frequent travellers looking for a more convenient way to move luggage, while a walking pad can be useful for people who want to add more movement to their home or work routine.
+          An electric suitcase can appeal to frequent travellers looking for a more convenient way to move luggage, while a walking pad can be useful for people who want to add more movement to their <Link href="/stores/hp-discount-code" className="text-[#056bfa] hover:underline">home or work routine</Link>.
         </p>
         <p>
           This broader product range means isinwheel isn't limited to one type of electric vehicle. The brand is increasingly positioned around different forms of smart, convenient mobility.

@@ -1437,7 +1437,7 @@ export default function AgodaCouponsContent() {
               The company offers comprehensive travel solutions that include hotel bookings, vacation rentals, flight reservations, attraction tickets, airport transfers, and city tours.
             </p>
             <p>
-              Agoda is particularly popular for its competitive hotel pricing, instant booking confirmation, and vast selection of properties. Whether you're booking a budget stay, a family resort, a boutique hotel, or a luxury getaway, Agoda provides options that support travel at every budget and stage of the journey.
+              Agoda is particularly popular for its competitive hotel pricing, instant booking confirmation, and vast selection of properties. Whether you're booking a budget stay, a family resort, a boutique hotel, or a <Link href="/stores/radisson-discount-code" className="text-[#056bfa] hover:underline">luxury getaway</Link>, Agoda provides options that support travel at every budget and stage of the journey.
             </p>
             <p>
               Today, Agoda continues to be a trusted choice for travelers looking for value, convenience, flexibility, and ease of use.
@@ -1477,7 +1477,7 @@ export default function AgodaCouponsContent() {
             <p><strong>Book Early:</strong> Booking hotels and flights in advance often unlocks better rates compared to last-minute bookings.</p>
             <p><strong>Look for New Customer Promotions:</strong> Agoda frequently offers introductory discounts for new customers.</p>
             <p><strong>Travel During Seasonal Sales:</strong> Major shopping events often feature some of the best Agoda deals of the year. Watch for promotions during: Black Friday, Cyber Monday, New Year Sales, Memorial Day, Labor Day, and summer travel season.</p>
-            <p><strong>Bundle Your Booking:</strong> Combining flights, hotels, and activities into one package may provide additional value.</p>
+            <p><strong>Bundle Your Booking:</strong> Combining flights, hotels, and <Link href="/stores/vegas-discount-code" className="text-[#056bfa] hover:underline">activities</Link> into one package may provide additional value.</p>
             <p><strong>Join Agoda Rewards:</strong> Signing up for Agoda's loyalty program can unlock additional discounts and cashback on future bookings.</p>
           </div>
 

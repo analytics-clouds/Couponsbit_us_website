@@ -1054,7 +1054,7 @@ export default function ExpediaCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Every Journey with Expedia Coupon Codes</h3>
           <p>
-            Whether you're planning a relaxing vacation, a business trip, a weekend getaway, or an international adventure, Expedia makes travel planning simple by bringing flights, <Link href="/stores/agoda-discount-code">hotels</Link>, vacation packages, car rentals, cruises, and activities together in one place. Before you book, visit Couponsbit to find the latest <strong>Expedia coupon codes, Expedia promo codes, and exclusive travel deals</strong> that can help you save on your next trip.
+            Whether you're planning a relaxing vacation, a business trip, a weekend getaway, or an international adventure, Expedia makes travel planning simple by bringing flights, <Link href="/stores/agoda-discount-code">hotels</Link>, <Link href="/stores/booking-promo-code" className="text-[#056bfa] hover:underline">vacation packages</Link>, car rentals, cruises, and activities together in one place. Before you book, visit Couponsbit to find the latest <strong>Expedia coupon codes, Expedia promo codes, and exclusive travel deals</strong> that can help you save on your next trip.
           </p>
           <p>
             Trusted by millions of travelers worldwide, Expedia offers flexible travel options, competitive prices, and a rewarding loyalty program, making it one of the world's most popular online travel platforms.
@@ -1120,7 +1120,7 @@ export default function ExpediaCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056BFA] mb-4">Plan Your Next Adventure While Saving More</h3>
-            <p>Whether you're booking a luxury resort, an international flight, a family vacation package, or a last-minute getaway, Expedia makes travel planning easy with millions of travel options around the world.</p>
+            <p>Whether you're booking a <Link href="/stores/radisson-discount-code" className="text-[#056bfa] hover:underline">luxury resort</Link>, an international flight, a family vacation package, or a last-minute getaway, Expedia makes travel planning easy with millions of travel options around the world.</p>
             <p>Browse the latest Expedia coupon codes, promo codes, and exclusive travel deals on Couponsbit today and make every journey more affordable.</p>
           </div>
 

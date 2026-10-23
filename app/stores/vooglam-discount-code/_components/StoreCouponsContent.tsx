@@ -1047,7 +1047,7 @@ export default function VooglamCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Smarter and Save More with Vooglam</h3>
             <p>
-              Whether you're updating your everyday prescription glasses, adding stylish sunglasses to your collection, or protecting your eyes with blue light glasses, Vooglam offers fashionable eyewear for every occasion. Before completing your purchase, visit CouponsBit to browse the latest Vooglam coupon codes, promo codes, and exclusive eyewear deals to enjoy extra savings on your favorite frames.
+              Whether you're updating your everyday prescription glasses, adding <Link href="/stores/sungait-discount-code" className="text-[#056bfa] hover:underline">stylish sunglasses</Link> to your collection, or protecting your eyes with blue light glasses, Vooglam offers fashionable eyewear for every occasion. Before completing your purchase, visit CouponsBit to browse the latest Vooglam coupon codes, promo codes, and exclusive eyewear deals to enjoy extra savings on your favorite frames.
             </p>
           </div>
 

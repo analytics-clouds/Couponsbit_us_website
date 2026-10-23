@@ -774,7 +774,7 @@ export default function HostingerCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Hostinger</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Founded in 2004, Hostinger is a global web hosting provider serving millions of customers across more than 150 countries. Known for its affordable pricing, reliable infrastructure, and beginner-friendly tools, Hostinger has become one of the most popular choices for bloggers, entrepreneurs, developers, and small businesses.
+                    Founded in 2004, Hostinger is a global web hosting provider serving millions of customers across more than 150 countries. Known for its affordable pricing, reliable infrastructure, and beginner-friendly tools, Hostinger has become one of the most popular choices for <Link href="/stores/bluehost-discount-code" className="text-[#056bfa] hover:underline">bloggers</Link>, <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">entrepreneurs</Link>, developers, and small businesses.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     The company offers a complete suite of web hosting services, including shared hosting, WordPress hosting, cloud hosting, VPS hosting, email hosting, domain registration, and an AI-powered website builder. With data centers located worldwide and a custom-built hosting control panel, Hostinger focuses on delivering fast website performance, security, and ease of use.

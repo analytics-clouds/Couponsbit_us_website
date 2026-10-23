@@ -445,7 +445,7 @@ export default function DoreAndRoseCouponsContent() {
           )}
         >
           <p>
-            Want to spend less on premium sleepwear and bedtime essentials? Before buying from <strong>Dore & Rose</strong>, check <strong>CouponsBit</strong> for a Dore & Rose discount coupon code, promotional offer, or current sale. You may find ways to lower the price of everything from pajamas and silk pillowcases to sleep masks, bedding, and cooling products.
+            Want to spend less on premium <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">sleepwear</Link> and bedtime essentials? Before buying from <strong>Dore & Rose</strong>, check <strong>CouponsBit</strong> for a Dore & Rose discount coupon code, promotional offer, or current sale. You may find ways to lower the price of everything from pajamas and silk pillowcases to sleep masks, bedding, and cooling products.
           </p>
           <p>
             Dore & Rose is dedicated to products that make bedtime more comfortable while keeping the designs stylish. Its U.S. collection covers a wide range of sleep-focused products, including silk and cotton pajamas, TENCEL™ sleepwear, pillowcases, bonnets, sleep masks, scrunchies, duvet covers, cooling bedding, children's sleepwear, and bundles.
@@ -525,7 +525,7 @@ export default function DoreAndRoseCouponsContent() {
               Dore & Rose Silk Pillowcases & Bedtime Accessories
             </h3>
             <p>
-              Your bedtime routine doesn't have to stop at pajamas. Dore & Rose also offers accessories and bedding designed to complement its sleepwear collection.
+              Your bedtime routine doesn't have to stop at pajamas. Dore & Rose also offers <Link href="/stores/aporro-discount-code" className="text-[#056bfa] hover:underline">accessories</Link> and bedding designed to complement its sleepwear collection.
             </p>
 
             <h4 className="text-lg font-black text-black mt-4">Dore & Rose Silk Pillowcase</h4>

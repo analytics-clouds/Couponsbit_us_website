@@ -1273,7 +1273,7 @@ export default function DellCouponsContent() {
             <p><strong>Updated Offers:</strong> We regularly update Dell coupon codes and promotional deals.</p>
             <p><strong>Verified Discounts:</strong> Browse coupon codes, limited-time offers, and exclusive savings in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>Global Brand Coverage:</strong> Along with Dell, Couponsbit features deals from hundreds of leading global brands across technology and online shopping.</p>
+            <p><strong>Global Brand Coverage:</strong> Along with Dell, Couponsbit features deals from hundreds of leading global brands across technology and <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">online shopping</Link>.</p>
           </div>
 
           <div className="space-y-4">

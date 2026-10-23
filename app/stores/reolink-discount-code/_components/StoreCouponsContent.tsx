@@ -916,7 +916,7 @@ export default function ReolinkCouponsContent() {
               The company offers a comprehensive range of security solutions, including wireless security cameras, battery-powered cameras, video doorbells, PoE camera systems, NVR security systems, floodlight cameras, cellular security cameras, and smart home monitoring devices.
             </p>
             <p>
-              Reolink products are designed to help users monitor their properties from virtually anywhere using mobile apps, desktop software, and cloud-based solutions. Many devices feature advanced technologies such as high-definition video recording, night vision, motion detection, two-way audio, smart alerts, and AI-powered detection capabilities.
+              Reolink products are designed to help users monitor their properties from virtually anywhere using mobile apps, desktop software, and cloud-based solutions. Many devices feature advanced technologies such as high-definition video recording, night vision, motion detection, two-way audio, smart alerts, and <Link href="/stores/obsbot-discount-code" className="text-[#056bfa] hover:underline">AI-powered detection capabilities</Link>.
             </p>
             <p>
               Whether you're protecting your home, monitoring a vacation property, securing a retail location, or managing a business facility, Reolink provides flexible security solutions for a variety of needs.

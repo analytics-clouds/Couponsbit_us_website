@@ -266,11 +266,11 @@ export default function SailyContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Saily offers mobile data plans across numerous destinations, making it useful for international travelers who need internet access for navigation, messaging, travel bookings, social media, and other everyday online activities.
+                    Saily offers mobile data plans across numerous destinations, making it useful for international travelers who need internet access for navigation, messaging, <Link href="/stores/klook-discount-code" className="text-[#056bfa] hover:underline">travel bookings</Link>, social media, and other everyday online activities.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The service is particularly convenient for people who want to arrange their connectivity before leaving home. Once the eSIM is installed and activated according to the plan's requirements, travelers can use mobile data without needing to visit a local telecom store or swap their physical SIM.
+                    The service is particularly convenient for people who want to arrange their connectivity before leaving home. Once the eSIM is installed and activated according to the plan's requirements, travelers can use mobile data without needing to visit a local telecom store or swap their <Link href="/stores/airalo-discount-code" className="text-[#056bfa] hover:underline">physical SIM</Link>.
 
                   </p>
                   

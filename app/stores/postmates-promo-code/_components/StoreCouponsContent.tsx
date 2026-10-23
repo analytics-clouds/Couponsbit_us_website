@@ -577,7 +577,7 @@ export default function PostmatesContent() {
           Instead of calling a restaurant or driving across town, you can browse participating restaurants through the platform and order meals for delivery.
         </p>
         <p>
-          The restaurant selection varies by location, but customers can find options across cuisines and dining styles, from fast food and pizza to Mexican, Indian, Chinese, Japanese, Mediterranean, American, desserts, coffee, and more.
+          The restaurant selection varies by location, but customers can find options across cuisines and dining styles, from fast food and <Link href="/stores/little-caesars-promo-code" className="text-[#056bfa] hover:underline">pizza</Link> to Mexican, Indian, Chinese, Japanese, Mediterranean, American, desserts, coffee, and more.
         </p>
         <p>
           The platform currently highlights local restaurants alongside categories such as “Great value,” “Great for groups,” and restaurants with specific promotional offers.
@@ -595,7 +595,7 @@ export default function PostmatesContent() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
           <p>
-            Craving a <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">burger</Link>, fries, chicken, tacos, or another quick meal? Postmates can help you browse nearby fast-food restaurants and check which ones currently offer delivery.
+            Craving a <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">burger</Link>, fries, chicken, tacos, or another quick meal? Postmates can help you browse nearby <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">fast-food restaurants</Link> and check which ones currently offer delivery.
           </p>
           <p>
             Fast-food promotions can be especially useful when you're ordering for multiple people, since restaurant-specific Buy One, Get One and other offers may be available.

@@ -1378,7 +1378,7 @@ Bonus Miles
             Looking for the latest <strong>LATAM Airlines coupon codes, promo codes, and flight deals</strong>? You've come to the right place. At Couponsbit, we help travelers save on flights, vacation packages, seat upgrades, baggage services, and travel experiences with verified LATAM Airlines discounts and exclusive offers.
           </p>
           <p>
-            Whether you're planning a vacation in South America, a business trip, a family getaway, or an international adventure, LATAM Airlines connects travelers to hundreds of destinations across Latin America and beyond. Before booking your next flight, check Couponsbit for the latest LATAM Airlines deals and travel savings opportunities.
+            Whether you're planning a vacation in South America, a business trip, a family getaway, or an <Link href="/stores/kiwi-discount-code" className="text-[#056bfa] hover:underline">international adventure</Link>, LATAM Airlines connects travelers to hundreds of destinations across Latin America and beyond. Before booking your next flight, check Couponsbit for the latest LATAM Airlines deals and travel savings opportunities.
           </p>
 
           <div className="space-y-4">

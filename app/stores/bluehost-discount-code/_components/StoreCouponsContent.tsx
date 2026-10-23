@@ -1099,7 +1099,7 @@ export default function BluehostCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Build Your Website for Less</h3>
-            <p>Whether you're launching a personal blog, creating an online store, building a portfolio, or growing a business website, Bluehost offers the tools and hosting solutions needed to succeed online.</p>
+            <p>Whether you're launching a personal blog, <Link href="/stores/envato-elements-discount-code" className="text-[#056bfa] hover:underline">creating an online store</Link>, building a portfolio, or growing a business website, Bluehost offers the tools and hosting solutions needed to succeed online.</p>
             <p>Before purchasing a hosting plan, visit Couponsbit to explore the latest Bluehost coupon codes, promo codes, and web hosting deals. With verified discounts and regularly updated offers, Couponsbit helps you create and grow your online presence while keeping costs under control.</p>
           </div>
 

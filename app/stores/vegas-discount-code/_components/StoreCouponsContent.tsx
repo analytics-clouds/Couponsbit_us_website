@@ -818,7 +818,7 @@ export default function VegasCouponsContent() {
             Save More on Las Vegas Travel with a vegas Discount Code
           </h3>
           <p>
-            Planning a trip to the Entertainment Capital of the World? Whether you're booking a luxury hotel on the Strip, tickets to world-famous shows, exciting tours, or complete vacation packages, vegas makes planning your Las Vegas getaway simple and convenient.
+            Planning a trip to the Entertainment Capital of the World? Whether you're booking a luxury hotel on the Strip, tickets to world-famous shows, <Link href="/stores/klook-discount-code" className="text-[#056bfa] hover:underline">exciting tours</Link>, or complete vacation packages, vegas makes planning your Las Vegas getaway simple and convenient.
           </p>
           <p>
             Before confirming your booking, visit CouponsBit to find the latest vegas discount code, vegas voucher, vegas promo code, and vegas coupon code offers. A valid discount code can help you reduce the cost of hotels, attractions, <Link href="/stores/stubhub-discount-code">show tickets</Link>, tours, dining experiences, and vacation packages.

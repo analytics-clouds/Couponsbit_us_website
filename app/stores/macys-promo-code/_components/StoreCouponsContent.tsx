@@ -494,7 +494,7 @@ export default function MacysCouponsContent() {
 
             <h4 className="text-lg font-black text-black mt-4">Macy’s Women’s Clothing Deals</h4>
             <p>
-              Macy’s women's department includes dresses, tops, sweaters, jeans, pants, coats, activewear, sleepwear, lingerie, and more.
+              Macy’s women’s department includes dresses, tops, sweaters, jeans, pants, coats, <Link href="/stores/hm-promo-code" className="text-[#056bfa] hover:underline">activewear</Link>, sleepwear, lingerie, and more.
             </p>
             <p>
               If you're updating your wardrobe, compare regular prices with sale prices and check whether a Macy’s coupon code can be applied to eligible merchandise.
@@ -502,7 +502,7 @@ export default function MacysCouponsContent() {
 
             <h4 className="text-lg font-black text-black mt-4">Macy’s Men’s Clothing Deals</h4>
             <p>
-              Men can shop for shirts, T-shirts, jeans, pants, suits, jackets, sweaters, activewear, shoes, and accessories.
+              Men can shop for shirts, T-shirts, jeans, pants, suits, jackets, sweaters, <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">activewear</Link>, shoes, and accessories.
             </p>
             <p>
               Macy's also carries products from a range of well-known brands, giving shoppers the opportunity to compare different styles and price points in one place.

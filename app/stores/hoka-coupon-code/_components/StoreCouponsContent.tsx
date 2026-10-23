@@ -567,7 +567,7 @@ export default function HokaCouponsContent() {
           Not every customer buying HOKA is training for a marathon. Some shoppers simply like the brand's distinctive silhouette and cushioned feel for everyday wear.
         </p>
         <p>
-          Lifestyle options can work with casual clothing and everyday routines, while still reflecting the design language that made HOKA recognizable in the running world.
+          Lifestyle options can work with <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual clothing</Link> and everyday routines, while still reflecting the design language that made HOKA recognizable in the running world.
         </p>
         <p>
           This category can be especially interesting if you're looking for a pair that bridges active and casual wear.

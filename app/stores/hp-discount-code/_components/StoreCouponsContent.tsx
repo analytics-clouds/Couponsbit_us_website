@@ -1293,7 +1293,7 @@ export default function HPCouponsContent() {
             <p><strong>Updated Offers:</strong> We regularly update HP coupon codes and promotional deals.</p>
             <p><strong>Verified Discounts:</strong> Find coupon codes, promo offers, and exclusive savings in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>Global Brand Coverage:</strong> In addition to HP, Couponsbit features deals from hundreds of leading brands across technology and online shopping.</p>
+            <p><strong>Global Brand Coverage:</strong> In addition to HP, Couponsbit features deals from hundreds of leading brands across technology and <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">online shopping</Link>.</p>
           </div>
 
           <div className="space-y-4">

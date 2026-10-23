@@ -287,7 +287,7 @@ export default function MajorFitnessCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Major Fitness?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Major Fitness is a home fitness equipment brand focused on bringing serious strength-training equipment into residential spaces. The company says it began in 2022 with the goal of making serious strength training more accessible at home, developing durable and versatile systems for people who want to train consistently without depending entirely on a commercial gym.
+                    Major Fitness is a home fitness equipment brand focused on bringing serious strength-training equipment into residential spaces. The company says it began in 2022 with the goal of making serious strength training more accessible at home, developing durable and versatile systems for people who want to train consistently without depending entirely on a <Link href="/stores/planet-fitness-promo-code" className="text-[#056bfa] hover:underline">commercial gym</Link>.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

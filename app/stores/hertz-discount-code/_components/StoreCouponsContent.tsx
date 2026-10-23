@@ -524,7 +524,7 @@ export default function HertzCouponsContent() {
             Book Your Next Rental With CouponsBit
           </h3>
           <p>
-            Whether you're planning a holiday in Europe, a road trip across the US or a weekend away in the UK, comparing rental options before booking can help you avoid surprises. Check CouponsBit for a Hertz discount code, car rental promo code and current deals, then review the conditions and total rental cost before confirming your vehicle.
+            Whether you're planning a holiday in Europe, a road trip across the US or a weekend away in the UK, comparing <Link href="/stores/avis-discount-code" className="text-[#056bfa] hover:underline">rental options</Link> before booking can help you avoid surprises. Check CouponsBit for a Hertz discount code, car rental promo code and current deals, then review the conditions and total rental cost before confirming your vehicle.
           </p>
 
           {!isReadMore && (

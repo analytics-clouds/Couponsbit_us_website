@@ -268,7 +268,7 @@ export default function LulusCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Rather than focusing only on everyday basics, Lulus has built much of its identity around helping shoppers get dressed for memorable occasions. Its collections cover wedding guest dresses, bridesmaid dresses, homecoming, prom, cocktail events, formal occasions, vacations, parties, and everyday looks.
+                    Rather than focusing only on <Link href="/stores/hm-promo-code" className="text-[#056bfa] hover:underline">everyday basics</Link>, Lulus has built much of its identity around helping shoppers get dressed for memorable occasions. Its collections cover wedding guest dresses, bridesmaid dresses, homecoming, prom, cocktail events, formal occasions, vacations, parties, and everyday looks.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

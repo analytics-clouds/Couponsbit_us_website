@@ -1180,7 +1180,7 @@ export default function NuagewearCouponsContent() {
             Finding underwear that combines comfort, performance, and everyday confidence can be challenging. That's why many women turn to Nuagewear for innovative seamless designs that prioritize softness, flexibility, and a barely-there feel. Before placing your next order, check the latest <strong>Nuagewear coupon codes</strong>, promo offers, and exclusive discounts on CouponsBit to unlock extra savings.
           </p>
           <p>
-            Whether you're heading to the gym, practicing yoga, running errands, or simply looking for comfortable everyday essentials, Nuagewear offers thoughtfully designed products created to move with your body. With the right promo code, you can enjoy premium comfort while keeping your budget in check.
+            Whether you're heading to the <Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">gym</Link>, practicing yoga, running errands, or simply looking for comfortable everyday essentials, Nuagewear offers thoughtfully designed products created to move with your body. With the right promo code, you can enjoy premium comfort while keeping your budget in check.
           </p>
 
           <div className="space-y-4">

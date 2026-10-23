@@ -451,13 +451,13 @@ export default function CostcoContent() {
           )}
         >
           <p>
-            Costco is the kind of retailer where one shopping trip can cover groceries, household essentials, electronics, clothing, <Link href="/stores/wayfair-discount-code">furniture</Link>, beauty products, and even your next vacation. With its warehouse model and extensive online selection, Costco gives members access to a wide range of products and services under one membership.
+            Costco is the kind of retailer where one shopping trip can cover groceries, household essentials, <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">electronics</Link>, clothing, <Link href="/stores/wayfair-discount-code">furniture</Link>, beauty products, and even your next vacation. With its warehouse model and extensive online selection, Costco gives members access to a wide range of products and services under one membership.
           </p>
           <p>
             If you're already planning a Costco purchase, checking for a Costco promo code before completing your order can be worthwhile. Costco's promotions can take several forms, from product-specific savings and seasonal events to membership offers, Costco Shop Cards, warehouse promotions, and online-only deals.
           </p>
           <p>
-            Whether you're stocking the pantry, upgrading your home, shopping for electronics, preparing for the holidays, or planning a trip through Costco Travel, checking the latest offers can help you make the most of your Costco membership.
+            Whether you're stocking the pantry, <Link href="/stores/home-depot-discount-code" className="text-[#056bfa] hover:underline">upgrading your home</Link>, shopping for electronics, preparing for the holidays, or planning a trip through Costco Travel, checking the latest offers can help you make the most of your Costco membership.
           </p>
 
           <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">

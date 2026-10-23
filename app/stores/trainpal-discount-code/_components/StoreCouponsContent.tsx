@@ -1000,7 +1000,7 @@ export default function TrainPalCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Rail Travel with TrainPal Discount Codes</h3>
           <p>
-            Planning a train journey across the UK or Italy? Before booking your next ticket, check for the latest <strong>TrainPal coupon codes and promotional offers</strong> on Couponsbit. Whether you're commuting to work, planning a city break, or exploring Europe by rail, TrainPal helps travelers find convenient train and coach tickets while potentially saving money on their bookings.
+            Planning a train journey across the UK or Italy? Before booking your next ticket, check for the latest <strong>TrainPal coupon codes and promotional offers</strong> on Couponsbit. Whether you're commuting to work, planning a city break, or exploring Europe by rail, TrainPal helps travelers find convenient train and <Link href="/stores/flixbus-discount-code" className="text-[#056bfa] hover:underline">coach tickets</Link> while potentially saving money on their bookings.
           </p>
           <p>
             From high-speed rail connections in Italy to everyday train routes across the United Kingdom, TrainPal makes travel planning simpler and more affordable. At Couponsbit, we help travelers discover the latest promo offers and rail travel deals so they can spend less on transportation and more on their journey.
@@ -1095,7 +1095,7 @@ export default function TrainPalCouponsContent() {
             <p><strong>Updated Travel Offers:</strong> We regularly update promotions to help users discover current savings opportunities.</p>
             <p><strong>Easy-to-Find Discounts:</strong> Browse deals, promo codes, and travel offers in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use and available whenever you're planning your next trip.</p>
-            <p><strong>Travel Savings Across Multiple Categories:</strong> In addition to rail travel, Couponsbit features offers on flights, hotels, tours, vacation packages, and more.</p>
+            <p><strong>Travel Savings Across Multiple Categories:</strong> In addition to rail travel, Couponsbit features offers on <Link href="/stores/cheapflights-discount-code" className="text-[#056bfa] hover:underline">flights</Link>, hotels, tours, vacation packages, and more.</p>
           </div>
 
           <div className="space-y-4">

@@ -939,7 +939,7 @@ export default function EtihadCouponsContent() {
             <p><strong>Regularly Updated Offers:</strong> We frequently update Etihad Airways discount codes, vouchers, promo codes, and exclusive travel promotions.</p>
             <p><strong>Verified Discounts:</strong> Browse trusted coupon codes and limited-time travel deals in one convenient place.</p>
             <p><strong>Completely Free:</strong> CouponsBit is free to use whenever you're looking to reduce your travel expenses.</p>
-            <p><strong>More Than Flight Deals:</strong> Besides Etihad Airways, CouponsBit features savings on hotels, car rentals, vacation packages, fashion, electronics, software, and hundreds of other global brands.</p>
+            <p><strong>More Than Flight Deals:</strong> Besides Etihad Airways, CouponsBit features savings on hotels, car rentals, <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">vacation packages</Link>, fashion, electronics, software, and hundreds of other global brands.</p>
           </div>
 
           {/* Travel Farther While Spending Less */}

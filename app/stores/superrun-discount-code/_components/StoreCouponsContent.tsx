@@ -437,7 +437,7 @@ export default function SuperrunCouponsContent() {
             Superun focuses on home <Link href="/stores/merachfit-discount-code">fitness equipment</Link>, particularly treadmills and walking pads designed for indoor exercise. Its product range includes folding treadmills, under-desk walking pads, compact walking machines, and other equipment aimed at making regular movement easier at home or in a workspace. Current coupon listings also show offers on selected Superun walking pads and treadmills, including discounts on specific models and sale items.
           </p>
           <p>
-            Whether you're building a home gym, looking for a compact treadmill for daily walking, or want an under-desk walking pad for staying active while working, checking CouponsBit for a Superun coupon code before placing your order can help you find an available deal.
+            Whether you're building a <Link href="/stores/merachfit-discount-code" className="text-[#056bfa] hover:underline">home gym</Link>, looking for a compact treadmill for daily walking, or want an under-desk walking pad for staying active while working, checking CouponsBit for a Superun coupon code before placing your order can help you find an available deal.
           </p>
 
           <div className="space-y-4">

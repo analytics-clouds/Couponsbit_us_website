@@ -780,7 +780,7 @@ export default function DiscountTireCouponsContent() {
                    Discount Tire partners with leading tire manufacturers to provide options for passenger cars, SUVs, trucks, performance vehicles, and electric vehicles. Alongside product sales, the company is known for services such as tire installation, flat tire repair, tire rotation, balancing, tire inspections, TPMS support, and air pressure checks, helping customers maintain their vehicles long after a purchase. Many of these services are offered free or at no additional cost for eligible customers. 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Whether you're commuting to work, planning a road trip, or upgrading your vehicle's appearance with new wheels, Discount Tire offers solutions designed to improve both safety and performance.
+                   Whether you're commuting to work, <Link href="/stores/budget-discount-code" className="text-[#056bfa] hover:underline">planning a road trip</Link>, or <Link href="/stores/carcovers-discount-code" className="text-[#056bfa] hover:underline">upgrading your vehicle's appearance with new wheels</Link>, Discount Tire offers solutions designed to improve both safety and performance.
                   </p>
                   <a href="https://www.discounttire.com/" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />

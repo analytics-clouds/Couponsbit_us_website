@@ -276,7 +276,7 @@ export default function RestCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Rest is particularly relevant to shoppers who want bedding that feels cool and comfortable without sacrificing softness. Whether you're refreshing your own bedroom or choosing bedding as a gift, its specialised range offers alternatives to conventional sleep essentials.
+                    Rest is particularly relevant to shoppers who want bedding that feels cool and comfortable without sacrificing softness. Whether you're refreshing your own <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">bedroom</Link> or choosing bedding as a gift, its specialised range offers alternatives to conventional sleep essentials.
 
                   </p>
                  

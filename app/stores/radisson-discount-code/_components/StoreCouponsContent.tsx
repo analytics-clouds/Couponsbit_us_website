@@ -935,7 +935,7 @@ export default function RadissonCouponsContent() {
             <p><strong>Frequently Updated Offers:</strong> We regularly update Radisson Hotels discount codes, vouchers, promo codes, and exclusive travel promotions.</p>
             <p><strong>Verified Discounts:</strong> Browse trusted coupon codes and limited-time hotel deals in one convenient location.</p>
             <p><strong>Completely Free:</strong> CouponsBit is free to use whenever you're looking to reduce your accommodation expenses.</p>
-            <p><strong>More Than Hotel Deals:</strong> Besides Radisson Hotels, CouponsBit features savings on airlines, vacation packages, car rentals, fashion, electronics, software, and hundreds of other leading brands.</p>
+            <p><strong>More Than Hotel Deals:</strong> Besides Radisson Hotels, CouponsBit features savings on airlines, <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">vacation packages</Link>, car rentals, fashion, electronics, software, and hundreds of other leading brands.</p>
           </div>
 
           {/* Book Your Next Stay for Less */}

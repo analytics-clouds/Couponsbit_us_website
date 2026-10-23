@@ -431,7 +431,7 @@ export default function JDSportsContent() {
           )}
         >
           <p>
-            Looking for a JD Sports discount code to save on your next pair of sneakers, sportswear, or activewear? CouponsBit helps shoppers find the latest JD Sports discount codes, promo codes, coupons, and deals before placing an order. Whether you're refreshing your everyday wardrobe, picking up new trainers, or looking for sportswear from popular brands, checking for a deal before checkout can help you shop for less.
+            Looking for a JD Sports discount code to save on your next pair of sneakers, sportswear, or activewear? CouponsBit helps shoppers find the latest JD Sports discount codes, promo codes, coupons, and deals before placing an order. Whether you're refreshing your <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wardrobe</Link>, picking up new trainers, or looking for sportswear from popular brands, checking for a deal before checkout can help you shop for less.
           </p>
           <p>
             Before you complete your JD Sports purchase, visit CouponsBit to check the latest available offers and find a promotion that matches your shopping needs.

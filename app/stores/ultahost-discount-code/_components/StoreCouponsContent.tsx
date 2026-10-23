@@ -1005,7 +1005,7 @@ export default function UltahostCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Build Your Website for Less</h3>
             <p>
-              Whether you're starting a personal blog, launching an eCommerce business, running a WordPress website, or deploying a high-performance VPS, UltaHost offers dependable hosting solutions built for speed, security, and long-term growth.
+              Whether you're starting a personal blog, launching an eCommerce business, running a <Link href="/stores/bluehost-discount-code" className="text-[#056bfa] hover:underline">WordPress website</Link>, or deploying a high-performance VPS, UltaHost offers dependable hosting solutions built for speed, security, and long-term growth.
             </p>
             <p>
               Before you purchase your next hosting plan, check CouponsBit for the latest UltaHost coupon codes, UltaHost promo codes, and exclusive web hosting deals to maximize your savings while investing in reliable hosting.

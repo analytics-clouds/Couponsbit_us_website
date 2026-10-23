@@ -1640,7 +1640,7 @@ export default function StubHubCouponsContent() {
             Whether you're searching for StubHub tickets to see your favorite team, attending a major concert, or planning ahead for a major sporting event, checking for a coupon or promotional offer before you buy can help you get better value.
           </p>
           <p>
-            From NFL and NBA games to concerts, Broadway shows, and major international sporting events, StubHub gives fans access to tickets for a wide range of live experiences. Before completing your purchase, check CouponsBit for the latest StubHub deals and available savings.
+            From NFL and NBA games to concerts, <Link href="/stores/vegas-discount-code" className="text-[#056bfa] hover:underline">Broadway shows</Link>, and major international sporting events, StubHub gives fans access to tickets for a wide range of live experiences. Before completing your purchase, check CouponsBit for the latest StubHub deals and available savings.
           </p>
 
           <div className="space-y-4">
@@ -1793,7 +1793,7 @@ export default function StubHubCouponsContent() {
               Save More With StubHub Coupon Codes & Ticket Deals
             </h3>
             <p>
-              Whether you're looking for StubHub tickets to see your favorite team, attending a major concert, planning a theater night, or searching for tickets to a major international sporting event, comparing available offers can help you make a smarter purchase.
+              Whether you're looking for StubHub tickets to see your favorite team, attending a major concert, planning a theater night, or searching for tickets to a <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">major international sporting event</Link>, comparing available offers can help you make a smarter purchase.
             </p>
             <p>
               Before buying, check CouponsBit for the latest StubHub coupon code, StubHub promo code, StubHub discount code, and StubHub ticket deals. Compare ticket prices, review the offer terms, and choose the option that gives you the best overall value.

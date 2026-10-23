@@ -651,7 +651,7 @@ export default function FireflyzCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Fireflyz</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Founded in 2007, Firefly is a Malaysian regional airline and a wholly owned subsidiary of Malaysia Aviation Group, the parent company of Malaysia Airlines. The airline operates from its primary hubs at Subang Airport (Kuala Lumpur) and Penang International Airport, serving domestic and regional destinations across Southeast Asia. 
+                    Founded in 2007, Firefly is a Malaysian regional airline and a wholly owned subsidiary of Malaysia Aviation Group, the parent company of <Link href="/stores/malaysia-airlines-discount-code" className="text-[#056bfa] hover:underline">Malaysia Airlines</Link>. The airline operates from its primary hubs at Subang Airport (Kuala Lumpur) and Penang International Airport, serving domestic and regional destinations across Southeast Asia. 
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Firefly was established to improve regional connectivity by offering direct flights to cities that may not always be served by larger airlines. Today, the airline operates a fleet of ATR 72 turboprop aircraft and Boeing 737-800 jets, providing both short-haul domestic services and regional international flights. 

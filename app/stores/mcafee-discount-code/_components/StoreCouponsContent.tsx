@@ -983,7 +983,7 @@ export default function McafeeCouponsContent() {
             <p><strong>Regularly Updated Offers:</strong> We frequently update McAfee coupon codes and promotional deals.</p>
             <p><strong>Verified Discounts:</strong> Find genuine promo codes, exclusive offers, and limited-time antivirus discounts in one place.</p>
             <p><strong>Completely Free:</strong> CouponsBit is free to use whenever you're looking to save money online.</p>
-            <p><strong>More Than Cybersecurity:</strong> In addition to McAfee, CouponsBit features savings from hundreds of trusted global brands across software, electronics, web hosting, cloud services, travel, and online shopping.</p>
+            <p><strong>More Than Cybersecurity:</strong> In addition to McAfee, CouponsBit features savings from hundreds of trusted global brands across software, electronics, <Link href="/stores/ultahost-discount-code" className="text-[#056bfa] hover:underline">web hosting</Link>, cloud services, travel, and online shopping.</p>
           </div>
 
           {/* Stay Protected While Spending Less */}

@@ -1034,7 +1034,7 @@ export default function OppoCouponsContent() {
             <p><strong>Frequently Updated Offers:</strong> We regularly update OPPO discount codes, vouchers, promo codes, and exclusive promotional deals.</p>
             <p><strong>Verified Discounts:</strong> Browse trusted coupon codes and limited-time offers in one convenient location.</p>
             <p><strong>Completely Free:</strong> CouponsBit is free to use whenever you're looking to save money on electronics and smart devices.</p>
-            <p><strong>More Than Tech Deals:</strong> Besides OPPO, CouponsBit features savings on smartphones, laptops, software, travel, fashion, home essentials, beauty products, and hundreds of other trusted brands.</p>
+            <p><strong>More Than Tech Deals:</strong> Besides OPPO, CouponsBit features savings on smartphones, <Link href="/stores/hp-discount-code" className="text-[#056bfa] hover:underline">laptops</Link>, software, travel, fashion, home essentials, beauty products, and hundreds of other trusted brands.</p>
           </div>
 
           {/* Upgrade Your Tech While Spending Less */}

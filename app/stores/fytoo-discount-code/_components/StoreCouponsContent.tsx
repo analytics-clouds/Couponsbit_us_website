@@ -959,7 +959,7 @@ export default function FytooCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Eyewear for Less</h3>
-            <p>Whether you're shopping for prescription glasses, reading glasses, stylish sunglasses, or specialized lens options, FYTOO makes it easier to find fashionable eyewear at affordable prices.</p>
+            <p>Whether you're shopping for <Link href="/stores/vooglam-discount-code" className="text-[#056bfa] hover:underline">prescription glasses</Link>, reading glasses, stylish sunglasses, or specialized lens options, FYTOO makes it easier to find fashionable eyewear at affordable prices.</p>
             <p>Browse the latest FYTOO coupon codes, promo offers, and eyewear deals on Couponsbit today and discover smarter ways to save on your next pair of glasses.</p>
           </div>
 

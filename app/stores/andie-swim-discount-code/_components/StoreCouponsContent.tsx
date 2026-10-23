@@ -473,7 +473,7 @@ export default function AndieSwimCouponsContent() {
 
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Andie Swim's Product Lineup</h3>
-    <p>Andie Swim offers swimwear across several categories, giving shoppers plenty of options for their next trip or everyday wear.</p>
+    <p>Andie Swim offers swimwear across several categories, giving shoppers plenty of options for their next trip or <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wear</Link>.</p>
     <p><strong>One-Piece Swimsuits:</strong> A range of necklines and coverage levels designed for a flattering fit.</p>
     <p><strong>Bikinis:</strong> Mix-and-match tops and bottoms for a customizable fit.</p>
     <p><strong>Cover-Ups & Accessories:</strong> Complementary pieces to pair with your swimwear.</p>

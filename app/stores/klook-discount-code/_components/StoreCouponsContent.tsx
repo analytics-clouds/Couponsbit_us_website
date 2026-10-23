@@ -821,7 +821,7 @@ export default function KlookCouponsContent() {
                   </p>
 
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Rather than focusing solely on flights or hotel reservations, Klook specializes in the experiences that make a trip memorable. Travelers can book attraction tickets, guided tours, transportation services, rail passes, local activities, outdoor adventures, cultural experiences, and much more, all from a single platform.
+                    Rather than focusing solely on <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">flights or hotel reservations</Link>, Klook specializes in the experiences that make a trip memorable. Travelers can book <Link href="/stores/stubhub-discount-code" className="text-[#056bfa] hover:underline">attraction tickets</Link>, guided tours, transportation services, rail passes, local activities, outdoor adventures, cultural experiences, and much more, all from a single platform.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -1117,7 +1117,7 @@ export default function KlookCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Make Every Trip More Rewarding</h3>
-            <p>Whether you're exploring a new city, visiting world-famous attractions, planning a family vacation, or booking transportation for your next adventure, Klook makes travel planning simple and convenient.</p>
+            <p>Whether you're exploring a new city, visiting world-famous attractions, <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">planning a family vacation</Link>, or booking transportation for your next adventure, Klook makes travel planning simple and convenient.</p>
             <p>Before you complete your reservation, visit CouponsBit for the latest Klook discount code, Klook promo code, Klook voucher, and Klook coupon code. A few moments spent checking for available offers could help you save more on your next journey.</p>
           </div>
 

@@ -801,7 +801,7 @@ export default function LycaCouponsContent() {
               Unlike traditional wireless carriers that often require long-term commitments, Lyca Mobile allows customers to choose prepaid plans that fit their specific needs. This flexibility makes it an attractive choice for students, families, travelers, and anyone looking to control their monthly phone expenses.
             </p>
             <p>
-              In addition to voice services, Lyca Mobile offers mobile data plans, unlimited talk and text options, international calling benefits, and SIM card solutions that help users stay connected both locally and globally.
+              In addition to voice services, Lyca Mobile offers mobile data plans, unlimited talk and text options, international calling benefits, and <Link href="/stores/airalo-discount-code" className="text-[#056bfa] hover:underline">SIM card solutions</Link> that help users stay connected both locally and globally.
             </p>
             <p>
               At Couponsbit, we help customers save more by providing access to the latest Lyca Mobile coupon codes, promo codes, and prepaid wireless deals.

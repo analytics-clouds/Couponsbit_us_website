@@ -422,10 +422,10 @@ export default function KohlsCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Shopping for clothes, shoes, beauty products, home essentials, or gifts often means comparing multiple offers before you check out. At Kohl's, there are several ways to look for a better deal, from promotional discounts and sale events to Kohl's Cash and Rewards. That makes checking for a Kohl's promo code before completing your order a useful step.
+            Shopping for clothes, shoes, beauty products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home essentials</Link>, or gifts often means comparing multiple offers before you check out. At Kohl's, there are several ways to look for a better deal, from promotional discounts and sale events to Kohl's Cash and Rewards. That makes checking for a Kohl's promo code before completing your order a useful step.
           </p>
           <p>
-            Kohl's brings together fashion, footwear, accessories, beauty, home products, toys, pet essentials, and more under one retail destination. Whether you're refreshing your wardrobe, preparing for a new season, shopping for the family, or looking for holiday gifts, you can browse current Kohl's offers and then check CouponsBit for an available promotion before placing your order.
+            Kohl's brings together fashion, footwear, accessories, beauty, home products, toys, pet essentials, and more under one retail destination. Whether you're <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">refreshing your wardrobe</Link>, preparing for a new season, shopping for the family, or looking for holiday gifts, you can browse current Kohl's offers and then check CouponsBit for an available promotion before placing your order.
           </p>
 
           <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">

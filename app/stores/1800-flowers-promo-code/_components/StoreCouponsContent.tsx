@@ -520,8 +520,8 @@ export default function FlowersCouponsContent() {
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">More Than Flowers: Plants, Food & Gifts</h3>
       <p>If you're not sure flowers are the right choice, 1-800-Flowers gives you plenty of alternatives.</p>
-      <p>Its plant selection includes flowering plants, houseplants, bonsai trees, succulents and cacti, orchids, and office-friendly plants for recipients who want gifts that last.</p>
-      <p>The gifting selection extends into food and treats—including chocolate-covered strawberries, gourmet gifts, fruit arrangements, cakes, gift baskets, and locally sourced artisan-designed items.</p>
+      <p>Its plant selection includes flowering plants, <Link href="/stores/home-depot-discount-code" className="text-[#056bfa] hover:underline">houseplants</Link>, bonsai trees, succulents and cacti, orchids, and office-friendly plants for recipients who want gifts that last.</p>
+      <p>The gifting selection extends into food and treats—including chocolate-covered strawberries, gourmet gifts, fruit arrangements, cakes, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">gift baskets</Link>, and locally sourced artisan-designed items.</p>
     </div>
 
     <div className="space-y-4">

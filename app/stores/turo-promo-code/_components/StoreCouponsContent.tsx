@@ -263,7 +263,7 @@ export default function TuroContent() {
   </h3>
   <div className="space-y-6 text-gray-500 font-medium text-sm leading-relaxed">
     <p>
-      Turo is a peer-to-peer car-sharing marketplace where people can rent vehicles directly from local hosts. Unlike a conventional rental company that owns and manages its own fleet, Turo provides the platform through which hosts list their vehicles and guests search, book, and manage their trips.
+      Turo is a peer-to-peer car-sharing marketplace where people can rent vehicles directly from local hosts. Unlike a <Link href="/stores/avis-discount-code" className="text-[#056bfa] hover:underline">conventional rental company</Link> that owns and manages its own fleet, Turo provides the platform through which hosts list their vehicles and guests search, book, and manage their trips.
     </p>
     <p>
       Turo says its marketplace includes more than 1,600 unique makes and models, with vehicles available across thousands of pickup locations. Guests can browse listings, read reviews, select a specific vehicle, choose pickup or delivery options where available, and communicate with their host through the platform.
@@ -585,7 +585,7 @@ export default function TuroContent() {
           Turo for Road Trips
         </h3>
         <p>
-          A road trip is one of the situations where choosing your exact rental vehicle can make a noticeable difference.
+          A <Link href="/stores/carcovers-discount-code" className="text-[#056bfa] hover:underline">road trip</Link> is one of the situations where choosing your exact rental vehicle can make a noticeable difference.
         </p>
         <p>
           Instead of selecting a generic vehicle category, you can browse specific Turo listings and compare the cars available for your dates.

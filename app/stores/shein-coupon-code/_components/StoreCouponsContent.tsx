@@ -452,7 +452,7 @@ export default function SheinCouponsContent() {
               SHEIN Deals & Fashion Sale
             </h3>
             <p>
-              SHEIN is known for frequently updating its product selection and promotional offers. The U.S. site features categories ranging from everyday clothing and vacation styles to party wear, streetwear, workwear, maternity fashion, and sportswear.
+              SHEIN is known for frequently updating its product selection and promotional offers. The U.S. site features categories ranging from everyday clothing and vacation styles to party wear, <Link href="/stores/fashion-nova-discount-code" className="text-[#056bfa] hover:underline">streetwear</Link>, workwear, maternity fashion, and sportswear.
             </p>
 
             <h4 className="text-lg font-black text-black mt-4">SHEIN Women's Clothing Deals</h4>
@@ -460,7 +460,7 @@ export default function SheinCouponsContent() {
               Women's fashion is one of the largest sections of the SHEIN marketplace. Shoppers can browse dresses, tops, bottoms, denim, jumpsuits, knitwear, coats, jackets, <Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">activewear</Link>, beachwear, underwear, <Link href="/stores/bamboocool-discount-code" className="text-[#056bfa] hover:underline">sleepwear</Link>, and more.
             </p>
             <p>
-              Whether you're searching for casual basics, work outfits, vacation clothing, or occasion wear, browsing the sale section alongside a SHEIN promo code can help you find additional savings opportunities.
+              Whether you're searching for <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual basics</Link>, work outfits, <Link href="/stores/zara-discount-code" className="text-[#056bfa] hover:underline">vacation clothing</Link>, or occasion wear, browsing the sale section alongside a SHEIN promo code can help you find additional savings opportunities.
             </p>
 
             <h4 className="text-lg font-black text-black mt-4">SHEIN Men's Clothing Deals</h4>

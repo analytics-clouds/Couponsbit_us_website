@@ -271,7 +271,7 @@ export default function EcoFlowContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    EcoFlow's range is built for different use cases. Its portable power stations can provide backup electricity during outages or power electronic devices while travelling and camping. The brand also offers solar panels and other accessories that can work alongside its power stations, giving customers more ways to generate, store, and use energy.
+                    EcoFlow's range is built for different use cases. Its portable power stations can provide backup electricity during outages or power <Link href="/stores/geekbuying-discount-code" className="text-[#056bfa] hover:underline">electronic devices</Link> while travelling and camping. The brand also offers solar panels and other accessories that can work alongside its power stations, giving customers more ways to generate, store, and use energy.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

@@ -706,7 +706,7 @@ export default function AiraloCouponsContent() {
                     Airalo offers local, regional, and global eSIM plans to suit different travel needs. Whether you're visiting one country or traveling across multiple destinations, the platform provides flexible data plans that allow you to stay connected for navigation, messaging, video calls, and online browsing.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Today, Airalo serves millions of travelers worldwide and supports a wide variety of eSIM-compatible smartphones, tablets, and other connected devices. 
+                    Today, Airalo serves millions of travelers worldwide and supports a wide variety of eSIM-compatible <Link href="/stores/oppo-discount-code" className="text-[#056bfa] hover:underline">smartphones</Link>, tablets, and other connected devices. 
                   </p>
                   <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -915,7 +915,7 @@ export default function AiraloCouponsContent() {
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Airalo?</h3>
             <p><strong>Coverage in 200+ Destinations:</strong> Airalo offers eSIM plans for more than 200 countries and regions, making it one of the largest global eSIM providers. </p>
             <p><strong>No Physical SIM Required:</strong> Simply purchase, install, and activate your eSIM digitally without removing your existing SIM card.</p>
-            <p><strong>Affordable Alternative to Roaming:</strong> Avoid expensive international roaming charges by using local or regional mobile data plans while traveling.</p>
+            <p><strong>Affordable Alternative to Roaming:</strong> Avoid expensive international roaming charges by using local or regional <Link href="/stores/lyca-mobile-discount-code" className="text-[#056bfa] hover:underline">mobile data plans</Link> while traveling.</p>
             <p><strong>Instant Digital Delivery:</strong> Your eSIM is delivered digitally, allowing you to install and activate it before or after arriving at your destination.</p>
             <p><strong>Easy-to-Use Mobile App:</strong> Manage your eSIMs, monitor data usage, purchase new plans, and top up existing plans through the Airalo app.</p>
             <p><strong>Flexible Travel Solutions:</strong> Whether you're visiting one country or several destinations, Airalo offers local, regional, and global connectivity options to suit different travel styles.</p>

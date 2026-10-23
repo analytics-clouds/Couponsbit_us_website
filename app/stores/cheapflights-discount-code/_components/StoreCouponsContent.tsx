@@ -1091,7 +1091,7 @@ export default function CheapflightsCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Your Next Trip with CheapFlights Coupon Codes</h3>
           <p>
-            Finding affordable airfare doesn't have to be complicated. Whether you're planning a family vacation, a business trip, or a last-minute getaway, CheapFlights helps travelers book flights, hotels, rental cars, and vacation packages at competitive prices. Before you complete your booking, visit Couponsbit to discover the latest <strong>CheapFlights coupon codes, CheapFlights promo codes, and exclusive travel deals</strong> that can help you save more on every journey.
+            Finding affordable airfare doesn't have to be complicated. Whether you're planning a family vacation, a business trip, or a last-minute getaway, CheapFlights helps travelers book flights, hotels, rental cars, and <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">vacation packages</Link> at competitive prices. Before you complete your booking, visit Couponsbit to discover the latest <strong>CheapFlights coupon codes, CheapFlights promo codes, and exclusive travel deals</strong> that can help you save more on every journey.
           </p>
           <p>
             Serving millions of travelers worldwide, CheapFlights combines competitive pricing with dedicated customer support, making travel planning easier and more affordable.
@@ -1103,7 +1103,7 @@ export default function CheapflightsCouponsContent() {
             <p><strong>Complete Travel Booking Platform:</strong> Instead of booking flights and hotels separately, travelers can organize multiple parts of their trip in one place.</p>
             <p><strong>Customer Support:</strong> The company offers customer assistance to help with bookings, travel questions, and itinerary support.</p>
             <p><strong>Flexible Travel Options:</strong> Whether you're planning months ahead or booking close to departure, CheapFlights offers options for different travel needs.</p>
-            <p><strong>Worldwide Destinations:</strong> Travelers can search routes to destinations across the globe, making the platform suitable for both domestic and international travel.</p>
+            <p><strong>Worldwide Destinations:</strong> Travelers can search routes to destinations across the globe, making the platform suitable for both domestic and <Link href="/stores/oman-air-discount-code" className="text-[#056bfa] hover:underline">international travel</Link>.</p>
           </div>
 
           {/* How to Use Steps */}

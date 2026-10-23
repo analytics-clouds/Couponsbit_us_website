@@ -502,7 +502,7 @@ export default function Helium10CouponsContent() {
 
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Listing Optimization & Advertising Tools</h3>
-      <p>Convert views into sales with AI-assisted listing tools that generate optimized titles, bullet points, and A+ content efficiently.</p>
+      <p>Convert views into sales with <Link href="/stores/sintra-discount-code" className="text-[#056bfa] hover:underline">AI-assisted</Link> listing tools that generate optimized titles, bullet points, and A+ content efficiently.</p>
       <p>Helium 10's advertising suite offers AI-powered and rules-based automation for bidding and dayparting, allowing sellers to manage campaign performance without continuous manual adjustments.</p>
     </div>
 

@@ -940,7 +940,7 @@ export default function ZenHotelsCouponsContent() {
             A memorable trip starts with finding the right place to stay, but getting a great deal on your accommodation can make the journey even better. With the latest <strong>ZenHotels coupon codes</strong>, promo offers, and <Link href="/stores/agoda-discount-code">hotel booking</Link> discounts available on CouponsBit, travelers can reduce their travel expenses while enjoying comfortable stays around the world.
           </p>
           <p>
-            Whether you're organizing a quick weekend escape, a family holiday, a work-related trip, or an overseas adventure, ZenHotels offers a wide selection of accommodation choices at competitive rates. Before confirming your reservation, explore CouponsBit to discover available savings opportunities that can help stretch your travel budget further.
+            Whether you're organizing a quick <Link href="/stores/vegas-discount-code" className="text-[#056bfa] hover:underline">weekend escape</Link>, a family holiday, a work-related trip, or an overseas adventure, ZenHotels offers a wide selection of accommodation choices at competitive rates. Before confirming your reservation, explore CouponsBit to discover available savings opportunities that can help stretch your travel budget further.
           </p>
 
           <div className="space-y-4">
@@ -949,7 +949,7 @@ export default function ZenHotelsCouponsContent() {
               ZenHotels is an international hotel reservation platform that allows travelers to search, compare, and book accommodations across countless destinations worldwide. The platform brings together a vast range of lodging options, making it easier for users to find stays that fit their preferences and budget.
             </p>
             <p>
-              From luxury resorts and city hotels to apartments, hostels, and vacation rentals, ZenHotels serves both leisure and business travelers looking for convenient booking solutions. Its user-friendly interface enables travelers to compare prices, review amenities, and manage reservations through desktop and mobile devices.
+              From <Link href="/stores/radisson-discount-code" className="text-[#056bfa] hover:underline">luxury resorts</Link> and city hotels to apartments, hostels, and vacation rentals, ZenHotels serves both leisure and business travelers looking for convenient booking solutions. Its user-friendly interface enables travelers to compare prices, review amenities, and manage reservations through desktop and mobile devices.
             </p>
             <p>
               With access to millions of accommodation listings spread across hundreds of countries and regions, ZenHotels helps travelers find suitable lodging no matter where their journey takes them.

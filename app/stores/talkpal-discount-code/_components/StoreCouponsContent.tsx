@@ -579,7 +579,7 @@ export default function TalkpalCouponsContent() {
             Learning a new language has never been more accessible thanks to AI-powered educational tools. If you're looking to improve your speaking, listening, reading, or writing skills without spending a fortune, checking the latest <strong>Talkpal AI coupon codes</strong> and promo offers on CouponsBit can help you save on your subscription.
           </p>
           <p>
-            Whether you're preparing for international travel, advancing your career, studying abroad, or simply exploring a new language for personal growth, Talkpal AI provides an interactive learning experience designed to fit modern lifestyles. Before subscribing, browse CouponsBit for the latest discounts and special offers to maximize your savings.
+            Whether you're preparing for international travel, <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">advancing your career</Link>, studying abroad, or simply exploring a new language for personal growth, Talkpal AI provides an interactive learning experience designed to fit modern lifestyles. Before subscribing, browse CouponsBit for the latest discounts and special offers to maximize your savings.
           </p>
 
           <div className="space-y-4">

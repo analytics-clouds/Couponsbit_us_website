@@ -534,7 +534,7 @@ export default function ATTCouponsContent() {
 
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Connected Devices, Accessories & Family Plans</h3>
-      <p>Depending on current availability, AT&T also sells connected devices such as tablets, smartwatches, mobile hotspots, and essential accessories including cases, chargers, cables, screen protection, and headphones.</p>
+      <p>Depending on current availability, AT&T also sells connected devices such as tablets, smartwatches, <Link href="/stores/jetpac-discount-code" className="text-[#056bfa] hover:underline">mobile hotspots</Link>, and essential accessories including cases, chargers, cables, screen protection, and headphones.</p>
       <p>Families often have very different connectivity requirements under one roof. When evaluating family options, calculate the total cost for all required lines rather than comparing only the price of one line, while factoring in device financing, trade-ins, taxes and fees, and promotional credits.</p>
     </div>
 

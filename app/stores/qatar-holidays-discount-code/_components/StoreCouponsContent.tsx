@@ -949,7 +949,7 @@ export default function QatarHolidaysCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Your Dream Vacation with Qatar Airways Holidays Promo Codes</h3>
           <p>
-            Planning a relaxing beach escape, a luxury city break, or an unforgettable family vacation? Qatar Airways Holidays makes it easy to book complete travel packages that combine flights, hotels, and curated experiences in one convenient place. Before confirming your reservation, visit Couponsbit to discover the latest <strong>Qatar Airways Holidays promo codes, Qatar Airways Holidays coupon codes, and exclusive vacation deals</strong> that can help you save on your next getaway.
+            Planning a relaxing beach escape, a luxury <Link href="/stores/klook-discount-code" className="text-[#056bfa] hover:underline">city break</Link>, or an unforgettable family vacation? Qatar Airways Holidays makes it easy to book complete travel packages that combine flights, hotels, and curated experiences in one convenient place. Before confirming your reservation, visit Couponsbit to discover the latest <strong>Qatar Airways Holidays promo codes, Qatar Airways Holidays coupon codes, and exclusive vacation deals</strong> that can help you save on your next getaway.
           </p>
           <p>
             Whether you're traveling for leisure, celebrating a special occasion, or exploring a new destination, Qatar Airways Holidays offers thoughtfully designed vacation packages backed by the award-winning service of Qatar Airways.
@@ -960,7 +960,7 @@ export default function QatarHolidaysCouponsContent() {
             <p><strong>Complete Vacation Planning:</strong> Book flights, hotels, and selected travel services together through one trusted platform.</p>
             <p><strong>Award-Winning Airline Experience:</strong> Holiday packages are built around Qatar Airways' extensive global route network and renowned onboard service.</p>
             <p><strong>Worldwide Destinations:</strong> Choose from vacation packages to destinations across Europe, Asia, the Middle East, Africa, Australia, and the Americas.</p>
-            <p><strong>Carefully Selected Hotels:</strong> Qatar Airways Holidays partners with a wide range of hotels and resorts to accommodate different travel styles and budgets.</p>
+            <p><strong>Carefully Selected Hotels:</strong> Qatar Airways Holidays partners with a wide range of <Link href="/stores/agoda-discount-code" className="text-[#056bfa] hover:underline">hotels and resorts</Link> to accommodate different travel styles and budgets.</p>
             <p><strong>Exclusive Holiday Offers:</strong> Travelers can often access seasonal promotions, limited-time vacation packages, and special travel offers throughout the year.</p>
             <p><strong>Privilege Club Benefits:</strong> Eligible travelers may earn or redeem Avios on qualifying bookings, depending on the current Privilege Club program rules.</p>
           </div>
@@ -1010,7 +1010,7 @@ export default function QatarHolidaysCouponsContent() {
             <p><strong>Updated Offers:</strong> We regularly update Qatar Airways Holidays coupon codes and promotional offers.</p>
             <p><strong>Verified Discounts:</strong> Browse verified coupon codes, exclusive promotions, and limited-time travel deals in one convenient place.</p>
             <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>Global Travel Savings:</strong> Along with Qatar Airways Holidays, Couponsbit features deals from hundreds of trusted travel brands, airlines, hotel chains, and online booking platforms worldwide.</p>
+            <p><strong>Global Travel Savings:</strong> Along with Qatar Airways Holidays, Couponsbit features deals from hundreds of trusted travel brands, airlines, hotel chains, and <Link href="/stores/expedia-discount-code" className="text-[#056bfa] hover:underline">online booking platforms</Link> worldwide.</p>
           </div>
 
           <div className="space-y-4">

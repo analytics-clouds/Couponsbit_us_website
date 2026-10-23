@@ -1067,7 +1067,7 @@ export default function UnipinCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">About UniPin</h3>
             <p>
-              UniPin is a leading digital entertainment payment platform that allows gamers to purchase in-game credits, virtual currencies, gift cards, and digital content quickly and securely. Founded to simplify gaming transactions, UniPin has grown into one of the most recognized top-up platforms for players across multiple countries.
+              UniPin is a leading digital entertainment payment platform that allows gamers to purchase in-game credits, virtual currencies, <Link href="/stores/kinguin-discount-code" className="text-[#056bfa] hover:underline">gift cards</Link>, and digital content quickly and securely. Founded to simplify gaming transactions, UniPin has grown into one of the most recognized top-up platforms for players across multiple countries.
             </p>
             <p>
               The platform partners with popular game publishers and digital entertainment providers, making it easier for users to access premium content, virtual items, and gaming currencies through a convenient online marketplace.

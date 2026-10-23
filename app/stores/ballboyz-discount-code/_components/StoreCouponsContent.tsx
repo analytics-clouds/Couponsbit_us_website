@@ -945,7 +945,7 @@ export default function BallboyzCouponsContent() {
             Athletes face unique skincare challenges. Sweat, dirt, sports equipment, and intense training sessions can often lead to breakouts, irritation, and body acne. That's where Ballboyz comes in. Before purchasing your next skincare bundle, check the latest <strong>Ballboyz coupon codes</strong>, promo offers, and athlete skincare discounts on CouponsBit to unlock extra savings. Ballboyz focuses on skincare products specifically formulated for athletes dealing with sports-related skin concerns.
           </p>
           <p>
-            Whether you're a baseball player, wrestler, football player, basketball athlete, runner, or fitness enthusiast, Ballboyz offers products designed to help keep your skin feeling fresh, clean, and healthy after workouts and competitions.
+            Whether you're a baseball player, wrestler, football player, basketball athlete, <Link href="/stores/superrun-discount-code" className="text-[#056bfa] hover:underline">runner</Link>, or fitness enthusiast, Ballboyz offers products designed to help keep your skin feeling fresh, clean, and healthy after workouts and competitions.
           </p>
 
           <div className="space-y-4">
@@ -1002,7 +1002,7 @@ export default function BallboyzCouponsContent() {
             <p><strong>Updated Discounts:</strong> We regularly refresh offers to help shoppers discover current savings opportunities.</p>
             <p><strong>Easy-to-Find Coupon Codes:</strong> Find promo codes, discounts, and special offers in one convenient place.</p>
             <p><strong>Completely Free to Use:</strong> CouponsBit helps shoppers save money without charging membership fees.</p>
-            <p><strong>Deals Across Multiple Categories:</strong> Beyond skincare, CouponsBit features savings from fashion, wellness, travel, software, fitness, and lifestyle brands.</p>
+            <p><strong>Deals Across Multiple Categories:</strong> Beyond skincare, CouponsBit features savings from fashion, wellness, travel, software, <Link href="/stores/merachfit-discount-code" className="text-[#056bfa] hover:underline">fitness</Link>, and lifestyle brands.</p>
           </div>
 
           <div className="space-y-4">

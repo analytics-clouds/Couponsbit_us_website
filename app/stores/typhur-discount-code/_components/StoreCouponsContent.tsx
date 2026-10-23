@@ -263,7 +263,7 @@ export default function TyphurCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Its U.S. collection includes products such as the Typhur Dome 2, Sous Vide Station, Sync series wireless cooking thermometers, InstaProbe instant-read thermometers, and other kitchen accessories and tools.
+                    Its U.S. collection includes products such as the Typhur Dome 2, Sous Vide Station, Sync series wireless cooking thermometers, InstaProbe instant-read thermometers, and other <Link href="/stores/wayfair-discount-code" className="text-[#056bfa] hover:underline">kitchen accessories</Link> and tools.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -475,7 +475,7 @@ export default function TyphurCouponsContent() {
                 Shop Smarter with Typhur Deals
               </h3>
               <p>
-                From precision thermometers and wireless temperature monitoring to advanced countertop cooking appliances, Typhur is bringing technology deeper into the everyday kitchen. Its broader robotics vision is focused on making cooking more intelligent while keeping the experience practical for home cooks.
+                From precision thermometers and wireless temperature monitoring to advanced <Link href="/stores/home-depot-discount-code" className="text-[#056bfa] hover:underline">countertop cooking appliances</Link>, Typhur is bringing technology deeper into the everyday kitchen. Its broader robotics vision is focused on making cooking more intelligent while keeping the experience practical for home cooks.
               </p>
               <p>
                 Before you place your next Typhur order, check CouponsBit for the latest Typhur discount code, promo code, coupons, and deals. A quick comparison between the available offer and Typhur's current promotion can help you choose the deal that best fits your purchase.

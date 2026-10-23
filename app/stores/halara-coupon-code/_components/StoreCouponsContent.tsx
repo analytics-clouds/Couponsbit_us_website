@@ -293,7 +293,7 @@ export default function HalaraCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Halara has become particularly known for products such as exercise dresses, leggings, skorts, tennis skirts, and other performance-inspired clothing. Its product range has expanded into areas including golf apparel, joggers, tops, outerwear, swimwear, casual dresses, and loungewear.
+                    Halara has become particularly known for products such as exercise dresses, leggings, skorts, tennis skirts, and other performance-inspired clothing. Its product range has expanded into areas including golf apparel, joggers, tops, outerwear, swimwear, casual dresses, and <Link href="/stores/nuage-discount-code" className="text-[#056bfa] hover:underline">loungewear</Link>.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -543,7 +543,7 @@ export default function HalaraCouponsContent() {
           Halara Swimwear and Vacation Styles
         </h3>
         <p>
-          Planning a beach trip or warm-weather getaway? Halara also offers swimwear and vacation-friendly clothing.
+          Planning a beach trip or warm-weather getaway? Halara also offers <Link href="/stores/cariloha-discount-code" className="text-[#056bfa] hover:underline">swimwear</Link> and vacation-friendly clothing.
         </p>
         <p>
           Look for pieces that can be mixed and matched with casual dresses, skirts, shorts, or lightweight layers to create outfits that work beyond the beach.

@@ -269,7 +269,7 @@ export default function BirkenstockCouponsContent() {
                   </p>
                   
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The brand offers footwear for women, men and children, including sandals, clogs, shoes, boots and slippers. It also sells accessories and foot-care products, making it a destination for shoppers looking beyond seasonal footwear trends.
+                    The brand offers footwear for women, men and children, including sandals, clogs, shoes, boots and slippers. It also sells accessories and foot-care products, making it a destination for shoppers looking beyond seasonal <Link href="/stores/hoka-coupon-code" className="text-[#056bfa] hover:underline">footwear trends</Link>.
 
                   </p>
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -311,7 +311,7 @@ export default function BirkenstockCouponsContent() {
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>
-        <span><strong>Boston clogs:</strong> A closed-toe silhouette that pairs well with casual clothing and transitional-season outfits.</span>
+        <span><strong>Boston clogs:</strong> A closed-toe silhouette that pairs well with <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">casual clothing</Link> and transitional-season outfits.</span>
       </p>
       <p className="flex items-start gap-2">
         <span className="text-black font-black">•</span>

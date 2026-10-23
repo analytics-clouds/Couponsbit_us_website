@@ -721,7 +721,7 @@ export default function KrispCouponsContent() {
             Whether you're working remotely, leading virtual meetings, or collaborating with clients across the globe, clear communication is essential. Krisp AI helps eliminate distractions by combining AI-powered noise cancellation with meeting transcription, summaries, recordings, and productivity tools. Before subscribing, check Couponsbit for the latest <strong>Krisp AI promo codes, discount offers, and exclusive software deals</strong> to save on your plan.
           </p>
           <p>
-            From freelancers and remote professionals to sales teams and enterprises, Krisp AI helps users stay focused on conversations while AI handles note-taking and meeting organization.
+            From <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">freelancers</Link> and remote professionals to sales teams and enterprises, Krisp AI helps users stay focused on conversations while AI handles note-taking and meeting organization.
           </p>
 
           <div className="space-y-4">

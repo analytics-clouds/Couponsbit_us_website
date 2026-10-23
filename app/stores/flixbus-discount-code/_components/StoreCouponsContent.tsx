@@ -679,7 +679,7 @@ export default function FlixBusCouponsContent() {
             At CouponsBit, we help smart travellers discover verified savings before they book. Instead of paying full fare, you can browse the latest FlixBus voucher code, promotional offers, and exclusive travel deals in one convenient place. A few seconds spent applying a coupon at checkout could help lower your travel costs, allowing you to spend more on experiences rather than transportation.
           </p>
           <p>
-            FlixBus has become a preferred choice for travellers looking for reliable coach services without the high costs often associated with air travel or driving long distances. Its modern fleet, comfortable seating, digital booking system, and extensive network make it suitable for solo travellers, families, students, backpackers, and business professionals alike.
+            FlixBus has become a preferred choice for travellers looking for reliable coach services without the high costs often associated with <Link href="/stores/cheapflights-discount-code" className="text-[#056bfa] hover:underline">air travel</Link> or driving long distances. Its modern fleet, comfortable seating, digital booking system, and extensive network make it suitable for solo travellers, families, students, backpackers, and business professionals alike.
           </p>
           <p>
             Whether you're booking your first journey or you're already a frequent passenger, CouponsBit makes it easier to save with the latest FlixBus coupon code and promotional offers designed for Australian travellers.
@@ -691,7 +691,7 @@ export default function FlixBusCouponsContent() {
               Australia is filled with breathtaking coastlines, vibrant cities, charming regional towns, and unforgettable road trip destinations. Travelling between them should be simple, affordable, and comfortable—exactly what FlixBus aims to provide.
             </p>
             <p>
-              Instead of worrying about expensive fuel, airport queues, or costly domestic flights, travellers can relax onboard modern coaches equipped with practical amenities that make long-distance travel enjoyable.
+              Instead of worrying about expensive fuel, airport queues, or costly <Link href="/stores/kiwi-discount-code" className="text-[#056bfa] hover:underline">domestic flights</Link>, travellers can relax onboard modern coaches equipped with practical amenities that make long-distance travel enjoyable.
             </p>
             <p>Some of the reasons people continue choosing FlixBus include:</p>
             <ul className="list-disc pl-6 space-y-1 text-gray-600">

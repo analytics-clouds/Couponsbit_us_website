@@ -1185,7 +1185,7 @@ export default function KinguinCouponsContent() {
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056BFA] mb-4">Save More on Games, Software & Gift Cards with Kinguin Coupon Codes</h3>
           <p>
-            Whether you're expanding your game library, purchasing software licenses, or looking for discounted gift cards, Kinguin offers a marketplace where you can discover digital products at competitive prices. Before completing your purchase, visit Couponsbit to explore the latest <strong>Kinguin coupon codes, Kinguin promo codes, and exclusive gaming deals</strong> that help you save even more.
+            Whether you're expanding your game library, purchasing <Link href="/stores/envato-elements-discount-code" className="text-[#056bfa] hover:underline">software licenses</Link>, or looking for discounted gift cards, Kinguin offers a marketplace where you can discover digital products at competitive prices. Before completing your purchase, visit Couponsbit to explore the latest <strong>Kinguin coupon codes, Kinguin promo codes, and exclusive gaming deals</strong> that help you save even more.
           </p>
           <p>
             Trusted by millions of gamers and digital shoppers worldwide, Kinguin connects buyers with a wide selection of <Link href="/stores/driffle-discount-code">game keys</Link>, software licenses, gift cards, and gaming-related digital products. With Couponsbit, finding verified savings on your next purchase is quick and easy.
@@ -1235,7 +1235,7 @@ export default function KinguinCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056BFA] mb-4">Who Can Benefit from Kinguin?</h3>
             <p>Kinguin serves a wide range of digital shoppers, including: PC gamers, Console gamers, Casual players, Competitive gamers, Software users, Students, Professionals, Content creators, Tech enthusiasts, Gift card shoppers.</p>
-            <p>Whether you're purchasing your next game, upgrading your productivity software, or buying a digital gift card, Kinguin offers a convenient marketplace for digital purchases.</p>
+            <p>Whether you're purchasing your next game, upgrading your productivity software, or buying a <Link href="/stores/unipin-discount-code" className="text-[#056bfa] hover:underline">digital gift card</Link>, Kinguin offers a convenient marketplace for digital purchases.</p>
           </div>
 
           <div className="space-y-4">

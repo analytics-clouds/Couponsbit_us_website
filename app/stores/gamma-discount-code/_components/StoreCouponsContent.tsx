@@ -531,10 +531,10 @@ export default function GammaContent() {
           Gamma is designed to simplify the process of turning ideas into polished visual content. Users can create presentations, documents, and websites without having to build everything from scratch.
         </p>
         <p>
-          For businesses, Gamma can be useful for creating pitch decks, sales presentations, project proposals, internal reports, and marketing material. Startup founders can use it to turn business ideas into presentations, while sales teams can create customer-facing decks more efficiently.
+          For businesses, Gamma can be useful for creating pitch decks, sales presentations, project proposals, internal reports, and <Link href="/stores/envato-elements-discount-code" className="text-[#056bfa] hover:underline">marketing material</Link>. Startup founders can use it to turn business ideas into presentations, while sales teams can create customer-facing decks more efficiently.
         </p>
         <p>
-          Students and educators can also use AI-assisted creation to structure presentations and learning material. Instead of spending significant time deciding how to organize every slide or section, users can start with an AI-generated structure and customize it.
+          Students and educators can also use AI-assisted creation to structure presentations and <Link href="/stores/talkpal-discount-code" className="text-[#056bfa] hover:underline">learning material</Link>. Instead of spending significant time deciding how to organize every slide or section, users can start with an AI-generated structure and customize it.
         </p>
         <p>
           Gamma's website creation capabilities can also help users turn information or concepts into simple web experiences without beginning with traditional web-design workflows.

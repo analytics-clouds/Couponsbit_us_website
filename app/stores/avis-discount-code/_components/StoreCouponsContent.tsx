@@ -713,7 +713,7 @@ export default function AvisCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Choose Avis?</h3>
             <p><strong>Extensive Global Network:</strong> Avis operates thousands of rental locations at airports, city centers, and popular travel destinations worldwide.</p>
-            <p><strong>Wide Vehicle Selection:</strong> From compact cars to premium SUVs and luxury vehicles, Avis offers rental options for nearly every travel requirement.</p>
+            <p><strong>Wide Vehicle Selection:</strong> From compact cars to <Link href="/stores/carcovers-discount-code" className="text-[#056bfa] hover:underline">premium SUVs and luxury vehicles</Link>, Avis offers rental options for nearly every travel requirement.</p>
             <p><strong>Convenient Online Reservations:</strong> Customers can easily compare vehicles, manage bookings, and make reservations through Avis's online platform.</p>
             <p><strong>Flexible Rental Options:</strong> Whether you need a vehicle for a single day, a week, or an extended period, Avis offers rental plans to match different schedules.</p>
             <p><strong>Well-Maintained Fleet:</strong> Avis regularly updates and maintains its fleet to provide customers with reliable and comfortable vehicles.</p>
@@ -788,7 +788,7 @@ export default function AvisCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Enjoy Every Journey While Saving More</h3>
             <p>
-              Whether you're renting a car for a business meeting, a family vacation, or your next road trip, Avis offers dependable vehicles and flexible rental options to suit your travel needs.
+              Whether you're renting a car for a business meeting, a family vacation, or your next <Link href="/stores/outfitr-discount-code" className="text-[#056bfa] hover:underline">road trip</Link>, Avis offers dependable vehicles and flexible rental options to suit your travel needs.
             </p>
             <p>
               Before completing your reservation, check CouponsBit for the latest Avis coupon codes, Avis promo codes, and exclusive car rental deals to enjoy more value on your next trip.

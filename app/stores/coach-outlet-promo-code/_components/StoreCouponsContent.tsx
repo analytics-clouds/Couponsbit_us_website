@@ -557,7 +557,7 @@ export default function CoachOutletCouponsContent() {
     <div className="space-y-4">
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Coach Outlet Shoes & Apparel</h3>
       <p>Coach Outlet offers footwear for different occasions and seasons, including sneakers, sandals, boots, loafers, heels, and flats. As with any footwear purchase, check sizing information and return policies before ordering.</p>
-      <p>Its assortment also includes women's and men's apparel such as jackets, sweaters, dresses, tops, shirts, denim, and trousers designed to complement the broader accessories collection.</p>
+      <p>Its assortment also includes women's and men's apparel such as jackets, sweaters, <Link href="/stores/hm-promo-code" className="text-[#056bfa] hover:underline">dresses</Link>, tops, shirts, denim, and trousers designed to complement the broader accessories collection.</p>
     </div>
 
     <div className="space-y-4">

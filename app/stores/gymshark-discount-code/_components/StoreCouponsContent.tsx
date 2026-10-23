@@ -269,11 +269,11 @@ export default function GymsharkCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Gymshark?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Gymshark is a fitness apparel and accessories brand founded in 2012. Built around training and gym culture, it creates performance-focused clothing for men and women, combining functional fabrics with modern fits. Its collections cover weight training, running, studio workouts and everyday athleisure. 
+                    Gymshark is a fitness apparel and accessories brand founded in 2012. Built around training and gym culture, it creates performance-focused clothing for men and women, combining functional fabrics with modern fits. Its collections cover weight training, <Link href="/stores/hoka-coupon-code" className="text-[#056bfa] hover:underline">running</Link>, studio workouts and everyday athleisure. 
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    From supportive leggings to training shorts and comfortable hoodies, Gymshark caters to people who want clothing that can keep up with their workouts while fitting into their everyday wardrobes.
+                    From supportive leggings to training shorts and comfortable hoodies, Gymshark caters to people who want clothing that can keep up with their workouts while fitting into their <Link href="/stores/lulus-promo-code" className="text-[#056bfa] hover:underline">everyday wardrobes</Link>.
 
                   </p>
                   

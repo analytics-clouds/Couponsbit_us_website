@@ -453,7 +453,7 @@ export default function YouFibreContent() {
                 Don't judge a broadband deal only by its promotional discount. Look at the complete package.
               </p>
               <p>
-                Consider the broadband speed, contract length, Wi-Fi equipment, installation requirements and whether you'll actually use optional services such as YouMesh or YouPhone. You should also check whether the connection is available at your address before spending time comparing plans.
+                Consider the broadband speed, contract length, <Link href="/stores/tplink-promo-code" className="text-[#056bfa] hover:underline">Wi-Fi equipment</Link>, installation requirements and whether you'll actually use optional services such as YouMesh or YouPhone. You should also check whether the connection is available at your address before spending time comparing plans.
               </p>
               <p>
                 It's also worth checking CouponsBit before major UK shopping periods and throughout the year, as broadband providers can introduce limited-time promotions and new customer offers.

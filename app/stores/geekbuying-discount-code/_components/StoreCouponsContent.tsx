@@ -988,7 +988,7 @@ export default function GeekbuyingCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Smarter and Save More with Geekbuying</h3>
             <p>
-              Whether you're investing in a high-performance mini PC, buying your first 3D printer, upgrading your smart home, or exploring electric mobility products, Geekbuying offers innovative technology at competitive prices.
+              Whether you're investing in a high-performance mini PC, buying your first 3D printer, upgrading your <Link href="/stores/tp-link-discount-code" className="text-[#056bfa] hover:underline">smart home</Link>, or exploring electric mobility products, Geekbuying offers innovative technology at competitive prices.
             </p>
             <p>
               Before you place your next order, visit CouponsBit to grab the latest Geekbuying discount code, Geekbuying voucher, Geekbuying promo code, and Geekbuying coupon code. It's an easy way to reduce your total cost while enjoying the latest gadgets and electronics.

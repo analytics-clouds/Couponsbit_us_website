@@ -815,10 +815,10 @@ export default function SungaitCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Sungait</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Sungait is an eyewear brand that focuses on delivering affordable, stylish, and functional glasses for everyday use. The brand is best known for its polarized sunglasses that help reduce glare and provide UV protection, making them suitable for driving, outdoor activities, sports, and casual wear.
+                    Sungait is an eyewear brand that focuses on delivering affordable, stylish, and functional glasses for everyday use. The brand is best known for its polarized sunglasses that help reduce glare and provide UV protection, making them suitable for driving, <Link href="/stores/wiskii-discount-code" className="text-[#056bfa] hover:underline">outdoor activities, sports</Link>, and casual wear.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    In addition to sunglasses, Sungait offers blue light glasses for digital device users, reading glasses, and a variety of accessories. By combining classic designs with modern materials, the brand provides comfortable eyewear that suits different face shapes, lifestyles, and personal preferences.
+                    In addition to sunglasses, Sungait offers blue light glasses for digital device users, <Link href="/stores/vooglam-discount-code" className="text-[#056bfa] hover:underline">reading glasses</Link>, and a variety of accessories. By combining classic designs with modern materials, the brand provides comfortable eyewear that suits different face shapes, lifestyles, and personal preferences.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Whether you're looking for fashion-forward frames or practical eye protection, Sungait offers options designed to balance style, durability, and value.

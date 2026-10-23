@@ -271,7 +271,7 @@ export default function PeacockCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Sports are another major part of Peacock. The service currently offers live coverage across sports such as NFL, NBA, MLB, WNBA, Premier League, NCAA football and basketball, golf, motorsports, and other major sporting events.
+                    Sports are another major part of Peacock. The service currently offers live coverage across sports such as NFL, NBA, MLB, WNBA, Premier League, NCAA football and basketball, golf, motorsports, and other <Link href="/stores/seatgeek-promo-code" className="text-[#056bfa] hover:underline">major sporting events</Link>.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
@@ -510,7 +510,7 @@ export default function PeacockCouponsContent() {
           Sports can be a major reason to subscribe to Peacock, particularly during busy seasons.
         </p>
         <p>
-          NFL fans can follow selected live games and football programming, while soccer viewers can watch Premier League coverage. The platform also carries NBA, MLB, WNBA, college sports, golf, motorsports, and other live events.
+          NFL fans can follow selected live games and football programming, while soccer viewers can watch Premier League coverage. The platform also carries NBA, MLB, WNBA, college sports, golf, motorsports, and other <Link href="/stores/stubhub-discount-code" className="text-[#056bfa] hover:underline">live events</Link>.
         </p>
         <p>
           During major sporting periods, it's worth checking CouponsBit for a current Peacock promo code before purchasing a subscription. Promotions may change around major events, seasons, or targeted campaigns, so checking shortly before signing up is the safest approach.

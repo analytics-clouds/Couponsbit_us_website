@@ -740,7 +740,7 @@ export default function InspiringVacationCouponsContent() {
                     From iconic European cities and breathtaking Asian landscapes to luxury river cruises and bucket-list destinations, Inspiring Vacations helps Australians explore the world with carefully planned itineraries and exceptional value.
                   </p>
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    What sets Inspiring Vacations apart is its focus on combining premium travel experiences with competitive pricing. Many holiday packages include accommodation, transportation, guided experiences, and selected meals, making travel planning easier and more convenient.
+                    What sets Inspiring Vacations apart is its focus on combining premium travel experiences with competitive pricing. Many holiday packages include <Link href="/stores/radisson-discount-code" className="text-[#056bfa] hover:underline">accommodation</Link>, transportation, guided experiences, and selected meals, making travel planning easier and more convenient.
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Whether you're travelling solo, as a couple, with family, or in a group, Inspiring Vacations offers a variety of options to suit different travel styles and budgets.

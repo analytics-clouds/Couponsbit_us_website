@@ -275,7 +275,7 @@ export default function VistaprintContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The platform started with a strong focus on printed business materials, but its range has expanded considerably. Today, customers can create everything from business cards and flyers to signs, banners, clothing, packaging, promotional merchandise, invitations, stationery, photo products, and other personalized items.
+                    The platform started with a strong focus on printed business materials, but its range has expanded considerably. Today, customers can create everything from business cards and flyers to signs, banners, clothing, packaging, promotional merchandise, invitations, stationery, <Link href="/stores/shutterfly-promo-code" className="text-[#056bfa] hover:underline">photo products</Link>, and other <Link href="/stores/etsy-coupon-code" className="text-[#056bfa] hover:underline">personalized items</Link>.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

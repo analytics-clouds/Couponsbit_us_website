@@ -774,7 +774,7 @@ export default function DreameCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Dreame</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Founded in 2017, Dreame Technology is a global smart home appliance brand specializing in intelligent cleaning solutions and personal care products. The company focuses on combining advanced engineering, AI-powered technologies, and modern design to create products that make household chores faster and more convenient.
+                    Founded in 2017, Dreame Technology is a global <Link href="/stores/reolink-discount-code" className="text-[#056bfa] hover:underline">smart home</Link> appliance brand specializing in intelligent cleaning solutions and <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">personal care products</Link>. The company focuses on combining advanced engineering, AI-powered technologies, and modern design to create products that make household chores faster and more convenient.
                   </p>
                     <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, Dreame products are available in numerous countries across North America, Europe, Asia, and other international markets. The brand has become well known for its robot vacuums, cordless vacuum cleaners, wet and dry vacuums, robotic lawn mowers, and personal care devices.

@@ -851,7 +851,7 @@ export default function KeralaAyurvedaCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Its portfolio includes classical Ayurvedic formulations, proprietary herbal products, personal care essentials, and nutritional supplements. In addition to wellness products, Kerala Ayurveda is also known for its Ayurvedic treatment centers, consultations, and educational initiatives that help people better understand holistic health.
+                    Its portfolio includes classical Ayurvedic formulations, proprietary herbal products, <Link href="/stores/the-ayurveda-experience-discount-code" className="text-[#056bfa] hover:underline">personal care essentials</Link>, and nutritional supplements. In addition to wellness products, Kerala Ayurveda is also known for its Ayurvedic treatment centers, consultations, and educational initiatives that help people better understand holistic health.
                   </p>
                 
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

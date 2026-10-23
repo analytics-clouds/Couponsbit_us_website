@@ -954,7 +954,7 @@ For busy professionals, families, students, and anyone who would rather skip the
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa]">Order More for Less with a DoorDash Promo Code</h3>
             <p>
-              Craving your favorite restaurant meal but don't want delivery costs to push up the bill? DoorDash makes it easy to order food, <Link href="/stores/kroger-discount-code">groceries</Link>, convenience items, and other everyday essentials from local businesses and have them delivered to your door. With thousands of restaurants and merchants available across the United States, you can use DoorDash to arrange a quick lunch, order dinner for the family, stock up on groceries, or grab last-minute essentials.
+              Craving your favorite restaurant meal but don't want delivery costs to push up the bill? DoorDash makes it easy to order food, <Link href="/stores/kroger-discount-code">groceries</Link>, convenience items, and other everyday essentials from local businesses and have them delivered to your door. With thousands of restaurants and merchants available across the United States, you can use DoorDash to arrange <Link href="/stores/subway-discount-code" className="text-[#056bfa] hover:underline">a quick lunch</Link>, order dinner for the family, stock up on groceries, or grab last-minute essentials.
             </p>
             <p>
               And before you place your next order, it's worth checking for a DoorDash promo code. Promotional offers can help reduce the cost of eligible orders, while DoorDash also runs restaurant-specific deals, membership benefits, and other savings opportunities throughout the year.
@@ -1067,7 +1067,7 @@ For busy professionals, families, students, and anyone who would rather skip the
           {/* Conclusion */}
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa]">Make Your Next DoorDash Order Cost Less</h3>
-            <p>DoorDash has made it easier to order restaurant meals, groceries, convenience items, and other products without making an extra trip. But convenience doesn't mean you have to overlook savings.</p>
+            <p>DoorDash has made it easier to order <Link href="/stores/burger-king-promo-code" className="text-[#056bfa] hover:underline">restaurant meals</Link>, groceries, convenience items, and other products without making an extra trip. But convenience doesn't mean you have to overlook savings.</p>
             <p>Before placing your next order, check CouponsBit for a DoorDash promo code, DoorDash coupon code, or DoorDash discount code that may apply to your purchase. Then compare available restaurant promotions, delivery offers, and membership benefits to find the option that gives you the best overall value.</p>
           </div>
 

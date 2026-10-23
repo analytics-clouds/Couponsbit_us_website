@@ -467,7 +467,7 @@ export default function SephoraCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Whether you're restocking your skincare routine or trying a new makeup brand, Sephora offers a wide selection of beauty products from established and emerging brands.
+            Whether you're restocking your <Link href="/stores/blue-cypress-discount-code" className="text-[#056bfa] hover:underline">skincare</Link> routine or trying a new makeup brand, Sephora offers a wide selection of beauty products from established and emerging brands.
           </p>
           <p>
             If you're planning your next beauty purchase, checking for a Sephora promo code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Sephora coupon codes, promo offers, and other ways to potentially save on their beauty routine.

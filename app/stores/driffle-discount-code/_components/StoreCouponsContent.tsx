@@ -946,7 +946,7 @@ export default function DriffleCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Looking for the latest <strong>Driffle coupon codes, promo codes, and gaming deals</strong>? You've come to the right place. At Couponsbit, we help gamers save on video games, gift cards, gaming subscriptions, in-game currency, software licenses, and digital products with verified Driffle discounts and exclusive offers.
+            Looking for the latest <strong>Driffle coupon codes, promo codes, and gaming deals</strong>? You've come to the right place. At Couponsbit, we help gamers save on video games, gift cards, <Link href="/stores/gamsgo-discount-code" className="text-[#056bfa] hover:underline">gaming subscriptions</Link>, in-game currency, software licenses, and digital products with verified Driffle discounts and exclusive offers.
           </p>
           <p>
             Whether you're a PC gamer, console enthusiast, casual player, or dedicated collector, Driffle offers access to a wide selection of digital gaming products at competitive prices. Before making your next purchase, check Couponsbit for the latest Driffle deals and savings opportunities.
@@ -959,7 +959,7 @@ export default function DriffleCouponsContent() {
               Driffle caters to players across multiple gaming platforms, making it easier to find products for PC, Xbox, PlayStation, Nintendo, and other popular gaming ecosystems. In addition to video games, the marketplace offers gift cards, software products, digital memberships, and gaming-related digital content.
             </p>
             <p>
-              One of Driffle's biggest advantages is the variety of products available in a single marketplace. Whether you're purchasing a newly released game, renewing a subscription service, adding funds to a gaming account, or buying digital content for your favorite title, Driffle provides a streamlined purchasing experience.
+              One of Driffle's biggest advantages is the variety of products available in a single marketplace. Whether you're purchasing a newly released game, renewing a subscription service, <Link href="/stores/unipin-discount-code" className="text-[#056bfa] hover:underline">adding funds to a gaming account</Link>, or buying digital content for your favorite title, Driffle provides a streamlined purchasing experience.
             </p>
             <p>
               At Couponsbit, we help gamers maximize their savings with the latest Driffle coupon codes, promo codes, and gaming deals.

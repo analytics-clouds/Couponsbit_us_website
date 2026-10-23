@@ -1063,7 +1063,7 @@ export default function CarCoversCouponsContent() {
             <p><strong>Check CouponsBit Before Every Purchase:</strong> CouponsBit regularly updates verified CarCovers.com discount codes, vouchers, promo codes, and special promotional offers.</p>
             <p><strong>Shop During Major Sale Events:</strong> Watch for discounts during Black Friday, Cyber Monday, Memorial Day, Labor Day, and other seasonal shopping events.</p>
             <p><strong>Choose the Right Cover:</strong> Selecting a cover that matches your local climate and storage environment helps maximize durability and long-term protection.</p>
-            <p><strong>Buy Multiple Accessories Together:</strong> Complete your vehicle care setup by purchasing seat covers, floor mats, windshield covers, or tire covers along with your car cover.</p>
+            <p><strong>Buy Multiple Accessories Together:</strong> Complete your vehicle care setup by purchasing seat covers, floor mats, windshield covers, or <Link href="/stores/discounttire-discount-code" className="text-[#056bfa] hover:underline">tire covers</Link> along with your car cover.</p>
             <p><strong>Join the Mailing List:</strong> Sign up for updates to receive information about new arrivals, limited-time promotions, and exclusive offers.</p>
           </div>
 

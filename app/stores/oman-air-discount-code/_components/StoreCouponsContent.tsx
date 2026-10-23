@@ -712,7 +712,7 @@ export default function OmanAirCouponsContent() {
             <p><strong>Extensive International Network:</strong> The airline connects travelers to numerous destinations across several continents through its global route network.</p>
             <p><strong>Modern Fleet:</strong> Oman Air operates modern aircraft designed to provide comfort, safety, and an enjoyable flying experience.</p>
             <p><strong>Premium Cabin Experience:</strong> Business Class travelers enjoy spacious seating, premium dining, airport lounge access on eligible itineraries, and enhanced onboard services.</p>
-            <p><strong>Oman Air Holidays:</strong> Travelers can simplify vacation planning by booking bundled holiday packages that include flights, accommodations, and selected travel experiences.</p>
+            <p><strong>Oman Air Holidays:</strong> Travelers can simplify vacation planning by booking bundled <Link href="/stores/cheapflights-discount-code" className="text-[#056bfa] hover:underline">holiday packages</Link> that include flights, accommodations, and selected travel experiences.</p>
             <p><strong>Convenient Digital Services:</strong> Manage bookings, check flight schedules, purchase baggage, select seats, and check in online through Oman Air's website and mobile services.</p>
           </div>
 
@@ -750,7 +750,7 @@ export default function OmanAirCouponsContent() {
             <p><strong>Explore Holiday Packages:</strong> Booking through Oman Air Holidays may provide additional value by combining flights with hotels and travel experiences.</p>
             <p><strong>Watch for Seasonal Promotions:</strong> Oman Air regularly features limited-time offers and promotional fares on selected routes.</p>
             <p><strong>Join the Loyalty Program:</strong> Frequent travelers can enroll in Oman Air's loyalty program to enjoy member benefits and earn rewards on eligible flights.</p>
-            <p><strong>Travel with Flexible Dates:</strong> Adjusting your travel dates may help you find more competitive airfare options.</p>
+            <p><strong>Travel with Flexible Dates:</strong> Adjusting your travel dates may help you find more <Link href="/stores/kiwi-discount-code" className="text-[#056bfa] hover:underline">competitive airfare options</Link>.</p>
           </div>
 
           {/* Who Can Benefit from Oman Air? */}

@@ -800,7 +800,7 @@ export default function SintraCouponsContent() {
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
-            Looking for the latest <strong>Sintra coupon codes, promo codes, and AI software deals</strong>? You've come to the right place. At Couponsbit, we help entrepreneurs, freelancers, marketers, creators, and small business owners save on Sintra subscriptions with verified discounts and exclusive offers.
+            Looking for the latest <strong>Sintra coupon codes, promo codes, and AI software deals</strong>? You've come to the right place. At Couponsbit, we help entrepreneurs, <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">freelancers</Link>, marketers, creators, and small business owners save on Sintra subscriptions with verified discounts and exclusive offers.
           </p>
           <p>
             Whether you're looking to automate daily tasks, streamline content creation, improve customer support, manage social media, or boost productivity, Sintra offers a suite of AI-powered business assistants designed to help you get more done in less time. Before subscribing, check the latest Sintra deals and promo codes on Couponsbit to maximize your savings.
@@ -872,7 +872,7 @@ export default function SintraCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Sintra Subscriptions</h3>
-            <p>Whether you're looking to automate daily business tasks, create content faster, improve customer communication, or streamline your workflow, Sintra offers AI-powered tools designed to help modern businesses work smarter.</p>
+            <p>Whether you're looking to automate daily business tasks, <Link href="/stores/openart-discount-code" className="text-[#056bfa] hover:underline">create content faster</Link>, improve customer communication, or streamline your workflow, Sintra offers AI-powered tools designed to help modern businesses work smarter.</p>
             <p>Before subscribing, visit Couponsbit to discover the latest Sintra coupon codes, promo codes, and software deals. With verified offers and regularly updated discounts, Couponsbit helps you get more value from your Sintra subscription.</p>
           </div>
 

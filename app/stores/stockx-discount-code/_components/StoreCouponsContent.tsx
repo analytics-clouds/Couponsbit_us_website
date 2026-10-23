@@ -270,7 +270,7 @@ export default function StockXCouponsContent() {
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    The platform is particularly popular among sneaker enthusiasts and streetwear fans looking for sought-after styles and limited releases. Its product range also includes items from well-known brands across fashion, footwear, and collectibles.
+                    The platform is particularly popular among sneaker enthusiasts and streetwear fans looking for sought-after styles and limited releases. Its product range also includes items from well-known brands across fashion, <Link href="/stores/hoka-coupon-code" className="text-[#056bfa] hover:underline">footwear</Link>, and collectibles.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">

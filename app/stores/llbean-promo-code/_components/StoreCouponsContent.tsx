@@ -514,7 +514,7 @@ export default function LLBeanCouponsContent() {
       <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop L.L.Bean Clothing</h3>
       <p>L.L.Bean's apparel collection covers a wide range of everyday and outdoor clothing for men, women, and kids.</p>
       <p>For warmer months, shoppers can find T-shirts, polos, shorts, lightweight shirts, dresses, swimwear, and other easygoing pieces. When temperatures drop, the selection shifts toward sweaters, fleece, flannel, insulated jackets, vests, parkas, and other cold-weather layers.</p>
-      <p>The brand is particularly associated with practical fabrics and classic styling, which makes many of its pieces easy to incorporate into an everyday wardrobe. You can also shop clothing based on activity like hiking, travel, fishing, and hunting.</p>
+      <p>The brand is particularly associated with practical fabrics and classic styling, which makes many of its pieces easy to incorporate into an <Link href="/stores/hm-promo-code" className="text-[#056bfa] hover:underline">everyday wardrobe</Link>. You can also shop clothing based on activity like hiking, travel, fishing, and hunting.</p>
     </div>
 
     <div className="space-y-4">

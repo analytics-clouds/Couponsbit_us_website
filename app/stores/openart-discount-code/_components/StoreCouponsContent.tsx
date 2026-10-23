@@ -903,7 +903,7 @@ export default function OpenartCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Create More While Spending Less</h3>
-            <p>Whether you're generating artwork for professional projects, social media content, business campaigns, or personal creativity, finding ways to reduce subscription costs can make your creative journey even more rewarding.</p>
+            <p>Whether you're generating artwork for <Link href="/stores/upwork-discount-code" className="text-[#056bfa] hover:underline">professional projects</Link>, social media content, business campaigns, or personal creativity, finding ways to reduce subscription costs can make your creative journey even more rewarding.</p>
             <p>Browse the latest OpenArt AI coupon codes, promo offers, and AI software deals on CouponsBit today and unlock more value from your next subscription.</p>
           </div>
 
