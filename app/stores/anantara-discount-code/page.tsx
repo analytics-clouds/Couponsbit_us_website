@@ -125,44 +125,52 @@ const anantaraSchema = {
       ],
     },
 
+   {
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/anantara-discount-code#faq",
+  "mainEntity": [
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/anantara-discount-code#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I use an Anantara discount code?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Choose an offer from CouponsBit, copy the promo code if applicable, and head to the official Anantara website. Enter your destination, travel dates, and paste your code into the promo code box before searching."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Anantara offer DISCOVERY loyalty member discounts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Anantara DISCOVERY members get exclusive rates with up to an additional 10% off, plus DISCOVERY Dollars (D$) to spend at hotels and resorts."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I get free breakfast or resort credit with Anantara deals?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many direct booking promotional packages include complimentary daily buffet breakfast, dining credits, and spa vouchers depending on the resort and package selected."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I cancel or modify my Anantara booking?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Cancellation terms depend on the selected rate. Flexible rate options allow free cancellation up to a few days prior to check-in, whereas prepaid advance booking offers may carry stricter terms."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "Where can I find an Anantara promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visit CouponsClouds to check available Anantara promo codes and booking deals. You can also explore the official Anantara offers page for property-specific promotions."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does Anantara offer discounts on hotel bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anantara features promotional offers that may include longer-stay savings, advance-purchase rates, and special packages. Availability and benefits depend on the hotel and booking conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save by booking directly with Anantara?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anantara promotes direct-booking benefits, including a best-rate guarantee subject to its terms. Review the official website for the applicable conditions and benefits before making a reservation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Minor DISCOVERY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minor DISCOVERY is the loyalty programme associated with Minor Hotels, the hotel group behind Anantara. Members can access eligible programme benefits and recognition when staying at participating properties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all Anantara hotels accept the same promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Promotional terms can vary by property, destination, room type, and booking dates. Check the conditions of your specific offer before confirming your reservation."
+      }
+    }
+  ]
+},
   ],
 };
 

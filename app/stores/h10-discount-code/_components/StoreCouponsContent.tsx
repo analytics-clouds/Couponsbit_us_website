@@ -376,12 +376,18 @@ export default function H10CouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-6">About H10 Hotels</h3>
+                  <h3 className="text-black font-black text-lg mb-6">What Is H10 Hotels?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Founded in the late 1960s, H10 Hotels is one of Spain&apos;s leading hotel companies, operating more than 65 hotels in 23 destinations across Spain, Europe, and the Caribbean.
+                    H10 Hotels is a hospitality group offering hotels and resorts in popular destinations across Spain, Europe, and the Caribbean. Its portfolio includes city hotels, beachfront properties, boutique accommodation, family-friendly resorts, and luxury stays. The group also operates distinct hotel collections, including Ocean Signature Resorts, The One, and H10 Horizons Collection.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    H10 is known for prime beachfront and city-center locations, sophisticated interior design, comprehensive Despacio beauty and wellness centres, and exceptional gastronomy. Their brands include H10 Hotels, Ocean by H10 Hotels in the Caribbean, and The One luxury collection.
+                   Whether you want to explore Barcelona's architecture, enjoy the beaches of Tenerife, discover Rome's historic attractions, or relax at a Caribbean resort, H10 Hotels offers properties suited to different travel preferences.
+
+                  </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Depending on the hotel, guests can find amenities such as swimming pools, restaurants, spa facilities, family entertainment, rooftop terraces, and all-inclusive packages. Individual properties offer different facilities, so check the hotel details before booking.
+
                   </p>
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -411,30 +417,52 @@ export default function H10CouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">
-                    Why Book H10 Hotels Directly?
-                  </h3>
-                  <div className="space-y-6">
-                    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Direct Price Guarantee:</strong> Always secure the lowest guaranteed rate by booking through the official H10 website.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Club H10 Extra 5% Off:</strong> Club H10 members receive an instant 5% discount on top of ongoing seasonal promotions.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Free Welcome Gift:</strong> Receive complimentary welcome gifts and amenities when you arrive at your accommodation.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Flexible Payment & Cancellation:</strong> Enjoy stress-free reservations with free cancellation options and pay-at-the-hotel policies.</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-8">
+    Find an H10 Promo Code on CouponsBit
+  </h3>
+  <div className="space-y-6">
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Looking for an H10 promo code before booking your stay? CouponsBit helps you discover available promotional codes and hotel deals so you can explore potential savings before making a reservation.
+    </p>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      H10 Hotels regularly features special offers on its official website. These may include seasonal discounts, extended-stay offers, flight-and-hotel packages, breakfast promotions, and benefits for loyalty programme members. Availability and savings depend on the offer's terms.
+    </p>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Here are some ways to look for a suitable deal:
+    </p>
+    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Check seasonal promotions:</strong> Look for limited-time hotel offers that match your travel dates.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Explore longer-stay discounts:</strong> Selected properties offer additional savings when guests meet the minimum-stay requirements.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Compare holiday packages:</strong> Check available flight-and-hotel deals if you prefer to arrange both parts of your trip together.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Look for breakfast offers:</strong> Participating hotels may offer special rates or discounts on breakfast.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Check H10 Rewards:</strong> Members can access eligible booking discounts, exclusive promotions, and other programme benefits.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Compare direct-booking offers:</strong> Review the official H10 Hotels website for promotions that may not require a separate code.</span>
+      </p>
+    </div>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Always check the terms, travel dates, participating hotels, and booking conditions before relying on a promotion.
+    </p>
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>
@@ -467,240 +495,336 @@ export default function H10CouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  H10 Hotels Promo Code, Discount Codes & Resort Vacation Deals
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-[#333333] font-bold text-[14px]">
-                      {[
-                        [
-                          "Club H10 Membership Deal",
-                          "5% OFF + Points",
-                          "Club H10 Members",
-                          "Instant saving across direct bookings with points accumulation on eligible spend.",
-                          "All H10 Hotels & Resorts"
-                        ],
-                        [
-                          "H10 Early Booking Offer",
-                          "Up to 25% OFF",
-                          "All Guests",
-                          "Plan in advance to access lowest room rates for upcoming travel seasons.",
-                          "Eligible Hotels in Spain & Europe"
-                        ],
-                        [
-                          "Canary & Balearic Islands Special",
-                          "Up to 30% OFF",
-                          "All Guests",
-                          "Seasonal discounts across Tenerife, Lanzarote, Fuerteventura, and Mallorca resorts.",
-                          "Island Beachfront Hotels"
-                        ],
-                        [
-                          "Ocean by H10 Caribbean Stays",
-                          "From $185 / Night",
-                          "All Guests",
-                          "All-inclusive resort stays in Mexico, Dominican Republic, and Jamaica.",
-                          "Caribbean All-Inclusive Resorts"
-                        ],
-                        [
-                          "European City Escapes",
-                          "Up to 20% OFF",
-                          "All Guests",
-                          "Special rates on central city accommodations in Barcelona, Madrid, Rome, London.",
-                          "Boutique Urban Hotels"
-                        ],
-                        [
-                          "H10 Long Stay Discount",
-                          "Up to 20% OFF",
-                          "All Guests",
-                          "Minimum stay of 4 consecutive nights required. Subject to availability.",
-                          "Participating Hotel Stays"
-                        ],
-                        [
-                          "The One Luxury Collection",
-                          "5-Star VIP Perks",
-                          "All Guests",
-                          "Luxury urban stays with spa access and personalized welcome amenities.",
-                          "The One Barcelona & Lisbon"
-                        ],
-                        [
-                          "H10 Free Cancellation Rate",
-                          "Flexible Booking",
-                          "All Guests",
-                          "Free cancellation up to 24-48 hours before check-in. Pay upon arrival.",
-                          "Flexible Booking Rates"
-                        ]
-                      ].map((row, i, arr) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-                          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-                          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-                          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+      {/* Main Content Area */}
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          H10 Promo Code: Save on Hotels, Resorts & Holiday Stays
+        </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        [
+          "H10 Hotels Flight + Hotel Package Deal",
+          "Up to 35% OFF",
+          "All Users",
+          "Save up to 35% on bundled packages (or up to 25% on standalone stays) across Mallorca, Canary Islands, Caribbean, and more.",
+          "Flight + Hotel Packages"
+        ],
+        [
+          "H10 Hotels Autumn Escapes Offer",
+          "Up to 20% OFF",
+          "All Users",
+          "Apply promo code H10ESCAPE at checkout. Valid on selected seasonal autumn hotel stays.",
+          "Selected Autumn Hotel Stays"
+        ],
+        [
+          "H10 Hotels Riviera Maya Vacation Package",
+          "From ₹63,886",
+          "All Users",
+          "Includes 4-day, 3-night resort accommodations and flights. Subject to travel date availability.",
+          "Riviera Maya Package (Flights + Hotel)"
+        ],
+        [
+          "H10 Taburiente Playa Beachfront Stay",
+          "From €149 / Night",
+          "All Users",
+          "Seafront all-inclusive hotel stay in La Palma with pool, restaurant, bar, and family access.",
+          "H10 Taburiente Playa"
+        ],
+        [
+          "Ocean Riviera Paradise All-Inclusive Getaway",
+          "From $250 / Night",
+          "All Users",
+          "Beachfront resort with pools, water park, spa, and entertainment. Free transfers available on eligible bookings.",
+          "Ocean Riviera Paradise Resort"
+        ],
+        [
+          "H10 Blue Mar Adults-Only Mediterranean Stay",
+          "From €140 / Night",
+          "Adults Only",
+          "Near the beach with sea views, outdoor pool, and chill-out terrace. Tailored for couples.",
+          "H10 Blue Mar (Adults Only)"
+        ],
+        [
+          "H10 Costa Mogán Adults-Only Resort",
+          "From €230 / Night",
+          "Adults Only",
+          "All-inclusive beachfront resort with complimentary dining, sea-view terraces, outdoor pools, and fitness center.",
+          "H10 Costa Mogán (Canary Islands)"
+        ]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Planning your next holiday? An H10 promo code can help you find savings on hotel bookings, whether you're dreaming of a beach escape in Spain, a city break in Europe, or an all-inclusive resort holiday in the Caribbean. Before confirming your reservation, check CouponsBit for available H10 Hotels promo codes, hotel discounts, and special booking offers.
+          </p>
+          <p>
+            H10 Hotels offers accommodation for different types of travellers, from couples looking for adults-only retreats to families planning a relaxing vacation. By comparing promotional offers, checking loyalty benefits, and choosing suitable travel dates, you can make a more informed booking decision.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Explore Popular H10 Hotels Stays
+          </h3>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Beachfront Hotels and Island Resorts
+          </h4>
+          <p>
+            If you want a holiday centred on sunshine, beaches, and relaxation, explore H10 properties in destinations such as Tenerife, Fuerteventura, Mallorca, and the Caribbean. Depending on the resort, you may find swimming pools, ocean views, water activities, and all-inclusive accommodation.
+          </p>
+          <p>
+            These stays can suit couples, families, and travellers looking for a break from their usual routine.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            European City Hotels
+          </h4>
+          <p>
+            H10 Hotels also operates properties in destinations including Barcelona, Madrid, Lisbon, London, Paris, Rome, Venice, and Berlin. These hotels can provide convenient bases for exploring local attractions, museums, shopping districts, and restaurants.
+          </p>
+          <p>
+            When choosing a city hotel, compare its location, transport connections, room facilities, and cancellation conditions to find the best fit for your itinerary.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Family-Friendly Resorts
+          </h4>
+          <p>
+            Travelling with children? Explore participating H10 properties that offer family rooms, children's entertainment, swimming pools, and activities for different age groups. Some resorts also feature water parks and dedicated family facilities.
+          </p>
+          <p>
+            Check the individual hotel's amenities and family offers before making your reservation.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Adults-Only and Luxury Stays
+          </h4>
+          <p>
+            For a quieter getaway, H10's portfolio includes adults-only properties and upscale accommodation. Depending on the hotel, you may find spa facilities, rooftop terraces, premium dining, and additional services designed to make your stay more relaxing.
+          </p>
+          <p>
+            Compare the available packages to see whether a promotional rate includes benefits that matter to you.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Use an H10 Promo Code
+          </h3>
+          <p>
+            Applying an H10 promo code is straightforward when your selected offer requires one.
+          </p>
+          <ol className="list-decimal pl-5 space-y-2">
+            <li>Visit the official H10 Hotels website through the booking link.</li>
+            <li>Choose your destination or hotel, travel dates, number of guests, and rooms.</li>
+            <li>Look for the promotional code field in the booking form.</li>
+            <li>Enter your valid H10 promo code and continue with your search.</li>
+            <li>Compare the available room rates and check whether the promotion has been applied.</li>
+            <li>Review the cancellation policy, included amenities, and final booking amount.</li>
+            <li>Complete your reservation if the offer meets your requirements.</li>
+          </ol>
+          <p>
+            Some H10 Hotels promotions apply automatically when you select an eligible offer, while others require a code. For example, the official website currently advertises an autumn offer using code H10ESCAPE, with savings of up to 20% subject to the promotion's conditions. Check the official offer page to confirm availability for your destination and travel dates.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Save More with H10 Rewards
+          </h3>
+          <p>
+            H10 Rewards is the group's loyalty programme. Members can access eligible booking discounts, earn points towards hotel stays and services, and receive exclusive promotions and other benefits.
+          </p>
+          <p>
+            The official programme advertises a guaranteed 5% discount on eligible bookings, along with opportunities to earn and redeem points. Benefits and eligibility depend on the programme's terms and membership conditions.
+          </p>
+          <p>
+            If you travel regularly, joining H10 Rewards may be worth considering. Compare the member rate with other available promotions to determine which option offers the best value for your stay.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Tips to Get Better H10 Hotel Deals
+          </h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><strong>Compare travel dates:</strong> Flexible dates may help you find a more suitable rate.</li>
+            <li><strong>Book longer stays when practical:</strong> Check whether your destination offers a discount for meeting its minimum-stay requirement.</li>
+            <li><strong>Review package inclusions:</strong> Breakfast, transfers, or other extras may be included in selected promotions.</li>
+            <li><strong>Check loyalty benefits:</strong> Compare eligible H10 Rewards rates with publicly available offers.</li>
+            <li><strong>Read cancellation conditions:</strong> A lower rate may come with stricter booking terms.</li>
+            <li><strong>Compare the final cost:</strong> Consider the room rate, taxes, fees, and any additional services before confirming your booking.</li>
+          </ul>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Book Your Next Getaway with CouponsBit
+          </h3>
+          <p>
+            From beachfront escapes and family holidays to European city breaks and premium resort stays, H10 Hotels offers accommodation for a variety of travel plans. Before confirming your next trip, visit CouponsBit to explore available H10 promo codes, hotel discounts, and special booking offers.
+          </p>
+          <p>
+            Compare rates, review the benefits, and check the booking terms to find an offer that suits your destination and travel plans.
+          </p>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        <button
+          onClick={() => setIsReadMore(!isReadMore)}
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+        >
+          {isReadMore ? "Read Less" : "Read More"}
+          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* Accordion FAQ Section */}
+        <div className="faq-section mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">
+            Frequently Asked Questions
+          </h3>
+          {[
+            {
+              q: "Where can I find an H10 promo code?",
+              a: "Visit CouponsBit to check available H10 promo codes and hotel deals. You can also explore the official H10 Hotels offers page for current promotions and destination-specific discounts."
+            },
+            {
+              q: "Does H10 Hotels offer discounts on bookings?",
+              a: "Yes. H10 Hotels lists promotions such as seasonal offers, longer-stay discounts, selected breakfast deals, and flight-and-hotel packages. The availability and conditions vary by property and destination."
+            },
+            {
+              q: "What is the H10ESCAPE promo code?",
+              a: "H10ESCAPE is a code advertised on the official H10 Hotels website for an autumn promotion offering up to 20% off. Eligibility, participating hotels, and booking conditions apply, so verify the details before booking."
+            },
+            {
+              q: "Does H10 Hotels have a loyalty programme?",
+              a: "Yes. H10 Rewards offers eligible members booking discounts, points, exclusive promotions, and other benefits. Check the programme's official terms for details."
+            },
+            {
+              q: "Can I use an H10 promo code at every hotel?",
+              a: "Not necessarily. Offers may be limited to specific properties, destinations, room types, or travel periods. Check the conditions attached to your chosen promotion before completing your reservation."
+            }
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Whether you are seeking sunny Mediterranean shores in Spain, a serene escape to the Canary Islands, an idyllic all-inclusive vacation in the Caribbean, or an architectural city exploration in Barcelona, Madrid, Rome, or London, H10 Hotels delivers modern comfort, exceptional dining, and hospitable service.
-                  </p>
-                  <p>
-                    Before locking in your reservation, visit CouponsBit to browse the latest H10 Hotels promo codes and discount deals. Direct bookings not only grant you access to special promotional pricing but also ensure complete booking flexibility and loyalty benefits.
-                  </p>
-
-                  <h3 className="text-xl font-black text-black mt-8 mb-4">
-                    Unlock Instant Savings With Club H10
-                  </h3>
-                  <p>
-                    One of the most effective ways to save on H10 reservations is by joining Club H10. Free to join in moments on their official website, Club H10 membership immediately entitles you to an extra 5% discount on all bookings, which stacks seamlessly with most early booking and seasonal promotional rates.
-                  </p>
-                  <p>
-                    Club H10 members also earn points for every stay and on-site food and beverage expense, which can be applied directly towards future holiday bookings or converted into special rewards.
-                  </p>
-
-                  <h3 className="text-xl font-black text-black mt-8 mb-4">
-                    How to Apply an H10 Hotels Promo Code
-                  </h3>
-                  <ol className="list-decimal pl-5 space-y-2">
-                    <li>Find your chosen H10 Hotels discount code or deal on CouponsBit and copy it.</li>
-                    <li>Head to the official H10 Hotels booking portal.</li>
-                    <li>Input your desired destination, hotel, check-in and check-out dates, and number of guests.</li>
-                    <li>Enter your promotional coupon in the &apos;Promotional Code&apos; field on the reservation bar.</li>
-                    <li>Click search to see all rooms and discounted rates available for your travel dates.</li>
-                  </ol>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button
-                  onClick={() => setIsReadMore(!isReadMore)}
-                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-                >
-                  {isReadMore ? "Read Less" : "Read More"}
-                  <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* Accordion FAQ Section */}
-                <div className="faq-section mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">
-                    FAQs About H10 Hotels Promo Codes
-                  </h3>
-                  {[
-                    {
-                      q: "How do I use an H10 Hotels promo code?",
-                      a: "Find your offer on CouponsBit, copy the promo code, and go to the H10 Hotels website. Enter your chosen hotel, travel dates, and paste your code into the 'Promotional Code' field on the booking form."
-                    },
-                    {
-                      q: "What are the benefits of joining Club H10?",
-                      a: "Club H10 is free to join. Members receive an instant 5% discount on all bookings, a welcome gift upon arrival, points on every stay to redeem for discounts, and special member-only flash sales."
-                    },
-                    {
-                      q: "Does H10 Hotels offer all-inclusive resorts?",
-                      a: "Yes, H10 operates premium 4-star and 5-star beachfront all-inclusive resorts under the Ocean by H10 Hotels brand in Mexico, the Dominican Republic, and Jamaica, as well as in the Canary Islands."
-                    },
-                    {
-                      q: "Can I cancel my H10 Hotels reservation for free?",
-                      a: "Yes, H10 Hotels offers flexible rates with free cancellation up to 24 to 48 hours prior to arrival, allowing you to pay at the hotel with full flexibility."
-                    }
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button
-                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                      >
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                          {faq.a}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                  {faq.a}
+                </p>
               </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                    Popular H10 Searches
-                  </h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {[
-                      "H10 Hotels Promo Code",
-                      "Club H10 Discount",
-                      "Canary Islands Resort",
-                      "Ocean by H10 All-Inclusive",
-                      "Barcelona Boutique Hotel",
-                      "Early Booking Discount",
-                      "Tenerife Hotel Deals",
-                      "Free Cancellation"
-                    ].map((tag) => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                    Today's Top H10 Deals
-                  </h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                          H
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                            {deal.heading}
-                          </p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                            {deal.sub}
-                          </p>
-                        </div>
-                        <a
-                          href={STORE_URL}
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          aria-label={`Shop H10: ${deal.heading}`}
-                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
-                        >
-                          Get Deal
-                        </a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        {/* Tag Cloud */}
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular H10 Searches
+          </h3>
+          <div className="flex flex-wrap gap-2.5">
+            {[
+              "H10 Promo Code",
+              "Hotel Discounts",
+              "H10 Rewards",
+              "H10ESCAPE Code",
+              "Beachfront Resorts",
+              "European City Breaks",
+              "Adults-Only Stays",
+              "Family Vacation Deals"
+            ].map((tag) => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                {tag}
+              </span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        {/* Sidebar Deals */}
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Today's Top H10 Deals
+          </h3>
+          <div className="space-y-6">
+            {[
+              {
+                heading: "PROMO CODE H10ESCAPE",
+                sub: "Save up to 20% on autumn hotel stays",
+              },
+              {
+                heading: "H10 REWARDS",
+                sub: "Guaranteed 5% discount & points for members",
+              },
+              {
+                heading: "BEACH & ISLAND RESORTS",
+                sub: "Special offers on Spain & Caribbean stays",
+              },
+              {
+                heading: "EUROPEAN CITY BREAKS",
+                sub: "Book city center stays across top capitals",
+              },
+            ].map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                  H
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {deal.heading}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                    {deal.sub}
+                  </p>
+                </div>
+                <a
+                  href={STORE_URL}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Shop H10: ${deal.heading}`}
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                >
+                  Get Deal
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       </main>
 
       <Footer />

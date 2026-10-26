@@ -121,43 +121,51 @@ const h10Schema = {
     },
 
     {
-      "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/h10-discount-code#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I use an H10 Hotels promo code?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Find your offer on CouponsBit, copy the promo code, and go to the H10 Hotels website. Enter your chosen hotel, travel dates, and paste your code into the 'Promotional Code' field on the booking form."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the benefits of joining Club H10?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Club H10 is free to join. Members receive an instant 5% discount on all bookings, a welcome gift upon arrival, points on every stay to redeem for discounts, and special member-only flash sales."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does H10 Hotels offer all-inclusive resorts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, H10 operates premium 4-star and 5-star beachfront all-inclusive resorts under the Ocean by H10 Hotels brand in Mexico, the Dominican Republic, and Jamaica, as well as in the Canary Islands."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I cancel my H10 Hotels reservation for free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, H10 Hotels offers flexible rates with free cancellation up to 24 to 48 hours prior to arrival, allowing you to pay at the hotel with full flexibility."
-          }
-        }
-      ]
+  "@type": "FAQPage",
+  "@id": "https://www.couponsbit.us/stores/h10-discount-code#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I find an H10 promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visit CouponsBit to check available H10 promo codes and hotel deals. You can also explore the official H10 Hotels offers page for current promotions and destination-specific discounts."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does H10 Hotels offer discounts on bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. H10 Hotels lists promotions such as seasonal offers, longer-stay discounts, selected breakfast deals, and flight-and-hotel packages. The availability and conditions vary by property and destination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the H10ESCAPE promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "H10ESCAPE is a code advertised on the official H10 Hotels website for an autumn promotion offering up to 20% off. Eligibility, participating hotels, and booking conditions apply, so verify the details before booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does H10 Hotels have a loyalty programme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. H10 Rewards offers eligible members booking discounts, points, exclusive promotions, and other benefits. Check the programme's official terms for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use an H10 promo code at every hotel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Offers may be limited to specific properties, destinations, room types, or travel periods. Check the conditions attached to your chosen promotion before completing your reservation."
+      }
+    }
+  ]
+},
   ],
 };
 

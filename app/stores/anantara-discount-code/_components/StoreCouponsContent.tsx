@@ -450,11 +450,18 @@ export default function AnantaraCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">About Anantara Hotels & Resorts</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    Born in Thailand, Anantara Hotels, Resorts & Spas is an internationally acclaimed luxury hospitality brand renowned for connecting modern travelers to authentic indigenous culture, pristine landscapes, and refined culinary artistry.
+                    Anantara Hotels & Resorts is a luxury hospitality brand that began in Thailand in 2001. Its portfolio includes hotels and resorts across Asia, the Indian Ocean, the Middle East, Africa, and Europe. The brand focuses on distinctive stays that connect guests with local culture, natural surroundings, and personalised experiences.
+
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                    From desert palaces in the Empty Quarter to tranquil overwater villas in the Maldives and grand European historical palaces, Anantara delivers personalized luxury, holistic wellness, and unforgettable destinations across Asia, the Indian Ocean, the Middle East, Africa, and Europe.
+                    Anantara properties cater to different travel styles, from relaxing beach holidays and island escapes to city breaks and countryside retreats. Depending on the destination, guests can explore accommodation with scenic views, wellness experiences, destination-inspired dining, and activities that help them discover the local area.
+
                   </p>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    Whether you're planning a romantic holiday, a family vacation, a wellness retreat, or a special celebration, Anantara offers a range of properties to consider.
+
+                  </p>
+                  
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
@@ -483,30 +490,48 @@ export default function AnantaraCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">
-                    Why Book Anantara Directly?
-                  </h3>
-                  <div className="space-y-6">
-                    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Best Price Guarantee:</strong> Booking directly guarantees you the best available rate online, along with exclusive package inclusions.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>DISCOVERY Member Rewards:</strong> Earn DISCOVERY Dollars (D$) and redeem them for hotel experiences, dining, and spa treatments worldwide.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Complimentary Inclusions:</strong> Many direct offers bundle daily breakfast, resort credits, airport transfers, and room upgrades.</span>
-                      </p>
-                      <p className="flex items-start gap-2">
-                        <span className="text-black font-black">•</span>
-                        <span><strong>Personalized Hospitality:</strong> Direct communication with the resort allows seamless handling of special requests, dietary requirements, and celebration surprises.</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+  <h3 className="text-black font-black text-lg mb-8">
+    Find an Anantara Promo Code on CouponsClouds
+  </h3>
+  <div className="space-y-6">
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Looking for an Anantara promo code before booking? CouponsClouds helps you explore available promotional codes and hotel offers so you can compare your options before making a reservation.
+    </p>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Anantara regularly features special booking offers on its official website. Depending on the property and travel dates, these may include longer-stay savings, advance-purchase offers, flexible booking rates, and packages with additional benefits.
+    </p>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Here are a few ways to look for potential savings:
+    </p>
+    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Check available promo codes:</strong> Browse CouponsClouds for Anantara promotional offers before booking.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Explore longer-stay offers:</strong> Some participating hotels provide better value when you extend your stay.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Book in advance:</strong> Selected properties may offer special rates for reservations made ahead of arrival.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Compare package deals:</strong> Look for offers that include benefits such as breakfast, dining, spa experiences, or airport transfers where specified.</span>
+      </p>
+      <p className="flex items-start gap-2">
+        <span className="text-black font-black">•</span>
+        <span><strong>Review member benefits:</strong> Anantara participates in the Minor DISCOVERY loyalty programme, which offers benefits and recognition to eligible members.</span>
+      </p>
+    </div>
+    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+      Offers vary by hotel, destination, booking period, and length of stay. Check the terms of each promotion to understand its eligibility requirements and included benefits.
+    </p>
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>
@@ -539,247 +564,364 @@ export default function AnantaraCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-              <div className="prose max-w-none text-justify">
-                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Anantara Discount Code, Resort Promo Codes & Luxury Stay Deals
-                </h2>
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-                  <table className="w-full text-left border-collapse min-w-[850px]">
-                    <thead>
-                      <tr className="bg-[#056BFA]">
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Perk</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-[#333333] font-bold text-[14px]">
-                      {[
-                        [
-                          "Anantara Early Bird Offer",
-                          "Up to 30% OFF",
-                          "All Guests",
-                          "Book 14-30 days in advance. Subject to property availability. T&C apply.",
-                          "Rooms, Suites & Villas Worldwide"
-                        ],
-                        [
-                          "Anantara DISCOVERY Member Rate",
-                          "Extra 10% OFF",
-                          "DISCOVERY Members",
-                          "Free membership program. Includes D$ rewards and room upgrade eligibility.",
-                          "Direct Bookings Worldwide"
-                        ],
-                        [
-                          "Anantara Extended Stay Discount",
-                          "Up to 35% OFF",
-                          "All Guests",
-                          "Requires minimum 5 consecutive nights. Additional dining & spa savings.",
-                          "Participating Luxury Resorts"
-                        ],
-                        [
-                          "Anantara Luxury Escapes",
-                          "Free Breakfast + Credits",
-                          "Direct Bookings",
-                          "Includes daily buffet breakfast for 2 and dedicated resort dining/spa credit.",
-                          "Eligible Vacation Packages"
-                        ],
-                        [
-                          "Anantara Maldives Island Offer",
-                          "Up to 25% OFF",
-                          "All Guests",
-                          "Special rates on overwater pool villas & transfers. Advance booking required.",
-                          "Maldives Overwater & Beach Villas"
-                        ],
-                        [
-                          "Anantara City Weekend Breaks",
-                          "Up to 20% OFF",
-                          "All Guests",
-                          "Valid on Friday to Sunday stays in European & Asian capital destinations.",
-                          "City Center Hotels & Suites"
-                        ],
-                        [
-                          "Anantara Spa & Wellness Deal",
-                          "15% OFF Treatments",
-                          "Hotel Guests",
-                          "Discount applied to signature spa, Ayurvedic, and holistic therapy bookings.",
-                          "Anantara Spa Facilities"
-                        ],
-                        [
-                          "Anantara Family Vacation Special",
-                          "Kids Stay & Dine Free",
-                          "Families with Kids",
-                          "Children under 12 stay free and eat from children's menu when with adults.",
-                          "Family Suites & Multi-Bedroom Villas"
-                        ]
-                      ].map((row, i, arr) => (
-                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-                          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-                          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-                          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-                          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+      {/* Main Content Area */}
+      <div className="prose max-w-none text-justify">
+        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Anantara Promo Code: Save on Luxury Hotels & Resorts
+        </h2>
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA]">
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-[#333333] font-bold text-[14px]">
+      {[
+        [
+          "Anantara Minor DISCOVERY Giveaway",
+          "D$50,000 Giveaway",
+          "Minor DISCOVERY Members",
+          "Register for limited-time prize draw. One winner receives D$5,000 or lifetime Titanium status.",
+          "Minor DISCOVERY Membership"
+        ],
+        [
+          "Anantara Dhigu Maldives Stays",
+          "From $563 / Night",
+          "All Users",
+          "Extra nights qualify for better pricing on beachfront and island-style villas.",
+          "Anantara Dhigu Maldives"
+        ],
+        [
+          "Anantara Riverside Bangkok Offer",
+          "Up to 25% OFF (From $172)",
+          "All Users",
+          "Reserve multiple nights for discounted pricing on selected booking dates.",
+          "Anantara Riverside Bangkok"
+        ],
+        [
+          "Anantara Desaru Coast Resort Offer",
+          "Up to 20% OFF (From $367)",
+          "All Users",
+          "Reduced rates on longer luxury beachfront resort vacations in Malaysia.",
+          "Anantara Desaru Coast Resort"
+        ],
+        [
+          "Golden Triangle Explorer Package",
+          "From $1,342",
+          "All Users",
+          "Includes accommodations, meals, airport transfers, and daily activities in Northern Thailand.",
+          "Golden Triangle Package"
+        ],
+        [
+          "Anantara Chiang Mai Flexible Stay",
+          "From $311 / Night",
+          "All Users",
+          "Flexible booking terms allow date modifications on eligible reservations.",
+          "Anantara Chiang Mai Resort"
+        ],
+        [
+          "Layan Residences Phuket Luxury Stay",
+          "From $4,801 / Night",
+          "All Users",
+          "Includes private butler service and spacious ocean-view residences.",
+          "Layan Residences Phuket"
+        ],
+        [
+          "Anantara Al Jabal Al Akhdar Stay",
+          "Up to 20% OFF (From $377)",
+          "All Users",
+          "Reduced rates on longer mountain resort stays on eligible booking dates.",
+          "Anantara Al Jabal Al Akhdar (Oman)"
+        ],
+        [
+          "Al Baleed Salalah Resort Offer",
+          "Up to 25% OFF (From $351)",
+          "All Users",
+          "Lower rates on longer beach stays; minimum stay requirements may apply.",
+          "Al Baleed Resort Salalah by Anantara"
+        ],
+        [
+          "Bazaruto Island Luxury Escape",
+          "From $834 / Night",
+          "All Users",
+          "Includes dining and selected resort activities on Bazaruto Island, Mozambique.",
+          "Anantara Bazaruto Island Resort"
+        ],
+        [
+          "Anantara Villa Padierna Palace Early Booking",
+          "Up to 15% OFF (From $436)",
+          "All Users",
+          "Advance reservation required; includes daily breakfast for two.",
+          "Anantara Villa Padierna Palace"
+        ],
+        [
+          "Anantara Mui Ne Resort Stay",
+          "Up to 35% OFF (From $170)",
+          "All Users",
+          "Discount scale depends on stay length for beachfront resort in Vietnam.",
+          "Anantara Mui Ne Resort"
+        ],
+        [
+          "Anantara Palazzo Naiadi Rome Early Booking",
+          "Up to 15% OFF (From $505)",
+          "All Users",
+          "Book in advance to receive lower nightly rates and breakfast for two.",
+          "Anantara Palazzo Naiadi Rome"
+        ]
+      ].map((row, i, arr) => (
+        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p>
+            Planning a luxury getaway? An Anantara promo code can help you look for savings on a memorable stay, whether you dream of relaxing at a beachfront resort, exploring a vibrant city, or escaping to a private island. Before booking your next trip, visit CouponsClouds to check available Anantara promo codes, hotel deals, and special offers.
+          </p>
+          <p>
+            From tropical retreats and desert hideaways to elegant city hotels, Anantara combines luxury hospitality with experiences inspired by each destination. Compare available booking offers, explore the benefits of booking directly, and check the terms before confirming your reservation.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Explore Anantara Hotels and Resorts
+          </h3>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Beachfront and Island Escapes
+          </h4>
+          <p>
+            If your ideal holiday involves ocean views and relaxing surroundings, explore Anantara's beach and island properties. Destinations such as the Maldives and Thailand offer opportunities to enjoy coastal scenery, resort facilities, and destination-based experiences.
+          </p>
+          <p>
+            Depending on the property, accommodation options may include private villas, beachfront rooms, or overwater stays. Check individual hotel details to understand the facilities and experiences available.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Luxury City Hotels
+          </h4>
+          <p>
+            For travellers who prefer city experiences, Anantara also operates hotels in destinations such as Bangkok, Rome, Amsterdam, and Dubai. These properties provide a base for exploring local attractions, shopping districts, dining, and cultural landmarks.
+          </p>
+          <p>
+            Compare hotel locations and available amenities to find accommodation that fits your itinerary.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Desert and Nature Retreats
+          </h4>
+          <p>
+            Travellers looking for something different can explore Anantara's desert resorts and countryside retreats. For example, Qasr Al Sarab Desert Resort by Anantara in the United Arab Emirates offers a desert setting, while other properties focus on nature, heritage, or local culture.
+          </p>
+          <p>
+            These destinations can suit travellers seeking a slower-paced holiday or experiences beyond a traditional city break.
+          </p>
+
+          <h4 className="text-lg font-black text-black mt-6 mb-2">
+            Wellness, Dining and Local Experiences
+          </h4>
+          <p>
+            Anantara stays can include more than accommodation. Depending on the property, guests may find spa treatments, wellness activities, destination-inspired dining, cultural excursions, and guided experiences. Check each hotel's offer details to see which benefits are included in a package and which require an additional booking.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            How to Use an Anantara Promo Code
+          </h3>
+          <p>
+            Follow these steps to use an eligible Anantara promo code:
+          </p>
+          <ol className="list-decimal pl-5 space-y-2">
+            <li>Visit the Anantara website or open the relevant hotel booking page.</li>
+            <li>Choose your destination, property, check-in and check-out dates, and number of guests.</li>
+            <li>Review the available room rates and special offers.</li>
+            <li>If you have a valid promo code, enter it in the designated booking field, where available.</li>
+            <li>Check the updated rate and review the booking conditions.</li>
+            <li>Confirm the final amount, cancellation policy, and any additional charges before completing your reservation.</li>
+          </ol>
+          <p>
+            Not every Anantara offer requires a promo code. Some savings are available through special booking rates or packages that you select directly on the website. Always read the terms to confirm whether your dates and chosen room qualify.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Tips to Get More Value From Anantara Deals
+          </h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><strong>Compare different travel dates:</strong> If your plans are flexible, check whether alternative dates offer better rates.</li>
+            <li><strong>Consider a longer stay:</strong> Look for participating properties that offer savings for extended visits.</li>
+            <li><strong>Review advance-purchase deals:</strong> Booking early may unlock special rates, although some offers have stricter cancellation conditions.</li>
+            <li><strong>Compare package inclusions:</strong> Breakfast, transfers, dining, or spa benefits may add value when included in an eligible offer.</li>
+            <li><strong>Check loyalty benefits:</strong> Review Minor DISCOVERY membership benefits before making a direct booking.</li>
+            <li><strong>Read cancellation terms:</strong> Make sure the reservation suits your travel plans, especially when choosing a non-refundable rate.</li>
+          </ul>
+          <p>
+            Comparing the total booking cost and included benefits can help you select an offer that fits your budget and travel preferences.
+          </p>
+
+          <h3 className="text-xl font-black text-black mt-8 mb-4">
+            Plan Your Next Luxury Getaway with CouponsClouds
+          </h3>
+          <p>
+            Whether you're planning an island holiday, a city escape, or a relaxing resort stay, Anantara offers destinations and experiences for a range of travel preferences. Before confirming your booking, visit CouponsClouds to explore available Anantara promo codes, hotel deals, and special offers.
+          </p>
+          <p>
+            Compare rates, review the included benefits, and check the booking conditions to make a more informed choice for your next getaway.
+          </p>
+
+          {!isReadMore && (
+            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+          )}
+        </div>
+
+        <button
+          onClick={() => setIsReadMore(!isReadMore)}
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+        >
+          {isReadMore ? "Read Less" : "Read More"}
+          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+        </button>
+
+        {/* Accordion FAQ Section */}
+        <div className="faq-section mt-20 space-y-4">
+          <h3 className="text-2xl font-black text-black mb-8">
+            Frequently Asked Questions
+          </h3>
+          {[
+            {
+              q: "Where can I find an Anantara promo code?",
+              a: "Visit CouponsClouds to check available Anantara promo codes and booking deals. You can also explore the official Anantara offers page for property-specific promotions."
+            },
+            {
+              q: "Does Anantara offer discounts on hotel bookings?",
+              a: "Anantara features promotional offers that may include longer-stay savings, advance-purchase rates, and special packages. Availability and benefits depend on the hotel and booking conditions."
+            },
+            {
+              q: "Can I save by booking directly with Anantara?",
+              a: "Anantara promotes direct-booking benefits, including a best-rate guarantee subject to its terms. Review the official website for the applicable conditions and benefits before making a reservation."
+            },
+            {
+              q: "What is Minor DISCOVERY?",
+              a: "Minor DISCOVERY is the loyalty programme associated with Minor Hotels, the hotel group behind Anantara. Members can access eligible programme benefits and recognition when staying at participating properties."
+            },
+            {
+              q: "Do all Anantara hotels accept the same promo code?",
+              a: "No. Promotional terms can vary by property, destination, room type, and booking dates. Check the conditions of your specific offer before confirming your reservation."
+            }
+          ].map((faq, i) => (
+            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+              <button
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+              >
+                <span className="text-black font-black text-base">{faq.q}</span>
+                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
                 </div>
-
-                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <p>
-                    Whether you are planning a bucket-list honeymoon in the Maldives, an exotic cultural journey through northern Thailand, a desert adventure in Abu Dhabi, or a romantic European getaway in Rome or Amalfi, Anantara Hotels & Resorts represents the gold standard of luxury hospitality. Before reserving your luxury retreat, checking CouponsBit for an active Anantara discount code or promo code ensures you enjoy premier 5-star comfort at the best possible direct value.
-                  </p>
-                  <p>
-                    With over 40 luxury hotels and resorts positioned in dramatic coastal, wildlife, desert, and metropolitan locations across Southeast Asia, the Middle East, the Indian Ocean, Africa, and Europe, Anantara crafts deeply rooted authentic experiences tailored to discerning world travelers.
-                  </p>
-
-                  <h3 className="text-xl font-black text-black mt-8 mb-4">
-                    Find Verified Anantara Discount Codes on CouponsBit
-                  </h3>
-                  <p>
-                    Before confirming your reservation, visit CouponsBit to explore the latest Anantara promo codes, early bird booking bonuses, and member deals. Promotional discounts vary by property location, travel season, room category, and minimum length of stay.
-                  </p>
-                  <p>
-                    When selecting your luxury holiday package, take note of complimentary inclusions like gourmet champagne breakfasts, airport limousine or speedboat transfers, and dining credits that significantly enhance the overall value of your vacation.
-                  </p>
-
-                  <h3 className="text-xl font-black text-black mt-8 mb-4">
-                    Maximise Savings with Anantara DISCOVERY
-                  </h3>
-                  <p>
-                    Anantara is part of the Global Hotel Alliance (GHA). By joining the Anantara DISCOVERY loyalty program for free, members instantly receive guaranteed member rates offering up to an additional 10% discount on direct bookings. Furthermore, members earn DISCOVERY Dollars (D$) starting at 4% back on all eligible spend, which can be applied directly towards room charges, spa sessions, fine dining, and local experiences.
-                  </p>
-
-                  <h3 className="text-xl font-black text-black mt-8 mb-4">
-                    How to Use Your Anantara Promo Code
-                  </h3>
-                  <ol className="list-decimal pl-5 space-y-2">
-                    <li>Find and copy the latest Anantara promo code or deal link on CouponsBit.</li>
-                    <li>Click through to the official Anantara website.</li>
-                    <li>Select your destination, arrival and departure dates, and number of guests.</li>
-                    <li>Paste your coupon code into the Promo Code / Corporate Code field on the booking engine.</li>
-                    <li>Click &apos;Check Availability&apos; to view the discounted rates applied directly to your selected villa or room.</li>
-                  </ol>
-
-                  {!isReadMore && (
-                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                  )}
-                </div>
-
-                <button
-                  onClick={() => setIsReadMore(!isReadMore)}
-                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-                >
-                  {isReadMore ? "Read Less" : "Read More"}
-                  <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-                </button>
-
-                {/* Accordion FAQ Section */}
-                <div className="faq-section mt-20 space-y-4">
-                  <h3 className="text-2xl font-black text-black mb-8">
-                    FAQs About Anantara Discount Codes
-                  </h3>
-                  {[
-                    {
-                      q: "How do I use an Anantara discount code?",
-                      a: "Choose an offer from CouponsBit, copy the promo code if applicable, and head to the official Anantara website. Enter your destination, travel dates, and paste your code into the promo code box before searching."
-                    },
-                    {
-                      q: "Does Anantara offer DISCOVERY loyalty member discounts?",
-                      a: "Yes, Anantara DISCOVERY members get exclusive rates with up to an additional 10% off, plus DISCOVERY Dollars (D$) to spend at hotels and resorts."
-                    },
-                    {
-                      q: "Can I get free breakfast or resort credit with Anantara deals?",
-                      a: "Many direct booking promotional packages include complimentary daily buffet breakfast, dining credits, and spa vouchers depending on the resort and package selected."
-                    },
-                    {
-                      q: "Can I cancel or modify my Anantara booking?",
-                      a: "Cancellation terms depend on the selected rate. Flexible rate options allow free cancellation up to a few days prior to check-in, whereas prepaid advance booking offers may carry stricter terms."
-                    }
-                  ].map((faq, i) => (
-                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                      <button
-                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                      >
-                        <span className="text-black font-black text-base">{faq.q}</span>
-                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                        </div>
-                      </button>
-                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                          {faq.a}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              </button>
+              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                  {faq.a}
+                </p>
               </div>
-
-              {/* Sidebar */}
-              <div className="space-y-10">
-                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                    Popular Anantara Searches
-                  </h3>
-                  <div className="flex flex-wrap gap-2.5">
-                    {[
-                      "Anantara Discount Code",
-                      "Overwater Villa Deals",
-                      "Maldives Resort Promo",
-                      "Anantara DISCOVERY",
-                      "Early Bird Booking",
-                      "Luxury Beach Resort",
-                      "Spa & Wellness Credit",
-                      "Kids Stay Free"
-                    ].map((tag) => (
-                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                    Today's Top Anantara Deals
-                  </h3>
-                  <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                          A
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                            {deal.heading}
-                          </p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                            {deal.sub}
-                          </p>
-                        </div>
-                        <a
-                          href={STORE_URL}
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          aria-label={`Shop Anantara: ${deal.heading}`}
-                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
-                        >
-                          Get Deal
-                        </a>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div className="space-y-10">
+        {/* Tag Cloud */}
+        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular Anantara Searches
+          </h3>
+          <div className="flex flex-wrap gap-2.5">
+            {[
+              "Anantara Promo Code",
+              "Luxury Hotel Deals",
+              "Resort Discounts",
+              "Maldives Overwater Villas",
+              "City Break Offers",
+              "Desert Retreat Sale",
+              "Spa & Wellness Packages",
+              "Minor DISCOVERY Rates"
+            ].map((tag) => (
+              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                {tag}
+              </span>
+            ))}
           </div>
-        </section>
+        </div>
+
+        {/* Sidebar Deals */}
+        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Today's Top Anantara Deals
+          </h3>
+          <div className="space-y-6">
+            {[
+              {
+                heading: "DIRECT BOOKING OFFER",
+                sub: "Best rate guarantee and exclusive stay perks",
+              },
+              {
+                heading: "BEACH & ISLAND ESCAPES",
+                sub: "Save on luxury villa and overwater stays",
+              },
+              {
+                heading: "MINOR DISCOVERY",
+                sub: "Member exclusive rates and loyalty benefits",
+              },
+              {
+                heading: "ADVANCE PURCHASE",
+                sub: "Book early for special promotional rates",
+              },
+            ].map((deal, i) => (
+              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                  A
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {deal.heading}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                    {deal.sub}
+                  </p>
+                </div>
+                <a
+                  href={STORE_URL}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Shop Anantara: ${deal.heading}`}
+                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                >
+                  Get Deal
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       </main>
 
       <Footer />
