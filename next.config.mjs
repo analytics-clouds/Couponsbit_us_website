@@ -102,6 +102,8 @@ const nextConfig = {
       { source: '/stores/nuagewear-coupon-code/miami', destination: '/stores/nuage-discount-code/miami', permanent: true },
       { source: '/stores/nuagewear-coupon-code/san-francisco', destination: '/stores/nuage-discount-code/san-francisco', permanent: true },
       { source: '/stores/nuagewear-coupon-code/seattle', destination: '/stores/nuage-discount-code/seattle', permanent: true },
+
+      { source: '/stores/flixbus-australia-discount-code', destination: '/stores/flixbus-discount-code', permanent: true },
     ];
   },
   async headers() {
