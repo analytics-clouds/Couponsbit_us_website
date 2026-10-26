@@ -15,6 +15,7 @@ const MAIN_PAGES = [
   { name: "Blog", href: "/blog" },
   { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Customer Reviews & Feedback", href: "/feedback" },
   { name: "Partner With Us", href: "/partner" },
   { name: "FAQs", href: "/faqs" },
   { name: "Careers", href: "/careers" },

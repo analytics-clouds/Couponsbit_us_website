@@ -225,6 +225,7 @@ These are city-specific sub-pages of the Nuagewear store page, each covering loc
 ## About
 - [About Us](https://www.couponsbit.us/about): Couponsbit's mission and story
 - [Contact Us](https://www.couponsbit.us/contact): Support and partnership contact information
+- [Feedback & Customer Reviews](https://www.couponsbit.us/feedback): Real customer feedback, Google and Trustpilot reviews
 - [Partner With Us](https://www.couponsbit.us/partner): Brand partnership and advertising inquiries
 - [Careers](https://www.couponsbit.us/careers): Open roles at Couponsbit
 

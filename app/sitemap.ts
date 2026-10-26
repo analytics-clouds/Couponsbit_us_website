@@ -162,6 +162,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
     },
     {
+      url: `${BASE_URL}/feedback`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+    },
+    {
       url: `${BASE_URL}/partner`,
       lastModified: new Date(),
       changeFrequency: "monthly",

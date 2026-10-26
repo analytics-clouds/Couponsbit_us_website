@@ -88,6 +88,7 @@ export const Footer = () => {
     { name: "Stores", href: "/stores" },
     { name: "Deals of the Day", href: "/deals-of-the-day" },
     { name: "Deals of the Week", href: "/deals-of-the-week" },
+    { name: "Feedback", href: "/feedback" },
   ];
 
   const topCategories = [
