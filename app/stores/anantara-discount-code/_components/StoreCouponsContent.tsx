@@ -134,7 +134,7 @@ export default function AnantaraCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Experience world-class luxury and heartfelt hospitality with the latest verified Anantara Discount Code. Save up to 35% on luxury resort stays, private beachfront villas, overwater bungalows, and rejuvenating wellness retreats across the globe.
+                      Save more with the latest Anantara Discount Code and Anantara Promo Code on luxury hotels, beachfront resorts, and exclusive vacation packages. Enjoy up to 35% OFF selected stays, 25% OFF qualifying resort bookings, and special rates from $170 per night at premium destinations including the Maldives, Thailand, Oman, Vietnam, and Italy. Discover verified Anantara offers, early booking deals, and limited-time promotions to make your next luxury getaway more affordable while enjoying world-class hospitality.
                     </p>
                     <a
                       href={STORE_URL}
@@ -218,99 +218,159 @@ export default function AnantaraCouponsContent() {
 
                 {[
                   {
-                    label: "UP TO",
-                    value: "30%",
-                    title: "Anantara Early Bird Offer – Up to 30% OFF Advance Bookings",
-                    desc: "Plan ahead and secure up to 30% off luxury rooms, suites, and private beachfront pool villas.",
+                    label: "JOIN",
+                    value: "GIVEAWAY",
+                    title: "Anantara Discount Code – Join the D$50,000 Rewards Giveaway",
+                    desc: "Sign up for Minor DISCOVERY to become eligible for an exclusive prize draw featuring cash rewards and premium membership benefits.",
                     bullets: [
-                      "Book at least 14 to 30 days in advance to unlock exclusive early bird savings.",
-                      "Applies to participating luxury resorts in Thailand, the Maldives, Bali, UAE, and Europe.",
-                      "Complimentary high-speed Wi-Fi and flexible arrival options at selected properties.",
-                      "Terms and conditions apply; blackout dates may apply during peak seasonal holidays."
+                      "Register for the D$50,000 promotional giveaway.",
+                      "One winner can receive D$5,000 or lifetime Titanium status.",
+                      "Joining Minor DISCOVERY is required to participate.",
+                      "Entries are accepted for a limited promotional period."
                     ]
                   },
                   {
-                    label: "MEMBER",
-                    value: "10% OFF",
-                    title: "Anantara DISCOVERY Member Rates – Extra 10% OFF + VIP Perks",
-                    desc: "Join Anantara DISCOVERY for exclusive member discounts, room upgrades, and local experiences.",
+                    label: "FROM",
+                    value: "$563",
+                    title: "Anantara Discount Code – Dhigu Maldives Stays from $563",
+                    desc: "Plan more days in the Maldives and unlock better room pricing at Anantara Dhigu from $563 per night.",
                     bullets: [
-                      "Enjoy guaranteed extra 10% off the best available direct rates worldwide.",
-                      "Earn DISCOVERY Dollars (D$) on stays, dining, and spa treatments to redeem on future escapes.",
-                      "Enjoy tier perks such as late checkout, room upgrades, and welcome gifts where available.",
-                      "Free to join online before completing your booking."
-                    ]
-                  },
-                  {
-                    label: "UP TO",
-                    value: "35%",
-                    title: "Anantara Extended Stay Discount – Save Up to 35% on Long Stays",
-                    desc: "Indulge in a slower pace of luxury and save up to 35% when reserving consecutive nights.",
-                    bullets: [
-                      "Valid on reservations of 5 nights or more at selected idyllic resort destinations.",
-                      "Includes additional savings on signature restaurant dining and Anantara Spa therapies.",
-                      "Ideal for relaxing workcations, romantic honeymoons, and comprehensive wellness retreats.",
-                      "Subject to availability at participating resorts."
-                    ]
-                  },
-                  {
-                    label: "GET",
-                    value: "FREE BF",
-                    title: "Anantara Luxury Escapes – Complimentary Daily Breakfast & Spa Credits",
-                    desc: "Enhance your getaway with daily gourmet breakfast buffet and dedicated resort credits.",
-                    bullets: [
-                      "Wake up to generous daily buffet breakfasts for two guests each morning.",
-                      "Receive resort credit redeemable towards gourmet dinners, wellness sessions, and water sports.",
-                      "Direct booking guarantee with dedicated concierge support throughout your stay.",
-                      "Package inclusions vary slightly by property; check individual hotel rate details."
+                      "Nightly rates begin at $563.",
+                      "Extra nights can qualify for better accommodation pricing.",
+                      "Choose from beachfront villas and island-style accommodations.",
+                      "Available on eligible reservations."
                     ]
                   },
                   {
                     label: "UP TO",
                     value: "25%",
-                    title: "Anantara Maldives Special – Up to 25% OFF Overwater Pool Villas",
-                    desc: "Experience idyllic turquoise waters and overwater luxury at Anantara resorts in the Maldives.",
+                    title: "Anantara Promo Code – Riverside Bangkok Hotel Savings",
+                    desc: "Reserve multiple nights at Anantara Riverside Bangkok and receive discounted pricing on qualifying bookings.",
                     bullets: [
-                      "Save up to 25% on overwater pool villas, beach villas, and multi-bedroom pavilions.",
-                      "Includes savings on speedboat or seaplane transfers when booked with promotional packages.",
-                      "Experience snorkeling on house reefs, sunset cruises, and private sandbank dining.",
-                      "Advance booking required; terms and conditions apply."
+                      "Get up to 25% off on select hotel stays.",
+                      "Book rooms starting at just $172 per night.",
+                      "Enjoy riverside accommodations with premium facilities.",
+                      "Available on selected booking dates."
                     ]
                   },
                   {
-                    label: "SAVE",
-                    value: "20%",
-                    title: "Anantara Weekend Getaway – Up to 20% OFF City Hotels & Resorts",
-                    desc: "Escape for the weekend with discounted rates on suites and dining at iconic city addresses.",
+                    label: "FROM",
+                    value: "$367",
+                    title: "Anantara Promo Code – Desaru Coast Resort from $367",
+                    desc: "Spend more time at Anantara Desaru Coast and receive reduced rates on longer vacations.",
                     bullets: [
-                      "Save up to 20% on weekend stays in Bangkok, Rome, Nice, Amsterdam, and Dubai.",
-                      "Enjoy rooftop cocktail bar experiences, prime city center locations, and deluxe suites.",
-                      "Flexible cancellation options available on qualifying rates.",
-                      "Valid on Friday to Sunday stays; subject to availability."
+                      "Accommodation starts from $367 per night.",
+                      "Eligible reservations can receive up to 20% savings.",
+                      "Experience luxury beachfront accommodations in Malaysia.",
+                      "Promotion applies to qualifying stays."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$1,342",
+                    title: "Golden Triangle Explorer Package – From $1,342",
+                    desc: "Explore Northern Thailand with a premium travel package that includes accommodations, dining, and daily experiences.",
+                    bullets: [
+                      "Vacation packages begin at $1,342.",
+                      "Includes meals, airport transportation, and selected activities.",
+                      "Visit one of Thailand's most famous destinations.",
+                      "Package inclusions vary by reservation."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$311",
+                    title: "Chiang Mai Flexible Stay – From $311",
+                    desc: "Reserve your stay with added flexibility and adjust your travel plans when needed.",
+                    bullets: [
+                      "Rates begin at $311 per night.",
+                      "Eligible bookings allow date modifications.",
+                      "Enjoy luxury accommodations in Chiang Mai.",
+                      "Flexible booking conditions apply."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$4,801",
+                    title: "Layan Residences Phuket – Luxury Stay from $4,801",
+                    desc: "Experience spacious private residences overlooking the Andaman Sea with premium hospitality services.",
+                    bullets: [
+                      "Residences are available from $4,801.",
+                      "Enjoy a private butler along with spacious and well-appointed living spaces.",
+                      "Wake up to panoramic ocean views.",
+                      "Flexible booking options are available on eligible reservations."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$377",
+                    title: "Al Jabal Al Akhdar Mountain Stay – From $377",
+                    desc: "Discover Oman's mountain landscapes while receiving reduced pricing on longer hotel stays.",
+                    bullets: [
+                      "Stay from as low as $377 per night.",
+                      "Save up to 20% on qualifying reservations.",
+                      "Enjoy luxury accommodations surrounded by mountain scenery.",
+                      "Offer applies to eligible booking dates."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$351",
+                    title: "Al Baleed Salalah Resort – From $351",
+                    desc: "Choose a longer beach vacation at Al Baleed by Anantara and enjoy lower rates on qualifying stays.",
+                    bullets: [
+                      "Prices start from $351 per night.",
+                      "Eligible reservations can receive up to 25% savings.",
+                      "Minimum stay requirements may apply.",
+                      "Located on the beautiful coastline of Oman."
+                    ]
+                  },
+                  {
+                    label: "FROM",
+                    value: "$834",
+                    title: "Bazaruto Island Luxury Escape – From $834",
+                    desc: "Book an island vacation featuring premium accommodations, dining, and resort experiences from $834.",
+                    bullets: [
+                      "Rates begin at $834 per night.",
+                      "Dining and selected resort activities are included.",
+                      "Stay on the beautiful Bazaruto Island in Mozambique.",
+                      "Available for qualifying reservations."
                     ]
                   },
                   {
                     label: "SAVE",
                     value: "15%",
-                    title: "Anantara Spa & Wellness Packages – Save 15% on Signature Treatments",
-                    desc: "Rejuvenate mind, body, and spirit with exclusive savings on holistic wellness therapies.",
+                    title: "Villa Padierna Palace Early Booking – Save Up to 15%",
+                    desc: "Reserve your room ahead of time to receive lower rates and breakfast for two.",
                     bullets: [
-                      "Save 15% on signature Thai massages, Ayurvedic treatments, and detox rituals.",
-                      "Access thermal suites, hammams, and relaxation lounges at participating spa locations.",
-                      "Valid for registered hotel guests booking spa packages directly.",
-                      "Appointments subject to availability; advance reservation recommended."
+                      "Receive up to 15% off eligible advance reservations.",
+                      "Accommodation starts from $436 per night.",
+                      "Daily breakfast for two is included with qualifying bookings.",
+                      "Early reservation is required for this offer."
                     ]
                   },
                   {
-                    label: "FREE",
-                    value: "KIDS STAY",
-                    title: "Anantara Family Getaway – Kids Stay & Dine Free at Selected Resorts",
-                    desc: "Create unforgettable memories with family-friendly resort packages with child perks.",
+                    label: "SAVE",
+                    value: "35%",
+                    title: "Mui Ne Resort Stay – Save Up to 35%",
+                    desc: "Book additional nights at Anantara Mui Ne and receive larger savings on your vacation.",
                     bullets: [
-                      "Children under 12 stay and dine for free from the kids' menu when dining with parents.",
-                      "Complimentary access to Anantara Children's Clubs with cultural and nature activities.",
-                      "Spacious interconnected rooms and multi-bedroom pool residences available.",
-                      "Valid at selected family-friendly resorts across Thailand and the Middle East."
+                      "Enjoy savings of up to 35% on selected stays.",
+                      "Room prices begin at $170 per night.",
+                      "Enjoy beachfront accommodations in Vietnam.",
+                      "Discount depends on reservation length."
+                    ]
+                  },
+                  {
+                    label: "SAVE",
+                    value: "15%",
+                    title: "Palazzo Naiadi Rome Early Booking – Save Up to 15%",
+                    desc: "Plan your Rome vacation in advance to receive discounted room rates and complimentary breakfast.",
+                    bullets: [
+                      "Save up to 15% on eligible advance bookings.",
+                      "Nightly rates start from $505.",
+                      "Selected reservations include breakfast for two.",
+                      "Available for qualifying advance purchases."
                     ]
                   },
                 ].map((c, i) => (

@@ -134,7 +134,7 @@ export default function H10CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Plan your next Mediterranean getaway or Caribbean escape with the latest verified H10 Hotels discount codes and Club H10 promo codes. Enjoy up to 30% savings on beachfront resorts, boutique city hotels, and all-inclusive vacations.
+                      Save more with the latest H10 Hotels Discount Code and H10 Hotels Promo Code on your next holiday. Enjoy up to 35% OFF flight + hotel packages and 20% OFF selected autumn stays. You can also book all-inclusive resorts, beachfront hotels, and adults-only escapes from €140 per night or vacation packages from ₹63,886. Explore destinations including the Canary Islands, Riviera Maya, Mallorca, and the Caribbean while enjoying verified H10 Hotels offers this October 2026.
                     </p>
                     <a
                       href={STORE_URL}
@@ -218,99 +218,87 @@ export default function H10CouponsContent() {
 
                 {[
                   {
-                    label: "MEMBER",
-                    value: "5% OFF",
-                    title: "Club H10 Loyalty Deal – 5% OFF Direct Bookings + Points",
-                    desc: "Join Club H10 for an instant 5% discount on all bookings, free welcome gift, and points rewards.",
+                    label: "SAVE",
+                    value: "35%",
+                    title: "H10 Hotels Discount Code – Save Up to 35% on Flight + Hotel Packages",
+                    desc: "Book your next vacation with H10 Hotels and save up to 35% on select flight and hotel packages across top beach destinations.",
                     bullets: [
-                      "Receive an instant 5% discount across all participating H10 Hotels & Resorts.",
-                      "Earn Club H10 points on bookings and restaurant spend to redeem for future stays.",
-                      "Complimentary welcome bottle of wine or water and personalized room amenities.",
-                      "100% free to register online before making your booking."
+                      "Save up to 35% on selected H10 Hotels flight and hotel packages.",
+                      "Enjoy up to 25% off hotel stays at participating destinations.",
+                      "Explore Mallorca, the Canary Islands, the Caribbean, and more.",
+                      "Bundle your flights and hotel to unlock better vacation savings."
                     ]
                   },
                   {
-                    label: "UP TO",
-                    value: "25%",
-                    title: "H10 Early Booking Offer – Up to 25% OFF Advance Hotel Stays",
-                    desc: "Book your hotel or resort stay in advance and save up to 25% on eligible destinations.",
+                    label: "CODE",
+                    value: "H10ESCAPE",
+                    title: "H10 Hotels Discount Code – Save Up to 20% on Autumn Escapes",
+                    desc: "Enjoy up to 20% off eligible H10 Hotels stays this season with the exclusive H10ESCAPE discount code.",
                     bullets: [
-                      "Plan ahead for spring and summer holidays across Spain, Portugal, Italy, and the UK.",
-                      "Enjoy discounted room rates on ocean-view suites and family rooms.",
-                      "Flexible cancellation conditions on selected early bird rates.",
-                      "Requires advance reservation; subject to room availability."
-                    ]
-                  },
-                  {
-                    label: "UP TO",
-                    value: "30%",
-                    title: "H10 Canary Islands & Balearics – Up to 30% OFF Beach Getaways",
-                    desc: "Enjoy year-round island sunshine in Tenerife, Lanzarote, Fuerteventura, Mallorca, or Ibiza.",
-                    bullets: [
-                      "Save up to 30% on beachfront resorts with swimming pools, Despacio Spa centres, and live entertainment.",
-                      "Half-board, full-board, and all-inclusive accommodation plans available.",
-                      "Ideal for couples seeking relaxation and families wanting splash parks and kids' clubs.",
-                      "Subject to availability at participating island properties."
+                      "Save up to 20% on selected autumn hotel stays.",
+                      "Apply promo code H10ESCAPE during checkout.",
+                      "Discover relaxing destinations perfect for a seasonal getaway.",
+                      "Book before the promotion ends to secure your savings."
                     ]
                   },
                   {
                     label: "FROM",
-                    value: "$185",
-                    title: "Ocean by H10 Caribbean Stays – All-Inclusive Packages from $185",
-                    desc: "Relax in Riviera Maya, Punta Cana, or Jamaica with premium 5-star all-inclusive beachfront deals.",
+                    value: "₹63,886",
+                    title: "H10 Hotels Promo Code – Riviera Maya Flight + Hotel Package from ₹63,886",
+                    desc: "Escape to Riviera Maya with an H10 Hotels vacation package that combines flights and hotel accommodations at a special price.",
                     bullets: [
-                      "Experience unlimited gourmet dining, top-shelf beverages, and 24-hour room service.",
-                      "Direct access to turquoise Caribbean waters and white sandy beaches.",
-                      "Upgrade to Privilege Club rooms for private lounge access, butler service, and exclusive beach areas.",
-                      "Nightly rates from $185 per person/night; seasonal conditions apply."
+                      "Book a 4-day, 3-night Riviera Maya package from ₹63,886.",
+                      "Includes both flights and hotel accommodations.",
+                      "Relax on Caribbean beaches while enjoying resort-style amenities.",
+                      "Check travel dates and package availability before booking."
                     ]
                   },
                   {
-                    label: "UP TO",
-                    value: "20%",
-                    title: "H10 City Breaks Deal – Up to 20% OFF Barcelona, Madrid, Rome & London",
-                    desc: "Save on boutique city center hotels in Europe's most famous cultural and shopping hubs.",
+                    label: "FROM",
+                    value: "€149",
+                    title: "H10 Hotels Promo Code – Taburiente Playa Stay from €149 Per Night",
+                    desc: "Stay steps from the beach at H10 Taburiente Playa with rooms starting from just €149 per night.",
                     bullets: [
-                      "Save up to 20% on elegant hotel rooms located in central districts near landmark monuments.",
-                      "Enjoy rooftop plunge pools and panoramic cocktail terraces overlooking the city skyline.",
-                      "Complimentary Wi-Fi and high-grade amenities in every guestroom.",
-                      "Valid on selected weekend and weekday city bookings."
+                      "Book your stay from €149 per night.",
+                      "Enjoy an all-inclusive seafront hotel experience.",
+                      "Access swimming pools, restaurants, bars, and family-friendly facilities.",
+                      "Perfect for beach vacations in La Palma."
                     ]
                   },
                   {
-                    label: "SAVE",
-                    value: "20%",
-                    title: "H10 Long Stay Discount – Save Up to 20% on Stays of 4+ Nights",
-                    desc: "Stay longer and save more on both seaside holiday resorts and urban boutique hotels.",
+                    label: "FROM",
+                    value: "$250",
+                    title: "H10 Hotels Voucher Code – Ocean Riviera Paradise from $250 Per Night",
+                    desc: "Enjoy an all-inclusive family getaway at Ocean Riviera Paradise with rates starting from $250 per night.",
                     bullets: [
-                      "Discount automatically applied when selecting 4 or more consecutive nights.",
-                      "Combine with Club H10 member benefits for extra savings.",
-                      "Ideal for extended holidays, remote work retreats, and thorough exploration of destination cities.",
-                      "Available at participating properties."
+                      "Stay from just $250 per night at this beachfront resort.",
+                      "Enjoy pools, water park, restaurants, spa, and entertainment.",
+                      "Great for families looking for an all-inclusive vacation.",
+                      "Free transfers are available with eligible bookings."
                     ]
                   },
                   {
-                    label: "LUXURY",
-                    value: "5-STAR",
-                    title: "The One by H10 Luxury Collection – 5-Star Stays with Complimentary Perks",
-                    desc: "Experience 5-star urban luxury in Barcelona and Lisbon with exclusive direct booking benefits.",
+                    label: "FROM",
+                    value: "€140",
+                    title: "H10 Hotels Voucher Code – Blue Mar Adults-Only Stay from €140 Per Night",
+                    desc: "Relax by the Mediterranean with an adults-only stay at H10 Blue Mar from just €140 per night.",
                     bullets: [
-                      "Book luxury boutique stays at The One Palácio da Anunciada or The One Barcelona.",
-                      "Includes Despacio Spa access, complimentary welcome amenity, and fine dining options.",
-                      "Prime central locations in historic aristocratic settings.",
-                      "Direct booking guarantee with VIP concierge service."
+                      "Book adults-only accommodations from €140 per night.",
+                      "Stay near the beach with beautiful sea views.",
+                      "Unwind by the outdoor pool or enjoy the chill-out terrace.",
+                      "Perfect for couples seeking a peaceful getaway."
                     ]
                   },
                   {
-                    label: "FREE",
-                    value: "FLEXIBLE",
-                    title: "H10 Free Cancellation Rate – Flexible Bookings With No Upfront Penalty",
-                    desc: "Reserve your holiday with complete peace of mind and pay on arrival options.",
+                    label: "FROM",
+                    value: "€230",
+                    title: "H10 Hotels Offers – Costa Mogán Adults-Only Resort from €230 Per Night",
+                    desc: "Enjoy a relaxing all-inclusive stay at H10 Costa Mogán with rooms starting from €230 per night.",
                     bullets: [
-                      "Cancel for free up to 24 to 48 hours before check-in on flexible rate plans.",
-                      "No advance payment required for selected reservations; pay at check-in.",
-                      "Modify dates without penalty if your travel schedule changes.",
-                      "Check specific rate conditions during booking."
+                      "Stay from €230 per night at this adults-only beachfront resort.",
+                      "Enjoy complimentary dining options along with access to premium hotel amenities.",
+                      "Relax by outdoor pools, sea-view terraces, and the fitness center.",
+                      "Great for a peaceful Canary Islands vacation."
                     ]
                   },
                 ].map((c, i) => (
