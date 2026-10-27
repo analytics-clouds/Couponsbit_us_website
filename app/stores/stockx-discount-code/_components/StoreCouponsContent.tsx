@@ -143,7 +143,7 @@ export default function StockXCouponsContent() {
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <div className="w-full h-full bg-[#f8f8f8] flex items-center justify-center">
-                        <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1792648465/stock-logo_ixdvkn.webp" alt="StockX Discount Code" width={300} height={200} className="max-w-[300px] max-h-[200px] object-contain" fetchPriority="high" />
+                        <Image src="https://res.cloudinary.com/couponsbit/image/upload/v1793089136/72_uuyqhr.webp" alt="StockX Discount Code" width={800} height={350} className="w-full h-full bg-[#f8f8f8]" fetchPriority="high" />
                       </div>
                     </a>
                   </div>

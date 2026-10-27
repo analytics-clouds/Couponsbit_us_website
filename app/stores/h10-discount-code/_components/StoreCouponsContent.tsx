@@ -170,11 +170,11 @@ export default function H10CouponsContent() {
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: 1 }}>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img
-                        src="https://res.cloudinary.com/couponsbit/image/upload/v1792761664/h10-logo_fjdthe.webp"
+                        src="https://res.cloudinary.com/couponsbit/image/upload/v1793089136/70_zxt5ym.webp"
                         alt="H10 Hotels Discount Code"
                         width={800}
                         height={350}
-                        className="w-full h-full object-contain bg-[#f8f8f8] p-6"
+                        className="w-full h-full bg-[#f8f8f8]"
                         fetchPriority="high"
                       />
                     </a>
