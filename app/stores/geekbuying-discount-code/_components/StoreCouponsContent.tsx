@@ -129,7 +129,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Dell", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp", dealText: "Up to 69% OFF", href: "/stores/dell-discount-code" },
   { name: "Beelink", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg", dealText: "Up to 35% OFF", href: "/stores/beelink-discount-code" },
   { name: "Apple", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp", dealText: "Up To $150 Gift Card", href: "/stores/apple-discount-code" },
-  { name: "TP-Link", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1788248210/tp-link-logo_y9efya.webp", dealText: "Up To 50% OFF", href: "/stores/tplink-promo-code" },
+  { name: "Geekbuying", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784707355/geekbuying-logo_pnkeev.webp", dealText: "Up To 56% OFF", href: "/stores/geekbuying-discount-code" },
   { name: "Amazon", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp", dealText: "Up To 52% OFF", href: "/stores/amazon-discount-code" },
 ];
 
@@ -222,7 +222,7 @@ export default function GeekbuyingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save on electronics, gadgets, scooters and more with the latest verified Geekbuying discount codes, promo codes and flash deals.
+                      Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code on electronics, smart gadgets, scooters, tablets, charging stations, and creator gear. Enjoy up to 56% OFF the refurbished DJI Mic Mini Wireless Microphone, 40% OFF GaN charging stations, plus exclusive deals on electric scooters, laser engravers, Android tablets, and more. Browse verified Geekbuying offers, flash sales, and limited-time discounts to get the best prices on innovative tech products this October 2026.
                     </p>
                     <a
                       href="https://performance.gotrackier.com/click?campaign_id=4323&pub_id=1015"
@@ -988,7 +988,7 @@ export default function GeekbuyingCouponsContent() {
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Smarter and Save More with Geekbuying</h3>
             <p>
-              Whether you're investing in a high-performance mini PC, buying your first 3D printer, upgrading your <Link href="/stores/tp-link-discount-code" className="text-[#056bfa] hover:underline">smart home</Link>, or exploring electric mobility products, Geekbuying offers innovative technology at competitive prices.
+              Whether you're investing in a high-performance mini PC, buying your first 3D printer, upgrading your smart home, or exploring electric mobility products, Geekbuying offers innovative technology at competitive prices.
             </p>
             <p>
               Before you place your next order, visit CouponsBit to grab the latest Geekbuying discount code, Geekbuying voucher, Geekbuying promo code, and Geekbuying coupon code. It's an easy way to reduce your total cost while enjoying the latest gadgets and electronics.

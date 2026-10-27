@@ -3,10 +3,10 @@ import GeekbuyingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+    absolute: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
   },
   description:
-    "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
+    "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/geekbuying-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-    title: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
     description:
-      "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
+      "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
     description:
-      "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
+      "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784707355/geekbuying-logo_pnkeev.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +63,9 @@ const geekbuyingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/geekbuying-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-      name: "Geekbuying Discount Code | Save Up to 56% OFF Tech Deals",
+      name: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
       description:
-        "Use the latest Geekbuying Discount Code and Geekbuying Voucher to save up to 56% OFF on electronics, scooters, tablets, charging accessories, and more.",
+        "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-09-21",
