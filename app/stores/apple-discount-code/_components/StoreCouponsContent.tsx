@@ -65,7 +65,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Dell", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp", dealText: "Up to 69% OFF", href: "/stores/dell-discount-code" },
 ];
 
-const STORE_URL = "https://www.apple.com/";
+const STORE_URL = "https://www.amazon.com/s?k=apple&crid=4Y1ALG5JS5S5&sprefix=apple%2Caps%2C350&linkCode=ll2&tag=analytics0922-20&linkId=d66eb279b9769211a7179cfec39ab028&language=en_US&ref_=as_li_ss_tl";
 
 export default function AppleCouponsContent() {
   const [showToast, setShowToast] = useState(false);

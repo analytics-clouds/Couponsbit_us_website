@@ -60,7 +60,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Wiskii", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/wishki-logo_qveoyb.webp", dealText: "Up To 60% OFF", href: "/stores/wiskii-discount-code" },
 ];
 
-const STORE_URL = "https://www.zara.com/";
+const STORE_URL = "https://www.amazon.com/s?k=zara&crid=18ZAPC4EHRNQA&sprefix=zara%2Caps%2C348&linkCode=ll2&tag=analytics0922-20&linkId=44698c24167995e8159a96d0b784f421&language=en_US&ref_=as_li_ss_tl";
 
 export default function ZaraCouponsContent() {
   const [showToast, setShowToast] = useState(false);

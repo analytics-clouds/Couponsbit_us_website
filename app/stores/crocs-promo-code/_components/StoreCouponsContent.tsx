@@ -58,7 +58,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 50% OFF", href: "/stores/fashion-nova-discount-code" },
 ];
 
-const STORE_URL = "https://www.crocs.com";
+const STORE_URL = "https://www.amazon.com/s?k=crocs&rh=p_123%3A234857&dc=&ds=v1%3AlQG%2BI8B69BdEOkrC1BoCW2tpZFGllClUWEIyxWfu9nI&crid=9EONBP1QXQ1G&qid=1793092859&rnid=85457740011&sprefix=crocs%2Caps%2C432&linkCode=ll2&tag=analytics0922-20&linkId=5bb2d800aa5b7171b021ca3b8a9ad7a3&language=en_US&ref_=as_li_ss_tl";
 
 export default function CrocsCouponsContent() {
   const [showToast, setShowToast] = useState(false);

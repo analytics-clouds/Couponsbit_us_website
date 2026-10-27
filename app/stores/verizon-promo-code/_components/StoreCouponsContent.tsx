@@ -57,7 +57,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Jetpac", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787741564/jetpac-logo_prj8gu.webp", dealText: "Save Up To 70%", href: "/stores/jetpac-discount-code" },
 ];
 
-const STORE_URL = "https://www.verizon.com";
+const STORE_URL = "https://www.amazon.com/s?k=verizon&rh=p_123%3A46655&dc=&crid=33VWCPPTIH34K&qid=1793087092&rnid=85457740011&sprefix=verizone+%2Caps%2C435&ds=v1%3APnCSuNvXu0TKFFKa7NFOQIdup9eD7h1x36Am1cirEpk&linkCode=ll2&tag=analytics0922-20&linkId=0db8eec8e1e49af6cf9fefb8db2e6ad1&language=en_US&ref_=as_li_ss_tl";
 
 export default function VerizonCouponsContent() {
   const [showToast, setShowToast] = useState(false);

@@ -62,7 +62,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 50% OFF", href: "/stores/fashion-nova-discount-code" },
 ];
 
-const STORE_URL = "https://www.macys.com/";
+const STORE_URL = "https://www.amazon.com/s?k=macys&crid=3E5I4X0ICR445&sprefix=macy%2Caps%2C380&linkCode=ll2&tag=analytics0922-20&linkId=241684dba1f40a687ab9667b9be4e755&language=en_US&ref_=as_li_ss_tl";
 
 export default function MacysCouponsContent() {
   const [showToast, setShowToast] = useState(false);

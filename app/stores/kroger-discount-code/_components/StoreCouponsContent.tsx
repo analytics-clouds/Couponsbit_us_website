@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Little Caesars", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp", dealText: "Up To 20% OFF", href: "/stores/little-caesars-promo-code" },
 ];
 
-const STORE_URL = "https://www.kroger.com/";
+const STORE_URL = "https://www.amazon.com/s?k=kroger&crid=WNM49R9P8GZF&sprefix=kroge%2Caps%2C466&linkCode=ll2&tag=analytics0922-20&linkId=a144677237b1e8fec168bf3d551e1285&language=en_US&ref_=as_li_ss_tl";
 
 export default function KrogerDigitalCouponsContent() {
   const [showToast, setShowToast] = useState(false);

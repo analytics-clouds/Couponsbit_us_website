@@ -695,7 +695,7 @@ export default function PeacockCouponsContent() {
                   </p>
                 </div>
                 <a
-                  href="https://www.peacocktv.com"
+                  href="https://www.amazon.com/s?k=hoka&crid=ZBNF1H3SWO50&sprefix=hok%2Caps%2C350&linkCode=ll2&tag=analytics0922-20&linkId=1c9680fb545b49df15b6a222303acd85&language=en_US&ref_=as_li_ss_tl"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`Shop Peacock: ${deal.heading}`}

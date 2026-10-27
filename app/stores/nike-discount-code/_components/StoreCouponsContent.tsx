@@ -62,7 +62,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 50% OFF", href: "/stores/fashion-nova-discount-code" },
 ];
 
-const STORE_URL = "https://www.nike.com/w/usa-10ciy";
+const STORE_URL = "https://www.amazon.com/s?k=Nike&crid=2D1JWZ64GE8LU&sprefix=nike%2Caps%2C363&linkCode=ll2&tag=analytics0922-20&linkId=99c4c7b3a9d35baf579696d0135c8cc4&language=en_US&ref_=as_li_ss_tl";
 
 export default function NikeCouponsContent() {
   const [showToast, setShowToast] = useState(false);

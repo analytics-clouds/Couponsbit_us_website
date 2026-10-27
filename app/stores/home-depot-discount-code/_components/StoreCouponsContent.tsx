@@ -65,7 +65,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "DeerValley", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/deervalley-coupon-code_yohcn4.jpg", dealText: "Up to 60% OFF", href: "/stores/deer-valley-discount-code" },
 ];
 
-const STORE_URL = "https://www.homedepot.com/";
+const STORE_URL = "https://www.amazon.com/s?k=homedepot&crid=3ROYD5NBY7HR6&sprefix=homedepot+%2Caps%2C392&linkCode=ll2&tag=analytics0922-20&linkId=5cdee56058f72769e60f6a704467449d&language=en_US&ref_=as_li_ss_tl";
 
 export default function HomeDepotCouponsContent() {
   const [showToast, setShowToast] = useState(false);

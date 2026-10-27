@@ -58,7 +58,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Blue Cypress", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp", dealText: "20% OFF First Order", href: "/stores/blue-cypress-discount-code" },
 ];
 
-const STORE_URL = "https://www.halara.com";
+const STORE_URL = "https://www.amazon.com/s?k=halara&crid=11F8AZ2T95DP8&sprefix=halar%2Caps%2C806&linkCode=ll2&tag=analytics0922-20&linkId=4863c37d6cc6c36b81ea9c7d54f86546&language=en_US&ref_=as_li_ss_tl";
 
 export default function HalaraCouponsContent() {
   const [showToast, setShowToast] = useState(false);

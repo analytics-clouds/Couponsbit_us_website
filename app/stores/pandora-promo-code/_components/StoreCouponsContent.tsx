@@ -862,7 +862,7 @@ export default function PandoraCouponsContent() {
                   </p>
                 </div>
                 <a 
-                  href="https://www.pandora.net/" 
+                  href="https://www.amazon.com/s?k=pandora&rh=p_123%3A241133&dc=&crid=2359OJ1XV425Q&qid=1793084824&rnid=85457740011&sprefix=Pandora%2Caps%2C475&ds=v1%3ABXOL8g9P9HCKfvkMHF0mdKNFyMDGXsOEeWPaJD7KNF8&linkCode=ll2&tag=analytics0922-20&linkId=02734a8dd8a5a0124753c8028a3f4a04&language=en_US&ref_=as_li_ss_tl" 
                   target="_blank" 
                   rel="nofollow noopener noreferrer" 
                   aria-label={`Shop Pandora: ${deal.heading}`} 

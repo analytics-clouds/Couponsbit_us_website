@@ -61,7 +61,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Merachfit", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp", dealText: "Save Up To $260", href: "/stores/merachfit-discount-code" },
 ];
 
-const STORE_URL = "https://www.goodrx.com/";
+const STORE_URL = "https://www.amazon.com/s?k=goodrx&crid=2X5X236X1YCM9&sprefix=goodrx%2Caps%2C354&linkCode=ll2&tag=analytics0922-20&linkId=128f345da350c7571c8e384b4116553b&language=en_US&ref_=as_li_ss_tl";
 
 export default function GoodRxCouponsContent() {
   const [showToast, setShowToast] = useState(false);

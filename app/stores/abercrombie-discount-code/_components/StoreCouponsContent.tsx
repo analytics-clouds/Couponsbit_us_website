@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Verified Deals", href: "/stores/fashion-nova-discount-code" },
 ];
 
-const STORE_URL = "https://www.abercrombie.com/shop/wd";
+const STORE_URL = "https://www.amazon.com/s?k=abercrombie&crid=VQ5LKZACMEHF&sprefix=Abercrombie%2Caps%2C411&linkCode=ll2&tag=analytics0922-20&linkId=b38638d5367adfc7c8dc8d368eb1417c&language=en_US&ref_=as_li_ss_tl";
 
 export default function AbercrombieCouponsContent() {
   const [showToast, setShowToast] = useState(false);

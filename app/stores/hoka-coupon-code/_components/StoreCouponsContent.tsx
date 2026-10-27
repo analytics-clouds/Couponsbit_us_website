@@ -48,7 +48,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "LL Bean", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789719709/llbean_logo_xsbw4x.webp", dealText: "Up To 60% OFF", href: "/stores/llbean-promo-code" },
 ];
 
-const STORE_URL = "https://www.hoka.com";
+const STORE_URL = "https://www.amazon.com/s?k=h%26m&crid=2N40TL9R5LFWE&sprefix=H%26M%2Caps%2C337&linkCode=ll2&tag=analytics0922-20&linkId=562865d475d0c6e5600758e8b740e9f7&language=en_US&ref_=as_li_ss_tl";
 
 export default function HokaCouponsContent() {
   const [showToast, setShowToast] = useState(false);

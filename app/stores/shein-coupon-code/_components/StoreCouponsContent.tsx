@@ -61,7 +61,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Wiskii", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/wishki-logo_qveoyb.webp", dealText: "Up To 60% OFF", href: "/stores/wiskii-discount-code" },
 ];
 
-const STORE_URL = "https://www.sheinindia.in/";
+const STORE_URL = "https://www.amazon.com/s?k=shein&crid=Q4A6TV3NY9PL&sprefix=shein%2Caps%2C403&linkCode=ll2&tag=analytics0922-20&linkId=9b4fc32ddcb56d2aba64ba44cb142b66&language=en_US&ref_=as_li_ss_tl";
 
 export default function SheinCouponsContent() {
   const [showToast, setShowToast] = useState(false);

@@ -58,7 +58,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 50% OFF", href: "/stores/fashion-nova-discount-code" },
 ];
 
-const STORE_URL = "https://www.wearfigs.com";
+const STORE_URL = "https://www.amazon.com/s?k=figs+scrubs+women&ds=v1%3AW12eJlpUhY3K5TT0RYmXqz3XnKRp6IMh9EXd5n69BaM&qid=1793093673&linkCode=ll2&tag=analytics0922-20&linkId=0358560ca7978004738e0c044580aa7d&language=en_US&ref_=as_li_ss_tl";
 
 export default function FigsCouponsContent() {
   const [showToast, setShowToast] = useState(false);

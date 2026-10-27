@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Factor75", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp", dealText: "Up to $130 OFF", href: "/stores/factor75-discount-code" },
 ];
 
-const STORE_URL = "https://littlecaesars.com/en-us/";
+const STORE_URL = "https://www.amazon.com/s?k=little+caesars&crid=122TSZHF78K8W&sprefix=Little+Caesars%2Caps%2C454&linkCode=ll2&tag=analytics0922-20&linkId=3f52d0b76fc443473352620f402fd598&language=en_US&ref_=as_li_ss_tl";
 
 export default function LittleCaesarsCouponsContent() {
   const [showToast, setShowToast] = useState(false);

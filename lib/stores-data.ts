@@ -166,6 +166,9 @@ export const allStores: StoreEntry[] = [
   { name: "StockX",         id: "stockx-discount-code",           category: "Fashion",     coupons: 15, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792648465/stock-logo_ixdvkn.webp",         discount: "Up To 60% OFF",   popular: false },
   { name: "Anantara",       id: "anantara-discount-code",         category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792761721/anatara-logo_b50jv5.webp",       discount: "Up To 35% OFF",   popular: false },
   { name: "H10 Hotels",     id: "h10-discount-code",              category: "Travel",      coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1792761664/h10-logo_fjdthe.webp",            discount: "Up To 30% OFF",   popular: false },
+  { name: "Verizon",        id: "verizon-promo-code",             category: "More",        coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535820/verizon_promo_code_zdxzxp.webp",  discount: "New Customer Deals", popular: false },
+  { name: "Crocs",          id: "crocs-promo-code",               category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/crocs_promo_code_tx3jlm.webp",    discount: "Up To 75% OFF",   popular: false },
+  { name: "FIGS",           id: "figs-discount-code",             category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/figs_discount_code_p5ah56.webp",   discount: "Up To 20% OFF",   popular: false },
 ];
 
 

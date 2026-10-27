@@ -60,7 +60,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Harbor Freight", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp", dealText: "Up To 50% OFF", href: "/stores/harbor-freight-discount-code" },
 ];
 
-const STORE_URL = "https://www.valvoline.com/";
+const STORE_URL = "https://www.amazon.com/s?k=valvoline&crid=3HF3CRAVFRC4X&sprefix=Valvoline%2Caps%2C439&linkCode=ll2&tag=analytics0922-20&linkId=6746e50cba854a4b631dc124ef1f04ac&language=en_US&ref_=as_li_ss_tl";
 
 export default function ValvolineCouponsContent() {
   const [showToast, setShowToast] = useState(false);

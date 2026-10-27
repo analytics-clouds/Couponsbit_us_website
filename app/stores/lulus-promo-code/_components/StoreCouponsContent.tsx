@@ -48,7 +48,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Wiskii", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/wishki-logo_qveoyb.webp", dealText: "Up To 60% OFF", href: "/stores/wiskii-discount-code" },
 ];
 
-const STORE_URL = "https://www.lulus.com";
+const STORE_URL = "https://www.amazon.com/s?k=lulus&rh=p_123%3A383075%2Cp_6%3AA2XZ7JICGUQ1CX%257CATVPDKIKX0DER&dc=&qid=1793082751&rnid=2661622011&ds=v1%3AfsiE6JVCkECZAJqj7IsYJ9P%2BiEA0FDs9WD1I0JWt0i0&linkCode=ll2&tag=analytics0922-20&linkId=7a85db4e0cd237df830d8ecc81783da7&language=en_US&ref_=as_li_ss_tl";
 
 export default function LulusCouponsContent() {
   const [showToast, setShowToast] = useState(false);
@@ -760,7 +760,7 @@ export default function LulusCouponsContent() {
                   </p>
                 </div>
                 <a
-                  href="https://www.lulus.com"
+                  href="https://www.amazon.com/s?k=lulus&rh=p_123%3A383075%2Cp_6%3AA2XZ7JICGUQ1CX%257CATVPDKIKX0DER&dc=&qid=1793082751&rnid=2661622011&ds=v1%3AfsiE6JVCkECZAJqj7IsYJ9P%2BiEA0FDs9WD1I0JWt0i0&linkCode=ll2&tag=analytics0922-20&linkId=7a85db4e0cd237df830d8ecc81783da7&language=en_US&ref_=as_li_ss_tl"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`Shop Lulus: ${deal.heading}`}

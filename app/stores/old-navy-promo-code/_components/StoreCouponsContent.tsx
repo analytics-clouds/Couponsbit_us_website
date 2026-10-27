@@ -59,7 +59,7 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Bamboocool", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205194/bamboocool-logo_pzkzgu.webp", dealText: "Up To 25% OFF", href: "/stores/bamboocool-discount-code" },
 ];
 
-const STORE_URL = "https://oldnavy.gap.com/";
+const STORE_URL = "https://www.amazon.com/s?k=old+navy&crid=39LCYWK3VKIGB&sprefix=Old+navy%2Caps%2C479&linkCode=ll2&tag=analytics0922-20&linkId=2d29a4a74d1eba394e1dd91d6f4b2ca3&language=en_US&ref_=as_li_ss_tl";
 
 export default function OldNavyCouponsContent() {
   const [showToast, setShowToast] = useState(false);
