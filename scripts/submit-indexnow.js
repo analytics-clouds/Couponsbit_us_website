@@ -48,6 +48,8 @@ const STATIC_ROUTES = [
   "/blog/vivid-seats-discount-code-best-ticket-deals-2026",
   "/blog/best-web-hosting-coupons-2026",
   "/blog/why-shop-through-coupon-and-cashback-websites",
+  "/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes",
+  "/blog/iphone-duo-apple-commitment-consumer-reactions",
   "/categories",
   "/categories/electronics",
   "/categories/entertainment",
