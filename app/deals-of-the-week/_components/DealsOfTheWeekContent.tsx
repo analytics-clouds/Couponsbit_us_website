@@ -34,19 +34,23 @@ interface Deal {
 }
 
 const slides = [
-  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/driffle-online-deals_bn9tix.webp",        alt: "Driffle Deals" },
-  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/lyca-mobile-online-deals_gda53i.webp",    alt: "Lyca Mobile Deals" },
-  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/latam-airlines-online-deals_zujyop.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/bluehost-online-deals_fejbsz.webp",       alt: "Bluehost Deals" },
-  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/sintra-online-deals_fglfxk.webp",         alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189781/us_website_home_yzammr.webp",          alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189333/2_dfvqzt.webp",          alt: "Reolink Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189290/1_dwbtpt.webp",          alt: "Reolink Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/5_xhtwty.webp",          alt: "Reolink Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/4_tt1rqi.webp",          alt: "Reolink Deals" },
+  { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189292/3_u7jjsl.webp",          alt: "Reolink Deals" },
+
 ];
 
 const mobileSlides = [
-  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/driffle-online-deals-mobile_zi2m9t.webp",        alt: "Driffle Deals" },
-  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609368/lyca-mobile-voucher-code_yptivs.webp",    alt: "Lyca Mobile Deals" },
-  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/latam-airlines-online-deals-mobile_v7ibke.webp", alt: "LATAM Airlines Deals" },
-  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/bluehost-online-deals-mobile_aicetp.webp",       alt: "Bluehost Deals" },
-  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/sintra-online-deals-mobile_lm67mf.webp",         alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189781/us_website_home_yzammr.webp",          alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189333/2_dfvqzt.webp",          alt: "Reolink Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189290/1_dwbtpt.webp",          alt: "Reolink Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/5_xhtwty.webp",          alt: "Reolink Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/4_tt1rqi.webp",          alt: "Reolink Deals" },
+  { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189292/3_u7jjsl.webp",          alt: "Reolink Deals" },
+
 ];
 
 const DealModal = ({ deal, isOpen, onClose }: { deal: Deal | null, isOpen: boolean, onClose: () => void }) => {
@@ -167,25 +171,25 @@ export default function DealsOfTheWeekContent() {
         </div>
       </div>
 
-      {/* ── 5 Store Coupon Sections ── */}
+      {/* ── 6 Store Coupon Sections ── */}
       <div className="container mx-auto px-4 max-w-6xl py-12 space-y-16">
 
-        {/* ════ BLUEHOST — Horizontal card with left gradient block ════ */}
+        {/* ════ SPIRIT HALLOWEEN — Horizontal card with left gradient block ════ */}
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Bluehost Coupons</h2>
+              <h2 className="text-3xl font-black text-black">Spirit Halloween Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/bluehost-discount-code" aria-label="View all Bluehost coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/spirit-halloween-discount-code" aria-label="View all Spirit Halloween coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
-              { label: "FROM",   discount: "$1.99", cat: "WordPress Hosting", title: "WordPress Hosting – Starting At $1.99/Month",   desc: "Build your WordPress website faster with AI-powered tools and secure hosting." },
-              { label: "UP TO", discount: "50%",   cat: "Hosting Plans",     title: "UP TO 50% OFF – Hosting Plan Savings",           desc: "Save big on secure and reliable Bluehost hosting subscriptions." },
-              { label: "FLAT",  discount: "33%",   cat: "VPS Hosting",       title: "33% OFF – VPS Hosting Plans",                    desc: "Upgrade your website performance with discounted VPS hosting." },
-              { label: "FROM",  discount: "$15.99", cat: "Online Store Plan",  title: "Online Store Plan – Starting At $15.99/Month",   desc: "Launch your online store with built-in eCommerce tools and Bluehost's secure hosting." },
+              { label: "UP TO", discount: "75%", cat: "Adult Costumes",      title: "UP TO 75% OFF – Adult Halloween Costumes",      desc: "Score massive savings on adult Halloween costumes before they sell out." },
+              { label: "UP TO", discount: "60%", cat: "Kids Costumes",       title: "UP TO 60% OFF – Kids Halloween Costumes",       desc: "Dress the little ones with Halloween costumes at up to 60% off." },
+              { label: "UP TO", discount: "50%", cat: "Halloween Decor",     title: "UP TO 50% OFF – Halloween Decorations",         desc: "Transform your home with spooky decorations at half price." },
+              { label: "UP TO", discount: "40%", cat: "Accessories & Props", title: "UP TO 40% OFF – Accessories & Halloween Props", desc: "Complete your look with discounted masks, wigs and Halloween props." },
             ].map((c, i) => (
               <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                 <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
@@ -205,28 +209,70 @@ export default function DealsOfTheWeekContent() {
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/bluehost-discount-code"><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/spirit-halloween-discount-code"><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ════ DRIFFLE — Left-accent border card design ════ */}
+        {/* ════ AMAZON — Horizontal card with left gradient block ════ */}
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Driffle Coupons</h2>
+              <h2 className="text-3xl font-black text-black">Amazon Halloween Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/driffle-discount-code" aria-label="View all Driffle coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/amazon-discount-code" aria-label="View all Amazon coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {[
+              { label: "UP TO", discount: "52%",   cat: "Halloween Costumes", title: "UP TO 52% OFF – Halloween Costumes on Amazon",  desc: "Shop thousands of Halloween costumes with fast Prime delivery." },
+              { label: "UP TO", discount: "40%",   cat: "Halloween Decor",    title: "UP TO 40% OFF – Halloween Decor & Inflatables", desc: "Deck out your home with discounted indoor and outdoor Halloween decor." },
+              { label: "UP TO", discount: "35%",   cat: "Party Supplies",     title: "UP TO 35% OFF – Halloween Party Supplies",      desc: "Stock up on plates, cups, banners and Halloween party essentials." },
+              { label: "FROM",  discount: "$9.99", cat: "Candy & Treats",     title: "Bulk Halloween Candy Packs From $9.99",         desc: "Grab bulk Halloween candy packs starting from just $9.99." },
+            ].map((c, i) => (
+              <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                  <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
+                  <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
+                  <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
+                  <p className="font-black tracking-tighter mt-1" style={{ fontSize: c.discount.length > 3 ? "2.2rem" : "3rem" }}>{c.discount}</p>
+                  {!c.discount.startsWith("$") && <p className="text-[12px] font-bold mt-1 uppercase opacity-80">OFF</p>}
+                </div>
+                <div className="flex-1 p-5 flex flex-col justify-between min-w-0">
+                  <div>
+                    <div className="flex gap-1.5 mb-2">
+                      <span className="bg-red-50 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Limited Time</span>
+                      <span className="bg-green-50 text-green-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified</span>
+                    </div>
+                    <p className="text-[#056bfa] text-[11px] font-black uppercase tracking-widest mb-1">{c.cat}</p>
+                    <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
+                    <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
+                  </div>
+                  <Link href="/stores/amazon-discount-code"><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ════ HOME DEPOT — Left-accent border card design ════ */}
+        <section>
+          <div className="flex items-center gap-5 mb-10">
+            <div className="shrink-0">
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
+              <h2 className="text-3xl font-black text-black">Home Depot Halloween Coupons</h2>
+            </div>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
+            <Link href="/stores/home-depot-discount-code" aria-label="View all Home Depot coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { badge: "UP TO", discount: "94%", title: "UP TO 94% OFF – Neverwinter Nights Enhanced Edition", desc: "Grab exciting savings on selected PC games & digital keys.",        tag: "Best Offer" },
-              { badge: "UP TO", discount: "95%", title: "UP TO 95% OFF – XCOM 2",                              desc: "Enjoy huge discounts on top-rated strategy games.",                  tag: "Popular" },
-              { badge: "UP TO", discount: "81%", title: "UP TO 81% OFF – EA SPORTS FC 26",                     desc: "Score massive savings on the latest football gaming experience.",    tag: "Trending" },
+              { badge: "UP TO", discount: "$350", title: "UP TO $350 Extra OFF – Halloween Inflatables & Animatronics", desc: "Giant inflatables and animatronic props for the ultimate Halloween yard display.", tag: "Best Offer" },
+              { badge: "UP TO", discount: "30%",  title: "UP TO 30% OFF – Outdoor Halloween Decor",                    desc: "Light up your lawn with discounted outdoor Halloween lighting and decorations.",  tag: "Popular" },
+              { badge: "UP TO", discount: "25%",  title: "UP TO 25% OFF – Indoor Halloween Props",                     desc: "Create a haunted interior with discounted indoor props, fog machines and more.",   tag: "Trending" },
             ].map((c, i) => (
               <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#056bfa] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#056bfa] hover:border-r-[#056bfa] hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
@@ -236,109 +282,66 @@ export default function DealsOfTheWeekContent() {
                 <div className="flex-1">
                   <div className="flex items-baseline text-[#056bfa] mb-2">
                     <span className="text-5xl font-black tracking-tighter">{c.discount}</span>
-                    <span className="text-lg font-extrabold ml-1 uppercase">OFF</span>
+                    {!c.discount.startsWith("$") && <span className="text-lg font-extrabold ml-1 uppercase">OFF</span>}
                   </div>
                   <h3 className="text-sm font-black text-slate-900 leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/driffle-discount-code"><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/home-depot-discount-code"><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ════ LATAM AIRLINES — Horizontal scroll cards with badge ════ */}
-        <section>
-          <div className="mb-6">
-            <div className="flex items-center gap-3 mb-1">
-              <span className="text-2xl">✈️</span>
-              <span className="text-2xl">🎫</span>
-              <h2 className="text-xl sm:text-2xl font-black text-black">LATAM Airlines Coupons & Offers</h2>
-            </div>
-            <div className="flex items-center justify-between">
-              <p className="text-gray-400 text-xs sm:text-sm">Exclusive flight deals & travel savings — book now</p>
-              <Link href="/stores/latam-airlines-discount-code" aria-label="View all LATAM Airlines coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
-            </div>
-          </div>
-          <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
-            {[
-              { type: "Bonus Miles",   title: "LATAM Credit Card – Earn 40,000 Bonus Miles",           tags: ["LATAM Card", "International"], info: "ON APPROVED APPLICATIONS" },
-              { type: "Economy",       title: "Flights from New York to Santiago – Starting At $308",   tags: ["New York", "Santiago"],        info: "STARTING FROM $308" },
-              { type: "Packages",      title: "Up to 40% OFF on Packages, Hotels & Car Rentals",        tags: ["Hotels", "Car Rentals"],       info: "SELECTED BOOKINGS ONLY" },
-              { type: "South America", title: "Miami To Rio De Janeiro – Starting At USD 554",           tags: ["Miami", "Rio de Janeiro"],     info: "STARTING FROM $554" },
-            ].map((c, i) => (
-              <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                <div className="flex items-center justify-between">
-                  <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">LATAM</span>
-                  <span className="bg-[#e8f6f8] text-[#0344b0] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
-                </div>
-                <div className="my-auto pt-4 pb-2">
-                  <h3 className="text-[15px] font-black text-gray-900 leading-snug">{c.title}</h3>
-                  <div className="flex flex-wrap gap-1.5 mt-3">
-                    {c.tags.map((tag) => (<span key={tag} className="bg-gray-100 text-gray-500 text-[11px] font-semibold px-3 py-1 rounded-full">{tag}</span>))}
-                  </div>
-                </div>
-                <div>
-                  <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/latam-airlines-discount-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="w-full bg-gray-100 h-1 rounded-full mt-3 hidden sm:block">
-            <div className="bg-[#056bfa] w-1/4 h-full rounded-full" />
-          </div>
-        </section>
-
-        {/* ════ LYCA MOBILE — Badge-card vertical design ════ */}
+        {/* ════ TARGET — Badge-card vertical design ════ */}
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Lyca Mobile Coupons</h2>
+              <h2 className="text-3xl font-black text-black">Target Halloween Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/lyca-mobile-discount-code" aria-label="View all Lyca Mobile coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/target-discount-code" aria-label="View all Target coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { badge: "SAVE UP TO", discount: "69%",   label: "OFF",  type: "Prepaid Plans",  title: "Summer Starts Now – Affordable Prepaid Plans",  info: "Limited Time Offer" },
-              { badge: "UP TO",      discount: "60%",   label: "OFF",  type: "Selected Plans", title: "UP TO 60% OFF – Selected Lyca Mobile Plans",    info: "Best Seller" },
-              { badge: "PROMO",      discount: "$7.50", label: "/30d", type: "18GB Plan",      title: "Better Signal Summer Offer – 18GB Plan",        info: "Summer Offer" },
+              { badge: "SAVE",   discount: "$100", label: "",    type: "Halloween Costumes",    title: "Save $100 – Halloween Costumes at Target",           info: "Limited Time Offer" },
+              { badge: "UP TO",  discount: "30%",  label: "OFF", type: "Halloween Decorations", title: "UP TO 30% OFF – Target Halloween Decor & Inflatables", info: "Best Seller" },
+              { badge: "UP TO",  discount: "20%",  label: "OFF", type: "Candy & Party Supplies", title: "UP TO 20% OFF – Halloween Candy & Party Supplies",   info: "Halloween Week" },
             ].map((c, i) => (
               <div key={i} className="bg-white border border-[#f0f0f0] rounded-[28px] p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">LYCA</span>
+                  <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">TARGET</span>
                   <span className="bg-[#f5f5f5] text-gray-500 text-[10px] font-bold px-3 py-1.5 rounded-full">{c.type}</span>
                 </div>
                 <div className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</div>
                 <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
                 <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
                 <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/lyca-mobile-discount-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
+                <Link href="/stores/target-discount-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ════ SINTRA — Ticket/voucher design ════ */}
+        {/* ════ WALMART — Ticket/voucher design ════ */}
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
               <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Sintra Coupons</h2>
+              <h2 className="text-3xl font-black text-black">Walmart Halloween Coupons</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/sintra-discount-code" aria-label="View all Sintra coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/walmart-promo-code" aria-label="View all Walmart coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "FROM", discount: "$15.60", title: "Sintra AI Plans – Starting From $15.60/Month", desc: "Choose the perfect Sintra AI plan with powerful AI helpers and premium features.", badge: "Best Value" },
-              { label: "SAVE", discount: "50%",    title: "Sintra 1-Month Plan – Save 50%",               desc: "Get started with flexible monthly access at discounted pricing.",                 badge: "Popular" },
-              { label: "SAVE", discount: "70%",    title: "Sintra 12-Month Plan – Save 70%",              desc: "Unlock maximum savings with Sintra AI's most popular annual plan.",               badge: "Trending" },
+              { label: "UP TO", discount: "65%", title: "UP TO 65% OFF – Halloween Costumes at Walmart", desc: "Huge savings on Halloween costumes for the whole family at Walmart.", badge: "Best Value" },
+              { label: "UP TO", discount: "50%", title: "UP TO 50% OFF – Halloween Candy & Treat Bags",  desc: "Bulk candy packs and treat bags at up to 50% off this Halloween.",         badge: "Popular" },
+              { label: "UP TO", discount: "40%", title: "UP TO 40% OFF – Halloween Decorations",         desc: "Affordable spooky decorations delivered fast with Walmart+ shipping.",      badge: "Trending" },
             ].map((c, i) => (
               <div key={i} className="relative bg-white rounded-[20px] overflow-visible shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style={{ filter: "drop-shadow(0 4px 16px rgba(25,121,141,0.10))" }}>
                 <div className="relative rounded-t-[20px] bg-[#056bfa] px-6 pt-7 pb-8 text-center overflow-hidden">
@@ -361,10 +364,51 @@ export default function DealsOfTheWeekContent() {
                   </div>
                   <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
                   <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/sintra-discount-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
+                  <Link href="/stores/walmart-promo-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ════ ETSY — Horizontal scroll cards ════ */}
+        <section>
+          <div className="mb-6">
+            <div className="flex items-center gap-3 mb-1">
+              <h2 className="text-xl sm:text-2xl font-black text-black">Etsy Halloween Coupons & Offers</h2>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="text-gray-400 text-xs sm:text-sm">Handmade Halloween finds from independent sellers</p>
+              <Link href="/stores/etsy-coupon-code" aria-label="View all Etsy coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
+            </div>
+          </div>
+          <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
+            {[
+              { type: "Custom Costumes",    title: "Flat 75% OFF – Custom Handmade Halloween Costumes",  tags: ["Made to Order", "Adults & Kids"], info: "FLAT 75% OFF SELECTED ITEMS" },
+              { type: "Handmade Decor",     title: "50% OFF – One-of-a-Kind Halloween Decorations",      tags: ["Unique Decor", "Handmade"],       info: "UP TO 50% OFF" },
+              { type: "Halloween Jewelry",  title: "Free Shipping on Halloween Jewelry & Accessories",   tags: ["Rings", "Earrings"],               info: "FREE SHIPPING ON QUALIFYING ORDERS" },
+              { type: "Personalized Items", title: "30% OFF – Personalised Halloween Gifts & Home Accents", tags: ["Custom Gifts", "Home Decor"],  info: "UP TO 30% OFF" },
+            ].map((c, i) => (
+              <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                <div className="flex items-center justify-between">
+                  <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">ETSY</span>
+                  <span className="bg-[#e8f6f8] text-[#0344b0] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
+                </div>
+                <div className="my-auto pt-4 pb-2">
+                  <h3 className="text-[15px] font-black text-gray-900 leading-snug">{c.title}</h3>
+                  <div className="flex flex-wrap gap-1.5 mt-3">
+                    {c.tags.map((tag) => (<span key={tag} className="bg-gray-100 text-gray-500 text-[11px] font-semibold px-3 py-1 rounded-full">{tag}</span>))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
+                  <Link href="/stores/etsy-coupon-code"><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="w-full bg-gray-100 h-1 rounded-full mt-3 hidden sm:block">
+            <div className="bg-[#056bfa] w-1/4 h-full rounded-full" />
           </div>
         </section>
 

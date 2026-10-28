@@ -44,19 +44,23 @@ interface Deal {
 }
 
 const slides = [
-  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/reolink-online-deals_orblbt.webp",          alt: "Reolink Deals" },
-  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/viagogo-online-deals_n4emtx.webp",           alt: "Viagogo Deals" },
-  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/envato-elements-online-deals_zygflw.webp",   alt: "Envato Elements Deals" },
-  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610275/rayneo-online-deals_egnuzp.webp",            alt: "Rayneo Deals" },
-  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781610276/sintra-online-deals_fglfxk.webp",            alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189781/us_website_home_yzammr.webp",          alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189333/2_dfvqzt.webp",          alt: "Reolink Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189290/1_dwbtpt.webp",          alt: "Reolink Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/5_xhtwty.webp",          alt: "Reolink Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/4_tt1rqi.webp",          alt: "Reolink Deals" },
+  { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189292/3_u7jjsl.webp",          alt: "Reolink Deals" },
+
 ];
 
 const mobileSlides = [
-  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/reolink-online-deals-mobile_k4vl5d.webp",         alt: "Reolink Deals" },
-  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609705/viagogo-online-deals-mobile_cpezha.webp",         alt: "Viagogo Deals" },
-  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609871/envato-elements-online-deals-mobile_ih1cdn.webp", alt: "Envato Elements Deals" },
-  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/rayneo-online-deals-mobile_mbmtil.webp",          alt: "Rayneo Deals" },
-  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1781609369/sintra-online-deals-mobile_lm67mf.webp",          alt: "Sintra Deals" },
+  { id: 1, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189781/us_website_home_yzammr.webp",          alt: "Reolink Deals" },
+  { id: 2, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189333/2_dfvqzt.webp",          alt: "Reolink Deals" },
+  { id: 3, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189290/1_dwbtpt.webp",          alt: "Reolink Deals" },
+  { id: 4, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/5_xhtwty.webp",          alt: "Reolink Deals" },
+  { id: 5, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189291/4_tt1rqi.webp",          alt: "Reolink Deals" },
+  { id: 6, image: "https://res.cloudinary.com/couponsbit/image/upload/v1793189292/3_u7jjsl.webp",          alt: "Reolink Deals" },
+
 ];
 
 
@@ -216,77 +220,37 @@ export default function DealsOfTheDayContent() {
         </div>
       </div>
 
-      {/* ── 5 Store Coupon Sections ── */}
+      {/* ── Store Coupon Sections ── */}
       <div className="container mx-auto px-4 max-w-6xl py-12 space-y-16">
 
-        {/* ════ VIAGOGO — Ticket/voucher design ════ */}
+        {/* ════ SINGAPORE AIRLINES — Horizontal card with left gradient block ════ */}
         <section>
           <div className="flex items-center gap-5 mb-10">
             <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Viagogo Coupons</h2>
+              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Deals</p>
+              <h2 className="text-3xl font-black text-black">Singapore Airlines Flight Deals</h2>
             </div>
             <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/viagogo-discount-code" aria-label="View all Viagogo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { label: "FROM", discount: "$603", title: "BEST OFFER – Coachella Music Festival Tickets", desc: "Secure your Coachella festival passes at the best available price.", badge: "Best Offer" },
-              { label: "FROM", discount: "$332", title: "Katseye Tickets – Governors Ball Festival",     desc: "Enjoy an unforgettable music festival experience with top global artists.",   badge: "Popular" },
-              { label: "FROM", discount: "$120", title: "World Cup Tickets – United States vs Paraguay", desc: "Get your World Cup tickets at the best available prices.",                    badge: "Trending" },
-            ].map((c, i) => (
-              <div key={i} className="relative bg-white rounded-[20px] overflow-visible shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style={{ filter: "drop-shadow(0 4px 16px rgba(25,121,141,0.10))" }}>
-                <div className="relative rounded-t-[20px] bg-[#056bfa] px-6 pt-7 pb-8 text-center overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 flex justify-around px-4 pt-2">
-                    {Array.from({ length: 12 }).map((_, k) => <span key={k} className="w-1 h-1 rounded-full bg-white/20 block" />)}
-                  </div>
-                  <p className="text-white/60 text-[9px] font-black uppercase tracking-[4px] mb-1">{c.label}</p>
-                  <p className="text-white font-black leading-none" style={{ fontSize: c.discount.length > 3 ? "3.5rem" : "4.5rem" }}>{c.discount}</p>
-                  <span className="absolute top-4 right-4 text-[8px] font-black uppercase bg-white text-[#056bfa] px-2.5 py-1 rounded-full">{c.badge}</span>
-                  <div className="absolute -bottom-3 left-0 right-0 flex items-center">
-                    <div className="w-6 h-6 rounded-full bg-white -translate-x-1/2 shrink-0" />
-                    <div className="flex-1 border-t-2 border-dashed border-white/20 mx-1" />
-                    <div className="w-6 h-6 rounded-full bg-white translate-x-1/2 shrink-0" />
-                  </div>
-                </div>
-                <div className="rounded-b-[20px] bg-white px-6 pt-7 pb-6">
-                  <div className="flex gap-2 mb-4">
-                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-red-50 text-red-500 px-2.5 py-1 rounded-full"><Clock className="w-2.5 h-2.5" />Limited Time</span>
-                    <span className="flex items-center gap-1 text-[9px] font-bold uppercase bg-[#e8f6f8] text-[#0344b0] px-2.5 py-1 rounded-full"><CheckCircle className="w-2.5 h-2.5" />Verified</span>
-                  </div>
-                  <h3 className="text-black font-extrabold text-[14px] leading-snug mb-2">{c.title}</h3>
-                  <p className="text-gray-400 text-[12px] leading-relaxed mb-5">{c.desc}</p>
-                  <Link href="/stores/viagogo-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">Get Coupon →</button></Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ════ REOLINK — Horizontal card with left gradient block ════ */}
-        <section>
-          <div className="flex items-center gap-5 mb-10">
-            <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Reolink Coupons</h2>
-            </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/reolink-discount-code" aria-label="View all Reolink coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
+            <Link href="/stores/singapore-airlines-promo-code" aria-label="View all Singapore Airlines deals" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
-              { label: "UP TO", discount: "50%",  cat: "Anniversary Sale",  title: "17th Anniversary Early Access – Up to 50% OFF",   desc: "Save up to 50% OFF on premium Reolink security cameras & smart surveillance systems." },
-              { label: "SAVE",  discount: "$260",  cat: "TrackFlex Bundle",  title: "TrackFlex Floodlight WiFi – Now at US$338.99",     desc: "Get massive savings on the advanced TrackFlex Floodlight WiFi security camera bundle." },
-              { label: "SAVE",  discount: "$132",  cat: "Duo 3 PoE Bundle",  title: "Reolink Duo 3 PoE – Now at US$238.76",             desc: "Upgrade your home security with the powerful Reolink Duo 3 PoE camera bundle." },
-              { label: "SAVE",  discount: "$40",   cat: "Smart Accessories",  title: "Save $40 – Smart Accessories Shop",                desc: "Get exclusive savings on Reolink smart accessories including mounts, cables and add-ons." },
+              { label: "FROM", discount: "1,475", currency: "SGD", route: "SIN→AMS", cat: "Amsterdam",             title: "Singapore Airlines Flights to Amsterdam from SGD 1,475",             desc: "Book flights from Singapore (SIN) to Amsterdam (AMS) starting at SGD 1,475." },
+              { label: "FROM", discount: "415",   currency: "SGD", route: "SIN→BWN", cat: "Bandar Seri Begawan",   title: "Singapore Airlines Flights to Bandar Seri Begawan from SGD 415",     desc: "Find flights from Singapore to Bandar Seri Begawan (BWN) starting at SGD 415." },
+              { label: "FROM", discount: "343",   currency: "SGD", route: "SIN→CEB", cat: "Cebu",                  title: "Singapore Airlines Flights to Cebu from SGD 343",                    desc: "Book flights from Singapore (SIN) to Cebu (CEB) starting at SGD 343." },
+              { label: "FROM", discount: "298",   currency: "SGD", route: "SIN→CGK", cat: "Jakarta",               title: "Singapore Airlines Flights to Jakarta from SGD 298",                 desc: "Find flights from Singapore (SIN) to Jakarta (CGK) starting at SGD 298." },
+              { label: "FROM", discount: "1,045", currency: "SGD", route: "SIN→LAX", cat: "Los Angeles",           title: "Singapore Airlines Flights to Los Angeles from SGD 1,045",           desc: "Book flights from Singapore to Los Angeles (LAX) starting at SGD 1,045." },
+              { label: "FROM", discount: "697",   currency: "SGD", route: "SIN→MEL", cat: "Melbourne",             title: "Singapore Airlines Flights to Melbourne from SGD 697",               desc: "Find flights from Singapore to Melbourne (MEL) starting at SGD 697." },
+              { label: "FROM", discount: "713",   currency: "SGD", route: "SIN→KIX", cat: "Osaka",                 title: "Singapore Airlines Flights to Osaka from SGD 713",                   desc: "Book flights from Singapore (SIN) to Osaka (KIX) starting at SGD 713." },
             ].map((c, i) => (
               <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                 <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                   <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                   <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
-                  <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
-                  <p className="font-black tracking-tighter mt-1" style={{ fontSize: c.discount.length > 3 ? "2.2rem" : "3rem" }}>{c.discount}</p>
-                  {!c.discount.startsWith("$") && <p className="text-[12px] font-bold mt-1 uppercase opacity-80">OFF</p>}
+                  <p className="text-[10px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
+                  <p className="text-[11px] font-bold opacity-80 mt-0.5">{c.currency}</p>
+                  <p className="font-black tracking-tighter leading-none mt-0.5" style={{ fontSize: c.discount.length > 3 ? "1.8rem" : "2.4rem" }}>{c.discount}</p>
+                  <p className="text-[9px] font-bold mt-1.5 opacity-80">{c.route}</p>
                 </div>
                 <div className="flex-1 p-5 flex flex-col justify-between min-w-0">
                   <div>
@@ -298,124 +262,10 @@ export default function DealsOfTheDayContent() {
                     <h3 className="text-base font-extrabold text-slate-900 leading-snug mb-1.5 line-clamp-2">{c.title}</h3>
                     <p className="text-gray-400 text-[13px] leading-snug line-clamp-2">{c.desc}</p>
                   </div>
-                  <Link href="/stores/reolink-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
+                  <Link href="/stores/singapore-airlines-promo-code" aria-label={`Get deal: ${c.title}`}><button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button></Link>
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* ════ RAYNEO — Badge-card vertical design ════ */}
-        <section>
-          <div className="flex items-center gap-5 mb-10">
-            <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Rayneo Coupons</h2>
-            </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/rayneo-discount-code" aria-label="View all Rayneo coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {[
-              { badge: "UPTO",        discount: "$70",  label: "OFF", type: "Air Series", title: "UPTO $70 OFF – RayNeo Air Series Sale",        info: "Limited Time Offer" },
-              { badge: "STARTING AT", discount: "$299", label: "",    type: "XR Device",  title: "RayNeo Air 4 Pro – AR Glasses Deal",            info: "Best Seller" },
-              { badge: "SAVE",        discount: "$130", label: "OFF", type: "X3 Pro AI",  title: "Best Offer Save $130 – RayNeo X3 Pro AI",       info: "Verified Deal" },
-            ].map((c, i) => (
-              <div key={i} className="bg-white border border-[#f0f0f0] rounded-[28px] p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-5">
-                  <span className="bg-[#056bfa] text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wide">RAYNEO</span>
-                  <span className="bg-[#f5f5f5] text-gray-500 text-[10px] font-bold px-3 py-1.5 rounded-full">{c.type}</span>
-                </div>
-                <div className="text-[#056bfa] font-black text-4xl leading-none mb-1">{c.discount}</div>
-                <p className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-3">{c.badge}{c.label ? ` ${c.label}` : ""}</p>
-                <p className="text-black font-extrabold text-sm leading-snug mb-4 flex-1">{c.title}</p>
-                <p className="text-[9px] font-black uppercase tracking-[3px] text-gray-300 mb-4">{c.info}</p>
-                <Link href="/stores/rayneo-discount-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-bold text-sm py-3 rounded-xl transition-all">View Offer</button></Link>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ════ ENVATO ELEMENTS — Left-accent border card design ════ */}
-        <section>
-          <div className="flex items-center gap-5 mb-10">
-            <div className="shrink-0">
-              <p className="text-[11px] font-black uppercase tracking-[3px] text-[#056bfa] mb-0.5">Exclusive Coupons</p>
-              <h2 className="text-3xl font-black text-black">Envato Elements Coupons</h2>
-            </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-[#056bfa]/30 to-transparent" />
-            <Link href="/stores/envato-elements-discount-code" aria-label="View all Envato Elements coupons" className="shrink-0 text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200">View All →</Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              { badge: "FROM", discount: "$16.50", title: "Unlimited Creative Assets From $16.50/Month", desc: "Access millions of creative assets with AI-powered tools and commercial licensing.", tag: "Best Value" },
-              { badge: "FLAT", discount: "50%",    title: "ANNUAL PLAN – Flat 50% OFF",                  desc: "Save more with Envato Elements annual subscription plans.",                         tag: "Popular" },
-              { badge: "FLAT", discount: "30%",    title: "STUDENTS SPECIAL – Flat 30% OFF",              desc: "Exclusive student savings on Envato Elements subscriptions.",                       tag: "Trending" },
-            ].map((c, i) => (
-              <div key={i} className="bg-white border-y border-r border-l-4 border-gray-100 border-l-[#056bfa] rounded-r-[24px] rounded-l-sm p-6 flex flex-col justify-between min-h-[300px] hover:border-y-[#056bfa] hover:border-r-[#056bfa] hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[#0344b0] text-[10px] font-black tracking-widest uppercase bg-[#e8f6f8] px-2.5 py-1 rounded-md">{c.badge}</span>
-                  <span className="text-[9px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full uppercase">Limited Time</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-baseline text-[#056bfa] mb-2">
-                    <span className="text-5xl font-black tracking-tighter">{c.discount}</span>
-                    {!c.discount.includes("$") && <span className="text-lg font-extrabold ml-1 uppercase">OFF</span>}
-                  </div>
-                  <h3 className="text-sm font-black text-slate-900 leading-snug mb-2">{c.title}</h3>
-                  <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
-                </div>
-                <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-[9px] font-bold text-[#056bfa] uppercase tracking-wide">{c.tag}</span>
-                  <Link href="/stores/envato-elements-discount-code" aria-label={`Get coupon: ${c.title}`}><button className="bg-[#056bfa] hover:bg-[#0451c4] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">Get Deal</button></Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ════ SINTRA — Horizontal scroll cards with badge ════ */}
-        <section>
-          <div className="mb-6">
-            <div className="flex items-center gap-3 mb-1">
-              <span className="text-2xl">🤖</span>
-              <span className="text-2xl">✨</span>
-              <h2 className="text-xl sm:text-2xl font-black text-black">Sintra AI Coupons & Offers</h2>
-            </div>
-            <div className="flex items-center justify-between">
-              <p className="text-gray-400 text-xs sm:text-sm">Exclusive AI subscription deals — save more today</p>
-              <Link href="/stores/sintra-discount-code" aria-label="View all Sintra coupons" className="text-[#056bfa] font-black text-sm border border-[#056bfa] rounded-full px-5 py-2 hover:bg-[#056bfa] hover:text-white transition-all duration-200 ml-4">View All →</Link>
-            </div>
-          </div>
-          <div className="overflow-x-auto pb-4 flex gap-5 snap-x snap-mandatory">
-            {[
-              { type: "Starter Plan", title: "Sintra AI Plans – Starting From $15.60/Month", tags: ["AI Bots", "All Plans"],       info: "STARTING FROM $15.60/MO" },
-              { type: "Monthly",      title: "Sintra 1-Month Plan – Save 50%",               tags: ["Monthly", "Flexible"],        info: "50% OFF REGULAR PRICE" },
-              { type: "Annual",       title: "Sintra 12-Month Plan – Save 70%",              tags: ["Annual", "Best Value"],       info: "70% OFF REGULAR PRICE" },
-              { type: "Enterprise",   title: "Sintra AI – Enterprise Customization",          tags: ["Custom Bots", "API Access"], info: "CONTACT FOR PRICING" },
-            ].map((c, i) => (
-              <div key={i} className="w-[240px] shrink-0 bg-white border border-gray-100 rounded-[28px] p-5 shadow-sm flex flex-col justify-between h-[300px] snap-start hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                <div className="flex items-center justify-between">
-                  <span className="bg-[#056bfa] text-white text-[11px] font-black px-3 py-1.5 rounded-xl uppercase tracking-wider">SINTRA</span>
-                  <span className="bg-[#e8f6f8] text-[#0344b0] text-[10px] font-bold px-2.5 py-1 rounded-lg">{c.type}</span>
-                </div>
-                <div className="my-auto pt-4 pb-2">
-                  <h3 className="text-[15px] font-black text-gray-900 leading-snug">{c.title}</h3>
-                  <div className="flex flex-wrap gap-1.5 mt-3">
-                    {c.tags.map((tag) => (
-                      <span key={tag} className="bg-gray-100 text-gray-500 text-[11px] font-semibold px-3 py-1 rounded-full">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <p className="text-gray-400 text-[10px] font-black tracking-wider uppercase mb-4">{c.info}</p>
-                  <Link href="/stores/sintra-discount-code" aria-label={`View offer: ${c.title}`}><button className="w-full bg-[#056bfa] hover:bg-[#0451c4] text-white font-extrabold text-sm py-3.5 rounded-2xl transition-colors">View Offer</button></Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="w-full bg-gray-100 h-1 rounded-full mt-3 hidden sm:block">
-            <div className="bg-[#056bfa] w-1/4 h-full rounded-full" />
           </div>
         </section>
 

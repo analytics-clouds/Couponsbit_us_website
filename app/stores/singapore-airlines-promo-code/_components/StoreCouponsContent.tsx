@@ -187,7 +187,7 @@ export default function SingaporeAirlinesCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer">
+                  <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image
                         src="https://res.cloudinary.com/couponsbit/image/upload/v1793169709/Singapore_Airlines_logo_an5s0z.webp"
@@ -216,7 +216,7 @@ export default function SingaporeAirlinesCouponsContent() {
                       Find the latest Singapore Airlines promo code and Singapore Airlines discount code to book flights from SGD 298 to top destinations including Jakarta, Cebu, Melbourne, Osaka, Amsterdam, Los Angeles, and Bandar Seri Begawan. Enjoy competitive fares, award-winning service, and convenient global connections for business or leisure travel. Compare verified flight deals, seasonal offers, and limited-time promotions to maximize your savings. Apply an eligible Singapore Airlines promo code or discount code at checkout to enjoy extra savings on your next booking.
                     </p>
                     <a
-                      href="https://www.singaporeair.com"
+                      href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
@@ -253,7 +253,7 @@ export default function SingaporeAirlinesCouponsContent() {
                       className="absolute inset-0 transition-opacity duration-500"
                       style={{ opacity: activeSlide === idx ? 1 : 0 }}
                     >
-                      <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                      <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                         <img
                           src="https://res.cloudinary.com/couponsbit/image/upload/v1793169709/Singapore_Airlines_logo_an5s0z.webp"
                           alt="Singapore Airlines Promo Code"
@@ -363,7 +363,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Amsterdam from SGD 1,475" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Amsterdam from SGD 1,475" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -405,7 +405,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Bandar Seri Begawan from SGD 415" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Bandar Seri Begawan from SGD 415" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -447,7 +447,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Cebu from SGD 343" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Cebu from SGD 343" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -489,7 +489,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Jakarta from SGD 298" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Jakarta from SGD 298" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -531,7 +531,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Los Angeles from SGD 1,045" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Los Angeles from SGD 1,045" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -573,7 +573,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Melbourne from SGD 697" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Melbourne from SGD 697" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -615,7 +615,7 @@ export default function SingaporeAirlinesCouponsContent() {
                           </div>
                         </div>
                         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Osaka from SGD 713" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Singapore Airlines deal: Flights to Osaka from SGD 713" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
@@ -661,7 +661,7 @@ export default function SingaporeAirlinesCouponsContent() {
                     Singapore Airlines serves travelers with different needs, whether they're booking a short regional journey or a long-haul international flight. Its loyalty programme, KrisFlyer, also allows eligible members to earn miles on qualifying flights and use rewards toward future travel.
 
                   </p>
-                  <a href="https://www.singaporeair.com" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1110,7 +1110,7 @@ export default function SingaporeAirlinesCouponsContent() {
                   </p>
                 </div>
                 <a
-                  href="https://www.singaporeair.com"
+                  href="https://performance.gotrackier.com/click?campaign_id=5047&pub_id=1015"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`Shop Singapore Airlines: ${deal.heading}`}
