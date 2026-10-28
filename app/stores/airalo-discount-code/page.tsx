@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   description:
     "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
 
+
+
+    
   alternates: {
     canonical: "https://www.couponsbit.us/stores/airalo-discount-code",
     languages: {

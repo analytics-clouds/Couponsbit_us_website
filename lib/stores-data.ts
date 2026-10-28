@@ -169,6 +169,7 @@ export const allStores: StoreEntry[] = [
   { name: "Verizon",        id: "verizon-promo-code",             category: "More",        coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535820/verizon_promo_code_zdxzxp.webp",  discount: "New Customer Deals", popular: false },
   { name: "Crocs",          id: "crocs-promo-code",               category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/crocs_promo_code_tx3jlm.webp",    discount: "Up To 75% OFF",   popular: false },
   { name: "FIGS",           id: "figs-discount-code",             category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/figs_discount_code_p5ah56.webp",   discount: "Up To 20% OFF",   popular: false },
+  { name: "Singapore Airlines", id: "singapore-airlines-promo-code", category: "Travel",   coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793169709/Singapore_Airlines_logo_an5s0z.webp", discount: "Up To 20% OFF",  popular: false },
 ];
 
 
