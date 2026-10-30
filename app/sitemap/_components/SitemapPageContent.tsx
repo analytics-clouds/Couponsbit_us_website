@@ -41,6 +41,7 @@ const CATEGORIES = [
 ];
 
 const BLOG_POSTS = [
+  { name: "Halloween Is Almost Here: Fun Ideas for Everyone", href: "/blog/halloween-fun-ideas-costumes-parties" },
   { name: "Spirit Halloween vs Amazon vs Wish: Halloween Deals 2026", href: "/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes" },
   { name: "Best Web Hosting Coupons 2026: Bluehost vs Hostinger", href: "/blog/best-web-hosting-coupons-2026" },
   { name: "Vivid Seats Discount Code: Best Ticket Deals 2026", href: "/blog/vivid-seats-discount-code-best-ticket-deals-2026" },

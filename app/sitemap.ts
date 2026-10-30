@@ -130,6 +130,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/halloween-fun-ideas-costumes-parties`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {

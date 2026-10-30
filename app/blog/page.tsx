@@ -80,6 +80,18 @@ const blogSchema = {
       blogPost: [
         {
           "@type": "BlogPosting",
+          headline: "Halloween Is Almost Here: Fun Ideas for Everyone",
+          url: "https://www.couponsbit.us/blog/halloween-fun-ideas-costumes-parties",
+          datePublished: "2026-10-30",
+          inLanguage: "en-US",
+          author: {
+            "@type": "Organization",
+            name: "Couponsbit",
+            url: "https://www.couponsbit.us",
+          },
+        },
+        {
+          "@type": "BlogPosting",
           headline: "iPhone Duo: Apple's Commitment and What Consumers Really Think",
           url: "https://www.couponsbit.us/blog/iphone-duo-apple-commitment-consumer-reactions",
           datePublished: "2026-10-23",
@@ -359,6 +371,49 @@ export default function BlogPage() {
               <div className="w-20 h-[3px] bg-[#FF9900] rounded-full mx-auto mt-3"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+
+              {/* Post — Halloween Fun Ideas for Costumes & Parties */}
+              <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
+                <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/couponsbit/image/upload/v1793359590/halloween-fun-ideas-costumes-parties_ywte6e.webp"
+                    alt="Halloween Fun Ideas for Costumes, Parties and Trick-or-Treating"
+                    width={220}
+                    height={200}
+                    fetchPriority="high"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-center flex-1">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="text-gray-500 text-xs font-medium uppercase">
+                      October 30, 2026
+                    </span>
+                    <span className="text-gray-300" aria-hidden="true">•</span>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-3 h-3 text-gray-400" />
+                      <span className="text-gray-500 text-xs uppercase font-medium">
+                        6 MIN READ
+                      </span>
+                    </div>
+                  </div>
+                  <Link href="/blog/halloween-fun-ideas-costumes-parties">
+                    <h3 className="text-[#056bfa] font-extrabold text-xl leading-tight mb-2.5 hover:text-[#0451c4] transition-all cursor-pointer line-clamp-2">
+                      Halloween Is Almost Here: Fun Ideas for Everyone
+                    </h3>
+                  </Link>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                    Get ready for Halloween with fun costume ideas, trick-or-treating, spooky decorations, party games, and last-minute shopping tips from CouponsBit.
+                  </p>
+                  <Link
+                    href="/blog/halloween-fun-ideas-costumes-parties"
+                    aria-label="Read more: Halloween Fun Ideas for Costumes and Parties"
+                    className="text-[#056bfa] font-bold text-sm flex items-center gap-1 uppercase tracking-wide group-hover:gap-2 transition-all duration-300"
+                  >
+                    READ MORE <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
 
               {/* Post — iPhone Duo: Apple's Commitment */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
