@@ -170,6 +170,11 @@ export const allStores: StoreEntry[] = [
   { name: "Crocs",          id: "crocs-promo-code",               category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/crocs_promo_code_tx3jlm.webp",    discount: "Up To 75% OFF",   popular: false },
   { name: "FIGS",           id: "figs-discount-code",             category: "Fashion",     coupons: 8,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1789535819/figs_discount_code_p5ah56.webp",   discount: "Up To 20% OFF",   popular: false },
   { name: "Singapore Airlines", id: "singapore-airlines-promo-code", category: "Travel",   coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793169709/Singapore_Airlines_logo_an5s0z.webp", discount: "Up To 20% OFF",  popular: false },
+  { name: "Carter's",           id: "carters-promo-code",                category: "Fashion", coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/carters-logo_fcvfdh.webp",             discount: "Up To 75% OFF",  popular: false },
+  { name: "Converse",           id: "converse-promo-code",               category: "Fashion", coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338495/converse-logo_zpgzpr.webp",            discount: "Up To 80% OFF",  popular: false },
+  { name: "Snapfish",           id: "snapfish-coupon-codes",             category: "More",    coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/snapfist-logo_vvb7cq.webp",            discount: "77% Off Tiles",  popular: false },
+  { name: "Edible Arrangements", id: "edible-arrangements-coupon-code", category: "More",    coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/edible_arrangements_logo_hcpsvl.webp", discount: "Save Up To $25", popular: false },
+  { name: "Mixtiles",           id: "mixtiles-promo-code",               category: "More",    coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/mixtiles-logo_xrh8pf.webp",            discount: "Up To 27% OFF",  popular: false },
 ];
 
 
