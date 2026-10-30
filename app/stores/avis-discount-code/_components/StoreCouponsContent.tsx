@@ -38,6 +38,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OFFERS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -326,168 +327,47 @@ export default function AvisCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Avis Coupon Codes & Offers</h2>
                 </div>
 
-                {/* Offer 1 */}
-                <div className="w-full max-w-7xl mx-auto mb-6">
-                  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                    <div className="flex flex-row">
-                      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="text-center px-1">
-                          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Join For</p>
-                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$19</div>
-                        </div>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                          <div className="flex flex-wrap gap-2 mb-3">
-                            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                          </div>
-                          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Avis Drive Gold Membership – Limited-Time Offer</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Join Avis Drive Gold for just $19 (regular price $39) for a limited time.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Unlock exclusive member-only discounts on car rentals throughout the year</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy premium benefits and faster bookings with Avis Drive Gold</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sign up today and start saving on every journey</li>
-                            </ul>
+                {OFFERS.map((c, i) => (
+                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">{c.value}</div>
+                            {c.sub && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sub}</p>}
                           </div>
                         </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Avis deal: Drive Gold Membership" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Offer 2 */}
-                <div className="w-full max-w-7xl mx-auto mb-6">
-                  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                    <div className="flex flex-row">
-                      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="text-center px-1">
-                          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
-                          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-                        </div>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                          <div className="flex flex-wrap gap-2 mb-3">
-                            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {c.bullets.map((b, bi) => (
+                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                ))}
+                              </ul>
+                            </div>
                           </div>
-                          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Avis – Member Savings Across The USA</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Rent your favorite vehicle and save up to 20% off on eligible bookings.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from SUVs, luxury cars, sedans, and family-friendly vehicles</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy flexible pickup locations and hassle-free reservations nationwide</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Book with Avis and travel smarter while spending less</li>
-                            </ul>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Avis deal: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Avis deal: Member Savings Across The USA" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                {/* Offer 3 */}
-                <div className="w-full max-w-7xl mx-auto mb-6">
-                  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                    <div className="flex flex-row">
-                      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="text-center px-1">
-                          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$99</div>
-                          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/yr</p>
-                        </div>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                          <div className="flex flex-wrap gap-2 mb-3">
-                            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                          </div>
-                          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Avis Drive Gold Annual Membership – Just $99</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get Avis Drive Gold Annual Membership for only $99 for a full year of exclusive savings.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy discounted car rentals across the USA, UK, and Europe</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Access member-only pricing and premium travel benefits on every booking</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer — enroll before the promotion ends</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Avis deal: Drive Gold Annual Membership" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Offer 4 */}
-                <div className="w-full max-w-7xl mx-auto mb-6">
-                  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-                    <div className="flex flex-row">
-                      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                        <div className="text-center px-1">
-                          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-                          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
-                          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-                        </div>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                          <div className="flex flex-wrap gap-2 mb-3">
-                            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-                          </div>
-                          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Avis – Save Up To 20% On Every Rental</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 20% off on every eligible car rental across the USA.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy premium vehicles at discounted member-exclusive prices</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for business trips, vacations, and weekend getaways</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Join Avis Drive today and unlock year-round rental savings</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Avis deal: Save Up To 20% On Every Rental" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
 
               </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BluehostCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -85,159 +86,18 @@ const bluehostSchema = {
       description:
         "Latest verified Bluehost coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
       url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "WordPress Hosting – Starting At $1.99/Month",
-            description: "Build your WordPress website faster with AI-powered tools and secure hosting.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/bluehost-discount-code",
+          seller: { "@type": "Organization", name: "Bluehost", url: "https://www.bluehost.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 50% OFF – Hosting Plan Savings",
-            description: "Save big on secure and reliable Bluehost hosting subscriptions.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "33% OFF – VPS Hosting Plans",
-            description: "Upgrade your website performance with discounted VPS hosting.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Hosting Renewal Plans – Starting At $15.99/Month",
-            description: "Renew your hosting plan at affordable pricing with premium features.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Cloud Hosting Plans – Starting From $75",
-            description: "Powerful cloud hosting plans for better performance and security.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Business Essentials Hosting – Save 50%",
-            description: "Ideal hosting solution for growing websites and businesses.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Web Hosting Plans – Starting From $1.99/Month",
-            description: "Affordable hosting plans for personal and business websites.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "One Site Hosting Plan – Save 69%",
-            description: "Perfect hosting plan for single websites or blogs.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Starter Hosting Plan – Save 58%",
-            description: "Reliable hosting plan with premium website features.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Monthly One Site Hosting – Starting At $8.99",
-            description: "Flexible monthly hosting plan with essential website features.",
-            url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluehost",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

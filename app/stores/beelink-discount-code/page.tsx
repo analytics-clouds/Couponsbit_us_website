@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BeelinkCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -87,144 +88,18 @@ const beelinkSchema = {
       description:
         "Find the latest Beelink discount codes and deals for Oct 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
       url: "https://www.couponsbit.us/stores/beelink-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Beelink GTR9 Pro AI Mini PC – Save $450",
-            description: "Get the AMD Ryzen™ AI Max+ 395 powered GTR9 Pro at $4,349, with OpenClaw and Local LLM pre-installed for advanced AI workloads.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/beelink-discount-code",
+          seller: { "@type": "Organization", name: "Beelink", url: "https://www.bee-link.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Beelink ME Mini NAS PC – Up To 35% OFF",
-            description: "Save up to 35% on the Beelink ME Mini 6-slot home storage NAS PC, starting at $329.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "OpenClaw SSD Upgrade Kit – Up To 30% OFF",
-            description: "Save up to 30% on the pre-installed OpenClaw SSD Upgrade Kit, starting at $189.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Beelink AI Mini PC Sale – Save Up To 21% OFF",
-            description: "Save up to 21% across Beelink's latest AMD Ryzen™ AI and Intel-powered Mini PCs.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Beelink EQR7 Mini PC – Up To 21% OFF",
-            description: "Save up to 21% on the Beelink EQR7 AMD Ryzen™ 7 7735HS/7735U mini PC, starting at $539.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Beelink SER10 OpenClaw Edition – Up To 21% OFF",
-            description: "Save up to 21% on the Beelink SER10 MAX OpenClaw Edition, starting at $1,339.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Beelink SER10 MAX AI PC – Up To 19% OFF",
-            description: "Save up to 19% on the Beelink SER10 MAX AMD Ryzen™ AI 9 HX 470, starting at $1,299.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Beelink SER9 Pro – Up To 18% OFF",
-            description: "Get the Beelink SER9 Pro AMD Ryzen™ 7 H 255 starting at $739 — save up to 18%.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Beelink EX Mate Pro – Up To 17% OFF",
-            description: "Save up to 17% on the new Beelink EX Mate Pro laptop companion, now available for $199.",
-            url: "https://www.couponsbit.us/stores/beelink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Beelink",
-              url: "https://www.bee-link.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

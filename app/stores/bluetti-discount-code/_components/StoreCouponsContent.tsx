@@ -36,6 +36,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { OFFERS } from "./offers";
 import { cn } from "@/lib/utils";
 
 // --- Types ---
@@ -61,68 +62,6 @@ interface StoreItem {
 }
 
 // --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$150",
-    label: "SAVE",
-    title: "BLUETTI Power – Elite 300 + Charger 2, Save $150",
-    heading: "$150",
-    sub: "BLUETTI Power",
-    description: "Save $150 on the Elite 300 + Charger 2 bundle, the world's smallest 3kWh portable power station.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BLUETTI1"
-  },
-  {
-    id: "c2",
-    discount: "$200",
-    label: "SAVE",
-    title: "BLUETTI Power – Apex 300 + 2×B300K, Save $200",
-    heading: "$200",
-    sub: "BLUETTI Power",
-    description: "Get $200 OFF the Apex 300 expansion bundle with massive 8,294.4Wh expandable power capacity.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BLUETTI2"
-  },
-  {
-    id: "c3",
-    discount: "$249",
-    label: "FREE",
-    title: "BLUETTI Power – FREE $249 Trolley With Apex 300 Bundle",
-    heading: "$249",
-    sub: "BLUETTI Power",
-    description: "Buy a select Apex 300 bundle and receive a FREE trolley worth $249.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BLUETTI3"
-  },
-  {
-    id: "c4",
-    discount: "$1,199",
-    label: "From",
-    title: "BLUETTI Power – Elite 300 From $1,199",
-    heading: "$1,199",
-    sub: "BLUETTI Power",
-    description: "The world's smallest 3kWh portable power station, starting at just $1,199.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BLUETTI4"
-  },
-  {
-    id: "c5",
-    discount: "$1,699",
-    label: "From",
-    title: "BLUETTI Power – Apex 300 From $1,699",
-    heading: "$1,699",
-    sub: "BLUETTI Power",
-    description: "Delivers both 120V & 240V power simultaneously, starting from $1,699.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BLUETTI5"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-discount-code" },
@@ -1158,7 +1097,7 @@ export default function BluettiCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top BLUETTI Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {OFFERS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">

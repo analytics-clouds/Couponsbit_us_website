@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AdidasCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,27 +81,18 @@ const adidasSchema = {
       name: "Adidas Promo Codes & Coupon Codes",
       description: "Latest Adidas promo codes and offers on shoes, apparel and accessories.",
       url: "https://www.couponsbit.us/stores/adidas-promo-code",
-      numberOfItems: 18,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Adidas Adizero Control Running Short Leggings – 40% OFF", description: "Get the women's Adizero Control Running Short Leggings for $78.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Adidas – Extra 30% OFF Apparel Summer Sale", description: "Use promo code EXTRA to get an additional 30% OFF full-price and sale apparel styles.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Adidas – Up to 40% OFF Favorite Styles", description: "Grab up to 40% OFF selected adidas shoes, clothing and accessories across popular collections.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "adidas – JENNIE Superstar SQ Ballet Shoes for $130", description: "Discover the adidas Originals by JENNIE Superstar SQ Ballet Shoes inspired by ballet-inspired movement and style.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "adidas – Samba OG C Shoes for $70", description: "Shop the classic adidas Samba OG C Shoes as part of the Back to School clothes and shoes collection.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "adidas Fall Refresh Sale – Up to 50% OFF", description: "Save up to 50% OFF selected adidas styles for men, women and kids.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "adidas Swift Run 1.0 Shoes – 25% OFF for $60", description: "Save 25% on selected adidas Swift Run 1.0 sportswear sneakers.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "adidas Minecraft Pro Shoes Children – 25% OFF", description: "Get the adidas Minecraft Pro Shoes for children for just $45.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "adidas Lite Racer Adapt 8.0 Wide Shoes – 30% OFF", description: "Shop the adidas Lite Racer Adapt 8.0 Wide Shoes for just $49.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "adidas Breaknet Sleek Shoes – 25% OFF", description: "Get the adidas Breaknet Sleek Shoes for only $46.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "adidas Campus 00s Shoes – 20% OFF", description: "Shop the popular adidas Campus 00s Shoes for $83.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "adidas Soccer Jerseys – Extra 30% OFF", description: "Shop selected adidas soccer jerseys with an extra 30% OFF eligible styles.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "adidas Argentina 26 Home Authentic Jersey – 30% OFF", description: "Shop the Argentina 26 Home Authentic Jersey for $105.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "adidas Gazelle Bold Shoes – 30% OFF for $84", description: "Grab the iconic adidas Gazelle Bold Shoes for just $84.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "adidas New Arrivals – Styles Starting at $15", description: "Discover new adidas arrivals starting at just $15 in the USA.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 16, item: { "@type": "Offer", name: "adidas Terrex Anylander Rain.Rdy Hiking Shoes – 10% OFF", description: "Get the adidas Terrex Anylander Rain.Rdy Hiking Shoes for $75.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 17, item: { "@type": "Offer", name: "adidas Pixar Toy Story Samba Jane Shoes – $110", description: "Step into playful style with the adidas Pixar Toy Story Samba Jane Shoes.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-        { "@type": "ListItem", position: 18, item: { "@type": "Offer", name: "adidas Argentina 26 Home Jersey Kids – 30% OFF", description: "Get the Argentina 26 Home Jersey for kids for just $56.", url: "https://www.couponsbit.us/stores/adidas-promo-code", seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/adidas-promo-code",
+          seller: { "@type": "Organization", name: "Adidas", url: "https://www.adidas.com" },
+        },
+      })),
     },
 
     {

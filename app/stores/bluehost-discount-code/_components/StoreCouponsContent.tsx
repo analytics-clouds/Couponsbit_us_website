@@ -36,6 +36,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { OFFERS } from "./offers";
 import { cn } from "@/lib/utils";
 
 // --- Types ---
@@ -61,83 +62,6 @@ interface StoreItem {
 }
 
 // --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "60%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 60% OFF on Top Categories",
-    heading: "Up to 60% OFF",
-    sub: "Top Categories",
-    description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "AMAZON60"
-  },
-  {
-    id: "c2",
-    discount: "50%",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat 50% OFF on Electronics",
-    heading: "Flat 50% OFF",
-    sub: "Electronics",
-    description: "Get flat 50% off on best selling electronics & accessories.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "ELEC50"
-  },
-  {
-    id: "c3",
-    discount: "30%",
-    label: "FLAT",
-    badge: "Trending",
-    title: "Flat 30% OFF on Fashion",
-    heading: "Flat 30% OFF",
-    sub: "Fashion",
-    description: "Save big on clothing, footwear, watches & more.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "FASHION30"
-  },
-  {
-    id: "c4",
-    discount: "10%",
-    label: "EXTRA",
-    title: "Extra 10% OFF on Prepaid Orders",
-    heading: "Extra 10% OFF",
-    sub: "Prepaid Orders",
-    description: "Pay using UPI, Cards, Net Banking & get extra 10% off.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "PREPAID10"
-  },
-  {
-    id: "c5",
-    discount: "FREE",
-    label: "DELIVERY",
-    title: "Free Delivery on First Order",
-    heading: "Free Delivery",
-    sub: "On First Order",
-    description: "Get FREE delivery on your first order on Bluehost.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "FREESHIP"
-  },
-  {
-    id: "c6",
-    discount: "₹200",
-    label: "FLAT",
-    title: "Get ₹200 OFF on Min. Order ₹999",
-    heading: "₹200 OFF",
-    sub: "On Min. Order ₹999",
-    description: "Use code and get flat ₹200 off on minimum order of ₹999.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "SAVE200"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Hostinger", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp", dealText: "Up To 80% OFF", href: "/stores/hostinger-discount-code" },
@@ -1163,7 +1087,7 @@ export default function BluehostCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Bluehost Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {OFFERS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">

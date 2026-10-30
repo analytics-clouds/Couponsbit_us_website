@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AporroCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,45 +81,18 @@ const aporroSchema = {
       name: "Aporro Discount Codes & Coupon Codes",
       description: "Latest Aporro discount codes and offers for chains, pendants, earrings, bracelets and rings.",
       url: "https://www.couponsbit.us/stores/aporro-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Aporro Discount Code – Welcome Offer | $50 OFF", description: "Sign up for the Aporro email list and unlock $50 OFF", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/aporro-discount-code",
+          seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Aporro Discount Code – 2-Chain Combo | $99", description: "Get the Aporro 2-Chain Combo for just $99", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Aporro – Micro Custom Round Photo Pendant | From $89", description: "Create a personalized Micro Custom Round Photo Pendant from $89", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Aporro – S925 Baguette Mix Halo Stud Earrings | Save 45%", description: "Save 45% on the S925 Baguette Mix Halo Stud Earring Set", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Aporro – Trove Orbit Pearl Chain in Rose Gold | $70", description: "Shop the 8mm Trove Orbit Pearl Chain in Rose Gold for $70", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Aporro – Saint Mary Double Pendant Chain Set | Save 23%", description: "Save 23% on the Saint Mary Double Pendant & Chain Layer Set", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Aporro – 6mm Iced Clasp Rope Chain Yellow Gold | $40", description: "Get the 6mm Rope Chain with Iced Clasp in Yellow Gold for $40", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Aporro – 6mm Iced Clasp Rope Chain Rose Gold | $40", description: "Shop the 6mm Rope Chain with Iced Clasp in Rose Gold for $40", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Aporro – Pendant & 2 Chains Bundle | $149", description: "Get 1 Pendant plus 2 Chains together for $149", url: "https://www.couponsbit.us/stores/aporro-discount-code", seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" } },
-        },
-      ],
+      })),
     },
 
     {

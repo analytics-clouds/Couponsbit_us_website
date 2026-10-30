@@ -37,6 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OFFERS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -373,333 +374,47 @@ export default function BallboyzCouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$60</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Full Body Acne Gameplan – Save $60</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Tackle face and body acne with BallBoyz's complete skincare system from head to toe.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $99.99 (Regular Price: $160.00) — Save $60 OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time offer for USA customers</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Full Body Acne Gameplan – Save $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz BOYZ Face Acne Gameplan – #1 Seller</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes & Pimple Patches for a complete routine</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $55.99 (Regular Price: $110.00) — Save 50% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Backed by BallBoyz's confidence guarantee for clearer-looking skin</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz BOYZ Face Acne Gameplan – #1 Seller" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">40%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Summer Acne Sale – Up to 40% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Beat summer breakouts with BallBoyz's acne-fighting essentials.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop bestselling pimple patches, face scrubs and skincare bundles</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy Up to 40% OFF during the Summer Acne Sale</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time promotion while supplies last</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Summer Acne Sale – Up to 40% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">TODAY ONLY</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$40</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Pimple Pack – $40 OFF Today Only</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get everything you need for clearer skin in one convenient acne-fighting bundle.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Pimple Patches, Face Scrub and Skincare Essentials</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $29.99 (Regular Price: $69.99) — Save $40 OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for targeting pimples, excess oil and clogged pores</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Pimple Pack – $40 OFF Today Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SPECIAL</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$69.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Face Acne Gameplan – Today Only Special</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your skincare routine with BallBoyz's top-rated acne solution.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes Moisturizer, Face Scrub, Face Wipes and Pimple Patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $69.99 (Regular Price: $110.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built to help reduce breakouts and support healthier-looking skin</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Face Acne Gameplan – Today Only Special" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">EXTRA</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">20%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Build Your Own Bundle – Extra 20% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Customize your skincare routine with your favorite BallBoyz products.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Mix and match face scrubs, body scrubs, moisturizers and pimple patches</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 20% OFF when you build your own bundle</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for a limited time only</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Build Your Own Bundle – Extra 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Activated Charcoal Face Scrub</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps remove dirt, oil and impurities for a refreshed feel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for daily skincare and acne-prone skin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Pair it with other BallBoyz products for maximum results</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Activated Charcoal Face Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ESSENTIAL</p>
-          <h2 className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">NEW</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">BallBoyz Zit Destroyer Body Scrub</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Formulated to exfoliate and cleanse deeply for smoother-looking skin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for chest, back and shoulder acne concerns</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A must-have addition to your grooming routine</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Ballboyz deal: BallBoyz Zit Destroyer Body Scrub" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                {OFFERS.map((c, i) => (
+                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            {c.sub && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sub}</p>}
+                          </div>
+                        </div>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {c.bullets.map((b, bi) => (
+                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get BallBoyz deal: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               
 

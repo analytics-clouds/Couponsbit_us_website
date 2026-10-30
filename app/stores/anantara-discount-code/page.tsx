@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AnantaraContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -78,22 +79,18 @@ const anantaraSchema = {
       name: "Anantara Discount Codes & Coupon Codes",
       description: "Latest Anantara discount codes, promo codes, and luxury resort offers.",
       url: "https://www.couponsbit.us/stores/anantara-discount-code",
-      numberOfItems: 13,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Anantara Discount Code – Join the D$50,000 Rewards Giveaway", description: "Sign up for Minor DISCOVERY to become eligible for an exclusive prize draw featuring cash rewards and premium membership benefits.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Anantara Discount Code – Dhigu Maldives Stays from $563", description: "Plan more days in the Maldives and unlock better room pricing at Anantara Dhigu from $563 per night.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Anantara Promo Code – Riverside Bangkok Hotel Savings", description: "Reserve multiple nights at Anantara Riverside Bangkok and receive discounted pricing on qualifying bookings.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Anantara Promo Code – Desaru Coast Resort from $367", description: "Spend more time at Anantara Desaru Coast and receive reduced rates on longer vacations.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Golden Triangle Explorer Package – From $1,342", description: "Explore Northern Thailand with a premium travel package that includes accommodations, dining, and daily experiences.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Chiang Mai Flexible Stay – From $311", description: "Reserve your stay with added flexibility and adjust your travel plans when needed.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Layan Residences Phuket – Luxury Stay from $4,801", description: "Experience spacious private residences overlooking the Andaman Sea with premium hospitality services.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Al Jabal Al Akhdar Mountain Stay – From $377", description: "Discover Oman's mountain landscapes while receiving reduced pricing on longer hotel stays.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Al Baleed Salalah Resort – From $351", description: "Choose a longer beach vacation at Al Baleed by Anantara and enjoy lower rates on qualifying stays.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Bazaruto Island Luxury Escape – From $834", description: "Book an island vacation featuring premium accommodations, dining, and resort experiences from $834.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Villa Padierna Palace Early Booking – Save Up to 15%", description: "Reserve your room ahead of time to receive lower rates and breakfast for two.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "Mui Ne Resort Stay – Save Up to 35%", description: "Book additional nights at Anantara Mui Ne and receive larger savings on your vacation.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "Palazzo Naiadi Rome Early Booking – Save Up to 15%", description: "Plan your Rome vacation in advance to receive discounted room rates and complimentary breakfast.", url: "https://www.couponsbit.us/stores/anantara-discount-code", seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/anantara-discount-code",
+          seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" },
+        },
+      })),
     },
 
     {

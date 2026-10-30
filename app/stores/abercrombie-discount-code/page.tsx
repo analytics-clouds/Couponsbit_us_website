@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AbercrombieCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,37 +81,18 @@ const abercrombieSchema = {
       name: "Abercrombie Discount Codes & Coupon Codes",
       description: "Latest Abercrombie discount codes and offers for men's, women's and kids' apparel.",
       url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Abercrombie Discount Code – Up to 30% OFF Almost Everything", description: "Enjoy up to 30% OFF almost everything during the limited-time Abercrombie sale.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
+          seller: { "@type": "Organization", name: "Abercrombie & Fitch", url: "https://www.abercrombie.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Abercrombie Kids Discount code – Buy One, Get One 50% OFF", description: "Shop Buy One, Get One 50% OFF on almost everything at Abercrombie Kids.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Abercrombie Men Discount Code – 100% Cotton Denim Shirt Clearance", description: "Get the A&F Archive 100% Cotton Short-Sleeve Denim Button-Up Shirt for $39.99, down from $75.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Abercrombie Men – Vintage Graphic Tee Clearance", description: "Get the 100% Cotton Fallout Vintage-Inspired Graphic Tee for $24.99, reduced from $45.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Abercrombie – New England Patriots Denim Button-Up Shirt", description: "Shop the NFL by Abercrombie New England Patriots Denim Button-Up Shirt for $100.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Abercrombie Kids – Lace Mini Skort Clearance", description: "Get the Lace Mini Skort for just $18.99, down from $34.95.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Abercrombie – Free Standard Shipping on $99+", description: "Get Free Standard Shipping and Handling on orders over $99.", url: "https://www.couponsbit.us/stores/abercrombie-discount-code", seller: { "@type": "Organization", name: "Abercrombie", url: "https://www.abercrombie.com" } },
-        },
-      ],
+      })),
     },
 
     {

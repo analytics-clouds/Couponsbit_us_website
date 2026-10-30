@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { OFFERS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -200,17 +201,7 @@ export default function AporroCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Aporro Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "GET", value: "$50", title: "Aporro Discount Code – Welcome Offer | $50 OFF", desc: "Sign up for the Aporro email list and unlock $50 OFF", bullets: ["Enter your email to receive access to the welcome savings", "Explore custom jewelry, chains, pendants and statement pieces", "A great first-order opportunity for new Aporro shoppers", "Aporro Discount Code, $50 Off, Welcome Offer, Jewelry Deals, USA"] },
-          { label: "SHOP", value: "$99", title: "Aporro Discount Code – 2-Chain Combo | $99", desc: "Get the Aporro 2-Chain Combo for just $99", bullets: ["Mix and match two chains to create your own jewelry combination", "Designed for flexible styling and everyday layering", "A budget-friendly way to add multiple chains to your collection", "Aporro Discount Code, 2 Chain Combo, Chain Jewelry, Men's Jewelry, USA"] },
-          { label: "FROM", value: "$89", title: "Aporro – Micro Custom Round Photo Pendant | From $89", desc: "Create a personalized Micro Custom Round Photo Pendant from $89", bullets: ["Add a meaningful photo to create a unique jewelry piece", "Compact design makes it suitable for everyday styling or gifting", "Choose a custom pendant that adds a personal touch to your look", "Aporro Discount Code, Custom Photo Pendant, Personalized Jewelry, USA"] },
-          { label: "SAVE", value: "45%", title: "Aporro – S925 Baguette Mix Halo Stud Earrings | Save 45%", desc: "Save 45% on the S925 Baguette Mix Halo Stud Earring Set", bullets: ["Features a stylish halo-inspired design for an elevated look", "Crafted with S925 silver for a polished jewelry finish", "Ideal for everyday outfits, special occasions or gifting", "Aporro Discount Code, S925 Earrings, Stud Earrings, Jewelry Sale, USA"] },
-          { label: "SHOP", value: "$70", title: "Aporro – Trove Orbit Pearl Chain in Rose Gold | $70", desc: "Shop the 8mm Trove Orbit Pearl Chain in Rose Gold for $70", bullets: ["Features a bold pearl-inspired chain design with a polished finish", "Rose gold styling adds a distinctive touch to your jewelry collection", "Suitable for statement looks, layering and special occasions", "Aporro Discount Code, Pearl Chain, Rose Gold Jewelry, Chain Necklace, USA"] },
-          { label: "SAVE", value: "23%", title: "Aporro – Saint Mary Double Pendant Chain Set | Save 23%", desc: "Save 23% on the Saint Mary Double Pendant & Chain Layer Set", bullets: ["Features two pendant elements designed for layered styling", "Create a standout look with this detailed statement jewelry set", "Ideal for everyday outfits or occasions that call for extra style", "Aporro Discount Code, Pendant Chain Set, Layered Jewelry, Jewelry Deals, USA"] },
-          { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Yellow Gold | $40", desc: "Get the 6mm Rope Chain with Iced Clasp in Yellow Gold for $40", bullets: ["Features an anti-tarnish finish for easier everyday wear", "Iced clasp detailing adds extra shine to the classic rope-chain design", "Wear it alone or pair it with a favorite pendant", "Aporro Discount Code, Rope Chain, Yellow Gold Jewelry, Iced Chain, USA"] },
-          { label: "SHOP", value: "$40", title: "Aporro – 6mm Iced Clasp Rope Chain Rose Gold | $40", desc: "Shop the 6mm Rope Chain with Iced Clasp in Rose Gold for $40", bullets: ["Comes with an anti-tarnish finish designed for everyday styling", "Rose gold coloring gives the classic rope chain a modern appearance", "Great for layering or wearing as a standalone statement piece", "Aporro Discount Code, Rope Chain, Rose Gold Chain, Iced Jewelry, USA"] },
-          { label: "BUNDLE", value: "$149", title: "Aporro – Pendant & 2 Chains Bundle | $149", desc: "Get 1 Pendant plus 2 Chains together for $149", bullets: ["Build a complete layered jewelry look with one convenient bundle", "Mix the pieces to create different combinations and styling options", "A value-focused choice for anyone looking to expand their jewelry collection", "Aporro Discount Code, Jewelry Bundle, Pendant and Chains, Men's Jewelry, USA"] },
-        ].map((c, i) => (
+        {OFFERS.map((c, i) => (
           <div key={i} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">

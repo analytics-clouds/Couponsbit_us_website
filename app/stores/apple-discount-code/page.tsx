@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AppleCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,57 +81,18 @@ const appleSchema = {
       name: "Apple Discount Codes & Coupon Codes",
       description: "Latest Apple discount codes and offers for iPhone, Mac, iPad and accessories.",
       url: "https://www.couponsbit.us/stores/apple-discount-code",
-      numberOfItems: 12,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Apple Discount Code – Up to $150 Gift Card with Education Savings 🎁", description: "Get a $100–$150 gift card when you buy an eligible Mac or iPad with education savings.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/apple-discount-code",
+          seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Apple MacBook Neo Deal – From $599 💻", description: "Shop the new MacBook Neo starting from just $599.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Apple Discount Code – Flat 20% OFF Student Discount 🎓", description: "Get Flat 20% OFF your purchase with the Apple student discount offer.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Apple MacBook Air Deal – From $999 💻", description: "Buy MacBook Air starting from $999 with powerful performance for work and study.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Apple iPad Air Deal – From $699 📱", description: "Shop the iPad Air starting from $699 for study, creativity, and entertainment.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Apple MacBook Pro Deal – From $1,899 💻", description: "Shop the powerful MacBook Pro starting from $1,899.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Apple Watch Series 11 Deal – From $359 ⌚", description: "Buy Apple Watch Series 11 starting from just $359.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Apple iPhone 16 Deal – From $799 📱", description: "Shop iPhone 16 with advanced camera features starting from $799.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Apple TV 4K Deal – From $199 📺", description: "Get Apple TV 4K starting from $199 for an upgraded entertainment experience.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Apple iPhone 17 Pro Deal – From $1,099 📱", description: "Shop the iPhone 17 Pro starting from $1,099 with advanced Pro features.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "Apple iPhone 17 Silicone Case with MagSafe – $49 📱", description: "Get the iPhone 17 Silicone Case with MagSafe for just $49.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "Apple Native Union Ultralight Sleeve Deal – From $39.95 💻", description: "Get the Native Union Ultralight Sleeve for 13\" and 14\" MacBook models for just $39.95.", url: "https://www.couponsbit.us/stores/apple-discount-code", seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" } },
-        },
-      ],
+      })),
     },
 
     {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FlowersCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -77,24 +78,18 @@ const flowersSchema = {
       name: "1800 Flowers Promo Codes & Coupon Codes",
       description: "Latest 1800 Flowers promo codes and offers on flowers and gift delivery.",
       url: "https://www.couponsbit.us/stores/1800-flowers-promo-code",
-      numberOfItems: 15,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "1800 Flowers Promo Code – Deal of the Week | 30% OFF", description: "Save 30% on selected flowers and gifts with the Deal of the Week.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "1800 Flowers Promo Code – Fall Fresh Pick Bouquet | From $39.99", description: "Shop the Fall Fresh Pick Bouquet starting at $39.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "1800 Flowers Promo Code – Mass Cane Floor Plant | 30% OFF", description: "Save 30% on the Mass Cane Floor Plant, now $101.49 instead of $144.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "1800 Flowers Promo Code – Chocolate Covered Berries | 15% OFF", description: "Get 15% OFF selected Chocolate Covered Berries.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "1800 Flowers Promo Code – Two Dozen Assorted Roses | 30% OFF", description: "Save 30% on Two Dozen Assorted Roses, starting at $52.49 instead of $74.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "1800 Flowers – Double Your Blooms | Save $20", description: "Save $20 with the Double Your Blooms offer on eligible floral arrangements.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "1800 Flowers – Shades of Spring Bouquet | 30% OFF", description: "Save 30% on the Shades of Spring Bouquet with this Bouquet of the Month offer.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "1800 Flowers – Chocolate Gift Basket | Up To 30% OFF", description: "Get up to 30% OFF selected Chocolate Gift Baskets.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "1800 Flowers – Assorted Tulip Bouquet | 15% OFF", description: "Save 15% on the Assorted Tulip Bouquet.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "1800 Flowers – Personalized Photo Gifts | Up To $25 OFF", description: "Save up to $25 on selected Personalized Photo Gifts.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "1800 Flowers – Flowers & Fireworks | From $9.99", description: "Shop selected Flowers & Fireworks gifts starting at just $9.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "1800 Flowers – Spa Basket | From $13.99", description: "Find selected Spa Baskets starting from $13.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "1800 Flowers – Gift Sets | From $29.95", description: "Shop selected Gift Sets starting at $29.95.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "1800 Flowers – Birthday Gifts | From $34", description: "Find selected Birthday Gifts starting at $34.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "1800 Flowers – Grand Gardenia Sympathy Arrangement | From $44.99", description: "Shop the Grand Gardenia™ Sympathy Arrangement starting at $44.99.", url: "https://www.couponsbit.us/stores/1800-flowers-promo-code", seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/1800-flowers-promo-code",
+          seller: { "@type": "Organization", name: "1800 Flowers", url: "https://www.1800flowers.com" },
+        },
+      })),
     },
 
     {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AndieSwimContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -77,20 +78,18 @@ const andieSwimSchema = {
       name: "Andie Swim Discount Codes & Coupon Codes",
       description: "Latest Andie Swim discount codes and offers.",
       url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Andie Swim – The Support Edit: 10% of Profits Donated to Breast Cancer Research", description: "Shop The Support Edit throughout October, featuring swimsuits designed with adjustable straps, supportive under-bust elastic and comfortable coverage.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Andie Swim – The Amalfi One Piece at $112 + Free Gift", description: "Shop The Amalfi One Piece for $112 on the US storefront.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Andie Swim – The Malibu One Piece at $112 + Free Gift", description: "Get The Malibu One Piece in Sherbert for $112 on the US storefront.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Andie Swim Sale – Up to 60% Off The Lanikai One Piece", description: "Shop The Lanikai One Piece Long Torso for $57, reduced from $142 on the official US sale collection.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Andie Swim Sale – Up to 60% Off The Lucaya One Piece", description: "Explore the Andie Swim sale for discounts of up to 60% on selected one-piece swimsuits.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Andie Swim Sale – Up to 50% Off Selected Accessories", description: "Explore selected accessories and swimwear essentials during the Andie Swim sale.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Andie Swim Sale – Up to 40% Off The Amalfi One Piece", description: "Explore selected Amalfi One Piece styles at discounted prices in the official US sale collection.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Andie Swim Sale – Up to 39% Off The Sahara Bikini Top", description: "Explore selected Andie Swim bikini tops during the sale.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Andie Swim Texture Edit – Save on The Amalfi Swim Dress", description: "Discover The Amalfi Swim Dress in the official US collection, with selected styles discounted.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Andie Swim Mom Edit – Up to 30% Off The Devon One Piece", description: "Explore the Andie Swim Mom Edit, featuring swimwear designed with comfort and fit in mind.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Andie Swim – Free Shipping on Orders Over $150", description: "Enjoy free shipping on eligible US orders over $150, as advertised on the Andie Swim website.", url: "https://www.couponsbit.us/stores/andie-swim-discount-code", seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
+          seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" },
+        },
+      })),
     },
 
     {

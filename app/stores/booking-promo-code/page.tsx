@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BookingCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,41 +81,18 @@ const bookingSchema = {
       name: "Booking Promo Codes & Coupon Codes",
       description: "Latest Booking promo codes and offers for hotels, apartments, flights and car rentals.",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Booking Promo Code – Save at Least 15% on Select Stays 🏨", description: "Save at least 15% OFF selected hotel stays with eligible Booking deals.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/booking-promo-code",
+          seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Booking Promo Code – Flat 20% OFF Hotel Bookings 🔥", description: "Enjoy Flat 20% OFF on eligible hotel bookings.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Booking Promo Code – Get 10% OFF Your First Booking 🎁", description: "Sign up and get 10% OFF your first eligible Booking reservation.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Booking – Save Up To 40% on Las Vegas Stays 🎰", description: "Save Up To 40% OFF selected stays in Las Vegas.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Booking  – Miami to London Flights From $567.51 ✈️", description: "Book Miami to London flights starting from $567.51 on eligible offers.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Booking Promo Code – Las Vegas Flights From $67.47 ✈️", description: "Find flights to Las Vegas starting from $67.47", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Booking Promo Code – Guest Home Stays From $86 Per Night 🏠", description: "Enjoy comfortable guest home stays starting from $86 per night.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Booking Promo Code – Carnival Cruise Line Up To 40% OFF 🚢", description: "Save Up To 40% OFF eligible Carnival Cruise Line bookings.", url: "https://www.couponsbit.us/stores/booking-promo-code", seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" } },
-        },
-      ],
+      })),
     },
 
     {

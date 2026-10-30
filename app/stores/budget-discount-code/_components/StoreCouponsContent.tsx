@@ -36,6 +36,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { OFFERS } from "./offers";
 import { cn } from "@/lib/utils";
 
 // --- Types ---
@@ -64,71 +65,6 @@ const STORE_URL = "https://performance.gotrackier.com/click?campaign_id=4793&pub
 const STORE_LOGO = "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784618847/budget-logo_pv0qhg.webp";
 
 // --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "35%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Budget Summer Sale – Up To 35% OFF",
-    heading: "Up To 35% OFF",
-    sub: "Summer Sale",
-    description: "Book your next rental and save up to 35% off when you pay now, plus a free vehicle upgrade on eligible bookings.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BUDGET1"
-  },
-  {
-    id: "c2",
-    discount: "25%",
-    label: "UP TO",
-    badge: "Popular",
-    title: "Budget Weekly Rental Deal – Up To 25% OFF",
-    heading: "Up To 25% OFF",
-    sub: "Weekly Rental Deal",
-    description: "Save up to 25% off on rentals of 5 days or more, perfect for road trips and extended travel.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BUDGET2"
-  },
-  {
-    id: "c3",
-    discount: "$10",
-    label: "GET",
-    badge: "Trending",
-    title: "Budget – Get $10 OFF Rentals Over $175",
-    heading: "$10 OFF",
-    sub: "Rentals Over $175",
-    description: "Save $10 off when your rental is $175 or more, valid on rentals of 3 days or longer.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BUDGET3"
-  },
-  {
-    id: "c4",
-    discount: "$29.99",
-    label: "STARTING AT",
-    title: "Budget Truck Rental – Cargo Vans From $29.99/Day",
-    heading: "Starting At $29.99",
-    sub: "Cargo Van Rental",
-    description: "Rent a cargo van from just $29.99 per day, ideal for moving apartments, furniture, or large items.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BUDGET4"
-  },
-  {
-    id: "c5",
-    discount: "15%",
-    label: "UP TO",
-    title: "Budget Young Driver Special – Up To 15% OFF",
-    heading: "Up To 15% OFF",
-    sub: "Young Driver Special",
-    description: "Young travelers can save up to 15% off eligible rentals with trusted Budget service.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "BUDGET5"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-discount-code" },
@@ -1057,7 +993,7 @@ export default function BudgetCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Budget Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {OFFERS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">

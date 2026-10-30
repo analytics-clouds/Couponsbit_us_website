@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AvisCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -82,69 +83,18 @@ const avisSchema = {
       description:
         "Latest verified Avis coupon codes, promo codes and discount codes for car rentals.",
       url: "https://www.couponsbit.us/stores/avis-discount-code",
-      numberOfItems: 4,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Avis Drive Gold Membership – Limited-Time Offer",
-            description: "Join Avis Drive Gold for just $19 (regular price $39) for a limited time.",
-            url: "https://www.couponsbit.us/stores/avis-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Avis",
-              url: "https://www.avis.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/avis-discount-code",
+          seller: { "@type": "Organization", name: "Avis", url: "https://www.avis.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Avis – Member Savings Across The USA",
-            description: "Rent your favorite vehicle and save up to 20% off on eligible bookings.",
-            url: "https://www.couponsbit.us/stores/avis-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Avis",
-              url: "https://www.avis.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Avis Drive Gold Annual Membership – Just $99",
-            description: "Get Avis Drive Gold Annual Membership for only $99 for a full year of exclusive savings.",
-            url: "https://www.couponsbit.us/stores/avis-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Avis",
-              url: "https://www.avis.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Avis – Save Up To 20% On Every Rental",
-            description: "Save up to 20% off on every eligible car rental across the USA.",
-            url: "https://www.couponsbit.us/stores/avis-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Avis",
-              url: "https://www.avis.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

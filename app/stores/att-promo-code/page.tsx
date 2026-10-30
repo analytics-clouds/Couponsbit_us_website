@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ATTCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -81,28 +82,18 @@ const attSchema = {
       name: "AT&T Promo Codes & Coupon Codes",
       description: "Latest AT&T promo codes and offers on wireless plans and devices.",
       url: "https://www.couponsbit.us/stores/att-promo-code",
-      numberOfItems: 19,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "AT&T Promo Code – iPhone 18 Pro Max | Up To $1,200 OFF", description: "New and existing customers can get the new iPhone 18 Pro Max for up to $1,200 OFF with an eligible trade-in.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "AT&T Promo Code – Apple Watch | $300 OFF", description: "Get $300 OFF Apple Watch when you purchase two eligible watches.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "AT&T Promo Code – New Phone Line | $200 OFF Per Line", description: "Get $200 OFF per line when you call or order online with an eligible wireless plan and new phone line.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "AT&T Promo Code – Samsung Galaxy Z Fold8 Ultra | Up To $1,900 OFF", description: "New and existing customers can get up to $1,900 OFF the Samsung Galaxy Z Fold8 Ultra with an eligible trade-in.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "AT&T Promo Code – Buy All Three | Up To $1,800 OFF", description: "Save up to $1,800 when you purchase all three eligible products.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "AT&T Promo Code – Samsung Accessories | 50% OFF", description: "Enjoy 50% OFF eligible Samsung accessories.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "AT&T Promo Code – Pixel Accessories | 50% OFF", description: "Get a flat 50% OFF selected Pixel accessories.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "AT&T – iPhone 16 Pro Max | $1,000 OFF", description: "Save $1,000 on the iPhone 16 Pro Max with this AT&T phone deal.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "AT&T – Motorola Moto G PLAY 2024 | 60% OFF", description: "Get a flat 60% OFF the Motorola Moto G PLAY 2024.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "AT&T – Back To School Sale | Up To 50% OFF", description: "Save up to 50% during the AT&T Back To School Sale.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "AT&T – Cases, Screens & Chargers | 20% OFF", description: "Save 20% on eligible cases, screen accessories and AT&T Brand chargers.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "AT&T – AT&T Fiber | Up To $150 Reward Card", description: "Order AT&T Fiber and receive an eligible reward card worth up to $150.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "AT&T – Monthly Savings | 20% OFF", description: "Save 20% on eligible AT&T services every month with this promotional offer.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "AT&T – AT&T Fiber | Save $20/Month", description: "Save $20 per month on eligible AT&T Fiber service.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "AT&T – Cashback Points | Up To $340", description: "Earn up to $340 in eligible cashback points through this AT&T offer.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 16, item: { "@type": "Offer", name: "AT&T – iPhone 16 Plus | From $10.99/Month", description: "Get the Apple iPhone 16 Plus with payments starting at $10.99 per month on eligible terms.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 17, item: { "@type": "Offer", name: "AT&T – Unlimited Data | From $25/Month", description: "Get unlimited data starting at just $25 per month with an eligible AT&T plan.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 18, item: { "@type": "Offer", name: "AT&T – 5GB Data | $30/Month", description: "Get 5GB of data for $30 per month with this AT&T wireless offer.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-        { "@type": "ListItem", position: 19, item: { "@type": "Offer", name: "AT&T – Unlimited Plans | From $30/Month Per Line", description: "Get AT&T unlimited service starting at $30 per month per line when you have four lines.", url: "https://www.couponsbit.us/stores/att-promo-code", seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/att-promo-code",
+          seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" },
+        },
+      })),
     },
 
     {

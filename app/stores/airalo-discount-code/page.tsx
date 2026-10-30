@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AiraloCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -88,114 +89,18 @@ const airaloSchema = {
       description:
         "Latest verified Airalo coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/airalo-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – Unlimited USA eSIM from $27 for 7 Days",
-            description: "Get unlimited high-speed data on the T-Mobile 5G network for 7 days from just $27.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/airalo-discount-code",
+          seller: { "@type": "Organization", name: "Airalo", url: "https://www.airalo.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – 50GB USA eSIM for $59 for 30 Days",
-            description: "Get 50GB of high-speed data for 30 days for just $59.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – Earn Up to 10% Cashback Rewards",
-            description: "Earn up to 10% cashback through Airalo Rewards on eligible eSIM purchases.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – Existing Users Save Up to 20%",
-            description: "Save up to 20% on selected eSIM plans with available Airalo promotions.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – Refer Friends & Earn $3",
-            description: "Give your friends $3 in Airmoney and receive $3 for every eligible referral.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – Get 15% OFF Your First eSIM",
-            description: "Save 15% on your first eligible eSIM activation with Airalo.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Airalo – USA eSIM Plans Starting at $4.50",
-            description: "Get USA eSIM plans starting from just $4.50 for affordable travel connectivity.",
-            url: "https://www.couponsbit.us/stores/airalo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Airalo",
-              url: "https://www.airalo.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

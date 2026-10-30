@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AliexpressCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,21 +81,18 @@ const aliexpressSchema = {
       name: "AliExpress Promo Codes & Coupon Codes",
       description: "Latest AliExpress promo codes and offers across electronics, fashion and home goods.",
       url: "https://www.couponsbit.us/stores/aliexpress-promo-code",
-      numberOfItems: 12,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "AliExpress – Labour Day Sale Up to 93% OFF", description: "Save up to 93% OFF on selected products during the AliExpress Labour Day Sale.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "AliExpress – Welcome Deal Up to 70% OFF", description: "New shoppers can enjoy welcome savings of up to 70% OFF on eligible AliExpress purchases.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "AliExpress – Best Sellers Starting at $0.99", description: "Discover popular AliExpress best sellers with selected deals starting from just $0.99.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "AliExpress – Dollar Express Deals Starting at $0.99", description: "Explore Dollar Express deals with selected products starting from just $0.99.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "AliExpress Welcome Savings – Up to 70% OFF", description: "Save up to 70% OFF on eligible AliExpress orders with the Welcome Savings promotion.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "AliExpress Best Seller Collection – Up to 80% OFF", description: "Save up to 80% OFF on selected best-selling AliExpress products.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "AliExpress Custom Auto Parts – Up to 50% OFF", description: "Get up to 50% OFF selected custom auto parts and automotive accessories.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "AliExpress Furniture Sale – Up to 60% OFF + Free Shipping", description: "Enjoy up to 60% OFF a wide selection of furniture during the AliExpress Furniture Sale.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "AliExpress Game Consoles – Starting at $18", description: "Find selected game consoles at discounted prices starting from just $18.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "AliExpress Women's Shoes – Starting at $7.99", description: "Shop women's shoes on AliExpress starting from just $7.99.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "AliExpress Phone Cases & Chargers – Up to 60% OFF", description: "Save up to 60% OFF selected phone cases and charging accessories on AliExpress.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "AliExpress Hagibis Wireless USB-C Transmitter & Receiver Kit – Save $61.58", description: "Shop the Hagibis Wireless USB-C Transmitter and Receiver Kit for selected devices.", url: "https://www.couponsbit.us/stores/aliexpress-promo-code", seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/aliexpress-promo-code",
+          seller: { "@type": "Organization", name: "AliExpress", url: "https://www.aliexpress.com" },
+        },
+      })),
     },
 
     {

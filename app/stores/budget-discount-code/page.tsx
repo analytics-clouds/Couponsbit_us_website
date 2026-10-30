@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BudgetCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -82,129 +83,18 @@ const budgetSchema = {
       description:
         "Latest verified Budget coupon codes, promo codes and discount codes for car rentals.",
       url: "https://www.couponsbit.us/stores/budget-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Budget Summer Sale – Up To 35% OFF",
-            description: "Book your next rental and save up to 35% off when you pay now.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/budget-discount-code",
+          seller: { "@type": "Organization", name: "Budget", url: "https://www.budget.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Budget Weekly Rental Deal – Up To 25% OFF",
-            description: "Save up to 25% off on rentals of 5 days or more.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Budget – Get $10 OFF Rentals Over $175",
-            description: "Save $10 off when your rental is $175 or more.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Budget Truck Rental – Cargo Vans From $29.99/Day",
-            description: "Rent a cargo van from only $29.99 per day.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Budget Young Driver Special – Up To 15% OFF",
-            description: "Young travelers can save up to 15% off eligible rentals.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Budget Pay Now & Save – Up To 15% OFF",
-            description: "Choose the Pay Now option and save up to 15% off instantly.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Budget Switzerland Deal – 7 Days For The Price Of 5",
-            description: "Rent a vehicle for 7 days and pay for only 5.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Budget Weekend Special – 3 Days For The Price Of 2",
-            description: "Rent for 3 days and pay for only 2 on weekend bookings.",
-            url: "https://www.couponsbit.us/stores/budget-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Budget",
-              url: "https://www.budget.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

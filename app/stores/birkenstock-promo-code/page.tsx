@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BirkenstockCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -77,22 +78,18 @@ const birkenstockSchema = {
       name: "Birkenstock Promo Codes & Coupon Codes",
       description: "Latest Birkenstock promo codes and offers.",
       url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
-      numberOfItems: 13,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Birkenstock  Promo Code Bend Chelsea – 35% OFF", description: "Get the Bend Chelsea in Taupe Suede Leather for just $113.75 instead of $175.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Birkenstock Arizona Droplet Buckle Promo Code – 40% OFF", description: "Shop the Arizona Droplet Buckle in High Shine Oyster for $104.97 instead of $174.95.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Birkenstock Uji Promo Code – 40% OFF", description: "Get the Uji in Light Gray for just $90 instead of $150.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Birkenstock Boston Promo Code – 35% OFF", description: "Buy the Boston in Light Gray for $100.75 instead of $155.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Birkenstock 1774 Uerzell Suede Promo Code – Designer Style for $395", description: "Discover the 1774 Uerzell Suede, designed by Thibo Denis, for $395.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Birkenstock Little Kids Footwear Promo Code – Up to 50% OFF", description: "Save up to 50% on selected little kids' footwear.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Birkenstock Foot Care Promo Code – Products Starting at $9.95", description: "Shop selected foot care products starting at just $9.95.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Birkenstock Body Care Promo Code – Products Starting at $29.95", description: "Discover selected body care products starting at $29.95.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Birkenstock Men's Clogs Promo Code – Prices Starting at $59", description: "Shop selected men's clogs starting at $59.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Birkenstock Healthcare Shoes Promo Code – Prices Starting at $82", description: "Explore selected healthcare shoes starting at $82.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Birkenstock Women's Footwear Promo Code – Prices Starting at $112", description: "Shop selected women's footwear starting at $112.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "Birkenstock Men's Footwear Promo Code – Prices Starting at $139.95", description: "Discover selected men's footwear starting at $139.95.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "Birkenstock Arizona Chunky Sandals Promo Code – Get Them for $144", description: "Shop the Arizona Chunky Sandals for just $144.", url: "https://www.couponsbit.us/stores/birkenstock-promo-code", seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
+          seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" },
+        },
+      })),
     },
 
     {

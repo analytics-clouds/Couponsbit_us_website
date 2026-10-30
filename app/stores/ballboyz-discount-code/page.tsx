@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BallboyzCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -82,129 +83,18 @@ const ballboyzSchema = {
       description:
         "Find the latest BallBoyz discount codes and skincare deals for Oct 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
       url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Full Body Acne Gameplan – Save $60",
-            description: "Tackle face and body acne with BallBoyz's complete skincare system from head to toe.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+          seller: { "@type": "Organization", name: "Ballboyz", url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz BOYZ Face Acne Gameplan – #1 Seller",
-            description: "Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Summer Acne Sale – Up to 40% OFF",
-            description: "Beat summer breakouts with BallBoyz's acne-fighting essentials.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Pimple Pack – $40 OFF Today Only",
-            description: "Get everything you need for clearer skin in one convenient acne-fighting bundle.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Face Acne Gameplan – Today Only Special",
-            description: "Upgrade your skincare routine with BallBoyz's top-rated acne solution.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Build Your Own Bundle – Extra 20% OFF",
-            description: "Customize your skincare routine with your favorite BallBoyz products.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Activated Charcoal Face Scrub",
-            description: "Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "BallBoyz Zit Destroyer Body Scrub",
-            description: "Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub.",
-            url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Ballboyz",
-              url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

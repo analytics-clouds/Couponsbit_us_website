@@ -37,6 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OFFERS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -61,68 +62,6 @@ interface StoreItem {
 }
 
 // --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "14%",
-    label: "SAVE",
-    title: "Amazon Discount Code – Crayola Classpack Markers for $59.99 | Save 14% on School Supplies",
-    heading: "14% OFF",
-    sub: "Amazon Discount Code",
-    description: "Get the Crayola Broad Line Markers Classpack (256 Count) for only $59.99 (Was $69.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AMAZON1"
-  },
-  {
-    id: "c2",
-    discount: "52%",
-    label: "SAVE",
-    title: "Amazon Discount Code – Zikopomi Weighted Vest for $11.99 | Flat 52% OFF",
-    heading: "52% OFF",
-    sub: "Amazon Discount Code",
-    description: "Buy the Zikopomi Weighted Vest for just $11.99 (Was $24.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AMAZON2"
-  },
-  {
-    id: "c3",
-    discount: "50%",
-    label: "SAVE",
-    title: "Save More with Amazon Discount Code – Resistance Bands for $9.99 | Save 50% Today",
-    heading: "50% OFF",
-    sub: "Save More with Amazon Discount Code",
-    description: "Grab Resistance Bands for just $9.99 (Was $19.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AMAZON3"
-  },
-  {
-    id: "c4",
-    discount: "33%",
-    label: "SAVE",
-    title: "Amazon Fitness Deals – YOTTOY Cordless Jump Rope for $9.98 | Flat 33% OFF",
-    heading: "33% OFF",
-    sub: "Amazon Fitness Deals",
-    description: "Get the YOTTOY Cordless Jump Rope for only $9.98 (Was $14.97).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AMAZON4"
-  },
-  {
-    id: "c5",
-    discount: "33%",
-    label: "SAVE",
-    title: "Amazon Discount Code – Dr. Arthritis Wrist Brace for $9.95 | Save 33%",
-    heading: "33% OFF",
-    sub: "Amazon Discount Code",
-    description: "Buy the Dr. Arthritis Wrist Brace for only $9.95 (Was $14.95).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AMAZON5"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Walmart", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp", dealText: "Up To 65% OFF", href: "/stores/walmart-promo-code" },
@@ -2958,7 +2897,7 @@ Parents can shop for diapers, wipes, baby formula, feeding accessories, nursery 
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Amazon Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {OFFERS.slice(0, 5).map((deal, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">

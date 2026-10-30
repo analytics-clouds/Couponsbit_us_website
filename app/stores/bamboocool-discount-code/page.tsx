@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BamboocoolCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,49 +81,18 @@ const bamboocoolSchema = {
       name: "Bamboocool Discount Codes & Coupon Codes",
       description: "Latest Bamboocool discount codes and offers for bamboo apparel and sleepwear.",
       url: "https://www.couponsbit.us/stores/bamboocool-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "BambooCool Discount Code – Summer Collection | Up to 25% OFF", description: "Save up to 25% OFF on selected summer underwear and apparel", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/bamboocool-discount-code",
+          seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "BambooCool Discount Code – Men's Polo Shirt | $27.29", description: "Save from the regular price of $45.99 on this clearance deal", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "BambooCool – Women's Seamless Briefs 5-Pack | $36.99", description: "Shop the Mid-Waist Seamless Women's Briefs 5-Pack for $36.99", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "BambooCool – Men's Boxer Briefs 7-Pack | $56.94", description: "Get the Days of the Week Men's Boxer Briefs 7-Pack for $56.94", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "BambooCool – Men's Bamboo Underwear 7-Pack | $56.99", description: "Shop the Bamboo Cool Men's Underwear 7-Pack for $56.99", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "BambooCool – Women's Lace Hipster Bikini 6-Pack | $35.99", description: "Get the Women's Lace Hipster Bikini 6-Pack for $35.99", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "BambooCool – Seamless High-Waist Thongs 6-Pack | $36.74", description: "Shop the Seamless High-Waist Women's Thongs 6-Pack for $36.74", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "BambooCool – Lightweight Lace Trim Pajama Set | $32.59", description: "Get the Lightweight Women's Lace Trim Pajama Set for $32.59", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "BambooCool – Women's Short-Sleeve Pajama Set | $49.34", description: "Shop the Women's Short-Sleeve Pajama Set for $49.34", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "BambooCool Discount Code – First Order | 20% OFF", description: "Sign up and receive 20% OFF your first BambooCool order", url: "https://www.couponsbit.us/stores/bamboocool-discount-code", seller: { "@type": "Organization", name: "Bamboocool", url: "https://bamboocoolapparel.com" } },
-        },
-      ],
+      })),
     },
 
     {

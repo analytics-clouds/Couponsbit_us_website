@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BurgerKingCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,73 +81,18 @@ const burgerKingSchema = {
       name: "Burger King Promo Codes & Coupon Codes",
       description: "Latest Burger King promo codes and offers for combo meals, Whoppers and chicken picks.",
       url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-      numberOfItems: 16,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Burger King Promo Code – 2x Crowns on King Jr. Meals", description: "Earn 2x Crowns on eligible King Jr. Kids Meals from August 24–30, 2026.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/burger-king-promo-code",
+          seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Burger King Promo Code – The Actually $1 Menu", description: "Enjoy selected Burger King menu items for just $1 at participating restaurants.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Burger King Promo Code – Whopper Wednesday", description: "Get a regular Whopper sandwich for $3.98 before taxes and fees every Wednesday.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Burger King – BOGO Original Chicken Sandwich", description: "Buy one Original Chicken Sandwich at regular price and get another of equal or lesser value free.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Burger King – $5 Duo", description: "Choose any two featured menu items with the Burger King $5 Duo offer.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Burger King – $7 Trio", description: "Choose three featured Burger King items with the $7 Trio offer.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Burger King – Free Spotify Premium", description: "Eligible Royal Perks members can receive a promotional Spotify Premium subscription with a qualifying $10+ purchase.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Burger King – Free Whopper Every 3 Months", description: "Walmart+ members can receive a free Whopper sandwich with a qualifying purchase once per calendar quarter.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Burger King – 40% Off Walmart+ Membership", description: "Eligible Royal Perks members can get 40% off a 1-year Walmart+ monthly membership.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Burger King – Free Any Size Fries with $5 Purchase", description: "Select Royal Perks members can get free fries of any size with a qualifying $5+ purchase.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "Burger King – $2 Large Fries", description: "Select Royal Perks members can get Large Fries for just $2.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "Burger King – Welcome Offer", description: "New Royal Perks members can choose a free Whopper Jr. or Original Chicken Sandwich with a $3+ purchase.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 13,
-          item: { "@type": "Offer", name: "Burger King – BK App & Website Delivery", description: "Burger King delivery is available at participating U.S. restaurants through the BK App and bk.com.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 14,
-          item: { "@type": "Offer", name: "Burger King – Royal Perks Rewards", description: "Royal Perks members can earn 10 Crowns for every $1 spent on eligible purchases.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 15,
-          item: { "@type": "Offer", name: "Burger King – My BK Experience Survey", description: "Complete the My BK Experience survey within 48 hours of purchase for an eligible free food reward.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-        {
-          "@type": "ListItem", position: 16,
-          item: { "@type": "Offer", name: "Burger King – Royal Perks Badge Program", description: "Royal Perks badges recognize selected activities through digital badges in the BK App and bk.com.", url: "https://www.couponsbit.us/stores/burger-king-promo-code", seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" } },
-        },
-      ],
+      })),
     },
 
     {

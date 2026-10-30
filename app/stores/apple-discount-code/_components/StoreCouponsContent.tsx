@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { OFFERS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -204,20 +205,7 @@ export default function AppleCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Apple Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "$150 GIFT CARD", title: "Apple Discount Code – Up to $150 Gift Card with Education Savings 🎁", desc: "Get a $100–$150 gift card when you buy an eligible Mac or iPad with education savings.", bullets: ["Enjoy special Apple education pricing on selected Mac and iPad models.", "Available for eligible students, teachers, and education staff.", "Limited-time Apple student savings offer."] },
-          { label: "FROM", value: "$599", title: "Apple MacBook Neo Deal – From $599 💻", desc: "Shop the new MacBook Neo starting from just $599.", bullets: ["Eligible students can access special Apple education pricing.", "Flexible payment options start from $49.91 per month for 12 months.", "Great Apple laptop deal for students and everyday productivity."] },
-          { label: "FLAT", value: "20% OFF", title: "Apple Discount Code – Flat 20% OFF Student Discount 🎓", desc: "Get Flat 20% OFF your purchase with the Apple student discount offer.", bullets: ["Enjoy savings on eligible sitewide products with a minimum order value of $129.", "Offer is exclusively available for eligible students.", "Limited-time Apple student discount deal."] },
-          { label: "FROM", value: "$999", title: "Apple MacBook Air Deal – From $999 💻", desc: "Buy MacBook Air starting from $999 with powerful performance for work and study.", bullets: ["Eligible students, teachers, and staff may receive Apple education pricing.", "Choose the MacBook Air configuration that suits your performance needs.", "Great MacBook Air discount and student laptop deal."] },
-          { label: "FROM", value: "$699", title: "Apple iPad Air Deal – From $699 📱", desc: "Shop the iPad Air starting from $699 for study, creativity, and entertainment.", bullets: ["Choose between the 11-inch and 13-inch iPad Air models.", "Flexible monthly payment options are available on eligible purchases.", "Great Apple iPad discount for students and everyday users."] },
-          { label: "FROM", value: "$1,899", title: "Apple MacBook Pro Deal – From $1,899 💻", desc: "Shop the powerful MacBook Pro starting from $1,899.", bullets: ["Get high-performance hardware for creative and demanding professional tasks.", "Choose from different MacBook Pro configurations.", "Great Apple MacBook deal for professionals and students."] },
-          { label: "FROM", value: "$359", title: "Apple Watch Series 11 Deal – From $359 ⌚", desc: "Buy Apple Watch Series 11 starting from just $359.", bullets: ["Enjoy advanced features for fitness, health, productivity, and everyday use.", "Flexible payments start from $29.91 per month for 12 months.", "Limited-time Apple Watch discount and savings available."] },
-          { label: "FROM", value: "$799", title: "Apple iPhone 16 Deal – From $799 📱", desc: "Shop iPhone 16 with advanced camera features starting from $799.", bullets: ["Trade in an eligible device to potentially lower the purchase cost.", "Enjoy Apple's powerful performance and premium smartphone features.", "Great iPhone discount and Apple phone deal."] },
-          { label: "FROM", value: "$199", title: "Apple TV 4K Deal – From $199 📺", desc: "Get Apple TV 4K starting from $199 for an upgraded entertainment experience.", bullets: ["Stream your favorite Apple services and popular streaming apps.", "Enjoy high-quality picture and sound at home.", "Great Apple TV deal for streaming and entertainment lovers."] },
-          { label: "FROM", value: "$1,099", title: "Apple iPhone 17 Pro Deal – From $1,099 📱", desc: "Shop the iPhone 17 Pro starting from $1,099 with advanced Pro features.", bullets: ["Experience Apple's latest premium smartphone technology.", "Trade-in options may help reduce the cost of your new iPhone.", "Great iPhone 17 Pro discount and Apple smartphone deal."] },
-          { label: "ONLY", value: "$49", title: "Apple iPhone 17 Silicone Case with MagSafe – $49 📱", desc: "Get the iPhone 17 Silicone Case with MagSafe for just $49.", bullets: ["Choose the Electric Lavender finish for a stylish look.", "Designed to provide protection while supporting MagSafe accessories.", "Great Apple accessories deal for iPhone 17 users."] },
-          { label: "FROM", value: "$39.95", title: "Apple Native Union Ultralight Sleeve Deal – From $39.95 💻", desc: "Get the Native Union Ultralight Sleeve for 13\" and 14\" MacBook models for just $39.95.", bullets: ["Enjoy lightweight protection designed for everyday MacBook use.", "Ideal for students, professionals, and MacBook users on the go.", "Great MacBook accessory deal and Apple laptop protection offer."] },
-        ].map((c, i) => (
+        {OFFERS.map((c, i) => (
           <div key={i} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">

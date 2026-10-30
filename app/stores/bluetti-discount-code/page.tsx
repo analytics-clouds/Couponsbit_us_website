@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BluettiCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -85,159 +86,18 @@ const bluettiSchema = {
       description:
         "Latest verified Bluetti coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Elite 300 + Charger 2, Save $150",
-            description: "Save $150 on the Elite 300 + Charger 2 bundle, the world's smallest 3kWh portable power station.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/bluetti-discount-code",
+          seller: { "@type": "Organization", name: "Bluetti", url: "https://www.bluettipower.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Apex 300 + 2×B300K, Save $200",
-            description: "Get $200 OFF the Apex 300 expansion bundle with massive 8,294.4Wh expandable power capacity.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – FREE $249 Trolley With Apex 300 Bundle",
-            description: "Buy a select Apex 300 bundle and receive a FREE trolley worth $249.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Elite 300 From $1,199",
-            description: "The world's smallest 3kWh portable power station, starting at just $1,199.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Apex 300 From $1,699",
-            description: "Delivers both 120V & 240V power simultaneously, starting from $1,699.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Elite 400 From $1,399",
-            description: "An essential home backup solution with up to 4kWh capacity, from $1,399.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Apex 300 + 2×200W Solar Generator, Save $200",
-            description: "Save $200 on this complete solar generator bundle, including two 200W solar panels.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Elite 200 V2 + Charger 2, Save $200",
-            description: "Get $200 OFF on the Elite 200 V2 bundle, charging up to 13× faster than standard car outlets.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – AC200L + Charger 2, Save $150",
-            description: "Save $150 on the AC200L + Charger 2 package with 2,400W output and 2,048Wh battery capacity.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "BLUETTI Power – Apex 300 Home Battery Backup From $1,699",
-            description: "Best-selling home battery backup solution, starting from $1,699.",
-            url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Bluetti",
-              url: "https://www.bluettipower.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {

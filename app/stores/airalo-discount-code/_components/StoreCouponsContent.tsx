@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { OFFERS } from "./offers";
 import Link from "next/link";
 import { 
   ChevronRight, 
@@ -334,17 +335,17 @@ export default function AiraloCouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
+                {OFFERS.map((c, i) => (
+<div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
       <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$27</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/7 DAYS</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
+          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sublabel}</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -353,322 +354,35 @@ export default function AiraloCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Unlimited USA eSIM from $27 for 7 Days</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get unlimited high-speed data on the T-Mobile 5G network for 7 days from just $27.</p>
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
           <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
             <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
           <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use promo code **AC10ALL** to access the available Airalo savings.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy instant eSIM activation with no physical SIM required.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for travelers who need reliable data while visiting the United States.</li>
+              {c.bullets.map((b, bi) => (
+                <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+              ))}
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$59</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/30 DAYS</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – 50GB USA eSIM for $59 for 30 Days</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 50GB of high-speed data for 30 days for just $59.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Airalo deal: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
+            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
+            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+              <Copy className="w-3.5 h-3.5" />
+              Copy
+            </span>
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply promo code **AC10ALL** to access the available Airalo deal.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 500 minutes and 500 SMS with reliable T-Mobile 5G coverage.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A great option for extended trips across the United States.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">10%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">CASHBACK</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Earn Up to 10% Cashback Rewards</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Earn up to 10% cashback through Airalo Rewards on eligible eSIM purchases.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code **AC10ALL** to access available Airalo offers.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Progress through Silver, Gold, and Platinum reward tiers.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Keep earning rewards to save more on future travel eSIM purchases.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Existing Users Save Up to 20%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save up to 20% on selected eSIM plans with available Airalo promotions.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enter promo code **AC10ALL** to access eligible savings.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy exclusive savings designed for existing Airalo customers.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade your travel plan and stay connected for less.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">EARN</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$3</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Refer Friends & Earn $3</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Give your friends $3 in Airmoney and receive $3 for every eligible referral.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code **AC10ALL** to access available Airalo offers.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Earn rewards when friends successfully sign up through your referral.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Share Airalo with friends and enjoy extra savings on future eSIM purchases.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">15%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – Get 15% OFF Your First eSIM</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save 15% on your first eligible eSIM activation with Airalo.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Apply promo code **AC10ALL** to access available savings.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from eligible eSIM plans and activate your service instantly.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A great way for new users to save on their first travel eSIM.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$4.50</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Airalo – USA eSIM Plans Starting at $4.50</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get USA eSIM plans starting from just $4.50 for affordable travel connectivity.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enter code **AC10ALL** to access available Airalo savings.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Avoid roaming fees and enjoy instant digital eSIM activation.</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stay connected across the United States without carrying a physical SIM.</li>
-            </ul>
-          </div>
-        </div>
-          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Airalo deal: Airalo Unlimited USA eSIM from $27 7 Days" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-           <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                ))}
 
 
 

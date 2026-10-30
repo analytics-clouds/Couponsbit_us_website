@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BlueCypressCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,45 +81,18 @@ const blueCypressSchema = {
       name: "Blue Cypress Discount Codes & Coupon Codes",
       description: "Latest Blue Cypress discount codes and offers for polos, hoodies, quarter-zips, headwear and belts.",
       url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Blue Cypress Discount Code – The Jackson Polo | $110", description: "Shop The Jackson Polo in White/Seafoam for $110", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
+          seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Blue Cypress Discount Code – The Stokes Polo | $110", description: "Get The Stokes Polo for $110 from the Summer 2026 Collection", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Blue Cypress Women's Essentials | $109.95", description: "Explore Blue Cypress Women's Essentials starting at $109.95", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Blue Cypress – The Roberts Polo in Blue | $110", description: "Shop The Roberts Polo in Blue for $110", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Blue Cypress – Hutton Hoodie Navy | $114.95", description: "Get the Hutton Hoodie in Navy for $114.95", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Blue Cypress – Hutton Hoodie Light Blue | $114.95", description: "Shop the Hutton Hoodie in Light Blue for $114.95", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Blue Cypress – Isaac Quarter-Zip Navy | $124.95", description: "Get The Isaac Quarter-Zip in Navy for $124.95", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Blue Cypress – Isaac Mélange Quarter-Zip Navy | $124.95", description: "Shop The Isaac Mélange Quarter-Zip in Navy for $124.95", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Blue Cypress – First Order Offer | 20% OFF", description: "Sign up and receive 20% OFF your first Blue Cypress order", url: "https://www.couponsbit.us/stores/blue-cypress-discount-code", seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" } },
-        },
-      ],
+      })),
     },
 
     {
