@@ -3,7 +3,7 @@ import JDSportsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
+    absolute: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Nov 2026",
   },
   description:
     "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/jdsports-discount-code",
-    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
+    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Nov 2026",
     description:
       "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
+    title: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Nov 2026",
     description:
       "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791446502/jD-logo_lfuzxu.webp"],
@@ -60,12 +60,12 @@ const jdsportsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/jdsports-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/jdsports-discount-code",
-      name: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Oct 2026",
+      name: "JD Sports Discount Code – Get up to 50% OFF + Extra 10% OFF | Nov 2026",
       description:
         "Use the latest JD Sports Discount Code and JD Sports Promo Code to get up to 50% OFF clothing, footwear, and accessories, plus 10% OFF your first order. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-09",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/jdsports-discount-code#breadcrumb" },

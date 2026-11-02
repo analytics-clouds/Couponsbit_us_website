@@ -3,10 +3,10 @@ import CartersCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Carter's Discount Code: Get 60% Off Sleepwear | Oct 2026",
+    absolute: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
   },
   description:
-    "Get the latest Carter's discount code and Carter's promo code for October 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+    "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/carters-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/carters-promo-code",
-    title: "Carter's Discount Code: Get 60% Off Sleepwear | Oct 2026",
+    title: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
     description:
-      "Get the latest Carter's discount code and Carter's promo code for October 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+      "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Carter's Discount Code: Get 60% Off Sleepwear | Oct 2026",
+    title: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
     description:
-      "Get the latest Carter's discount code and Carter's promo code for October 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+      "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/carters-logo_fcvfdh.webp"],
     site: "@couponsbit",
   },
@@ -62,12 +62,12 @@ const cartersSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/carters-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/carters-promo-code",
-      name: "Carter's Discount Code: Get 60% Off Sleepwear | Oct 2026",
+      name: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
       description:
-        "Get the latest Carter's discount code and Carter's promo code for October 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+        "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-30",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/carters-promo-code#breadcrumb" },

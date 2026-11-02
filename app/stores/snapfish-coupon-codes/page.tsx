@@ -3,7 +3,7 @@ import SnapfishCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snapfish Discount Code – 77% Off Photo Tiles | Oct 2026",
+    absolute: "Snapfish Discount Code – 77% Off Photo Tiles | Nov 2026",
   },
   description:
     "Find the latest Snapfish discount code and Snapfish promo code to save 77% OFF Photo Tiles, Buy 1 Get 2 FREE Calendars, plus 60% OFF when you sign up for SMS.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/snapfish-coupon-codes",
-    title: "Snapfish Discount Code – 77% Off Photo Tiles | Oct 2026",
+    title: "Snapfish Discount Code – 77% Off Photo Tiles | Nov 2026",
     description:
       "Find the latest Snapfish discount code and Snapfish promo code to save 77% OFF Photo Tiles, Buy 1 Get 2 FREE Calendars, plus 60% OFF when you sign up for SMS.",
     siteName: "Couponsbit",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Snapfish Discount Code – 77% Off Photo Tiles | Oct 2026",
+    title: "Snapfish Discount Code – 77% Off Photo Tiles | Nov 2026",
     description:
       "Find the latest Snapfish discount code and Snapfish promo code to save 77% OFF Photo Tiles, Buy 1 Get 2 FREE Calendars, plus 60% OFF when you sign up for SMS.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/snapfist-logo_vvb7cq.webp"],
@@ -62,12 +62,12 @@ const snapfishSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/snapfish-coupon-codes#webpage",
       url: "https://www.couponsbit.us/stores/snapfish-coupon-codes",
-      name: "Snapfish Discount Code – 77% Off Photo Tiles | Oct 2026",
+      name: "Snapfish Discount Code – 77% Off Photo Tiles | Nov 2026",
       description:
         "Find the latest Snapfish discount code and Snapfish promo code to save 77% OFF Photo Tiles, Buy 1 Get 2 FREE Calendars, plus 60% OFF when you sign up for SMS.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-30",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/snapfish-coupon-codes#breadcrumb" },

@@ -213,7 +213,7 @@ export default function SpiritHalloweenCouponsContent() {
                   </a>
                   <div>
                     <h1 className="text-black font-black text-2xl md:text-2xl mb-2">
-                       Spirit halloweens Promo Code - 4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36% |October 2026
+                       Spirit halloweens Promo Code - 4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36% |November 2026
                     </h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">

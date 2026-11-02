@@ -213,7 +213,7 @@ export default function CartersCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(31.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find the latest Carter's discount code and Carter's promo code for October 2026 to save on baby and kids' clothing. Enjoy up to 60% OFF during Stellar Sleep Week, 30% OFF your first purchase with a Carter's Credit Card, 20% OFF when you join emails and texts, plus free shipping on orders over $50. Shop sleepwear, baby essentials, toddler clothing, jackets, and everyday outfits while applying a verified Carter's discount code or promo code to maximize your savings.
+                      Find the latest Carter's discount code and Carter's promo code for November 2026 to save on baby and kids' clothing. Enjoy up to 60% OFF during Stellar Sleep Week, 30% OFF your first purchase with a Carter's Credit Card, 20% OFF when you join emails and texts, plus free shipping on orders over $50. Shop sleepwear, baby essentials, toddler clothing, jackets, and everyday outfits while applying a verified Carter's discount code or promo code to maximize your savings.
                     </p>
                     <a
                       href="https://www.carters.com"

@@ -4,7 +4,7 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Abercrombie Discount Code – Get up to 30% Off | Oct 2026",
+    absolute: "Abercrombie Discount Code – Get up to 30% Off | Nov 2026",
   },
   description:
     "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-    title: "Abercrombie Discount Code – Get up to 30% Off | Oct 2026",
+    title: "Abercrombie Discount Code – Get up to 30% Off | Nov 2026",
     description:
       "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
     siteName: "Couponsbit",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Abercrombie Discount Code – Get up to 30% Off | Oct 2026",
+    title: "Abercrombie Discount Code – Get up to 30% Off | Nov 2026",
     description:
       "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/abercombie-fetch_ereq8r.webp"],
@@ -64,12 +64,12 @@ const abercrombieSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/abercrombie-discount-code",
-      name: "Abercrombie Discount Code – Get up to 30% Off | Oct 2026",
+      name: "Abercrombie Discount Code – Get up to 30% Off | Nov 2026",
       description:
         "Find the latest Abercrombie discount codes, promo codes and Save up to 30% OFF almost everything, get BOGO 50% OFF at Abercrombie Kids, plus clearance savings.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/abercrombie-discount-code#breadcrumb" },

@@ -65,7 +65,7 @@ const gymsharkSchema = {
         "Use a Gymshark discount code – up to 50% off leggings, jackets & bras. Gymshark promo code: new arrivals from $12, student discount 15% & 10% off first order!",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-22",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/gymshark-discount-code#breadcrumb" },

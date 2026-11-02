@@ -3,7 +3,7 @@ import GammaContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
+    absolute: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
   },
   description:
     "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/gamma-discount-code",
-    title: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
+    title: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
     description:
       "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
+    title: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
     description:
       "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp"],
@@ -60,12 +60,12 @@ const gammaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/gamma-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/gamma-discount-code",
-      name: "Gamma Discount Code – Save 28% & Free Trial Oct 2026",
+      name: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
       description:
         "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-08",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/gamma-discount-code#breadcrumb" },

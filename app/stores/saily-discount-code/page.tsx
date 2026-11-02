@@ -65,7 +65,7 @@ const sailySchema = {
         "Use the latest Saily Discount Code and Saily Coupon Code to get 15% OFF your first student plan or save 5% on all eligible Saily plans. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-25",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/saily-discount-code#breadcrumb" },

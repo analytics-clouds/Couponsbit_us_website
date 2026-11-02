@@ -3,10 +3,10 @@ import MixtilesCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Oct 2026",
+    absolute: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
   },
   description:
-    "Get the latest Mixtiles discount code and Mixtiles promo code for October 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+    "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/mixtiles-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Oct 2026",
+    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
     description:
-      "Get the latest Mixtiles discount code and Mixtiles promo code for October 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+      "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Oct 2026",
+    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
     description:
-      "Get the latest Mixtiles discount code and Mixtiles promo code for October 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+      "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/mixtiles-logo_xrh8pf.webp"],
     site: "@couponsbit",
   },
@@ -62,12 +62,12 @@ const mixtilesSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/mixtiles-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-      name: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Oct 2026",
+      name: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
       description:
-        "Get the latest Mixtiles discount code and Mixtiles promo code for October 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+        "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-30",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/mixtiles-promo-code#breadcrumb" },

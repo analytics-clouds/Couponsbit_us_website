@@ -65,7 +65,7 @@ const postmatesSchema = {
         "Use the latest Postmates Promo Code and Postmates Discount Code to get 20% OFF Surf Club Sushi and free delivery on orders over $15. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-24",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/postmates-promo-code#breadcrumb" },

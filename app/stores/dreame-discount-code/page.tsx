@@ -68,7 +68,7 @@ const dreameSchema = {
         "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

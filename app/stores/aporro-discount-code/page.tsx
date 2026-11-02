@@ -4,10 +4,10 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Oct 2026",
+    absolute: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
   },
   description:
-    "Find the latest Aporro discount code, promo code and verified jewelry deals for Oct 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+    "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/aporro-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/aporro-discount-code",
-    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Oct 2026",
+    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
     description:
-      "Find the latest Aporro discount code, promo code and verified jewelry deals for Oct 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+      "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Oct 2026",
+    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
     description:
-      "Find the latest Aporro discount code, promo code and verified jewelry deals for Oct 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+      "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp"],
     site: "@couponsbit",
   },
@@ -64,12 +64,12 @@ const aporroSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/aporro-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/aporro-discount-code",
-      name: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Oct 2026",
+      name: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
       description:
-        "Find the latest Aporro discount code, promo code and verified jewelry deals for Oct 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+        "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/aporro-discount-code#breadcrumb" },

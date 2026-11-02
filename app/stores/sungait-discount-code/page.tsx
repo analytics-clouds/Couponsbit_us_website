@@ -68,7 +68,7 @@ const sungaitSchema = {
         "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

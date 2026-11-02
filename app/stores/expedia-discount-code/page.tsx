@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
   },
   description:
-    "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
+    "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. November 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/expedia-discount-code",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/expedia-discount-code",
     title: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
     description:
-      "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
+      "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. November 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_AU", "en_CA"],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
     description:
-      "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
+      "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. November 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783502778/Expedia-coupon-code_k8dosy.jpg"],
     site: "@couponsbit",
   },
@@ -66,10 +66,10 @@ const expediaSchema = {
       url: "https://www.couponsbit.us/stores/expedia-discount-code",
       name: "Expedia Discount Code – Big Summer Sale: Up to 40% OFF",
       description:
-        "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
+        "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. November 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -84,7 +84,7 @@ const expediaSchema = {
       "@id": "https://www.couponsbit.us/stores/expedia-discount-code#offerlist",
       name: "Expedia Coupon Codes & Promo Codes",
       description:
-        "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. October 2026.",
+        "Use a verified Expedia discount code or promo code & save up to 40% on hotels, flights & car rentals. Save up to $459 on Atlantic City hotels. November 2026.",
       url: "https://www.couponsbit.us/stores/expedia-discount-code",
       numberOfItems: 10,
       itemListElement: [

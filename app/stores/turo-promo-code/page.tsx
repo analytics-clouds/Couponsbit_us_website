@@ -65,7 +65,7 @@ const turoSchema = {
         "Use the latest Turo Promo Code and Turo Discount Code to get 20% OFF storewide and up to $1,000 OFF monthly car rentals. Grab the deal.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-24",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/turo-promo-code#breadcrumb" },

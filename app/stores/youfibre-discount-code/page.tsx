@@ -65,7 +65,7 @@ const youfibreSchema = {
         "Get the latest YouFibre Discount Code and YouFibre Promo Code to enjoy 1000 Mbps broadband for £25/month and 7000 Mbps from £50/month. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-01",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/youfibre-discount-code#breadcrumb" },

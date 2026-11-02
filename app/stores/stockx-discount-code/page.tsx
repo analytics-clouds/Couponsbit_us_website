@@ -65,7 +65,7 @@ const stockxSchema = {
         "Use a StockX discount code & save up to 60% off accessories, 50% off apparel & 40% off sneakers. StockX promo code deals: sneakers from $56, hoodies $72+!",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-22",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/stockx-discount-code#breadcrumb" },

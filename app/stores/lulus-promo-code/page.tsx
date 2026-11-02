@@ -65,7 +65,7 @@ const lulusSchema = {
         "Use the latest Lulus promo Code and Lulus Discount Code to get Buy 2 Get 1 FREE or save 80% on the Trendsetting Flirt Bustier Top for $5. Shop now.  ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/lulus-promo-code#breadcrumb" },

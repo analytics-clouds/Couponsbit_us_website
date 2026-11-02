@@ -4,10 +4,10 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Oct 2026",
+    absolute: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
   },
   description:
-    "Find the latest Agoda discount codes and travel deals for Oct 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+    "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/agoda-discount-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/agoda-discount-code",
-    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Oct 2026",
+    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
     description:
-      "Find the latest Agoda discount codes and travel deals for Oct 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+      "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Oct 2026",
+    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
     description:
-      "Find the latest Agoda discount codes and travel deals for Oct 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+      "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg"],
     site: "@couponsbit",
   },
@@ -65,12 +65,12 @@ const agodaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/agoda-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/agoda-discount-code",
-      name: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Oct 2026",
+      name: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
       description:
-        "Find the latest Agoda discount codes and travel deals for Oct 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+        "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -85,7 +85,7 @@ const agodaSchema = {
       "@id": "https://www.couponsbit.us/stores/agoda-discount-code#offerlist",
       name: "Agoda Coupon Codes & Promo Codes",
       description:
-        "Find the latest Agoda discount codes and travel deals for Oct 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+        "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
       url: "https://www.couponsbit.us/stores/agoda-discount-code",
       numberOfItems: OFFERS.length,
       itemListElement: OFFERS.map((o, i) => ({

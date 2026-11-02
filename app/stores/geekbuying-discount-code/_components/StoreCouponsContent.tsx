@@ -222,7 +222,7 @@ export default function GeekbuyingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code on electronics, smart gadgets, scooters, tablets, charging stations, and creator gear. Enjoy up to 56% OFF the refurbished DJI Mic Mini Wireless Microphone, 40% OFF GaN charging stations, plus exclusive deals on electric scooters, laser engravers, Android tablets, and more. Browse verified Geekbuying offers, flash sales, and limited-time discounts to get the best prices on innovative tech products this October 2026.
+                      Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code on electronics, smart gadgets, scooters, tablets, charging stations, and creator gear. Enjoy up to 56% OFF the refurbished DJI Mic Mini Wireless Microphone, 40% OFF GaN charging stations, plus exclusive deals on electric scooters, laser engravers, Android tablets, and more. Browse verified Geekbuying offers, flash sales, and limited-time discounts to get the best prices on innovative tech products this November 2026.
                     </p>
                     <a
                       href="https://performance.gotrackier.com/click?campaign_id=4323&pub_id=1015"

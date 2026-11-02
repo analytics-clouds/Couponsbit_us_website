@@ -213,7 +213,7 @@ export default function MixtilesCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(16.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find the latest Mixtiles discount code and Mixtiles promo code for October 2026 to save on custom photo wall art and gallery collections. Enjoy the Buy 1 Get 1 50% OFF offer on your second Mixtiles pack, up to 27% OFF selected wall art layouts, and free shipping on orders over $59. Create personalized gallery walls with your favorite memories using bestselling Mixtiles collections. Apply a verified Mixtiles discount code or promo code at checkout to maximize your savings.
+                      Find the latest Mixtiles discount code and Mixtiles promo code for November 2026 to save on custom photo wall art and gallery collections. Enjoy the Buy 1 Get 1 50% OFF offer on your second Mixtiles pack, up to 27% OFF selected wall art layouts, and free shipping on orders over $59. Create personalized gallery walls with your favorite memories using bestselling Mixtiles collections. Apply a verified Mixtiles discount code or promo code at checkout to maximize your savings.
                     </p>
                     <a
                       href="https://www.mixtiles.com"

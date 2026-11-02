@@ -216,7 +216,7 @@ export default function EdibleArrangementsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(14.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find the latest Edible Arrangements discount code and Edible Arrangements promo code for October 2026 to save on fresh fruit gifts, gourmet desserts, and celebration bundles. Enjoy 30% OFF selected gift collections, 15% OFF eligible orders over $50, Key Lime Cheesecake & Chocolate Dipped Fruit Boxes from $29.99, and gift bundles starting at $31.98 with 1-hour delivery at participating locations. Apply a verified Edible Arrangements discount code or promo code at checkout to maximize your savings on every order.
+                      Find the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026 to save on fresh fruit gifts, gourmet desserts, and celebration bundles. Enjoy 30% OFF selected gift collections, 15% OFF eligible orders over $50, Key Lime Cheesecake & Chocolate Dipped Fruit Boxes from $29.99, and gift bundles starting at $31.98 with 1-hour delivery at participating locations. Apply a verified Edible Arrangements discount code or promo code at checkout to maximize your savings on every order.
                     </p>
                     <a
                       href="https://www.ediblearrangements.com"

@@ -3,7 +3,7 @@ import VistaprintContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
+    absolute: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
   },
   description:
     "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
+    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
     description:
       "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
+    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
     description:
       "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp"],
@@ -60,12 +60,12 @@ const vistaprintSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-      name: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Oct 2026",
+      name: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
       description:
         "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-24",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#breadcrumb" },

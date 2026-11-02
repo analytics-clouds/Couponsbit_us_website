@@ -67,7 +67,7 @@ const singaporeAirlinesSchema = {
         "Get the latest Singapore Airlines promo code and Singapore Airlines discount code to save on flights from SGD 298 to Amsterdam, Osaka, Melbourne, Jakarta, Cebu, Los Angeles, and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-28",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/singapore-airlines-promo-code#breadcrumb" },

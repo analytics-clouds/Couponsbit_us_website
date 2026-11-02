@@ -65,7 +65,7 @@ const ecoflowSchema = {
         "Get the latest EcoFlow Discount Code and EcoFlow Promo Code to save up to 57% OFF in the Prime Day Fall Sale and receive up to $449 in bonus value. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-01",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/ecoflow-discount-code#breadcrumb" },

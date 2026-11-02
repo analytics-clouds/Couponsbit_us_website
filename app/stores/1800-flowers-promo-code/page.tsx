@@ -4,10 +4,10 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Oct 2026",
+    absolute: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Nov 2026",
   },
   description:
-    "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for October 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
+    "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for November 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/1800-flowers-promo-code",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/1800-flowers-promo-code",
-    title: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Oct 2026",
+    title: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Nov 2026",
     description:
-      "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for October 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
+      "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for November 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Oct 2026",
+    title: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Nov 2026",
     description:
-      "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for October 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
+      "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for November 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/1800_flower_logo_uqwufx.webp"],
     site: "@couponsbit",
   },
@@ -61,12 +61,12 @@ const flowersSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/1800-flowers-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/1800-flowers-promo-code",
-      name: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Oct 2026",
+      name: "1800 Flowers Promo Code – Get 30% OFF + $20 OFF | Nov 2026",
       description:
-        "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for October 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
+        "Get the latest 1800 Flowers Promo Code and 1800 Flowers Discount Code for November 2026. Save 30% OFF flowers, get $20 OFF Double Your Blooms, and shop bouquets from $39.99.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/1800-flowers-promo-code#breadcrumb" },

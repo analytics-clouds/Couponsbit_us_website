@@ -3,7 +3,7 @@ import GeekbuyingCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
+    absolute: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
   },
   description:
     "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
+    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
     description:
       "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
     siteName: "Couponsbit",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
+    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
     description:
       "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784707355/geekbuying-logo_pnkeev.webp"],
@@ -63,12 +63,12 @@ const geekbuyingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/geekbuying-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-      name: "Geekbuying Discount Code – Get 56% OFF Tech Deals Oct 2026",
+      name: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
       description:
         "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",

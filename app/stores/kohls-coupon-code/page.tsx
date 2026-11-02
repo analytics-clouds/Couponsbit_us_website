@@ -3,10 +3,10 @@ import KohlsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Oct 2026",
+    absolute: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
   },
   description:
-    "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in October 2026.",
+    "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kohls-coupon-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Oct 2026",
+    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
     description:
-      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in October 2026.",
+      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Oct 2026",
+    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
     description:
-      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in October 2026.",
+      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp"],
     site: "@couponsbit",
   },
@@ -60,12 +60,12 @@ const kohlsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-      name: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Oct 2026",
+      name: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
       description:
-        "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in October 2026.",
+        "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#breadcrumb" },

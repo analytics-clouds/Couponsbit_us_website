@@ -67,7 +67,7 @@ const anantaraSchema = {
         "Save more with the latest Anantara Discount Code and Anantara Promo Code. Enjoy 35% OFF luxury stays and 25% OFF resort bookings. Book now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-23",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/anantara-discount-code#breadcrumb" },

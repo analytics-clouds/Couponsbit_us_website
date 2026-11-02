@@ -68,7 +68,7 @@ const samsungSchema = {
         "Find the latest Samsung promo code and Samsung discount code at Maxiku Offers. Save up to $1,900 OFF OLED TVs, get up to $800 trade-in credit, and enjoy up to $500 OFF monitors.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/samsung-promo-code#breadcrumb" },

@@ -155,7 +155,7 @@ export default function SnapfishCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(18.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find the latest Snapfish discount code and Snapfish promo code to save on personalized photo gifts, prints, cards, calendars, canvas art, and home décor. Enjoy 77% OFF custom Matte Photo Tiles, Buy 1 Get 2 FREE personalized calendars, and 60% OFF your next eligible order when you sign up for SMS alerts. Explore verified October 2026 Snapfish deals on photo books, canvas prints, mugs, and custom cards to preserve your favorite memories while spending less.
+                      Find the latest Snapfish discount code and Snapfish promo code to save on personalized photo gifts, prints, cards, calendars, canvas art, and home décor. Enjoy 77% OFF custom Matte Photo Tiles, Buy 1 Get 2 FREE personalized calendars, and 60% OFF your next eligible order when you sign up for SMS alerts. Explore verified November 2026 Snapfish deals on photo books, canvas prints, mugs, and custom cards to preserve your favorite memories while spending less.
                     </p>
                     <a
                       href="https://www.snapfish.com"

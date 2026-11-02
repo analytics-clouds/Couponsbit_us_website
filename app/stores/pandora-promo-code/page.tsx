@@ -68,7 +68,7 @@ const pandoraSchema = {
         "Find the latest Pandora coupon code and promo code to save 50% on selected charms and get an extra 15% OFF for students. Explore verified Pandora jewellery deals in Sept 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/pandora-promo-code#breadcrumb" },

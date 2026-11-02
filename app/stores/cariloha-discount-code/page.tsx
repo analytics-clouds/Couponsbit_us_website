@@ -3,10 +3,10 @@ import CarilohaCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Oct 2026",
+    absolute: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
   },
   description:
-    "Find the latest Cariloha discount codes and deals for Oct 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+    "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/cariloha-discount-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Oct 2026",
+    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
     description:
-      "Find the latest Cariloha discount codes and deals for Oct 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+      "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Oct 2026",
+    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
     description:
-      "Find the latest Cariloha discount codes and deals for Oct 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+      "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373660/cariloha-coupon-code_t4bwl4.jpg"],
     site: "@couponsbit",
   },
@@ -60,12 +60,12 @@ const carilohaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/cariloha-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-      name: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Oct 2026",
+      name: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
       description:
-        "Find the latest Cariloha discount codes and deals for Oct 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+        "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -80,7 +80,7 @@ const carilohaSchema = {
       "@id": "https://www.couponsbit.us/stores/cariloha-discount-code#offerlist",
       name: "Cariloha Coupon Codes & Promo Codes",
       description:
-        "Find the latest Cariloha discount codes and deals for Oct 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+        "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
       url: "https://www.couponsbit.us/stores/cariloha-discount-code",
       numberOfItems: 11,
       itemListElement: [

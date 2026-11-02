@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "HP Discount Code: Up to 71% Off Laptops & Desktops",
   },
   description:
-    "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
+    "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hp-discount-code",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/hp-discount-code",
     title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
     description:
-      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
+      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
     description:
-      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
+      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp"],
     site: "@couponsbit",
   },
@@ -62,10 +62,10 @@ const hpSchema = {
       url: "https://www.couponsbit.us/stores/hp-discount-code",
       name: "HP Discount Code: Up to 71% Off Laptops & Desktops",
       description:
-        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
+        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -80,7 +80,7 @@ const hpSchema = {
       "@id": "https://www.couponsbit.us/stores/hp-discount-code#offerlist",
       name: "HP Coupon Codes & Promo Codes",
       description:
-        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. October 2026.",
+        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
       url: "https://www.couponsbit.us/stores/hp-discount-code",
       numberOfItems: 12,
       itemListElement: [

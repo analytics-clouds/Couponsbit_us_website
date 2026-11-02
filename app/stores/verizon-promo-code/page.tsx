@@ -65,7 +65,7 @@ const verizonSchema = {
         "Find the latest Verizon promo code and Discount code to get up to $500 OFF Home Internet and save up to 85% on phone accessories. Explore verified Verizon wireless and internet deals in Sept 2026. ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/verizon-promo-code#breadcrumb" },

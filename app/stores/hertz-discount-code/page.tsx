@@ -3,7 +3,7 @@ import HertzContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Hertz Discount Code – Save 25% & $50 OFF Rentals Oct 2026",
+    absolute: "Hertz Discount Code – Save 25% & $50 OFF Rentals Nov 2026",
   },
   description:
     "Use the latest Hertz Discount Code and Hertz Promo Code to save up to 25% on car rentals and $50 OFF weekly SUV and minivan rentals. Book now.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hertz-discount-code",
-    title: "Hertz Discount Code – Save 25% & $50 OFF Rentals Oct 2026",
+    title: "Hertz Discount Code – Save 25% & $50 OFF Rentals Nov 2026",
     description:
       "Use the latest Hertz Discount Code and Hertz Promo Code to save up to 25% on car rentals and $50 OFF weekly SUV and minivan rentals. Book now.",
     siteName: "Couponsbit",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Hertz Discount Code – Save 25% & $50 OFF Rentals Oct 2026",
+    title: "Hertz Discount Code – Save 25% & $50 OFF Rentals Nov 2026",
     description:
       "Use the latest Hertz Discount Code and Hertz Promo Code to save up to 25% on car rentals and $50 OFF weekly SUV and minivan rentals. Book now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791974650/hertz-logo_geobmi.webp"],
@@ -69,12 +69,12 @@ const hertzSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hertz-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/hertz-discount-code",
-      name: "Hertz Discount Code – Save 25% & $50 OFF Rentals Oct 2026",
+      name: "Hertz Discount Code – Save 25% & $50 OFF Rentals Nov 2026",
       description:
         "Use the latest Hertz Discount Code and Hertz Promo Code to save up to 25% on car rentals and $50 OFF weekly SUV and minivan rentals. Book now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-14",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/hertz-discount-code#breadcrumb" },

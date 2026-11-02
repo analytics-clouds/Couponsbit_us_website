@@ -3,7 +3,7 @@ import SephoraCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sephora Promo Code – Get 50% OFF Beauty Sale | Oct 2026",
+    absolute: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
   },
   description:
     "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sephora-promo-code",
-    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Oct 2026",
+    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
     description:
       "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
     siteName: "Couponsbit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Oct 2026",
+    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
     description:
       "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp"],
@@ -60,12 +60,12 @@ const sephoraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sephora-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/sephora-promo-code",
-      name: "Sephora Promo Code – Get 50% OFF Beauty Sale | Oct 2026",
+      name: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
       description:
         "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/sephora-promo-code#breadcrumb" },

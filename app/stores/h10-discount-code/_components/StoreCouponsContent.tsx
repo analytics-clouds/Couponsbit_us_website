@@ -134,7 +134,7 @@ export default function H10CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest H10 Hotels Discount Code and H10 Hotels Promo Code on your next holiday. Enjoy up to 35% OFF flight + hotel packages and 20% OFF selected autumn stays. You can also book all-inclusive resorts, beachfront hotels, and adults-only escapes from €140 per night or vacation packages from ₹63,886. Explore destinations including the Canary Islands, Riviera Maya, Mallorca, and the Caribbean while enjoying verified H10 Hotels offers this October 2026.
+                      Save more with the latest H10 Hotels Discount Code and H10 Hotels Promo Code on your next holiday. Enjoy up to 35% OFF flight + hotel packages and 20% OFF selected autumn stays. You can also book all-inclusive resorts, beachfront hotels, and adults-only escapes from €140 per night or vacation packages from ₹63,886. Explore destinations including the Canary Islands, Riviera Maya, Mallorca, and the Caribbean while enjoying verified H10 Hotels offers this November 2026.
                     </p>
                     <a
                       href={STORE_URL}

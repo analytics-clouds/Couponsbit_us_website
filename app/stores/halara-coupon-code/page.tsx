@@ -65,7 +65,7 @@ const halaraSchema = {
         "Find the latest Halara coupon code and Halara promo code to save up to 80% in the Flash Sale and claim a $100 coupon bundle. Shop verified Halara deals in Sept 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/halara-coupon-code#breadcrumb" },

@@ -4,7 +4,7 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Oct 2026",
+    absolute: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
   },
   description:
     "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
-    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Oct 2026",
+    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
     description:
       "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
     siteName: "Couponsbit",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Oct 2026",
+    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
     description:
       "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791543378/Andie_swim_discount_code_cnars1.webp"],
@@ -61,12 +61,12 @@ const andieSwimSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/andie-swim-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
-      name: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Oct 2026",
+      name: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
       description:
         "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-09",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/andie-swim-discount-code#breadcrumb" },

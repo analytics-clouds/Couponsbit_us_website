@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
   },
   description:
-    "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for October 2026.",
+    "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kiwi-discount-code",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/kiwi-discount-code",
     title: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
     description:
-      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for October 2026.",
+      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
     description:
-      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for October 2026.",
+      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp"],
     site: "@couponsbit",
   },
@@ -64,10 +64,10 @@ const kiwiSchema = {
       url: "https://www.couponsbit.us/stores/kiwi-discount-code",
       name: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
       description:
-        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for October 2026.",
+        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
@@ -82,7 +82,7 @@ const kiwiSchema = {
       "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#offerlist",
       name: "Kiwi Coupon Codes & Promo Codes",
       description:
-        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for October 2026.",
+        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
       url: "https://www.couponsbit.us/stores/kiwi-discount-code",
       numberOfItems: 4,
       itemListElement: [

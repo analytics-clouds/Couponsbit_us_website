@@ -3,10 +3,10 @@ import ConverseCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Converse Discount Code: Get 80% Off on Shirts | Oct 2026",
+    absolute: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
   },
   description:
-    "Get the latest Converse discount code and Converse promo code for October 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+    "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/converse-promo-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/converse-promo-code",
-    title: "Converse Discount Code: Get 80% Off on Shirts | Oct 2026",
+    title: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
     description:
-      "Get the latest Converse discount code and Converse promo code for October 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+      "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Converse Discount Code: Get 80% Off on Shirts | Oct 2026",
+    title: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
     description:
-      "Get the latest Converse discount code and Converse promo code for October 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+      "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338495/converse-logo_zpgzpr.webp"],
     site: "@couponsbit",
   },
@@ -62,12 +62,12 @@ const converseSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/converse-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/converse-promo-code",
-      name: "Converse Discount Code: Get 80% Off on Shirts | Oct 2026",
+      name: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
       description:
-        "Get the latest Converse discount code and Converse promo code for October 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+        "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-30",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/converse-promo-code#breadcrumb" },

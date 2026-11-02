@@ -3,7 +3,7 @@ import RestContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Oct 2026",
+    absolute: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
   },
   description:
     "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/rest-discount-code",
-    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Oct 2026",
+    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
     description:
       "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
     siteName: "Couponsbit",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Oct 2026",
+    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
     description:
       "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791978343/restus-logo_qyvz2a.webp"],
@@ -62,12 +62,12 @@ const restSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/rest-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/rest-discount-code",
-      name: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Oct 2026",
+      name: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
       description:
         "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-14",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/rest-discount-code#breadcrumb" },

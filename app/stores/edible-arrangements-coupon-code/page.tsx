@@ -3,10 +3,10 @@ import EdibleArrangementsCouponsContent from "./_components/StoreCouponsContent"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Edible Arrangements Discount Code: Save 30% on gift | Oct 2026",
+    absolute: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
   },
   description:
-    "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for October 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+    "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-    title: "Edible Arrangements Discount Code: Save 30% on gift | Oct 2026",
+    title: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
     description:
-      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for October 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Edible Arrangements Discount Code: Save 30% on gift | Oct 2026",
+    title: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
     description:
-      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for October 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/edible_arrangements_logo_hcpsvl.webp"],
     site: "@couponsbit",
   },
@@ -62,12 +62,12 @@ const edibleArrangementsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-      name: "Edible Arrangements Discount Code: Save 30% on gift | Oct 2026",
+      name: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
       description:
-        "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for October 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+        "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-10-30",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#breadcrumb" },

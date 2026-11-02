@@ -65,7 +65,7 @@ const peacockSchema = {
         "Use the latest Peacock Discount Code and Peacock promo Code to get plans from $2.99/month or Peacock Premium from $7.99/month. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
-      dateModified: "2026-09-21",
+      dateModified: "2026-11-01",
       speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/peacock-promo-code#breadcrumb" },

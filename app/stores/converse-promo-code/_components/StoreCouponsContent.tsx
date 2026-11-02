@@ -213,7 +213,7 @@ export default function ConverseCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(22.1k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find the latest Converse discount code and Converse promo code for October 2026 to save on sneakers, apparel, bags, and accessories. Grab 80% OFF the Daily Paper Cropped Shirt, 60% OFF Festival Button-Up and Collegiate Cropped T-Shirts, 50% OFF Chuck Taylor Leather Platform sneakers, and 50% OFF Chuck Taylor Tote Bags. Shop iconic Converse footwear, clothing, and limited-edition collections while applying a verified Converse discount code or promo code at checkout to maximize your savings.
+                      Find the latest Converse discount code and Converse promo code for November 2026 to save on sneakers, apparel, bags, and accessories. Grab 80% OFF the Daily Paper Cropped Shirt, 60% OFF Festival Button-Up and Collegiate Cropped T-Shirts, 50% OFF Chuck Taylor Leather Platform sneakers, and 50% OFF Chuck Taylor Tote Bags. Shop iconic Converse footwear, clothing, and limited-edition collections while applying a verified Converse discount code or promo code at checkout to maximize your savings.
                     </p>
                     <a
                       href="https://www.converse.com"
