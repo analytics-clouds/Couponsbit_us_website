@@ -114,6 +114,11 @@ const categoriesSchema = {
           name: "Home & Living Coupons",
           url: "https://www.couponsbit.us/categories/home-living",
         },
+        {
+          "@type": "WebPageElement",
+          name: "Gift Coupons",
+          url: "https://www.couponsbit.us/categories/gift",
+        },
       ],
     },
     {

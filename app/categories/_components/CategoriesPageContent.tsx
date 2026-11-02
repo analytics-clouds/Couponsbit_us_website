@@ -24,7 +24,8 @@ import {
   Car,
   BedDouble,
   Glasses,
-  Shirt
+  Shirt,
+  Gift
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
@@ -255,6 +256,22 @@ const categories = [
     featured: ["Nike", "Zara", "H&M", "Shein"],
     gradient: "from-[#056bfa] to-[#0451c4]",
     image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780435/clothing_qsvqci.png"
+  },
+  {
+    id: "gift",
+    name: "Gifts",
+    icon: Gift,
+    emoji: "🎁",
+    href: "/categories/gift",
+    accent: "#056bfa",
+    accentDark: "#0451c4",
+    lightBg: "#FFF7ED",
+    coupons: "80+",
+    stores: "8+",
+    description: "Flowers, personalized gifts & special occasions",
+    featured: ["1800 Flowers", "Shutterfly", "Etsy", "Snapfish"],
+    gradient: "from-[#056bfa] to-[#0451c4]",
+    image: "https://res.cloudinary.com/couponsbit/image/upload/v1793604459/gift-category_chorbz.webp"
   }
 ];
 
@@ -287,7 +304,7 @@ export default function CategoriesPageContent() {
             className="inline-flex items-center gap-2 bg-white/15 border border-white/20 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8"
           >
             <Flame className="w-3.5 h-3.5 text-yellow-300 fill-yellow-300" />
-            14 Active Categories · Updated Daily
+            15 Active Categories · Updated Daily
           </motion.div>
 
           <motion.h1

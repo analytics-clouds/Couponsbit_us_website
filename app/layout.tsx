@@ -92,8 +92,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Season season="halloween" />
-        <Music src="/horror-sound.mp3" volume={0.3} />
+        {/* HALLOWEEN_HIDDEN — uncomment to re-enable: <Season season="halloween" /> */}
+        {/* HALLOWEEN_HIDDEN — uncomment to re-enable: <Music src="/horror-sound.mp3" volume={0.3} /> */}
         {children}
         <Script
           id="microsoft-clarity"

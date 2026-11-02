@@ -32,6 +32,7 @@ const CATEGORIES = [
   { name: "Fashion", href: "/categories/fashion" },
   { name: "Food & Dining", href: "/categories/food" },
   { name: "Gaming & Digital Goods", href: "/categories/gaming" },
+  { name: "Gifts", href: "/categories/gift" },
   { name: "Health & Wellness", href: "/categories/health" },
   { name: "Home & Lifestyle", href: "/categories/home" },
   { name: "Hotels & Accommodation", href: "/categories/hotels" },

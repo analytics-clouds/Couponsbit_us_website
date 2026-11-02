@@ -175,6 +175,10 @@ export const allStores: StoreEntry[] = [
   { name: "Snapfish",           id: "snapfish-coupon-codes",             category: "More",    coupons: 10, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/snapfist-logo_vvb7cq.webp",            discount: "77% Off Tiles",  popular: false },
   { name: "Edible Arrangements", id: "edible-arrangements-coupon-code", category: "More",    coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/edible_arrangements_logo_hcpsvl.webp", discount: "Save Up To $25", popular: false },
   { name: "Mixtiles",           id: "mixtiles-promo-code",               category: "More",    coupons: 5,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793338496/mixtiles-logo_xrh8pf.webp",            discount: "Up To 27% OFF",  popular: false },
+  { name: "Ariat",             id: "ariat-promo-code",                  category: "Fashion", coupons: 18, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614080/Ariat-Logo_fsk8nx.webp",              discount: "Up To 25% OFF",  popular: false },
+  { name: "IKEA",              id: "ikea-discount-code",                category: "Home",    coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/ikea-logo_suwglk.webp",               discount: "Up To 70% OFF",  popular: false },
+  { name: "Ticketmaster",      id: "ticketmaster-promo-code",           category: "More",    coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/ticketmaster-logo_boxlia.webp",        discount: "Up To 65% OFF",  popular: false },
+  { name: "Zenni Optical",     id: "zenni-optical-promo-code",          category: "Fashion", coupons: 17, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/zenni-optical-logo_gy9ssm.webp",      discount: "BOGO 40% OFF",   popular: false },
 ];
 
 

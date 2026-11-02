@@ -372,7 +372,7 @@ export default function BlogPage() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
 
-              {/* Post — Halloween Fun Ideas for Costumes & Parties */}
+              {/* Post — Halloween Is Almost Here */}
               <div className="bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-lg hover:border-[#056bfa] transition-all duration-300 group">
                 <div className="w-full md:w-[220px] h-[200px] md:h-auto shrink-0 relative overflow-hidden">
                   <img

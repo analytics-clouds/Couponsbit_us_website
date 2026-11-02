@@ -33,6 +33,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Andie Swim Discount Code](https://www.couponsbit.us/stores/andie-swim-discount-code): Swimsuit, bikini, and one-piece swimwear discounts
 - [Aporro Discount Code](https://www.couponsbit.us/stores/aporro-discount-code): Custom jewelry, chains, and streetwear-inspired accessory discounts
 - [Apple Discount Code](https://www.couponsbit.us/stores/apple-discount-code): iPhone, Mac, iPad, Apple Watch, and AirPods discounts
+- [Ariat Promo Code](https://www.couponsbit.us/stores/ariat-promo-code): Western boots, workwear, and equestrian apparel discounts
 - [AT&T Promo Code](https://www.couponsbit.us/stores/att-promo-code): Wireless plan, phone trade-in, and internet bundle discounts
 - [Avis Discount Code](https://www.couponsbit.us/stores/avis-discount-code): Car rental discounts
 - [BallBoyz Discount Code](https://www.couponsbit.us/stores/ballboyz-discount-code): Acne and skincare bundle discounts
@@ -94,6 +95,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Hostinger Discount Code](https://www.couponsbit.us/stores/hostinger-discount-code): Web hosting and website builder discounts
 - [HP Discount Code](https://www.couponsbit.us/stores/hp-discount-code): Laptop, desktop, and printer discounts
 - [Iberia Discount Code](https://www.couponsbit.us/stores/iberia-discount-code): Flight, business class, and Avios rewards discounts
+- [IKEA Discount Code](https://www.couponsbit.us/stores/ikea-discount-code): Furniture, home decor, storage, lighting, and kitchen discounts
 - [Inspiring Vacation Discount Code](https://www.couponsbit.us/stores/inspiring-vacation-discount-code): Escorted tour and vacation package discounts
 - [Instacart Promo Code](https://www.couponsbit.us/stores/instacart-promo-code): Grocery delivery and Instacart+ membership discounts
 - [iSinwheel Discount Code](https://www.couponsbit.us/stores/isinwheel-discount-code): Electric scooter, e-bike, and rideable accessory discounts
@@ -163,6 +165,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Target Discount Code](https://www.couponsbit.us/stores/target-discount-code): General merchandise, home, electronics, and apparel discounts
 - [Temu Coupon Code](https://www.couponsbit.us/stores/temu-coupon-code): Marketplace deals across fashion, home goods, and electronics
 - [The Ayurveda Experience Discount Code](https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code): Ayurvedic hair oil, skincare, and wellness product discounts
+- [Ticketmaster Promo Code](https://www.couponsbit.us/stores/ticketmaster-promo-code): Concert, sports, theatre, and live event ticket discounts
 - [TP-Link Promo Code](https://www.couponsbit.us/stores/tplink-promo-code): Router, mesh Wi-Fi, and smart home device discounts
 - [TrainPal Discount Code](https://www.couponsbit.us/stores/trainpal-discount-code): UK train ticket and Railcard discounts
 - [Turo Promo Code](https://www.couponsbit.us/stores/turo-promo-code): Peer-to-peer car rental discounts
@@ -188,6 +191,7 @@ Whether consumers are booking travel, purchasing software, shopping for electron
 - [Zara Discount Code](https://www.couponsbit.us/stores/zara-discount-code): Women's, men's and kids' apparel and Zara Home discounts
 - [Zen Hotels Discount Code](https://www.couponsbit.us/stores/zen-hotels-discount-code): Hotel booking discounts
 - [Zenni Optical Promo Code](https://www.couponsbit.us/stores/zenni-discount-code): Prescription glasses, sunglasses, and lens discounts
+- [Zenni Optical Discount Code](https://www.couponsbit.us/stores/zenni-optical-promo-code): Prescription glasses, BOGO deals, blue-light glasses, and eyewear discounts
 
 ## Location Pages
 These are city-specific sub-pages of the Nuagewear store page, each covering local delivery times, sales tax, and shopper tips for that city. They are a separate, more localized layer of content beneath the main Nuagewear store page — useful context for understanding how this site organizes location-specific coupon content.
@@ -211,6 +215,7 @@ These are city-specific sub-pages of the Nuagewear store page, each covering loc
 - [Fashion](https://www.couponsbit.us/categories/fashion): Coupons for clothing, shoes, and accessories
 - [Food & Dining](https://www.couponsbit.us/categories/food): Coupons for restaurants, delivery, and meal kits
 - [Gaming & Digital Goods](https://www.couponsbit.us/categories/gaming): Coupons for game keys, in-game currency, and digital goods
+- [Gifts](https://www.couponsbit.us/categories/gift): Coupons for flowers, personalized gifts, and special occasions
 - [Health & Wellness](https://www.couponsbit.us/categories/health): Coupons for supplements, fitness, and personal care
 - [Home & Lifestyle](https://www.couponsbit.us/categories/home): Coupons for furniture, decor, and home essentials
 - [Hotels & Accommodation](https://www.couponsbit.us/categories/hotels): Coupons for hotels, resorts, and vacation rentals

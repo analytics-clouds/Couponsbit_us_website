@@ -155,7 +155,7 @@ const Hero = () => {
             aria-label="Previous slide"
             className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronLeft className="w-5 h-5 text-[#47225a]" />
+            <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
           </button>
 
           <button
@@ -163,7 +163,7 @@ const Hero = () => {
             aria-label="Next slide"
             className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-[#e8f6f8] transition-all duration-300 active:scale-90"
           >
-            <ChevronRight className="w-5 h-5 text-[#47225a]" />
+            <ChevronRight className="w-5 h-5 text-[#056bfa]" />
           </button>
 
           <div
@@ -201,7 +201,7 @@ const Hero = () => {
             >
               <span className={cn(
                 "rounded-full transition-all duration-300 block",
-                currentIndex === i ? "w-6 h-2 bg-[#47225a]" : "w-2 h-2 bg-[#e0e0e0]"
+                currentIndex === i ? "w-6 h-2 bg-[#056bfa]" : "w-2 h-2 bg-[#e0e0e0]"
               )} />
             </button>
           ))}
@@ -236,7 +236,7 @@ const TopBrands = () => {
         <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
           Top Brands
         </h2>
-        <Link href="/stores" className="text-[#47225a] font-bold text-sm hover:underline flex items-center gap-1 group">
+        <Link href="/stores" className="text-[#056bfa] font-bold text-sm hover:underline flex items-center gap-1 group">
           View All Stores <span className="group-hover:translate-x-1 transition-transform">→</span>
         </Link>
       </div>
@@ -247,14 +247,14 @@ const TopBrands = () => {
           aria-label="Scroll left"
           className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronLeft className="w-5 h-5 text-[#47225a]" />
+          <ChevronLeft className="w-5 h-5 text-[#056bfa]" />
         </button>
         <button
           onClick={() => scroll(1)}
           aria-label="Scroll right"
           className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-lg border border-[#f0f0f0] flex items-center justify-center hover:bg-[#e8f6f8] transition-all"
         >
-          <ChevronRight className="w-5 h-5 text-[#47225a]" />
+          <ChevronRight className="w-5 h-5 text-[#056bfa]" />
         </button>
 
         <div
@@ -266,7 +266,7 @@ const TopBrands = () => {
             <Link
               key={i}
               href={store.href}
-              className="shrink-0 w-[210px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-6 flex flex-col items-center text-center hover:border-[#47225a] hover:shadow-md transition-all duration-300 group"
+              className="shrink-0 w-[210px] bg-white border border-[#f0f0f0] rounded-2xl shadow-sm p-6 flex flex-col items-center text-center hover:border-[#056bfa] hover:shadow-md transition-all duration-300 group"
             >
               <div className="h-20 flex items-center justify-center mb-3">
                 <img
@@ -433,7 +433,7 @@ export default function HomePageContent() {
           <CheckCircle className="w-5 h-5 text-[#22c55e]" />
           <div>
             <p className="text-black font-extrabold text-sm">Code Copied!</p>
-            <p className="text-[#47225a] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
+            <p className="text-[#056bfa] font-mono text-xs font-bold leading-none mt-0.5">{toast.code}</p>
           </div>
         </div>
       )}
@@ -465,8 +465,8 @@ export default function HomePageContent() {
           "
                 >
                   <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3">
-                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#47225a]/10 flex items-center justify-center shrink-0">
-                      <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#47225a]" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#056bfa]/10 flex items-center justify-center shrink-0">
+                      <stat.icon className="w-6 h-6 md:w-7 md:h-7 text-[#056bfa]" />
                     </div>
 
                     <div className="text-center sm:text-left">
@@ -489,7 +489,7 @@ export default function HomePageContent() {
           <div className="container mx-auto px-4 max-w-7xl">
             {/* Tagline / Header */}
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-[#47225a] font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-full border border-blue-100">
+              <span className="text-[#056bfa] font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-full border border-blue-100">
                 Exclusive Amazon Deals
               </span>
               <h2 className="text-gray-900 font-black text-3xl md:text-4xl tracking-tight mt-3">
@@ -498,7 +498,7 @@ export default function HomePageContent() {
               <p className="text-gray-500 text-sm md:text-base mt-2">
                 Handpicked Amazon discounts updated daily—shop smarter, save bigger.
               </p>
-              <div className="w-16 h-1 bg-[#47225a] rounded-full mx-auto mt-4"></div>
+              <div className="w-16 h-1 bg-[#056bfa] rounded-full mx-auto mt-4"></div>
             </div>
 
             {/* Carousel Container */}
@@ -534,7 +534,7 @@ export default function HomePageContent() {
                       {/* Card Body */}
                       <div className="p-5 flex flex-col flex-grow justify-between text-center bg-white">
                         {/* 2. Category Title */}
-                        <h3 className="text-base md:text-lg font-bold text-gray-800 line-clamp-2 mb-5 min-h-[3rem] flex items-center justify-center group-hover/card:text-[#47225a] transition-colors duration-200">
+                        <h3 className="text-base md:text-lg font-bold text-gray-800 line-clamp-2 mb-5 min-h-[3rem] flex items-center justify-center group-hover/card:text-[#056bfa] transition-colors duration-200">
                           {category.title}
                         </h3>
 
@@ -543,7 +543,7 @@ export default function HomePageContent() {
                           href={affiliateUrl}
                           target="_blank"
                           rel="nofollow noopener noreferrer"
-                          className="w-full py-3 px-4 bg-[#47225a] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
+                          className="w-full py-3 px-4 bg-[#056bfa] hover:bg-[#0354c7] text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group/btn"
                         >
                           <span>Explore Deals</span>
                           <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" />
@@ -560,7 +560,7 @@ export default function HomePageContent() {
                 aria-label="Previous Slide"
                 className="absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
               >
-                <ChevronLeft className="w-6 h-6 text-[#47225a]" />
+                <ChevronLeft className="w-6 h-6 text-[#056bfa]" />
               </button>
 
               {/* Next Button */}
@@ -569,7 +569,7 @@ export default function HomePageContent() {
                 aria-label="Next Slide"
                 className="absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-gray-800 rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 z-10"
               >
-                <ChevronRight className="w-6 h-6 text-[#47225a]" />
+                <ChevronRight className="w-6 h-6 text-[#056bfa]" />
               </button>
             </div>
 
@@ -581,7 +581,7 @@ export default function HomePageContent() {
                   onClick={() => setCurrentIndex(idx)}
                   aria-label={`Go to slide ${idx + 1}`}
                   className={`h-2.5 rounded-full transition-all duration-300 ${currentIndex === idx
-                      ? "w-8 bg-[#47225a]"
+                      ? "w-8 bg-[#056bfa]"
                       : "w-2.5 bg-gray-300 hover:bg-gray-400"
                     }`}
                 />
@@ -596,7 +596,7 @@ export default function HomePageContent() {
             <h2 className="text-black font-extrabold text-2xl md:text-3xl tracking-tight">
               Shop Beyond the Price Tag.
             </h2>
-            <div className="w-16 h-[3px] bg-[#47225a] rounded-full mx-auto mt-3"></div>
+            <div className="w-16 h-[3px] bg-[#056bfa] rounded-full mx-auto mt-3"></div>
           </div>
         </section>
 
@@ -610,7 +610,7 @@ export default function HomePageContent() {
               <h2 className="text-black font-extrabold text-2xl flex items-center gap-2">
                 Shop by Categories
               </h2>
-              <Link href="/categories" className="text-[#47225a] font-bold text-sm hover:underline">
+              <Link href="/categories" className="text-[#056bfa] font-bold text-sm hover:underline">
                 View All Categories →
               </Link>
             </div>
@@ -624,7 +624,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788763019/electrical-categories_alw7t8.webp",
                   coupons: "850+",
                   stores: "50+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["Rayneo", "Reolink", "Samsung", "Apple"],
                   href: "/categories/electronics"
                 },
@@ -635,7 +635,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/travel_anniy9.png",
                   coupons: "420+",
                   stores: "20+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["LATAM Airlines", "Expedia", "Booking.com", "Airbnb"],
                   href: "/categories/travel"
                 },
@@ -646,7 +646,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780439/entertainment_q3puib.png",
                   coupons: "210+",
                   stores: "15+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["StubHub", "Viagogo", "Ticketmaster", "SeatGeek"],
                   href: "/categories/entertainment"
                 },
@@ -657,7 +657,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780442/software_firnew.png",
                   coupons: "300+",
                   stores: "30+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["Driffle", "Bluehost", "Envato", "Sintra"],
                   href: "/categories/software"
                 },
@@ -668,7 +668,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780441/telecom_wagtph.png",
                   coupons: "320+",
                   stores: "10+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["Lyca Mobile", "Mint Mobile", "Visible", "Google Fi"],
                   href: "/categories/mobile"
                 },
@@ -679,7 +679,7 @@ export default function HomePageContent() {
                   image: "https://res.cloudinary.com/couponsbit/image/upload/v1788780440/health_frbeyc.png",
                   coupons: "90+",
                   stores: "10+",
-                  accent: "#47225a",
+                  accent: "#056bfa",
                   featured: ["Kerala Ayurveda", "GoodRx", "Philips", "RingConn"],
                   href: "/categories/health"
                 }
@@ -710,7 +710,7 @@ export default function HomePageContent() {
 
                   {/* Body */}
                   <div className="p-6">
-                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#47225a] transition-colors">
+                    <h3 className="text-black font-black text-xl mb-1.5 group-hover:text-[#056bfa] transition-colors">
                       {cat.name}
                     </h3>
                     <p className="text-gray-500 text-sm font-medium mb-4 leading-relaxed">
@@ -724,7 +724,7 @@ export default function HomePageContent() {
                       ))}
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#47225a] font-black text-sm">View All Coupons</span>
+                      <span className="text-[#056bfa] font-black text-sm">View All Coupons</span>
                       <div className="w-8 h-8 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-all duration-300" style={{ backgroundColor: `${cat.accent}15` }}>
                         <ArrowRight className="w-4 h-4" style={{ color: cat.accent }} />
                       </div>
@@ -735,7 +735,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#47225a] text-[#47225a] bg-white rounded-full font-black hover:bg-[#47225a] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
+              <Link href="/categories" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
                 <LayoutGrid className="w-4 h-4" />
                 Browse All Categories
               </Link>
@@ -755,7 +755,7 @@ export default function HomePageContent() {
                 <h2 className="text-black font-extrabold text-2xl"> Featured & Exclusive Coupons</h2>
                 <p className="text-gray-500 text-sm mt-0.5">Hand-picked verified deals updated daily</p>
               </div>
-              <Link href="/deals" className="text-[#47225a] font-bold text-sm hover:underline">
+              <Link href="/deals" className="text-[#056bfa] font-bold text-sm hover:underline">
                 View All Deals →
               </Link>
             </div>
@@ -842,7 +842,7 @@ export default function HomePageContent() {
               ].map((c, i) => (
                 <div key={i} className="flex bg-white border border-gray-100 rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                   {/* Blue left discount box */}
-                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#47225a] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
+                  <div className="w-[130px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex flex-col items-center justify-center text-white shrink-0 p-4 text-center relative">
                     <div className="absolute -right-3 top-8 w-6 h-6 bg-white rounded-full" />
                     <div className="absolute -right-3 bottom-8 w-6 h-6 bg-white rounded-full" />
                     <p className="text-[11px] font-bold tracking-[2px] uppercase opacity-80">{c.label}</p>
@@ -868,13 +868,13 @@ export default function HomePageContent() {
                       {openFeatured === i && (
                         <ul className="mt-2 space-y-1 text-gray-600 text-[12px]">
                           {c.points.map((p, pi) => (
-                            <li key={pi} className="flex gap-1"><span className="text-[#47225a]">•</span>{p}</li>
+                            <li key={pi} className="flex gap-1"><span className="text-[#056bfa]">•</span>{p}</li>
                           ))}
                         </ul>
                       )}
                     </div>
                     <Link href={c.href}>
-                      <button className="mt-3 w-full bg-[#47225a] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
+                      <button className="mt-3 w-full bg-[#056bfa] hover:bg-[#0451c4] text-white text-sm font-bold py-2.5 rounded-xl transition-all">Get Deal</button>
                     </Link>
                   </div>
                 </div>
@@ -884,7 +884,7 @@ export default function HomePageContent() {
         </section>
 
         {/* Smarter Savings CTA Banner */}
-        <section className="bg-gradient-to-br from-[#0451c4] to-[#47225a] py-24 md:py-14">
+        <section className="bg-gradient-to-br from-[#0451c4] to-[#056bfa] py-24 md:py-14">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <h2 className="text-white font-black text-3xl md:text-5xl leading-tight mb-6">
               Smarter Savings Start Here.
@@ -892,7 +892,7 @@ export default function HomePageContent() {
             <p className="text-white/80 text-base md:text-lg leading-relaxed mb-10">
               Discover verified discounts, exclusive offers, and money-saving deals from your favorite brands. Whether you're shopping for travel, fashion, electronics, software, entertainment, or mobile services, Couponsbit helps you find better deals and save more on every purchase.
             </p>
-            <Link href="/stores" className="inline-flex items-center gap-2 bg-white text-[#47225a] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <Link href="/stores" className="inline-flex items-center gap-2 bg-white text-[#056bfa] font-black px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
               Browse Stores <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -969,7 +969,7 @@ export default function HomePageContent() {
                         className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                       >
                         <span className="font-black text-black text-base md:text-lg">{faq.q}</span>
-                        <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#47225a]" : "bg-[#f0f0f0]")}>
+                        <div className={cn("shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors", openFaqIndex === i ? "bg-[#056bfa]" : "bg-[#f0f0f0]")}>
                           {openFaqIndex === i ? <Minus className="w-4 h-4 text-white" /> : <Plus className="w-4 h-4 text-gray-500" />}
                         </div>
                       </button>
@@ -993,7 +993,7 @@ export default function HomePageContent() {
 
               {/* Right: Support Card */}
               <div className="bg-white rounded-3xl border border-[#f0f0f0] shadow-sm p-8 h-fit lg:sticky lg:top-28">
-                <div className="w-12 h-12 rounded-2xl bg-[#47225a] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#056bfa] flex items-center justify-center mb-6">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-black text-black mb-3">Still have questions?</h3>
@@ -1002,7 +1002,7 @@ export default function HomePageContent() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 bg-[#47225a] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-[#056bfa] hover:bg-[#e88a00] text-white font-black px-6 py-4 rounded-full transition-all duration-300 hover:shadow-xl"
                 >
                   Contact Support
                 </Link>
@@ -1029,7 +1029,7 @@ export default function HomePageContent() {
                 { kw: "coupon code discount", date: "May 10, 2026", read: "5 min read", title: "How to Stack Coupons and Bank Offers for Maximum Savings", desc: "Did you know you can combine multiple deals for even bigger discounts? This guide explains how.", href: "/blog" },
                 { kw: "fashion sale clothing", date: "May 8, 2026", read: "7 min read", title: "Myntra Grand Sale 2026 — Complete Guide to Getting the Best Deals", desc: "Myntra's biggest sale of the year is here. Here is your complete guide to saving the most money.", href: "/blog" }
               ].map((post, i) => (
-                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#47225a] hover:-translate-y-1.5 transition-all duration-300">
+                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1.5 transition-all duration-300">
                   <div className="w-full sm:w-[180px] lg:w-full h-48 sm:h-auto lg:h-44 shrink-0 overflow-hidden">
                     <img
                       src={`https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=300&h=200&sig=${i}`}
@@ -1047,10 +1047,10 @@ export default function HomePageContent() {
                           <span>{post.read}</span>
                         </div>
                       </div>
-                      <h3 className="text-[#47225a] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
+                      <h3 className="text-[#056bfa] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
                       <p className="text-gray-500 text-xs mt-2 line-clamp-2 leading-relaxed">{post.desc}</p>
                     </div>
-                    <div className="flex items-center gap-2 text-[#47225a] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
+                    <div className="flex items-center gap-2 text-[#056bfa] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
                       READ MORE <ArrowRight className="w-3 h-3" />
                     </div>
                   </div>
@@ -1059,7 +1059,7 @@ export default function HomePageContent() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#47225a] text-[#47225a] bg-white rounded-full font-black hover:bg-[#47225a] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
+              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
                 <BookOpen className="w-4 h-4" />
                 View All Articles →
               </Link>
