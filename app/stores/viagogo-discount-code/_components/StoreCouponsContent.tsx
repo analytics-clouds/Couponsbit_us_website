@@ -2,58 +2,33 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Copy,
+  ChevronDown,
   CheckCircle,
-  X,
-  ArrowRight,
   Ticket,
-  Flame,
   Tv,
-  Plane,Music, Trophy, Theater, Laugh, Tent,
+  Plane, Music, Trophy, Theater, Laugh, Tent,
   Code,
   Zap,
   LayoutGrid,
+  Sparkles,
+  Laptop,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, VIAGOGO_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -61,73 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "via1",
-    discount: "15%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 15% OFF on Sports & Concerts",
-    heading: "Up to 15% OFF",
-    sub: "Sports & Concerts Tickets",
-    description: "Tickets for global football tournaments, high energy concerts, and major comedy shows. Claim up to 15% off quickly.",
-    usedCount: "82k",
-    expiresIn: "3 days",
-    code: "VIASPORT15"
-  },
-  {
-    id: "via2",
-    discount: "10%",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat 10% OFF on All Live Music Gigs",
-    heading: "Flat 10% OFF",
-    sub: "All Live Music Gigs",
-    description: "Feel the stadium vibe. Save flat 10% on ticket bookings for world class touring artists, rock, pop, or hip-hop festivals.",
-    usedCount: "74k",
-    expiresIn: "4 days",
-    code: "GIGS10"
-  },
-  {
-    id: "via3",
-    discount: "$20",
-    label: "FLAT",
-    badge: "Trending",
-    title: "Save Flat $20 on Orders Above $150",
-    heading: "Flat $20 OFF",
-    sub: "On Orders Above $150",
-    description: "Get immediate $20 discount when booking ticket reservations exceeding $150. Fully valid on ultimate sports seating.",
-    usedCount: "66k",
-    expiresIn: "2 days",
-    code: "VIASAVE20"
-  },
-  {
-    id: "via4",
-    discount: "5%",
-    label: "EXTRA",
-    title: "Extra 5% OFF Mobile App Bookings",
-    heading: "Extra 5% OFF",
-    sub: "Mobile App Bookings",
-    description: "Use Viagogo mobile application to book any show or match ticket and enjoy an extra 5% discount instantly.",
-    usedCount: "50k",
-    expiresIn: "6 days",
-    code: "VIAPP5"
-  },
-  {
-    id: "via5",
-    discount: "FREE",
-    label: "SHIPPING",
-    title: "Free Worldwide Courier or E-ticket Delivery",
-    heading: "Free Delivery",
-    sub: "Worldwide Courier or E-ticket",
-    description: "Get physical badges, bracelets, or digital barcode tickets delivered on time with zero shipping fees.",
-    usedCount: "43k",
-    expiresIn: "5 days",
-    code: "VIASHIP"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Stubhub", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp", dealText: "Flat 10% OFF", href: "/stores/stubhub-discount-code" },
@@ -139,15 +47,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function ViaggogoCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [showToast, setShowToast] = useState(false);
-  const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
-  const [isReadMore, setIsReadMore] = useState(false);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-     const [open, setOpen] = useState(false);
+  const [activeSlide, setActiveSlide]             = useState(0);
+  const [showToast, setShowToast]                 = useState(false);
+  const [toastCode, setToastCode]                 = useState("");
+  const [expandedCouponId, setExpandedCouponId]   = useState<string | null>(null);
+  const [isReadMore, setIsReadMore]               = useState(false);
+  const [openFaq, setOpenFaq]                     = useState<number | null>(null);
+  const [showModal, setShowModal]                 = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -157,22 +64,54 @@ export default function ViaggogoCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {/* Code Copy Modal */}
+      {showModal && activeModalCoupon && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a
+              href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors"
+            >
+              Continue to Viagogo →
+            </a>
+            <button
+              onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors"
+            >
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -227,7 +166,7 @@ export default function ViaggogoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find verified Viagogo discount codes for November 2026 and secure tickets to the biggest live events. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from just $49. Limited seats — book before they sell out.
+                      Save on live entertainment with the latest Viagogo Discount Code and Viagogo Promo Code for November 2026. Book event tickets from just $49 or grab World Cup tickets from $120 and Coachella Music Festival tickets from $603. You can also find deals on Westlife concerts, Katseye Governors Ball, Madonna parking passes, sports events, theater shows, and thousands of live experiences worldwide. Browse verified Viagogo offers to secure your seats before tickets sell out.
                     </p>
                     <a
                       href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
@@ -329,7 +268,7 @@ export default function ViaggogoCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
@@ -337,815 +276,108 @@ export default function ViaggogoCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">9 Coupons & Offers Available</p>
                 </div>
 
-               
-
-
-
-                    <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting At </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $603 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-              BEST OFFER – Coachella Music Festival Tickets.
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Secure your Coachella festival passes at the best available price.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Tickets starting from $603
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Location: Empire Polo Field, California
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                    Limited-time festival deal
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: Coachella Music Festival Tickets starting at $603"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting At </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $332 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-               Katseye Tickets – Governors Ball Festival </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-               Enjoy an unforgettable music festival experience with Katseye and top global artists.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Event Dates: June 5–7
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Location: Corona Park, Flushing Meadows, NY
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: Katseye Tickets Governors Ball Festival"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting  </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $120 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                 World Cup Tickets – United States vs Paraguay
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Secure your Coachella festival passes at the best available price.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Tickets starting from $603
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Location: Empire Polo Field, California
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                    Limited-time festival deal
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: World Cup Tickets United States vs Paraguay"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting At  </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $109 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-              HOT DEAL – Westlife Tickets.
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-               Grab Westlife concert tickets at special discounted prices.
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Prices start from $109
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Available in Indonesia, Hong Kong & Singapore
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                    Limited seats available
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: Westlife Tickets starting at $109"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting At $49 </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                 $49 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-             HOT DEAL – Concert Tickets.
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Enjoy live concerts from top global artists at affordable prices.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Ticket prices start at $49
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Artists include Blackpink, Madonna & Westlife
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                    Limited-time concert offer
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: Concert Tickets starting at $49"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting At $65 </p>
-
-              <p className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $65 </p>
-
-             
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-              HOT DEAL – Madonna Parking Passes.
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-              Book convenient parking passes for Madonna concerts at the best rates.
-
-
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                      Parking passes start at $65
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                     Garage & underground parking available
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#0344b0]">•</span>
-                    Easy access to concert venue
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Get Viagogo deal: Madonna Parking Passes starting at $65"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+                {VIAGOGO_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+
+                        {/* LEFT BADGE */}
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#005f91] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                              {coupon.topLabel}
+                            </p>
+                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                              {coupon.mainValue}
+                            </div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                              {coupon.offText}
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* CONTENT SECTION */}
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+
+                          {/* CENTER CONTENT */}
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+
+                            {/* BADGES */}
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Limited Time
+                              </span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Verified Deal
+                              </span>
+                            </div>
+
+                            {/* HEADING */}
+                            <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                              {coupon.title}
+                            </h3>
+
+                            {/* DESCRIPTION */}
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                              {coupon.description}
+                            </p>
+
+                            {/* VIEW DETAILS — per-coupon accordion */}
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`}
+                              />
+                            </button>
+
+                            {/* ACCORDION BODY */}
+                            <div className={`overflow-hidden transition-all duration-300 ${
+                              expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"
+                            }`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#0344b0]">•</span>
+                                    {point}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+
+                          {/* BUTTON SECTION */}
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                            {coupon.code && (
+                              <button
+                                onClick={() => handleCopy(coupon)}
+                                className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#e8f6f8] transition-colors"
+                              >
+                                <span className="font-mono">{coupon.code}</span>
+                                <Copy className="w-4 h-4 shrink-0" />
+                              </button>
+                            )}
+                            <a
+                              href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get deal: ${coupon.title}`}
+                              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
 
@@ -1208,35 +440,35 @@ export default function ViaggogoCouponsContent() {
 
   <div className="space-y-8">
     {[
-      { 
-        icon: Music, 
-        title: "Concert Tickets", 
-        sub: "Find tickets for major music tours, live concerts, arena shows, and performances from popular artists around the world." 
+      {
+        icon: Music,
+        title: "Concert Tickets",
+        sub: "Find tickets for major music tours, live concerts, arena shows, and performances from popular artists around the world."
       },
-      { 
-        icon: Trophy, 
-        title: "Sports Tickets", 
-        sub: "Purchase tickets for professional and collegiate sporting events, including football, basketball, baseball, soccer, tennis, motorsports, and more." 
+      {
+        icon: Trophy,
+        title: "Sports Tickets",
+        sub: "Purchase tickets for professional and collegiate sporting events, including football, basketball, baseball, soccer, tennis, motorsports, and more."
       },
-      { 
-        icon: Theater, 
-        title: "Theater Tickets", 
-        sub: "Browse tickets for Broadway productions, musicals, plays, and performing arts events." 
+      {
+        icon: Theater,
+        title: "Theater Tickets",
+        sub: "Browse tickets for Broadway productions, musicals, plays, and performing arts events."
       },
-      { 
-        icon: Tent, 
-        title: "Festival Tickets", 
-        sub: "Secure access to music festivals, cultural events, and seasonal celebrations." 
+      {
+        icon: Tent,
+        title: "Festival Tickets",
+        sub: "Secure access to music festivals, cultural events, and seasonal celebrations."
       },
-      { 
-        icon: Laugh, 
-        title: "Comedy Shows", 
-        sub: "Discover tickets for stand-up comedy performances and live entertainment events." 
+      {
+        icon: Laugh,
+        title: "Comedy Shows",
+        sub: "Discover tickets for stand-up comedy performances and live entertainment events."
       },
-      { 
-        icon: Sparkles, 
-        title: "Special Events", 
-        sub: "Viagogo also offers tickets for various live experiences, exhibitions, family events, and entertainment attractions." 
+      {
+        icon: Sparkles,
+        title: "Special Events",
+        sub: "Viagogo also offers tickets for various live experiences, exhibitions, family events, and entertainment attractions."
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start text-justify">
@@ -1267,8 +499,8 @@ export default function ViaggogoCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -1367,7 +599,7 @@ export default function ViaggogoCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About Viagogo</h3>
-           
+
             <p>
               The marketplace operates in multiple languages and currencies, helping fans access tickets for events around the globe. Viagogo provides a platform where ticket holders can resell tickets they can no longer use, while buyers gain access to a wider inventory of event tickets.
             </p>
@@ -1379,7 +611,7 @@ export default function ViaggogoCouponsContent() {
             </p>
           </div>
 
-        
+
 
           {/* How to Use Array Map */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
@@ -1450,7 +682,7 @@ export default function ViaggogoCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -1469,7 +701,7 @@ export default function ViaggogoCouponsContent() {
             { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, discounts, and promotional offers." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -1507,14 +739,16 @@ export default function ViaggogoCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Viagogo Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {VIAGOGO_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">V</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {coupon.topLabel} {coupon.mainValue} {coupon.offText}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Viagogo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://viagogo.prf.hn/click/camref:1100l4aspY/pubref:1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Viagogo deal: ${coupon.topLabel} ${coupon.mainValue}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1526,19 +760,7 @@ export default function ViaggogoCouponsContent() {
 
 
 
-        {/* Section 6: Newsletter Strip */}
-        <section className="bg-[#056bfa] py-16 text-center text-white relative overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-60 h-60 bg-white/5 rounded-full -translate-y-1/2 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 max-w-4xl relative z-10">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 italic">Never Miss a Great Deal!</h2>
-            <p className="text-white/90 font-bold mb-10 max-w-md mx-auto">Subscribe to get the best Viagogo coupon codes directly in your inbox.</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-              <input type="email" placeholder="Enter your email address" className="w-full h-14 bg-white/10 border-2 border-white/20 rounded-2xl px-6 outline-none focus:border-white transition-all text-white placeholder:text-white/70 font-bold text-sm" />
-              <button className="w-full sm:w-auto h-14 bg-white text-[#056bfa] px-10 rounded-2xl font-black text-sm uppercase tracking-widest active:scale-95 transition-all shadow-xl hover:shadow-white/10">Subscribe</button>
-            </div>
-          </div>
-        </section>
+        
       </main>
 
       <Footer />

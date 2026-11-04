@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import LycaCouponsContent from "./_components/StoreCouponsContent";
+import { LYCA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
+    absolute: "Lyca Mobile Discount Code: Get 50% OFF + Extra 10% | Nov 2026",
   },
   description:
-    "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
+    "Get the latest Lyca Mobile Discount Code and Lyca Mobile Promo Code for November 2026. Save 50% OFF mobile plans plus an extra 10% OFF with code LYCA10.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-    title: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
+    title: "Lyca Mobile Discount Code: Get 50% OFF + Extra 10% | Nov 2026",
     description:
-      "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
+      "Get the latest Lyca Mobile Discount Code and Lyca Mobile Promo Code for November 2026. Save 50% OFF mobile plans plus an extra 10% OFF with code LYCA10.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
+    title: "Lyca Mobile Discount Code: Get 50% OFF + Extra 10% | Nov 2026",
     description:
-      "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
+      "Get the latest Lyca Mobile Discount Code and Lyca Mobile Promo Code for November 2026. Save 50% OFF mobile plans plus an extra 10% OFF with code LYCA10.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/lyca-mobile-coupon-code_svvddg.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +55,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
 
 const lycaSchema = {
@@ -62,13 +65,12 @@ const lycaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      name: "Lyca Mobile Discount Code: LYCA10 – Up to 50% OFF Plans + Extra 10% OFF | Sept 26",
+      name: "Lyca Mobile Discount Code: Get 50% OFF + Extra 10% | Nov 2026",
       description:
-        "Find the latest Lyca Mobile discount code and promo code. Use LYCA10 to get 50% OFF selected mobile plans plus an extra 10% OFF on eligible orders today.",
+        "Get the latest Lyca Mobile Discount Code and Lyca Mobile Promo Code for November 2026. Save 50% OFF mobile plans plus an extra 10% OFF with code LYCA10.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -77,6 +79,8 @@ const lycaSchema = {
       },
     },
 
+    { "@type": "Organization", "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#brand", name: "Lyca Mobile", url: "https://www.lycamobile.us" },
+
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/lyca-mobile-discount-code#offerlist",
@@ -84,84 +88,20 @@ const lycaSchema = {
       description:
         "Latest verified Lyca Mobile coupon codes, promo codes and discount codes for recharge, SIM plans and international calling.",
       url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Lyca Mobile 30GB Pay Monthly Plan – Discount Code | 50% OFF + Extra 10% OFF",
-            description: "Get 30GB data for just £5 for the first month, reduced from £10 with this limited-time Lyca Mobile offer.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
+      numberOfItems: LYCA_COUPONS.length,
+      itemListElement: LYCA_COUPONS.map((coupon, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Offer",
+          name: `Lyca Mobile ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+          description: coupon.description,
+          url: `https://www.couponsbit.us/stores/lyca-mobile-discount-code#${coupon.id}`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Lyca Mobile", url: "https://www.lycamobile.us" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Lyca Mobile UK Unlimited Plan – Discount Code | 50% OFF",
-            description: "Get unlimited data for just £12.50 per 30 days, reduced from £25, with 50% OFF for the first 3 months.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Lyca Mobile Super Extra 5G Plan – Discount Code | 50% OFF",
-            description: "Get 75GB of 5G data for just £7.50 per 30 days, reduced from £15, with 50% OFF for the first 3 months.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Lyca Mobile Pay As You Go SIM – Discount Code | 50% OFF + Extra 10% OFF",
-            description: "Enjoy 50% OFF for the first month and get 30GB data for just £5 for 30 days.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Lyca Mobile Exclusive 5G Plan | Up To 50% OFF",
-            description: "Get up to 50% OFF for the first 6 months on a 24-month contract and enjoy unlimited data at a reduced monthly price.",
-            url: "https://www.couponsbit.us/stores/lyca-mobile-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Lyca Mobile",
-              url: "https://www.lycamobile.us",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -286,7 +226,9 @@ export default function LycaStorePage() {
           __html: JSON.stringify(lycaSchema),
         }}
       />
-      <LycaCouponsContent />
+      <Suspense fallback={null}>
+        <LycaCouponsContent />
+      </Suspense>
     </>
   );
 }

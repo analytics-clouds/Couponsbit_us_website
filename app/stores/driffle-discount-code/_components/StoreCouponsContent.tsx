@@ -41,23 +41,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, DRIFFLE_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -65,73 +50,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "drif1",
-    discount: "70%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 70% OFF on digital steam keys",
-    heading: "Up to 70% OFF",
-    sub: "Digital Steam Keys",
-    description: "Save big on AAA game additions, hot steam releases and seasonal digital codes. Browse huge keys directory and claim up to 70% off.",
-    usedCount: "128k",
-    expiresIn: "2 days",
-    code: "DRIFFLE70"
-  },
-  {
-    id: "drif2",
-    discount: "$10",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat $10 OFF PlayStation & Xbox Gift Cards",
-    heading: "Flat $10 OFF",
-    sub: "PS & Xbox Gift Cards",
-    description: "Get immediate $10 cash savings on any console wallet recharges, subscription passes or game downloads valued at $80+.",
-    usedCount: "115k",
-    expiresIn: "4 days",
-    code: "PLAYX10"
-  },
-  {
-    id: "drif3",
-    discount: "5%",
-    label: "EXTRA",
-    badge: "Trending",
-    title: "Extra 5% OFF on PC Pre-order Games",
-    heading: "Extra 5% OFF",
-    sub: "PC Pre-order Games",
-    description: "Hype up your library! Secure hot pre order launches early and collect an extra 5% off game CD keys instantly.",
-    usedCount: "98k",
-    expiresIn: "3 days",
-    code: "DRIFFNEW5"
-  },
-  {
-    id: "drif4",
-    discount: "3%",
-    label: "EXTRA",
-    title: "Extra 3% Added to Driffle Wallet Recharges",
-    heading: "Extra 3% Bonus",
-    sub: "Driffle Wallet Recharges",
-    description: "Add $50 or more to your digital merchant wallet and unlock an extra 3% credit absolutely free.",
-    usedCount: "82k",
-    expiresIn: "6 days",
-    code: "GAMER3"
-  },
-  {
-    id: "drif5",
-    discount: "FREE",
-    label: "BONUS",
-    title: "Free Mystery Steam Key On Orders $30+",
-    heading: "Free Mystery Key",
-    sub: "On Orders Above $30",
-    description: "Unlock bonus fun. Complete checkout over $30 and receive a fully verified random Steam game key completely free.",
-    usedCount: "66k",
-    expiresIn: "5 days",
-    code: "FREEKEY"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Unipin", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp", dealText: "Top-Ups From $0.94", href: "/stores/unipin-discount-code" },
@@ -143,15 +61,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function DriffleCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -161,22 +78,42 @@ export default function DriffleCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015"
+              target="_blank" rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to Driffle →
+            </a>
+            <button onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -231,7 +168,7 @@ export default function DriffleCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(14k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Driffle discount code and verified gaming deals. Get up to 95% OFF on PC games, digital keys, gift cards, and popular titles. Discover updated Driffle offers, instant delivery deals, and exclusive gaming discounts in Nov 2026.
+                      Save more with the latest Driffle Discount Code and Driffle Promo Code for November 2026. Enjoy up to 95% OFF on XCOM 2 and up to 81% OFF on EA SPORTS FC 26. You can also save up to 94% on Neverwinter Nights: Enhanced Edition, 61% OFF Monster Hunter Wilds, 57% OFF Roblox Gift Cards, and 55% OFF Ghost of Tsushima Director's Cut. Browse verified Driffle deals on digital game keys, gift cards, and gaming currencies with instant delivery.
                     </p>
                     <a
                       href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015"
@@ -343,374 +280,51 @@ export default function DriffleCouponsContent() {
 
           
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">94%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 94% OFF – Neverwinter Nights Enhanced Edition</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Grab exciting savings on selected PC games & digital keys.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 94% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Enhanced fantasy RPG adventure</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Global digital key with instant access</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">95%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 95% OFF – XCOM 2</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy huge discounts on top-rated strategy games.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 95% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Tactical alien combat gameplay</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Available for PC, Mac & Linux</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">81%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 81% OFF – EA SPORTS FC 26</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Score massive savings on the latest football gaming experience.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 81% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Realistic next-gen football gameplay</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Perfect for online multiplayer fans</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">57%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 57% OFF – Roblox 1000 Robux Gift Card</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Unlock exciting Roblox rewards at discounted prices.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 57% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>1000 Robux global gift card</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Instant digital delivery available</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">37%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 37% OFF – Forza Horizon 6</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience high-speed racing with exclusive savings.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 37% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Open-world racing adventure</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Available for PC & Xbox Series X|S</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">32%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 32% OFF – Enshrouded</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Explore fantasy survival gaming at a special price.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 32% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Immersive crafting & exploration gameplay</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Europe Steam digital key available</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">61%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 61% OFF – Monster Hunter Wilds</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Hunt powerful creatures with exciting gaming discounts.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 61% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Epic monster hunting adventures</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Action-packed multiplayer gameplay</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">55%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 55% OFF – Ghost of Tsushima Director's Cut</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience cinematic samurai action for less.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 55% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Award-winning open-world adventure</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Includes Director's Cut content</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">14%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 14% OFF – PUBG Mobile UC Pack</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Boost your PUBG Mobile experience with bonus UC rewards.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Get up to 14% OFF instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>6000 UC + 2100 bonus UC</li>
-              <li className="flex items-start gap-2"><span className="text-[#056bfa]">•</span>Unlock premium in-game items</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                {DRIFFLE_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
+                          </div>
+                        </div>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#056bfa]">•</span>{point}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
 
@@ -1081,12 +695,12 @@ export default function DriffleCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Driffle Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {DRIFFLE_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">D</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue} {coupon.offText}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
                 <a href="https://www.tkqlhce.com/click-100938140-17275810?sid=1015" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BluehostCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BLUEHOST_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Nov 2026",
+    absolute: "Bluehost Discount Code: Get 69% OFF on Hosting | Nov 2026",
   },
   description:
-    "Find the latest Bluehost discount codes and hosting deals for Nov 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+    "Get the latest Bluehost Discount Code and Bluehost Promo Code for November 2026. Save 69% OFF hosting plans or get WordPress Hosting from $1.99/month.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/bluehost-discount-code",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Nov 2026",
+    title: "Bluehost Discount Code: Get 69% OFF on Hosting | Nov 2026",
     description:
-      "Find the latest Bluehost discount codes and hosting deals for Nov 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+      "Get the latest Bluehost Discount Code and Bluehost Promo Code for November 2026. Save 69% OFF hosting plans or get WordPress Hosting from $1.99/month.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Nov 2026",
+    title: "Bluehost Discount Code: Get 69% OFF on Hosting | Nov 2026",
     description:
-      "Find the latest Bluehost discount codes and hosting deals for Nov 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+      "Get the latest Bluehost Discount Code and Bluehost Promo Code for November 2026. Save 69% OFF hosting plans or get WordPress Hosting from $1.99/month.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
 
 const bluehostSchema = {
@@ -64,13 +66,12 @@ const bluehostSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/bluehost-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-      name: "Bluehost Discount Code: Hosting From $1.99/mo + 69% OFF | Nov 2026",
+      name: "Bluehost Discount Code: Get 69% OFF on Hosting | Nov 2026",
       description:
-        "Find the latest Bluehost discount codes and hosting deals for Nov 2026. Get WordPress hosting from $1.99/month, save up to 69% on hosting plans, enjoy 50% off Business Essentials, VPS savings and more.",
+        "Get the latest Bluehost Discount Code and Bluehost Promo Code for November 2026. Save 69% OFF hosting plans or get WordPress Hosting from $1.99/month.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,6 +80,8 @@ const bluehostSchema = {
       },
     },
 
+    { "@type": "Organization", "@id": "https://www.couponsbit.us/stores/bluehost-discount-code#brand", name: "Bluehost", url: "https://www.bluehost.com" },
+
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/bluehost-discount-code#offerlist",
@@ -86,15 +89,17 @@ const bluehostSchema = {
       description:
         "Latest verified Bluehost coupon codes, promo codes and discount codes for web hosting, domains and WordPress hosting plans.",
       url: "https://www.couponsbit.us/stores/bluehost-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BLUEHOST_COUPONS.length,
+      itemListElement: BLUEHOST_COUPONS.map((coupon, index) => ({
         "@type": "ListItem",
-        position: i + 1,
+        position: index + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.description,
-          url: "https://www.couponsbit.us/stores/bluehost-discount-code",
+          name: `Bluehost ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+          description: coupon.description,
+          url: `https://www.couponsbit.us/stores/bluehost-discount-code#${coupon.id}`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Bluehost", url: "https://www.bluehost.com" },
         },
       })),
@@ -222,7 +227,9 @@ export default function BluehostStorePage() {
           __html: JSON.stringify(bluehostSchema),
         }}
       />
-      <BluehostCouponsContent />
+      <Suspense fallback={null}>
+        <BluehostCouponsContent />
+      </Suspense>
     </>
   );
 }

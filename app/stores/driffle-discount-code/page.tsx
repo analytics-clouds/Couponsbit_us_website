@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DriffleCouponsContent from "./_components/StoreCouponsContent";
+import { DRIFFLE_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Driffle Discount Code - Get 95% OFF on Game Deals | Nov 2026",
+    absolute: "Driffle Discount Code: Get Up to 95% OFF | Nov 2026",
   },
   description:
-    "Find the latest Driffle discount code and verified deals for Nov 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
+    "Get the latest Driffle Discount Code and Driffle Promo Code for November 2026. Save up to 95% OFF on XCOM 2 and up to 81% OFF EA SPORTS FC 26.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/driffle-discount-code",
@@ -22,10 +24,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/driffle-discount-code",
-    title: "Driffle Discount Code - Get 95% OFF on Game Deals | Nov 2026",
-    description:  
-      "Find the latest Driffle discount code and verified deals for Nov 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
-    siteName: "Couponsbit", 
+    title: "Driffle Discount Code: Get Up to 95% OFF | Nov 2026",
+    description:
+      "Get the latest Driffle Discount Code and Driffle Promo Code for November 2026. Save up to 95% OFF on XCOM 2 and up to 81% OFF EA SPORTS FC 26.",
+    siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
     images: [
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Driffle Discount Code - Get 95% OFF on Game Deals | Nov 2026",
+    title: "Driffle Discount Code: Get Up to 95% OFF | Nov 2026",
     description:
-      "Find the latest Driffle discount code and verified deals for Nov 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
+      "Get the latest Driffle Discount Code and Driffle Promo Code for November 2026. Save up to 95% OFF on XCOM 2 and up to 81% OFF EA SPORTS FC 26.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/driffle-coupon-code_n2upgl.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +57,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
 
 const driffleSchema = {
@@ -64,13 +67,12 @@ const driffleSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/driffle-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/driffle-discount-code",
-      name: "Driffle Discount Code - Get 95% OFF on Game Deals | Nov 2026",
+      name: "Driffle Discount Code: Get Up to 95% OFF | Nov 2026",
       description:
-        "Find the latest Driffle discount code and verified deals for Nov 2026. Save up to 95% OFF on PC games, digital keys, gift cards, and gaming offers with exclusive discounts.",
+        "Get the latest Driffle Discount Code and Driffle Promo Code for November 2026. Save up to 95% OFF on XCOM 2 and up to 81% OFF EA SPORTS FC 26.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,6 +81,8 @@ const driffleSchema = {
       },
     },
 
+    { "@type": "Organization", "@id": "https://www.couponsbit.us/stores/driffle-discount-code#brand", name: "Driffle", url: "https://www.driffle.com" },
+
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/driffle-discount-code#offerlist",
@@ -86,144 +90,20 @@ const driffleSchema = {
       description:
         "Latest verified Driffle coupon codes, promo codes and discount codes for game keys, software and subscriptions.",
       url: "https://www.couponsbit.us/stores/driffle-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 94% OFF – Neverwinter Nights Enhanced Edition",
-            description: "Grab exciting savings on selected PC games & digital keys.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
+      numberOfItems: DRIFFLE_COUPONS.length,
+      itemListElement: DRIFFLE_COUPONS.map((coupon, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Offer",
+          name: `Driffle ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+          description: coupon.description,
+          url: `https://www.couponsbit.us/stores/driffle-discount-code#${coupon.id}`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Driffle", url: "https://www.driffle.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 95% OFF – XCOM 2",
-            description: "Enjoy huge discounts on top-rated strategy games.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 81% OFF – EA SPORTS FC 26",
-            description: "Score massive savings on the latest football gaming experience.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 57% OFF – Roblox 1000 Robux Gift Card",
-            description: "Unlock exciting Roblox rewards at discounted prices.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 37% OFF – Forza Horizon 6",
-            description: "Experience high-speed racing with exclusive savings.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 32% OFF – Enshrouded",
-            description: "Explore fantasy survival gaming at a special price.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 61% OFF – Monster Hunter Wilds",
-            description: "Hunt powerful creatures with exciting gaming discounts.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 55% OFF – Ghost of Tsushima Director's Cut",
-            description: "Experience cinematic samurai action for less.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 14% OFF – PUBG Mobile UC Pack",
-            description: "Boost your PUBG Mobile experience with bonus UC rewards.",
-            url: "https://www.couponsbit.us/stores/driffle-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Driffle",
-              url: "https://www.driffle.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -348,7 +228,9 @@ export default function DriffleStorePage() {
           __html: JSON.stringify(driffleSchema),
         }}
       />
-      <DriffleCouponsContent />
+      <Suspense fallback={null}>
+        <DriffleCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import RayneoCouponsContent from "./_components/StoreCouponsContent";
+import { RAYNEO_COUPONS } from "./_components/offers";
+
+const TITLE = "RayNeo Discount Code: Get Up to $130 OFF | Nov 2026";
+const DESCRIPTION =
+  "Get the latest RayNeo Discount Code and RayNeo Promo Code for November 2026. Save up to $130 OFF RayNeo X3 Pro AI and up to $70 OFF Air Series AR glasses.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Rayneo Disocunt & promo - UPTO $70 OFF  | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Nov 2026",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/rayneo-discount-code",
@@ -19,16 +24,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Nov 2026",
-    description:
-      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
       {
-
-
-        
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp",
         width: 1200,
         height: 630,
@@ -39,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rayneo Disocunt & promo - UPTO $70 OFF  | Nov 2026",
-    description:
-      "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +54,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const rayneoOffers = RAYNEO_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Rayneo ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/rayneo-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Rayneo",
+    url: "https://www.rayneo.com",
+  },
+}));
 
 const rayneoSchema = {
   "@context": "https://schema.org",
@@ -63,13 +78,11 @@ const rayneoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/rayneo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-      name: "Rayneo Disocunt & promo - UPTO $70 OFF  | Nov 2026",
-      description:
-        "Enjoy UPTO $70 OFF on Air Series devices Premium AR viewing experience at special prices | Nov 2026",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -78,6 +91,15 @@ const rayneoSchema = {
       },
     },
 
+    // Brand Organization schema for Rayneo
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/rayneo-discount-code#brand",
+      name: "Rayneo",
+      url: "https://www.rayneo.com",
+    },
+
+    // ItemList — dynamic from RAYNEO_COUPONS
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/rayneo-discount-code#offerlist",
@@ -85,129 +107,12 @@ const rayneoSchema = {
       description:
         "Latest verified Rayneo coupon codes, promo codes and discount codes for AR glasses and smart devices.",
       url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "UPTO $70 OFF – RayNeo Air Series Sale",
-            description: "Upgrade your entertainment experience with exclusive savings on RayNeo Air Series products.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "RayNeo Air 4 Pro – AR Glasses Deal",
-            description: "Experience the future of entertainment with RayNeo Air 4 Pro AR Glasses.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Best Offer Save $130 – RayNeo X3 Pro AI",
-            description: "Experience next-generation smart eyewear with advanced AI and AR technology.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Save $70 – Air 3s + HDMI Adapter Bundle",
-            description: "Upgrade your entertainment setup with the ultimate legacy device hub bundle.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Save $70 – RayNeo Air 3s & Pocket TV Bundle",
-            description: "Enjoy wireless entertainment anywhere with this smart TV bundle.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "RayNeo Air 4 Pro AR Glasses Offer – Starting At $254.15",
-            description: "Experience immersive visuals with premium AR display technology.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "RayNeo X3 Pro AI + AR Smart Glasses",
-            description: "Advanced AR smart glasses with support for customized vision lenses.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "RayNeo JoyDock – Giant-Screen Gaming Companion",
-            description: "Transform your gaming experience with portable giant-screen support.",
-            url: "https://www.couponsbit.us/stores/rayneo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Rayneo",
-              url: "https://www.rayneo.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: RAYNEO_COUPONS.length,
+      itemListElement: rayneoOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -348,7 +253,9 @@ export default function RayneoStorePage() {
           __html: JSON.stringify(rayneoSchema),
         }}
       />
-      <RayneoCouponsContent />
+      <Suspense fallback={null}>
+        <RayneoCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import LatamCouponsContent from "./_components/StoreCouponsContent";
+import { LATAM_COUPONS } from "./_components/offers";
+
+const TITLE = "LATAM Airlines Discount Code: 40% OFF Deals | Nov 2026";
+const DESCRIPTION =
+  "Get the latest LATAM Airlines Discount Code and LATAM Airlines Promo Code for November 2026. Save up to 40% OFF travel packages and earn 40,000 bonus miles with eligible credit card offers.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. November 2026 deals verified daily.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Nov 2026",
-    description:
-      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. November 2026 deals verified daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Nov 2026",
-    description:
-      "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. November 2026 deals verified daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/latam-airlines-coupon-code_pvcsml.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +57,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const latamOffers = LATAM_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `LATAM Airlines ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/latam-airlines-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "LATAM Airlines",
+    url: "https://www.latamairlines.com",
+  },
+}));
 
 const latamSchema = {
   "@context": "https://schema.org",
@@ -63,13 +81,11 @@ const latamSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/latam-airlines-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-      name: "LATAM Airlines Discount Code: Earn 40,000 Miles + Fly From $136 | Nov 2026",
-      description:
-        "Use a verified LATAM Airlines discount code or promo code — fly Miami to Punta Cana from just $136. Earn 40,000 bonus miles on approved LATAM credit cards. November 2026 deals verified daily.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -78,6 +94,15 @@ const latamSchema = {
       },
     },
 
+    // Brand Organization schema for LATAM Airlines
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/latam-airlines-discount-code#brand",
+      name: "LATAM Airlines",
+      url: "https://www.latamairlines.com",
+    },
+
+    // ItemList — dynamic from LATAM_COUPONS
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/latam-airlines-discount-code#offerlist",
@@ -85,99 +110,12 @@ const latamSchema = {
       description:
         "Latest verified LATAM Airlines coupon codes, promo codes and discount codes for flight bookings.",
       url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "LATAM Airlines Credit Card Offer – Earn 40,000 Bonus Miles",
-            description: "Get rewarded with bonus miles on approved LATAM Airlines credit cards.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Flights from New York to Santiago, Chile.",
-            description: "Book affordable direct flights from New York to Santiago.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "UPTO 40% OFF On Packages, Hotels & Car Rentals",
-            description: "Save big on complete travel bookings with LATAM Airlines offers.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Miami To Rio De Janeiro – Starting At USD 554",
-            description: "Enjoy budget-friendly fares from Miami to Rio De Janeiro.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Miami To Punta Cana – Starting At $136",
-            description: "Grab affordable flights to Punta Cana at the best prices.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Flat 10% OFF Sitewide On Orders Above $40",
-            description: "Unlock instant savings on concerts, sports events, live shows and more.",
-            url: "https://www.couponsbit.us/stores/latam-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LATAM Airlines",
-              url: "https://www.latamairlines.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: LATAM_COUPONS.length,
+      itemListElement: latamOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -302,7 +240,9 @@ export default function LatamStorePage() {
           __html: JSON.stringify(latamSchema),
         }}
       />
-      <LatamCouponsContent />
+      <Suspense fallback={null}>
+        <LatamCouponsContent />
+      </Suspense>
     </>
   );
 }

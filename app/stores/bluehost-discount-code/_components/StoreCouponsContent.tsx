@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { 
   ChevronRight, 
@@ -35,24 +35,8 @@ import {
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { OFFERS } from "./offers";
+import { BLUEHOST_COUPONS, type Coupon } from "./offers";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
 
 interface StoreItem {
   name: string;
@@ -60,8 +44,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Hostinger", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp", dealText: "Up To 80% OFF", href: "/stores/hostinger-discount-code" },
@@ -73,15 +55,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function BluehostCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -91,22 +72,42 @@ export default function BluehostCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015"
+              target="_blank" rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to Bluehost →
+            </a>
+            <button onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -161,7 +162,7 @@ export default function BluehostCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Bluehost discount codes and deals in Nov 2026. Get WordPress and web hosting from $1.99/month, save up to 69% on One Site Hosting, enjoy 50% off business plans, VPS discounts, AI tools, SSL, CDN and more.
+                      Save more with the latest Bluehost Discount Code and Bluehost Promo Code for November 2026. Enjoy up to 69% OFF the One Site Hosting plan or start WordPress Hosting from just $1.99/month. You can also save up to 50% OFF on shared and Business Essentials hosting, 33% OFF VPS hosting, and explore Cloud Hosting plans from $75. Browse verified Bluehost offers to launch blogs, business websites, and online stores with reliable, secure, and affordable web hosting.
                     </p>
                     <a
                       href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015"
@@ -273,418 +274,52 @@ export default function BluehostCouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">WordPress Hosting – Starting At $1.99/Month</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Build your WordPress website faster with AI-powered tools and secure hosting.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>WordPress hosting from just $1.99/mo</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-powered website builder included</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>24/7 WordPress support available</li>
-                            </ul>
+                {BLUEHOST_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
                           </div>
                         </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: WordPress Hosting Starting At $1.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#0344b0]">•</span>{point}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">UP TO 50% OFF – Hosting Plan Savings</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save big on secure and reliable Bluehost hosting subscriptions.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get up to 50% OFF on hosting plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Secure & high-performance hosting</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Multiple hosting plans available</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: UP TO 50% OFF Hosting Plan Savings" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FLAT</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">33%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">33% OFF – VPS Hosting Plans</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your website performance with discounted VPS hosting.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to 33% instantly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes storage, RAM & bandwidth</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Dedicated IP addresses included</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: 33% OFF VPS Hosting Plans" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Hosting Renewal Plans – Starting At $15.99/Month</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Renew your hosting plan at affordable pricing with premium features.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Plans starting from $15.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Continue enjoying Bluehost features</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Reliable website hosting support</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Hosting Renewal Plans Starting At $15.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting From</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$75</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Cloud Hosting Plans – Starting From $75</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Powerful cloud hosting plans for better performance and security.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Plans starting at $75</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes global CDN support</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built-in WAF security protection</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Cloud Hosting Plans Starting From $75" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Business Essentials Hosting – Save 50%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Ideal hosting solution for growing websites and businesses.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $6.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 50 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL, CDN & domain included</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Business Essentials Hosting Save 50%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Web Hosting Plans – Starting From $1.99/Month</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Affordable hosting plans for personal and business websites.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 10 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>10GB NVMe SSD storage included</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>AI-powered site creation tools</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Web Hosting Plans Starting From $1.99/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">69%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">One Site Hosting Plan – Save 69%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Perfect hosting plan for single websites or blogs.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $2.79/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free domain for first year</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL & CDN included</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: One Site Hosting Plan Save 69%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">58%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Starter Hosting Plan – Save 58%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Reliable hosting plan with premium website features.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $4.99/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 10 websites</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free domain & SSL included</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Starter Hosting Plan Save 58%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$8.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Monthly One Site Hosting – Starting At $8.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Flexible monthly hosting plan with essential website features.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for one website or blog</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Free SSL, CDN & AI site builder</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Weekly backups & security protection</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Bluehost deal: Monthly One Site Hosting Starting At $8.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
               </div>
 
               {/* Sidebar */}
@@ -1087,14 +722,14 @@ export default function BluehostCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Bluehost Deals</h3>
           <div className="space-y-6">
-            {OFFERS.slice(0, 5).map((deal, i) => (
+            {BLUEHOST_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">B</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue} {coupon.offText}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Bluehost deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Bluehost deal: ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

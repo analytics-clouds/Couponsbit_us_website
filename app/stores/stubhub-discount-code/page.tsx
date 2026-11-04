@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import StubHubCouponsContent from "./_components/StoreCouponsContent";
+import { STUBHUB_COUPONS } from "./_components/offers";
+
+const TITLE = "StubHub Discount Code: 10% OFF + $20 OFF | Nov 2026";
+const DESCRIPTION =
+  "Get the latest StubHub Discount Code and StubHub Promo Code for November 2026. Save 10% OFF orders over $40 or get $20 OFF your first ticket booking.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified StubHub discount code & save big in November 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/stubhub-discount-code",
@@ -16,13 +21,11 @@ export const metadata: Metadata = {
     },
   },
 
-  // ✅ Open Graph
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | November 2026",
-    description:
-      "Use a verified StubHub discount code & save big in November 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -35,17 +38,14 @@ export const metadata: Metadata = {
     ],
   },
 
-  // ✅ Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | November 2026",
-    description:
-      "Use a verified StubHub discount code & save big in November 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/stubhub-coupon-code_fplhay.webp"],
     site: "@couponsbit",
   },
 
-  // ✅ Robots
   robots: {
     index: true,
     follow: true,
@@ -54,9 +54,23 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
 
-// ✅ JSON-LD Schema
+const stubhubOffers = STUBHUB_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `StubHub ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/stubhub-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "StubHub",
+    url: "https://www.stubhub.com",
+  },
+}));
+
 const stubHubSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -64,13 +78,11 @@ const stubHubSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/stubhub-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-      name: "StubHub Discount Code: 10% Off Concerts, Sports & Live Events | November 2026",
-      description:
-        "Use a verified StubHub discount code & save big in November 2026 — flat 10% off sitewide on orders above $40. New users get $20 off first booking, students save $25, Lion King NYC from $171 & rock tickets from $30. Verified deals updated daily.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,7 +91,16 @@ const stubHubSchema = {
       },
     },
 
-    // ✅ ItemList — tells Google this page contains a list of offers
+    // Brand Organization schema for StubHub
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/stubhub-discount-code#brand",
+      name: "StubHub",
+      url: "https://www.stubhub.com",
+      sameAs: ["https://www.facebook.com/stubhub", "https://twitter.com/stubhub"],
+    },
+
+    // ItemList — dynamic from STUBHUB_COUPONS
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/stubhub-discount-code#offerlist",
@@ -87,114 +108,12 @@ const stubHubSchema = {
       description:
         "Latest verified StubHub coupon codes, promo codes and discount codes for tickets.",
       url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-      numberOfItems: 7, // ← update this to match actual coupon count on page
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Flat 10% OFF Sitewide On Orders Above $40",
-            description: "Unlock instant savings on concerts, sports events, live shows and more.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "-NBA Playoffs Tickets – Western Conference Finals",
-            description: "Book your NBA Playoffs tickets now for the Oklahoma City Thunder vs San Antonio Spurs clash.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Rock Music Tickets – Starting From $30",
-            description: "Enjoy electrifying live rock performances at affordable ticket prices.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "The Lion King New York Tickets – Starting At $171",
-            description: "Experience the magic of The Lion King live in New York at special prices.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Under The Big Sky Festival Tickets - Starting At $582",
-            description: "Enjoy a 3-day music festival experience packed with entertainment and live performance",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "STUDENT DISCOUNT – Flat $25 OFF On Ticket Booking",
-            description: "Students can unlock extra savings on event and concert tickets.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "NEW USER OFFER - Get $20 OFF On First Order",
-            description: "Sign up today and enjoy an exclusive discount on your first booking.",
-            url: "https://www.couponsbit.us/stores/stubhub-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "StubHub",
-              url: "https://www.stubhub.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: STUBHUB_COUPONS.length,
+      itemListElement: stubhubOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -343,7 +262,9 @@ export default function StubHubStorePage() {
           __html: JSON.stringify(stubHubSchema),
         }}
       />
-      <StubHubCouponsContent />
+      <Suspense fallback={null}>
+        <StubHubCouponsContent />
+      </Suspense>
     </>
   );
 }

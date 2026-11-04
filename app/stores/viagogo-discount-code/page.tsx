@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ViaggogoCouponsContent from "./_components/StoreCouponsContent";
+import { VIAGOGO_COUPONS } from "./_components/offers";
+
+const TITLE = "Viagogo Discount Code: Tickets From $49 | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Viagogo Discount Code and Viagogo Promo Code for November 2026. Book event tickets from $49, plus save on concerts, festivals, sports, and theater events.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Save with a verified Viagogo discount code — November 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/viagogo-discount-code",
@@ -19,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Nov 2026",
-    description:
-      "Save with a verified Viagogo discount code — November 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Nov 2026",
-    description:
-      "Save with a verified Viagogo discount code — November 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/viagogo-coupon-code_t65aol.webp"],
     site: "@couponsbit",
   },
@@ -51,7 +54,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const viagogoOffers = VIAGOGO_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Viagogo ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/viagogo-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Viagogo",
+    url: "https://www.viagogo.com",
+  },
+}));
 
 const viagogoSchema = {
   "@context": "https://schema.org",
@@ -60,13 +78,11 @@ const viagogoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/viagogo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-      name: "Viagogo Discount Code: Coachella, World Cup & Concerts from $49 | Nov 2026",
-      description:
-        "Save with a verified Viagogo discount code — November 2026. Coachella from $603, World Cup US vs Paraguay from $120, Governors Ball from $332 & concerts from $49. Limited seats — book now before they're gone.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -75,6 +91,15 @@ const viagogoSchema = {
       },
     },
 
+    // Brand Organization schema for Viagogo
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/viagogo-discount-code#brand",
+      name: "Viagogo",
+      url: "https://www.viagogo.com",
+    },
+
+    // ItemList — dynamic from VIAGOGO_COUPONS
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/viagogo-discount-code#offerlist",
@@ -82,99 +107,12 @@ const viagogoSchema = {
       description:
         "Latest verified Viagogo coupon codes, promo codes and discount codes for tickets.",
       url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "BEST OFFER – Coachella Music Festival Tickets.",
-            description: "Secure your Coachella festival passes at the best available price.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Katseye Tickets – Governors Ball Festival",
-            description: "Enjoy an unforgettable music festival experience with Katseye and top global artists.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "World Cup Tickets – United States vs Paraguay",
-            description: "Secure your Coachella festival passes at the best available price.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "HOT DEAL – Westlife Tickets.",
-            description: "Grab Westlife concert tickets at special discounted prices.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "HOT DEAL – Concert Tickets.",
-            description: "Enjoy live concerts from top global artists at affordable prices.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "HOT DEAL – Madonna Parking Passes.",
-            description: "Book convenient parking passes for Madonna concerts at the best rates.",
-            url: "https://www.couponsbit.us/stores/viagogo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Viagogo",
-              url: "https://www.viagogo.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: VIAGOGO_COUPONS.length,
+      itemListElement: viagogoOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -299,7 +237,9 @@ export default function ViagogoStorePage() {
           __html: JSON.stringify(viagogoSchema),
         }}
       />
-      <ViaggogoCouponsContent />
+      <Suspense fallback={null}>
+        <ViaggogoCouponsContent />
+      </Suspense>
     </>
   );
 }

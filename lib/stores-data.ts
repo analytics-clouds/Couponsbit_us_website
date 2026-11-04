@@ -179,6 +179,11 @@ export const allStores: StoreEntry[] = [
   { name: "IKEA",              id: "ikea-discount-code",                category: "Home",    coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/ikea-logo_suwglk.webp",               discount: "Up To 70% OFF",  popular: false },
   { name: "Ticketmaster",      id: "ticketmaster-promo-code",           category: "More",    coupons: 14, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/ticketmaster-logo_boxlia.webp",        discount: "Up To 65% OFF",  popular: false },
   { name: "Zenni Optical",     id: "zenni-optical-promo-code",          category: "Fashion", coupons: 17, logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793614081/zenni-optical-logo_gy9ssm.webp",      discount: "BOGO 40% OFF",   popular: false },
+  { name: "Nespresso",         id: "nespresso-promo-code",              category: "More",    coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/nespresso-logo_evanwx.webp",         discount: "20% OFF First Order", popular: false },
+  { name: "Harry and David",   id: "harry-and-david-promo-code",        category: "More",    coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/harryand-david-logo_psaq9y.webp",  discount: "Up To 30% OFF",       popular: false },
+  { name: "Mavis",             id: "mavis-discount-code",               category: "More",    coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/mavis-logo_fhmyy8.webp",           discount: "$50 OFF 4 Tires",     popular: false },
+  { name: "Vuori",             id: "vuori-discount-code",               category: "Fashion", coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/vuori_euoigj.webp",                discount: "20% OFF First Order", popular: false },
+  { name: "Saks Fifth Avenue", id: "saks-fifth-avenue-discount-code",   category: "Fashion", coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/saks-fifth-avenue_senmoo.webp",   discount: "Up To 40% OFF",       popular: false },
 ];
 
 

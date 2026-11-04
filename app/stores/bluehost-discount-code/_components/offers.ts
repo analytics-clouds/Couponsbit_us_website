@@ -1,22 +1,232 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  heading: string;
-  sub: string;
   description: string;
-  usedCount: string;
-  expiresIn: string;
   code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
-  { id: "c1", discount: "60%", label: "UP TO", badge: "Best Offer", title: "Up to 60% OFF on Top Categories", heading: "Up to 60% OFF", sub: "Top Categories", description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.", usedCount: "112k", expiresIn: "2 days", code: "AMAZON60" },
-  { id: "c2", discount: "50%", label: "FLAT", badge: "Popular", title: "Flat 50% OFF on Electronics", heading: "Flat 50% OFF", sub: "Electronics", description: "Get flat 50% off on best selling electronics & accessories.", usedCount: "95k", expiresIn: "3 days", code: "ELEC50" },
-  { id: "c3", discount: "30%", label: "FLAT", badge: "Trending", title: "Flat 30% OFF on Fashion", heading: "Flat 30% OFF", sub: "Fashion", description: "Save big on clothing, footwear, watches & more.", usedCount: "88k", expiresIn: "1 day", code: "FASHION30" },
-  { id: "c4", discount: "10%", label: "EXTRA", title: "Extra 10% OFF on Prepaid Orders", heading: "Extra 10% OFF", sub: "Prepaid Orders", description: "Pay using UPI, Cards, Net Banking & get extra 10% off.", usedCount: "76k", expiresIn: "2 days", code: "PREPAID10" },
-  { id: "c5", discount: "FREE", label: "DELIVERY", title: "Free Delivery on First Order", heading: "Free Delivery", sub: "On First Order", description: "Get FREE delivery on your first order on Bluehost.", usedCount: "65k", expiresIn: "5 days", code: "FREESHIP" },
-  { id: "c6", discount: "₹200", label: "FLAT", title: "Get ₹200 OFF on Min. Order ₹999", heading: "₹200 OFF", sub: "On Min. Order ₹999", description: "Use code and get flat ₹200 off on minimum order of ₹999.", usedCount: "54k", expiresIn: "3 days", code: "SAVE200" },
+export const BLUEHOST_COUPONS: Coupon[] = [
+  {
+    id: 'bh1',
+    topLabel: 'Starting At',
+    mainValue: '$1.99',
+    offText: '/mo',
+    title: 'Bluehost Discount Code – WordPress Hosting from $1.99/Month',
+    description: 'Start your WordPress site with fast, safe, and low-cost hosting.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'WordPress Hosting starts at just $1.99 per month.',
+      'Comes with AI-powered tools to help you build your site.',
+      'Safe hosting with steady performance.',
+      'Good for blogs, businesses, and online stores.',
+    ],
+  },
+  {
+    id: 'bh2',
+    topLabel: 'UP TO',
+    mainValue: '50%',
+    offText: 'OFF',
+    title: 'Bluehost Discount Code – Up to 50% Off on Hosting Plans',
+    description: 'Get dependable web hosting at a lower price.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save up to 50% on eligible hosting plans.',
+      'Pick from shared, WordPress, and business hosting.',
+      'Safe hosting that can grow with your site.',
+      'Offer valid for a short time.',
+    ],
+  },
+  {
+    id: 'bh3',
+    topLabel: 'FLAT',
+    mainValue: '33%',
+    offText: 'OFF',
+    title: 'Bluehost Coupon Code – 33% Off on VPS Hosting',
+    description: 'Move to VPS hosting for better speed and more control.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save 33% on VPS Hosting plans.',
+      'Enjoy better website performance.',
+      'Good for growing websites and businesses.',
+      'Online savings for a short time.',
+    ],
+  },
+  {
+    id: 'bh4',
+    topLabel: 'Starting At',
+    mainValue: '$15.99',
+    offText: '/mo',
+    title: 'Bluehost Coupon Code – Hosting Renewal Plans from $15.99/Month',
+    description: 'Renew your hosting plan at a fair price.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Hosting renewals start at $15.99 per month.',
+      'Comes with top hosting features.',
+      'Steady performance and strong security.',
+      'Flexible renewal options are available.',
+    ],
+  },
+  {
+    id: 'bh5',
+    topLabel: 'Starting From',
+    mainValue: '$75',
+    offText: '',
+    title: 'Bluehost Promo Code – Cloud Hosting from $75',
+    description: 'Run your website on cloud hosting that grows with you.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Cloud Hosting plans start at $75.',
+      'Built for strong and steady performance.',
+      'Better security and uptime.',
+      'Great for websites with heavy traffic.',
+    ],
+  },
+  {
+    id: 'bh6',
+    topLabel: 'Save',
+    mainValue: '50%',
+    offText: 'OFF',
+    title: 'Bluehost Promo Code – 50% Off on Business Essentials Hosting',
+    description: 'Grow your business with high-end hosting features.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save 50% on Business Essentials Hosting.',
+      'Made for business websites and online stores.',
+      'Steady speed and good security.',
+      'Promotion for a short time.',
+    ],
+  },
+  {
+    id: 'bh7',
+    topLabel: 'Starting From',
+    mainValue: '$1.99',
+    offText: '/mo',
+    title: 'Bluehost Offer Code – Web Hosting from $1.99/Month',
+    description: 'Build your website with low-cost hosting plans.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Web Hosting starts at $1.99 per month.',
+      'Good for personal and business websites.',
+      'Simple setup with dependable performance.',
+      'Great value for new customers.',
+    ],
+  },
+  {
+    id: 'bh8',
+    topLabel: 'Save',
+    mainValue: '69%',
+    offText: 'OFF',
+    title: 'Bluehost Offer Code – 69% Off on the One Site Hosting Plan',
+    description: 'Host your first website for less.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save 69% on the One Site Hosting plan.',
+      'Good for blogs and single websites.',
+      'Comes with the key hosting features you need.',
+      'Offer valid for a short time.',
+    ],
+  },
+  {
+    id: 'bh9',
+    topLabel: 'Save',
+    mainValue: '58%',
+    offText: 'OFF',
+    title: 'Bluehost Voucher Code – 58% Off on the Starter Hosting Plan',
+    description: 'Start your website with Bluehost\'s low-cost starter plan.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save 58% on the Starter Hosting plan.',
+      'Dependable hosting with top features.',
+      'Great for beginners and small businesses.',
+      'Available for a short time.',
+    ],
+  },
+  {
+    id: 'bh10',
+    topLabel: 'Starting At',
+    mainValue: '$8.99',
+    offText: '/mo',
+    title: 'Bluehost Voucher Code – Monthly One Site Hosting from $8.99',
+    description: 'Pick monthly hosting with no long-term contract.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Monthly One Site Hosting starts at $8.99 per month.',
+      'Comes with the key website hosting features.',
+      'Flexible month-to-month billing.',
+      'Dependable hosting performance.',
+    ],
+  },
+  {
+    id: 'bh11',
+    topLabel: 'SPECIAL DEAL',
+    mainValue: 'SAVE',
+    offText: 'BIG',
+    title: 'Bluehost Discount Offer – Savings on Web, WordPress & Cloud Hosting',
+    description: 'Look through hosting options for every kind of website.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    points: [
+      'Save on shared, VPS, cloud, and WordPress hosting.',
+      'Low-cost plans for beginners and professionals.',
+      'Safe hosting with steady uptime.',
+      'Special prices for a short time.',
+    ],
+  },
+  {
+    id: 'bh12',
+    topLabel: 'BEST DEAL',
+    mainValue: '$1.99',
+    offText: '/mo',
+    title: 'Bluehost Discount Offer – Affordable Hosting Plans',
+    description: 'Build, grow, and run your website with confidence.',
+    code: '',
+    verified: 'Verified',
+    userType: 'New Customers',
+    validTill: '30 Nov 2026',
+    points: [
+      'Pick hosting plans starting at $1.99 per month.',
+      'Save on business and WordPress hosting.',
+      'Plans that grow with every website.',
+      'New customer offers for a short time.',
+    ],
+  },
 ];

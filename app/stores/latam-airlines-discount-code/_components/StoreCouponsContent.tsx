@@ -2,38 +2,24 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Copy,
+  ChevronDown,
+  Laptop,
   CheckCircle,
-  X,
-  ArrowRight,
   Ticket,
-  Flame,
   Plane,
-  Briefcase,
-  MapPin,
-  Calendar,
-  Tv,Globe, Armchair, BriefcaseBusiness, CreditCard, PlusCircle,
+  Tv, Globe, Armchair, BriefcaseBusiness, CreditCard, PlusCircle,
   Code,
   Map,
   Zap,
@@ -41,23 +27,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, LATAM_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -65,73 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "lat1",
-    discount: "40%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 40% OFF on Mid-Week Flights",
-    heading: "Up to 40% OFF",
-    sub: "Mid-Week Flights",
-    description: "Plan your South America escape or international trip. Save up to 40% when booking mid week flights on select routes.",
-    usedCount: "94k",
-    expiresIn: "2 days",
-    code: "LATAM40"
-  },
-  {
-    id: "lat2",
-    discount: "$150",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat $150 OFF Flight + Hotel Package",
-    heading: "Flat $150 OFF",
-    sub: "Flight + Hotel Package",
-    description: "Ultimate bundled savings! Save flat $150 instantly on flight + hotel vacation reservation packages globally.",
-    usedCount: "83k",
-    expiresIn: "5 days",
-    code: "ESCAPE150"
-  },
-  {
-    id: "lat3",
-    discount: "10%",
-    label: "EXTRA",
-    badge: "Trending",
-    title: "Extra 10% OFF Flight Bookings for Members",
-    heading: "Extra 10% OFF",
-    sub: "LATAM Pass Members",
-    description: "Exclusive LATAM Pass loyalty promo code. Get an extra 10% discount on standard domestic or international airfares.",
-    usedCount: "71k",
-    expiresIn: "3 days",
-    code: "LOYALTY10"
-  },
-  {
-    id: "lat4",
-    discount: "15%",
-    label: "FLAT",
-    title: "Flat 15% OFF Premium Class Cabin Seats",
-    heading: "Flat 15% OFF",
-    sub: "Premium Class Cabin Seats",
-    description: "Fly with maximum luxury and space. Get flat 15% off on Premium Economy & Business Class flight tickets.",
-    usedCount: "58k",
-    expiresIn: "4 days",
-    code: "PREMIUM15"
-  },
-  {
-    id: "lat5",
-    discount: "FREE",
-    label: "UPGRADE",
-    title: "Free Carry-On Cabin Baggage Allowance",
-    heading: "Free Carry-On",
-    sub: "Cabin Baggage Allowance",
-    description: "Bring more on your journey. Apply this exclusive promo voucher code and secure free cabin baggage upgrades.",
-    usedCount: "44k",
-    expiresIn: "6 days",
-    code: "FREEBAG"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Etihad", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784784970/etihad-logo_lbl7mo.webp", dealText: "Up To 30% OFF", href: "/stores/etihad-discount-code" },
@@ -143,17 +47,15 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function LatamCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
-  // Slide auto-play
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % 3);
@@ -161,22 +63,44 @@ export default function LatamCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
+              target="_blank" rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to LATAM Airlines →
+            </a>
+            <button onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -232,7 +156,7 @@ export default function LatamCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(25k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      LATAM Airlines — Top South American carrier. 8 verified deals live! Flights from $136, 40% OFF packages & earn 40,000 bonus miles. Book now!
+                      Save more with the latest LATAM Airlines Discount Code and LATAM Airlines Promo Code for November 2026. Enjoy up to 40% OFF on travel packages, hotels, and car rentals, or earn 40,000 bonus miles with eligible LATAM Airlines credit cards. You can also book flights from New York to Santiago starting at $308 and Miami to Punta Cana from just $136. Browse verified LATAM Airlines offers to save on flights, vacation packages, and travel essentials for your next trip.
                     </p>
                     <a
                       href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
@@ -242,7 +166,6 @@ export default function LatamCouponsContent() {
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-
                   </div>
                 </div>
 
@@ -262,7 +185,6 @@ export default function LatamCouponsContent() {
                     </div>
                   ))}
                 </div>
-
               </div>
 
               {/* Right: Featured Banner Slider */}
@@ -334,7 +256,7 @@ export default function LatamCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
@@ -342,825 +264,71 @@ export default function LatamCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">8 Coupons & Offers Available</p>
                 </div>
 
-
-                  <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Earn</p>
-
-              <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">
-                  40,000  </div>
-
-              <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
-                
-Bonus Miles
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                LATAM Airlines Credit Card Offer – Earn 40,000 Bonus Miles
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Get rewarded with bonus miles on approved LATAM Airlines credit cards.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Earn 40,000 bonus miles
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Redeem miles for South America flights
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Minimum spend terms apply
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-                 <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              starting
-             </p>
-
-              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $308</div>
-
-           
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                Flights from New York to Santiago, Chile.
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Book affordable direct flights from New York to Santiago.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                      Departure: 08/10/26
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Fares starting at USD 308
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Direct economy flight available
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-                 <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              UPTO </p>
-
-              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  40% </div>
-
-              <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
-                OFF
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                
-               UPTO 40% OFF On Packages, Hotels & Car Rentals
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Save big on complete travel bookings with LATAM Airlines offers.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Up to 40% OFF sitewide bookings
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Applicable on orders above $40
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Covers concerts, sports & live events
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-                 <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Starting  </p>
-
-              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $554</div>
-
-              
-
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                Miami To Rio De Janeiro – Starting At USD 554
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Enjoy budget-friendly fares from Miami to Rio De Janeiro.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                  Departure: 08/21/26
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    One-way economy booking
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Flight with connection included
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-                 <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              starting at</p>
-
-              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  $136</div>
-
-            
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                Miami To Punta Cana – Starting At $136
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Grab affordable flights to Punta Cana at the best prices.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Flights starting at $136
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Affordable vacation travel deal
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Special LATAM pricing available
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-                 <div className="w-full max-w-7xl mx-auto mb-6">
-
-      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-
-        {/* DESKTOP LAYOUT SAME */}
-        <div className="flex flex-row">
-
-          {/* LEFT OFFER BOX */}
-          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-
-            {/* CUTS */}
-            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-
-            <div className="text-center px-1">
-
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-              Flat   </p>
-
-              <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
-                  10%  </div>
-
-              <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
-                OFF
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* CONTENT SECTION */}
-          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-
-            {/* CENTER CONTENT */}
-            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-
-              {/* BADGES */}
-              <div className="flex flex-wrap gap-2 mb-3">
-
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Limited Time
-                </span>
-
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                  Verified Deal
-                </span>
-
-              </div>
-
-              {/* HEADING */}
-              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-
-                Flat 10% OFF Sitewide On Orders Above $40
-
-              </h2>
-
-              {/* DESCRIPTION */}
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-
-                Unlock instant savings on concerts,
-                sports events, live shows and more.
-
-              </p>
-
-              {/* VIEW DETAILS */}
-              <button
-                type="button"
-                onClick={() => setOpen(!open)}
-                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-              >
-                View Details
-
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-300 ${
-                    open ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {/* ACCORDION */}
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  open
-                    ? "max-h-[250px] opacity-100 mt-3"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-
-                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Flat 10% OFF on sitewide bookings
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Applicable on orders above $40
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#056bfa]">•</span>
-                    Covers concerts, sports & live events
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-            {/* BUTTON SECTION */}
-            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-
-              <a
-                href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-              >
-
-                Get Deal
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>  
+                {LATAM_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        {/* LEFT BADGE */}
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#005f91] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
+                          </div>
+                        </div>
+                        {/* CENTER CONTENT */}
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h3>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#0344b0]">•</span>{point}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          {/* RIGHT ACTION */}
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                            {coupon.code && (
+                              <button onClick={() => handleCopy(coupon)}
+                                className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#e8f6f8] transition-colors">
+                                <span className="font-mono">{coupon.code}</span>
+                                <Copy className="w-4 h-4 shrink-0" />
+                              </button>
+                            )}
+                            <a
+                              href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get deal: ${coupon.title}`}
+                              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
 
@@ -1224,35 +392,35 @@ Bonus Miles
 
   <div className="space-y-8">
     {[
-      { 
-        icon: Map, 
-        title: "Domestic Flights", 
-        sub: "LATAM operates extensive domestic networks throughout several South American countries, helping travelers reach both major cities and regional destinations." 
+      {
+        icon: Map,
+        title: "Domestic Flights",
+        sub: "LATAM operates extensive domestic networks throughout several South American countries, helping travelers reach both major cities and regional destinations."
       },
-      { 
-        icon: Globe, 
-        title: "International Flights", 
-        sub: "Travelers can book flights between Latin America and destinations across the United States, Europe, Oceania, and other international markets." 
+      {
+        icon: Globe,
+        title: "International Flights",
+        sub: "Travelers can book flights between Latin America and destinations across the United States, Europe, Oceania, and other international markets."
       },
-      { 
-        icon: Armchair, 
-        title: "Premium Economy", 
-        sub: "Enjoy additional comfort, priority services, and enhanced travel benefits on eligible routes." 
+      {
+        icon: Armchair,
+        title: "Premium Economy",
+        sub: "Enjoy additional comfort, priority services, and enhanced travel benefits on eligible routes."
       },
-      { 
-        icon: BriefcaseBusiness, 
-        title: "Premium Business", 
-        sub: "Business-class travelers can access premium seating, airport benefits, and additional baggage allowances on qualifying flights." 
+      {
+        icon: BriefcaseBusiness,
+        title: "Premium Business",
+        sub: "Business-class travelers can access premium seating, airport benefits, and additional baggage allowances on qualifying flights."
       },
-      { 
-        icon: CreditCard, 
-        title: "LATAM Pass Loyalty Program", 
-        sub: "Frequent travelers can earn and redeem miles through the LATAM Pass rewards program while accessing benefits such as priority services, lounge access, upgrades, and additional baggage allowances." 
+      {
+        icon: CreditCard,
+        title: "LATAM Pass Loyalty Program",
+        sub: "Frequent travelers can earn and redeem miles through the LATAM Pass rewards program while accessing benefits such as priority services, lounge access, upgrades, and additional baggage allowances."
       },
-      { 
-        icon: PlusCircle, 
-        title: "Travel Add-Ons", 
-        sub: "Passengers can customize their trips with: Seat selection, Additional baggage, Travel insurance, Special assistance services, Airport services, and Flexible booking options." 
+      {
+        icon: PlusCircle,
+        title: "Travel Add-Ons",
+        sub: "Passengers can customize their trips with: Seat selection, Additional baggage, Travel insurance, Special assistance services, Airport services, and Flexible booking options."
       }
     ].map((item, i) => (
       <div key={item.title} className="flex gap-4 items-start text-justify">
@@ -1283,8 +451,8 @@ Bonus Miles
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -1383,7 +551,7 @@ Bonus Miles
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">Know More About LATAM Airlines</h3>
-            
+
             <p>
               LATAM Airlines is known for providing a variety of travel options, including Economy, Premium Economy, and Premium Business cabins. The airline also offers digital travel tools, baggage services, seat selection options, travel protection services, and loyalty benefits through its LATAM Pass program.
             </p>
@@ -1395,7 +563,7 @@ Bonus Miles
             </p>
           </div>
 
-          
+
 
           {/* How to Use Array Map */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
@@ -1457,7 +625,7 @@ Bonus Miles
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
         >
@@ -1476,7 +644,7 @@ Bonus Miles
             { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps users discover verified coupon codes, promo codes, and travel discounts." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -1514,12 +682,14 @@ Bonus Miles
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top LATAM Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {LATAM_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">L</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                    {coupon.topLabel} {coupon.mainValue} {coupon.offText}
+                  </p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
                 <a href="https://latamairlines.sjv.io/c/4303217/2023250/25131?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
@@ -1531,9 +701,9 @@ Bonus Miles
   </div>
 </section>
 
-       
 
-       
+
+
       </main>
 
       <Footer />
