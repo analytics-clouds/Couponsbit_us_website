@@ -86,7 +86,7 @@ export default function RayneoCouponsContent() {
             <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
               <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
             </div>
-            <a href="https://rayneo.pxf.io/bk1oOx"
+            <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b"
               target="_blank" rel="nofollow noopener noreferrer"
               onClick={() => setShowModal(false)}
               className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
@@ -138,7 +138,7 @@ export default function RayneoCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://rayneo.pxf.io/bk1oOx" target="_blank" rel="nofollow noopener noreferrer">
+                  <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/reyneo-coupon-code_q3crak.webp" alt="Rayneo" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -156,7 +156,7 @@ export default function RayneoCouponsContent() {
                       Save more with the latest RayNeo Discount Code and RayNeo Promo Code for November 2026. Enjoy up to $130 OFF the RayNeo X3 Pro AI smart glasses and up to $70 OFF RayNeo Air Series AR glasses and bundle deals. You can also shop the RayNeo Air 4 Pro starting at $254.15, grab the JoyDock gaming companion for $89, and save on Air 3s entertainment bundles. Browse verified RayNeo offers to upgrade your AR and gaming experience for less.
                     </p>
                     <a
-                      href="https://rayneo.pxf.io/bk1oOx"
+                      href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
@@ -189,21 +189,21 @@ export default function RayneoCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://rayneo.pxf.io/bk1oOx" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782202556/rayneo-promo-code_fa2jqu.webp" alt="Rayneo Voucher Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://rayneo.pxf.io/bk1oOx" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782202551/rayneo-discount-code_rw5xwp.webp" alt="Rayneo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://rayneo.pxf.io/bk1oOx" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782202552/rayneo-voucher-code_xqqil9.webp" alt="Rayneo Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -312,7 +312,7 @@ export default function RayneoCouponsContent() {
                               </button>
                             )}
                             <a
-                              href="https://rayneo.pxf.io/bk1oOx"
+                              href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b"
                               target="_blank"
                               rel="nofollow noopener noreferrer"
                               aria-label={`Get deal: ${coupon.title}`}
@@ -373,7 +373,7 @@ export default function RayneoCouponsContent() {
                    <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                    Always check the terms of an offer, including its expiration date, eligible products, minimum purchase requirements, and other restrictions.
                   </p>
-                  <a href="https://rayneo.pxf.io/bk1oOx" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -864,7 +864,7 @@ export default function RayneoCouponsContent() {
                   </p>
                 </div>
                 <a
-                  href="https://rayneo.pxf.io/bk1oOx"
+                  href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"

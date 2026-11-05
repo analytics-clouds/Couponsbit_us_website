@@ -60,43 +60,36 @@ export const NotificationPanel = ({ isOpen }: NotificationPanelProps) => {
           </div>
           <div className="max-h-[400px] overflow-y-auto">
             <NotificationItem
-              text="🎃 Halloween is Almost Here! Save Big on Costumes & Accessories at Spirit Halloween"
-              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699426/spirti-logo_x4nbor.webp"
+              text="🦃 Thanksgiving is Coming! Save Up to $130 OFF Your First Factor75 Meal Deliveries"
+              image="https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/spirit-halloween-discount-code"
+              ctaHref="/stores/factor75-discount-code"
             />
             <NotificationItem
-              text="👻 Spooky Season Deals on Amazon – Shop Halloween Costumes, Decorations & Candy Now"
-              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"
+              text="🍽️ Thanksgiving Feast Delivered – Get Up to 30% OFF on DoorDash Orders This Week"
+              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/amazon-discount-code"
+              ctaHref="/stores/doordash-promo-code"
               isRead
             />
             <NotificationItem
-              text="🕷️ Home Depot Halloween – Giant Inflatables & Animatronics at Exclusive Prices This Week"
-              image="https://res.cloudinary.com/couponsbit/image/upload/v1787295216/home-depot-logo_aipbiv.webp"
+              text="🛵 Uber Eats Thanksgiving Deals – Up to 60% OFF on Holiday Meals & Groceries Near You"
+              image="https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/home-depot-discount-code"
+              ctaHref="/stores/uber-eats-promo-code"
             />
             <NotificationItem
-              text="🍬 Target Halloween Sale – Stock Up on Candy, Costumes & Décor Before It Sells Out"
-              image="https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp"
+              text="🛒 Instacart Thanksgiving Sale – Save $20 + Free Delivery on Your Holiday Grocery Order"
+              image="https://res.cloudinary.com/couponsbit/image/upload/v1788868873/instacart-logo_yhmlhq.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/target-discount-code"
+              ctaHref="/stores/instacart-promo-code"
               isRead
             />
             <NotificationItem
-              text="🧡 Walmart Halloween Deals – Costumes, Decorations & Treats at Unbeatable Prices"
-              image="https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp"
+              text="🌽 Kroger Thanksgiving Savings – Up to 50% OFF Turkey, Sides & Holiday Essentials"
+              image="https://res.cloudinary.com/couponsbit/image/upload/v1787639269/kroger-logo_berwr1.webp"
               ctaLabel="Shop Now"
-              ctaHref="/stores/walmart-promo-code"
-              isRead
-            />
-            <NotificationItem
-              text="🎨 Etsy Handmade Halloween – Unique Costumes, Witch Hats & Spooky Home Décor on Sale"
-              image="https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp"
-              ctaLabel="Shop Now"
-              ctaHref="/stores/etsy-coupon-code"
+              ctaHref="/stores/kroger-discount-code"
               isRead
             />
           </div>

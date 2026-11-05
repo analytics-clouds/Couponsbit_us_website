@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import FytooCouponsContent from "./_components/StoreCouponsContent";
 import { FYTOO_COUPONS } from "./_components/offers";
 
-const TITLE = "Fytoo Discount Code: BOGO 50% OFF + Frames From $1 | Nov 2026";
+const TITLE = "Fytoo Discount Code: 50% OFF 2nd Frame + $1 Sale | Nov 2026";
 const DESCRIPTION =
-  "Get the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1, Get 1 50% OFF or shop stylish frames from just $1.";
+  "Get the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1, Get 1 50% OFF or save up to 40% OFF stylish eyewear.";
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     languages: {
       "en-US": "https://www.couponsbit.us/stores/fytoo-discount-code",
       "en-CA": "https://www.couponsbit.us/stores/fytoo-discount-code",
-      "en-CN": "https://www.couponsbit.us/stores/fytoo-discount-code",
+      "en-PT": "https://www.couponsbit.us/stores/fytoo-discount-code",
+      "en-PR": "https://www.couponsbit.us/stores/fytoo-discount-code",
       "x-default": "https://www.couponsbit.us/stores/fytoo-discount-code",
     },
   },

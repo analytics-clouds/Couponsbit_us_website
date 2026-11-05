@@ -115,7 +115,7 @@ export default function Factor75CouponsContent() {
               </div>
             )}
             <a
-              href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
+              href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016"
               target="_blank"
               rel="nofollow noopener noreferrer"
               onClick={() => setShowModal(false)}
@@ -149,7 +149,7 @@ export default function Factor75CouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
+                  <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782288848/factor75-coupon-code_a7lrym.webp" alt="Factor75" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -165,10 +165,10 @@ export default function Factor75CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Factor75 discount codes & promo codes for November 2026. New customers save up to $130 off first meal deliveries plus free breakfast for 1 year. Limited-time offer — up to $126 off your first six boxes.
+                      Save more with the latest Factor75 Discount Code and Factor75 Promo Code for November 2026. Enjoy up to 70% OFF eligible meal plans or get up to $130 OFF your first order with free breakfast for one year on qualifying subscriptions. You can also save up to 65% OFF chef-prepared meals, receive free shipping, and claim up to 50% OFF with bonus perks like free wellness shots or a free gift. Browse verified Factor75 offers for fresh, ready-to-eat meals delivered to your doorstep.
                     </p>
                     <a
-                      href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
+                      href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
@@ -203,21 +203,21 @@ export default function Factor75CouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782382779/factor_75-voucher-code_mufil6.webp" alt="Factor75 Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782382779/factor_75-promo-code_qdmtne.webp" alt="Factor75 Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782382779/factor_75-voucher-code_mufil6.webp" alt="Factor75 Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -360,7 +360,7 @@ export default function Factor75CouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Factor75, commonly known as Factor, is a meal delivery service that specializes in fully prepared, ready-to-eat meals. Unlike traditional meal kits that require cooking and preparation, Factor meals arrive fresh and only need to be heated before serving.
                   </p>
-                  <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1016" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.couponsbit.us/stores/rayneo-discount-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/rayneo-discount-code",
+      "en-CA": "https://www.couponsbit.us/stores/rayneo-discount-code",
+      "en-JP": "https://www.couponsbit.us/stores/rayneo-discount-code",
+      "en-MX": "https://www.couponsbit.us/stores/rayneo-discount-code",
       "x-default": "https://www.couponsbit.us/stores/rayneo-discount-code",
     },
   },

@@ -95,7 +95,7 @@ export default function SintraCouponsContent() {
             <h3 className="text-black font-black text-xl mb-2">{activeModalCoupon.title}</h3>
             <p className="text-gray-500 font-bold text-sm mb-6">{activeModalCoupon.description}</p>
             <a
-              href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+              href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B"
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-8 py-3.5 rounded-2xl shadow-md transition-all duration-300"
@@ -144,7 +144,7 @@ export default function SintraCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
+                  <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781776169/sintra-coupon-code_piyu2d.webp" alt="Sintra" width={112} height={112} className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -163,7 +163,7 @@ export default function SintraCouponsContent() {
                       Save more with the latest Sintra Discount Code and Sintra Promo Code for November 2026. Enjoy 70% OFF the 12-month subscription plan or get premium AI plans from just $15.60/month. You can also save 60% OFF the 3-month plan and 50% OFF the 1-month plan, plus unlock discounts on the Soshie AI tool. Browse verified Sintra offers to access AI-powered assistants for content creation, marketing, productivity, and business automation at the best available prices.
                     </p>
                     <a
-                      href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+                      href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
@@ -198,21 +198,21 @@ export default function SintraCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196228/sintra_promo_code_gbuud8.webp" alt="Sintra Discount Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196228/sintra_voucher_code_gftb8b.webp" alt="Sintra Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196228/sintra_discount_code_kul2hg.webp" alt="Sintra Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -321,7 +321,7 @@ export default function SintraCouponsContent() {
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
                             <a
-                              href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+                              href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B"
                               target="_blank"
                               rel="nofollow noopener noreferrer"
                               aria-label={`Get Sintra deal: ${coupon.title}`}
@@ -364,7 +364,7 @@ export default function SintraCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Sintra is an AI-powered business productivity platform that provides users with a team of virtual AI assistants designed to support various business functions. Instead of relying on a single AI tool, Sintra offers multiple specialized AI helpers that can assist with marketing, content creation, customer communication, research, business planning, website optimization, and workflow management.
                   </p>
-                  <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -693,7 +693,7 @@ export default function SintraCouponsContent() {
                           <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                         </div>
                         <a
-                          href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1015"
+                          href="https://playosinc.pxf.io/c/4303217/2128441/27038?subId1=1016B"
                           target="_blank"
                           rel="nofollow noopener noreferrer"
                           aria-label={`Get Sintra deal: ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim()}

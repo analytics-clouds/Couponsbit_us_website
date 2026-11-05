@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import Factor75CouponsContent from "./_components/StoreCouponsContent";
 import { FACTOR75_COUPONS } from "./_components/offers";
 
-const TITLE = "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026";
+const TITLE = "Factor75 Discount Code: Get 70% OFF + $130 OFF | Nov 2026";
 const DESCRIPTION =
-  "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.";
+  "Get the latest Factor75 Discount Code and Factor75 Promo Code for November 2026. Save 70% OFF meal plans or enjoy up to $130 OFF plus free breakfast for 1 year.";
 
 export const metadata: Metadata = {
   title: {

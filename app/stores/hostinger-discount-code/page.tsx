@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import HostingerCouponsContent from "./_components/StoreCouponsContent";
 import { HOSTINGER_COUPONS } from "./_components/offers";
 
-const TITLE = "Hostinger Discount Code | Up to 80% OFF + Free Domain";
+const TITLE = "Hostinger Discount Code: Get 80% OFF Hosting | Nov 2026";
 const DESCRIPTION =
-  "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.";
+  "Get the latest Hostinger Discount Code and Hostinger Promo Code for November 2026. Save up to 80% OFF hosting or get plans from $2.99/month.";
 
 export const metadata: Metadata = {
   title: {

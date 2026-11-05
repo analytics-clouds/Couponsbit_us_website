@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -26,13 +26,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Coupon, HELIUM10_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -40,14 +34,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "New Customer Offer", sub: "Latest Deals" },
-  { id: "d2", label: "DEAL", heading: "Annual Plan Discount", sub: "Featured Picks" },
-  { id: "d3", label: "FREE", heading: "Chrome Extension Free Tools", sub: "Featured Picks" },
-  { id: "d4", label: "DEAL", heading: "Diamond Plan Deal", sub: "Featured Picks" },
-  { id: "d5", label: "DEAL", heading: "Student & Startup Discount", sub: "Featured Picks" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", dealText: "Up to 27% OFF", href: "/stores/openart-discount-code" },
@@ -58,24 +44,63 @@ const RELATED_STORES: StoreItem[] = [
   { name: "Hostinger", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1785130842/hostinger-logo_m9ubvs.webp", dealText: "Up To 80% OFF", href: "/stores/hostinger-discount-code" },
 ];
 
-const STORE_URL = "https://i.helium10.com/c/4303217/3054775/37271?subId1=1015";
+const STORE_URL = "https://i.helium10.com/c/4303217/3054775/37271?subId1=1016b";
 
 export default function Helium10CouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="w-16 h-16 bg-[#e8f6f8] rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-[#056bfa] font-black text-3xl italic">H</span>
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a
+              href={STORE_URL}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors"
+            >
+              Continue to Store →
+            </a>
+            <button
+              onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors"
+            >
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -128,7 +153,7 @@ export default function Helium10CouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(11.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Helium 10 Discount Code and Helium 10 Promo Code for November 2026 to save 25% OFF, enjoy 20% OFF for your first 6 months with code ACLOUDS20, get 10% OFF every month for life using code ACLOUDS10, or subscribe to the Platinum Plan from $96.75/month. Compare verified Helium 10 deals and maximize your ecommerce savings.
+                      Save more with the latest Helium 10 Discount Code and Helium 10 Promo Code for November 2026. Use code ACLOUDS10 to get 25% OFF eligible plans or enjoy up to 50% OFF the Diamond Annual Plan. You can also save 20% OFF for your first 6 months, get 10% OFF every month for life, and start the Platinum Plan from just $96.75/month. Browse verified Helium 10 offers to access powerful Amazon seller tools for keyword research, product research, listing optimization, and analytics.
                     </p>
                     <a
                       href={STORE_URL}
@@ -204,24 +229,17 @@ export default function Helium10CouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Helium 10 Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SALE", value: "25% OFF", title: "Helium 10 Discount Code – Save 25% Today", desc: "Get 25% off Helium 10 with the current promotional offer.", bullets: ["Start using Helium 10 tools for your ecommerce business.", "Check the offer requirements before activating your plan.", "Search for a helium 10 discount before subscribing."] },
-                  { label: "PLATINUM", value: "$96.75/MO", title: "Helium 10 Discount Code – Platinum for $96.75/Month", desc: "Get 6 months of Platinum for $96.75 per month.", bullets: ["Unlock Helium 10's ecommerce research and business tools.", "The offer provides a reduced rate for the promotional period.", "Check for a coupon for helium 10 before signing up."] },
-                  { label: "SALE", value: "20% OFF", title: "Helium 10 Discount Code – 20% Off for 6 Months", desc: "Save 20% for your first 6 months on the eligible plan.", bullets: ["The offer is designed for new subscribers.", "Apply the qualifying promotion during signup.", "Look for a helium 10 coupon code 80 before completing your purchase."] },
-                  { label: "POPULAR", value: "20% OFF", title: "Helium 10 Discount Code – 20% Off the Most Popular Plan", desc: "The most popular plan is listed at $103/month.", bullets: ["Get 20% off for 6 months with the promotional offer.", "Enjoy access to Helium 10's ecommerce tools and features.", "Check for a helium 10 discount coupon before subscribing."] },
-                  { label: "SALE", value: "10% OFF", title: "Helium 10 Discount Code – 10% Off Every Month", desc: "Get 10% off every month with the qualifying promotion.", bullets: ["The offer can provide ongoing savings on your subscription.", "Check the applicable terms before activating the discount.", "Search for a helium 10 code promo before checkout."] },
-                  { label: "SALE", value: "25% OFF", title: "Helium 10 Promo Code – 25% Off Your First 6 Months", desc: "Save 25% on your first 6 months with the applicable code.", bullets: ["Unlock access to the Diamond tools at a reduced price.", "Enter the code during the eligible subscription process.", "Check the latest helium 10 discount code before signing up."] },
-                  { label: "LIFETIME", value: "10% OFF", title: "Helium 10 Promo Code – 10% Off Every Month for Life", desc: "Save 10% every month for life with the qualifying offer.", bullets: ["Designed for customers using Helium 10's powerful subscription plans.", "Apply the eligible code to unlock your ongoing discount.", "Search for a helium 10 50 off code to compare available savings."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {HELIUM10_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={`${coupon.valueFontClass} font-extrabold leading-none mt-2`}>{coupon.mainValue}</div>
+                            <p className="uppercase text-[8px] sm:text-[13px] font-semibold leading-3 mt-1">{coupon.offText}</p>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -230,29 +248,31 @@ export default function Helium10CouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Helium 10: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                            <button type="button" onClick={() => handleCopy("ACLOUDS10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
-                      <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">ACLOUDS10</span>
-                      <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-                        <Copy className="w-3.5 h-3.5" />
-                        Copy
-                      </span>
-                    </button>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Helium 10: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            {coupon.code && (
+                              <button type="button" onClick={() => handleCopy(coupon)} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors mt-4">
+                                <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">{coupon.code}</span>
+                                <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
+                                  <Copy className="w-3.5 h-3.5" />
+                                  Copy
+                                </span>
+                              </button>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -663,29 +683,24 @@ export default function Helium10CouponsContent() {
             Today's Top Helium 10 Deals
           </h3>
           <div className="space-y-6">
-            {[
-              { heading: "DEAL OF THE WEEK", sub: "Save Up to 20% OFF Monthly Plans" },
-              { heading: "ANNUAL SAVINGS", sub: "Get Up to 25% OFF Annual Subscriptions" },
-              { heading: "FREE ACCESS", sub: "Try Helium 10 Tools with a Free Account" },
-              { heading: "STARTER SPECIAL", sub: "Discounts Available on Platinum Plan" }
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
+            {HELIUM10_COUPONS.slice(0, 5).map((coupon, i) => (
+              <div key={coupon.id} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.topLabel} {coupon.mainValue} {coupon.offText}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
                 <a
                   href={STORE_URL}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Helium 10: ${deal.heading}`}
+                  aria-label={`Shop Helium 10: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >
                   Get Deal

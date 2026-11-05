@@ -94,7 +94,7 @@ export default function FytooCouponsContent() {
                 </div>
               )}
               <a
-                href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+                href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 onClick={() => setShowModal(false)}
@@ -145,7 +145,7 @@ export default function FytooCouponsContent() {
               {/* Left: Store Info */}
               <div className="lg:w-[45%]">
                 <div className="flex flex-col sm:flex-row items-start gap-6 mb-0 md:mb-8">
-                  <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer">
+                  <a href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b" target="_blank" rel="nofollow noopener noreferrer">
                     <div className="w-28 h-28 shrink-0 border-2 border-[#f0f0f0] rounded-2xl shadow-md flex items-center justify-center bg-white overflow-hidden">
                       <Image src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782114026/fytoo-logo_pp9aoo.webp" alt="Fytoo" width={112} height={112} sizes="112px" className="w-full h-full object-contain" fetchPriority="high" />
                     </div>
@@ -161,10 +161,10 @@ export default function FytooCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1, Get the 2nd Frame 50% OFF or shop Flash Sale and Clearance frames from just $1. You can also save 20% OFF eligible prescription glasses, explore Premium Series frames from $109, and discover weekly deals with up to 40% OFF selected eyewear. Browse verified Fytoo offers to find stylish prescription glasses and fashionable frames at unbeatable prices.
+                      Save more with the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1 Frame, Get the 2nd 50% OFF or save up to 40% OFF during the Weekly Savings Event. You can also shop Flash Sale and Clearance frames from just $1, get 20% OFF prescription glasses, and explore Premium Frames from $109. Browse verified Fytoo offers to find stylish prescription glasses, trendy frames, and everyday eyewear at unbeatable prices.
                     </p>
                     <a
-                      href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+                      href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors"
@@ -199,21 +199,21 @@ export default function FytooCouponsContent() {
                 <div className="relative rounded-2xl overflow-hidden h-[250px] shadow-lg group">
                   {/* Slide 1 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 0 ? 1 : 0 }}>
-                    <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_discount_code_dajcyx.webp" alt="Fytoo Discount Code" width={800} height={350} className="w-full h-full object-cover" fetchPriority="high" />
                     </a>
                   </div>
 
                   {/* Slide 2 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 1 ? 1 : 0 }}>
-                    <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_voucher_code_zi6hrv.webp" alt="Fytoo Promo Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
 
                   {/* Slide 3 */}
                   <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: activeSlide === 2 ? 1 : 0 }}>
-                    <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
+                    <a href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b" target="_blank" rel="nofollow noopener noreferrer" className="block w-full h-full">
                       <img src="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1782196100/fytoo_promo_code_qlw5iu.webp" alt="Fytoo Voucher Code" width={800} height={350} className="w-full h-full object-cover" loading="lazy" />
                     </a>
                   </div>
@@ -309,7 +309,7 @@ export default function FytooCouponsContent() {
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
                             <a
-                              href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+                              href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b"
                               target="_blank"
                               rel="nofollow noopener noreferrer"
                               aria-label={`Get Fytoo deal: ${coupon.title}`}
@@ -353,7 +353,7 @@ export default function FytooCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     FYTOO is a global online eyewear retailer that specializes in affordable prescription glasses, sunglasses, and reading glasses. The brand was created with a simple vision: make quality eyewear accessible, stylish, and budget-friendly for everyone.
                   </p>
-                  <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
+                  <a href="http://fytoo.sjv.io/c/4303217/1383992/16551?subid=1016b" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
