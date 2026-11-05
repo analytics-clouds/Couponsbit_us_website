@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import TrainPalCouponsContent from "./_components/StoreCouponsContent";
+import { TRAINPAL_COUPONS } from "./_components/offers";
+
+const TITLE = "TrainPal Discount Code: Get 50% OFF + 1/3 OFF | Nov 2026";
+const DESCRIPTION =
+  "Get the latest TrainPal Discount Code and TrainPal Promo Code for November 2026. Save 50% OFF with the 16–17 Saver or enjoy 1/3 OFF UK train fares.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/trainpal-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Nov 2026",
-    description:
-      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_GB",
     alternateLocale: ["en_IT", "en_US"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Nov 2026",
-    description:
-      "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +57,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const trainpalOffers = TRAINPAL_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `TrainPal ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/trainpal-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "TrainPal", url: "https://www.mytrainpal.com/" },
+}));
 
 const trainpalSchema = {
   "@context": "https://schema.org",
@@ -63,13 +78,11 @@ const trainpalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-      name: "TrainPal Discount Code: Save 1/3 on tickets + 60% Off Kids' Fares | Nov 2026",
-      description:
-        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,150 +92,24 @@ const trainpalSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#brand",
+      name: "TrainPal",
+      url: "https://www.mytrainpal.com/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/trainpal-discount-code#offerlist",
       name: "TrainPal Coupon Codes & Promo Codes",
-      description:
-        "Use a TrainPal discount code & save — Two Together Railcard saves couples 1/3 on fares, Family Railcard gives kids 60% off. Railcards from $44/year & London to Manchester from just $91. November 2026.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal Railcards – Save 1/3 on UK Train Travel",
-            description: "Travel smarter across the UK with TrainPal Railcards and enjoy significant savings on train tickets.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal 26-30 Railcard – Perfect for Young Professionals",
-            description: "Enjoy discounted train travel across the UK with the popular 26-30 Railcard.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal Two Together Railcard – Save When You Travel Together",
-            description: "Get 1/3 OFF rail fares when two named people travel together.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal Family &amp; Friends Railcard – Family Travel Made Affordable",
-            description: "Save on family adventures and school holiday trips with TrainPal.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal 16-17 Saver – Half-Price Rail Travel",
-            description: "Ideal for students, apprentices and young commuters.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal 3-Year Railcard – Long-Term Savings for Frequent Travellers",
-            description: "Save more with a multi-year Railcard subscription.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal London to Manchester Deal – Save Big on Popular Routes",
-            description: "Make your journey between London and Manchester more affordable with TrainPal Railcards.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal Leeds to Edinburgh Offer – Travel for Less",
-            description: "Explore Scotland and Northern England while keeping travel costs low.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "TrainPal Birmingham to Bristol Savings – Lower Fares Every Trip",
-            description: "Enjoy affordable rail travel between Birmingham and Bristol with TrainPal.",
-            url: "https://www.couponsbit.us/stores/trainpal-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "TrainPal",
-              url: "https://www.mytrainpal.com/",
-            },
-          },
-        },
-      ],
+      numberOfItems: TRAINPAL_COUPONS.length,
+      itemListElement: trainpalOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -347,7 +234,9 @@ export default function TrainPalStorePage() {
           __html: JSON.stringify(trainpalSchema),
         }}
       />
-      <TrainPalCouponsContent />
+      <Suspense fallback={null}>
+        <TrainPalCouponsContent />
+      </Suspense>
     </>
   );
 }

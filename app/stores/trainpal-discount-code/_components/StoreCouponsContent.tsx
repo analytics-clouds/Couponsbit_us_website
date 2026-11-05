@@ -1,58 +1,33 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  ChevronDown,
+  Laptop,
   CheckCircle,
   X,
-  ArrowRight,
   Plane,
   Tv,
   Train, Bus, CalendarDays, Smartphone, Map,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, LayoutGrid,
   Zap
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, TRAINPAL_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,121 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "1/3",
-    label: "SAVE",
-    badge: "Best Offer",
-    title: "TrainPal Railcards – Save 1/3 on UK Train Travel",
-    heading: "Save 1/3 on Rail Travel",
-    sub: "TrainPal Railcards",
-    description: "Travel smarter across the UK with TrainPal Railcards and enjoy significant savings on eligible rail journeys.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "RAILCARD13"
-  },
-  {
-    id: "c2",
-    discount: "£35",
-    label: "FROM",
-    badge: "Popular",
-    title: "TrainPal 26-30 Railcard – Perfect for Young Professionals",
-    heading: "26-30 Railcard From £35",
-    sub: "Per Year",
-    description: "Enjoy discounted train travel across the UK with the popular 26-30 Railcard.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "RAIL2630"
-  },
-  {
-    id: "c3",
-    discount: "1/3",
-    label: "SAVE",
-    badge: "Trending",
-    title: "TrainPal Two Together Railcard – Save When You Travel Together",
-    heading: "Two Together Railcard",
-    sub: "Save 1/3 OFF Fares",
-    description: "Get 1/3 OFF rail fares when two named people travel together across the UK.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "RAILTOGETHER"
-  },
-  {
-    id: "c4",
-    discount: "60%",
-    label: "KIDS",
-    title: "TrainPal Family & Friends Railcard – Family Travel Made Affordable",
-    heading: "Family & Friends Railcard",
-    sub: "Kids Up to 60% OFF",
-    description: "Adults save 1/3 OFF while children receive 60% OFF fares on family adventures and school holiday trips.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "RAILFAMILY"
-  },
-  {
-    id: "c5",
-    discount: "50%",
-    label: "FLAT",
-    title: "TrainPal 16-17 Saver – Half-Price Rail Travel",
-    heading: "16-17 Saver",
-    sub: "Flat 50% OFF",
-    description: "Ideal for students, apprentices and young commuters — get 50% OFF Standard and Season Tickets.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "RAIL1617"
-  },
-  {
-    id: "c6",
-    discount: "£80",
-    label: "ONLY",
-    title: "TrainPal 3-Year Railcard – Long-Term Savings for Frequent Travellers",
-    heading: "3-Year Railcard",
-    sub: "Only £80",
-    description: "Save more with a multi-year Railcard subscription — rail travel discounts for three years without annual renewals.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "RAIL3YEAR"
-  },
-  {
-    id: "c7",
-    discount: "£71.95",
-    label: "FROM",
-    title: "TrainPal London to Manchester Deal – Save Big on Popular Routes",
-    heading: "London–Manchester From £71.95",
-    sub: "Save Up to £35.98",
-    description: "Make your journey between London and Manchester more affordable with TrainPal Railcards.",
-    usedCount: "48k",
-    expiresIn: "4 days",
-    code: "RAILLDNMAN"
-  },
-  {
-    id: "c8",
-    discount: "£46.05",
-    label: "FROM",
-    title: "TrainPal Leeds to Edinburgh Offer – Travel for Less",
-    heading: "Leeds–Edinburgh From £46.05",
-    sub: "Save £23.02",
-    description: "Explore Scotland and Northern England while keeping travel costs low with TrainPal Railcard fares.",
-    usedCount: "41k",
-    expiresIn: "3 days",
-    code: "RAILLEEDSEDI"
-  },
-  {
-    id: "c9",
-    discount: "£35.25",
-    label: "FROM",
-    title: "TrainPal Birmingham to Bristol Savings – Lower Fares Every Trip",
-    heading: "Birmingham–Bristol From £35.25",
-    sub: "Save Up to £17.62",
-    description: "Enjoy affordable rail travel between Birmingham and Bristol with TrainPal Railcard fares.",
-    usedCount: "37k",
-    expiresIn: "5 days",
-    code: "RAILBHXBRS"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "FlixBus Australia", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784546572/flixbus-australia-coupon-code_nvew4i.webp", dealText: "Up to 50% OFF", href: "/stores/flixbus-discount-code" },
@@ -186,17 +46,15 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function TrainPalCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
-  // Slide auto-play
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % 3);
@@ -204,22 +62,50 @@ export default function TrainPalCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {/* Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+          <div className="relative bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 z-10" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 w-9 h-9 bg-[#f5f5f5] hover:bg-[#e0e0e0] rounded-full flex items-center justify-center transition-colors">
+              <X className="w-4 h-4 text-gray-600" />
+            </button>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#056bfa] text-white font-black text-2xl italic rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">T</div>
+              <h3 className="text-black font-black text-xl mb-2">{activeModalCoupon.title}</h3>
+              <p className="text-gray-500 font-bold text-sm mb-6">{activeModalCoupon.description}</p>
+              {activeModalCoupon.code && (
+                <div className="bg-[#f5f5f5] border-2 border-dashed border-[#056bfa] rounded-2xl p-4 mb-6">
+                  <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Your Coupon Code</p>
+                  <p className="text-[#056bfa] font-black text-2xl tracking-widest">{activeModalCoupon.code}</p>
+                </div>
+              )}
+              <a
+                href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                onClick={() => setShowModal(false)}
+                className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-base px-8 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+              >
+                Continue to TrainPal →
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -274,7 +160,7 @@ export default function TrainPalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Grab verified TrainPal discount codes for November 2026 — Two Together Railcard saves couples 1/3 on UK rail fares, Family Railcard gives kids 60% off. Railcards from just $44/year. London to Manchester from $91. Perfect for US travelers exploring the UK.
+                      Save more with the latest TrainPal Discount Code and TrainPal Promo Code for November 2026. Enjoy 50% OFF eligible UK train fares with the 16–17 Saver or save 1/3 OFF rail tickets using TrainPal Railcards. You can also get the 26–30 Railcard from £35/year, the 3-Year Railcard for £80, and book routes like London to Manchester from £71.95 or Leeds to Edinburgh from £46.05. Browse verified TrainPal offers and travel across the UK for less.
                     </p>
                     <a
                       href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015"
@@ -376,384 +262,67 @@ export default function TrainPalCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">TrainPal Coupon Codes & Offers</h2>
-                  
+                  <h2 className="text-2xl font-black text-black leading-tight">TrainPal Coupon Codes &amp; Offers</h2>
                 </div>
 
-                
-
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">1/3</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">On Fares</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal Railcards – Save 1/3 on UK Train Travel</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Travel smarter across the UK with TrainPal Railcards and enjoy significant savings on train tickets.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save 1/3 on eligible rail journeys across England, Scotland and Wales</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Most Railcards pay for themselves after just one or two trips</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy instant digital delivery directly to your phone</li>
-                            </ul>
+                {TRAINPAL_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={`${coupon.valueFontClass} font-extrabold leading-none mt-2`}>{coupon.mainValue}</div>
+                            {coupon.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>}
                           </div>
                         </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: Railcards Save 1/3 on UK Train Travel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a
+                              href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get TrainPal deal: ${coupon.title}`}
+                              className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/Year</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal 26-30 Railcard – Perfect for Young Professionals</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy discounted train travel across the UK with the popular 26-30 Railcard.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for commuting and leisure trips to cities like Manchester, Leeds and Birmingham</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Digital Railcard available directly on your smartphone</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from £35 for 1 Year</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: 26-30 Railcard for Young Professionals" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Save</p>
-          <h2 className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">1/3</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal Two Together Railcard – Save When You Travel Together</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 1/3 OFF rail fares when two named people travel together.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for couples, friends and weekend getaways</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save on trips across the UK throughout the year</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from £35 for 1 Year</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: Two Together Railcard Save 1/3" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Kids</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal Family &amp; Friends Railcard – Family Travel Made Affordable</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save on family adventures and school holiday trips with TrainPal.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Covers up to 4 adults and 4 children (ages 5-15)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Adults save 1/3 OFF while children receive 60% OFF fares</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from £35 for 1 Year</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: Family and Friends Railcard" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Flat</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal 16-17 Saver – Half-Price Rail Travel</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Ideal for students, apprentices and young commuters.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 50% OFF Standard and Season Tickets</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for school, college, work and visiting friends</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from £35 for 1 Year</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: 16-17 Saver Half-Price Rail Travel" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£80</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal 3-Year Railcard – Long-Term Savings for Frequent Travellers</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save more with a multi-year Railcard subscription.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy rail travel discounts for three years without annual renewals</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for just £80</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A great value option for regular UK train travellers</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: 3-Year Railcard for Frequent Travellers" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£71.95</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal London to Manchester Deal – Save Big on Popular Routes</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Make your journey between London and Manchester more affordable with TrainPal Railcards.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy fares starting from £71.95 instead of £107.93</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £35.98 on this popular intercity route</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A smart choice for business trips, weekend escapes and family visits</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: London to Manchester from £71.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£46.05</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal Leeds to Edinburgh Offer – Travel for Less</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Explore Scotland and Northern England while keeping travel costs low.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Railcard holders can travel from Leeds to Edinburgh for £46.05</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save £23.02 compared to standard ticket prices</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for city breaks, sightseeing and business travel</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: Leeds to Edinburgh from £46.05" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">£35.25</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">TrainPal Birmingham to Bristol Savings – Lower Fares Every Trip</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy affordable rail travel between Birmingham and Bristol with TrainPal.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Railcard fares available from just £35.25</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to £17.62 versus regular ticket prices</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for commuters, students and leisure travellers</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://trainpal.sjv.io/c/4303217/2127739/27024?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get TrainPal deal: Birmingham to Bristol from £35.25" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
               </div>
 
               {/* Sidebar */}
@@ -824,32 +393,32 @@ export default function TrainPalCouponsContent() {
   <div className="space-y-8">
     {[
       {
-        icon: Train, 
+        icon: Train,
         title: "Train Tickets",
         sub: "Book train tickets across major rail networks in the UK and Europe."
       },
       {
-        icon: Zap, 
+        icon: Zap,
         title: "High-Speed Rail Travel",
         sub: "Access fast and convenient rail services connecting major cities throughout Italy and other European destinations."
       },
       {
-        icon: Bus, 
+        icon: Bus,
         title: "Coach Tickets",
         sub: "Compare and book coach services for additional travel flexibility."
       },
       {
-        icon: CalendarDays, 
+        icon: CalendarDays,
         title: "Advance Bookings",
         sub: "Plan your trips ahead of time and secure tickets before your departure date."
       },
       {
-        icon: Smartphone, 
+        icon: Smartphone,
         title: "Mobile Ticketing",
         sub: "Manage bookings digitally and access tickets directly through supported devices."
       },
       {
-        icon: Map, 
+        icon: Map,
         title: "Cross-Country Travel",
         sub: "Explore multiple destinations using extensive rail and transportation networks"
       }
@@ -882,8 +451,8 @@ export default function TrainPalCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -906,16 +475,16 @@ export default function TrainPalCouponsContent() {
 </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
       <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
+
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          TrainPal Discount Codes, Promo Codes & Rail Travel Deals
+          TrainPal Discount Codes, Promo Codes &amp; Rail Travel Deals
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
@@ -935,7 +504,7 @@ export default function TrainPalCouponsContent() {
         <td className="p-5 text-[#056BFA] font-black align-middle">Save 1/3</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
         <td className="p-5 text-gray-500 align-middle max-w-[200px]">Pays for itself after 1-2 trips</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible rail journeys across England, Scotland & Wales</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible rail journeys across England, Scotland &amp; Wales</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
         <td className="p-5 text-black font-black align-middle max-w-[220px]">26-30 Railcard</td>
@@ -952,7 +521,7 @@ export default function TrainPalCouponsContent() {
         <td className="p-5 text-gray-500 align-middle max-w-[240px]">Two people travelling together</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">Family & Friends Railcard</td>
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Family &amp; Friends Railcard</td>
         <td className="p-5 text-[#056BFA] font-black align-middle">Kids 60% OFF</td>
         <td className="p-5 text-gray-500 align-middle">Families</td>
         <td className="p-5 text-gray-500 align-middle max-w-[200px]">Covers up to 4 adults and 4 children (5-15)</td>
@@ -1008,7 +577,7 @@ export default function TrainPalCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">About TrainPal</h3>
-            
+
             <p>
               The service is particularly popular among travelers in the United Kingdom and Italy, where rail transportation plays an important role in both daily commuting and leisure travel.
             </p>
@@ -1109,7 +678,7 @@ export default function TrainPalCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -1128,7 +697,7 @@ export default function TrainPalCouponsContent() {
             { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps users discover discounts, promo codes, and travel savings opportunities." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -1164,34 +733,28 @@ export default function TrainPalCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top TrainPal Deals</h3>
           <div className="space-y-6">
-            {[
-              { heading: "Save 1/3 on UK Train Travel", sub: "TrainPal Railcards" },
-              { heading: "26-30 Railcard", sub: "Perfect for Young Professionals" },
-              { heading: "Two Together Railcard", sub: "Save When You Travel Together" },
-              { heading: "Family & Friends Railcard", sub: "Family Travel Made Affordable" },
-              { heading: "16-17 Saver", sub: "Half-Price Rail Travel" }
-            ].map((deal, i) => (
+            {TRAINPAL_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">T</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{`${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim()}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://www.mytrainpal.com" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get TrainPal deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.mytrainpal.com" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get TrainPal deal: ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim()} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
 
-        
+
       </main>
 
       <Footer />
     </div>
   );
-} 
+}

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import UnipinCouponsContent from "./_components/StoreCouponsContent";
+import { UNIPIN_COUPONS } from "./_components/offers";
+
+const TITLE = "UniPin Discount Code: Get 25% Extra Robux | Nov 2026";
+const DESCRIPTION =
+  "Get the latest UniPin Discount Code and UniPin Promo Code for November 2026. Enjoy 25% Extra Robux or save up to 17% OFF on eligible game vouchers.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Get verified UniPin deals for November 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/unipin-discount-code",
@@ -20,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/unipin-discount-code",
-    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Nov 2026",
-    description:
-      "Get verified UniPin deals for November 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +41,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Nov 2026",
-    description:
-      "Get verified UniPin deals for November 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782198037/unipijn-coupon-code_nh4xhc.webp"],
     site: "@couponsbit",
   },
@@ -52,7 +55,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const unipinOffers = UNIPIN_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/unipin-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Unipin", url: "https://www.unipin.com/" },
+}));
 
 const unipinSchema = {
   "@context": "https://schema.org",
@@ -61,13 +76,11 @@ const unipinSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/unipin-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/unipin-discount-code",
-      name: "UniPin Discount Code: Top-Ups from $0.94 | Fortnite, PUBG & Roblox | Nov 2026",
-      description:
-        "Get verified UniPin deals for November 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -77,165 +90,24 @@ const unipinSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/unipin-discount-code#brand",
+      name: "Unipin",
+      url: "https://www.unipin.com/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/unipin-discount-code#offerlist",
       name: "Unipin Coupon Codes & Promo Codes",
-      description:
-        "Get verified UniPin deals for November 2026 — Fortnite V-Bucks from $17.66, PUBG 8100 UC from $91.99, Roblox $50 at $49.68 & PSN Gift Cards from $9.94. Mobile Legends top-ups from $1. Instant delivery.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/unipin-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Boost Your Eudemons Experience with UniPin Top-Ups",
-            description: "Top up your Eudemons Online account quickly and securely through UniPin.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "UniPin PUBG Mobile UC Top-Up – 8100 UC Available",
-            description: "Recharge your PUBG Mobile account with official UC credits.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Mobile Legends: Bang Bang Top-Up",
-            description: "Power up your Mobile Legends account with fast and reliable top-ups.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Magic Chess: Go Go Top-Up",
-            description: "Enjoy seamless top-ups for Magic Chess: Go Go.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Starfall Fantasy: Neverland Recharge",
-            description: "Enhance your adventure with quick top-ups for Starfall Fantasy: Neverland.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "UniPin MU ORIGIN 3 Top-Up",
-            description: "Boost your gameplay with official MU ORIGIN 3 game credits.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Voucher (US) – Flexible Gaming Credits",
-            description: "Purchase official UniPin Vouchers for convenient gaming top-ups.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Fortnite V-Bucks Top-Up",
-            description: "Get official Fortnite V-Bucks quickly and securely.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "UniPin PlayStation PSN Gift Card",
-            description: "Add funds to your PlayStation account instantly.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "UniPin Roblox Gift Card – Roblox 50 USD",
-            description: "Purchase Roblox credits quickly through UniPin.",
-            url: "https://www.couponsbit.us/stores/unipin-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Unipin",
-              url: "https://www.unipin.com/",
-            },
-          },
-        },
-      ],
+      numberOfItems: UNIPIN_COUPONS.length,
+      itemListElement: unipinOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -360,7 +232,9 @@ export default function UnipinStorePage() {
           __html: JSON.stringify(unipinSchema),
         }}
       />
-      <UnipinCouponsContent />
+      <Suspense fallback={null}>
+        <UnipinCouponsContent />
+      </Suspense>
     </>
   );
 }

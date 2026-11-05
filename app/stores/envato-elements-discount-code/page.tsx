@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import EnvatoCouponsContent from "./_components/StoreCouponsContent";
+import { ENVATO_COUPONS } from "./_components/offers";
+
+const TITLE = "Envato Elements Discount Code: Get 50% OFF | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Envato Elements Discount Code and Envato Elements Promo Code for November 2026. Save 50% OFF annual plans or enjoy unlimited downloads from $16.50/month.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Envato Elements Discount Code: Flat 50% Off Plans | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/envato-elements-discount-code",
@@ -22,9 +27,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-    title: "Envato Elements Discount Code: Flat 50% Off Plans | November 2026",
-    description:
-      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -40,9 +44,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Envato Elements Discount Code: Flat 50% Off Plans | November 2026",
-    description:
-      "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775923/envato-coupon-code_rhfnbt.webp"],
     site: "@couponsbit",
   },
@@ -55,7 +58,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const envatoOffers = ENVATO_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Envato Elements ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/envato-elements-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Envato Elements", url: "https://elements.envato.com" },
+}));
 
 const envatoSchema = {
   "@context": "https://schema.org",
@@ -64,13 +79,11 @@ const envatoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/envato-elements-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-      name: "Envato Elements Discount Code: Flat 50% Off Plans | November 2026",
-      description:
-        "Use an Envato Elements discount code or promo code — grab flat 50% off annual plans & 30% off for students. Plans from $16.50/mo. Verified November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -80,120 +93,25 @@ const envatoSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/envato-elements-discount-code#brand",
+      name: "Envato Elements",
+      url: "https://elements.envato.com",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/envato-elements-discount-code#offerlist",
       name: "Envato Elements Coupon Codes & Promo Codes",
       description:
         "Latest verified Envato Elements coupon codes, promo codes and discount codes for templates, graphics, fonts, and creative subscriptions.",
       url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Unlimited Creative Assets From $16.50/Month",
-            description: "Access millions of creative assets with AI-powered tools and commercial licensing.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "ANNUAL PLAN – Flat 50% OFF",
-            description: "Save more with Envato Elements annual subscription plans.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "STUDENTS SPECIAL – Flat 30% OFF",
-            description: "Exclusive student savings on Envato Elements subscriptions.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "UP TO 34% OFF – Team Plan Offer",
-            description: "Perfect plan for creative teams and agencies.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Unlimited Downloads – Starting From $16.50/Month",
-            description: "Unlock premium creative resources with unlimited access.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "BEST PLAN – Individual Plan Starting At $16.50/Month",
-            description: "Ideal subscription for creators, freelancers & designers.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "SIGNUP OFFER – Free Trial On Subscription Plans",
-            description: "Start your creative journey with free AI tool access.",
-            url: "https://www.couponsbit.us/stores/envato-elements-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Envato Elements",
-              url: "https://elements.envato.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: ENVATO_COUPONS.length,
+      itemListElement: envatoOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -318,7 +236,9 @@ export default function EnvatoStorePage() {
           __html: JSON.stringify(envatoSchema),
         }}
       />
-      <EnvatoCouponsContent />
+      <Suspense fallback={null}>
+        <EnvatoCouponsContent />
+      </Suspense>
     </>
   );
 }

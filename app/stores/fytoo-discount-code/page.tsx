@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import FytooCouponsContent from "./_components/StoreCouponsContent";
+import { FYTOO_COUPONS } from "./_components/offers";
+
+const TITLE = "Fytoo Discount Code: BOGO 50% OFF + Frames From $1 | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1, Get 1 50% OFF or shop stylish frames from just $1.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/fytoo-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-    title: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | November 2026",
-    description:
-      "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | November 2026",
-    description:
-      "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782114026/fytoo-logo_pp9aoo.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +56,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const fytooOffers = FYTOO_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Fytoo ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/fytoo-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Fytoo", url: "https://www.fytoo.com/" },
+}));
 
 const fytooSchema = {
   "@context": "https://schema.org",
@@ -62,13 +77,11 @@ const fytooSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/fytoo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-      name: "Fytoo Discount Code: Frames From $1 + Up to 40% Off | November 2026",
-      description:
-        "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -78,120 +91,25 @@ const fytooSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/fytoo-discount-code#brand",
+      name: "Fytoo",
+      url: "https://www.fytoo.com/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/fytoo-discount-code#offerlist",
       name: "Fytoo Coupon Codes & Promo Codes",
       description:
         "Use a verified Fytoo discount code or promo code — grab frames from just $1 in the flash sale & save up to 40% off selected eyewear collections. Updated November 2026.",
       url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Eyewear Offer – Buy 1 Frame &amp; Get the Second at 50% OFF",
-            description: "Upgrade your eyewear collection with Fytoo's special combo offer — buy any frame and get the second at 50% OFF.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Premium Series Collection – Luxury Eyewear Starts at $109",
-            description: "Discover the Premium Series crafted with exceptional design and craftsmanship.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Bestselling Frames – Special Prices on Top Picks",
-            description: "Shop bestselling eyewear loved by customers worldwide.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Flash Sale – Grab Frames from Just $1",
-            description: "Don't miss Fytoo's limited-time Flash Sale on selected eyewear styles.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Clearance Sale – Frames Starting at $1",
-            description: "Save big with Fytoo's clearance collection on selected frames.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Prescription Glasses Offer – Flat 20% OFF",
-            description: "Get crystal-clear vision and stylish frames in one package.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Fytoo Weekly Savings Event – Up to 40% OFF",
-            description: "Enjoy incredible discounts during Fytoo's weekly promotion.",
-            url: "https://www.couponsbit.us/stores/fytoo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fytoo",
-              url: "https://www.fytoo.com/",
-            },
-          },
-        },
-      ],
+      numberOfItems: FYTOO_COUPONS.length,
+      itemListElement: fytooOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -316,7 +234,9 @@ export default function FytooStorePage() {
           __html: JSON.stringify(fytooSchema),
         }}
       />
-      <FytooCouponsContent />
+      <Suspense fallback={null}>
+        <FytooCouponsContent />
+      </Suspense>
     </>
   );
 }

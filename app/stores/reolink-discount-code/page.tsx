@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ReolinkCouponsContent from "./_components/StoreCouponsContent";
+import { REOLINK_COUPONS } from "./_components/offers";
+
+const TITLE = "Reolink Discount Code: 50% OFF + $450 OFF | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Reolink Discount Code and Reolink Promo Code for November 2026. Save up to 50% OFF security cameras and up to $450 OFF selected camera systems.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Reolink Discount Code: Up to 50% Off Security Cameras | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Save up to 50% with the latest Reolink discount code — November 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/reolink-discount-code",
@@ -20,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/reolink-discount-code",
-    title: "Reolink Discount Code: Up to 50% Off Security Cameras | November 2026",
-    description:
-      "Save up to 50% with the latest Reolink discount code — November 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Reolink Discount Code: Up to 50% Off Security Cameras | November 2026",
-    description:
-      "Save up to 50% with the latest Reolink discount code — November 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781775924/reolink-coupon-code_zsrmh1.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +56,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const reolinkOffers = REOLINK_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Reolink ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/reolink-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Reolink", url: "https://reolink.com" },
+}));
 
 const reolinkSchema = {
   "@context": "https://schema.org",
@@ -62,13 +77,11 @@ const reolinkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/reolink-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/reolink-discount-code",
-      name: "Reolink Discount Code: Up to 50% Off Security Cameras | November 2026",
-      description:
-        "Save up to 50% with the latest Reolink discount code — November 2026. Score $450 off the RLK16 system, TrackFlex Floodlight at $338.99 & Duo 3 PoE at $238.76. Verified security camera deals updated daily.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -78,135 +91,25 @@ const reolinkSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/reolink-discount-code#brand",
+      name: "Reolink",
+      url: "https://reolink.com",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/reolink-discount-code#offerlist",
       name: "Reolink Coupon Codes & Promo Codes",
       description:
         "Latest verified Reolink coupon codes, promo codes and discount codes for security cameras and smart home devices.",
       url: "https://www.couponsbit.us/stores/reolink-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "17th Anniversary Early Access – Up to 50% OFF",
-            description: "Save up to 50% OFF on premium Reolink security cameras & smart surveillance systems.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "TrackFlex Floodlight WiFi – Now at US$338.99",
-            description: "Get massive savings on the advanced TrackFlex Floodlight WiFi security camera bundle.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Reolink Duo 3 PoE – Now at US$238.76",
-            description: "Upgrade your home security with the powerful Reolink Duo 3 PoE camera bundle.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "RLK16-1200D8-A Security System – Now at US$1,049.99",
-            description: "Upgrade to powerful 12MP UHD surveillance with the latest Reolink security kit.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Reolink Solar Floodlight Cam – Now at US$159.99",
-            description: "Secure your home smarter with the all-new Reolink Solar Floodlight Cam.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Reolink RLC-1240A – Now at US$195.29",
-            description: "Upgrade your security setup with the powerful Reolink RLC-1240A bundle at 30% OFF.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Reolink RLC-823S2 – Now at US$516.99",
-            description: "Get powerful 4K surveillance with the advanced Reolink RLC-823S2 camera bundle.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Reolink Solar Floodlight Cam Bundle – Save $40",
-            description: "Secure your outdoors with the smart Reolink Solar Floodlight Cam at a special price.",
-            url: "https://www.couponsbit.us/stores/reolink-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Reolink",
-              url: "https://reolink.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: REOLINK_COUPONS.length,
+      itemListElement: reolinkOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -331,7 +234,9 @@ export default function ReolinkStorePage() {
           __html: JSON.stringify(reolinkSchema),
         }}
       />
-      <ReolinkCouponsContent />
+      <Suspense fallback={null}>
+        <ReolinkCouponsContent />
+      </Suspense>
     </>
   );
 }

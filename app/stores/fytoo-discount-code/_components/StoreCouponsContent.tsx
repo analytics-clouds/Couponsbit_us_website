@@ -1,58 +1,34 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  ChevronDown,
+  Laptop,
   CheckCircle,
   X,
-  ArrowRight,
   Plane,
   Glasses, Sun, Monitor, Maximize, Smile,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, LayoutGrid,
+  BookOpen,
   Zap
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, FYTOO_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,97 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "50%",
-    label: "BUY 1 GET",
-    badge: "Best Offer",
-    title: "Buy 1 Frame & Get the Second at 50% OFF",
-    heading: "Buy 1 Get 2nd 50% OFF",
-    sub: "Eyewear Combo Offer",
-    description: "Buy any frame and get the second frame at 50% OFF on stylish prescription glasses and trendy eyewear.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "FYTOOBOGO"
-  },
-  {
-    id: "c2",
-    discount: "$109",
-    label: "FROM",
-    badge: "Popular",
-    title: "Premium Series Collection – Luxury Eyewear Starts at $109",
-    heading: "Premium Series From $109",
-    sub: "Luxury Eyewear",
-    description: "Discover the Premium Series crafted with exceptional design, comfort and timeless style.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "FYTOOPREMIUM"
-  },
-  {
-    id: "c3",
-    discount: "Top",
-    label: "SHOP",
-    badge: "Trending",
-    title: "Bestselling Frames – Special Prices on Top Picks",
-    heading: "Bestselling Frames",
-    sub: "Special Prices",
-    description: "Shop bestselling eyewear loved by customers worldwide at exclusive discounted prices.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "FYTOOBEST"
-  },
-  {
-    id: "c4",
-    discount: "$1",
-    label: "FROM",
-    title: "Flash Sale – Grab Frames from Just $1",
-    heading: "Flash Sale From $1",
-    sub: "Limited Quantities",
-    description: "Selected eyewear styles available for as low as $1 — massive savings while quantities last.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "FYTOOFLASH"
-  },
-  {
-    id: "c5",
-    discount: "$1",
-    label: "FROM",
-    title: "Clearance Sale – Frames Starting at $1",
-    heading: "Clearance From $1",
-    sub: "While Stocks Last",
-    description: "Save big with Fytoo's clearance collection — stylish, affordable eyewear while stocks last.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "FYTOOCLEAR"
-  },
-  {
-    id: "c6",
-    discount: "20%",
-    label: "FLAT",
-    title: "Prescription Glasses Offer – Flat 20% OFF",
-    heading: "Flat 20% OFF",
-    sub: "Prescription Glasses",
-    description: "Enjoy 20% OFF on Prescription Glasses including Frames and Lenses.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "FYTOORX20"
-  },
-  {
-    id: "c7",
-    discount: "40%",
-    label: "UP TO",
-    title: "Weekly Savings Event – Up to 40% OFF",
-    heading: "Up to 40% OFF",
-    sub: "Weekly Savings Event",
-    description: "Enjoy incredible discounts during Fytoo's weekly promotion on selected eyewear collections.",
-    usedCount: "48k",
-    expiresIn: "4 days",
-    code: "FYTOOWEEKLY"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Rayneo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775923/reyneo-coupon-code_q3crak.webp", dealText: "Save $130 OFF", href: "/stores/rayneo-discount-code" },
@@ -162,17 +47,15 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function FytooCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
-  // Slide auto-play
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % 3);
@@ -180,22 +63,50 @@ export default function FytooCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {/* Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+          <div className="relative bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 z-10" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 w-9 h-9 bg-[#f5f5f5] hover:bg-[#e0e0e0] rounded-full flex items-center justify-center transition-colors">
+              <X className="w-4 h-4 text-gray-600" />
+            </button>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#056bfa] text-white font-black text-2xl italic rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">F</div>
+              <h3 className="text-black font-black text-xl mb-2">{activeModalCoupon.title}</h3>
+              <p className="text-gray-500 font-bold text-sm mb-6">{activeModalCoupon.description}</p>
+              {activeModalCoupon.code && (
+                <div className="bg-[#f5f5f5] border-2 border-dashed border-[#056bfa] rounded-2xl p-4 mb-6">
+                  <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Your Coupon Code</p>
+                  <p className="text-[#056bfa] font-black text-2xl tracking-widest">{activeModalCoupon.code}</p>
+                </div>
+              )}
+              <a
+                href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                onClick={() => setShowModal(false)}
+                className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-base px-8 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+              >
+                Continue to Fytoo →
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -250,7 +161,7 @@ export default function FytooCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Fytoo discount codes & promo codes for November 2026. Grab stylish eyewear frames from just $1 in the flash sale & save up to 40% off selected collections. Limited-time Fytoo deals updated daily.
+                      Save more with the latest Fytoo Discount Code and Fytoo Promo Code for November 2026. Enjoy Buy 1, Get the 2nd Frame 50% OFF or shop Flash Sale and Clearance frames from just $1. You can also save 20% OFF eligible prescription glasses, explore Premium Series frames from $109, and discover weekly deals with up to 40% OFF selected eyewear. Browse verified Fytoo offers to find stylish prescription glasses and fashionable frames at unbeatable prices.
                     </p>
                     <a
                       href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
@@ -352,302 +263,67 @@ export default function FytooCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Fytoo Coupon Codes & Offers</h2>
-                  
+                  <h2 className="text-2xl font-black text-black leading-tight">Fytoo Coupon Codes &amp; Offers</h2>
                 </div>
 
-                
-
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Buy 1 Get 2nd</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Eyewear Offer – Buy 1 Frame &amp; Get the Second at 50% OFF</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your eyewear collection with Fytoo's special combo offer — buy any frame and get the second at 50% OFF.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Buy any frame and get the second frame at 50% OFF</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from stylish prescription glasses and trendy eyewear designs</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A perfect opportunity to own multiple looks for less</li>
-                            </ul>
+                {FYTOO_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={`${coupon.valueFontClass} font-extrabold leading-none mt-2`}>{coupon.mainValue}</div>
+                            {coupon.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>}
                           </div>
                         </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Buy 1 Frame Get the Second at 50% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a
+                              href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get Fytoo deal: ${coupon.title}`}
+                              className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starts At</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$109</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Premium Series Collection – Luxury Eyewear Starts at $109</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Discover the Premium Series crafted with exceptional design and craftsmanship.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Experience comfort, durability and timeless style in every frame</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium collection available from $109</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for those who appreciate fine living and sophisticated eyewear</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Premium Series Collection Luxury Eyewear From $109" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Shop</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">Top Picks</h2>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Bestselling Frames – Special Prices on Top Picks</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shop bestselling eyewear loved by customers worldwide.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Explore stylish frames with modern designs and premium quality</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Grab selected bestselling styles at exclusive discounted prices</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade your everyday look with fashionable eyewear</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Bestselling Frames Special Prices on Top Picks" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$1</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Flash Sale – Grab Frames from Just $1</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Don't miss Fytoo's limited-time Flash Sale on selected eyewear styles.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Selected eyewear styles available for as low as $1</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Massive savings on premium and fashionable frames</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited quantities available — shop before they sell out</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Flash Sale Frames from $1" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$1</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Clearance Sale – Frames Starting at $1</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save big with Fytoo's clearance collection on selected frames.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop selected frames at heavily reduced prices</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stylish and affordable eyewear available while stocks last</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save big with Fytoo's clearance collection</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Clearance Sale Frames Starting at $1" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Flat</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">20%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Prescription Glasses Offer – Flat 20% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get crystal-clear vision and stylish frames in one package.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 20% OFF on Prescription Glasses including Frames and Lenses</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for students, professionals and everyday wear</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Upgrade your eyewear while saving more</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Prescription Glasses Flat 20% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Up To</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">40%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Fytoo Weekly Savings Event – Up to 40% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy incredible discounts during Fytoo's weekly promotion.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get Up to 40% OFF on selected eyewear collections</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>New deals and exciting offers return regularly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop premium-quality glasses at unbeatable prices</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Fytoo deal: Weekly Savings Event Up to 40% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
               </div>
 
               {/* Sidebar */}
@@ -717,32 +393,32 @@ export default function FytooCouponsContent() {
   <div className="space-y-8">
     {[
       {
-        icon: Glasses, // Ensure this icon is imported or replaced with your preferred icon component
+        icon: Glasses,
         title: "Prescription Glasses",
         sub: "Choose from a wide selection of prescription eyeglasses available in various shapes, colors, and frame materials."
       },
       {
-        icon: Sun, 
+        icon: Sun,
         title: "Sunglasses",
         sub: "Protect your eyes while elevating your style with fashionable sunglasses for everyday wear and outdoor activities."
       },
       {
-        icon: BookOpen, 
+        icon: BookOpen,
         title: "Reading Glasses",
         sub: "FYTOO offers comfortable reading glasses designed for work, leisure, and everyday use."
       },
       {
-        icon: Monitor, 
+        icon: Monitor,
         title: "Blue Light Blocking Glasses",
         sub: "For those who spend long hours in front of digital screens, blue-light-filtering lenses can help improve visual comfort."
       },
       {
-        icon: Maximize, 
+        icon: Maximize,
         title: "Progressive Lenses",
         sub: "Customers requiring multifocal vision correction can explore progressive lens options tailored to their prescription needs."
       },
       {
-        icon: Smile, 
+        icon: Smile,
         title: "Low Bridge Fit Frames",
         sub: "FYTOO also provides specialized frame designs that offer a more comfortable fit for specific facial structures."
       }
@@ -775,8 +451,8 @@ export default function FytooCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -799,16 +475,16 @@ export default function FytooCouponsContent() {
 </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
        <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
+
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          FYTOO Coupon Codes, Promo Codes & Eyewear Deals
+          FYTOO Coupon Codes, Promo Codes &amp; Eyewear Deals
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
@@ -828,7 +504,7 @@ export default function FytooCouponsContent() {
         <td className="p-5 text-[#056BFA] font-black align-middle">Buy 1, Get 2nd at 50% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
         <td className="p-5 text-gray-500 align-middle max-w-[200px]">A perfect opportunity to own multiple looks for less</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prescription glasses & eyewear frames</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prescription glasses &amp; eyewear frames</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
         <td className="p-5 text-black font-black align-middle max-w-[220px]">Premium Series Collection</td>
@@ -862,7 +538,7 @@ export default function FytooCouponsContent() {
         <td className="p-5 text-black font-black align-middle max-w-[220px]">Prescription Glasses Offer</td>
         <td className="p-5 text-[#056BFA] font-black align-middle">Flat 20% OFF</td>
         <td className="p-5 text-gray-500 align-middle">All Users</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Ideal for students, professionals & everyday wear</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Ideal for students, professionals &amp; everyday wear</td>
         <td className="p-5 text-gray-500 align-middle max-w-[240px]">Prescription glasses (frames + lenses)</td>
       </tr>
       <tr className="hover:bg-gray-50/50 transition-colors">
@@ -887,7 +563,7 @@ export default function FytooCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">About FYTOO</h3>
-            
+
             <p>
               Unlike traditional eyewear retailers that often involve multiple layers of distribution, FYTOO works closely with manufacturers to streamline the supply chain. This direct-to-consumer approach helps reduce costs while giving customers access to fashionable frames at competitive prices.
             </p>
@@ -968,7 +644,7 @@ export default function FytooCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -987,7 +663,7 @@ export default function FytooCouponsContent() {
             { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover discounts, promo codes, and special offers from popular brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -1023,31 +699,25 @@ export default function FytooCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top FYTOO Deals</h3>
           <div className="space-y-6">
-            {[
-              { heading: "Buy 1 Get 2nd 50% OFF", sub: "Fytoo Eyewear Offer" },
-              { heading: "Premium Series From $109", sub: "Luxury Eyewear Collection" },
-              { heading: "Bestselling Frames", sub: "Special Prices on Top Picks" },
-              { heading: "Flash Sale From $1", sub: "Grab Frames from Just $1" },
-              { heading: "Clearance Sale From $1", sub: "Frames Starting at $1" }
-            ].map((deal, i) => (
+            {FYTOO_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">F</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{`${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim()}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://www.fytoo.com" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get FYTOO deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.fytoo.com" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get FYTOO deal: ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim()} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
 
-        
+
       </main>
 
       <Footer />

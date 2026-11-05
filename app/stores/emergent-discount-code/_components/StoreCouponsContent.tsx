@@ -1,58 +1,32 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  ChevronDown,
+  Laptop,
   CheckCircle,
-  X,
-  ArrowRight,
   Plane,
   CreditCard, LayoutDashboard, Bot, Store, Rocket, Code2,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, LayoutGrid,
   Zap
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { EMERGENT_PLANS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,36 +34,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$2.63",
-    label: "FROM",
-    badge: "Best Offer",
-    title: "Standard Plan – Flat 85% OFF, Now $2.63/mo",
-    heading: "Standard Plan",
-    sub: "$2.63/mo (Save $14.79)",
-    description: "Perfect for first-time builders — 100 credits/mo with mobile app development, private hosting and GitHub integration.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "EMERGENTSTANDARD"
-  },
-  {
-    id: "c2",
-    discount: "$146.10",
-    label: "FROM",
-    badge: "Popular",
-    title: "Pro Plan – Built for Serious Creators and Brands",
-    heading: "Pro Plan",
-    sub: "$146.10/mo (Save $12.22)",
-    description: "750 credits/mo with E-3 Agent, free deployment, custom domain, analytics dashboard and full project memory.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "EMERGENTPRO"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", dealText: "Up to 27% OFF", href: "/stores/openart-discount-code" },
@@ -101,17 +45,10 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function EmergentCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
-  const [showToast, setShowToast] = useState(false);
-  const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
 
-  // Slide auto-play
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % 3);
@@ -119,37 +56,9 @@ export default function EmergentCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
-  };
-
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
       <Navbar />
-
-      {/* Toast Notification */}
-      <div className={cn(
-        "fixed top-20 right-6 z-[60] bg-white rounded-2xl shadow-2xl border border-[#f0f0f0] p-4 flex items-center gap-3 transition-all duration-300 transform",
-        showToast ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0 pointer-events-none"
-      )}>
-        <div className="bg-[#f0fdf4] p-2 rounded-full">
-          <CheckCircle className="w-5 h-5 text-[#22c55e]" />
-        </div>
-        <div>
-          <p className="font-black text-black text-sm">Code Copied!</p>
-          <p className="text-gray-500 text-xs font-bold font-mono">{toastCode}</p>
-        </div>
-      </div>
 
       {/* Main Content Start */}
       <main>

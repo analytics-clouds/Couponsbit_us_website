@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ZenHotelsCouponsContent from "./_components/StoreCouponsContent";
+import { ZEN_HOTELS_COUPONS } from "./_components/offers";
+
+const TITLE = "ZenHotels Discount Code: Get $35 OFF Hotels | Nov 2026";
+const DESCRIPTION =
+  "Get the latest ZenHotels Discount Code and ZenHotels Promo Code for November 2026. Save $35 OFF app bookings or book hotel stays from $291.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Zen Hotels Discount Code: $35 Off + Paris from $852 | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified Zen Hotels discount code & save in November 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
@@ -24,9 +29,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | November 2026",
-    description:
-      "Use a verified Zen Hotels discount code & save in November 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["tr_TR", "en_IN", "de_DE", "en_GB", "en_PK"],
@@ -42,9 +46,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Zen Hotels Discount Code: $35 Off + Paris from $852 | November 2026",
-    description:
-      "Use a verified Zen Hotels discount code & save in November 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp"],
     site: "@couponsbit",
   },
@@ -57,7 +60,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const zenHotelsOffers = ZEN_HOTELS_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/zen-hotels-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Zen Hotels", url: "https://www.zenhotels.com/" },
+}));
 
 const zenhotelsSchema = {
   "@context": "https://schema.org",
@@ -66,13 +81,11 @@ const zenhotelsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/zen-hotels-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-      name: "Zen Hotels Discount Code: $35 Off + Paris from $852 | November 2026",
-      description:
-        "Use a verified Zen Hotels discount code & save in November 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -82,135 +95,24 @@ const zenhotelsSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/zen-hotels-discount-code#brand",
+      name: "Zen Hotels",
+      url: "https://www.zenhotels.com/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/zen-hotels-discount-code#offerlist",
       name: "Zen Hotels Coupon Codes & Promo Codes",
-      description:
-        "Use a verified Zen Hotels discount code & save in November 2026 — get $35 off stays over $700 via app, New York JFK from $2,625, Paris from $852, Milan from $818 & Prague from $1,145. Greece & Portugal luxury escapes also available. Book now.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels New York Stay Deal – Residence Inn by Marriott JFK",
-            description: "Enjoy a comfortable city break in New York with spacious suites and airport convenience.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels App Exclusive Offer – Get $35 OFF on Stays",
-            description: "Turn on vacation mode and save more on your next getaway with ZenHotels.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels Greece Beach Escape – Avra Imperial Hotel",
-            description: "Relax at a luxurious beachfront resort on Crete's beautiful northern coast.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels Portugal Luxury Stay – Tivoli Carvoeiro",
-            description: "Experience breathtaking Algarve coastal views and five-star hospitality.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels Prague Luxury Escape – Alchymist Grand Hotel",
-            description: "Indulge in a premium stay in one of Prague's most elegant hotels.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels Paris City Break – Hôtel Vacances Bleues Provinces Opéra",
-            description: "Stay in the heart of Paris near iconic attractions and shopping districts.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels Milan Romantic Getaway – Hotel Berna",
-            description: "Enjoy a memorable city break in Milan with modern comforts and excellent connectivity.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "ZenHotels UK Weekend Escape – Moxy Chester",
-            description: "Plan a fun weekend getaway in the historic city of Chester.",
-            url: "https://www.couponsbit.us/stores/zen-hotels-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Zen Hotels",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: ZEN_HOTELS_COUPONS.length,
+      itemListElement: zenHotelsOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -335,7 +237,9 @@ export default function ZenHotelsStorePage() {
           __html: JSON.stringify(zenhotelsSchema),
         }}
       />
-      <ZenHotelsCouponsContent />
+      <Suspense fallback={null}>
+        <ZenHotelsCouponsContent />
+      </Suspense>
     </>
   );
 }

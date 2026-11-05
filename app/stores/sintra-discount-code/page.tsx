@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SintraCouponsContent from "./_components/StoreCouponsContent";
+import { SINTRA_COUPONS } from "./_components/offers";
+
+const TITLE = "Sintra Discount Code: Get 70% OFF on Plans | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Sintra Discount Code and Sintra Promo Code for November 2026. Save 70% OFF annual plans or get AI plans from just $15.60/month.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sintra Discount Code: Up to 70% Off AI Automation Plans | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/sintra-discount-code",
@@ -22,9 +27,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sintra-discount-code",
-    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | November 2026",
-    description:
-      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -40,9 +44,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sintra Discount Code: Up to 70% Off AI Automation Plans | November 2026",
-    description:
-      "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1781776169/sintra-coupon-code_piyu2d.webp"],
     site: "@couponsbit",
   },
@@ -55,7 +58,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const sintraOffers = SINTRA_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Sintra ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/sintra-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Sintra", url: "https://sintra.ai" },
+}));
 
 const sintraSchema = {
   "@context": "https://schema.org",
@@ -64,13 +79,11 @@ const sintraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sintra-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/sintra-discount-code",
-      name: "Sintra Discount Code: Up to 70% Off AI Automation Plans | November 2026",
-      description:
-        "Use a Sintra discount code & save up to 70% on AI automation plans — annual plan from just $15.60/month. Save 50% on monthly, 60% on 3-month & 60% off Soshie Social Media Manager. 14-day money-back guarantee. Verified November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -80,105 +93,25 @@ const sintraSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/sintra-discount-code#brand",
+      name: "Sintra",
+      url: "https://sintra.ai",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/sintra-discount-code#offerlist",
       name: "Sintra Coupon Codes & Promo Codes",
       description:
         "Latest verified Sintra coupon codes, promo codes and discount codes for AI business automation plans and subscriptions.",
       url: "https://www.couponsbit.us/stores/sintra-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Sintra AI Plans – Starting From $15.60/Month",
-            description: "Choose the perfect Sintra AI plan with powerful AI helpers and premium features.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Sintra 1-Month Plan – Save 50%",
-            description: "Get started with flexible monthly access at discounted pricing.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Sintra 12-Month Plan – Save 70%",
-            description: "Unlock maximum savings with Sintra AI's most popular annual plan.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Sintra 3-Month Plan – Save 60%",
-            description: "Enjoy premium AI tools with flexible mid-term pricing.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Sintra Soshie – Social Media Manager 60% OFF",
-            description: "Manage your social media smarter with Sintra AI's Soshie tool.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Sintra AI Money-Back Guarantee Offer",
-            description: "Try Sintra AI risk-free with a full refund guarantee.",
-            url: "https://www.couponsbit.us/stores/sintra-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sintra",
-              url: "https://sintra.ai",
-            },
-          },
-        },
-      ],
+      numberOfItems: SINTRA_COUPONS.length,
+      itemListElement: sintraOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -303,7 +236,9 @@ export default function SintraStorePage() {
           __html: JSON.stringify(sintraSchema),
         }}
       />
-      <SintraCouponsContent />
+      <Suspense fallback={null}>
+        <SintraCouponsContent />
+      </Suspense>
     </>
   );
 }
