@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import HostingerCouponsContent from "./_components/StoreCouponsContent";
+import { HOSTINGER_COUPONS } from "./_components/offers";
+
+const TITLE = "Hostinger Discount Code | Up to 80% OFF + Free Domain";
+const DESCRIPTION =
+  "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hostinger-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-    title: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
-    description:
-      "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
-    description:
-      "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/hostinger-logo_m9ubvs.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +57,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const hostingerOffers = HOSTINGER_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Hostinger ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/hostinger-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Hostinger", url: "https://www.hostinger.com" },
+}));
 
 const hostingerSchema = {
   "@context": "https://schema.org",
@@ -63,13 +78,11 @@ const hostingerSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hostinger-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-      name: "Hostinger Discount Code | Up to 80% OFF + Free Domain",
-      description:
-        "Get the latest Hostinger Discount Code and Hostinger Voucher to save up to 80%, get a free domain, free SSL, and hosting from $2.99/month.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,165 +92,25 @@ const hostingerSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/hostinger-discount-code#brand",
+      name: "Hostinger",
+      url: "https://www.hostinger.com",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/hostinger-discount-code#offerlist",
       name: "Hostinger Coupon Codes & Promo Codes",
       description:
         "Latest verified Hostinger coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Launch Your Website From Only $2.99/Month",
-            description: "Get online with reliable web hosting starting at just $2.99/month.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – USA Summer Hosting Sale, Save Up To 80%",
-            description: "Unlock discounts of up to 80% on selected hosting plans during the USA Summer Sale.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Premium Hosting For Creators From $2.99/Month",
-            description: "Designed for bloggers, portfolios, and growing brands, starting from $2.99/month.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Business Hosting With Unlimited Websites",
-            description: "Host multiple websites under one affordable Business Hosting plan.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Cloud Startup Plan From $7.99/Month",
-            description: "High-speed cloud hosting built for demanding websites, starting from $7.99/month.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Get A Free Domain With Eligible Plans",
-            description: "Claim a complimentary domain for your first year on eligible Hostinger plans.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Build A Website With AI In Minutes",
-            description: "Generate a complete website using Hostinger's AI-powered tools in minutes.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Optimized WordPress Hosting Deals",
-            description: "Fast hosting environment designed specifically for WordPress websites.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – eCommerce Hosting For Growing Stores",
-            description: "Launch an online store with integrated selling features and fast performance.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Hostinger – Try Premium Hosting Risk-Free",
-            description: "Experience premium hosting without long-term worries, covered by a full 30-day money-back guarantee.",
-            url: "https://www.couponsbit.us/stores/hostinger-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hostinger",
-              url: "https://www.hostinger.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: HOSTINGER_COUPONS.length,
+      itemListElement: hostingerOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -362,7 +235,9 @@ export default function HostingerStorePage() {
           __html: JSON.stringify(hostingerSchema),
         }}
       />
-      <HostingerCouponsContent />
+      <Suspense fallback={null}>
+        <HostingerCouponsContent />
+      </Suspense>
     </>
   );
 }

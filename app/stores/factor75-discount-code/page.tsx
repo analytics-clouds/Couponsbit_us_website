@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Factor75CouponsContent from "./_components/StoreCouponsContent";
+import { FACTOR75_COUPONS } from "./_components/offers";
+
+const TITLE = "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026";
+const DESCRIPTION =
+  "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/factor75-discount-code",
@@ -19,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/factor75-discount-code",
-    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026",
-    description:
-      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026",
-    description:
-      "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp"],
     site: "@couponsbit",
   },
@@ -51,7 +54,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const factor75Offers = FACTOR75_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Factor75 ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/factor75-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Factor75", url: "https://www.factor75.com/" },
+}));
 
 const factor75Schema = {
   "@context": "https://schema.org",
@@ -60,13 +75,11 @@ const factor75Schema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/factor75-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/factor75-discount-code",
-      name: "Factor75 Discount Code: Up to $130 Off + Free Breakfast | November 2026",
-      description:
-        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -76,45 +89,24 @@ const factor75Schema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/factor75-discount-code#brand",
+      name: "Factor75",
+      url: "https://www.factor75.com/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/factor75-discount-code#offerlist",
       name: "Factor75 Coupon Codes & Promo Codes",
-      description:
-        "Use a verified Factor75 discount code or promo code & save up to $130 off your first meals plus free breakfast for 1 year. New customers save up to $126 off first six boxes. November 2026.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/factor75-discount-code",
-      numberOfItems: 2,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Factor75 Healthy Eating Deal – Up to $130 OFF + FREE Breakfast for 1 Year",
-            description: "Make healthy eating easier and more affordable with Factor75's exclusive meal plan savings.",
-            url: "https://www.couponsbit.us/stores/factor75-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Factor75",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Factor75 Limited-Time Promotion – Up to $126 OFF",
-            description: "Exclusive promotion available for new Factor75 customers.",
-            url: "https://www.couponsbit.us/stores/factor75-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Factor75",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: FACTOR75_COUPONS.length,
+      itemListElement: factor75Offers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -239,7 +231,9 @@ export default function Factor75StorePage() {
           __html: JSON.stringify(factor75Schema),
         }}
       />
-      <Factor75CouponsContent />
+      <Suspense fallback={null}>
+        <Factor75CouponsContent />
+      </Suspense>
     </>
   );
 }

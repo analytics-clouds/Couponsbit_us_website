@@ -1,58 +1,34 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Copy,
+  ChevronDown,
+  Laptop,
   CheckCircle,
   X,
-  ArrowRight,
   Plane,
   Utensils, Dumbbell, Scale, Flame, Leaf, Apple,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, LayoutGrid,
   Zap
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, FACTOR75_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,36 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$130",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Factor75 Healthy Eating Deal – Up to $130 OFF + FREE Breakfast for 1 Year",
-    heading: "Healthy Eating Deal",
-    sub: "Up to $130 OFF",
-    description: "Make healthy eating easier and more affordable with Factor75's exclusive meal plan savings.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "FACTOR75HEALTHY"
-  },
-  {
-    id: "c2",
-    discount: "$126",
-    label: "UP TO",
-    badge: "Popular",
-    title: "Factor75 Limited-Time Promotion – Up to $126 OFF",
-    heading: "Limited-Time Promotion",
-    sub: "Up to $126 OFF",
-    description: "Exclusive promotion available for new Factor75 customers.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "FACTOR75PROMO"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "DoorDash", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp", dealText: "Up To 30% OFF", href: "/stores/doordash-promo-code" },
@@ -101,15 +47,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function Factor75CouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
 
   // Slide auto-play
   useEffect(() => {
@@ -124,13 +69,6 @@ export default function Factor75CouponsContent() {
     setToastCode(code);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
@@ -150,6 +88,44 @@ export default function Factor75CouponsContent() {
           <p className="text-gray-500 text-xs font-bold font-mono">{toastCode}</p>
         </div>
       </div>
+
+      {/* Coupon Deal Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+          <div className="relative bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 z-10" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 w-10 h-10 bg-[#f5f5f5] rounded-full flex items-center justify-center hover:bg-[#f0f0f0] transition-colors">
+              <X className="w-5 h-5 text-gray-600" />
+            </button>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-b from-[#056bfa] to-[#006d9b] rounded-2xl flex items-center justify-center text-white font-black text-2xl italic">F</div>
+              <div>
+                <p className="text-black font-black text-sm">Factor75</p>
+                <p className="text-gray-500 font-bold text-xs">Exclusive Deal</p>
+              </div>
+            </div>
+            <h3 className="text-black font-black text-lg leading-snug mb-2">{activeModalCoupon.title}</h3>
+            <p className="text-gray-500 font-bold text-sm mb-6">{activeModalCoupon.description}</p>
+            {activeModalCoupon.code && (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => handleCopy(activeModalCoupon.code)} className="bg-[#056bfa] text-white px-4 py-2 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-4 h-4" /> Copy
+                </button>
+              </div>
+            )}
+            <a
+              href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full text-center bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-lg py-4 rounded-2xl shadow-md transition-colors"
+            >
+              Continue to Store
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* Main Content Start */}
       <main>
@@ -301,87 +277,56 @@ export default function Factor75CouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Up To</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$130</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Factor75 Healthy Eating Deal – Up to $130 OFF + FREE Breakfast for 1 Year</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Make healthy eating easier and more affordable with Factor75's exclusive meal plan savings.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get up to $130 OFF across your first meal deliveries as a new customer</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy FREE Breakfast for 1 Year with eligible subscription plans</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from fresh, chef-prepared meals designed for convenience and nutrition</li>
-                            </ul>
+                {FACTOR75_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={`${coupon.valueFontClass} font-extrabold leading-none mt-2`}>{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
                           </div>
                         </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Factor75 deal: Healthy Eating Deal Up to $130 OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <button
+                              type="button"
+                              onClick={() => { setActiveModalCoupon(coupon); setShowModal(true); }}
+                              aria-label={`Get Factor75 deal: ${coupon.title}`}
+                              className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >Get Deal</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Up To</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">$126</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Factor75 Limited-Time Promotion – Up to $126 OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Exclusive promotion available for new Factor75 customers.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to $126 on your first six meal boxes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes FREE Breakfast for 1 Year with qualifying recurring plans</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Choose from a wide variety of fresh, chef-crafted meals delivered weekly</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Factor75 deal: Limited-Time Promotion Up to $126 OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                ))}
 
               
 
