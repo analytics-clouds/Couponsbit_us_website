@@ -136,6 +136,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
     },
     {
+      url: `${BASE_URL}/blog/veterans-day-2026-ways-to-honour-veterans`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
+    {
       url: `${BASE_URL}/blog/amazon-shopping-tips-find-better-deals`,
       lastModified: new Date(),
       changeFrequency: "monthly",

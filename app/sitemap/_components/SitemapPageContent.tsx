@@ -42,6 +42,7 @@ const CATEGORIES = [
 ];
 
 const BLOG_POSTS = [
+  { name: "Veterans Day 2026: Ways to Honour Our Heroes", href: "/blog/veterans-day-2026-ways-to-honour-veterans" },
   { name: "Shopping on Amazon? Find Better Deals and Save More", href: "/blog/amazon-shopping-tips-find-better-deals" },
   { name: "Halloween Is Almost Here: Fun Ideas for Everyone", href: "/blog/halloween-fun-ideas-costumes-parties" },
   { name: "Spirit Halloween vs Amazon vs Wish: Halloween Deals 2026", href: "/blog/spirit-halloween-vs-amazon-vs-wish-budget-halloween-costumes" },
