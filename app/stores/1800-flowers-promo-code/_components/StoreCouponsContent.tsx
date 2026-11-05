@@ -26,7 +26,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { FLOWERS_COUPONS } from "./offers";
+import { OFFERS } from "./offers";
 
 interface Deal {
   id: string;
@@ -193,138 +193,53 @@ export default function FlowersCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              <div className="top-offers w-full lg:w-[65%]">
-      <div className="mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-2xl font-black text-[#061b3a] tracking-tight">
-          1800 Flowers Promo Codes & Offers
-        </h2>
-      </div>
-
-      <div className="space-y-5">
-        {coupons.map((c, i) => {
-          const isOpen = expandedIndex === i;
-          const isCopied = copiedCode === c.code;
-
-          return (
-            <div
-              key={c.id || i}
-              className="w-full bg-[#F8F9FA] border border-gray-200/80 rounded-[20px] sm:rounded-[24px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300"
-            >
-              <div className="flex flex-col sm:flex-row items-stretch">
-                
-                {/* LEFT DISCOUNT BADGE */}
-                <div className="relative w-full sm:w-[130px] lg:w-[150px] bg-gradient-to-b from-[#056bfa] to-[#0052cc] flex flex-col items-center justify-center py-5 sm:py-6 text-white shrink-0 select-none">
-                  {/* Side Cutout Notches */}
-                  <div className="hidden sm:block absolute -right-3 -top-3 w-6 h-6 bg-white rounded-full z-10" />
-                  <div className="hidden sm:block absolute -right-3 -bottom-3 w-6 h-6 bg-white rounded-full z-10" />
-
-                  <span className="uppercase tracking-widest text-[10px] sm:text-xs font-semibold opacity-90 text-center">
-                    {c.label || "OFFER"}
-                  </span>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black leading-none mt-1 mb-1 text-center">
-                    {c.value}
-                  </div>
+              <div className="top-offers lg:w-[65%]">
+                <div className="mb-10">
+                  <h2 className="text-2xl font-black text-black leading-tight">1800 Flowers Promo Codes & Offers</h2>
                 </div>
 
-                {/* RIGHT WRAPPER */}
-                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                  
-                  {/* CENTER DETAILS */}
-                  <div className="flex-1 p-4 sm:p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0 flex flex-col justify-between">
-                    <div>
-                      {/* Badges */}
-                      <div className="flex flex-wrap gap-2 mb-2.5">
-                        <span className="bg-red-50 text-red-600 border border-red-200/60 text-[9px] sm:text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
-                          {c.tagLeft || "Limited Time"}
-                        </span>
-                        <span className="bg-emerald-50 text-emerald-600 border border-emerald-200/60 text-[9px] sm:text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
-                          {c.tagRight || "Verified Deal"}
-                        </span>
+                {OFFERS.map((c, i) => (
+                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                          </div>
+                        </div>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {c.bullets.map((b, bi) => (
+                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop 1800 Flowers: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                          </div>
+                        </div>
                       </div>
-
-                      {/* Title & Description */}
-                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[#061b3a] leading-snug tracking-tight">
-                        {c.title}
-                      </h3>
-                      {c.desc && (
-                        <p className="mt-1.5 text-gray-600 text-xs sm:text-sm leading-relaxed">
-                          {c.desc}
-                        </p>
-                      )}
                     </div>
-
-                    {/* Accordion Toggle */}
-                    {c.bullets && c.bullets.length > 0 && (
-                      <div className="mt-3">
-                        <button
-                          type="button"
-                          onClick={() => setExpandedIndex(isOpen ? null : i)}
-                          aria-expanded={isOpen}
-                          className="text-[#056bfa] hover:text-[#004bbd] font-bold text-xs sm:text-sm flex items-center gap-1 transition-colors focus:outline-none"
-                        >
-                          <span>{isOpen ? "Hide Details" : "View Details"}</span>
-                          <ChevronDown
-                            size={16}
-                            className={`transition-transform duration-300 ${
-                              isOpen ? "rotate-180" : ""
-                            }`}
-                          />
-                        </button>
-
-                        {/* Bullet Points */}
-                        {isOpen && (
-                          <ul className="mt-3 pt-3 border-t border-dashed border-gray-200 space-y-2 text-xs sm:text-sm text-gray-600">
-                            {c.bullets.map((bullet, bi) => (
-                              <li key={bi} className="flex items-start gap-2">
-                                <span className="text-[#056bfa] font-bold">•</span>
-                                <span className="leading-normal">{bullet}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    )}
                   </div>
-
-                  {/* RIGHT ACTION SECTION */}
-                  <div className="w-full lg:w-[220px] flex flex-col items-center justify-center p-4 sm:p-5 gap-3 bg-gray-50/50">
-                    {/* Optional Coupon Code Box */}
-                    {c.code && (
-                      <button
-                        type="button"
-                        onClick={() => handleCopy(c.code)}
-                        className="w-full border-2 border-dashed border-[#056bfa]/40 bg-white hover:bg-blue-50/50 py-2 px-3 rounded-xl flex items-center justify-between transition-colors"
-                      >
-                        <span className="font-mono font-bold text-sm text-[#061b3a]">
-                          {c.code}
-                        </span>
-                        <span className="text-xs font-bold text-[#056bfa] flex items-center gap-1">
-                          {isCopied ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
-                          {isCopied ? "Copied" : "Copy"}
-                        </span>
-                      </button>
-                    )}
-
-                    {/* CTA Link / Button */}
-                    <a
-                      href={c.url || storeUrl}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      aria-label={`Shop 1800 Flowers: ${c.title}`}
-                      className="w-full bg-[#056bfa] hover:bg-[#0052cc] active:scale-[0.98] text-white font-bold text-sm sm:text-base py-3 px-6 rounded-xl shadow-xs transition-all duration-200 text-center flex items-center justify-center gap-2"
-                    >
-                      <span>{c.code ? (isCopied ? "Get Deal" : "Get Code & Deal") : "Get Deal"}</span>
-                      <ExternalLink size={15} />
-                    </a>
-                  </div>
-
-                </div>
+                ))}
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
 
