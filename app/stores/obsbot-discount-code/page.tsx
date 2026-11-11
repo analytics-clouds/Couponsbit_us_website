@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ObsbotCouponsContent from "./_components/StoreCouponsContent";
+import { OBSBOT_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Nov 2026",
+    absolute: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
   },
   description:
-    "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated November 2026.",
+    "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/obsbot-discount-code",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Nov 2026",
+    title: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
     description:
-      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated November 2026.",
+      "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Nov 2026",
+    title: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
     description:
-      "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated November 2026.",
+      "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg"],
     site: "@couponsbit",
   },
@@ -53,7 +55,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const obsbotOffers = OBSBOT_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `OBSBOT ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/obsbot-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "OBSBOT",
+    url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
+  },
+}));
 
 const obsbotSchema = {
   "@context": "https://schema.org",
@@ -62,9 +79,9 @@ const obsbotSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-      name: "OBSBOT Discount Code: AI Webcams From $129 + 4K Streaming | Nov 2026",
+      name: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
       description:
-        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated November 2026.",
+        "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -78,120 +95,26 @@ const obsbotSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#brand",
+      name: "OBSBOT",
+      url: "https://www.obsbot.com",
+      sameAs: ["https://www.facebook.com/obsbot", "https://twitter.com/obsbot"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#offerlist",
       name: "Obsbot Coupon Codes & Promo Codes",
       description:
-        "Use a verified OBSBOT discount code or promo code — grab the Tiny 2 Lite 4K AI Webcam from $129. Pro streaming camera with NDI & AI tracking from $499. Updated November 2026.",
+        "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT Tail Air 4K NDI Streaming Camera – From $499",
-            description: "Take your live streams and productions to the next level with the OBSBOT Tail Air.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Insta360 Link 2 4K Webcam – From $199.99",
-            description: "Upgrade your meetings and streams with the Insta360 Link 2 PTZ 4K Webcam.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT Tiny 2 Lite 4K Webcam – From $129",
-            description: "Get premium webcam features at an affordable price with the OBSBOT Tiny 2 Lite.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT Tiny 2 4K AI Webcam – From $299",
-            description: "Experience professional-grade video with the OBSBOT Tiny 2 4K Webcam.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT Tiny SE 1080P AI Webcam – From $75.05",
-            description: "Upgrade your setup without breaking the budget with the OBSBOT Tiny SE.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT VOX SE Wireless Streaming Microphone – From $59",
-            description: "Enhance your audio quality with the OBSBOT VOX SE Wireless Microphone.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "OBSBOT Tiny 2 Remote Control – From $49",
-            description: "Take full control of your OBSBOT camera with the Tiny 2 Smart Remote Control.",
-            url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Obsbot",
-              url: "https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: OBSBOT_COUPONS.length,
+      itemListElement: obsbotOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -308,7 +231,9 @@ export default function ObsbotStorePage() {
           __html: JSON.stringify(obsbotSchema),
         }}
       />
-      <ObsbotCouponsContent />
+      <Suspense fallback={null}>
+        <ObsbotCouponsContent />
+      </Suspense>
     </>
   );
 }

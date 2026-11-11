@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BallboyzCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BALLBOYZ_COUPONS } from "./_components/offers";
+
+const TITLE = "BallBoyz Discount Code: 50% OFF Acne Care | Nov 2026";
+const DESCRIPTION =
+  "Get the latest BallBoyz Discount Code and BallBoyz Promo Code for November 2026. Save 50% OFF acne care kits or $60 OFF the Full Body Acne Gameplan.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest BallBoyz discount codes and skincare deals for Nov 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/ballboyz-discount-code",
@@ -20,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-    title: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Nov 2026",
-    description:
-      "Find the latest BallBoyz discount codes and skincare deals for Nov 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Nov 2026",
-    description:
-      "Find the latest BallBoyz discount codes and skincare deals for Nov 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373660/ballboyz-coupon-code_rduo3k.jpg"],
     site: "@couponsbit",
   },
@@ -52,6 +54,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const ballboyzSchema = {
@@ -61,13 +65,12 @@ const ballboyzSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/ballboyz-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-      name: "BallBoyz Discount Code: $60 Off + 50% OFF Deals | Nov 2026",
-      description:
-        "Find the latest BallBoyz discount codes and skincare deals for Nov 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -80,18 +83,17 @@ const ballboyzSchema = {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/ballboyz-discount-code#offerlist",
       name: "Ballboyz Coupon Codes & Promo Codes",
-      description:
-        "Find the latest BallBoyz discount codes and skincare deals for Nov 2026. Save $60 on Full Body Acne Gameplan, get 50% off Face Acne Gameplan, 40% off summer acne sale, and more skincare offers.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BALLBOYZ_COUPONS.length,
+      itemListElement: BALLBOYZ_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/ballboyz-discount-code",
+          name: c.title,
+          description: c.description,
+          url: `https://www.couponsbit.us/stores/ballboyz-discount-code#${c.id}`,
           seller: { "@type": "Organization", name: "Ballboyz", url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015" },
         },
       })),
@@ -126,6 +128,13 @@ const ballboyzSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/ballboyz-discount-code#brand",
+      name: "Ballboyz",
+      url: "https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015",
     },
 
     {
@@ -211,7 +220,9 @@ export default function BallboyzStorePage() {
           __html: JSON.stringify(ballboyzSchema),
         }}
       />
-      <BallboyzCouponsContent />
+      <Suspense fallback={null}>
+        <BallboyzCouponsContent />
+      </Suspense>
     </>
   );
 }

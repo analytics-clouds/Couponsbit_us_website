@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import TalkpalCouponsContent from "./_components/StoreCouponsContent";
+import { TALKPAL_COUPONS } from "./_components/offers";
+
+const TITLE = "Talkpal Discount Code: Save Up to 75% + 14-Day Free Trial | Nov 2026";
+const DESCRIPTION =
+  "Get the latest Talkpal discount code and save up to 75% on Premium plans. Enjoy verified promo codes, a 14-day free trial, and exclusive offers this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/talkpal-discount-code",
@@ -25,9 +30,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | November 2026",
-    description:
-      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["de_DE", "ja_JP", "en_IN", "en_AU", "en_GB", "en_PK"],
@@ -43,9 +47,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | November 2026",
-    description:
-      "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288847/talkpal-coupon-code_gozaoz.webp"],
     site: "@couponsbit",
   },
@@ -58,7 +61,25 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const talkpalOffers = TALKPAL_COUPONS.map((c, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  item: {
+    "@type": "Offer",
+    name: c.title,
+    description: c.description,
+    url: `https://www.couponsbit.us/stores/talkpal-discount-code#${c.id}`,
+    seller: {
+      "@type": "Organization",
+      name: "Talkpal.AI",
+      url: "https://talkpal.ai",
+    },
+  },
+}));
 
 const talkpalSchema = {
   "@context": "https://schema.org",
@@ -67,13 +88,12 @@ const talkpalSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/talkpal-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-      name: "TalkPal Discount Code: 50% Off + 14-Day Free Trial | November 2026",
-      description:
-        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -86,37 +106,10 @@ const talkpalSchema = {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/talkpal-discount-code#offerlist",
       name: "Talkpal.AI Coupon Codes & Promo Codes",
-      description:
-        "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-      numberOfItems: 1,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Talkpal.AI Coupon Code",
-            description:
-              "Use a verified TalkPal discount code or promo code — save 50% on the 24-month plan at just $4.29/mo. Start with a 14-day free trial, no risk. AI language learning updated November 2026.",
-            url: "https://www.couponsbit.us/stores/talkpal-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "Germany" },
-              { "@type": "Country", name: "Japan" },
-              { "@type": "Country", name: "India" },
-              { "@type": "Country", name: "Australia" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "Pakistan" },
-            ],
-            seller: {
-              "@type": "Organization",
-              name: "Talkpal.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: TALKPAL_COUPONS.length,
+      itemListElement: talkpalOffers,
     },
 
     {
@@ -148,6 +141,13 @@ const talkpalSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/talkpal-discount-code#brand",
+      name: "Talkpal.AI",
+      url: "https://talkpal.ai",
     },
 
     {
@@ -241,7 +241,9 @@ export default function TalkpalStorePage() {
           __html: JSON.stringify(talkpalSchema),
         }}
       />
-      <TalkpalCouponsContent />
+      <Suspense fallback={null}>
+        <TalkpalCouponsContent />
+      </Suspense>
     </>
   );
 }

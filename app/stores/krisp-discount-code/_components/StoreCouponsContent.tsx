@@ -39,6 +39,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { KRISP_COUPONS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -240,7 +241,7 @@ export default function KrispCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Krisp discount codes & promo codes for November 2026. Start a 7-day free trial with no credit card required — then unlock unlimited noise cancellation, AI notes & transcription from just $8/mo per user.
+                      Save more with the latest Krisp Discount Code and Krisp Promo Code for November 2026. Enjoy up to 80% OFF select AI meeting and noise cancellation plans, 50% OFF eligible subscriptions, 40% OFF storewide, and 30% OFF annual, premium, and business plans. Krisp uses advanced AI to remove background noise, enhance voice quality, transcribe meetings, and improve online communication. Browse verified Krisp offers to save on AI-powered tools for remote work, sales teams, businesses, and virtual meetings.
                     </p>
                     <a
                       href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026"
@@ -346,135 +347,129 @@ export default function KrispCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
-                <div className="mb-8">
-                  <h2 className="text-2xl font-black text-black leading-tight">Krisp.AI Pricing – Meeting AI</h2>
-                  <p className="text-gray-500 text-sm font-medium mt-2">Supercharge your meetings with AI. Flexible plans for teams of all sizes.</p>
-                </div>
+              <div className="top-offers lg:w-[65%] lg:sticky lg:top-24 lg:self-start mx-auto">
+      <div className="mb-8">
+        <h2 className="text-2xl font-black text-black leading-tight">Krisp.AI Pricing – Meeting AI</h2>
+        <p className="text-gray-500 text-sm font-medium mt-2">
+          Supercharge your meetings with AI. Flexible plans for teams of all sizes.
+        </p>
+      </div>
 
-                {/* Billing Toggle */}
-                <div className="flex items-center justify-center gap-4 mb-10">
-                  <span className={cn("font-bold text-sm", !billingAnnual ? "text-black" : "text-gray-400")}>Monthly</span>
+      {KRISP_COUPONS.map((coupon) => (
+        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+            <div className="flex flex-row">
+              
+              {/* LEFT OFFER BOX */}
+              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="text-center px-1">
+                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                    {coupon.topLabel}
+                  </p>
+                  <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">
+                    {coupon.mainValue}
+                  </div>
+                  {coupon.offText && (
+                    <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                      {coupon.offText}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* CONTENT SECTION */}
+              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                
+                {/* CENTER CONTENT */}
+                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                  
+                  {/* BADGES */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Limited Time
+                    </span>
+                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Verified Deal
+                    </span>
+                  </div>
+
+                  {/* HEADING */}
+                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                    {coupon.title}
+                  </h3>
+
+                  {/* DESCRIPTION */}
+                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                    {coupon.description}
+                  </p>
+
+                  {/* VIEW DETAILS BUTTON */}
                   <button
                     type="button"
-                    onClick={() => setBillingAnnual(!billingAnnual)}
-                    className={cn("relative w-14 h-7 rounded-full transition-colors duration-300", billingAnnual ? "bg-[#056bfa]" : "bg-gray-300")}
-                    aria-label="Toggle monthly or annual billing"
+                    onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
+                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
                   >
-                    <span className={cn("absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300", billingAnnual && "translate-x-7")} />
+                    View Details
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
+                    />
                   </button>
-                  <span className={cn("font-bold text-sm", billingAnnual ? "text-black" : "text-gray-400")}>Annually</span>
-                  <span className="bg-[#e8f6f8] text-[#0451c4] text-[11px] font-black px-2.5 py-1 rounded-full uppercase">Save 50%</span>
-                </div>
 
-                {/* Pricing Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-                  {/* Free Trial */}
-                  <div className="bg-white border border-gray-200 rounded-[24px] p-6 shadow-sm flex flex-col">
-                    <p className="text-black font-extrabold text-lg mb-1">Free Trial</p>
-                    <p className="text-gray-500 text-[12px] mb-4">Explore Krisp on your own.</p>
-                    <p className="text-black font-black text-3xl mb-4">$0</p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Try Krisp.AI Free Trial" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Try it Free</a>
-                    <div className="space-y-3">
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why 7-Day Free Trial</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Test all premium features risk-free</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />No credit card required</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Free for 7 days</li>
-                      </ul>
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest mt-4">Key Features</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Transcription</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Noise Cancellation</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Audio &amp; Video Recording</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited AI Notes &amp; Action Items</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Limited AI Accent Conversion &amp; Understanding</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Core */}
-                  <div className="bg-white border border-gray-200 rounded-[24px] p-6 shadow-sm flex flex-col">
-                    <p className="text-black font-extrabold text-lg mb-1">Core</p>
-                    <p className="text-gray-500 text-[12px] mb-4">Best for individuals and small teams.</p>
-                    <p className="text-black font-black text-3xl mb-4">{billingAnnual ? "$8" : "$16"}<span className="text-gray-500 font-bold text-sm">/mo/user</span></p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Start with Krisp.AI Core plan" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Core</a>
-                    <div className="space-y-3">
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Core</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited AI Note-taker</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Noise Cancellation</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Integrations &amp; webhook</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Mobile app</li>
-                      </ul>
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest mt-4">Key Features</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Multilingual Transcript</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />AI Chat</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />1hr/day Accent Conversion</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Team &amp; billing management</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />MCP integration</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />10 GB storage</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Advanced — highlighted */}
-                  <div className="bg-white border-2 border-[#056bfa] rounded-[24px] p-6 shadow-md flex flex-col relative">
-                    <span className="absolute -top-3 right-6 bg-[#056bfa] text-white text-[11px] font-black px-3 py-1 rounded-full">Most Popular</span>
-                    <p className="text-black font-extrabold text-lg mb-1">Advanced</p>
-                    <p className="text-gray-500 text-[12px] mb-4">For advanced features and controls.</p>
-                    <p className="text-black font-black text-3xl mb-4">{billingAnnual ? "$15" : "$30"}<span className="text-gray-500 font-bold text-sm">/mo/user</span></p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Start with Krisp.AI Advanced plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Start with Advanced</a>
-                    <div className="space-y-3">
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Advanced</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited Accent Conversion*</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Advanced Integrations</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Advanced admin controls</li>
-                      </ul>
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest mt-4">Everything in Core +</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Manager view</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Company deal grouping</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Trim and comment</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Salesforce integration</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />ConnectWise integration</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Team-level webhooks</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />60 GB storage</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Enterprise */}
-                  <div className="bg-white border border-gray-200 rounded-[24px] p-6 shadow-sm flex flex-col">
-                    <p className="text-black font-extrabold text-lg mb-1">Enterprise</p>
-                    <p className="text-gray-500 text-[12px] mb-4">Best for org-wide rollout &amp; security.</p>
-                    <p className="text-black font-black text-3xl mb-4">Custom Pricing</p>
-                    <a href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Talk to Sales about Krisp.AI Enterprise" className="border-2 border-[#056bfa] text-[#056bfa] hover:bg-[#056bfa] hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300 text-center mb-5">Talk to Sales</a>
-                    <div className="space-y-3">
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest">Why Enterprise</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />SSO/SCIM</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Advanced Security and Reports</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Private Transcription &amp; Recordings (On-device)</li>
-                      </ul>
-                      <p className="text-gray-400 font-black text-[10px] uppercase tracking-widest mt-4">Everything in Advanced +</p>
-                      <ul className="space-y-2 text-gray-700 text-[13px] leading-5">
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Super admin role</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Dedicated account manager</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Usage analytics reports</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />HIPAA Compliance</li>
-                        <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />Unlimited storage</li>
-                      </ul>
-                    </div>
+                  {/* ACCORDION POINTS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      expandedCoupon === coupon.id
+                        ? "max-h-[250px] opacity-100 mt-3"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                      {coupon.points.map((point, pi) => (
+                        <li key={pi} className="flex items-start gap-2">
+                          <span className="text-[#0344b0]">•</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-              
+                {/* BUTTON SECTION */}
+                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                  {coupon.code && (
+                    <button
+                      onClick={() => handleCopy(coupon.code)}
+                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                    >
+                      <span className="font-mono">{coupon.code}</span>
+                      {showToast && toastCode === coupon.code ? (
+                        <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
+                      ) : (
+                        <Copy className="w-4 h-4 shrink-0" />
+                      )}
+                    </button>
+                  )}
 
-                
+                  <a
+                    href="http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`Get Krisp.ai deal: ${coupon.title}`}
+                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                  >
+                    Get Deal
+                  </a>
+                </div>
+
               </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -671,49 +666,70 @@ export default function KrispCouponsContent() {
           Krisp AI Promo Codes, Discount Codes & AI Meeting Assistant Deals
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Free Trial</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$0</td>
-                <td className="p-5 text-gray-500 align-middle">New customers, no credit card required</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited Transcription, Noise Cancellation, Recording, AI Notes for 7 days</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Core Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$8/mo/user (annual) or $16/mo/user (monthly)</td>
-                <td className="p-5 text-gray-500 align-middle">Individuals & small teams</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited AI Note-taker, Noise Cancellation, Integrations</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Advanced Plan – Most Popular</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$15/mo/user (annual) or $30/mo/user (monthly)</td>
-                <td className="p-5 text-gray-500 align-middle">Teams needing advanced controls</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited Accent Conversion, Advanced Integrations, admin controls</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Enterprise Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Custom Pricing</td>
-                <td className="p-5 text-gray-500 align-middle">Org-wide rollout & security needs</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">SSO/SCIM, Advanced Security, Private On-Device Transcription</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp AI Meeting Assistant</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+       <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Discount Code – Up to 80% Off on Sale Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 80% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AI-powered noise cancellation & voice enhancement</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Select Sale Plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Discount Code – 26% Off on Sales Solutions</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">26% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Clearer customer calls & communication tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Krisp Sales Solutions</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Promo Code – 30% Off on Business Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">30% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Save on hardware with AI audio features</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Business Plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Promo Code – Up to 30% Off on Premium Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 30% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium AI meeting & voice tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Premium Subscriptions</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Voucher Code – 40% Off Storewide</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">40% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Storewide discount, limited-time offer</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">All Products & Plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Voucher Code – 50% Off on Krisp Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Advanced AI-powered communication tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Select Krisp Plans</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Krisp Coupon Code – 30% Off on Annual Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">30% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Full year access, lower cost than monthly</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Annual Memberships</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Boost Meeting Productivity for Less with Krisp AI Promo Codes</h3>

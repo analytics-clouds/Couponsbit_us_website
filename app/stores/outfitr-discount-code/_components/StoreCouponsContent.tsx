@@ -37,6 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OUTFITR_COUPONS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -60,144 +61,6 @@ interface StoreItem {
   href: string;
 }
 
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "62%",
-    label: "SAVE",
-    badge: "Best Offer",
-    title: "Outfitr 2-Bike Hitch Rack Lite Edition – Save 62%",
-    heading: "2-Bike Hitch Rack Lite Edition",
-    sub: "$110.99 (Reg. $289.99)",
-    description: "Carry your bikes securely with the 2-Bike Hitch Rack Lite Edition, featuring 80 lbs capacity and durable hitch-mount design.",
-    usedCount: "100k",
-    expiresIn: "1 days",
-    code: "OUTFITRC1"
-  },
-  {
-    id: "c2",
-    discount: "50%",
-    label: "SAVE",
-    badge: "Popular",
-    title: "Outfitr Single Hitch E-Bike Rack Lite Edition – Save 50%",
-    heading: "Single Hitch E-Bike Rack Lite Edition",
-    sub: "$169.99 (Reg. $339.99)",
-    description: "Transport your e-bike safely with the Single Hitch E-Bike Rack Lite Edition, built for stability and hassle-free travel.",
-    usedCount: "93k",
-    expiresIn: "2 days",
-    code: "OUTFITRC2"
-  },
-  {
-    id: "c3",
-    discount: "$189.99",
-    label: "DEAL",
-    badge: "Trending",
-    title: "Outfitr Single Hitch E-Bike Rack with Ramp – Prime Day Deal",
-    heading: "Single Hitch E-Bike Rack with Ramp",
-    sub: "$189.99 (Reg. $339.99)",
-    description: "Make loading easy with the Single Hitch E-Bike Rack with Ramp, designed for heavy-duty e-bike transportation.",
-    usedCount: "86k",
-    expiresIn: "3 days",
-    code: "OUTFITRC3"
-  },
-  {
-    id: "c4",
-    discount: "$15",
-    label: "OFF",
-    title: "Outfitr Summer Sale Bonus – $15 OFF Your Next Purchase",
-    heading: "Summer Sale Bonus",
-    sub: "$15 OFF Next Purchase",
-    description: "Join the Outfitr community and unlock exclusive savings on racks, carriers and outdoor gear.",
-    usedCount: "79k",
-    expiresIn: "4 days",
-    code: "OUTFITRC4"
-  },
-  {
-    id: "c5",
-    discount: "41%",
-    label: "SAVE",
-    title: "Outfitr 2-Bike Hitch E-Bike Rack with Ramp – Save 41%",
-    heading: "2-Bike Hitch E-Bike Rack with Ramp",
-    sub: "$269.99 (Reg. $459.99)",
-    description: "Transport two e-bikes with ease using the 2-Bike Hitch E-Bike Rack with Ramp, built for road trips and camping.",
-    usedCount: "72k",
-    expiresIn: "5 days",
-    code: "OUTFITRC5"
-  },
-  {
-    id: "c6",
-    discount: "47%",
-    label: "SAVE",
-    title: "Outfitr 2-Bike Hitch Rack with Bike Lock – Save 47%",
-    heading: "2-Bike Hitch Rack with Bike Lock",
-    sub: "$179.99 (Reg. $339.99)",
-    description: "Secure your bikes with the 2-Bike Hitch Rack with Bike Lock, supporting up to 200 lbs capacity.",
-    usedCount: "65k",
-    expiresIn: "1 days",
-    code: "OUTFITRC6"
-  },
-  {
-    id: "c7",
-    discount: "47%",
-    label: "UP TO",
-    title: "Outfitr Cargo Carrier Collection – Up to 47% OFF",
-    heading: "Cargo Carrier Collection",
-    sub: "Up to 47% OFF",
-    description: "Expand your vehicle's storage capacity with Outfitr Cargo Carriers, perfect for camping gear and road trips.",
-    usedCount: "58k",
-    expiresIn: "2 days",
-    code: "OUTFITRC7"
-  },
-  {
-    id: "c8",
-    discount: "40%",
-    label: "SAVE",
-    title: "Outfitr 2-Bike Hitch Bike Rack – Save 40%",
-    heading: "2-Bike Hitch Bike Rack",
-    sub: "$129.99 (Reg. $216.99)",
-    description: "Travel smarter with the 2-Bike Hitch Bike Rack, great for everyday cyclists and outdoor enthusiasts.",
-    usedCount: "51k",
-    expiresIn: "3 days",
-    code: "OUTFITRC8"
-  },
-  {
-    id: "c9",
-    discount: "36%",
-    label: "SAVE",
-    title: "Outfitr Foldable 2-Bike E-Bike Rack with Ramp – Save 36%",
-    heading: "Foldable 2-Bike E-Bike Rack with Ramp",
-    sub: "$304.99 (Reg. $479.99)",
-    description: "Carry your e-bikes safely with the Foldable 2-Bike E-Bike Rack with Ramp, perfect for electric bike transportation.",
-    usedCount: "44k",
-    expiresIn: "4 days",
-    code: "OUTFITRC9"
-  },
-  {
-    id: "c10",
-    discount: "32%",
-    label: "SAVE",
-    title: "Outfitr Tire-Clamp E-Bike Rack with Ramp – Save 32%",
-    heading: "Tire-Clamp E-Bike Rack with Ramp",
-    sub: "$594.14 (Reg. $879.99)",
-    description: "Premium transport solution for serious riders, with tire-clamp design ensuring maximum stability.",
-    usedCount: "37k",
-    expiresIn: "5 days",
-    code: "OUTFITRC10"
-  },
-  {
-    id: "c11",
-    discount: "27%",
-    label: "SAVE",
-    title: "Outfitr 2-Bike Rack with Lock – Save 27%",
-    heading: "2-Bike Rack with Lock",
-    sub: "$219.98 (Reg. $299.99)",
-    description: "Transport bikes confidently with the 2-Bike Rack, Foldable & Tiltable with Lock, including integrated security.",
-    usedCount: "30k",
-    expiresIn: "1 days",
-    code: "OUTFITRC11"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "StubHub",        logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp",        dealText: "Up to 15% OFF", href: "/stores/stubhub-discount-code" },
@@ -297,7 +160,8 @@ export default function OutfitrCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified Outfitr discount codes & promo codes for November 2026. Save 62% on the 2-Bike Hitch Rack from just $110.99 — down from $289.99. Single E-Bike Rack 50% off at $169.99. Perfect for road trips & outdoor adventures.
+                      
+                      Save more with the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Enjoy up to 62% OFF the 2-Bike Hitch Rack Lite Edition or save $189.99 OFF the Single Hitch E-Bike Rack with Ramp. You can also get 50% OFF the Single Hitch E-Bike Rack Lite Edition, up to 47% OFF cargo carriers, and discounts on foldable bike racks, e-bike racks, and travel accessories. Browse verified Outfitr offers for secure bike transport and outdoor adventures.
                     </p>
                     <a
                       href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015"
@@ -400,470 +264,127 @@ export default function OutfitrCouponsContent() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               
-              {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Outfitr Coupon Codes & Offers</h2>
+              <div className="top-offers lg:w-[65%] mx-auto">
+      <div className="mb-8">
+        <h2 className="text-2xl font-black text-black leading-tight">Outfitr Coupon Codes & Offers</h2>
+        <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
+          {OUTFITR_COUPONS.length} Coupons & Offers Available
+        </p>
+      </div>
+
+      {OUTFITR_COUPONS.map((coupon) => (
+        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+            <div className="flex flex-row">
+              
+              {/* LEFT OFFER BOX */}
+              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="text-center px-1">
+                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                    {coupon.topLabel}
+                  </p>
+                  <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                    {coupon.mainValue}
+                  </div>
+                  <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                    {coupon.offText}
+                  </p>
+                </div>
+              </div>
+
+              {/* CONTENT SECTION */}
+              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                
+                {/* CENTER CONTENT */}
+                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
                   
+                  {/* BADGES */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Limited Time
+                    </span>
+                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Verified Deal
+                    </span>
+                  </div>
+
+                  {/* HEADING */}
+                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                    {coupon.title}
+                  </h3>
+
+                  {/* DESCRIPTION */}
+                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                    {coupon.description}
+                  </p>
+
+                  {/* VIEW DETAILS BUTTON */}
+                  <button
+                    type="button"
+                    onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
+                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
+                  >
+                    View Details
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
+                    />
+                  </button>
+
+                  {/* ACCORDION POINTS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      expandedCoupon === coupon.id
+                        ? "max-h-[250px] opacity-100 mt-3"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                      {coupon.points.map((point, pi) => (
+                        <li key={pi} className="flex items-start gap-2">
+                          <span className="text-[#0344b0]">•</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
 
-                
+                {/* BUTTON SECTION (Copy code & Get Deal) */}
+                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                  {coupon.code && (
+                    <button
+                      onClick={() => handleCopy(coupon.code)}
+                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                    >
+                      <span className="font-mono">{coupon.code}</span>
+                      {showToast && toastCode === coupon.code ? (
+                        <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
+                      ) : (
+                        <Copy className="w-4 h-4 shrink-0" />
+                      )}
+                    </button>
+                  )}
+                  
+                  <a
+                    href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`Get Outfitr deal: ${coupon.title}`}
+                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                  >
+                    Get Deal
+                  </a>
+                </div>
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">62%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr 2-Bike Hitch Rack Lite Edition – Save 62%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Carry your bikes securely with the 2-Bike Hitch Rack Lite Edition, featuring 80 lbs capacity and durable hitch-mount design.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $110.99 (Regular Price: $289.99) — Save Up to 62% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features 80 lbs capacity and durable hitch-mount design</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for weekend rides, family trips and outdoor adventures</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr 2-Bike Hitch Rack Lite Edition – Save 62%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Single Hitch E-Bike Rack Lite Edition – Save 50%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Transport your e-bike safely with the Single Hitch E-Bike Rack Lite Edition, built for stability and hassle-free travel.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $169.99 (Regular Price: $339.99) — Save Up to 50% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built for stability, convenience and hassle-free travel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for e-bike owners across the USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Single Hitch E-Bike Rack Lite Edition – Save 50%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">DEAL</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$189.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Single Hitch E-Bike Rack with Ramp – Prime Day Deal</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Make loading easy with the Single Hitch E-Bike Rack with Ramp, designed for heavy-duty e-bike transportation.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $189.99 (Regular Price: $339.99)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports 100 lbs capacity, up to 50" wheelbase and 5" tire width</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Featured in the Prime Day Sale event</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Single Hitch E-Bike Rack with Ramp – Prime Day Deal" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$15</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Summer Sale Bonus – $15 OFF Your Next Purchase</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Join the Outfitr community and unlock exclusive savings on racks, carriers and outdoor gear.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Subscribers receive $15 OFF their next eligible purchase</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect opportunity to save on racks, carriers and outdoor gear</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for a limited time during the Summer Sale — USA customers only</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Summer Sale Bonus – $15 OFF Your Next Purchase" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">41%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr 2-Bike Hitch E-Bike Rack with Ramp – Save 41%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Transport two e-bikes with ease using the 2-Bike Hitch E-Bike Rack with Ramp, built for road trips and camping.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $269.99 (Regular Price: $459.99) — Save 41% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features easy fold-and-tilt functionality for added convenience</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built for road trips, camping and outdoor adventures</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr 2-Bike Hitch E-Bike Rack with Ramp – Save 41%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">47%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr 2-Bike Hitch Rack with Bike Lock – Save 47%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Secure your bikes with the 2-Bike Hitch Rack with Bike Lock, supporting up to 200 lbs capacity.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $179.99 (Regular Price: $339.99) — Save Up to 47% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Foldable design for convenient storage and transport</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 200 lbs capacity</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr 2-Bike Hitch Rack with Bike Lock – Save 47%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">47%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Cargo Carrier Collection – Up to 47% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Expand your vehicle's storage capacity with Outfitr Cargo Carriers, perfect for camping gear and road trips.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy Up to 47% OFF on selected cargo racks</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for camping gear, luggage and road trip essentials</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built for durability and long-distance travel — limited-time USA offer</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Cargo Carrier Collection – Up to 47% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">40%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr 2-Bike Hitch Bike Rack – Save 40%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Travel smarter with the 2-Bike Hitch Bike Rack, great for everyday cyclists and outdoor enthusiasts.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $129.99 (Regular Price: $216.99) — Save Up to 40% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features knob-folding functionality and 80 lbs capacity</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for everyday cyclists and outdoor enthusiasts</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr 2-Bike Hitch Bike Rack – Save 40%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">36%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Foldable 2-Bike E-Bike Rack with Ramp – Save 36%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Carry your e-bikes safely with the Foldable 2-Bike E-Bike Rack with Ramp, perfect for electric bike transportation.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $304.99 (Regular Price: $479.99) — Save 36% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Foldable design for easier storage and handling</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for electric bike transportation</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Foldable 2-Bike E-Bike Rack with Ramp – Save 36%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">32%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr Tire-Clamp E-Bike Rack with Ramp – Save 32%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Premium transport solution for serious riders, with tire-clamp design ensuring maximum stability.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $594.14 (Regular Price: $879.99) — Save 32% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports an impressive 200 lbs capacity</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Tire-clamp design ensures maximum stability during travel</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr Tire-Clamp E-Bike Rack with Ramp – Save 32%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 11 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">27%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Outfitr 2-Bike Rack with Lock – Save 27%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Transport bikes confidently with the 2-Bike Rack, Foldable & Tiltable with Lock, including integrated security.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $219.98 (Regular Price: $299.99) — Save Up to 27% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Foldable and tiltable design for convenient vehicle access</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes integrated lock for added security</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Outfitr deal: Outfitr 2-Bike Rack with Lock – Save 27%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
               </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -1026,97 +547,97 @@ export default function OutfitrCouponsContent() {
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Rack Lite Edition</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 62% ($110.99, reg. $289.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">80 lbs capacity, hitch-mount</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Single Hitch E-Bike Rack Lite Edition</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 50% ($169.99, reg. $339.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Built for stability & travel</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Single Hitch E-Bike Rack with Ramp</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$189.99 (reg. $339.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">100 lbs capacity, up to 50" wheelbase</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Summer Sale Bonus</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$15 OFF next purchase</td>
-                <td className="p-5 text-gray-500 align-middle">Newsletter subscribers, USA customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to racks, carriers & outdoor gear</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Racks, Carriers & Outdoor Gear</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch E-Bike Rack with Ramp</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 41% ($269.99, reg. $459.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fold-and-tilt functionality</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Rack with Bike Lock</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 47% ($179.99, reg. $339.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, 200 lbs capacity</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Cargo Carrier Collection</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 47% OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">For camping gear & road trips</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cargo Carriers</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Hitch Bike Rack</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 40% ($129.99, reg. $216.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Knob-folding, 80 lbs capacity</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Foldable 2-Bike E-Bike Rack with Ramp</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 36% ($304.99, reg. $479.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable design</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Tire-Clamp E-Bike Rack with Ramp</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 32% ($594.14, reg. $879.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">200 lbs capacity, tire-clamp design</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">2-Bike Rack with Lock</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 27% ($219.98, reg. $299.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, tiltable, integrated lock</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Discount Code – 62% Off on 2-Bike Hitch Rack Lite Edition</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 62% ($110.99, reg. $289.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Holds up to 80 lbs, sturdy hitch-mount design</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Discount Code – 50% Off on Single Hitch E-Bike Rack Lite Edition</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 50% ($169.99, reg. $339.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Built for steady & safe travel, quick loading</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Promo Code – $189.99 Off Single Hitch E-Bike Rack with Ramp</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$189.99 OFF ($150.00, reg. $339.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Built-in loading ramp, up to 50" wheelbase</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Promo Code – $15 Off Your Next Purchase</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$15 OFF next purchase</td>
+        <td className="p-5 text-gray-500 align-middle">Newsletter subscribers, USA customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to racks, carriers & outdoor gear</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Racks, Carriers & Outdoor Gear</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Voucher Code – 41% Off on 2-Bike E-Bike Rack with Ramp</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 41% ($269.99, reg. $459.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Fold-and-tilt functionality, built-in ramp</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Voucher Code – 47% Off on 2-Bike Hitch Rack with Bike Lock</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 47% ($179.99, reg. $339.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, 200 lbs capacity, built-in security</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Coupon Code – Up to 47% Off on Cargo Carriers</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 47% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">For camping gear, luggage & road trips</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Cargo Carriers</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Coupon Code – 40% Off on 2-Bike Hitch Bike Rack</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 40% ($129.99, reg. $216.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Knob-folding, fits standard hitch receivers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Referral Code – 36% Off Foldable 2-Bike E-Bike Rack with Ramp</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 36% ($304.99, reg. $479.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable space-saving design, built-in ramp</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Referral Code – 32% Off Tire-Clamp E-Bike Rack with Ramp</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 32% ($594.14, reg. $879.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Tire-clamp stability design, built-in ramp</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">E-Bike Racks</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Outfitr Discount Deal – 27% Off on 2-Bike Rack with Lock</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Save 27% ($219.98, reg. $299.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Foldable, tiltable, integrated lock</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Bike Racks</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Gear Up for Less with OutfitR Coupon Codes</h3>

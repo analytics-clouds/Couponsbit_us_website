@@ -38,6 +38,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OPENART_COUPONS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -238,7 +239,7 @@ export default function OpenartCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified OpenArt discount codes & promo codes for November 2026. Save 27% on the Wonder Annual Plan — generate 106,000 AI images & 1,300 videos monthly from $175.20/mo. Essential Plan starts from just $14/mo with 4,000 credits.
+                      Save more with the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Get up to 27% OFF the Wonder Annual Plan or save 22% OFF the Infinite Annual Plan. You can also start with the Essential Plan from just $14/month or upgrade to the Advanced Plan for $29/month. Browse verified OpenArt offers to access over 100 AI image, video, and audio models, commercial usage rights, and up to 106,000 monthly credits for creating professional AI content.
                     </p>
                     <a
                       href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015"
@@ -342,258 +343,127 @@ export default function OpenartCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Openart.AI Coupon Codes & Offers</h2>
-
-                </div>
-
-                <div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Up To</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">27%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
+             <div className="top-offers lg:w-[65%] mx-auto">
+      <div className="mb-10">
+        <h2 className="text-2xl font-black text-black leading-tight">Openart.AI Coupon Codes & Offers</h2>
+        <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
+          {OPENART_COUPONS.length} Deals & Offers Available
+        </p>
       </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Wonder Annual Plan – Up to 27% OFF</h2>
-                          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 106,000 credits/month and unlock access to 100+ premium AI image, video and audio models.</p>
-                          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                            View Details
-                            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-                          </button>
-                          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-                            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 106,000 credits/month, generate up to 106,000 images and approximately 1,300 videos</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy 27% OFF with annual billing at $175.20/seat/month (Regular Price: $240/seat/month)</li>
-                              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes access to 100+ premium AI image, video and audio models, unlimited creation tools and priority support</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Wonder Annual Plan Up to 27% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                        </div>
-                      </div>
-                    </div>
+
+      {OPENART_COUPONS.map((coupon) => (
+        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+            <div className="flex flex-row">
+              
+              {/* LEFT OFFER BOX */}
+              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="text-center px-1">
+                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                    {coupon.topLabel}
+                  </p>
+                  <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">
+                    {coupon.mainValue}
+                  </div>
+                  <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                    {coupon.offText}
+                  </p>
+                </div>
+              </div>
+
+              {/* CONTENT SECTION */}
+              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                
+                {/* CENTER CONTENT */}
+                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                  
+                  {/* BADGES */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Limited Time
+                    </span>
+                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Verified Deal
+                    </span>
+                  </div>
+
+                  {/* HEADING */}
+                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                    {coupon.title}
+                  </h3>
+
+                  {/* DESCRIPTION */}
+                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                    {coupon.description}
+                  </p>
+
+                  {/* VIEW DETAILS BUTTON */}
+                  <button
+                    type="button"
+                    onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
+                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
+                  >
+                    View Details
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
+                    />
+                  </button>
+
+                  {/* ACCORDION POINTS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      expandedCoupon === coupon.id
+                        ? "max-h-[250px] opacity-100 mt-3"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                      {coupon.points.map((point, pi) => (
+                        <li key={pi} className="flex items-start gap-2">
+                          <span className="text-[#0344b0]">•</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">22%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Infinite Annual Plan – 22% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 24,000 credits/month with commercial usage rights and premium AI models.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 24,000 credits/month, up to 24,000 images and approximately 300 videos</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available at $43.70/seat/month (Regular Price: $56/seat/month) with 22% OFF</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes commercial usage rights, premium AI models and priority support</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Infinite Annual Plan 22% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                {/* BUTTON SECTION */}
+                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                  {coupon.code && (
+                    <button
+                      onClick={() => handleCopy(coupon.code)}
+                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                    >
+                      <span className="font-mono">{coupon.code}</span>
+                      {showToast && toastCode === coupon.code ? (
+                        <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
+                      ) : (
+                        <Copy className="w-4 h-4 shrink-0" />
+                      )}
+                    </button>
+                  )}
 
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Starting At</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$14</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Essential Plan – Starting at $14/Month</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Access powerful AI image, video and audio creation tools at an affordable starting price.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Get 4,000 credits/month and generate up to 4,000 images and 50 videos</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Access powerful AI image, video and audio creation tools</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes One-Click Story Creation and image editing features</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Essential Plan Starting at $14/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$29</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Advanced Plan – $29/Month</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Create personalized models, AI characters and premium visual content.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 12,000 credits/month, up to 12,000 images and 150 videos</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Create personalized models, AI characters and premium visual content</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes commercial usage rights and advanced editing tools</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Advanced Plan $29/Month" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Most Popular</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">24,000</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">Credits/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Infinite Monthly Plan – Most Popular</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Support large-scale image and video generation with premium AI models.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Receive 24,000 credits/month with support for large-scale image and video generation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Generate up to 24,000 images and approximately 300 videos every month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes commercial rights, premium AI models and priority support</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Infinite Monthly Plan Most Popular" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Best Value</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">106,000</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">Credits/mo</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OpenArt Wonder Monthly Plan – Best Value</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Access unlimited creation tools and advanced storytelling features.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes 106,000 credits/month, up to 106,000 images and 1,300 videos</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Access unlimited creation tools, premium AI models and advanced storytelling features</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy priority support, commercial rights and 10% OFF credit packs</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Openart.AI deal: Wonder Monthly Plan Best Value" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  <a
+                    href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`Get Openart.AI deal: ${coupon.title}`}
+                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                  >
+                    Get Deal
+                  </a>
+                </div>
 
               </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -757,62 +627,62 @@ export default function OpenartCouponsContent() {
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Wonder Annual Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 27% OFF ($175.20/seat/mo, reg. $240)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Annual billing, 106,000 credits/month</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image, Video & Audio Models</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Infinite Annual Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">22% OFF ($43.70/seat/mo, reg. $56)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Annual billing, 24,000 credits/month</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Commercial-Use AI Content</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Essential Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $14/month</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">4,000 credits/month</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image, Video & Audio Tools</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Advanced Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">$29/month</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">12,000 credits/month, commercial rights</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Personalized AI Models & Characters</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Infinite Monthly Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">24,000 Credits/mo</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Monthly billing, large-scale generation</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Image & Video Generation</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Wonder Monthly Plan</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">106,000 Credits/mo</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Monthly billing, unlimited creation tools</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Storytelling & Creative Tools</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Discount Code – Up to 27% Off on Wonder Annual Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 27% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">106,000 credits/mo, access to 100+ AI models</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Wonder Annual Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Discount Code – 22% Off on Infinite Annual Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">22% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">24,000 credits/mo, includes commercial rights</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Infinite Annual Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Promo Code – Essential Plan from $14/Month</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $14 / month</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AI image, video & audio creation tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Essential Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Promo Code – Advanced Plan for $29/Month</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">$29 / month</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Train custom AI models & characters</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Advanced Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Voucher Code – Infinite Monthly Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">24,000 Credits / mo</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Access to premium image & video generation tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Infinite Monthly Plan</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenArt Voucher Code – Wonder Monthly Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">106,000 Credits / mo</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Advanced storytelling features, maximum creative freedom</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Wonder Monthly Plan</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on AI Creativity with OpenArt AI Coupon Codes</h3>

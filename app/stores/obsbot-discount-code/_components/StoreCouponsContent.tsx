@@ -37,6 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { OBSBOT_COUPONS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -249,7 +250,7 @@ export default function ObsbotCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified OBSBOT discount codes & promo codes for November 2026. Shop AI-powered 4K webcams from just $129 — perfect for Zoom, streaming & content creation. Pro Tail Air 4K NDI streaming camera available from $499.
+                      Save more with the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop the OBSBOT Tail Air 4K Camera from $499, Tiny 2 Lite from $129, Tiny 2 AI Webcam from $299, and Tiny SE AI Webcam from $75.05. You can also grab the VOX SE Wireless Microphone from $59 and the Tiny 2 Remote Control from $49. Browse verified OBSBOT offers to save on AI-powered webcams, streaming cameras, microphones, and creator accessories.
                     </p>
                     <a
                       href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
@@ -353,305 +354,129 @@ export default function ObsbotCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Obsbot Coupon Codes & Offers</h2>
+              <div className="top-offers lg:w-[65%] mx-auto">
+      <div className="mb-10">
+        <h2 className="text-2xl font-black text-black leading-tight">Obsbot Coupon Codes & Offers</h2>
+        <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
+          {OBSBOT_COUPONS.length} Coupons & Offers Available
+        </p>
+      </div>
+
+      {OBSBOT_COUPONS.map((coupon) => (
+        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+            <div className="flex flex-row">
+              
+              {/* LEFT OFFER BOX */}
+              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="text-center px-1">
+                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                    {coupon.topLabel}
+                  </p>
+                  <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">
+                    {coupon.mainValue}
+                  </div>
+                  {coupon.offText && (
+                    <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                      {coupon.offText}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* CONTENT SECTION */}
+              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                
+                {/* CENTER CONTENT */}
+                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
                   
+                  {/* BADGES */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Limited Time
+                    </span>
+                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Verified Deal
+                    </span>
+                  </div>
+
+                  {/* HEADING */}
+                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                    {coupon.title}
+                  </h3>
+
+                  {/* DESCRIPTION */}
+                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                    {coupon.description}
+                  </p>
+
+                  {/* VIEW DETAILS BUTTON */}
+                  <button
+                    type="button"
+                    onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
+                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
+                  >
+                    View Details
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
+                    />
+                  </button>
+
+                  {/* ACCORDION POINTS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      expandedCoupon === coupon.id
+                        ? "max-h-[250px] opacity-100 mt-3"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                      {coupon.points.map((point, pi) => (
+                        <li key={pi} className="flex items-start gap-2">
+                          <span className="text-[#0344b0]">•</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
 
-                
+                {/* BUTTON SECTION */}
+                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                  {coupon.code && (
+                    <button
+                      onClick={() => handleCopy(coupon.code)}
+                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                    >
+                      <span className="font-mono">{coupon.code}</span>
+                      {showToast && toastCode === coupon.code ? (
+                        <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
+                      ) : (
+                        <Copy className="w-4 h-4 shrink-0" />
+                      )}
+                    </button>
+                  )}
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$499</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tail Air 4K NDI Streaming Camera – From $499</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take your live streams and productions to the next level with the OBSBOT Tail Air.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $499</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features AI Tracking PTZ technology, 4K video quality, and NDI support for professional broadcasting</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for content creators, churches, events and professional streaming setups</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tail Air 4K NDI Streaming Camera – From $499" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  <a
+                    href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`Get Obsbot deal: ${coupon.title}`}
+                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                  >
+                    Get Deal
+                  </a>
+                </div>
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$199.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Insta360 Link 2 4K Webcam – From $199.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your meetings and streams with the Insta360 Link 2 PTZ 4K Webcam.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $199.99</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Equipped with a 1/2" sensor, AI Tracking, HDR, and AI Noise-Canceling Microphone</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Gesture control makes presentations and video calls effortless</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: Insta360 Link 2 4K Webcam – From $199.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$129</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 Lite 4K Webcam – From $129</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get premium webcam features at an affordable price with the OBSBOT Tiny 2 Lite.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $129</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features 4K resolution, AI Tracking, PTZ movement, and a 1/2" sensor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for Zoom meetings, content creation and livestreaming</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 Lite 4K Webcam – From $129" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$299</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 4K AI Webcam – From $299</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience professional-grade video with the OBSBOT Tiny 2 4K Webcam.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $299</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features Voice Control, AI Tracking, Auto Focus, and a large 1/1.5" sensor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Smart tracking keeps you perfectly framed during every call</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 4K AI Webcam – From $299" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$75.05</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny SE 1080P AI Webcam – From $75.05</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your setup without breaking the budget with the OBSBOT Tiny SE.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $75.05</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features 1080P resolution, 100 FPS recording, and AI PTZ tracking</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes gesture control and Dual ISO technology for smoother video</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny SE 1080P AI Webcam – From $75.05" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$59</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT VOX SE Wireless Streaming Microphone – From $59</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enhance your audio quality with the OBSBOT VOX SE Wireless Microphone.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $59</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for livestreaming, recording and content creation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Offers a wireless range of up to 100 meters for flexible recording</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT VOX SE Wireless Streaming Microphone – From $59" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">$49</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">OBSBOT Tiny 2 Remote Control – From $49</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Take full control of your OBSBOT camera with the Tiny 2 Smart Remote Control.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting from $49</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Compatible with Tiny 2, Tiny 2 Lite, Tiny 4K and Tiny 1080P webcams</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Wireless USB connectivity for easy operation</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Obsbot deal: OBSBOT Tiny 2 Remote Control – From $49" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
               </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -659,7 +484,7 @@ export default function ObsbotCouponsContent() {
                 <div className="w-full flex justify-center mb-6">
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
-                    target="_blank"
+                    target="_blank" 
                     rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
@@ -804,71 +629,71 @@ export default function ObsbotCouponsContent() {
           OBSBOT Coupon Codes, Promo Codes & AI Camera Deals
         </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Tail Air 4K NDI Streaming Camera</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $499</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AI Tracking PTZ, 4K, NDI support</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Streaming Cameras</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Insta360 Link 2 4K Webcam</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $199.99</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">1/2" sensor, AI Tracking, HDR, Noise-Canceling Mic</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Webcams</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Tiny 2 Lite 4K Webcam</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $129</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K, AI Tracking, PTZ, 1/2" sensor</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Webcams</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Tiny 2 4K AI Webcam</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $299</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Voice Control, AI Tracking, Auto Focus</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Webcams</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Tiny SE 1080P AI Webcam</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $75.05</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">1080P, 100 FPS, AI PTZ tracking</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Webcams</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT VOX SE Wireless Streaming Microphone</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $59</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Wireless range up to 100 meters</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Microphones</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Tiny 2 Remote Control</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $49</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Compatible with Tiny 2/Lite/4K/1080P webcams</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Camera Accessories</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
+<div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – OBSBOT Tail Air 4K Camera</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $499</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K NDI streaming, wireless setup</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">OBSBOT Tail Air 4K</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – Insta360 Link 2 4K Webcam</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $199.99</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K resolution, smooth PTZ movement</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Insta360 Link 2 4K Webcam</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 Lite 4K Webcam</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $129</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K video capture, compact design</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Lite 4K Webcam</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 4K AI Webcam</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $299</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart AI tracking, 4K detailed video</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 4K AI Webcam</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – Tiny SE AI Webcam</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $75.05</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">1080P resolution, smart tracking features</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny SE AI Webcam</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – VOX SE Wireless Microphone</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $59</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Wireless audio, enhanced voice clarity</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">VOX SE Wireless Microphone</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Offer – Tiny 2 Remote Control</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $49</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart Remote for camera control & adjustments</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Remote Control</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Smart Cameras with OBSBOT Coupon Codes</h3>
           <p>

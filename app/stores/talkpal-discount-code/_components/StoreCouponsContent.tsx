@@ -2,29 +2,30 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Clock,
+  Copy,
+  ChevronDown,
+  Package,
+  Truck,
+  Shield,
+  Laptop,
+  Shirt,
+  Home,
+  Sparkles,
+  BookOpen,
   CheckCircle,
+  Check,
   X,
   ArrowRight,
   Plane,
@@ -38,21 +39,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { TALKPAL_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,85 +47,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "60%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 60% OFF on Top Categories",
-    heading: "Up to 60% OFF",
-    sub: "Top Categories",
-    description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "AMAZON60"
-  },
-  {
-    id: "c2",
-    discount: "50%",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat 50% OFF on Electronics",
-    heading: "Flat 50% OFF",
-    sub: "Electronics",
-    description: "Get flat 50% off on best selling electronics & accessories.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "ELEC50"
-  },
-  {
-    id: "c3",
-    discount: "30%",
-    label: "FLAT",
-    badge: "Trending",
-    title: "Flat 30% OFF on Fashion",
-    heading: "Flat 30% OFF",
-    sub: "Fashion",
-    description: "Save big on clothing, footwear, watches & more.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "FASHION30"
-  },
-  {
-    id: "c4",
-    discount: "10%",
-    label: "EXTRA",
-    title: "Extra 10% OFF on Prepaid Orders",
-    heading: "Extra 10% OFF",
-    sub: "Prepaid Orders",
-    description: "Pay using UPI, Cards, Net Banking & get extra 10% off.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "PREPAID10"
-  },
-  {
-    id: "c5",
-    discount: "FREE",
-    label: "DELIVERY",
-    title: "Free Delivery on First Order",
-    heading: "Free Delivery",
-    sub: "On First Order",
-    description: "Get FREE delivery on your first order on Talkpal.AI.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "FREESHIP"
-  },
-  {
-    id: "c6",
-    discount: "₹200",
-    label: "FLAT",
-    title: "Get ₹200 OFF on Min. Order ₹999",
-    heading: "₹200 OFF",
-    sub: "On Min. Order ₹999",
-    description: "Use code and get flat ₹200 off on minimum order of ₹999.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "SAVE200"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Openart.AI", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp", dealText: "Up to 27% OFF", href: "/stores/openart-discount-code" },
@@ -150,15 +58,13 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function TalkpalCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
 
   // Slide auto-play
   useEffect(() => {
@@ -168,18 +74,12 @@ export default function TalkpalCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
+  const handleCopy = (code: string, id?: string) => {
     navigator.clipboard.writeText(code);
     setToastCode(code);
     setShowToast(true);
+    if (id) { setCopiedId(id); setTimeout(() => setCopiedId(null), 2000); }
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
@@ -238,7 +138,7 @@ export default function TalkpalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Get verified TalkPal discount codes & promo codes for November 2026. Save 50% on the 24-month Premium Plan — just $4.29/month. Start risk-free with a 14-day free trial. AI-powered language learning that actually works.
+                      Looking for the latest Talkpal discount code? Save up to 75% on Premium plans with verified Talkpal promo codes, exclusive offers, and limited-time discounts. New users can also enjoy a 14-day free trial on eligible annual plans before subscribing. Unlock AI-powered language learning with unlimited conversations, roleplays, pronunciation practice, and advanced lessons. Whether you're learning for school, travel, or work, Talkpal Premium helps you improve your speaking confidence while saving more on your subscription.
                     </p>
                     <a
                       href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015"
@@ -340,77 +240,131 @@ export default function TalkpalCouponsContent() {
         <section className="py-6 md:py-16 bg-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Talkpal.AI Coupon Codes & Offers</h2>
-                  
-                </div>
+              <div className="top-offers lg:w-[65%] lg:sticky lg:top-24 lg:self-start mx-auto">
+      <div className="mb-10">
+        <h2 className="text-2xl font-black text-black leading-tight">Talkpal.AI Discount Codes & Offers</h2>
+        <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
+          {TALKPAL_COUPONS.length} Discount Codes & Offers Available
+        </p>
+      </div>
 
-                {/* Pricing Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                  {/* Premium 24 Months — highlighted */}
-                  <div className="bg-white border-2 border-[#056bfa] rounded-[24px] p-6 shadow-md relative">
-                    <span className="absolute -top-3 right-6 bg-green-100 text-green-700 text-[11px] font-black px-3 py-1 rounded-full">SAVE 69%*</span>
-                    <p className="text-red-600 font-bold text-[12px] uppercase tracking-wide mb-1">14 Day Free Trial</p>
-                    <p className="text-black font-extrabold text-lg mb-1">Premium 24 Months</p>
-                    <p className="text-black font-black text-2xl">$4.29 <span className="text-gray-500 font-bold text-sm">/ month</span></p>
-                  </div>
-
-                  {/* Premium 12 Months — standard */}
-                  <div className="bg-white border border-gray-200 rounded-[24px] p-6 shadow-sm relative">
-                    <span className="absolute -top-3 right-6 bg-green-100 text-green-700 text-[11px] font-black px-3 py-1 rounded-full">SAVE 50%*</span>
-                    <p className="text-red-600 font-bold text-[12px] uppercase tracking-wide mb-1">14 Day Free Trial</p>
-                    <p className="text-black font-extrabold text-lg mb-1">Premium 12 Months</p>
-                    <p className="text-black font-black text-2xl">$6.86 <span className="text-gray-500 font-bold text-sm">/ month</span></p>
-                  </div>
-                </div>
-
-                  <p className="text-center mb-8">
-                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-bold text-sm underline">See more plans</a>
-                                </p>
-                
-                                {/* Trust Badges */}
-                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
-                                  {[
-                                    { icon: Lock, title: "No payment today", sub: "Enjoy the free 14-day trial." },
-                                    { icon: CalendarOff, title: "Cancel anytime", sub: "You can easily cancel anytime." },
-                                    { icon: ShieldCheck, title: "Satisfaction guarantee", sub: "No risk on your side." }
-                                  ].map((item) => (
-                                    <div key={item.title} className="flex items-start gap-3">
-                                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                                        <item.icon className="w-5 h-5" />
-                                      </div>
-                                      <div>
-                                        <p className="text-black font-bold text-sm leading-tight">{item.title}</p>
-                                        <p className="text-gray-500 text-[12px] leading-relaxed">{item.sub}</p>
-                                      </div>
-                                    </div>
-                                  ))}
-                                </div>
-                
-                                {/* Price Comparison Banner */}
-                                <div className="bg-gradient-to-r from-[#056bfa] to-[#006d9b] rounded-[24px] p-8 text-center">
-                                  <h3 className="text-white font-black text-lg mb-4">What You Get With Openart.AI Premium</h3>
-                                  <p className="mb-6">
-                                    <span className="text-white/80 line-through text-xl font-bold mr-3">$329.50</span>
-                                    <span className="text-white font-black text-3xl">$102.97</span>
-                                  </p>
-                                  <a href="https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Try Openart.AI Premium for $0.00" className="bg-white hover:bg-gray-100 text-[#0451c4] font-black text-base px-10 py-4 rounded-2xl shadow-md transition-all duration-300 inline-block">Try for $0.00</a>
-                                </div>
-
-                
-
-                {/* Coupon 1 */}
-
-
-
-
+      {TALKPAL_COUPONS.map((coupon) => (
+        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+            <div className="flex flex-row">
               
-
-                
+              {/* LEFT OFFER BOX */}
+              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                <div className="text-center px-1">
+                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                    {coupon.topLabel}
+                  </p>
+                  <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">
+                    {coupon.mainValue}
+                  </div>
+                  {coupon.offText && (
+                    <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                      {coupon.offText}
+                    </p>
+                  )}
+                </div>
               </div>
+
+              {/* CONTENT SECTION */}
+              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                
+                {/* CENTER CONTENT */}
+                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                  
+                  {/* BADGES */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Limited Time
+                    </span>
+                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                      Verified Deal
+                    </span>
+                  </div>
+
+                  {/* HEADING */}
+                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                    {coupon.title}
+                  </h3>
+
+                  {/* DESCRIPTION */}
+                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                    {coupon.description}
+                  </p>
+
+                  {/* VIEW DETAILS BUTTON */}
+                  <button
+                    type="button"
+                    onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
+                  >
+                    View Details
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`}
+                    />
+                  </button>
+
+                  {/* ACCORDION POINTS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      expandedCouponId === coupon.id
+                        ? "max-h-[250px] opacity-100 mt-3"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                      {coupon.points.map((point, pi) => (
+                        <li key={pi} className="flex items-start gap-2">
+                          <span className="text-[#0344b0]">•</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* BUTTON SECTION */}
+                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                  {coupon.code && (
+                    <button
+                      onClick={() => handleCopy(coupon.code, coupon.id)}
+                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                    >
+                      <span className="font-mono">{coupon.code}</span>
+                      {copiedId === coupon.id ? (
+                        <Check className="w-4 h-4 text-green-600 shrink-0" />
+                      ) : (
+                        <Copy className="w-4 h-4 shrink-0" />
+                      )}
+                    </button>
+                  )}
+
+                  <a
+                    href="https://talkpalinc.sjv.io/c/4303217/2584077/30644?subId1=1015"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`Get Talkpal.AI deal: ${coupon.title}`}
+                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                  >
+                    Get Deal
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -479,32 +433,32 @@ export default function TalkpalCouponsContent() {
   <div className="space-y-8">
     {[
       {
-        icon: MessageSquareText, 
+        icon: MessageSquareText,
         title: "AI-Powered Conversations",
         sub: "Practice real-world conversations with an intelligent AI tutor available anytime."
       },
       {
-        icon: Mic, 
+        icon: Mic,
         title: "Pronunciation Improvement",
         sub: "Receive feedback that helps improve speaking accuracy and fluency."
       },
       {
-        icon: BookOpenText, 
+        icon: BookOpenText,
         title: "Vocabulary Building",
         sub: "Learn new words and phrases through interactive exercises and conversations."
       },
       {
-        icon: Languages, 
+        icon: Languages,
         title: "Multiple Language Options",
         sub: "Access learning materials and practice sessions across various languages."
       },
       {
-        icon: UserCheck, 
+        icon: UserCheck,
         title: "Personalized Learning Experience",
         sub: "Lessons can adapt to your progress and learning goals."
       },
       {
-        icon: Clock, 
+        icon: Clock,
         title: "Flexible Learning Schedule",
         sub: "Practice whenever and wherever it suits your routine."
       }
@@ -537,8 +491,8 @@ export default function TalkpalCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -561,20 +515,113 @@ export default function TalkpalCouponsContent() {
 </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
        <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
+
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Talkpal AI Coupon Codes, Promo Codes & Language Learning Deals
+          Talkpal AI Discount Codes, Promo Codes & Language Learning Deals
         </h2>
-        
+
+        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Discount Code – 25% Off on Select Premium Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">25% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlock AI language learning & interactive conversations</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Select Premium Plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Discount Code – 50% Off Premium Subscription</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited AI conversations, limited-time offer</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Premium Subscription</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Promo Code – Flat 75% + Extra 50% Off 12-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From ₹3,899 (Flat 75% + Extra 50% OFF)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Unlimited practice, roleplays & advanced lessons</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">12-Month Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Promo Code – 50% Off 1-Month Premium Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">50% OFF (₹649 / month)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Discount applied at checkout, trial monthly plan</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">1-Month Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Voucher Code – 14-Day Free Trial on Premium 24-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">14-Day Free Trial ($4.29 / mo)</td>
+        <td className="p-5 text-gray-500 align-middle">New customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">14-day trial period prior to subscription billing</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">24-Month Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Voucher Code – 14-Day Free Trial on Premium 12-Month Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">14-Day Free Trial ($6.86 / mo)</td>
+        <td className="p-5 text-gray-500 align-middle">New customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">14-day trial, unlimited AI practice year-round</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">12-Month Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Coupon Code – Up to 69% Off Annual Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 69% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Long-term membership discount, AI tools included</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Annual Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Coupon Code – 17% Off Monthly Plan</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">17% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Eligible users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Includes 14-day free trial for eligible users</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Monthly Premium Plan</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Referral Code – Flexible Subscription Cancellation</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Flexible Billing</td>
+        <td className="p-5 text-gray-500 align-middle">All subscribers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Cancel anytime with no long-term commitment</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">All Premium Plans</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Referral Code – Premium Plans Best Price Guarantee</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Budget Pricing</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Access to roleplays, practice sessions & AI tools</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Premium Subscriptions</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Talkpal Offer – Educational Discounts on Premium Plans</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Special Pricing</td>
+        <td className="p-5 text-gray-500 align-middle">Students, teachers & educators</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Special educational rates on eligible plans</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Educational Premium Plans</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Language Learning with Talkpal AI Coupon Codes</h3>
+          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Language Learning with Talkpal AI Discount Codes</h3>
           <p>
             Learning a new language has never been more accessible thanks to AI-powered educational tools. If you're looking to improve your speaking, listening, reading, or writing skills without spending a fortune, checking the latest <strong>Talkpal AI coupon codes</strong> and promo offers on CouponsBit can help you save on your subscription.
           </p>
@@ -584,7 +631,7 @@ export default function TalkpalCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">About Talkpal AI</h3>
-            
+
             <p>
               Designed for learners of all levels, Talkpal AI aims to make language learning more engaging, flexible, and personalized. Users can practice conversations, improve pronunciation, expand vocabulary, and build confidence through AI-driven lessons available across multiple languages.
             </p>
@@ -604,7 +651,7 @@ export default function TalkpalCouponsContent() {
 
           {/* How to Use Steps */}
           <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Talkpal AI Coupon Code</h3>
+            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use a Talkpal AI Discount Code</h3>
             <p className="text-gray-700 font-bold -mt-4">Saving on your language-learning subscription is simple.</p>
             <div className="space-y-6">
               {[
@@ -669,7 +716,7 @@ export default function TalkpalCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -688,7 +735,7 @@ export default function TalkpalCouponsContent() {
             { q: "Is CouponsBit free to use?", a: "Absolutely. CouponsBit is completely free and helps users discover valuable discounts and promotional offers from leading brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -743,12 +790,12 @@ export default function TalkpalCouponsContent() {
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
 
-        
+
       </main>
 
       <Footer />

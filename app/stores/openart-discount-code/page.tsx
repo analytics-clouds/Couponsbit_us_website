@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import OpenartCouponsContent from "./_components/StoreCouponsContent";
+import { OPENART_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Nov 2026",
+    absolute: "OpenArt Discount Code: Up to 27% OFF | Nov 2026",
   },
   description:
-    " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. November 2026.",
+    "Get the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Save up to 27% OFF annual plans or subscribe from just $14/month with verified offers.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/openart-discount-code",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/openart-discount-code",
-    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Nov 2026",
+    title: "OpenArt Discount Code: Up to 27% OFF | Nov 2026",
     description:
-      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. November 2026.",
+      "Get the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Save up to 27% OFF annual plans or subscribe from just $14/month with verified offers.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_IN", "en_PK", "en_GB"],
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Nov 2026",
+    title: "OpenArt Discount Code: Up to 27% OFF | Nov 2026",
     description:
-      " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. November 2026.",
+      "Get the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Save up to 27% OFF annual plans or subscribe from just $14/month with verified offers.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782288848/emergent-coupon-code_oeaxoh_aeoxm7.webp"],
     site: "@couponsbit",
   },
@@ -55,7 +57,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const openartOffers = OPENART_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `OpenArt ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/openart-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "OpenArt",
+    url: "https://openartai.pxf.io/c/4303217/3106413/38572?subId1=1015",
+  },
+}));
 
 const openartSchema = {
   "@context": "https://schema.org",
@@ -64,9 +81,9 @@ const openartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/openart-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/openart-discount-code",
-      name: "OpenArt Discount Code: 27% Off AI Image & Video Plans | Nov 2026",
+      name: "OpenArt Discount Code: Up to 27% OFF | Nov 2026",
       description:
-        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. November 2026.",
+        "Get the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Save up to 27% OFF annual plans or subscribe from just $14/month with verified offers.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,105 +97,26 @@ const openartSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/openart-discount-code#brand",
+      name: "OpenArt",
+      url: "https://openart.ai",
+      sameAs: ["https://www.facebook.com/openartai", "https://twitter.com/openartai"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/openart-discount-code#offerlist",
       name: "Openart.AI Coupon Codes & Promo Codes",
       description:
-        " Use a verified OpenArt discount code or promo code — save 27% on the Wonder Annual Plan at $175.20/mo. Generate 106,000 AI images monthly. Essential Plan from just $14/mo. November 2026.",
+        "Get the latest OpenArt Discount Code and OpenArt Promo Code for November 2026. Save up to 27% OFF annual plans or subscribe from just $14/month with verified offers.",
       url: "https://www.couponsbit.us/stores/openart-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Wonder Annual Plan – Up to 27% OFF",
-            description: "Get 106,000 credits/month and unlock access to 100+ premium AI image, video and audio models.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Infinite Annual Plan – 22% OFF",
-            description: "Get 24,000 credits/month with commercial usage rights and premium AI models.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Essential Plan – Starting at $14/Month",
-            description: "Access powerful AI image, video and audio creation tools at an affordable starting price.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Advanced Plan – $29/Month",
-            description: "Create personalized models, AI characters and premium visual content.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Infinite Monthly Plan – Most Popular",
-            description: "Support large-scale image and video generation with premium AI models.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "OpenArt Wonder Monthly Plan – Best Value",
-            description: "Access unlimited creation tools and advanced storytelling features.",
-            url: "https://www.couponsbit.us/stores/openart-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Openart.AI",
-              url: "https://www.bluehost.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: OPENART_COUPONS.length,
+      itemListElement: openartOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -303,7 +241,9 @@ export default function OpenartStorePage() {
           __html: JSON.stringify(openartSchema),
         }}
       />
-      <OpenartCouponsContent />
+      <Suspense fallback={null}>
+        <OpenartCouponsContent />
+      </Suspense>
     </>
   );
 }

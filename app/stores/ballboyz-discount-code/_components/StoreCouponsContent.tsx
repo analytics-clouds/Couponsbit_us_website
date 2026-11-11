@@ -2,28 +2,28 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Clock,
+  Copy,
+  ChevronDown,
+  Package,
+  Truck,
+  Shield,
+  Laptop,
+  Shirt,
+  Home,
+  Sparkles,
+  BookOpen,
   CheckCircle,
   X,
   ArrowRight, Smile, Droplet, Target,
@@ -37,22 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { OFFERS } from "./offers";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { BALLBOYZ_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,109 +45,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$60",
-    label: "SAVE",
-    badge: "Best Offer",
-    title: "BallBoyz Full Body Acne Gameplan – Save $60",
-    heading: "Full Body Acne Gameplan",
-    sub: "$99.99 (Reg. $160.00)",
-    description: "Tackle face and body acne with BallBoyz's complete skincare system, including Body Scrub, Face Scrub, Moisturizer, Face Wipes and Pimple Patches.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "BBFULLBODY60"
-  },
-  {
-    id: "c2",
-    discount: "50%",
-    label: "SAVE",
-    badge: "Popular",
-    title: "BallBoyz BOYZ Face Acne Gameplan – #1 Seller",
-    heading: "Face Acne Gameplan",
-    sub: "$55.99 (Reg. $110.00)",
-    description: "Take control of breakouts with BallBoyz's bestselling acne-fighting skincare bundle, backed by a confidence guarantee.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "BBFACE50"
-  },
-  {
-    id: "c3",
-    discount: "40%",
-    label: "UP TO",
-    badge: "Trending",
-    title: "BallBoyz Summer Acne Sale – Up to 40% OFF",
-    heading: "Summer Acne Sale",
-    sub: "Up to 40% OFF",
-    description: "Beat summer breakouts with BallBoyz's bestselling pimple patches, face scrubs and skincare bundles.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "BBSUMMER40"
-  },
-  {
-    id: "c4",
-    discount: "$40",
-    label: "OFF",
-    title: "BallBoyz Pimple Pack – $40 OFF Today Only",
-    heading: "Pimple Pack",
-    sub: "$29.99 (Reg. $69.99)",
-    description: "Get everything you need for clearer skin in one convenient acne-fighting bundle, perfect for pimples, oil and clogged pores.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "BBPIMPLE40"
-  },
-  {
-    id: "c5",
-    discount: "$110",
-    label: "VALUE",
-    title: "BallBoyz Face Acne Gameplan – Today Only Special",
-    heading: "Face Acne Gameplan",
-    sub: "$69.99 (Reg. $110.00)",
-    description: "Upgrade your skincare routine with BallBoyz's top-rated acne solution, built to help reduce breakouts.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "BBTODAY69"
-  },
-  {
-    id: "c6",
-    discount: "20%",
-    label: "EXTRA",
-    title: "BallBoyz Build Your Own Bundle – Extra 20% OFF",
-    heading: "Build Your Own Bundle",
-    sub: "Extra 20% OFF",
-    description: "Customize your skincare routine by mixing and matching face scrubs, body scrubs, moisturizers and pimple patches.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "BBBUNDLE20"
-  },
-  {
-    id: "c7",
-    discount: "NEW",
-    label: "ESSENTIAL",
-    title: "BallBoyz Activated Charcoal Face Scrub",
-    heading: "Activated Charcoal Face Scrub",
-    sub: "Acne Care Essential",
-    description: "Deep-clean your skin with BallBoyz Activated Charcoal Face Scrub, removing dirt, oil and impurities for a refreshed feel.",
-    usedCount: "41k",
-    expiresIn: "4 days",
-    code: "BBCHARCOAL"
-  },
-  {
-    id: "c8",
-    discount: "NEW",
-    label: "ESSENTIAL",
-    title: "BallBoyz Zit Destroyer Body Scrub",
-    heading: "Zit Destroyer Body Scrub",
-    sub: "Clearer Skin Starts Here",
-    description: "Target body breakouts with the powerful BallBoyz Zit Destroyer Body Scrub, formulated to exfoliate and cleanse deeply.",
-    usedCount: "33k",
-    expiresIn: "2 days",
-    code: "BBZITDESTROY"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Merachfit", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp", dealText: "Save Up To $260", href: "/stores/merachfit-discount-code" },
@@ -174,15 +56,12 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function BallboyzCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
 
   // Slide auto-play
   useEffect(() => {
@@ -197,13 +76,6 @@ export default function BallboyzCouponsContent() {
     setToastCode(code);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
@@ -262,7 +134,7 @@ export default function BallboyzCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with BallBoyz discount codes and deals in Nov 2026. Get $60 off Full Body Acne Gameplan, 50% off bestselling Face Acne Gameplan, 40% off summer acne products, $40 off Pimple Pack, and extra bundle savings.
+                      Save more with the latest BallBoyz Discount Code and BallBoyz Promo Code for November 2026. Enjoy 50% OFF the BOYZ Face Acne Gameplan, $60 OFF the Full Body Acne Gameplan, and up to 40% OFF during the Summer Acne Sale. You can also get $40 OFF the Pimple Pack and an extra 20% OFF Build Your Own Bundle. Browse verified BallBoyz offers to save on men's acne treatment, face cleansers, body scrubs, and complete skincare routines.
                     </p>
                     <a
                       href="https://ballboyz.pxf.io/c/6434050/2197523/28283?subId1=1015"
@@ -364,17 +236,17 @@ export default function BallboyzCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Ballboyz Coupon Codes & Offers</h2>
-                  
+
                 </div>
 
-                
 
-                {OFFERS.map((c, i) => (
+
+                {BALLBOYZ_COUPONS.map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
@@ -382,9 +254,9 @@ export default function BallboyzCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
-                            {c.sub && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sub}</p>}
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            {c.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -394,14 +266,14 @@ export default function BallboyzCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button type="button" onClick={() => setExpandedCoupon(expandedCoupon === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCoupon === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCoupon === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -416,9 +288,9 @@ export default function BallboyzCouponsContent() {
                   </div>
                 ))}
 
-              
 
-                
+
+
               </div>
 
               {/* Sidebar */}
@@ -488,32 +360,32 @@ export default function BallboyzCouponsContent() {
   <div className="space-y-8">
     {[
       {
-        icon: Smile, 
+        icon: Smile,
         title: "Face Acne Solutions",
         sub: "Products created to help athletes manage facial breakouts caused by sweat and sports gear."
       },
       {
-        icon: Sparkles, 
+        icon: Sparkles,
         title: "Body Acne Care",
         sub: "Specialized cleansers and scrubs designed for shoulders, back, chest, and other breakout-prone areas."
       },
       {
-        icon: Droplet, 
+        icon: Droplet,
         title: "Face Scrubs",
         sub: "Exfoliating skincare products formulated to help remove dirt, oil, and impurities after training sessions."
       },
       {
-        icon: Target, 
+        icon: Target,
         title: "Acne Patches",
         sub: "Targeted skincare products designed to address individual blemishes."
       },
       {
-        icon: Package, 
+        icon: Package,
         title: "Skincare Bundles",
         sub: "Comprehensive routines that combine multiple products into a complete skincare system."
       },
       {
-        icon: ShieldCheck, 
+        icon: ShieldCheck,
         title: "Athlete Hygiene Essentials",
         sub: "Products developed specifically for active lifestyles and frequent physical activity."
       }
@@ -546,8 +418,8 @@ export default function BallboyzCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -570,12 +442,12 @@ export default function BallboyzCouponsContent() {
 </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
        <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
+
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
@@ -665,7 +537,7 @@ export default function BallboyzCouponsContent() {
 
           <div className="space-y-4">
             <h3 className="text-xl font-black text-[#056bfa] mb-4">About Ballboyz</h3>
-            
+
             <p>
               The brand specializes in skincare products designed to help combat sports-related acne, body breakouts, odor, and skin irritation using ingredient-focused formulations aimed at active individuals. Ballboyz has grown rapidly within the youth and amateur sports community and serves athletes across multiple sports disciplines.
             </p>
@@ -731,7 +603,7 @@ export default function BallboyzCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -749,7 +621,7 @@ export default function BallboyzCouponsContent() {
             { q: "Is CouponsBit free to use?", a: "Yes. CouponsBit is completely free and helps users discover valuable discounts from popular brands." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
@@ -804,12 +676,12 @@ export default function BallboyzCouponsContent() {
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
 
-        
+
       </main>
 
       <Footer />

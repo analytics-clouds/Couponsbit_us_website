@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import KrispCouponsContent from "./_components/StoreCouponsContent";
+import { KRISP_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Nov 2026",
+    absolute: "Krisp Discount Code: Get Up to 80% OFF | Nov 2026",
   },
   description:
-    "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. November 2026.",
+    "Get the latest Krisp Discount Code and Krisp Promo Code for November 2026. Save up to 80% OFF AI meeting, noise cancellation, and business plans.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/krisp-discount-code",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/krisp-discount-code",
-    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Nov 2026",
+    title: "Krisp Discount Code: Get Up to 80% OFF | Nov 2026",
     description:
-      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. November 2026.",
+      "Get the latest Krisp Discount Code and Krisp Promo Code for November 2026. Save up to 80% OFF AI meeting, noise cancellation, and business plans.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_PH", "en_IN", "de_DE"],
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Nov 2026",
+    title: "Krisp Discount Code: Get Up to 80% OFF | Nov 2026",
     description:
-      "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. November 2026.",
+      "Get the latest Krisp Discount Code and Krisp Promo Code for November 2026. Save up to 80% OFF AI meeting, noise cancellation, and business plans.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782730730/krisp-logo_ajv3iv.webp"],
     site: "@couponsbit",
   },
@@ -55,7 +57,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const krispOffers = KRISP_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Krisp ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/krisp-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Krisp",
+    url: "http://krisp.pxf.io/c/4303217/2859289/33230?subId1=13A2026",
+  },
+}));
 
 const krispSchema = {
   "@context": "https://schema.org",
@@ -64,9 +81,9 @@ const krispSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/krisp-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/krisp-discount-code",
-      name: "Krisp Discount Code: 7-Day Free Trial + Plans From $8/mo | Nov 2026",
+      name: "Krisp Discount Code: Get Up to 80% OFF | Nov 2026",
       description:
-        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. November 2026.",
+        "Get the latest Krisp Discount Code and Krisp Promo Code for November 2026. Save up to 80% OFF AI meeting, noise cancellation, and business plans.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,87 +97,26 @@ const krispSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/krisp-discount-code#brand",
+      name: "Krisp",
+      url: "https://krisp.ai",
+      sameAs: ["https://www.facebook.com/krispai", "https://twitter.com/krispai"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/krisp-discount-code#offerlist",
       name: "Krisp.AI Coupon Codes & Promo Codes",
       description:
-        "Use a verified Krisp discount code or promo code — start a 7-day free trial, no credit card needed. Unlock unlimited noise cancellation & AI notes from just $8/mo/user. November 2026.",
+        "Get the latest Krisp Discount Code and Krisp Promo Code for November 2026. Save up to 80% OFF AI meeting, noise cancellation, and business plans.",
       url: "https://www.couponsbit.us/stores/krisp-discount-code",
-      numberOfItems: 4,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Free Trial",
-            description: "Explore Krisp on your own. 7-day free trial, no credit card required.",
-            priceCurrency: "USD",
-            price: "0",
-            url: "https://www.couponsbit.us/stores/krisp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Krisp.AI",
-              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Core Plan",
-            description: "Best for individuals and small teams.",
-            priceCurrency: "USD",
-            price: "16",
-            url: "https://www.couponsbit.us/stores/krisp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Krisp.AI",
-              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Advanced Plan",
-            description: "For advanced features and controls. Most popular.",
-            priceCurrency: "USD",
-            price: "30",
-            url: "https://www.couponsbit.us/stores/krisp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Krisp.AI",
-              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Enterprise Plan",
-            description: "Best for org-wide rollout & security. Custom pricing — talk to sales.",
-            url: "https://www.couponsbit.us/stores/krisp-discount-code",
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "Philippines" },
-              { "@type": "Country", name: "India" },
-              { "@type": "Country", name: "Germany" },
-            ],
-            seller: {
-              "@type": "Organization",
-              name: "Krisp.AI",
-              url: "https://krisp.pxf.io/c/4303217/2859289/33230?subId1=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: KRISP_COUPONS.length,
+      itemListElement: krispOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -285,7 +241,9 @@ export default function KrispStorePage() {
           __html: JSON.stringify(krispSchema),
         }}
       />
-      <KrispCouponsContent />
+      <Suspense fallback={null}>
+        <KrispCouponsContent />
+      </Suspense>
     </>
   );
 }

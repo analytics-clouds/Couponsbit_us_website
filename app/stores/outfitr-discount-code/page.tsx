@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import OutfitrCouponsContent from "./_components/StoreCouponsContent";
+import { OUTFITR_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Nov 2026",
+    absolute: "Outfitr Discount Code: Get 62% OFF Bike Racks | Nov 2026",
   },
   description:
-    "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified November 2026.",
+    "Get the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Save up to 62% OFF bike racks or $189.99 OFF select e-bike racks.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/outfitr-discount-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Nov 2026",
+    title: "Outfitr Discount Code: Get 62% OFF Bike Racks | Nov 2026",
     description:
-      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified November 2026.",
+      "Get the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Save up to 62% OFF bike racks or $189.99 OFF select e-bike racks.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Nov 2026",
+    title: "Outfitr Discount Code: Get 62% OFF Bike Racks | Nov 2026",
     description:
-      "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified November 2026.",
+      "Get the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Save up to 62% OFF bike racks or $189.99 OFF select e-bike racks.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg"],
     site: "@couponsbit",
   },
@@ -51,7 +53,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const outfitrOffers = OUTFITR_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Outfitr ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/outfitr-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Outfitr",
+    url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
+  },
+}));
 
 const outfitrSchema = {
   "@context": "https://schema.org",
@@ -60,9 +77,9 @@ const outfitrSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/outfitr-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-      name: "Outfitr Discount Code: Save 62% Off Bike Racks & Carriers | Nov 2026",
+      name: "Outfitr Discount Code: Get 62% OFF Bike Racks | Nov 2026",
       description:
-        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified November 2026.",
+        "Get the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Save up to 62% OFF bike racks or $189.99 OFF select e-bike racks.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -76,180 +93,26 @@ const outfitrSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/outfitr-discount-code#brand",
+      name: "Outfitr",
+      url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
+      sameAs: ["https://www.facebook.com/outfitr", "https://www.instagram.com/outfitr"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/outfitr-discount-code#offerlist",
       name: "Outfitr Coupon Codes & Promo Codes",
       description:
-        "Use a verified Outfitr discount code or promo code — save 62% on the 2-Bike Hitch Rack from $110.99. Single E-Bike Rack 50% off at $169.99. USA summer deals verified November 2026.",
+        "Get the latest Outfitr Discount Code and Outfitr Promo Code for November 2026. Save up to 62% OFF bike racks or $189.99 OFF select e-bike racks.",
       url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr 2-Bike Hitch Rack Lite Edition – Save 62%",
-            description: "Carry your bikes securely with the 2-Bike Hitch Rack Lite Edition, featuring 80 lbs capacity and durable hitch-mount design.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Single Hitch E-Bike Rack Lite Edition – Save 50%",
-            description: "Transport your e-bike safely with the Single Hitch E-Bike Rack Lite Edition, built for stability and hassle-free travel.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Single Hitch E-Bike Rack with Ramp – Prime Day Deal",
-            description: "Make loading easy with the Single Hitch E-Bike Rack with Ramp, designed for heavy-duty e-bike transportation.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Summer Sale Bonus – $15 OFF Your Next Purchase",
-            description: "Join the Outfitr community and unlock exclusive savings on racks, carriers and outdoor gear.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr 2-Bike Hitch E-Bike Rack with Ramp – Save 41%",
-            description: "Transport two e-bikes with ease using the 2-Bike Hitch E-Bike Rack with Ramp, built for road trips and camping.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr 2-Bike Hitch Rack with Bike Lock – Save 47%",
-            description: "Secure your bikes with the 2-Bike Hitch Rack with Bike Lock, supporting up to 200 lbs capacity.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Cargo Carrier Collection – Up to 47% OFF",
-            description: "Expand your vehicle's storage capacity with Outfitr Cargo Carriers, perfect for camping gear and road trips.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr 2-Bike Hitch Bike Rack – Save 40%",
-            description: "Travel smarter with the 2-Bike Hitch Bike Rack, great for everyday cyclists and outdoor enthusiasts.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Foldable 2-Bike E-Bike Rack with Ramp – Save 36%",
-            description: "Carry your e-bikes safely with the Foldable 2-Bike E-Bike Rack with Ramp, perfect for electric bike transportation.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr Tire-Clamp E-Bike Rack with Ramp – Save 32%",
-            description: "Premium transport solution for serious riders, with tire-clamp design ensuring maximum stability.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Outfitr 2-Bike Rack with Lock – Save 27%",
-            description: "Transport bikes confidently with the 2-Bike Rack, Foldable & Tiltable with Lock, including integrated security.",
-            url: "https://www.couponsbit.us/stores/outfitr-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Outfitr",
-              url: "https://forcomeecommerceinc.sjv.io/c/6434050/2843329/32890?subId=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: OUTFITR_COUPONS.length,
+      itemListElement: outfitrOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -374,7 +237,9 @@ export default function OutfitrStorePage() {
           __html: JSON.stringify(outfitrSchema),
         }}
       />
-      <OutfitrCouponsContent />
+      <Suspense fallback={null}>
+        <OutfitrCouponsContent />
+      </Suspense>
     </>
   );
 }

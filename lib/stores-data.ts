@@ -183,7 +183,10 @@ export const allStores: StoreEntry[] = [
   { name: "Harry and David",   id: "harry-and-david-promo-code",        category: "More",    coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/harryand-david-logo_psaq9y.webp",  discount: "Up To 30% OFF",       popular: false },
   { name: "Mavis",             id: "mavis-discount-code",               category: "More",    coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/mavis-logo_fhmyy8.webp",           discount: "$50 OFF 4 Tires",     popular: false },
   { name: "Vuori",             id: "vuori-discount-code",               category: "Fashion", coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/vuori_euoigj.webp",                discount: "20% OFF First Order", popular: false },
-  { name: "Saks Fifth Avenue", id: "saks-fifth-avenue-discount-code",   category: "Fashion", coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/saks-fifth-avenue_senmoo.webp",   discount: "Up To 40% OFF",       popular: false },
+  { name: "Saks Fifth Avenue", id: "saks-fifth-avenue-discount-code",   category: "Fashion",     coupons: 7,  logo: "https://res.cloudinary.com/couponsbit/image/upload/v1793688836/saks-fifth-avenue_senmoo.webp",        discount: "Up To 40% OFF",       popular: false },
+  { name: "Feel Good Contacts", id: "feelgoodcontacts-discount-code",  category: "Eyewear",     coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793878984/feel_good_contact_logo.webp",           discount: "Up to 50% OFF",       popular: false },
+  { name: "Udemy",              id: "udemy-discount-code",              category: "More",        coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793879483/udmey_logo.webp",                       discount: "Up to 80% OFF",       popular: false },
+  { name: "Ultrahuman",         id: "ultrahuman-discount-code",         category: "Electronics", coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793879483/Ultrahuman_logo.webp",                  discount: "Up to 20% OFF",       popular: false },
 ];
 
 

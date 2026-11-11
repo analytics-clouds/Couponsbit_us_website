@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DeerValleyCouponsContent from "./_components/StoreCouponsContent";
+import { DEER_VALLEY_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Nov 2026",
+    absolute: "DeerValley Discount Code: Up to 60% OFF | Nov 2026",
   },
   description:
-    "Find the latest DeerValley discount codes and home improvement deals for Nov 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
+    "Get the latest DeerValley Discount Code and DeerValley Promo Code for November 2026. Save up to 60% OFF on toilets, sinks, vanity mirrors, and more.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/deer-valley-discount-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-    title: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Nov 2026",
+    title: "DeerValley Discount Code: Up to 60% OFF | Nov 2026",
     description:
-      "Find the latest DeerValley discount codes and home improvement deals for Nov 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
+      "Get the latest DeerValley Discount Code and DeerValley Promo Code for November 2026. Save up to 60% OFF on toilets, sinks, vanity mirrors, and more.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Nov 2026",
+    title: "DeerValley Discount Code: Up to 60% OFF | Nov 2026",
     description:
-      "Find the latest DeerValley discount codes and home improvement deals for Nov 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
+      "Get the latest DeerValley Discount Code and DeerValley Promo Code for November 2026. Save up to 60% OFF on toilets, sinks, vanity mirrors, and more.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782451456/deervalley-coupon-code_yohcn4.jpg"],
     site: "@couponsbit",
   },
@@ -51,7 +53,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const deervalleyOffers = DEER_VALLEY_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Deer Valley Resort ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/deer-valley-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Deer Valley Resort",
+    url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
+  },
+}));
 
 const deervalleySchema = {
   "@context": "https://schema.org",
@@ -60,9 +77,9 @@ const deervalleySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/deer-valley-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-      name: "DeerValley Discount Code: Up to 60% OFF Bathroom Deals | Nov 2026",
+      name: "DeerValley Discount Code: Up to 60% OFF | Nov 2026",
       description:
-        "Find the latest DeerValley discount codes and home improvement deals for Nov 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
+        "Get the latest DeerValley Discount Code and DeerValley Promo Code for November 2026. Save up to 60% OFF on toilets, sinks, vanity mirrors, and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -76,150 +93,26 @@ const deervalleySchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/deer-valley-discount-code#brand",
+      name: "Deer Valley Resort",
+      url: "https://www.deervalley.com",
+      sameAs: ["https://www.facebook.com/deervalleybath", "https://www.instagram.com/deervalleybath"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/deer-valley-discount-code#offerlist",
       name: "Deer Valley Coupon Codes & Promo Codes",
       description:
-        "Find the latest DeerValley discount codes and home improvement deals for Nov 2026. Save up to 60% on bathroom and kitchen essentials, get 48% off smart toilets, 40% off sinks, and more offers.",
+        "Get the latest DeerValley Discount Code and DeerValley Promo Code for November 2026. Save up to 60% OFF on toilets, sinks, vanity mirrors, and more.",
       url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Anniversary Sale – Up to 60% OFF",
-            description: "Upgrade your home with premium DeerValley bathroom and kitchen essentials during the Anniversary Sale.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley One-Piece Elongated Toilet – Save 48%",
-            description: "Upgrade your bathroom with the DeerValley DV-1F0437 One Piece Elongated Toilet, featuring a dual-flush system.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Smart Stainless Steel Kitchen Sink – Save 40%",
-            description: "Modernize your kitchen with the DV-1K0348/DV-1K0349 Smart Kitchen Sink, including smart controls and a 4-mode spray system.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley LED Bathroom Vanity Mirror – Save 41%",
-            description: "Brighten your bathroom with the DeerValley LED Vanity Mirror, featuring front and backlit illumination.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Farmhouse Kitchen Sink – Save 33%",
-            description: "Upgrade your kitchen with the DV-1K119 Farmhouse Kitchen Sink, featuring a solid cast deep bowl.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Smart Tankless Toilet – Save 48%",
-            description: "Experience luxury with the DV-1S0160 Smart Tankless Toilet, including heated seat and warm water cleaning.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Dual LED Anti-Fog Vanity Mirror – Save 42%",
-            description: "Enhance your bathroom with the DV-1VM0308 Dual LED Vanity Mirror, featuring anti-fog technology.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Deep Dual Bowl Farmhouse Sink – Save 24%",
-            description: "Bring functionality and style to your kitchen with the DV-1K503 Farmhouse Sink, featuring a deep dual-bowl design.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "DeerValley Three-Door Mirror Cabinet – Save 24%",
-            description: "Maximize storage with the Three-Door Wall-Mounted Mirror Cabinet, featuring a sleek black aluminum frame.",
-            url: "https://www.couponsbit.us/stores/deer-valley-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Deer Valley",
-              url: "https://deervalley.sjv.io/c/6434050/1830355/21845?subId1=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: DEER_VALLEY_COUPONS.length,
+      itemListElement: deervalleyOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -344,7 +237,9 @@ export default function DeerValleyStorePage() {
           __html: JSON.stringify(deervalleySchema),
         }}
       />
-      <DeerValleyCouponsContent />
+      <Suspense fallback={null}>
+        <DeerValleyCouponsContent />
+      </Suspense>
     </>
   );
 }

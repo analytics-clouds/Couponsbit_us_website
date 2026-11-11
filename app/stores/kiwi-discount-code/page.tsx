@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import KiwiCouponsContent from "./_components/StoreCouponsContent";
+import { KIWI_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
+    absolute: "Kiwi Discount Code: Get Flights from $64 | Nov 2026",
   },
   description:
-    "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
+    "Get the latest Kiwi Discount Code and Kiwi Promo Code for November 2026. Book flights from $64 and unlock travel rewards worth up to $580 with Kiwi.com Club.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kiwi-discount-code",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-    title: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
+    title: "Kiwi Discount Code: Get Flights from $64 | Nov 2026",
     description:
-      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
+      "Get the latest Kiwi Discount Code and Kiwi Promo Code for November 2026. Book flights from $64 and unlock travel rewards worth up to $580 with Kiwi.com Club.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
+    title: "Kiwi Discount Code: Get Flights from $64 | Nov 2026",
     description:
-      "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
+      "Get the latest Kiwi Discount Code and Kiwi Promo Code for November 2026. Book flights from $64 and unlock travel rewards worth up to $580 with Kiwi.com Club.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782730730/kiwi-logo_egovdr.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +55,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const kiwiOffers = KIWI_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Kiwi.com ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/kiwi-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Kiwi.com",
+    url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
+  },
+}));
 
 const kiwiSchema = {
   "@context": "https://schema.org",
@@ -62,9 +79,9 @@ const kiwiSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-      name: "Kiwi Discount Code: Fly From $64 + Unlock $580 in Rewards",
+      name: "Kiwi Discount Code: Get Flights from $64 | Nov 2026",
       description:
-        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
+        "Get the latest Kiwi Discount Code and Kiwi Promo Code for November 2026. Book flights from $64 and unlock travel rewards worth up to $580 with Kiwi.com Club.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -78,75 +95,26 @@ const kiwiSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#brand",
+      name: "Kiwi.com",
+      url: "https://www.kiwi.com",
+      sameAs: ["https://www.facebook.com/kiwi.com", "https://twitter.com/kiwicom247"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/kiwi-discount-code#offerlist",
       name: "Kiwi Coupon Codes & Promo Codes",
       description:
-        "Use a Kiwi discount code or promo code — fly Portland to LA from just $64. Join Kiwi Club FREE & unlock travel vouchers worth up to $580. Verified flight deals for November 2026.",
+        "Get the latest Kiwi Discount Code and Kiwi Promo Code for November 2026. Book flights from $64 and unlock travel rewards worth up to $580 with Kiwi.com Club.",
       url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-      numberOfItems: 4,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Kiwi.com Club Membership – Unlock Travel Rewards Worth Up to $580",
-            description: "Join the Kiwi.com Club for FREE and enjoy exclusive travel benefits and member-only flight fares.",
-            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kiwi",
-              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Chicago to Los Angeles Flight Deal – Fares Starting at $320",
-            description: "Fly from Chicago to Los Angeles with fares starting at $320 — great for business trips and weekend vacations.",
-            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kiwi",
-              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Vancouver to Los Angeles Flight Deal – Fares Starting at $102",
-            description: "Travel from Vancouver, Canada to Los Angeles, USA from just $102 on this budget-friendly international fare.",
-            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kiwi",
-              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Portland to Los Angeles Flight Deal – Fares Starting at $64",
-            description: "Fly from Portland to Los Angeles starting at only $64 — one of the best-value domestic flight deals available.",
-            url: "https://www.couponsbit.us/stores/kiwi-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kiwi",
-              url: "https://tracking.syndicmarketing.com/c?o=21418851&m=23654&a=636605&&sub_aff_id=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: KIWI_COUPONS.length,
+      itemListElement: kiwiOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -271,7 +239,9 @@ export default function KiwiStorePage() {
           __html: JSON.stringify(kiwiSchema),
         }}
       />
-      <KiwiCouponsContent />
+      <Suspense fallback={null}>
+        <KiwiCouponsContent />
+      </Suspense>
     </>
   );
 }

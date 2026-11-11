@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import HPCouponsContent from "./_components/StoreCouponsContent";
+import { HP_COUPONS } from "./_components/offers";
 
+const TITLE = "HP Discount Code: 71% Off + $30 Off on Printers | Nov 2026";
+const DESCRIPTION =
+  "Save up to 71% with the latest HP discount code. Get $30 off select HP LaserJet printers, plus verified deals on laptops, desktops, and accessories this Nov 2026."
 export const metadata: Metadata = {
   title: {
-    absolute: "HP Discount Code: Up to 71% Off Laptops & Desktops",
+    absolute: TITLE,
   },
-  description:
-    "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hp-discount-code",
@@ -19,9 +23,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hp-discount-code",
-    title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
-    description:
-      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +39,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "HP Discount Code: Up to 71% Off Laptops & Desktops",
-    description:
-      "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +53,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const hpSchema = {
@@ -60,13 +64,12 @@ const hpSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/hp-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/hp-discount-code",
-      name: "HP Discount Code: Up to 71% Off Laptops & Desktops",
-      description:
-        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,192 +82,20 @@ const hpSchema = {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/hp-discount-code#offerlist",
       name: "HP Coupon Codes & Promo Codes",
-      description:
-        "Use a verified HP discount code or promo code — save up to 71% off laptops, desktops & printers. HP OMEN Gaming Desktop from $1,189.99, save $1,210 instantly. November 2026.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/hp-discount-code",
-      numberOfItems: 12,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "HP 4th of July Sale – Save Up to 71% OFF",
-            description: "Celebrate with the HP 4th of July Sale and save Up to 71% OFF on select laptops, desktops, printers and accessories.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
+      numberOfItems: HP_COUPONS.length,
+      itemListElement: HP_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: `https://www.couponsbit.us/stores/hp-discount-code#${c.id}`,
+          seller: { "@type": "Organization", name: "HP", url: "https://www.hp.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "HP OmniBook 3 Laptop Deal – Up to 60% OFF | Starting at $419.99",
-            description: "Save Up to 60% OFF on the HP OmniBook 3 Laptop.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "HP OmniBook 5 Flip 2-in-1 – Up to 58% OFF | Starting at $499.99",
-            description: "Save Up to 58% OFF on the HP OmniBook 5 Flip.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "HP OMEN 35L Gaming Desktop – Up to 50% OFF | Starting at $1,189.99",
-            description: "Save Up to 50% OFF on the HP OMEN 35L Gaming Desktop.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "HP Financing Offer – Pay Over 24 Months",
-            description: "Shop now and pay later with HP financing.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "HP All-In Plan – Printers from $7.99/Month",
-            description: "Get an HP printer with ink delivery included.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "HP OmniBook X AI Laptop – Up to 19% OFF | Starting at $1,699.99",
-            description: "Save Up to 19% OFF on the HP OmniBook X AI Laptop.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Adobe Software Bundle – Starting at $129.99",
-            description: "Get select Adobe software for only $129.99 with a qualifying HP PC purchase.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "HP OmniBook 7 Laptop – Up to 35% OFF | Save $560",
-            description: "Save Up to 35% OFF on the customizable HP OmniBook 7.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "HP LaserJet Printer Bundle – Save $30",
-            description: "Save $30 on select HP LaserJet Pro printers.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "HP OmniBook 7 AI Laptop – Up to 36% OFF | Starting at $1,599.99",
-            description: "Save Up to 36% OFF on the HP OmniBook 7 AI Laptop.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 12,
-          item: {
-            "@type": "Offer",
-            name: "HyperX Cloud Alpha Wireless Headset – Up to 25% OFF | Starting at $149.99",
-            description: "Save Up to 25% OFF on the HyperX Cloud Alpha Wireless Gaming Headset.",
-            url: "https://www.couponsbit.us/stores/hp-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "HP",
-              url: "https://www.hp.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -296,6 +127,13 @@ const hpSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/hp-discount-code#brand",
+      name: "HP",
+      url: "https://www.hp.com",
     },
 
     {
@@ -389,7 +227,9 @@ export default function HPStorePage() {
           __html: JSON.stringify(hpSchema),
         }}
       />
-      <HPCouponsContent />
+      <Suspense fallback={null}>
+        <HPCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import CarilohaCouponsContent from "./_components/StoreCouponsContent";
+import { CARILOHA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
+    absolute: "Cariloha Discount Code: 50% OFF + Free Shipping | Nov 2026",
   },
   description:
-    "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+    "Get the latest Cariloha Discount Code and Cariloha Promo Code for November 2026. Save up to 50% OFF, enjoy free shipping over $100, and shop premium bamboo bedding.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/cariloha-discount-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
+    title: "Cariloha Discount Code: 50% OFF + Free Shipping | Nov 2026",
     description:
-      "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+      "Get the latest Cariloha Discount Code and Cariloha Promo Code for November 2026. Save up to 50% OFF, enjoy free shipping over $100, and shop premium bamboo bedding.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
+    title: "Cariloha Discount Code: 50% OFF + Free Shipping | Nov 2026",
     description:
-      "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+      "Get the latest Cariloha Discount Code and Cariloha Promo Code for November 2026. Save up to 50% OFF, enjoy free shipping over $100, and shop premium bamboo bedding.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373660/cariloha-coupon-code_t4bwl4.jpg"],
     site: "@couponsbit",
   },
@@ -51,7 +53,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const carilohaOffers = CARILOHA_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Cariloha ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/cariloha-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Cariloha",
+    url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
+  },
+}));
 
 const carilohaSchema = {
   "@context": "https://schema.org",
@@ -60,9 +77,9 @@ const carilohaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/cariloha-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-      name: "Cariloha Discount Code: Up to 50% Off + Free Shipping | Nov 2026",
+      name: "Cariloha Discount Code: 50% OFF + Free Shipping | Nov 2026",
       description:
-        "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+        "Get the latest Cariloha Discount Code and Cariloha Promo Code for November 2026. Save up to 50% OFF, enjoy free shipping over $100, and shop premium bamboo bedding.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -76,180 +93,26 @@ const carilohaSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/cariloha-discount-code#brand",
+      name: "Cariloha",
+      url: "https://www.cariloha.com",
+      sameAs: ["https://www.facebook.com/cariloha", "https://www.instagram.com/cariloha"],
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/cariloha-discount-code#offerlist",
       name: "Cariloha Coupon Codes & Promo Codes",
       description:
-        "Find the latest Cariloha discount codes and deals for Nov 2026. Save up to 50% on bamboo bedding and lifestyle essentials, get free shipping on $100+ orders, enjoy a 100-night trial and more.",
+        "Get the latest Cariloha Discount Code and Cariloha Promo Code for November 2026. Save up to 50% OFF, enjoy free shipping over $100, and shop premium bamboo bedding.",
       url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha USA Offer – Free Shipping Over $100 + 100-Night Trial",
-            description: "Upgrade your home with premium bamboo bedding and lifestyle essentials from Cariloha.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Retreat Bamboo Sheets – Luxury Bamboo Bedding",
-            description: "Experience ultimate comfort with the Retreat Bamboo Sheets, Cariloha's softest bamboo sheets ever.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Clearance Sale – Up to 50% OFF",
-            description: "Shop Cariloha's biggest clearance event and save on bamboo essentials.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Women's Bamboo Sleep Robe – 49% OFF",
-            description: "Relax in comfort with the Women's Bamboo Sleep Robe.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Signature Fragrance – Premium Home Scent",
-            description: "Refresh your space with the Cariloha Signature Fragrance.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Bamboo Comfort Polo – Save 30%",
-            description: "Stay cool and comfortable with the Bamboo Comfort Polo.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Bamboo Sateen Duvet Cover Set – Luxury Sleep Upgrade",
-            description: "Transform your bedroom with the Bamboo Sateen Duvet Cover Set.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Bamboo Bath Towel – Everyday Luxury",
-            description: "Upgrade your bathroom essentials with the Bamboo Bath Towel.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Bamboo Boyshort Brief – Save 22%",
-            description: "Enjoy all-day comfort with the Bamboo Boyshort Brief - Black.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Men's Bamboo Woven Sleep Shorts – 20% OFF",
-            description: "Relax in comfort with the Men's Bamboo Woven Sleep Shorts.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Cariloha Resort Pillow – Premium Bamboo Comfort",
-            description: "Experience hotel-quality sleep with the Cariloha Resort Pillow.",
-            url: "https://www.couponsbit.us/stores/cariloha-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Cariloha",
-              url: "https://cariloha.pxf.io/c/6434050/1117073/14163?subId1=1015",
-            },
-          },
-        },
-      ],
+      numberOfItems: CARILOHA_COUPONS.length,
+      itemListElement: carilohaOffers.map((offer, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -366,7 +229,9 @@ export default function CarilohaStorePage() {
           __html: JSON.stringify(carilohaSchema),
         }}
       />
-      <CarilohaCouponsContent />
+      <Suspense fallback={null}>
+        <CarilohaCouponsContent />
+      </Suspense>
     </>
   );
 }

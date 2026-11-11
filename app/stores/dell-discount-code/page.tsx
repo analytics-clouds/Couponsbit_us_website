@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DellCouponsContent from "./_components/StoreCouponsContent";
+import { DELL_COUPONS } from "./_components/offers";
+
+const TITLE = "Dell Discount Code: $1,700 Off + $1,100 Off XPS | Nov 2026";
+const DESCRIPTION =
+  "Save up to $1,700 with the latest Dell discount code. Get up to $1,100 off Dell XPS laptops plus verified deals on PCs, gaming, and accessories this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Dell discount codes and tech deals for Nov 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/dell-discount-code",
@@ -20,8 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.couponsbit.us/stores/dell-discount-code",
     title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptopss | Nov 2026",
-    description:
-      "Find the latest Dell discount codes and tech deals for Nov 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Nov 2026",
-    description:
-      "Find the latest Dell discount codes and tech deals for Nov 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782890858/dell-coupon-code_mxtssy.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +54,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const dellSchema = {
@@ -60,13 +65,12 @@ const dellSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dell-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/dell-discount-code",
-      name: "Dell Discount Code: $1,700 OFF Gaming Sale + Saves $750 on Laptops | Nov 2026",
-      description:
-        "Find the latest Dell discount codes and tech deals for Nov 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,192 +83,24 @@ const dellSchema = {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/dell-discount-code#offerlist",
       name: "Dell Coupon Codes & Promo Codes",
-      description:
-        "Find the latest Dell discount codes and tech deals for Nov 2026. Save up to $1,700 on gaming PCs, $1,100 on XPS laptops, $750 on Back to School offers, plus 10% student savings and more.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/dell-discount-code",
-      numberOfItems: 12,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Dell Back to School Sale – Save Up to $750",
-            description: "Gear up for school with Dell's Back to School Sale.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
+      numberOfItems: DELL_COUPONS.length,
+      itemListElement: DELL_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: `https://www.couponsbit.us/stores/dell-discount-code#${c.id}`,
+          seller: {
+            "@type": "Organization",
+            name: "Dell",
+            url: "https://www.dell.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Dell XPS 13 Student Offer – Starting at $599",
-            description: "Students can get the New Dell XPS 13 from just $599.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Dell Student & Teacher Discount – Save 10% Sitewide",
-            description: "Students and teachers save 10% sitewide.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Dell XPS 16 Laptop – Save Up to $1,100 | Starting at $2,799.99",
-            description: "Save Up to $1,100 on the premium Dell XPS 16.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Dell 14 Laptop – Save Up to $581 | Starting at $799.99",
-            description: "Save Up to $581 on the Dell 14 Laptop.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Alienware Area-51 Gaming Desktop – Save Up to $970",
-            description: "Save Up to $970 on the Alienware Area-51 Gaming Desktop.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Alienware 27 QD-OLED Gaming Monitor – Save Up to $150",
-            description: "Save Up to $150 on the Alienware 27\\\" QD-OLED Gaming Monitor.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Dell Business PC Sale – Save Up to $700",
-            description: "Upgrade your workplace with Dell Business PCs.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Dell 14 Plus Copilot+ PC – Save Up to $640",
-            description: "Experience AI-powered computing with the Dell 14 Plus Copilot+ PC.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Dell Productivity Software Offer – Save Up to $30",
-            description: "Boost productivity with genuine software savings.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Dell Gaming Sale – Save Up to $1,700",
-            description: "Power your gaming setup with Dell gaming deals.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 12,
-          item: {
-            "@type": "Offer",
-            name: "Dell 15 Laptop Deal – Save Up to $170 | Starting at $629.99",
-            description: "Get the Dell 15 Laptop for just $629.99.",
-            url: "https://www.couponsbit.us/stores/dell-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dell",
-              url: "https://www.dell.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -296,6 +132,13 @@ const dellSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/dell-discount-code#brand",
+      name: "Dell",
+      url: "https://www.dell.com",
     },
 
     {
@@ -389,7 +232,9 @@ export default function DellStorePage() {
           __html: JSON.stringify(dellSchema),
         }}
       />
-      <DellCouponsContent />
+      <Suspense fallback={null}>
+        <DellCouponsContent />
+      </Suspense>
     </>
   );
 }

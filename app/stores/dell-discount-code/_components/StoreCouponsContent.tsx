@@ -1,29 +1,29 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Clock,
+  Copy,
+  ChevronDown,
+  Package,
+  Truck,
+  Shield,
+  Laptop,
+  Shirt,
+  Home,
+  Sparkles,
+  BookOpen,
   CheckCircle,
   X,
   ArrowRight,
@@ -38,21 +38,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, DELL_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,157 +46,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "dell1",
-    discount: "$750",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Dell Back to School Sale – Save Up to $750",
-    heading: "Save Up to $750",
-    sub: "Back to School Sale",
-    description: "Gear up for school with Dell's Back to School Sale.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell2",
-    discount: "$599",
-    label: "STARTING AT",
-    badge: "Popular",
-    title: "Dell XPS 13 Student Offer – Starting at $599",
-    heading: "Starting at $599",
-    sub: "XPS 13 Student Offer",
-    description: "Students can get the New Dell XPS 13 from just $599.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell3",
-    discount: "10%",
-    label: "SAVE",
-    badge: "Trending",
-    title: "Dell Student & Teacher Discount – Save 10% Sitewide",
-    heading: "Save 10% Sitewide",
-    sub: "Student & Teacher Discount",
-    description: "Students and teachers save 10% sitewide.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell4",
-    discount: "$1,100",
-    label: "UP TO",
-    title: "Dell XPS 16 Laptop – Save Up to $1,100 | Starting at $2,799.99",
-    heading: "Save Up to $1,100",
-    sub: "XPS 16 Laptop",
-    description: "Save Up to $1,100 on the premium Dell XPS 16.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell5",
-    discount: "$581",
-    label: "UP TO",
-    title: "Dell 14 Laptop – Save Up to $581 | Starting at $799.99",
-    heading: "Save Up to $581",
-    sub: "14 Laptop",
-    description: "Save Up to $581 on the Dell 14 Laptop.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell6",
-    discount: "$970",
-    label: "UP TO",
-    title: "Alienware Area-51 Gaming Desktop – Save Up to $970",
-    heading: "Save Up to $970",
-    sub: "Alienware Area-51 Gaming Desktop",
-    description: "Save Up to $970 on the Alienware Area-51 Gaming Desktop.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell7",
-    discount: "$150",
-    label: "UP TO",
-    title: "Alienware 27 QD-OLED Gaming Monitor – Save Up to $150",
-    heading: "Save Up to $150",
-    sub: "Alienware 27 QD-OLED Gaming Monitor",
-    description: "Save Up to $150 on the Alienware 27\" QD-OLED Gaming Monitor.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell8",
-    discount: "$700",
-    label: "UP TO",
-    title: "Dell Business PC Sale – Save Up to $700",
-    heading: "Save Up to $700",
-    sub: "Business PC Sale",
-    description: "Upgrade your workplace with Dell Business PCs.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell9",
-    discount: "$640",
-    label: "UP TO",
-    title: "Dell 14 Plus Copilot+ PC – Save Up to $640",
-    heading: "Save Up to $640",
-    sub: "14 Plus Copilot+ PC",
-    description: "Experience AI-powered computing with the Dell 14 Plus Copilot+ PC.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell10",
-    discount: "$30",
-    label: "UP TO",
-    title: "Dell Productivity Software Offer – Save Up to $30",
-    heading: "Save Up to $30",
-    sub: "Productivity Software Offer",
-    description: "Boost productivity with genuine software savings.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell11",
-    discount: "$1,700",
-    label: "UP TO",
-    title: "Dell Gaming Sale – Save Up to $1,700",
-    heading: "Save Up to $1,700",
-    sub: "Gaming Sale",
-    description: "Power your gaming setup with Dell gaming deals.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  },
-  {
-    id: "dell12",
-    discount: "$170",
-    label: "UP TO",
-    title: "Dell 15 Laptop Deal – Save Up to $170 | Starting at $629.99",
-    heading: "Save Up to $170",
-    sub: "15 Laptop Deal",
-    description: "Get the Dell 15 Laptop for just $629.99.",
-    usedCount: "",
-    expiresIn: "",
-    code: ""
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", dealText: "Up to 69% OFF", href: "/stores/hp-discount-code" },
@@ -222,17 +57,15 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function DellCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
-  // Slide auto-play
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % 3);
@@ -240,22 +73,52 @@ export default function DellCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {/* Copy Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition-colors">
+              <X className="w-5 h-5 text-gray-500" />
+            </button>
+            <div className="text-center mb-6">
+              <div className="bg-[#f0fdf4] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-[#22c55e]" />
+              </div>
+              <h3 className="text-black font-black text-xl mb-2">Deal Activated!</h3>
+              <p className="text-gray-500 font-bold text-sm">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f8f8f8] border-2 border-dashed border-[#056bfa] rounded-2xl p-4 text-center mb-6">
+                <p className="text-xs text-gray-500 font-bold uppercase tracking-widest mb-2">Your Coupon Code</p>
+                <p className="text-2xl font-black text-[#056bfa] tracking-widest">{activeModalCoupon.code}</p>
+              </div>
+            ) : null}
+            <a
+              href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+            >
+              Go to Dell Store <ArrowRight className="inline w-4 h-4 ml-1" />
+            </a>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -310,7 +173,7 @@ export default function DellCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Dell discount codes and deals in Nov 2026. Get up to $1,700 off gaming PCs, $1,100 off XPS laptops, $750 off Back to School offers, and exclusive student, business, laptop, monitor, and accessory savings.
+                      Looking for the latest Dell discount code? Save up to $1,700 on Dell gaming PCs and enjoy up to $1,100 off the premium Dell XPS 16. You'll also find verified deals on laptops, desktops, monitors, accessories, and business PCs throughout Nov 2026. Whether you're a student, gamer, professional, or business user, Dell offers exclusive discounts, education savings, and limited-time promotions to help you upgrade your setup while spending less.
                     </p>
                     <a
                       href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015"
@@ -412,496 +275,72 @@ export default function DellCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Dell Coupon Codes & Offers</h2>
-                  
                 </div>
 
-                
-
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$750</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell Back to School Sale – Save Up to $750</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Gear up for school with Dell's Back to School Sale.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $750 on laptops, desktops, monitors and accessories.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Students enjoy 10% OFF sitewide on eligible purchases.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop premium tech for school, college and everyday productivity.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell Back to School Sale – Save Up to $750" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">STARTING AT</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$599</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell XPS 13 Student Offer – Starting at $599</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Students can get the New Dell XPS 13 from just $599.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Regular pricing starts from $699.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ultra-thin, lightweight design with premium performance.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive student pricing available.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell XPS 13 Student Offer – Starting at $599" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">10%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">SITEWIDE</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell Student & Teacher Discount – Save 10% Sitewide</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Students and teachers save 10% sitewide.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusive education pricing on eligible Dell products.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop laptops, desktops, monitors and accessories.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Verify your student or educator status to qualify.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell Student & Teacher Discount – Save 10% Sitewide" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1,100</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell XPS 16 Laptop – Save Up to $1,100 | Starting at $2,799.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save Up to $1,100 on the premium Dell XPS 16.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $2,799.99.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>4K OLED touchscreen with Intel® Core™ Ultra processor.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>NVIDIA® GeForce RTX™ graphics for creators.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell XPS 16 Laptop – Save Up to $1,100 | Starting at $2,799.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$581</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell 14 Laptop – Save Up to $581 | Starting at $799.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save Up to $581 on the Dell 14 Laptop.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $799.99.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Intel® Core™ processor with 1TB SSD.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Lightweight design for work, school and travel.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell 14 Laptop – Save Up to $581 | Starting at $799.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$970</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Alienware Area-51 Gaming Desktop – Save Up to $970</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save Up to $970 on the Alienware Area-51 Gaming Desktop.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $5,729.99.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Powered by AMD Ryzen™ 9 and NVIDIA® GeForce RTX™ 5090.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built for elite gaming and content creation.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Alienware Area-51 Gaming Desktop – Save Up to $970" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$150</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Alienware 27 QD-OLED Gaming Monitor – Save Up to $150</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save Up to $150 on the Alienware 27\" QD-OLED Gaming Monitor.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Starting at $399.99.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>280Hz refresh rate with ultra-fast 0.03ms response time.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>NVIDIA G-SYNC Compatible for smooth gameplay.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Alienware 27 QD-OLED Gaming Monitor – Save Up to $150" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$700</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell Business PC Sale – Save Up to $700</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your workplace with Dell Business PCs.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $700 on select business laptops and desktops.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Reliable performance for professionals and small businesses.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for office productivity and remote work.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell Business PC Sale – Save Up to $700" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$640</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell 14 Plus Copilot+ PC – Save Up to $640</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience AI-powered computing with the Dell 14 Plus Copilot+ PC.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $640 on select models.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Built for productivity with all-day battery life.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Advanced AI features for work and creativity.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell 14 Plus Copilot+ PC – Save Up to $640" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$30</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell Productivity Software Offer – Save Up to $30</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Boost productivity with genuine software savings.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $30 on eligible productivity software.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for students, professionals and home users.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Compatible with select Dell PCs.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell Productivity Software Offer – Save Up to $30" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 11 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$1,700</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell Gaming Sale – Save Up to $1,700</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Power your gaming setup with Dell gaming deals.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $1,700 on gaming laptops, desktops and accessories.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop Alienware and Dell Gaming products.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium performance for serious gamers.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell Gaming Sale – Save Up to $1,700" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 12 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">UP TO</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$170</div>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dell 15 Laptop Deal – Save Up to $170 | Starting at $629.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the Dell 15 Laptop for just $629.99.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save Up to $170 off the regular price.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Intel processor, Windows 11 and dependable everyday performance.</li>
-                  <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for students and professionals.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Dell deal: Dell 15 Laptop Deal – Save Up to $170 | Starting at $629.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                {DELL_COUPONS.map((coupon) => (
+                  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={cn("font-extrabold leading-none mt-2", coupon.valueFontClass ?? "text-[18px] sm:text-4xl")}>{coupon.mainValue}</div>
+                            {coupon.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>}
+                          </div>
+                        </div>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((pt, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{pt}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                            {coupon.code && (
+                              <button onClick={() => handleCopy(coupon)} className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#e8f6f8] transition-colors">
+                                <span className="font-mono">{coupon.code}</span>
+                                <Copy className="w-4 h-4 shrink-0" />
+                              </button>
+                            )}
+                            <a
+                              href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get Dell deal: ${coupon.title}`}
+                              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
 
@@ -1075,8 +514,8 @@ export default function DellCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -1099,117 +538,117 @@ export default function DellCouponsContent() {
 </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
         <section className="py-24 bg-[#f5f5f5]">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
+
       {/* Left: Text Content */}
       <div className="prose max-w-none text-justify">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Dell Coupon Codes, Promo Codes & Computer Deals
+          Dell Discount Codes, Promo Codes & Computer Deals
         </h2>
 
         <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Back to School Sale</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $750 OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Students get extra 10% OFF sitewide</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops, Desktops, Monitors & Accessories</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell XPS 13 Student Offer</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">From $599</td>
-                <td className="p-5 text-gray-500 align-middle">Verified students</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Regular price from $699</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Student & Teacher Discount</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save 10% Sitewide</td>
-                <td className="p-5 text-gray-500 align-middle">Verified students & teachers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Applies to eligible Dell products</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops, Desktops, Monitors & Accessories</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell XPS 16 Laptop</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,100 OFF (from $2,799.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K OLED touchscreen, Intel Core Ultra, RTX graphics</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 14 Laptop</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $581 OFF (from $799.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Intel processor, 1TB SSD</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Alienware Area-51 Gaming Desktop</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $970 OFF (from $5,729.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 9, RTX 5090</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Desktops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Alienware 27" QD-OLED Gaming Monitor</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $150 OFF (from $399.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">280Hz refresh rate, 0.03ms response, G-SYNC</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Monitors</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Business PC Sale</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $700 OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Select business laptops & desktops</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Business Laptops & Desktops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 14 Plus Copilot+ PC</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $640 OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">All-day battery, advanced AI features</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Productivity Software Offer</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $30 OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Compatible with select Dell PCs</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Productivity Software</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Gaming Sale</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,700 OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Alienware & Dell Gaming products</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Gaming Laptops, Desktops & Accessories</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell 15 Laptop Deal</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to $170 OFF (from $629.99)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">Intel processor, Windows 11</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Laptops</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <table className="w-full text-left border-collapse min-w-[850px]">
+    <thead>
+      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-600 font-bold text-[14px]">
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Discount Code – Up to $750 Off Back to School Sale</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $750 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Students & teachers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Limited-time back-to-school savings on laptops & accessories</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible Dell Products</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Discount Code – XPS 13 Student Offer</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $599</td>
+        <td className="p-5 text-gray-500 align-middle">Eligible students</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Top performance in a lightweight, portable design</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell XPS 13</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Promo Code – 10% Off Student & Teacher Discount</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">10% OFF</td>
+        <td className="p-5 text-gray-500 align-middle">Eligible students & teachers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Sitewide education savings on laptops & accessories</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible Dell Purchases</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Promo Code – Up to $1,100 Off XPS 16</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,100 OFF (From $2,799.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Premium performance built for creative & heavy workloads</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell XPS 16</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Voucher Code – Up to $581 Off Dell 14 Laptop</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $581 OFF (From $799.99)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Steady performance for daily tasks, home & study</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell 14 Laptop</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Voucher Code – Up to $970 Off Alienware Area-51</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $970 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-performance gaming desktop for demanding titles</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Alienware Area-51 Desktop</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Coupon Code – Up to $150 Off Alienware 27" Monitor</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $150 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">QD-OLED panel with vivid visuals and smooth response</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Alienware 27" QD-OLED Gaming Monitor</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Coupon Code – Up to $700 Off Business PCs</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $700 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Dependable office systems for business productivity</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell Business PCs</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Referral Code – Up to $640 Off Dell 14 Plus Copilot+ PC</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $640 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Built-in AI features for faster, smarter daily productivity</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell 14 Plus Copilot+ PC</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Referral Code – Up to $30 Off Productivity Software</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $30 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Genuine productivity software bundle with device purchase</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Eligible Productivity Software</td>
+      </tr>
+      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Offer – Up to $1,700 Off Gaming PCs</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">Up to $1,700 OFF</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-performance gaming laptops, desktops & accessories</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Select Dell Gaming Products</td>
+      </tr>
+      <tr className="hover:bg-gray-50/50 transition-colors">
+        <td className="p-5 text-black font-black align-middle max-w-[220px]">Dell Deal – Dell 15 Laptop Everyday Deal</td>
+        <td className="p-5 text-[#056BFA] font-black align-middle">From $629.99 (Save up to $170)</td>
+        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Dependable everyday computing for work, study & entertainment</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Dell 15 Laptop</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <h3 className="text-xl font-black text-[#056bfa] mb-4">Upgrade Your Technology for Less with Dell Coupon Codes</h3>
@@ -1287,7 +726,7 @@ export default function DellCouponsContent() {
           )}
         </div>
 
-        <button 
+        <button
           onClick={() => setIsReadMore(!isReadMore)}
           className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
@@ -1306,14 +745,14 @@ export default function DellCouponsContent() {
             { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover verified coupon codes, promo offers, and discounts from trusted brands worldwide." }
           ].map((faq, i) => (
             <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
+              <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
               >
                 <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                <span className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all inline-flex", openFaq === i && "bg-[#056bfa] rotate-180")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                </div>
+                </span>
               </button>
               <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
                 <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
@@ -1342,14 +781,14 @@ export default function DellCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Dell Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {DELL_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">D</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Dell deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://www.anrdoezrs.net/click-100938140-15735549?sid=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Dell deal: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1359,7 +798,7 @@ export default function DellCouponsContent() {
   </div>
 </section>
 
-        
+
       </main>
 
       <Footer />

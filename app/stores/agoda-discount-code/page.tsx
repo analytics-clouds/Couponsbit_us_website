@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AgodaCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { AGODA_COUPONS } from "./_components/offers";
+
+const TITLE = "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026";
+const DESCRIPTION =
+  "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/agoda-discount-code",
@@ -23,9 +27,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/agoda-discount-code",
-    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
-    description:
-      "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN", "en_PK"],
@@ -41,9 +44,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
-    description:
-      "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782892785/agoda-coupon-code_abuhau.jpg"],
     site: "@couponsbit",
   },
@@ -56,6 +58,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const agodaSchema = {
@@ -65,13 +69,12 @@ const agodaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/agoda-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/agoda-discount-code",
-      name: "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026",
-      description:
-        "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -84,18 +87,17 @@ const agodaSchema = {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/agoda-discount-code#offerlist",
       name: "Agoda Coupon Codes & Promo Codes",
-      description:
-        "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.",
+      description: DESCRIPTION,
       url: "https://www.couponsbit.us/stores/agoda-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: AGODA_COUPONS.length,
+      itemListElement: AGODA_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.description,
-          url: "https://www.couponsbit.us/stores/agoda-discount-code",
+          name: c.title,
+          description: c.description,
+          url: `https://www.couponsbit.us/stores/agoda-discount-code#${c.id}`,
           seller: { "@type": "Organization", name: "Agoda", url: "https://www.agoda.com" },
         },
       })),
@@ -130,6 +132,13 @@ const agodaSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/agoda-discount-code#brand",
+      name: "Agoda",
+      url: "https://www.agoda.com",
     },
 
     {
@@ -223,7 +232,9 @@ export default function AgodaStorePage() {
           __html: JSON.stringify(agodaSchema),
         }}
       />
-      <AgodaCouponsContent />
+      <Suspense fallback={null}>
+        <AgodaCouponsContent />
+      </Suspense>
     </>
   );
 }
