@@ -1,58 +1,43 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
   CheckCircle,
-  X,User, Smile, Dog,Palette, PartyPopper,
-  ArrowRight,
+  X,
+  User,
+  Smile,
+  Dog,
+  Palette,
+  PartyPopper,
   Plane,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
-  Zap
+  Code,
+  LayoutGrid,
+  ShoppingBag,
+  Sparkles,
+  Zap,
+  Copy,
+  ChevronDown,
+  Laptop,
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { SPIRIT_HALLOWEEN_COUPONS, Coupon } from "./offers";
 
 // --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
-
 interface StoreItem {
   name: string;
   logo: string;
@@ -61,69 +46,6 @@ interface StoreItem {
 }
 
 // --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "75%",
-    label: "SAVE",
-    title: "Lil Skelly Bones Collectible Statue – SAVE 75%",
-    heading: "75% OFF",
-    sub: "Lil Skelly Bones Collectible Statue",
-    description: "Grab the Lil Skelly Bones Collectible Statue for just $9.97 (Regular Price $39.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "SPIRIT1"
-  },
-  {
-    id: "c2",
-    discount: "72%",
-    label: "SAVE",
-    title: "Killer Cornfield Garage Double Door Cover – SAVE 72%",
-    heading: "72% OFF",
-    sub: "Killer Cornfield Garage Double Door Cover",
-    description: "Get the Killer Cornfield Garage Double Door Cover for only $49.97 (Regular Price $179.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "SPIRIT2"
-  },
-  {
-    id: "c3",
-    discount: "50%",
-    label: "SAVE",
-    title: "21-Inch LED Black Jumping Spider Animatronic – SAVE 50%",
-    heading: "50% OFF",
-    sub: "21-Inch LED Black Jumping Spider Animatronic",
-    description: "Buy the 21-Inch LED Black Jumping Spider Animatronic for just $49.99 (Regular Price $99.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "SPIRIT3"
-  },
-  {
-    id: "c4",
-    discount: "66%",
-    label: "SAVE",
-    title: "Beetlejuice \"My Art Is Dangerous\" Sign – SAVE 66%",
-    heading: "66% OFF",
-    sub: "Beetlejuice \"My Art Is Dangerous\" Sign",
-    description: "Save 66% OFF on officially inspired Halloween décor.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "SPIRIT4"
-  },
-  {
-    id: "c5",
-    discount: "60%",
-    label: "SAVE",
-    title: "Trick 'r Treat Lollipop Crossbody Bag – SAVE 60%",
-    heading: "60% OFF",
-    sub: "Trick 'r Treat Lollipop Crossbody Bag",
-    description: "Grab the Trick 'r Treat Lollipop Crossbody Bag for just $9.97 (Regular Price $24.99).",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "SPIRIT5"
-  }
-];
-
 const RELATED_STORES: StoreItem[] = [
   { name: "Stubhub", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/stubhub-coupon-code_fplhay.webp", dealText: "Flat 10% OFF", href: "/stores/stubhub-discount-code" },
   { name: "Viagogo", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775923/viagogo-coupon-code_t65aol.webp", dealText: "Starting at $332", href: "/stores/viagogo-discount-code" },
@@ -134,15 +56,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function SpiritHalloweenCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -152,22 +73,53 @@ export default function SpiritHalloweenCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {/* Copy / Get Deal Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 w-9 h-9 bg-[#f5f5f5] hover:bg-[#f0f0f0] rounded-full flex items-center justify-center transition-colors">
+              <X className="w-4 h-4 text-gray-600" />
+            </button>
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-[#e8f6f8] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-[#056bfa]" />
+              </div>
+              <h3 className="text-black font-black text-xl mb-2">Your Deal Is Ready!</h3>
+              <p className="text-gray-500 font-bold text-sm">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between gap-3 mb-6">
+                <span className="font-black text-black text-lg tracking-widest font-mono">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white px-4 py-2 rounded-xl font-black text-sm flex items-center gap-1.5 hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-3.5 h-3.5" /> Copy
+                </button>
+              </div>
+            ) : (
+              <div className="bg-[#f0fdf4] border border-green-200 rounded-2xl p-4 text-center mb-6">
+                <p className="text-green-700 font-black text-sm">No code needed — discount applied automatically.</p>
+              </div>
+            )}
+            <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="block w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-center py-4 rounded-2xl transition-colors">
+              Visit Spirit Halloween →
+            </a>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -336,376 +288,47 @@ export default function SpiritHalloweenCouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">75%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Lil Skelly Bones Collectible Statue – SAVE 75%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Grab the Lil Skelly Bones Collectible Statue for just $9.97 (Regular Price $39.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for haunted house displays and seasonal decorations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Spooky Halloween collectible</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-Time Deal – add festive fright to your Halloween collection</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: Lil Skelly Bones Collectible Statue SAVE 75%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">72%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Killer Cornfield Garage Double Door Cover – SAVE 72%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the Killer Cornfield Garage Double Door Cover for only $49.97 (Regular Price $179.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Oversized Halloween outdoor décor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Create the ultimate haunted house entrance with terrifying graphics</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for Halloween parties and spooky home displays</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: Killer Cornfield Garage Double Door Cover SAVE 72%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">50%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">21-Inch LED Black Jumping Spider Animatronic – SAVE 50%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Buy the 21-Inch LED Black Jumping Spider Animatronic for just $49.99 (Regular Price $99.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>One of Spirit Halloween's bestselling animatronics</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features creepy movement and glowing LED effects</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A must-have decoration for haunted houses and Halloween events</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: 21-Inch LED Black Jumping Spider Animatronic SAVE 50%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">66%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Beetlejuice "My Art Is Dangerous" Sign – SAVE 66%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Save 66% OFF on officially inspired Halloween décor.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for Beetlejuice fans and spooky room decorations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited stock available while supplies last</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: Beetlejuice My Art Is Dangerous Sign SAVE 66%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">60%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Trick 'r Treat Lollipop Crossbody Bag – SAVE 60%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Grab the Trick 'r Treat Lollipop Crossbody Bag for just $9.97 (Regular Price $24.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Collectible Halloween accessory</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Lightweight, stylish and perfect for Halloween events</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great for cosplay, parties and everyday spooky fashion</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: Trick r Treat Lollipop Crossbody Bag SAVE 60%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">36%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Realistic Halloween animatronic</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features frightening motion and creepy seasonal effects</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect centerpiece for haunted house decorations</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: 4 Ft 6 In Scary Sitting Scarecrow Animatronic SAVE 36%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$299.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">3 Ft Bog Monster Animatronic</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Bring home the 3 Ft Bog Monster Animatronic for just $299.99.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Create an unforgettable haunted house experience with lifelike effects</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed with premium details for maximum Halloween scares</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A perfect addition to any horror-themed display</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: 3 Ft Bog Monster Animatronic" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">32%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">10 Ft Wolfie Animatronic – SAVE 32%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Own the giant 10 Ft Wolfie Animatronic for only $249.98 (Regular Price $369.99).</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>One of Spirit Halloween's largest decorations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Towering design with animated effects for maximum impact</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for haunted attractions and outdoor Halloween displays</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: 10 Ft Wolfie Animatronic SAVE 32%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SHIPPING</p>
-          <h2 className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">FREE</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">SHIPPING</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Free Shipping Offer</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy FREE Shipping on all orders over $40.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Orders under $40 ship for just $5</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop Halloween costumes, animatronics, décor and collectibles</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-Time Shipping Offer – save more on your spooky shopping</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Spirit Halloween deal: Free Shipping Offer" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+                {SPIRIT_HALLOWEEN_COUPONS.map((coupon) => (
+                  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={cn("font-extrabold leading-none mt-2", coupon.valueFontClass ?? "text-[24px] sm:text-5xl")}>{coupon.mainValue}</div>
+                            {coupon.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>}
+                          </div>
+                        </div>
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((pt, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{pt}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <button onClick={() => handleCopy(coupon)} aria-label={`Get Spirit Halloween deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
 
@@ -1123,14 +746,14 @@ export default function SpiritHalloweenCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Spirit Halloween Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {SPIRIT_HALLOWEEN_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">S</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Spirit Halloween deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href="https://track.flexlinkspro.com/g.ashx?foid=156052.8099.332421&trid=1514792.161081&foc=16&fot=9999&fos=6&fobs=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Spirit Halloween deal: ${coupon.topLabel} ${coupon.mainValue}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SpiritHalloweenCouponsContent from "./_components/StoreCouponsContent";
+import { SPIRIT_HALLOWEEN_COUPONS } from "./_components/offers";
+
+const TITLE = " Spirit halloweens Promo Code - 36 % off Code | November 2026";
+const DESCRIPTION = "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | November 2026";
 
 export const metadata: Metadata = {
   title: {
-    absolute: " Spirit halloweens Promo Code - 36 % off Code | November 2026",
+    absolute: TITLE,
   },
-  description:
-    "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | November 2026",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-    title: " Spirit halloweens Promo Code - 36 % off Code | November 2026",
-    description:
-      "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | November 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: " Spirit halloweens Promo Code - 36 % off Code | November 2026",
-    description:
-      "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | November 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699426/spirti-logo_x4nbor.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +55,11 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -68,8 +75,8 @@ const spiritHalloweenSchema = {
         "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99) | November 2026",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,144 +92,22 @@ const spiritHalloweenSchema = {
       description:
         "Latest verified Spirit Halloween coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Lil Skelly Bones Collectible Statue – SAVE 75%",
-            description: "Grab the Lil Skelly Bones Collectible Statue for just $9.97 (Regular Price $39.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
+      numberOfItems: SPIRIT_HALLOWEEN_COUPONS.length,
+      itemListElement: SPIRIT_HALLOWEEN_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Spirit Halloween",
+            url: "https://www.spirithalloween.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Killer Cornfield Garage Double Door Cover – SAVE 72%",
-            description: "Get the Killer Cornfield Garage Double Door Cover for only $49.97 (Regular Price $179.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "21-Inch LED Black Jumping Spider Animatronic – SAVE 50%",
-            description: "Buy the 21-Inch LED Black Jumping Spider Animatronic for just $49.99 (Regular Price $99.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Beetlejuice \"My Art Is Dangerous\" Sign – SAVE 66%",
-            description: "Save 66% OFF on officially inspired Halloween décor.",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Trick 'r Treat Lollipop Crossbody Bag – SAVE 60%",
-            description: "Grab the Trick 'r Treat Lollipop Crossbody Bag for just $9.97 (Regular Price $24.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "4 Ft 6 In Scary Sitting Scarecrow Animatronic – SAVE 36%",
-            description: "Get the 4 Ft 6 In Scary Sitting Scarecrow Animatronic for only $119.99 (Regular Price $189.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "3 Ft Bog Monster Animatronic",
-            description: "Bring home the 3 Ft Bog Monster Animatronic for just $299.99.",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "10 Ft Wolfie Animatronic – SAVE 32%",
-            description: "Own the giant 10 Ft Wolfie Animatronic for only $249.98 (Regular Price $369.99).",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Free Shipping Offer",
-            description: "Enjoy FREE Shipping on all orders over $40.",
-            url: "https://www.couponsbit.us/stores/spirit-halloween-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Spirit Halloween",
-              url: "https://www.spirithalloween.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -254,6 +139,13 @@ const spiritHalloweenSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/spirit-halloween-discount-code#brand",
+      name: "Spirit Halloween",
+      url: "https://www.spirithalloween.com",
     },
 
     {
@@ -347,7 +239,9 @@ export default function SpiritHalloweenStorePage() {
           __html: JSON.stringify(spiritHalloweenSchema),
         }}
       />
-      <SpiritHalloweenCouponsContent />
+      <Suspense fallback={null}>
+        <SpiritHalloweenCouponsContent />
+      </Suspense>
     </>
   );
 }

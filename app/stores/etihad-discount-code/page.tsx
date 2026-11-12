@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { ETIHAD_COUPONS } from "./_components/offers";
 import EtihadCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels";
+const DESCRIPTION = "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/etihad-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/etihad-discount-code",
-    title: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
-    description:
-      "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
-    description:
-      "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784970/etihad-logo_lbl7mo.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const etihadSchema = {
@@ -63,13 +71,12 @@ const etihadSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/etihad-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/etihad-discount-code",
-      name: "Etihad Airways Discount Code | Up to 30% OFF + 25% OFF Hotels",
-      description:
-        "Get the latest Etihad Airways Discount Code and Etihad Airways Voucher to save up to 30% on flights, 25% OFF hotels, and enjoy fares from $522.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,114 +92,22 @@ const etihadSchema = {
       description:
         "Latest verified Etihad coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/etihad-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Global Sale – SAVE UP TO 20%",
-            description: "Save UP TO 20% on international flight bookings during the Global Sale.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
+      numberOfItems: ETIHAD_COUPONS.length,
+      itemListElement: ETIHAD_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/etihad-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Etihad Airways",
+            url: "https://www.etihad.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Málaga Round Trip – Fares From $522",
-            description: "Fly round-trip to Málaga from just $522.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Business Class Sale – SAVE UP TO 30%",
-            description: "Save UP TO 30% on Business Class fares from the USA.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Europe Hotel Sale – SAVE 25%",
-            description: "Enjoy 25% OFF on selected hotel stays across Europe.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Economy Fare Sale – Fares From $769",
-            description: "Fly internationally with Economy fares starting from just $769.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Student Offer – SAVE UP TO 10%",
-            description: "Students receive UP TO 10% OFF Economy Class fares.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Early Bird Sale – SAVE UP TO 15%",
-            description: "Book early and save UP TO 15% on selected flights.",
-            url: "https://www.couponsbit.us/stores/etihad-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Etihad",
-              url: "https://www.etihad.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -224,6 +139,13 @@ const etihadSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/etihad-discount-code#brand",
+      name: "Etihad Airways",
+      url: "https://www.etihad.com",
     },
 
     {
@@ -317,7 +239,9 @@ export default function EtihadStorePage() {
           __html: JSON.stringify(etihadSchema),
         }}
       />
-      <EtihadCouponsContent />
+      <Suspense fallback={null}>
+        <EtihadCouponsContent />
+      </Suspense>
     </>
   );
 }

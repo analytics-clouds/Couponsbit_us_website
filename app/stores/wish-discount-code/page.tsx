@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { WISH_COUPONS } from "./_components/offers";
 import WishCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Wish Promo Code: Save Up to 67% on Trending Products | Nov 2026";
+const DESCRIPTION = "Save with the latest Wish promo code and discount code. Get up to 67% off the Flower Bee Fidget Ring and 60% off Daily Deals this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/wish-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/wish-discount-code",
-    title: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
-    description:
-      "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
-    description:
-      "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784707355/wish-logo_n1dypa.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const wishSchema = {
@@ -63,13 +71,12 @@ const wishSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/wish-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/wish-discount-code",
-      name: "Wish Discount Code | Save Up to 67% OFF on Trending Products",
-      description:
-        "Find the latest Wish Discount Code and Wish Voucher to save up to 67% OFF on electronics, fashion, beauty, pet essentials, and home products.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,159 +92,22 @@ const wishSchema = {
       description:
         "Latest verified Wish.com coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/wish-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Daily Deals Hub – UP TO 60% OFF",
-            description: "Discover thousands of trending products with UP TO 60% OFF every day.",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
+      numberOfItems: WISH_COUPONS.length,
+      itemListElement: WISH_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/wish-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Wish.com",
+            url: "https://www.wish.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Flower Bee Fidget Anxiety Ring – SAVE 67%",
-            description: "Buy the Flower Bee Fidget Anxiety Ring for just $0.79 (Regular Price $2.40).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Self-Warming Pet Bed – SAVE UP TO 43%",
-            description: "Get the Self-Warming Pet Bed for only $7.29 (Regular Price $12.03).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Wish – USB-C PD 60W Fast Charging Cable – SAVE 44%",
-            description: "Shop the USB-C PD 60W Fast Charging Cable for just $3.57 (Regular Price $6.42).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Outdoor Cooling Raised Dog Bed – SAVE 44%",
-            description: "Buy the Breathable Raised Dog Bed for only $36.23 (Regular Price $64.94).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Waterproof Scooter Handlebar Bag – SAVE UP TO 40%",
-            description: "Get the Waterproof Scooter Front Hanging Bag for just $12.75 (Regular Price $21.31).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Wish – DIY Rhinestone Nail Art Stones – Deals Under $5",
-            description: "Shop DIY Rhinestone Nail Art Stones for only $3.12.",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Voice Activated Recorder – SAVE UP TO 22%",
-            description: "Buy the Voice Activated Recorder with MP3 Playback for just $17.35 (Regular Price $22.43).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Reinforced Cloth Headwear Storage Organizer – SAVE 21%",
-            description: "Get the Reinforced Cloth Headwear Storage Organizer for only $34.66 (Regular Price $44.15).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Wish – Progressive Multifocal Reading Glasses – SAVE 29%",
-            description: "Buy Progressive Multifocal Reading Glasses for just $5.42 (Regular Price $7.65).",
-            url: "https://www.couponsbit.us/stores/wish-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wish.com",
-              url: "https://www.wish.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -269,6 +139,13 @@ const wishSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/wish-discount-code#brand",
+      name: "Wish.com",
+      url: "https://www.wish.com",
     },
 
     {
@@ -362,7 +239,9 @@ export default function WishStorePage() {
           __html: JSON.stringify(wishSchema),
         }}
       />
-      <WishCouponsContent />
+      <Suspense fallback={null}>
+        <WishCouponsContent />
+      </Suspense>
     </>
   );
 }

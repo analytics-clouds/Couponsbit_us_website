@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { FIREFLYZ_COUPONS } from "./_components/offers";
 import FireflyzCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Firefly Promo Code: 60% OFF Baggage + Extra 5% OFF | Nov 2026";
+const DESCRIPTION = "Save with the latest Firefly Promo code and Firefly discount code. Get up to 60% OFF extra baggage plus an extra 5% OFF Summer Travel flights this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Fireflyz Discount Code and Fireflyz Voucher to save up to 60% on flights, extra baggage, student fares, hotel rewards, and travel offers.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/fireflyz-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-    title: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
-    description:
-      "Get the latest Fireflyz Discount Code and Fireflyz Voucher to save up to 60% on flights, extra baggage, student fares, hotel rewards, and travel offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
-    description:
-      "Get the latest Fireflyz Discount Code and Fireflyz Voucher to save up to 60% on flights, extra baggage, student fares, hotel rewards, and travel offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/firefly-logo_ju6n0p.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const fireflyzSchema = {
@@ -63,13 +71,12 @@ const fireflyzSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/fireflyz-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-      name: "Fireflyz Discount Code | Save Up to 60% on Flight Deals",
-      description:
-        "Get the latest Fireflyz Discount Code and Fireflyz Voucher to save up to 60% on flights, extra baggage, student fares, hotel rewards, and travel offers.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,114 +92,22 @@ const fireflyzSchema = {
       description:
         "Latest verified Fireflyz coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Pre-Book Extra Baggage – SAVE UP TO 60%",
-            description: "Save UP TO 60% when you pre-book extra baggage online.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
+      numberOfItems: FIREFLYZ_COUPONS.length,
+      itemListElement: FIREFLYZ_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Fireflyz",
+            url: "https://www.fireflyz.com.my",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Student Travel Offer – UP TO 30% OFF Flights",
-            description: "Students can enjoy UP TO 30% OFF on selected domestic and international flights.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Book Now, Pay Later – SAVE 10%",
-            description: "Save 10% OFF when you book your flight using eligible Buy Now, Pay Later payment options.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "One-Way Fares From $29",
-            description: "Fly across popular U.S. destinations from just $29 one-way.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Hotel Rewards – Save 3,500 Reward Points",
-            description: "Redeem 3,500 Reward Points on eligible hotel bookings.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Rewards Bonus – Earn 10% Extra Reward Points",
-            description: "Convert eligible bank reward points and earn an extra 10% Bonus Points.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Summer Travel Sale – Extra 5% OFF + 2X Reward Points",
-            description: "Get an Extra 5% OFF on eligible U.S. flight bookings.",
-            url: "https://www.couponsbit.us/stores/fireflyz-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Fireflyz",
-              url: "https://www.fireflyz.com.my",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -224,6 +139,13 @@ const fireflyzSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/fireflyz-discount-code#brand",
+      name: "Fireflyz",
+      url: "https://www.fireflyz.com.my",
     },
 
     {
@@ -317,7 +239,9 @@ export default function FireflyzStorePage() {
           __html: JSON.stringify(fireflyzSchema),
         }}
       />
-      <FireflyzCouponsContent />
+      <Suspense fallback={null}>
+        <FireflyzCouponsContent />
+      </Suspense>
     </>
   );
 }

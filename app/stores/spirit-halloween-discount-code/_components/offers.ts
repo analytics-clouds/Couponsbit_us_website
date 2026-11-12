@@ -1,0 +1,180 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  valueFontClass?: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
+}
+
+export const SPIRIT_HALLOWEEN_COUPONS: Coupon[] = [
+  {
+    id: "sh1",
+    topLabel: "SAVE",
+    mainValue: "75%",
+    offText: "OFF",
+    title: "Spirit Halloween Discount Code – 75% Off on Lil Skelly Bones Statue",
+    description: "Pick up the Lil Skelly Bones Collectible Statue for just $9.97.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 75% and pay only $9.97 instead of $39.99.",
+      "Add a spooky collectible to your Halloween decor.",
+      "A fun display piece for Halloween fans.",
+      "Great for decorating your home or office.",
+    ],
+  },
+  {
+    id: "sh2",
+    topLabel: "SAVE",
+    mainValue: "72%",
+    offText: "OFF",
+    title: "Spirit Halloween Discount Code – 72% Off on Killer Cornfield Garage Cover",
+    description: "Give your garage a creepy makeover with this Halloween decoration.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 72% on the Killer Cornfield Garage Double Door Cover.",
+      "Get it for only $49.97, down from $179.99.",
+      "Fits standard double garage doors.",
+      "Perfect for haunted house displays and Halloween parties.",
+    ],
+  },
+  {
+    id: "sh3",
+    topLabel: "SAVE",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "Spirit Halloween Promo Code – 50% Off on LED Jumping Spider",
+    description: "Give your guests a fright with this animated Halloween spider.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 50% on the 21-Inch LED Black Jumping Spider Animatronic.",
+      "Get it for just $49.99 instead of $99.99.",
+      "Has LED lights and animated movement.",
+      "Great for indoor and outdoor Halloween displays.",
+    ],
+  },
+  {
+    id: "sh4",
+    topLabel: "SAVE",
+    mainValue: "66%",
+    offText: "OFF",
+    title: "Spirit Halloween Promo Code – 66% Off on Beetlejuice Sign",
+    description: "Dress up your space with this Beetlejuice-inspired Halloween sign.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 66% on the \"My Art Is Dangerous\" sign.",
+      "Inspired by the popular Beetlejuice theme.",
+      "Adds a spooky touch to your Halloween decor.",
+      "Perfect for collectors and movie fans.",
+    ],
+  },
+  {
+    id: "sh5",
+    topLabel: "SAVE",
+    mainValue: "60%",
+    offText: "OFF",
+    title: "Spirit Halloween Voucher Code – 60% Off on Trick 'r Treat Bag",
+    description: "Carry your Halloween must-haves for less.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 60% on the Trick 'r Treat Lollipop Crossbody Bag.",
+      "Get it for only $9.97 instead of $24.99.",
+      "Light and easy to carry.",
+      "Great for Halloween events and costume parties.",
+    ],
+  },
+  {
+    id: "sh6",
+    topLabel: "SAVE",
+    mainValue: "36%",
+    offText: "OFF",
+    title: "Spirit Halloween Voucher Code – 36% Off on Scarecrow Animatronic",
+    description: "Bring your Halloween display to life with a creepy scarecrow.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 36% on the 4 Ft 6 In Scary Sitting Scarecrow Animatronic.",
+      "Available for only $119.99.",
+      "Has animated effects for extra scares.",
+      "Perfect for haunted houses and yard displays.",
+    ],
+  },
+  {
+    id: "sh7",
+    topLabel: "ONLY",
+    mainValue: "$299.99",
+    offText: "",
+    title: "Spirit Halloween Coupon Code – 3 Ft Bog Monster for $299.99",
+    description: "Add a terrifying monster to your Halloween collection.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the 3 Ft Bog Monster Animatronic for $299.99.",
+      "Has a detailed monster-inspired design.",
+      "Makes a standout Halloween decoration.",
+      "Great for serious Halloween collectors.",
+    ],
+  },
+  {
+    id: "sh8",
+    topLabel: "SAVE",
+    mainValue: "32%",
+    offText: "OFF",
+    title: "Spirit Halloween Coupon Code – 32% Off on 10 Ft Wolfie Animatronic",
+    description: "Make a big impression with the giant Wolfie Animatronic.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 32% on the 10 Ft Wolfie Animatronic.",
+      "Get it for only $249.98 instead of $369.99.",
+      "Stands 10 feet tall for a dramatic display.",
+      "Ideal for large Halloween setups and events.",
+    ],
+  },
+  {
+    id: "sh9",
+    topLabel: "FREE",
+    mainValue: "SHIPPING",
+    offText: "",
+    valueFontClass: "text-3xl",
+    title: "Spirit Halloween Referral Code – Free Shipping on Orders Over $40",
+    description: "Get free shipping when your order totals more than $40.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get free shipping on eligible orders over $40.",
+      "Save more on Halloween decorations and costumes.",
+      "No extra shipping charges on qualifying purchases.",
+      "Great for stocking up on Halloween essentials.",
+    ],
+  },
+];

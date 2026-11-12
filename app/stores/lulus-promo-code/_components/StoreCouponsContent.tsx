@@ -26,11 +26,14 @@ import {
   Shirt,
   Sparkles,
   ShoppingBag,
+  Copy,
+  X,
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { LULUS_COUPONS, Coupon } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -53,12 +56,58 @@ const STORE_URL = "https://www.amazon.com/s?k=lulus&rh=p_123%3A383075%2Cp_6%3AA2
 export default function LulusCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {/* Copy Modal */}
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative bg-white rounded-[32px] shadow-2xl p-8 max-w-sm w-full z-10" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100">
+              <X className="w-5 h-5 text-gray-500" />
+            </button>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#f0fdf4] rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-[#22c55e]" />
+              </div>
+              <h3 className="text-black font-black text-xl mb-2">{activeModalCoupon.title}</h3>
+              {activeModalCoupon.code ? (
+                <>
+                  <p className="text-gray-500 font-bold text-sm mb-4">Your code is ready. Copy it below:</p>
+                  <div className="bg-[#f5f5f5] rounded-2xl p-4 mb-6 flex items-center justify-between gap-3">
+                    <span className="text-black font-black text-lg font-mono tracking-widest">{activeModalCoupon.code}</span>
+                    <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon!.code); setToastCode(activeModalCoupon!.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white px-4 py-2 rounded-xl font-black text-sm flex items-center gap-1.5 hover:bg-[#005f91] transition-colors">
+                      <Copy className="w-4 h-4" /> Copy
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <p className="text-gray-500 font-bold text-sm mb-6">No code needed. Click below to visit the store.</p>
+              )}
+              <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="block w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-base py-3.5 rounded-2xl transition-colors text-center">
+                Visit Store <ExternalLink className="w-4 h-4 inline ml-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -111,7 +160,7 @@ export default function LulusCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Explore the latest Lulus Discount Code offers and verified Lulus promo Code deals. Get Buy 2 Get 1 FREE with code BUY2GET1, save 80% on the Trendsetting Flirt Bustier Top for $5, or enjoy 50% OFF the Alaia Satin Midi Dress. Shop verified fashion deals and refresh your wardrobe for less.
+                      Save more on your next fashion haul with the latest Lulus discount code. Enjoy up to 80% off on select dresses, tops, shorts, swimwear, and other trendy styles, with prices starting as low as $5. You can also take advantage of the Buy 2, Get 1 Free offer on eligible items to maximize your savings. Whether you're shopping for everyday outfits, party dresses, or vacation essentials, Lulus makes it easy to refresh your wardrobe while spending less.
                     </p>
                     <a
                       href={STORE_URL}
@@ -187,27 +236,17 @@ export default function LulusCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Lulus Promo Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "DEAL", value: "BUY 2 GET 1", title: "Lulus Promo Code – Buy 2 Eligible Items & Get 1 Free", desc: "Buy 2 eligible items and get 1 item FREE with the Lulus offer.", bullets: ["Use promo code BUY2GET1 to unlock the free-item deal.", "Shop the Lulus sale for women’s dresses, tops, bottoms, and more in the USA."] },
-                  { label: "SALE", value: "80%+ OFF", title: "Lulus Promo Code – Trendsetting Flirt Bustier Top 80% OFF+", desc: "Get the Trendsetting Flirt Light Blue Crinkled Strapless Bustier Bow Top for just $5, reduced from $25.", bullets: ["Save 80%+ on this stylish women’s fashion pick.", "Use available Lulus promo offers to save more on eligible USA orders."] },
-                  { label: "SALE", value: "70% OFF", title: "Lulus Promo Code – Mulvaney Burgundy Micro Shorts 70% OFF", desc: "Get the Mulvaney Burgundy Tweed Textured Micro Shorts for just $10, reduced from $49.", bullets: ["Save 70% on this trendsetting fashion style.", "Shop Lulus sale items and explore additional savings on eligible USA orders."] },
-                  { label: "ONLY", value: "$10", title: "Lulus Promo Code – Parker Black & White Bikini Bottoms for $10", desc: "Get the Parker Black and White High-Waisted Bikini Bottoms for just $10, reduced from $35.", bullets: ["Enjoy major savings on this stylish swimwear pick.", "Shop Lulus for more women’s fashion and sale styles in the USA."] },
-                  { label: "ONLY", value: "$35", title: "Lulus Sakira Navy Bustier Mini Dress – Under $40", desc: "Get the Sakira Navy Mesh Sequin Lace-Up Bustier Mini Dress for $35, reduced from $59.", bullets: ["Save on this statement mini dress from the Lulus sale collection.", "Use promo code BUY2GET1 to get 1 FREE eligible item when you buy 2."] },
-                  { label: "ONLY", value: "$35", title: "Lulus Glittery Beauty Purple Sequin Mini Dress – $35", desc: "Get the Glittery Beauty Purple Sequin One-Shoulder Mini Dress for $35, reduced from $59.", bullets: ["Add a stylish sequin dress to your wardrobe at a discounted price.", "Shop Lulus Archive Sale styles and discover more USA fashion deals."] },
-                  { label: "ONLY", value: "$47.20", title: "Lulus Sultry Intentions Mini Dress – Save on $47.20 Price", desc: "Get the Sultry Intentions Black Strapless Ruffled Mini Dress for $47.20, reduced from $59.", bullets: ["Save on this elegant strapless mini dress from Lulus.", "Use code DEALS20 to unlock the listed discounted price."] },
-                  { label: "SALE", value: "50% OFF", title: "Lulus Alaia Satin Midi Dress – 50% OFF", desc: "Get the Alaia Chartreuse Satin Backless Midi Dress for $34, reduced from $68.", bullets: ["Save 50% on this stylish satin midi dress.", "Shop Lulus sale fashion for more discounted dresses and women’s styles in the USA."] },
-                  { label: "SALE", value: "20% OFF", title: "Lulus Illustrious Glow Sequin Mini Dress – Save 20%", desc: "Get the Illustrious Glow Black Sheer Tulle Sequin Tiered Mini Dress for $71.20, reduced from $89.", bullets: ["Save 20% on this glamorous sequin mini dress.", "Explore Lulus sale styles for more women’s fashion deals in the USA."] },
-                  { label: "SALE", value: "74%+ OFF", title: "Lulus Nasia Burgundy Crop Top – Save 74%+", desc: "Get the Nasia Burgundy Strapless Cutout Crop Top for just $10, reduced from $39.", bullets: ["Save 74%+ on this stylish strapless crop top.", "Shop Lulus sale items for more affordable women’s fashion in the USA."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {LULUS_COUPONS.map((coupon) => (
+                  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className={`font-extrabold leading-none mt-2 ${coupon.valueFontClass ?? "text-[15px] sm:text-4xl"}`}>{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -216,22 +255,22 @@ export default function LulusCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Lulus: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button onClick={() => handleCopy(coupon)} aria-label={`Shop Lulus: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                           </div>
                         </div>
                       </div>

@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { VEGAS_COUPONS } from "./_components/offers";
 import VegasCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Vegas.com Promo Code: Up to 35% Off | Nov 2026";
+const DESCRIPTION = "Save with the latest Vegas.com promo code and discount code. Get up to 35% off Flamingo Las Vegas and 30% off Cirque du Soleil tickets this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Vegas Discount Code and Vegas Voucher to save up to 35% OFF hotels, Cirque du Soleil tickets, Grand Canyon tours, and top Las Vegas attractions.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/vegas-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/vegas-discount-code",
-    title: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
-    description:
-      "Find the latest Vegas Discount Code and Vegas Voucher to save up to 35% OFF hotels, Cirque du Soleil tickets, Grand Canyon tours, and top Las Vegas attractions.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
-    description:
-      "Find the latest Vegas Discount Code and Vegas Voucher to save up to 35% OFF hotels, Cirque du Soleil tickets, Grand Canyon tours, and top Las Vegas attractions.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784707355/vegas-logo_sifnax.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const vegasSchema = {
@@ -63,13 +71,12 @@ const vegasSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/vegas-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/vegas-discount-code",
-      name: "Vegas Discount Code | Save Up to 35% OFF Hotels & Shows",
-      description:
-        "Find the latest Vegas Discount Code and Vegas Voucher to save up to 35% OFF hotels, Cirque du Soleil tickets, Grand Canyon tours, and top Las Vegas attractions.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,99 +92,22 @@ const vegasSchema = {
       description:
         "Latest verified Vegas.com coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/vegas-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Flamingo Las Vegas Hotel – SAVE UP TO 35%",
-            description: "Book your stay at Flamingo Las Vegas from just $49 per night (Approx. $118 Total).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
+      numberOfItems: VEGAS_COUPONS.length,
+      itemListElement: VEGAS_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/vegas-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Vegas.com",
+            url: "https://www.vegas.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Cirque du Soleil Tickets – SAVE UP TO 30%",
-            description: "Book Cirque du Soleil tickets from just $162 (Regular Price $232).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Grand Canyon West Rim Bus Tour – SAVE 9%",
-            description: "Book the Grand Canyon West Rim & Hoover Dam Bus Tour from just $146 (Regular Price $160).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Michael Jackson ONE by Cirque du Soleil – SAVE UP TO 19%",
-            description: "Get Michael Jackson ONE tickets from only $126 (Regular Price $156).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Paris Las Vegas Hotel – SAVE 17%",
-            description: "Stay at Paris Las Vegas from just $40 per night (Approx. $190 Total).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Titanic: The Artifact Exhibition – SAVE 18%",
-            description: "Get Titanic: The Artifact Exhibition tickets from just $36 (Regular Price $44).",
-            url: "https://www.couponsbit.us/stores/vegas-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Vegas.com",
-              url: "https://www.vegas.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -209,6 +139,13 @@ const vegasSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/vegas-discount-code#brand",
+      name: "Vegas.com",
+      url: "https://www.vegas.com",
     },
 
     {
@@ -302,7 +239,9 @@ export default function VegasStorePage() {
           __html: JSON.stringify(vegasSchema),
         }}
       />
-      <VegasCouponsContent />
+      <Suspense fallback={null}>
+        <VegasCouponsContent />
+      </Suspense>
     </>
   );
 }

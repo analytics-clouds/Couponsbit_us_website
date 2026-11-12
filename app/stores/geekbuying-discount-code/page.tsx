@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { GEEKBUYING_COUPONS } from "./_components/offers";
 import GeekbuyingCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Geekbuying Promo Code: Up to 56% Off | Nov 2026";
+const DESCRIPTION = "Save up to 56% with the latest Geekbuying promo code and discount code. Get 40% off charging stations, scooters, laser engravers, and more this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/geekbuying-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
-    description:
-      "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
-    description:
-      "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784707355/geekbuying-logo_pnkeev.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const geekbuyingSchema = {
@@ -63,13 +71,12 @@ const geekbuyingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/geekbuying-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-      name: "Geekbuying Discount Code – Get 56% OFF Tech Deals Nov 2026",
-      description:
-        "Save more with the latest Geekbuying Discount Code and Geekbuying Promo Code. Enjoy 56% OFF DJI Mic Mini and 40% OFF charging stations.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,129 +92,22 @@ const geekbuyingSchema = {
       description:
         "Latest verified Geekbuying coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Refurbished DJI Mic Mini Wireless Microphone – SAVE 56%",
-            description: "Get the Refurbished DJI Mic Mini Wireless Lavalier Microphone for just $79.00 (Regular Price $179.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
+      numberOfItems: GEEKBUYING_COUPONS.length,
+      itemListElement: GEEKBUYING_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Geekbuying",
+            url: "https://www.geekbuying.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "DJI Mic Mini Transmitter – Flash Deal, SAVE 53%",
-            description: "Buy the Refurbished DJI Mic Mini Transmitter for only $26.00 (Regular Price $54.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Joyor S5-Z Electric Scooter – US Stock",
-            description: "Get the Joyor S5-Z Electric Scooter for just $592.27 (Regular Price $682.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "ZIKE Z1810 100W GaN Charging Station – SAVE 40%",
-            description: "Grab the ZIKE Z1810 100W GaN 4-Port Desktop Charging Station for only $59.99 (Regular Price $99.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Joyor S10-S-Z Electric Scooter – US Stock",
-            description: "Buy the Joyor S10-S-Z Electric Scooter for just $885.61 (Regular Price $1,027.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Geekbuying Deal Of The Day – SAVE 40%",
-            description: "Shop today's Deal Of The Day for only $59.99 (Regular Price $99.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "LONGER Laser B1 30W Laser Engraver – SAVE 46%",
-            description: "Get the LONGER Laser B1 30W Laser Engraver for just $749.00 (Regular Price $1,399.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "MESWAO B1 Android Tablet – SAVE 18%",
-            description: "Buy the MESWAO B1 14.1-inch Android Tablet for only $229.00 (Regular Price $279.99).",
-            url: "https://www.couponsbit.us/stores/geekbuying-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Geekbuying",
-              url: "https://www.geekbuying.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -239,6 +139,13 @@ const geekbuyingSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/geekbuying-discount-code#brand",
+      name: "Geekbuying",
+      url: "https://www.geekbuying.com",
     },
 
     {
@@ -332,7 +239,9 @@ export default function GeekbuyingStorePage() {
           __html: JSON.stringify(geekbuyingSchema),
         }}
       />
-      <GeekbuyingCouponsContent />
+      <Suspense fallback={null}>
+        <GeekbuyingCouponsContent />
+      </Suspense>
     </>
   );
 }

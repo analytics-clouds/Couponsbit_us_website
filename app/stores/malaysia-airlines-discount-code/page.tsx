@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { MALAYSIA_AIRLINES_COUPONS } from "./_components/offers";
 import MalaysiaAirlinesCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Malaysia Airlines Promo Code: Up to 35% Off Flights + 5% Extra | Nov 2026";
+const DESCRIPTION = "Save with the latest Malaysia Airlines promo code and discount code. Get up to 35% off international flights and an extra 5% off select routes this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-    title: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
-    description:
-      "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
-    description:
-      "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/malaysia-logo_xso2cj.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const malaysiaAirlinesSchema = {
@@ -63,13 +71,12 @@ const malaysiaAirlinesSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/malaysia-airlines-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-      name: "Malaysia Airlines Discount Code | Up to 35% OFF + Extra 5% OFF",
-      description:
-        "Get the latest Malaysia Airlines Discount Code and Malaysia Airlines Voucher to save up to 35% OFF, earn 2X Enrich Points, and book flights from $399.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,99 +92,22 @@ const malaysiaAirlinesSchema = {
       description:
         "Latest verified Malaysia Airlines coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Bonus Rewards – Extra 5% OFF + 2X Enrich Points",
-            description: "Enjoy an Extra 5% OFF on selected international flight bookings.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
+      numberOfItems: MALAYSIA_AIRLINES_COUPONS.length,
+      itemListElement: MALAYSIA_AIRLINES_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Malaysia Airlines",
+            url: "https://www.malaysiaairlines.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Malaysia Airlines – SAVE UP TO 35% On Flights",
-            description: "Save UP TO 35% OFF on selected USA international flight bookings.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Online Specials – SAVE UP TO 15%",
-            description: "Save UP TO 15% OFF when you book flights online.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Flight Sale – Fares From $399",
-            description: "Fly from the USA to Kuala Lumpur from just $399 one-way.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Website Exclusive – SAVE UP TO 10%",
-            description: "Save UP TO 10% OFF on selected flights booked through the Malaysia Airlines website or app.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Online Payment Offer – SAVE UP TO 15%",
-            description: "Pay online and enjoy UP TO 15% OFF on eligible flight bookings.",
-            url: "https://www.couponsbit.us/stores/malaysia-airlines-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Malaysia Airlines",
-              url: "https://www.malaysiaairlines.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -209,6 +139,13 @@ const malaysiaAirlinesSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/malaysia-airlines-discount-code#brand",
+      name: "Malaysia Airlines",
+      url: "https://www.malaysiaairlines.com",
     },
 
     {
@@ -302,7 +239,9 @@ export default function MalaysiaAirlinesStorePage() {
           __html: JSON.stringify(malaysiaAirlinesSchema),
         }}
       />
-      <MalaysiaAirlinesCouponsContent />
+      <Suspense fallback={null}>
+        <MalaysiaAirlinesCouponsContent />
+      </Suspense>
     </>
   );
 }

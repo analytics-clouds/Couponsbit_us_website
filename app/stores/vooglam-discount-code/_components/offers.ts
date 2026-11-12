@@ -1,0 +1,181 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  valueFontClass?: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
+}
+
+export const VOOGLAM_COUPONS: Coupon[] = [
+  {
+    id: "vo1",
+    topLabel: "ONLY",
+    mainValue: "$108.50",
+    offText: "",
+    title: "Vooglam Discount Code – Razor Rectangle Black Sunglasses for $108.50",
+    description: "Shop the new Razor Rectangle Black Sunglasses for just $108.50.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Razor Rectangle Black Sunglasses for only $108.50.",
+      "Has a modern rectangular frame design.",
+      "A stylish pick for everyday wear.",
+      "Perfect for fans of fashion-forward eyewear.",
+    ],
+  },
+  {
+    id: "vo2",
+    topLabel: "SALE",
+    mainValue: "20% OFF",
+    offText: "",
+    valueFontClass: "text-[14px] sm:text-3xl",
+    title: "Vooglam Discount Code – 20% Off on Charisse Eyeglasses",
+    description: "Save 20% on the stylish Charisse Eyeglasses for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save 20% and pay only $36 instead of $45.",
+      "Has a fashionable everyday frame.",
+      "Light and comfortable to wear.",
+      "Great for work, school, or daily use.",
+    ],
+  },
+  {
+    id: "vo3",
+    topLabel: "ONLY",
+    mainValue: "$65",
+    offText: "",
+    title: "Vooglam Promo Code – Ando Aviator Eyeglasses for $65",
+    description: "Get the classic Ando Aviator Eyeglasses for only $65.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy the Ando Aviator Eyeglasses for just $65.",
+      "Classic aviator frame with a timeless look.",
+      "Comfortable for everyday wear.",
+      "A great pick for modern eyewear fans.",
+    ],
+  },
+  {
+    id: "vo4",
+    topLabel: "ONLY",
+    mainValue: "$65",
+    offText: "",
+    title: "Vooglam Promo Code – Loos Geometric Eyeglasses for $65",
+    description: "Update your look with the Loos Geometric Silver Eyeglasses.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Loos Geometric Silver Eyeglasses for only $65.",
+      "Has a modern geometric frame.",
+      "Made for comfort and everyday style.",
+      "Perfect for work or casual wear.",
+    ],
+  },
+  {
+    id: "vo5",
+    topLabel: "ONLY",
+    mainValue: "$65",
+    offText: "",
+    title: "Vooglam Voucher Code – Scarpa Rectangle Eyeglasses for $65",
+    description: "Shop the new Scarpa Rectangle Silver Eyeglasses at a great price.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy the Scarpa Rectangle Silver Eyeglasses for just $65.",
+      "Has a sleek rectangular frame.",
+      "Lightweight for comfortable daily wear.",
+      "Great for professional and casual looks.",
+    ],
+  },
+  {
+    id: "vo6",
+    topLabel: "ONLY",
+    mainValue: "$100",
+    offText: "",
+    title: "Vooglam Voucher Code – Ando Aviator Sunglasses for $100",
+    description: "Get the new Ando Aviator Silver Sunglasses for only $100.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Ando Aviator Silver Sunglasses for $100.",
+      "Stylish aviator design with UV protection.",
+      "Perfect for everyday outdoor wear.",
+      "A great addition to your eyewear collection.",
+    ],
+  },
+  {
+    id: "vo7",
+    topLabel: "ONLY",
+    mainValue: "$65",
+    offText: "",
+    title: "Vooglam Coupon Code – Meridian Square Eyeglasses for $65",
+    description: "Shop the Meridian Square Tortoise Eyeglasses for just $65.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy the Meridian Square Tortoise Eyeglasses for only $65.",
+      "Part of the popular Nomads Collection.",
+      "Has a classic square frame design.",
+      "Ideal for everyday comfort and style.",
+    ],
+  },
+  {
+    id: "vo8",
+    topLabel: "GET",
+    mainValue: "20 TINTS",
+    offText: "",
+    valueFontClass: "text-[14px] sm:text-3xl",
+    title: "Vooglam Coupon Code – Customize with 20 Lens Tints",
+    description: "Make your glasses your own with 20 stylish color tint options.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Pick from 20 unique lens tint colors.",
+      "Customize your eyewear to match your style.",
+      "Available on compatible Vooglam frames.",
+      "Great for creating a personalized look.",
+    ],
+  },
+  {
+    id: "vo9",
+    topLabel: "ONLY",
+    mainValue: "$85",
+    offText: "",
+    title: "Vooglam Referral Code – Pierce Eyeglasses for $85",
+    description: "Get the bestselling Pierce Eyeglasses for only $85.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy the Pierce Eyeglasses for just $85.",
+      "One of Vooglam's bestselling frame styles.",
+      "Made for comfort and everyday use.",
+      "Perfect for anyone who wants a stylish everyday frame.",
+    ],
+  },
+];
