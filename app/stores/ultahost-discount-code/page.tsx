@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import UltahostCouponsContent from "./_components/StoreCouponsContent";
+import { ULTAHOST_COUPONS } from "./_components/offers";
+
+const TITLE = "UltaHost Promo Code: Up to 62% Off Hosting Plans | Nov 2026";
+const DESCRIPTION =
+  "Grab the latest UltaHost promo codes & discount codes for November 2026 and save up to 62% on hosting plans starting from just $2/month.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/ultahost-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-    title: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
-    description:
-      "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
-    description:
-      "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/ultahost-logo_zsnpu7.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +57,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
+
+const storeOffers = ULTAHOST_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: "https://www.couponsbit.us/stores/ultahost-discount-code",
+    seller: {
+      "@type": "Organization",
+      name: "UltaHost",
+      url: "https://ultahost.com",
+    },
+  },
+}));
 
 const ultahostSchema = {
   "@context": "https://schema.org",
@@ -63,13 +88,11 @@ const ultahostSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/ultahost-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-      name: "UltaHost Discount Code | Save Up to 62% OFF Hosting Plans",
-      description:
-        "Get the latest UltaHost Discount Code and UltaHost Voucher to save up to 62% OFF game, VPS, shared, Windows, and dedicated hosting plans.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,135 +102,24 @@ const ultahostSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/ultahost-discount-code#brand",
+      name: "UltaHost",
+      url: "https://ultahost.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/ultahost-logo_zsnpu7.webp",
+      },
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/ultahost-discount-code#offerlist",
       name: "UltaHost Coupon Codes & Promo Codes",
-      description:
-        "Latest verified UltaHost coupon codes, promo codes and discount codes.",
+      description: "Latest verified UltaHost coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Game Hosting – SAVE UP TO 62%",
-            description: "Host your favorite games from only $2.00/month (Regular Price $5.30/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Windows Hosting – SAVE 45%",
-            description: "Get Windows Hosting from just $13.99/month (Regular Price $25.50/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Flash Sale – All Hosting Services",
-            description: "Get UP TO 40% OFF on UltaHost hosting plans starting from just $3.29/month.",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Power Plus VPS Hosting – SAVE 40%",
-            description: "Get the Power Plus VPS plan for only $32.80/month (Regular Price $54.80/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "VPS Basic Hosting – SAVE 40%",
-            description: "Start with VPS Basic for just $4.80/month (Regular Price $7.99/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Ulta-X1 Dedicated Server – SAVE 20%",
-            description: "Get the Ulta-X1 Dedicated Server for only $74.80/month (Regular Price $93.50/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Shared Starter Hosting – SAVE 40%",
-            description: "Launch your website for only $3.80/month (Regular Price $5.99/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Mac Hosting – SAVE 40%",
-            description: "Get premium Mac Hosting from just $16.50/month (Regular Price $27.50/month).",
-            url: "https://www.couponsbit.us/stores/ultahost-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "UltaHost",
-              url: "https://ultahost.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: ULTAHOST_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -332,7 +244,9 @@ export default function UltahostStorePage() {
           __html: JSON.stringify(ultahostSchema),
         }}
       />
-      <UltahostCouponsContent />
+      <Suspense fallback={null}>
+        <UltahostCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import McafeeCouponsContent from "./_components/StoreCouponsContent";
+import { MCAFEE_COUPONS } from "./_components/offers";
+
+const TITLE = "McAfee Discount Code: Up to 75% Off | Nov 2026";
+const DESCRIPTION =
+  "Save up to 75% with the latest McAfee discount code. Get verified deals on Total Protection, antivirus, identity protection, and online security this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/mcafee-discount-code",
@@ -19,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-    title: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
-    description:
-      "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
-    description:
-      "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp"],
     site: "@couponsbit",
   },
@@ -51,7 +54,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
+
+const storeOffers = MCAFEE_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: "https://www.couponsbit.us/stores/mcafee-discount-code",
+    seller: {
+      "@type": "Organization",
+      name: "McAfee",
+      url: "https://www.mcafee.com",
+    },
+  },
+}));
 
 const mcafeeSchema = {
   "@context": "https://schema.org",
@@ -60,18 +85,27 @@ const mcafeeSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/mcafee-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-      name: "McAfee Discount Code : Save Up to 75% OFF + Get $225 OFF | Sept 2026",
-      description:
-        "Save with the latest McAfee Discount Code, voucher & promo code. Enjoy UP TO 75% OFF and save up to $225 on McAfee Total Protection, Family & Advanced Plans.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/mcafee-discount-code#breadcrumb",
+      },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/mcafee-discount-code#brand",
+      name: "McAfee",
+      url: "https://www.mcafee.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/mcafree-logo_fy86ap.webp",
       },
     },
 
@@ -82,129 +116,8 @@ const mcafeeSchema = {
       description:
         "Latest verified McAfee coupon codes, promo codes and discount codes for antivirus, VPN, and identity protection plans.",
       url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Total Protection – Up To 75% OFF",
-            description: "Get McAfee Total Protection for as low as $24.99 (regular price $99.99) and protect up to 5 devices.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Total Protection Plan – Flat 66% OFF",
-            description: "Save flat 66% off the McAfee Total Protection Plan, starting from just $49.99.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Advanced Plan – Save $110",
-            description: "Get the McAfee Advanced Plan from only $89.99/year and save $110 on premium security and privacy protection.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Individual Ultimate Plan – Save $80",
-            description: "Subscribe to the Individual Ultimate Plan from just $79.99/year and save $80 on McAfee's most comprehensive personal protection plan.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Family Plan – Up To $225 OFF",
-            description: "Get McAfee Family Plans starting from only $69.99/year and save up to $225 off.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Back-To-School Sale – Extra 10% OFF",
-            description: "Save an extra 10% off eligible McAfee subscriptions for students and families.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Premium Antivirus – Starting From $24.99",
-            description: "Secure your devices with McAfee Premium Antivirus starting at just $24.99.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "McAfee Multi-Device Security – Protect Unlimited Devices",
-            description: "Secure unlimited compatible devices with McAfee Multi-Device Security plans starting from $69.99/year.",
-            url: "https://www.couponsbit.us/stores/mcafee-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "McAfee",
-              url: "https://www.mcafee.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: MCAFEE_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -329,7 +242,9 @@ export default function McafeeStorePage() {
           __html: JSON.stringify(mcafeeSchema),
         }}
       />
-      <McafeeCouponsContent />
+      <Suspense fallback={null}>
+        <McafeeCouponsContent />
+      </Suspense>
     </>
   );
 }

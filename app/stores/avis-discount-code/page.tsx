@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AvisCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { AVIS_COUPONS } from "./_components/offers";
+
+const TITLE = "Avis Discount Code: Up to 40% Off + 35% Off Rentals | Nov 2026";
+const DESCRIPTION =
+  "Save up to 40% with the latest Avis discount code. Get up to 35% off eligible rentals, plus verified car rental deals and exclusive offers this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/avis-discount-code",
@@ -20,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/avis-discount-code",
-    title: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
-    description:
-      "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
-    description:
-      "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp"],
     site: "@couponsbit",
   },
@@ -52,7 +54,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
+
+const storeOffers = AVIS_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: "https://www.couponsbit.us/stores/avis-discount-code",
+    seller: {
+      "@type": "Organization",
+      name: "Avis",
+      url: "https://www.avis.com",
+    },
+  },
+}));
 
 const avisSchema = {
   "@context": "https://schema.org",
@@ -61,13 +85,11 @@ const avisSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/avis-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/avis-discount-code",
-      name: "Avis Discount Code : Save Up to 20% OFF Car Rental Deals | Sept 2026",
-      description:
-        "Save with the latest Avis Discount Code and Avis Voucher. Get UP TO 20% OFF on eligible car rentals, exclusive Drive Gold savings, and member-only travel deals.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -77,24 +99,24 @@ const avisSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/avis-discount-code#brand",
+      name: "Avis",
+      url: "https://www.avis.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1784618848/avis-logo_sbg9y8.webp",
+      },
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/avis-discount-code#offerlist",
       name: "Avis Coupon Codes & Promo Codes",
-      description:
-        "Latest verified Avis coupon codes, promo codes and discount codes for car rentals.",
+      description: "Latest verified Avis coupon codes, promo codes and discount codes for car rentals.",
       url: "https://www.couponsbit.us/stores/avis-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        item: {
-          "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/avis-discount-code",
-          seller: { "@type": "Organization", name: "Avis", url: "https://www.avis.com" },
-        },
-      })),
+      numberOfItems: AVIS_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -219,7 +241,9 @@ export default function AvisStorePage() {
           __html: JSON.stringify(avisSchema),
         }}
       />
-      <AvisCouponsContent />
+      <Suspense fallback={null}>
+        <AvisCouponsContent />
+      </Suspense>
     </>
   );
 }

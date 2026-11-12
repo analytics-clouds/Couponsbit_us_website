@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BeelinkCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BEELINK_COUPONS } from "./_components/offers";
+
+const TITLE = "Beelink Discount Code: $450 Off + 35% Off PCs | Nov 2026";
+const DESCRIPTION =
+  "Save $450 with the latest Beelink discount code. Get up to 35% off Mini PCs, AI computers, and NAS systems with verified deals and offers this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Beelink Discount Code – Save $450 & Up to 35% OFF Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use the latest Beelink Discount Code and Beelink promo Code to save $450 on the GTR9 Pro or get up to 35% OFF the ME Mini NAS PC. Shop now.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/beelink-discount-code",
@@ -24,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/beelink-discount-code",
-    title: "Beelink Discount Code – Save $450 & Up to 35% OFF Sept 2026",
+    title: TITLE,
     description:
       "Find the latest Beelink discount codes and deals for Nov 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
     siteName: "Couponsbit",
@@ -42,7 +46,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Beelink Discount Code – Save $450 & Up to 35% OFF Sept 2026",
+    title: TITLE,
     description:
       "Find the latest Beelink discount codes and deals for Nov 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1783494081/beelink-coupon-code_gephnd.jpg"],
@@ -57,7 +61,23 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const storeOffers = BEELINK_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Beelink ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/beelink-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: {
+    "@type": "Organization",
+    name: "Beelink",
+    url: "https://www.bee-link.com",
+  },
+}));
 
 const beelinkSchema = {
   "@context": "https://schema.org",
@@ -66,13 +86,12 @@ const beelinkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/beelink-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/beelink-discount-code",
-      name: "Beelink Discount Code – Save $450 & Up to 35% OFF Sept 2026",
+      name: TITLE,
       description:
         "Find the latest Beelink discount codes and deals for Nov 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -88,18 +107,19 @@ const beelinkSchema = {
       description:
         "Find the latest Beelink discount codes and deals for Nov 2026. Save $450 on GTR9 Pro AI Mini PC, get up to 35% off ME Mini NAS PC, 30% off SSD upgrades, and more AI Mini PC offers.",
       url: "https://www.couponsbit.us/stores/beelink-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BEELINK_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/beelink-discount-code",
-          seller: { "@type": "Organization", name: "Beelink", url: "https://www.bee-link.com" },
-        },
+        item: offer,
       })),
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/beelink-discount-code#brand",
+      name: "Beelink",
+      url: "https://www.bee-link.com",
     },
 
     {
@@ -224,7 +244,9 @@ export default function BeelinkStorePage() {
           __html: JSON.stringify(beelinkSchema),
         }}
       />
-      <BeelinkCouponsContent />
+      <Suspense fallback={null}>
+        <BeelinkCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -1,59 +1,33 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Copy,
+  ChevronDown,
+  Laptop,
   CheckCircle,
-  X,
-  ArrowRight,
   Plane,
-  Monitor,HardDrive, PlugZap, Layers,
+  Monitor, HardDrive, PlugZap, Layers,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, LayoutGrid, Cpu,
   Zap
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { OFFERS } from "./offers";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, BEELINK_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -61,85 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "60%",
-    label: "UP TO",
-    badge: "Best Offer",
-    title: "Up to 60% OFF on Top Categories",
-    heading: "Beelink ME Mini NAS PC – Up To 35% OFF",
-    sub: "35% OFF",
-    description: "Shop for electronics, fashion, home & more and get up to 60% discount on selected items.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "AMAZON60"
-  },
-  {
-    id: "c2",
-    discount: "50%",
-    label: "FLAT",
-    badge: "Popular",
-    title: "Flat 50% OFF on Electronics",
-    heading: "OpenClaw SSD Upgrade Kit – Up To 30% OFF",
-    sub: "30% OFF",
-    description: "Get flat 50% off on best selling electronics & accessories.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "ELEC50"
-  },
-  {
-    id: "c3",
-    discount: "30%",
-    label: "FLAT",
-    badge: "Trending",
-    title: "Flat 30% OFF on Fashion",
-    heading: "Beelink AI Mini PC Sale – Save Up To 21% OFF",
-    sub: "21% OFF",
-    description: "Save big on clothing, footwear, watches & more.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "FASHION30"
-  },
-  {
-    id: "c4",
-    discount: "10%",
-    label: "EXTRA",
-    title: "Extra 10% OFF on Prepaid Orders",
-    heading: "Beelink EQR7 Mini PC – Up To 21% OFF",
-    sub: "21% OFF",
-    description: "Pay using UPI, Cards, Net Banking & get extra 10% off.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "PREPAID10"
-  },
-  {
-    id: "c5",
-    discount: "FREE",
-    label: "DELIVERY",
-    title: "Free Delivery on First Order",
-    heading: "Beelink SER10 OpenClaw Edition – Up To 21% OFF",
-    sub: "21% OFF",
-    description: "Get FREE delivery on your first order on Beelink.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "FREESHIP"
-  },
-  {
-    id: "c6",
-    discount: "₹200",
-    label: "FLAT",
-    title: "Get ₹200 OFF on Min. Order ₹999",
-    heading: "₹200 OFF",
-    sub: "On Min. Order ₹999",
-    description: "Use code and get flat ₹200 off on minimum order of ₹999.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "SAVE200"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "HP", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782890859/hp-coupon-code_vaogna.webp", dealText: "Up to 69% OFF", href: "/stores/hp-discount-code" },
@@ -151,15 +46,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function BeelinkCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -169,22 +63,54 @@ export default function BeelinkCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
+  const handleCopy = (coupon: Coupon) => {
+    navigator.clipboard.writeText(coupon.code);
+    setToastCode(coupon.code);
     setShowToast(true);
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
     setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {/* Code Copy Modal */}
+      {showModal && activeModalCoupon && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Coupon Code Copied!</h3>
+            <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+              <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+            </div>
+            <a
+              href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              onClick={() => setShowModal(false)}
+              className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors"
+            >
+              Continue to Store →
+            </a>
+            <button
+              onClick={() => setShowModal(false)}
+              className="text-gray-500 font-bold text-sm hover:text-black transition-colors"
+            >
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -239,7 +165,7 @@ export default function BeelinkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover the latest Beelink Discount Code offers and verified Beelink promo Code deals. Save $450 on the GTR9 Pro AI Mini PC, enjoy up to 35% OFF the ME Mini NAS PC, or get up to 30% OFF the OpenClaw SSD Upgrade Kit. Compare today's best offers and maximise your savings on every purchase.
+                      Looking for the latest Beelink discount code? Save $450 on the powerful GTR9 Pro AI Mini PC and enjoy up to 35% off the ME Mini NAS PC. Explore verified deals on AI Mini PCs, compact desktops, OpenClaw editions, SSD upgrade kits, and productivity devices throughout Nov 2026. Whether you're an AI developer, content creator, professional, or home user, Beelink offers high-performance computing solutions at competitive prices with exclusive discounts and limited-time offers.
                     </p>
                     <a
                       href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
@@ -249,7 +175,6 @@ export default function BeelinkCouponsContent() {
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-
                   </div>
                 </div>
 
@@ -261,11 +186,11 @@ export default function BeelinkCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <p className="text-black font-black text-xs leading-none">{stat.val}</p>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -341,51 +266,108 @@ export default function BeelinkCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Beelink Coupon Codes & Offers</h2>
-                  
                 </div>
 
-                
-
-                {OFFERS.map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {BEELINK_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
+
+                        {/* LEFT BADGE */}
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full" />
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">{c.value}</div>
-                            {c.sub && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sub}</p>}
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                              {coupon.topLabel}
+                            </p>
+                            <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">
+                              {coupon.mainValue}
+                            </div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                              {coupon.offText}
+                            </p>
                           </div>
                         </div>
+
+                        {/* CENTER CONTENT */}
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
                           <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+
+                            {/* BADGES */}
                             <div className="flex flex-wrap gap-2 mb-3">
-                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Limited Time
+                              </span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Verified Deal
+                              </span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+
+                            {/* HEADING */}
+                            <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                              {coupon.title}
+                            </h3>
+
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                              {coupon.description}
+                            </p>
+
+                            {/* PER-COUPON ACCORDION TOGGLE */}
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`}
+                              />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+
+                            {/* ACCORDION BODY — independent per coupon */}
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"
+                              }`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
-                                  <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#056bfa]">•</span>
+                                    {point}
+                                  </li>
                                 ))}
                               </ul>
                             </div>
                           </div>
-                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Beelink deal: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+
+                          {/* RIGHT ACTION COLUMN */}
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+
+                            {/* Show code box only when coupon.code is non-empty */}
+                            {coupon.code && (
+                              <button
+                                onClick={() => handleCopy(coupon)}
+                                className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#e8f6f8] transition-colors"
+                              >
+                                <span className="font-mono">{coupon.code}</span>
+                                <Copy className="w-4 h-4 shrink-0" />
+                              </button>
+                            )}
+
+                            <a
+                              href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get deal: ${coupon.title}`}
+                              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -393,9 +375,6 @@ export default function BeelinkCouponsContent() {
                   </div>
                 ))}
 
-              
-
-                
               </div>
 
               {/* Sidebar */}
@@ -425,10 +404,10 @@ export default function BeelinkCouponsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Beelink is a global technology company specializing in compact computing solutions designed for both personal and professional use. While the brand initially became well known for its powerful mini PCs, it has grown into a broader hardware manufacturer offering Network Attached Storage (NAS) systems, modular laptop companions, expand docks, and other innovative desktop solutions.
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Today, Beelink develops products powered by the latest AMD Ryzen™ and Intel® Core™ processors, allowing users to enjoy desktop-class performance in significantly smaller form factors. Whether you're streaming 4K content, editing videos, managing business applications, running virtual machines, or building a home server, Beelink offers hardware designed to meet modern computing demands.
                   </p>
-                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     Its expanding product ecosystem focuses on flexibility, energy efficiency, and performance without sacrificing valuable desk space.
                   </p>
                   <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -438,129 +417,129 @@ export default function BeelinkCouponsContent() {
 
                 {/* Categories Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Laptop, name: "Electronics",        count: "850+", color: "text-blue-500",   href: "/categories/electronics" },
-                        { icon: Plane,  name: "Travel",             count: "420+", color: "text-teal-500",   href: "/categories/travel" },
-                        { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Code,   name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-green-500",  href: "/categories/mobile" }
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Laptop, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: Plane, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                      { icon: Tv, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Code, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Zap, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" }
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 {/* Why Shop Card */}
-              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-2xl mx-auto">
-  <div className="mb-8">
-    <h2 className="text-black font-black text-xl mb-2">What Can You Buy from Beelink?</h2>
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Beelink now offers much more than mini desktop computers. Its growing hardware portfolio includes solutions for work, entertainment, productivity, and home networking.
-    </p>
-  </div>
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-2xl mx-auto">
+                  <div className="mb-8">
+                    <h2 className="text-black font-black text-xl mb-2">What Can You Buy from Beelink?</h2>
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      Beelink now offers much more than mini desktop computers. Its growing hardware portfolio includes solutions for work, entertainment, productivity, and home networking.
+                    </p>
+                  </div>
 
-  <div className="space-y-8">
-    {/* Mini PCs */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Monitor className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Mini PCs</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-3">
-          Mini PCs remain Beelink's flagship products. The lineup ranges from affordable everyday computers like the MINI S series to high-performance workstations such as the SER Series and GTR Series, featuring the latest AMD Ryzen and Intel processors.
-        </p>
-        <div className="bg-gray-50 rounded-xl p-3 border border-[#f5f5f5]">
-          <p className="text-black font-black text-[11px] mb-2">Ideal for:</p>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-gray-500 font-medium text-[11px] list-disc pl-4">
-            <li>Home offices</li>
-            <li>Business productivity</li>
-            <li>Content creation</li>
-            <li>Programming</li>
-            <li>Digital signage</li>
-            <li>Home entertainment</li>
-            <li>AI workloads</li>
-            <li>Everyday computing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+                  <div className="space-y-8">
+                    {/* Mini PCs */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <Monitor className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">Mini PCs</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-3">
+                          Mini PCs remain Beelink's flagship products. The lineup ranges from affordable everyday computers like the MINI S series to high-performance workstations such as the SER Series and GTR Series, featuring the latest AMD Ryzen and Intel processors.
+                        </p>
+                        <div className="bg-gray-50 rounded-xl p-3 border border-[#f5f5f5]">
+                          <p className="text-black font-black text-[11px] mb-2">Ideal for:</p>
+                          <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-gray-500 font-medium text-[11px] list-disc pl-4">
+                            <li>Home offices</li>
+                            <li>Business productivity</li>
+                            <li>Content creation</li>
+                            <li>Programming</li>
+                            <li>Digital signage</li>
+                            <li>Home entertainment</li>
+                            <li>AI workloads</li>
+                            <li>Everyday computing</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
 
-    {/* AI & High-Performance Workstations */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Cpu className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">AI & High-Performance Workstations</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          For creators, developers, engineers, and professionals, Beelink offers premium systems with powerful processors, fast SSD storage, DDR5 memory, and advanced graphics capabilities designed for demanding workflows.
-        </p>
-      </div>
-    </div>
+                    {/* AI & High-Performance Workstations */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <Cpu className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">AI & High-Performance Workstations</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                          For creators, developers, engineers, and professionals, Beelink offers premium systems with powerful processors, fast SSD storage, DDR5 memory, and advanced graphics capabilities designed for demanding workflows.
+                        </p>
+                      </div>
+                    </div>
 
-    {/* Network Attached Storage (NAS) */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <HardDrive className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Network Attached Storage (NAS)</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's NAS solutions allow users to create their own private cloud storage for photos, videos, documents, backups, and media libraries. These compact servers are ideal for households, small businesses, and anyone looking for centralized data storage without recurring cloud subscription fees.
-        </p>
-      </div>
-    </div>
+                    {/* Network Attached Storage (NAS) */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <HardDrive className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">Network Attached Storage (NAS)</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                          Beelink's NAS solutions allow users to create their own private cloud storage for photos, videos, documents, backups, and media libraries. These compact servers are ideal for households, small businesses, and anyone looking for centralized data storage without recurring cloud subscription fees.
+                        </p>
+                      </div>
+                    </div>
 
-    {/* Laptop Companions */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Laptop className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Laptop Companions</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Products like the EX Mate Pro expand laptop functionality by providing additional connectivity, workspace flexibility, and enhanced productivity for professionals on the go.
-        </p>
-      </div>
-    </div>
+                    {/* Laptop Companions */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <Laptop className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">Laptop Companions</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                          Products like the EX Mate Pro expand laptop functionality by providing additional connectivity, workspace flexibility, and enhanced productivity for professionals on the go.
+                        </p>
+                      </div>
+                    </div>
 
-    {/* Expand Docks */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <PlugZap className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Expand Docks</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Beelink's expand docks bridge the gap between mobile devices and desktop workstations by adding multiple ports, display outputs, and connectivity options through a single compact device.
-        </p>
-      </div>
-    </div>
+                    {/* Expand Docks */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <PlugZap className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">Expand Docks</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                          Beelink's expand docks bridge the gap between mobile devices and desktop workstations by adding multiple ports, display outputs, and connectivity options through a single compact device.
+                        </p>
+                      </div>
+                    </div>
 
-    {/* Computer Accessories */}
-    <div className="flex gap-4 items-start">
-      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-        <Layers className="w-5 h-5" />
-      </div>
-      <div>
-        <h3 className="text-black font-black text-sm leading-tight mb-2">Computer Accessories</h3>
-        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-          Depending on the product lineup, customers can also shop for power supplies, mounting brackets, cables, and other accessories that complement Beelink hardware.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+                    {/* Computer Accessories */}
+                    <div className="flex gap-4 items-start">
+                      <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                        <Layers className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="text-black font-black text-sm leading-tight mb-2">Computer Accessories</h3>
+                        <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                          Depending on the product lineup, customers can also shop for power supplies, mounting brackets, cables, and other accessories that complement Beelink hardware.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
               </div>
@@ -575,8 +554,8 @@ export default function BeelinkCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -590,249 +569,258 @@ export default function BeelinkCouponsContent() {
               ))}
             </div>
           </div>
-                  <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <Link href="/stores" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
               <LayoutGrid className="w-4 h-4" />
               View More Stores
             </Link>
           </div>
-</section>
+        </section>
 
         {/* Section 7: SEO Text Section */}
-      
+
 
         <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
-      {/* Left: Text Content */}
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Beelink Coupon Codes, Promo Codes & Mini PC Deals
-        </h2>
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-          <table className="w-full text-left border-collapse min-w-[850px]">
-            <thead>
-              <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-                <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-600 font-bold text-[14px]">
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink GTR9 Pro AI Mini PC</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Save $450 ($4,349)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI Max+ 395, OpenClaw & Local LLM pre-installed</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink ME Mini NAS PC</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 35% OFF (from $329)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">6-slot home storage, Intel N95/N150</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">NAS Systems</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenClaw SSD Upgrade Kit</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 30% OFF (from $189)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-speed SSD, ideal for Local LLM deployments</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Storage Upgrades</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink AI Mini PC Sale</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI & Intel-powered Mini PCs</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink EQR7 Mini PC</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $539)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 7735HS/7735U</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 OpenClaw Edition</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $1,339)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">OpenClaw & Local LLM pre-installed</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
-              </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 MAX AI PC</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 19% OFF (from $1,299)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI 9 HX 470, 32GB/64GB DDR5</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
-              </tr>
-              <tr className="hover:bg-gray-50/50 transition-colors">
-                <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER9 Pro</td>
-                <td className="p-5 text-[#056BFA] font-black align-middle">Up to 18% OFF (from $739)</td>
-                <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 H 255</td>
-                <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+              {/* Left: Text Content */}
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  Beelink Coupon Codes, Promo Codes & Mini PC Deals
+                </h2>
 
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bFA] mb-4">Save More on Powerful Computing with Beelink Coupon Codes</h3>
-          <p>
-            Whether you're building a home office, upgrading your entertainment setup, creating a compact workstation, or exploring AI-ready computing, Beelink delivers innovative hardware that combines performance with space-saving design. Before placing your next order, visit Couponsbit to discover the latest <strong>Beelink coupon codes, Beelink promo codes, and exclusive technology deals</strong> that help you save on <Link href="/stores/hp-discount-code">mini PCs</Link>, NAS systems, docking solutions, and accessories.
-          </p>
-          <p>
-            Known for pushing beyond traditional desktop computers, Beelink has expanded its lineup to include high-performance mini PCs, home storage solutions, modular laptop companions, and productivity accessories for professionals, creators, gamers, and everyday users worldwide.
-          </p>
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-gray-600 font-bold text-[14px]">
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink GTR9 Pro AI Mini PC</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Save $450 ($4,349)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI Max+ 395, OpenClaw & Local LLM pre-installed</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink ME Mini NAS PC</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 35% OFF (from $329)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">6-slot home storage, Intel N95/N150</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">NAS Systems</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OpenClaw SSD Upgrade Kit</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 30% OFF (from $189)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">High-speed SSD, ideal for Local LLM deployments</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Storage Upgrades</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink AI Mini PC Sale</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI & Intel-powered Mini PCs</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink EQR7 Mini PC</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $539)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 7735HS/7735U</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 OpenClaw Edition</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 21% OFF (from $1,339)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">OpenClaw & Local LLM pre-installed</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER10 MAX AI PC</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 19% OFF (from $1,299)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen AI 9 HX 470, 32GB/64GB DDR5</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">AI Mini PCs</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">Beelink SER9 Pro</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">Up to 18% OFF (from $739)</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">AMD Ryzen 7 H 255</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Mini PCs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Choose Beelink?</h3>
-            <p><strong>Compact Yet Powerful:</strong> Beelink's signature mini PCs deliver desktop-level performance while occupying only a fraction of the space required by <Link href="/stores/dell-discount-code" className="text-[#056bfa] hover:underline">traditional tower computers</Link>.</p>
-            <p><strong>Diverse Hardware Ecosystem:</strong> The brand has expanded beyond mini PCs to include NAS devices, docking solutions, modular laptop companions, and productivity accessories, giving customers more ways to build efficient workspaces.</p>
-            <p><strong>Latest AMD & Intel Processors:</strong> Many Beelink systems feature current-generation AMD Ryzen™ and Intel® Core™ processors, delivering fast multitasking, responsive performance, and excellent energy efficiency.</p>
-            <p><strong>Perfect for Home & Business:</strong> Whether you're working remotely, managing a business, editing videos, running multiple displays, or setting up a <Link href="/stores/tplink-promo-code" className="text-[#056bfa] hover:underline">home media server</Link>, Beelink offers solutions for various computing needs.</p>
-            <p><strong>Easy Workspace Setup:</strong> Compact hardware allows users to create clean, organized workspaces without compromising on computing power.</p>
-            <p><strong>Energy-Efficient Design:</strong> Mini PCs typically consume less power than traditional desktop towers, making them a practical option for everyday computing.</p>
-          </div>
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <h3 className="text-xl font-black text-[#056bFA] mb-4">Save More on Powerful Computing with Beelink Coupon Codes</h3>
+                  <p>
+                    Whether you're building a home office, upgrading your entertainment setup, creating a compact workstation, or exploring AI-ready computing, Beelink delivers innovative hardware that combines performance with space-saving design. Before placing your next order, visit Couponsbit to discover the latest <strong>Beelink coupon codes, Beelink promo codes, and exclusive technology deals</strong> that help you save on <Link href="/stores/hp-discount-code">mini PCs</Link>, NAS systems, docking solutions, and accessories.
+                  </p>
+                  <p>
+                    Known for pushing beyond traditional desktop computers, Beelink has expanded its lineup to include high-performance mini PCs, home storage solutions, modular laptop companions, and productivity accessories for professionals, creators, gamers, and everyday users worldwide.
+                  </p>
 
-          {/* How to Use Steps */}
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bFA] mb-8">How to Use a Beelink Coupon Code</h3>
-            <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your Beelink purchase is quick and simple.</p>
-            <div className="space-y-6">
-              {[
-                "Step 1: Visit Couponsbit — Browse the latest Beelink coupon codes and promotional offers.",
-                "Step 2: Select an Offer — Choose the deal that best fits the product you plan to purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Beelink's website.",
-                "Step 4: Shop Your Products — Add your preferred mini PC, NAS system, docking station, or accessories to your cart.",
-                "Step 5: Apply the Coupon — Enter the coupon code during checkout if applicable.",
-                "Step 6: Complete Your Order — Finalize your purchase and enjoy savings on your Beelink hardware."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-sky-100 italic">
-                    {i + 1}
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Choose Beelink?</h3>
+                    <p><strong>Compact Yet Powerful:</strong> Beelink's signature mini PCs deliver desktop-level performance while occupying only a fraction of the space required by <Link href="/stores/dell-discount-code" className="text-[#056bfa] hover:underline">traditional tower computers</Link>.</p>
+                    <p><strong>Diverse Hardware Ecosystem:</strong> The brand has expanded beyond mini PCs to include NAS devices, docking solutions, modular laptop companions, and productivity accessories, giving customers more ways to build efficient workspaces.</p>
+                    <p><strong>Latest AMD & Intel Processors:</strong> Many Beelink systems feature current-generation AMD Ryzen™ and Intel® Core™ processors, delivering fast multitasking, responsive performance, and excellent energy efficiency.</p>
+                    <p><strong>Perfect for Home & Business:</strong> Whether you're working remotely, managing a business, editing videos, running multiple displays, or setting up a <Link href="/stores/tplink-promo-code" className="text-[#056bfa] hover:underline">home media server</Link>, Beelink offers solutions for various computing needs.</p>
+                    <p><strong>Easy Workspace Setup:</strong> Compact hardware allows users to create clean, organized workspaces without compromising on computing power.</p>
+                    <p><strong>Energy-Efficient Design:</strong> Mini PCs typically consume less power than traditional desktop towers, making them a practical option for everyday computing.</p>
                   </div>
-                  <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
+
+                  {/* How to Use Steps */}
+                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-8">How to Use a Beelink Coupon Code</h3>
+                    <p className="text-gray-500 text-sm font-bold -mt-4">Saving on your Beelink purchase is quick and simple.</p>
+                    <div className="space-y-6">
+                      {[
+                        "Step 1: Visit Couponsbit — Browse the latest Beelink coupon codes and promotional offers.",
+                        "Step 2: Select an Offer — Choose the deal that best fits the product you plan to purchase.",
+                        "Step 3: Copy the Coupon Code — Copy the available promo code before visiting Beelink's website.",
+                        "Step 4: Shop Your Products — Add your preferred mini PC, NAS system, docking station, or accessories to your cart.",
+                        "Step 5: Apply the Coupon — Enter the coupon code during checkout if applicable.",
+                        "Step 6: Complete Your Order — Finalize your purchase and enjoy savings on your Beelink hardware."
+                      ].map((step, i) => (
+                        <div key={i} className="flex gap-6 items-start">
+                          <div className="w-10 h-10 shrink-0 bg-[#056bFA] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-sky-100 italic">
+                            {i + 1}
+                          </div>
+                          <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-4">Smart Ways to Save More at Beelink</h3>
+                    <p><strong>Check Couponsbit Before Every Purchase:</strong> Couponsbit regularly updates Beelink coupon codes and promotional offers to help you find current savings.</p>
+                    <p><strong>Shop During Seasonal Sales:</strong> Technology promotions often appear during major shopping events and holiday sales.</p>
+                    <p><strong>Compare Product Series:</strong> Whether you're considering the MINI S, SER, GT, or GTR Series, comparing specifications helps ensure you choose the right system for your workload and budget.</p>
+                    <p><strong>Bundle Your Workspace:</strong> If you're purchasing a mini PC, consider adding compatible accessories or docking solutions to complete your setup.</p>
+                    <p><strong>Subscribe to Brand Updates:</strong> Joining Beelink's newsletter can help you stay informed about product launches, firmware updates, and special promotions.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-4">Who Can Benefit from Beelink?</h3>
+                    <p>Beelink develops compact computing solutions for a wide range of users, including: Remote professionals, Students, Home office users, Software developers, Content creators, Graphic designers, Video editors, Small business owners, IT professionals, Home server enthusiasts, Media center users, Gamers looking for compact systems.</p>
+                    <p>Whether you need an everyday desktop, a powerful workstation, or a personal cloud storage solution, Beelink offers hardware that balances performance, flexibility, and space efficiency.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Use Couponsbit for Beelink Deals?</h3>
+                    <p>Couponsbit helps shoppers discover verified savings on technology, software, travel, fashion, electronics, and lifestyle brands.</p>
+                    <p><strong>Updated Offers:</strong> We regularly update Beelink coupon codes and promotional deals.</p>
+                    <p><strong>Verified Discounts:</strong> Browse coupon codes, limited-time offers, and exclusive savings in one convenient place.</p>
+                    <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
+                    <p><strong>More Than Technology Deals:</strong> In addition to Beelink, Couponsbit features offers from hundreds of global brands across computing, software, travel, home improvement, and <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">online shopping</Link>.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bFA] mb-4">Upgrade Your Workspace While Spending Less</h3>
+                    <p>Whether you're investing in a compact mini PC, building a home server with a NAS device, or expanding your productivity with Beelink's latest hardware, there's never been a better time to upgrade your setup.</p>
+                    <p>Browse the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit today and save more on innovative computing solutions designed for modern work and everyday life.</p>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
                 </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Smart Ways to Save More at Beelink</h3>
-            <p><strong>Check Couponsbit Before Every Purchase:</strong> Couponsbit regularly updates Beelink coupon codes and promotional offers to help you find current savings.</p>
-            <p><strong>Shop During Seasonal Sales:</strong> Technology promotions often appear during major shopping events and holiday sales.</p>
-            <p><strong>Compare Product Series:</strong> Whether you're considering the MINI S, SER, GT, or GTR Series, comparing specifications helps ensure you choose the right system for your workload and budget.</p>
-            <p><strong>Bundle Your Workspace:</strong> If you're purchasing a mini PC, consider adding compatible accessories or docking solutions to complete your setup.</p>
-            <p><strong>Subscribe to Brand Updates:</strong> Joining Beelink's newsletter can help you stay informed about product launches, firmware updates, and special promotions.</p>
-          </div>
+                <button
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#056bFA] font-black text-xs uppercase tracking-widest hover:underline"
+                >
+                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Who Can Benefit from Beelink?</h3>
-            <p>Beelink develops compact computing solutions for a wide range of users, including: Remote professionals, Students, Home office users, Software developers, Content creators, Graphic designers, Video editors, Small business owners, IT professionals, Home server enthusiasts, Media center users, Gamers looking for compact systems.</p>
-            <p>Whether you need an everyday desktop, a powerful workstation, or a personal cloud storage solution, Beelink offers hardware that balances performance, flexibility, and space efficiency.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Why Use Couponsbit for Beelink Deals?</h3>
-            <p>Couponsbit helps shoppers discover verified savings on technology, software, travel, fashion, electronics, and lifestyle brands.</p>
-            <p><strong>Updated Offers:</strong> We regularly update Beelink coupon codes and promotional deals.</p>
-            <p><strong>Verified Discounts:</strong> Browse coupon codes, limited-time offers, and exclusive savings in one convenient place.</p>
-            <p><strong>Completely Free:</strong> Couponsbit is free to use whenever you're looking to save.</p>
-            <p><strong>More Than Technology Deals:</strong> In addition to Beelink, Couponsbit features offers from hundreds of global brands across computing, software, travel, home improvement, and <Link href="/stores/amazon-discount-code" className="text-[#056bfa] hover:underline">online shopping</Link>.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bFA] mb-4">Upgrade Your Workspace While Spending Less</h3>
-            <p>Whether you're investing in a compact mini PC, building a home server with a NAS device, or expanding your productivity with Beelink's latest hardware, there's never been a better time to upgrade your setup.</p>
-            <p>Browse the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit today and save more on innovative computing solutions designed for modern work and everyday life.</p>
-          </div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button 
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#056bFA] font-black text-xs uppercase tracking-widest hover:underline"
-        >
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* FAQs Accordion */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-          {[
-            { q: "What is Beelink?", a: "Beelink is a global technology brand that manufactures mini PCs, AI-ready workstations, Network Attached Storage (NAS) systems, laptop companions, docking stations, and other compact computing solutions." },
-            { q: "Is Beelink only known for mini PCs?", a: "No. While mini PCs remain its flagship products, Beelink has expanded its product lineup to include NAS servers, modular laptop companions like the EX Mate Pro, expand docks, and other hardware designed to improve productivity and connectivity." },
-            { q: "What can I use a Beelink mini PC for?", a: "Beelink mini PCs are suitable for office work, home entertainment, programming, media streaming, content creation, business applications, software development, digital signage, virtualization, and everyday computing." },
-            { q: "Does Beelink sell NAS devices?", a: "Yes. Beelink offers compact NAS solutions that allow users to create private cloud storage, manage backups, and centralize files for home or business use." },
-            { q: "Where can I find Beelink coupon codes?", a: "You can find the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit." },
-            { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted brands worldwide." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bFA] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                {/* FAQs Accordion */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+                  {[
+                    { q: "What is Beelink?", a: "Beelink is a global technology brand that manufactures mini PCs, AI-ready workstations, Network Attached Storage (NAS) systems, laptop companions, docking stations, and other compact computing solutions." },
+                    { q: "Is Beelink only known for mini PCs?", a: "No. While mini PCs remain its flagship products, Beelink has expanded its product lineup to include NAS servers, modular laptop companions like the EX Mate Pro, expand docks, and other hardware designed to improve productivity and connectivity." },
+                    { q: "What can I use a Beelink mini PC for?", a: "Beelink mini PCs are suitable for office work, home entertainment, programming, media streaming, content creation, business applications, software development, digital signage, virtualization, and everyday computing." },
+                    { q: "Does Beelink sell NAS devices?", a: "Yes. Beelink offers compact NAS solutions that allow users to create private cloud storage, manage backups, and centralize files for home or business use." },
+                    { q: "Where can I find Beelink coupon codes?", a: "You can find the latest Beelink coupon codes, promo codes, and exclusive technology deals on Couponsbit." },
+                    { q: "Is Couponsbit free to use?", a: "Absolutely. Couponsbit is completely free and helps shoppers discover verified coupon codes, promotional offers, and discounts from trusted brands worldwide." }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bFA] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                <div className="bg-[#f0f9ff] rounded-[40px] p-10 border border-[#056bFA]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Beelink Searches</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {["Mini PCs", "SER Series", "GTR Workstation", "Beelink NAS", "Beelink Promo Code", "Expand Docks", "AI Computing", "Compact Desktops"].map(tag => (
+                      <span
+                        key={tag}
+                        className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bFA] uppercase tracking-widest shadow-sm border border-white"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Beelink Deals</h3>
+                  <div className="space-y-6">
+                    {BEELINK_COUPONS.slice(0, 5).map((coupon, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bFA] font-black text-xl italic shadow-inner">B</div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bFA] transition-colors">
+                            {coupon.topLabel} {coupon.mainValue} {coupon.offText}
+                          </p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1 normal-case">{coupon.description}</p>
+                        </div>
+                        <a
+                          href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          className="bg-[#f0f9ff] text-[#056bFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bFA] hover:text-white transition-all active:scale-90"
+                        >
+                          Get Deal
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        <div className="bg-[#f0f9ff] rounded-[40px] p-10 border border-[#056bFA]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Beelink Searches</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["Mini PCs", "SER Series", "GTR Workstation", "Beelink NAS", "Beelink Promo Code", "Expand Docks", "AI Computing", "Compact Desktops"].map(tag => (
-              <span
-                key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bFA] uppercase tracking-widest shadow-sm border border-white"
-              >
-                {tag}
-              </span>
-            ))}
           </div>
-        </div>
+        </section>
 
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Beelink Deals</h3>
-          <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bFA] font-black text-xl italic shadow-inner">B</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bFA] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                </div>
-                <a href="https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Beelink deal: ${deal.heading}`} className="bg-[#f0f9ff] text-[#056bFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bFA] hover:text-white transition-all active:scale-90">Get Deal</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-        
       </main>
 
       <Footer />

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import OmanAirCouponsContent from "./_components/StoreCouponsContent";
+import { OMAN_AIR_COUPONS } from "./_components/offers";
+
+const TITLE = "Oman Air Discount Code: 50% Off + 25% Off | Nov 2026";
+const DESCRIPTION =
+  "Save up to 50% with the latest Oman Air discount code. Get 25% off select flights and book verified airfare deals on domestic and international routes this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
+    absolute: TITLE,
   },
-  description:
-    "Save more with the latest Oman Air Discount Code and Oman Air Voucher. Enjoy up to 50% OFF flight bookings, Flat 25% OFF selected flights, and fares starting from just $149.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/oman-air-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-    title: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
-    description:
-      "Save more with the latest Oman Air Discount Code and Oman Air Voucher. Enjoy up to 50% OFF flight bookings, Flat 25% OFF selected flights, and fares starting from just $149.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
-    description:
-      "Save more with the latest Oman Air Discount Code and Oman Air Voucher. Enjoy up to 50% OFF flight bookings, Flat 25% OFF selected flights, and fares starting from just $149.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/oman-air-logo_ozwu2c.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +57,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
+
+const storeOffers = OMAN_AIR_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: "https://www.couponsbit.us/stores/oman-air-discount-code",
+    seller: {
+      "@type": "Organization",
+      name: "Oman Air",
+      url: "https://www.omanair.com",
+    },
+  },
+}));
 
 const omanAirSchema = {
   "@context": "https://schema.org",
@@ -63,13 +88,11 @@ const omanAirSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/oman-air-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-      name: "Oman Air Discount Code | Get Up to 50% OFF on Flight Deals",
-      description:
-        "Save more with the latest Oman Air Discount Code and Oman Air Voucher. Enjoy up to 50% OFF flight bookings, Flat 25% OFF selected flights, and fares starting from just $149.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,90 +102,24 @@ const omanAirSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/oman-air-discount-code#brand",
+      name: "Oman Air",
+      url: "https://www.omanair.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699425/oman-air-logo_ozwu2c.webp",
+      },
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/oman-air-discount-code#offerlist",
       name: "Oman Air Coupon Codes & Promo Codes",
-      description:
-        "Latest verified Oman Air coupon codes, promo codes and discount codes.",
+      description: "Latest verified Oman Air coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Oman Air Pass Offer – UP TO 50% OFF",
-            description: "Buy the Oman Air Pass and save UP TO 50% OFF on selected flight bookings.",
-            url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oman Air",
-              url: "https://www.omanair.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Dhaka (DAC) To Muscat (MCT) – From $328",
-            description: "Fly from Dhaka to Muscat from just $328 (One-Way Economy).",
-            url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oman Air",
-              url: "https://www.omanair.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Chennai (MAA) To Muscat (MCT) – From $165",
-            description: "Book flights from Chennai to Muscat from just $165 (One-Way Economy).",
-            url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oman Air",
-              url: "https://www.omanair.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Muscat (MCT) To Jakarta (CGK) – From $705",
-            description: "Travel from Muscat to Jakarta from only $705 (One-Way Economy).",
-            url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oman Air",
-              url: "https://www.omanair.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Exclusive Flight Deals – FLAT 25% OFF",
-            description: "Save FLAT 25% OFF on selected Economy and Business Class flights.",
-            url: "https://www.couponsbit.us/stores/oman-air-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oman Air",
-              url: "https://www.omanair.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: OMAN_AIR_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -287,7 +244,9 @@ export default function OmanAirStorePage() {
           __html: JSON.stringify(omanAirSchema),
         }}
       />
-      <OmanAirCouponsContent />
+      <Suspense fallback={null}>
+        <OmanAirCouponsContent />
+      </Suspense>
     </>
   );
 }

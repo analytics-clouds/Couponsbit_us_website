@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import RingconnCouponsContent from "./_components/StoreCouponsContent";
+import { RINGCONN_COUPONS } from "./_components/offers";
+
+const TITLE = "RingConn Promo Code: 20% Off + Gen 2 Air from $199 | Nov 2026";
+const DESCRIPTION =
+  "Save 20% with the latest RingConn promo code. Get the RingConn Gen 2 Air from just $199 and shop verified smart ring deals this Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "RingConn Discount Code | Smart Rings Starting From $199",
+    absolute: TITLE,
   },
-  description:
-    "Save with the latest RingConn Discount Code and RingConn Voucher. Shop smart rings starting from $199, enjoy advanced health tracking, and claim exclusive limited-time offers.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/ringconn-discount-code",
@@ -19,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-    title: "RingConn Discount Code | Smart Rings Starting From $199",
-    description:
-      "Save with the latest RingConn Discount Code and RingConn Voucher. Shop smart rings starting from $199, enjoy advanced health tracking, and claim exclusive limited-time offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "RingConn Discount Code | Smart Rings Starting From $199",
-    description:
-      "Save with the latest RingConn Discount Code and RingConn Voucher. Shop smart rings starting from $199, enjoy advanced health tracking, and claim exclusive limited-time offers.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp"],
     site: "@couponsbit",
   },
@@ -51,7 +54,29 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
+
+const storeOffers = RINGCONN_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: "https://www.couponsbit.us/stores/ringconn-discount-code",
+    seller: {
+      "@type": "Organization",
+      name: "RingConn",
+      url: "https://ringconn.com",
+    },
+  },
+}));
 
 const ringconnSchema = {
   "@context": "https://schema.org",
@@ -60,18 +85,27 @@ const ringconnSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/ringconn-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-      name: "RingConn Discount Code | Smart Rings Starting From $199",
-      description:
-        "Save with the latest RingConn Discount Code and RingConn Voucher. Shop smart rings starting from $199, enjoy advanced health tracking, and claim exclusive limited-time offers.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
       breadcrumb: {
         "@id": "https://www.couponsbit.us/stores/ringconn-discount-code#breadcrumb",
+      },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/ringconn-discount-code#brand",
+      name: "RingConn",
+      url: "https://ringconn.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://res.cloudinary.com/couponsbit/image/upload/v1784618847/ringconn-logo_y95vtu.webp",
       },
     },
 
@@ -82,84 +116,8 @@ const ringconnSchema = {
       description:
         "Latest verified RingConn coupon codes, promo codes and discount codes for smart rings and accessories.",
       url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "RingConn Gen 2 Smart Ring – Starting From $299 USD",
-            description: "Get the RingConn Gen 2 Smart Ring for just $299 USD.",
-            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "RingConn",
-              url: "https://ringconn.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "RingConn Gen 3 Smart Ring – Starting From $349 USD",
-            description: "Buy the all-new RingConn Gen 3 Smart Ring for only $349 USD.",
-            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "RingConn",
-              url: "https://ringconn.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "RingConn Gen 2 Air – Starting From $199 USD",
-            description: "Get the lightweight RingConn Gen 2 Air for just $199 USD.",
-            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "RingConn",
-              url: "https://ringconn.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "RingConn Gen 3 Gift Card – $369 USD",
-            description: "Gift the RingConn Gen 3 with a $369 USD gift card.",
-            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "RingConn",
-              url: "https://ringconn.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "RingConn Charging Dock – Only $39.90 USD",
-            description: "Buy the RingConn Charging Dock for just $39.90 USD.",
-            url: "https://www.couponsbit.us/stores/ringconn-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "RingConn",
-              url: "https://ringconn.com",
-            },
-          },
-        },
-      ],
+      numberOfItems: RINGCONN_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -284,7 +242,9 @@ export default function RingconnStorePage() {
           __html: JSON.stringify(ringconnSchema),
         }}
       />
-      <RingconnCouponsContent />
+      <Suspense fallback={null}>
+        <RingconnCouponsContent />
+      </Suspense>
     </>
   );
 }
