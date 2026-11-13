@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { SUNGAIT_COUPONS } from "./_components/offers";
 import SungaitCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "SUNGAIT Promo Code | 50% OFF + Extra 15% Off with CLOUDS15 | Nov 2026";
+const DESCRIPTION = "Use the latest SUNGAIT promo code and discount code and save up to 50% on Polygon Aviator Sunglasses. Use CLOUDS15 to get an extra 15% off. Verified for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/sungait-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sungait-discount-code",
-    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
-    description:
-      "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
-    description:
-      "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const sungaitSchema = {
@@ -63,13 +71,12 @@ const sungaitSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sungait-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/sungait-discount-code",
-      name: "SUNGAIT Discount Code | 50% OFF + Extra 15% OFF on Sunglasse",
-      description:
-        "Get the latest SUNGAIT Discount Code and SUNGAIT promo code to save 50% OFF, enjoy 15% OFF orders over $55 with code CLOUDS15, and shop stylish sunglasses starting from $14.99.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,175 +92,20 @@ const sungaitSchema = {
       description:
         "Latest verified Sungait coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/sungait-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Vintage Round Sunglasses From $17.99",
-            description: "Shop one of SUNGAIT's best-selling vintage round sunglasses, starting from just $17.99.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
+      numberOfItems: SUNGAIT_COUPONS.length,
+      itemListElement: SUNGAIT_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/sungait-discount-code",
+          seller: { "@type": "Organization", name: "Sungait", url: "https://www.sungait.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Retro Wooden Sunglasses For $37.99",
-            description: "Save $10 on premium retro wooden sunglasses with polarized lens protection.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Night Driving Sunglasses Only $18.99",
-            description: "Designed for night driving and outdoor activities, now only $18.99.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Unisex Square Sunglasses From $17.99",
-            description: "Modern square frame sunglasses for men and women, from just $17.99.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Save 10% On Orders Over $35",
-            description: "Get an extra 10% OFF when you spend over $35 at SUNGAIT.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Save 15% On Orders Over $55",
-            description: "Enjoy 15% OFF on orders above $55 at SUNGAIT.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Real Glass Lens Sunglasses For $37.99",
-            description: "New arrival with premium real glass lenses for crystal-clear vision and UV protection.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Hollow Geometric Aviator Sunglasses For $19.99",
-            description: "Stylish geometric aviator frame with lightweight, UV-protective design.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Polygon Aviator Sunglasses Only $14.99",
-            description: "Fashion-forward polygon aviator design with durable, premium UV protection — now only $14.99.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Join & Get 5% OFF Your First Order",
-            description: "Sign up and enjoy an instant 5% discount on your first SUNGAIT purchase.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "SUNGAIT – Get 15% OFF Sitewide With Code CLOUDS15",
-            description: "Use exclusive coupon code CLOUDS15 at checkout to enjoy 15% off on all SUNGAIT products sitewide.",
-            url: "https://www.couponsbit.us/stores/sungait-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Sungait",
-              url: "https://www.sungait.com",
-            },
-          },
-        },
-      ],
+      })),
     },
+
 
     {
       "@type": "WebSite",
@@ -284,6 +136,13 @@ const sungaitSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/sungait-discount-code#brand",
+      name: "Sungait",
+      url: "https://www.sungait.com",
     },
 
     {
@@ -377,7 +236,9 @@ export default function SungaitStorePage() {
           __html: JSON.stringify(sungaitSchema),
         }}
       />
-      <SungaitCouponsContent />
+      <Suspense fallback={null}>
+        <SungaitCouponsContent />
+      </Suspense>
     </>
   );
 }

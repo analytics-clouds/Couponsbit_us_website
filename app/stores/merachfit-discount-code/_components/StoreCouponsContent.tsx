@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -38,20 +38,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { MERACHFIT_COUPONS, Coupon } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -59,70 +46,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$250",
-    label: "SAVE",
-    title: "Merachfit Discount Code USA – NovaRow 950 Dual Resistance Rower | Save $250",
-    heading: "$250",
-    sub: "Merachfit Discount Code USA",
-    description: "Get the NovaRow 950 Dual Resistance Rowing Machine for $469.99",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "MERACHFIT1"
-  },
-  {
-    id: "c2",
-    discount: "$260",
-    label: "SAVE",
-    title: "Merachfit USA – Q1S Interactive Rowing Machine | Save $260",
-    heading: "$260",
-    sub: "Merachfit USA",
-    description: "Shop the Q1S Interactive Rowing Machine for $469.99, down from $729.99",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "MERACHFIT2"
-  },
-  {
-    id: "c3",
-    discount: "30%",
-    label: "SAVE",
-    title: "Merachfit USA – UltraWalk W60 Plus Walking Pad | 30% OFF",
-    heading: "30% OFF",
-    sub: "Merachfit USA",
-    description: "Get the UltraWalk W60 Plus for $349.99, reduced from $499.99",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "MERACHFIT3"
-  },
-  {
-    id: "c4",
-    discount: "$170",
-    label: "SAVE",
-    title: "Merachfit USA – CoreRow R300 Water Rower | Save $170",
-    heading: "$170",
-    sub: "Merachfit USA",
-    description: "Get the CoreRow R300 Rubberwood Water Rower for $279.99",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "MERACHFIT4"
-  },
-  {
-    id: "c5",
-    discount: "$190",
-    label: "SAVE",
-    title: "Merachfit USA – CoreRow R28 Wooden Water Rower | Save $190",
-    heading: "$190",
-    sub: "Merachfit USA",
-    description: "Shop the CoreRow R28 Wooden Water Rower for $269.99",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "MERACHFIT5"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Superrun", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037376/superrun_w6lj1n.webp", dealText: "Save $30 OFF", href: "/stores/superrun-discount-code" },
@@ -134,15 +57,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function MerachFitCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -152,22 +74,50 @@ export default function MerachFitCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-[32px] shadow-2xl p-8 max-w-sm w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+              <X className="w-5 h-5" />
+            </button>
+            <div className="text-center mb-6">
+              <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+              <h3 className="text-black font-black text-xl mb-1">Your Deal is Ready!</h3>
+              <p className="text-gray-500 text-sm font-bold">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between gap-3 mb-5">
+                <span className="font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white p-2 rounded-xl hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 text-center mb-5">
+                <span className="text-gray-500 font-bold text-sm">No code needed – discount applied automatically</span>
+              </div>
+            )}
+            <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2">
+              Visit Store <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -222,7 +172,7 @@ export default function MerachFitCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Merachfit discount codes and deals in Nov 2026, including up to 69% off a simulated stair machine, $260 off the Q1S Rower, $250 off NovaRow 950, 30% off UltraWalk W60 Plus, and additional home fitness savings.
+                      Looking to build a better home gym? Use the latest Merachfit promo code to save 30% on the UltraWalk W60 Plus Walking Pad or take $260 off the Q1S Interactive Rowing Machine. You can also get the NovaRow 950 Dual Resistance Rower with $250 off for a more realistic full-body workout. These verified discount code offers are regularly updated for Nov 2026, making it easier to save on quality rowing machines, walking pads, and home fitness equipment.
                     </p>
                     <a
                       href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015"
@@ -334,345 +284,48 @@ export default function MerachFitCouponsContent() {
 
                 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$250</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit Discount Code USA – NovaRow 950 Dual Resistance Rower | Save $250</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the NovaRow 950 Dual Resistance Rowing Machine for $469.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Combines water and magnetic resistance for versatile home workouts</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features MERACHGO auto-resistance and a space-saving drawer-style design</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 350 lbs for sturdy and comfortable training</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, NovaRow 950, Rowing Machine USA</li>
-            </ul>
+
+{MERACHFIT_COUPONS.map((coupon) => (
+  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+      <div className="flex flex-row">
+        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+          <div className="text-center px-1">
+            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+            <div className={`font-extrabold leading-none mt-2 ${coupon.valueFontClass ?? "text-[18px] sm:text-4xl"}`}>{coupon.mainValue}</div>
+            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit Discount Code USA – NovaRow 950 Dual Resistance Rower | Save $250" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+            <div className="flex flex-wrap gap-2 mb-3">
+              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            </div>
+            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+              View Details
+              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                {coupon.points.map((point, pi) => (
+                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+            <button onClick={() => handleCopy(coupon)} aria-label={`Get Merachfit deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$260</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – Q1S Interactive Rowing Machine | Save $260</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shop the Q1S Interactive Rowing Machine for $469.99, down from $729.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features a 15.6-inch display for an engaging workout experience</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for cardio, endurance training, and full-body fitness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time summer savings for USA shoppers</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, Q1S Rower, Rowing Machine USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – Q1S Interactive Rowing Machine | Save $260" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[24px] sm:text-5xl font-extrabold leading-none mt-2">30%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – UltraWalk W60 Plus Walking Pad | 30% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the UltraWalk W60 Plus for $349.99, reduced from $499.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for convenient walking and low-impact cardio at home</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features enhanced RGB lighting and audio</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Compact design makes it easy to use in home spaces</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, UltraWalk W60 Plus, Walking Pad USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – UltraWalk W60 Plus Walking Pad | 30% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$170</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – CoreRow R300 Water Rower | Save $170</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the CoreRow R300 Rubberwood Water Rower for $279.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features a 12-blade water resistance system for enhanced rowing</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Foldable and standing storage options help save space</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ergonomic handle provides a comfortable workout grip</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, CoreRow R300, Water Rower USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – CoreRow R300 Water Rower | Save $170" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$190</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – CoreRow R28 Wooden Water Rower | Save $190</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shop the CoreRow R28 Wooden Water Rower for $269.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Features a 180° foldable design for convenient storage</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Made with FSC-certified rubberwood</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 400 lbs for home fitness workouts</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, CoreRow R28, Wooden Rower USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – CoreRow R28 Wooden Water Rower | Save $190" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$61</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – S23 Recumbent Bike | Save $61</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the S23 Recumbent Bike for $239, down from $300</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Includes resistance bands for full-body home workouts</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Comfortable seat and backrest provide support during exercise</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports up to 350 lbs with smooth, quiet operation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, S23 Recumbent Bike, Exercise Bike USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – S23 Recumbent Bike | Save $61" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$109.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – Simulated Stair Machine | Save $109.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the foldable simulated stair machine for just $49.99, down from $159.98</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Adjustable height allows you to customize your workout</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Foldable construction makes storage simple</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited clearance offer available while supplies last</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, Stair Machine USA, Fitness Equipment</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – Simulated Stair Machine | Save $109.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$339.99</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Merachfit USA – NovaRow RS3 Magnetic Rower | $339.99</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shop the NovaRow RS3 Magnetic Rower for $339.99</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Offers multiple resistance options for versatile training</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports dual and single-oar workout configurations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for low-impact cardio and full-body home fitness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Merachfit Discount Code, NovaRow RS3, Magnetic Rower USA</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="http://hongkongmerachtechnologycolimited.pxf.io/c/6434050/3279852/42158?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Merachfit deal: Merachfit USA – NovaRow RS3 Magnetic Rower | $339.99" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
+))}
               </div>
 
               {/* Sidebar */}
@@ -736,7 +389,7 @@ export default function MerachFitCouponsContent() {
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories â†’</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -809,7 +462,7 @@ export default function MerachFitCouponsContent() {
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store →</span>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store â†’</span>
                 </Link>
               ))}
             </div>
@@ -879,7 +532,7 @@ export default function MerachFitCouponsContent() {
         <td className="p-5 text-black font-black align-middle max-w-[220px]">CoreRow R28 Wooden Water Rower</td>
         <td className="p-5 text-[#056BFA] font-black align-middle">Save $190</td>
         <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">180° foldable, FSC-certified</td>
+        <td className="p-5 text-gray-500 align-middle max-w-[200px]">180Â° foldable, FSC-certified</td>
         <td className="p-5 text-gray-500 align-middle max-w-[240px]">Water Rowers</td>
       </tr>
       <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
@@ -940,13 +593,13 @@ export default function MerachFitCouponsContent() {
             </div>
             <div className="space-y-6">
               {[
-                "Step 1: Browse Available Offers — Visit CouponsBit and look through the latest Merach Fit promotional offers.",
-                "Step 2: Select Your Offer — Choose the promo code, coupon code, or discount code that best matches your intended purchase.",
-                "Step 3: Check the Conditions — Read the offer details before using the code. Some promotions may apply only to particular products, order values, or customer accounts.",
-                "Step 4: Copy the Code — Copy the applicable code and head to the Merach website.",
-                "Step 5: Add Your Fitness Equipment — Select your preferred treadmill, rowing machine, exercise bike, elliptical, or other fitness product and add it to your cart.",
-                "Step 6: Apply the Code — Enter the promotional code during checkout in the relevant field.",
-                "Step 7: Confirm Your Savings — Review the final order total to make sure the promotion has been applied before completing your purchase."
+                "Step 1: Browse Available Offers â€” Visit CouponsBit and look through the latest Merach Fit promotional offers.",
+                "Step 2: Select Your Offer â€” Choose the promo code, coupon code, or discount code that best matches your intended purchase.",
+                "Step 3: Check the Conditions â€” Read the offer details before using the code. Some promotions may apply only to particular products, order values, or customer accounts.",
+                "Step 4: Copy the Code â€” Copy the applicable code and head to the Merach website.",
+                "Step 5: Add Your Fitness Equipment â€” Select your preferred treadmill, rowing machine, exercise bike, elliptical, or other fitness product and add it to your cart.",
+                "Step 6: Apply the Code â€” Enter the promotional code during checkout in the relevant field.",
+                "Step 7: Confirm Your Savings â€” Review the final order total to make sure the promotion has been applied before completing your purchase."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-blue-100 italic">

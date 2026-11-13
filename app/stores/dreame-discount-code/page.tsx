@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DreameCouponsContent from "./_components/StoreCouponsContent";
+import { DREAME_COUPONS } from "./_components/offers";
+
+const TITLE = "Dreame Discount Code: 45% Off AirStyle Pro | Nov 2026";
+const DESCRIPTION = "Use the latest Dreame discount code and promo code to get 45% off the AirStyle Pro plus an extra 10% off eligible orders. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/dreame-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/dreame-discount-code",
-    title: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
-    description:
-      "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
-    description:
-      "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130848/dreame-logo_uqesij.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const dreameSchema = {
@@ -63,13 +71,12 @@ const dreameSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dreame-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/dreame-discount-code",
-      name: "Dreametech Discount Code : Get 45% OFF + 10% OFF First Order | Sept 2026",
-      description:
-        "Get the latest Dreametech Discount Code and Dreametech Voucher to save 45% OFF, enjoy 10% OFF your first order, and get up to $180 OFF.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,159 +92,18 @@ const dreameSchema = {
       description:
         "Latest verified Dreame coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/dreame-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – AirStyle Pro Hair Styler At 45% OFF",
-            description: "Get salon-perfect hair styling at home with the AirStyle Pro, now just $219.99 (save $180).",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
+      numberOfItems: DREAME_COUPONS.length,
+      itemListElement: DREAME_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/dreame-discount-code",
+          seller: { "@type": "Organization", name: "Dreame", url: "https://www.dreametech.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – T3 Professional Grooming Trimmer At 31% OFF",
-            description: "Precision T-Blade delivers sharp lines and clean fades with the T3 Trimmer, now 31% OFF.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – R20 TangleX Cordless Stick Vacuum At $159.99",
-            description: "Engineered to cut through hair tangles effortlessly, now just $159.99.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – AirStyle Era 8-in-1 Hair Styler At $309.99",
-            description: "Complete 8-in-1 drying and styling kit for professional hairstyles at home, now $309.99.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – L60 Ultra PE Robot Vacuum At 18% OFF",
-            description: "Powerful 30,000Pa suction for deep cleaning performance, now 18% OFF.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – L60 Pro Ultra Robot Vacuum At 15% OFF",
-            description: "Hot-water mopping helps remove stubborn grease and dirt, now 15% OFF.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – DZ601 Pro Built-In Dishwasher From $1,699",
-            description: "Premium 24-inch built-in stainless steel dishwasher, starting from $1,699.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – X60 Max Ultra Complete Robot Vacuum From $1,699.99",
-            description: "Premium robot vacuum built for complete home cleaning, starting from $1,699.99.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – Chrona LED Light Therapy Mask At 17% OFF",
-            description: "Enjoy professional LED skincare treatments at home — save $50 and get it for $249.99.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Dreametech – Get 10% OFF Your First Order",
-            description: "Sign up and enjoy an instant 10% discount on your first Dreametech purchase.",
-            url: "https://www.couponsbit.us/stores/dreame-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Dreame",
-              url: "https://www.dreametech.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -269,6 +135,13 @@ const dreameSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/dreame-discount-code#brand",
+      name: "Dreame",
+      url: "https://www.dreametech.com",
     },
 
     {
@@ -362,7 +235,9 @@ export default function DreameStorePage() {
           __html: JSON.stringify(dreameSchema),
         }}
       />
-      <DreameCouponsContent />
+      <Suspense fallback={null}>
+        <DreameCouponsContent />
+      </Suspense>
     </>
   );
 }

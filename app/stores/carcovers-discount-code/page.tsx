@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { CARCOVERS_COUPONS } from "./_components/offers";
 import CarCoversCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "CarCovers Promo Code: Up to 50% Off + 15% Off | Nov 2026";
+const DESCRIPTION = "Use the latest CarCovers promo code and discount code to save up to 50% on clearance plus 15% off storewide. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "CarCovers Discount Code : Get $30 OFF + Free $41 Care Kit | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/carcovers-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-    title: "CarCovers Discount Code : Get $30 OFF + Free $41 Care Kit | Nov 2026",
-    description:
-      "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CarCovers Discount Code : Get $30 OFF + Free $41 Care Kit | Nov 2026",
-    description:
-      "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/carcover-logo_eufopb.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const carCoversSchema = {
@@ -63,13 +71,12 @@ const carCoversSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/carcovers-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-      name: "CarCovers Discount Code : Get $30 OFF + Free $41 Care Kit | Nov 2026",
-      description:
-        "Get the latest CarCovers Discount Code and CarCovers Voucher to save $30 on premium covers, enjoy FREE shipping, and receive a FREE $41 Super Care Kit.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,159 +92,22 @@ const carCoversSchema = {
       description:
         "Latest verified CarCovers coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Get $30 OFF Platinum & Black Satin Shield Covers",
-            description: "Save $30 on premium Platinum & Black Satin Shield Covers.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
+      numberOfItems: CARCOVERS_COUPONS.length,
+      itemListElement: CARCOVERS_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/carcovers-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "CarCovers",
+            url: "https://www.carcovers.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – 5-Pack Universal SUV Covers from $110.97",
-            description: "Get the 5-Pack Universal SUV Covers, universal fit for most SUVs, from $110.97.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – 5-Pack Universal Car Covers Only $80.97",
-            description: "Get the 5-Pack Universal Car Covers, designed to fit most standard cars, for only $80.97.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Platinum Shield Car Cover from $169.99",
-            description: "Get the #1 best-selling Platinum Shield Car Cover with Lifetime Warranty, from $169.99.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Black Satin Shield Indoor Cover from $159.99",
-            description: "Get the Black Satin Shield Indoor Cover, premium satin material for luxurious indoor protection, from $159.99.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – 24-Pack Premium Microfiber Cloths for $21.57",
-            description: "Get the 24-Pack Premium Microfiber Cloths, soft microfiber suitable for paint, glass, and interiors, for $21.57.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Waterproof Pet Car Seat Hammock from $29.97",
-            description: "Get the Waterproof Pet Car Seat Hammock, protecting seats from pet hair, mud, and spills, from $29.97.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Platinum Shield Truck Cover from $199.99",
-            description: "Get the Platinum Shield Truck Cover with Lifetime Warranty, from $199.99.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – Platinum Shield SUV Cover from $199.99",
-            description: "Get the Platinum Shield SUV Cover, premium outdoor cover designed for SUVs, from $199.99.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "CarCovers – 19-Piece Complete Car Detailing Kit for $130",
-            description: "Get the 19-Piece Complete Car Detailing Kit, a complete interior and exterior detailing solution, for $130.",
-            url: "https://www.couponsbit.us/stores/carcovers-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "CarCovers",
-              url: "https://www.carcovers.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -269,6 +139,13 @@ const carCoversSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/carcovers-discount-code#brand",
+      name: "CarCovers",
+      url: "https://www.carcovers.com",
     },
 
     {
@@ -362,7 +239,9 @@ export default function CarCoversStorePage() {
           __html: JSON.stringify(carCoversSchema),
         }}
       />
-      <CarCoversCouponsContent />
+      <Suspense fallback={null}>
+        <CarCoversCouponsContent />
+      </Suspense>
     </>
   );
 }

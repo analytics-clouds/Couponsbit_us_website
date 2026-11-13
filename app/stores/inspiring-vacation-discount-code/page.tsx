@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { INSPIRING_VACATION_COUPONS } from "./_components/offers";
 import InspiringVacationCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Inspiring Vacations Discount Code: Up to 50% Off | Nov 2026";
+const DESCRIPTION = "Use the latest Inspiring Vacations promo code and discount code to save up to 50% on select tours. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Inspiring Vacations Discount Code : Save Up to 50% OFF | Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-    title: "Inspiring Vacations Discount Code : Save Up to 50% OFF | Sept 2026",
-    description:
-      "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Inspiring Vacations Discount Code : Save Up to 50% OFF | Sept 2026",
-    description:
-      "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784971/inspiring-vacation-logo_mokiew.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const inspiringVacationSchema = {
@@ -63,13 +71,12 @@ const inspiringVacationSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/inspiring-vacation-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-      name: "Inspiring Vacations Discount Code : Save Up to 50% OFF | Sept 2026",
-      description:
-        "Find the latest Inspiring Vacations Discount Code and Inspiring Vacations Voucher to save up to 50% OFF on guided tours, cruises, and holiday packages worldwide.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,144 +92,22 @@ const inspiringVacationSchema = {
       description:
         "Latest verified Inspiring Vacation coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Bring a Friend – UP TO 50% OFF",
-            description: "Bring a friend and enjoy UP TO 50% OFF on selected tours.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
+      numberOfItems: INSPIRING_VACATION_COUPONS.length,
+      itemListElement: INSPIRING_VACATION_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Inspiring Vacations",
+            url: "https://www.inspiringvacations.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Fly, Stay & Cruise – Bonus 5,000 Velocity Points",
-            description: "Book an eligible Fly, Stay & Cruise package and earn 5,000 Bonus Velocity Points.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "29-Day Complete Central America Tour – From $9,345",
-            description: "Explore Central America on a 29-day fully escorted small-group adventure.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "27-Day Timeless Stans & Turkmenistan Tour – From $16,195",
-            description: "Experience Central Asia on a 27-day premium small-group tour.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "21-Day Ultimate African Safari – From $14,095",
-            description: "Discover Africa's breathtaking wildlife from $14,095 per person.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "24-Day Five Stans Unveiled Tour – From $7,595",
-            description: "Journey across the Five Stans from just $7,595 per person.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "15-Day Magical Morocco Tour – From $3,195",
-            description: "Explore Morocco's vibrant cities and desert landscapes from $3,195 per person.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "19-Day South America Tour – From $7,595",
-            description: "Enjoy a Fly, Stay & Cruise adventure across South America from $7,595 per person.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Canadian Rockies & Alaska Cruise – From $6,945",
-            description: "Explore the Canadian Rockies and Alaska Inside Passage from $6,945 per person.",
-            url: "https://www.couponsbit.us/stores/inspiring-vacation-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Inspiring Vacation",
-              url: "https://www.inspiringvacations.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -254,6 +139,13 @@ const inspiringVacationSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/inspiring-vacation-discount-code#brand",
+      name: "Inspiring Vacations",
+      url: "https://www.inspiringvacations.com",
     },
 
     {
@@ -339,7 +231,9 @@ export default function InspiringVacationStorePage() {
           __html: JSON.stringify(inspiringVacationSchema),
         }}
       />
-      <InspiringVacationCouponsContent />
+      <Suspense fallback={null}>
+        <InspiringVacationCouponsContent />
+      </Suspense>
     </>
   );
 }

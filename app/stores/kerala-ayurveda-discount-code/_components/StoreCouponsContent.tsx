@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -39,20 +39,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { KERALA_COUPONS, Coupon } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -60,70 +47,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$28.95",
-    label: "Only",
-    title: "Kalyanaka Ghee – Mental Wellness Support For $28.95",
-    heading: "$28.95",
-    sub: "Kalyanaka Ghee",
-    description: "Traditional herb-infused Ayurvedic ghee crafted to support mental and emotional wellness.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "COUNTNEW10"
-  },
-  {
-    id: "c2",
-    discount: "$22.95",
-    label: "Only",
-    title: "Rasnasapthakam Kwath – Joint Support For $22.95",
-    heading: "$22.95",
-    sub: "Rasnasapthakam Kwath",
-    description: "Ayurvedic formula (90 Tablets) designed to support joint and muscle health.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "COUNTNEW10"
-  },
-  {
-    id: "c3",
-    discount: "$31.95",
-    label: "Only",
-    title: "Digi Eye Defense – Eye Health Support For $31.95",
-    heading: "$31.95",
-    sub: "Digi Eye Defense",
-    description: "Digi Eye Defense (60 Softgels) supports healthy vision and daily eye protection.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "COUNTNEW10"
-  },
-  {
-    id: "c4",
-    discount: "$25.95",
-    label: "Only",
-    title: "Indukantham Kwath – Daily Wellness For $25.95",
-    heading: "$25.95",
-    sub: "Indukantham Kwath",
-    description: "Traditional Ayurvedic formula (90 Tablets) for everyday health support.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "COUNTNEW10"
-  },
-  {
-    id: "c5",
-    discount: "$27",
-    label: "From",
-    title: "Kumkumadi Oil – Radiant Skin From $27",
-    heading: "$27",
-    sub: "Kumkumadi Oil",
-    description: "Authentic Ayurvedic skincare oil crafted with premium herbs to help brighten skin.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "COUNTNEW10"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "The Ayurveda Experience", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295215/tae-logo_dwfmfi.webp", dealText: "Flat 50% OFF", href: "/stores/the-ayurveda-experience-discount-code" },
@@ -135,15 +58,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function KeralaAyurvedaCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -153,22 +75,50 @@ export default function KeralaAyurvedaCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-[32px] shadow-2xl p-8 max-w-sm w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+              <X className="w-5 h-5" />
+            </button>
+            <div className="text-center mb-6">
+              <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+              <h3 className="text-black font-black text-xl mb-1">Your Deal is Ready!</h3>
+              <p className="text-gray-500 text-sm font-bold">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between gap-3 mb-5">
+                <span className="font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white p-2 rounded-xl hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 text-center mb-5">
+                <span className="text-gray-500 font-bold text-sm">No code needed â€“ discount applied automatically</span>
+              </div>
+            )}
+            <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2">
+              Visit Store <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      )}
+
       <Navbar />
 
       {/* Toast Notification */}
@@ -223,7 +173,7 @@ export default function KeralaAyurvedaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more on authentic Ayurvedic wellness products with Kerala Ayurveda deals. Get Kalyanaka Ghee for $28.95, Rasnasapthakam Kwath for $22.95, Digi Eye Defense for $31.95, Indukantham Kwath for $25.95, Kumkumadi Oil from $27, Shilajit Capsules for $25.95, Brilliant Mind for $28.95, Kumkumadi Thailam from $27, Triphala Capsules for $28.95, and Dashamula Capsules for $28.95. Use COUNTNEW10 to get 10% OFF your first order and enjoy traditional Ayurvedic wellness products at better prices.
+                      Save more on natural wellness with the latest Kerala Ayurveda discount code and enjoy up to 20% off eligible products plus an extra 10% off when you use promo code COUNTNEW10. Shop Ayurvedic favorites like Kumkumadi Oil from $27, Shilajit Capsules for $25.95, and Digi Eye Defense for $31.95 at reduced prices. These verified promo code offers are regularly updated for Nov 2026, helping you save on trusted supplements, skincare, and everyday wellness essentials.
                     </p>
                     <a
                       href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026"
@@ -337,489 +287,48 @@ export default function KeralaAyurvedaCouponsContent() {
 
 
 
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$28.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Kalyanaka Ghee – Mental Wellness Support For $28.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Traditional herb-infused Ayurvedic ghee crafted to support mental and emotional wellness.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports memory, focus and cognitive balance naturally</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Crafted with authentic Ayurvedic ingredients for daily vitality</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
+
+{KERALA_COUPONS.map((coupon) => (
+  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+      <div className="flex flex-row">
+        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+          <div className="text-center px-1">
+            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+            <div className={`font-extrabold leading-none mt-2 ${coupon.valueFontClass ?? "text-[18px] sm:text-4xl"}`}>{coupon.mainValue}</div>
+            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kalyanaka Ghee Mental Wellness Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
+        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+            <div className="flex flex-wrap gap-2 mb-3">
+              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+            </div>
+            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+              View Details
+              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                {coupon.points.map((point, pi) => (
+                  <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+            <button onClick={() => handleCopy(coupon)} aria-label={`Get Kerala Ayurveda deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$22.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Rasnasapthakam Kwath – Joint Support For $22.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Ayurvedic formula (90 Tablets) designed to support joint and muscle health.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps improve flexibility and everyday mobility</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Made with trusted herbal ingredients for natural wellness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Rasnasapthakam Kwath Joint Support For $22.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$31.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Digi Eye Defense – Eye Health Support For $31.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Digi Eye Defense (60 Softgels) supports healthy vision and daily eye protection.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps reduce digital eye strain and fatigue</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for screen users seeking natural eye care</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Digi Eye Defense Eye Health Support For $31.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Indukantham Kwath – Daily Wellness For $25.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Traditional Ayurvedic formula (90 Tablets) for everyday health support.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps maintain energy, immunity and digestive wellness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Made using authentic herbal ingredients</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Indukantham Kwath Daily Wellness For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$27</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Kumkumadi Oil – Radiant Skin From $27</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Authentic Ayurvedic skincare oil crafted with premium herbs to help brighten skin.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports healthy, hydrated and youthful-looking skin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps improve natural glow</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Oil Radiant Skin From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$25.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Shilajit Capsules – Energy Support For $25.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shilajit (60 Veg Capsules) supports natural energy, stamina and endurance.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps maintain strength and overall vitality</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium Ayurvedic supplement for daily wellness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Shilajit Capsules Energy Support For $25.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$28.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Brilliant Mind – Brain Support For $28.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Brilliant Mind (Brahmi Pearls) supports memory, focus and mental clarity.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps promote relaxation and stress management</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Premium Ayurvedic softgels for cognitive wellness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Brilliant Mind Brain Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">From</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$27</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Kumkumadi Thailam – Natural Face Oil From $27</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Crafted using authentic Ayurvedic skincare traditions to help improve skin texture.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Helps improve natural radiance</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Suitable for daily facial care and nourishment</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Kumkumadi Thailam Natural Face Oil From $27" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$28.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Triphala Capsules – Gut Health For $28.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Triphala Capsules (60 Veg Capsules) support healthy digestion and natural detoxification.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Promotes regular bowel movement and gut balance</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Traditional Ayurvedic formula for digestive wellness</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Triphala Capsules Gut Health For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">Only</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">$28.95</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Dashamula Capsules – Detox Support For $28.95</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Dashamula Capsules (60 Veg Capsules) help eliminate toxins and support healthy energy flow.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Traditional blend of ten Ayurvedic herbs</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Supports whole-body wellness and natural vitality</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Use code COUNTNEW10 for 10% OFF your first order</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Kerala Ayurveda deal: Dashamula Capsules Detox Support For $28.95" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 lg:px-6 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block lg:whitespace-nowrap">Visit Website</a>
-          <button type="button" onClick={() => handleCopy("COUNTNEW10")} className="w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">COUNTNEW10</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
+))}
               </div>
 
               {/* Sidebar */}
@@ -883,7 +392,7 @@ export default function KeralaAyurvedaCouponsContent() {
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories â†’</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -960,7 +469,7 @@ export default function KeralaAyurvedaCouponsContent() {
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store →</span>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store â†’</span>
                 </Link>
               ))}
             </div>
@@ -1109,12 +618,12 @@ export default function KeralaAyurvedaCouponsContent() {
             <p className="text-gray-500 text-sm font-bold mb-6">Saving on your wellness purchase is simple.</p>
             <div className="space-y-6">
               {[
-                "Step 1: Visit Couponsbit — Browse the latest Kerala Ayurveda coupon codes and promotional offers.",
-                "Step 2: Select the Best Offer — Choose the deal that matches the products you plan to purchase.",
-                "Step 3: Copy the Coupon Code — Copy the available promo code before visiting the official Kerala Ayurveda website.",
-                "Step 4: Add Products to Your Cart — Select your preferred Ayurvedic products and proceed to checkout.",
-                "Step 5: Apply the Coupon — Enter the coupon code in the designated field to receive the applicable discount.",
-                "Step 6: Complete Your Order — Finish your purchase and enjoy additional savings on your wellness essentials."
+                "Step 1: Visit Couponsbit â€” Browse the latest Kerala Ayurveda coupon codes and promotional offers.",
+                "Step 2: Select the Best Offer â€” Choose the deal that matches the products you plan to purchase.",
+                "Step 3: Copy the Coupon Code â€” Copy the available promo code before visiting the official Kerala Ayurveda website.",
+                "Step 4: Add Products to Your Cart â€” Select your preferred Ayurvedic products and proceed to checkout.",
+                "Step 5: Apply the Coupon â€” Enter the coupon code in the designated field to receive the applicable discount.",
+                "Step 6: Complete Your Order â€” Finish your purchase and enjoy additional savings on your wellness essentials."
               ].map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -1215,14 +724,14 @@ export default function KeralaAyurvedaCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Kerala Ayurveda Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {KERALA_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">M</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">K</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.title}</p>
                 </div>
-                <a href="https://keralaayurveda.store/?utm_source=count&utm_medium=affiliate&utm_campaign=February2026" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get McAfee deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <button onClick={() => handleCopy(coupon)} aria-label={`Get Kerala Ayurveda deal: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</button>
               </div>
             ))}
           </div>

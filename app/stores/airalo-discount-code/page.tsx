@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { AIRALO_COUPONS } from "./_components/offers";
 import AiraloCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+
+const TITLE = "Airalo Promo Code: Up to 20% Off + Extra 10% Off | Nov 2026";
+const DESCRIPTION = "Use the Airalo promo code AC10ALL for an extra 10% off, plus save up to 20% on select USA eSIM plans. Verified discount code for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Airalo Discount Code: US AC10ALL – 20% OFF + 15% OFF First eSIM",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
+  description: DESCRIPTION,
 
-
-
-    
   alternates: {
     canonical: "https://www.couponsbit.us/stores/airalo-discount-code",
     languages: {
@@ -25,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/airalo-discount-code",
-    title: "Airalo Discount Code: US AC10ALL – 20% OFF + 15% OFF First eSIM",
-    description:
-      "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -43,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Airalo Discount Code: US AC10ALL – 20% OFF + 15% OFF First eSIM",
-    description:
-      "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784895740/airalo-logo_fc6u6p.webp"],
     site: "@couponsbit",
   },
@@ -58,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const airaloSchema = {
@@ -67,13 +71,12 @@ const airaloSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/airalo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/airalo-discount-code",
-      name: "Airalo Discount Code: US AC10ALL – 20% OFF + 15% OFF First eSIM",
-      description:
-        "Find the latest Airalo discount code and promo code. Use AC10ALL to save up to 20% on selected eSIMs and get 15% OFF your first eSIM purchase.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -89,14 +92,14 @@ const airaloSchema = {
       description:
         "Latest verified Airalo coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/airalo-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: AIRALO_COUPONS.length,
+      itemListElement: AIRALO_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.desc,
+          name: c.title,
+          description: c.description,
           url: "https://www.couponsbit.us/stores/airalo-discount-code",
           seller: { "@type": "Organization", name: "Airalo", url: "https://www.airalo.com" },
         },
@@ -132,6 +135,13 @@ const airaloSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/airalo-discount-code#brand",
+      name: "Airalo",
+      url: "https://www.airalo.com",
     },
 
     {
@@ -225,7 +235,9 @@ export default function AiraloStorePage() {
           __html: JSON.stringify(airaloSchema),
         }}
       />
-      <AiraloCouponsContent />
+      <Suspense fallback={null}>
+        <AiraloCouponsContent />
+      </Suspense>
     </>
   );
 }

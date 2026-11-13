@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BluettiCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BLUETTI_COUPONS } from "./_components/offers";
+
+const TITLE = "BLUETTI Promo Code: Get 10% Off + $200 off| Nov 2026";
+const DESCRIPTION = "Use the latest BLUETTI promo code and discount code to get $200 off Apex 300 bundles plus an extra 10% off. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/bluetti-discount-code",
@@ -22,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-    title: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
-    description:
-      "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
-    description:
-      "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/bluetti-power-logo_osmets.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const bluettiSchema = {
@@ -64,13 +71,12 @@ const bluettiSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/bluetti-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-      name: "BLUETTI Discount Code : Save $200 + FREE $249 Trolley | Sept 2026",
-      description:
-        "Get the latest BLUETTI Discount Code and BLUETTI Voucher to save up to $200, get a FREE $249 Trolley, and shop portable power stations from $1,199.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -86,14 +92,14 @@ const bluettiSchema = {
       description:
         "Latest verified Bluetti coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/bluetti-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BLUETTI_COUPONS.length,
+      itemListElement: BLUETTI_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.description,
+          name: c.title,
+          description: c.description,
           url: "https://www.couponsbit.us/stores/bluetti-discount-code",
           seller: { "@type": "Organization", name: "Bluetti", url: "https://www.bluettipower.com" },
         },
@@ -129,6 +135,13 @@ const bluettiSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/bluetti-discount-code#brand",
+      name: "Bluetti",
+      url: "https://www.bluettipower.com",
     },
 
     {
@@ -222,7 +235,9 @@ export default function BluettiStorePage() {
           __html: JSON.stringify(bluettiSchema),
         }}
       />
-      <BluettiCouponsContent />
+      <Suspense fallback={null}>
+        <BluettiCouponsContent />
+      </Suspense>
     </>
   );
 }

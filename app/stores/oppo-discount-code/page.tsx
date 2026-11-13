@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { OPPO_COUPONS } from "./_components/offers";
 import OppoCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "OPPO Promo Code: Up to 60% Off | Nov 2026";
+const DESCRIPTION =
+  "Use the latest OPPO promo code and discount code to save up to 60% on select smartphones, or get the OPPO Find X9 Ultra from $1,999 and save $950. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/oppo-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/oppo-discount-code",
-    title: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
-    description:
-      "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
-    description:
-      "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784784970/oppo-logo_umnpx7.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +57,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const oppoSchema = {
@@ -63,13 +72,12 @@ const oppoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/oppo-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/oppo-discount-code",
-      name: "OPPO Discount Code | Save Up to 45% OFF on Smartphones",
-      description:
-        "Get the latest OPPO Discount Code and OPPO Voucher to save up to 45% OFF, enjoy up to $950 OFF flagship phones, plus exchange bonuses of up to $60.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,144 +93,22 @@ const oppoSchema = {
       description:
         "Latest verified Oppo coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/oppo-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Reno16 5G – Exchange Bonus Up To $60",
-            description: "Get the OPPO Reno16 5G from just $749.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
+      numberOfItems: OPPO_COUPONS.length,
+      itemListElement: OPPO_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/oppo-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Oppo",
+            url: "https://www.oppo.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Reno16c 5G – Exchange Bonus Up To $60",
-            description: "Buy the OPPO Reno16c 5G starting from just $569.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "OPPO USA – Student Exclusive – SAVE UP TO 45%",
-            description: "Students can enjoy UP TO 45% OFF on selected OPPO devices and accessories.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Enco Air5 – Noise Cancelling Earbuds From $39",
-            description: "Buy OPPO Enco Air5 starting from just $39.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Reno16c 5G – Hot Sale LIVE",
-            description: "Grab the OPPO Reno16c 5G from only $569.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Find X9 – SAVE UP TO $180",
-            description: "Get the OPPO Find X9 from just $999 (Regular Price $1,179).",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "OPPO F33 Series 5G – Hot Sale From $469",
-            description: "Own the OPPO F33 Series 5G starting from just $469.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "OPPO A6c 4G – SAVE UP TO $190",
-            description: "Buy the durable OPPO A6c 4G from just $179.",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "OPPO Find X9 Ultra – Flagship Camera Phone From $1,999",
-            description: "Get the OPPO Find X9 Ultra from just $1,999 (Regular Price $2,949).",
-            url: "https://www.couponsbit.us/stores/oppo-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Oppo",
-              url: "https://www.oppo.com/in",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -254,6 +140,13 @@ const oppoSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/oppo-discount-code#brand",
+      name: "OPPO",
+      url: "https://www.oppo.com",
     },
 
     {
@@ -347,7 +240,9 @@ export default function OppoStorePage() {
           __html: JSON.stringify(oppoSchema),
         }}
       />
-      <OppoCouponsContent />
+      <Suspense fallback={null}>
+        <OppoCouponsContent />
+      </Suspense>
     </>
   );
 }

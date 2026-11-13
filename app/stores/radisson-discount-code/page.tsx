@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { RADISSON_COUPONS } from "./_components/offers";
 import RadissonCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Radisson Promo Code: Up to 40% Off + 2,000 Rewards Points | Nov 2026";
+const DESCRIPTION = "Use the latest Radisson promo code and discount code to save up to 40% on hotel stays or earn 2,000 Bonus Rewards Points. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF, earn 2,000 Bonus Points, and book hotel stays from $68.31.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/radisson-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/radisson-discount-code",
-    title: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
-    description:
-      "Get the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF, earn 2,000 Bonus Points, and book hotel stays from $68.31.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
-    description:
-      "Get the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF, earn 2,000 Bonus Points, and book hotel stays from $68.31.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/radission-logo_gxjubt.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const radissonSchema = {
@@ -63,13 +71,12 @@ const radissonSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/radisson-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/radisson-discount-code",
-      name: "Radisson Discount Code | Up to 40% OFF + 2,000 Bonus Points",
-      description:
-        "Get the latest Radisson Discount Code and Radisson Voucher to save up to 40% OFF, earn 2,000 Bonus Points, and book hotel stays from $68.31.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,114 +92,18 @@ const radissonSchema = {
       description:
         "Latest verified Radisson coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/radisson-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotels – Explore & Earn 2,000 Bonus Points",
-            description: "Join Radisson Rewards and earn 2,000 bonus points on eligible stays.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
+      numberOfItems: RADISSON_COUPONS.length,
+      itemListElement: RADISSON_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/radisson-discount-code",
+          seller: { "@type": "Organization", name: "Radisson", url: "https://www.radissonhotels.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotels – Deals of the Day, Up to 40% OFF",
-            description: "Discover limited-time offers on premium Radisson hotel stays.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotels – Stay Longer, Save More, Up to 35% OFF",
-            description: "Get increasing discounts when you stay for 4 nights or more.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotel Dubai DAMAC Hills – Starting From $68.31",
-            description: "Enjoy a luxury stay at Radisson Hotel Dubai DAMAC Hills, with rooms starting from just $68.31 per night.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Blu Polar Hotel, Spitsbergen – 23% OFF",
-            description: "Save 23% on your stay at Radisson Blu Polar Hotel, Spitsbergen.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotels – Plan & Save, Up to 25% OFF",
-            description: "Save up to 25% on Radisson stays across global destinations.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Radisson Hotels – Package Deals, Starting From $99",
-            description: "Explore exclusive hotel packages with added benefits.",
-            url: "https://www.couponsbit.us/stores/radisson-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Radisson",
-              url: "https://www.radissonhotels.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -224,6 +135,13 @@ const radissonSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/radisson-discount-code#brand",
+      name: "Radisson",
+      url: "https://www.radissonhotels.com",
     },
 
     {
@@ -317,7 +235,9 @@ export default function RadissonStorePage() {
           __html: JSON.stringify(radissonSchema),
         }}
       />
-      <RadissonCouponsContent />
+      <Suspense fallback={null}>
+        <RadissonCouponsContent />
+      </Suspense>
     </>
   );
 }

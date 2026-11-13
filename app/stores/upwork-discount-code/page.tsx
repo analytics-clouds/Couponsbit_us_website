@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import UpworkCouponsContent from "./_components/StoreCouponsContent";
+import { UPWORK_COUPONS } from "./_components/offers";
+
+const TITLE = "Upwork Promo Code: 50% Off + Plan from $19.99 | Nov 2026";
+const DESCRIPTION = "Use the latest Upwork promo code and discount code to get 50% off your first Plus Membership month or subscribe from just $19.99/month. Verified for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
+    absolute: TITLE,
   },
-  description:
-    "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/upwork-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/upwork-discount-code",
-    title: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
-    description:
-      "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
-    description:
-      "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130860/upwork-logo_ki4h2l.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const upworkSchema = {
@@ -63,13 +71,12 @@ const upworkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/upwork-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/upwork-discount-code",
-      name: "Upwork Discount Code | Free Plan + 100 Monthly Connects",
-      description:
-        "Get the latest Upwork Discount Code and Upwork Voucher. Explore free and premium plans, receive 100 monthly Connects, and unlock freelancer tools from $15.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,114 +92,18 @@ const upworkSchema = {
       description:
         "Latest verified Upwork coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/upwork-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Plus Plan, Unlock Premium Freelancing For $19.99/Month",
-            description: "Upgrade to Upwork Plus for enhanced freelancer benefits, starting at $19.99/month.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
+      numberOfItems: UPWORK_COUPONS.length,
+      itemListElement: UPWORK_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/upwork-discount-code",
+          seller: { "@type": "Organization", name: "Upwork", url: "https://www.upwork.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Starter Plan, Begin Your Freelance Journey From $15",
-            description: "Affordable plan designed for new freelancers, starting from just $15.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Basic Plan, Start Freelancing For Free",
-            description: "Create a free Upwork account in minutes and connect with clients worldwide.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Freelancer Plus, Get 100 Monthly Connects",
-            description: "Receive 100 Connects every month to apply to more freelance jobs without limits.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Business Plus, Premium Hiring Solution",
-            description: "Enjoy exclusive savings on the Business Plus subscription for confident, priority hiring.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Free Basic Membership, Join At No Cost",
-            description: "Sign up with a completely free Basic membership and start hiring or freelancing today.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Upwork – Marketplace, Find Top Freelance Talent",
-            description: "Explore expert freelancers across hundreds of skill categories on the Upwork Marketplace.",
-            url: "https://www.couponsbit.us/stores/upwork-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Upwork",
-              url: "https://www.upwork.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -224,6 +135,13 @@ const upworkSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/upwork-discount-code#brand",
+      name: "Upwork",
+      url: "https://www.upwork.com",
     },
 
     {
@@ -317,7 +235,9 @@ export default function UpworkStorePage() {
           __html: JSON.stringify(upworkSchema),
         }}
       />
-      <UpworkCouponsContent />
+      <Suspense fallback={null}>
+        <UpworkCouponsContent />
+      </Suspense>
     </>
   );
 }

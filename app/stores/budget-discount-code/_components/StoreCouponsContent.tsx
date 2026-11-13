@@ -164,7 +164,7 @@ export default function BudgetCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">Ratings</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Budget promo codes and discount codes for Nov 2026. Save up to 35% on car rentals, enjoy weekly rental discounts, weekend specials, truck rentals from $29.99/day, young driver savings, and Pay Now offers for your next trip.
+                      Save more on your next trip with the latest Budget promo code and enjoy up to 35% off prepaid rental bookings at participating locations. Planning a longer journey? You can also get up to 25% off weekly rentals or rent a cargo van from just $29.99 per day. These verified discount code offers are regularly updated for Nov 2026, helping you cut costs on car rentals for vacations, business travel, weekend getaways, and moving needs. 
                     </p>
                     <a
                       href={STORE_URL}

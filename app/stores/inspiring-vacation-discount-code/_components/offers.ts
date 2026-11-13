@@ -1,0 +1,181 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  valueFontClass?: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
+}
+
+export const INSPIRING_VACATION_COUPONS: Coupon[] = [
+  {
+    id: "iv1",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Inspiring Vacations Promo Code – Bring a Friend & Save Up to 50%",
+    description: "Bring a friend along and save up to 50% on select tours for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Save up to 50% when you book select tours with a friend.",
+      "Available on qualifying travel packages.",
+      "A great way to enjoy unforgettable vacations for less.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv2",
+    topLabel: "EARN",
+    mainValue: "5,000",
+    offText: "POINTS",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Inspiring Vacations Promo Code – Earn 5,000 Bonus Velocity Points",
+    description: "Get 5,000 Bonus Velocity Points on eligible Fly, Stay & Cruise bookings.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Earn 5,000 Bonus Velocity Points with qualifying packages.",
+      "Book an eligible Fly, Stay & Cruise vacation.",
+      "Perfect for travelers who want to earn extra rewards.",
+      "Points are added after your eligible booking.",
+    ],
+  },
+  {
+    id: "iv3",
+    topLabel: "From",
+    mainValue: "$9,345",
+    offText: "",
+    title: "Inspiring Vacations Discount Code – 29-Day Complete Central America Tour from $9,345",
+    description: "Explore Central America on a fully escorted 29-day small-group adventure.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Tours start at $9,345 per person.",
+      "Visit several Central American destinations with expert guides.",
+      "Ideal for travelers who want an immersive cultural experience.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv4",
+    topLabel: "From",
+    mainValue: "$16,195",
+    offText: "",
+    title: "Inspiring Vacations Discount Code – 27-Day Timeless Stans & Turkmenistan Tour from $16,195",
+    description: "Experience Central Asia on a premium 27-day guided journey.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Prices start at $16,195 per person.",
+      "Discover the historic Stans and Turkmenistan in one trip.",
+      "Perfect for travelers who want unique destinations.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv5",
+    topLabel: "From",
+    mainValue: "$14,095",
+    offText: "",
+    title: "Inspiring Vacations Coupon Code – 21-Day Ultimate African Safari from $14,095",
+    description: "Experience Africa's iconic wildlife on a 21-day safari adventure.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Tours start at $14,095 per person.",
+      "Explore famous safari destinations with experienced guides.",
+      "A fantastic choice for wildlife lovers.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv6",
+    topLabel: "From",
+    mainValue: "$7,595",
+    offText: "",
+    title: "Inspiring Vacations Coupon Code – 24-Day Five Stans Unveiled Tour from $7,595",
+    description: "Discover the beauty of Central Asia on a 24-day guided tour.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Prices start at $7,595 per person.",
+      "Visit all Five Stans on one unforgettable trip.",
+      "Great for travelers who love exploring other cultures.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv7",
+    topLabel: "From",
+    mainValue: "$3,195",
+    offText: "",
+    title: "Inspiring Vacations Voucher Code – 15-Day Magical Morocco Tour from $3,195",
+    description: "Explore Morocco's colorful cities and stunning desert landscapes.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Tours start at $3,195 per person.",
+      "Visit historic cities, markets, and scenic desert spots.",
+      "Ideal for travelers who want an unforgettable Moroccan adventure.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv8",
+    topLabel: "From",
+    mainValue: "$7,595",
+    offText: "",
+    title: "Inspiring Vacations Voucher Code – 19-Day South America Tour from $7,595",
+    description: "Discover South America with an exciting Fly, Stay & Cruise package.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Packages start at $7,595 per person.",
+      "Experience several destinations in one guided vacation.",
+      "Perfect for travelers who want a complete South American journey.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+  {
+    id: "iv9",
+    topLabel: "From",
+    mainValue: "$6,945",
+    offText: "",
+    title: "Inspiring Vacations Referral Code – Canadian Rockies & Alaska Cruise from $6,945",
+    description: "Explore the Canadian Rockies and Alaska on one unforgettable vacation.",
+    code: "",
+    verified: "Verified",
+    userType: "New & Existing",
+    validTill: "TBD",
+    points: [
+      "Prices start at $6,945 per person.",
+      "Cruise Alaska's Inside Passage and tour the Canadian Rockies.",
+      "A great choice for nature lovers and scenic travel fans.",
+      "Extra savings may apply at checkout on eligible orders.",
+    ],
+  },
+];

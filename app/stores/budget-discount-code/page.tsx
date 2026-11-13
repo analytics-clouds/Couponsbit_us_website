@@ -4,10 +4,10 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Budget Promo Code & Discount Code : Save Up to 35% OFF | Nov 2026",
+    absolute: "Budget Promo Code: Summer Sale save Up to 35% Off | Nov 2026",
   },
   description:
-    "Find the latest Budget promo code and discount code for Nov 2026. Save up to 35% on car rentals, enjoy 25% OFF weekly rentals, get $10 OFF eligible bookings, and explore deals on trucks, SUVs, weekend rentals, and more.",
+    "Use the latest Budget promo code and discount code to save up to 35% on prepaid rentals plus up to 25% off weekly rentals. Verified for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/budget-discount-code",

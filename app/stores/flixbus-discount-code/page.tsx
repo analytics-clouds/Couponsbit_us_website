@@ -73,9 +73,9 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    'geo.region': 'US',
-    'geo.country': 'US',
-    language: 'en-US',
+    'geo.region': 'AU',
+    'geo.country': 'AU',
+    language: 'en-AU',
   },
 };
 

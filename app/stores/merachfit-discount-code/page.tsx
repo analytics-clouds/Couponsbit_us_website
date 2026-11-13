@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import MerachFitCouponsContent from "./_components/StoreCouponsContent";
+import { MERACHFIT_COUPONS } from "./_components/offers";
+
+const TITLE = "Merachfit Promo Code: Get 30% Off + $260 Off | Nov 2026";
+const DESCRIPTION =
+  "Grab the latest Merachfit promo code and discount code to save 30% on the UltraWalk W60 Plus or get $260 off the Q1S Rowing Machine. Verified for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Merachfit Discount Code: Up to 69% Off + $260 Off | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Merachfit discount codes and deals for Nov 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/merachfit-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Nov 2026",
-    description:
-      "Find the latest Merachfit discount codes and deals for Nov 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Merachfit Discount Code: Up to 69% Off + $260 Off | Nov 2026",
-    description:
-      "Find the latest Merachfit discount codes and deals for Nov 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/merachfit-logo_kz4fuc.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +57,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const merachFitSchema = {
@@ -63,13 +68,12 @@ const merachFitSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/merachfit-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-      name: "Merachfit Discount Code: Up to 69% Off + $260 Off | Nov 2026",
-      description:
-        "Find the latest Merachfit discount codes and deals for Nov 2026. Save up to 69% on fitness equipment, $260 on the Q1S Rower, $250 on NovaRow 950, 30% off the UltraWalk W60 Plus, and more.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -79,135 +83,35 @@ const merachFitSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/merachfit-discount-code#brand",
+      name: "MerachFit",
+      url: "https://www.merachfit.com",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/merachfit-discount-code#offerlist",
       name: "MerachFit Coupon Codes & Promo Codes",
       description:
         "Latest verified MerachFit coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit Discount Code USA – NovaRow 950 Dual Resistance Rower | Save $250",
-            description: "Get the NovaRow 950 Dual Resistance Rowing Machine for $469.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
+      numberOfItems: MERACHFIT_COUPONS.length,
+      itemListElement: MERACHFIT_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/merachfit-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "MerachFit",
+            url: "https://www.merachfit.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – Q1S Interactive Rowing Machine | Save $260",
-            description: "Shop the Q1S Interactive Rowing Machine for $469.99, down from $729.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – UltraWalk W60 Plus Walking Pad | 30% OFF",
-            description: "Get the UltraWalk W60 Plus for $349.99, reduced from $499.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – CoreRow R300 Water Rower | Save $170",
-            description: "Get the CoreRow R300 Rubberwood Water Rower for $279.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – CoreRow R28 Wooden Water Rower | Save $190",
-            description: "Shop the CoreRow R28 Wooden Water Rower for $269.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – S23 Recumbent Bike | Save $61",
-            description: "Get the S23 Recumbent Bike for $239, down from $300",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – Simulated Stair Machine | Save $109.99",
-            description: "Get the foldable simulated stair machine for just $49.99, down from $159.98",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Merachfit USA – NovaRow RS3 Magnetic Rower | $339.99",
-            description: "Shop the NovaRow RS3 Magnetic Rower for $339.99",
-            url: "https://www.couponsbit.us/stores/merachfit-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "MerachFit",
-              url: "https://www.merachfit.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -340,7 +244,9 @@ export default function MerachFitStorePage() {
           __html: JSON.stringify(merachFitSchema),
         }}
       />
-      <MerachFitCouponsContent />
+      <Suspense fallback={null}>
+        <MerachFitCouponsContent />
+      </Suspense>
     </>
   );
 }

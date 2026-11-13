@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { OFFERS } from "./offers";
+import { AIRALO_COUPONS, Coupon } from "./offers";
 import Link from "next/link";
 import { 
   ChevronRight, 
@@ -39,91 +39,12 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
-
 interface StoreItem {
   name: string;
   logo: string;
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "$27",
-    label: "From",
-    title: "Airalo – Unlimited USA eSIM from $27 for 7 Days",
-    heading: "$27 /7 DAYS",
-    sub: "Airalo",
-    description: "Get unlimited high-speed data on the T-Mobile 5G network for 7 days from just $27.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AC10ALL"
-  },
-  {
-    id: "c2",
-    discount: "$59",
-    label: "Only",
-    title: "Airalo – 50GB USA eSIM for $59 for 30 Days",
-    heading: "$59 /30 DAYS",
-    sub: "Airalo",
-    description: "Get 50GB of high-speed data for 30 days for just $59.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AC10ALL"
-  },
-  {
-    id: "c3",
-    discount: "10%",
-    label: "UP TO",
-    title: "Airalo – Earn Up to 10% Cashback Rewards",
-    heading: "10% CASHBACK",
-    sub: "Airalo",
-    description: "Earn up to 10% cashback through Airalo Rewards on eligible eSIM purchases.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AC10ALL"
-  },
-  {
-    id: "c4",
-    discount: "20%",
-    label: "UP TO",
-    title: "Airalo – Existing Users Save Up to 20%",
-    heading: "20% OFF",
-    sub: "Airalo",
-    description: "Save up to 20% on selected eSIM plans with available Airalo promotions.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AC10ALL"
-  },
-  {
-    id: "c5",
-    discount: "$3",
-    label: "EARN",
-    title: "Airalo – Refer Friends & Earn $3",
-    heading: "$3",
-    sub: "Airalo",
-    description: "Give your friends $3 in Airmoney and receive $3 for every eligible referral.",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "AC10ALL"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Lyca Mobile", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/lyca-mobile-coupon-code_svvddg.webp", dealText: "Up to 69% OFF", href: "/stores/lyca-mobile-discount-code" },
@@ -135,15 +56,14 @@ const RELATED_STORES: StoreItem[] = [
 ];
 
 export default function AiraloCouponsContent() {
-  const [activeTab, setActiveTab] = useState<"All" | "Coupons" | "Deals">("All");
   const [activeSlide, setActiveSlide] = useState(0);
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
-  const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
 
   // Slide auto-play
   useEffect(() => {
@@ -153,22 +73,48 @@ export default function AiraloCouponsContent() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCopy = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setToastCode(code);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2000);
-  };
-
-  const toggleReveal = (id: string) => {
-    const next = new Set(revealedCodes);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    setRevealedCodes(next);
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
   };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-[32px] shadow-2xl p-8 max-w-sm w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+              <X className="w-5 h-5" />
+            </button>
+            <div className="text-center mb-6">
+              <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+              <h3 className="text-black font-black text-xl mb-1">Your Deal is Ready!</h3>
+              <p className="text-gray-500 text-sm font-bold">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between gap-3 mb-5">
+                <span className="font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white p-2 rounded-xl hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 text-center mb-5">
+                <span className="text-gray-500 font-bold text-sm">No code needed â€“ discount applied automatically</span>
+              </div>
+            )}
+            <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2">
+              Visit Store <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -223,7 +169,7 @@ export default function AiraloCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Airalo discount codes and promo codes to save up to 20% on selected eSIM plans and get 15% OFF your first purchase. Use discount code AC10ALL and enjoy USA eSIM plans from $4.50, instant activation, and cashback rewards on eligible purchases.
+                      Use the Airalo promo code AC10ALL to get an extra 10% off eligible eSIM purchases, then save up to 20% on select USA eSIM plans for even bigger value. First-time customers can also enjoy 15% off their first eligible eSIM, while affordable USA eSIM plans start from just $4.50 and unlimited USA data is available from $27. These verified discount code offers are regularly updated for Nov 2026, making Airalo a smart choice for affordable, instant travel connectivity.
                     </p>
                     <a
                       href="https://www.airalo.com/?code=AC10ALL"
@@ -335,17 +281,17 @@ export default function AiraloCouponsContent() {
 
                 
 
-                {OFFERS.map((c, i) => (
-<div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
+                {AIRALO_COUPONS.map((coupon) => (
+<div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
   <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
     <div className="flex flex-row">
       <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
         <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
         <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-          <div className="text-[18px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.sublabel}</p>
+          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+          <div className={`font-extrabold leading-none mt-2 ${coupon.valueFontClass ?? "text-[18px] sm:text-4xl"}`}>{coupon.mainValue}</div>
+          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
         </div>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -354,35 +300,28 @@ export default function AiraloCouponsContent() {
             <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
             <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              {c.bullets.map((b, bi) => (
-                <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+              {coupon.points.map((point, pi) => (
+                <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]"></span>{point}</li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Airalo deal: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-          <button type="button" onClick={() => handleCopy("AC10ALL")} className="mt-3 w-full lg:w-auto flex items-center justify-between gap-3 border-2 border-dashed border-[#056bfa] rounded-2xl px-4 py-2.5 bg-white hover:bg-[#e8f6f8] transition-colors">
-            <span className="font-mono font-black text-[#056bfa] text-sm tracking-widest">AC10ALL</span>
-            <span className="flex items-center gap-1 text-[#056bfa] font-bold text-[11px] uppercase shrink-0">
-              <Copy className="w-3.5 h-3.5" />
-              Copy
-            </span>
-          </button>
+        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <button onClick={() => handleCopy(coupon)} aria-label={`Get Airalo deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-                ))}
+))}
 
 
 
@@ -447,7 +386,7 @@ export default function AiraloCouponsContent() {
                         </Link>
                       ))}
                    </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories â†’</Link>
                 </div>
 
                 {/* Why Shop Card */}
@@ -523,7 +462,7 @@ export default function AiraloCouponsContent() {
                   </div>
                   <h3 className="text-black font-black text-sm mt-5 mb-1">{store.name}</h3>
                   <p className="text-[#056bfa] font-black text-[12px] uppercase mb-4">{store.dealText}</p>
-                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store →</span>
+                  <span className="text-[#056bfa] font-black text-[12px] uppercase hover:underline decoration-2">Visit Store â†’</span>
                 </Link>
               ))}
             </div>
@@ -771,14 +710,14 @@ export default function AiraloCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Airalo Deals</h3>
           <div className="space-y-6">
-            {COUPONS.slice(0, 5).map((deal, i) => (
+            {AIRALO_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">A</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.title}</p>
                 </div>
-                <a href="https://www.airalo.com/?code=AC10ALL" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Airalo deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <button onClick={() => handleCopy(coupon)} aria-label={`Get Airalo deal: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</button>
               </div>
             ))}
           </div>

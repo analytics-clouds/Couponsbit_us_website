@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import KeralaAyurvedaCouponsContent from "./_components/StoreCouponsContent";
+import { KERALA_COUPONS } from "./_components/offers";
+
+const TITLE = "Kerala Ayurveda Discount Code: Up to 20% Off + Extra 10% Off | Nov 2026";
+const DESCRIPTION =
+  "Use the latest Kerala Ayurveda discount code and promo code to get up to 20% off and use COUNTNEW10 to get extra 10% off. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kerala Ayurveda discount code - Only $28.95 | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Nov 2026",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
@@ -19,9 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-    title: "Kerala Ayurveda discount code - Only $28.95 | Nov 2026",
-    description:
-      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kerala Ayurveda discount code - Only $28.95 | Nov 2026",
-    description:
-      "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1785841263/kerala-ayurveda-logo_hdbbfs.jpg"],
     site: "@couponsbit",
   },
@@ -51,6 +54,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const keralaAyurvedaSchema = {
@@ -60,13 +65,12 @@ const keralaAyurvedaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-      name: "Kerala Ayurveda discount code - Only $28.95 | Nov 2026",
-      description:
-        "Kerala Ayurveda discount code - Kalyanaka Ghee  – Mental Wellness Support For $28.95 | Use code COUNTNEW10 for 10% OFF your first order | Nov 2026",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -76,165 +80,35 @@ const keralaAyurvedaSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code#brand",
+      name: "Kerala Ayurveda",
+      url: "https://keralaayurveda.store/",
+    },
+
+    {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code#offerlist",
       name: "Kerala Ayurveda Coupon Codes & Promo Codes",
       description:
         "Latest verified Kerala Ayurveda coupon codes and promo codes for Ayurvedic oils, supplements, skincare and wellness essentials.",
       url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Kalyanaka Ghee – Mental Wellness Support For $28.95",
-            description: "Traditional herb-infused Ayurvedic ghee crafted to support mental and emotional wellness.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
+      numberOfItems: KERALA_COUPONS.length,
+      itemListElement: KERALA_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Kerala Ayurveda",
+            url: "https://keralaayurveda.store/",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Rasnasapthakam Kwath – Joint Support For $22.95",
-            description: "Ayurvedic formula (90 Tablets) designed to support joint and muscle health.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Digi Eye Defense – Eye Health Support For $31.95",
-            description: "Digi Eye Defense (60 Softgels) supports healthy vision and daily eye protection.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Indukantham Kwath – Daily Wellness For $25.95",
-            description: "Traditional Ayurvedic formula (90 Tablets) for everyday health support.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Kumkumadi Oil – Radiant Skin From $27",
-            description: "Authentic Ayurvedic skincare oil crafted with premium herbs to help brighten skin.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Shilajit Capsules – Energy Support For $25.95",
-            description: "Shilajit (60 Veg Capsules) supports natural energy, stamina and endurance.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Brilliant Mind – Brain Support For $28.95",
-            description: "Brilliant Mind (Brahmi Pearls) supports memory, focus and mental clarity.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Kumkumadi Thailam – Natural Face Oil From $27",
-            description: "Crafted using authentic Ayurvedic skincare traditions to help improve skin texture.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Triphala Capsules – Gut Health For $28.95",
-            description: "Triphala Capsules (60 Veg Capsules) support healthy digestion and natural detoxification.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Dashamula Capsules – Detox Support For $28.95",
-            description: "Dashamula Capsules (60 Veg Capsules) help eliminate toxins and support healthy energy flow.",
-            url: "https://www.couponsbit.us/stores/kerala-ayurveda-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Kerala Ayurveda",
-              url: "https://keralaayurveda.store/",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -359,7 +233,9 @@ export default function KeralaAyurvedaStorePage() {
           __html: JSON.stringify(keralaAyurvedaSchema),
         }}
       />
-      <KeralaAyurvedaCouponsContent />
+      <Suspense fallback={null}>
+        <KeralaAyurvedaCouponsContent />
+      </Suspense>
     </>
   );
 }

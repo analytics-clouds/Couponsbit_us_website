@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import TargetCouponsContent from "./_components/StoreCouponsContent";
+
+const TITLE = "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026";
+const DESCRIPTION =
+  "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/target-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/target-discount-code",
-    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026",
-    description:
-      "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026",
-    description:
-      "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/target-logo_ycjzpz.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const targetSchema = {
@@ -63,15 +67,21 @@ const targetSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/target-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/target-discount-code",
-      name: "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026",
-      description:
-        "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
+      datePublished: "2026-01-01",
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/target-discount-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/target-discount-code#brand",
+      name: "Target",
+      url: "https://www.target.com",
     },
 
     {
@@ -207,7 +217,9 @@ export default function TargetStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(targetSchema) }} />
-      <TargetCouponsContent />
+      <Suspense fallback={null}>
+        <TargetCouponsContent />
+      </Suspense>
     </>
   );
 }
