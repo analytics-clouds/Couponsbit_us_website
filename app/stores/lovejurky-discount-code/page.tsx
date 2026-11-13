@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import LoveJerkyCouponsContent from "./_components/StoreCouponsContent";
+import { LOVEJURKY_COUPONS } from "./_components/offers";
+
+const TITLE = "LovesJerkyCo Promo Code: Get 15% Off + Free Shipping | Nov 2026";
+const DESCRIPTION =
+  "Use a LovesJerkyCo Promo Code and LovesJerkyCo Discount Code to save up to 15% plus free shipping over $66. Verified Nov 2026. Shop now.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "LovesJerky Discount Code: Free Shipping + $50 Sample | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest LovesJerky discount codes and deals for Nov 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/lovejurky-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Nov 2026",
-    description:
-      "Find the latest LovesJerky discount codes and deals for Nov 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "LovesJerky Discount Code: Free Shipping + $50 Sample | Nov 2026",
-    description:
-      "Find the latest LovesJerky discount codes and deals for Nov 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002073/lovejurky-logo_o9v01b.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +56,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -68,8 +77,8 @@ const loveJerkySchema = {
         "Find the latest LovesJerky discount codes and deals for Nov 2026. Get free shipping on orders over $66, a 6-flavor sample pack for $50 with free shipping, plus seasonings from $10 and more.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,114 +94,18 @@ const loveJerkySchema = {
       description:
         "Latest verified LoveJerky coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo Discount Code – Free Shipping on Orders Over $66",
-            description: "Stock up on jerky, seasonings, and favorite snacks while saving on delivery",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
+      numberOfItems: LOVEJURKY_COUPONS.length,
+      itemListElement: LOVEJURKY_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
+          seller: { "@type": "Organization", name: "LovesJerky Co", url: "https://www.lovesjerkyco.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo Discount Code – 6-Flavour Sample Packs for $50",
-            description: "Try 6 different flavors for $50 with the sample pack collection",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo USA – Redmond Real Salt 5 oz for $32",
-            description: "Get 5 oz Redmond Real Salt for $32",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo USA – 6-Flavour Sample Collection for $50",
-            description: "Explore the 6 Flavors Sample Pack for $50",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo USA – Teriyaki Seasoning for $24",
-            description: "Shop Teriyaki seasoning for $24",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo USA – Lemon Pepper Seasoning for $24",
-            description: "Get Lemon Pepper seasoning for $24",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "LovesJerkyCo USA – Red Chili Powder from $10",
-            description: "Add bold flavor and heat to your favorite recipes",
-            url: "https://www.couponsbit.us/stores/lovejurky-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "LoveJerky",
-              url: "https://www.LovesJerky.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -224,6 +137,13 @@ const loveJerkySchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/lovejurky-discount-code#brand",
+      name: "LovesJerky Co",
+      url: "https://www.lovesjerkyco.com",
     },
 
     {
@@ -325,7 +245,9 @@ export default function LoveJerkyStorePage() {
           __html: JSON.stringify(loveJerkySchema),
         }}
       />
-      <LoveJerkyCouponsContent />
+      <Suspense fallback={null}>
+        <LoveJerkyCouponsContent />
+      </Suspense>
     </>
   );
 }

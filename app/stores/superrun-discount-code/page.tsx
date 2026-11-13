@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SuperrunCouponsContent from "./_components/StoreCouponsContent";
+import { SUPERRUN_COUPONS } from "./_components/offers";
+
+const TITLE = "Superun Promo Code: Up to 65% Off + Free Shipping | Nov 2026";
+const DESCRIPTION =
+  "Use a Superun Promo Code and Superun Discount Code to save up to 65% or enjoy free shipping storewide. Verified Nov 2026. Shop now.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Superun Discount Code - Save $30 on treadmill + Save $20 | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Superun discount code, promo code, and treadmill deals for Nov 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/superrun-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/superrun-discount-code",
-    title: "Superun Discount Code - Save $30 on treadmill + Save $20 | Nov 2026",
-    description:
-      "Find the latest Superun discount code, promo code, and treadmill deals for Nov 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Superun Discount Code - Save $30 on treadmill + Save $20 | Nov 2026",
-    description:
-      "Find the latest Superun discount code, promo code, and treadmill deals for Nov 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787037376/superrun_w6lj1n.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +56,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -68,8 +77,8 @@ const superrunSchema = {
         "Find the latest Superun discount code, promo code, and treadmill deals for Nov 2026.  Save $30 on this Superun treadmill deal, Save $20 from the regular price and and $10 on the WALK Urban at $129.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/superrun-discount-code#breadcrumb" },
     },
@@ -80,25 +89,18 @@ const superrunSchema = {
       name: "Superrun Discount Codes & Coupon Codes",
       description: "Latest Superrun discount codes and offers for walking pads, under-desk treadmills and accessories.",
       url: "https://www.couponsbit.us/stores/superrun-discount-code",
-      numberOfItems: 4,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Superun Discount Code – RUN Pro Foldable Treadmill with Table Board | SAVE $30 🏃", description: "Grab the Superun RUN Pro Foldable Treadmill with Table Board for just $264.99.", url: "https://www.couponsbit.us/stores/superrun-discount-code", seller: { "@type": "Organization", name: "Superrun", url: "https://superuntreadmill.com" } },
+      numberOfItems: SUPERRUN_COUPONS.length,
+      itemListElement: SUPERRUN_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/superrun-discount-code",
+          seller: { "@type": "Organization", name: "Superrun", url: "https://superuntreadmill.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Superun Discount Code – Walk&Run 2-in-1 Foldable Treadmill | SAVE $20 🏃", description: "Get the Superun Walk&Run 2-in-1 Foldable Treadmill for only $249.99.", url: "https://www.couponsbit.us/stores/superrun-discount-code", seller: { "@type": "Organization", name: "Superrun", url: "https://superuntreadmill.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Superun Treadmill Remote Control Replacement | $39.99 🎮", description: "Get the Superun Treadmill Remote Control Replacement for only $39.99.", url: "https://www.couponsbit.us/stores/superrun-discount-code", seller: { "@type": "Organization", name: "Superrun", url: "https://superuntreadmill.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Superun WALK Urban Under Desk Treadmill | SAVE $10 🚶", description: "Buy the Superun WALK Urban Under Desk Treadmill for just $129.00.", url: "https://www.couponsbit.us/stores/superrun-discount-code", seller: { "@type": "Organization", name: "Superrun", url: "https://superuntreadmill.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -118,6 +120,13 @@ const superrunSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/superrun-discount-code#brand",
+      name: "Superrun",
+      url: "https://superuntreadmill.com",
     },
 
     {
@@ -215,7 +224,9 @@ export default function SuperrunStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(superrunSchema) }} />
-      <SuperrunCouponsContent />
+      <Suspense fallback={null}>
+        <SuperrunCouponsContent />
+      </Suspense>
     </>
   );
 }

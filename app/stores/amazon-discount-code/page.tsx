@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AmazonCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { AMAZON_COUPONS } from "./_components/offers";
+
+const TITLE = "Amazon Promo Code: get up to 74% Off | Nov 2026";
+const DESCRIPTION = "Use the latest Amazon promo code and discount code to save up to 74% on Cole Haan Men's Collection and 69% off KARL LAGERFELD. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
+    absolute: TITLE,
   },
-  description:
-    "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Nov 2026",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/amazon-discount-code",
@@ -22,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/amazon-discount-code",
-    title: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
-    description:
-      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
-    description:
-      "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Nov 2026",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const amazonSchema = {
@@ -64,13 +71,12 @@ const amazonSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/amazon-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/amazon-discount-code",
-      name: "Amazon Discount Code | Save Up to 52% OFF + Lenovo Gaming PC from $2,556",
-      description:
-        "Use an Amazon Discount Code to save up to 52% OFF, including Lenovo Legion Tower 5i Gaming PC deals from $2,556. Shop electronics, fitness, home, beauty, tech and more | Nov 2026",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -86,14 +92,14 @@ const amazonSchema = {
       description:
         "Latest verified Amazon coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/amazon-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: AMAZON_COUPONS.length,
+      itemListElement: AMAZON_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.description,
+          name: c.title,
+          description: c.description,
           url: "https://www.couponsbit.us/stores/amazon-discount-code",
           seller: { "@type": "Organization", name: "Amazon", url: "https://www.amazon.com" },
         },
@@ -246,7 +252,9 @@ export default function AmazonStorePage() {
           __html: JSON.stringify(amazonSchema),
         }}
       />
-      <AmazonCouponsContent />
+      <Suspense fallback={null}>
+        <AmazonCouponsContent />
+      </Suspense>
     </>
   );
 }

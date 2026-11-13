@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AporroCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { APORRO_COUPONS } from "./_components/offers";
+
+const TITLE = "Aporro Promo Code: 45% Off + $50 off on welcome order | Nov 2026";
+const DESCRIPTION = "Use the latest Aporro promo code and discount code to get $50 off your first order plus 45% off select jewellery. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/aporro-discount-code",
@@ -22,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/aporro-discount-code",
-    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
-    description:
-      "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
-    description:
-      "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const aporroSchema = {
@@ -64,13 +71,12 @@ const aporroSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/aporro-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/aporro-discount-code",
-      name: "Aporro Discount Code - signup and get $50 OFF + save 45% on S925 Baguette | Nov 2026",
-      description:
-        "Find the latest Aporro discount code, promo code and verified jewelry deals for Nov 2026. Get $50 OFF as a new shopper, 2 chains for $99, and Save 45% on the S925 Baguette Mix Halo Stud Earring Set.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/aporro-discount-code#breadcrumb" },
     },
@@ -81,14 +87,14 @@ const aporroSchema = {
       name: "Aporro Discount Codes & Coupon Codes",
       description: "Latest Aporro discount codes and offers for chains, pendants, earrings, bracelets and rings.",
       url: "https://www.couponsbit.us/stores/aporro-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: APORRO_COUPONS.length,
+      itemListElement: APORRO_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.desc,
+          name: c.title,
+          description: c.description,
           url: "https://www.couponsbit.us/stores/aporro-discount-code",
           seller: { "@type": "Organization", name: "Aporro", url: "https://www.aporro.com" },
         },
@@ -112,6 +118,13 @@ const aporroSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/aporro-discount-code#brand",
+      name: "Aporro",
+      url: "https://www.aporro.com",
     },
 
     {
@@ -217,7 +230,9 @@ export default function AporroStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aporroSchema) }} />
-      <AporroCouponsContent />
+      <Suspense fallback={null}>
+        <AporroCouponsContent />
+      </Suspense>
     </>
   );
 }

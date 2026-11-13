@@ -1,20 +1,188 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  valueFontClass?: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
-  { id: "c1", label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Jackson Polo | $110", desc: "Shop The Jackson Polo in White/Seafoam for $110", bullets: ["Part of the Blue Cypress Summer 2026 Collection", "Ideal for golf rounds, casual outings and warm-weather styling", "Pair it with shorts or trousers for a clean summer look", "Blue Cypress Discount Code, Jackson Polo, Men's Golf Apparel, Summer Collection, USA"] },
-  { id: "c2", label: "SHOP", value: "$110", title: "Blue Cypress Discount Code – The Stokes Polo | $110", desc: "Get The Stokes Polo for $110 from the Summer 2026 Collection", bullets: ["Designed for a polished and comfortable golf-inspired look", "Suitable for golf, weekend outings and everyday summer wear", "A versatile polo that works well with casual or performance bottoms", "Blue Cypress Discount Code, Stokes Polo, Golf Clothing, Summer Fashion, USA"] },
-  { id: "c3", label: "STARTING AT", value: "$109.95", title: "Blue Cypress Women's Essentials | $109.95", desc: "Explore Blue Cypress Women's Essentials starting at $109.95", bullets: ["Discover versatile pieces designed for active and everyday lifestyles", "Ideal for golf, travel, casual outings and seasonal styling", "Refresh your wardrobe with polished and comfortable women's apparel", "Blue Cypress Discount Code, Women's Essentials, Golf Fashion, Women's Apparel, USA"] },
-  { id: "c4", label: "SHOP", value: "$110", title: "Blue Cypress – The Roberts Polo in Blue | $110", desc: "Shop The Roberts Polo in Blue for $110", bullets: ["Features a classic design suited to modern golf and casual style", "Great for golf rounds, weekends and everyday summer outfits", "Easy-to-pair style for a versatile seasonal wardrobe", "Blue Cypress Discount Code, Roberts Polo, Men's Golf Wear, Blue Polo, USA"] },
-  { id: "c5", label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Navy | $114.95", desc: "Get the Hutton Hoodie in Navy for $114.95", bullets: ["Best-selling style designed for comfort on and off the golf course", "Perfect for cooler mornings, travel and casual layering", "Combines relaxed comfort with a refined athletic appearance", "Blue Cypress Discount Code, Hutton Hoodie, Golf Hoodie, Men's Apparel, USA"] },
-  { id: "c6", label: "SHOP", value: "$114.95", title: "Blue Cypress – Hutton Hoodie Light Blue | $114.95", desc: "Shop the Hutton Hoodie in Light Blue for $114.95", bullets: ["Comfortable layering option for golf and everyday activities", "Great for cooler weather, travel and relaxed weekend looks", "Adds a casual yet polished touch to your wardrobe", "Blue Cypress Discount Code, Hutton Hoodie, Light Blue Hoodie, Golf Apparel, USA"] },
-  { id: "c7", label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Quarter-Zip Navy | $124.95", desc: "Get The Isaac Quarter-Zip in Navy for $124.95", bullets: ["Smooth, lightweight design is made for comfortable movement", "Ideal for golf rounds, active days and outdoor activities", "Classic quarter-zip styling makes it easy to wear beyond the course", "Blue Cypress Discount Code, Isaac Quarter-Zip, Golf Performance Wear, Men's Clothing, USA"] },
-  { id: "c8", label: "SHOP", value: "$124.95", title: "Blue Cypress – Isaac Mélange Quarter-Zip Navy | $124.95", desc: "Shop The Isaac Mélange Quarter-Zip in Navy for $124.95", bullets: ["Features a stylish mélange finish with performance stretch", "Designed for comfortable movement during golf and active occasions", "Works well for the course, travel and everyday wear", "Blue Cypress Discount Code, Isaac Mélange Quarter-Zip, Golf Apparel, Performance Clothing, USA"] },
-  { id: "c9", label: "SAVE", value: "20%", title: "Blue Cypress – First Order Offer | 20% OFF", desc: "Sign up and receive 20% OFF your first Blue Cypress order", bullets: ["Unlock access to exclusive offers and future promotions", "Save on polos, hoodies, quarter-zips and women's essentials", "A great opportunity for new customers to explore the collection", "Blue Cypress Discount Code, 20% Off First Order, Golf Deals, USA"] },
+export const BLUE_CYPRESS_COUPONS: Coupon[] = [
+  {
+    id: "c1",
+    topLabel: "ONLY",
+    mainValue: "$110",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Promo Code – The Jackson Polo, $110",
+    description: "Upgrade your golf wardrobe with The Jackson Polo at just $110.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop The Jackson Polo in White/Seafoam for $110.",
+      "Made for everyday comfort, on the course and off it.",
+      "A stylish addition to the Blue Cypress Summer Collection.",
+      "Available for a limited period only.",
+    ],
+  },
+  {
+    id: "c2",
+    topLabel: "ONLY",
+    mainValue: "$110",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Promo Code – The Stokes Polo, $110",
+    description: "Refresh your look with The Stokes Polo from the Summer 2026 Collection.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get The Stokes Polo for just $110.",
+      "Part of the latest Summer 2026 Collection.",
+      "Perfect for golf, casual outings, and daily wear.",
+      "Shop while this limited-period offer is on.",
+    ],
+  },
+  {
+    id: "c3",
+    topLabel: "FROM",
+    mainValue: "$109.95",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Discount Code – Women’s Essentials, From $109.95",
+    description: "Discover premium women’s apparel starting at just $109.95.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop Blue Cypress Women’s Essentials from $109.95.",
+      "Browse stylish pieces made for everyday comfort.",
+      "Find versatile options for both casual and active lifestyles.",
+      "Limited-period pricing is available right now.",
+    ],
+  },
+  {
+    id: "c4",
+    topLabel: "ONLY",
+    mainValue: "$110",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Discount Code – The Roberts Polo, Blue, $110",
+    description: "Add to your wardrobe with The Roberts Polo in Blue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy The Roberts Polo in Blue for just $110.",
+      "Made for comfort and timeless everyday style.",
+      "A versatile pick for golf or casual occasions.",
+      "Shop this limited-period offer today.",
+    ],
+  },
+  {
+    id: "c5",
+    topLabel: "ONLY",
+    mainValue: "$114.95",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Coupon Code – Hutton Hoodie, Navy, $114.95",
+    description: "Stay comfortable with the Hutton Hoodie in Navy.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Hutton Hoodie in Navy for $114.95.",
+      "Designed for everyday comfort and easy layering.",
+      "Great for cool mornings and casual outings.",
+      "Available while this promotion lasts.",
+    ],
+  },
+  {
+    id: "c6",
+    topLabel: "ONLY",
+    mainValue: "$114.95",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Coupon Code – Hutton Hoodie, Light Blue, $114.95",
+    description: "Give your wardrobe a fresh look with the Hutton Hoodie.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop the Hutton Hoodie in Light Blue for $114.95.",
+      "Soft fabric that stays comfortable for long.",
+      "Ideal for travel, weekends, and casual wear.",
+      "Grab this limited-period deal before it ends.",
+    ],
+  },
+  {
+    id: "c7",
+    topLabel: "ONLY",
+    mainValue: "$124.95",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Voucher Code – Isaac Quarter-Zip, Navy, $124.95",
+    description: "Layer up in style with the Isaac Quarter-Zip in Navy.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Buy the Isaac Quarter-Zip in Navy for $124.95.",
+      "A comfortable layer for golf and daily wear.",
+      "Comes with a clean and modern look.",
+      "Shop now while this offer is available.",
+    ],
+  },
+  {
+    id: "c8",
+    topLabel: "ONLY",
+    mainValue: "$124.95",
+    offText: "",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Voucher Code – Isaac Mélange Quarter-Zip, Navy, $124.95",
+    description: "Upgrade your golf apparel with the Isaac Mélange Quarter-Zip.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Isaac Mélange Quarter-Zip in Navy for $124.95.",
+      "Lightweight comfort for changing weather.",
+      "Easy to pair with your favourite golf essentials.",
+      "Limited-period pricing is available right now.",
+    ],
+  },
+  {
+    id: "c9",
+    topLabel: "SAVE",
+    mainValue: "20%",
+    offText: "OFF",
+    valueFontClass: "text-[24px] sm:text-5xl",
+    title: "Blue Cypress Deals – First Order, Save 20%",
+    description: "Save on your first purchase when you join Blue Cypress.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get 20% off on your first Blue Cypress order.",
+      "Sign up to unlock your welcome discount.",
+      "Use your savings on eligible apparel and accessories.",
+      "This limited-period offer is for new customers only.",
+    ],
+  },
 ];

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BlueCypressCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BLUE_CYPRESS_COUPONS } from "./_components/offers";
+
+const TITLE = "Blue Cypress Promo Code: 20% Off + Polos from $110 | Nov 2026";
+const DESCRIPTION = "Use the latest Blue Cypress promo code and discount code to get 20% off your first order or shop polos from $110. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Blue Cypress Discount Code - Get 20% OFF First Order | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Blue Cypress discount code, promo code and deals for Nov 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
@@ -22,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Nov 2026",
-    description:
-      "Find the latest Blue Cypress discount code, promo code and deals for Nov 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Blue Cypress Discount Code - Get 20% OFF First Order | Nov 2026",
-    description:
-      "Find the latest Blue Cypress discount code, promo code and deals for Nov 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/blue-cypress-logo_ax2m7c.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const blueCypressSchema = {
@@ -64,13 +71,12 @@ const blueCypressSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-      name: "Blue Cypress Discount Code - Get 20% OFF First Order | Nov 2026",
-      description:
-        "Find the latest Blue Cypress discount code, promo code and deals for Nov 2026. Sign up for 20% OFF your first order, with polos from $110, hoodies from $114.95, and quarter-zips from $124.95.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#breadcrumb" },
     },
@@ -81,14 +87,14 @@ const blueCypressSchema = {
       name: "Blue Cypress Discount Codes & Coupon Codes",
       description: "Latest Blue Cypress discount codes and offers for polos, hoodies, quarter-zips, headwear and belts.",
       url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BLUE_CYPRESS_COUPONS.length,
+      itemListElement: BLUE_CYPRESS_COUPONS.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.desc,
+          name: c.title,
+          description: c.description,
           url: "https://www.couponsbit.us/stores/blue-cypress-discount-code",
           seller: { "@type": "Organization", name: "Blue Cypress", url: "https://www.bluecypress.com" },
         },
@@ -112,6 +118,13 @@ const blueCypressSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/blue-cypress-discount-code#brand",
+      name: "Blue Cypress",
+      url: "https://www.bluecypress.com",
     },
 
     {
@@ -217,7 +230,9 @@ export default function BlueCypressStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blueCypressSchema) }} />
-      <BlueCypressCouponsContent />
+      <Suspense fallback={null}>
+        <BlueCypressCouponsContent />
+      </Suspense>
     </>
   );
 }

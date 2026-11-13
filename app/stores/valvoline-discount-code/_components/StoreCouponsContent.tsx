@@ -14,7 +14,7 @@ import {
   PiggyBank,
   RefreshCw,
   ChevronDown,
-  CheckCircle,MapPin, Layers, UserPlus,
+  CheckCircle, Copy, X, MapPin, Layers, UserPlus,
   LayoutGrid,
   Search,
   ShoppingBag,
@@ -28,13 +28,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { VALVOLINE_COUPONS, Coupon } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -42,14 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "Up to 50% OFF Vehicle Maintenance Services", sub: "Valvoline Discount Code" },
-  { id: "d2", label: "FLAT", heading: "Flat 30% OFF Service Offers", sub: "Valvoline Discount Code" },
-  { id: "d3", label: "SAVE", heading: "$15 OFF Synthetic Blend Oil Change", sub: "Limited-Time Offer" },
-  { id: "d4", label: "SAVE", heading: "$10 OFF Full-Service Conventional Oil Change", sub: "Limited-Time Offer" },
-  { id: "d5", label: "UP TO", heading: "Up to 40% OFF Radiator Services", sub: "Valvoline Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Outfitr", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg", dealText: "Up to 62% OFF", href: "/stores/outfitr-discount-code" },
@@ -65,12 +51,54 @@ const STORE_URL = "https://www.amazon.com/s?k=valvoline&crid=3HF3CRAVFRC4X&spref
 export default function ValvolineCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-[32px] shadow-2xl p-8 max-w-sm w-full relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+              <X className="w-5 h-5" />
+            </button>
+            <div className="text-center mb-6">
+              <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+              <h3 className="text-black font-black text-xl mb-1">Your Deal is Ready!</h3>
+              <p className="text-gray-500 text-sm font-bold">{activeModalCoupon.title}</p>
+            </div>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between gap-3 mb-5">
+                <span className="font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white p-2 rounded-xl hover:bg-[#005f91] transition-colors">
+                  <Copy className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 text-center mb-5">
+                <span className="text-gray-500 font-bold text-sm">No code needed – discount applied automatically</span>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2">
+              Visit Store <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +151,7 @@ export default function ValvolineCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(38.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Valvoline discount codes, promo codes, and vehicle maintenance deals for Nov 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, $15 OFF Synthetic Blend Oil Changes, $10 OFF Conventional Oil Changes, and up to 40% OFF radiator services.
+                      Use a Valvoline Promo Code or Valvoline Discount Code to save on oil changes and vehicle maintenance this Nov 2026. Our regularly updated offers include up to 50% off vehicle maintenance services, $15 off a Synthetic Blend Oil Change, and up to 40% off radiator services. You can also save $10 on a Full-Service Conventional Oil Change or 20% on select items. Wondering how much you can save at Valvoline? Check our verified offers before booking your next service.
                     </p>
                     <a
                       href={STORE_URL}
@@ -200,22 +228,17 @@ export default function ValvolineCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Valvoline Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "50% OFF", title: "Valvoline Discount Code – Up to 50% OFF Vehicle Maintenance Services", desc: "Get up to 50% OFF on eligible Valvoline vehicle maintenance services", bullets: ["Save on essential car care and routine maintenance services", "Available for customers looking to keep their vehicles road-ready for less", "Book your service appointment and claim the available savings"] },
-          { label: "FLAT", value: "30% OFF", title: "Valvoline Discount Code – Flat 30% OFF Service Offers", desc: "Enjoy Flat 30% OFF on eligible Valvoline services", bullets: ["Save on air filter changes, fuel system cleaning and tire rotation", "Get discounts on air conditioning and other available vehicle services", "Schedule your service and reduce your vehicle maintenance costs"] },
-          { label: "SAVE", value: "$15 OFF", title: "Valvoline – $15 OFF Synthetic Blend Oil Change", desc: "Get $15 OFF a Valvoline Synthetic Blend Oil Change service", bullets: ["Save on routine oil maintenance with this limited-time offer", "Ideal for drivers looking for affordable vehicle maintenance", "Book an eligible Valvoline service appointment and enjoy the savings"] },
-          { label: "SAVE", value: "$10 OFF", title: "Valvoline – $10 OFF Full-Service Conventional Oil Change", desc: "Save $10 on an eligible Valvoline Full-Service Conventional Oil Change", bullets: ["Get professional oil change service at a lower price", "A convenient way to stay on top of regular vehicle maintenance", "Schedule your service and take advantage of the available discount"] },
-          { label: "UP TO", value: "40% OFF", title: "Valvoline – Up to 40% OFF Radiator Services", desc: "Enjoy up to 40% OFF on eligible Valvoline radiator services", bullets: ["Save on important cooling-system maintenance for your vehicle", "Explore available radiator and vehicle care services at participating locations", "Book your appointment and make your car maintenance more affordable"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {VALVOLINE_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    <div className="text-[22px] sm:text-[32px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className={`font-extrabold leading-none mt-2 ${coupon.valueFontClass ?? "text-[22px] sm:text-[32px]"}`}>{coupon.mainValue}</div>
+                    <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -224,22 +247,22 @@ export default function ValvolineCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
-                          <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                        {coupon.points.map((point, pi) => (
+                          <li key={pi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{point}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Valvoline: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <button onClick={() => handleCopy(coupon)} aria-label={`Shop Valvoline: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                   </div>
                 </div>
               </div>
@@ -688,28 +711,26 @@ export default function ValvolineCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {VALVOLINE_COUPONS.map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   V
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.title}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
-                <a 
-                  href={STORE_URL} 
-                  target="_blank" 
-                  rel="nofollow noopener noreferrer" 
-                  aria-label={`Shop Valvoline: ${deal.heading}`} 
+                <button
+                  onClick={() => handleCopy(coupon)}
+                  aria-label={`Shop Valvoline: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >
                   Get Deal
-                </a>
+                </button>
               </div>
             ))}
           </div>

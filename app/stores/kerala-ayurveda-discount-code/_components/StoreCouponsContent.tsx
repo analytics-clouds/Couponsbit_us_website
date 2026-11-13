@@ -321,7 +321,18 @@ export default function KeralaAyurvedaCouponsContent() {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center gap-3 px-3 sm:px-5 py-3 sm:py-6">
+            {coupon.code && (
+              <div className="w-full flex items-center justify-between gap-2 border-2 border-dashed border-gray-300 rounded-xl px-3 py-2 bg-white">
+                <span className="font-black text-black text-sm tracking-widest">{coupon.code}</span>
+                <button
+                  onClick={() => { navigator.clipboard.writeText(coupon.code); setToastCode(coupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }}
+                  className="bg-[#f0f0f0] hover:bg-[#056bfa] hover:text-white text-gray-700 font-bold text-xs px-3 py-1.5 rounded-lg transition-all shrink-0"
+                >
+                  Copy
+                </button>
+              </div>
+            )}
             <button onClick={() => handleCopy(coupon)} aria-label={`Get Kerala Ayurveda deal: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
           </div>
         </div>

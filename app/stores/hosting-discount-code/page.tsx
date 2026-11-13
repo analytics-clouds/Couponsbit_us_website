@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import HostingCouponsContent from "./_components/StoreCouponsContent";
+import { HOSTING_COUPONS } from "./_components/offers";
+
+const TITLE = "Hosting Promo Code: Save up to 75% on Web Hosting | Nov 2026";
+const DESCRIPTION =
+  "Use the latest Hosting promo code and discount code to get 75% off Starter Web Hosting or launch your website from just $2.99/month. Verified offers for Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Hosting Discount Code: 75% Off at $2.99/mo | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Hosting discount codes and web hosting deals for November 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/hosting-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/hosting-discount-code",
-    title: "Hosting Discount Code: 75% Off at $2.99/mo | Nov 2026",
-    description:
-      "Find the latest Hosting discount codes and web hosting deals for November 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Hosting Discount Code: 75% Off at $2.99/mo | Nov 2026",
-    description:
-      "Find the latest Hosting discount codes and web hosting deals for November 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/Hosting_logo_c17yhb.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +56,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -68,8 +77,8 @@ const hostingSchema = {
         "Find the latest Hosting discount codes and web hosting deals for November 2026. Get up to 75% off Starter hosting at $2.99/month, 70% off Pro at $6.99/month, plus Node.js, WordPress, email and AI hosting deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,174 +94,18 @@ const hostingSchema = {
       description:
         "Latest verified Hosting coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/hosting-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Hosting Discount Code USA – Starter Web Hosting | 75% OFF at $2.99/month",
-            description: "Get the Starter hosting plan for just $2.99/month, down from $11.99",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
+      numberOfItems: HOSTING_COUPONS.length,
+      itemListElement: HOSTING_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/hosting-discount-code",
+          seller: { "@type": "Organization", name: "Hosting", url: "https://www.hosting.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Hosting Discount Code USA – Pro Web Hosting | 70% OFF at $6.99/month",
-            description: "Get the Pro plan for $6.99/month, down from $22.99",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Max Node.js Hosting | 69% OFF at $5.61/month",
-            description: "Get Max Node.js hosting for $5.61/month, down from $17.99",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Max Web Hosting | 68% OFF at $8.99/month",
-            description: "Get the Max plan for $8.99/month, down from $27.99",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Managed WordPress Medium Plan | 52% OFF at $9.96/month",
-            description: "Get managed WordPress hosting for $9.96/month, down from $20.75",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – AI Application Pro Plan | From $49.99/month",
-            description: "Launch, deploy, secure, and scale AI applications from $49.99/month",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – WordPress Hosting | From $12.49/month",
-            description: "Get managed WordPress hosting starting at $12.49/month",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Managed cPanel 160GB | $580/month",
-            description: "Get managed cPanel hosting for $580/month",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Premium Business Email | 43% OFF at $3.99/mailbox",
-            description: "Get premium business email for $3.99 per mailbox, down from $6.99",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Managed Server 64GB | $209/month",
-            description: "Get the Managed Server 64GB plan for $209/month",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Hosting USA – Managed cPanel 256GB | $915/month",
-            description: "Get Managed cPanel 256GB hosting for $915/month",
-            url: "https://www.couponsbit.us/stores/hosting-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Hosting",
-              url: "https://www.hosting.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -284,6 +137,13 @@ const hostingSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/hosting-discount-code#brand",
+      name: "Hosting",
+      url: "https://www.hosting.com",
     },
 
     {
@@ -393,7 +253,9 @@ export default function HostingStorePage() {
           __html: JSON.stringify(hostingSchema),
         }}
       />
-      <HostingCouponsContent />
+      <Suspense fallback={null}>
+        <HostingCouponsContent />
+      </Suspense>
     </>
   );
 }

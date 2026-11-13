@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SignalRingCouponsContent from "./_components/StoreCouponsContent";
+import { SIGNALRING_COUPONS } from "./_components/offers";
+
+const TITLE = "SignalRing Promo Code: Get 15% Off + $399 off on Smart Ring | Nov 2026";
+const DESCRIPTION = "Use a SignalRing Promo Code and SignalRing Discount Code to save 15% storewide or get the Smart Ring for $399. Verified Nov 2026. Shop now.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest SignalRing discount code, promo code, and smart ring deals for Nov 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/signalring-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/signalring-discount-code",
-    title: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Nov 2026",
-    description:
-      "Find the latest SignalRing discount code, promo code, and smart ring deals for Nov 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Nov 2026",
-    description:
-      "Find the latest SignalRing discount code, promo code, and smart ring deals for Nov 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787037375/singnalring_i9epcf.jpg"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const signalRingSchema = {
@@ -63,13 +71,12 @@ const signalRingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/signalring-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/signalring-discount-code",
-      name: "SignalRing Discount Code - Get the Signal Ring for $399 + Free Sizing Kit | Nov 2026",
-      description:
-        "Find the latest SignalRing discount code, promo code, and smart ring deals for Nov 2026. Get the Signal Ring for $399 with a free sizing kit, up to 5-day battery, no subscription, and 30-day returns.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/signalring-discount-code#breadcrumb" },
     },
@@ -80,25 +87,18 @@ const signalRingSchema = {
       name: "SignalRing Discount Codes & Coupon Codes",
       description: "Latest SignalRing discount codes and offers for the Signal Ring blood pressure monitor.",
       url: "https://www.couponsbit.us/stores/signalring-discount-code",
-      numberOfItems: 4,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "SignalRing Discount Code – Smart Ring for $399", description: "Get the Signal Ring for $399 with sizes 5-13 available", url: "https://www.couponsbit.us/stores/signalring-discount-code", seller: { "@type": "Organization", name: "SignalRing", url: "https://signalring.com" } },
+      numberOfItems: SIGNALRING_COUPONS.length,
+      itemListElement: SIGNALRING_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/signalring-discount-code",
+          seller: { "@type": "Organization", name: "SignalRing", url: "https://vitalsignals.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "SignalRing Discount Code – 5-Day Battery Smart Ring", description: "Get the Signal Ring with up to 5 days of battery life", url: "https://www.couponsbit.us/stores/signalring-discount-code", seller: { "@type": "Organization", name: "SignalRing", url: "https://signalring.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "SignalRing – Bluetooth Wearable Ring | $399", description: "Shop the Signal Ring for $399 with Bluetooth Low Energy connectivity", url: "https://www.couponsbit.us/stores/signalring-discount-code", seller: { "@type": "Organization", name: "SignalRing", url: "https://signalring.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "SignalRing – Free Sizing Kit & 30-Day Returns", description: "Purchase the Signal Ring at $399 and receive a sizing kit with your order", url: "https://www.couponsbit.us/stores/signalring-discount-code", seller: { "@type": "Organization", name: "SignalRing", url: "https://signalring.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -118,6 +118,13 @@ const signalRingSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/signalring-discount-code#brand",
+      name: "SignalRing",
+      url: "https://vitalsignals.com",
     },
 
     {
@@ -231,7 +238,9 @@ export default function SignalRingStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(signalRingSchema) }} />
-      <SignalRingCouponsContent />
+      <Suspense fallback={null}>
+        <SignalRingCouponsContent />
+      </Suspense>
     </>
   );
 }

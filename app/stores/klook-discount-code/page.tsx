@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import KlookCouponsContent from "./_components/StoreCouponsContent";
+import { KLOOK_COUPONS } from "./_components/offers";
+
+const TITLE = "Klook Promo Code: Up to 50% Off Klook Pass NYC | Nov 2026";
+const DESCRIPTION =
+  "Save more with the Klook Promo Code and Klook Discount Code. Get up to 50% off Klook Pass NYC plus Singapore staycations from $130. Verified deals, Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
+    absolute: TITLE,
   },
-  description:
-    "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Nov 2026.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/klook-discount-code",
@@ -21,9 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/klook-discount-code",
-    title: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
-    description:
-      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Nov 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +43,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Klook Discount Code | Save Up to 50% OFF + Singapore Staycation Deals from Just $130.",
-    description:
-      "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Nov 2026.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002063/klook-logo_alzz2a.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +56,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -68,8 +77,8 @@ const klookSchema = {
         "Use a Klook Discount Code to save up to 50% OFF on NYC attractions, Book amazing Singapore staycations starting from just $130. Book Universal Studios Hollywood tickets from US$80.85 | Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,174 +94,18 @@ const klookSchema = {
       description:
         "Latest verified Klook coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/klook-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Up to 50% OFF Klook Pass NYC Tours & Attractions",
-            description: "Save up to 50% on New York City attractions with the Klook Pass.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
+      numberOfItems: KLOOK_COUPONS.length,
+      itemListElement: KLOOK_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/klook-discount-code",
+          seller: { "@type": "Organization", name: "Klook", url: "https://www.klook.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Singapore Staycation Deals from Just $130",
-            description: "Book amazing Singapore staycations starting from just $130.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Klook Promo Code – teamLab Borderless Tokyo Tickets from US$22.85",
-            description: "Book teamLab Borderless Tokyo tickets from only US$22.85.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Save with a Klook Discount Code – teamLab Planets Tokyo Tickets from US$22.99",
-            description: "Get teamLab Planets Tokyo tickets starting from US$22.99.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Up to 11% OFF Popular Travel Destinations",
-            description: "Save up to 11% on selected destinations worldwide.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Statue of Liberty Express Cruise from US$28.75",
-            description: "Book the Statue of Liberty Express Cruise from US$28.75.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Klook Japan Discount Code – Shizuoka Experiences from Just $50",
-            description: "Explore Shizuoka attractions starting from only $50.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Niagara Falls Day Tour from Toronto from US$61.95",
-            description: "Book Niagara Falls day tours from Toronto starting at US$61.95.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – Universal Studios Hollywood Tickets from US$80.85",
-            description: "Book Universal Studios Hollywood tickets from US$80.85.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Klook Transport Discount – Bus Tickets from Just $17.85",
-            description: "Book bus tickets starting from only $17.85.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 11,
-          item: {
-            "@type": "Offer",
-            name: "Klook Discount Code – teamLab Borderless Digital Art Museum Tickets from US$25.39",
-            description: "Book teamLab Borderless Digital Art Museum tickets from US$25.39.",
-            url: "https://www.couponsbit.us/stores/klook-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Klook",
-              url: "https://www.klook.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -284,6 +137,13 @@ const klookSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/klook-discount-code#brand",
+      name: "Klook",
+      url: "https://www.klook.com",
     },
 
     {
@@ -377,7 +237,9 @@ export default function KlookStorePage() {
           __html: JSON.stringify(klookSchema),
         }}
       />
-      <KlookCouponsContent />
+      <Suspense fallback={null}>
+        <KlookCouponsContent />
+      </Suspense>
     </>
   );
 }

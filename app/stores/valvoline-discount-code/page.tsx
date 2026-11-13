@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ValvolineCouponsContent from "./_components/StoreCouponsContent";
+import { VALVOLINE_COUPONS } from "./_components/offers";
+
+const TITLE = "Valvoline Promo Code: Get 50% Off + $15 Off | Nov 2026";
+const DESCRIPTION = "Use a Valvoline Promo Code and Valvoline Discount Code to get up to 50% off services plus $15 off an oil change. Verified Nov 2026. Save now.";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest Valvoline discount code, promo code, and car service deals for Nov 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+  description: DESCRIPTION,
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/valvoline-discount-code",
@@ -21,9 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/valvoline-discount-code",
-    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Nov 2026",
-    description:
-      "Find the latest Valvoline discount code, promo code, and car service deals for Nov 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Nov 2026",
-    description:
-      "Find the latest Valvoline discount code, promo code, and car service deals for Nov 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/valvoline-logo_qfdbbq.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const valvolineSchema = {
@@ -63,13 +71,12 @@ const valvolineSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/valvoline-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/valvoline-discount-code",
-      name: "Valvoline Discount Code - Up to 50% OFF + $15 OFF | Nov 2026",
-      description:
-        "Find the latest Valvoline discount code, promo code, and car service deals for Nov 2026. Save up to 50% on eligible services, get 30% OFF select maintenance, or $15 OFF a Synthetic Blend Oil Change.",
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/valvoline-discount-code#breadcrumb" },
     },
@@ -80,29 +87,18 @@ const valvolineSchema = {
       name: "Valvoline Discount Codes & Coupon Codes",
       description: "Latest Valvoline discount codes and offers for oil changes, motor oil and fluid services.",
       url: "https://www.couponsbit.us/stores/valvoline-discount-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Valvoline Discount Code – Up to 50% OFF Vehicle Maintenance Services", description: "Get up to 50% OFF on eligible Valvoline vehicle maintenance services", url: "https://www.couponsbit.us/stores/valvoline-discount-code", seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" } },
+      numberOfItems: VALVOLINE_COUPONS.length,
+      itemListElement: VALVOLINE_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/valvoline-discount-code",
+          seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Valvoline Discount Code – Flat 30% OFF Service Offers", description: "Enjoy Flat 30% OFF on eligible Valvoline services", url: "https://www.couponsbit.us/stores/valvoline-discount-code", seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Valvoline – $15 OFF Synthetic Blend Oil Change", description: "Get $15 OFF a Valvoline Synthetic Blend Oil Change service", url: "https://www.couponsbit.us/stores/valvoline-discount-code", seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Valvoline – $10 OFF Full-Service Conventional Oil Change", description: "Save $10 on an eligible Valvoline Full-Service Conventional Oil Change", url: "https://www.couponsbit.us/stores/valvoline-discount-code", seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Valvoline – Up to 40% OFF Radiator Services", description: "Enjoy up to 40% OFF on eligible Valvoline radiator services", url: "https://www.couponsbit.us/stores/valvoline-discount-code", seller: { "@type": "Organization", name: "Valvoline", url: "https://www.valvoline.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -122,6 +118,13 @@ const valvolineSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/valvoline-discount-code#brand",
+      name: "Valvoline",
+      url: "https://www.valvoline.com",
     },
 
     {
@@ -227,7 +230,9 @@ export default function ValvolineStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(valvolineSchema) }} />
-      <ValvolineCouponsContent />
+      <Suspense fallback={null}>
+        <ValvolineCouponsContent />
+      </Suspense>
     </>
   );
 }
