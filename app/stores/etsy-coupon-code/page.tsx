@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import EtsyCouponsContent from "./_components/StoreCouponsContent";
+import { ETSY_COUPONS } from "./_components/offers";
+
+const storeOffers = ETSY_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/etsy-coupon-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com/" },
+}));
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Nov 2026  ",
+    absolute: "Etsy Promo Code: Get 75% Off on Custom Neon Signs | Nov 2026  ",
   },
   description:
-    "Find the latest Etsy coupon code, promo code, and deals for Nov 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+    "Use an Etsy Promo Code to get 75% off Custom Neon Signs and 70% off Custom Keepsake Gifts. Verified Etsy Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/etsy-coupon-code",
@@ -21,9 +33,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Nov 2026  ",
+    title: "Etsy Promo Code: Get 75% Off on Custom Neon Signs | Nov 2026  ",
     description:
-      "Find the latest Etsy coupon code, promo code, and deals for Nov 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+      "Use an Etsy Promo Code to get 75% off Custom Neon Signs and 70% off Custom Keepsake Gifts. Verified Etsy Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +51,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Nov 2026  ",
+    title: "Etsy Promo Code: Get 75% Off on Custom Neon Signs | Nov 2026  ",
     description:
-      "Find the latest Etsy coupon code, promo code, and deals for Nov 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+      "Use an Etsy Promo Code to get 75% off Custom Neon Signs and 70% off Custom Keepsake Gifts. Verified Etsy Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/etsy-logo_rpfkzs.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +75,9 @@ const etsySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/etsy-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-      name: "Etsy Coupon Code - Save FLAT 75% OFF + 70% OFF Gifts | Nov 2026  ",
+      name: "Etsy Promo Code: Get 75% Off on Custom Neon Signs | Nov 2026  ",
       description:
-        "Find the latest Etsy coupon code, promo code, and deals for Nov 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, plus 40% OFF selected Etsy purchases.",
+        "Use an Etsy Promo Code to get 75% off Custom Neon Signs and 70% off Custom Keepsake Gifts. Verified Etsy Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,41 +92,12 @@ const etsySchema = {
       name: "Etsy Coupon Codes & Discount Codes",
       description: "Latest Etsy coupon codes and offers for handmade goods, vintage items and craft supplies.",
       url: "https://www.couponsbit.us/stores/etsy-coupon-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Etsy Coupon Code – Custom Neon Signs | FLAT 75% OFF ✨", description: "Save FLAT 75% OFF on selected custom neon signs available to Etsy shoppers in the USA.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Etsy Coupon Code – Custom Keepsake Gifts | 70% OFF 🎁", description: "Get selected Custom Keepsake Gifts for $12, reduced from $40, and SAVE 70%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Etsy – New Arrivals | UP TO 65% OFF 🛍️", description: "Discover Etsy's newest products with UP TO 65% OFF selected items.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Etsy – Jewelry Designs | UP TO 70% OFF 💎", description: "Save UP TO 70% OFF on selected jewelry designs.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Etsy – Willow Vine Fairy Lights | 25% OFF ✨", description: "Get Willow Vine Lights for $31.87+, reduced from $42.50+, and SAVE 25%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Etsy – Custom Watercolor House Ornament | 50% OFF 🏠", description: "Get the Custom Watercolor House Ornament for $13.49, down from $26.99, and SAVE 50%.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Etsy – Sitewide Sale | UP TO 40% OFF 🛒", description: "Enjoy UP TO 40% OFF eligible Etsy purchases across selected categories.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Etsy – Rings Sale | UP TO 20% OFF 💍", description: "Save UP TO 20% OFF on selected rings available to USA shoppers.", url: "https://www.couponsbit.us/stores/etsy-coupon-code", seller: { "@type": "Organization", name: "Etsy", url: "https://www.etsy.com" } },
-        },
-      ],
+      numberOfItems: ETSY_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -247,7 +230,9 @@ export default function EtsyStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(etsySchema) }} />
-      <EtsyCouponsContent />
+      <Suspense fallback={null}>
+        <EtsyCouponsContent />
+      </Suspense>
     </>
   );
 }

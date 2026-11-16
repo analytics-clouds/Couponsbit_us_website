@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Coupon, SUBWAY_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,15 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "SAVE", heading: "New Customer Offer | 20% OFF", sub: "Subway Discount Code" },
-  { id: "d2", label: "SAVE", heading: "Members Offer | 20% OFF", sub: "Subway Discount Code" },
-  { id: "d3", label: "SAVE", heading: "First Order Deal | 10% OFF", sub: "Subway Deal" },
-  { id: "d4", label: "SAVE", heading: "In-Store Deals | SAVE $2 + BOGO", sub: "Subway Deal" },
-  { id: "d5", label: "FROM", heading: "Meals Starting From $4.99", sub: "Subway Deal" },
-  { id: "d6", label: "FROM", heading: "Meal of the Day | From $6.99", sub: "Subway Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Little Caesars", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/little-ceaser-pizza_mbcw0k.webp", dealText: "Up To 20% OFF", href: "/stores/little-caesars-promo-code" },
@@ -67,7 +52,7 @@ export default function SubwayCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -123,7 +108,7 @@ export default function SubwayCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Subway discount codes, promo codes, and food deals for Nov 2026. New customers and members can save 20% on eligible orders, while selected meals start at $4.99, Meal of the Day from $6.99, and bottled drinks from $2.39 at participating locations.
+                      Save more on your next meal with the latest Subway promo code offers in Nov 2026. New customers can enjoy 20% off their first online order, while members can also claim 20% off eligible purchases. Budget-friendly options include meals from $4.99 and the Steak Philly Combo from $6.99. Our verified codes are regularly updated, making it easy to find working savings on subs, combo meals, drinks, and other Subway favorites.
                     </p>
                     <a
                       href={STORE_URL}
@@ -199,17 +184,8 @@ export default function SubwayCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Subway Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "SAVE", value: "20% OFF", title: "Subway Discount Code – New Customer Offer | 20% OFF 🥪", desc: "Get 20% OFF your first order as a new Subway customer in the USA.", bullets: ["Check available offers and enjoy savings on your first Subway order.", "Try your favorite subs, sandwiches, sides and drinks at a reduced price.", "Perfect for first-time customers looking to explore the Subway menu.", "Offer availability may vary by participating location."] },
-          { label: "SAVE", value: "20% OFF", title: "Subway Discount Code – Members Offer | 20% OFF 🥪", desc: "Subway Members can SAVE 20% OFF eligible orders.", bullets: ["Enjoy exclusive member savings on your favorite Subway menu items.", "Get subs, sandwiches, meals and more at special member prices.", "No coupon code is required when the offer is automatically applied to eligible members.", "Check your Subway account for available member promotions."] },
-          { label: "SAVE", value: "10% OFF", title: "Subway – First Order Deal | 10% OFF 🍔", desc: "Enjoy a special 10% OFF your first order as a new customer.", bullets: ["Explore Subway's subs, sandwiches and meal options while saving on your first purchase.", "A tasty introductory deal for customers trying Subway for the first time.", "Perfect for discovering new menu favorites at a lower price.", "Offer terms and availability may vary by location."] },
-          { label: "SAVE", value: "$2 + BOGO", title: "Subway – In-Store Deals | SAVE $2 + BOGO 🥪", desc: "Enjoy selected in-store Subway discounts at participating USA restaurants.", bullets: ["Save $2 OFF eligible footlong sandwiches.", "Look for Buy One, Get One Free promotions on selected menu items.", "Take advantage of combo deals for additional value.", "Available offers can vary by restaurant and location."] },
-          { label: "FROM", value: "$4.99", title: "Subway – Meals Starting From $4.99 🥤", desc: "Get selected Subway meals with prices starting from $4.99.", bullets: ["Choose from affordable subs, sandwiches and meal combinations.", "Enjoy a budget-friendly Subway meal without compromising on flavor.", "Great for quick lunches, dinners and casual meals.", "Prices and menu availability vary by participating USA locations."] },
-          { label: "FROM", value: "$6.99", title: "Subway – Meal of the Day | From $6.99 🌯", desc: "Enjoy Subway's Meal of the Day starting from $6.99.", bullets: ["Featured meal options can change throughout the week.", "Get a filling Subway meal at a value-focused price.", "Explore different menu favorites and daily specials.", "Deal availability and pricing may vary by location."] },
-          { label: "FROM", value: "$2.39", title: "Subway – Bottled Beverages | From $2.39 🥤", desc: "Grab selected bottled beverages starting from $2.39.", bullets: ["Pair your favorite drink with a Subway sub or sandwich.", "Enjoy refreshing beverage options at an affordable price.", "A convenient add-on for lunch, dinner or a quick snack.", "Prices and beverage selection may vary by restaurant."] },
-          { label: "FROM", value: "$6.99", title: "Subway – Steak Philly Combo | From $6.99 🥩", desc: "Enjoy the Steak Philly Combo starting from $6.99 at participating locations.", bullets: ["Get a hearty steak sandwich as part of a value-focused combo.", "Perfect for a satisfying lunch or dinner in the USA.", "Pair your meal with a drink and other available sides.", "Pricing and availability may vary by participating Subway restaurant."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {SUBWAY_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 {/* Left Blue Badge */}
@@ -217,8 +193,8 @@ export default function SubwayCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">{c.label}</p>
-                    <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">{coupon.topLabel}</p>
+                    <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{coupon.mainValue}</div>
                   </div>
                 </div>
 
@@ -229,22 +205,22 @@ export default function SubwayCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {(coupon.points ?? []).map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Subway: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Subway: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -895,18 +871,18 @@ export default function SubwayCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Subway Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group">
+            {SUBWAY_COUPONS.slice(0, 5).map((coupon) => (
+              <div key={coupon.id} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner shrink-0">S</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{coupon.description}</p>
                 </div>
-                <a 
-                  href="https://www.subway.com" 
-                  target="_blank" 
-                  rel="nofollow noopener noreferrer" 
-                  aria-label={`Order Subway: ${deal.heading}`} 
+                <a
+                  href={STORE_URL}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Order Subway: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 shrink-0"
                 >
                   Get Deal

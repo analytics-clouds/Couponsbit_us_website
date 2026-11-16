@@ -28,13 +28,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { FASHION_NOVA_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -42,14 +36,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "BOGO", heading: "Buy One, Get One Free", sub: "Jeans, Dresses & More" },
-  { id: "d2", label: "SALE", heading: "Kissed By Nature Bikini Set 80% OFF", sub: "$1.98" },
-  { id: "d3", label: "SALE", heading: "Kissmas Eve Lace Trim Chemise 80% OFF", sub: "$4.48" },
-  { id: "d4", label: "SALE", heading: "Indigo Luxe Hoop Earrings 70% OFF", sub: "$2.98" },
-  { id: "d5", label: "SALE", heading: "Catch Me Offline Sweater Dress 70% OFF", sub: "$9.98" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Shein", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949026/shein-logo_nukqfb.webp", dealText: "Up To 90% OFF", href: "/stores/shein-coupon-code" },
@@ -67,7 +53,7 @@ export default function FashionNovaCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -123,7 +109,7 @@ export default function FashionNovaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(41.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Looking for the latest Fashion Nova discount code? Explore verified Fashion Nova deals and save up to 80% OFF on selected women's fashion, swimwear, dresses, accessories, and loungewear. Enjoy Buy One, Get One Free on select jeans, dresses, matching sets, jumpsuits, and rompers, plus an additional $25 OFF orders of $99+ with code EXTRA25 on eligible purchases.
+                      Score bigger savings on trending styles with a Fashion Nova Promo Code packed with verified offers in Nov 2026. Current highlights include Buy One, Get One Free on select jeans, dresses, jumpsuits, and matching sets, plus 80% off the Kissed By Nature Bikini Set for $1.98. You can also enjoy up to 70% off sitewide and major discounts on sleepwear, dresses, accessories, and loungewear. Looking for a working Fashion Nova Discount Code? These regularly updated deals help you save on the season's hottest fashion.
                     </p>
                     <a
                       href={STORE_URL}
@@ -199,30 +185,16 @@ export default function FashionNovaCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Fashion Nova Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "BOGO", value: "FREE", title: "Fashion Nova Discount Code – Buy One, Get One Free", desc: "Shop Buy One, Get One Free on select jeans, dresses, matching sets, jumpsuits, and rompers.", bullets: ["Get $25 OFF $99+ on eligible orders.", "Use Code: EXTRA25 to unlock the additional savings.", "Shop the latest women's fashion deals available in the USA."] },
-          { label: "SALE", value: "80% OFF", title: "Fashion Nova Discount Code – Kissed By Nature Bikini Set 80% OFF", desc: "Get the Kissed By Nature 2 Piece Beaded Triangle Bikini Set for just $1.98, reduced from $39.99.", bullets: ["Enjoy approximately 80% OFF on this stylish women's swimwear.", "Apply the Fashion Nova Discount Code on eligible purchases for additional savings.", "Shop this Fashion Nova USA deal for summer, beach, and vacation styles."] },
-          { label: "SALE", value: "80% OFF", title: "Fashion Nova – Kissmas Eve Lace Trim Chemise 80% OFF", desc: "Get the Kissmas Eve Lace Trim Chemise for only $4.48, down from $22.99.", bullets: ["Save up to 80% OFF on this festive women's style.", "Features adjustable straps, lace trim, side slits, bow detail, and stretch fabric.", "Shop this affordable Fashion Nova USA deal while available."] },
-          { label: "SALE", value: "70% OFF", title: "Fashion Nova – Indigo Luxe Hoop Earrings 70% OFF", desc: "Shop the Indigo Luxe Hoop Earrings for just $2.98, reduced from $9.99.", bullets: ["Save up to 70% OFF on oversized statement hoop earrings.", "Features stylish denim detailing and a post-back closure.", "Grab this affordable Fashion Nova accessories deal in the USA."] },
-          { label: "SALE", value: "70% OFF", title: "Fashion Nova – Catch Me Offline Sweater Dress 70% OFF", desc: "Get the Catch Me Offline Sweater Dress for only $9.98, down from $39.99.", bullets: ["Save up to 70% OFF on this striped sweater dress.", "Features an off-shoulder design, long sleeves, and stretch fit.", "Shop this Fashion Nova USA women's clothing deal at a discounted price."] },
-          { label: "SALE", value: "70% OFF", title: "Fashion Nova – Quite Comfort Ribbed PJ Short Set 70% OFF", desc: "Get the Quite Comfort Ribbed PJ Short Set for just $5.98, reduced from $19.99.", bullets: ["Enjoy up to 70% OFF on comfortable women's loungewear.", "Perfect for sleepwear, relaxing at home, and casual comfort.", "Shop this Fashion Nova USA deal while stocks last."] },
-          { label: "SALE", value: "70% OFF", title: "Fashion Nova – Up to 70% OFF Sitewide", desc: "Shop up to 70% OFF sitewide on selected Fashion Nova products.", bullets: ["Find savings across women's clothing, accessories, shoes, denim, and more.", "Discover trendy USA fashion styles at reduced prices.", "Shop the Fashion Nova sale and upgrade your wardrobe for less."] },
-          { label: "SALE", value: "60–80%", title: "Fashion Nova – Women's Clothing Sale 60–80% OFF", desc: "Shop the Women's Clothing Sale with 60–80% OFF selected styles.", bullets: ["Save on dresses, denim, matching sets, tops, loungewear, and more.", "Find trendy women's fashion at budget-friendly sale prices.", "Take advantage of these Fashion Nova USA deals before they end."] },
-          { label: "SALE", value: "60% OFF", title: "Fashion Nova – Track Star Sunglasses 60% OFF", desc: "Get the Track Star Sunglasses for only $2.98, down from $6.99.", bullets: ["Save up to 60% OFF on stylish square-frame sunglasses.", "Available in Black, Nude, and Tortoise.", "Shop this affordable Fashion Nova USA accessories deal."] },
-          { label: "SHOP", value: "DENIM", title: "Fashion Nova – Vienna Denim Jorts Sale", desc: "Get the Vienna Denim Jorts for $20.99, reduced from $29.99.", bullets: ["Save on these trendy denim shorts with a 5-pocket design and ombre finish.", "Made from 100% cotton with an 11-inch rise and 13-inch inseam.", "Pair them with the matching denim jacket for a complete Fashion Nova look."] },
-          { label: "SHOP", value: "JACKET", title: "Fashion Nova – Windsor Clasp Peplum Denim Jacket", desc: "Shop the Windsor Clasp Peplum Denim Jacket for $48.99, down from $69.99.", bullets: ["Save $21 on this fitted dark-wash denim jacket.", "Features functional clasps, zip front, peplum styling, and stretch denim.", "Available in plus sizes for Fashion Nova USA shoppers."] },
-          { label: "SHOP", value: "SANDALS", title: "Fashion Nova – Nikia Heeled Sandals", desc: "Get the Nikia Heeled Sandals for $30.99, reduced from $44.99.", bullets: ["Save on stylish strappy women's heels with a 4.2-inch ultra-high heel.", "Available in Gold and Silver with a round-toe design.", "Plus sizes are available for this Fashion Nova USA shoe deal."] },
-          { label: "SHOP", value: "JEANS", title: "Fashion Nova – San Diego Sculpting Flare Jeans", desc: "Get the San Diego Sculpting Stretch Flare Jeans for just $18.00, down from $34.99.", bullets: ["Save approximately 48% OFF on these women's denim jeans.", "Designed with a sculpting stretch fit and flattering flare silhouette.", "Shop this Fashion Nova USA denim deal for an affordable wardrobe upgrade."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {FASHION_NOVA_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold text-white leading-tight">{c.label}</p>
-                    <div className="text-lg sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold text-white leading-tight">{coupon.topLabel}</p>
+                    <div className="text-lg sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -231,22 +203,22 @@ export default function FashionNovaCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Fashion Nova: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Fashion Nova: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -915,14 +887,14 @@ export default function FashionNovaCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Fashion Nova Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {FASHION_NOVA_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">F</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.title}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Fashion Nova: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Fashion Nova: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

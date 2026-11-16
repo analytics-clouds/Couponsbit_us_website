@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import HomeDepotCouponsContent from "./_components/StoreCouponsContent";
+import { HOME_DEPOT_COUPONS } from "./_components/offers";
+
+const storeOffers = HOME_DEPOT_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/home-depot-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com/" },
+}));
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Nov 2026",
+    absolute: "Home Depot Promo Code: Up to $350 Off Appliances | Nov 2026",
   },
   description:
-    "Find the latest Home Depot discount code, promo code, and deals for Nov 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
+    "Use a Home Depot Promo Code to get up to $350 off select appliances and up to $120 off select tools. Verified Home Depot Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/home-depot-discount-code",
@@ -21,9 +33,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/home-depot-discount-code",
-    title: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Nov 2026",
+    title: "Home Depot Promo Code: Up to $350 Off Appliances | Nov 2026",
     description:
-      "Find the latest Home Depot discount code, promo code, and deals for Nov 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
+      "Use a Home Depot Promo Code to get up to $350 off select appliances and up to $120 off select tools. Verified Home Depot Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +51,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Nov 2026",
+    title: "Home Depot Promo Code: Up to $350 Off Appliances | Nov 2026",
     description:
-      "Find the latest Home Depot discount code, promo code, and deals for Nov 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
+      "Use a Home Depot Promo Code to get up to $350 off select appliances and up to $120 off select tools. Verified Home Depot Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787295216/home-depot-logo_aipbiv.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +75,9 @@ const homeDepotSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/home-depot-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/home-depot-discount-code",
-      name: "Home Depot Discount Code – get 49% OFF + Up to $350 OFF | Nov 2026",
+      name: "Home Depot Promo Code: Up to $350 Off Appliances | Nov 2026",
       description:
-        "Find the latest Home Depot discount code, promo code, and deals for Nov 2026. Get 49% on RYOBI and more, Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances.",
+        "Use a Home Depot Promo Code to get up to $350 off select appliances and up to $120 off select tools. Verified Home Depot Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,57 +92,12 @@ const homeDepotSchema = {
       name: "Home Depot Discount Codes & Coupon Codes",
       description: "Latest Home Depot discount codes and offers for tools, building materials and appliances.",
       url: "https://www.couponsbit.us/stores/home-depot-discount-code",
-      numberOfItems: 12,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Home Depot Promo Code – Appliance Sales | Up to $350 Extra + Free Delivery", description: "Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Home Depot Promo Code – Select Tools | Up to $120 OFF", description: "Save up to $120 OFF select tools available to Home Depot shoppers in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Home Depot – Halloween Decorations | From $107.99", description: "Get the 5 ft. Pre-Lit Jack and Zero Airblown Inflatable for $107.99 in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Home Depot – RYOBI ONE+ Fan | 49% OFF", description: "Get the RYOBI ONE+ 18V Cordless Hybrid WHISPER SERIES Fan for $79.97.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Home Depot – Select Online Bath | Up to 40% OFF", description: "Save up to 40% OFF select online bath products in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Home Depot – Deals of the Day | Up to 35% OFF", description: "Save up to 35% OFF select Deals of the Day in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Home Depot – Nest Outdoor Security Camera | $249.99", description: "Get the Nest Outdoor Smart Security Camera 2-Pack for $249.99 in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Home Depot – Truck Rentals | Starting at $29", description: "Book Home Depot truck rentals in the USA with prices starting at $29.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Home Depot – Select Furniture | Up to 30% OFF", description: "Save up to 30% OFF select furniture available in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Home Depot – M12 Crown Stapler Kit | 62% OFF", description: "Get the M12 12-Volt Lithium-Ion Cordless Crown Stapler Kit for $129.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "Home Depot – eufy Video Doorbell 2K | 42% OFF", description: "Get the eufy Video Doorbell 2K Wi-Fi Wireless Smart Video Camera for $104.99.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "Home Depot – Wood & Vinyl Flooring | Up to 20% OFF", description: "Save up to 20% OFF select wood and vinyl flooring in the USA.", url: "https://www.couponsbit.us/stores/home-depot-discount-code", seller: { "@type": "Organization", name: "Home Depot", url: "https://www.homedepot.com" } },
-        },
-      ],
+      numberOfItems: HOME_DEPOT_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -279,7 +246,9 @@ export default function HomeDepotStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeDepotSchema) }} />
-      <HomeDepotCouponsContent />
+      <Suspense fallback={null}>
+        <HomeDepotCouponsContent />
+      </Suspense>
     </>
   );
 }

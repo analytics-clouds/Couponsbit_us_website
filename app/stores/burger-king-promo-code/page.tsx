@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BurgerKingCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BURGER_KING_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Nov 2026",
+    absolute: "Burger King Promo Code: Get 50% Off on Orders | Nov 2026",
   },
   description:
-    "Discover the latest Burger King promo code and discount code for Nov 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+    "Use a Burger King Promo Code to get 50% off orders above Rs 199 and the $5 Duo Meal Deal. Verified Burger King Discount Code offers for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/burger-king-promo-code",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Nov 2026",
+    title: "Burger King Promo Code: Get 50% Off on Orders | Nov 2026",
     description:
-      "Discover the latest Burger King promo code and discount code for Nov 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+      "Use a Burger King Promo Code to get 50% off orders above Rs 199 and the $5 Duo Meal Deal. Verified Burger King Discount Code offers for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Nov 2026",
+    title: "Burger King Promo Code: Get 50% Off on Orders | Nov 2026",
     description:
-      "Discover the latest Burger King promo code and discount code for Nov 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+      "Use a Burger King Promo Code to get 50% off orders above Rs 199 and the $5 Duo Meal Deal. Verified Burger King Discount Code offers for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/burger-king-logo_m4nwmx.webp"],
     site: "@couponsbit",
   },
@@ -64,9 +65,9 @@ const burgerKingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/burger-king-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-      name: "Burger King Promo Code: $1 Menu, $5 Duo & Whopper Deals | Nov 2026",
+      name: "Burger King Promo Code: Get 50% Off on Orders | Nov 2026",
       description:
-        "Discover the latest Burger King promo code and discount code for Nov 2026. Save with the $1 Menu, $5 Duo, $7 Trio, $3.98 Whopper Wednesday, BOGO Chicken Sandwich, free fries, Royal Perks rewards, and exclusive member deals.",
+        "Use a Burger King Promo Code to get 50% off orders above Rs 199 and the $5 Duo Meal Deal. Verified Burger King Discount Code offers for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -81,15 +82,15 @@ const burgerKingSchema = {
       name: "Burger King Promo Codes & Coupon Codes",
       description: "Latest Burger King promo codes and offers for combo meals, Whoppers and chicken picks.",
       url: "https://www.couponsbit.us/stores/burger-king-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BURGER_KING_COUPONS.length,
+      itemListElement: BURGER_KING_COUPONS.map((coupon, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/burger-king-promo-code",
+          name: coupon.title,
+          description: coupon.description,
+          url: `https://www.couponsbit.us/stores/burger-king-promo-code#${coupon.id}`,
           seller: { "@type": "Organization", name: "Burger King", url: "https://www.bk.com" },
         },
       })),
@@ -249,7 +250,7 @@ export default function BurgerKingStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(burgerKingSchema) }} />
-      <BurgerKingCouponsContent />
+      <Suspense fallback={null}><BurgerKingCouponsContent /></Suspense>
     </>
   );
 }

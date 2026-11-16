@@ -1,0 +1,178 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
+}
+
+export const WAYFAIR_COUPONS: Coupon[] = [
+  {
+    id: "wf1",
+    topLabel: "UP TO",
+    mainValue: "70% OFF",
+    offText: "",
+    title: "Wayfair Promo Code: Up to 70% Off 48-Hour Clearance",
+    description: "Save up to 70% on select products during this limited-time clearance event.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop the 48-Hour Clearance Sale with savings of up to 70%.",
+      "Browse marked-down furniture, décor, and home essentials.",
+      "Valid on select clearance items.",
+      "Available for a limited time.",
+    ],
+  },
+  {
+    id: "wf2",
+    topLabel: "UP TO",
+    mainValue: "80% OFF",
+    offText: "",
+    title: "Wayfair Promo Code: Up to 80% Off Closeout Sale",
+    description: "Score huge savings on select closeout products while supplies last.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save up to 80% on eligible closeout items.",
+      "Shop limited-stock furniture and home décor.",
+      "Discounts apply to select products only.",
+      "Available while supplies last.",
+    ],
+  },
+  {
+    id: "wf3",
+    topLabel: "UP TO",
+    mainValue: "50% OFF",
+    offText: "",
+    title: "Wayfair Discount Code: Up to 50% Off Bedroom Furniture",
+    description: "Upgrade your bedroom with savings on select furniture.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save up to 50% on beds, dressers, nightstands, and more.",
+      "Applies to select bedroom collections.",
+      "Available for a limited time.",
+      "Savings vary by item.",
+    ],
+  },
+  {
+    id: "wf4",
+    topLabel: "UP TO",
+    mainValue: "70% OFF",
+    offText: "",
+    title: "Wayfair Discount Code: Up to 70% Off Area Rugs",
+    description: "Freshen up your home with marked-down area rugs.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get up to 70% off select area rugs.",
+      "Pick from a variety of sizes, colors, and styles.",
+      "Available while promotional pricing lasts.",
+      "Savings vary by style.",
+    ],
+  },
+  {
+    id: "wf5",
+    topLabel: "FROM",
+    mainValue: "$20",
+    offText: "",
+    title: "Wayfair Coupon Code: Dorm Room Essentials From $20",
+    description: "Find affordable dorm room essentials starting at just $20.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop furniture, storage, and décor from $20.",
+      "A great fit for college dorms and small spaces.",
+      "Available on select products.",
+      "Prices vary by item.",
+    ],
+  },
+  {
+    id: "wf6",
+    topLabel: "FROM",
+    mainValue: "$15",
+    offText: "",
+    title: "Wayfair Coupon Code: Outdoor Décor From $15",
+    description: "Dress up your outdoor space without overspending.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop outdoor décor starting at just $15.",
+      "Browse planters, lighting, accents, and more.",
+      "Limited-time pricing on select items.",
+      "Prices vary by item.",
+    ],
+  },
+  {
+    id: "wf7",
+    topLabel: "UNDER",
+    mainValue: "$50",
+    offText: "",
+    title: "Wayfair Voucher Code: Home Décor Under $50",
+    description: "Shop decorative accents at budget-friendly prices.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Discover vases, urns, jars, and decorative bottles under $50.",
+      "Choose from a wide selection of home décor.",
+      "Available while supplies last.",
+      "Prices vary by item.",
+    ],
+  },
+  {
+    id: "wf8",
+    topLabel: "EXTRA",
+    mainValue: "10% OFF",
+    offText: "",
+    title: "Wayfair Voucher Code: Extra 10% Off for New Subscribers",
+    description: "New customers can unlock extra savings on eligible orders.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get an extra 10% off after subscribing.",
+      "Open to new subscribers only.",
+      "Applies to qualifying Wayfair purchases.",
+      "Terms apply.",
+    ],
+  },
+  {
+    id: "wf9",
+    topLabel: "FREE",
+    mainValue: "SHIPPING",
+    offText: "OVER $35",
+    title: "Wayfair Deals: Free Shipping on Orders Over $35",
+    description: "Save more with free delivery on qualifying purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Enjoy free shipping on eligible orders over $35.",
+      "Available on a wide range of furniture and home products.",
+      "Fast shipping applies to qualifying items.",
+      "Minimum purchase required.",
+    ],
+  },
+];

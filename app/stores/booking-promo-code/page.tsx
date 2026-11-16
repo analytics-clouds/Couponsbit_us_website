@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BookingCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BOOKING_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -57,6 +58,16 @@ export const metadata: Metadata = {
   },
 };
 
+const storeOffers = BOOKING_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Booking ${coupon.topLabel} ${coupon.mainValue}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/booking-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" },
+}));
+
 const bookingSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -81,17 +92,11 @@ const bookingSchema = {
       name: "Booking Promo Codes & Coupon Codes",
       description: "Latest Booking promo codes and offers for hotels, apartments, flights and car rentals.",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BOOKING_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/booking-promo-code",
-          seller: { "@type": "Organization", name: "Booking", url: "https://www.booking.com" },
-        },
+        item: offer,
       })),
     },
 
@@ -249,7 +254,7 @@ export default function BookingStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bookingSchema) }} />
-      <BookingCouponsContent />
+      <Suspense fallback={null}><BookingCouponsContent /></Suspense>
     </>
   );
 }

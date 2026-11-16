@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import FashionNovaCouponsContent from "./_components/StoreCouponsContent";
+import { FASHION_NOVA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Nov 2026",
+    absolute: "Fashion Nova Promo Code: Save up to 80% on Bikini Set | Nov 2026",
   },
   description:
-    "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
+    "Use a Fashion Nova Promo Code to get Buy One, Get One Free and 80% off the Kissed By Nature Bikini Set. Verified Fashion Nova Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
-    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Nov 2026",
+    title: "Fashion Nova Promo Code: Save up to 80% on Bikini Set | Nov 2026",
     description:
-      "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
+      "Use a Fashion Nova Promo Code to get Buy One, Get One Free and 80% off the Kissed By Nature Bikini Set. Verified Fashion Nova Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Nov 2026",
+    title: "Fashion Nova Promo Code: Save up to 80% on Bikini Set | Nov 2026",
     description:
-      "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
+      "Use a Fashion Nova Promo Code to get Buy One, Get One Free and 80% off the Kissed By Nature Bikini Set. Verified Fashion Nova Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp"],
     site: "@couponsbit",
   },
@@ -56,6 +58,16 @@ export const metadata: Metadata = {
   },
 };
 
+const storeOffers = FASHION_NOVA_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Fashion Nova ${coupon.topLabel} ${coupon.mainValue}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/fashion-nova-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com/" },
+}));
+
 const fashionNovaSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -63,9 +75,9 @@ const fashionNovaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/fashion-nova-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
-      name: "Fashion Nova Discount Code: Up to 80% OFF + BOGO Free Deals | Nov 2026",
+      name: "Fashion Nova Promo Code: Save up to 80% on Bikini Set | Nov 2026",
       description:
-        "Find the latest Fashion Nova discount code and deals. Get up to 80% OFF selected styles, BOGO Free offers, 70% OFF fashion, and extra savings with code EXTRA25.",
+        "Use a Fashion Nova Promo Code to get Buy One, Get One Free and 80% off the Kissed By Nature Bikini Set. Verified Fashion Nova Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,61 +92,12 @@ const fashionNovaSchema = {
       name: "Fashion Nova Discount Codes & Coupon Codes",
       description: "Latest Fashion Nova discount codes and offers for dresses, denim and activewear.",
       url: "https://www.couponsbit.us/stores/fashion-nova-discount-code",
-      numberOfItems: 13,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Fashion Nova Discount Code – Buy One, Get One Free", description: "Shop Buy One, Get One Free on select jeans, dresses, matching sets, jumpsuits, and rompers.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Fashion Nova Discount Code – Kissed By Nature Bikini Set 80% OFF", description: "Get the Kissed By Nature 2 Piece Beaded Triangle Bikini Set for just $1.98, reduced from $39.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Fashion Nova – Kissmas Eve Lace Trim Chemise 80% OFF", description: "Get the Kissmas Eve Lace Trim Chemise for only $4.48, down from $22.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Fashion Nova – Indigo Luxe Hoop Earrings 70% OFF", description: "Shop the Indigo Luxe Hoop Earrings for just $2.98, reduced from $9.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Fashion Nova – Catch Me Offline Sweater Dress 70% OFF", description: "Get the Catch Me Offline Sweater Dress for only $9.98, down from $39.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Fashion Nova – Quite Comfort Ribbed PJ Short Set 70% OFF", description: "Get the Quite Comfort Ribbed PJ Short Set for just $5.98, reduced from $19.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Fashion Nova – Up to 70% OFF Sitewide", description: "Shop up to 70% OFF sitewide on selected Fashion Nova products.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Fashion Nova – Women's Clothing Sale 60–80% OFF", description: "Shop the Women's Clothing Sale with 60–80% OFF selected styles.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Fashion Nova – Track Star Sunglasses 60% OFF", description: "Get the Track Star Sunglasses for only $2.98, down from $6.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Fashion Nova – Vienna Denim Jorts Sale", description: "Get the Vienna Denim Jorts for $20.99, reduced from $29.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "Fashion Nova – Windsor Clasp Peplum Denim Jacket", description: "Shop the Windsor Clasp Peplum Denim Jacket for $48.99, down from $69.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "Fashion Nova – Nikia Heeled Sandals", description: "Get the Nikia Heeled Sandals for $30.99, reduced from $44.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-        {
-          "@type": "ListItem", position: 13,
-          item: { "@type": "Offer", name: "Fashion Nova – San Diego Sculpting Flare Jeans", description: "Get the San Diego Sculpting Stretch Flare Jeans for just $18.00, down from $34.99.", url: "https://www.couponsbit.us/stores/fashion-nova-discount-code", seller: { "@type": "Organization", name: "Fashion Nova", url: "https://www.fashionnova.com" } },
-        },
-      ],
+      numberOfItems: FASHION_NOVA_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -291,7 +254,7 @@ export default function FashionNovaStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(fashionNovaSchema) }} />
-      <FashionNovaCouponsContent />
+      <Suspense fallback={null}><FashionNovaCouponsContent /></Suspense>
     </>
   );
 }

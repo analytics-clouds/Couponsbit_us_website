@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { JCPENNEY_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,14 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "SALE", heading: "Up to 70% OFF Fine Jewellery", sub: "Spend $1,500+" },
-  { id: "d2", label: "SALE", heading: "Up to 70% OFF Clearance Styles", sub: "New Markdowns Fridays" },
-  { id: "d3", label: "SALE", heading: "50% OFF on $325+ Purchases", sub: "Eligible Styles" },
-  { id: "d4", label: "SALE", heading: "Up to 60% OFF Fine Jewelry", sub: "Spend $800+" },
-  { id: "d5", label: "B2S", heading: "Back-to-School Sale – Up to $500 OFF", sub: "Last Day" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Macy's", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/macys-logo_uscyzw.webp", dealText: "Up To 75% OFF", href: "/stores/macys-promo-code" },
@@ -66,7 +52,7 @@ export default function JcpenneyCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +108,7 @@ export default function JcpenneyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(31.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified JCPenney discount codes and coupon codes for Nov 2026. Save up to 70% on fine jewelry and clearance, enjoy up to $500 OFF Back-to-School deals, shop fall fashion, Levi's apparel, footwear, women's clothing, home essentials, and more.
+                      Refresh your wardrobe and home for less with a JCPenney Promo Code featuring verified savings in Nov 2026. Current highlights include up to 70% off fine jewelry on qualifying purchases, up to 70% off clearance styles, and up to 50% plus an extra 30% off the Home Sale. You'll also find deals on women's dresses, jeans, shoes, Levi's apparel, and seasonal fashion. Looking for a working JCPenney Discount Code? These regularly updated offers help you save across fashion, jewelry, home essentials, and more.
                     </p>
                     <a
                       href={STORE_URL}
@@ -198,34 +184,16 @@ export default function JcpenneyCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">JCPenney Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SALE", value: "70% OFF", title: "JCPenney Discount Code – Up to 70% OFF Fine Jewellery", desc: "Shop Fine Jewelry online only and get up to 70% OFF when you spend $1,500 or more.", bullets: ["Enjoy bigger savings with the Buy More, Save More promotion.", "This USA offer is available online only on eligible fine jewelry styles.", "Use the JCPenney discount code at checkout where applicable and save more."] },
-                  { label: "SALE", value: "70% OFF", title: "JCPenney Discount Code – Up to 70% OFF Clearance Styles", desc: "Save up to 70% OFF on select clearance products at JCPenney.", bullets: ["Shop the Clearance – Shop All Products collection for marked-down styles.", "Enjoy new markdowns added every Friday on selected products.", "Use an eligible JCPenney discount code where applicable; some items are coupon excluded."] },
-                  { label: "SALE", value: "50% OFF", title: "JCPenney Sale – 50% OFF on $325+ Purchases", desc: "Enjoy 50% OFF on eligible styles when you spend $325 or more.", bullets: ["Unlock bigger savings on qualifying JCPenney purchases.", "Shop selected fashion and lifestyle products at discounted prices.", "Check offer terms and exclusions before placing your order."] },
-                  { label: "SALE", value: "60% OFF", title: "JCPenney Discount Code – Up to 60% OFF Fine Jewelry", desc: "Get up to 60% OFF Fine Jewelry when you spend $800 or more.", bullets: ["Save more with the Buy More, Save More online-only promotion.", "Shop eligible jewelry styles available through JCPenney USA.", "Apply a valid JCPenney discount code at checkout where eligible."] },
-                  { label: "B2S", value: "$500 OFF", title: "JCPenney Back-to-School Sale – Up to $500 OFF", desc: "Last Day! Shop the JCPenney Back-to-School collection.", bullets: ["Save up to $500 OFF on select eligible styles.", "Find fashion and essentials for the new school season.", "Shop this limited-time USA deal before it ends."] },
-                  { label: "SALE", value: "43% OFF", title: "JCPenney Sale – St. John's Bay Blouse 43% OFF", desc: "Shop the St. John's Bay Women's Split Tie Neck 3/4 Sleeve Blouse for just $24.99.", bullets: ["Save 43% OFF the original $44 price.", "Explore more stylish women's apparel from the St. John's Bay collection.", "Grab this JCPenney USA sale while the discounted price lasts."] },
-                  { label: "SALE", value: "50% OFF", title: "JCPenney Sale – Up to 50% OFF Fall Styles", desc: "Get up to 50% OFF selected fall styles at JCPenney.", bullets: ["Shop seasonal fashion and refresh your wardrobe for the upcoming fall season.", "Discover selected apparel and fashion picks at special sale prices.", "Shop the JCPenney USA sale while the offer lasts."] },
-                  { label: "SHOP", value: "$18", title: "JCPenney Women's Tops Sale – From $18", desc: "Shop Women's Tops from just $18 at JCPenney.", bullets: ["Discover stylish tops for everyday wear and seasonal outfits.", "Refresh your wardrobe with affordable women's fashion.", "Shop selected tops at special USA sale prices."] },
-                  { label: "SALE", value: "$14.99", title: "JCPenney Hairspray Sale – From $14.99", desc: "Shop the Semi-Annual Hairspray Sale at JCPenney.", bullets: ["Choose from 100+ hairsprays and styling products on sale.", "Selected products start from just $14.99.", "Sale ends October 4 on eligible hair styling products."] },
-                  { label: "SHOP", value: "$23", title: "JCPenney Women's Jeans Sale – From $23", desc: "Shop Women's Jeans from $23 during the JCPenney sale.", bullets: ["Explore a variety of fits and styles for everyday wear.", "Find denim options for casual and stylish looks.", "Shop online in the USA while sale prices last."] },
-                  { label: "SHOP", value: "$32", title: "JCPenney Women's Dresses Sale – From $32", desc: "Find Women's Dresses from $32 at JCPenney.", bullets: ["Shop dresses for casual outings, occasions, and everyday styling.", "Explore selected designs at affordable sale prices.", "Grab your favourite styles before the offer ends."] },
-                  { label: "SHOP", value: "$31", title: "JCPenney Women's Pants Sale – From $31", desc: "Shop Women's Pants from $31 at JCPenney.", bullets: ["Find versatile styles for workwear, casual outfits, and everyday looks.", "Save on selected women's pants at special sale prices.", "Shop the latest JCPenney USA fashion deals online."] },
-                  { label: "SHOP", value: "$31", title: "JCPenney Women's Dress Shoes Sale – From $31", desc: "Shop Women's Dress Shoes from $31 during the JCPenney sale.", bullets: ["Discover footwear for office looks, special occasions, and everyday wear.", "Choose from selected dress shoe styles at discounted prices.", "Shop the JCPenney USA footwear sale while stocks last."] },
-                  { label: "SALE", value: "45% OFF", title: "JCPenney Women's Cowboy Boots – 45% OFF", desc: "Shop the Pop Women's Ellary Block Heel Cowboy Boots for $54.99.", bullets: ["Save 45% OFF the original $100 price.", "Add a stylish western-inspired touch to your wardrobe.", "Grab this JCPenney footwear deal while the sale price lasts."] },
-                  { label: "SALE", value: "33% OFF", title: "JCPenney Women's Sneakers – 33% OFF", desc: "Shop the Shu by Shu Shop Samira Women's Sneakers for $59.99.", bullets: ["Save 33% OFF the original $90 price.", "Enjoy a stylish option for casual everyday outfits.", "Shop this JCPenney USA footwear deal while available."] },
-                  { label: "HOME", value: "50%+30%", title: "JCPenney Home Sale – Up to 50% + Extra 30% OFF", desc: "Shop the JCPenney Labor Day Home Sale and save up to 50% + an extra 30% OFF.", bullets: ["Get additional savings on select home styles with a discount code.", "Refresh your home with eligible furniture, décor, bedding, and more.", "Offer ends September 13; check terms and exclusions before purchase."] },
-                  { label: "SALE", value: "30% OFF", title: "JCPenney Levi's Sale – Up to 30% OFF", desc: "Shop Levi's women's and men's apparel with up to 30% OFF selected styles.", bullets: ["Discover popular Levi's fashion picks at JCPenney.", "Refresh your wardrobe with discounted Levi's apparel.", "Additional offers, discount codes, and coupons do not apply to Levi's."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {JCPENNEY_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -234,22 +202,22 @@ export default function JcpenneyCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {coupon.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop JCPenney: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop JCPenney: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -1111,14 +1079,14 @@ export default function JcpenneyCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top JCPenney Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {JCPENNEY_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">J</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.title}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop JCPenney: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop JCPenney: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

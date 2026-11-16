@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { HARBOR_FREIGHT_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,14 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "SALE", heading: "Scratch & Dent Sale – $4.50 OFF", sub: "ICON & U.S. GENERAL" },
-  { id: "d2", label: "DEAL", heading: "12,000 lb. Winch – $399.99", sub: "Inside Track Club" },
-  { id: "d3", label: "DEAL", heading: "3 Ton Floor Jack – $159.99", sub: "7-Day Super Deal" },
-  { id: "d4", label: "SHOP", heading: "R134A A/C Gauge Set – $67.99", sub: "PITTSBURGH" },
-  { id: "d5", label: "DEAL", heading: "Steam Cleaner – $19.99", sub: "Inside Track Club" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Outfitr", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782451456/outfitr-coupon-code_zbvad3.jpg", dealText: "Up to 62% OFF", href: "/stores/outfitr-discount-code" },
@@ -66,7 +52,7 @@ export default function HarborFreightCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +108,7 @@ export default function HarborFreightCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(44.1k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find genuine Abercrombie discount code offers for November 2026 and save up to 30% off almost everything. Explore the latest US promo code deals on women's, men's and kids' clothing, jeans, dresses, tops and more while limited-time offers last.
+                     Upgrade your workshop for less with a Harbor Freight Promo Code featuring verified savings in Nov 2026. Current offers include 33% off eligible purchases, the 12,000 lb. Winch for $399.99, and the 3 Ton Professional Floor Jack for $159.99. You'll also find member pricing on welders, utility trailers, steam cleaners, and cordless power tools. Wondering if Harbor Freight has a working discount code? These regularly updated deals help you save on automotive equipment, garage tools, and heavy-duty hardware.
                     </p>
                     <a
                       href={STORE_URL}
@@ -198,25 +184,16 @@ export default function HarborFreightCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Harbor Freight Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "SALE", value: "$4.50 OFF", title: "Harbor Freight Discount Code – Scratch & Dent Sale", desc: "Save $4.50 OFF during the Harbor Freight Scratch & Dent Sale on select ICON and U.S. GENERAL storage products.", bullets: ["Shop discounted tools, storage solutions, and workshop essentials at limited-time prices.", "Quantities are limited, so grab your favorite deals before they sell out.", "Use the Harbor Freight Discount Code to look for additional savings where eligible."] },
-          { label: "DEAL", value: "$399.99", title: "Harbor Freight Discount Code – 12,000 lb. Winch Super Deal", desc: "Get the 12,000 lb. Winch with Steel Rope and Wireless Remote for $399.99 for Inside Track Club members.", bullets: ["Regular Super Deal price is $599.99, offering $200 in savings.", "Member Super Deal is available through August 27.", "Check for a Harbor Freight Discount Code to maximize your savings on eligible purchases."] },
-          { label: "DEAL", value: "$159.99", title: "Harbor Freight Discount Code – 3 Ton Professional Floor Jack", desc: "Get the 3 Ton Long-Reach Low-Profile Professional Floor Jack with RAPID PUMP for $159.99.", bullets: ["Inside Track Club members can save $110 from the regular $269.99 price.", "Available as a limited-time 7-Day Super Deal through August 27.", "Look for a valid Harbor Freight Discount Code for extra savings on eligible orders."] },
-          { label: "SHOP", value: "$67.99", title: "Harbor Freight  – R134A A/C Manifold Gauge Set", desc: "Shop the PITTSBURGH R134A A/C Manifold Gauge Set for $67.99.", bullets: ["A practical choice for automotive A/C service and maintenance work.", "Take advantage of Harbor Freight's bundle savings and tool deals.", "Apply a valid Harbor Freight Discount Code when available for additional savings."] },
-          { label: "DEAL", value: "$19.99", title: "Harbor Freight– 1200 Watt Handheld Steam Cleaner", desc: "Get the 1200 Watt Handheld Steam Cleaner for just $19.99 for Inside Track Club members.", bullets: ["Save 55% compared with the regular Super Deal price of $44.99.", "This limited-time deal is ideal for cleaning and household maintenance.", "Check for a Harbor Freight Discount Code before completing your purchase."] },
-          { label: "SHOP", value: "$849.97", title: "Harbor Freight – HAUL-MASTER Utility Trailer", desc: "Shop the HAUL-MASTER 2000 lb. Capacity 5 ft. x 10 ft. Custom Modular Utility Trailer for $849.97.", bullets: ["Designed for hauling equipment, supplies, tools, and other heavy loads.", "Find it among Harbor Freight's clearance deals with limited quantities available.", "Use a Harbor Freight Discount Code where applicable for potential additional savings."] },
-          { label: "NEW", value: "$89.99", title: "Harbor Freight  – BAUER 20V Cordless Band Saw", desc: "Get the BAUER 20V 2-1/2 in. Cordless Compact Band Saw – Tool Only for $89.99.", bullets: ["Compare at $169, giving you $79 in savings.", "This new Harbor Freight tool is designed for convenient cordless cutting applications.", "Check for a Harbor Freight Discount Code to save more on eligible purchases."] },
-          { label: "DEAL", value: "$339.99", title: "Harbor Freight  – MIG 140 Professional Welder", desc: "Get the MIG 140 Professional Welder with 120V Input for $339.99 for Inside Track Club members.", bullets: ["Save $160 from the regular Super Deal price of $499.99.", "Take advantage of this limited-time 7-Day Super Deal while available.", "Use a valid Harbor Freight Discount Code where eligible to maximize your savings."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {HARBOR_FREIGHT_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold text-white leading-tight">{c.label}</p>
-                    <div className="text-lg sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold text-white leading-tight">{coupon.topLabel}</p>
+                    <div className="text-lg sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -225,22 +202,22 @@ export default function HarborFreightCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Harbor Freight: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Harbor Freight: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -859,14 +836,14 @@ export default function HarborFreightCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Harbor Freight Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {HARBOR_FREIGHT_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">H</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.title}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Harbor Freight: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Harbor Freight: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

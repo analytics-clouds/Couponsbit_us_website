@@ -34,13 +34,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Coupon, WAYFAIR_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -48,15 +42,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "48-Hour Clearance Sale | Up to 70% OFF", sub: "Wayfair Promo Code" },
-  { id: "d2", label: "UP TO", heading: "Closeout Sale | Up to 80% OFF", sub: "Wayfair Promo Code" },
-  { id: "d3", label: "UP TO", heading: "Bedroom Furniture | Up to 50% OFF", sub: "Wayfair Deal" },
-  { id: "d4", label: "UP TO", heading: "Area Rugs | Up to 70% OFF", sub: "Wayfair Deal" },
-  { id: "d5", label: "FROM", heading: "Dorm Room Deals | Picks From $20", sub: "Wayfair Deal" },
-  { id: "d6", label: "FREE", heading: "Free Shipping on Orders Over $35", sub: "Wayfair Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Home Depot", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787295216/home-depot-logo_aipbiv.webp", dealText: "Up To $350 Extra", href: "/stores/home-depot-discount-code" },
@@ -74,7 +59,7 @@ export default function WayfairCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -130,7 +115,7 @@ export default function WayfairCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(56.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Wayfair discount codes, promo codes, and home deals for Nov 2026. Save up to 80% on closeouts, 70% on clearance and area rugs, shop dorm essentials from $20, outdoor décor from $15, get 10% OFF for new subscribers, plus free shipping.
+                      Upgrade your home for less with the latest Wayfair promo code offers in Nov 2026. Save up to 80% during the Closeout Sale, enjoy up to 70% off area rugs, or unlock an extra 10% off as a new subscriber. You'll also find bedroom furniture up to 50% off, dorm room essentials from $20, and free shipping on orders over $35. Our verified codes are regularly updated, helping you save on furniture, décor, and home essentials with confidence.
                     </p>
                     <a
                       href={STORE_URL}
@@ -206,26 +191,16 @@ export default function WayfairCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Wayfair Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "70% OFF", title: "Wayfair Promo Code – 48-Hour Clearance Sale | Up to 70% OFF", desc: "Shop the 48-Hour Clearance and save up to 70% OFF on selected products", bullets: ["Discover limited-time markdowns across furniture, home décor and more", "Hurry—clearance deals are available for a limited time only", "Refresh your home with major savings on popular Wayfair finds"] },
-          { label: "UP TO", value: "80% OFF", title: "Wayfair Promo Code – Closeout Sale | Up to 80% OFF", desc: "Score up to 80% OFF on selected closeout products while supplies last", bullets: ["Discover final-sale bargains across furniture, décor and home essentials", "Limited quantities available, making these deals ideal for bargain shoppers", "Find stylish home upgrades at significantly reduced prices"] },
-          { label: "UP TO", value: "50% OFF", title: "Wayfair – Bedroom Furniture | Up to 50% OFF", desc: "Save up to 50% OFF on selected bedroom furniture", bullets: ["Shop beds, dressers, nightstands and other bedroom essentials", "Upgrade your space with stylish furniture at reduced prices", "Explore a range of designs for modern and classic bedrooms"] },
-          { label: "UP TO", value: "70% OFF", title: "Wayfair – Area Rugs | Up to 70% OFF", desc: "Get up to 70% OFF on selected area rugs", bullets: ["Refresh your living room, bedroom or dining space with stylish designs", "Great opportunity to add a finishing touch to your home for less"] },
-          { label: "FROM", value: "$20", title: "Wayfair – Dorm Room Deals | Picks From $20", desc: "Discover budget-friendly dorm room essentials starting from $20", bullets: ["Shop practical furniture, storage solutions, bedding and décor", "Find on-budget picks designed for college and student spaces", "Fast and free delivery is available on qualifying items"] },
-          { label: "FROM", value: "$15", title: "Wayfair – Outdoor Décor | From $15", desc: "Shop outdoor décor starting from just $15", bullets: ["Add stylish finishing touches to patios, balconies and outdoor spaces", "Discover small décor pieces that can transform your outdoor sanctuary", "Find budget-friendly options for seasonal home refreshes"] },
-          { label: "SHOP", value: "UNDER $50", title: "Wayfair – Vases, Urns, Jars & Bottles | Under $50", desc: "Discover vases, urns, jars and decorative bottles priced under $50", bullets: ["Add affordable decorative accents to shelves, tables and living spaces", "Choose from a variety of styles to complement your home décor", "Great picks for refreshing your space without overspending"] },
-          { label: "EXTRA", value: "10% OFF", title: "Wayfair – Extra 10% OFF for New Subscribers", desc: "New subscribers can get an extra 10% OFF on eligible purchases", bullets: ["Sign up to unlock additional savings on your Wayfair shopping", "Combine the offer with selected home, furniture and décor deals where eligible", "A simple way for new customers to save more on their first purchases"] },
-          { label: "FREE", value: "SHIPPING", title: "Wayfair – Free Shipping on Orders Over $35", desc: "Enjoy Fast & Free Shipping on qualifying orders over $35", bullets: ["Shop furniture, décor, rugs and home essentials with convenient delivery", "Reach the qualifying order threshold and save on shipping costs", "Availability and exclusions may apply to selected products and locations"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {WAYFAIR_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[140px] sm:w-[220px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[13px] sm:text-[16px] font-extrabold leading-tight">{c.label}</p>
-                    <div className="text-[20px] sm:text-4xl font-black leading-none mt-2 sm:mt-3 whitespace-nowrap">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[13px] sm:text-[16px] font-extrabold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[20px] sm:text-4xl font-black leading-none mt-2 sm:mt-3 whitespace-nowrap">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -234,22 +209,22 @@ export default function WayfairCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {(coupon.points ?? []).map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Wayfair: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Wayfair: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -1027,18 +1002,18 @@ export default function WayfairCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Wayfair Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group">
+            {WAYFAIR_COUPONS.slice(0, 5).map((coupon) => (
+              <div key={coupon.id} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner shrink-0">W</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{coupon.description}</p>
                 </div>
-                <a 
-                  href={STORE_URL} 
-                  target="_blank" 
-                  rel="nofollow noopener noreferrer" 
-                  aria-label={`Shop Wayfair: ${deal.heading}`} 
+                <a
+                  href={STORE_URL}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Shop Wayfair: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 shrink-0"
                 >
                   Get Deal

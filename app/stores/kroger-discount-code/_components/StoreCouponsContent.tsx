@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { KROGER_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,14 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "Flat $20 OFF Your First Pickup or Delivery", sub: "New Users" },
-  { id: "d2", label: "NEW", heading: "$30 OFF First Pickup or Delivery Order", sub: "Orders $75+" },
-  { id: "d3", label: "DEAL", heading: "$10 OFF Orders of $75+", sub: "All Users" },
-  { id: "d4", label: "CANDY", heading: "Easter Candy Deal – Up to 5% OFF", sub: "Selected Candy" },
-  { id: "d5", label: "NEW", heading: "Flat $15 OFF Orders Over $75", sub: "Signup Promotion" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "DoorDash", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp", dealText: "Up To 30% OFF", href: "/stores/doordash-promo-code" },
@@ -66,7 +52,7 @@ export default function KrogerDigitalCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +108,7 @@ export default function KrogerDigitalCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(37.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                    Discover verified Kroger discount codes and coupon codes for Nov 2026. Save $30 OFF your first order, get free delivery, enjoy $20 OFF pickup, $15 OFF qualifying grocery orders, earn bonus Fuel Points, and save on groceries, household essentials, and seasonal deals.
+                    Stretch your grocery budget with the latest Kroger promo code offers available in Nov 2026. New customers can save $30 on their first qualifying pickup or delivery order with free delivery, or get $15 off orders over $75. You'll also find Red Baron Pizza from $2.99, 10X Fuel Points on Simple Truth products, and fresh produce deals. Our verified codes are regularly updated, making it easy to enjoy extra savings on groceries, pantry staples, and household essentials.
                     </p>
                     <a
                       href={STORE_URL}
@@ -198,29 +184,16 @@ export default function KrogerDigitalCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Kroger Digital Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "NEW", value: "$20 OFF", title: "Kroger Discount Code – Flat $20 OFF Your First Pickup or Delivery", desc: "Get $20 OFF your first Kroger pickup or delivery order.", bullets: ["Enjoy the offer on orders of $75 or more.", "Available for new users only on eligible pickup and delivery orders.", "Use a valid Kroger discount code at checkout to save on your first order."] },
-                  { label: "NEW", value: "$30 OFF", title: "Kroger Discount Code – $30 OFF First Pickup or Delivery Order", desc: "Save $30 OFF your first pickup or delivery order of $75 or more.", bullets: ["Offer is valid through September 15, 2026, where pickup and delivery are available.", "The minimum purchase requirement must be met after applicable discounts.", "Apply an eligible Kroger discount code and enjoy extra savings."] },
-                  { label: "DEAL", value: "$10 OFF", title: "Kroger Discount Code – $10 OFF Orders of $75+", desc: "Get a flat $10 OFF on eligible Kroger orders worth $75 or more.", bullets: ["Enjoy savings on groceries, household essentials, and other qualifying products.", "All users can take advantage of this offer.", "Use a valid Kroger discount code to save on your order."] },
-                  { label: "CANDY", value: "5% OFF", title: "Kroger Easter Candy Deal – Up to 5% OFF", desc: "Save up to 5% OFF on selected Easter candy purchases at Kroger.", bullets: ["Choose from popular flavours including almond, apple, berry, raspberry, and more.", "Enjoy sweet savings on eligible candy products.", "This offer is available to all Kroger USA users."] },
-                  { label: "NEW", value: "$15 OFF", title: "Kroger Discount Code – Flat $15 OFF Orders Over $75", desc: "Get Flat $15 OFF on eligible Kroger orders of $75 or more.", bullets: ["Enjoy savings on your qualifying grocery and household purchases.", "The offer is available as a signup/first-order promotion.", "Apply an eligible Kroger discount code to claim your savings."] },
-                  { label: "NEW", value: "$15 OFF", title: "Kroger First Order Discount – Save $15 OFF", desc: "Save $15 OFF your first Kroger order when you meet the $75 minimum purchase.", bullets: ["Shop groceries, fresh food, household essentials, and more.", "The offer is available to eligible Kroger users.", "Use a valid Kroger discount code where applicable for extra savings."] },
-                  { label: "EARN", value: "2X POINTS", title: "Kroger Fuel Points Deal – Earn 2X Points on Groceries", desc: "Earn 2 Fuel Points for every $1 spent on eligible groceries and general merchandise.", bullets: ["Redeem your Fuel Points for savings on fuel at participating Kroger locations.", "Kroger Boost membership starts at $59/year.", "A great way to earn rewards while shopping for everyday essentials."] },
-                  { label: "SHOP", value: "$2.99", title: "Kroger Red Baron Pizza Deal – From $2.99", desc: "Shop Red Baron Pizza starting from just $2.99 at Kroger.", bullets: ["Enjoy an affordable option for quick and convenient meals.", "Choose from eligible Red Baron Pizza varieties and flavours.", "This deal is available to Kroger USA shoppers."] },
-                  { label: "EARN", value: "10X POINTS", title: "Kroger Simple Truth Deal – Up to 10X Fuel Points", desc: "Earn 10X Fuel Points on eligible Simple Truth and Simple Truth Organic products.", bullets: ["Boost Members can earn 11X Fuel Points on qualifying purchases.", "Shop Simple Truth products starting from around $1.62.", "Save more while earning extra fuel rewards on everyday grocery purchases."] },
-                  { label: "NEW", value: "$30+FREE", title: "Kroger Discount Code – $30 OFF + Free Delivery for First Orders", desc: "First-order shoppers can save $30 OFF on eligible Kroger orders.", bullets: ["Get free delivery on your first 5 orders where the promotion applies.", "Shop groceries and everyday essentials conveniently from Kroger.", "Apply an eligible Kroger discount code at checkout to maximize your savings."] },
-                  { label: "SHOP", value: "LABOR DAY", title: "Kroger Labor Day Essentials – Summer Grocery Deals", desc: "Stock up on Labor Day essentials for end-of-summer cookouts and gatherings.", bullets: ["Shop groceries, snacks, beverages, and seasonal essentials at Kroger.", "Explore the Summer Finds collection for convenient holiday shopping.", "Enjoy great prices on selected products available to Kroger USA shoppers."] },
-                  { label: "SHOP", value: "$3.99", title: "Kroger Sweet Corn on the Cob – $3.99", desc: "Get Kroger Sweet Corn on the Cob for $3.99.", bullets: ["Perfect for Labor Day cookouts, BBQs, family meals, and summer gatherings.", "Add fresh corn to your grocery cart along with other seasonal essentials.", "Shop this Kroger USA grocery deal while the promotional price lasts"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {KROGER_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -229,22 +202,22 @@ export default function KrogerDigitalCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {coupon.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Kroger Digital: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Kroger Digital: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -1021,14 +994,14 @@ export default function KrogerDigitalCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Kroger Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {KROGER_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">K</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.title}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Kroger: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Kroger: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

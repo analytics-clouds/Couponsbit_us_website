@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import HarborFreightCouponsContent from "./_components/StoreCouponsContent";
+import { HARBOR_FREIGHT_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Nov 2026",
+    absolute: "Harbor Freight Promo Code: Get 33% Off on Purchase | Nov 2026",
   },
   description:
-    "Find genuine Abercrombie discount code offers for November 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+    "Use a Harbor Freight Promo Code to get 33% off your purchase and the 12,000 lb. Winch for $399.99. Verified Harbor Freight Discount Code deals for Nov 2026. ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Nov 2026",
+    title: "Harbor Freight Promo Code: Get 33% Off on Purchase | Nov 2026",
     description:
-      "Find genuine Abercrombie discount code offers for November 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+      "Use a Harbor Freight Promo Code to get 33% off your purchase and the 12,000 lb. Winch for $399.99. Verified Harbor Freight Discount Code deals for Nov 2026. ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Nov 2026",
+    title: "Harbor Freight Promo Code: Get 33% Off on Purchase | Nov 2026",
     description:
-      "Find genuine Abercrombie discount code offers for November 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+      "Use a Harbor Freight Promo Code to get 33% off your purchase and the 12,000 lb. Winch for $399.99. Verified Harbor Freight Discount Code deals for Nov 2026. ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp"],
     site: "@couponsbit",
   },
@@ -56,6 +58,16 @@ export const metadata: Metadata = {
   },
 };
 
+const storeOffers = HARBOR_FREIGHT_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Harbor Freight ${coupon.topLabel} ${coupon.mainValue}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/harbor-freight-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com/" },
+}));
+
 const harborFreightSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -63,9 +75,9 @@ const harborFreightSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/harbor-freight-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-      name: "Harbor Freight Discount Codes: Get Up to $200 OFF on Tools | Nov 2026",
+      name: "Harbor Freight Promo Code: Get 33% Off on Purchase | Nov 2026",
       description:
-        "Find genuine Abercrombie discount code offers for November 2026. Save up to 30% off almost everything and Get Up to $200 OFF, discover the latest US promo code deals for men, women and kids.  ",
+        "Use a Harbor Freight Promo Code to get 33% off your purchase and the 12,000 lb. Winch for $399.99. Verified Harbor Freight Discount Code deals for Nov 2026. ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,41 +92,12 @@ const harborFreightSchema = {
       name: "Harbor Freight Discount Codes & Coupon Codes",
       description: "Latest Harbor Freight discount codes and offers for tools, automotive and equipment.",
       url: "https://www.couponsbit.us/stores/harbor-freight-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Harbor Freight Discount Code – Scratch & Dent Sale", description: "Save $4.50 OFF during the Harbor Freight Scratch & Dent Sale on select ICON and U.S. GENERAL storage products.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Harbor Freight Discount Code – 12,000 lb. Winch Super Deal", description: "Get the 12,000 lb. Winch with Steel Rope and Wireless Remote for $399.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Harbor Freight Discount Code – 3 Ton Professional Floor Jack", description: "Get the 3 Ton Long-Reach Low-Profile Professional Floor Jack with RAPID PUMP for $159.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Harbor Freight  – R134A A/C Manifold Gauge Set", description: "Shop the PITTSBURGH R134A A/C Manifold Gauge Set for $67.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Harbor Freight– 1200 Watt Handheld Steam Cleaner", description: "Get the 1200 Watt Handheld Steam Cleaner for just $19.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Harbor Freight – HAUL-MASTER Utility Trailer", description: "Shop the HAUL-MASTER 2000 lb. Capacity 5 ft. x 10 ft. Custom Modular Utility Trailer for $849.97.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Harbor Freight  – BAUER 20V Cordless Band Saw", description: "Get the BAUER 20V 2-1/2 in. Cordless Compact Band Saw – Tool Only for $89.99.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Harbor Freight  – MIG 140 Professional Welder", description: "Get the MIG 140 Professional Welder with 120V Input for $339.99 for Inside Track Club members.", url: "https://www.couponsbit.us/stores/harbor-freight-discount-code", seller: { "@type": "Organization", name: "Harbor Freight", url: "https://www.harborfreight.com" } },
-        },
-      ],
+      numberOfItems: HARBOR_FREIGHT_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -263,7 +246,7 @@ export default function HarborFreightStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(harborFreightSchema) }} />
-      <HarborFreightCouponsContent />
+      <Suspense fallback={null}><HarborFreightCouponsContent /></Suspense>
     </>
   );
 }

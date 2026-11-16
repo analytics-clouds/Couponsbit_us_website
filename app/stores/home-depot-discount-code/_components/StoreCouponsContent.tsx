@@ -32,13 +32,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { HOME_DEPOT_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -47,14 +41,6 @@ interface StoreItem {
   href: string;
 }
 
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "Appliance Sales | Up to $350 Extra + Free Delivery", sub: "Home Depot Promo Code" },
-  { id: "d2", label: "UP TO", heading: "Select Tools | Up to $120 OFF", sub: "Home Depot Promo Code" },
-  { id: "d3", label: "SAVE", heading: "RYOBI ONE+ Fan | 49% OFF", sub: "Home Depot Deal" },
-  { id: "d4", label: "SAVE", heading: "M12 Crown Stapler Kit | 62% OFF", sub: "Home Depot Deal" },
-  { id: "d5", label: "SAVE", heading: "eufy Video Doorbell 2K | 42% OFF", sub: "Home Depot Deal" },
-  { id: "d6", label: "UP TO", heading: "Deals of the Day | Up to 35% OFF", sub: "Home Depot Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Harbor Freight", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/harbor-frigth_m4sdhc.webp", dealText: "Up To 50% OFF", href: "/stores/harbor-freight-discount-code" },
@@ -72,7 +58,7 @@ export default function HomeDepotCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -128,7 +114,7 @@ export default function HomeDepotCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(76.8k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Home Depot discount codes, promo codes, and deals for Nov 2026. Save up to $350 on select appliances, $120 on tools, 49% on a RYOBI fan, and 62% on an M12 Crown Stapler Kit, plus furniture, bath, flooring, and security offers.
+                      Tackle your next home improvement project for less with a Home Depot Promo Code featuring verified savings in Nov 2026. Top offers include up to $350 extra off select appliances with free delivery, up to $120 off select tools, and 62% off the M12 Crown Stapler Kit for $129. You'll also find discounts on bath products, furniture, flooring, and smart home security devices. Looking for a working Home Depot Discount Code? These regularly updated deals help you save on appliances, tools, and home essentials.
                     </p>
                     <a
                       href={STORE_URL}
@@ -204,21 +190,8 @@ export default function HomeDepotCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Home Depot Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "$350 EXTRA", title: "Home Depot Promo Code – Appliance Sales | Up to $350 Extra + Free Delivery", desc: "Save up to an extra $350 on select GE, GE Profile, Café & Hotpoint appliances in the USA.", bullets: ["Get free delivery when you buy two or more eligible appliances.", "Check for a Home Depot promo code to potentially save even more on qualifying purchases.", "Offer ends August 26; availability, shipping and pricing may vary."] },
-          { label: "UP TO", value: "$120 OFF", title: "Home Depot Promo Code – Select Tools | Up to $120 OFF", desc: "Save up to $120 OFF select tools available to Home Depot shoppers in the USA.", bullets: ["Shop power tools, hand tools and equipment for DIY and home improvement projects.", "Check for a Home Depot promo code to potentially unlock additional savings.", "Offer availability, pricing and eligible products may vary."] },
-          { label: "FROM", value: "$107.99", title: "Home Depot – Halloween Decorations | From $107.99", desc: "Get the 5 ft. Pre-Lit Jack and Zero Airblown Inflatable for $107.99 in the USA.", bullets: ["Find Halloween decorations for yards, porches, parties and seasonal displays.", "Shop seasonal décor while selected products are available.", "Pricing, shipping and availability may vary."] },
-          { label: "SAVE", value: "49% OFF", title: "Home Depot – RYOBI ONE+ Fan | 49% OFF", desc: "Get the RYOBI ONE+ 18V Cordless Hybrid WHISPER SERIES Fan for $79.97.", bullets: ["Save $78.03 (49% OFF) on the selected fan kit in the USA.", "Includes a 2.0 Ah battery and charger for convenient cordless use.", "Product availability and pricing may vary."] },
-          { label: "UP TO", value: "40% OFF", title: "Home Depot – Select Online Bath | Up to 40% OFF", desc: "Save up to 40% OFF select online bath products in the USA.", bullets: ["Shop bathroom fixtures, accessories and home improvement essentials.", "Upgrade your bathroom with limited-time promotional savings.", "Eligible products, pricing and availability may vary."] },
-          { label: "UP TO", value: "35% OFF", title: "Home Depot – Deals of the Day | Up to 35% OFF", desc: "Save up to 35% OFF select Deals of the Day in the USA.", bullets: ["Discover limited-time discounts across home improvement and household products.", "Shop rotating offers while selected products are available.", "Deals, pricing and availability may change regularly."] },
-          { label: "ONLY", value: "$249.99", title: "Home Depot – Nest Outdoor Security Camera | $249.99", desc: "Get the Nest Outdoor Smart Security Camera 2-Pack for $249.99 in the USA.", bullets: ["Upgrade your home with smart outdoor security and camera monitoring.", "Enjoy convenient protection for your home and outdoor spaces.", "Product availability, shipping and pricing may vary."] },
-          { label: "FROM", value: "$29", title: "Home Depot – Truck Rentals | Starting at $29", desc: "Book Home Depot truck rentals in the USA with prices starting at $29.", bullets: ["Ideal for moving materials, large purchases and DIY project supplies.", "Choose a convenient rental option when you need extra hauling capacity.", "Rental pricing, availability and terms may vary by location."] },
-          { label: "UP TO", value: "30% OFF", title: "Home Depot – Select Furniture | Up to 30% OFF", desc: "Save up to 30% OFF select furniture available in the USA.", bullets: ["Find furniture for living rooms, bedrooms, dining areas and more.", "Refresh your home with discounted furniture selections.", "Pricing, availability and eligible products may vary."] },
-          { label: "SAVE", value: "62% OFF", title: "Home Depot – M12 Crown Stapler Kit | 62% OFF", desc: "Get the M12 12-Volt Lithium-Ion Cordless Crown Stapler Kit for $129.", bullets: ["Save $210 (62% OFF) from the regular $339 price in the USA.", "Includes a M12 Compact 2.0 Ah Battery and Charger.", "Limited-time pricing and product availability may vary."] },
-          { label: "SAVE", value: "42% OFF", title: "Home Depot – eufy Video Doorbell 2K | 42% OFF", desc: "Get the eufy Video Doorbell 2K Wi-Fi Wireless Smart Video Camera for $104.99.", bullets: ["Save $75 (42% OFF) from the regular $179.99 price in the USA.", "Includes a chime for convenient smart-home security.", "Pricing, shipping and availability may vary."] },
-          { label: "UP TO", value: "20% OFF", title: "Home Depot – Wood & Vinyl Flooring | Up to 20% OFF", desc: "Save up to 20% OFF select wood and vinyl flooring in the USA.", bullets: ["Shop flooring options for home renovations and interior upgrades.", "Find a variety of styles for different rooms and projects.", "Selected products, pricing and availability may vary."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {HOME_DEPOT_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 {/* Left Blue Badge */}
@@ -226,8 +199,8 @@ export default function HomeDepotCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">{c.label}</p>
-                    <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">{coupon.topLabel}</p>
+                    <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">{coupon.mainValue}</div>
                   </div>
                 </div>
 
@@ -238,22 +211,22 @@ export default function HomeDepotCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {(coupon.points ?? []).map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Home Depot: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Home Depot: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -1417,25 +1390,21 @@ export default function HomeDepotCouponsContent() {
             Today's Top Home Depot Deals
           </h3>
           <div className="space-y-6">
-            {[
-              { heading: "EXCLUSIVE PROMO", sub: "Save up to 15% on Power Tools" },
-              { heading: "APPLIANCE DEALS", sub: "Get up to $1,000 off major appliances" },
-              { heading: "PATIO & GARDEN", sub: "Save up to 20% on outdoor living" },
-            ].map((deal, i) => (
+            {HOME_DEPOT_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   H
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.topLabel} {coupon.mainValue}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
                 <a
-                  href="#"
+                  href={STORE_URL}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"

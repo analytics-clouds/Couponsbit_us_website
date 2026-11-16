@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import WayfairCouponsContent from "./_components/StoreCouponsContent";
+import { WAYFAIR_COUPONS } from "./_components/offers";
+
+const storeOffers = WAYFAIR_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/wayfair-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com/" },
+}));
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Nov 2026",
+    absolute: "Wayfair Promo Code: Up to 80% Off + Extra 10% Off | Nov 2026",
   },
   description:
-    "Find the latest Wayfair discount code, promo code, and home deals for Nov 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+    "Use a Wayfair promo code and Wayfair coupon code to save up to 80% on closeout items plus an extra 10% off for new subscribers. Verified Nov 2026. Shop now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/wayfair-discount-code",
@@ -21,9 +33,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/wayfair-discount-code",
-    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Nov 2026",
+    title: "Wayfair Promo Code: Up to 80% Off + Extra 10% Off | Nov 2026",
     description:
-      "Find the latest Wayfair discount code, promo code, and home deals for Nov 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+      "Use a Wayfair promo code and Wayfair coupon code to save up to 80% on closeout items plus an extra 10% off for new subscribers. Verified Nov 2026. Shop now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +51,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Nov 2026",
+    title: "Wayfair Promo Code: Up to 80% Off + Extra 10% Off | Nov 2026",
     description:
-      "Find the latest Wayfair discount code, promo code, and home deals for Nov 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+      "Use a Wayfair promo code and Wayfair coupon code to save up to 80% on closeout items plus an extra 10% off for new subscribers. Verified Nov 2026. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/wayfair-logo_upnj98.webp"],
     site: "@couponsbit",
   },
@@ -63,9 +75,9 @@ const wayfairSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/wayfair-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/wayfair-discount-code",
-      name: "Wayfair Discount Code - Up to 80% OFF + 10% OFF | Nov 2026",
+      name: "Wayfair Promo Code: Up to 80% Off + Extra 10% Off | Nov 2026",
       description:
-        "Find the latest Wayfair discount code, promo code, and home deals for Nov 2026. Save up to 80% on closeouts, 70% on clearance and rugs, get 10% OFF as a new subscriber, plus free shipping on $35+ orders.",
+        "Use a Wayfair promo code and Wayfair coupon code to save up to 80% on closeout items plus an extra 10% off for new subscribers. Verified Nov 2026. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,45 +92,12 @@ const wayfairSchema = {
       name: "Wayfair Discount Codes & Coupon Codes",
       description: "Latest Wayfair discount codes and offers for furniture, home decor and Wayfair Professional.",
       url: "https://www.couponsbit.us/stores/wayfair-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Wayfair Promo Code – 48-Hour Clearance Sale | Up to 70% OFF", description: "Shop the 48-Hour Clearance and save up to 70% OFF on selected products", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Wayfair Promo Code – Closeout Sale | Up to 80% OFF", description: "Score up to 80% OFF on selected closeout products while supplies last", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Wayfair – Bedroom Furniture | Up to 50% OFF", description: "Save up to 50% OFF on selected bedroom furniture", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Wayfair – Area Rugs | Up to 70% OFF", description: "Get up to 70% OFF on selected area rugs", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Wayfair – Dorm Room Deals | Picks From $20", description: "Discover budget-friendly dorm room essentials starting from $20", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Wayfair – Outdoor Décor | From $15", description: "Shop outdoor décor starting from just $15", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Wayfair – Vases, Urns, Jars & Bottles | Under $50", description: "Discover vases, urns, jars and decorative bottles priced under $50", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Wayfair – Extra 10% OFF for New Subscribers", description: "New subscribers can get an extra 10% OFF on eligible purchases", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Wayfair – Free Shipping on Orders Over $35", description: "Enjoy Fast & Free Shipping on qualifying orders over $35", url: "https://www.couponsbit.us/stores/wayfair-discount-code", seller: { "@type": "Organization", name: "Wayfair", url: "https://www.wayfair.com" } },
-        },
-      ],
+      numberOfItems: WAYFAIR_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -259,7 +238,9 @@ export default function WayfairStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(wayfairSchema) }} />
-      <WayfairCouponsContent />
+      <Suspense fallback={null}>
+        <WayfairCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -33,13 +33,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Coupon, ETSY_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -47,15 +41,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "FLAT", heading: "Custom Neon Signs | FLAT 75% OFF", sub: "Etsy Coupon Code" },
-  { id: "d2", label: "SAVE", heading: "Custom Keepsake Gifts | 70% OFF", sub: "Etsy Coupon Code" },
-  { id: "d3", label: "UP TO", heading: "New Arrivals | UP TO 65% OFF", sub: "Etsy Deal" },
-  { id: "d4", label: "UP TO", heading: "Jewelry Designs | UP TO 70% OFF", sub: "Etsy Deal" },
-  { id: "d5", label: "SAVE", heading: "Willow Vine Fairy Lights | 25% OFF", sub: "Etsy Deal" },
-  { id: "d6", label: "UP TO", heading: "Sitewide Sale | UP TO 40% OFF", sub: "Etsy Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Aporro", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/apporro-logo_og5y93.webp", dealText: "Save Up To 45% OFF", href: "/stores/aporro-discount-code" },
@@ -73,7 +58,7 @@ export default function EtsyCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -129,7 +114,7 @@ export default function EtsyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(68.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Etsy coupon codes, promo codes, and deals for Nov 2026. Save up to 75% on custom neon signs, 70% on keepsake gifts and jewelry, 65% on new arrivals, 50% on personalized ornaments, and up to 40% on selected purchases.
+                      Find unique handmade products for less with an Etsy Promo Code featuring verified savings throughout Nov 2026. Current offers include 75% off Custom Neon Signs, 70% off Custom Keepsake Gifts, and up to 70% off select jewelry designs. You can also save up to 65% on new arrivals or shop personalized home décor, gifts, rings, and vintage finds at reduced prices. Looking for a working Etsy Discount Code? These regularly updated deals help you save across thousands of participating Etsy sellers.
                     </p>
                     <a
                       href={STORE_URL}
@@ -205,25 +190,16 @@ export default function EtsyCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Etsy Coupon Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "FLAT", value: "75% OFF", title: "Etsy Coupon Code – Custom Neon Signs | FLAT 75% OFF ✨", desc: "Save FLAT 75% OFF on selected custom neon signs available to Etsy shoppers in the USA.", bullets: ["Find personalized signs for bedrooms, home offices, weddings, parties and businesses.", "Check for an Etsy coupon code to potentially save even more on eligible purchases.", "Shop unique designs created by independent Etsy sellers across the USA.", "Offer availability, shipping and pricing may vary by seller."] },
-          { label: "SAVE", value: "70% OFF", title: "Etsy Coupon Code – Custom Keepsake Gifts | 70% OFF 🎁", desc: "Get selected Custom Keepsake Gifts for $12, reduced from $40, and SAVE 70%.", bullets: ["Discover personalized gifts for birthdays, weddings, anniversaries, housewarmings and holidays.", "Use an Etsy coupon code when available for additional savings.", "Shop unique handmade gifts from Etsy sellers serving customers across the USA.", "Check seller shipping times before ordering for your special occasion."] },
-          { label: "UP TO", value: "65% OFF", title: "Etsy – New Arrivals | UP TO 65% OFF 🛍️", desc: "Discover Etsy's newest products with UP TO 65% OFF selected items.", bullets: ["Selected products start from $69, compared with original prices of $197.14+.", "Explore handmade, personalized and creative products from independent sellers.", "Find unique gifts and home, fashion, jewelry and lifestyle products for USA shoppers.", "Prices, shipping and discounts vary by individual seller."] },
-          { label: "UP TO", value: "70% OFF", title: "Etsy – Jewelry Designs | UP TO 70% OFF 💎", desc: "Save UP TO 70% OFF on selected jewelry designs.", bullets: ["Find unique rings, necklaces, bracelets and handmade jewelry starting from $5.50.", "Selected products may include free shipping within the USA.", "Discover personalized jewelry and statement pieces from independent Etsy sellers.", "Check individual product terms for shipping, customization and availability."] },
-          { label: "SAVE", value: "25% OFF", title: "Etsy – Willow Vine Fairy Lights | 25% OFF ✨", desc: "Get Willow Vine Lights for $31.87+, reduced from $42.50+, and SAVE 25%.", bullets: ["Create a warm, cozy atmosphere in bedrooms, living rooms, dorms and home offices.", "Bendable branch-style fairy lights make a stylish USA home decor accent.", "Great for apartment decor, parties, weddings and gifting.", "Sale ends in 3 days, so shop before the promotional price expires."] },
-          { label: "SAVE", value: "50% OFF", title: "Etsy – Custom Watercolor House Ornament | 50% OFF 🏠", desc: "Get the Custom Watercolor House Ornament for $13.49, down from $26.99, and SAVE 50%.", bullets: ["Personalize this keepsake with a favorite home for a meaningful gift.", "Perfect for Christmas, housewarming, new homeowners and family gifting in the USA.", "A thoughtful personalized decoration created by an Etsy seller.", "Check estimated delivery dates before ordering for holiday gifting."] },
-          { label: "UP TO", value: "40% OFF", title: "Etsy – Sitewide Sale | UP TO 40% OFF 🛒", desc: "Enjoy UP TO 40% OFF eligible Etsy purchases across selected categories.", bullets: ["Shop deals on templates, statement rings, prints, women's decor and more.", "No promo code is required for qualifying discounted products.", "Discover unique handmade and personalized products from sellers across the USA.", "Discounts, shipping costs and eligibility may vary by individual seller."] },
-          { label: "UP TO", value: "20% OFF", title: "Etsy – Rings Sale | UP TO 20% OFF 💍", desc: "Save UP TO 20% OFF on selected rings available to USA shoppers.", bullets: ["Discover statement rings, personalized designs and handmade jewelry.", "Find unique styles for engagements, anniversaries, everyday wear and gifting.", "The offer applies to eligible ring products from participating Etsy sellers.", "Shop before the promotional pricing expires."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {ETSY_COUPONS.map((coupon) => (
+          <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[175px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-extrabold leading-3">{c.label}</p>
-                    <div className="text-[15px] sm:text-2xl font-black leading-tight sm:leading-none mt-2.5">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-extrabold leading-3">{coupon.topLabel}</p>
+                    <div className="text-[15px] sm:text-2xl font-black leading-tight sm:leading-none mt-2.5">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -232,22 +208,22 @@ export default function EtsyCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {(coupon.points ?? []).map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Etsy: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Etsy: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>
@@ -1039,18 +1015,18 @@ export default function EtsyCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Etsy Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group">
+            {ETSY_COUPONS.slice(0, 5).map((coupon) => (
+              <div key={coupon.id} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner shrink-0">E</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{coupon.description}</p>
                 </div>
-                <a 
-                  href={STORE_URL} 
-                  target="_blank" 
-                  rel="nofollow noopener noreferrer" 
-                  aria-label={`Shop Etsy: ${deal.heading}`} 
+                <a
+                  href={STORE_URL}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Shop Etsy: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-95 shrink-0"
                 >
                   Get Deal

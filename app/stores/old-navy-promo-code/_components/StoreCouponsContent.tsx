@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { OLD_NAVY_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -42,13 +36,6 @@ interface StoreItem {
   href: string;
 }
 
-const DEALS: Deal[] = [
-  { id: "d1", label: "SALE", heading: "Up to 89% Off Clearance Styles", sub: "Promo Code Offers" },
-  { id: "d2", label: "SALE", heading: "$5 & Under Clearance", sub: "Up to 89% OFF" },
-  { id: "d3", label: "SALE", heading: "60% Off Fashion + 40% Off Everything", sub: "Ends August 24" },
-  { id: "d4", label: "SALE", heading: "Up to 89% Off Women’s Dresses", sub: "From $4.97" },
-  { id: "d5", label: "SALE", heading: "Up to 83% Off Tops", sub: "From $2.97" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Lumibrick", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782730730/lumricks-logo_a84nyo.webp", dealText: "From $56.99", href: "/stores/lumibrick-discount-code" },
@@ -66,7 +53,7 @@ export default function OldNavyCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +109,7 @@ export default function OldNavyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(58.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Save with the latest Old Navy promo code , Discount code and deals. Get up to 89% OFF clearance styles, with selected women’s and kids’ fashion starting from $2.97. Shop dresses, tops, activewear, maternity wear, school uniforms, and more at reduced prices.  
+                     Refresh your wardrobe for less with the latest Old Navy promo code offers in Nov 2026. Save up to 89% on clearance clothing, including women's dresses and $5 & Under finds, or enjoy up to 60% off fashion with an extra 40% off eligible styles. You'll also find discounts on activewear, sweatshirts, and school uniforms for the whole family. Our verified codes are regularly updated, making it simple to maximize savings on everyday apparel and seasonal collections.
                     </p>
                     <a
                       href={STORE_URL}
@@ -198,30 +185,16 @@ export default function OldNavyCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Old Navy Promo Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SALE", value: "89% OFF", title: "Old Navy Promo Code – Up to 89% Off Clearance Styles", desc: "Shop the Old Navy Promo Code offers and enjoy up to 89% OFF selected clearance styles.", bullets: ["Save on women’s, kids’ and family fashion with prices starting from just a few dollars.", "Find dresses, tops, activewear and everyday essentials at heavily reduced prices.", "A great opportunity for USA shoppers to refresh their wardrobe with Old Navy deals up to 89% OFF."] },
-                  { label: "SALE", value: "$5 & UNDER", title: "Old Navy Clearance – Up to 89% Off & $5 Under", desc: "Explore Old Navy’s $5 & Under Clearance collection with savings of up to 89% OFF.", bullets: ["Find women’s and kids’ fashion starting at just $2.97.", "Shop deeply discounted dresses, tops and everyday wardrobe essentials.", "Clearance styles are available while supplies, sizes and inventory last."] },
-                  { label: "SALE", value: "60%+40%", title: "Old Navy Promo Code – Up to 60% Off Fashion + 40% Off Everything", desc: "Use the latest Old Navy Promo Code offers to save up to 60% OFF selected fashion styles.", bullets: ["Shop the current 40% OFF Everything promotion before it ends on August 24.", "Save on women’s, men’s, kids’, maternity and activewear styles across Old Navy USA.", "Great opportunity to enjoy up to 60% OFF while updating your everyday wardrobe."] },
-                  { label: "SALE", value: "89% OFF", title: "Old Navy Clearance – Up to 89% Off Women’s Dresses", desc: "Shop Old Navy clearance and save up to 89% OFF selected women’s dresses.", bullets: ["The Smocked Puff-Sleeve Flare Mini Dress is available for just $4.97.", "Save $40.02 from the original $44.99 price on this clearance style.", "Grab this USA fashion deal while limited sizes and stock are available."] },
-                  { label: "SALE", value: "83% OFF", title: "Old Navy Clearance – Up to 83% Off Tops", desc: "Discover Old Navy clearance tops with savings of up to 83% OFF.", bullets: ["Get the Snug V-Neck Crop T-Shirt for only $2.97.", "Save from the original $16.99 price on this budget-friendly style.", "Shop affordable women’s fashion deals for casual USA outfits."] },
-                  { label: "SHOP", value: "HALLOWEEN", title: "Old Navy Halloween Shop – Seasonal Styles & Savings", desc: "Explore the Old Navy Halloween Shop for scary-cute styles for the whole family.", bullets: ["Discover Halloween-inspired clothing and seasonal looks for upcoming celebrations.", "Shop fun fashion for women, kids and the entire crew across the USA.", "Find selected styles at promotional prices while the Halloween collection is available."] },
-                  { label: "SALE", value: "55% OFF", title: "Old Navy Halloween Deal – Up to 55% Off Toddler Styles", desc: "Shop selected Old Navy Halloween styles with savings of up to 55% OFF.", bullets: ["Get the Printed Fitted Long-Sleeve Ribbed T-Shirt for Toddler Girls for just $5.", "Save from the original $10.99 price on this seasonal kids’ style.", "A budget-friendly Halloween fashion deal for USA families."] },
-                  { label: "SALE", value: "60% OFF", title: "Old Navy Activewear – Up to 60% Off Selected Styles", desc: "Shop Old Navy activewear and save up to 60% OFF selected styles.", bullets: ["Get the High-Waisted Bounce Fleece Wide-Leg Sweatpants for $17.99.", "Save from the original $44.99 price on these comfortable wide-leg sweatpants.", "Perfect for workouts, lounging and everyday casual outfits in the USA."] },
-                  { label: "SALE", value: "60% OFF", title: "Old Navy Sweatshirt Deal – Up to 60% Off", desc: "Save up to 60% OFF selected Old Navy sweatshirts and casual styles.", bullets: ["Get the Diet Coke® SoComfy Oversized Tunic Sweatshirt for $19.99.", "Save from the original $49.99 price on this oversized sweatshirt.", "A comfortable choice for relaxed everyday looks and casual USA fashion."] },
-                  { label: "SALE", value: "40% OFF", title: "Old Navy Pants Deal – 40% Off Wide-Leg Trousers", desc: "Shop selected Old Navy pants and enjoy savings of up to 40% OFF.", bullets: ["Get the High-Waisted Wide-Leg Trouser Pants for $23.99.", "Save from the original $39.99 price on this versatile wardrobe essential.", "Perfect for workwear, casual outfits and stylish everyday looks in the USA."] },
-                  { label: "SALE", value: "40% OFF", title: "Old Navy Maternity Deal – 40% Off Sleepwear", desc: "Shop selected Old Navy maternity styles with savings of up to 40% OFF.", bullets: ["Get the Maternity Sunday Sleep Knit Jersey Jumpsuit for just $23.99.", "Save from the original $39.99 price on this comfortable knit jumpsuit.", "A practical choice for shoppers looking for comfortable maternity fashion in the USA."] },
-                  { label: "SALE", value: "40% OFF", title: "Old Navy School Uniforms – Up to 40% Off", desc: "Shop Old Navy school uniforms and save up to 40% OFF selected styles.", bullets: ["Get the School Uniform Jersey Polo Shirt for Boys for only $5.99.", "Save from the original $9.99 price on this school wardrobe essential.", "A budget-friendly option for USA families preparing kids for the school year."] },
-                  { label: "SALE", value: "60% OFF", title: "Old Navy Family Fashion – Up to 60% Off Selected Styles", desc: "Shop Old Navy family fashion and find savings of up to 60% OFF selected styles.", bullets: ["Discover deals across women’s, kids’, maternity, activewear and everyday clothing.", "Find affordable options for the whole family while shopping in the USA.", "Check current Old Navy promotions and clearance offers for additional savings."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {OLD_NAVY_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[10px] sm:text-2xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[10px] sm:text-2xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -230,22 +203,22 @@ export default function OldNavyCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {(coupon.points ?? []).map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Old Navy: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Old Navy: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>
@@ -921,14 +894,14 @@ export default function OldNavyCouponsContent() {
         <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Old Navy Deals</h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {OLD_NAVY_COUPONS.slice(0, 5).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{coupon.topLabel} {coupon.mainValue}</p>
+                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.description}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Old Navy: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Old Navy: ${coupon.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>

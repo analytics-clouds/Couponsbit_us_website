@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SubwayCouponsContent from "./_components/StoreCouponsContent";
+import { SUBWAY_COUPONS } from "./_components/offers";
+
+const storeOffers = SUBWAY_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: coupon.title,
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/subway-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Subway", url: "https://subway.in/" },
+}));
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Subway Discount Code – 20% OFF + Meals From $4.99 | Nov 2026",
+    absolute: "Subway Promo Code: 20% Off + Meals From $4.99 | Nov 2026",
   },
   description:
     "Find the latest Subway discount code, promo code, and deals for Nov 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
@@ -21,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/subway-discount-code",
-    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Nov 2026",
+    title: "Subway Promo Code: 20% Off + Meals From $4.99 | Nov 2026",
     description:
       "Find the latest Subway discount code, promo code, and deals for Nov 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
     siteName: "Couponsbit",
@@ -39,7 +51,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Subway Discount Code – 20% OFF + Meals From $4.99 | Nov 2026",
+    title: "Subway Promo Code: 20% Off + Meals From $4.99 | Nov 2026",
     description:
       "Find the latest Subway discount code, promo code, and deals for Nov 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787295215/subway-logo_eosuh6.webp"],
@@ -63,7 +75,7 @@ const subwaySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/subway-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/subway-discount-code",
-      name: "Subway Discount Code – 20% OFF + Meals From $4.99 | Nov 2026",
+      name: "Subway Promo Code: 20% Off + Meals From $4.99 | Nov 2026",
       description:
         "Find the latest Subway discount code, promo code, and deals for Nov 2026. Save 20% as a new customer or member, with Subway meals from $4.99 and daily deals.",
       inLanguage: "en-US",
@@ -80,41 +92,12 @@ const subwaySchema = {
       name: "Subway Discount Codes & Coupon Codes",
       description: "Latest Subway discount codes and offers for sandwiches, wraps, salads and combos.",
       url: "https://www.couponsbit.us/stores/subway-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Subway Discount Code – New Customer Offer | 20% OFF 🥪", description: "Get 20% OFF your first order as a new Subway customer in the USA.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Subway Discount Code – Members Offer | 20% OFF 🥪", description: "Subway Members can SAVE 20% OFF eligible orders.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Subway – First Order Deal | 10% OFF 🍔", description: "Enjoy a special 10% OFF your first order as a new customer.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Subway – In-Store Deals | SAVE $2 + BOGO 🥪", description: "Enjoy selected in-store Subway discounts at participating USA restaurants.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Subway – Meals Starting From $4.99 🥤", description: "Get selected Subway meals with prices starting from $4.99.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Subway – Meal of the Day | From $6.99 🌯", description: "Enjoy Subway's Meal of the Day starting from $6.99.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Subway – Bottled Beverages | From $2.39 🥤", description: "Grab selected bottled beverages starting from $2.39.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Subway – Steak Philly Combo | From $6.99 🥩", description: "Enjoy the Steak Philly Combo starting from $6.99 at participating locations.", url: "https://www.couponsbit.us/stores/subway-discount-code", seller: { "@type": "Organization", name: "Subway", url: "https://subway.in" } },
-        },
-      ],
+      numberOfItems: SUBWAY_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -254,7 +237,9 @@ export default function SubwayStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(subwaySchema) }} />
-      <SubwayCouponsContent />
+      <Suspense fallback={null}>
+        <SubwayCouponsContent />
+      </Suspense>
     </>
   );
 }

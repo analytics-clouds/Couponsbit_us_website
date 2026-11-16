@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import JcpenneyCouponsContent from "./_components/StoreCouponsContent";
+import { JCPENNEY_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Nov 2026",
+    absolute: "JCPenney Promo Code: Up to 70% Off Jewelry | Nov 2026",
   },
   description:
-    "Find the latest JCPenney discount code and coupon code for Nov 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+    "Use a JCPenney Promo Code to get up to 70% off fine jewelry and up to $500 off the Back-to-School Sale. Verified JCPenney Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/jcpenney-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/jcpenney-discount-code",
-    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Nov 2026",
+    title: "JCPenney Promo Code: Up to 70% Off Jewelry | Nov 2026",
     description:
-      "Find the latest JCPenney discount code and coupon code for Nov 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+      "Use a JCPenney Promo Code to get up to 70% off fine jewelry and up to $500 off the Back-to-School Sale. Verified JCPenney Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Nov 2026",
+    title: "JCPenney Promo Code: Up to 70% Off Jewelry | Nov 2026",
     description:
-      "Find the latest JCPenney discount code and coupon code for Nov 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+      "Use a JCPenney Promo Code to get up to 70% off fine jewelry and up to $500 off the Back-to-School Sale. Verified JCPenney Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/jcpenny-logo_kra7ur.webp"],
     site: "@couponsbit",
   },
@@ -56,6 +58,16 @@ export const metadata: Metadata = {
   },
 };
 
+const storeOffers = JCPENNEY_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `JCPenney ${coupon.topLabel} ${coupon.mainValue}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/jcpenney-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com/" },
+}));
+
 const jcpenneySchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -63,9 +75,9 @@ const jcpenneySchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/jcpenney-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/jcpenney-discount-code",
-      name: "JCPenney Discount Code: Up to 70% OFF + $500 OFF Sale | Nov 2026",
+      name: "JCPenney Promo Code: Up to 70% Off Jewelry | Nov 2026",
       description:
-        "Find the latest JCPenney discount code and coupon code for Nov 2026. Save up to 70% on fine jewelry and clearance, enjoy up to 50% OFF fall styles, up to $500 OFF Back-to-School deals, and exclusive savings on home, fashion, and more.",
+        "Use a JCPenney Promo Code to get up to 70% off fine jewelry and up to $500 off the Back-to-School Sale. Verified JCPenney Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,77 +92,12 @@ const jcpenneySchema = {
       name: "JCPenney Discount Codes & Coupon Codes",
       description: "Latest JCPenney discount codes and offers for apparel, home goods and salon & beauty.",
       url: "https://www.couponsbit.us/stores/jcpenney-discount-code",
-      numberOfItems: 17,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "JCPenney Discount Code – Up to 70% OFF Fine Jewellery", description: "Shop Fine Jewelry online only and get up to 70% OFF when you spend $1,500 or more.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "JCPenney Discount Code – Up to 70% OFF Clearance Styles", description: "Save up to 70% OFF on select clearance products at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "JCPenney Sale – 50% OFF on $325+ Purchases", description: "Enjoy 50% OFF on eligible styles when you spend $325 or more.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "JCPenney Discount Code – Up to 60% OFF Fine Jewelry", description: "Get up to 60% OFF Fine Jewelry when you spend $800 or more.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "JCPenney Back-to-School Sale – Up to $500 OFF", description: "Last Day! Shop the JCPenney Back-to-School collection.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "JCPenney Sale – St. John's Bay Blouse 43% OFF", description: "Shop the St. John's Bay Women's Split Tie Neck 3/4 Sleeve Blouse for just $24.99.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "JCPenney Sale – Up to 50% OFF Fall Styles", description: "Get up to 50% OFF selected fall styles at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "JCPenney Women's Tops Sale – From $18", description: "Shop Women's Tops from just $18 at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "JCPenney Hairspray Sale – From $14.99", description: "Shop the Semi-Annual Hairspray Sale at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "JCPenney Women's Jeans Sale – From $23", description: "Shop Women's Jeans from $23 during the JCPenney sale.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "JCPenney Women's Dresses Sale – From $32", description: "Find Women's Dresses from $32 at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "JCPenney Women's Pants Sale – From $31", description: "Shop Women's Pants from $31 at JCPenney.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 13,
-          item: { "@type": "Offer", name: "JCPenney Women's Dress Shoes Sale – From $31", description: "Shop Women's Dress Shoes from $31 during the JCPenney sale.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 14,
-          item: { "@type": "Offer", name: "JCPenney Women's Cowboy Boots – 45% OFF", description: "Shop the Pop Women's Ellary Block Heel Cowboy Boots for $54.99.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 15,
-          item: { "@type": "Offer", name: "JCPenney Women's Sneakers – 33% OFF", description: "Shop the Shu by Shu Shop Samira Women's Sneakers for $59.99.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 16,
-          item: { "@type": "Offer", name: "JCPenney Home Sale – Up to 50% + Extra 30% OFF", description: "Shop the JCPenney Labor Day Home Sale and save up to 50% + an extra 30% OFF.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-        {
-          "@type": "ListItem", position: 17,
-          item: { "@type": "Offer", name: "JCPenney Levi's Sale – Up to 30% OFF", description: "Shop Levi's women's and men's apparel with up to 30% OFF selected styles.", url: "https://www.couponsbit.us/stores/jcpenney-discount-code", seller: { "@type": "Organization", name: "JCPenney", url: "https://www.jcpenney.com" } },
-        },
-      ],
+      numberOfItems: JCPENNEY_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -323,7 +270,7 @@ export default function JcpenneyStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jcpenneySchema) }} />
-      <JcpenneyCouponsContent />
+      <Suspense fallback={null}><JcpenneyCouponsContent /></Suspense>
     </>
   );
 }
