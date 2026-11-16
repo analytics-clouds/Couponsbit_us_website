@@ -160,7 +160,7 @@ export default function LulusCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more on your next fashion haul with the latest Lulus discount code. Enjoy up to 80% off on select dresses, tops, shorts, swimwear, and other trendy styles, with prices starting as low as $5. You can also take advantage of the Buy 2, Get 1 Free offer on eligible items to maximize your savings. Whether you're shopping for everyday outfits, party dresses, or vacation essentials, Lulus makes it easy to refresh your wardrobe while spending less.
+                      Refresh your wardrobe with the latest Lulus Promo Code offers this Nov 2026 and enjoy stylish savings on dresses, tops, shorts, and swimwear. Grab the Buy 2, Get 1 Free deal, shop the Mulvaney Micro Shorts for just $10 (70% off), or pick up the Sultry Intentions Mini Dress for $47.20. A Lulus Discount Code can also help you score 80% off the Trendsetting Flirt Bustier Top for only $5 and 50% off the Alaia Satin Midi Dress. Our verified offers are updated regularly to help you save on every order.
                     </p>
                     <a
                       href={STORE_URL}
@@ -780,33 +780,26 @@ export default function LulusCouponsContent() {
             Today's Top Lulus Deals
           </h3>
           <div className="space-y-6">
-            {[
-              { heading: "BUY 2 GET 1", sub: "Free Item With Promo Code BUY2GET1" },
-              { heading: "BUSTIER TOP", sub: "80%+ OFF, Now $5" },
-              { heading: "ALAIA MIDI DRESS", sub: "50% OFF, Now $34" },
-              { heading: "NASIA CROP TOP", sub: "74%+ OFF, Now $10" }
-            ].map((deal, i) => (
+            {LULUS_COUPONS.slice(0, 4).map((coupon, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.topLabel} {coupon.mainValue}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
-                <a
-                  href="https://www.amazon.com/s?k=lulus&rh=p_123%3A383075%2Cp_6%3AA2XZ7JICGUQ1CX%257CATVPDKIKX0DER&dc=&qid=1793082751&rnid=2661622011&ds=v1%3AfsiE6JVCkECZAJqj7IsYJ9P%2BiEA0FDs9WD1I0JWt0i0&linkCode=ll2&tag=analytics0922-20&linkId=7a85db4e0cd237df830d8ecc81783da7&language=en_US&ref_=as_li_ss_tl"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Lulus: ${deal.heading}`}
+                <button
+                  onClick={() => handleCopy(coupon)}
+                  aria-label={`Shop Lulus: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
                 >
                   Get Deal
-                </a>
+                </button>
               </div>
             ))}
           </div>

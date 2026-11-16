@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import NikeCouponsContent from "./_components/StoreCouponsContent";
+import { NIKE_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Nov 2026",
+    absolute: "Nike Promo Code: Save 60% Off on Leggings | Nov 2026",
   },
   description:
-    "Find the latest Nike promo code, discount code, and clearance deals for Nov 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+    "Grab a Nike Promo Code with 60% off Nike One Women’s High-Rise Leggings and 29% off Sportswear Women’s Track Shorts. Verified deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/nike-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nike-discount-code",
-    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Nov 2026",
+    title: "Nike Promo Code: Save 60% Off on Leggings | Nov 2026",
     description:
-      "Find the latest Nike promo code, discount code, and clearance deals for Nov 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+      "Grab a Nike Promo Code with 60% off Nike One Women’s High-Rise Leggings and 29% off Sportswear Women’s Track Shorts. Verified deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Nov 2026",
+    title: "Nike Promo Code: Save 60% Off on Leggings | Nov 2026",
     description:
-      "Find the latest Nike promo code, discount code, and clearance deals for Nov 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+      "Grab a Nike Promo Code with 60% off Nike One Women’s High-Rise Leggings and 29% off Sportswear Women’s Track Shorts. Verified deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/nike-logo_loaadj.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const nikeSchema = {
@@ -63,13 +66,13 @@ const nikeSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/nike-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/nike-discount-code",
-      name: "Nike Promo Code - Up to 60% OFF + $23.97 Clearance Deals | Nov 2026",
+      name: "Nike Promo Code: Save 60% Off on Leggings | Nov 2026",
       description:
-        "Find the latest Nike promo code, discount code, and clearance deals for Nov 2026. Save up to 60% on selected styles, shop leggings for $23.97, shoes from $59.97, and get free shipping on $50+ member orders.",
+        "Grab a Nike Promo Code with 60% off Nike One Women’s High-Rise Leggings and 29% off Sportswear Women’s Track Shorts. Verified deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/nike-discount-code#breadcrumb" },
     },
@@ -80,53 +83,12 @@ const nikeSchema = {
       name: "Nike Discount Codes & Coupon Codes",
       description: "Latest Nike discount codes and offers for footwear, apparel and accessories.",
       url: "https://www.couponsbit.us/stores/nike-discount-code",
-      numberOfItems: 11,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Nike Promo Code – Clearance Sale | Nike One Women’s High-Rise Leggings | 60% OFF", description: "Get Nike One Women’s High-Rise Leggings for $23.97, down from $60", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Nike – Ava Rover Premium Men’s Shoes | 43% OFF", description: "Shop Nike Ava Rover Premium Men’s Shoes for $87.97, down from $155", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Nike – Nike Motiva Women’s Walking Shoes | 41% OFF", description: "Get Nike Motiva Women’s Walking Shoes for $66.97, down from $115", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Nike – Mercurial Superfly 11 Elite Kylian Mbappé | $305", description: "Shop the Nike Mercurial Superfly 11 Elite “Kylian Mbappé” for $305", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Nike – Dri-FIT One Girls’ Leggings | 40% OFF", description: "Get Nike Dri-FIT One Big Kids’ Leggings for $17.97, reduced from $30", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Nike Promo Code – Clearance Sale | Air Max Excee Men’s Shoes | 40% OFF", description: "Shop Nike Air Max Excee Men’s Shoes for $59.97, reduced from $100", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Nike – Nike Club Men’s Pullover Fleece Hoodie | 34% OFF", description: "Shop the Nike Club Men’s Pullover Fleece Hoodie for $45.97, down from $70", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Nike – Air Jordan 1 Low SE Big Kids’ Shoes | 40% OFF", description: "Get Air Jordan 1 Low SE Big Kids’ Shoes for $65.97, down from $110", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Nike – Jordan Sport Hoop Fleece Men’s Dri-FIT Pants | 35% OFF", description: "Get Jordan Sport Hoop Fleece Men’s Dri-FIT Pants for $64.97, down from $100", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Nike – Sportswear Women’s Poly-Knit Track Shorts | 29% OFF", description: "Shop Nike Sportswear Women’s Mid-Rise Poly-Knit Track Shorts for $38.97, down from $55", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "Nike – Free Shipping for Members on $50+ Orders", description: "Nike Members can enjoy free shipping on eligible orders of $50 or more", url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
-        },
-      ],
+      numberOfItems: NIKE_COUPONS.length,
+      itemListElement: NIKE_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/nike-discount-code", seller: { "@type": "Organization", name: "Nike", url: "https://www.nike.com" } },
+      })),
     },
 
     {
@@ -259,7 +221,9 @@ export default function NikeStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nikeSchema) }} />
-      <NikeCouponsContent />
+      <Suspense fallback={null}>
+        <NikeCouponsContent />
+      </Suspense>
     </>
   );
 }

@@ -30,6 +30,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { type Coupon, MACYS_COUPONS } from "./offers";
 
 interface Deal {
   id: string;
@@ -69,10 +70,37 @@ export default function MacysCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) { navigator.clipboard.writeText(coupon.code); setToastCode(coupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }
+    setActiveModalCoupon(coupon); setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeModalCoupon.title}</p>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-[#005f91] transition-colors">Copy</button>
+              </div>
+            ) : (
+              <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+                <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -125,7 +153,7 @@ export default function MacysCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(41.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Macys promo codes, discount codes, and sale deals for Nov 2026. Save up to 75% on jewelry, 60% on home and bedding, 40% on shoes, 40%-60% during Star Deals Week, plus $20 OFF eligible orders of $100 or more.
+                      Find standout savings across fashion, home, beauty, and more with the latest Macy’s Promo Code offers this Nov 2026. Enjoy up to 60% off during the Big Home Event, up to 75% off Diamond Sale jewelry, or take an extra 10%–30% off in the Friends & Family Sale. Looking for even more deals? A Macy’s Discount Code unlocks 40%–60% off Star Deals Week and up to 40% off the Great Shoe Sale. Our verified offers are updated regularly to help you shop for less.
                     </p>
                     <a
                       href={STORE_URL}
@@ -201,27 +229,16 @@ export default function MacysCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Macy's Promo Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "60%", title: "Macy's Promo Code – Big Home Event | Up to 60% OFF", desc: "Save 15%-60% OFF during Macy's Big Home Event", bullets: ["Shop bestsellers, top brands and home essentials at special prices", "Find furniture, bedding, décor and more to refresh your home", "Hurry, the Big Home Event ends tomorrow", "Macy's Promo Code, Home Sale, Home Decor Deals, USA"] },
-          { label: "SAVE", value: "40-60%", title: "Macy's Promo Code – Star Deals Week | Save 40%-60%", desc: "Enjoy 40%-60% OFF during Macy's Star Deals Week", bullets: ["Discover six days of limited-time savings across multiple categories", "Shop daily Flash Sales for extra discounts throughout the event", "Valid through August 31, 2026, with new deals available during the sale", "Macy's Promo Code, Star Deals, Flash Sale, Macy's Deals, USA"] },
-          { label: "UP TO", value: "50%", title: "Macy's Promo Code – Up to 50% OFF Sale Essentials", desc: "Save up to 50% OFF on selected sale essentials", bullets: ["Shop a wide range of products at special reduced prices", "No coupon code is required to claim the offer", "No minimum order value is required for eligible items", "Macy's Promo Code, Sale Essentials, Macy's Discount, USA"] },
-          { label: "EXTRA", value: "10-30%", title: "Macy's – Friends & Family Sale | Extra 10%-30% OFF", desc: "Get extra 10%-30% OFF on selected departments", bullets: ["Save 30% OFF on eligible regular-price and sale items", "Enjoy 15% OFF on selected beauty and fragrance products", "Earn $20 Star Money for every $100 spent on qualifying purchases", "Macy's Friends & Family Sale, Beauty Sale, Star Money, Macy's Deals, USA"] },
-          { label: "UP TO", value: "75%", title: "Macy's – Diamond Sale | Up to 75% OFF Jewelry", desc: "Save up to 75% OFF during the Diamond Sale", bullets: ["Find sparkling jewelry deals with savings of 55%-75%", "Explore jewelry styles for gifting, special occasions and everyday wear", "Shop across multiple jewelry categories at special sale prices", "Macy's Jewelry Sale, Diamond Sale, Jewelry Deals, USA"] },
-          { label: "UP TO", value: "40%", title: "Macy's – Great Shoe Sale | Up to 40% OFF", desc: "Get up to 40% OFF on selected shoe styles", bullets: ["Explore a wide collection of footwear at special prices", "Find shoes for everyday wear, seasonal styling and special occasions", "No coupon code is required to claim the savings", "Macy's Shoe Sale, Footwear Deals, Macy's Sale, USA"] },
-          { label: "UP TO", value: "60%", title: "Macy's – Bedding Essentials Sale | Up to 60% OFF", desc: "Save up to 60% OFF on selected bedding essentials", bullets: ["Shop bed sheets, upholstered beds, rugs and area rugs", "Find deals on queen sheets, mattresses, comforter sets and pillows", "Explore duvet covers and UGG blankets at special sale prices", "Macy's Bedding Sale, Home Deals, Bedding Essentials, USA"] },
-          { label: "GET", value: "$20", title: "Macy's – $20 OFF Orders Over $100", desc: "Get $20 OFF eligible orders of $100 or more", bullets: ["Shop selected beauty, shoes, jewelry and other categories", "Meet the $100 minimum order requirement to unlock the offer", "Save more when shopping across multiple eligible categories", "Macy's Discount, $20 Off, Macy's Deals, Beauty Sale, USA"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {MACYS_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    {/* Increased label font size to text-[11px] sm:text-[13px] */}
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    {/* Increased value font size to text-[28px] sm:text-[38px] */}
-                    <div className="text-[28px] sm:text-[38px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[28px] sm:text-[38px] font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -230,22 +247,22 @@ export default function MacysCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Macy's: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Macy's: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>

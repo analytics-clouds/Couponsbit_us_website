@@ -28,6 +28,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { type Coupon, WALMART_COUPONS } from "./offers";
 
 interface Deal {
   id: string;
@@ -67,10 +68,37 @@ export default function WalmartCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) { navigator.clipboard.writeText(coupon.code); setToastCode(coupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }
+    setActiveModalCoupon(coupon); setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeModalCoupon.title}</p>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); setToastCode(activeModalCoupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }} className="bg-[#056bfa] text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-[#005f91] transition-colors">Copy</button>
+              </div>
+            ) : (
+              <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+                <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +151,7 @@ export default function WalmartCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(64.8k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Walmart promo codes, discount codes, deals, and savings for Nov 2026. Save up to 65% OFF during Flash Deals, get a Walmart+ 30-day trial for $1, Acer Nitro 27-inch monitor for $119, headphones for $17.99, and bedding for $74.99.
+                      Big-ticket savings are easy to find with a Walmart Promo Code featuring verified offers throughout Nov 2026. Current highlights include up to 65% off select electronics, the Acer Nitro 27-inch Curved Gaming Monitor for just $119, and up to 35% off phones and tech. You'll also find everyday savings on home essentials, bedding, kitchen storage, and more, plus a 30-day Walmart+ trial for only $1. Wondering if Walmart has working discount codes? These regularly updated deals help you save across electronics, home, and everyday essentials.
                     </p>
                     <a
                       href={STORE_URL}
@@ -199,15 +227,8 @@ export default function WalmartCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Walmart Promo Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "SHOP", value: "$119", title: "Walmart – Acer Nitro ED0 27\" Curved Gaming Monitor | $119", desc: "Get the Acer Nitro ED270R S3biip 27-inch Curved Gaming Monitor for $119", bullets: ["Save $50.99 from the regular $169.99 price", "Features Full HD 1920 × 1080 resolution and a fast 180Hz refresh rate", "Includes AMD FreeSync Premium technology for smoother, tear-free gaming", "Walmart Deal, Acer Nitro Monitor, 180Hz Gaming Monitor, Curved Monitor, Gaming Deals, USA"] },
-          { label: "TRY", value: "$1", title: "Walmart+ – 30-Day Trial for Just $1", desc: "Try Walmart+ for 30 days for only $1", bullets: ["Enjoy easier shopping with Walmart+ membership benefits", "Claim the limited-time $1 trial offer and explore the membership", "A convenient way to test Walmart+ before committing to a full membership", "Walmart+ Offer, Walmart Membership Deal, $1 Trial, Shopping Deals, USA"] },
-          { label: "FROM", value: "$14.47", title: "Walmart – Ball Glass Mason Jars with Lids & Bands | 12 Count", desc: "Get the Ball Glass Mason Jars with Lids & Bands in a 12-count pack", bullets: ["Features clear, wide-mouth 16 oz glass jars for convenient storage", "Great for canning, preserving, meal prep and everyday kitchen organization", "Available in multiple options with prices ranging from $14.47 to $52.09", "Walmart Deal, Ball Mason Jars, Kitchen Storage, Canning Supplies, Home & Kitchen, USA"] },
-          { label: "UP TO", value: "35%", title: "Walmart – Phones & More | Up to 35% OFF", desc: "Save up to 35% OFF on selected phones and other tech products", bullets: ["Explore special offers across smartphones and everyday electronics", "Shop popular devices at reduced prices for a limited time", "Find more Walmart deals and upgrade your tech for less", "Walmart Deals, Phone Offers, Smartphone Sale, Electronics Deals, USA"] },
-          { label: "SAVE", value: "$25", title: "Walmart – August Style Edit | Virtu Twin XL Comforter Set $74.99", desc: "Get the Virtu Twin XL Comforter Set for $74.99, down from $99.99", bullets: ["Save $25 on this dorm-room bedding essential", "Ideal for college dorms, back-to-school setups and Twin XL beds", "Refresh your room with a comfortable and stylish bedding upgrade", "Walmart Deal, Twin XL Comforter Set, Dorm Room Essentials, Back to School Sale, USA"] },
-          { label: "UP TO", value: "65%", title: "Walmart – Boyoun Daj Pro Noise Canceling Headphones | Up to 65% OFF", desc: "Get the Boyoun Daj Pro Noise Canceling headphones for just $17.99", bullets: ["Save up to 65% OFF during Walmart Flash Deals", "Designed with noise-canceling features for a more immersive listening experience", "Great for music, travel, work and everyday entertainment", "Walmart Deal, Boyoun Daj Headphones, Noise Canceling Headphones, Flash Sale, Electronics Deals, USA"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {WALMART_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 {/* Left badge container updated with standard width, text sizing, and font weights */}
@@ -215,8 +236,8 @@ export default function WalmartCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -225,22 +246,22 @@ export default function WalmartCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Walmart: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Walmart: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>

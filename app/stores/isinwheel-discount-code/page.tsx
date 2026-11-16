@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import IsinwheelCouponsContent from "./_components/StoreCouponsContent";
+import { ISINWHEEL_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Nov 2026",
+    absolute: "iSinwheel Promo Code: Up to 50% Off + 10% Off on storewide | Nov 2026",
   },
   description:
-    "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for November 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+    "Save with an iSinwheel Promo Code or iSinwheel Discount Code to get up to 50% off during the Autumn Ride Sale and 10% off storewide. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/isinwheel-discount-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Nov 2026",
+    title: "iSinwheel Promo Code: Up to 50% Off + 10% Off on storewide | Nov 2026",
     description:
-      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for November 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+      "Save with an iSinwheel Promo Code or iSinwheel Discount Code to get up to 50% off during the Autumn Ride Sale and 10% off storewide. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Nov 2026",
+    title: "iSinwheel Promo Code: Up to 50% Off + 10% Off on storewide | Nov 2026",
     description:
-      "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for November 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+      "Save with an iSinwheel Promo Code or iSinwheel Discount Code to get up to 50% off during the Autumn Ride Sale and 10% off storewide. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789640583/isinwheel_logo_wwsdeo.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +53,11 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const isinwheelSchema = {
@@ -60,13 +67,13 @@ const isinwheelSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-      name: "iSinwheel Discount Code – Up to 50% OFF + £120 OFF Nov 2026",
+      name: "iSinwheel Promo Code: Up to 50% Off + 10% Off on storewide | Nov 2026",
       description:
-        "Get the latest iSinwheel Discount Code and iSinwheel Promo Code for November 2026. Save up to 50% OFF, get £120 OFF orders over £900, and £50 OFF orders over £500.",
+        "Save with an iSinwheel Promo Code or iSinwheel Discount Code to get up to 50% off during the Autumn Ride Sale and 10% off storewide. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#breadcrumb" },
     },
@@ -77,23 +84,12 @@ const isinwheelSchema = {
       name: "iSinwheel Discount Codes & Coupon Codes",
       description: "Latest iSinwheel discount codes and offers on electric scooters.",
       url: "https://www.couponsbit.us/stores/isinwheel-discount-code",
-      numberOfItems: 14,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT4 S Save £50", description: "Get the GT4 S for £599.99, reduced from £649.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "iSinwheel Discount Code – S-NOVA PRO Save £50", description: "The S-NOVA PRO is now £389.99, down from £439.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "iSinwheel Discount Code – H7 PRO £649.99", description: "The H7 PRO is available for £649.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT4 DUAL £829.99", description: "The GT4 DUAL is listed at £829.99, down from £1,299.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "iSinwheel Discount Code – GT1 DUAL £499.99", description: "Get the GT1 DUAL for £499.99, reduced from £699.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "iSinwheel Discount Code – Dremax E-Bike £1,199.99", description: "The Dremax Commuter E-Bike is now £1,199.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "iSinwheel Discount Code – M50 Electric Bike £639.99", description: "The M50 Full Suspension Electric Bike costs £639.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "iSinwheel Discount Code – EB3 Commuter Bike £498.99", description: "The EB3 Commuter Electric Bike is £498.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "iSinwheel Discount Code – Cable Lock £39.99", description: "The Cable Lock is available for £39.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "iSinwheel Discount Code – 120cm Chain Lock £23.99", description: "The 120cm Chain Lock is listed at £23.99.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "iSinwheel Promo Code – £20 Off £300+", description: "Spend £300 or more during the Autumn Ride Sale.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "iSinwheel Promo Code – £50 Off £500+", description: "Spend £500 or more to save £50.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "iSinwheel Promo Code – £120 Off £900+", description: "Spend £900 or more and save £120.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "iSinwheel Promo Code – Autumn Ride Sale Up to 50% Off", description: "Selected products are featured in the Autumn Ride Sale.", url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } } },
-      ],
+      numberOfItems: ISINWHEEL_COUPONS.length,
+      itemListElement: ISINWHEEL_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/isinwheel-discount-code", seller: { "@type": "Organization", name: "iSinwheel", url: "https://www.isinwheel.com" } },
+      })),
     },
 
     {
@@ -113,6 +109,13 @@ const isinwheelSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/isinwheel-discount-code#brand",
+      name: "iSinwheel",
+      url: "https://www.isinwheel.com",
     },
 
     {
@@ -202,7 +205,9 @@ export default function IsinwheelStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(isinwheelSchema) }} />
-      <IsinwheelCouponsContent />
+      <Suspense fallback={null}>
+        <IsinwheelCouponsContent />
+      </Suspense>
     </>
   );
 }

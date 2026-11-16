@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AppleCouponsContent from "./_components/StoreCouponsContent";
 import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Apple Discount Code - $150 Gift Card + 20% OFF | Nov 2026",
+    absolute: "Apple Promo Code: Get 20% Off + $150 Gift Card | Nov 2026",
   },
   description:
-    "Find the latest Apple discount code, promo code, and student deals for Nov 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
+    "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/apple-discount-code",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/apple-discount-code",
-    title: "Apple Discount Code - $150 Gift Card + 20% OFF | Nov 2026",
+    title: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
     description:
-      "Find the latest Apple discount code, promo code, and student deals for Nov 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
+      "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Apple Discount Code - $150 Gift Card + 20% OFF | Nov 2026",
+    title: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
     description:
-      "Find the latest Apple discount code, promo code, and student deals for Nov 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
+      "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const appleSchema = {
@@ -64,13 +66,13 @@ const appleSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/apple-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/apple-discount-code",
-      name: "Apple Discount Code - $150 Gift Card + 20% OFF | Nov 2026",
+      name: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
       description:
-        "Find the latest Apple discount code, promo code, and student deals for Nov 2026. Get a $100-$150 gift card with eligible Mac or iPad purchases, plus 20% OFF qualifying student orders and devices from $599.",
+        "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/apple-discount-code#breadcrumb" },
     },
@@ -233,7 +235,9 @@ export default function AppleStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appleSchema) }} />
-      <AppleCouponsContent />
+      <Suspense fallback={null}>
+        <AppleCouponsContent />
+      </Suspense>
     </>
   );
 }

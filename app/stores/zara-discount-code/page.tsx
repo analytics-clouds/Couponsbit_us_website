@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ZaraCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Nov 2026",
+    absolute: "Zara Promo Code: Save 80% on Dresses | Nov 2026",
   },
   description:
-    "Find the latest Zara discount code, promo code, and fashion deals for Nov 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+    "Use a Zara Promo Code to save 80% on the Short Lace Godet Dress and get the Oversized Linen Blend Shirt for $45.90. Verified Zara Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/zara-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/zara-discount-code",
-    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Nov 2026",
+    title: "Zara Promo Code: Save 80% on Dresses | Nov 2026",
     description:
-      "Find the latest Zara discount code, promo code, and fashion deals for Nov 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+      "Use a Zara Promo Code to save 80% on the Short Lace Godet Dress and get the Oversized Linen Blend Shirt for $45.90. Verified Zara Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Nov 2026",
+    title: "Zara Promo Code: Save 80% on Dresses | Nov 2026",
     description:
-      "Find the latest Zara discount code, promo code, and fashion deals for Nov 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+      "Use a Zara Promo Code to save 80% on the Short Lace Godet Dress and get the Oversized Linen Blend Shirt for $45.90. Verified Zara Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const zaraSchema = {
@@ -63,13 +66,13 @@ const zaraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/zara-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/zara-discount-code",
-      name: "Zara Discount Code - Up to 80% OFF + Styles From $9.98 | Nov 2026",
+      name: "Zara Promo Code: Save 80% on Dresses | Nov 2026",
       description:
-        "Find the latest Zara discount code, promo code, and fashion deals for Nov 2026. Save up to 80% on selected styles, shop dresses and tops from $9.98, outerwear up to 50% OFF, and halter tops from $14.",
+        "Use a Zara Promo Code to save 80% on the Short Lace Godet Dress and get the Oversized Linen Blend Shirt for $45.90. Verified Zara Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/zara-discount-code#breadcrumb" },
     },
@@ -80,49 +83,12 @@ const zaraSchema = {
       name: "Zara Discount Codes & Coupon Codes",
       description: "Latest Zara discount codes and offers for women's, men's and kids' apparel and Zara Home.",
       url: "https://www.couponsbit.us/stores/zara-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Zara Discount Code – Short Lace Godet Dress | UP TO 80% OFF 👗", description: "Get the Zara Short Lace Godet Dress for just $13.98, reduced from $69.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Zara Discount Code – Ruffled Striped Shirt | UP TO 80% OFF 👚", description: "Grab the Zara Ruffled Striped Shirt for only $9.98, down from $49.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Zara Corset Halter Top – UP TO 80% OFF 👗", description: "Get the Zara Corset Halter Top for just $9.98, reduced from $49.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Zara Polka Dot Volume Halter Midi Dress – UP TO 40% OFF 💃", description: "Get the Zara Polka Dot Volume Halter Midi Dress for $41.94, down from $69.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Zara Discount Code – Satin Effect Cut Out Dress | ONLY $49.90 👗", description: "Grab the Zara Satin Effect Cut Out Dress for just $49.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Zara Discount Code – Women’s Outerwear | UP TO 50% OFF 🧥", description: "Get selected Zara women’s outerwear styles with up to 50% OFF.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Zara Women’s Halter Top Collection | FROM $14 👚", description: "Explore Zara’s Women’s Halter Top Collection with prices starting from $14.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Zara Oversized Linen Blend Shirt | FLAT 46% OFF 👔", description: "Get the Zara Oversized Linen Blend Shirt for just $45.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Zara Basic Knit Sweater | ONLY $39.90 🧶", description: "Grab the Zara Basic Knit Sweater for only $39.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Zara Satin Effect Cut Out Dress | ONLY $49.90 ✨", description: "Get the Zara Satin Effect Cut Out Dress for just $49.90.", url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
-        },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: o.title, description: o.desc, url: "https://www.couponsbit.us/stores/zara-discount-code", seller: { "@type": "Organization", name: "Zara", url: "https://www.zara.com" } },
+      })),
     },
 
     {
@@ -142,6 +108,14 @@ const zaraSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/zara-discount-code#brand",
+      name: "Zara",
+      url: "https://www.zara.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Zara_(retailer)"],
     },
 
     {
@@ -239,7 +213,7 @@ export default function ZaraStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(zaraSchema) }} />
-      <ZaraCouponsContent />
+      <Suspense fallback={null}><ZaraCouponsContent /></Suspense>
     </>
   );
 }

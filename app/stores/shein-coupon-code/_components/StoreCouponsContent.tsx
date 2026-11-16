@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { type Coupon, SHEIN_COUPONS } from "./offers";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -30,13 +31,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
-
 interface StoreItem {
   name: string;
   logo: string;
@@ -44,13 +38,6 @@ interface StoreItem {
   href: string;
 }
 
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "SHEIN Coupon Code – New Season Style | Up to 50% OFF", sub: "Save up to 50% OFF on fresh seasonal fashion styles" },
-  { id: "d2", label: "UP TO", heading: "SHEIN Coupon Code – Local Warehouse Sale | Up to 90% OFF", sub: "Enjoy up to 90% OFF on selected items shipped from local warehouses" },
-  { id: "d3", label: "UP TO", heading: "SHEIN – Final Bell Sale | Up to 85% OFF", sub: "Save up to 85% OFF during the Final Bell Sale" },
-  { id: "d4", label: "UP TO", heading: "SHEIN – Super Savings | Up to 90% OFF", sub: "Score major markdowns of up to 90% OFF" },
-  { id: "d5", label: "UP TO", heading: "SHEIN – Endless Summer Glow | Up to 70% OFF", sub: "Enjoy up to 70% OFF on selected summer fashion and beauty picks" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Fashion Nova", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787571687/fashion-nova_cm1al3.webp", dealText: "Up To 50% OFF", href: "/stores/fashion-nova-discount-code" },
@@ -68,10 +55,37 @@ export default function SheinCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) { navigator.clipboard.writeText(coupon.code); setToastCode(coupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }
+    setActiveModalCoupon(coupon); setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeModalCoupon.title}</p>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); }} className="bg-[#056bfa] text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-[#005f91] transition-colors">Copy</button>
+              </div>
+            ) : (
+              <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+                <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -124,7 +138,7 @@ export default function SheinCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(28.9k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find SHEIN coupon codes, promo codes, and fashion deals for Nov 2026. Save up to 90% on selected items, get up to 85% OFF during Final Bell, 70% OFF summer styles, and shop women's tops from $10.99.
+                      Fashion lovers can stretch their budget further with a SHEIN Promo Code packed with limited-time savings in Nov 2026. Verified offers include up to 90% off Super Savings, up to 85% off the Final Bell Sale, and up to 70% off Back to School styles. You'll also find affordable picks like the INAWLY Long Sleeve Top for $11.49 and the BAE Plus Size Floral Camisole for $10.99. Looking for a working SHEIN Discount Code? These regularly updated deals help you save on clothing, beauty, swimwear, and accessories.
                     </p>
                     <a
                       href={STORE_URL}
@@ -200,19 +214,8 @@ export default function SheinCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Shein Coupon Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "50%", title: "SHEIN Coupon Code – New Season Style | Up to 50% OFF", desc: "Save up to 50% OFF on fresh seasonal fashion styles", bullets: ["Discover new clothing, accessories and everyday wardrobe essentials", "Shop trendy looks at budget-friendly prices", "Refresh your wardrobe with the latest SHEIN arrivals", "SHEIN Coupon Code, New Season Sale, Fashion Deals, USA"] },
-          { label: "UP TO", value: "90%", title: "SHEIN Coupon Code – Local Warehouse Sale | Up to 90% OFF", desc: "Enjoy up to 90% OFF on selected items shipped from local warehouses", bullets: ["Find fashion deals with faster delivery options on eligible products", "Shop clothing, accessories and seasonal favorites at reduced prices", "Limited-stock offers available while supplies last", "SHEIN Coupon Code, Local Warehouse Sale, Fashion Deals, USA"] },
-          { label: "UP TO", value: "85%", title: "SHEIN – Final Bell Sale | Up to 85% OFF", desc: "Save up to 85% OFF during the Final Bell Sale", bullets: ["Discover major markdowns across selected fashion categories", "Shop trendy clothing and accessories at clearance prices", "Limited-time savings available on selected styles", "SHEIN Sale, Final Bell Sale, Fashion Deals, USA"] },
-          { label: "UP TO", value: "90%", title: "SHEIN – Super Savings | Up to 90% OFF", desc: "Score major markdowns of up to 90% OFF", bullets: ["Explore deeply discounted styles across multiple categories", "Find budget-friendly fashion for everyday and seasonal wear", "Shop selected deals before popular items sell out", "SHEIN Sale, Super Savings, Up to 90% Off, USA"] },
-          { label: "UP TO", value: "70%", title: "SHEIN – Endless Summer Glow | Up to 70% OFF", desc: "Enjoy up to 70% OFF on selected summer fashion and beauty picks", bullets: ["Discover warm-weather styles and seasonal essentials", "Shop summer-ready clothing, accessories and beauty products", "Grab limited-time deals while selected stock lasts", "SHEIN Coupon Code, Summer Sale, Beauty Deals, USA"] },
-          { label: "SAVE", value: "70%", title: "SHEIN – Back to School Bash | 70% OFF", desc: "Shop trendy outfits and everyday essentials for the new school season", bullets: ["Find affordable styles for students and young shoppers", "Explore selected clothing and accessories at special prices", "SHEIN Coupon Code, Back to School Sale, Fashion Deals, USA"] },
-          { label: "SHOP", value: "$11.49", title: "SHEIN – INAWLY Women's Pleated Long Sleeve Top | $11.49", desc: "Shop the INAWLY Women's Crew Neck Long Sleeve Top for $11.49", bullets: ["Features a fitted pleated design with a solid-color finish", "Listed among the bestselling women's long sleeve tops", "SHEIN Coupon Code, Women's Tops, Long Sleeve Shirt, Fashion Deals, USA"] },
-          { label: "SHOP", value: "$23.99", title: "SHEIN – Tween Girls Striped Preppy Top | $23.99", desc: "Get the Tween Girls 2-Piece Striped Patchwork Set for $23.99", bullets: ["Features a casual preppy-inspired lapel design", "A stylish option for everyday wear and outings", "SHEIN Coupon Code, Girls Fashion, Tween Clothing, Preppy Style, USA"] },
-          { label: "SHOP", value: "$10.99", title: "SHEIN – BAE Plus Size Floral Camisole Top | $10.99", desc: "Shop the BAE Women's Plus Size Rose Floral Camisole Top for $10.99", bullets: ["Features a romantic floral print for a stylish seasonal look", "Designed for plus-size fashion and everyday styling", "A popular pick with more than 1,400 units sold", "SHEIN Coupon Code, Plus Size Fashion, Floral Top, Women's Clothing, USA"] },
-          { label: "SHOP", value: "$20.99", title: "SHEIN – SXY Plus Size 3-Piece Floral Swim Set | $20.99", desc: "Get the SXY Plus Size 3-Piece Floral Swim Set for $20.99", bullets: ["Features a floral design with a stylish solid-color finish", "Ideal for beach days, pool outings and summer vacations", "Almost sold out with more than 1,800 units sold", "SHEIN Coupon Code, Plus Size Swimwear, Floral Swim Set, Summer Fashion, USA"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {SHEIN_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 {/* Updated left width to w-[110px] sm:w-[160px] to easily fit larger text */}
@@ -220,10 +223,8 @@ export default function SheinCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    {/* Increased label font size to text-[11px] sm:text-[13px] and weight to font-bold */}
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    {/* Increased value font size to text-[28px] sm:text-[38px] */}
-                    <div className="text-[28px] sm:text-[38px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[28px] sm:text-[38px] font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -232,22 +233,22 @@ export default function SheinCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Shein: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <button onClick={() => handleCopy(coupon)} aria-label={`Shop Shein: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                   </div>
                 </div>
               </div>
@@ -689,7 +690,7 @@ export default function SheinCouponsContent() {
             Today's Top SHEIN Deals
           </h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {SHEIN_COUPONS.slice(0, 5).map((coupon, i) => (
               <div
                 key={i}
                 className="flex items-center gap-4 group cursor-pointer"
@@ -699,17 +700,17 @@ export default function SheinCouponsContent() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.topLabel} {coupon.mainValue} {coupon.offText}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
                 <a
                   href={STORE_URL}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  aria-label={`Shop SHEIN: ${deal.heading}`}
+                  aria-label={`Shop SHEIN: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 inline-block text-center"
                 >
                   Get Deal

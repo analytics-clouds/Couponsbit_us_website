@@ -37,21 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-// --- Types ---
-interface Coupon {
-  id: string;
-  discount: string;
-  label: string;
-  badge?: "Best Offer" | "Popular" | "Trending";
-  title: string;
-  heading: string;
-  sub: string;
-  description: string;
-  usedCount: string;
-  expiresIn: string;
-  code: string;
-}
+import { type Coupon, COUPONS, STORE_URL } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -59,70 +45,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "50%",
-    label: "SAVE",
-    title: "Chewy – 50% OFF First Autoship Order",
-    heading: "50% OFF",
-    sub: "Chewy",
-    description: "Get 50% OFF your first Autoship order on eligible flea & tick medications",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "CHEWY1"
-  },
-  {
-    id: "c2",
-    discount: "$15",
-    label: "FREE",
-    title: "Chewy – FREE $15 eGift Card on $49+ Orders",
-    heading: "$15 eGift Card",
-    sub: "Chewy",
-    description: "Get a FREE $15 eGift Card with an eligible $49+ order",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "CHEWY2"
-  },
-  {
-    id: "c3",
-    discount: "4TH",
-    label: "BUY 3 GET",
-    title: "Chewy – Buy 3, Get the 4th FREE on Top-Rated Toys",
-    heading: "4TH FREE",
-    sub: "Chewy",
-    description: "Buy 3, Get the 4th FREE on selected top-rated pet toys",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "CHEWY3"
-  },
-  {
-    id: "c4",
-    discount: "50%",
-    label: "SAVE",
-    title: "Chewy Promo Code – 50% OFF Your First Order",
-    heading: "50% OFF",
-    sub: "Chewy Promo Code",
-    description: "Get 50% OFF your first order with Chewy",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "CHEWY4"
-  },
-  {
-    id: "c5",
-    discount: "$12.74",
-    label: "From",
-    title: "Chewy Promo Code – Nylabone Tough Chewer Dog Toy for $12.74",
-    heading: "$12.74",
-    sub: "Chewy Promo Code",
-    description: "Get the Nylabone Tough Chewer Dog Toy for $12.74",
-    usedCount: "0",
-    expiresIn: "TBD",
-    code: "CHEWY5"
-  }
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Walmart", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp", dealText: "Up To 65% OFF", href: "/stores/walmart-promo-code" },
@@ -142,7 +64,15 @@ export default function ChewyCouponsContent() {
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Coupon | null>(null);
+
+  const handleGetDeal = (id: string) => {
+    const c = COUPONS.find((x) => x.id === id) ?? null;
+    setActiveOffer(c);
+    setShowModal(true);
+  };
 
   // Slide auto-play
   useEffect(() => {
@@ -168,6 +98,26 @@ export default function ChewyCouponsContent() {
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            {activeOffer.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black text-lg tracking-widest">{activeOffer.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeOffer.code!); }} className="bg-[#056bfa] text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-[#005f91] transition-colors">Copy</button>
+              </div>
+            ) : (
+              <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+                <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -222,7 +172,7 @@ export default function ChewyCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save with Chewy promo codes offering 50% off first orders and eligible Autoship purchases, a free $15 eGift Card on $49+ orders, Buy 3 Get 1 Free toys, free delivery over $35, and additional pet savings.
+                      Use a Chewy Promo Code or Chewy Discount Code to save on pet food, toys, flea treatments, and everyday pet essentials this Nov 2026. Our regularly updated offers include 50% off your first qualifying order, a free $15 eGift Card on eligible orders of $49+, and buy 3 pet toys, get the 4th free. You can also shop Nylabone Tough Chewer Dog Toys from $12.74. Wondering how much you can save at Chewy? Check our verified offers before placing your order.
                     </p>
                     <a
                       href="https://www.chewy.com/"
@@ -355,11 +305,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy – 50% OFF First Autoship Order</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 50% OFF your first Autoship order on eligible flea & tick medications</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c1" ? null : "c1")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c1" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c1" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save up to $50 on qualifying products</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available to eligible new customers</li>
@@ -369,7 +319,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy – 50% OFF First Autoship Order" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c1")} aria-label="Get Chewy deal: Chewy – 50% OFF First Autoship Order" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -397,11 +347,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy – FREE $15 eGift Card on $49+ Orders</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get a FREE $15 eGift Card with an eligible $49+ order</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c2" ? null : "c2")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c2" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c2" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for new Chewy customers only</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Exclusions and eligibility requirements apply</li>
@@ -411,7 +361,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy – FREE $15 eGift Card on $49+ Orders" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c2")} aria-label="Get Chewy deal: Chewy – FREE $15 eGift Card on $49+ Orders" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -439,11 +389,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy – Buy 3, Get the 4th FREE on Top-Rated Toys</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Buy 3, Get the 4th FREE on selected top-rated pet toys</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c3" ? null : "c3")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c3" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c3" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stock up on popular toys for dogs, cats, and other pets</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great way to save when buying multiple toys</li>
@@ -453,7 +403,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy – Buy 3, Get the 4th FREE on Top-Rated Toys" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c3")} aria-label="Get Chewy deal: Chewy – Buy 3, Get the 4th FREE on Top-Rated Toys" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -481,11 +431,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – 50% OFF Your First Order</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 50% OFF your first order with Chewy</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c4" ? null : "c4")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c4" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c4" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great opportunity for new customers to save on pet essentials</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Shop dog toys, food, treats, pharmacy products, and more</li>
@@ -495,7 +445,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – 50% OFF Your First Order" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c4")} aria-label="Get Chewy deal: Chewy Promo Code – 50% OFF Your First Order" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -523,11 +473,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – Nylabone Tough Chewer Dog Toy for $12.74</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get the Nylabone Tough Chewer Dog Toy for $12.74</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c5" ? null : "c5")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c5" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c5" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Bacon-flavored nylon wishbone designed for strong chewers</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Autoship price shown at $12.10</li>
@@ -537,7 +487,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – Nylabone Tough Chewer Dog Toy for $12.74" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c5")} aria-label="Get Chewy deal: Chewy Promo Code – Nylabone Tough Chewer Dog Toy for $12.74" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -565,11 +515,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – $15 eGift Card on $49+ Orders</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">New customers can get a $15 eGift Card when spending $49 or more</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c6" ? null : "c6")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c6" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c6" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Offer applies to eligible purchases</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Combine with qualifying Chewy deals for greater savings where permitted</li>
@@ -579,7 +529,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – $15 eGift Card on $49+ Orders" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c6")} aria-label="Get Chewy deal: Chewy Promo Code – $15 eGift Card on $49+ Orders" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -607,11 +557,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – 50% OFF First Autoship on Flea & Tick Products</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get 50% OFF your first Autoship on eligible prescription flea & tick products</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c7" ? null : "c7")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c7" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c7" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Save on essential parasite protection for your pets</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Offer is designed for eligible new Autoship customers</li>
@@ -621,7 +571,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – 50% OFF First Autoship on Flea & Tick Products" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c7")} aria-label="Get Chewy deal: Chewy Promo Code – 50% OFF First Autoship on Flea & Tick Products" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -649,11 +599,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – Frontline Plus for Small Dogs from $40.98</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get Frontline Plus Flea & Tick Treatment for Small Dogs from $40.98</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c8" ? null : "c8")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c8" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c8" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>3-dose pack provides a 3-month supply for dogs weighing 5–22 lbs</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Autoship savings can reduce the price to $26.64 on the listed offer</li>
@@ -663,7 +613,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – Frontline Plus for Small Dogs from $40.98" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c8")} aria-label="Get Chewy deal: Chewy Promo Code – Frontline Plus for Small Dogs from $40.98" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>
@@ -691,11 +641,11 @@ export default function ChewyCouponsContent() {
           </div>
           <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">Chewy Promo Code – FREE Delivery on First Orders Over $35</h2>
           <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Get FREE 1–3 day delivery on qualifying first-time orders over $35</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+          <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === "c9" ? null : "c9")} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
             View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+            <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === "c9" ? "rotate-180" : ""}`} />
           </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === "c9" ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
             <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Orders under $35 have a $4.95 flat-rate shipping fee</li>
               <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Great way for new customers to save on delivery costs</li>
@@ -705,7 +655,7 @@ export default function ChewyCouponsContent() {
           </div>
         </div>
         <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://www.chewy.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Chewy deal: Chewy Promo Code – FREE Delivery on First Orders Over $35" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+          <button onClick={() => handleGetDeal("c9")} aria-label="Get Chewy deal: Chewy Promo Code – FREE Delivery on First Orders Over $35" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { type Coupon, MAJOR_FITNESS_COUPONS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -65,10 +66,48 @@ export default function MajorFitnessCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center" onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+                <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl px-6 py-3 mb-6">
+                <span className="text-gray-500 font-bold text-sm">No code needed – discount applied automatically</span>
+              </div>
+            )}
+            <a href="https://majorfitness.sjv.io/c/4303217/1835793/21930?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to Store →
+            </a>
+            <button onClick={() => setShowModal(false)} className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -121,7 +160,7 @@ export default function MajorFitnessCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(6.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Major Fitness Discount Code and Major Fitness Promo Code for November 2026 to save $250 on the B52 PRO, get $50 OFF as a new member, enjoy the B52 Standard from $1,119.99, and claim a FREE Hoodie & Tee on orders over $2,000. Shop verified deals on home gyms, benches, dumbbells, plates, and accessories.
+                      Upgrade your home gym for less with the latest Major Fitness Coupon Code offers available in Nov 2026. Verified deals include $250 off the B52 PRO, $50 off your first qualifying order, and the F35 All-In-One Home Gym from $949.99. You can also shop Olympic Grip Plates from $139.99 and Barbell Collars from $29.99. Looking for a Major Fitness Discount Code? We regularly update verified offers so you can confidently maximize savings on racks, benches, weights, and accessories.
                     </p>
                     <a
                       href={STORE_URL}
@@ -197,40 +236,16 @@ export default function MajorFitnessCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Major Fitness Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SAVE", value: "$50 OFF", title: "Major Fitness Discount Code – $50 Off for New Members", desc: "New members can get $50 off their first qualifying purchase.", bullets: ["Sign up to access the new-member saving.", "Check the offer terms before completing your order.", "A useful saving for anyone building a home fitness setup."] },
-                  { label: "SAVE", value: "$250 OFF", title: "Major Fitness Discount Code – Save $250 on B52 PRO", desc: "Save $250 on the B52 PRO during the Fall Fitness Sale.", bullets: ["Build your own package and unlock additional savings.", "The promotion is designed for complete home gym setups.", "Check the latest major fitness discount code before checkout."] },
-                  { label: "ONLY", value: "$1,119.99", title: "Major Fitness Discount Code – B52 Standard for $1,119.99", desc: "The B52 Standard is available for $1,119.99.", bullets: ["The brand describes this as its lowest price ever.", "Combine it with other eligible products to build your setup.", "Check for a major fitness coupon code before ordering."] },
-                  { label: "GIFT", value: "FREE GIFT", title: "Major Fitness Discount Code – Free Hoodie & Tee on $2,000+", desc: "Spend $2,000 or more sitewide during the Fall Fitness Sale.", bullets: ["Receive a free Hoodie & Tee Gift Set.", "The offer applies to qualifying purchases.", "Check the current major fitness discount code before checkout."] },
-                  { label: "ONLY", value: "$3,999.99", title: "Major Fitness Discount Code – B17 Flying Fortress $3,999.99", desc: "The B17 Flying Fortress All-In-One is priced at $3,999.99.", bullets: ["Its previous listed price was $4,199.99.", "It is part of the Major Fitness Heritage Series.", "Look for a major fitness promo code before purchasing."] },
-                  { label: "ONLY", value: "$1,949.99", title: "Major Fitness Discount Code – Urethane Dumbbells $1,949.99", desc: "The Urethane Octagonal-Shield Dumbbells are $1,949.99.", bullets: ["The previous listed price was $2,299.99.", "They are designed for strength and home gym training.", "Check for a major fitness discount code before checkout."] },
-                  { label: "FROM", value: "$139.99", title: "Major Fitness Discount Code – Olympic Grip Plates From $139.99", desc: "Rubber Coated Olympic Cast Iron Grip Plates start at $139.99.", bullets: ["The plates are designed for Olympic-style strength training.", "Choose the appropriate weight option for your setup.", "Check for a major fitness coupon code before ordering."] },
-                  { label: "EARN", value: "$500", title: "Major Fitness Discount Code – $500 Feature Opportunity", desc: "Eligible customers can receive $500 to get featured.", bullets: ["Selected stories may appear across Major Fitness channels.", "The opportunity is part of the brand's fifth-anniversary campaign.", "Check the current promotion details before submitting."] },
-                  { label: "EARN", value: "$1,500", title: "Major Fitness Discount Code – $1,500 Filming Opportunity", desc: "Selected participants can receive $1,500 to upgrade their setup.", bullets: ["Stories may be included in the brand's fifth-anniversary film.", "The promotion offers an opportunity to share your fitness journey.", "Review the eligibility requirements before applying."] },
-                  { label: "FROM", value: "$949.99", title: "Major Fitness Discount Code – F35 Home Gym From $949.99", desc: "The F35 All-In-One Home Gym starts at $949.99.", bullets: ["It features a wall-mount folding design.", "It is designed for compact home gym spaces.", "Check for a major fitness discount code before buying."] },
-                  { label: "ONLY", value: "$379.99", title: "Major Fitness Discount Code – Lever Arms $379.99", desc: "Major Fitness Lever Arms are listed at $379.99.", bullets: ["The previous listed price was $429.99.", "They can be added to a compatible strength-training setup.", "Look for a major fitness promo code before checkout."] },
-                  { label: "ONLY", value: "$169.99", title: "Major Fitness Discount Code – Adjustable Monolift $169.99", desc: "The Adjustable Monolift Attachment is available for $169.99.", bullets: ["The previous listed price was $199.99.", "It is an attachment for compatible strength equipment.", "Check the latest major fitness discount code before ordering."] },
-                  { label: "ONLY", value: "$949.99", title: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", desc: "The Aluminum Pulley & Weight Stack Bundle costs $949.99.", bullets: ["The previous listed price was $1,079.99.", "It combines pulley equipment with a weight stack.", "Apply a major fitness promo code if an eligible offer is available."] },
-                  { label: "FROM", value: "$399.99", title: "Major Fitness Promo Code – AH64 Apache Bench From $399.99", desc: "The Heritage Series AH64 Apache Adjustable Weight Bench starts at $399.99.", bullets: ["It is part of the Major Fitness Heritage Series.", "Its adjustable design supports different training positions.", "Check for a major fitness promo code before checkout."] },
-                  { label: "ONLY", value: "$3,999.99", title: "Major Fitness Promo Code – B17 Flying Fortress $3,999.99", desc: "The Heritage Series B17 Flying Fortress is $3,999.99.", bullets: ["It was previously listed at $4,199.99.", "The all-in-one gym is designed for home strength training.", "Check the latest major fitness promo code before purchasing."] },
-                  { label: "SAVE", value: "5% OFF", title: "Major Fitness Promo Code – 5% Off for Military & First Responders", desc: "Eligible military and first responders can unlock 5% off.", bullets: ["Verification is required to access the discount.", "The offer is also presented alongside a student discount.", "Complete verification before using the major fitness promo code."] },
-                  { label: "SAVE", value: "5% OFF", title: "Major Fitness Promo Code – 5% Off for Students", desc: "Eligible students can unlock an exclusive 5% discount.", bullets: ["Verification is required before the discount becomes available.", "Check the current eligibility requirements before ordering.", "A useful option for those studying health and fitness degree programs."] },
-                  { label: "ONLY", value: "$169.99", title: "Major Fitness Discount Code – Color Change Plates $169.99", desc: "The Color Change Plates 1.25LB–10LB Set costs $169.99.", bullets: ["The previous listed price was $199.99.", "The set includes multiple weight options for training.", "Check for a major fitness coupon code before checkout."] },
-                  { label: "FROM", value: "$29.99", title: "Major Fitness Discount Code – Barbell Collars From $29.99", desc: "Major Fitness Barbell Collars start at $29.99.", bullets: ["The previous listed price was $36.99.", "They are designed for use with Olympic barbells.", "Check for a major fitness discount code before purchasing."] },
-                  { label: "ONLY", value: "$99.99", title: "Major Fitness Discount Code – Heritage J-Hooks $99.99", desc: "Heritage Series J-Hooks are available for $99.99.", bullets: ["The previous listed price was $129.99.", "They are designed as a rack accessory for strength training.", "Look for a major fitness promo code before checkout."] },
-                  { label: "ONLY", value: "$49.99", title: "Major Fitness Promo Code – Sandwich J-Hooks $49.99", desc: "Sandwich J-Hooks are listed at $49.99.", bullets: ["The previous listed price was $69.99.", "They provide an additional rack accessory for your home gym.", "Apply a major fitness promo code if eligible."] },
-                  { label: "ONLY", value: "$949.99", title: "Major Fitness Promo Code – Pulley & Weight Stack Bundle $949.99", desc: "The Aluminum Pulley & Weight Stack Bundle is $949.99.", bullets: ["Its previous listed price was $1,079.99.", "It combines pulley equipment and a weight stack.", "Check for the latest major fitness promo code before ordering."] },
-                  { label: "SHOP", value: "ALL GEAR", title: "Major Fitness Discount Code – Fitness Equipment for Every Training Goal", desc: "Explore equipment from Major Fitness for different home training needs.", bullets: ["Options include gyms, benches, plates, dumbbells and accessories.", "People researching a fitness science degree or physical fitness degree can also find equipment relevant to strength training.", "Check the latest major fitness discount code before completing your purchase."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {MAJOR_FITNESS_COUPONS.map((coupon) => (
+                  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -239,22 +254,22 @@ export default function MajorFitnessCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {coupon.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Major Fitness: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Major Fitness: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>

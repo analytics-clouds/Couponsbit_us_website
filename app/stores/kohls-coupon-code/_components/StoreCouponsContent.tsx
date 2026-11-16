@@ -31,6 +31,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { type Offer, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -55,10 +56,26 @@ export default function KohlsCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+              <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+            </div>
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -111,7 +128,7 @@ export default function KohlsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest Kohl's Coupon Code and Kohl's Discount Code to save up to 70% OFF on clearance items, enjoy $15 OFF orders over $75, claim 15% OFF your first order, and get up to 50% OFF kitchen appliances. Explore verified Kohl's deals on clothing, footwear, home essentials, beauty, furniture, and more throughout November 2026.
+                      Big savings are waiting across fashion, home, and everyday essentials with the latest Kohl’s Promo Code offers this Nov 2026. Score up to 70% off clearance, $15 off orders over $75, or $10 off purchases of $25 or more on eligible items. Looking for even more value? A Kohl’s Discount Code can unlock up to 50% off storewide, 40% off sweaters and tops, and 25% off women’s Jockey products. Our verified offers are refreshed regularly to help you maximize every purchase.
                     </p>
                     <a
                       href={STORE_URL}
@@ -187,32 +204,8 @@ export default function KohlsCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Kohl's Coupon Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "UP TO", value: "70%", title: "Kohl's Coupon Code – Clearance Sale Up To 70% OFF", desc: "Save up to 70% during the Kohl's Clearance sale, with more sizes and styles available in store.", bullets: ["Explore Kohl's deals today across clothing, home, footwear, and other categories.", "Check kohlscoupons and available Kohl's offer code promotions before shopping."] },
-                  { label: "SAVE", value: "$10", title: "Kohl's Coupon Code – $10 OFF $50+ on Toys", desc: "Kohl's Rewards Members can get $10 OFF purchases of $50 or more with coupon code TOYS10.", bullets: ["The offer includes select LEGO-branded items and excludes baby gear, electronics, novelty gifts, and sporting goods.", "The offer ends October 4; check Kohl's coupon promo code options for additional savings."] },
-                  { label: "UP TO", value: "50%", title: "Kohl's Promo Code – Kitchen Appliances Up To 50% OFF", desc: "Save up to 50% on select kitchen appliances during this Kohl's Epic Deal.", bullets: ["Shop eligible kitchen essentials and selected appliance styles at reduced prices.", "Explore coupons from Kohl's and compare available deals before completing your purchase."] },
-                  { label: "ONLY", value: "$7.19", title: "Kohl's Promo Code – Croft & Barrow V-Neck Tee for $7.19", desc: "Get the Women's Croft & Barrow Essential V-Neck Tee for $7.19, reduced from $11.99.", bullets: ["Save on this everyday women's clothing essential during the Kohl's Sale & Clearance event.", "Browse Kohl's department store deals and look for a Kohl's voucher when available."] },
-                  { label: "UP TO", value: "70%", title: "Kohl's Clearance Sale – Save Up To 70% on New Markdowns", desc: "Save up to 70% on clearance items with new markdowns across selected categories.", bullets: ["Find discounted fashion, home products, accessories, and more at Kohl's.", "Shoppers searching for a kohls 30 off coupon can also check current promotions for eligible savings."] },
-                  { label: "UP TO", value: "50%", title: "Kohl's Offer – Up To 50% OFF Storewide", desc: "Get up to 50% OFF on eligible purchases across selected Kohl's categories.", bullets: ["Shop fashion, home essentials, beauty, accessories, and more.", "Explore kohls deals today for current offers and seasonal savings."] },
-                  { label: "SAVE", value: "15%", title: "Kohl's New User Offer – Flat 15% OFF First Order", desc: "New customers can get a flat 15% OFF their first order.", bullets: ["Sign up and shop eligible Kohl's products while enjoying an introductory discount.", "Check for a Kohl's offer code before placing your first order."] },
-                  { label: "UP TO", value: "30%", title: "Kohl's Deal – Levi's Clothing Up To 30% OFF", desc: "Save up to 30% on selected Levi's loose clothing styles.", bullets: ["Explore jeans, tops, casualwear, and other eligible Levi's fashion at Kohl's.", "Find the latest kohls deals today and look for applicable kohlscoupons."] },
-                  { label: "UP TO", value: "50%", title: "Kohl's Footwear Sale – Save Up To 50% OFF", desc: "Get up to 50% OFF on selected footwear at Kohl's.", bullets: ["Shop shoes and footwear styles for different occasions and everyday wear.", "Check available coupons from Kohl's before completing your purchase."] },
-                  { label: "UP TO", value: "40%", title: "Kohl's Women's Clothing Sale – Up To 40% OFF", desc: "Save up to 40% on the women's clothing collection at Kohl's.", bullets: ["Browse dresses, tops, casualwear, and other selected women's fashion.", "If you're searching for a kohls dress, explore the latest styles included in the sale."] },
-                  { label: "UP TO", value: "40%", title: "Kohl's Men's Activewear – Up To 40% OFF", desc: "Get up to 40% OFF on selected men's activewear.", bullets: ["Shop workout clothing and active styles designed for everyday movement.", "Explore Kohl's department store offers and current kohlscoupons for additional savings."] },
-                  { label: "SAVE", value: "15%", title: "Kohl's Clearance – Get 15% OFF", desc: "Grab 15% OFF on eligible clearance products at Kohl's.", bullets: ["Discover discounted fashion, home, footwear, and other clearance selections.", "Check the latest Kohl's offer code promotions before shopping."] },
-                  { label: "SAVE", value: "40%", title: "Kohl's Sweaters & Tops – Flat 40% OFF", desc: "Get a flat 40% OFF on selected sweaters and tops.", bullets: ["Refresh your wardrobe with seasonal clothing styles available at Kohl's.", "Browse kohls deals today and check for an applicable Kohl's voucher."] },
-                  { label: "SAVE", value: "30%", title: "Kohl's Outdoor & Garden Decor – Save 30% OFF", desc: "Save 30% OFF on selected outdoor and garden decor.", bullets: ["Shop decorative pieces and outdoor essentials for your home.", "Look through available coupons from Kohl's to find additional eligible savings."] },
-                  { label: "SAVE", value: "30%", title: "Kohl's Patio Furniture – Flat 30% OFF", desc: "Get a flat 30% OFF on selected patio furniture.", bullets: ["Upgrade your outdoor space with eligible furniture styles from Kohl's.", "Check current kohls deals today for more seasonal home and outdoor offers."] },
-                  { label: "SAVE", value: "35%", title: "Kohl's Card – Flat 35% OFF Orders", desc: "Kohl's Card members can get a flat 35% OFF on eligible orders.", bullets: ["Use your Kohl's Card to access this special shopping offer.", "Explore Kohl's Cash and other Kohl's Card promotions before checkout."] },
-                  { label: "SAVE", value: "30%", title: "Kohl's Kitchen & Dining – 30% OFF", desc: "Save 30% on selected kitchen and dining purchases.", bullets: ["Shop cookware, dining essentials, kitchen accessories, and more at Kohl's.", "Check available kohlscoupons and Kohl's offer code deals for eligible products."] },
-                  { label: "SAVE", value: "25%", title: "Kohl's Women's Jockey Products – Flat 25% OFF", desc: "Get a flat 25% OFF on selected women's Jockey products.", bullets: ["Shop comfortable essentials and everyday apparel from Jockey at Kohl's.", "Explore coupons from Kohl's for additional eligible savings."] },
-                  { label: "UP TO", value: "25%", title: "Kohl's Athletic Shoes – Save Up To 25% OFF", desc: "Save up to 25% on selected athletic shoes at Kohl's.", bullets: ["Find sports and active footwear for workouts, training, and everyday use.", "Check for a kohls coupon promo code before placing your order."] },
-                  { label: "SAVE", value: "$15", title: "Kohl's $15 OFF – Orders Over $75", desc: "Get a flat $15 OFF on eligible orders over $75.", bullets: ["Shop qualifying fashion, home, beauty, and lifestyle products at Kohl's.", "Look for a Kohl's voucher or current Kohl's offer code before checkout."] },
-                  { label: "SAVE", value: "$10", title: "Kohl's $10 OFF – Orders Over $25", desc: "Save $10 on eligible orders above $25.", bullets: ["Shop qualifying products across the Kohl's department store selection.", "Check kohls deals today for other available coupon and discount offers."] },
-                  { label: "EARN", value: "$10", title: "Kohl's Cash – Earn $10 With Every $50 Purchase", desc: "Earn $10 in Kohl's Cash for every $50 spent during the eligible promotional period.", bullets: ["Shop qualifying products and earn rewards toward future purchases.", "Kohl's Cash can help you save on upcoming Kohl's department store purchases."] },
-                  { label: "FROM", value: "$14", title: "Kohl's Jewelry Collection – Styles Starting From $14", desc: "Explore selected jewelry styles starting from just $14.", bullets: ["Find accessories and jewelry pieces for everyday wear and special occasions.", "Browse kohlscoupons and kohls deals today for additional eligible offers."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {OFFERS.map((c) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
@@ -231,11 +224,11 @@ export default function KohlsCouponsContent() {
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
                             <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
                                 {c.bullets.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
@@ -244,7 +237,7 @@ export default function KohlsCouponsContent() {
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Kohl's: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button onClick={() => handleGetDeal(c)} aria-label={`Shop Kohl's: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                           </div>
                         </div>
                       </div>
@@ -765,45 +758,26 @@ export default function KohlsCouponsContent() {
             Today's Top Kohl's Deals
           </h3>
           <div className="space-y-6">
-            {[
-              {
-                heading: "CLEARANCE SALE UP TO 70% OFF",
-                sub: "Save up to 70% during the Kohl's Clearance sale, with more sizes and styles available in store.",
-              },
-              {
-                heading: "NEW USER OFFER – FLAT 15% OFF FIRST ORDER",
-                sub: "New customers can get a flat 15% OFF their first order.",
-              },
-              {
-                heading: "KOHL'S CARD – FLAT 35% OFF ORDERS",
-                sub: "Kohl's Card members can get a flat 35% OFF on eligible orders.",
-              },
-              {
-                heading: "JEWELRY COLLECTION – STYLES STARTING FROM $14",
-                sub: "Explore selected jewelry styles starting from just $14.",
-              },
-            ].map((deal, i) => (
+            {OFFERS.slice(0, 4).map((offer, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {offer.label} {offer.value}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {offer.desc}
                   </p>
                 </div>
-                <a
-                  href="https://www.kohls.com"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Kohl's: ${deal.heading}`}
+                <button
+                  onClick={() => handleGetDeal(offer)}
+                  aria-label={`Shop Kohl's: ${offer.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
                 >
                   Get Deal
-                </a>
+                </button>
               </div>
             ))}
           </div>

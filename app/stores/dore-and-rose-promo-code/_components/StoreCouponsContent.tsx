@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { type Coupon, DORE_AND_ROSE_COUPONS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -67,10 +68,48 @@ export default function DoreAndRoseCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center" onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+                <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl px-6 py-3 mb-6">
+                <span className="text-gray-500 font-bold text-sm">No code needed – discount applied automatically</span>
+              </div>
+            )}
+            <a href="https://dorerose.pxf.io/9VQ0m0" target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to Store →
+            </a>
+            <button onClick={() => setShowModal(false)} className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +162,7 @@ export default function DoreAndRoseCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(12.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      DiscoveFind Dore & Rose promo codes, discount codes, and sleep deals for Nov 2026. Save up to 65% during the End of Summer Clearance, with cooling bundles from $121.95, silk sleep masks for $35.50, and sleepwear from $65.80.Lunara Silk and TENCEL.
+                      Upgrade your sleep routine for less with the latest Dore & Rose offers this Nov 2026. A Dore & Rose Promo code can unlock up to 65% off during the Summer Clearance or bring the Cooling Sleep Bundle down to just $143.85. Looking for more ways to save? A Dore & Rose Discount Code also features the Scalloped Silk Pillowcase for $89 and the Aura Silk Sleep Mask at 50% off. Our verified deals are updated regularly to help you shop with confidence.
                     </p>
                     <a
                       href={STORE_URL}
@@ -200,29 +239,16 @@ export default function DoreAndRoseCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Dore & Rose Promo Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "65%", title: "Dore & Rose Discount Code – End of Summer Clearance | Up to 65% OFF", desc: "Save up to 65% OFF on selected sleep essentials during the End of Summer Clearance", bullets: ["Discover limited-stock bedding, sleepwear, cooling products and accessories", "Clearance offers are available for a limited time and end August 31", "Shop last-chance styles before selected items sell out", "Dore & Rose Discount Code, Summer Clearance, Sleep Deals, USA"] },
-          { label: "SAVE", value: "65%", title: "Dore & Rose Discount Code – Ultimate Cooling Sleep Bundle | Save 65%", desc: "Get the Ultimate Cooling Sleep Bundle for $143.85, reduced from $411", bullets: ["Save 65% on a complete cooling-focused sleep collection", "Features Aeris™ Cooling Fabric designed for a comfortable sleep experience", "Ideal for shoppers looking to upgrade their summer sleep setup", "Dore & Rose Discount Code, Cooling Sleep Bundle, Aeris Cooling, Sleep Sale, USA"] },
-          { label: "SAVE", value: "60%", title: "Dore & Rose – Kids Deep Sleep Bundle | Save 60%", desc: "Shop the Kids Deep Sleep Bundle for $64.80, down from $162", bullets: ["Enjoy 60% OFF on this kids' sleep collection", "Made with Lunara™ Silk for a soft and comfortable feel", "A thoughtful option for refreshing a child's nighttime essentials", "Dore & Rose Discount Code, Kids Sleep Bundle, Lunara Silk, Sleepwear Sale, USA"] },
-          { label: "SAVE", value: "55%", title: "Dore & Rose – Cooling Sleep Bundle | Save 55%", desc: "Get the Cooling Sleep Bundle for $121.95, reduced from $271", bullets: ["Save 55% during the limited-time summer clearance", "Made with Aeris™ Cooling Fabric for a lightweight cooling feel", "Designed to help create a more comfortable bedtime routine", "Dore & Rose Discount Code, Cooling Collection, Aeris Fabric, Sleep Essentials, USA"] },
-          { label: "SHOP", value: "$89", title: "Dore & Rose – Scalloped Silk Pillowcase | $89", desc: "Shop the Scalloped Silk Pillowcase for $89, down from $304", bullets: ["Features Lunara™ Silk with an elegant scalloped edge", "Designed to add a luxurious touch to your nighttime setup", "A stylish sleep accessory for upgrading your bedding collection", "Dore & Rose Discount Code, Silk Pillowcase, Lunara Silk, Bedding Deals, USA"] },
-          { label: "SAVE", value: "50%", title: "Dore & Rose – Aura Silk Sleep Mask | Save 50%", desc: "Get the Aura Sleep Mask for $35.50, reduced from $71", bullets: ["Save 50% on this Lunara™ Silk sleep accessory", "Soft silk construction makes it a comfortable addition to your bedtime routine", "Compact design makes it convenient for travel and everyday use", "Dore & Rose Discount Code, Silk Sleep Mask, Aura Sleep Mask, Sleep Sale, USA"] },
-          { label: "SHOP", value: "$75.65", title: "Dore & Rose – Pointelle Baby Tee & Pants Set | $75.65", desc: "Shop the Pointelle Baby Tee and Pants Set for $75.65, down from $89", bullets: ["Made with Cotton Pointelle for a soft and comfortable feel", "A coordinated sleepwear option for relaxed nights and lounging", "Save 15% on this selected sleepwear style", "Dore & Rose Discount Code, Baby Sleepwear, Cotton Pointelle, Pajama Set, USA"] },
-          { label: "SAVE", value: "30%", title: "Dore & Rose – Short Tencel PJ Set | Save 30%", desc: "Get the Short Tencel PJ Set for $65.80, reduced from $94", bullets: ["Save 30% on this Soft Soothe Tencel sleepwear", "Lightweight short-PJ design is ideal for comfortable nights", "A versatile choice for summer sleep and relaxed lounging", "Dore & Rose Discount Code, Tencel Pajamas, Short PJ Set, Sleepwear Deals, USA"] },
-          { label: "SAVE", value: "35%", title: "Dore & Rose – Lunara Silk Bridal Kimono | 35% OFF", desc: "Shop the Lunara™ Silk Bridal Kimono for $155.35, down from $239", bullets: ["Save 35% on this elegant silk sleepwear piece", "Designed with a luxurious finish suitable for bridal and special occasions", "A beautiful choice for getting ready, relaxing or gifting", "Dore & Rose Discount Code, Silk Bridal Kimono, Bridal Sleepwear, Lunara Silk, USA"] },
-          { label: "UP TO", value: "40%", title: "Dore & Rose – Sleep Wellness Collection | Up to 40% OFF", desc: "Save up to 40% OFF on selected sleep wellness essentials", bullets: ["Explore individually designed products focused on comfort and nighttime relaxation", "Discover sleepwear, bedding, masks and other premium sleep accessories", "Shop selected offers while seasonal inventory is available", "Dore & Rose Discount Code, Sleep Wellness, Sleep Essentials, Bedding Deals, USA"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {DORE_AND_ROSE_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    {/* Increased font size for the label: text-[11px] sm:text-[13px] */}
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    {/* Increased font size for the value: text-[36px] sm:text-[38px] */}
-                    <div className="text-[36px] sm:text-[38px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[36px] sm:text-[38px] font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -231,22 +257,22 @@ export default function DoreAndRoseCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Dore & Rose: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Dore & Rose: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                   </div>
                 </div>
               </div>

@@ -3,8 +3,8 @@ import { Suspense } from "react";
 import LulusCouponsContent from "./_components/StoreCouponsContent";
 import { LULUS_COUPONS } from "./_components/offers";
 
-const TITLE = "Lulus Promo Code – Get up to 80% Off | Nov 2026";
-const DESCRIPTION = "Save up to 80% with the latest Lulus promo code. Find verified Lulus discount code offers, including Buy 2, Get 1 Free on eligible styles, this November 2026.";
+const TITLE = "Lulus Promo Code: 80% Off Flirt Bustier Top | Nov 2026";
+const DESCRIPTION = "Save with a Lulus Promo Code or Lulus Discount Code to get 80% off the Flirt Bustier Top and the Purple Sequin Mini Dress for $35. Verified Nov 2026.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

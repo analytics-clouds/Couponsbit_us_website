@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import IkeaCouponsContent from "./_components/StoreCouponsContent";
 import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "IKEA Discount Code: Up to 70% OFF Selected Products | Nov 2026",
+    absolute: "IKEA Promo Code: Up to 70% Off Home Essentials | Nov 2026",
   },
   description:
-    "Get the latest IKEA Discount Code for November 2026 and save up to 70% OFF selected products or enjoy up to 40% OFF furniture, lighting, curtains, storage & more.",
+    "Shop with an IKEA Promo Code or IKEA Discount Code to save up to 70% sitewide and 40% on home essentials. Verified deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/ikea-discount-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/ikea-discount-code",
-    title: "IKEA Discount Code: Up to 70% OFF Selected Products | Nov 2026",
+    title: "IKEA Promo Code: Up to 70% Off Home Essentials | Nov 2026",
     description:
-      "Get the latest IKEA Discount Code for November 2026 and save up to 70% OFF selected products or enjoy up to 40% OFF furniture, lighting, curtains, storage & more.",
+      "Shop with an IKEA Promo Code or IKEA Discount Code to save up to 70% sitewide and 40% on home essentials. Verified deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "IKEA Discount Code: Up to 70% OFF Selected Products | Nov 2026",
+    title: "IKEA Promo Code: Up to 70% Off Home Essentials | Nov 2026",
     description:
-      "Get the latest IKEA Discount Code for November 2026 and save up to 70% OFF selected products or enjoy up to 40% OFF furniture, lighting, curtains, storage & more.",
+      "Shop with an IKEA Promo Code or IKEA Discount Code to save up to 70% sitewide and 40% on home essentials. Verified deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793614081/ikea-logo_suwglk.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const ikeaSchema = {
@@ -61,13 +63,13 @@ const ikeaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/ikea-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/ikea-discount-code",
-      name: "IKEA Discount Code: Up to 70% OFF Selected Products | Nov 2026",
+      name: "IKEA Promo Code: Up to 70% Off Home Essentials | Nov 2026",
       description:
-        "Get the latest IKEA Discount Code for November 2026 and save up to 70% OFF selected products or enjoy up to 40% OFF furniture, lighting, curtains, storage & more.",
+        "Shop with an IKEA Promo Code or IKEA Discount Code to save up to 70% sitewide and 40% on home essentials. Verified deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-02",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/ikea-discount-code#breadcrumb" },
     },
@@ -109,6 +111,13 @@ const ikeaSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/ikea-discount-code#brand",
+      name: "IKEA",
+      url: "https://www.ikea.com",
     },
 
     {
@@ -182,7 +191,9 @@ export default function IkeaStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ikeaSchema) }} />
-      <IkeaCouponsContent />
+      <Suspense fallback={null}>
+        <IkeaCouponsContent />
+      </Suspense>
     </>
   );
 }

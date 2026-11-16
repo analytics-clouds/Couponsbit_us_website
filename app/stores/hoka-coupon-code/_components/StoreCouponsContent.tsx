@@ -31,6 +31,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { type Offer, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -55,10 +56,26 @@ export default function HokaCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+              <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+            </div>
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -111,7 +128,7 @@ export default function HokaCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.9k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest HOKA Discount Code offers and verified HOKA promo Code deals. Enjoy up to 50% OFF selected accessories, grab the Ora Athletic Slide for $39 (30% OFF), or save 30% on the Mach 6 Men's Running Shoes for $98. Find trusted HOKA savings and shop your favourite styles for less.
+                      Hit your running goals for less with the latest HOKA Promo Code offers this Nov 2026. Save up to 50% on select accessories, grab the Crescendo XC Running Shoes for $63 (30% off), or shop the Clifton 10 Women's Running Shoes for $124. Looking for additional savings? A HOKA Discount Code can unlock 10% off your first eligible order or help you score the Mach 6 Men's Running Shoes for $98 (30% off). Our verified deals are refreshed regularly so you can shop with confidence.
                     </p>
                     <a
                       href={STORE_URL}
@@ -187,17 +204,8 @@ export default function HokaCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">HOKA Coupon Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SALE", value: "30% OFF", title: "HOKA Coupon Code – Ora Athletic Slide 30% OFF at $39", desc: "Get the Ora Athletic Slide for $39, reduced from $60.", bullets: ["Save 30% on this all-gender footwear option.", "Shop the comfortable slide for casual wear and everyday use."] },
-                  { label: "SALE", value: "UP TO 50%", title: "HOKA Coupon Code – Accessories Up To 50% OFF", desc: "Save up to 50% on selected HOKA accessories.", bullets: ["Shop socks, hats, sports bras, gaiters, arm sleeves and more.", "Free shipping is available on all qualifying orders for all users."] },
-                  { label: "SALE", value: "30% OFF", title: "HOKA Discount Code – Crescendo XC Running Shoes 30% OFF", desc: "Get the all-gender Crescendo XC for $63, reduced from $90.", bullets: ["Save 30% on this performance-focused running shoe.", "Explore HOKA footwear deals for training and running activities."] },
-                  { label: "SALE", value: "20% OFF", title: "HOKA Discount Code – Clifton 10 Women’s Running Shoes 20% OFF", desc: "Get the women’s Clifton 10 for $124, reduced from $155.", bullets: ["Save 20% on these everyday running shoes.", "Enjoy HOKA’s cushioned footwear designed for comfortable daily runs."] },
-                  { label: "SALE", value: "30% OFF", title: "HOKA Mach 6 Men’s Running Shoes – 30% OFF at $98", desc: "Get the men’s Mach 6 for $98, reduced from $140.", bullets: ["Save 30% on this everyday running footwear.", "A lightweight option for runners looking for comfortable performance shoes."] },
-                  { label: "NEW", value: "10% OFF", title: "HOKA New User Offer – Get 10% OFF & Free Standard Shipping", desc: "New members can get 10% OFF on eligible HOKA orders.", bullets: ["Enjoy FREE standard shipping with the membership offer.", "Members can also receive an additional 60 days of extended benefits on their purchases."] },
-                  { label: "FROM", value: "$70", title: "HOKA High-Cushion Shoes – Prices Starting From $70", desc: "Explore HOKA high-cushion shoes starting from $70.", bullets: ["Discover comfortable footwear designed for cushioned everyday performance.", "Shop selected styles at competitive prices while supplies last."] },
-                  { label: "SALE", value: "20% OFF", title: "HOKA Membership Offer – Buy 2 or More Items & Save 20%", desc: "Buy two or more eligible HOKA items and save 20%.", bullets: ["Combine multiple products to unlock additional savings.", "Explore footwear and accessories while building your HOKA collection."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {OFFERS.map((c) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
@@ -216,11 +224,11 @@ export default function HokaCouponsContent() {
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
                             <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
                                 {c.bullets.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
@@ -229,7 +237,7 @@ export default function HokaCouponsContent() {
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop HOKA: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button onClick={() => handleGetDeal(c)} aria-label={`Shop HOKA: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                           </div>
                         </div>
                       </div>
@@ -769,33 +777,26 @@ export default function HokaCouponsContent() {
             Today's Top HOKA Deals
           </h3>
           <div className="space-y-6">
-            {[
-              { heading: "ORA SLIDE", sub: "30% OFF, Now $39" },
-              { heading: "ACCESSORIES", sub: "Up To 50% OFF" },
-              { heading: "NEW MEMBER", sub: "10% OFF + Free Shipping" },
-              { heading: "MACH 6", sub: "30% OFF, Now $98" }
-            ].map((deal, i) => (
+            {OFFERS.slice(0, 4).map((offer, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {offer.label} {offer.value}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {offer.desc}
                   </p>
                 </div>
-                <a
-                  href={STORE_URL}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop HOKA: ${deal.heading}`}
+                <button
+                  onClick={() => handleGetDeal(offer)}
+                  aria-label={`Shop HOKA: ${offer.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
                 >
                   Get Deal
-                </a>
+                </button>
               </div>
             ))}
           </div>

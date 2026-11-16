@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import GoodRxCouponsContent from "./_components/StoreCouponsContent";
+import { GOODRX_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Nov 2026",
+    absolute: "GoodRx Promo Code: Get 20% Off + $50 Off on Apoquel | Nov 2026",
   },
   description:
-    "Find the latest GoodRx discount code, promo code, and healthcare savings for Nov 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+    "Save with a GoodRx Promo Code or GoodRx Discount Code to get 20% off your first Chewy Pharmacy order and Get $50 off eligible Apoquel purchases. Verified Nov 2026. ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/goodrx-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/goodrx-discount-code",
-    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Nov 2026  ",
+    title: "GoodRx Promo Code: Get 20% Off + $50 Off on Apoquel | Nov 2026  ",
     description:
-      "Find the latest GoodRx discount code, promo code, and healthcare savings for Nov 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+      "Save with a GoodRx Promo Code or GoodRx Discount Code to get 20% off your first Chewy Pharmacy order and Get $50 off eligible Apoquel purchases. Verified Nov 2026. ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Nov 2026  ",
+    title: "GoodRx Promo Code: Get 20% Off + $50 Off on Apoquel | Nov 2026  ",
     description:
-      "Find the latest GoodRx discount code, promo code, and healthcare savings for Nov 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+      "Save with a GoodRx Promo Code or GoodRx Discount Code to get 20% off your first Chewy Pharmacy order and Get $50 off eligible Apoquel purchases. Verified Nov 2026. ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787050069/goodrx-logo_ibgfjr.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,11 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const goodRxSchema = {
@@ -63,13 +70,13 @@ const goodRxSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/goodrx-discount-code",
-      name: "GoodRx Discount Code - GLP-1 Savings From $149 + Membership at $39 | Nov 2026  ",
+      name: "GoodRx Promo Code: Get 20% Off + $50 Off on Apoquel | Nov 2026  ",
       description:
-        "Find the latest GoodRx discount code, promo code, and healthcare savings for Nov 2026. Explore online care from $39/month, 250+ free medications, and eligible GLP-1 prices from $149. ",
+        "Save with a GoodRx Promo Code or GoodRx Discount Code to get 20% off your first Chewy Pharmacy order and Get $50 off eligible Apoquel purchases. Verified Nov 2026. ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#breadcrumb" },
     },
@@ -80,33 +87,12 @@ const goodRxSchema = {
       name: "GoodRx Discount Codes & Coupon Codes",
       description: "Latest GoodRx discount codes and offers for prescription price comparisons and pharmacy coupons.",
       url: "https://www.couponsbit.us/stores/goodrx-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "GoodRx Discount Code – Online Weight Loss Care | $39/Month", description: "Access online weight loss care and support for eligible patients in the USA", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "GoodRx Companion – 250+ Free Medications | From $14.99/Month", description: "Join GoodRx Companion and get access to 250+ medications for $0", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "GoodRx – Foundayo GLP-1 Medication | As Low As $149", description: "Save on eligible Foundayo GLP-1 medication with prices starting as low as $149", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "GoodRx – Zepbound KwikPen | As Low As $299", description: "Get potential savings on eligible Zepbound KwikPen prescriptions from as low as $299", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "GoodRx – Wegovy | As Low As $149", description: "Save on eligible Wegovy products with prices starting as low as $149", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "GoodRx Companion – Free Medications & $19 Online Care", description: "Get access to 250+ medications for free through GoodRx Companion", url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
-        },
-      ],
+      numberOfItems: GOODRX_COUPONS.length,
+      itemListElement: GOODRX_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/goodrx-discount-code", seller: { "@type": "Organization", name: "GoodRx", url: "https://www.goodrx.com" } },
+      })),
     },
 
     {
@@ -126,6 +112,13 @@ const goodRxSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/goodrx-discount-code#brand",
+      name: "GoodRx",
+      url: "https://www.goodrx.com",
     },
 
     {
@@ -231,7 +224,9 @@ export default function GoodRxStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(goodRxSchema) }} />
-      <GoodRxCouponsContent />
+      <Suspense fallback={null}>
+        <GoodRxCouponsContent />
+      </Suspense>
     </>
   );
 }

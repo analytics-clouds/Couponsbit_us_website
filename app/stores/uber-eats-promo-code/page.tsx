@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import UberEatsCouponsContent from "./_components/StoreCouponsContent";
+import { UBER_EATS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Nov 2026 ",
+    absolute: "Uber Eats Promo Code: Up to 60% Off Orders | Nov 2026 ",
   },
   description:
-    "Find the latest Uber Eats promo code, discount code and food delivery deals for Nov 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+    "Use an Uber Eats Promo Code to get up to 60% off orders over $15 and $10 off your first order. Verified Uber Eats Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/uber-eats-promo-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/uber-eats-promo-code",
-    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Nov 2026 ",
+    title: "Uber Eats Promo Code: Up to 60% Off Orders | Nov 2026 ",
     description:
-      "Find the latest Uber Eats promo code, discount code and food delivery deals for Nov 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+      "Use an Uber Eats Promo Code to get up to 60% off orders over $15 and $10 off your first order. Verified Uber Eats Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Nov 2026 ",
+    title: "Uber Eats Promo Code: Up to 60% Off Orders | Nov 2026 ",
     description:
-      "Find the latest Uber Eats promo code, discount code and food delivery deals for Nov 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+      "Use an Uber Eats Promo Code to get up to 60% off orders over $15 and $10 off your first order. Verified Uber Eats Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/uber-eats-logo_d4dwih.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const uberEatsSchema = {
@@ -63,13 +66,13 @@ const uberEatsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/uber-eats-promo-code",
-      name: "Uber Eats Promo Code - Save up to 60% OFF eligible Uber Eats orders | Nov 2026 ",
+      name: "Uber Eats Promo Code: Up to 60% Off Orders | Nov 2026 ",
       description:
-        "Find the latest Uber Eats promo code, discount code and food delivery deals for Nov 2026. Save up to 60% on order value $15+,Get up to 50% OFF when you spend $20 or more and Enjoy $10 OFF your first eligible Uber Eats order.",
+        "Use an Uber Eats Promo Code to get up to 60% off orders over $15 and $10 off your first order. Verified Uber Eats Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#breadcrumb" },
     },
@@ -80,49 +83,12 @@ const uberEatsSchema = {
       name: "Uber Eats Promo Codes & Coupon Codes",
       description: "Latest Uber Eats promo codes and offers for restaurant delivery, grocery delivery and pickup orders.",
       url: "https://www.couponsbit.us/stores/uber-eats-promo-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Uber Eats Promo Code – 50% OFF Orders of $15+", description: "Save up to 50% OFF when you spend $15 or more", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Uber Eats Promo Code – 37% OFF 7-Eleven Chocolate Chunk Cookies", description: "Get 37% OFF on select 7-Eleven Chocolate Chunk Cookies", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Uber Eats – 20% OFF Orders of $15+ at Dunkin", description: "Save 20% OFF up to $12 on eligible Dunkin orders", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Uber Eats – Up to 50% OFF When You Spend $20", description: "Get up to 50% OFF when you spend $20 or more", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Uber Eats – $10 OFF Your First Order", description: "Enjoy $10 OFF your first eligible Uber Eats order", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Uber Eats – $15 OFF Denny's Orders Over $35", description: "Save $15 OFF eligible Denny's orders", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Uber Eats – 30% OFF Caribbean Wrap", description: "Get 30% OFF the Caribbean Wrap at Stuytown Marketplace INC.", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Uber Eats – FREE Fries on Orders Over $30", description: "Get FREE fries or eligible free items on qualifying orders", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Uber Eats – 20% OFF Hollywood Diner Orders $20+", description: "Save 20% OFF when ordering $20 or more from Hollywood Diner", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Uber Eats – 60% OFF Orders of $15+", description: "Save up to 60% OFF eligible Uber Eats orders", url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
-        },
-      ],
+      numberOfItems: UBER_EATS_COUPONS.length,
+      itemListElement: UBER_EATS_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/uber-eats-promo-code", seller: { "@type": "Organization", name: "Uber Eats", url: "https://www.ubereats.com" } },
+      })),
     },
 
     {
@@ -142,6 +108,13 @@ const uberEatsSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/uber-eats-promo-code#brand",
+      name: "Uber Eats",
+      url: "https://www.ubereats.com",
     },
 
     {
@@ -239,7 +212,9 @@ export default function UberEatsStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(uberEatsSchema) }} />
-      <UberEatsCouponsContent />
+      <Suspense fallback={null}>
+        <UberEatsCouponsContent />
+      </Suspense>
     </>
   );
 }

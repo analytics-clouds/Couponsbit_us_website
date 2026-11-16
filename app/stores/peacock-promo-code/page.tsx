@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import PeacockCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Peacock Promo Code – Plans from $2.99 & Premium $7.99 Sept 2026",
+    absolute: "Peacock Promo Code: Up to 65% Off | Nov 2026",
   },
   description:
-    "Use the latest Peacock Discount Code and Peacock promo Code to get plans from $2.99/month or Peacock Premium from $7.99/month. Shop now.",
+    "Save with a Peacock Promo Code offering up to 65% off and Premium Plus from $13.99/month. Verified Peacock Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/peacock-promo-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/peacock-promo-code",
-    title: "Peacock Promo Code – Plans from $2.99 & Premium $7.99 Sept 2026",
+    title: "Peacock Promo Code: Up to 65% Off | Nov 2026",
     description:
-      "Use the latest Peacock Discount Code and Peacock promo Code to get plans from $2.99/month or Peacock Premium from $7.99/month. Shop now.",
+      "Save with a Peacock Promo Code offering up to 65% off and Premium Plus from $13.99/month. Verified Peacock Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Peacock Promo Code – Plans from $2.99 & Premium $7.99 Sept 2026",
+    title: "Peacock Promo Code: Up to 65% Off | Nov 2026",
     description:
-      "Use the latest Peacock Discount Code and Peacock promo Code to get plans from $2.99/month or Peacock Premium from $7.99/month. Shop now.",
+      "Save with a Peacock Promo Code offering up to 65% off and Premium Plus from $13.99/month. Verified Peacock Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/peacock-logo_mhfin7.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +53,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const peacockSchema = {
@@ -60,13 +63,13 @@ const peacockSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/peacock-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/peacock-promo-code",
-      name: "Peacock Promo Code – Plans from $2.99 & Premium $7.99 Sept 2026",
+      name: "Peacock Promo Code: Up to 65% Off | Nov 2026",
       description:
-        "Use the latest Peacock Discount Code and Peacock promo Code to get plans from $2.99/month or Peacock Premium from $7.99/month. Shop now.",
+        "Save with a Peacock Promo Code offering up to 65% off and Premium Plus from $13.99/month. Verified Peacock Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/peacock-promo-code#breadcrumb" },
     },
@@ -77,18 +80,12 @@ const peacockSchema = {
       name: "Peacock Promo Codes & Coupon Codes",
       description: "Latest Peacock promo codes and offers.",
       url: "https://www.couponsbit.us/stores/peacock-promo-code",
-      numberOfItems: 9,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Peacock Promo Code – Military Discount Starting at $2.99/Month", description: "Eligible military members can enjoy Peacock plans starting at $2.99 per month.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Peacock Promo Code – Premium Plan Starting at $7.99/Month", description: "Get the Peacock Premium Plan starting at $7.99 per month.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Peacock Discount Code – Select Monthly Plan Starting at $7.99", description: "Choose a qualifying Peacock monthly plan starting at $7.99.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Peacock Discount Code – Premium Monthly Plan for $7.99", description: "Get the Peacock Premium Monthly Plan for $7.99.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Peacock Premium Plus Plan – Just $13.99/Month", description: "Get the Peacock Premium Plus Plan for just $13.99 per month.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Peacock Gift Cards – Starting From $25", description: "Get Peacock Gift Cards starting from $25.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Peacock Premium Plus Annual Plan – Starting From $169.99", description: "Grab the Peacock Premium Plus Annual Plan starting from $169.99.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Peacock Premium for Medical Pros & First Responders – $6.99/Month", description: "Eligible medical professionals and first responders can get Peacock Premium for $6.99 per month.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Peacock Premium Included Free With Walmart+ Membership", description: "Get Peacock Premium included at no additional cost with an eligible Walmart+ membership.", url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: o.title, description: o.desc, url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } },
+      })),
     },
 
     {
@@ -108,6 +105,14 @@ const peacockSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/peacock-promo-code#brand",
+      name: "Peacock",
+      url: "https://www.peacocktv.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Peacock_(streaming_service)"],
     },
 
     {
@@ -205,7 +210,7 @@ export default function PeacockStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(peacockSchema) }} />
-      <PeacockCouponsContent />
+      <Suspense fallback={null}><PeacockCouponsContent /></Suspense>
     </>
   );
 }

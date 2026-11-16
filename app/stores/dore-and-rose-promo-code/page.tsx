@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DoreAndRoseCouponsContent from "./_components/StoreCouponsContent";
+import { DORE_AND_ROSE_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Nov 2026",
+    absolute: "Dore & Rose Promo Code: Get up to 65% Off | Nov 2026",
   },
   description:
-    "Find the latest Dore & Rose promo code, discount code on sleep essentials for Nov 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+    "Save up to 65% with a Dore & Rose Promo Code or shop a Dore & Rose Discount Code for the Cooling Sleep Bundle from $121.95. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
     languages: {
       "en-US": "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
       "en-GB": "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-      "en-IN": "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
+      "en-IN": "https://www.couponsbit  .us/stores/dore-and-rose-promo-code",
       "x-default": "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
     },
   },
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Nov 2026",
+    title: "Dore & Rose Promo Code: Get up to 65% Off | Nov 2026",
     description:
-      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Nov 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+      "Save up to 65% with a Dore & Rose Promo Code or shop a Dore & Rose Discount Code for the Cooling Sleep Bundle from $121.95. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -32,16 +34,16 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp",
         width: 1200,
         height: 630,
-        alt: "Dore & Rose Promo Code & Coupon Codes – Couponsbit",
+        alt: "Dore & Rose Promo Code & Promo Codes – Couponsbit",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Nov 2026",
+    title: "Dore & Rose Promo Code: Get up to 65% Off | Nov 2026",
     description:
-      "Find the latest Dore & Rose promo code, discount code on sleep essentials for Nov 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+      "Save up to 65% with a Dore & Rose Promo Code or shop a Dore & Rose Discount Code for the Cooling Sleep Bundle from $121.95. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1786949027/dore-and-rose-logo_jsa9ki.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,11 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const doreAndRoseSchema = {
@@ -63,13 +70,13 @@ const doreAndRoseSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-      name: "Dore & Rose Promo Code - Save up to 65% OFF on selected sleep essentials | Nov 2026",
+      name: "Dore & Rose Promo Code: Get up to 65% Off | Nov 2026",
       description:
-        "Find the latest Dore & Rose promo code, discount code on sleep essentials for Nov 2026. Save up to 65% OFF, Shop the Scalloped Silk Pillowcase for $89, down from $304.",
+        "Save up to 65% with a Dore & Rose Promo Code or shop a Dore & Rose Discount Code for the Cooling Sleep Bundle from $121.95. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#breadcrumb" },
     },
@@ -77,52 +84,15 @@ const doreAndRoseSchema = {
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#offerlist",
-      name: "Dore & Rose Promo Codes & Coupon Codes",
+      name: "Dore & Rose Promo Codes & Promo Codes",
       description: "Latest Dore & Rose promo codes and offers for silk eye masks, pillowcases, pajama sets and bedding.",
       url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Dore & Rose Discount Code – End of Summer Clearance | Up to 65% OFF", description: "Save up to 65% OFF on selected sleep essentials during the End of Summer Clearance", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Dore & Rose Discount Code – Ultimate Cooling Sleep Bundle | Save 65%", description: "Get the Ultimate Cooling Sleep Bundle for $143.85, reduced from $411", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Dore & Rose – Kids Deep Sleep Bundle | Save 60%", description: "Shop the Kids Deep Sleep Bundle for $64.80, down from $162", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Dore & Rose – Cooling Sleep Bundle | Save 55%", description: "Get the Cooling Sleep Bundle for $121.95, reduced from $271", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Dore & Rose – Scalloped Silk Pillowcase | $89", description: "Shop the Scalloped Silk Pillowcase for $89, down from $304", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Dore & Rose – Aura Silk Sleep Mask | Save 50%", description: "Get the Aura Sleep Mask for $35.50, reduced from $71", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Dore & Rose – Pointelle Baby Tee & Pants Set | $75.65", description: "Shop the Pointelle Baby Tee and Pants Set for $75.65, down from $89", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Dore & Rose – Short Tencel PJ Set | Save 30%", description: "Get the Short Tencel PJ Set for $65.80, reduced from $94", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "Dore & Rose – Lunara Silk Bridal Kimono | 35% OFF", description: "Shop the Lunara™ Silk Bridal Kimono for $155.35, down from $239", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "Dore & Rose – Sleep Wellness Collection | Up to 40% OFF", description: "Save up to 40% OFF on selected sleep wellness essentials", url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
-        },
-      ],
+      numberOfItems: DORE_AND_ROSE_COUPONS.length,
+      itemListElement: DORE_AND_ROSE_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/dore-and-rose-promo-code", seller: { "@type": "Organization", name: "Dore & Rose", url: "https://doreandrose.com" } },
+      })),
     },
 
     {
@@ -142,6 +112,13 @@ const doreAndRoseSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/dore-and-rose-promo-code#brand",
+      name: "Dore & Rose",
+      url: "https://doreandrose.com",
     },
 
     {
@@ -231,7 +208,9 @@ export default function DoreAndRoseStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(doreAndRoseSchema) }} />
-      <DoreAndRoseCouponsContent />
+      <Suspense fallback={null}>
+        <DoreAndRoseCouponsContent />
+      </Suspense>
     </>
   );
 }

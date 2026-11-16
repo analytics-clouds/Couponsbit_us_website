@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { type Coupon, ISINWHEEL_COUPONS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -65,10 +66,48 @@ export default function IsinwheelCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) {
+      navigator.clipboard.writeText(coupon.code);
+      setToastCode(coupon.code);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+    setActiveModalCoupon(coupon);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => setShowModal(false)}>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center" onClick={(e) => e.stopPropagation()}>
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-green-500" />
+            </div>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#e8f6f8] border border-[#056bfa]/20 rounded-2xl px-6 py-3 mb-6">
+                <span className="text-[#056bfa] font-black text-2xl font-mono">{activeModalCoupon.code}</span>
+              </div>
+            ) : (
+              <div className="bg-[#f5f5f5] rounded-2xl px-6 py-3 mb-6">
+                <span className="text-gray-500 font-bold text-sm">No code needed – discount applied automatically</span>
+              </div>
+            )}
+            <a href="https://isinwheel.pxf.io/c/4303217/1289264/15800?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="block w-full bg-[#056bfa] text-white font-black py-4 rounded-2xl mb-3 hover:bg-[#005f91] transition-colors">
+              Continue to Store →
+            </a>
+            <button onClick={() => setShowModal(false)} className="text-gray-500 font-bold text-sm hover:text-black transition-colors">
+              Close Window
+            </button>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -121,7 +160,7 @@ export default function IsinwheelCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Use the latest iSinwheel Discount Code and iSinwheel Promo Code for November 2026 to save up to 50% OFF during the Autumn Ride Sale, get £120 OFF orders over £900, £50 OFF orders over £500, and £20 OFF orders over £300. Shop electric scooters, e-bikes, accessories, and commuter models at verified discounted prices.
+                      Cruise for less with the latest iSinwheel Promo Code offers this Nov 2026. Enjoy up to 50% off during the Autumn Ride Sale or take 30% off eligible storewide purchases on select products. Looking for another way to save? An iSinwheel Discount Code lets you claim an additional 10% off storewide, making electric scooters, e-bikes, and riding accessories even more affordable. Our verified deals are refreshed regularly, helping you find the best value before you place your order.
                     </p>
                     <a
                       href={STORE_URL}
@@ -197,31 +236,16 @@ export default function IsinwheelCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">iSinwheel Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – GT4 S Save £50", desc: "Get the GT4 S for £599.99, reduced from £649.99.", bullets: ["Save £50 with the qualifying offer.", "Features a 50-mile stated range and 12-inch off-road tyres.", "A strong option for riders comparing an isinwheel s9 pro."] },
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Discount Code – S-NOVA PRO Save £50", desc: "The S-NOVA PRO is now £389.99, down from £439.99.", bullets: ["Save £50 on the autumn offer.", "Includes a 1000W motor and up to 38 miles of stated range.", "A practical isin wheel scooter option for urban rides."] },
-                  { label: "ONLY", value: "£649.99", title: "iSinwheel Discount Code – H7 PRO £649.99", desc: "The H7 PRO is available for £649.99.", bullets: ["It features a powerful 1200W motor.", "Comes with 16\" x 4.0\" wide pneumatic tyres and dual suspension.", "Check the latest offer on an isinwheel electric scooter before checkout."] },
-                  { label: "ONLY", value: "£829.99", title: "iSinwheel Discount Code – GT4 DUAL £829.99", desc: "The GT4 DUAL is listed at £829.99, down from £1,299.", bullets: ["It features a 2400W dual-motor setup.", "Includes 12-inch tubeless off-road tyres.", "Check for an isinwheel s9pro electric scooter deal before buying."] },
-                  { label: "ONLY", value: "£499.99", title: "iSinwheel Discount Code – GT1 DUAL £499.99", desc: "Get the GT1 DUAL for £499.99, reduced from £699.", bullets: ["It features a dual-motor off-road setup.", "Includes dual suspension and off-road tyres.", "Check the latest isinwheel s9max offers before checkout."] },
-                  { label: "ONLY", value: "£1,199.99", title: "iSinwheel Discount Code – Dremax E-Bike £1,199.99", desc: "The Dremax Commuter E-Bike is now £1,199.99.", bullets: ["It includes a 720Wh Samsung battery.", "Offers up to 93 miles of stated range.", "Check for savings when shopping for an isinwheel e-bike."] },
-                  { label: "ONLY", value: "£639.99", title: "iSinwheel Discount Code – M50 Electric Bike £639.99", desc: "The M50 Full Suspension Electric Bike costs £639.99.", bullets: ["Its previous listed price was £799.00.", "Features a 27.5\" full-suspension setup.", "Check for an isinwheel discount code before ordering."] },
-                  { label: "ONLY", value: "£498.99", title: "iSinwheel Discount Code – EB3 Commuter Bike £498.99", desc: "The EB3 Commuter Electric Bike is £498.99.", bullets: ["It was previously listed at £709.99.", "Designed for practical everyday commuting.", "Look for an isinwheel discount code before checkout."] },
-                  { label: "ONLY", value: "£39.99", title: "iSinwheel Discount Code – Cable Lock £39.99", desc: "The Cable Lock is available for £39.99.", bullets: ["Designed for electric scooters and bicycles.", "A useful accessory for everyday riders.", "Check for an isinwheel scooter charger or accessory offer when shopping."] },
-                  { label: "ONLY", value: "£23.99", title: "iSinwheel Discount Code – 120cm Chain Lock £23.99", desc: "The 120cm Chain Lock is listed at £23.99.", bullets: ["Compatible with e-bikes and scooters.", "Designed as an additional security accessory.", "Check the latest isinwheel skateboard and accessory deals."] },
-                  { label: "SAVE", value: "£20 OFF", title: "iSinwheel Promo Code – £20 Off £300+", desc: "Spend £300 or more during the Autumn Ride Sale.", bullets: ["Save £20 on qualifying purchases.", "Apply the available iSinwheel promo code at checkout.", "Useful for shoppers considering an isinwheel s8 electric scooter."] },
-                  { label: "SAVE", value: "£50 OFF", title: "iSinwheel Promo Code – £50 Off £500+", desc: "Spend £500 or more to save £50.", bullets: ["The offer is part of the Autumn Ride Sale.", "Check the available iSinwheel promo code before payment.", "Compare models such as the isinwheel i11 electric scooter."] },
-                  { label: "SAVE", value: "£120 OFF", title: "iSinwheel Promo Code – £120 Off £900+", desc: "Spend £900 or more and save £120.", bullets: ["Available as part of the Autumn Ride Sale.", "Apply an iSinwheel promo code where applicable.", "Consider options such as the isinwheel i9 electric scooter or isinwheel i9 pro e scooter."] },
-                  { label: "SALE", value: "UP TO 50%", title: "iSinwheel Promo Code – Autumn Ride Sale Up to 50% Off", desc: "Selected products are featured in the Autumn Ride Sale.", bullets: ["The promotion advertises savings of up to 50% off.", "Check for an iSinwheel promo code before checkout.", "Popular searches include isinwheel v8 electric skateboard, isinwheel v8, isinwheel skateboard, isinwheel charger, isinwheel x1, isinwheel x1 review, isinwheel s9, isinwheel s9max electric scooter and isinwheel mini electric scooter."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {ISINWHEEL_COUPONS.map((coupon) => (
+                  <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -230,22 +254,22 @@ export default function IsinwheelCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {coupon.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop iSinwheel: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop iSinwheel: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
                           </div>
                         </div>
                       </div>

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import WalmartCouponsContent from "./_components/StoreCouponsContent";
+import { WALMART_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Nov 2026",
+    absolute: "Walmart Promo Code: Get up to 65% Off on Electronics | Nov 2026",
   },
   description:
-    "Find the latest Walmart promo code, discount code, and deals for Nov 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+    "Use a Walmart Promo Code to get up to 65% off Electronics and the Acer Nitro 27' Curved Gaming Monitor for $119. Verified Walmart Discount Code deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/walmart-promo-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/walmart-promo-code",
-    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Nov 2026",
+    title: "Walmart Promo Code: Get up to 65% Off on Electronics | Nov 2026",
     description:
-      "Find the latest Walmart promo code, discount code, and deals for Nov 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+      "Use a Walmart Promo Code to get up to 65% off Electronics and the Acer Nitro 27' Curved Gaming Monitor for $119. Verified Walmart Discount Code deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Nov 2026",
+    title: "Walmart Promo Code: Get up to 65% Off on Electronics | Nov 2026",
     description:
-      "Find the latest Walmart promo code, discount code, and deals for Nov 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+      "Use a Walmart Promo Code to get up to 65% off Electronics and the Acer Nitro 27' Curved Gaming Monitor for $119. Verified Walmart Discount Code deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787037375/walamrt-logo_upfxvc.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,11 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const walmartSchema = {
@@ -63,13 +70,13 @@ const walmartSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/walmart-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/walmart-promo-code",
-      name: "Walmart Promo Code - Save up to 65% OFF + 30-Day Trial | Nov 2026",
+      name: "Walmart Promo Code: Get up to 65% Off on Electronics | Nov 2026",
       description:
-        "Find the latest Walmart promo code, discount code, and deals for Nov 2026. Save up to 65% OFF during Flash Deals and get a Walmart+ 30-day trial for just $1, plus tech deals from $17.99.",
+        "Use a Walmart Promo Code to get up to 65% off Electronics and the Acer Nitro 27' Curved Gaming Monitor for $119. Verified Walmart Discount Code deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/walmart-promo-code#breadcrumb" },
     },
@@ -80,33 +87,12 @@ const walmartSchema = {
       name: "Walmart Promo Codes & Coupon Codes",
       description: "Latest Walmart promo codes and offers across grocery, electronics, home and apparel.",
       url: "https://www.couponsbit.us/stores/walmart-promo-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Walmart – Acer Nitro ED0 27\" Curved Gaming Monitor | $119", description: "Get the Acer Nitro ED270R S3biip 27-inch Curved Gaming Monitor for $119", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Walmart+ – 30-Day Trial for Just $1", description: "Try Walmart+ for 30 days for only $1", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Walmart – Ball Glass Mason Jars with Lids & Bands | 12 Count", description: "Get the Ball Glass Mason Jars with Lids & Bands in a 12-count pack", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Walmart – Phones & More | Up to 35% OFF", description: "Save up to 35% OFF on selected phones and other tech products", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Walmart – August Style Edit | Virtu Twin XL Comforter Set $74.99", description: "Get the Virtu Twin XL Comforter Set for $74.99, down from $99.99", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Walmart – Boyoun Daj Pro Noise Canceling Headphones | Up to 65% OFF", description: "Get the Boyoun Daj Pro Noise Canceling headphones for just $17.99", url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
-        },
-      ],
+      numberOfItems: WALMART_COUPONS.length,
+      itemListElement: WALMART_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: c.title, description: c.description, url: "https://www.couponsbit.us/stores/walmart-promo-code", seller: { "@type": "Organization", name: "Walmart", url: "https://www.walmart.com" } },
+      })),
     },
 
     {
@@ -126,6 +112,13 @@ const walmartSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/walmart-promo-code#brand",
+      name: "Walmart",
+      url: "https://www.walmart.com",
     },
 
     {
@@ -231,7 +224,9 @@ export default function WalmartStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(walmartSchema) }} />
-      <WalmartCouponsContent />
+      <Suspense fallback={null}>
+        <WalmartCouponsContent />
+      </Suspense>
     </>
   );
 }

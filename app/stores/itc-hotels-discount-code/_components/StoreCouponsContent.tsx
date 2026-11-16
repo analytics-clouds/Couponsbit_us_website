@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Offer, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,15 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "Member Exclusive Stay | UP TO 35% OFF", sub: "ITC Hotels" },
-  { id: "d2", label: "UP TO", heading: "Exclusive Membership Savings | UP TO 50% OFF", sub: "ITC Hotels" },
-  { id: "d3", label: "UP TO", heading: "All-In Getaway Package | SAVE UP TO 20%", sub: "ITC Hotels" },
-  { id: "d4", label: "FLAT", heading: "Goa Vacation Deal | FLAT 33% OFF", sub: "ITC Hotels" },
-  { id: "d5", label: "FLAT", heading: "All-In Stay Savings | FLAT 20% OFF", sub: "ITC Hotels" },
-  { id: "d6", label: "TOP", heading: "Grand Golf Retreat", sub: "Luxury Golf Escape" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Zen Hotels", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782288848/zen-hotels-coupon-code_fbtoik.webp", dealText: "$35 OFF Bookings", href: "/stores/zen-hotels-discount-code" },
@@ -67,10 +52,30 @@ export default function ItcHotelsCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+
+  const handleGetDeal = (offer: Offer) => {
+    setActiveOffer(offer);
+    setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+              <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+            </div>
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +128,7 @@ export default function ItcHotelsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find ITC Hotels promo codes, discount codes, and stay deals for Nov 2026. Members can save up to 50% on eligible stays, while Goa and extended stays offer 33% OFF. Enjoy up to 20% OFF dining, spa, beverages and hotel services.
+                      Planning your next escape? November 2026 is a good time to book, with ITC Hotels offering a range of deals that stretch your travel budget. Members can get up to 50% off on exclusive stays, while the All-In Getaway package comes with a 20% discount. There are also extra savings on dining and curated hotel experiences. If a beach break is on your mind, eligible Goa stays and Extended Escape bookings both carry a 33% discount through an ITC Hotels discount code. We refresh our verified offers regularly, so you can find a luxury stay without paying full price.
                     </p>
                     <a
                       href={STORE_URL}
@@ -200,16 +205,7 @@ export default function ItcHotelsCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">ITC Hotels Discount Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "35% OFF", title: "ITC Hotels – Member Exclusive Stay | UP TO 35% OFF 🏨✨", desc: "Save UP TO 35% OFF on stays with the exclusive ITC Hotels Member Offer.", bullets: ["Members can earn 2X Green Points on eligible hotel bookings.", "Enjoy 20% OFF on selected dining, soft beverages and spa experiences.", "Ideal for USA travelers planning a luxury vacation or India getaway.", "Book By: May 3, 2026 | Stay Valid Through: October 31, 2026."] },
-          { label: "UP TO", value: "50% OFF", title: "ITC Hotels – Exclusive Membership Savings | UP TO 50% OFF ⭐", desc: "Join the ITC Hotels membership program and unlock UP TO 50% OFF on eligible stays.", bullets: ["Access special member-only hotel rates and exclusive hospitality benefits.", "Enjoy premium rooms, dining experiences and luxury services at participating properties.", "A great option for USA visitors planning multiple stays across India.", "Limited-period membership savings may be subject to participating hotel terms."] },
-          { label: "UP TO", value: "20% OFF", title: "ITC Hotels – All-In Getaway Package | SAVE UP TO 20% 🍽️🌴", desc: "Plan a relaxing luxury escape with the ITC Hotels All-In Getaway Experience.", bullets: ["Enjoy daily breakfast, lunch and dinner at the hotel's coffee shop.", "Save UP TO 20% OFF on food, soft beverages, spa, salon and laundry services.", "A convenient option for USA travelers looking for an all-inclusive-style hotel experience in India.", "Offer Valid Through: December 31, 2026, subject to availability."] },
-          { label: "FLAT", value: "33% OFF", title: "ITC Hotels – Goa Vacation Deal | FLAT 33% OFF 🌴☀️", desc: "Plan your next Goa vacation and enjoy FLAT 33% OFF on eligible stays.", bullets: ["Perfect for USA travelers looking for a tropical beach escape in India.", "Extend your Goa vacation and enjoy luxury accommodation at a better value.", "Limited-period offer with availability based on participating properties."] },
-          { label: "FLAT", value: "20% OFF", title: "ITC Hotels – All-In Stay Savings | FLAT 20% OFF 🍽️🧖", desc: "Enjoy FLAT 20% OFF on eligible food, beverages and hotel services.", bullets: ["Save on experiences including dining, spa and salon services during your stay.", "Designed for travelers who want to enjoy more amenities without stretching their vacation budget.", "A convenient luxury add-on for USA visitors staying at participating ITC Hotels.", "Offer applies to eligible guests and services."] },
-          { label: "TOP", value: "GOLF ESCAPE", title: "ITC Hotels – Grand Golf Retreat | Luxury Golf Escape ⛳🏨", desc: "Experience a premium golf-focused getaway with the ITC Hotels Grand Golf Retreat.", bullets: ["Enjoy a complimentary golf round at Classic Golf & Country Club.", "Get 50% OFF on spa services for a relaxing post-golf experience.", "Complimentary buffet breakfast and dinner are included with the package.", "Ideal for USA golf enthusiasts seeking a luxury India vacation experience."] },
-          { label: "FLAT", value: "33% OFF", title: "ITC Hotels – Extended Escape | FLAT 33% OFF 🛏️🌴", desc: "Stay longer at ITC Hotels and save FLAT 33% OFF on eligible stays.", bullets: ["Available for stays of 3 nights or more.", "Perfect for extended vacations, family trips and workcations in India.", "Enjoy premium accommodation and hospitality while getting more value from a longer stay.", "A smart choice for USA travelers planning an extended India itinerary."] },
-          { label: "FLAT", value: "15% OFF", title: "ITC Hotels – Summer Vacation Offer | FLAT 15% OFF ☀️🏨", desc: "Make your summer travel plans with FLAT 15% OFF on eligible ITC Hotels bookings.", bullets: ["Available at participating ITC Hotels across India.", "Ideal for USA travelers planning summer holidays, family vacations or weekend escapes.", "Combine luxury accommodation with premium dining and hospitality experiences.", "Check participating properties and booking conditions before reserving your stay."] },
-        ].map((c, i) => (
+        {OFFERS.map((c, i) => (
           <div key={i} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
@@ -229,11 +225,11 @@ export default function ItcHotelsCouponsContent() {
                     </div>
                     <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
                     <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
                         {c.bullets.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
@@ -242,7 +238,7 @@ export default function ItcHotelsCouponsContent() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop ITC Hotels: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <button onClick={() => handleGetDeal(c)} aria-label={`Shop ITC Hotels: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                   </div>
                 </div>
               </div>
@@ -968,7 +964,7 @@ export default function ItcHotelsCouponsContent() {
             Today's Top ITC Hotels Deals
           </h3>
           <div className="space-y-5">
-            {DEALS.map((deal, i) => (
+            {OFFERS.slice(0, 5).map((offer, i) => (
               <div
                 key={i}
                 className="flex items-center gap-3.5 group cursor-pointer pb-4 border-b border-gray-100 last:border-b-0 last:pb-0"
@@ -978,21 +974,19 @@ export default function ItcHotelsCouponsContent() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-wider group-hover:text-[#056bfa] transition-colors truncate">
-                    {deal.heading}
+                    {offer.label} {offer.value}
                   </p>
                   <p className="text-gray-500 font-medium text-[11px] truncate mt-0.5">
-                    {deal.sub}
+                    {offer.desc}
                   </p>
                 </div>
-                <a
-                  href={STORE_URL}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Get deal: ${deal.heading}`}
+                <button
+                  onClick={() => handleGetDeal(offer)}
+                  aria-label={`Get deal: ${offer.title}`}
                   className="bg-[#e8f6f8] text-[#056bfa] px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider hover:bg-[#056bfa] hover:text-white transition-all shrink-0 flex items-center gap-1"
                 >
                   Deal <ArrowRight className="w-3 h-3" />
-                </a>
+                </button>
               </div>
             ))}
           </div>

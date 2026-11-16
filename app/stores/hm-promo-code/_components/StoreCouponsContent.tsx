@@ -27,13 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { type Offer, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -42,14 +36,6 @@ interface StoreItem {
   href: string;
 }
 
-const DEALS: Deal[] = [
-  { id: "d1", label: "SAVE", heading: "Women's Summer Sale | Up to 72% OFF", sub: "H&M Discount Code" },
-  { id: "d2", label: "SAVE", heading: "MAMA 2-Piece Jersey Set | Up to 70% OFF", sub: "H&M Discount Code" },
-  { id: "d3", label: "SAVE", heading: "Men's Resort Shirt | Up to 77% OFF", sub: "H&M Discount Code" },
-  { id: "d4", label: "SAVE", heading: "Men's Blazers & Suits | Up to 65% OFF", sub: "H&M Deal" },
-  { id: "d5", label: "SAVE", heading: "H&M Home Bedding Sale | Up to 70% OFF", sub: "H&M Home" },
-  { id: "d6", label: "SAVE", heading: "Fragrance & Perfume Sale | Up to 69% OFF", sub: "H&M Deal" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Zara", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787124413/zara-logo_ba1o0i.webp", dealText: "Up To 80% OFF", href: "/stores/zara-discount-code" },
@@ -67,10 +53,26 @@ export default function HmCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+              <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+            </div>
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +125,7 @@ export default function HmCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find H&M promo codes, discount codes, and sale deals for Nov 2026. Save up to 77% on selected men’s styles, 72% on women’s fashion, 70% on beauty and bedding, and discover summer clothing, footwear, fragrance and makeup from $2.49.
+                      Refresh your wardrobe for less with the latest H&M Promo Code offers this Nov 2026. Save up to 72% on women's summer fashion, 70% on beauty products, and grab the Regular-Fit Jacquard Resort Shirt for just $6.99 (77% off). Looking for even more savings? An H&M Discount Code can help you score deals on activewear, home bedding, and everyday essentials, including H&M MOVE Sports Leggings for $16.99. Our verified offers are updated regularly so you never miss the best value.
                     </p>
                     <a
                       href={STORE_URL}
@@ -200,27 +202,8 @@ export default function HmCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">H&M Promo Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "SAVE", value: "72% OFF", title: "H&M Discount Code – Women's Summer Sale | Up to 72% OFF 👚", desc: "Get the Layered Crop Top for just $16.99 (Regular Price $59.99) and SAVE 72%.", bullets: ["Check for an H&M discount code to get additional savings on your purchase.", "Shop women's Summer 2026 fashion with up to 72% OFF selected styles.", "Grab the deal while sizes and discounted stock are available."] },
-          { label: "SAVE", value: "70% OFF", title: "H&M Discount Code – MAMA 2-Piece Jersey Set | Up to 70% OFF 👩", desc: "Buy the MAMA 2-Piece Textured Jersey Set for only $14.99 (Regular Price $49.99) and SAVE 70%.", bullets: ["Use an H&M discount code for potential extra savings at checkout.", "Enjoy up to 70% OFF selected women's fashion and summer styles.", "Shop the sale before your preferred size sells out."] },
-          { label: "UP TO", value: "72% OFF", title: "H&M Discount Code – Summer Fashion Deals | Up to 72% OFF ☀️", desc: "Discover women's Summer 2026 styles with up to 72% OFF selected products.", bullets: ["Check for an active H&M discount code to maximize your savings.", "Find discounted tops, jackets, footwear, denim and more.", "Limited-time H&M sale prices are available while stock lasts."] },
-          { label: "SAVE", value: "70% OFF", title: "H&M – Jelly Flip-Flops | Up to 70% OFF 🩴", desc: "Get the Jelly Flip-Flops for just $7.49 (Regular Price $24.99) and SAVE 70%.", bullets: ["Check H&M discount offers for additional savings on your order.", "Shop up to 70% OFF selected summer footwear."] },
-          { label: "UP TO", value: "70% OFF", title: "H&M – Women's Beauty Sale | Up to 70% OFF 💄", desc: "Save up to 70% OFF selected H&M beauty products.", bullets: ["Grab the Eau de Toilette for only $2.99 (Regular Price $7.99).", "Check for an H&M discount code before completing your beauty purchase.", "Shop discounted fragrances and makeup while offers last."] },
-          { label: "SAVE", value: "62% OFF", title: "H&M – Sports Leggings | Up to 62% OFF 🏃", desc: "Get H&M MOVE Sports Leggings with SoftMove™ for $16.99 (Regular Price $44.99) and SAVE 62%.", bullets: ["Look for an H&M discount code for potential extra savings.", "Shop up to 62% OFF selected women's activewear.", "Ideal for workouts, sports and comfortable everyday wear."] },
-          { label: "UP TO", value: "62% OFF", title: "H&M – Preppy Printed T-Shirt | Up to 62% OFF 👕", desc: "Get the Relaxed-Fit Printed T-Shirt for just $12.99.", bullets: ["Check current H&M discount offers before checkout.", "Discover up to 62% OFF selected women's fashion styles.", "Pair this casual T-shirt with jeans, shorts or skirts."] },
-          { label: "UP TO", value: "62% OFF", title: "H&M – Denim Edit | Up to 62% OFF 👖", desc: "Shop the Baggy Regular Waist Jeans for $34.99.", bullets: ["Check for an H&M discount code to save more on your fashion order.", "Discover up to 62% OFF selected women's denim and fashion.", "Find relaxed-fit jeans and everyday wardrobe essentials."] },
-          { label: "SAVE", value: "77% OFF", title: "H&M Discount Code – Men's Resort Shirt | Up to 77% OFF 🌴", desc: "Get the Regular-Fit Jacquard Resort Shirt for only $6.99 (Regular Price $29.99) and SAVE 77%.", bullets: ["Use an H&M discount code for potential extra savings.", "Shop men's fashion deals with up to 77% OFF selected styles."] },
-          { label: "SAVE", value: "70% OFF", title: "H&M Discount Code – Open-Knit Polo Shirt | Up to 70% OFF 👔", desc: "Buy the Relaxed-Fit Open-Knit Polo Shirt for $14.99 (Regular Price $49.99) and SAVE 70%.", bullets: ["Check for an H&M discount code before checkout.", "Enjoy up to 70% OFF selected men's summer fashion.", "Lightweight knit styling is perfect for warm-weather outfits."] },
-          { label: "SAVE", value: "35% OFF", title: "H&M – Men's Accessories Sale | Up to 35% OFF 🧦", desc: "Get the 2-Pack Socks for just $6.49 (Regular Price $9.99) and SAVE 35%.", bullets: ["Check H&M promotions and discount codes for additional savings.", "Shop up to 35% OFF selected men's accessories.", "Buy 2 Get 1 Free offer is also highlighted on the deal."] },
-          { label: "SAVE", value: "60% OFF", title: "H&M – Men's T-Shirts & Tops | Up to 60% OFF 👕", desc: "Get the Regular-Fit Linen-Blend Polo Shirt for $19.99 (Regular Price $49.99) and SAVE 60%.", bullets: ["Check for an H&M discount code to maximize your order savings.", "Shop up to 60% OFF selected men's T-shirts and tops.", "Premium linen-blend styling is ideal for summer outfits."] },
-          { label: "SAVE", value: "67% OFF", title: "H&M – Men's Shorts Sale | Up to 67% OFF 🩳", desc: "Get the Loose-Fit Cotton Cargo Shorts for $14.99 (Regular Price $44.99) and SAVE 67%.", bullets: ["Check H&M discount code offers before completing your purchase.", "Shop up to 67% OFF selected men's shorts and summer styles."] },
-          { label: "SAVE", value: "65% OFF", title: "H&M – Men's Blazers & Suits | Up to 65% OFF 🧥", desc: "Grab the Relaxed-Fit Double-Breasted Jacket for $34.99 (Regular Price $99.00) and SAVE 65%.", bullets: ["Check available H&M discount codes for additional savings.", "Shop up to 65% OFF selected men's blazers, jackets and suits.", "Ideal for smart-casual and dressed-up occasions."] },
-          { label: "SAVE", value: "58% OFF", title: "H&M – Men's Shoes Sale | Up to 58% OFF 👟", desc: "Get the Canvas Espadrilles for $20.99 (Regular Price $49.99) and SAVE 58%.", bullets: ["Look for an H&M discount code before checkout.", "Shop up to 58% OFF selected men's shoes and footwear.", "Lightweight espadrilles are perfect for summer and vacation looks."] },
-          { label: "SAVE", value: "70% OFF", title: "H&M Home – Bedding Sale | Up to 70% OFF 🛏️", desc: "Get the Linen-Blend Bedspread for $20.99 (Regular Price $69.99) and SAVE 70%.", bullets: ["Check H&M discount offers for additional savings on H&M Home products.", "Shop up to 70% OFF selected bedding and home essentials.", "Refresh your bedroom with discounted seasonal styles."] },
-          { label: "SAVE", value: "70% OFF", title: "H&M – Beauty & Makeup Sale | Up to 70% OFF 💋", desc: "Get the Perfect Finishing Icon Mattifying Powder for $4.49 (Regular Price $14.99) and SAVE 70%.", bullets: ["Check for an H&M discount code to unlock potential extra savings.", "Shop up to 70% OFF selected beauty and makeup products.", "Find affordable makeup essentials while the sale is live."] },
-          { label: "SAVE", value: "69% OFF", title: "H&M – Fragrance & Perfume Sale | Up to 69% OFF 🌸", desc: "Get the Eau de Toilette for just $2.49 (Regular Price $7.99) and SAVE 69%.", bullets: ["Check H&M discount code offers for additional savings.", "Shop up to 69% OFF selected fragrances and perfumes.", "Grab these low-price fragrance deals while stock lasts."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {OFFERS.map((c) => (
+          <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 <div className="relative w-[110px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
@@ -239,11 +222,11 @@ export default function HmCouponsContent() {
                     </div>
                     <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
                     <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
                         {c.bullets.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
@@ -252,7 +235,7 @@ export default function HmCouponsContent() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop H&M: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <button onClick={() => handleGetDeal(c)} aria-label={`Shop H&M: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                   </div>
                 </div>
               </div>
@@ -1094,7 +1077,7 @@ export default function HmCouponsContent() {
             Today's Top H&M Deals
           </h3>
           <div className="space-y-5">
-            {DEALS.map((deal, i) => (
+            {OFFERS.slice(0, 5).map((offer, i) => (
               <div
                 key={i}
                 className="flex items-center gap-3.5 group cursor-pointer pb-4 border-b border-gray-100 last:border-b-0 last:pb-0"
@@ -1104,21 +1087,19 @@ export default function HmCouponsContent() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-wider group-hover:text-[#056bfa] transition-colors truncate">
-                    {deal.heading}
+                    {offer.label} {offer.value}
                   </p>
                   <p className="text-gray-500 font-medium text-[11px] truncate mt-0.5">
-                    {deal.sub}
+                    {offer.desc}
                   </p>
                 </div>
-                <a
-                  href={STORE_URL}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Get deal: ${deal.heading}`}
+                <button
+                  onClick={() => handleGetDeal(offer)}
+                  aria-label={`Get deal: ${offer.title}`}
                   className="bg-[#e8f6f8] text-[#056bfa] px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider hover:bg-[#056bfa] hover:text-white transition-all shrink-0 flex items-center gap-1"
                 >
                   Deal <ArrowRight className="w-3 h-3" />
-                </a>
+                </button>
               </div>
             ))}
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { type Coupon, UBER_EATS_COUPONS } from "./offers";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -29,13 +30,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
-
 interface StoreItem {
   name: string;
   logo: string;
@@ -43,13 +37,6 @@ interface StoreItem {
   href: string;
 }
 
-const DEALS: Deal[] = [
-  { id: "d1", label: "UP TO", heading: "Uber Eats Promo Code – 50% OFF Orders of $15+", sub: "Save up to 50% OFF when you spend $15 or more" },
-  { id: "d2", label: "SAVE", heading: "Uber Eats Promo Code – 37% OFF 7-Eleven Chocolate Chunk Cookies", sub: "Get 37% OFF on select 7-Eleven Chocolate Chunk Cookies" },
-  { id: "d3", label: "SAVE", heading: "Uber Eats – 20% OFF Orders of $15+ at Dunkin", sub: "Save 20% OFF up to $12 on eligible Dunkin orders" },
-  { id: "d4", label: "UP TO", heading: "Uber Eats – Up to 50% OFF When You Spend $20", sub: "Get up to 50% OFF when you spend $20 or more" },
-  { id: "d5", label: "GET", heading: "Uber Eats – $10 OFF Your First Order", sub: "Enjoy $10 OFF your first eligible Uber Eats order" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "DoorDash", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/doordash-logo_pjyf0k.webp", dealText: "Up To 30% OFF", href: "/stores/doordash-promo-code" },
@@ -67,10 +54,37 @@ export default function UberEatsCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeModalCoupon, setActiveModalCoupon] = useState<Coupon | null>(null);
+
+  const handleCopy = (coupon: Coupon) => {
+    if (coupon.code) { navigator.clipboard.writeText(coupon.code); setToastCode(coupon.code); setShowToast(true); setTimeout(() => setShowToast(false), 2000); }
+    setActiveModalCoupon(coupon); setShowModal(true);
+  };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeModalCoupon && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeModalCoupon.title}</p>
+            {activeModalCoupon.code ? (
+              <div className="bg-[#f5f5f5] rounded-2xl p-4 flex items-center justify-between mb-6">
+                <span className="font-mono font-black text-black text-lg tracking-widest">{activeModalCoupon.code}</span>
+                <button onClick={() => { navigator.clipboard.writeText(activeModalCoupon.code); }} className="bg-[#056bfa] text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-[#005f91] transition-colors">Copy</button>
+              </div>
+            ) : (
+              <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+                <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+              </div>
+            )}
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -123,7 +137,7 @@ export default function UberEatsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(52.3k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Find Uber Eats promo codes, discounts, and food delivery deals for Nov 2026. Save up to 60% on $15+ orders, get 50% OFF qualifying orders, $10 OFF your first $20+ order, $15 OFF Denny’s $35+ orders, and free fries.
+                      Save more on food delivery with an Uber Eats Promo Code featuring verified restaurant discounts in Nov 2026. Current offers include up to 60% off eligible orders over $15, $10 off your first order, and $15 off Denny's orders over $35. You can also unlock savings on Dunkin, Hollywood Diner, and participating local restaurants, plus free fries on qualifying purchases. Looking for a working Uber Eats Discount Code? These regularly updated deals help reduce the cost of everyday takeout and delivery.
                     </p>
                     <a
                       href={STORE_URL}
@@ -199,19 +213,8 @@ export default function UberEatsCouponsContent() {
           <h2 className="text-2xl font-black text-black leading-tight">Uber Eats Promo Codes & Offers</h2>
         </div>
 
-        {[
-          { label: "UP TO", value: "50%", title: "Uber Eats Promo Code – 50% OFF Orders of $15+", desc: "Save up to 50% OFF when you spend $15 or more", bullets: ["Offer applies to eligible full-priced items at participating stores", "Enjoy bigger savings on food, groceries and everyday essentials", "Availability may vary by selected stores and location", "Uber Eats Promo Code, 50% Off, Food Delivery Deals, USA"] },
-          { label: "SAVE", value: "37%", title: "Uber Eats Promo Code – 37% OFF 7-Eleven Chocolate Chunk Cookies", desc: "Get 37% OFF on select 7-Eleven Chocolate Chunk Cookies", bullets: ["Enjoy a freshly baked cookie packed with chocolate chunks", "Discount is automatically applied at checkout", "Available at participating 7-Eleven locations", "Uber Eats Promo Code, 7-Eleven Deal, Cookie Offer, USA"] },
-          { label: "SAVE", value: "20%", title: "Uber Eats – 20% OFF Orders of $15+ at Dunkin", desc: "Save 20% OFF up to $12 on eligible Dunkin orders", bullets: ["Spend $15 or more to qualify for the offer", "No promo code is required to receive the discount", "Enjoy Dunkin favorites while saving on your order", "Uber Eats Discount, Dunkin Deal, 20% Off, Food Delivery, USA"] },
-          { label: "UP TO", value: "50%", title: "Uber Eats – Up to 50% OFF When You Spend $20", desc: "Get up to 50% OFF when you spend $20 or more", bullets: ["Save on eligible meals, snacks and everyday food orders", "A great way to reduce your delivery order total", "Offer availability may vary by customer and participating stores", "Uber Eats Deals, 50% Off, Food Delivery Offer, USA"] },
-          { label: "GET", value: "$10", title: "Uber Eats – $10 OFF Your First Order", desc: "Enjoy $10 OFF your first eligible Uber Eats order", bullets: ["Minimum order value of $20 is required", "No promo code is needed to claim the savings", "Alcohol and other regulated items may be excluded", "Uber Eats First Order Deal, $10 Off, Food Delivery, USA"] },
-          { label: "SAVE", value: "$15", title: "Uber Eats – $15 OFF Denny's Orders Over $35", desc: "Save $15 OFF eligible Denny's orders", bullets: ["Spend $35 or more to qualify for the offer", "Discount is automatically applied with no code required", "Enjoy your favorite Denny's meals for less", "Uber Eats Deal, Denny's Offer, $15 Off, Food Delivery, USA"] },
-          { label: "SAVE", value: "30%", title: "Uber Eats – 30% OFF Caribbean Wrap", desc: "Get 30% OFF the Caribbean Wrap at Stuytown Marketplace INC.", bullets: ["Enjoy the wrap for just $9.09 after the discount", "No coupon code is required for this offer", "Discount is automatically applied to eligible orders", "Uber Eats Food Deal, Caribbean Wrap, 30% Off, USA"] },
-          { label: "FREE", value: "FRIES", title: "Uber Eats – FREE Fries on Orders Over $30", desc: "Get FREE fries or eligible free items on qualifying orders", bullets: ["Spend $30 or more to unlock the offer", "No promo code is required", "Offer is available to eligible customers at participating locations", "Uber Eats Freebie, Free Fries, Food Delivery Deal, USA"] },
-          { label: "SAVE", value: "20%", title: "Uber Eats – 20% OFF Hollywood Diner Orders $20+", desc: "Save 20% OFF when ordering $20 or more from Hollywood Diner", bullets: ["Enjoy popular diner meals while spending less", "No coupon code is required to receive the discount", "Alcohol and other regulated items may be excluded", "Uber Eats Deal, Hollywood Diner, 20% Off, Food Delivery, USA"] },
-          { label: "UP TO", value: "60%", title: "Uber Eats – 60% OFF Orders of $15+", desc: "Save up to 60% OFF eligible Uber Eats orders", bullets: ["Minimum order value of $15 is required", "No promo code is required to claim the discount", "Offer provides extra savings on qualifying food and essentials", "Uber Eats Discount, 60% Off, Food Delivery Deals, USA"] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+        {UBER_EATS_COUPONS.map((coupon) => (
+          <div key={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
             <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
               <div className="flex flex-row">
                 {/* Updated left width container to w-[110px] sm:w-[160px] */}
@@ -219,10 +222,8 @@ export default function UberEatsCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    {/* Increased label font size to text-[11px] sm:text-[13px] */}
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    {/* Increased value font size to text-[26px] sm:text-[36px] */}
-                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{coupon.topLabel}</p>
+                    <div className="text-[26px] sm:text-[36px] font-extrabold leading-none mt-2">{coupon.mainValue}</div>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -231,22 +232,22 @@ export default function UberEatsCouponsContent() {
                       <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                    <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{coupon.title}</h2>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{coupon.description}</p>
+                    <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === coupon.id ? null : coupon.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
-                      <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === coupon.id ? "rotate-180" : ""}`} />
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === coupon.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {coupon.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Order on Uber Eats: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                    <button onClick={() => handleCopy(coupon)} aria-label={`Order on Uber Eats: ${coupon.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                   </div>
                 </div>
               </div>
@@ -809,7 +810,7 @@ export default function UberEatsCouponsContent() {
             Today's Top Uber Eats Deals
           </h3>
           <div className="space-y-6">
-            {DEALS.map((deal, i) => (
+            {UBER_EATS_COUPONS.slice(0, 5).map((coupon, i) => (
               <div
                 key={i}
                 className="flex items-center gap-4 group cursor-pointer"
@@ -819,17 +820,17 @@ export default function UberEatsCouponsContent() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {coupon.topLabel} {coupon.mainValue} {coupon.offText}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {coupon.description}
                   </p>
                 </div>
                 <a
                   href={STORE_URL}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Uber Eats: ${deal.heading}`}
+                  aria-label={`Order on Uber Eats: ${coupon.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 inline-block text-center"
                 >
                   Get Deal

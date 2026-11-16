@@ -31,6 +31,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { type Offer, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -55,10 +56,26 @@ export default function PeacockCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
+      {showModal && activeOffer && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-[32px] shadow-2xl max-w-md w-full p-8 relative">
+            <button onClick={() => setShowModal(false)} className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors text-xl font-bold">✕</button>
+            <h3 className="text-black font-black text-xl mb-2">Your Deal is Ready!</h3>
+            <p className="text-gray-500 text-sm mb-6">{activeOffer.title}</p>
+            <div className="bg-[#e8f6f8] rounded-2xl p-4 mb-6 text-center">
+              <p className="text-[#056bfa] font-bold text-sm">No code needed – discount applied automatically</p>
+            </div>
+            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" onClick={() => setShowModal(false)} className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-base px-6 py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Continue to Store →</a>
+          </div>
+        </div>
+      )}
       <Navbar />
 
       {/* Toast Notification */}
@@ -111,7 +128,7 @@ export default function PeacockCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(15.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover the latest Peacock Discount Code offers and verified Peacock promo Code deals. Get eligible military plans from $2.99/month, enjoy Peacock Premium from $7.99/month, or access Premium Plus for $13.99/month. Compare verified streaming offers and choose the subscription that delivers the best value.
+                      Cut the cost of streaming with regularly updated Peacock Promo Code offers available in Nov 2026. Current verified deals include up to 65% off eligible purchases, 50% off qualifying orders, and Peacock Premium from $7.99 per month. Eligible military members can also subscribe from $2.99 per month, while Walmart+ members may receive Peacock Premium at no extra cost. Wondering if Peacock has working promo codes? Yes—these verified savings make it easier to enjoy movies, TV shows, and live entertainment for less.
                     </p>
                     <a
                       href={STORE_URL}
@@ -187,18 +204,8 @@ export default function PeacockCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Peacock Promo Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "FROM", value: "$2.99/MO", title: "Peacock Promo Code – Military Discount Starting at $2.99/Month", desc: "Eligible military members can enjoy Peacock plans starting at $2.99 per month.", bullets: ["Access premium entertainment at a discounted monthly price.", "Check the offer requirements and eligibility before activating the plan."] },
-                  { label: "FROM", value: "$7.99/MO", title: "Peacock Promo Code – Premium Plan Starting at $7.99/Month", desc: "Get the Peacock Premium Plan starting at $7.99 per month.", bullets: ["Enjoy access to Peacock’s selection of movies, shows, sports and entertainment.", "Activate the eligible offer and choose the plan that fits your streaming needs."] },
-                  { label: "FROM", value: "$7.99", title: "Peacock Discount Code – Select Monthly Plan Starting at $7.99", desc: "Choose a qualifying Peacock monthly plan starting at $7.99.", bullets: ["Stream a variety of entertainment content with a Peacock subscription.", "Review the available plan details before activating the offer."] },
-                  { label: "ONLY", value: "$7.99", title: "Peacock Discount Code – Premium Monthly Plan for $7.99", desc: "Get the Peacock Premium Monthly Plan for $7.99.", bullets: ["Enjoy premium streaming access across eligible movies, shows and entertainment.", "Check the current subscription terms before signing up."] },
-                  { label: "ONLY", value: "$13.99/MO", title: "Peacock Premium Plus Plan – Just $13.99/Month", desc: "Get the Peacock Premium Plus Plan for just $13.99 per month.", bullets: ["Upgrade your streaming experience with the Premium Plus subscription.", "Explore the plan benefits and activate the offer if eligible."] },
-                  { label: "FROM", value: "$25", title: "Peacock Gift Cards – Starting From $25", desc: "Get Peacock Gift Cards starting from $25.", bullets: ["Choose a gift card value that works for your entertainment needs.", "Gift cards offer a convenient way to give Peacock streaming access."] },
-                  { label: "FROM", value: "$169.99", title: "Peacock Premium Plus Annual Plan – Starting From $169.99", desc: "Grab the Peacock Premium Plus Annual Plan starting from $169.99.", bullets: ["Enjoy an annual streaming subscription with eligible Premium Plus benefits.", "Choose an annual plan for convenient long-term access to Peacock entertainment."] },
-                  { label: "ONLY", value: "$6.99/MO", title: "Peacock Premium for Medical Pros & First Responders – $6.99/Month", desc: "Eligible medical professionals and first responders can get Peacock Premium for $6.99 per month.", bullets: ["Enjoy premium streaming access at a special monthly rate.", "Verify your eligibility before activating the offer."] },
-                  { label: "PERK", value: "FREE", title: "Peacock Premium Included Free With Walmart+ Membership", desc: "Get Peacock Premium included at no additional cost with an eligible Walmart+ membership.", bullets: ["Enjoy Peacock entertainment alongside your Walmart+ membership ben"] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {OFFERS.map((c) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
@@ -217,20 +224,20 @@ export default function PeacockCouponsContent() {
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
                             <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {(c.bullets ?? []).map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Peacock: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button onClick={() => handleGetDeal(c)} aria-label={`Shop Peacock: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</button>
                           </div>
                         </div>
                       </div>
@@ -676,33 +683,26 @@ export default function PeacockCouponsContent() {
             Today's Top Peacock Deals
           </h3>
           <div className="space-y-6">
-            {[
-              { heading: "MILITARY DISCOUNT", sub: "Plans From $2.99/Month" },
-              { heading: "PREMIUM PLAN", sub: "From $7.99/Month" },
-              { heading: "PREMIUM PLUS", sub: "Just $13.99/Month" },
-              { heading: "GIFT CARDS", sub: "Starting From $25" }
-            ].map((deal, i) => (
+            {OFFERS.slice(0, 4).map((offer, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {offer.label} {offer.value}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                    {offer.desc}
                   </p>
                 </div>
-                <a
-                  href="https://www.amazon.com/s?k=hoka&crid=ZBNF1H3SWO50&sprefix=hok%2Caps%2C350&linkCode=ll2&tag=analytics0922-20&linkId=1c9680fb545b49df15b6a222303acd85&language=en_US&ref_=as_li_ss_tl"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Peacock: ${deal.heading}`}
+                <button
+                  onClick={() => handleGetDeal(offer)}
+                  aria-label={`Shop Peacock: ${offer.title}`}
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
                 >
                   Get Deal
-                </a>
+                </button>
               </div>
             ))}
           </div>

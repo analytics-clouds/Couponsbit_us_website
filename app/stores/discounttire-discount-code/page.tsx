@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import DiscountTireCouponsContent from "./_components/StoreCouponsContent";
+import { COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Nov 2026",
+    absolute: "Grab Up to $130 Off with Discount Tire Promo Code | Nov 2026",
   },
   description:
-    "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Nov 2026 ",
+    "Use a Discount Tire Promo Code and Discount Tire Discount Code to save up to $130 or get $80 off a set of 4 tires. Verified Nov 2026. ",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/discounttire-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-    title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129 | Nov 2026",
+    title: "Grab Up to $130 Off with Discount Tire Promo Code | Nov 2026",
     description:
-      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Nov 2026 ",
+      "Use a Discount Tire Promo Code and Discount Tire Discount Code to save up to $130 or get $80 off a set of 4 tires. Verified Nov 2026. ",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129",
+    title: "Grab Up to $130 Off with Discount Tire Promo Code | Nov 2026",
     description:
-      "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Nov 2026 ",
+      "Use a Discount Tire Promo Code and Discount Tire Discount Code to save up to $130 or get $80 off a set of 4 tires. Verified Nov 2026. ",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/discounttie-logo_lcrloj.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const discountTireSchema = {
@@ -63,13 +66,13 @@ const discountTireSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/discounttire-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-      name: "Discount Tire Discount Code | Save Up to $197 + GTX Tires From $129",
+      name: "Grab Up to $130 Off with Discount Tire Promo Code | Nov 2026",
       description:
-        "Get the latest Discount Tire Discount Code on Bridgestone Dueler LX Tires from $197 and Shop Yokohama YK-GTX all-season tires starting from $129 | Nov 2026 ",
+        "Use a Discount Tire Promo Code and Discount Tire Discount Code to save up to $130 or get $80 off a set of 4 tires. Verified Nov 2026. ",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: {
         "@id": "https://www.couponsbit.us/#website",
       },
@@ -85,159 +88,22 @@ const discountTireSchema = {
       description:
         "Latest verified Discount Tire coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Combined Instant Savings up to $130 on Select Tires",
-            description: "Save up to $130 with limited-time instant savings on select tire brands.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
+      numberOfItems: COUPONS.length,
+      itemListElement: COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: "https://www.couponsbit.us/stores/discounttire-discount-code",
+          seller: {
+            "@type": "Organization",
+            name: "Discount Tire",
+            url: "https://www.discounttire.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Save $80 on Select Sets of 4 Tires",
-            description: "Get $80 OFF on select sets of four tires.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Save $50 at Checkout on $599+ Purchases",
-            description: "Save $50 instantly at checkout on purchases of $599 or more.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Mickey Thompson Tires | Save $80 Instantly",
-            description: "Save $80 instantly on select Mickey Thompson tires.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Yokohama YK-GTX Tires from $129",
-            description: "Shop Yokohama YK-GTX all-season tires starting from $129.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Bridgestone Dueler LX Tires from $197",
-            description: "Buy Bridgestone Dueler LX tires starting from $197.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Continental CrossContact LX20 Tire Deal",
-            description: "Shop Continental CrossContact LX20 touring tires at special prices.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Milestar Interceptor AS810 Tires from $95",
-            description: "Buy Milestar Interceptor AS810 tires starting from $95.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Peerless Tire Chains from $70",
-            description: "Shop Peerless Tire Chains starting at just $70.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Discount Tire – Choose $50 Instant Savings or Promotional Financing",
-            description: "Enjoy $50 instant savings or choose flexible promotional financing.",
-            url: "https://www.couponsbit.us/stores/discounttire-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Discount Tire",
-              url: "https://www.discounttire.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -251,6 +117,14 @@ const discountTireSchema = {
       publisher: {
         "@id": "https://www.couponsbit.us/#organization",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/discounttire-discount-code#brand",
+      name: "Discount Tire",
+      url: "https://www.discounttire.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Discount_Tire"],
     },
 
     {
@@ -362,7 +236,9 @@ export default function DiscountTireStorePage() {
           __html: JSON.stringify(discountTireSchema),
         }}
       />
-      <DiscountTireCouponsContent />
+      <Suspense fallback={null}>
+        <DiscountTireCouponsContent />
+      </Suspense>
     </>
   );
 }

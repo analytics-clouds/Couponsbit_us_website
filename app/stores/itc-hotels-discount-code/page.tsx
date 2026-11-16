@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ItcHotelsCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Nov 2026",
+    absolute: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
   },
   description:
-    "Find the latest ITC Hotels promo code, discount code, and hotel deals for Nov 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
+    "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
-    title: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Nov 2026",
+    title: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
     description:
-      "Find the latest ITC Hotels promo code, discount code, and hotel deals for Nov 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
+      "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Nov 2026",
+    title: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
     description:
-      "Find the latest ITC Hotels promo code, discount code, and hotel deals for Nov 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
+      "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/itc-hotels-logo_ceakgl.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const itcHotelsSchema = {
@@ -63,13 +66,13 @@ const itcHotelsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/itc-hotels-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
-      name: "ITC Hotels Promo Code - Up to 50% OFF + 33% Stay Deals | Nov 2026",
+      name: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
       description:
-        "Find the latest ITC Hotels promo code, discount code, and hotel deals for Nov 2026. Save up to 50% on eligible member stays, get 33% OFF Goa stays, and enjoy up to 20% OFF on dining, spa and more.",
+        "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/itc-hotels-discount-code#breadcrumb" },
     },
@@ -80,41 +83,18 @@ const itcHotelsSchema = {
       name: "ITC Hotels Discount Codes & Coupon Codes",
       description: "Latest ITC Hotels discount codes and offers for luxury stays, dining and loyalty rewards.",
       url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "ITC Hotels – Member Exclusive Stay | UP TO 35% OFF 🏨✨", description: "Save UP TO 35% OFF on stays with the exclusive ITC Hotels Member Offer.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.desc,
+          url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
+          seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "ITC Hotels – Exclusive Membership Savings | UP TO 50% OFF ⭐", description: "Join the ITC Hotels membership program and unlock UP TO 50% OFF on eligible stays.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "ITC Hotels – All-In Getaway Package | SAVE UP TO 20% 🍽️🌴", description: "Plan a relaxing luxury escape with the ITC Hotels All-In Getaway Experience.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "ITC Hotels – Goa Vacation Deal | FLAT 33% OFF 🌴☀️", description: "Plan your next Goa vacation and enjoy FLAT 33% OFF on eligible stays.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "ITC Hotels – All-In Stay Savings | FLAT 20% OFF 🍽️🧖", description: "Enjoy FLAT 20% OFF on eligible food, beverages and hotel services.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "ITC Hotels – Grand Golf Retreat | Luxury Golf Escape ⛳🏨", description: "Experience a premium golf-focused getaway with the ITC Hotels Grand Golf Retreat.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "ITC Hotels – Extended Escape | FLAT 33% OFF 🛏️🌴", description: "Stay longer at ITC Hotels and save FLAT 33% OFF on eligible stays.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "ITC Hotels – Summer Vacation Offer | FLAT 15% OFF ☀️🏨", description: "Make your summer travel plans with FLAT 15% OFF on eligible ITC Hotels bookings.", url: "https://www.couponsbit.us/stores/itc-hotels-discount-code", seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -134,6 +114,13 @@ const itcHotelsSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/itc-hotels-discount-code#brand",
+      name: "ITC Hotels",
+      url: "https://www.itchotels.com",
     },
 
     {
@@ -239,7 +226,9 @@ export default function ItcHotelsStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itcHotelsSchema) }} />
-      <ItcHotelsCouponsContent />
+      <Suspense fallback={null}>
+        <ItcHotelsCouponsContent />
+      </Suspense>
     </>
   );
 }

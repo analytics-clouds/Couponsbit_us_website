@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import KohlsCouponsContent from "./_components/StoreCouponsContent";
+import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
+    absolute: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
   },
   description:
-    "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
+    "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kohls-coupon-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
+    title: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
     description:
-      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
+      "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -29,16 +31,16 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp",
         width: 1200,
         height: 630,
-        alt: "Kohl's Coupon Code & Coupon Codes – Couponsbit",
+        alt: "Kohl's Promo code & Promo codes – Couponsbit",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
+    title: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
     description:
-      "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
+      "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +53,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const kohlsSchema = {
@@ -60,13 +63,13 @@ const kohlsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-      name: "Kohl's Coupon Code & Discount Code: Get Up To 70% OFF | Nov 2026",
+      name: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
       description:
-        "Save with the latest Kohl's Coupon Code and Kohl's Discount Code to get up to 70% OFF Clearance, $15 OFF $75, 15% OFF First Order, and 50% OFF Kitchen Appliances in November 2026.",
+        "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
+      datePublished: "2026-01-01",
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#breadcrumb" },
     },
@@ -74,35 +77,15 @@ const kohlsSchema = {
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#offerlist",
-      name: "Kohl's Coupon Codes & Coupon Codes",
+      name: "Kohl's Promo codes & Promo codes",
       description: "Latest Kohl's coupon codes and offers.",
       url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-      numberOfItems: 23,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Kohl's Coupon Code – Clearance Sale Up To 70% OFF", description: "Save up to 70% during the Kohl's Clearance sale, with more sizes and styles available in store.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Kohl's Coupon Code – $10 OFF $50+ on Toys", description: "Kohl's Rewards Members can get $10 OFF purchases of $50 or more with coupon code TOYS10.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Kohl's Promo Code – Kitchen Appliances Up To 50% OFF", description: "Save up to 50% on select kitchen appliances during this Kohl's Epic Deal.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Kohl's Promo Code – Croft & Barrow V-Neck Tee for $7.19", description: "Get the Women's Croft & Barrow Essential V-Neck Tee for $7.19, reduced from $11.99.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Kohl's Clearance Sale – Save Up To 70% on New Markdowns", description: "Save up to 70% on clearance items with new markdowns across selected categories.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Kohl's Offer – Up To 50% OFF Storewide", description: "Get up to 50% OFF on eligible purchases across selected Kohl's categories.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Kohl's New User Offer – Flat 15% OFF First Order", description: "New customers can get a flat 15% OFF their first order.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Kohl's Deal – Levi's Clothing Up To 30% OFF", description: "Save up to 30% on selected Levi's loose clothing styles.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Kohl's Footwear Sale – Save Up To 50% OFF", description: "Get up to 50% OFF on selected footwear at Kohl's.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Kohl's Women's Clothing Sale – Up To 40% OFF", description: "Save up to 40% on the women's clothing collection at Kohl's.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Kohl's Men's Activewear – Up To 40% OFF", description: "Get up to 40% OFF on selected men's activewear.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "Kohl's Clearance – Get 15% OFF", description: "Grab 15% OFF on eligible clearance products at Kohl's.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "Kohl's Sweaters & Tops – Flat 40% OFF", description: "Get a flat 40% OFF on selected sweaters and tops.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "Kohl's Outdoor & Garden Decor – Save 30% OFF", description: "Save 30% OFF on selected outdoor and garden decor.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "Kohl's Patio Furniture – Flat 30% OFF", description: "Get a flat 30% OFF on selected patio furniture.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 16, item: { "@type": "Offer", name: "Kohl's Card – Flat 35% OFF Orders", description: "Kohl's Card members can get a flat 35% OFF on eligible orders.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 17, item: { "@type": "Offer", name: "Kohl's Kitchen & Dining – 30% OFF", description: "Save 30% on selected kitchen and dining purchases.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 18, item: { "@type": "Offer", name: "Kohl's Women's Jockey Products – Flat 25% OFF", description: "Get a flat 25% OFF on selected women's Jockey products.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 19, item: { "@type": "Offer", name: "Kohl's Athletic Shoes – Save Up To 25% OFF", description: "Save up to 25% on selected athletic shoes at Kohl's.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 20, item: { "@type": "Offer", name: "Kohl's $15 OFF – Orders Over $75", description: "Get a flat $15 OFF on eligible orders over $75.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 21, item: { "@type": "Offer", name: "Kohl's $10 OFF – Orders Over $25", description: "Save $10 on eligible orders above $25.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 22, item: { "@type": "Offer", name: "Kohl's Cash – Earn $10 With Every $50 Purchase", description: "Earn $10 in Kohl's Cash for every $50 spent during the eligible promotional period.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-        { "@type": "ListItem", position: 23, item: { "@type": "Offer", name: "Kohl's Jewelry Collection – Styles Starting From $14", description: "Explore selected jewelry styles starting from just $14.", url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } } },
-      ],
+      numberOfItems: OFFERS.length,
+      itemListElement: OFFERS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "Offer", name: o.title, description: o.desc, url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } },
+      })),
     },
 
     {
@@ -122,6 +105,14 @@ const kohlsSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#brand",
+      name: "Kohl's",
+      url: "https://www.kohls.com",
+      sameAs: ["https://en.wikipedia.org/wiki/Kohl%27s"],
     },
 
     {
@@ -211,7 +202,7 @@ export default function KohlsStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(kohlsSchema) }} />
-      <KohlsCouponsContent />
+      <Suspense fallback={null}><KohlsCouponsContent /></Suspense>
     </>
   );
 }
