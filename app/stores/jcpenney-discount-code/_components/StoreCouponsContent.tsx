@@ -194,6 +194,7 @@ export default function JcpenneyCouponsContent() {
                           <div className="text-center px-1">
                             <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[15px] font-semibold leading-3">{coupon.topLabel}</p>
                             <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

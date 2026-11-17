@@ -1,0 +1,211 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText?: string;
+  title: string;
+  description: string;
+  code?: string;
+  points: string[];
+  affiliateUrl: string;
+  verified?: boolean | string;
+  userType?: string;
+  validTill?: string;
+}
+
+const AFFILIATE_URL =
+  "https://tplinksystemsinc.sjv.io/c/4303217/3280858/42255?subId1=1015";
+
+export const TPLINK_COUPONS: Coupon[] = [
+  {
+    id: "c1",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "TP-Link Promo Code: Save Up to 50% During the Tapo Anniversary Sale",
+    description: "Save up to 50% on select TP-Link Tapo products during this limited-time anniversary sale.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get up to 50% off eligible Tapo devices and smart home products.",
+      "Shop marked-down security cameras, networking gear, and smart accessories.",
+      "Enjoy limited-time savings across popular TP-Link categories.",
+      "A great fit for anyone upgrading a smart home setup.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c2",
+    topLabel: "SAVE",
+    mainValue: "29%",
+    offText: "OFF",
+    title: "TP-Link Promo Code: Save 29% on the Tapo RV50 Pro Omni",
+    description: "Get the Tapo RV50 Pro Omni Robot Vacuum & Mop for $499.99, which is 29% off.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Pick up the Tapo RV50 Pro Omni Robot Vacuum & Mop at the promotional price.",
+      "Enjoy smart cleaning features on this advanced home device.",
+      "A lower price on a featured TP-Link Tapo product.",
+      "A good match for shoppers who want automated cleaning.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c3",
+    topLabel: "SAVE",
+    mainValue: "28%",
+    offText: "OFF",
+    title: "TP-Link Discount Code: Save 28% on the Deco 7 Pro Wi-Fi 7 System",
+    description: "Take 28% off the Deco 7 Pro Outdoor Wi-Fi 7 Mesh System Bundle.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Deco 7 Pro Wi-Fi 7 Mesh System Bundle for $539.98.",
+      "Boost your network coverage with a high-performance mesh system.",
+      "Shop a discounted TP-Link solution for stronger home connectivity.",
+      "Useful for anyone upgrading their Wi-Fi setup.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c4",
+    topLabel: "SAVE",
+    mainValue: "28%",
+    offText: "OFF",
+    title: "TP-Link Discount Code: Save 28% on the Solar Security Camera Bundle",
+    description: "Save 28% on the Tapo C660 Kit 4K Solar Pan/Tilt Security Camera Bundle.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the Tapo C660 Kit with 4K solar security camera features.",
+      "Pick up the camera bundle for the promotional price of $599.95.",
+      "Add outdoor security monitoring with a discounted TP-Link product.",
+      "A good fit for homeowners improving their security.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c5",
+    topLabel: "BUY 2",
+    mainValue: "GET 2",
+    offText: "FREE",
+    title: "TP-Link Voucher Code: Buy 2, Get 2 Free on the MagCam C425",
+    description: "Get four MagCam C425 cameras with this Buy 2, Get 2 Free offer.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Receive four MagCam 2K wireless battery-powered cameras for $259.96.",
+      "Get extra cameras included in the bundle.",
+      "A flexible security camera solution for multiple locations.",
+      "Useful for anyone who needs more camera coverage.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c6",
+    topLabel: "SAVE",
+    mainValue: "42%",
+    offText: "OFF",
+    title: "TP-Link Voucher Code: Save 42% on the MagCam 4K Camera Pack",
+    description: "Save 42% on the Tapo C460 MagCam 4K Solar Outdoor Security Camera 3-Pack.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the three-camera bundle for the promotional price of $259.97.",
+      "Keep an eye on outdoor areas with 4K solar-powered cameras.",
+      "Enjoy savings on a featured TP-Link Tapo security product.",
+      "A good fit for homeowners who want outdoor protection.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c7",
+    topLabel: "SAVE",
+    mainValue: "36%",
+    offText: "OFF",
+    title: "TP-Link Coupon Code: Save 36% on the Tapo C460 Bundle",
+    description: "Save 36% on the Tapo C460 Kit 4K Solar Outdoor Camera Smart CentralHub Bundle.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the smart security bundle for $479.95.",
+      "Camera and hub features come together in one package.",
+      "Upgrade your outdoor monitoring with discounted equipment.",
+      "Helpful for anyone building a smart security setup.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c8",
+    topLabel: "SAVE",
+    mainValue: "31%",
+    offText: "OFF",
+    title: "TP-Link Coupon Code: Save 31% on the C660 Outdoor Camera",
+    description: "Take 31% off the Tapo C660 Kit 4K Solar Outdoor Pan/Tilt Camera 3-Pack.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the three-pack camera bundle for $349.97.",
+      "Monitor outdoor spaces with solar-powered 4K security cameras.",
+      "Shop a discounted TP-Link solution for home surveillance.",
+      "Ideal for anyone who needs multiple cameras.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c9",
+    topLabel: "SAVE",
+    mainValue: "45%",
+    offText: "OFF",
+    title: "TP-Link Referral Code: Save 45% on the Deco 7 Pro Wi-Fi 7",
+    description: "Save 45% on the Deco 7 Pro BE10000 Tri-Band Wi-Fi 7 Mesh System.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the two-pack Wi-Fi 7 mesh system for $329.99.",
+      "Improve your home internet performance with advanced networking gear.",
+      "Shop this TP-Link system at a reduced promotional price.",
+      "A good match for anyone who wants faster Wi-Fi coverage.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+  {
+    id: "c10",
+    topLabel: "SAVE",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "TP-Link Referral Code: Save 30% on the Tapo RV30 MAX Plus",
+    description: "Save 30% on the Tapo RV30 MAX Plus LiDAR Robot Vacuum & Mop.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get the smart robot vacuum for the promotional price of $229.99.",
+      "Enjoy automated cleaning with LiDAR navigation technology.",
+      "A lower price on a TP-Link smart home device.",
+      "A good fit for shoppers who want convenient cleaning.",
+    ],
+    affiliateUrl: AFFILIATE_URL,
+  },
+];
+

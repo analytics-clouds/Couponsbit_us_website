@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { type Coupon, TEMU_COUPONS } from "./offers";
 import {
   ChevronRight,
   Star,
   Tag,
-  Percent,ShoppingCart, HelpCircle, Layers,
+  Percent, ShoppingCart, HelpCircle, Layers,
   Users,
   BadgeCheck,
   ExternalLink,
@@ -66,7 +67,7 @@ export default function TemuCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +123,7 @@ export default function TemuCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(30.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified Temu coupon codes and Temu discount codes at Maxiku Offers. Save up to 70% sitewide, get an extra 15% OFF orders over $40 for new users, enjoy free shipping, and shop fashion, home, electronics, beauty, toys, and more.
+                      Upgrade your shopping experience with Temu Promo Code savings, including up to 71% off gel memory foam mattresses and 15% off eligible orders over $40. Temu Coupon Code offers also help shoppers enjoy free delivery while exploring affordable products across categories. From bedroom essentials to everyday purchases, these hand-picked deals provide extra value for budget-conscious customers. Verified codes are updated for Nov 2026, giving shoppers tested savings on popular Temu offers before completing their orders.
                     </p>
                     <a
                       href={STORE_URL}
@@ -144,11 +145,11 @@ export default function TemuCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -198,28 +199,17 @@ export default function TemuCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Temu Coupon Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "SALE", value: "$8.33", title: "Temu – Women’s Casual Shoes 88% OFF", desc: "Shop women’s casual sneakers and versatile everyday shoes for only $8.33.", bullets: ["Save up to 88% OFF the original listed price of $73.48 on this clearance deal.", "Comfortable styles are ideal for casual outings, shopping, and everyday wear.", "Limited stock is available, so shoppers can grab this clearance price while supplies last."] },
-                  { label: "SALE", value: "71% OFF", title: "Temu – Gel Memory Foam Mattress Up to 71% OFF", desc: "Upgrade your bedroom with a luxurious gel memory foam mattress featuring a European-style top design.", bullets: ["Available in popular USA sizes including Twin, Full, Double, Queen, and King.", "Enjoy up to 71% OFF with medium-firm support and a hypoallergenic design for comfortable sleep.", "This limited-time Temu offer is available while stock lasts."] },
-                  { label: "DEAL", value: "$12.47", title: "Temu – 6000PA Car Vacuum Cleaner 68% OFF", desc: "Get a powerful handheld car vacuum cleaner with 6000PA super-strong suction for just $12.47.", bullets: ["Save 68% OFF this limited-time deal compared with the listed price of $39.99.", "Includes five matching accessories for cleaning cars, homes, and pet areas.", "The compact cordless design and low-noise operation make it convenient for everyday cleaning."] },
-                  { label: "SALE", value: "70% OFF", title: "Temu – 70% OFF Sitewide + FREE Shipping", desc: "Save up to 70% OFF across a wide range of products on Temu USA.", bullets: ["Shop everything from fashion and electronics to home essentials, beauty, toys, and more.", "No coupon code is required to claim this sitewide discount.", "Enjoy complimentary shipping and access to the offer as an eligible Temu customer."] },
-                  { label: "NEW", value: "$1.90", title: "Temu Halloween Decorations – 47% OFF", desc: "Decorate your home for Halloween with 24-piece 3D hollow-out bat wall decorations.", bullets: ["Get the set for just $1.90, down from the listed price of $3.60.", "Save 47% OFF on spooky black bat decorations for doors, rooms, walls, and Halloween parties.", "A budget-friendly seasonal decoration deal for creating a festive Halloween atmosphere."] },
-                  { label: "DEAL", value: "$20.90", title: "Temu Portable Projector – 57% OFF", desc: "Enjoy big-screen entertainment with a portable projector featuring 1280×720 native resolution.", bullets: ["Supports up to 1080P content and works with smartphones, tablets, laptops, and TV sticks.", "Get the projector for $20.90, saving 57% OFF the listed price of $48.70.", "Includes USB connectivity and a remote control for convenient home entertainment."] },
-                  { label: "SALE", value: "50% OFF", title: "Temu Beauty Products – Up to 50% OFF", desc: "Save up to 50% OFF a wide selection of beauty products on Temu USA.", bullets: ["Shop makeup, haircare, fragrance, beauty tools, tattoo supplies, and more.", "Enjoy a variety of affordable beauty essentials with free shipping available.", "This offer is open to all eligible Temu customers in the USA."] },
-                  { label: "DEAL", value: "15% OFF", title: "Temu – Flat 15% OFF Orders Over $40", desc: "Get a flat 15% OFF when shopping on eligible Temu orders over $40.", bullets: ["Meet the $40 minimum cart value to qualify for the promotional savings.", "Shop a wide range of products while enjoying free shipping on your purchases.", "This offer is available exclusively to new Temu users in the USA."] },
-                  { label: "DEAL", value: "$0.96", title: "Temu Toys & Games – Starting at $0.96", desc: "Shop a huge selection of toys and games with prices starting from just $0.96.", bullets: ["Find affordable entertainment options for children, families, and gift shopping.", "Enjoy free shipping on eligible purchases through Temu USA.", "This low-price deal is available to all eligible customers."] },
-                  { label: "DEAL", value: "$8.69", title: "Temu Mini Sewing Machine – 51% OFF", desc: "Get a portable mini sewing machine with 24 rolls of assorted colored thread.", bullets: ["The compact handheld sewing machine is designed for easy home sewing and quick repairs.", "Pay just $8.69 instead of the listed $17.81 and save 51% OFF.", "A convenient and affordable option for basic tailoring, DIY projects, and everyday sewing needs."] },
-                  { label: "NEW", value: "20% OFF", title: "Temu New User – 20% OFF Orders Over $40", desc: "New Temu users can save 20% OFF their first eligible purchase.", bullets: ["A minimum cart value of $40 is required to qualify for the introductory discount.", "Simply sign up for the Temu app and unlock this new-user promotional offer.", "A great way for first-time shoppers in the USA to get extra savings on their first order."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {TEMU_COUPONS.map((c) => (
+                  <div key={c.id} id={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            {c.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -229,14 +219,14 @@ export default function TemuCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -276,15 +266,15 @@ export default function TemuCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">Find a Temu Promo Code</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   A good promo code can make online shopping a little easier on your wallet. Temu regularly features promotions across different product categories, and the offers available to shoppers can change depending on the products, account eligibility, campaign period, or other terms.
+                    A good promo code can make online shopping a little easier on your wallet. Temu regularly features promotions across different product categories, and the offers available to shoppers can change depending on the products, account eligibility, campaign period, or other terms.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Before placing an order, visit CouponsBit to look for an available Temu promo code. Check the conditions attached to the offer, including expiration dates, minimum purchase requirements, eligible products, and any restrictions.
+                    Before placing an order, visit CouponsBit to look for an available Temu promo code. Check the conditions attached to the offer, including expiration dates, minimum purchase requirements, eligible products, and any restrictions.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   If a code isn’t suitable for your order, don’t worry. Temu also provides other ways to find savings, including product-level discounts, limited-time promotions, coupons, special events, and app-based offers.
+                    If a code isn’t suitable for your order, don’t worry. Temu also provides other ways to find savings, including product-level discounts, limited-time promotions, coupons, special events, and app-based offers.
 
                   </p>
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -293,86 +283,86 @@ export default function TemuCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Smartphone, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Smartphone, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+                      { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
-               <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-4">
-    How to Use a Temu Promo Code
-  </h3>
-  <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-8">
-    Applying a Temu promo code is usually a simple part of the checkout process.
-  </p>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Search,
-        title: "Find and Review Your Offer",
-        sub: "First, find an eligible offer on CouponsBit and read the conditions carefully.",
-      },
-      {
-        icon: ShoppingCart,
-        title: "Follow the Checkout Steps",
-        sub: (
-          <>
-            Then:
-            <ul className="list-disc pl-4 mt-2 space-y-1">
-              <li>Visit Temu and select the products you want.</li>
-              <li>Add your items to the shopping cart.</li>
-              <li>Proceed to checkout.</li>
-              <li>Enter the applicable promo or coupon code in the designated field.</li>
-              <li>Apply the code.</li>
-              <li>Review the order total and confirm that the expected promotion has been applied.</li>
-              <li>Complete your purchase.</li>
-            </ul>
-          </>
-        ),
-      },
-      {
-        icon: HelpCircle,
-        title: "Troubleshoot If Needed",
-        sub: "If your code doesn’t work, check whether it has expired or whether your order meets the requirements. Some promotions may only apply to particular products, customers, regions, or promotional periods.",
-      },
-      {
-        icon: Layers,
-        title: "Check Combination Rules",
-        sub: "You should also check whether another offer is already applied to your order and whether the promotions can be combined.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <div className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-4">
+                    How to Use a Temu Promo Code
+                  </h3>
+                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed mb-8">
+                    Applying a Temu promo code is usually a simple part of the checkout process.
+                  </p>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        icon: Search,
+                        title: "Find and Review Your Offer",
+                        sub: "First, find an eligible offer on CouponsBit and read the conditions carefully.",
+                      },
+                      {
+                        icon: ShoppingCart,
+                        title: "Follow the Checkout Steps",
+                        sub: (
+                          <>
+                            Then:
+                            <ul className="list-disc pl-4 mt-2 space-y-1">
+                              <li>Visit Temu and select the products you want.</li>
+                              <li>Add your items to the shopping cart.</li>
+                              <li>Proceed to checkout.</li>
+                              <li>Enter the applicable promo or coupon code in the designated field.</li>
+                              <li>Apply the code.</li>
+                              <li>Review the order total and confirm that the expected promotion has been applied.</li>
+                              <li>Complete your purchase.</li>
+                            </ul>
+                          </>
+                        ),
+                      },
+                      {
+                        icon: HelpCircle,
+                        title: "Troubleshoot If Needed",
+                        sub: "If your code doesn’t work, check whether it has expired or whether your order meets the requirements. Some promotions may only apply to particular products, customers, regions, or promotional periods.",
+                      },
+                      {
+                        icon: Layers,
+                        title: "Check Combination Rules",
+                        sub: "You should also check whether another offer is already applied to your order and whether the promotions can be combined.",
+                      },
+                    ].map((item) => (
+                      <div key={item.title} className="flex gap-4 items-start">
+                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                          <item.icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <p className="text-black font-black text-sm leading-tight mb-2">
+                            {item.title}
+                          </p>
+                          <div className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                            {item.sub}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
 
               </div>
@@ -407,221 +397,221 @@ export default function TemuCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Temu Promo Code, Coupon Code & Discount Offers
-        </h2>
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  Temu Promo Code, Coupon Code & Discount Offers
+                </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-gray-600 font-bold text-[14px]">
-      {[
-        ["Women’s Casual Shoes", "$8.33 (88% OFF)", "All Users", "Was $73.48; limited stock clearance", "Footwear"],
-        ["Gel Memory Foam Mattress", "Up to 71% OFF", "All Users", "European-style top design; Twin to King sizes", "Home & Bedroom"],
-        ["6000PA Car Vacuum Cleaner", "$12.47 (68% OFF)", "All Users", "Was $39.99; includes 5 accessories", "Automotive & Home"],
-        ["70% OFF Sitewide + FREE Shipping", "Up to 70% OFF", "Eligible Users", "No coupon code required", "Sitewide"],
-        ["Halloween 3D Bat Wall Decor (24 Pcs)", "$1.90 (47% OFF)", "All Users", "Was $3.60; budget-friendly seasonal deal", "Decorations"],
-        ["Portable Projector (1280x720)", "$20.90 (57% OFF)", "All Users", "Was $48.70; supports 1080P & remote included", "Electronics"],
-        ["Beauty Products Clearance", "Up to 50% OFF", "Eligible USA Users", "Free shipping available", "Beauty & Personal Care"],
-        ["Flat 15% OFF Coupon", "15% OFF", "New USA Users", "Min. order value $40; includes free shipping", "Sitewide"],
-        ["Toys & Games Deals", "Starting at $0.96", "Eligible Users", "Free shipping on eligible orders", "Toys & Games"],
-        ["Mini Sewing Machine Set", "$8.69 (51% OFF)", "All Users", "Was $17.81; includes 24 thread rolls", "Home & Craft"],
-        ["New User Sign-Up Coupon", "20% OFF", "New App Users (USA)", "Min. order value $40; unlock via Temu app", "First Order"]
-      ].map((row, i) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 10 && "border-b-0")}>
-          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <p>
-            Finding something useful online without spending a fortune is part of the appeal of shopping on Temu. From home essentials and <Link href="/stores/geekbuying-discount-code">electronics</Link> to fashion, beauty products, gadgets, accessories, and everyday items, the marketplace brings a huge variety of products together in one place. With frequent promotions and rotating offers, there are plenty of opportunities to look for savings before you check out.
-          </p>
-          <p>
-            If you’re planning your next Temu order, checking for a Temu promo code on CouponsBit can be a smart first step. You can compare available coupon codes and promotional offers with the deals already running on Temu to find an option that works best for your purchase.
-          </p>
-
-          <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Coupon Code and Discount Offers</h3>
-    <p>Temu shopping is built around frequent deals, which means you don’t always need to rely on a traditional coupon to save.</p>
-    <p>You may come across a Temu coupon code while browsing promotional offers, or you might find an item that is already discounted. Depending on the current campaign, Temu can also feature bundles, limited-time offers, new-user promotions, and other incentives.</p>
-    <p>The best approach is to compare the available savings before completing your order. A Temu discount code may be useful for one purchase, while a product promotion or coupon bundle could provide better value for another.</p>
-    <p>Because promotions can change frequently, always check the applicable terms before assuming an offer will work with your cart.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">What Can You Buy on Temu?</h3>
-    <p>One of the biggest attractions of Temu is its enormous selection of products. Whether you’re looking for something practical for the home or simply browsing for an interesting gadget, you can explore a wide range of categories.</p>
-    <p><strong>Home and Kitchen:</strong> Give your home a small refresh without making a major shopping trip. Temu features kitchen organizers, storage solutions, cookware, tableware, cleaning products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home décor</Link>, lighting, bathroom accessories, and other household items.</p>
-    <p>From organization products for a cluttered drawer to decorative pieces for a living room, this category is worth exploring when you’re looking for affordable everyday additions.</p>
-    <p><strong>Electronics and Gadgets:</strong> If you enjoy discovering useful gadgets, Temu has plenty to browse. You can find accessories, cables, chargers, smart-home products, computer accessories, phone accessories, LED lighting, and other electronics-related items.</p>
-    <p>Before buying electronics, pay attention to specifications, compatibility, reviews, and seller information rather than choosing solely based on price.</p>
-    <p><strong>Fashion and Accessories:</strong> Temu also offers clothing and accessories for women, men, and children. Shoppers can browse dresses, tops, bottoms, activewear, shoes, bags, jewelry, watches, sunglasses, and other fashion accessories.</p>
-    <p>Since styles and inventory change regularly, checking the latest offers can be worthwhile if you’re shopping for seasonal clothing or accessories.</p>
-    <p><strong>Beauty and Personal Care:</strong> Beauty shoppers can explore makeup accessories, skincare tools, hair accessories, grooming products, personal-care items, and beauty organizers.</p>
-    <p>When purchasing products that come into contact with your skin, hair, or body, make sure you review the product description, ingredients where applicable, seller information, and customer reviews before ordering.</p>
-    <p><strong>Toys and Hobbies:</strong> Parents and gift shoppers can browse toys, games, crafts, educational products, collectibles, and hobby supplies.</p>
-    <p>This can be particularly useful around birthdays and holidays when shoppers are looking for small gifts, party supplies, or creative activities.</p>
-    <p><strong>Pet Supplies:</strong> Temu also offers products for pets, including toys, grooming accessories, feeding supplies, collars, beds, and other everyday pet accessories.</p>
-    <p>Whether you’re shopping for a new pet accessory or looking for something to keep your dog or cat entertained, it’s another category worth exploring.</p>
-    <p><strong>Automotive Accessories:</strong> Car owners can find a range of automotive accessories and useful items, from organization products and interior accessories to cleaning tools and other vehicle-related supplies.</p>
-    <p>Always confirm compatibility and product specifications before purchasing anything intended for a particular vehicle.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Deals and Limited-Time Offers</h3>
-    <p>Temu is known for frequently changing promotions, so it pays to check the latest offers rather than assuming yesterday’s deal is still available.</p>
-    <p>Limited-time promotions can be particularly useful when you already know what you want to buy. If you see a product you need included in a current promotion, compare its offer with any available Temu coupon code before checking out.</p>
-    <p>Flash-style promotions and countdown offers can also create a sense of urgency, but you should still take a moment to confirm that the product meets your needs and that the advertised saving represents a good deal for you.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Temu During Major US Shopping Seasons</h3>
-    <p>The timing of your purchase can also influence the type of promotions you find. Major US shopping periods often bring increased promotional activity across online retailers, and Temu can be worth checking during these occasions.</p>
-    <p>Valentine’s Day can be a good time to browse gifts, accessories, home décor, and small surprises. Around Mother’s Day and Father’s Day, shoppers can look for personalized gifts, gadgets, hobby products, and everyday accessories.</p>
-    <p>As summer approaches, promotions may focus on outdoor products, travel accessories, clothing, home organization, and seasonal essentials. Back-to-school season is another useful period for finding supplies, accessories, storage products, electronics accessories, and items for students.</p>
-    <p>Later in the year, shoppers can watch for Halloween, Thanksgiving, Black Friday, Cyber Monday, Christmas, and New Year promotions. These shopping events can be particularly useful if you’re buying gifts or stocking up on household and lifestyle products.</p>
-    <p>The important thing is not to wait for a specific holiday if you already find a suitable deal. Temu promotions change frequently, so a good offer available today may be more useful than waiting for an event that has no guarantee of a better discount.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Coupons for New and Existing Shoppers</h3>
-    <p>Some Temu promotions may be designed specifically for new customers, while other offers can be available to existing shoppers. Eligibility can vary depending on the campaign and the customer's account.</p>
-    <p>If you’re a first-time shopper, check whether a new-user promotion is available before placing your first order. Existing customers should also look for account-specific coupons, promotional events, or other eligible offers.</p>
-    <p>This is another reason to read the terms of a Temu promotion carefully. A code that works for a new account may not apply to an existing customer, and some offers may require specific products or spending thresholds.</p>
-  </div>
-</div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Get Better Temu Deals</h3>
-            <p>
-              The easiest way to improve your chances of finding a good Temu deal is to compare different types of savings rather than relying on one coupon.
-            </p>
-            <p>
-              Start by checking CouponsBit for a current Temu promo code. Then browse Temu’s ongoing promotions and compare the final eligible savings.
-            </p>
-            <p>
-              It can also help to create a shopping list before browsing. Temu has a huge product selection, and it’s easy to add items simply because they look interesting. Having a clear list helps you focus on products you actually need.
-            </p>
-            <p>
-              For larger shopping trips, consider grouping related purchases together when a promotion has a minimum-spend requirement. However, don’t buy unnecessary products simply to qualify for a discount.
-            </p>
-            <p>
-              Customer reviews are another important part of smart shopping. Look at ratings, written reviews, product images, dimensions, specifications, and seller information before purchasing, especially for electronics, clothing, beauty products, and products where quality or fit matters.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Check CouponsBit Before Shopping at Temu?</h3>
-            <p>
-              Searching for a coupon can sometimes feel like another task on your shopping list. CouponsBit makes that process easier by giving shoppers a convenient place to look for available Temu savings before checkout.
-            </p>
-            <p>
-              You can check for a Temu promo code, compare coupon offers, and look for other deals that could help reduce your shopping costs.
-            </p>
-            <p>
-              The goal isn’t simply to find a coupon. It’s to help you make a better-informed purchase by comparing the promotions available at the time you shop.
-            </p>
-            <p>
-              Whether you’re picking up home accessories, browsing gadgets, buying gifts, refreshing your wardrobe, or looking for everyday essentials, checking for an offer first can become a simple part of your Temu shopping routine.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Find Temu Savings Before You Shop</h3>
-            <p>
-              Temu gives US shoppers plenty to explore, from home and fashion to electronics, beauty, hobbies, pet supplies, and everyday essentials. With new products and promotions appearing regularly, there are often different ways to approach your shopping and look for better value.
-            </p>
-            <p>
-              Before placing your next order, check CouponsBit for a Temu promo code and compare it with the latest offers available on the platform. Whether you’re shopping for one useful item or putting together a larger cart, checking for savings before checkout can help you shop more confidently and keep your budget in mind.
-            </p>
-          </div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* FAQ */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Temu Promo Codes</h3>
-          {[
-            { q: "Does Temu offer promo codes?", a: "Yes. Temu frequently runs promotional campaigns and offers that may include coupon codes, discounts, product promotions, and other incentives. Availability and eligibility can vary." },
-            { q: "Where can I find a Temu promo code?", a: "You can check CouponsBit for available Temu promo codes and compare them with the promotions currently available on Temu." },
-            { q: "Can I use a Temu coupon code on discounted products?", a: "It depends on the specific promotion. Some codes may have product or purchase restrictions, while others may have different eligibility requirements. Check the terms before applying the offer." },
-            { q: "Does Temu have seasonal sales?", a: "Temu frequently runs promotional campaigns throughout the year. Major US shopping periods such as Valentine's Day, Mother's Day, Back-to-School, Halloween, Black Friday, Cyber Monday, and Christmas can be useful times to check for additional offers." },
-            { q: "Are Temu promotions available to existing customers?", a: "Some promotions are available to existing shoppers, while others may be targeted toward new customers or specific accounts. Check the terms of each promotion to determine eligibility." },
-            { q: "Why isn't my Temu promo code working?", a: "A code may fail because it has expired, your order does not meet its requirements, the products are excluded, or the promotion is limited to certain customers. Check the offer conditions before trying another code." },
-            { q: "How can I find the best Temu deals?", a: "Compare available Temu promo codes with product discounts, coupons, limited-time promotions, and other offers. Also consider reviews and product specifications so that you’re saving on products that actually meet your needs." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA]">
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-gray-600 font-bold text-[14px]">
+                      {[
+                        ["Women’s Casual Shoes", "$8.33 (88% OFF)", "All Users", "Was $73.48; limited stock clearance", "Footwear"],
+                        ["Gel Memory Foam Mattress", "Up to 71% OFF", "All Users", "European-style top design; Twin to King sizes", "Home & Bedroom"],
+                        ["6000PA Car Vacuum Cleaner", "$12.47 (68% OFF)", "All Users", "Was $39.99; includes 5 accessories", "Automotive & Home"],
+                        ["70% OFF Sitewide + FREE Shipping", "Up to 70% OFF", "Eligible Users", "No coupon code required", "Sitewide"],
+                        ["Halloween 3D Bat Wall Decor (24 Pcs)", "$1.90 (47% OFF)", "All Users", "Was $3.60; budget-friendly seasonal deal", "Decorations"],
+                        ["Portable Projector (1280x720)", "$20.90 (57% OFF)", "All Users", "Was $48.70; supports 1080P & remote included", "Electronics"],
+                        ["Beauty Products Clearance", "Up to 50% OFF", "Eligible USA Users", "Free shipping available", "Beauty & Personal Care"],
+                        ["Flat 15% OFF Coupon", "15% OFF", "New USA Users", "Min. order value $40; includes free shipping", "Sitewide"],
+                        ["Toys & Games Deals", "Starting at $0.96", "Eligible Users", "Free shipping on eligible orders", "Toys & Games"],
+                        ["Mini Sewing Machine Set", "$8.69 (51% OFF)", "All Users", "Was $17.81; includes 24 thread rolls", "Home & Craft"],
+                        ["New User Sign-Up Coupon", "20% OFF", "New App Users (USA)", "Min. order value $40; unlock via Temu app", "First Order"]
+                      ].map((row, i) => (
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 10 && "border-b-0")}>
+                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <p>
+                    Finding something useful online without spending a fortune is part of the appeal of shopping on Temu. From home essentials and <Link href="/stores/geekbuying-discount-code">electronics</Link> to fashion, beauty products, gadgets, accessories, and everyday items, the marketplace brings a huge variety of products together in one place. With frequent promotions and rotating offers, there are plenty of opportunities to look for savings before you check out.
+                  </p>
+                  <p>
+                    If you’re planning your next Temu order, checking for a Temu promo code on CouponsBit can be a smart first step. You can compare available coupon codes and promotional offers with the deals already running on Temu to find an option that works best for your purchase.
+                  </p>
+
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Coupon Code and Discount Offers</h3>
+                      <p>Temu shopping is built around frequent deals, which means you don’t always need to rely on a traditional coupon to save.</p>
+                      <p>You may come across a Temu coupon code while browsing promotional offers, or you might find an item that is already discounted. Depending on the current campaign, Temu can also feature bundles, limited-time offers, new-user promotions, and other incentives.</p>
+                      <p>The best approach is to compare the available savings before completing your order. A Temu discount code may be useful for one purchase, while a product promotion or coupon bundle could provide better value for another.</p>
+                      <p>Because promotions can change frequently, always check the applicable terms before assuming an offer will work with your cart.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">What Can You Buy on Temu?</h3>
+                      <p>One of the biggest attractions of Temu is its enormous selection of products. Whether you’re looking for something practical for the home or simply browsing for an interesting gadget, you can explore a wide range of categories.</p>
+                      <p><strong>Home and Kitchen:</strong> Give your home a small refresh without making a major shopping trip. Temu features kitchen organizers, storage solutions, cookware, tableware, cleaning products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home décor</Link>, lighting, bathroom accessories, and other household items.</p>
+                      <p>From organization products for a cluttered drawer to decorative pieces for a living room, this category is worth exploring when you’re looking for affordable everyday additions.</p>
+                      <p><strong>Electronics and Gadgets:</strong> If you enjoy discovering useful gadgets, Temu has plenty to browse. You can find accessories, cables, chargers, smart-home products, computer accessories, phone accessories, LED lighting, and other electronics-related items.</p>
+                      <p>Before buying electronics, pay attention to specifications, compatibility, reviews, and seller information rather than choosing solely based on price.</p>
+                      <p><strong>Fashion and Accessories:</strong> Temu also offers clothing and accessories for women, men, and children. Shoppers can browse dresses, tops, bottoms, activewear, shoes, bags, jewelry, watches, sunglasses, and other fashion accessories.</p>
+                      <p>Since styles and inventory change regularly, checking the latest offers can be worthwhile if you’re shopping for seasonal clothing or accessories.</p>
+                      <p><strong>Beauty and Personal Care:</strong> Beauty shoppers can explore makeup accessories, skincare tools, hair accessories, grooming products, personal-care items, and beauty organizers.</p>
+                      <p>When purchasing products that come into contact with your skin, hair, or body, make sure you review the product description, ingredients where applicable, seller information, and customer reviews before ordering.</p>
+                      <p><strong>Toys and Hobbies:</strong> Parents and gift shoppers can browse toys, games, crafts, educational products, collectibles, and hobby supplies.</p>
+                      <p>This can be particularly useful around birthdays and holidays when shoppers are looking for small gifts, party supplies, or creative activities.</p>
+                      <p><strong>Pet Supplies:</strong> Temu also offers products for pets, including toys, grooming accessories, feeding supplies, collars, beds, and other everyday pet accessories.</p>
+                      <p>Whether you’re shopping for a new pet accessory or looking for something to keep your dog or cat entertained, it’s another category worth exploring.</p>
+                      <p><strong>Automotive Accessories:</strong> Car owners can find a range of automotive accessories and useful items, from organization products and interior accessories to cleaning tools and other vehicle-related supplies.</p>
+                      <p>Always confirm compatibility and product specifications before purchasing anything intended for a particular vehicle.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Deals and Limited-Time Offers</h3>
+                      <p>Temu is known for frequently changing promotions, so it pays to check the latest offers rather than assuming yesterday’s deal is still available.</p>
+                      <p>Limited-time promotions can be particularly useful when you already know what you want to buy. If you see a product you need included in a current promotion, compare its offer with any available Temu coupon code before checking out.</p>
+                      <p>Flash-style promotions and countdown offers can also create a sense of urgency, but you should still take a moment to confirm that the product meets your needs and that the advertised saving represents a good deal for you.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Temu During Major US Shopping Seasons</h3>
+                      <p>The timing of your purchase can also influence the type of promotions you find. Major US shopping periods often bring increased promotional activity across online retailers, and Temu can be worth checking during these occasions.</p>
+                      <p>Valentine’s Day can be a good time to browse gifts, accessories, home décor, and small surprises. Around Mother’s Day and Father’s Day, shoppers can look for personalized gifts, gadgets, hobby products, and everyday accessories.</p>
+                      <p>As summer approaches, promotions may focus on outdoor products, travel accessories, clothing, home organization, and seasonal essentials. Back-to-school season is another useful period for finding supplies, accessories, storage products, electronics accessories, and items for students.</p>
+                      <p>Later in the year, shoppers can watch for Halloween, Thanksgiving, Black Friday, Cyber Monday, Christmas, and New Year promotions. These shopping events can be particularly useful if you’re buying gifts or stocking up on household and lifestyle products.</p>
+                      <p>The important thing is not to wait for a specific holiday if you already find a suitable deal. Temu promotions change frequently, so a good offer available today may be more useful than waiting for an event that has no guarantee of a better discount.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Temu Coupons for New and Existing Shoppers</h3>
+                      <p>Some Temu promotions may be designed specifically for new customers, while other offers can be available to existing shoppers. Eligibility can vary depending on the campaign and the customer's account.</p>
+                      <p>If you’re a first-time shopper, check whether a new-user promotion is available before placing your first order. Existing customers should also look for account-specific coupons, promotional events, or other eligible offers.</p>
+                      <p>This is another reason to read the terms of a Temu promotion carefully. A code that works for a new account may not apply to an existing customer, and some offers may require specific products or spending thresholds.</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Get Better Temu Deals</h3>
+                    <p>
+                      The easiest way to improve your chances of finding a good Temu deal is to compare different types of savings rather than relying on one coupon.
+                    </p>
+                    <p>
+                      Start by checking CouponsBit for a current Temu promo code. Then browse Temu’s ongoing promotions and compare the final eligible savings.
+                    </p>
+                    <p>
+                      It can also help to create a shopping list before browsing. Temu has a huge product selection, and it’s easy to add items simply because they look interesting. Having a clear list helps you focus on products you actually need.
+                    </p>
+                    <p>
+                      For larger shopping trips, consider grouping related purchases together when a promotion has a minimum-spend requirement. However, don’t buy unnecessary products simply to qualify for a discount.
+                    </p>
+                    <p>
+                      Customer reviews are another important part of smart shopping. Look at ratings, written reviews, product images, dimensions, specifications, and seller information before purchasing, especially for electronics, clothing, beauty products, and products where quality or fit matters.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Check CouponsBit Before Shopping at Temu?</h3>
+                    <p>
+                      Searching for a coupon can sometimes feel like another task on your shopping list. CouponsBit makes that process easier by giving shoppers a convenient place to look for available Temu savings before checkout.
+                    </p>
+                    <p>
+                      You can check for a Temu promo code, compare coupon offers, and look for other deals that could help reduce your shopping costs.
+                    </p>
+                    <p>
+                      The goal isn’t simply to find a coupon. It’s to help you make a better-informed purchase by comparing the promotions available at the time you shop.
+                    </p>
+                    <p>
+                      Whether you’re picking up home accessories, browsing gadgets, buying gifts, refreshing your wardrobe, or looking for everyday essentials, checking for an offer first can become a simple part of your Temu shopping routine.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find Temu Savings Before You Shop</h3>
+                    <p>
+                      Temu gives US shoppers plenty to explore, from home and fashion to electronics, beauty, hobbies, pet supplies, and everyday essentials. With new products and promotions appearing regularly, there are often different ways to approach your shopping and look for better value.
+                    </p>
+                    <p>
+                      Before placing your next order, check CouponsBit for a Temu promo code and compare it with the latest offers available on the platform. Whether you’re shopping for one useful item or putting together a larger cart, checking for savings before checkout can help you shop more confidently and keep your budget in mind.
+                    </p>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
+                </div>
+
+                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
+
+                {/* FAQ */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About Temu Promo Codes</h3>
+                  {[
+                    { q: "Does Temu offer promo codes?", a: "Yes. Temu frequently runs promotional campaigns and offers that may include coupon codes, discounts, product promotions, and other incentives. Availability and eligibility can vary." },
+                    { q: "Where can I find a Temu promo code?", a: "You can check CouponsBit for available Temu promo codes and compare them with the promotions currently available on Temu." },
+                    { q: "Can I use a Temu coupon code on discounted products?", a: "It depends on the specific promotion. Some codes may have product or purchase restrictions, while others may have different eligibility requirements. Check the terms before applying the offer." },
+                    { q: "Does Temu have seasonal sales?", a: "Temu frequently runs promotional campaigns throughout the year. Major US shopping periods such as Valentine's Day, Mother's Day, Back-to-School, Halloween, Black Friday, Cyber Monday, and Christmas can be useful times to check for additional offers." },
+                    { q: "Are Temu promotions available to existing customers?", a: "Some promotions are available to existing shoppers, while others may be targeted toward new customers or specific accounts. Check the terms of each promotion to determine eligibility." },
+                    { q: "Why isn't my Temu promo code working?", a: "A code may fail because it has expired, your order does not meet its requirements, the products are excluded, or the promotion is limited to certain customers. Check the offer conditions before trying another code." },
+                    { q: "How can I find the best Temu deals?", a: "Compare available Temu promo codes with product discounts, coupons, limited-time promotions, and other offers. Also consider reviews and product specifications so that you’re saving on products that actually meet your needs." }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Temu Searches</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {["Temu Promo Code", "Electronics", "Home Essentials", "Fashion Deals", "Gadgets", "Seasonal Sale", "Flash Sale", "New Users"].map(tag => (
+                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Temu Deals</h3>
+                  <div className="space-y-6">
+                    {DEALS.map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">T</div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                        </div>
+                        <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Temu: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Temu Searches</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["Temu Promo Code", "Electronics", "Home Essentials", "Fashion Deals", "Gadgets", "Seasonal Sale", "Flash Sale", "New Users"].map(tag => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-            ))}
           </div>
-        </div>
-
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Temu Deals</h3>
-          <div className="space-y-6">
-            {DEALS.map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">T</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop Temu: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
 
       </main>

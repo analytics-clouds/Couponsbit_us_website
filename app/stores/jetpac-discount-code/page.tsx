@@ -1,29 +1,34 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import JetpacCouponsContent from "./_components/StoreCouponsContent";
+import { JETPAC_COUPONS } from "./_components/offers";
+
+const TITLE = "Jetpac Promo Code: Up to 70% Off eSIMs + Extra 10% Off | Nov 2026";
+const DESCRIPTION =
+  "Use a Jetpac promo code and Jetpac discount code to save up to 70% on international eSIMs plus get extra 10% off with code ANC10. Verified Nov 2026. Save now.";
+const CANONICAL = "https://www.couponsbit.us/stores/jetpac-discount-code";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
+  description: DESCRIPTION,
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/jetpac-discount-code",
+    canonical: CANONICAL,
     languages: {
-      "en-US": "https://www.couponsbit.us/stores/jetpac-discount-code",
-      "en-GB": "https://www.couponsbit.us/stores/jetpac-discount-code",
-      "en-IN": "https://www.couponsbit.us/stores/jetpac-discount-code",
-      "x-default": "https://www.couponsbit.us/stores/jetpac-discount-code",
+      "en-US": CANONICAL,
+      "en-GB": CANONICAL,
+      "en-IN": CANONICAL,
+      "x-default": CANONICAL,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/jetpac-discount-code",
-    title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Nov 2026",
-    description:
-      "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
+    url: CANONICAL,
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +44,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Nov 2026",
-    description:
-      "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787739252/jetpac-logo_bng0au.webp"],
     site: "@couponsbit",
   },
@@ -54,67 +58,62 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+  },
 };
+
+const storeOffers = JETPAC_COUPONS.map((coupon, index) => ({
+  "@type": "ListItem",
+  position: index + 1,
+  item: {
+    "@type": "Offer",
+    name: coupon.title,
+    description: coupon.description,
+    url: CANONICAL,
+    seller: {
+      "@id": `${CANONICAL}#brand`,
+    },
+    priceCurrency: "USD",
+    price: "0",
+    ...(coupon.validTill && { validThrough: coupon.validTill }),
+    ...(coupon.code && { couponCode: coupon.code }),
+  },
+}));
 
 const jetpacSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#webpage",
-      url: "https://www.couponsbit.us/stores/jetpac-discount-code",
-      name: "Jetpac Discount Code & Promo Code: Save up to 70% OFF | Nov 2026",
-      description:
-        "Use Jetpac discount code ANC10 and the latest promo codes to save up to 70% on international eSIM plans. Get up to 53% OFF airport lounge access, save on worldwide voice calls, Fast Track services, and earn referral rewards with Jetpac.",
+      "@id": `${CANONICAL}#webpage`,
+      url: CANONICAL,
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
-      breadcrumb: { "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#breadcrumb" },
+      breadcrumb: { "@id": `${CANONICAL}#breadcrumb` },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": `${CANONICAL}#brand`,
+      name: "Jetpac",
+      url: "https://www.jetpacglobal.com",
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#offerlist",
+      "@id": `${CANONICAL}#offerlist`,
       name: "Jetpac Discount Codes & Coupon Codes",
       description: "Latest Jetpac discount codes and offers for travel eSIM data plans and lounge access.",
-      url: "https://www.couponsbit.us/stores/jetpac-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Jetpac Discount Code – Save Up To 70% on International eSIMs 🌍", description: "Save Up To 70% on international eSIM plans compared with traditional roaming rates.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Jetpac Discount Code – Up To 53% OFF Airport Lounge Access ✈️", description: "Enjoy Up To 53% OFF selected airport Lounge Access services.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Jetpac Discount Code – Get $10 With Refer a Friend 🎁", description: "Refer a friend to Jetpac and give them $5 OFF their first eSIM purchase.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Jetpac Affiliate Program – Earn Up To 15% Commission 💰", description: "Join the Jetpac Affiliate Program and earn Up To 15% commission on eligible Jetpac sales.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Jetpac Worldwide Voice Calls – 30 Minutes for $9.99 📞", description: "Get 30 minutes of worldwide voice calls for $9.99.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Jetpac Worldwide Voice Calls – 15 Minutes for $4.99 📞", description: "Get 15 minutes of worldwide voice calls for just $4.99.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Jetpac Airport Lounge Access – 36% OFF at Madrid Airport ✈️", description: "Get Lounge Access at Adolfo Suárez Madrid-Barajas Airport for $35.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Jetpac Fast Track – 24% OFF at Beijing Airport ⚡", description: "Get Fast Track at Beijing Capital International Airport for $14.", url: "https://www.couponsbit.us/stores/jetpac-discount-code", seller: { "@type": "Organization", name: "Jetpac", url: "https://www.jetpacglobal.com" } },
-        },
-      ],
+      url: CANONICAL,
+      numberOfItems: JETPAC_COUPONS.length,
+      itemListElement: storeOffers,
     },
 
     {
@@ -138,148 +137,148 @@ const jetpacSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#breadcrumb",
+      "@id": `${CANONICAL}#breadcrumb`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.couponsbit.us" },
         { "@type": "ListItem", position: 2, name: "Stores", item: "https://www.couponsbit.us/stores" },
-        { "@type": "ListItem", position: 3, name: "Jetpac Coupons", item: "https://www.couponsbit.us/stores/jetpac-discount-code" },
+        { "@type": "ListItem", position: 3, name: "Jetpac Coupons", item: CANONICAL },
       ],
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/jetpac-discount-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Jetpac?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access."
-      }
+      "@type": "FAQPage",
+      "@id": `${CANONICAL}#faq`,
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Jetpac?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac is a travel eSIM provider offering data plans for over 200 international destinations, along with perks like discounted airport lounge access.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac offer discount codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac runs promotions such as destination eSIM deals, app-exclusive offers, and special discount codes on eligible products.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a Jetpac promo code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A Jetpac promo code is a promotional code that may provide a discount or special benefit when purchasing eligible Jetpac products. Availability, eligibility, and terms vary by promotion.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find Jetpac discount codes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can check Couponsbit for available Jetpac discount codes, coupon codes, promotional offers, and deals before completing your purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does Jetpac's eSIM work?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac eSIMs can be downloaded and activated through the Jetpac app, providing data coverage automatically when you travel.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac offer eSIMs for the USA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac provides dedicated eSIM plans for the United States with different data allowances and validity periods.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac work in Europe?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac offers Europe regional eSIM plans designed for travelers visiting supported European destinations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use Jetpac in Japan?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac provides Japan-specific eSIM plans with different data options and durations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Jetpac available for different countries?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac provides country-specific and regional eSIM options covering numerous destinations worldwide.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac offer unlimited data?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac offers unlimited plans in selected destinations. However, unlimited plans may have speed-management conditions, so check the details of your selected plan before purchasing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac include SMS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac's standard eSIM service is data-only and does not include SMS. Voice options can be purchased through the Jetpac app where available.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use Jetpac as a hotspot?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac states that its eSIM supports hotspot sharing. Check the terms of your selected plan and your device compatibility before relying on this feature.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does a Jetpac eSIM remain available before activation?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Jetpac states that an unactivated data pack remains available in the user's account for three months from the date of purchase. Once activated, the plan follows the validity period selected during purchase.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use Jetpac for multiple trips?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac describes its travel eSIM as reusable for future trips, with users able to top up when traveling again.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Jetpac offer airport lounge access?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Jetpac offers discounted airport lounge access through its JetPass Perks program.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Couponsbit free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers.",
+          },
+        },
+      ],
     },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac offer discount codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac runs promotions such as destination eSIM deals, app-exclusive offers, and special discount codes on eligible products."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Jetpac promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Jetpac promo code is a promotional code that may provide a discount or special benefit when purchasing eligible Jetpac products. Availability, eligibility, and terms vary by promotion."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I find Jetpac discount codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check Couponsbit for available Jetpac discount codes, coupon codes, promotional offers, and deals before completing your purchase."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does Jetpac's eSIM work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac eSIMs can be downloaded and activated through the Jetpac app, providing data coverage automatically when you travel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac offer eSIMs for the USA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac provides dedicated eSIM plans for the United States with different data allowances and validity periods."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac work in Europe?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac offers Europe regional eSIM plans designed for travelers visiting supported European destinations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Jetpac in Japan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac provides Japan-specific eSIM plans with different data options and durations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Jetpac available for different countries?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac provides country-specific and regional eSIM options covering numerous destinations worldwide."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac offer unlimited data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac offers unlimited plans in selected destinations. However, unlimited plans may have speed-management conditions, so check the details of your selected plan before purchasing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac include SMS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac's standard eSIM service is data-only and does not include SMS. Voice options can be purchased through the Jetpac app where available."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Jetpac as a hotspot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac states that its eSIM supports hotspot sharing. Check the terms of your selected plan and your device compatibility before relying on this feature."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a Jetpac eSIM remain available before activation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jetpac states that an unactivated data pack remains available in the user's account for three months from the date of purchase. Once activated, the plan follows the validity period selected during purchase."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Jetpac for multiple trips?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac describes its travel eSIM as reusable for future trips, with users able to top up when traveling again."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Jetpac offer airport lounge access?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Jetpac offers discounted airport lounge access through its JetPass Perks program."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Couponsbit free to use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Couponsbit is completely free and helps users discover verified discounts, coupon codes, and promotional offers."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -287,7 +286,9 @@ export default function JetpacStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jetpacSchema) }} />
-      <JetpacCouponsContent />
+      <Suspense fallback={null}>
+        <JetpacCouponsContent />
+      </Suspense>
     </>
   );
 }

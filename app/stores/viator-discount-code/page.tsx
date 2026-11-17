@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ViatorCouponsContent from "./_components/StoreCouponsContent";
+import { VIATOR_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Viator Promo Code: Tours from $39 + 15% OFF Experiences | Sept 2026",
+    absolute: "Viator Promo Code: 15% OFF Tours + Experiences From $39 | Nov 2026",
   },
   description:
-    "Find the latest Viator promo code to book tours from $39 and save 15% on select experiences. Explore Las Vegas, London, Barcelona, and more with verified travel deals in Sept 2026.",
+    "Save with Viator Promo Code and Viator Discount Code. Get 15% off Valley of Fire tours and explore Las Vegas experiences from $39. Verified Nov 2026 deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/viator-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/viator-discount-code",
-    title: "Viator Promo Code: Tours from $39 + 15% OFF Experiences | Sept 2026",
+    title: "Viator Promo Code: 15% OFF Tours + Experiences From $39 | Nov 2026",
     description:
-      "Find the latest Viator promo code to book tours from $39 and save 15% on select experiences. Explore Las Vegas, London, Barcelona, and more with verified travel deals in Sept 2026.",
+      "Save with Viator Promo Code and Viator Discount Code. Get 15% off Valley of Fire tours and explore Las Vegas experiences from $39. Verified Nov 2026 deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Viator Promo Code: Tours from $39 + 15% OFF Experiences | Sept 2026",
+    title: "Viator Promo Code: 15% OFF Tours + Experiences From $39 | Nov 2026",
     description:
-      "Find the latest Viator promo code to book tours from $39 and save 15% on select experiences. Explore Las Vegas, London, Barcelona, and more with verified travel deals in Sept 2026.",
+      "Save with Viator Promo Code and Viator Discount Code. Get 15% off Valley of Fire tours and explore Las Vegas experiences from $39. Verified Nov 2026 deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788951742/viator-logo_tvu8qa.webp"],
     site: "@couponsbit",
   },
@@ -54,7 +56,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const storeOffers = VIATOR_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Viator ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/viator-discount-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" },
+}));
 
 const viatorSchema = {
   "@context": "https://schema.org",
@@ -63,15 +76,22 @@ const viatorSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/viator-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/viator-discount-code",
-      name: "Viator Promo Code: Tours from $39 + 15% OFF Experiences | Sept 2026",
+      name: "Viator Promo Code: 15% OFF Tours + Experiences From $39 | Nov 2026",
       description:
-        "Find the latest Viator promo code to book tours from $39 and save 15% on select experiences. Explore Las Vegas, London, Barcelona, and more with verified travel deals in Sept 2026.",
+        "Save with Viator Promo Code and Viator Discount Code. Get 15% off Valley of Fire tours and explore Las Vegas experiences from $39. Verified Nov 2026 deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/viator-discount-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/viator-discount-code#brand",
+      name: "Viator",
+      url: "https://www.viator.com",
+      sameAs: ["https://www.facebook.com/viator", "https://twitter.com/viator"],
     },
 
     {
@@ -80,18 +100,12 @@ const viatorSchema = {
       name: "Viator Discount Codes & Promo Codes",
       description: "Latest Viator discount codes and offers on tours and activities.",
       url: "https://www.couponsbit.us/stores/viator-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Viator – Promo Code for Valley of Fire & Seven Magic Mountains | 15% OFF", description: "Save 15% OFF on a Valley of Fire & Seven Magic Mountains day tour from Las Vegas.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Viator – Promo Code for Las Vegas Tours & Excursions | From $39", description: "Explore Las Vegas tours and excursions starting from just $39 per person and discover exciting experiences across the city.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Viator – Promo Code for Charleston Tours & Tickets | From $33", description: "Discover the charm of Charleston with top tours and tickets starting from just $33 on Viator.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Viator – Promo Code for Key West Tour Tickets | From $79", description: "Experience the tropical beauty of Key West with tour tickets starting from just $79.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Viator – Las Vegas Helicopter Night Flight | From $99", description: "Take an unforgettable Las Vegas helicopter night flight starting from just $99 per person.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Viator – Top Places to Visit in London | From $55", description: "Explore some of the top places to visit in London with experiences starting from just $55 per person.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Viator – Barcelona Sagrada Familia Guided Tour | From $63.68", description: "Visit Barcelona’s iconic Sagrada Familia with a skip-the-line guided tour starting from $63.68 per person.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Viator – Montserrat Wine Tasting & Tapas Tour | From $58", description: "Enjoy a 7–8 hour Montserrat experience featuring a cogwheel train journey, gourmet wine tasting, and tapas or lunch.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Viator – Flamenco Show at Dalmases Palace | 10% Savings", description: "Experience an authentic Flamenco show at Dalmases Palace in Barcelona with 10% savings.", url: "https://www.couponsbit.us/stores/viator-discount-code", seller: { "@type": "Organization", name: "Viator", url: "https://www.viator.com" } } },
-      ],
+      numberOfItems: VIATOR_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -142,7 +156,9 @@ export default function ViatorStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(viatorSchema) }} />
-      <ViatorCouponsContent />
+      <Suspense fallback={null}>
+        <ViatorCouponsContent />
+      </Suspense>
     </>
   );
 }

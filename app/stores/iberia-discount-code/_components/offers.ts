@@ -1,0 +1,258 @@
+export interface Coupon {
+  id: string;
+  topLabel?: string;
+  mainValue?: string;
+  offText?: string;
+  title: string;
+  discount?: string;
+  code?: string;
+  description: string;
+  verified?: string | boolean;
+  userType?: string;
+  validTill?: string;
+  expiry?: string;
+  type?: "code" | "deal";
+  isVerified?: boolean;
+  points?: string[];
+  terms?: string[];
+  label?: string;
+  affiliateUrl?: string;
+}
+
+export const IBERIA_COUPONS: Coupon[] = [
+  {
+    id: "c1",
+    topLabel: "FROM",
+    mainValue: "$1,019",
+    offText: "",
+    title: "Iberia Promo Code: Madrid Getaway Package From $1,019",
+    description: "Enjoy a Madrid vacation package with flights and a hotel stay included.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get a flight plus 3-night hotel package to Madrid from $1,019.",
+      "Save on a convenient travel bundle with accommodation included.",
+      "Available for a limited time.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c2",
+    topLabel: "FROM",
+    mainValue: "$865",
+    offText: "",
+    title: "Iberia Promo Code: Los Angeles to Barcelona From $865",
+    description: "Fly to Barcelona with affordable round-trip fares.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Book Los Angeles to Barcelona flights starting at $865.",
+      "Enjoy convenient international travel with Iberia.",
+      "Prices are available for select travel dates.",
+      "Availability may vary.",
+    ],
+  },
+  {
+    id: "c3",
+    topLabel: "FROM",
+    mainValue: "$550",
+    offText: "",
+    title: "Iberia Discount Code: Flights to Barcelona From $550",
+    description: "Find affordable flights for your next Barcelona trip.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get round-trip flights to Barcelona from $550.",
+      "Explore flexible travel options with Iberia.",
+      "Applies to select routes and dates.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c4",
+    topLabel: "FROM",
+    mainValue: "$1,295",
+    offText: "",
+    title: "Iberia Discount Code: Tenerife Flight + Hotel From $1,295",
+    description: "Plan your island getaway with a bundled travel package.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get flights plus a 4-day, 3-night Tenerife hotel stay from $1,295.",
+      "A complete vacation package with accommodation included.",
+      "Available for select travel dates.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c5",
+    topLabel: "FROM",
+    mainValue: "$889",
+    offText: "",
+    title: "Iberia Coupon Code: Madrid Flight + Car Rental From $889",
+    description: "Pair your Madrid trip with a convenient car rental.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get a Madrid flight and 6-day car rental package from $889.",
+      "Travel and transportation in a single booking.",
+      "Available for a limited time.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c6",
+    topLabel: "FROM",
+    mainValue: "$258",
+    offText: "",
+    title: "Iberia Coupon Code: Monthly Flights From $258",
+    description: "Discover affordable Iberia flights throughout the year.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Find monthly flight deals starting at $258.",
+      "Browse select routes with budget-friendly fares.",
+      "Prices vary by destination and availability.",
+      "Availability may vary.",
+    ],
+  },
+  {
+    id: "c7",
+    topLabel: "FROM",
+    mainValue: "€87",
+    offText: "",
+    title: "Iberia Voucher Code: Paris Flights From €87",
+    description: "Book affordable round-trip flights to Paris.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get Iberia flights to Paris starting at €87.",
+      "Enjoy international travel at a lower fare.",
+      "Applies to select flights and dates.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c8",
+    topLabel: "FROM",
+    mainValue: "€328",
+    offText: "",
+    title: "Iberia Voucher Code: New York Flights From €328",
+    description: "Save on round-trip flights to New York.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Book flights to New York starting at €328.",
+      "Travel with Iberia on select routes.",
+      "Limited-time fares are available while seats last.",
+      "Prices vary by travel dates.",
+    ],
+  },
+  {
+    id: "c9",
+    topLabel: "UP TO",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Iberia Deals: Up to 20% Off Flights",
+    description: "Save more on your next Iberia booking.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get up to 20% off eligible Iberia purchases.",
+      "Available for a limited time.",
+      "Check the booking terms before checkout.",
+      "Exclusions may apply.",
+    ],
+  },
+  {
+    id: "c10",
+    topLabel: "UP TO",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Iberia Deals: Up to 15% Off Favorites",
+    description: "Pick up extra savings on select Iberia offers.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Save up to 15% on eligible purchases.",
+      "A limited-time promotion for Iberia customers.",
+      "Review the offer conditions before booking.",
+      "Exclusions may apply.",
+    ],
+  },
+  {
+    id: "c11",
+    topLabel: "UP TO",
+    mainValue: "5%",
+    offText: "OFF",
+    title: "Iberia Offers: Up to 5% Off Travel",
+    description: "Pick up additional savings on Iberia bookings.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get up to 5% off qualifying travel purchases.",
+      "Extra savings on select bookings.",
+      "Check eligibility before you complete your reservation.",
+      "Exclusions may apply.",
+    ],
+  },
+  {
+    id: "c12",
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Iberia Offers: 25% Off Special Deal",
+    description: "Save more with this limited-time Iberia promotion.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Get 25% off eligible Iberia offers.",
+      "A limited-time discount on select bookings.",
+      "Verify the terms before you book.",
+      "Exclusions may apply.",
+    ],
+  },
+  {
+    id: "c13",
+    topLabel: "UP TO",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "Iberia Promo Code: Up to 30% Off Favorites",
+    description: "Get up to 30% off select Iberia deals.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Enjoy discounts on eligible travel offers.",
+      "Shop flights and travel options at lower prices.",
+      "A limited-time sale for customers.",
+      "Savings vary by booking.",
+    ],
+  },
+];
+

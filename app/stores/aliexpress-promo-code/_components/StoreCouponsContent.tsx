@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { OFFERS } from "./offers";
+import { type Coupon, ALIEXPRESS_COUPONS } from "./offers";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -67,7 +67,7 @@ export default function AliexpressCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -123,7 +123,7 @@ export default function AliexpressCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(25.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified AliExpress promo codes and AliExpress discount codes at Maxiku Offers. Save up to 93% OFF during the Labour Day Sale with free shipping on selected products, and shop game consoles starting from just $18, including popular PlayStation deals at unbeatable prices.
+                      AliExpress Promo Code offers help shoppers unlock up to 93% off during the Labour Day Sale and find best sellers starting at just $0.99. AliExpress Discount Code deals also include up to 70% off welcome savings, 80% off select best sellers, and 60% off phone accessories with free shipping furniture offers. From electronics and fashion to home essentials and gaming products, these hand-picked deals deliver value. Verified codes are updated for Nov 2026, helping customers find tested savings across AliExpress categories.
                     </p>
                     <a
                       href={STORE_URL}
@@ -145,11 +145,11 @@ export default function AliexpressCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -199,16 +199,17 @@ export default function AliexpressCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">AliExpress Promo Codes & Offers</h2>
                 </div>
 
-                {OFFERS.map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {ALIEXPRESS_COUPONS.map((c) => (
+                  <div key={c.id} id={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            {c.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -218,14 +219,14 @@ export default function AliexpressCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -265,19 +266,19 @@ export default function AliexpressCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">Find an AliExpress Promo Code</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   An AliExpress promo code may provide a discount on eligible purchases, depending on the promotion and its conditions. Some codes can apply to selected products or sellers, while others may have minimum spending requirements or other restrictions.
+                    An AliExpress promo code may provide a discount on eligible purchases, depending on the promotion and its conditions. Some codes can apply to selected products or sellers, while others may have minimum spending requirements or other restrictions.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Because AliExpress features products from a large number of sellers, promotions can vary considerably. A code that works for one order may not necessarily apply to another product or seller.
+                    Because AliExpress features products from a large number of sellers, promotions can vary considerably. A code that works for one order may not necessarily apply to another product or seller.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Before checking out, review the offer carefully. Pay attention to its validity period, minimum purchase requirements, eligible products, participating sellers, and any other restrictions.
+                    Before checking out, review the offer carefully. Pay attention to its validity period, minimum purchase requirements, eligible products, participating sellers, and any other restrictions.
 
                   </p>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   CouponsBit makes it easier to check for current AliExpress promotional opportunities before you complete your order.
+                    CouponsBit makes it easier to check for current AliExpress promotional opportunities before you complete your order.
 
                   </p>
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
@@ -286,85 +287,85 @@ export default function AliexpressCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Smartphone, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Smartphone, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+                      { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find the Best AliExpress Deals
-  </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Checkout",
-        sub: "Before completing your purchase, check CouponsBit for the latest AliExpress promo code, coupon codes, discount offers, vouchers, and other available deals.",
-      },
-      {
-        icon: Calculator,
-        title: "Compare the Final Cost",
-        sub: "Don't judge a deal solely by the advertised percentage discount. Compare the final checkout amount, including applicable shipping and other charges.",
-      },
-      {
-        icon: Star,
-        title: "Check Seller Reviews",
-        sub: "AliExpress operates as a marketplace, so seller reputation matters. Look at ratings, customer reviews, product photos, order history, and other available information before buying.",
-      },
-      {
-        icon: Copy,
-        title: "Compare Multiple Listings",
-        sub: "The same or similar product may be available from multiple sellers. Compare specifications, reviews, shipping options, and final costs rather than choosing the first listing you see.",
-      },
-      {
-        icon: Truck,
-        title: "Check Delivery Times",
-        sub: "If you need an item for a specific date, pay close attention to the estimated delivery window.",
-      },
-      {
-        icon: Calendar,
-        title: "Look for Seasonal Promotions",
-        sub: "Major shopping periods such as Black Friday, Cyber Monday, back-to-school season, and holiday sales can be useful times to monitor AliExpress promotions.",
-      },
-      {
-        icon: FileText,
-        title: "Read the Coupon Conditions",
-        sub: "A coupon may have a minimum spending requirement, selected-product restrictions, seller limitations, or an expiration date. Check the terms before adding it to your shopping plan.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                  <h3 className="text-black font-black text-lg mb-8">
+                    How to Find the Best AliExpress Deals
+                  </h3>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        icon: Tag,
+                        title: "Check CouponsBit Before Checkout",
+                        sub: "Before completing your purchase, check CouponsBit for the latest AliExpress promo code, coupon codes, discount offers, vouchers, and other available deals.",
+                      },
+                      {
+                        icon: Calculator,
+                        title: "Compare the Final Cost",
+                        sub: "Don't judge a deal solely by the advertised percentage discount. Compare the final checkout amount, including applicable shipping and other charges.",
+                      },
+                      {
+                        icon: Star,
+                        title: "Check Seller Reviews",
+                        sub: "AliExpress operates as a marketplace, so seller reputation matters. Look at ratings, customer reviews, product photos, order history, and other available information before buying.",
+                      },
+                      {
+                        icon: Copy,
+                        title: "Compare Multiple Listings",
+                        sub: "The same or similar product may be available from multiple sellers. Compare specifications, reviews, shipping options, and final costs rather than choosing the first listing you see.",
+                      },
+                      {
+                        icon: Truck,
+                        title: "Check Delivery Times",
+                        sub: "If you need an item for a specific date, pay close attention to the estimated delivery window.",
+                      },
+                      {
+                        icon: Calendar,
+                        title: "Look for Seasonal Promotions",
+                        sub: "Major shopping periods such as Black Friday, Cyber Monday, back-to-school season, and holiday sales can be useful times to monitor AliExpress promotions.",
+                      },
+                      {
+                        icon: FileText,
+                        title: "Read the Coupon Conditions",
+                        sub: "A coupon may have a minimum spending requirement, selected-product restrictions, seller limitations, or an expiration date. Check the terms before adding it to your shopping plan.",
+                      },
+                    ].map((item) => (
+                      <div key={item.title} className="flex gap-4 items-start">
+                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                          <item.icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <p className="text-black font-black text-sm leading-tight mb-2">
+                            {item.title}
+                          </p>
+                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                            {item.sub}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
 
               </div>
@@ -398,292 +399,292 @@ export default function AliexpressCouponsContent() {
         </section>
 
         {/* SEO Text Section */}
-       <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          AliExpress Promo Code, Coupon Code & Discount Offers
-        </h2>
+        <section className="py-24 bg-[#f5f5f5]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  AliExpress Promo Code, Coupon Code & Discount Offers
+                </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-gray-600 font-bold text-[14px]">
-      {[
-        ["Labour Day Sale", "Up to 93% OFF", "All Users", "Free shipping on select items; prices vary by seller", "Sitewide / Selected Products"],
-        ["Welcome Deal (New Shoppers)", "Up to 70% OFF", "New Users", "Introductory savings on eligible items", "Selected Categories"],
-        ["Best Sellers Deals", "Starting at $0.99", "All Users", "Heavy discounts while supplies last", "Gadgets & Everyday Essentials"],
-        ["Dollar Express Deals", "Starting at $0.99", "All Users", "New shoppers can find select items from $0.33", "Novelty, Tools & Accessories"],
-        ["Welcome Savings (No Code Needed)", "Up to 70% OFF", "New Users", "Auto-applied at checkout; no minimum spend required", "Sitewide / Eligible Orders"],
-        ["Best Seller Collection", "Up to 80% OFF", "All Users", "Limited-time deals on top-purchased products", "Trending Selections"],
-        ["Custom Auto Parts Sale", "Up to 50% OFF", "All Users", "No coupon required; valid on selected items", "Automotive Accessories"],
-        ["Furniture Sale + Free Shipping", "Up to 60% OFF", "All Users", "Select furniture from $4; includes free shipping on eligible orders", "Furniture & Home"],
-        ["Game Consoles Deals", "Starting at $18", "All Users", "Includes PS4 and PS5 listings; prices vary by seller", "Gaming & Electronics"],
-        ["Women's Shoes Deals", "Starting at $7.99", "All Users", "No promo code required; covers seasonal & everyday styles", "Footwear"],
-        ["Phone Cases & Chargers", "Up to 60% OFF", "All Users", "Prices & shipping vary by seller location", "Mobile Accessories"],
-        ["Hagibis Wireless USB-C Transmitter Kit", "$36.81 (Save $61.58)", "All Users", "Was $98.39; HDMI video extender for phones, laptops & monitors", "Electronics & Adapters"]
-      ].map((row, i) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 11 && "border-b-0")}>
-          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
-          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
-          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <p>
-            Finding something you need online doesn't always have to mean paying full price. AliExpress gives shoppers access to an enormous selection of products across <Link href="/stores/geekbuying-discount-code">electronics</Link>, fashion, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home essentials</Link>, beauty, accessories, gadgets, toys, automotive products, and countless other categories. With so many sellers and products available, shoppers can compare different options and look for attractive deals in one place.
-          </p>
-          <p>
-            If you're planning to shop on AliExpress, checking for an AliExpress promo code before placing your order can be a smart way to look for additional savings. CouponsBit helps shoppers discover available promo codes, coupon codes, discount offers, vouchers, sales, and other promotional opportunities so they can check their options before completing a purchase.
-          </p>
-          <p>
-            AliExpress also runs major shopping campaigns throughout the year. Seasonal events, special promotions, flash deals, holiday sales, and major US shopping occasions such as Black Friday and Cyber Monday can all create opportunities to save.
-          </p>
-
-          <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Coupon Code and Discount Offers</h3>
-    <p>When you're looking for an AliExpress coupon code, it's worth checking more than just traditional promotional codes. The platform frequently features different types of savings, including seller discounts, product markdowns, platform-wide promotions, digital coupons, limited-time deals, and special shopping events.</p>
-    <p>The best offer for you will depend on what you're buying.</p>
-    <p>For example, someone purchasing a single gadget may find a product-level discount useful, while a shopper placing a larger order may benefit from an offer with a minimum spending requirement. In some cases, combining an eligible coupon with an already discounted product can make the purchase more attractive, subject to the promotion's terms.</p>
-    <p>Before placing your order, check CouponsBit for available AliExpress offers and compare them with the products in your cart.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Electronics and Gadgets on AliExpress</h3>
-    <p>Electronics are among the most popular categories on AliExpress. The platform features products ranging from everyday accessories to smart devices and computer equipment.</p>
-    <p><strong>Smartphones and Accessories:</strong> Depending on the current marketplace selection, shoppers can find smartphones, phone cases, screen protectors, charging cables, wireless chargers, holders, stands, and other mobile accessories.</p>
-    <p>If you're purchasing multiple accessories at once, check whether a current AliExpress discount code applies to your order.</p>
-    <p><strong>Computers and Accessories:</strong> AliExpress offers products such as keyboards, mice, laptop accessories, USB hubs, cables, stands, storage accessories, webcams, and other computer-related products.</p>
-    <p><strong>Smart Devices:</strong> Smartwatches, fitness trackers, smart home accessories, security devices, lighting products, and other connected gadgets can also be found on the platform.</p>
-    <p><strong>Gaming Accessories:</strong> Gamers can explore controllers, gaming accessories, keyboards, mice, headsets, stands, lighting, and other gaming-related products.</p>
-    <p>As with any marketplace purchase, check seller information, product specifications, reviews, shipping details, and return conditions before ordering.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Fashion on AliExpress</h3>
-    <p>AliExpress has a large fashion marketplace covering clothing, footwear, accessories, and products for different styles and occasions.</p>
-    <p><strong>Women's Fashion:</strong> Shoppers can browse dresses, tops, jeans, skirts, jackets, activewear, sleepwear, swimwear, coats, and other women's clothing.</p>
-    <p><strong>Men's Fashion:</strong> Men can find T-shirts, shirts, jeans, trousers, jackets, hoodies, suits, activewear, and casual clothing.</p>
-    <p><strong>Kids' Clothing:</strong> The children's section includes clothing, shoes, accessories, costumes, and other products for different age groups.</p>
-    <p><strong>Shoes and Accessories:</strong> AliExpress offers a wide selection of sneakers, sandals, boots, heels, slippers, bags, wallets, belts, hats, sunglasses, jewelry, and other accessories.</p>
-    <p>Because sizing can differ between sellers, always check the individual product's size chart before purchasing.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Beauty and Personal Care</h3>
-    <p>AliExpress also features beauty and personal-care products, depending on the marketplace and seller availability.</p>
-    <p>Shoppers can explore skincare accessories, makeup tools, hair accessories, grooming products, beauty devices, nail products, and other personal-care items.</p>
-    <p>When shopping for cosmetics, skincare, or personal-care products, check product information and seller details carefully. Some products may also have shipping or import restrictions depending on the destination.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Home and Kitchen Products</h3>
-    <p>AliExpress can be useful for shoppers looking for affordable home accessories and practical everyday products.</p>
-    <p><strong>Home Décor:</strong> The marketplace includes decorative items such as wall décor, lighting, storage products, decorative accessories, clocks, organizers, and other home accents.</p>
-    <p><strong>Kitchen Essentials:</strong> Customers can find cookware accessories, utensils, storage containers, kitchen gadgets, baking tools, tableware, and other kitchen products.</p>
-    <p><strong>Organization and Storage:</strong> Storage boxes, shelves, organizers, hooks, racks, containers, and other organization products can help shoppers make better use of their space.</p>
-    <p>If you're purchasing several home products together, check whether an AliExpress coupon code can be applied to your order.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Toys and Hobbies</h3>
-    <p>Parents, collectors, hobbyists, and gift shoppers can explore a broad range of toys and hobby products.</p>
-    <p>The marketplace can include building sets, remote-controlled products, collectibles, craft supplies, puzzles, educational toys, outdoor toys, and other entertainment products.</p>
-    <p>For children's products, check the recommended age range and product information before purchasing.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Automotive Products</h3>
-    <p>AliExpress also serves automotive shoppers with products such as car accessories, interior organizers, lighting accessories, phone holders, cleaning products, tools, replacement accessories, and other vehicle-related items.</p>
-    <p>Product compatibility is especially important in this category. Check specifications and compatibility information before placing an order.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Home Improvement and Tools</h3>
-    <p>DIY shoppers can find a wide range of tools, hardware, lighting, electrical accessories, measuring equipment, storage solutions, and home-improvement products.</p>
-    <p>Whether you're working on a small home project or looking for a particular tool accessory, compare product specifications and seller reviews before buying.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Flash Deals</h3>
-    <p>Flash deals are one of the ways AliExpress creates urgency around selected products. These offers are typically available for a limited period or while promotional inventory lasts.</p>
-    <p>If you find something you already planned to purchase, comparing the flash deal with other available promotions can help you decide whether it's a good time to order.</p>
-    <p>However, don't buy something simply because a countdown timer or limited-time promotion makes it feel urgent. Check the product's reviews, specifications, shipping cost, and final checkout amount first.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Choice and Shipping Options</h3>
-    <p>AliExpress offers different purchasing and shipping experiences depending on the product and seller. Certain listings may provide faster or more streamlined shipping options, while others can have longer delivery times.</p>
-    <p>Before ordering, check the estimated delivery date, shipping cost, return conditions, and seller information.</p>
-    <p>A low product price does not always mean the lowest overall cost if shipping or other charges significantly change the final amount.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Seasonal Sales and Major US Shopping Events</h3>
-    <p>AliExpress runs promotional events throughout the year, giving shoppers several opportunities to look for deals.</p>
-    <p><strong>New Year Promotions:</strong> The beginning of the year can bring promotions across electronics, home products, fashion, accessories, and other categories as shoppers start new projects or replace everyday items.</p>
-    <p><strong>Valentine's Day:</strong> Valentine's Day can bring attention to gifts, jewelry, accessories, fashion, beauty products, gadgets, and other gift-friendly categories.</p>
-    <p><strong>Spring Promotions:</strong> Spring is a useful period for shoppers looking for clothing updates, home organization products, outdoor accessories, gardening items, and seasonal products.</p>
-    <p><strong>Memorial Day:</strong> Memorial Day is a major US shopping period. Shoppers can watch for promotions across electronics, home products, fashion, tools, automotive accessories, and other categories.</p>
-    <p><strong>Fourth of July:</strong> Independence Day shopping can include outdoor products, summer fashion, accessories, electronics, party supplies, and other seasonal merchandise.</p>
-    <p><strong>Back-to-School Sales:</strong> Back-to-school shopping can create demand for backpacks, stationery, electronics, accessories, clothing, shoes, room organization products, and study essentials.</p>
-    <p>Families and students can compare available promotions before making larger purchases.</p>
-    <p><strong>Halloween:</strong> Halloween can bring promotions around costumes, decorations, party supplies, accessories, lighting, crafts, and other seasonal products.</p>
-    <p><strong>Thanksgiving:</strong> Thanksgiving marks the beginning of the major US holiday shopping period. Shoppers can start watching for promotions across electronics, fashion, home products, gifts, and other categories.</p>
-    <p><strong>Black Friday:</strong> Black Friday is one of the biggest shopping events in the United States and a particularly important period to watch for AliExpress deals.</p>
-    <p>Shoppers can find promotions across electronics, gadgets, fashion, home products, accessories, tools, and other categories.</p>
-    <p>Before making a purchase, check CouponsBit for an AliExpress promo code and compare it with the retailer's current sale offers.</p>
-    <p><strong>Cyber Monday:</strong> Cyber Monday is another major online shopping event. AliExpress can feature online promotions across multiple categories during this period.</p>
-    <p>If you're planning a large online purchase, compare the available discount with any applicable coupon or promotional code before checkout.</p>
-    <p><strong>Christmas and Holiday Shopping:</strong> The holiday season is an important time for gift shopping. AliExpress offers products across a wide range of gift categories, including electronics, accessories, toys, fashion, home products, and hobby items.</p>
-    <p>Because international shipping can take time, check estimated delivery dates carefully when purchasing gifts.</p>
-  </div>
-</div>
-
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an AliExpress Promo Code</h3>
-            <p className="text-gray-600 font-medium -mt-4 mb-4">
-              If you find an AliExpress promo code through CouponsBit, follow the instructions associated with that particular offer. A typical process may include:
-            </p>
-            <div className="space-y-6">
-              {[
-                "Select the AliExpress offer you want to use.",
-                "Visit AliExpress through the relevant offer.",
-                "Search for the product you want to purchase.",
-                "Add eligible products to your shopping cart.",
-                "Review available product and seller promotions.",
-                "Enter the applicable promo code if required.",
-                "Apply the code and check whether the discount has been reflected.",
-                "Review shipping costs, taxes, delivery estimates, and other charges where applicable.",
-                "Complete your order after confirming the final details."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
-                  <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA]">
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-gray-600 font-bold text-[14px]">
+                      {[
+                        ["Labour Day Sale", "Up to 93% OFF", "All Users", "Free shipping on select items; prices vary by seller", "Sitewide / Selected Products"],
+                        ["Welcome Deal (New Shoppers)", "Up to 70% OFF", "New Users", "Introductory savings on eligible items", "Selected Categories"],
+                        ["Best Sellers Deals", "Starting at $0.99", "All Users", "Heavy discounts while supplies last", "Gadgets & Everyday Essentials"],
+                        ["Dollar Express Deals", "Starting at $0.99", "All Users", "New shoppers can find select items from $0.33", "Novelty, Tools & Accessories"],
+                        ["Welcome Savings (No Code Needed)", "Up to 70% OFF", "New Users", "Auto-applied at checkout; no minimum spend required", "Sitewide / Eligible Orders"],
+                        ["Best Seller Collection", "Up to 80% OFF", "All Users", "Limited-time deals on top-purchased products", "Trending Selections"],
+                        ["Custom Auto Parts Sale", "Up to 50% OFF", "All Users", "No coupon required; valid on selected items", "Automotive Accessories"],
+                        ["Furniture Sale + Free Shipping", "Up to 60% OFF", "All Users", "Select furniture from $4; includes free shipping on eligible orders", "Furniture & Home"],
+                        ["Game Consoles Deals", "Starting at $18", "All Users", "Includes PS4 and PS5 listings; prices vary by seller", "Gaming & Electronics"],
+                        ["Women's Shoes Deals", "Starting at $7.99", "All Users", "No promo code required; covers seasonal & everyday styles", "Footwear"],
+                        ["Phone Cases & Chargers", "Up to 60% OFF", "All Users", "Prices & shipping vary by seller location", "Mobile Accessories"],
+                        ["Hagibis Wireless USB-C Transmitter Kit", "$36.81 (Save $61.58)", "All Users", "Was $98.39; HDMI video extender for phones, laptops & monitors", "Electronics & Adapters"]
+                      ].map((row, i) => (
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 11 && "border-b-0")}>
+                          <td className="p-5 text-black font-black align-middle max-w-[220px]">{row[0]}</td>
+                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                          <td className="p-5 text-gray-500 align-middle">{row[2]}</td>
+                          <td className="p-5 text-gray-500 align-middle max-w-[200px]">{row[3]}</td>
+                          <td className="p-5 text-gray-500 align-middle max-w-[240px]">{row[4]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
-              ))}
-            </div>
-            <p className="text-xs text-gray-500 font-medium italic mt-4 pt-4 border-t border-gray-100">
-              If your code doesn't work, check its expiration date and eligibility requirements. The offer may be limited to certain products, sellers, countries, order values, or promotional periods.
-            </p>
-          </div>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for AliExpress Offers?</h3>
-            <p>
-              AliExpress has thousands of products and a constantly changing marketplace, which can make it difficult to know whether you're getting the best available deal.
-            </p>
-            <p>
-              CouponsBit gives shoppers another place to check before completing their purchase. By looking for an AliExpress promo code, coupon, discount offer, voucher, or sale promotion, you can compare available savings with the products you're planning to buy.
-            </p>
-            <p>
-              The best deal isn't necessarily the biggest percentage discount. A smaller promotion on a product you genuinely need can be more valuable than a larger discount on something you don't.
-            </p>
-            <p>
-              CouponsBit helps make that comparison easier by bringing relevant promotional opportunities together in one place.
-            </p>
-          </div>
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <p>
+                    Finding something you need online doesn't always have to mean paying full price. AliExpress gives shoppers access to an enormous selection of products across <Link href="/stores/geekbuying-discount-code">electronics</Link>, fashion, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home essentials</Link>, beauty, accessories, gadgets, toys, automotive products, and countless other categories. With so many sellers and products available, shoppers can compare different options and look for attractive deals in one place.
+                  </p>
+                  <p>
+                    If you're planning to shop on AliExpress, checking for an AliExpress promo code before placing your order can be a smart way to look for additional savings. CouponsBit helps shoppers discover available promo codes, coupon codes, discount offers, vouchers, sales, and other promotional opportunities so they can check their options before completing a purchase.
+                  </p>
+                  <p>
+                    AliExpress also runs major shopping campaigns throughout the year. Seasonal events, special promotions, flash deals, holiday sales, and major US shopping occasions such as Black Friday and Cyber Monday can all create opportunities to save.
+                  </p>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next AliExpress Order</h3>
-            <p>
-              AliExpress gives US shoppers access to an enormous variety of products, from electronics and fashion to home essentials, beauty accessories, automotive products, tools, toys, and everyday gadgets.
-            </p>
-            <p>
-              With promotions changing regularly, checking for savings before placing an order can be worthwhile. Major events such as Black Friday, Cyber Monday, back-to-school season, holiday shopping, and seasonal sales can also provide additional opportunities to find attractive offers.
-            </p>
-            <p>
-              Before you checkout, visit CouponsBit to look for the latest AliExpress promo code, along with coupon codes, discount offers, vouchers, flash deals, and other promotions. Compare the available offer with your product, shipping costs, and order requirements, then choose the deal that makes the most sense for your purchase.
-            </p>
-          </div>
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Coupon Code and Discount Offers</h3>
+                      <p>When you're looking for an AliExpress coupon code, it's worth checking more than just traditional promotional codes. The platform frequently features different types of savings, including seller discounts, product markdowns, platform-wide promotions, digital coupons, limited-time deals, and special shopping events.</p>
+                      <p>The best offer for you will depend on what you're buying.</p>
+                      <p>For example, someone purchasing a single gadget may find a product-level discount useful, while a shopper placing a larger order may benefit from an offer with a minimum spending requirement. In some cases, combining an eligible coupon with an already discounted product can make the purchase more attractive, subject to the promotion's terms.</p>
+                      <p>Before placing your order, check CouponsBit for available AliExpress offers and compare them with the products in your cart.</p>
+                    </div>
 
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Electronics and Gadgets on AliExpress</h3>
+                      <p>Electronics are among the most popular categories on AliExpress. The platform features products ranging from everyday accessories to smart devices and computer equipment.</p>
+                      <p><strong>Smartphones and Accessories:</strong> Depending on the current marketplace selection, shoppers can find smartphones, phone cases, screen protectors, charging cables, wireless chargers, holders, stands, and other mobile accessories.</p>
+                      <p>If you're purchasing multiple accessories at once, check whether a current AliExpress discount code applies to your order.</p>
+                      <p><strong>Computers and Accessories:</strong> AliExpress offers products such as keyboards, mice, laptop accessories, USB hubs, cables, stands, storage accessories, webcams, and other computer-related products.</p>
+                      <p><strong>Smart Devices:</strong> Smartwatches, fitness trackers, smart home accessories, security devices, lighting products, and other connected gadgets can also be found on the platform.</p>
+                      <p><strong>Gaming Accessories:</strong> Gamers can explore controllers, gaming accessories, keyboards, mice, headsets, stands, lighting, and other gaming-related products.</p>
+                      <p>As with any marketplace purchase, check seller information, product specifications, reviews, shipping details, and return conditions before ordering.</p>
+                    </div>
 
-        <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Fashion on AliExpress</h3>
+                      <p>AliExpress has a large fashion marketplace covering clothing, footwear, accessories, and products for different styles and occasions.</p>
+                      <p><strong>Women's Fashion:</strong> Shoppers can browse dresses, tops, jeans, skirts, jackets, activewear, sleepwear, swimwear, coats, and other women's clothing.</p>
+                      <p><strong>Men's Fashion:</strong> Men can find T-shirts, shirts, jeans, trousers, jackets, hoodies, suits, activewear, and casual clothing.</p>
+                      <p><strong>Kids' Clothing:</strong> The children's section includes clothing, shoes, accessories, costumes, and other products for different age groups.</p>
+                      <p><strong>Shoes and Accessories:</strong> AliExpress offers a wide selection of sneakers, sandals, boots, heels, slippers, bags, wallets, belts, hats, sunglasses, jewelry, and other accessories.</p>
+                      <p>Because sizing can differ between sellers, always check the individual product's size chart before purchasing.</p>
+                    </div>
 
-        {/* FAQ */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About AliExpress Promo Codes</h3>
-          {[
-            { q: "Does AliExpress offer promo codes?", a: "Yes. AliExpress runs different promotional campaigns throughout the year, and eligible shoppers may find promo codes, coupons, discounts, seller offers, and other deals. The exact terms vary by promotion." },
-            { q: "Where can I find an AliExpress promo code?", a: "You can check CouponsBit for available AliExpress promo codes, coupon codes, discount offers, vouchers, and other promotions before placing an order." },
-            { q: "How do I use an AliExpress coupon code?", a: "Add eligible products to your cart, proceed toward checkout, and enter the applicable coupon or promotional code if the offer requires one. Make sure the discount has been applied before completing your order." },
-            { q: "Why isn't my AliExpress promo code working?", a: "A code may not work if it has expired or if your order does not meet its requirements. Restrictions can include minimum spending amounts, selected sellers, specific products, countries, or promotional periods." },
-            { q: "Can I use an AliExpress discount code on any product?", a: "Not necessarily. Promotional codes can have specific eligibility conditions. Check the terms of the individual offer to determine which products or orders qualify." },
-            { q: "Does AliExpress have flash deals?", a: "Yes. AliExpress regularly promotes selected products through limited-time deals. Availability and discounts can change as the promotion progresses." },
-            { q: "Does AliExpress have Black Friday deals?", a: "Black Friday is a major shopping event, and AliExpress can run promotions during this period. Available offers and participating products vary." },
-            { q: "Does AliExpress offer Cyber Monday discounts?", a: "AliExpress can feature promotions around Cyber Monday. Check the current campaign details to see which products and orders qualify." },
-            { q: "Can I find electronics on AliExpress?", a: "Yes. AliExpress has a broad selection of electronics, gadgets, accessories, computer products, smart devices, and other technology-related merchandise." },
-            { q: "Does AliExpress sell clothing?", a: "Yes. Shoppers can find women's, men's, and children's clothing, along with shoes, bags, jewelry, accessories, and other fashion products." },
-            { q: "Does AliExpress ship to the US?", a: "AliExpress offers shipping to many destinations, including the United States, although availability, shipping methods, costs, and delivery times depend on the individual product and seller." },
-            { q: "How can I save more when shopping on AliExpress?", a: "Start by checking CouponsBit for an AliExpress promo code, then compare it with product discounts, seller promotions, platform coupons, flash deals, and seasonal offers. Also consider shipping costs and the final checkout amount before deciding which deal provides the best value." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Beauty and Personal Care</h3>
+                      <p>AliExpress also features beauty and personal-care products, depending on the marketplace and seller availability.</p>
+                      <p>Shoppers can explore skincare accessories, makeup tools, hair accessories, grooming products, beauty devices, nail products, and other personal-care items.</p>
+                      <p>When shopping for cosmetics, skincare, or personal-care products, check product information and seller details carefully. Some products may also have shipping or import restrictions depending on the destination.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Home and Kitchen Products</h3>
+                      <p>AliExpress can be useful for shoppers looking for affordable home accessories and practical everyday products.</p>
+                      <p><strong>Home Décor:</strong> The marketplace includes decorative items such as wall décor, lighting, storage products, decorative accessories, clocks, organizers, and other home accents.</p>
+                      <p><strong>Kitchen Essentials:</strong> Customers can find cookware accessories, utensils, storage containers, kitchen gadgets, baking tools, tableware, and other kitchen products.</p>
+                      <p><strong>Organization and Storage:</strong> Storage boxes, shelves, organizers, hooks, racks, containers, and other organization products can help shoppers make better use of their space.</p>
+                      <p>If you're purchasing several home products together, check whether an AliExpress coupon code can be applied to your order.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Toys and Hobbies</h3>
+                      <p>Parents, collectors, hobbyists, and gift shoppers can explore a broad range of toys and hobby products.</p>
+                      <p>The marketplace can include building sets, remote-controlled products, collectibles, craft supplies, puzzles, educational toys, outdoor toys, and other entertainment products.</p>
+                      <p>For children's products, check the recommended age range and product information before purchasing.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Automotive Products</h3>
+                      <p>AliExpress also serves automotive shoppers with products such as car accessories, interior organizers, lighting accessories, phone holders, cleaning products, tools, replacement accessories, and other vehicle-related items.</p>
+                      <p>Product compatibility is especially important in this category. Check specifications and compatibility information before placing an order.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Home Improvement and Tools</h3>
+                      <p>DIY shoppers can find a wide range of tools, hardware, lighting, electrical accessories, measuring equipment, storage solutions, and home-improvement products.</p>
+                      <p>Whether you're working on a small home project or looking for a particular tool accessory, compare product specifications and seller reviews before buying.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Flash Deals</h3>
+                      <p>Flash deals are one of the ways AliExpress creates urgency around selected products. These offers are typically available for a limited period or while promotional inventory lasts.</p>
+                      <p>If you find something you already planned to purchase, comparing the flash deal with other available promotions can help you decide whether it's a good time to order.</p>
+                      <p>However, don't buy something simply because a countdown timer or limited-time promotion makes it feel urgent. Check the product's reviews, specifications, shipping cost, and final checkout amount first.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Choice and Shipping Options</h3>
+                      <p>AliExpress offers different purchasing and shipping experiences depending on the product and seller. Certain listings may provide faster or more streamlined shipping options, while others can have longer delivery times.</p>
+                      <p>Before ordering, check the estimated delivery date, shipping cost, return conditions, and seller information.</p>
+                      <p>A low product price does not always mean the lowest overall cost if shipping or other charges significantly change the final amount.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">AliExpress Seasonal Sales and Major US Shopping Events</h3>
+                      <p>AliExpress runs promotional events throughout the year, giving shoppers several opportunities to look for deals.</p>
+                      <p><strong>New Year Promotions:</strong> The beginning of the year can bring promotions across electronics, home products, fashion, accessories, and other categories as shoppers start new projects or replace everyday items.</p>
+                      <p><strong>Valentine's Day:</strong> Valentine's Day can bring attention to gifts, jewelry, accessories, fashion, beauty products, gadgets, and other gift-friendly categories.</p>
+                      <p><strong>Spring Promotions:</strong> Spring is a useful period for shoppers looking for clothing updates, home organization products, outdoor accessories, gardening items, and seasonal products.</p>
+                      <p><strong>Memorial Day:</strong> Memorial Day is a major US shopping period. Shoppers can watch for promotions across electronics, home products, fashion, tools, automotive accessories, and other categories.</p>
+                      <p><strong>Fourth of July:</strong> Independence Day shopping can include outdoor products, summer fashion, accessories, electronics, party supplies, and other seasonal merchandise.</p>
+                      <p><strong>Back-to-School Sales:</strong> Back-to-school shopping can create demand for backpacks, stationery, electronics, accessories, clothing, shoes, room organization products, and study essentials.</p>
+                      <p>Families and students can compare available promotions before making larger purchases.</p>
+                      <p><strong>Halloween:</strong> Halloween can bring promotions around costumes, decorations, party supplies, accessories, lighting, crafts, and other seasonal products.</p>
+                      <p><strong>Thanksgiving:</strong> Thanksgiving marks the beginning of the major US holiday shopping period. Shoppers can start watching for promotions across electronics, fashion, home products, gifts, and other categories.</p>
+                      <p><strong>Black Friday:</strong> Black Friday is one of the biggest shopping events in the United States and a particularly important period to watch for AliExpress deals.</p>
+                      <p>Shoppers can find promotions across electronics, gadgets, fashion, home products, accessories, tools, and other categories.</p>
+                      <p>Before making a purchase, check CouponsBit for an AliExpress promo code and compare it with the retailer's current sale offers.</p>
+                      <p><strong>Cyber Monday:</strong> Cyber Monday is another major online shopping event. AliExpress can feature online promotions across multiple categories during this period.</p>
+                      <p>If you're planning a large online purchase, compare the available discount with any applicable coupon or promotional code before checkout.</p>
+                      <p><strong>Christmas and Holiday Shopping:</strong> The holiday season is an important time for gift shopping. AliExpress offers products across a wide range of gift categories, including electronics, accessories, toys, fashion, home products, and hobby items.</p>
+                      <p>Because international shipping can take time, check estimated delivery dates carefully when purchasing gifts.</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an AliExpress Promo Code</h3>
+                    <p className="text-gray-600 font-medium -mt-4 mb-4">
+                      If you find an AliExpress promo code through CouponsBit, follow the instructions associated with that particular offer. A typical process may include:
+                    </p>
+                    <div className="space-y-6">
+                      {[
+                        "Select the AliExpress offer you want to use.",
+                        "Visit AliExpress through the relevant offer.",
+                        "Search for the product you want to purchase.",
+                        "Add eligible products to your shopping cart.",
+                        "Review available product and seller promotions.",
+                        "Enter the applicable promo code if required.",
+                        "Apply the code and check whether the discount has been reflected.",
+                        "Review shipping costs, taxes, delivery estimates, and other charges where applicable.",
+                        "Complete your order after confirming the final details."
+                      ].map((step, i) => (
+                        <div key={i} className="flex gap-6 items-start">
+                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">{i + 1}</div>
+                          <p className="text-gray-700 font-bold leading-normal mt-2 leading-relaxed">{step}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs text-gray-500 font-medium italic mt-4 pt-4 border-t border-gray-100">
+                      If your code doesn't work, check its expiration date and eligibility requirements. The offer may be limited to certain products, sellers, countries, order values, or promotional periods.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for AliExpress Offers?</h3>
+                    <p>
+                      AliExpress has thousands of products and a constantly changing marketplace, which can make it difficult to know whether you're getting the best available deal.
+                    </p>
+                    <p>
+                      CouponsBit gives shoppers another place to check before completing their purchase. By looking for an AliExpress promo code, coupon, discount offer, voucher, or sale promotion, you can compare available savings with the products you're planning to buy.
+                    </p>
+                    <p>
+                      The best deal isn't necessarily the biggest percentage discount. A smaller promotion on a product you genuinely need can be more valuable than a larger discount on something you don't.
+                    </p>
+                    <p>
+                      CouponsBit helps make that comparison easier by bringing relevant promotional opportunities together in one place.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Save on Your Next AliExpress Order</h3>
+                    <p>
+                      AliExpress gives US shoppers access to an enormous variety of products, from electronics and fashion to home essentials, beauty accessories, automotive products, tools, toys, and everyday gadgets.
+                    </p>
+                    <p>
+                      With promotions changing regularly, checking for savings before placing an order can be worthwhile. Major events such as Black Friday, Cyber Monday, back-to-school season, holiday shopping, and seasonal sales can also provide additional opportunities to find attractive offers.
+                    </p>
+                    <p>
+                      Before you checkout, visit CouponsBit to look for the latest AliExpress promo code, along with coupon codes, discount offers, vouchers, flash deals, and other promotions. Compare the available offer with your product, shipping costs, and order requirements, then choose the deal that makes the most sense for your purchase.
+                    </p>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
                 </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+
+                <button onClick={() => setIsReadMore(!isReadMore)} className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline">
+                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
+
+                {/* FAQ */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions About AliExpress Promo Codes</h3>
+                  {[
+                    { q: "Does AliExpress offer promo codes?", a: "Yes. AliExpress runs different promotional campaigns throughout the year, and eligible shoppers may find promo codes, coupons, discounts, seller offers, and other deals. The exact terms vary by promotion." },
+                    { q: "Where can I find an AliExpress promo code?", a: "You can check CouponsBit for available AliExpress promo codes, coupon codes, discount offers, vouchers, and other promotions before placing an order." },
+                    { q: "How do I use an AliExpress coupon code?", a: "Add eligible products to your cart, proceed toward checkout, and enter the applicable coupon or promotional code if the offer requires one. Make sure the discount has been applied before completing your order." },
+                    { q: "Why isn't my AliExpress promo code working?", a: "A code may not work if it has expired or if your order does not meet its requirements. Restrictions can include minimum spending amounts, selected sellers, specific products, countries, or promotional periods." },
+                    { q: "Can I use an AliExpress discount code on any product?", a: "Not necessarily. Promotional codes can have specific eligibility conditions. Check the terms of the individual offer to determine which products or orders qualify." },
+                    { q: "Does AliExpress have flash deals?", a: "Yes. AliExpress regularly promotes selected products through limited-time deals. Availability and discounts can change as the promotion progresses." },
+                    { q: "Does AliExpress have Black Friday deals?", a: "Black Friday is a major shopping event, and AliExpress can run promotions during this period. Available offers and participating products vary." },
+                    { q: "Does AliExpress offer Cyber Monday discounts?", a: "AliExpress can feature promotions around Cyber Monday. Check the current campaign details to see which products and orders qualify." },
+                    { q: "Can I find electronics on AliExpress?", a: "Yes. AliExpress has a broad selection of electronics, gadgets, accessories, computer products, smart devices, and other technology-related merchandise." },
+                    { q: "Does AliExpress sell clothing?", a: "Yes. Shoppers can find women's, men's, and children's clothing, along with shoes, bags, jewelry, accessories, and other fashion products." },
+                    { q: "Does AliExpress ship to the US?", a: "AliExpress offers shipping to many destinations, including the United States, although availability, shipping methods, costs, and delivery times depend on the individual product and seller." },
+                    { q: "How can I save more when shopping on AliExpress?", a: "Start by checking CouponsBit for an AliExpress promo code, then compare it with product discounts, seller promotions, platform coupons, flash deals, and seasonal offers. Also consider shipping costs and the final checkout amount before deciding which deal provides the best value." }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors">
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular AliExpress Searches</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {["AliExpress Promo Code", "Flash Deals", "Electronics", "US Shipping", "Free Shipping", "Super Deals", "Gadgets", "Seasonal Sale"].map(tag => (
+                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top AliExpress Deals</h3>
+                  <div className="space-y-6">
+                    {DEALS.map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">A</div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                        </div>
+                        <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop AliExpress: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular AliExpress Searches</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["AliExpress Promo Code", "Flash Deals", "Electronics", "US Shipping", "Free Shipping", "Super Deals", "Gadgets", "Seasonal Sale"].map(tag => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
-            ))}
           </div>
-        </div>
-
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top AliExpress Deals</h3>
-          <div className="space-y-6">
-            {DEALS.map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">A</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                </div>
-                <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop AliExpress: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
 
       </main>

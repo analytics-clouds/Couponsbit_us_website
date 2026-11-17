@@ -104,6 +104,9 @@ const nextConfig = {
       { source: '/stores/nuagewear-coupon-code/seattle', destination: '/stores/nuage-discount-code/seattle', permanent: true },
 
       { source: '/stores/flixbus-australia-discount-code', destination: '/stores/flixbus-discount-code', permanent: true },
+
+      // zenni-optical-promo-code → zenni-discount-code
+      { source: '/stores/zenni-optical-promo-code', destination: '/stores/zenni-discount-code', permanent: true },
     ];
   },
   async headers() {

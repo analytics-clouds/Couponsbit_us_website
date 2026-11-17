@@ -14,7 +14,6 @@ import {
   PiggyBank,
   RefreshCw,
   ChevronDown,
-  CheckCircle,
   LayoutGrid,
   Search,
   ShoppingBag,
@@ -22,18 +21,13 @@ import {
   Leaf,
   Recycle,
   Sparkles,
+  Heart,
 } from "lucide-react";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-
-interface Deal {
-  id: string;
-  label: string;
-  heading: string;
-  sub: string;
-}
+import { OGLMOVE_COUPONS, type Coupon } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -41,14 +35,6 @@ interface StoreItem {
   dealText: string;
   href: string;
 }
-
-const DEALS: Deal[] = [
-  { id: "d1", label: "NEW", heading: "Sandwashed Duo Lounge Set for $119", sub: "Latest Deals" },
-  { id: "d2", label: "SHOP", heading: "Sandwashed Palazzo Pant & Ruched Bra Tank Set for $129", sub: "Featured Picks" },
-  { id: "d3", label: "SHOP", heading: "Eco-Mousse Asymmetrical Neck Top for $49", sub: "Featured Picks" },
-  { id: "d4", label: "TOP", heading: "Cardigan & Flare Pants Set for $135", sub: "Featured Picks" },
-  { id: "d5", label: "BEST", heading: "Free Standard Shipping on Orders Over $69", sub: "Featured Picks" },
-];
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Wiskii", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784699426/wishki-logo_qveoyb.webp", dealText: "Up To 60% OFF", href: "/stores/wiskii-discount-code" },
@@ -62,29 +48,81 @@ const RELATED_STORES: StoreItem[] = [
 const STORE_URL = "https://eastriseinternationalgrouplimited.pxf.io/QYv3Yz";
 
 export default function OglmoveCouponsContent() {
-  const [showToast, setShowToast] = useState(false);
-  const [toastCode, setToastCode] = useState("");
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [filterType, setFilterType] = useState<"all" | "code" | "deal">("all");
+  const [sortOrder, setSortOrder] = useState<"popular" | "newest">("popular");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
+  const [modalData, setModalData] = useState<Coupon | null>(null);
+
+  const filtered = OGLMOVE_COUPONS.filter(
+    (c) => filterType === "all" || c.type === filterType
+  );
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
-      <Navbar />
+      {/* Modal */}
+      {modalData && (
+        <div
+          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+          onClick={() => setModalData(null)}
+        >
+          <div
+            className="bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setModalData(null)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors"
+            >
+              ✕
+            </button>
+            <div className="mb-4">
+              <span className="bg-[#056bfa] text-white text-xs font-black px-3 py-1 rounded-full uppercase">
+                {modalData.label}
+              </span>
+            </div>
+            <h3 className="text-xl font-black text-black mb-2">{modalData.title}</h3>
+            <p className="text-gray-500 font-bold text-sm mb-4">{modalData.description}</p>
+            {modalData.code && (
+              <div className="bg-[#f5f5f5] border-2 border-dashed border-[#056bfa] rounded-2xl px-6 py-4 flex items-center justify-between mb-4">
+                <span className="font-black text-[#056bfa] text-lg tracking-widest">{modalData.code}</span>
+                <button
+                  onClick={() => {
+                    if (modalData.code) {
+                      navigator.clipboard.writeText(modalData.code);
+                      setCopiedId(modalData.id);
+                      setTimeout(() => setCopiedId(null), 2000);
+                    }
+                  }}
+                  className="bg-[#056bfa] text-white px-4 py-2 rounded-xl font-black text-sm"
+                >
+                  {copiedId === modalData.id ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+            <ul className="space-y-2 mb-6">
+              {(modalData.terms || modalData.points || []).map((t, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-600 text-sm font-bold">
+                  <span className="text-[#056bfa]">•</span>{t}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={STORE_URL}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="block w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-black text-center py-4 rounded-2xl transition-colors"
+            >
+              Get Deal
+            </a>
+          </div>
+        </div>
+      )}
 
-      {/* Toast Notification */}
-      <div className={cn(
-        "fixed top-20 right-6 z-[60] bg-white rounded-2xl shadow-2xl border border-[#f0f0f0] p-4 flex items-center gap-3 transition-all duration-300 transform",
-        showToast ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0 pointer-events-none"
-      )}>
-        <div className="bg-[#f0fdf4] p-2 rounded-full">
-          <CheckCircle className="w-5 h-5 text-[#22c55e]" />
-        </div>
-        <div>
-          <p className="font-black text-black text-sm">Code Copied!</p>
-          <p className="text-gray-500 text-xs font-bold font-mono">{toastCode}</p>
-        </div>
-      </div>
+      <Navbar />
 
       <main>
         {/* Breadcrumb */}
@@ -115,14 +153,14 @@ export default function OglmoveCouponsContent() {
                     <h1 className="text-black font-black text-3xl md:text-4xl mb-2">OGLmove Discount Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
-                        {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
+                        {[1, 2, 3, 4].map((i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 opacity-50" />
                       </div>
                       <span className="text-black font-black text-sm">4.4</span>
                       <span className="text-gray-600 font-bold text-sm">(5.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Discover verified OGL Move discount codes and promo codes for Nov 2026. Save up to 13% on Sandwashed lounge sets, get the Off-Shoulder Airy Bra Top for just $55, and enjoy free standard shipping on orders over $69 with the latest verified offers.
+                      Shoppers can find OGLmove Promo Code savings with up to 75% off select fashion styles and 50% off through text signup offers. The OGLmove Discount Code options also feature 15% off eligible orders, free shipping over $69, and stylish sets starting at $79. From dresses and tops to lounge outfits, these hand-picked deals provide valuable savings across collections. Verified codes are regularly updated for Nov 2026, helping shoppers secure tested discounts before checkout with confidence and enjoy seasonal fashion deals.
                     </p>
                     <a
                       href={STORE_URL}
@@ -132,7 +170,6 @@ export default function OglmoveCouponsContent() {
                     >
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
                     </a>
-
                   </div>
                 </div>
 
@@ -141,14 +178,14 @@ export default function OglmoveCouponsContent() {
                     { icon: Tag, val: "13", label: "Offers" },
                     { icon: Percent, val: "1.0k", label: "Deals" },
                     { icon: Users, val: "1M+", label: "Shoppers" },
-                    { icon: BadgeCheck, val: "100%", label: "Verified" }
+                    { icon: BadgeCheck, val: "100%", label: "Verified" },
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -175,7 +212,7 @@ export default function OglmoveCouponsContent() {
                 { icon: Star, title: "Top Deals", sub: "Best offers handpicked for you" },
                 { icon: ShieldCheck, title: "Verified Coupons", sub: "100% working & tested codes" },
                 { icon: PiggyBank, title: "Big Savings", sub: "Save more on every order" },
-                { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" }
+                { icon: RefreshCw, title: "Updated Daily", sub: "New offers every single day" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 justify-center md:border-r last:border-0 border-[#e0e0e0] px-4">
                   <item.icon className="w-6 h-6 text-[#056bfa] shrink-0" />
@@ -194,34 +231,66 @@ export default function OglmoveCouponsContent() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="top-offers lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">OGLmove Discount Codes & Offers</h2>
+                <div className="mb-6">
+                  <h2 className="text-2xl font-black text-black leading-tight">OGLmove Discount Codes &amp; Offers</h2>
                 </div>
 
-                {[
-                  { label: "DEAL", value: "$119", title: "OGL Move – Sandwashed Duo Lounge Set for $119", desc: "Get the Sandwashed Duo featuring a 2-piece boatneck batwing sleeve top and mid-rise wide-leg lounge pants.", bullets: ["Enjoy a relaxed and stylish matching set designed for comfortable everyday wear.", "Get the complete set for $119, reduced from the regular price of $134.", "Save 11% on this effortless Sandwashed lounge set."] },
-                  { label: "DEAL", value: "$129", title: "OGL Move – Sandwashed Palazzo Pant & Ruched Bra Tank Set for $129", desc: "Get a 2-piece Sandwashed set featuring wide-leg palazzo pants with pockets and a ruched bra tank.", bullets: ["Enjoy a comfortable and stylish coordinated outfit for relaxed everyday wear.", "Get the complete set for $129, reduced from the regular price of $140.", "Save 13% on this versatile matching Sandwashed set."] },
-                  { label: "NEW", value: "$49", title: "OGL Move – Eco-Mousse Asymmetrical Neck Top for $49", desc: "Shop the Eco-Mousse asymmetrical neck long-sleeve top with a stylish tucked-waist design.", bullets: ["Enjoy restorative softness and a comfortable feel for everyday outfits.", "The unique asymmetrical neckline adds a fashionable touch to your wardrobe.", "Get this New Arrival for just $49."] },
-                  { label: "DEAL", value: "$135", title: "OGL Move – Cardigan & Flare Pants Set for $135", desc: "Get a 2-piece set featuring a long-sleeve drop-shoulder cardigan and high-rise flare pants.", bullets: ["Enjoy convenient pockets and a comfortable matching outfit for everyday wear.", "Get the complete set for $135, reduced from the regular price of $148.", "Save 9% on this stylish and versatile lounge set."] },
-                  { label: "DEAL", value: "FREE SHIP", title: "OGL Move – Free Standard Shipping on Orders Over $69", desc: "Enjoy Free Standard Shipping when your OGL Move order exceeds $69.", bullets: ["Shop your favourite apparel, sets, dresses, and everyday essentials.", "Add qualifying products to your cart to reach the minimum order value.", "Get your order delivered without paying the standard shipping charge."] },
-                  { label: "NEW", value: "$79", title: "OGL Move – Eco-Mousse Surplice Midi Dress for $79", desc: "Shop the LiteWarm Eco-Mousse Surplice 3/4 Sleeve Side-Tuck Midi Dress.", bullets: ["Enjoy restorative softness with a comfortable and flattering midi silhouette.", "The surplice neckline and side-tuck design add a stylish touch to the dress.", "Get this New Arrival for $79."] },
-                  { label: "DEAL", value: "$69", title: "OGL Move – LiteWarm Multi-Wear Layering Bra Top for $69", desc: "Shop the Eco-Mousse LiteWarm Multi-Wear Layering Bra Top for versatile styling.", bullets: ["Wear it alone or layer it with your favourite outfits from summer to fall.", "Enjoy a comfortable and adaptable design for multiple styling options.", "Get this versatile bra top for $69."] },
-                  { label: "DEAL", value: "$79", title: "OGL Move – Two-Piece Cami & Surplice Ruched Top for $79", desc: "Get the Eco-MiYaMoon Two-Piece Set featuring a cami and surplice ruched top.", bullets: ["Enjoy two versatile pieces designed for comfortable and stylish everyday wear.", "The ruched design adds a flattering and fashionable touch to your outfit.", "Get this OGL Move bra top set for $79."] },
-                  { label: "DEAL", value: "$55", title: "OGL Move – Off-Shoulder Airy Bra Top for $55", desc: "Shop the Eco-SkinKiss Criss Cross Off-Shoulder New Airy Bra Top.", bullets: ["Enjoy a stylish criss-cross design with a fashionable off-shoulder look.", "The airy design is made for lightweight and comfortable everyday wear.", "Get this versatile bra top for $55."] },
-                  { label: "DEAL", value: "$79", title: "OGL Move – Wide-Leg Trouser for $79", desc: "Shop the Cotton Blend Stretchy Mid-Rise Fly-Front Wide-Leg Trouser.", bullets: ["Enjoy an effortless fit designed for comfortable all-day wear.", "The wide-leg silhouette and fly-front design offer a polished everyday look.", "Get this versatile trouser for $79."] },
-                  { label: "DEAL", value: "$89", title: "OGL Move – Ponte Little Black Bra Dress for $89", desc: "Shop the Ponte Anytime Little Black Bra Dress with convenient pockets.", bullets: ["Enjoy a polished work-ready look that stays comfortable throughout the day.", "The versatile design can easily transition from office wear to other occasions.", "Get this stylish little black dress for $89."] },
-                  { label: "DEAL", value: "$69", title: "OGL Move – Eco-SkinKiss Ruched A-Line Midi Skirt for $69", desc: "Shop the Eco-SkinKiss Flowy Side-Ruched A-Line Midi Skirt.", bullets: ["Enjoy a flattering A-line silhouette with stylish side ruching.", "The versatile design makes it easy to pair with different tops and outfits.", "Get this fashionable midi skirt for $69."] },
-                  { label: "DEAL", value: "$49", title: "OGL Move – Stretch Cotton Mock Neck Brami Top for $49", desc: "Shop the LiteWarm Stretch Cotton Mock Neck Cap Sleeve Brami Top.", bullets: ["Enjoy a relaxed and comfortable design for weekends, errands, and lounging.", "The mock neck and cap sleeves add a chic touch to your casual wardrobe.", "Get this versatile Off-Duty Effortless staple for $49."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {/* Filter + Sort Bar */}
+                <div className="flex flex-wrap items-center gap-3 mb-8">
+                  <div className="flex bg-[#f5f5f5] rounded-2xl p-1 gap-1">
+                    {(["all", "code", "deal"] as const).map((f) => (
+                      <button
+                        key={f}
+                        onClick={() => setFilterType(f)}
+                        className={cn(
+                          "px-4 py-2 rounded-xl text-sm font-black capitalize transition-all",
+                          filterType === f ? "bg-white shadow text-black" : "text-gray-500 hover:text-black"
+                        )}
+                      >
+                        {f === "all" ? "All" : f === "code" ? "Codes" : "Deals"}
+                      </button>
+                    ))}
+                  </div>
+                  <select
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value as "popular" | "newest")}
+                    className="ml-auto bg-[#f5f5f5] border-0 rounded-2xl px-4 py-2.5 text-sm font-black text-black cursor-pointer"
+                  >
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest</option>
+                  </select>
+                  <button
+                    onClick={() => setIsFavorite(!isFavorite)}
+                    className={cn(
+                      "flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-black border-2 transition-all",
+                      isFavorite
+                        ? "bg-red-50 border-red-400 text-red-500"
+                        : "border-[#f0f0f0] text-gray-500 hover:border-red-300"
+                    )}
+                  >
+                    <Heart className={cn("w-4 h-4", isFavorite && "fill-red-400 text-red-400")} /> Save Store
+                  </button>
+                </div>
+
+                {filtered.map((c) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[2px] sm:tracking-[8px] text-[15px] sm:text-[15px] font-semibold leading-3">
+                              {c.topLabel || c.label || "DEAL"}
+                            </p>
+                            <div className="text-[15px] sm:text-3xl font-extrabold leading-none mt-2">
+                              {c.mainValue || c.discount}
+                            </div>
+                            {c.offText && (
+                              <p className="text-[10px] sm:text-[11px] font-bold text-white/90 uppercase tracking-widest mt-1">
+                                {c.offText}
+                              </p>
+                            )}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -230,22 +299,31 @@ export default function OglmoveCouponsContent() {
                               <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
-                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h3>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {(c.terms || c.points || []).map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
                             </div>
                           </div>
                           <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                            <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop OGLmove: ${c.title}`} className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
+                            <button
+                              onClick={() => setModalData(c)}
+                              className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -256,7 +334,6 @@ export default function OglmoveCouponsContent() {
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
-
                 <div className="w-full flex justify-center mb-6">
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
@@ -286,36 +363,36 @@ export default function OglmoveCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-                        { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Leaf, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-                        { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Shirt, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Leaf, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+                      { icon: Sparkles, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                  <h3 className="text-black font-black text-lg mb-8">OGLmove Products & Services</h3>
+                  <h3 className="text-black font-black text-lg mb-8">OGLmove Products &amp; Services</h3>
                   <div className="space-y-8">
                     {[
                       { icon: Shirt, title: "Comfortwear", sub: "Everyday tops, bottoms and layering pieces." },
                       { icon: Recycle, title: "Sustainable Fabric", sub: "Patented biodegradable Plantive fabric." },
                       { icon: Sparkles, title: "Loungewear", sub: "Relaxed-fit sets for at-home comfort." },
                       { icon: Leaf, title: "B Corp Values", sub: "1% of annual revenue donated to the planet." },
-                    ].map((item, i) => (
+                    ].map((item) => (
                       <div key={item.title} className="flex gap-4 items-start text-justify">
                         <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
                           <item.icon className="w-5 h-5" />
@@ -364,7 +441,7 @@ export default function OglmoveCouponsContent() {
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
               <div className="prose max-w-none text-justify">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  OGLmove Discount Codes, Coupon Codes & Comfortwear Deals 2026
+                  OGLmove Discount Codes, Coupon Codes &amp; Comfortwear Deals 2026
                 </h2>
 
                 <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
@@ -516,7 +593,7 @@ export default function OglmoveCouponsContent() {
                 <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular OGLmove Searches</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Comfortwear", "Loungewear", "Activewear", "OGLmove Discount Code", "Sustainable Fashion", "Plantive Fabric", "New Arrivals", "Sale Picks"].map(tag => (
+                    {["Comfortwear", "Loungewear", "Activewear", "OGLmove Discount Code", "Sustainable Fashion", "Plantive Fabric", "New Arrivals", "Sale Picks"].map((tag) => (
                       <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">{tag}</span>
                     ))}
                   </div>
@@ -525,14 +602,16 @@ export default function OglmoveCouponsContent() {
                 <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top OGLmove Deals</h3>
                   <div className="space-y-6">
-                    {DEALS.map((deal, i) => (
-                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                    {OGLMOVE_COUPONS.slice(0, 5).map((deal) => (
+                      <div key={deal.id} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.title}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                            {deal.mainValue ? `${deal.mainValue} ${deal.offText || ""}`.trim() : deal.discount}
+                          </p>
                         </div>
-                        <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Shop OGLmove: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                        <button onClick={() => setModalData(deal)} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</button>
                       </div>
                     ))}
                   </div>

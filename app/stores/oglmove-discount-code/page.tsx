@@ -1,29 +1,34 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import OglmoveCouponsContent from "./_components/StoreCouponsContent";
+import { OGLMOVE_COUPONS } from "./_components/offers";
+
+const TITLE = "OGLmove Promo Code: Up to 75% OFF Fashion Deals | Nov 2026";
+const DESCRIPTION =
+  "Save with OGLmove Promo Code and OGLmove Discount Code. Get up to 75% off fashion and free shipping over $69. Verified Nov 2026 deals.";
+const CANONICAL = "https://www.couponsbit.us/stores/oglmove-discount-code";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Nov 2026",
+    absolute: TITLE,
   },
-  description:
-    "Find the latest OGL Move discount code and promo code for Nov 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+  description: DESCRIPTION,
 
   alternates: {
-    canonical: "https://www.couponsbit.us/stores/oglmove-discount-code",
+    canonical: CANONICAL,
     languages: {
-      "en-US": "https://www.couponsbit.us/stores/oglmove-discount-code",
-      "en-GB": "https://www.couponsbit.us/stores/oglmove-discount-code",
-      "en-IN": "https://www.couponsbit.us/stores/oglmove-discount-code",
-      "x-default": "https://www.couponsbit.us/stores/oglmove-discount-code",
+      "en-US": CANONICAL,
+      "en-GB": CANONICAL,
+      "en-IN": CANONICAL,
+      "x-default": CANONICAL,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.couponsbit.us/stores/oglmove-discount-code",
-    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Nov 2026",
-    description:
-      "Find the latest OGL Move discount code and promo code for Nov 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+    url: CANONICAL,
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +44,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Nov 2026",
-    description:
-      "Find the latest OGL Move discount code and promo code for Nov 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1788434147/ogl-logo_p8i400.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +58,11 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+  },
 };
 
 const oglmoveSchema = {
@@ -61,80 +70,35 @@ const oglmoveSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#webpage",
-      url: "https://www.couponsbit.us/stores/oglmove-discount-code",
-      name: "OGL Move Discount Code: Up to 13% OFF + Get $55 Off  | Nov 2026",
-      description:
-        "Find the latest OGL Move discount code and promo code for Nov 2026. Save up to 13% on Sandwashed lounge sets, shop the Off-Shoulder Airy Bra Top for $55, and enjoy free standard shipping on orders over $69.",
+      "@id": `${CANONICAL}#webpage`,
+      url: CANONICAL,
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
-      breadcrumb: { "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#breadcrumb" },
+      breadcrumb: { "@id": `${CANONICAL}#breadcrumb` },
     },
 
     {
       "@type": "ItemList",
-      "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#offerlist",
+      "@id": `${CANONICAL}#offerlist`,
       name: "OGLmove Discount Codes & Coupon Codes",
       description: "Latest OGLmove discount codes and offers for sustainable women's comfortwear.",
-      url: "https://www.couponsbit.us/stores/oglmove-discount-code",
-      numberOfItems: 13,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "OGL Move – Sandwashed Duo Lounge Set for $119", description: "Get the Sandwashed Duo featuring a 2-piece boatneck batwing sleeve top and mid-rise wide-leg lounge pants.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
+      url: CANONICAL,
+      numberOfItems: OGLMOVE_COUPONS.length,
+      itemListElement: OGLMOVE_COUPONS.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: c.title,
+          description: c.description,
+          url: CANONICAL,
+          seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com/#brand" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "OGL Move – Sandwashed Palazzo Pant & Ruched Bra Tank Set for $129", description: "Get a 2-piece Sandwashed set featuring wide-leg palazzo pants with pockets and a ruched bra tank.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "OGL Move – Eco-Mousse Asymmetrical Neck Top for $49", description: "Shop the Eco-Mousse asymmetrical neck long-sleeve top with a stylish tucked-waist design.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "OGL Move – Cardigan & Flare Pants Set for $135", description: "Get a 2-piece set featuring a long-sleeve drop-shoulder cardigan and high-rise flare pants.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "OGL Move – Free Standard Shipping on Orders Over $69", description: "Enjoy Free Standard Shipping when your OGL Move order exceeds $69.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "OGL Move – Eco-Mousse Surplice Midi Dress for $79", description: "Shop the LiteWarm Eco-Mousse Surplice 3/4 Sleeve Side-Tuck Midi Dress.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "OGL Move – LiteWarm Multi-Wear Layering Bra Top for $69", description: "Shop the Eco-Mousse LiteWarm Multi-Wear Layering Bra Top for versatile styling.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "OGL Move – Two-Piece Cami & Surplice Ruched Top for $79", description: "Get the Eco-MiYaMoon Two-Piece Set featuring a cami and surplice ruched top.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 9,
-          item: { "@type": "Offer", name: "OGL Move – Off-Shoulder Airy Bra Top for $55", description: "Shop the Eco-SkinKiss Criss Cross Off-Shoulder New Airy Bra Top.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 10,
-          item: { "@type": "Offer", name: "OGL Move – Wide-Leg Trouser for $79", description: "Shop the Cotton Blend Stretchy Mid-Rise Fly-Front Wide-Leg Trouser.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 11,
-          item: { "@type": "Offer", name: "OGL Move – Ponte Little Black Bra Dress for $89", description: "Shop the Ponte Anytime Little Black Bra Dress with convenient pockets.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 12,
-          item: { "@type": "Offer", name: "OGL Move – Eco-SkinKiss Ruched A-Line Midi Skirt for $69", description: "Shop the Eco-SkinKiss Flowy Side-Ruched A-Line Midi Skirt.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-        {
-          "@type": "ListItem", position: 13,
-          item: { "@type": "Offer", name: "OGL Move – Stretch Cotton Mock Neck Brami Top for $49", description: "Shop the LiteWarm Stretch Cotton Mock Neck Cap Sleeve Brami Top.", url: "https://www.couponsbit.us/stores/oglmove-discount-code", seller: { "@type": "Organization", name: "OGLmove", url: "https://oglmove.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -158,17 +122,17 @@ const oglmoveSchema = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#breadcrumb",
+      "@id": `${CANONICAL}#breadcrumb`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.couponsbit.us" },
         { "@type": "ListItem", position: 2, name: "Stores", item: "https://www.couponsbit.us/stores" },
-        { "@type": "ListItem", position: 3, name: "OGLmove Coupons", item: "https://www.couponsbit.us/stores/oglmove-discount-code" },
+        { "@type": "ListItem", position: 3, name: "OGLmove Coupons", item: CANONICAL },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.couponsbit.us/stores/oglmove-discount-code#faq",
+      "@id": `${CANONICAL}#faq`,
       mainEntity: [
         { "@type": "Question", name: "What is OGLmove?", acceptedAnswer: { "@type": "Answer", text: "OGLmove is a women's fashion brand offering sustainable \"Everyday Comfortwear\" made from soft, breathable fabrics derived from eco-conscious materials." } },
         { "@type": "Question", name: "Does OGLmove offer discount codes?", acceptedAnswer: { "@type": "Answer", text: "Yes. OGLmove runs promotions such as comfortwear picks and sustainable fabric deals." } },
@@ -185,7 +149,9 @@ export default function OglmoveStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(oglmoveSchema) }} />
-      <OglmoveCouponsContent />
+      <Suspense fallback={null}>
+        <OglmoveCouponsContent />
+      </Suspense>
     </>
   );
 }

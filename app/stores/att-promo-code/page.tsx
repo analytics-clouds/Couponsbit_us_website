@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ATTCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { ATT_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Nov 2026",
+    absolute: "AT&T Promo Code: Up to $1,900 Off Phones | Nov 2026",
   },
   description:
-    "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for November 2026.",
+    "Save with AT&T Promo Code offers featuring $1,900 off Galaxy Z Fold8 Ultra and $1,200 off iPhone 18 Pro Max. Get a verified AT&T Discount Code Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/att-promo-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/att-promo-code",
-    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Nov 2026",
+    title: "AT&T Promo Code: Up to $1,900 Off Phones | Nov 2026",
     description:
-      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for November 2026.",
+      "Save with AT&T Promo Code offers featuring $1,900 off Galaxy Z Fold8 Ultra and $1,200 off iPhone 18 Pro Max. Get a verified AT&T Discount Code Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Nov 2026",
+    title: "AT&T Promo Code: Up to $1,900 Off Phones | Nov 2026",
     description:
-      "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for November 2026.",
+      "Save with AT&T Promo Code offers featuring $1,900 off Galaxy Z Fold8 Ultra and $1,200 off iPhone 18 Pro Max. Get a verified AT&T Discount Code Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/att_logo_xntyq0.webp"],
     site: "@couponsbit",
   },
@@ -52,7 +53,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const storeOffers = ATT_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `AT&T ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/att-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" },
+}));
 
 const attSchema = {
   "@context": "https://schema.org",
@@ -61,19 +73,23 @@ const attSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/att-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/att-promo-code",
-      name: "AT&T Promo Code: Get 50% OFF + $1,200 OFF iPhone | Nov 2026",
+      name: "AT&T Promo Code: Up to $1,900 Off Phones | Nov 2026",
       description:
-        "Use the latest AT&T Promo Code and AT&T Discount Code to save up to $1,200 OFF iPhone 18 Pro Max and 50% OFF Pixel accessories. Verified deals for November 2026.",
+        "Save with AT&T Promo Code offers featuring $1,900 off Galaxy Z Fold8 Ultra and $1,200 off iPhone 18 Pro Max. Get a verified AT&T Discount Code Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       datePublished: "2026-06-15",
       dateModified: "2026-11-01",
-      speakable: {
-        "@type": "SpeakableSpecification",
-        cssSelector: [".store-description", ".top-offers", ".faq-section"],
-      },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/att-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/att-promo-code#brand",
+      name: "AT&T",
+      url: "https://www.att.com",
+      sameAs: ["https://www.facebook.com/ATT", "https://twitter.com/ATT"],
     },
 
     {
@@ -82,17 +98,11 @@ const attSchema = {
       name: "AT&T Promo Codes & Coupon Codes",
       description: "Latest AT&T promo codes and offers on wireless plans and devices.",
       url: "https://www.couponsbit.us/stores/att-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: ATT_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/att-promo-code",
-          seller: { "@type": "Organization", name: "AT&T", url: "https://www.att.com" },
-        },
+        item: offer,
       })),
     },
 
@@ -126,115 +136,115 @@ const attSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/att-promo-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does AT&T offer promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AT&T offers promotional deals and incentives that can vary by product, service, customer eligibility, and time of year. Check CouponsBit and AT&T's current promotions before making a purchase."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/att-promo-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does AT&T offer promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AT&T offers promotional deals and incentives that can vary by product, service, customer eligibility, and time of year. Check CouponsBit and AT&T's current promotions before making a purchase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find an AT&T promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can check CouponsBit for available AT&T promo codes, coupon codes, and plan promotions before signing up or shopping. It's also a good idea to compare any code with the promotions currently offered directly by AT&T."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use an AT&T promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select your eligible plan or device, proceed to checkout, and enter the applicable promo code in the promotional-code field. Confirm the discount has been applied before completing your order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why isn't my AT&T promo code working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans or new customers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an AT&T promo code be combined with another offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That depends on the specific promotion. Some AT&T offers may not be combinable with other discounts or promotions. Always review the terms before checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can existing AT&T customers use promotional offers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some promotions are available to existing customers, while others may be designed specifically for new customers, new lines, upgrades, or qualifying purchases. Always check the individual offer's terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does AT&T offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AT&T offers wireless plans, home internet, and devices including smartphones, tablets, and accessories."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does AT&T offer smartphone deals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AT&T regularly promotes smartphones and device offers. Depending on the promotion, eligibility may involve a qualifying wireless plan, trade-in, new line, or other requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does AT&T offer trade-in credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AT&T offers trade-in programs and may run additional promotional incentives or bill credits toward a new device. The value and terms depend on the phone being traded in and the promotion available at the time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does AT&T offer home internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AT&T provides home internet services, including AT&T Fiber in eligible locations. Availability and plan options depend on your address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does AT&T have bundle discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AT&T may offer savings when you bundle internet and wireless plans together. Check current offers for details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does AT&T offer switch deals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AT&T may run promotions for customers switching from another wireless carrier. Check current offers for eligibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to look for AT&T deals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Promotions appear throughout the year, but major shopping periods such as Black Friday, Cyber Monday, the holiday season, and back-to-school often bring notable discounts."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Where can I find an AT&T promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check CouponsBit for available AT&T promo codes, coupon codes, and plan promotions before signing up or shopping. It's also a good idea to compare any code with the promotions currently offered directly by AT&T."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I use an AT&T promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Select your eligible plan or device, proceed to checkout, and enter the applicable promo code in the promotional-code field. Confirm the discount has been applied before completing your order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why isn't my AT&T promo code working?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected plans or new customers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an AT&T promo code be combined with another offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "That depends on the specific promotion. Some AT&T offers may not be combinable with other discounts or promotions. Always review the terms before checkout."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can existing AT&T customers use promotional offers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some promotions are available to existing customers, while others may be designed specifically for new customers, new lines, upgrades, or qualifying purchases. Always check the individual offer's terms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does AT&T offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AT&T offers wireless plans, home internet, and devices including smartphones, tablets, and accessories."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AT&T offer smartphone deals?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. AT&T regularly promotes smartphones and device offers. Depending on the promotion, eligibility may involve a qualifying wireless plan, trade-in, new line, or other requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AT&T offer trade-in credit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AT&T offers trade-in programs and may run additional promotional incentives or bill credits toward a new device. The value and terms depend on the phone being traded in and the promotion available at the time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AT&T offer home internet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. AT&T provides home internet services, including AT&T Fiber in eligible locations. Availability and plan options depend on your address."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AT&T have bundle discounts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AT&T may offer savings when you bundle internet and wireless plans together. Check current offers for details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AT&T offer switch deals?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AT&T may run promotions for customers switching from another wireless carrier. Check current offers for eligibility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is the best time to look for AT&T deals?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Promotions appear throughout the year, but major shopping periods such as Black Friday, Cyber Monday, the holiday season, and back-to-school often bring notable discounts."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -242,7 +252,9 @@ export default function ATTStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(attSchema) }} />
-      <ATTCouponsContent />
+      <Suspense fallback={null}>
+        <ATTCouponsContent />
+      </Suspense>
     </>
   );
 }

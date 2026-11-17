@@ -150,6 +150,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
+    {
+      url: `${BASE_URL}/blog/reasons-to-shop-black-friday-sale`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+    },
 
     // Categories
     {
