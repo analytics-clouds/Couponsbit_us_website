@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { OFFERS } from "./offers";
+import { Coupon, TICKETMASTER_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -36,7 +36,7 @@ export default function TicketmasterCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -89,7 +89,7 @@ export default function TicketmasterCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(18.6k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more on live entertainment with the latest Ticketmaster Discount Code and Ticketmaster Coupon Code for November 2026. Enjoy up to 65% OFF eligible event tickets, including concerts, sports, theater shows, and festivals. You can also find exclusive deals like 2 Live Nation tickets for just $55, plus discounts on selected concerts and special events. Browse verified Ticketmaster offers to secure great seats at lower prices and make your next live experience more affordable.
+                      Ticketmaster Promo Code users can cut event costs with up to 65% off eligible orders and 50% off select tickets for live entertainment. Ticketmaster Discount Code offers also include 2 Live Nation tickets for $55 and 20% off qualifying purchases. I recommend these verified deals for Nov 2026 shoppers booking concerts, shows, and events. Tested offers help fans compare ticket savings and enjoy memorable experiences while keeping their entertainment budget under control.
                     </p>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors">
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -155,16 +155,16 @@ export default function TicketmasterCouponsContent() {
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Ticketmaster Promo Codes & Offers</h2>
                 </div>
-                {OFFERS.map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {TICKETMASTER_COUPONS.map((c: Coupon) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -174,13 +174,13 @@ export default function TicketmasterCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-                              View Details <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                              View Details <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -206,10 +206,10 @@ export default function TicketmasterCouponsContent() {
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
                   <h3 className="text-black font-black text-lg mb-6">What Is Ticketmaster?</h3>
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-                   Ticketmaster is a ticketing platform that connects fans with live entertainment and events. It provides access to tickets for concerts, sports games, theatre productions, comedy shows, festivals, and other live experiences.
- 
+                    Ticketmaster is a ticketing platform that connects fans with live entertainment and events. It provides access to tickets for concerts, sports games, theatre productions, comedy shows, festivals, and other live experiences.
+
                   </p>
-                  
+
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     The platform works with event organisers, artists, sports teams, and venues to sell tickets. Depending on the event, customers can browse standard tickets, premium seating, VIP packages, and eligible resale listings.
 
@@ -247,44 +247,44 @@ export default function TicketmasterCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    Where Can You Find Ticketmaster Tickets?
-  </h3>
-  <div className="space-y-6">
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Ticketmaster covers several categories of live entertainment. Here are some of the popular event types you can explore:
-    </p>
-    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Concerts and music:</strong> Find tickets for touring artists, bands, music festivals, and live performances.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Sports:</strong> Browse tickets for professional and other sporting events, depending on availability.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Theatre and performing arts:</strong> Discover Broadway productions, musicals, plays, and other stage performances.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Comedy:</strong> Book tickets for stand-up shows, comedy tours, and live entertainment.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>Festivals and special events:</strong> Explore festivals, seasonal events, and other experiences.</span>
-      </p>
-      <p className="flex items-start gap-2">
-        <span className="text-black font-black">•</span>
-        <span><strong>VIP experiences:</strong> Some events offer premium seating or special packages with additional benefits.</span>
-      </p>
-    </div>
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Event availability, seating options, and ticket prices depend on the organiser, venue, and event.
-    </p>
-  </div>
-</div>
+                  <h3 className="text-black font-black text-lg mb-8">
+                    Where Can You Find Ticketmaster Tickets?
+                  </h3>
+                  <div className="space-y-6">
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      Ticketmaster covers several categories of live entertainment. Here are some of the popular event types you can explore:
+                    </p>
+                    <div className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-2">
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>Concerts and music:</strong> Find tickets for touring artists, bands, music festivals, and live performances.</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>Sports:</strong> Browse tickets for professional and other sporting events, depending on availability.</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>Theatre and performing arts:</strong> Discover Broadway productions, musicals, plays, and other stage performances.</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>Comedy:</strong> Book tickets for stand-up shows, comedy tours, and live entertainment.</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>Festivals and special events:</strong> Explore festivals, seasonal events, and other experiences.</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <span className="text-black font-black">•</span>
+                        <span><strong>VIP experiences:</strong> Some events offer premium seating or special packages with additional benefits.</span>
+                      </p>
+                    </div>
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      Event availability, seating options, and ticket prices depend on the organiser, venue, and event.
+                    </p>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -315,375 +315,375 @@ export default function TicketmasterCouponsContent() {
         </section>
 
         <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-      {/* Main Content Area */}
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Ticketmaster Promo Code: Find Deals on Concerts, Sports & Live Events
-        </h2>
+              {/* Main Content Area */}
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  Ticketmaster Promo Code: Find Deals on Concerts, Sports & Live Events
+                </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        [
-          "Ticketmaster Sitewide Discount",
-          "20% OFF",
-          "All Users",
-          "Limited-time online offer across eligible concerts, sports, theater, and live events.",
-          "Eligible Ticketmaster Purchases"
-        ],
-        [
-          "Ticketmaster Select Event Savings",
-          "Up to 45% OFF",
-          "All Users",
-          "Valid on selected concerts and live shows for a limited time.",
-          "Selected Event Tickets"
-        ],
-        [
-          "Ticketmaster Major Order Discount",
-          "Up to 65% OFF",
-          "All Users",
-          "High-value savings across selected live entertainment, sports, and concerts.",
-          "Eligible Event Tickets"
-        ],
-        [
-          "Ticketmaster Featured Events Offer",
-          "Up to 50% OFF",
-          "All Users",
-          "Applicable on qualifying concerts, festivals, and live shows.",
-          "Selected Event Tickets"
-        ],
-        [
-          "Ticketmaster Event Savings Pass",
-          "Up to 25% OFF",
-          "All Users",
-          "Short-term promotional savings covering concerts, sports, and theater.",
-          "Selected Ticket Purchases"
-        ],
-        [
-          "Ticketmaster Order Savings",
-          "Up to 5% OFF",
-          "All Users",
-          "Quick discount on qualifying ticket orders across various live events.",
-          "Qualifying Orders"
-        ],
-        [
-          "Ticketmaster Entertainment Discount",
-          "15% OFF",
-          "All Users",
-          "Online promotion for selected concerts, sports, and theater tickets.",
-          "Eligible Ticket Purchases"
-        ],
-        [
-          "Ticketmaster Live Nation 2-Ticket Package",
-          "2 for $55 ($27.50 ea)",
-          "All Users",
-          "Includes service fees. Valid on participating amphitheater shows while stock lasts.",
-          "Live Nation Amphitheater Shows"
-        ],
-        [
-          "Ticketmaster Flat Order Discount",
-          "$49 OFF",
-          "All Users",
-          "Direct dollar savings on qualifying premium event ticket orders.",
-          "Qualifying Orders"
-        ],
-        [
-          "Ticketmaster Booking Discount",
-          "20% OFF",
-          "All Users",
-          "Short-term offer covering concerts, sports events, and theater shows.",
-          "Eligible Ticket Bookings"
-        ],
-        [
-          "Ticketmaster Battle in the Bay Deal",
-          "25% OFF",
-          "All Users",
-          "Special sports event discount on selected tickets while availability lasts.",
-          "Battle in the Bay Tickets"
-        ],
-        [
-          "Ticketmaster Dru Hill 30th Anniversary Tour",
-          "50% OFF",
-          "All Users",
-          "Half-price concert savings on selected qualifying anniversary tour tickets.",
-          "Dru Hill 30th Anniversary Tickets"
-        ],
-        [
-          "Ticketmaster Partner Bank Offer",
-          "13% OFF",
-          "Qualifying Bank Cardholders",
-          "Save 13% on qualifying online ticket bookings across selected entertainment.",
-          "Qualifying Ticket Bookings"
-        ],
-        [
-          "Ticketmaster Premium Bank Partner Offer",
-          "25% OFF",
-          "Qualifying Bank Cardholders",
-          "Special cardholder discount for concerts, sports, and theater events.",
-          "Selected Ticketmaster Purchases"
-        ]
-      ].map((row, i, arr) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <p>
-            Looking forward to a live concert, an exciting sports match, or a theatre performance? Ticketmaster makes it easier to discover events and book tickets for experiences you don't want to miss. Before completing your booking, check CouponsBit for a Ticketmaster promo code that may help you save on eligible ticket purchases.
-          </p>
-          <p>
-            Whether you're planning a night out with friends or getting tickets to see your favourite artist, explore available Ticketmaster deals and offers before you check out.
-          </p>
-
-          <h3 className="text-xl font-black text-black mt-8 mb-4">
-            How to Find a Ticketmaster Promo Code on CouponsBit
-          </h3>
-          <p>
-            Looking for a Ticketmaster discount? Visit CouponsBit and check the latest available offers before booking your tickets.
-          </p>
-          <ol className="list-decimal pl-5 space-y-2">
-            <li>Open CouponsBit and visit the Ticketmaster store page.</li>
-            <li>Browse the listed promo codes and available deals.</li>
-            <li>Choose an offer that matches your event and purchase requirements.</li>
-            <li>Read the offer conditions, including eligibility and expiry details.</li>
-            <li>Copy the promo code, if one is available, and visit Ticketmaster.</li>
-            <li>Select your event, choose eligible tickets, and continue to checkout.</li>
-            <li>Enter the code in the promo code section and apply it before completing your purchase.</li>
-          </ol>
-          <p>
-            Always check the final order total to confirm that the discount has been applied.
-          </p>
-
-          <h3 className="text-xl font-black text-black mt-8 mb-4">
-            How to Apply a Ticketmaster Promo Code
-          </h3>
-          <p>
-            Ticketmaster has different types of codes, and knowing where to enter each one can make booking easier.
-          </p>
-          <p>
-            To use a promo code:
-          </p>
-          <ol className="list-decimal pl-5 space-y-2">
-            <li>Sign in to your Ticketmaster account.</li>
-            <li>Select an event and choose your tickets.</li>
-            <li>Continue to the checkout page.</li>
-            <li>Select Add Credits / Promo Codes / Gift Cards.</li>
-            <li>Enter your promo code and select Apply.</li>
-            <li>Check the updated order total before paying.</li>
-          </ol>
-
-          <h4 className="text-lg font-black text-black mt-6 mb-2">
-            What about presale and discount codes?
-          </h4>
-          <p>
-            These codes work differently. Enter an eligible passcode or discount code through the Unlock option on the event's ticket search page, before selecting your seats. It may reveal tickets available through a special sale or at a special price.
-          </p>
-          <p>
-            Ticketmaster confirms that promo codes, discount codes, and passcodes cannot be applied to resale ticket purchases. Codes also cannot be added to orders that have already been completed.
-          </p>
-
-          <h3 className="text-xl font-black text-black mt-8 mb-4">
-            Tips to Save on Ticketmaster Bookings
-          </h3>
-          <p>
-            A little planning can help you find a suitable ticket without spending more than necessary.
-          </p>
-          <ul className="list-disc pl-5 space-y-2">
-            <li><strong>Check presale opportunities:</strong> Some artists, sponsors, and fan clubs offer early ticket access. Check the event page for registration requirements and codes.</li>
-            <li><strong>Compare seating options:</strong> Review different sections and ticket categories before choosing your seats.</li>
-            <li><strong>Check the complete price:</strong> Consider applicable fees and taxes, not just the base ticket price.</li>
-            <li><strong>Look for eligible offers:</strong> Review available promotions and read their terms before applying a code.</li>
-            <li><strong>Follow your favourite artists:</strong> Keep an eye on event announcements and presale updates so you don't miss ticket releases.</li>
-            <li><strong>Book through trusted channels:</strong> Use Ticketmaster or the event's authorised ticketing partner to reduce the risk of invalid tickets.</li>
-          </ul>
-          <p>
-            Presale access does not guarantee that tickets will be available, so check the event details and sale conditions before booking.
-          </p>
-
-          <h3 className="text-xl font-black text-black mt-8 mb-4">
-            Understand Ticketmaster Fees Before Checkout
-          </h3>
-          <p>
-            The ticket price is not always the only amount you need to consider. Ticketmaster explains that its displayed upfront price generally includes the ticket's face value and required fees, before applicable taxes. Depending on the event and delivery method, additional charges may apply.
-          </p>
-          <p>
-            Resale tickets are priced by the seller and may be listed above or below the original ticket value. Review the price breakdown before completing your purchase so you understand the total cost.
-          </p>
-
-          <h3 className="text-xl font-black text-black mt-8 mb-4">
-            Book Your Next Live Experience with Ticketmaster and CouponsBit
-          </h3>
-          <p>
-            From concerts and comedy shows to theatre productions and sports events, Ticketmaster gives fans a place to discover and book live experiences. Before making your next purchase, visit CouponsBit to check available Ticketmaster promo codes, discount offers, and ticket deals.
-          </p>
-          <p>
-            Compare eligible offers, read the terms, and apply a valid code before checkout. Your next memorable experience could come with a little extra saving!
-          </p>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-        >
-          {isReadMore ? "Read Less" : "Read More"}
-          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* Accordion FAQ Section */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions
-          </h3>
-          {[
-            {
-              q: "1. Where can I find a Ticketmaster promo code?",
-              a: "You can check the Ticketmaster page on CouponsBit for available promo codes and offers. Review each offer's terms to confirm that it applies to your selected event and tickets."
-            },
-            {
-              q: "2. Can I use a Ticketmaster promo code on resale tickets?",
-              a: "No. Ticketmaster states that promo codes, discount codes, and passcodes cannot be applied to resale ticket purchases."
-            },
-            {
-              q: "3. What is the difference between a promo code and a presale code?",
-              a: "A promo code is entered during checkout to reduce the eligible order total. A presale passcode is entered before selecting tickets to unlock access to a special ticket sale."
-            },
-            {
-              q: "4. Why is my Ticketmaster promo code not working?",
-              a: "A code may not work if it has expired, the selected tickets are not eligible, the offer's conditions have not been met, or the purchase involves resale tickets. Check the offer terms and confirm that you are entering the code in the correct section."
-            },
-            {
-              q: "5. Can I apply a promo code after purchasing tickets?",
-              a: "No. Ticketmaster says codes cannot be applied to existing orders. Make sure you enter an eligible code before completing payment."
-            },
-            {
-              q: "6. Does Ticketmaster offer presale tickets?",
-              a: "Yes. Depending on the event, presales may be available through artists, sponsors, fan clubs, or other partners. Some require registration or a special code, and access does not guarantee ticket availability."
-            }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA]">
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#333333] font-bold text-[14px]">
+                      {[
+                        [
+                          "Ticketmaster Sitewide Discount",
+                          "20% OFF",
+                          "All Users",
+                          "Limited-time online offer across eligible concerts, sports, theater, and live events.",
+                          "Eligible Ticketmaster Purchases"
+                        ],
+                        [
+                          "Ticketmaster Select Event Savings",
+                          "Up to 45% OFF",
+                          "All Users",
+                          "Valid on selected concerts and live shows for a limited time.",
+                          "Selected Event Tickets"
+                        ],
+                        [
+                          "Ticketmaster Major Order Discount",
+                          "Up to 65% OFF",
+                          "All Users",
+                          "High-value savings across selected live entertainment, sports, and concerts.",
+                          "Eligible Event Tickets"
+                        ],
+                        [
+                          "Ticketmaster Featured Events Offer",
+                          "Up to 50% OFF",
+                          "All Users",
+                          "Applicable on qualifying concerts, festivals, and live shows.",
+                          "Selected Event Tickets"
+                        ],
+                        [
+                          "Ticketmaster Event Savings Pass",
+                          "Up to 25% OFF",
+                          "All Users",
+                          "Short-term promotional savings covering concerts, sports, and theater.",
+                          "Selected Ticket Purchases"
+                        ],
+                        [
+                          "Ticketmaster Order Savings",
+                          "Up to 5% OFF",
+                          "All Users",
+                          "Quick discount on qualifying ticket orders across various live events.",
+                          "Qualifying Orders"
+                        ],
+                        [
+                          "Ticketmaster Entertainment Discount",
+                          "15% OFF",
+                          "All Users",
+                          "Online promotion for selected concerts, sports, and theater tickets.",
+                          "Eligible Ticket Purchases"
+                        ],
+                        [
+                          "Ticketmaster Live Nation 2-Ticket Package",
+                          "2 for $55 ($27.50 ea)",
+                          "All Users",
+                          "Includes service fees. Valid on participating amphitheater shows while stock lasts.",
+                          "Live Nation Amphitheater Shows"
+                        ],
+                        [
+                          "Ticketmaster Flat Order Discount",
+                          "$49 OFF",
+                          "All Users",
+                          "Direct dollar savings on qualifying premium event ticket orders.",
+                          "Qualifying Orders"
+                        ],
+                        [
+                          "Ticketmaster Booking Discount",
+                          "20% OFF",
+                          "All Users",
+                          "Short-term offer covering concerts, sports events, and theater shows.",
+                          "Eligible Ticket Bookings"
+                        ],
+                        [
+                          "Ticketmaster Battle in the Bay Deal",
+                          "25% OFF",
+                          "All Users",
+                          "Special sports event discount on selected tickets while availability lasts.",
+                          "Battle in the Bay Tickets"
+                        ],
+                        [
+                          "Ticketmaster Dru Hill 30th Anniversary Tour",
+                          "50% OFF",
+                          "All Users",
+                          "Half-price concert savings on selected qualifying anniversary tour tickets.",
+                          "Dru Hill 30th Anniversary Tickets"
+                        ],
+                        [
+                          "Ticketmaster Partner Bank Offer",
+                          "13% OFF",
+                          "Qualifying Bank Cardholders",
+                          "Save 13% on qualifying online ticket bookings across selected entertainment.",
+                          "Qualifying Ticket Bookings"
+                        ],
+                        [
+                          "Ticketmaster Premium Bank Partner Offer",
+                          "25% OFF",
+                          "Qualifying Bank Cardholders",
+                          "Special cardholder discount for concerts, sports, and theater events.",
+                          "Selected Ticketmaster Purchases"
+                        ]
+                      ].map((row, i, arr) => (
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+                          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                  {faq.a}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Sidebar */}
-      <div className="space-y-10">
-        {/* Tag Cloud */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular Ticketmaster Searches
-          </h3>
-          <div className="flex flex-wrap gap-2.5">
-            {[
-              "Ticketmaster Promo Code",
-              "Concert Ticket Deals",
-              "Sports Events Sale",
-              "Presale Passcodes",
-              "2 for 1 Ticket Offers",
-              "Theatre & Arts Discounts",
-              "Broadway Show Deals",
-              "NFL & NBA Tickets"
-            ].map((tag) => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Sidebar Deals */}
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top Ticketmaster Deals
-          </h3>
-          <div className="space-y-6">
-            {[
-              {
-                heading: "2-FOR-1 TICKET SPECIAL",
-                sub: "Buy 1 get 1 free on select live events",
-              },
-              {
-                heading: "UP TO 50% OFF",
-                sub: "Save on concert & theatre ticket deals",
-              },
-              {
-                heading: "PRESALE TICKETS",
-                sub: "Get early access with exclusive partner passcodes",
-              },
-              {
-                heading: "FAMILY & ARTS SALE",
-                sub: "Special discounts on family shows & plays",
-              },
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  T
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <p>
+                    Looking forward to a live concert, an exciting sports match, or a theatre performance? Ticketmaster makes it easier to discover events and book tickets for experiences you don't want to miss. Before completing your booking, check CouponsBit for a Ticketmaster promo code that may help you save on eligible ticket purchases.
                   </p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                  <p>
+                    Whether you're planning a night out with friends or getting tickets to see your favourite artist, explore available Ticketmaster deals and offers before you check out.
                   </p>
+
+                  <h3 className="text-xl font-black text-black mt-8 mb-4">
+                    How to Find a Ticketmaster Promo Code on CouponsBit
+                  </h3>
+                  <p>
+                    Looking for a Ticketmaster discount? Visit CouponsBit and check the latest available offers before booking your tickets.
+                  </p>
+                  <ol className="list-decimal pl-5 space-y-2">
+                    <li>Open CouponsBit and visit the Ticketmaster store page.</li>
+                    <li>Browse the listed promo codes and available deals.</li>
+                    <li>Choose an offer that matches your event and purchase requirements.</li>
+                    <li>Read the offer conditions, including eligibility and expiry details.</li>
+                    <li>Copy the promo code, if one is available, and visit Ticketmaster.</li>
+                    <li>Select your event, choose eligible tickets, and continue to checkout.</li>
+                    <li>Enter the code in the promo code section and apply it before completing your purchase.</li>
+                  </ol>
+                  <p>
+                    Always check the final order total to confirm that the discount has been applied.
+                  </p>
+
+                  <h3 className="text-xl font-black text-black mt-8 mb-4">
+                    How to Apply a Ticketmaster Promo Code
+                  </h3>
+                  <p>
+                    Ticketmaster has different types of codes, and knowing where to enter each one can make booking easier.
+                  </p>
+                  <p>
+                    To use a promo code:
+                  </p>
+                  <ol className="list-decimal pl-5 space-y-2">
+                    <li>Sign in to your Ticketmaster account.</li>
+                    <li>Select an event and choose your tickets.</li>
+                    <li>Continue to the checkout page.</li>
+                    <li>Select Add Credits / Promo Codes / Gift Cards.</li>
+                    <li>Enter your promo code and select Apply.</li>
+                    <li>Check the updated order total before paying.</li>
+                  </ol>
+
+                  <h4 className="text-lg font-black text-black mt-6 mb-2">
+                    What about presale and discount codes?
+                  </h4>
+                  <p>
+                    These codes work differently. Enter an eligible passcode or discount code through the Unlock option on the event's ticket search page, before selecting your seats. It may reveal tickets available through a special sale or at a special price.
+                  </p>
+                  <p>
+                    Ticketmaster confirms that promo codes, discount codes, and passcodes cannot be applied to resale ticket purchases. Codes also cannot be added to orders that have already been completed.
+                  </p>
+
+                  <h3 className="text-xl font-black text-black mt-8 mb-4">
+                    Tips to Save on Ticketmaster Bookings
+                  </h3>
+                  <p>
+                    A little planning can help you find a suitable ticket without spending more than necessary.
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li><strong>Check presale opportunities:</strong> Some artists, sponsors, and fan clubs offer early ticket access. Check the event page for registration requirements and codes.</li>
+                    <li><strong>Compare seating options:</strong> Review different sections and ticket categories before choosing your seats.</li>
+                    <li><strong>Check the complete price:</strong> Consider applicable fees and taxes, not just the base ticket price.</li>
+                    <li><strong>Look for eligible offers:</strong> Review available promotions and read their terms before applying a code.</li>
+                    <li><strong>Follow your favourite artists:</strong> Keep an eye on event announcements and presale updates so you don't miss ticket releases.</li>
+                    <li><strong>Book through trusted channels:</strong> Use Ticketmaster or the event's authorised ticketing partner to reduce the risk of invalid tickets.</li>
+                  </ul>
+                  <p>
+                    Presale access does not guarantee that tickets will be available, so check the event details and sale conditions before booking.
+                  </p>
+
+                  <h3 className="text-xl font-black text-black mt-8 mb-4">
+                    Understand Ticketmaster Fees Before Checkout
+                  </h3>
+                  <p>
+                    The ticket price is not always the only amount you need to consider. Ticketmaster explains that its displayed upfront price generally includes the ticket's face value and required fees, before applicable taxes. Depending on the event and delivery method, additional charges may apply.
+                  </p>
+                  <p>
+                    Resale tickets are priced by the seller and may be listed above or below the original ticket value. Review the price breakdown before completing your purchase so you understand the total cost.
+                  </p>
+
+                  <h3 className="text-xl font-black text-black mt-8 mb-4">
+                    Book Your Next Live Experience with Ticketmaster and CouponsBit
+                  </h3>
+                  <p>
+                    From concerts and comedy shows to theatre productions and sports events, Ticketmaster gives fans a place to discover and book live experiences. Before making your next purchase, visit CouponsBit to check available Ticketmaster promo codes, discount offers, and ticket deals.
+                  </p>
+                  <p>
+                    Compare eligible offers, read the terms, and apply a valid code before checkout. Your next memorable experience could come with a little extra saving!
+                  </p>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
                 </div>
-                <a
-                  href={STORE_URL}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Ticketmaster: ${deal.heading}`}
-                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+
+                <button
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
                 >
-                  Get Deal
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+                  {isReadMore ? "Read Less" : "Read More"}
+                  <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
 
-    </div>
-  </div>
-</section>
+                {/* Accordion FAQ Section */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">
+                    Frequently Asked Questions
+                  </h3>
+                  {[
+                    {
+                      q: "1. Where can I find a Ticketmaster promo code?",
+                      a: "You can check the Ticketmaster page on CouponsBit for available promo codes and offers. Review each offer's terms to confirm that it applies to your selected event and tickets."
+                    },
+                    {
+                      q: "2. Can I use a Ticketmaster promo code on resale tickets?",
+                      a: "No. Ticketmaster states that promo codes, discount codes, and passcodes cannot be applied to resale ticket purchases."
+                    },
+                    {
+                      q: "3. What is the difference between a promo code and a presale code?",
+                      a: "A promo code is entered during checkout to reduce the eligible order total. A presale passcode is entered before selecting tickets to unlock access to a special ticket sale."
+                    },
+                    {
+                      q: "4. Why is my Ticketmaster promo code not working?",
+                      a: "A code may not work if it has expired, the selected tickets are not eligible, the offer's conditions have not been met, or the purchase involves resale tickets. Check the offer terms and confirm that you are entering the code in the correct section."
+                    },
+                    {
+                      q: "5. Can I apply a promo code after purchasing tickets?",
+                      a: "No. Ticketmaster says codes cannot be applied to existing orders. Make sure you enter an eligible code before completing payment."
+                    },
+                    {
+                      q: "6. Does Ticketmaster offer presale tickets?",
+                      a: "Yes. Depending on the event, presales may be available through artists, sponsors, fan clubs, or other partners. Some require registration or a special code, and access does not guarantee ticket availability."
+                    }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                {/* Tag Cloud */}
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Popular Ticketmaster Searches
+                  </h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {[
+                      "Ticketmaster Promo Code",
+                      "Concert Ticket Deals",
+                      "Sports Events Sale",
+                      "Presale Passcodes",
+                      "2 for 1 Ticket Offers",
+                      "Theatre & Arts Discounts",
+                      "Broadway Show Deals",
+                      "NFL & NBA Tickets"
+                    ].map((tag) => (
+                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Sidebar Deals */}
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Today's Top Ticketmaster Deals
+                  </h3>
+                  <div className="space-y-6">
+                    {[
+                      {
+                        heading: "2-FOR-1 TICKET SPECIAL",
+                        sub: "Buy 1 get 1 free on select live events",
+                      },
+                      {
+                        heading: "UP TO 50% OFF",
+                        sub: "Save on concert & theatre ticket deals",
+                      },
+                      {
+                        heading: "PRESALE TICKETS",
+                        sub: "Get early access with exclusive partner passcodes",
+                      },
+                      {
+                        heading: "FAMILY & ARTS SALE",
+                        sub: "Special discounts on family shows & plays",
+                      },
+                    ].map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                          T
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                            {deal.heading}
+                          </p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                            {deal.sub}
+                          </p>
+                        </div>
+                        <a
+                          href={STORE_URL}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          aria-label={`Shop Ticketmaster: ${deal.heading}`}
+                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                        >
+                          Get Deal
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
 
       </main>

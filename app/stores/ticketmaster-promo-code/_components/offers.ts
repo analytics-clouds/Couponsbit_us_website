@@ -1,193 +1,268 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const TICKETMASTER_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Ticketmaster Discount Code – 20% Off Sitewide",
-    desc: "Get cheaper event tickets with Ticketmaster's short-time sitewide offer.",
-    bullets: [
-      "Save 20% on eligible Ticketmaster purchases.",
-      "Browse concerts, sports, theater, and other live events.",
-      "A good chance to book your favorite events for less.",
-      "Online offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ticketmaster Promo Code – 20% Off Sitewide",
+    description: "Take 20% off eligible Ticketmaster event bookings for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Reduces the cost of selected Ticketmaster purchases by 20%.",
+      "Applies to tickets for qualifying live events.",
+      "Available only while the promotion is active.",
+      "Exclusions may apply, so review the terms at checkout.",
+    ],
   },
   {
     id: "c2",
-    label: "UP TO",
-    value: "45% OFF",
-    title: "Ticketmaster Discount Code – Up to 45% Off on Select Tickets",
-    desc: "Find bigger savings on chosen events before the offer ends.",
-    bullets: [
-      "Get up to 45% off on eligible ticket purchases.",
-      "Valid on select concerts and live shows.",
-      "Book popular events while the lower prices last.",
-      "Savings for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "45%",
+    offText: "OFF",
+    title: "Ticketmaster Promo Code – Up to 45% Off Select Tickets",
+    description: "Save as much as 45% on chosen Ticketmaster event tickets.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Discounts reach up to 45% on eligible tickets.",
+      "Covers selected concerts, shows, and other live events.",
+      "Savings apply to participating ticket options only.",
+      "The exact discount depends on the event.",
+    ],
   },
   {
     id: "c3",
-    label: "UP TO",
-    value: "65% OFF",
-    title: "Ticketmaster Coupon Code – 65% Off on Your Order",
-    desc: "Grab one of the biggest ticket discounts Ticketmaster has to offer.",
-    bullets: [
-      "Save up to 65% on eligible event tickets.",
-      "Find deals across selected live events.",
-      "Good for concerts, sports, and other entertainment.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "65%",
+    offText: "OFF",
+    title: "Ticketmaster Discount Code – Up to 65% Off Your Order",
+    description: "Save up to 65% on eligible Ticketmaster orders with this discount.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers savings of up to 65% on qualifying orders.",
+      "Applies to chosen event tickets and live entertainment.",
+      "Discounted options vary by upcoming event.",
+      "The top discount won't apply to every ticket.",
+    ],
   },
   {
     id: "c4",
-    label: "UP TO",
-    value: "50% OFF",
-    title: "Ticketmaster Coupon Code – Up to 50% Off on Select Tickets",
-    desc: "Book your favorite events and save a lot while you do it.",
-    bullets: [
-      "Get up to 50% off on selected tickets.",
-      "Browse concerts, festivals, and live shows.",
-      "A great way to save on entertainment.",
-      "Valid on qualifying events."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ticketmaster Discount Code – 20% Off Your Purchase",
+    description: "Lower your ticket costs with 20% off eligible Ticketmaster purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 20% off qualifying event bookings.",
+      "Works with the entertainment options available on Ticketmaster.",
+      "Adds extra value when you buy tickets.",
+      "A practical pick if you attend events often.",
+    ],
   },
   {
     id: "c5",
-    label: "UP TO",
-    value: "25% OFF",
-    title: "Ticketmaster Promo Code – Up to 25% Off on Your Order",
-    desc: "Use this offer to save more on eligible Ticketmaster events.",
-    bullets: [
-      "Enjoy up to 25% off on selected ticket purchases.",
-      "Covers concerts, sports, and theater events.",
-      "Handy for planning your next outing.",
-      "Promotional offer for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "Ticketmaster Voucher Code – Up to 50% Off Select Tickets",
+    description: "Save up to 50% on tickets to selected Ticketmaster events.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 50% off eligible ticket selections.",
+      "Includes discounted access to certain concerts and live shows.",
+      "Applies to participating events only.",
+      "Check the event page to see the discount you'll actually get.",
+    ],
   },
   {
     id: "c6",
-    label: "UP TO",
-    value: "5% OFF",
-    title: "Ticketmaster Promo Code – Up to 5% Off on Eligible Purchases",
-    desc: "Get a quick discount on selected Ticketmaster bookings.",
-    bullets: [
-      "Get up to 5% off on qualifying orders.",
-      "Save on many kinds of live events.",
-      "An easy way to lower your ticket cost.",
-      "Valid for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Ticketmaster Voucher Code – Up to 25% Off Your Order",
+    description: "Get up to 25% off eligible Ticketmaster event purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies a discount of up to 25% to qualifying orders.",
+      "Covers tickets for selected live entertainment.",
+      "Brings down the total cost of your booking.",
+      "Helpful if you're watching your budget.",
+    ],
   },
   {
     id: "c7",
-    label: "GET",
-    value: "15% OFF",
-    title: "Ticketmaster Offer Code – 15% Off on Event Tickets",
-    desc: "Book live entertainment and save a little extra.",
-    bullets: [
-      "Get 15% off on eligible ticket purchases.",
-      "Valid on selected events.",
-      "Good for concerts, sports, and theater.",
-      "Online offer for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "5%",
+    offText: "OFF",
+    title: "Ticketmaster Referral Code – Up to 5% Off Eligible Purchases",
+    description: "Get a small discount on selected Ticketmaster bookings with a referral code.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves up to 5% on eligible ticket purchases.",
+      "Adds a modest saving to your event booking.",
+      "Works for concerts, sports, and other entertainment.",
+      "Handy when you're reserving tickets.",
+    ],
   },
   {
     id: "c8",
-    label: "SPECIAL",
-    value: "$55",
-    title: "Ticketmaster Offer Code – 2 Live Nation Tickets for $55",
-    desc: "See live shows for less with this special ticket deal.",
-    bullets: [
-      "Buy 2 Live Nation tickets for just $55.",
-      "Each ticket costs only $27.50, with service fees included.",
-      "Valid on participating amphitheater shows.",
-      "Available while stock lasts."
-    ]
+    topLabel: "FLAT",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Ticketmaster Referral Code – 15% Off Event Tickets",
+    description: "Use a referral code to save 15% on selected live event tickets.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 15% off eligible event ticket purchases.",
+      "Applies to concerts and other live experiences.",
+      "Makes attending events a bit more affordable.",
+      "A good option for regular entertainment shoppers.",
+    ],
   },
   {
     id: "c9",
-    label: "GET",
-    value: "$49 OFF",
-    title: "Ticketmaster Voucher Code – $49 Off Your Order",
-    desc: "Cut the cost of eligible Ticketmaster tickets right away.",
-    bullets: [
-      "Get $49 off on qualifying orders.",
-      "Good for booking premium event tickets.",
-      "Valid on eligible purchases.",
-      "A short-time chance to save."
-    ]
+    topLabel: "2 FOR",
+    mainValue: "$55",
+    offText: "DEAL",
+    title: "Ticketmaster Deals – 2 Live Nation Tickets for $55",
+    description: "Get two Live Nation tickets for a combined price of $55.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Includes two eligible Live Nation tickets for $55 total.",
+      "Lets you see live shows at a lower overall cost.",
+      "Available for participating events only.",
+      "A good match for two people going together.",
+    ],
   },
   {
     id: "c10",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Ticketmaster Voucher Code – 20% Off on Your Purchase",
-    desc: "Save extra on selected Ticketmaster events.",
-    bullets: [
-      "Get 20% off on eligible ticket bookings.",
-      "Browse concerts, sports events, and theater shows.",
-      "Good value on live entertainment.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "SAVE",
+    mainValue: "$49",
+    offText: "OFF",
+    title: "Ticketmaster Deals – $49 Off Your Order",
+    description: "Take $49 off your eligible Ticketmaster order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Deducts $49 from a qualifying purchase.",
+      "Lowers the price of selected event tickets.",
+      "Adds extra savings when you book live entertainment.",
+      "A minimum spend may apply.",
+    ],
   },
   {
     id: "c11",
-    label: "SAVE",
-    value: "25% OFF",
-    title: "Ticketmaster Discount Offer – 25% Off on Battle in the Bay Tickets",
-    desc: "Book Battle in the Bay tickets and enjoy special savings.",
-    bullets: [
-      "Get 25% off on selected Battle in the Bay tickets.",
-      "A great chance for sports fans.",
-      "Event deal for a short time.",
-      "Available while tickets last."
-    ]
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Ticketmaster Offer – 25% Off Battle in the Bay Tickets",
+    description: "Save 25% on eligible Battle in the Bay tickets.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 25% off selected Battle in the Bay tickets.",
+      "Lowers the price of attending this live event.",
+      "Applies to participating seats only.",
+      "Made for fans planning to go.",
+    ],
   },
   {
     id: "c12",
-    label: "SAVE",
-    value: "50% OFF",
-    title: "Ticketmaster Discount Offer – 50% Off on Dru Hill 30th Anniversary Tickets",
-    desc: "Join the Dru Hill anniversary tour and save big.",
-    bullets: [
-      "Get 50% off on selected Dru Hill 30th Anniversary tickets.",
-      "Great for fans of live music.",
-      "Concert deal for a short time.",
-      "Valid on qualifying tickets."
-    ]
+    topLabel: "FLAT",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "Ticketmaster Offer – 50% Off Dru Hill 30th Anniversary Tickets",
+    description: "Save 50% on selected tickets to the Dru Hill 30th Anniversary tour.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives 50% off eligible anniversary tour tickets.",
+      "Covers live music at a reduced price.",
+      "Applies to selected seats for the Dru Hill shows.",
+      "Suits fans looking to save on a concert.",
+    ],
   },
   {
     id: "c13",
-    label: "SAVE",
-    value: "13% OFF",
-    title: "Ticketmaster Bank Offer – 13% Off on Selected Ticket Purchases",
-    desc: "Get extra savings across eligible Ticketmaster events.",
-    bullets: [
-      "Save 13% on qualifying ticket bookings.",
-      "Valid across selected concerts and entertainment.",
-      "A good way to cut your booking cost.",
-      "Online offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "13%",
+    offText: "OFF",
+    title: "Ticketmaster Cart Code – 13% Off Select Ticket Purchases",
+    description: "Get 13% off chosen Ticketmaster ticket purchases with this code.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 13% on eligible event ticket orders.",
+      "Applies to selected entertainment options on Ticketmaster.",
+      "Trims the cost of your booking.",
+      "Useful when you're planning an outing.",
+    ],
   },
   {
     id: "c14",
-    label: "GET",
-    value: "25% OFF",
-    title: "Ticketmaster Bank Offer – 25% Off on Your Purchase",
-    desc: "Find one more way to save on live entertainment.",
-    bullets: [
-      "Get 25% off on selected Ticketmaster purchases.",
-      "Shop tickets for concerts, sports, and theater.",
-      "Great for planning upcoming events.",
-      "Valid for a short time."
-    ]
-  }
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Ticketmaster Cart Code – 25% Off Your Purchase",
+    description: "Take 25% off eligible Ticketmaster purchases while this offer lasts.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives 25% off qualifying ticket orders.",
+      "Applies to live entertainment bookings.",
+      "Covers selected events only.",
+      "A good fit for frequent ticket buyers.",
+    ],
+  },
 ];

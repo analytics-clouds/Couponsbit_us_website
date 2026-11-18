@@ -1,142 +1,235 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
-  verified?: string;
-  userType?: string;
-  validTill?: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const HOKA_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "FLAT",
-    value: "30% OFF",
-    title: "HOKA Coupon Code: Ora Athletic Slide 30% Off",
-    desc: "Slip into everyday comfort with the Ora Athletic Slide at a lower price.",
+    topLabel: "SAVE",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "HOKA Promo Code – Save 10% With Newsletter Offer",
+    description: "Join the HOKA newsletter and get 10% off eligible orders.",
+    code: "",
     verified: "Verified",
-    userType: "All Users",
+    userType: "New Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Get the Ora Athletic Slide for just $39.",
-      "That’s 30% off the regular $60 price.",
-      "Made for post-workout recovery and daily wear.",
-      "Limited-time offer while supplies last."
-    ]
+    points: [
+      "Sign up for the newsletter to receive the discount.",
+      "Applies to qualifying orders only.",
+      "Covers HOKA shoes and products that are included.",
+      "A fit for shoppers making a first purchase.",
+    ],
   },
   {
     id: "c2",
-    label: "UP TO",
-    value: "50% OFF",
-    title: "HOKA Coupon Code: Up to 50% Off Accessories",
-    desc: "Save big on select HOKA accessories for a limited time.",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "HOKA Promo Code – Save Up to 50% on Sale Items",
+    description: "Save up to 50% on select HOKA sale products.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Take up to 50% off select accessories.",
-      "Browse hats, socks, bags, and other essentials.",
-      "Discounts apply to eligible products only.",
-      "Available for a limited time."
-    ]
+    points: [
+      "The biggest discounts apply to select items only.",
+      "Browse discounted shoes and accessories.",
+      "Sale stock is limited, so sizes may sell out.",
+      "A fit for shoppers who want to pay less for HOKA gear.",
+    ],
   },
   {
     id: "c3",
-    label: "FLAT",
-    value: "30% OFF",
-    title: "HOKA Promo Code: Crescendo XC Running Shoes 30% Off",
-    desc: "Gear up for race day with savings on the Crescendo XC shoes.",
+    topLabel: "SAVE",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "HOKA Discount Code – Save 15% With Student Discount",
+    description: "Eligible students can save 15% on HOKA orders.",
+    code: "",
     verified: "Verified",
-    userType: "All Users",
+    userType: "Students",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Get the all-gender Crescendo XC Running Shoes for $63.",
-      "That’s 30% off the regular $90 price.",
-      "Built for strong cross-country performance.",
-      "Limited-time offer on eligible sizes."
-    ]
+    points: [
+      "You may need to verify your student status.",
+      "Applies to qualifying purchases.",
+      "Covers running shoes and gear that are included.",
+      "A fit for active students.",
+    ],
   },
   {
     id: "c4",
-    label: "FLAT",
-    value: "20% OFF",
-    title: "HOKA Promo Code: Clifton 10 Women’s Running Shoes 20% Off",
-    desc: "Save on lightweight comfort with the Clifton 10.",
+    topLabel: "SAVE",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "HOKA Discount Code – Save 15% With Military Discount",
+    description: "Eligible military members can save 15% on HOKA purchases.",
+    code: "",
     verified: "Verified",
-    userType: "All Users",
+    userType: "Military",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Get the Women’s Clifton 10 for $124.",
-      "That’s 20% off the regular $155 price.",
-      "Made for everyday runs and training.",
-      "Available for a limited time."
-    ]
+    points: [
+      "You may need to verify your military status.",
+      "Applies to qualifying orders.",
+      "Covers HOKA footwear that is included.",
+      "A fit for those who serve and want a lower price.",
+    ],
   },
   {
     id: "c5",
-    label: "FLAT",
-    value: "30% OFF",
-    title: "HOKA Discount Code: Mach 6 Men’s Running Shoes 30% Off",
-    desc: "Get top-tier running performance for less.",
+    topLabel: "SAVE",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "HOKA Voucher Code – Save 30% on Ora Athletic Slide",
+    description: "Get the Ora Athletic Slide for 30% off.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Pick up the Men’s Mach 6 Running Shoes for $98.",
-      "That’s 30% off the regular $140 price.",
-      "Built for speed and everyday training.",
-      "Available while supplies last."
-    ]
+    points: [
+      "A slide-style shoe for recovery and casual wear.",
+      "Check sizing and fit details on the product page.",
+      "Availability varies by color and size.",
+      "A fit for everyday comfort around the house or after a workout.",
+    ],
   },
   {
     id: "c6",
-    label: "FLAT",
-    value: "10% OFF",
-    title: "HOKA Discount Code: 10% Off for New Members",
-    desc: "New members can unlock extra savings on eligible orders.",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "HOKA Voucher Code – Save Up to 50% on Accessories",
+    description: "Save up to 50% on select HOKA accessories.",
+    code: "",
     verified: "Verified",
-    userType: "New Members",
+    userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Take 10% off your first eligible HOKA purchase.",
-      "Enjoy free standard shipping with this offer.",
-      "Open to new members only.",
-      "Limited-time promotion."
-    ]
+    points: [
+      "The biggest discounts apply to select items only.",
+      "Browse add-ons for your HOKA gear.",
+      "Check what's included in each listing.",
+      "A fit for rounding out your running setup.",
+    ],
   },
   {
     id: "c7",
-    label: "FROM",
-    value: "$70",
-    title: "HOKA Voucher Code: High-Cushion Shoes From $70",
-    desc: "Check out plush, cushioned running shoes at friendly prices.",
+    topLabel: "SAVE",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "HOKA Coupon Code – Save 30% on Crescendo XC Shoes",
+    description: "Get the Crescendo XC Running Shoes for 30% off.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Shop HOKA high-cushion shoes starting at $70.",
-      "Pick from a range of eligible styles.",
-      "Made for comfort and everyday performance.",
-      "Limited-time pricing available."
-    ]
+    points: [
+      "Check the product page for the intended use and terrain.",
+      "Review the size guide, since running shoes can fit differently.",
+      "Availability depends on size and color.",
+      "A fit for runners who want a lower price on a specific model.",
+    ],
   },
   {
     id: "c8",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "HOKA Voucher Code: Save 20% When You Buy 2+ Items",
-    desc: "Save more when you shop for multiple HOKA products.",
+    topLabel: "SAVE",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "HOKA Coupon Code – Save 20% on Clifton 10 Women’s Shoes",
+    description: "Save 20% on the Clifton 10 Women’s Running Shoes.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Get 20% off when you buy two or more eligible items.",
-      "Mix and match qualifying HOKA products.",
-      "Discount applies to eligible purchases.",
-      "Available for a limited time."
-    ]
-  }
+    points: [
+      "A running shoe for daily training.",
+      "Check sizing and width options on the product page.",
+      "Colors and sizes may be limited.",
+      "A fit for women who want a cushioned everyday trainer.",
+    ],
+  },
+  {
+    id: "c9",
+    topLabel: "SAVE",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "HOKA Referral Code – Save 30% on Mach 6 Men’s Shoes",
+    description: "Get the Mach 6 Men’s Running Shoes for 30% off.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Check the product page for sizing and fit.",
+      "Availability varies by size and color.",
+      "Compare it with other models if you're unsure which suits your running style.",
+      "A fit for runners who want a lower price on a current model.",
+    ],
+  },
+  {
+    id: "c10",
+    topLabel: "SAVE",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "HOKA Referral Code – Save 10% for New Members",
+    description: "New HOKA members can get 10% off eligible orders.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "You need to join to receive the discount.",
+      "Applies to qualifying purchases.",
+      "Covers footwear and accessories that are included.",
+      "A fit for first-time HOKA shoppers.",
+    ],
+  },
+  {
+    id: "c11",
+    topLabel: "FROM",
+    mainValue: "$70",
+    offText: "DEAL",
+    title: "HOKA Deals – High-Cushion Shoes From $70",
+    description: "Browse high-cushion HOKA shoes, starting at $70.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Prices start at $70 on select styles.",
+      "Cushioned options for daily use.",
+      "The lowest price may apply to certain sizes and colors.",
+      "A fit for shoppers who want comfort at a lower price.",
+    ],
+  },
+  {
+    id: "c12",
+    topLabel: "SAVE",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "HOKA Offers – Save 20% When Buying 2+ Items",
+    description: "Save 20% when you buy two or more eligible HOKA items.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "You need at least two qualifying items in your cart.",
+      "Applies to eligible shoes and gear.",
+      "Check which products are included.",
+      "A fit for shoppers buying more than one item.",
+    ],
+  },
 ];
+
+export const OFFERS = HOKA_COUPONS;
+export type Offer = Coupon;

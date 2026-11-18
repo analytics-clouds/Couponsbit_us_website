@@ -1,0 +1,178 @@
+export interface Coupon {
+  id: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
+}
+
+export const TURO_COUPONS: Coupon[] = [
+  {
+    id: "c1",
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Turo Promo Code – 20% Off Car Rentals",
+    description: "Take 20% off eligible Turo rental bookings in the U.S. for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Reduces the price of qualifying Turo bookings by 20%.",
+      "Applies to vehicles listed on Turo that meet the offer terms.",
+      "Available only while the promotion is active.",
+      "Exclusions may apply, so check the terms before you book.",
+    ],
+  },
+  {
+    id: "c2",
+    topLabel: "UP TO",
+    mainValue: "$1,000",
+    offText: "OFF",
+    title: "Turo Promo Code – Up to $1,000 Off Monthly Rentals",
+    description: "Save as much as $1,000 on eligible month-long Turo rentals.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $1,000 off qualifying long-term bookings.",
+      "Applies to monthly rentals made through Turo.",
+      "The final discount depends on the vehicle and rental length.",
+      "A helpful option if you need a car for an extended stretch.",
+    ],
+  },
+  {
+    id: "c3",
+    topLabel: "SAVE",
+    mainValue: "$20",
+    offText: "OFF",
+    title: "Turo Discount Code – $20 Off Tesla Model 3 Rentals",
+    description: "Take $20 off eligible Tesla Model 3 bookings on Turo.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Deducts $20 from qualifying Tesla Model 3 rentals.",
+      "Applies to participating electric vehicle listings.",
+      "Availability varies by location and host.",
+      "Worth a look if you want to try an electric car.",
+    ],
+  },
+  {
+    id: "c4",
+    topLabel: "SAVE",
+    mainValue: "$83",
+    offText: "OFF",
+    title: "Turo Discount Code – $83 Off BMW Rentals",
+    description: "Save $83 on eligible BMW rentals booked through Turo.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes $83 off qualifying BMW reservations.",
+      "Applies to selected BMW models listed on Turo.",
+      "A minimum rental total may apply.",
+      "Suits drivers who want a BMW for their trip.",
+    ],
+  },
+  {
+    id: "c5",
+    topLabel: "UP TO",
+    mainValue: "$57",
+    offText: "OFF",
+    title: "Turo Voucher Code – Up to $57 Off Car Bookings",
+    description: "Get up to $57 off eligible Turo car rentals.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers savings of up to $57 on qualifying reservations.",
+      "Covers a range of vehicles for different travel plans.",
+      "The exact amount depends on your booking.",
+      "Helpful for trimming the cost of getting around.",
+    ],
+  },
+  {
+    id: "c6",
+    topLabel: "SAVE",
+    mainValue: "$25",
+    offText: "OFF",
+    title: "Turo Voucher Code – $25 Off Rental Bookings",
+    description: "Take $25 off your eligible Turo rental with this voucher.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Deducts $25 from qualifying car rentals.",
+      "Works on available vehicles listed on Turo.",
+      "Lowers the cost of an upcoming trip.",
+      "Check the offer terms for any minimum spend.",
+    ],
+  },
+  {
+    id: "c7",
+    topLabel: "UP TO",
+    mainValue: "$16",
+    offText: "OFF",
+    title: "Turo Coupon Code – Up to $16 Off Car Bookings",
+    description: "Save up to $16 on eligible Turo car bookings.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $16 off qualifying reservations.",
+      "Applies to vehicles for both everyday and travel use.",
+      "The discount amount varies by booking.",
+      "A fit for renters who keep an eye on their budget.",
+    ],
+  },
+  {
+    id: "c8",
+    topLabel: "FROM",
+    mainValue: "$50",
+    offText: "GIFT CARD",
+    title: "Turo Coupon Code – Gift Cards Starting at $50",
+    description: "Turo gift cards are available from $50 if you want to give someone a ride.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gift cards start at $50.",
+      "Makes a flexible gift for travelers and drivers.",
+      "Can be used toward eligible Turo bookings.",
+      "Review the gift card terms, including any expiration details.",
+    ],
+  },
+  {
+    id: "c9",
+    topLabel: "FROM",
+    mainValue: "$62",
+    offText: "DEAL",
+    title: "Turo Referral Code – Car Rentals Starting at $62",
+    description: "Find eligible Turo rentals with prices starting at $62.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists selected vehicles from $62 and up.",
+      "Gives you a range of cars to pick from for your trip.",
+      "Prices vary by vehicle, dates, and location.",
+      "Useful if you're comparing affordable rental options.",
+    ],
+  },
+];

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import KohlsCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { KOHLS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
+    absolute: "Kohls Promo Code: Up to 70% Off Clearance Sale | Nov 2026",
   },
   description:
-    "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
+    "Save with a Kohl’s Promo Code and Kohl’s Discount Code. Get up to 70% off clearance items and 50% off kitchen appliances with verified Nov 2026 deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/kohls-coupon-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-    title: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
+    title: "Kohls Promo Code: Up to 70% Off Clearance Sale | Nov 2026",
     description:
-      "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
+      "Save with a Kohl’s Promo Code and Kohl’s Discount Code. Get up to 70% off clearance items and 50% off kitchen appliances with verified Nov 2026 deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
+    title: "Kohls Promo Code: Up to 70% Off Clearance Sale | Nov 2026",
     description:
-      "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
+      "Save with a Kohl’s Promo Code and Kohl’s Discount Code. Get up to 70% off clearance items and 50% off kitchen appliances with verified Nov 2026 deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/kohls-logo_pijwvs.webp"],
     site: "@couponsbit",
   },
@@ -56,6 +56,16 @@ export const metadata: Metadata = {
   other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
+const kohlsOffers = KOHLS_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Kohl's ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/kohls-coupon-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" },
+}));
+
 const kohlsSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -63,9 +73,9 @@ const kohlsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-      name: "Kohl’s Promo code: Up to 70% Off + $15 Off | Nov 2026",
+      name: "Kohls Promo Code: Up to 70% Off Clearance Sale | Nov 2026",
       description:
-        "Shop with a Kohl’s Promo code or Kohl’s Discount Code to save up to 70% on clearance and get $15 off orders over $75. Verified Nov 2026.",
+        "Save with a Kohl’s Promo Code and Kohl’s Discount Code. Get up to 70% off clearance items and 50% off kitchen appliances with verified Nov 2026 deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       datePublished: "2026-01-01",
@@ -80,11 +90,11 @@ const kohlsSchema = {
       name: "Kohl's Promo codes & Promo codes",
       description: "Latest Kohl's coupon codes and offers.",
       url: "https://www.couponsbit.us/stores/kohls-coupon-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: KOHLS_COUPONS.length,
+      itemListElement: kohlsOffers.map((offer, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: { "@type": "Offer", name: o.title, description: o.desc, url: "https://www.couponsbit.us/stores/kohls-coupon-code", seller: { "@type": "Organization", name: "Kohl's", url: "https://www.kohls.com" } },
+        item: offer,
       })),
     },
 
@@ -126,75 +136,75 @@ const kohlsSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Kohl's offer promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Kohl's offers promotional coupons and codes for eligible purchases. Available offers, eligibility, and expiration dates vary by promotion."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/kohls-coupon-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Kohl's offer promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Kohl's offers promotional coupons and codes for eligible purchases. Available offers, eligibility, and expiration dates vary by promotion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find a Kohl's promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can check CouponsBit for available Kohl's promotions before shopping on Kohls.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use more than one Kohl's promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kohl's allows multiple eligible coupons on qualifying online orders, although restrictions apply. Kohl's currently states that up to four promo codes can be applied to an online order and only one sitewide percentage-off coupon can be used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Kohl's Cash with a promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kohl's Cash can generally be used alongside eligible coupons, subject to the terms of the individual promotions. Kohl's Cash is applied before a percentage-off total-purchase coupon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Kohl's Cash expire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Kohl's Cash can only be redeemed during the redemption period specified for the promotion or coupon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Kohl's coupon on Sephora at Kohl's?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Certain Kohl's coupons and promotions exclude Sephora at Kohl's merchandise. Always check the individual coupon's exclusions before checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my Kohl's promo code not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The code may be expired, restricted to specific products or brands, subject to usage limits, or incompatible with another promotion. Kohl's also excludes certain categories and charges from coupons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Kohl's have discounts during Black Friday and Cyber Monday?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kohl's participates in the major U.S. holiday shopping season, and shoppers can look for promotions during Black Friday and Cyber Monday. Available offers vary from year to year."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Where can I find a Kohl's promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check CouponsBit for available Kohl's promotions before shopping on Kohls.com."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use more than one Kohl's promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kohl's allows multiple eligible coupons on qualifying online orders, although restrictions apply. Kohl's currently states that up to four promo codes can be applied to an online order and only one sitewide percentage-off coupon can be used."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Kohl's Cash with a promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kohl's Cash can generally be used alongside eligible coupons, subject to the terms of the individual promotions. Kohl's Cash is applied before a percentage-off total-purchase coupon."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Kohl's Cash expire?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Kohl's Cash can only be redeemed during the redemption period specified for the promotion or coupon."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use a Kohl's coupon on Sephora at Kohl's?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Certain Kohl's coupons and promotions exclude Sephora at Kohl's merchandise. Always check the individual coupon's exclusions before checkout."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is my Kohl's promo code not working?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The code may be expired, restricted to specific products or brands, subject to usage limits, or incompatible with another promotion. Kohl's also excludes certain categories and charges from coupons."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Kohl's have discounts during Black Friday and Cyber Monday?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kohl's participates in the major U.S. holiday shopping season, and shoppers can look for promotions during Black Friday and Cyber Monday. Available offers vary from year to year."
-      }
-    }
-  ]
-},
   ],
 };
 

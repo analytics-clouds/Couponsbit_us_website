@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import CartersCouponsContent from "./_components/StoreCouponsContent";
+import { CARTERS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
+    absolute: "Carters promo: Save 75% on Baby Girl Fleece Set | Nov 2026",
   },
   description:
-    "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+    "Save with a Carters Promo Code and Carters Discount code. Get the Baby Girl Heart Fleece Layering Set for $22.80 with up to 75% off savings. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/carters-promo-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/carters-promo-code",
-    title: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
+    title: "Carters promo: Save 75% on Baby Girl Fleece Set | Nov 2026",
     description:
-      "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+      "Save with a Carters Promo Code and Carters Discount code. Get the Baby Girl Heart Fleece Layering Set for $22.80 with up to 75% off savings. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
+    title: "Carters promo: Save 75% on Baby Girl Fleece Set | Nov 2026",
     description:
-      "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+      "Save with a Carters Promo Code and Carters Discount code. Get the Baby Girl Heart Fleece Layering Set for $22.80 with up to 75% off savings. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/carters-logo_fcvfdh.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +55,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const storeOffers = CARTERS_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Carter's ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/carters-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
+}));
 
 const cartersSchema = {
   "@context": "https://schema.org",
@@ -62,15 +76,22 @@ const cartersSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/carters-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/carters-promo-code",
-      name: "Carter's Discount Code: Get 60% Off Sleepwear | Nov 2026",
+      name: "Carters promo: Save 75% on Baby Girl Fleece Set | Nov 2026",
       description:
-        "Get the latest Carter's discount code and Carter's promo code for November 2026. Enjoy up to 60% OFF Sleep Week, 30% OFF with a Carter's Credit Card, and free shipping on orders over $50.",
+        "Save with a Carters Promo Code and Carters Discount code. Get the Baby Girl Heart Fleece Layering Set for $22.80 with up to 75% off savings. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/carters-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/carters-promo-code#brand",
+      name: "Carter's",
+      url: "https://www.carters.com",
+      sameAs: ["https://www.facebook.com/Carters", "https://twitter.com/Carters"],
     },
 
     {
@@ -79,64 +100,12 @@ const cartersSchema = {
       name: "Carter's Promo Codes & Discount Codes",
       description: "Latest Carter's promo codes, discount codes, and deals on baby and kids clothing.",
       url: "https://www.couponsbit.us/stores/carters-promo-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Up to 60% Off During Carter's Stellar Sleep Week",
-            description: "Get cozy pajamas for the whole family at up to 60% off during Carter's Stellar Sleep Week.",
-            url: "https://www.couponsbit.us/stores/carters-promo-code",
-            seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "20% Off When You Join Carter's Email and Texts",
-            description: "Sign up for Carter's email and text alerts and unlock 20% off your next purchase.",
-            url: "https://www.couponsbit.us/stores/carters-promo-code",
-            seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "30% Off With a Carter's Credit Card",
-            description: "Apply for a Carter's Credit Card and take 30% off your first purchase, plus earn 3X VIP+ points.",
-            url: "https://www.couponsbit.us/stores/carters-promo-code",
-            seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Free Shipping on Orders Over $50 at Carter's",
-            description: "Spend $50 or more at Carter's online and skip the shipping fee on eligible orders.",
-            url: "https://www.couponsbit.us/stores/carters-promo-code",
-            seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "75% Off Baby Girl Heart Fleece Layering Set – Just $22.80",
-            description: "Save nearly 75% and pay just $22.80 for the 3-piece Heart Fleece Layering Set, down from $90.",
-            url: "https://www.couponsbit.us/stores/carters-promo-code",
-            seller: { "@type": "Organization", name: "Carter's", url: "https://www.carters.com" },
-          },
-        },
-      ],
+      numberOfItems: CARTERS_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -229,7 +198,9 @@ export default function CartersStorePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(cartersSchema) }}
       />
-      <CartersCouponsContent />
+      <Suspense fallback={null}>
+        <CartersCouponsContent />
+      </Suspense>
     </>
   );
 }

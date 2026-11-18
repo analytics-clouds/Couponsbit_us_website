@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { EDIBLE_COUPONS } from "./_components/offers";
 import EdibleArrangementsCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
+    absolute: "Edible Arrangements Promo Code: Save 25% + Free Shipping | Nov 2026",
   },
   description:
-    "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+    "Save with an Edible Arrangements Promo Code and Edible Arrangements Discount Code. Get 25% off select orders with free shipping and $25 off bake platters. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-    title: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
+    title: "Edible Arrangements Promo Code: Save 25% + Free Shipping | Nov 2026",
     description:
-      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+      "Save with an Edible Arrangements Promo Code and Edible Arrangements Discount Code. Get 25% off select orders with free shipping and $25 off bake platters. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
+    title: "Edible Arrangements Promo Code: Save 25% + Free Shipping | Nov 2026",
     description:
-      "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+      "Save with an Edible Arrangements Promo Code and Edible Arrangements Discount Code. Get 25% off select orders with free shipping and $25 off bake platters. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/edible_arrangements_logo_hcpsvl.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +55,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const edibleOffers = EDIBLE_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Edible Arrangements ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/edible-arrangements-coupon-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Edible Arrangements", url: "https://www.ediblearrangements.com" },
+}));
 
 const edibleArrangementsSchema = {
   "@context": "https://schema.org",
@@ -62,137 +75,37 @@ const edibleArrangementsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#webpage",
       url: "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-      name: "Edible Arrangements Discount Code: Save 30% on gift | Nov 2026",
+      name: "Edible Arrangements Promo Code: Save 25% + Free Shipping | Nov 2026",
       description:
-        "Get the latest Edible Arrangements discount code and Edible Arrangements promo code for November 2026. Enjoy 30% OFF selected gifts, 15% OFF eligible orders, and 1-hour delivery.",
+        "Save with an Edible Arrangements Promo Code and Edible Arrangements Discount Code. Get 25% off select orders with free shipping and $25 off bake platters. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#breadcrumb" },
     },
 
     {
-  "@type": "ItemList",
-  "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#offerlist",
-  "name": "Edible Arrangements Coupon Codes & Promo Codes",
-  "description": "Latest Edible Arrangements coupon codes, promo codes, and gift deals.",
-  "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-  "numberOfItems": 10,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "Offer",
-        "name": "Save $15 on Key Lime Cheesecake & Chocolate Dipped Fruit Box",
-        "description": "Surprise someone special with the Key Lime Cheesecake & Chocolate Dipped Fruit Box for just $29.99, down from $44.99.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#brand",
+      name: "Edible Arrangements",
+      url: "https://www.ediblearrangements.com",
+      sameAs: ["https://www.facebook.com/EdibleArrangements", "https://twitter.com/EdibleArrange"],
     },
+
     {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "Offer",
-        "name": "Save $20 on Key Lime Meet Sunshine Fruit Platter",
-        "description": "Add some brightness to any party with the fresh Key Lime Meet Sunshine Fruit Platter, just $34.99, down from $54.99.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
+      "@type": "ItemList",
+      "@id": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code#offerlist",
+      "name": "Edible Arrangements Coupon Codes & Promo Codes",
+      "description": "Latest Edible Arrangements coupon codes, promo codes, and gift deals.",
+      "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
+      "numberOfItems": EDIBLE_COUPONS.length,
+      itemListElement: edibleOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      }))
     },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "Offer",
-        "name": "Save $25 on Best of the Bake Key Lime Cheesecake Platter",
-        "description": "Treat your guests to the Best of the Bake Key Lime Cheesecake Platter for just $49.99, down from $74.99.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "Offer",
-        "name": "Gift Bundles Starting at $31.98 at Edible Arrangements",
-        "description": "Mark life's special moments with a gift bundle including a fruit bouquet, a cupcake, and a balloon, starting at $31.98.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Offer",
-        "name": "Unlock 15% Off Your Edible Arrangements Order",
-        "description": "Spend $50 more to unlock 15% off your eligible Edible Arrangements order.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-        "@type": "Offer",
-        "name": "Enjoy Fast 1-Hour Delivery at Edible Arrangements",
-        "description": "Get fresh gifts to the door fast with same-day 1-hour delivery options on select arrangements.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-        "@type": "Offer",
-        "name": "Save on Fresh Fruit Gifts & Desserts at Edible Arrangements",
-        "description": "Find limited-time deals on handcrafted fruit arrangements, marked-down fruit boxes, platters, and gourmet desserts.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "item": {
-        "@type": "Offer",
-        "name": "Shop Seasonal Favorites for Less at Edible Arrangements",
-        "description": "Browse special savings on popular seasonal gift collections, fruit platters, and bakery favorites.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "item": {
-        "@type": "Offer",
-        "name": "Save on Gourmet Gift Collections at Edible Arrangements",
-        "description": "Discover fresh fruit gifts and handcrafted treats at special prices with local delivery options.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "item": {
-        "@type": "Offer",
-        "name": "Send Sweet Gifts for Less at Edible Arrangements",
-        "description": "Check out special offers on fresh fruit, chocolate treats, and desserts with online ordering and fast delivery.",
-        "url": "https://www.couponsbit.us/stores/edible-arrangements-coupon-code",
-        "seller": { "@type": "Organization", "name": "Edible Arrangements", "url": "https://www.ediblearrangements.com" }
-      }
-    }
-  ]
-},
 
     {
       "@type": "WebSite",
@@ -284,7 +197,7 @@ export default function EdibleArrangementsStorePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(edibleArrangementsSchema) }}
       />
-      <EdibleArrangementsCouponsContent />
+      <Suspense fallback={null}><EdibleArrangementsCouponsContent /></Suspense>
     </>
   );
 }

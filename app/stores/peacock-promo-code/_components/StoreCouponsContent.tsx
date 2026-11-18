@@ -31,7 +31,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { type Offer, OFFERS } from "./offers";
+import { type Coupon, PEACOCK_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -58,8 +58,8 @@ export default function PeacockCouponsContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
-  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
-  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
+  const [activeOffer, setActiveOffer] = useState<Coupon | null>(null);
+  const handleGetDeal = (offer: Coupon) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -204,7 +204,7 @@ export default function PeacockCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Peacock Promo Codes & Offers</h2>
                 </div>
 
-                {OFFERS.map((c) => (
+                {PEACOCK_COUPONS.map((c: Coupon) => (
                   <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
@@ -212,8 +212,8 @@ export default function PeacockCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel || c.label}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue || c.value}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -223,14 +223,14 @@ export default function PeacockCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description || c.desc}</p>
                             <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
                               <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {(c.bullets ?? []).map((b, bi) => (
+                                {(c.points || c.bullets || []).map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -683,7 +683,7 @@ export default function PeacockCouponsContent() {
             Today's Top Peacock Deals
           </h3>
           <div className="space-y-6">
-            {OFFERS.slice(0, 4).map((offer, i) => (
+            {PEACOCK_COUPONS.slice(0, 4).map((offer, i) => (
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
                   {i + 1}

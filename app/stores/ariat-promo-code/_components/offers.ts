@@ -1,271 +1,376 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const ARIAT_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "GET",
-    value: "10% OFF",
-    title: "Ariat Discount Code – 10% Off on Full-Price Purchases",
-    desc: "Freshen up your wardrobe with a short-time discount on full-price Ariat styles.",
-    bullets: [
-      "Get 10% off on eligible full-price Ariat purchases.",
-      "Browse boots, clothing, and accessories.",
-      "Works on many regular-priced items.",
-      "Good for adding new everyday basics."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Promo Code: 10% Off Your Purchase",
+    description: "Save 10% on eligible Ariat products for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to select footwear, apparel, and accessories.",
+      "Check for exclusions before you add items to your cart.",
+      "Offered for a limited time.",
+      "A fit for everyday and western wear shoppers.",
+    ],
   },
   {
     id: "c2",
-    label: "GET",
-    value: "10% OFF",
-    title: "Ariat Discount Code – 10% Off on Select Orders",
-    desc: "Pick up extra savings on chosen Ariat items across the store.",
-    bullets: [
-      "Get 10% off on eligible purchases.",
-      "Look for deals on boots, clothes, and accessories.",
-      "A nice chance to save on your usual favorites.",
-      "Online offer for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Ariat Promo Code: 15% Off Your Order",
+    description: "Take 15% off eligible Ariat orders.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying products and orders only.",
+      "Covers select boots, clothing, and accessories.",
+      "Review the terms at checkout to confirm your items qualify.",
+      "A good option if you're adding to your wardrobe.",
+    ],
   },
   {
     id: "c3",
-    label: "FREE",
-    value: "SHIPPING",
-    title: "Ariat Coupon Code – Free Rush Shipping on Orders Over $250",
-    desc: "Get your order sooner with free rush shipping.",
-    bullets: [
-      "Enjoy free rush shipping on eligible orders over $250.",
-      "Shop shoes, clothing, and accessories.",
-      "Handy for bigger orders.",
-      "Shipping offer for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Discount Code: 10% Off Full-Price Items",
+    description: "Save 10% on full-price Ariat styles during this limited-time promotion.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible full-price merchandise only.",
+      "Sale and clearance items are likely excluded, so check the terms.",
+      "A fit for shoppers who want the newest arrivals.",
+      "Offered for a limited time.",
+    ],
   },
   {
     id: "c4",
-    label: "GET",
-    value: "10% OFF",
-    title: "Ariat Coupon Code – 10% Off on Your First Purchase",
-    desc: "Begin your Ariat shopping with a special discount on your first order.",
-    bullets: [
-      "Get 10% off on your first eligible purchase.",
-      "Sign up to get member perks.",
-      "Browse boots, workwear, and western clothing.",
-      "A good deal for new customers."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Discount Code: 10% Off Select Orders",
+    description: "Save 10% on select Ariat products.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying orders and items only.",
+      "Covers select boots, apparel, and accessories.",
+      "Confirm eligibility at checkout.",
+      "A modest discount for everyday purchases.",
+    ],
   },
   {
     id: "c5",
-    label: "SAVE",
-    value: "10% OFF",
-    title: "Ariat Promo Code – 10% Off on Your Purchase",
-    desc: "Use this offer to save more on eligible Ariat collections.",
-    bullets: [
-      "Get 10% off on qualifying purchases.",
-      "Covers a wide range of shoes and clothing.",
-      "An easy way to save on quality products.",
-      "Valid for a short time."
-    ]
+    topLabel: "EXTRA",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ariat Voucher Code: Extra 20% Off Sale Items",
+    description: "Take an extra 20% off select Ariat sale items.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Stacks on top of existing sale prices for eligible items.",
+      "Browse the sale section for qualifying styles.",
+      "Sale stock is limited, so sizes may sell out.",
+      "A good way to get more value on items already marked down.",
+    ],
   },
   {
     id: "c6",
-    label: "SAVE",
-    value: "15% OFF",
-    title: "Ariat Promo Code – 15% Off on Your Order",
-    desc: "Pick up your favorite Ariat styles and save a little more.",
-    bullets: [
-      "Get 15% off on eligible orders.",
-      "Find western boots and clothing.",
-      "Great for refreshing your closet.",
-      "Valid for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Voucher Code: 10% Off Sitewide",
+    description: "Save 10% on eligible items across Ariat's collections.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying products only.",
+      "Covers footwear, apparel, and accessories.",
+      "Check the exclusions before you check out.",
+      "Open to both new and returning customers.",
+    ],
   },
   {
     id: "c7",
-    label: "EXTRA",
-    value: "20% OFF",
-    title: "Ariat Offer Code – Extra 20% Off on Any Item",
-    desc: "Save big on chosen Ariat products with this extra discount.",
-    bullets: [
-      "Get an extra 20% off on eligible items.",
-      "Shop boots, jeans, jackets, and accessories.",
-      "A good way to save more on your picks.",
-      "Valid for a short promotional period."
-    ]
+    topLabel: "FREE",
+    mainValue: "RUSH",
+    offText: "SHIPPING",
+    title: "Ariat Coupon Code: Free Rush Shipping on Orders Over $250",
+    description: "Get free rush shipping when your Ariat order totals more than $250.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible online orders.",
+      "Your order must go over the $250 minimum.",
+      "Rush shipping gets your items to you faster than standard delivery.",
+      "Confirm delivery times and any restrictions at checkout.",
+    ],
   },
   {
     id: "c8",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Ariat Offer Code – 20% Off on Sale Styles",
-    desc: "Shop your favorite Ariat sale items and save even more.",
-    bullets: [
-      "Get 20% off on selected sale items.",
-      "Find deals on shoes and clothing.",
-      "Good for updating your wardrobe for the season.",
-      "Online offer for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Coupon Code: 10% Off Your First Purchase",
+    description: "Get 10% off your first Ariat order.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible first-time customers.",
+      "Works on qualifying products.",
+      "A good way to try Ariat for the first time.",
+      "Check the terms for any exclusions.",
+    ],
   },
   {
     id: "c9",
-    label: "EXTRA",
-    value: "20% OFF",
-    title: "Ariat Voucher Code – Extra 20% Off on Sale Items",
-    desc: "Find more savings in the Ariat sale collection.",
-    bullets: [
-      "Get 20% off on select clearance styles.",
-      "Look through boots, clothing, and accessories.",
-      "Good value on items that are already marked down.",
-      "Valid while stock lasts."
-    ]
+    topLabel: "EXTRA",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ariat Referral Code: Extra 20% Off One Item",
+    description: "Save an extra 20% on one eligible Ariat item for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The discount applies to a single qualifying item.",
+      "Covers select boots, apparel, and accessories.",
+      "Check which products are included.",
+      "A fit for shoppers who have one specific piece in mind.",
+    ],
   },
   {
     id: "c10",
-    label: "SAVE",
-    value: "10% OFF",
-    title: "Ariat Voucher Code – 10% Off Sitewide",
-    desc: "Save a little extra across eligible Ariat collections.",
-    bullets: [
-      "Get 10% off on qualifying sitewide purchases.",
-      "Shop workwear, western boots, and daily clothing.",
-      "Save on a wide range of quality products.",
-      "Online deal for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ariat Referral Code: 20% Off Sale Styles",
+    description: "Get 20% off select Ariat sale styles.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible sale products.",
+      "Browse discounted styles across the store.",
+      "Offered while supplies last.",
+      "A good option for shoppers watching their budget.",
+    ],
   },
   {
     id: "c11",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Ariat Discount Offer – 20% Off on Your Order",
-    desc: "Refresh your closet with this short-time Ariat discount.",
-    bullets: [
-      "Get 20% off on eligible Ariat purchases.",
-      "Shop boots, clothing, and accessories.",
-      "Good for shopping for the new season.",
-      "Valid for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ariat Deals: 20% Off Your Order",
+    description: "Save 20% on eligible Ariat purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying orders.",
+      "Covers select western and outdoor apparel.",
+      "Offered for a limited time on select products.",
+      "Check exclusions before you check out.",
+    ],
   },
   {
     id: "c12",
-    label: "GET",
-    value: "10% OFF",
-    title: "Ariat Discount Offer – 10% Off on Select Items",
-    desc: "Make the most of this discount on chosen Ariat products.",
-    bullets: [
-      "Get 10% off on qualifying items.",
-      "Covers shoes, clothing, and accessories.",
-      "An easy way to save on daily basics.",
-      "Shop before the offer ends."
-    ]
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Deals: 10% Off Select Items",
+    description: "Take 10% off select Ariat items during this promotion.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying boots, apparel, and accessories.",
+      "Only select merchandise is included.",
+      "Offered for a limited time.",
+      "A simple discount for everyday shopping.",
+    ],
   },
   {
     id: "c13",
-    label: "UP TO",
-    value: "$100 OFF",
-    title: "Ariat Bank Offer – Up to $100 Off on Eligible Orders",
-    desc: "The more you spend at Ariat, the more you save.",
-    bullets: [
-      "Save $15 on orders of $150.",
-      "Save $35 on orders of $250.",
-      "Save $100 on orders of $500.",
-      "Good for buying clothing, boots, and accessories."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$100",
+    offText: "OFF",
+    title: "Ariat Cart Code: Up to $100 Off Eligible Orders",
+    description: "Save up to $100 on qualifying Ariat orders.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The savings grow as your qualifying spend increases.",
+      "Applies to select purchases only.",
+      "Check the spending tiers in the offer terms.",
+      "A fit for larger orders.",
+    ],
   },
   {
     id: "c14",
-    label: "GET",
-    value: "$10 OFF",
-    title: "Ariat Bank Offer – $10 Off Your Purchase",
-    desc: "Cut the cost of eligible Ariat orders right away.",
-    bullets: [
-      "Get $10 off on qualifying purchases.",
-      "Shop boots, clothing, and accessories.",
-      "A simple way to lower your order total.",
-      "A short-time chance to save."
-    ]
+    topLabel: "GET",
+    mainValue: "$10",
+    offText: "OFF",
+    title: "Ariat Cart Code: $10 Off Your Purchase",
+    description: "Save $10 on an eligible Ariat order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying purchases across the store.",
+      "The discount is taken off at checkout.",
+      "Check whether a minimum spend is required.",
+      "A simple saving for everyday orders.",
+    ],
   },
   {
     id: "c15",
-    label: "EXTRA",
-    value: "25% OFF",
-    title: "Ariat Gift Voucher – Extra 25% Off on Your Cart",
-    desc: "Catch one of Ariat's biggest sale events on chosen items.",
-    bullets: [
-      "Get an extra 25% off on eligible purchases.",
-      "Browse western and workwear collections.",
-      "Great for updating your wardrobe.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "EXTRA",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Ariat Offers: Extra 25% Off Your Cart",
+    description: "Save an extra 25% on select Ariat items during this limited-time event.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to qualifying items in your cart.",
+      "Only select products are included.",
+      "Offered for a limited time.",
+      "One of the larger percentage discounts listed here, so check the exclusions.",
+    ],
   },
   {
     id: "c16",
-    label: "FROM",
-    value: "$9",
-    title: "Ariat Gift Voucher – Ariat Sale Starting at $9",
-    desc: "Find great deals across the Ariat sale collection.",
-    bullets: [
-      "Sale styles start at just $9.",
-      "Get discounts on shoes, clothing, and accessories.",
-      "A good chance to grab clearance favorites.",
-      "New markdowns for a short time."
-    ]
+    topLabel: "FROM",
+    mainValue: "$9",
+    offText: "SALE",
+    title: "Ariat Offers: Sale Items from $9",
+    description: "Browse Ariat sale products starting at $9.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Prices start at $9 on select items.",
+      "Selection varies across collections.",
+      "Limited-time pricing on eligible products.",
+      "A fit for budget-minded shoppers.",
+    ],
   },
   {
     id: "c17",
-    label: "FREE",
-    value: "PERKS",
-    title: "Ariat Wallet Offer – Free Shipping & Free Returns",
-    desc: "Get more perks with Ariat Insider shopping benefits.",
-    bullets: [
-      "Enjoy free shipping on eligible orders.",
-      "Get free returns for extra ease.",
-      "Perks are open to Ariat Insiders.",
-      "Makes online shopping simple and stress-free."
-    ]
+    topLabel: "FREE",
+    mainValue: "SHIP",
+    offText: "& RETURNS",
+    title: "Ariat Promo Code: Free Shipping and Free Returns",
+    description: "Get free shipping and free returns through Ariat Insider benefits.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Free shipping applies to eligible purchases.",
+      "Qualifying orders can be returned at no extra cost.",
+      "Insider membership may be required, so check the program terms.",
+      "A fit for frequent Ariat shoppers.",
+    ],
   },
   {
     id: "c18",
-    label: "FREE",
-    value: "SHIPPING",
-    title: "Ariat Wallet Offer – Free Express Shipping on Orders Over £200",
-    desc: "Get your order sooner with free express delivery.",
-    bullets: [
-      "Enjoy free express shipping on orders over £200.",
-      "Shop Ariat collections online.",
-      "Handy for bigger orders.",
-      "Delivery offer for a short time."
-    ]
+    topLabel: "FREE",
+    mainValue: "EXPRESS",
+    offText: "SHIPPING",
+    title: "Ariat Discount Code: Free Express Shipping on Orders Over £200",
+    description: "Get free express shipping when you spend over £200.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible orders over £200.",
+      "This threshold is listed in British pounds, so it may apply to UK orders.",
+      "Express shipping speeds up delivery.",
+      "Confirm that the offer is available in your region.",
+    ],
   },
   {
     id: "c19",
-    label: "MILITARY",
-    value: "20% OFF",
-    title: "Ariat Discount Code – 20% Off with Military Savings",
-    desc: "Eligible military members can get special savings on Ariat orders.",
-    bullets: [
-      "Get 20% off on qualifying Ariat orders.",
-      "Open to verified military members and their families.",
-      "Shop boots, clothing, and accessories.",
-      "A special perk for members."
-    ]
+    topLabel: "GET",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Ariat Voucher Code: 20% Off for Military Members",
+    description: "Eligible military members can save 20% on qualifying Ariat orders.",
+    code: "",
+    verified: "Verified",
+    userType: "Military",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to eligible military customers.",
+      "You may need to verify your status.",
+      "Covers qualifying Ariat products.",
+      "A discount for those who serve.",
+    ],
   },
   {
     id: "c20",
-    label: "GET",
-    value: "10% OFF",
-    title: "Ariat Coupon Code – 10% Off on Your First Order",
-    desc: "Join the Ariat family and get a welcome discount.",
-    bullets: [
-      "Get 10% off on your first eligible purchase.",
-      "Hear about new arrivals and special deals.",
-      "Browse western and workwear collections.",
-      "A good deal for new customers."
-    ]
-  }
+    topLabel: "GET",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Ariat Coupon Code: 10% Off Your First Order When You Join",
+    description: "Join Ariat and get 10% off your first eligible order.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies to new customers who sign up.",
+      "Works on qualifying products.",
+      "Check the terms for exclusions.",
+      "A good way to start shopping with Ariat.",
+    ],
+  },
 ];

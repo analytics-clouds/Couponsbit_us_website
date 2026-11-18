@@ -1,4 +1,4 @@
-export interface Offer {
+export interface Coupon {
   id: string;
   label?: string;
   value?: string;
@@ -16,7 +16,9 @@ export interface Offer {
   points?: string[];
 }
 
-export const OFFERS: Offer[] = [
+export type Offer = Coupon;
+
+export const PEACOCK_COUPONS: Coupon[] = [
   {
     id: "pk1",
     topLabel: "SAVE",
@@ -252,3 +254,5 @@ export const OFFERS: Offer[] = [
     ],
   },
 ];
+
+export const OFFERS = PEACOCK_COUPONS;

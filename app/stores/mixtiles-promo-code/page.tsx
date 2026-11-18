@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { MIXTILES_COUPONS } from "./_components/offers";
 import MixtilesCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
+    absolute: "Mixtiles Promo Code: Up to 77% OFF | Nov 2026",
   },
   description:
-    "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+    "Mixtiles Promo Code saves up to 77% on select items and Wild Visuals from $164.25. Mixtiles Discount Code has verified Nov 2026 savings. Shop now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/mixtiles-promo-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
+    title: "Mixtiles Promo Code: Up to 77% OFF | Nov 2026",
     description:
-      "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+      "Mixtiles Promo Code saves up to 77% on select items and Wild Visuals from $164.25. Mixtiles Discount Code has verified Nov 2026 savings. Shop now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
+    title: "Mixtiles Promo Code: Up to 77% OFF | Nov 2026",
     description:
-      "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+      "Mixtiles Promo Code saves up to 77% on select items and Wild Visuals from $164.25. Mixtiles Discount Code has verified Nov 2026 savings. Shop now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338496/mixtiles-logo_xrh8pf.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +55,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const mixtilesOffers = MIXTILES_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Mixtiles ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/mixtiles-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
+}));
 
 const mixtilesSchema = {
   "@context": "https://schema.org",
@@ -62,15 +75,22 @@ const mixtilesSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/mixtiles-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-      name: "Mixtiles Discount Code: Buy 1 Get 1 & get 50% Off | Nov 2026",
+      name: "Mixtiles Promo Code: Up to 77% OFF | Nov 2026",
       description:
-        "Get the latest Mixtiles discount code and Mixtiles promo code for November 2026. Enjoy Buy 1 Get 1 50% OFF, up to 27% OFF wall art, and free shipping over $59.",
+        "Mixtiles Promo Code saves up to 77% on select items and Wild Visuals from $164.25. Mixtiles Discount Code has verified Nov 2026 savings. Shop now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/mixtiles-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/mixtiles-promo-code#brand",
+      name: "Mixtiles",
+      url: "https://www.mixtiles.com",
+      sameAs: ["https://www.facebook.com/Mixtiles", "https://twitter.com/Mixtiles"],
     },
 
     {
@@ -79,64 +99,12 @@ const mixtilesSchema = {
       name: "Mixtiles Promo Codes & Discount Codes",
       description: "Latest Mixtiles promo codes, discount codes, and photo tile deals.",
       url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Save Up to 27% on Mixtiles Wall Art Collections",
-            description: "Give your walls a fresh look with custom photo displays and save up to 27% on select Mixtiles collections.",
-            url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-            seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Up to 15% Off Large Orders at Mixtiles",
-            description: "Save more with volume discounts — 5% off $1,500+, 10% off $3,000+, and 15% off $10,000+ orders.",
-            url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-            seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Free Shipping on Orders Over $59 at Mixtiles",
-            description: "Order your favorite wall art and get free shipping on eligible Mixtiles purchases over $59.",
-            url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-            seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Wild Visuals Collection From $164.25 at Mixtiles",
-            description: "Build an eye-catching gallery wall with the Wild Visuals collection, now from $164.25 instead of $219.",
-            url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-            seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Offbeat Set From $105.75 at Mixtiles",
-            description: "Bring modern style to your walls with the bestselling Offbeat Set, starting at $105.75 instead of $141.",
-            url: "https://www.couponsbit.us/stores/mixtiles-promo-code",
-            seller: { "@type": "Organization", name: "Mixtiles", url: "https://www.mixtiles.com" },
-          },
-        },
-      ],
+      numberOfItems: MIXTILES_COUPONS.length,
+      itemListElement: mixtilesOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -229,7 +197,7 @@ export default function MixtilesStorePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mixtilesSchema) }}
       />
-      <MixtilesCouponsContent />
+      <Suspense fallback={null}><MixtilesCouponsContent /></Suspense>
     </>
   );
 }

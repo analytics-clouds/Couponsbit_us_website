@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BirkenstockCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { BIRKENSTOCK_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Birkenstock Promo Code – Up to 50% Off Sandals, Clogs & More",
+    absolute: "Birkenstock Promo Code: Up to 50% Off Kids' Footwear | Nov 2026",
   },
   description:
-    "Use a Birkenstock promo code – up to 50% off kids' footwear, 40% off sandals & clogs. Birkenstock discount code: men's clogs from $59, foot care from $9.95!",
+    "Save with a Birkenstock Promo Code and Birkenstock Discount Code. Get up to 50% off select little kids' footwear with verified deals in Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/birkenstock-promo-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
-    title: "Birkenstock Promo Code – Up to 50% Off Sandals, Clogs & More",
+    title: "Birkenstock Promo Code: Up to 50% Off Kids' Footwear | Nov 2026",
     description:
-      "Use a Birkenstock promo code – up to 50% off kids' footwear, 40% off sandals & clogs. Birkenstock discount code: men's clogs from $59, foot care from $9.95!",
+      "Save with a Birkenstock Promo Code and Birkenstock Discount Code. Get up to 50% off select little kids' footwear with verified deals in Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Birkenstock Promo Code – Up to 50% Off Sandals, Clogs & More",
+    title: "Birkenstock Promo Code: Up to 50% Off Kids' Footwear | Nov 2026",
     description:
-      "Use a Birkenstock promo code – up to 50% off kids' footwear, 40% off sandals & clogs. Birkenstock discount code: men's clogs from $59, foot care from $9.95!",
+      "Save with a Birkenstock Promo Code and Birkenstock Discount Code. Get up to 50% off select little kids' footwear with verified deals in Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1792648468/birkenstork_logo_nin4ru.webp"],
     site: "@couponsbit",
   },
@@ -52,7 +53,19 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { 'geo.region': 'US', 'geo.country': 'US', language: 'en-US' },
 };
+
+const storeOffers = BIRKENSTOCK_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Birkenstock ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/birkenstock-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" },
+}));
 
 const birkenstockSchema = {
   "@context": "https://schema.org",
@@ -61,15 +74,22 @@ const birkenstockSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/birkenstock-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
-      name: "Birkenstock Promo Code – Up to 50% Off Sandals, Clogs & More",
+      name: "Birkenstock Promo Code: Up to 50% Off Kids' Footwear | Nov 2026",
       description:
-        "Use a Birkenstock promo code – up to 50% off kids' footwear, 40% off sandals & clogs. Birkenstock discount code: men's clogs from $59, foot care from $9.95!",
+        "Save with a Birkenstock Promo Code and Birkenstock Discount Code. Get up to 50% off select little kids' footwear with verified deals in Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/birkenstock-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/birkenstock-promo-code#brand",
+      name: "Birkenstock",
+      url: "https://www.birkenstock.com",
+      sameAs: ["https://www.facebook.com/Birkenstock", "https://twitter.com/Birkenstock"],
     },
 
     {
@@ -78,17 +98,11 @@ const birkenstockSchema = {
       name: "Birkenstock Promo Codes & Coupon Codes",
       description: "Latest Birkenstock promo codes and offers.",
       url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: BIRKENSTOCK_COUPONS.length,
+      itemListElement: storeOffers.map((offer, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Offer",
-          name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/birkenstock-promo-code",
-          seller: { "@type": "Organization", name: "Birkenstock", url: "https://www.birkenstock.com" },
-        },
+        item: offer,
       })),
     },
 
@@ -122,43 +136,43 @@ const birkenstockSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/birkenstock-promo-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Birkenstock offer promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Birkenstock features promotions and selected sale offers from time to time. Check CouponsBit and the official store for current opportunities."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/birkenstock-promo-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Birkenstock offer promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Birkenstock features promotions and selected sale offers from time to time. Check CouponsBit and the official store for current opportunities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a promo code on every Birkenstock style?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always. Certain codes may exclude selected models, discounted items or particular collections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Birkenstock best known for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The brand is known for its signature anatomically shaped footbed and recognisable styles, including Arizona sandals and Boston clogs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I find the best Birkenstock deal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare available promo codes, eligible sale styles, shipping terms and product exclusions before placing your order."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Can I use a promo code on every Birkenstock style?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not always. Certain codes may exclude selected models, discounted items or particular collections."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Birkenstock best known for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The brand is known for its signature anatomically shaped footbed and recognisable styles, including Arizona sandals and Boston clogs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I find the best Birkenstock deal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Compare available promo codes, eligible sale styles, shipping terms and product exclusions before placing your order."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -166,7 +180,9 @@ export default function BirkenstockStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(birkenstockSchema) }} />
-      <BirkenstockCouponsContent />
+      <Suspense fallback={null}>
+        <BirkenstockCouponsContent />
+      </Suspense>
     </>
   );
 }

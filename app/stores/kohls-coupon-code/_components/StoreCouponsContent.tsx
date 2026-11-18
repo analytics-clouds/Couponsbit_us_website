@@ -31,7 +31,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { type Offer, OFFERS } from "./offers";
+import { type Coupon, KOHLS_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -58,8 +58,8 @@ export default function KohlsCouponsContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
-  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
-  const handleGetDeal = (offer: Offer) => { setActiveOffer(offer); setShowModal(true); };
+  const [activeOffer, setActiveOffer] = useState<Coupon | null>(null);
+  const handleGetDeal = (offer: Coupon) => { setActiveOffer(offer); setShowModal(true); };
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -128,7 +128,7 @@ export default function KohlsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.7k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Big savings are waiting across fashion, home, and everyday essentials with the latest Kohl’s Promo Code offers this Nov 2026. Score up to 70% off clearance, $15 off orders over $75, or $10 off purchases of $25 or more on eligible items. Looking for even more value? A Kohl’s Discount Code can unlock up to 50% off storewide, 40% off sweaters and tops, and 25% off women’s Jockey products. Our verified offers are refreshed regularly to help you maximize every purchase.
+                      Kohl’s shoppers can find major savings with a Kohl’s Promo Code in Nov 2026, including up to 70% off clearance sale items and up to 50% off select kitchen appliances. Explore discounts across clothing, home goods, footwear, furniture, and seasonal products while comparing limited-time offers. Looking for a Kohl’s Discount Code? We regularly update verified codes and hand-picked deals to help shoppers discover current savings across popular Kohl’s categories.
                     </p>
                     <a
                       href={STORE_URL}
@@ -150,11 +150,11 @@ export default function KohlsCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -204,7 +204,7 @@ export default function KohlsCouponsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">Kohl's Coupon Codes & Offers</h2>
                 </div>
 
-                {OFFERS.map((c) => (
+                {KOHLS_COUPONS.map((c: Coupon) => (
                   <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
@@ -212,8 +212,8 @@ export default function KohlsCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -223,14 +223,14 @@ export default function KohlsCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
                             <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
                               <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -291,63 +291,63 @@ export default function KohlsCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Shirt, name: "Apparel & Shoes", count: "50+", color: "text-blue-500", href: "/categories/fashion" },
-                        { icon: ShoppingBag, name: "Home & Kitchen", count: "30+", color: "text-purple-500", href: "/categories/fashion" },
-                        { icon: Sparkles, name: "Beauty", count: "15+", color: "text-pink-500", href: "/categories/fashion" },
-                        { icon: Gift, name: "Kohl's Cash", count: "12+", color: "text-teal-500", href: "/categories/fashion" },
-                        { icon: Truck, name: "Free Shipping", count: "25+", color: "text-orange-500", href: "/categories/fashion" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Shirt, name: "Apparel & Shoes", count: "50+", color: "text-blue-500", href: "/categories/fashion" },
+                      { icon: ShoppingBag, name: "Home & Kitchen", count: "30+", color: "text-purple-500", href: "/categories/fashion" },
+                      { icon: Sparkles, name: "Beauty", count: "15+", color: "text-pink-500", href: "/categories/fashion" },
+                      { icon: Gift, name: "Kohl's Cash", count: "12+", color: "text-teal-500", href: "/categories/fashion" },
+                      { icon: Truck, name: "Free Shipping", count: "25+", color: "text-orange-500", href: "/categories/fashion" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find More Kohl's Deals
-  </h3>
-  <div className="space-y-6">
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Finding a code is only one part of shopping strategically at Kohl's. You can also compare several types of offers before placing your order.
-    </p>
-    <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
-      <p>
-        <strong className="text-black font-black block mb-1">Check sale merchandise first.</strong>
-        Kohl's frequently combines sale pricing with other promotional opportunities. Look at the item's current promotion before deciding which coupon to apply.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Check your Kohl's Wallet.</strong>
-        Eligible coupons can be saved to your Wallet, making them easier to access during checkout.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Look for Kohl's Cash periods.</strong>
-        If you're shopping during a Kohl's Cash earning event, consider whether your qualifying purchase could generate future Kohl's Cash.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Check Rewards benefits.</strong>
-        Frequent shoppers can review their Rewards balance and available benefits before completing an order.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Compare the offer terms.</strong>
-        A percentage-off coupon isn't automatically useful for every order. Check which items qualify and whether the promotion works with the products you actually want.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Check CouponsBit before checkout.</strong>
-        A quick search for a current Kohl's promo code can help you identify an available offer before you place your order.
-      </p>
-    </div>
-  </div>
-</div>
+                  <h3 className="text-black font-black text-lg mb-8">
+                    How to Find More Kohl's Deals
+                  </h3>
+                  <div className="space-y-6">
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      Finding a code is only one part of shopping strategically at Kohl's. You can also compare several types of offers before placing your order.
+                    </p>
+                    <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
+                      <p>
+                        <strong className="text-black font-black block mb-1">Check sale merchandise first.</strong>
+                        Kohl's frequently combines sale pricing with other promotional opportunities. Look at the item's current promotion before deciding which coupon to apply.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Check your Kohl's Wallet.</strong>
+                        Eligible coupons can be saved to your Wallet, making them easier to access during checkout.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Look for Kohl's Cash periods.</strong>
+                        If you're shopping during a Kohl's Cash earning event, consider whether your qualifying purchase could generate future Kohl's Cash.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Check Rewards benefits.</strong>
+                        Frequent shoppers can review their Rewards balance and available benefits before completing an order.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Compare the offer terms.</strong>
+                        A percentage-off coupon isn't automatically useful for every order. Check which items qualify and whether the promotion works with the products you actually want.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Check CouponsBit before checkout.</strong>
+                        A quick search for a current Kohl's promo code can help you identify an available offer before you place your order.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
 
               </div>
@@ -382,411 +382,411 @@ export default function KohlsCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-      {/* Main Content Area */}
-      <div className="prose max-w-none text-justify">
+              {/* Main Content Area */}
+              <div className="prose max-w-none text-justify">
 
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-xl mb-8">
-  <h2 className="text-black font-black text-xl mb-4">
-    Kohl's Coupon Code Summary
-  </h2>
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm max-w-xl mb-8">
+                  <h2 className="text-black font-black text-xl mb-4">
+                    Kohl's Coupon Code Summary
+                  </h2>
 
-  <p className="text-gray-500 font-medium text-sm leading-relaxed mb-4">
-    <strong>Clearance Sale</strong> - Save up to 70% OFF on eligible products.
-  </p>
-
-  <ol className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-5 list-decimal">
-    <li><strong>Brand:</strong> Kohl's</li>
-    <li><strong>Offer:</strong> Clearance Sale</li>
-    <li><strong>Discount:</strong> Up to 70% OFF</li>
-    <li><strong>Offer Type:</strong> Clearance Sale</li>
-    <li><strong>Applicable On:</strong> All users on eligible products</li>
-    <li><strong>Availability:</strong> Active</li>
-    <li><strong>Country:</strong> USA</li>
-    <li><strong>Verified By:</strong> Couponsbit</li>
-  </ol>
-</div>
-
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Kohl's Promo Code, Coupon Code & Discount Offers
-        </h2>
-
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <p>
-            Shopping for clothes, shoes, beauty products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home essentials</Link>, or gifts often means comparing multiple offers before you check out. At Kohl's, there are several ways to look for a better deal, from promotional discounts and sale events to Kohl's Cash and Rewards. That makes checking for a Kohl's promo code before completing your order a useful step.
-          </p>
-          <p>
-            Kohl's brings together fashion, footwear, accessories, beauty, home products, toys, pet essentials, and more under one retail destination. Whether you're <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">refreshing your wardrobe</Link>, preparing for a new season, shopping for the family, or looking for holiday gifts, you can browse current Kohl's offers and then check CouponsBit for an available promotion before placing your order.
-          </p>
-
-          <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["Clearance Sale Deal", "Up To 70% OFF", "All Users", "Save up to 70% in store and online across multiple categories", "Clearance Items"],
-        ["$10 OFF $50+ Toys Deal", "$10 OFF $50+", "Kohl's Rewards Members", "Use code TOYS10; includes select LEGO, ends Oct 4 (excludes baby gear/electronics)", "Select Toys"],
-        ["Kitchen Appliances Sale", "Up To 50% OFF", "All Users", "Epic Deal discounts on select kitchen appliances and essentials", "Kitchen Appliances"],
-        ["Croft & Barrow V-Neck Tee", "40% OFF ($7.19)", "All Users", "Reduced from $11.99 regular price during Sale & Clearance event", "Women's Clothing"],
-        ["New Markdowns Clearance", "Up To 70% OFF", "All Users", "Deep discounts on new markdowns in fashion, home, and accessories", "Clearance Markdowns"],
-        ["Storewide Savings Offer", "Up To 50% OFF", "All Users", "Discounts on fashion, home essentials, beauty, and accessories", "Storewide Categories"],
-        ["New User First Order Offer", "Flat 15% OFF", "New Customers", "Sign up to receive a flat 15% introductory discount on your first order", "First Orders"],
-        ["Levi's Clothing Sale", "Up To 30% OFF", "All Users", "Discounts on loose clothing styles, jeans, tops, and casualwear", "Levi's Apparel"],
-        ["Footwear Collection Sale", "Up To 50% OFF", "All Users", "Save up to 50% on shoes and footwear styles for all occasions", "Kohl's Footwear"],
-        ["Women's Clothing Sale", "Up To 40% OFF", "All Users", "Savings on dresses, tops, casualwear, and women's fashion", "Women's Apparel"],
-        ["Men's Activewear Deal", "Up To 40% OFF", "All Users", "Save on workout clothing and active styles for everyday movement", "Men's Activewear"],
-        ["Clearance Extra Savings", "15% OFF", "All Users", "Grab an extra 15% OFF on eligible clearance products", "Selected Clearance"],
-        ["Sweaters & Tops Deal", "Flat 40% OFF", "All Users", "Flat 40% OFF on selected seasonal clothing, tops, and sweaters", "Sweaters & Tops"],
-        ["Outdoor & Garden Decor", "30% OFF", "All Users", "Save 30% on decorative outdoor pieces and garden essentials", "Outdoor & Garden"],
-        ["Patio Furniture Sale", "Flat 30% OFF", "All Users", "Flat 30% discount on eligible outdoor furniture styles", "Patio Furniture"],
-        ["Kohl's Card Member Offer", "Flat 35% OFF", "Kohl's Cardholders", "Exclusive flat 35% OFF when paying with a Kohl's Card", "Eligible Card Orders"],
-        ["Kitchen & Dining Sale", "30% OFF", "All Users", "Save 30% on cookware, dining essentials, and kitchen accessories", "Kitchen & Dining"],
-        ["Women's Jockey Apparel", "Flat 25% OFF", "All Users", "Flat 25% OFF on comfortable essentials and everyday Jockey apparel", "Jockey Collection"],
-        ["Athletic Shoes Sale", "Up To 25% OFF", "All Users", "Savings on sports, training, and active footwear styles", "Athletic Shoes"],
-        ["$15 OFF Tiered Coupon", "$15 OFF $75+", "All Users", "Flat $15 discount applied on qualifying orders over $75", "Orders $75+"],
-        ["$10 OFF Tiered Coupon", "$10 OFF $25+", "All Users", "Save $10 on eligible department store orders above $25", "Orders $25+"],
-        ["Kohl's Cash Rewards", "Earn $10 per $50", "All Users", "Earn $10 in Kohl's Cash for every $50 spent during promo periods", "Qualifying Purchases"],
-        ["Jewelry Collection Deal", "From $14", "All Users", "Everyday and special occasion accessories starting from $14", "Kohl's Jewelry"]
-      ].map((row, i) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 22 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
-          <div className="space-y-8">
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Find a Kohl's Promo Code
-        </h3>
-        <p>
-          A Kohl's promo code can help you access an eligible promotion when shopping online. Kohl's provides online-eligible coupons with associated promo codes, which can be entered during checkout or saved to your Kohl's Wallet.
-        </p>
-        <p>
-          Before you shop, check CouponsBit for available Kohl's promotions and review the terms attached to each offer. Some promotions may apply to specific departments, brands, or types of merchandise, while others may have broader eligibility.
-        </p>
-        <p>
-          It's also worth checking whether the promotion can be combined with other available Kohl's discounts. Kohl's has specific rules for applying multiple coupons, so understanding those conditions can help you use your available offers correctly.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Kohl's Coupons, Deals &amp; Offers
-        </h3>
-        <p>
-          Kohl's shopping promotions aren't limited to one type of discount. Depending on the current promotion calendar, shoppers may come across percentage-off offers, department-specific coupons, dollar-off promotions, sale pricing, Kohl's Cash opportunities, and Rewards benefits.
-        </p>
-        <p>
-          Checking these options together can help you understand which promotion works with the items in your cart.
-        </p>
-        <p>
-          <strong>Clothing &amp; Apparel:</strong> Kohl's is a convenient destination for everyday clothing for women, men, and children. You can find casual clothing, workwear, activewear, seasonal apparel, sleepwear, outerwear, denim, and other wardrobe essentials. Its assortment includes both national labels and Kohl's-owned brands, giving shoppers options for different styles and occasions. Whether you're shopping for everyday basics or updating your seasonal wardrobe, look for sale items and check whether a current Kohl's promo code applies to the products you're considering.
-        </p>
-        <p>
-          <strong>Shoes:</strong> Kohl's carries footwear for women, men, and kids across casual, athletic, dress, outdoor, and seasonal styles. You can shop sneakers, boots, sandals, flats, heels, slippers, work shoes, and children's footwear from a mix of national and Kohl's brands. Footwear can also become a useful category to watch during seasonal promotions, back-to-school shopping, and holiday sales.
-        </p>
-        <p>
-          <strong>Beauty:</strong> Beauty shoppers can find skincare, cosmetics, haircare, fragrance, personal care, and beauty accessories at Kohl's. Kohl's also has Sephora at Kohl's locations and online assortment, giving shoppers access to a broader selection of beauty brands. However, Kohl's specifically notes that Sephora at Kohl's merchandise is excluded from certain coupons and promotions, so always check the offer's terms before checkout.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Home &amp; Kitchen
-        </h3>
-        <p>
-          Kohl's home department covers everything from bedding and bath products to kitchen and dining essentials.
-        </p>
-        <p>
-          You can shop for:
-        </p>
-        <p>Bedding and sheets</p>
-        <p>Towels and bath accessories</p>
-        <p>Kitchen appliances and tools</p>
-        <p>Cookware and bakeware</p>
-        <p>Dinnerware and glassware</p>
-        <p>Home décor</p>
-        <p>Lighting</p>
-        <p>Storage and organization</p>
-        <p>Electronics</p>
-        <p>Floor-care products</p>
-        <p>
-          Kohl's has expanded its home assortment to include categories such as wall art, glassware, ceramic décor, barware, botanicals, and lighting.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Kids &amp; Baby
-        </h3>
-        <p>
-          Families can shop children's clothing, shoes, toys, accessories, and other everyday essentials. Kohl's carries children's brands alongside its own collections, making it possible to build seasonal wardrobes or shop for birthdays and holidays in one place.
-        </p>
-        <p>
-          Back-to-school is particularly relevant for this category, with clothing, footwear, backpacks, and other essentials often becoming part of seasonal shopping campaigns.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Toys &amp; Gifts
-        </h3>
-        <p>
-          Kohl's also provides options for birthdays, holidays, celebrations, and everyday gifting.
-        </p>
-        <p>
-          Depending on the season, shoppers can find toys, games, accessories, home gifts, beauty products, apparel, and other items suitable for different recipients.
-        </p>
-        <p>
-          If you're shopping for multiple gifts at once, checking for a Kohl's coupon code before checkout can be worthwhile, particularly when your cart contains several eligible items.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Pet Essentials
-        </h3>
-        <p>
-          Kohl's assortment also includes pet-related products, making the store useful beyond traditional clothing and home shopping.
-        </p>
-        <p>
-          For households shopping across multiple categories, the ability to combine different types of merchandise in one order can make Kohl's a practical one-stop shopping destination.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Kohl's Cash: Another Way to Save
-        </h3>
-        <p>
-          One of the most recognizable parts of the Kohl's shopping experience is Kohl's Cash.
-        </p>
-        <p>
-          During designated promotional periods, customers can earn Kohl's Cash on qualifying purchases made online or in stores. The amount is calculated after applicable coupons and discounts but before tax and shipping. Kohl's Cash can then be redeemed during the stated redemption period.
-        </p>
-        <p>
-          This makes Kohl's Cash different from a traditional Kohl's promo code. Instead of immediately reducing the current purchase through a percentage-off promotion, it can provide a future shopping benefit when used during its valid redemption window.
-        </p>
-        <p>
-          Kohl's Cash is also applied before percentage-off total-purchase coupons during checkout.
-        </p>
-        <p>
-          Because Kohl's Cash has specific earning and redemption dates, check those dates carefully rather than assuming that an unused coupon will remain valid indefinitely.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Kohl's Rewards
-        </h3>
-        <p>
-          Kohl's Rewards gives shoppers another way to earn benefits from qualifying purchases.
-        </p>
-        <p>
-          Rewards activity can contribute toward Kohl's Cash, subject to the program's current terms. Kohl's states that qualifying purchases are calculated after applicable coupons and discounts and before shipping, fees, and tax.
-        </p>
-        <p>
-          For frequent Kohl's shoppers, it's worth checking the Rewards program alongside available Kohl's discount code offers. A promotion isn't necessarily the only factor to consider when comparing the overall value of an order.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl font-black text-[#056bfa] mb-4">
-          Seasonal Shopping at Kohl's
-        </h3>
-        <p>
-          Kohl's product range makes it relevant throughout the year, and its promotions often align with seasonal shopping occasions.
-        </p>
-        <p>
-          <strong>Back-to-School:</strong> Back-to-school shopping can cover everything from children's clothing and shoes to backpacks, home items, and other everyday essentials. A Kohl's back-to-school promotion may be particularly useful when you're shopping for several family members at once.
-        </p>
-        <p>
-          <strong>Halloween:</strong> Halloween brings opportunities to shop for seasonal décor, children's clothing, pajamas, accessories, and other items connected to the holiday. As October approaches, check Kohl's promotions alongside any available promo code before completing your seasonal order.
-        </p>
-        <p>
-          <strong>Thanksgiving:</strong> Thanksgiving shopping can include home décor, kitchen products, tableware, apparel, and gifts. It's also the beginning of one of the busiest U.S. shopping periods, making it a useful time to compare Kohl's offers before purchasing.
-        </p>
-        <p>
-          <strong>Black Friday &amp; Cyber Monday:</strong> Black Friday and Cyber Monday are major shopping events for Kohl's customers. The retailer typically features promotions across multiple departments during the holiday shopping period. If you're preparing a large holiday shopping list, compare sale pricing with available coupons, Kohl's Cash opportunities, and any Kohl's promo code that applies to your cart.
-        </p>
-        <p>
-          <strong>Christmas &amp; Holiday Shopping:</strong> Kohl's broad product range makes holiday shopping possible across multiple categories. You can look for gifts in apparel, beauty, toys, home, accessories, footwear, and other departments. Checking for a current promotion before checkout can be particularly useful when you're purchasing several gifts in one order.
-        </p>
-      </div>
-    </div>
-
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Use a Kohl's Promo Code</h3>
-              <p>Using a Kohl's promo code online is straightforward:</p>
-              <ol className="list-decimal pl-5 space-y-2 font-medium">
-                <li>Find an active Kohl's promotion on CouponsBit.</li>
-                <li>Read the offer details and check the expiration date.</li>
-                <li>Visit Kohl's and add eligible products to your cart.</li>
-                <li>Proceed to checkout.</li>
-                <li>Enter the promotional code in the coupon field or select an eligible saved coupon from your Kohl's Wallet.</li>
-                <li>Apply the code and review your updated order total.</li>
-                <li>Complete your purchase after confirming that the promotion has been applied.</li>
-              </ol>
-              <p>Kohl's says shoppers can enter a promo code in the shopping cart or during checkout. Customers using the Kohl's app can also access coupons and Kohl's Cash through the checkout process.</p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">Can You Use Multiple Kohl's Coupons?</h3>
-              <p>Kohl's allows multiple coupons to be applied to eligible orders, but specific rules determine which combinations can be used.</p>
-              <p>Kohl's currently states that up to four promo codes can be applied to an online order, with a limit of two promo codes on mobile devices. Only one sitewide percentage-off coupon can be used, while certain department-specific and dollar-off coupons may also apply.</p>
-              <p>The order in which discounts are applied also matters. Kohl's explains that qualifying department-specific discounts are applied first, dollar-off benefits such as Kohl's Cash are then deducted, and an eligible sitewide percentage-off coupon is applied afterward.</p>
-              <p>Because exclusions and combinations can change by promotion, always check the current terms attached to your coupon.</p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Isn't My Kohl's Promo Code Working?</h3>
-              <p>If a Kohl's promo code isn't applying, there could be several reasons.</p>
-              <p>The code may have expired, the products in your cart may not qualify, or the promotion may be limited to certain brands or departments.</p>
-              <p>Kohl's also excludes certain purchases from coupons, including gift cards, taxes, shipping and handling fees, payments toward a Kohl's credit card account, Kohl's Cares merchandise, Sephora at Kohl's merchandise, and other specifically excluded products or brands.</p>
-              <p>Some coupon codes may also have usage limits. Kohl's recommends checking the details of the individual coupon for its specific restrictions.</p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Kohl's Offers?</h3>
-              <p>CouponsBit gives shoppers a convenient place to check for available Kohl's promotions before visiting the retailer.</p>
-              <p>Instead of relying on an old code found through a random search, you can start by checking current offers and reviewing their terms. This is especially useful during major shopping periods when retailers may have multiple promotions running at the same time.</p>
-              <p>Whether you're buying clothing, shoes, home products, beauty items, toys, or gifts, checking for a Kohl's promo code can become a simple step in your shopping routine.</p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Kohl's With a Promo Code</h3>
-              <p>From everyday clothing and footwear to home essentials, beauty products, toys, and gifts, Kohl's gives shoppers plenty of categories to explore throughout the year.</p>
-              <p>Before you place your next order, check CouponsBit for a current Kohl's promo code, review the promotion's terms, and compare it with any sale pricing, Kohl's Cash, or Rewards benefits available to you.</p>
-              <p>A few extra seconds spent checking the available offers can help you make sure you're not overlooking a promotion that could apply to your purchase.</p>
-            </div>
-          </div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
-        >
-          {isReadMore ? "Read Less" : "Read More"}
-          <ChevronDown className={cn("w-4 h-4 transition-transform duration-300", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">
-            Kohl's Promo Code FAQs
-          </h3>
-          {[
-            { q: "Does Kohl's offer promo codes?", a: "Yes. Kohl's offers promotional coupons and codes for eligible purchases. Available offers, eligibility, and expiration dates vary by promotion." },
-            { q: "Where can I find a Kohl's promo code?", a: "You can check CouponsBit for available Kohl's promotions before shopping on Kohls.com." },
-            { q: "Can I use more than one Kohl's promo code?", a: "Kohl's allows multiple eligible coupons on qualifying online orders, although restrictions apply. Kohl's currently states that up to four promo codes can be applied to an online order and only one sitewide percentage-off coupon can be used." },
-            { q: "Can I use Kohl's Cash with a promo code?", a: "Kohl's Cash can generally be used alongside eligible coupons, subject to the terms of the individual promotions. Kohl's Cash is applied before a percentage-off total-purchase coupon." },
-            { q: "Does Kohl's Cash expire?", a: "Yes. Kohl's Cash can only be redeemed during the redemption period specified for the promotion or coupon." },
-            { q: "Can I use a Kohl's coupon on Sephora at Kohl's?", a: "Certain Kohl's coupons and promotions exclude Sephora at Kohl's merchandise. Always check the individual coupon's exclusions before checkout." },
-            { q: "Why is my Kohl's promo code not working?", a: "The code may be expired, restricted to specific products or brands, subject to usage limits, or incompatible with another promotion. Kohl's also excludes certain categories and charges from coupons." },
-            { q: "Does Kohl's have discounts during Black Friday and Cyber Monday?", a: "Kohl's participates in the major U.S. holiday shopping season, and shoppers can look for promotions during Black Friday and Cyber Monday. Available offers vary from year to year." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors cursor-pointer"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300", openFaq === i && "bg-[#056bfa]")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500 transition-transform duration-300", openFaq === i && "text-white rotate-180")} />
-                </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                  {faq.a}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        {/* Tag Cloud */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular Kohl's Searches
-          </h3>
-          <div className="flex flex-wrap gap-2.5">
-            {[
-              "Kohl's Promo Code",
-              "Kohl's Cash Offers",
-              "Sitewide Coupon 20%",
-              "Kohl's Card Discounts",
-              "Free Shipping over $49",
-              "Home & Kitchen Deals",
-              "Clearance Sales",
-              "Sephora at Kohl's"
-            ].map((tag) => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors">
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Sidebar Deals */}
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top Kohl's Deals
-          </h3>
-          <div className="space-y-6">
-            {OFFERS.slice(0, 4).map((offer, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  {i + 1}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {offer.label} {offer.value}
+                  <p className="text-gray-500 font-medium text-sm leading-relaxed mb-4">
+                    <strong>Clearance Sale</strong> - Save up to 70% OFF on eligible products.
                   </p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {offer.desc}
-                  </p>
+
+                  <ol className="space-y-3 text-gray-500 font-medium text-sm leading-relaxed pl-5 list-decimal">
+                    <li><strong>Brand:</strong> Kohl's</li>
+                    <li><strong>Offer:</strong> Clearance Sale</li>
+                    <li><strong>Discount:</strong> Up to 70% OFF</li>
+                    <li><strong>Offer Type:</strong> Clearance Sale</li>
+                    <li><strong>Applicable On:</strong> All users on eligible products</li>
+                    <li><strong>Availability:</strong> Active</li>
+                    <li><strong>Country:</strong> USA</li>
+                    <li><strong>Verified By:</strong> Couponsbit</li>
+                  </ol>
                 </div>
+
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  Kohl's Promo Code, Coupon Code & Discount Offers
+                </h2>
+
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <p>
+                    Shopping for clothes, shoes, beauty products, <Link href="/stores/target-discount-code" className="text-[#056bfa] hover:underline">home essentials</Link>, or gifts often means comparing multiple offers before you check out. At Kohl's, there are several ways to look for a better deal, from promotional discounts and sale events to Kohl's Cash and Rewards. That makes checking for a Kohl's promo code before completing your order a useful step.
+                  </p>
+                  <p>
+                    Kohl's brings together fashion, footwear, accessories, beauty, home products, toys, pet essentials, and more under one retail destination. Whether you're <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">refreshing your wardrobe</Link>, preparing for a new season, shopping for the family, or looking for holiday gifts, you can browse current Kohl's offers and then check CouponsBit for an available promotion before placing your order.
+                  </p>
+
+                  <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                    <table className="w-full text-left border-collapse min-w-[850px]">
+                      <thead>
+                        <tr className="bg-[#056BFA]">
+                          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+                          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                          <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-[#333333] font-bold text-[14px]">
+                        {[
+                          ["Clearance Sale Deal", "Up To 70% OFF", "All Users", "Save up to 70% in store and online across multiple categories", "Clearance Items"],
+                          ["$10 OFF $50+ Toys Deal", "$10 OFF $50+", "Kohl's Rewards Members", "Use code TOYS10; includes select LEGO, ends Oct 4 (excludes baby gear/electronics)", "Select Toys"],
+                          ["Kitchen Appliances Sale", "Up To 50% OFF", "All Users", "Epic Deal discounts on select kitchen appliances and essentials", "Kitchen Appliances"],
+                          ["Croft & Barrow V-Neck Tee", "40% OFF ($7.19)", "All Users", "Reduced from $11.99 regular price during Sale & Clearance event", "Women's Clothing"],
+                          ["New Markdowns Clearance", "Up To 70% OFF", "All Users", "Deep discounts on new markdowns in fashion, home, and accessories", "Clearance Markdowns"],
+                          ["Storewide Savings Offer", "Up To 50% OFF", "All Users", "Discounts on fashion, home essentials, beauty, and accessories", "Storewide Categories"],
+                          ["New User First Order Offer", "Flat 15% OFF", "New Customers", "Sign up to receive a flat 15% introductory discount on your first order", "First Orders"],
+                          ["Levi's Clothing Sale", "Up To 30% OFF", "All Users", "Discounts on loose clothing styles, jeans, tops, and casualwear", "Levi's Apparel"],
+                          ["Footwear Collection Sale", "Up To 50% OFF", "All Users", "Save up to 50% on shoes and footwear styles for all occasions", "Kohl's Footwear"],
+                          ["Women's Clothing Sale", "Up To 40% OFF", "All Users", "Savings on dresses, tops, casualwear, and women's fashion", "Women's Apparel"],
+                          ["Men's Activewear Deal", "Up To 40% OFF", "All Users", "Save on workout clothing and active styles for everyday movement", "Men's Activewear"],
+                          ["Clearance Extra Savings", "15% OFF", "All Users", "Grab an extra 15% OFF on eligible clearance products", "Selected Clearance"],
+                          ["Sweaters & Tops Deal", "Flat 40% OFF", "All Users", "Flat 40% OFF on selected seasonal clothing, tops, and sweaters", "Sweaters & Tops"],
+                          ["Outdoor & Garden Decor", "30% OFF", "All Users", "Save 30% on decorative outdoor pieces and garden essentials", "Outdoor & Garden"],
+                          ["Patio Furniture Sale", "Flat 30% OFF", "All Users", "Flat 30% discount on eligible outdoor furniture styles", "Patio Furniture"],
+                          ["Kohl's Card Member Offer", "Flat 35% OFF", "Kohl's Cardholders", "Exclusive flat 35% OFF when paying with a Kohl's Card", "Eligible Card Orders"],
+                          ["Kitchen & Dining Sale", "30% OFF", "All Users", "Save 30% on cookware, dining essentials, and kitchen accessories", "Kitchen & Dining"],
+                          ["Women's Jockey Apparel", "Flat 25% OFF", "All Users", "Flat 25% OFF on comfortable essentials and everyday Jockey apparel", "Jockey Collection"],
+                          ["Athletic Shoes Sale", "Up To 25% OFF", "All Users", "Savings on sports, training, and active footwear styles", "Athletic Shoes"],
+                          ["$15 OFF Tiered Coupon", "$15 OFF $75+", "All Users", "Flat $15 discount applied on qualifying orders over $75", "Orders $75+"],
+                          ["$10 OFF Tiered Coupon", "$10 OFF $25+", "All Users", "Save $10 on eligible department store orders above $25", "Orders $25+"],
+                          ["Kohl's Cash Rewards", "Earn $10 per $50", "All Users", "Earn $10 in Kohl's Cash for every $50 spent during promo periods", "Qualifying Purchases"],
+                          ["Jewelry Collection Deal", "From $14", "All Users", "Everyday and special occasion accessories starting from $14", "Kohl's Jewelry"]
+                        ].map((row, i) => (
+                          <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === 22 && "border-b-0")}>
+                            <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+                            <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                            <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+                            <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[3]}</td>
+                            <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[4]}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Find a Kohl's Promo Code
+                      </h3>
+                      <p>
+                        A Kohl's promo code can help you access an eligible promotion when shopping online. Kohl's provides online-eligible coupons with associated promo codes, which can be entered during checkout or saved to your Kohl's Wallet.
+                      </p>
+                      <p>
+                        Before you shop, check CouponsBit for available Kohl's promotions and review the terms attached to each offer. Some promotions may apply to specific departments, brands, or types of merchandise, while others may have broader eligibility.
+                      </p>
+                      <p>
+                        It's also worth checking whether the promotion can be combined with other available Kohl's discounts. Kohl's has specific rules for applying multiple coupons, so understanding those conditions can help you use your available offers correctly.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Kohl's Coupons, Deals &amp; Offers
+                      </h3>
+                      <p>
+                        Kohl's shopping promotions aren't limited to one type of discount. Depending on the current promotion calendar, shoppers may come across percentage-off offers, department-specific coupons, dollar-off promotions, sale pricing, Kohl's Cash opportunities, and Rewards benefits.
+                      </p>
+                      <p>
+                        Checking these options together can help you understand which promotion works with the items in your cart.
+                      </p>
+                      <p>
+                        <strong>Clothing &amp; Apparel:</strong> Kohl's is a convenient destination for everyday clothing for women, men, and children. You can find casual clothing, workwear, activewear, seasonal apparel, sleepwear, outerwear, denim, and other wardrobe essentials. Its assortment includes both national labels and Kohl's-owned brands, giving shoppers options for different styles and occasions. Whether you're shopping for everyday basics or updating your seasonal wardrobe, look for sale items and check whether a current Kohl's promo code applies to the products you're considering.
+                      </p>
+                      <p>
+                        <strong>Shoes:</strong> Kohl's carries footwear for women, men, and kids across casual, athletic, dress, outdoor, and seasonal styles. You can shop sneakers, boots, sandals, flats, heels, slippers, work shoes, and children's footwear from a mix of national and Kohl's brands. Footwear can also become a useful category to watch during seasonal promotions, back-to-school shopping, and holiday sales.
+                      </p>
+                      <p>
+                        <strong>Beauty:</strong> Beauty shoppers can find skincare, cosmetics, haircare, fragrance, personal care, and beauty accessories at Kohl's. Kohl's also has Sephora at Kohl's locations and online assortment, giving shoppers access to a broader selection of beauty brands. However, Kohl's specifically notes that Sephora at Kohl's merchandise is excluded from certain coupons and promotions, so always check the offer's terms before checkout.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Home &amp; Kitchen
+                      </h3>
+                      <p>
+                        Kohl's home department covers everything from bedding and bath products to kitchen and dining essentials.
+                      </p>
+                      <p>
+                        You can shop for:
+                      </p>
+                      <p>Bedding and sheets</p>
+                      <p>Towels and bath accessories</p>
+                      <p>Kitchen appliances and tools</p>
+                      <p>Cookware and bakeware</p>
+                      <p>Dinnerware and glassware</p>
+                      <p>Home décor</p>
+                      <p>Lighting</p>
+                      <p>Storage and organization</p>
+                      <p>Electronics</p>
+                      <p>Floor-care products</p>
+                      <p>
+                        Kohl's has expanded its home assortment to include categories such as wall art, glassware, ceramic décor, barware, botanicals, and lighting.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Kids &amp; Baby
+                      </h3>
+                      <p>
+                        Families can shop children's clothing, shoes, toys, accessories, and other everyday essentials. Kohl's carries children's brands alongside its own collections, making it possible to build seasonal wardrobes or shop for birthdays and holidays in one place.
+                      </p>
+                      <p>
+                        Back-to-school is particularly relevant for this category, with clothing, footwear, backpacks, and other essentials often becoming part of seasonal shopping campaigns.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Toys &amp; Gifts
+                      </h3>
+                      <p>
+                        Kohl's also provides options for birthdays, holidays, celebrations, and everyday gifting.
+                      </p>
+                      <p>
+                        Depending on the season, shoppers can find toys, games, accessories, home gifts, beauty products, apparel, and other items suitable for different recipients.
+                      </p>
+                      <p>
+                        If you're shopping for multiple gifts at once, checking for a Kohl's coupon code before checkout can be worthwhile, particularly when your cart contains several eligible items.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Pet Essentials
+                      </h3>
+                      <p>
+                        Kohl's assortment also includes pet-related products, making the store useful beyond traditional clothing and home shopping.
+                      </p>
+                      <p>
+                        For households shopping across multiple categories, the ability to combine different types of merchandise in one order can make Kohl's a practical one-stop shopping destination.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Kohl's Cash: Another Way to Save
+                      </h3>
+                      <p>
+                        One of the most recognizable parts of the Kohl's shopping experience is Kohl's Cash.
+                      </p>
+                      <p>
+                        During designated promotional periods, customers can earn Kohl's Cash on qualifying purchases made online or in stores. The amount is calculated after applicable coupons and discounts but before tax and shipping. Kohl's Cash can then be redeemed during the stated redemption period.
+                      </p>
+                      <p>
+                        This makes Kohl's Cash different from a traditional Kohl's promo code. Instead of immediately reducing the current purchase through a percentage-off promotion, it can provide a future shopping benefit when used during its valid redemption window.
+                      </p>
+                      <p>
+                        Kohl's Cash is also applied before percentage-off total-purchase coupons during checkout.
+                      </p>
+                      <p>
+                        Because Kohl's Cash has specific earning and redemption dates, check those dates carefully rather than assuming that an unused coupon will remain valid indefinitely.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Kohl's Rewards
+                      </h3>
+                      <p>
+                        Kohl's Rewards gives shoppers another way to earn benefits from qualifying purchases.
+                      </p>
+                      <p>
+                        Rewards activity can contribute toward Kohl's Cash, subject to the program's current terms. Kohl's states that qualifying purchases are calculated after applicable coupons and discounts and before shipping, fees, and tax.
+                      </p>
+                      <p>
+                        For frequent Kohl's shoppers, it's worth checking the Rewards program alongside available Kohl's discount code offers. A promotion isn't necessarily the only factor to consider when comparing the overall value of an order.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Seasonal Shopping at Kohl's
+                      </h3>
+                      <p>
+                        Kohl's product range makes it relevant throughout the year, and its promotions often align with seasonal shopping occasions.
+                      </p>
+                      <p>
+                        <strong>Back-to-School:</strong> Back-to-school shopping can cover everything from children's clothing and shoes to backpacks, home items, and other everyday essentials. A Kohl's back-to-school promotion may be particularly useful when you're shopping for several family members at once.
+                      </p>
+                      <p>
+                        <strong>Halloween:</strong> Halloween brings opportunities to shop for seasonal décor, children's clothing, pajamas, accessories, and other items connected to the holiday. As October approaches, check Kohl's promotions alongside any available promo code before completing your seasonal order.
+                      </p>
+                      <p>
+                        <strong>Thanksgiving:</strong> Thanksgiving shopping can include home décor, kitchen products, tableware, apparel, and gifts. It's also the beginning of one of the busiest U.S. shopping periods, making it a useful time to compare Kohl's offers before purchasing.
+                      </p>
+                      <p>
+                        <strong>Black Friday &amp; Cyber Monday:</strong> Black Friday and Cyber Monday are major shopping events for Kohl's customers. The retailer typically features promotions across multiple departments during the holiday shopping period. If you're preparing a large holiday shopping list, compare sale pricing with available coupons, Kohl's Cash opportunities, and any Kohl's promo code that applies to your cart.
+                      </p>
+                      <p>
+                        <strong>Christmas &amp; Holiday Shopping:</strong> Kohl's broad product range makes holiday shopping possible across multiple categories. You can look for gifts in apparel, beauty, toys, home, accessories, footwear, and other departments. Checking for a current promotion before checkout can be particularly useful when you're purchasing several gifts in one order.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">How to Use a Kohl's Promo Code</h3>
+                      <p>Using a Kohl's promo code online is straightforward:</p>
+                      <ol className="list-decimal pl-5 space-y-2 font-medium">
+                        <li>Find an active Kohl's promotion on CouponsBit.</li>
+                        <li>Read the offer details and check the expiration date.</li>
+                        <li>Visit Kohl's and add eligible products to your cart.</li>
+                        <li>Proceed to checkout.</li>
+                        <li>Enter the promotional code in the coupon field or select an eligible saved coupon from your Kohl's Wallet.</li>
+                        <li>Apply the code and review your updated order total.</li>
+                        <li>Complete your purchase after confirming that the promotion has been applied.</li>
+                      </ol>
+                      <p>Kohl's says shoppers can enter a promo code in the shopping cart or during checkout. Customers using the Kohl's app can also access coupons and Kohl's Cash through the checkout process.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Can You Use Multiple Kohl's Coupons?</h3>
+                      <p>Kohl's allows multiple coupons to be applied to eligible orders, but specific rules determine which combinations can be used.</p>
+                      <p>Kohl's currently states that up to four promo codes can be applied to an online order, with a limit of two promo codes on mobile devices. Only one sitewide percentage-off coupon can be used, while certain department-specific and dollar-off coupons may also apply.</p>
+                      <p>The order in which discounts are applied also matters. Kohl's explains that qualifying department-specific discounts are applied first, dollar-off benefits such as Kohl's Cash are then deducted, and an eligible sitewide percentage-off coupon is applied afterward.</p>
+                      <p>Because exclusions and combinations can change by promotion, always check the current terms attached to your coupon.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Isn't My Kohl's Promo Code Working?</h3>
+                      <p>If a Kohl's promo code isn't applying, there could be several reasons.</p>
+                      <p>The code may have expired, the products in your cart may not qualify, or the promotion may be limited to certain brands or departments.</p>
+                      <p>Kohl's also excludes certain purchases from coupons, including gift cards, taxes, shipping and handling fees, payments toward a Kohl's credit card account, Kohl's Cares merchandise, Sephora at Kohl's merchandise, and other specifically excluded products or brands.</p>
+                      <p>Some coupon codes may also have usage limits. Kohl's recommends checking the details of the individual coupon for its specific restrictions.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for Kohl's Offers?</h3>
+                      <p>CouponsBit gives shoppers a convenient place to check for available Kohl's promotions before visiting the retailer.</p>
+                      <p>Instead of relying on an old code found through a random search, you can start by checking current offers and reviewing their terms. This is especially useful during major shopping periods when retailers may have multiple promotions running at the same time.</p>
+                      <p>Whether you're buying clothing, shoes, home products, beauty items, toys, or gifts, checking for a Kohl's promo code can become a simple step in your shopping routine.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Shop Kohl's With a Promo Code</h3>
+                      <p>From everyday clothing and footwear to home essentials, beauty products, toys, and gifts, Kohl's gives shoppers plenty of categories to explore throughout the year.</p>
+                      <p>Before you place your next order, check CouponsBit for a current Kohl's promo code, review the promotion's terms, and compare it with any sale pricing, Kohl's Cash, or Rewards benefits available to you.</p>
+                      <p>A few extra seconds spent checking the available offers can help you make sure you're not overlooking a promotion that could apply to your purchase.</p>
+                    </div>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
+                </div>
+
                 <button
-                  onClick={() => handleGetDeal(offer)}
-                  aria-label={`Shop Kohl's: ${offer.title}`}
-                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
                 >
-                  Get Deal
+                  {isReadMore ? "Read Less" : "Read More"}
+                  <ChevronDown className={cn("w-4 h-4 transition-transform duration-300", isReadMore && "rotate-180")} />
                 </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</section>
+                {/* Accordion FAQ Section */}
+                <div className="mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">
+                    Kohl's Promo Code FAQs
+                  </h3>
+                  {[
+                    { q: "Does Kohl's offer promo codes?", a: "Yes. Kohl's offers promotional coupons and codes for eligible purchases. Available offers, eligibility, and expiration dates vary by promotion." },
+                    { q: "Where can I find a Kohl's promo code?", a: "You can check CouponsBit for available Kohl's promotions before shopping on Kohls.com." },
+                    { q: "Can I use more than one Kohl's promo code?", a: "Kohl's allows multiple eligible coupons on qualifying online orders, although restrictions apply. Kohl's currently states that up to four promo codes can be applied to an online order and only one sitewide percentage-off coupon can be used." },
+                    { q: "Can I use Kohl's Cash with a promo code?", a: "Kohl's Cash can generally be used alongside eligible coupons, subject to the terms of the individual promotions. Kohl's Cash is applied before a percentage-off total-purchase coupon." },
+                    { q: "Does Kohl's Cash expire?", a: "Yes. Kohl's Cash can only be redeemed during the redemption period specified for the promotion or coupon." },
+                    { q: "Can I use a Kohl's coupon on Sephora at Kohl's?", a: "Certain Kohl's coupons and promotions exclude Sephora at Kohl's merchandise. Always check the individual coupon's exclusions before checkout." },
+                    { q: "Why is my Kohl's promo code not working?", a: "The code may be expired, restricted to specific products or brands, subject to usage limits, or incompatible with another promotion. Kohl's also excludes certain categories and charges from coupons." },
+                    { q: "Does Kohl's have discounts during Black Friday and Cyber Monday?", a: "Kohl's participates in the major U.S. holiday shopping season, and shoppers can look for promotions during Black Friday and Cyber Monday. Available offers vary from year to year." }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors cursor-pointer"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300", openFaq === i && "bg-[#056bfa]")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500 transition-transform duration-300", openFaq === i && "text-white rotate-180")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                {/* Tag Cloud */}
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Popular Kohl's Searches
+                  </h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {[
+                      "Kohl's Promo Code",
+                      "Kohl's Cash Offers",
+                      "Sitewide Coupon 20%",
+                      "Kohl's Card Discounts",
+                      "Free Shipping over $49",
+                      "Home & Kitchen Deals",
+                      "Clearance Sales",
+                      "Sephora at Kohl's"
+                    ].map((tag) => (
+                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Sidebar Deals */}
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Today's Top Kohl's Deals
+                  </h3>
+                  <div className="space-y-6">
+                    {KOHLS_COUPONS.slice(0, 4).map((offer, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                          {i + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                            {offer.label} {offer.value}
+                          </p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                            {offer.desc}
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => handleGetDeal(offer)}
+                          aria-label={`Shop Kohl's: ${offer.title}`}
+                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
+                        >
+                          Get Deal
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
 
       </main>

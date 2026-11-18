@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import PeacockCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { PEACOCK_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
@@ -80,11 +80,11 @@ const peacockSchema = {
       name: "Peacock Promo Codes & Coupon Codes",
       description: "Latest Peacock promo codes and offers.",
       url: "https://www.couponsbit.us/stores/peacock-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: PEACOCK_COUPONS.length,
+      itemListElement: PEACOCK_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: { "@type": "Offer", name: o.title, description: o.desc, url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } },
+        item: { "@type": "Offer", name: o.title, description: o.description || o.desc, url: "https://www.couponsbit.us/stores/peacock-promo-code", seller: { "@type": "Organization", name: "Peacock", url: "https://www.peacocktv.com" } },
       })),
     },
 

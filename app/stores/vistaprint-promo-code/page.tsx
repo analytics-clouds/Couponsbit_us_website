@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import VistaprintContent from "./_components/StoreCouponsContent";
+import { VISTAPRINT_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
+    absolute: "VistaPrint Promo Code: 40% OFF Calendars + Free Ship | Nov 2026",
   },
   description:
-    "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
+    "VistaPrint Promo Code saves 40% on calendars and offers free shipping on $100+ orders. Use VistaPrint Discount Code deals with verified Nov 2026 savings.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/vistaprint-promo-code",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
+    title: "VistaPrint Promo Code: 40% OFF Calendars + Free Ship | Nov 2026",
     description:
-      "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
+      "VistaPrint Promo Code saves 40% on calendars and offers free shipping on $100+ orders. Use VistaPrint Discount Code deals with verified Nov 2026 savings.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
+    title: "VistaPrint Promo Code: 40% OFF Calendars + Free Ship | Nov 2026",
     description:
-      "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
+      "VistaPrint Promo Code saves 40% on calendars and offers free shipping on $100+ orders. Use VistaPrint Discount Code deals with verified Nov 2026 savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1790238446/vista-logo_xyfgde.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +61,9 @@ const vistaprintSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-      name: "VistaPrint Discount Code – Get 40% OFF + 20% OFF on First Order Nov 2026",
+      name: "VistaPrint Promo Code: 40% OFF Calendars + Free Ship | Nov 2026",
       description:
-        "Use the latest VistaPrint Discount Code and VistaPrint Promo Code to save up to 40% OFF calendars and 20% OFF your first order.",
+        "VistaPrint Promo Code saves 40% on calendars and offers free shipping on $100+ orders. Use VistaPrint Discount Code deals with verified Nov 2026 savings.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -77,18 +78,18 @@ const vistaprintSchema = {
       name: "Vistaprint Promo Codes & Coupon Codes",
       description: "Latest Vistaprint promo codes and offers.",
       url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
-      numberOfItems: 9,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "VistaPrint Free Economy Shipping – On Orders Over $100", description: "Get free economy shipping on eligible VistaPrint orders totaling $100 or more.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "VistaPrint Calendars – Get Up to 40% Off", description: "Save up to 40% on selected calendars with VistaPrint and create personalised designs featuring your favourite photos.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "VistaPrint Premium Business Cards – Get Up to 15% Off", description: "Enjoy up to 15% off selected premium business cards with VistaPrint using promo code SAVEVP.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "VistaPrint First Order Discount – Get Up to 20% Off", description: "New VistaPrint customers can enjoy up to 20% off their first eligible order with promo code NEW20.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "VistaPrint Shopping Discount – Save $20 on $100+ or $50 on $200+", description: "Save $20 on qualifying orders of $100 or more, or get $50 off purchases of $200 or more with code SHOPCART.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "VistaPrint Champion® Powerblend® Unisex Hoodie – From $35.99", description: "Shop the Champion® Powerblend® Unisex Hoodie at prices starting from $35.99, with selected options priced up to $54.99 each.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "VistaPrint JERZEES® NuBlend® Hoodie – From $25.49", description: "Get the JERZEES® NuBlend® Hoodie with Heat Transfer at prices ranging from $25.49 to $39.99 each.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "VistaPrint Recycled Cotton Canvas Tote Bag – From $2.32", description: "Shop the Recycled Cotton Canvas Tote Bag for prices starting at $2.32 and going up to $4.02 each.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "VistaPrint Custom Hang Tags – From $0.13 Each", description: "Order custom hang tags for retail packaging, with the listed offer showing a price of $61.00 for 500 units, or approximately $0.13 per tag.", url: "https://www.couponsbit.us/stores/vistaprint-promo-code", seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" } } },
-      ],
+      numberOfItems: VISTAPRINT_COUPONS.length,
+      itemListElement: VISTAPRINT_COUPONS.map((coupon, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: coupon.title,
+          description: coupon.description,
+          url: "https://www.couponsbit.us/stores/vistaprint-promo-code",
+          seller: { "@type": "Organization", name: "Vistaprint", url: "https://www.vistaprint.com" },
+        },
+      })),
     },
 
     {
@@ -121,75 +122,75 @@ const vistaprintSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does VistaPrint offer promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VistaPrint regularly offers promotional codes and other discounts. Its official offers page currently lists multiple codes and category-specific promotions, with individual terms and expiration dates."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/vistaprint-promo-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does VistaPrint offer promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VistaPrint regularly offers promotional codes and other discounts. Its official offers page currently lists multiple codes and category-specific promotions, with individual terms and expiration dates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a VistaPrint promo code on any product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Promo codes can have product, category, customer, order-value, or date restrictions. Always check the terms associated with the specific offer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VistaPrint offer discounts on business cards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VistaPrint regularly features promotions on business cards and other marketing materials. Available offers can change, so check the current deals before placing an order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get custom promotional products from VistaPrint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VistaPrint offers customizable promotional merchandise including drinkware, writing products, bags, clothing, technology products, hats, and other branded items."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VistaPrint offer custom apparel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can customize products such as T-shirts, hoodies, hats, jackets, and bags, including selected products from well-known apparel brands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VistaPrint offer design services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VistaPrint offers professional design services across areas such as business cards, packaging, marketing materials, signage, clothing, stationery, and other projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I order personalized invitations from VistaPrint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VistaPrint offers invitations, announcements, save-the-date cards, RSVP cards, wedding stationery, and other personalized event products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VistaPrint have offers for new customers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VistaPrint currently advertises a first-purchase promotion on its offers page. Because eligibility and expiration dates can change, check the current offer before ordering."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Can I use a VistaPrint promo code on any product?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. Promo codes can have product, category, customer, order-value, or date restrictions. Always check the terms associated with the specific offer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does VistaPrint offer discounts on business cards?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "VistaPrint regularly features promotions on business cards and other marketing materials. Available offers can change, so check the current deals before placing an order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get custom promotional products from VistaPrint?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VistaPrint offers customizable promotional merchandise including drinkware, writing products, bags, clothing, technology products, hats, and other branded items."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does VistaPrint offer custom apparel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You can customize products such as T-shirts, hoodies, hats, jackets, and bags, including selected products from well-known apparel brands."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does VistaPrint offer design services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VistaPrint offers professional design services across areas such as business cards, packaging, marketing materials, signage, clothing, stationery, and other projects."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order personalized invitations from VistaPrint?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VistaPrint offers invitations, announcements, save-the-date cards, RSVP cards, wedding stationery, and other personalized event products."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does VistaPrint have offers for new customers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "VistaPrint currently advertises a first-purchase promotion on its offers page. Because eligibility and expiration dates can change, check the current offer before ordering."
-      }
-    }
-  ]
-},
   ],
 };
 

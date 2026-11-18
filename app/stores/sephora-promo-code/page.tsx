@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SephoraCouponsContent from "./_components/StoreCouponsContent";
+import { SEPHORA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
+    absolute: "Sephora Promo Code: Up to 50% OFF Beauty Sale | Nov 2026",
   },
   description:
-    "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
+    "Sephora Promo Code saves up to 50% on skincare and beauty products, plus 50% off Colorful Blush for $7. Grab Sephora Discount Code deals verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/sephora-promo-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/sephora-promo-code",
-    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
+    title: "Sephora Promo Code: Up to 50% OFF Beauty Sale | Nov 2026",
     description:
-      "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
+      "Sephora Promo Code saves up to 50% on skincare and beauty products, plus 50% off Colorful Blush for $7. Grab Sephora Discount Code deals verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
+    title: "Sephora Promo Code: Up to 50% OFF Beauty Sale | Nov 2026",
     description:
-      "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
+      "Sephora Promo Code saves up to 50% on skincare and beauty products, plus 50% off Colorful Blush for $7. Grab Sephora Discount Code deals verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789719709/Sephora-Logo_djk72l.webp"],
     site: "@couponsbit",
   },
@@ -51,7 +53,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const sephoraOffers = SEPHORA_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Sephora ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/sephora-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" },
+}));
 
 const sephoraSchema = {
   "@context": "https://schema.org",
@@ -60,15 +73,22 @@ const sephoraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/sephora-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/sephora-promo-code",
-      name: "Sephora Promo Code – Get 50% OFF Beauty Sale | Nov 2026",
+      name: "Sephora Promo Code: Up to 50% OFF Beauty Sale | Nov 2026",
       description:
-        "Save more with the latest Sephora Promo Code and Sephora Discount Code. Enjoy up to 50% OFF beauty products and 30% OFF selected value sets. Shop makeup, skincare, fragrance, and haircare for less. Grab the deal.",
+        "Sephora Promo Code saves up to 50% on skincare and beauty products, plus 50% off Colorful Blush for $7. Grab Sephora Discount Code deals verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/sephora-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/sephora-promo-code#brand",
+      name: "Sephora",
+      url: "https://www.sephora.com",
+      sameAs: ["https://www.facebook.com/Sephora", "https://twitter.com/Sephora"],
     },
 
     {
@@ -77,27 +97,12 @@ const sephoraSchema = {
       name: "Sephora Promo Codes & Coupon Codes",
       description: "Latest Sephora promo codes and offers on makeup and skincare.",
       url: "https://www.couponsbit.us/stores/sephora-promo-code",
-      numberOfItems: 18,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Sephora Promo Code – Skincare Sale | Up To 50% OFF", description: "Save up to 50% on selected Sephora skincare and skin care products during the latest beauty offers.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Sephora Promo Code – Beauty Products | Up To 50% OFF", description: "Enjoy up to 50% OFF on selected beauty products across makeup, skincare, haircare and fragrance.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Sephora Promo Code – Value Sets | Up To 30% OFF", description: "Save up to 30% on selected beauty value sets featuring popular skincare, makeup and personal-care picks.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Sephora Promo Code – Beauty Essentials | 20% OFF", description: "Get 20% OFF selected beauty essentials from Sephora's range of makeup, skincare and fragrance products.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Sephora Promo Code – Haircare Collection | Up To 50% OFF", description: "Save up to 50% on selected haircare products available through Sephora.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Sephora – Retractable Rouge Gel Lip Liner | 5% OFF", description: "Save 5% on the Retractable Rouge Gel Lip Liner and add a defined finish to your makeup routine.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Sephora – Gift Cards | Starting At $10", description: "Shop Sephora gift cards starting from just $10 for convenient beauty gifting.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Sephora – Best Sellers | Starting At $15.80", description: "Discover popular Sephora best sellers starting from $15.80.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Sephora – E-Gift Cards | Starting At $25", description: "Get Sephora e-gift cards starting at $25 for a simple and flexible gifting option.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 10, item: { "@type": "Offer", name: "Sephora – Watermelon Glow Niacinamide Blush | $25", description: "Get the Watermelon Glow Niacinamide Dewy Flush Brightening Serum Blush for $25.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 11, item: { "@type": "Offer", name: "Sephora – Colorful Blush | 50% OFF", description: "Pick up Sephora Collection Colorful Blush for $7, reduced from $14, and save 50%.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 12, item: { "@type": "Offer", name: "Sephora Beauty Insider – Free Shipping Offer", description: "Sephora Beauty Insider members can enjoy free shipping benefits on eligible orders.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 13, item: { "@type": "Offer", name: "Sephora – Beauty Sale | Up To 50% OFF", description: "Save up to 50% on selected beauty products during Sephora's latest promotional offers.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 14, item: { "@type": "Offer", name: "Sephora – Makeup Collection", description: "Discover a wide range of Sephora makeup for creating everyday and special-occasion looks.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 15, item: { "@type": "Offer", name: "Sephora – Fragrance Collection", description: "Explore Sephora's fragrance selection featuring perfumes and colognes for different preferences.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 16, item: { "@type": "Offer", name: "Sephora – Gift Sets & Birthday Gifting", description: "Explore Sephora gift sets designed for birthdays, celebrations and thoughtful beauty gifting.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 17, item: { "@type": "Offer", name: "Sephora – Kohl's Beauty Collection", description: "Discover selected beauty products available through Kohl's Sephora locations and the Sephora at Kohl's experience.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-        { "@type": "ListItem", position: 18, item: { "@type": "Offer", name: "Sephora – Lip Products", description: "Shop a variety of lip products including Sephora lip gloss, lip balm, liners and colour cosmetics.", url: "https://www.couponsbit.us/stores/sephora-promo-code", seller: { "@type": "Organization", name: "Sephora", url: "https://www.sephora.com" } } },
-      ],
+      numberOfItems: SEPHORA_COUPONS.length,
+      itemListElement: sephoraOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -152,7 +157,7 @@ export default function SephoraStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sephoraSchema) }} />
-      <SephoraCouponsContent />
+      <Suspense fallback={null}><SephoraCouponsContent /></Suspense>
     </>
   );
 }

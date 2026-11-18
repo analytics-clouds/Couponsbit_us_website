@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ConverseCouponsContent from "./_components/StoreCouponsContent";
+import { CONVERSE_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
+    absolute: "Converse Promo Code: Save 50% on Leather Platforms | Nov 2026",
   },
   description:
-    "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+    "Save with a Converse Promo Code and Converse Discount Code. Get 50% off Chuck Taylor Leather Platform and 40% off Chuck Taylor Dainty Canvas. Verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/converse-promo-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/converse-promo-code",
-    title: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
+    title: "Converse Promo Code: Save 50% on Leather Platforms | Nov 2026",
     description:
-      "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+      "Save with a Converse Promo Code and Converse Discount Code. Get 50% off Chuck Taylor Leather Platform and 40% off Chuck Taylor Dainty Canvas. Verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
+    title: "Converse Promo Code: Save 50% on Leather Platforms | Nov 2026",
     description:
-      "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+      "Save with a Converse Promo Code and Converse Discount Code. Get 50% off Chuck Taylor Leather Platform and 40% off Chuck Taylor Dainty Canvas. Verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793338495/converse-logo_zpgzpr.webp"],
     site: "@couponsbit",
   },
@@ -53,7 +55,18 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
+
+const converseOffers = CONVERSE_COUPONS.map((coupon) => ({
+  "@type": "Offer",
+  name: `Converse ${coupon.topLabel} ${coupon.mainValue} ${coupon.offText}`.trim(),
+  description: coupon.description,
+  url: `https://www.couponsbit.us/stores/converse-promo-code#${coupon.id}`,
+  priceCurrency: "USD",
+  availability: "https://schema.org/InStock",
+  seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
+}));
 
 const converseSchema = {
   "@context": "https://schema.org",
@@ -62,15 +75,22 @@ const converseSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/converse-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/converse-promo-code",
-      name: "Converse Discount Code: Get 80% Off on Shirts | Nov 2026",
+      name: "Converse Promo Code: Save 50% on Leather Platforms | Nov 2026",
       description:
-        "Get the latest Converse discount code and Converse promo code for November 2026. Enjoy 80% OFF Daily Paper Shirts, 60% OFF T-Shirts, and 50% OFF Chuck Taylor sneakers.",
+        "Save with a Converse Promo Code and Converse Discount Code. Get 50% off Chuck Taylor Leather Platform and 40% off Chuck Taylor Dainty Canvas. Verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
-      speakable: { "@type": "SpeakableSpecification", cssSelector: [".store-description", ".top-offers", ".faq-section"] },
       isPartOf: { "@id": "https://www.couponsbit.us/#website" },
       breadcrumb: { "@id": "https://www.couponsbit.us/stores/converse-promo-code#breadcrumb" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/converse-promo-code#brand",
+      name: "Converse",
+      url: "https://www.converse.com",
+      sameAs: ["https://www.facebook.com/Converse", "https://twitter.com/Converse"],
     },
 
     {
@@ -79,64 +99,12 @@ const converseSchema = {
       name: "Converse Promo Codes & Discount Codes",
       description: "Latest Converse promo codes, discount codes, and sneaker deals.",
       url: "https://www.couponsbit.us/stores/converse-promo-code",
-      numberOfItems: 5,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "50% Off Chuck Taylor Leather Platform – Just $36",
-            description: "Give your daily look a lift with the Chuck Taylor Leather Platform, now just $36, down from $72.",
-            url: "https://www.couponsbit.us/stores/converse-promo-code",
-            seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "40% Off Chuck Taylor Dainty Canvas – Just $29",
-            description: "Get the classic Converse look with the Chuck Taylor Dainty Canvas, just $29 instead of the regular $48.",
-            url: "https://www.couponsbit.us/stores/converse-promo-code",
-            seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "50% Off Chuck Taylor Tonal Leather – Just $30",
-            description: "Freshen up your shoe rotation with the Chuck Taylor Tonal Leather, now $30 instead of the regular $60.",
-            url: "https://www.couponsbit.us/stores/converse-promo-code",
-            seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "80% Off Daily Paper Cropped Shirt – Just $17",
-            description: "Grab one of the biggest Converse deals with the Daily Paper Cropped Shirt, just $17 instead of $84.",
-            url: "https://www.couponsbit.us/stores/converse-promo-code",
-            seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "30% Off Converse SC25 – Just $46",
-            description: "Update your casual shoe lineup with the Converse SC25, on sale today for $46 instead of $66.",
-            url: "https://www.couponsbit.us/stores/converse-promo-code",
-            seller: { "@type": "Organization", name: "Converse", url: "https://www.converse.com" },
-          },
-        },
-      ],
+      numberOfItems: CONVERSE_COUPONS.length,
+      itemListElement: converseOffers.map((offer, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: offer,
+      })),
     },
 
     {
@@ -229,7 +197,7 @@ export default function ConverseStorePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(converseSchema) }}
       />
-      <ConverseCouponsContent />
+      <Suspense fallback={null}><ConverseCouponsContent /></Suspense>
     </>
   );
 }
