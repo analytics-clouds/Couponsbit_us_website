@@ -1,167 +1,232 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const HARRY_DAVID_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "UP TO",
-    value: "25% OFF",
-    title: "Harry and David Discount Code – Up to 25% Off When You Buy More",
-    desc: "Stock up on gourmet gifts and save more with every extra gift you add.",
-    bullets: [
-      "Buy 4 gifts and save 25%.",
-      "Buy 3 gifts and save 20%.",
-      "Buy 2 gifts and save 15%.",
-      "Buy 1 gift and save 10%."
-    ]
+    topLabel: "UP TO",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Harry and David Promo Code – Up to 25% Off More Gifts",
+    description: "Save when you add more eligible gourmet gifts to a single Harry and David order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 25% off as you add eligible gifts to your order.",
+      "Covers gourmet baskets, fruit gifts, sweets, and specialty treats.",
+      "Helpful when you're sending gifts to several people.",
+      "Terms and eligible items vary, so check the details at checkout.",
+    ],
   },
   {
     id: "c2",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Harry and David Discount Code – 20% Off on Today's Order",
-    desc: "Get extra savings on gourmet gifts with this short-time offer.",
-    bullets: [
-      "Save 20% on your eligible order today.",
-      "Browse gift baskets, fruit gifts, cookies, and more.",
-      "Good for holidays and special days.",
-      "Online offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Harry and David Promo Code – 20% Off Today's Order",
+    description: "Take 20% off your Harry and David order during this short-term offer.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 20% on eligible gourmet gifts.",
+      "Includes fruit baskets, chocolates, and specialty foods.",
+      "Works for holiday, birthday, and celebration gifts.",
+      "Available for a short time only.",
+    ],
   },
   {
     id: "c3",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Harry and David Coupon Code – 20% Off on Fruit-of-the-Month Club Collections",
-    desc: "Treat someone special to tasty gifts that arrive all year long.",
-    bullets: [
-      "Save 20% on select Fruit-of-the-Month Club collections.",
-      "Pick from more than 30 monthly gift clubs.",
-      "A caring gift for family, friends, or coworkers.",
-      "Seasonal offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Harry and David Discount Code – 20% Off Fruit-of-the-Month Club",
+    description: "Save 20% on selected Harry and David Fruit-of-the-Month Club gifts.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 20% off eligible fruit subscription options.",
+      "Delivers fresh fruit gifts throughout the year.",
+      "A recurring gift for someone special.",
+      "Check the terms to see which club options qualify.",
+    ],
   },
   {
     id: "c4",
-    label: "SPECIAL",
-    value: "$59.99",
-    title: "Harry and David Coupon Code – Harry's Gift Box for $59.99",
-    desc: "Share a premium gourmet gift packed with customer favorites.",
-    bullets: [
-      "Harry's Gift Box is priced at $59.99.",
-      "It is packed with tasty gourmet snacks and treats.",
-      "A great gift for any celebration.",
-      "Ready to ship now."
-    ]
+    topLabel: "ONLY",
+    mainValue: "$59.99",
+    offText: "DEAL",
+    title: "Harry and David Discount Code – Harry's Gift Box for $59.99",
+    description: "Send a ready-made gourmet gift with Harry's Gift Box, priced at $59.99.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Harry's Gift Box is available for $59.99.",
+      "Features a selection of Harry and David favorites.",
+      "Arrives as a gift you can send to family and friends.",
+      "A convenient choice if you want a simple gift option.",
+    ],
   },
   {
     id: "c5",
-    label: "SAVE",
-    value: "30% OFF",
-    title: "Harry and David Promo Code – Savings on Cheryl's Cookie Flavor Box",
-    desc: "Enjoy seasonal cookie flavors at a tasty price.",
-    bullets: [
-      "Get the Frosted Pumpkin Spice Latte Cookie Flavor Box for $19.99 instead of $29.99.",
-      "Save over 30% on this seasonal favorite.",
-      "Great for sharing or gifting.",
-      "Available while stock lasts."
-    ]
+    topLabel: "FLAT",
+    mainValue: "30%",
+    offText: "OFF",
+    title: "Harry and David Voucher Code – 30% Off Cheryl's Cookie Flavor Box",
+    description: "Take 30% off the Cheryl's Cookie Flavor Box from Harry and David.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 30% on this selected cookie gift box.",
+      "Cookies come packed for gifting or sharing.",
+      "A sweet option for many different occasions.",
+      "Check the product page for the flavors included.",
+    ],
   },
   {
     id: "c6",
-    label: "SAVE",
-    value: "25% OFF",
-    title: "Harry and David Promo Code – 25% Off on the Berry Breakfast Box",
-    desc: "Begin your mornings with a gourmet breakfast gift at a lower price.",
-    bullets: [
-      "Get the Berry Breakfast Box for $44.99 instead of $59.99.",
-      "Save 25% on this tasty breakfast set.",
-      "A nice gift for friends and family.",
-      "Ready to ship now."
-    ]
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Harry and David Voucher Code – 25% Off Berry Breakfast Box",
+    description: "Take 25% off the Berry Breakfast Box from Harry and David.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 25% on this breakfast gift selection.",
+      "Includes berry-inspired treats for the morning.",
+      "Easy to share with family, friends, or coworkers.",
+      "Check the product page to see what's inside.",
+    ],
   },
   {
     id: "c7",
-    label: "UP TO",
-    value: "33% OFF",
-    title: "Harry and David Offer Code – Up to 33% Off on the 3-Flavor Popcorn Tin",
-    desc: "Enjoy classic gourmet popcorn flavors at a lower price.",
-    bullets: [
-      "Get the 3-Flavor Popcorn Tin from $26.99 instead of from $39.99.",
-      "Save up to 33% on select sizes.",
-      "Comes with a mix of gourmet popcorn flavors.",
-      "Great for parties and holiday gifts."
-    ]
+    topLabel: "UP TO",
+    mainValue: "33%",
+    offText: "OFF",
+    title: "Harry and David Coupon Code – Up to 33% Off 3-Flavor Popcorn Tin",
+    description: "Save up to 33% on the 3-Flavor Popcorn Tin.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 33% off this popcorn gift tin.",
+      "Puts three popcorn flavors in one package.",
+      "A snack gift for celebrations and get-togethers.",
+      "The exact discount may vary, so confirm it at checkout.",
+    ],
   },
   {
     id: "c8",
-    label: "SPECIAL",
-    value: "$129.99",
-    title: "Harry and David Offer Code – Founders' Favorites Gift Box",
-    desc: "Share one of Harry and David's most loved gourmet gift collections.",
-    bullets: [
-      "Priced at $129.99.",
-      "Packed with premium fruit, snacks, and sweet treats.",
-      "Good for holidays, birthdays, and business gifts.",
-      "Ready to ship."
-    ]
+    topLabel: "ONLY",
+    mainValue: "$129.99",
+    offText: "DEAL",
+    title: "Harry and David Coupon Code – Founders' Favorites Gift Box for $129.99",
+    description: "Send the Founders' Favorites Gift Box, a collection of Harry and David treats, for $129.99.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The Founders' Favorites Gift Box is priced at $129.99.",
+      "Brings together a curated selection of Harry and David treats.",
+      "A gift to send for special occasions.",
+      "Suits shoppers looking for a larger gift box.",
+    ],
   },
   {
     id: "c9",
-    label: "SPECIAL",
-    value: "$99.99",
-    title: "Harry and David Voucher Code – Thank You Fruit & Sweets Gift Basket",
-    desc: "Show your thanks with a caring gourmet gift.",
-    bullets: [
-      "Priced at $99.99.",
-      "Includes quality fruit and tasty sweet treats.",
-      "Great for thank-you gifts and celebrations.",
-      "Ready to ship now."
-    ]
+    topLabel: "ONLY",
+    mainValue: "$99.99",
+    offText: "DEAL",
+    title: "Harry and David Referral Code – Thank You Fruit & Sweets Gift Basket for $99.99",
+    description: "Say thanks with the Thank You Fruit & Sweets Gift Basket, priced at $99.99.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The gift basket is available for $99.99.",
+      "Pairs fresh fruit with sweet treats in one gift.",
+      "A thoughtful pick for friends, family, or colleagues.",
+      "Well suited to appreciation gifts.",
+    ],
   },
   {
     id: "c10",
-    label: "SPECIAL",
-    value: "$54.99",
-    title: "Harry and David Voucher Code – Thank You Celebration Banquet",
-    desc: "Mark special moments with a gourmet food set.",
-    bullets: [
-      "Priced at $54.99.",
-      "Filled with tasty snacks and treats.",
-      "Great for sharing with family and friends.",
-      "Ships straight to your recipient."
-    ]
+    topLabel: "ONLY",
+    mainValue: "$54.99",
+    offText: "DEAL",
+    title: "Harry and David Referral Code – Thank You Celebration Banquet for $54.99",
+    description: "Mark a special moment with the Thank You Celebration Banquet, priced at $54.99.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The Celebration Banquet gift set is available for $54.99.",
+      "A food collection for memorable occasions.",
+      "Arrives ready to send as a gift.",
+      "A useful option for event gifting.",
+    ],
   },
   {
     id: "c11",
-    label: "SPECIAL",
-    value: "$69.99",
-    title: "Harry and David Discount Offer – Tower of Treats® Signature Gift",
-    desc: "Surprise someone with one of Harry and David's signature gift towers.",
-    bullets: [
-      "Priced at $69.99.",
-      "Includes a mix of premium gourmet favorites.",
-      "Good for birthdays, holidays, and office gifts.",
-      "Ready to ship now."
-    ]
+    topLabel: "ONLY",
+    mainValue: "$69.99",
+    offText: "DEAL",
+    title: "Harry and David Deals – Tower of Treats Signature Gift for $69.99",
+    description: "Surprise someone with Harry and David's Tower of Treats Signature Gift, priced at $69.99.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The signature gift tower is available for $69.99.",
+      "Offers a selection of gourmet treats in one tower.",
+      "A gift arrangement for special occasions.",
+      "A good fit for shoppers who like a classic gift.",
+    ],
   },
   {
     id: "c12",
-    label: "EXPLORE",
-    value: "GIFTS",
-    title: "Harry and David Discount Offer – Gourmet Gifts for Every Occasion",
-    desc: "Find quality gifts for holidays, birthdays, and everyday celebrations.",
-    bullets: [
-      "Browse fruit baskets, cookies, popcorn tins, and gourmet gift boxes.",
-      "Many gifts to fit every budget.",
-      "Quality treats from trusted brands.",
-      "New seasonal collections are out now."
-    ]
-  }
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Harry and David Deals – Gourmet Gifts for Every Occasion",
+    description: "Browse Harry and David gourmet gifts for holidays, birthdays, and celebrations.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shop gift baskets, fresh fruit, chocolates, and specialty foods.",
+      "Find curated gift options for different occasions.",
+      "Choose food gifts for friends and family.",
+      "A simple way to find a thoughtful present.",
+    ],
+  },
 ];

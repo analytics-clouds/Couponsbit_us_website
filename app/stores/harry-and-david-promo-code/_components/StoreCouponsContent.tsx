@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { OFFERS } from "./offers";
+import { HARRY_DAVID_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -89,7 +89,7 @@ export default function HarryAndDavidCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(5.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Harry and David Discount Code and Harry and David Promo Code for November 2026. Enjoy up to 25% OFF when you buy more gourmet gifts and 20% OFF on select Fruit-of-the-Month Club collections. You can also save on Harry's Gift Box, Berry Breakfast Box, Cheryl's Cookie Flavor Box, Tower of Treats®, gourmet popcorn tins, fruit baskets, and other premium gift collections. Browse verified Harry and David deals and make every holiday or special occasion more affordable.
+                      Harry and David Promo Code shoppers can enjoy gourmet gift savings with 30% off Cheryl's Cookie Flavor Box and 25% off the Berry Breakfast Box. Harry and David Discount Code offers also include 20% off Fruit-of-the-Month Club gifts and up to 25% off multiple gift purchases. I recommend these verified deals for Nov 2026 shoppers choosing fruit baskets, sweets, and specialty treats. Tested offers make gifting easier while helping you find curated food collections at better prices.
                     </p>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors">
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export default function HarryAndDavidCouponsContent() {
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Harry and David Promo Codes & Offers</h2>
                 </div>
-                {OFFERS.map((c, i) => (
+                {HARRY_DAVID_COUPONS.map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
@@ -163,8 +163,9 @@ export default function HarryAndDavidCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -174,13 +175,13 @@ export default function HarryAndDavidCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
                             <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>

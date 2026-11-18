@@ -1,13 +1,14 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import MavisCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { MAVIS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Mavis Discount Code: Save Up to $250 OFF + $160 OFF | Nov 2026",
+    absolute: "Mavis Promo Code: Up to $250 OFF Tire Sets | Nov 2026",
   },
   description:
-    "Get the latest Mavis Discount Code for November 2026 and save up to $250 OFF select tire sets or enjoy up to $160 OFF eligible 4-tire purchases.",
+    "Mavis Promo Code saves up to $250 on tire sets and $35 on wheel alignment services. Find Mavis Discount Code deals with verified Nov 2026 savings.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/mavis-discount-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/mavis-discount-code",
-    title: "Mavis Discount Code: Save Up to $250 OFF + $160 OFF | Nov 2026",
+    title: "Mavis Promo Code: Up to $250 OFF Tire Sets | Nov 2026",
     description:
-      "Get the latest Mavis Discount Code for November 2026 and save up to $250 OFF select tire sets or enjoy up to $160 OFF eligible 4-tire purchases.",
+      "Mavis Promo Code saves up to $250 on tire sets and $35 on wheel alignment services. Find Mavis Discount Code deals with verified Nov 2026 savings.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mavis Discount Code: Save Up to $250 OFF + $160 OFF | Nov 2026",
+    title: "Mavis Promo Code: Up to $250 OFF Tire Sets | Nov 2026",
     description:
-      "Get the latest Mavis Discount Code for November 2026 and save up to $250 OFF select tire sets or enjoy up to $160 OFF eligible 4-tire purchases.",
+      "Mavis Promo Code saves up to $250 on tire sets and $35 on wheel alignment services. Find Mavis Discount Code deals with verified Nov 2026 savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793688836/mavis-logo_fhmyy8.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    'geo.region': 'US',
+    'geo.country': 'US',
+    language: 'en-US',
+  },
 };
 
 const mavisSchema = {
@@ -61,9 +68,9 @@ const mavisSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/mavis-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/mavis-discount-code",
-      name: "Mavis Discount Code: Save Up to $250 OFF + $160 OFF | Nov 2026",
+      name: "Mavis Promo Code: Up to $250 OFF Tire Sets | Nov 2026",
       description:
-        "Get the latest Mavis Discount Code for November 2026 and save up to $250 OFF select tire sets or enjoy up to $160 OFF eligible 4-tire purchases.",
+        "Mavis Promo Code saves up to $250 on tire sets and $35 on wheel alignment services. Find Mavis Discount Code deals with verified Nov 2026 savings.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-03",
@@ -78,15 +85,17 @@ const mavisSchema = {
       name: "Mavis Discount Codes & Coupons",
       description: "Latest Mavis discount codes and auto service offers.",
       url: "https://www.couponsbit.us/stores/mavis-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: MAVIS_COUPONS.length,
+      itemListElement: MAVIS_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/mavis-discount-code",
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/mavis-discount-code#" + o.id,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Mavis", url: "https://www.mavis.com" },
         },
       })),
@@ -109,6 +118,13 @@ const mavisSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.mavis.com/#brand",
+      name: "Mavis",
+      url: "https://www.mavis.com",
     },
 
     {
@@ -190,7 +206,9 @@ export default function MavisStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(mavisSchema) }} />
-      <MavisCouponsContent />
+      <Suspense fallback={null}>
+        <MavisCouponsContent />
+      </Suspense>
     </>
   );
 }

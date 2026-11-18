@@ -1,13 +1,14 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import VuoriCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { VUORI_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Vuori Discount Code: 40% OFF + 25% OFF | Nov 2026",
+    absolute: "Vuori Promo Code: Up to 40% OFF Activewear | Nov 2026",
   },
   description:
-    "Get the latest Vuori Discount Code for November 2026 and save 40% OFF select activewear or enjoy 25% OFF eligible performance clothing and accessories.",
+    "Vuori Promo Code saves up to 40% on activewear and 25% on purchases. Find Vuori Discount Code deals with verified Nov 2026 savings and shop today.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/vuori-discount-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/vuori-discount-code",
-    title: "Vuori Discount Code: 40% OFF + 25% OFF | Nov 2026",
+    title: "Vuori Promo Code: Up to 40% OFF Activewear | Nov 2026",
     description:
-      "Get the latest Vuori Discount Code for November 2026 and save 40% OFF select activewear or enjoy 25% OFF eligible performance clothing and accessories.",
+      "Vuori Promo Code saves up to 40% on activewear and 25% on purchases. Find Vuori Discount Code deals with verified Nov 2026 savings and shop today.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Vuori Discount Code: 40% OFF + 25% OFF | Nov 2026",
+    title: "Vuori Promo Code: Up to 40% OFF Activewear | Nov 2026",
     description:
-      "Get the latest Vuori Discount Code for November 2026 and save 40% OFF select activewear or enjoy 25% OFF eligible performance clothing and accessories.",
+      "Vuori Promo Code saves up to 40% on activewear and 25% on purchases. Find Vuori Discount Code deals with verified Nov 2026 savings and shop today.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793688836/vuori_euoigj.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    'geo.region': 'US',
+    'geo.country': 'US',
+    language: 'en-US',
+  },
 };
 
 const vuoriSchema = {
@@ -61,9 +68,9 @@ const vuoriSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/vuori-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/vuori-discount-code",
-      name: "Vuori Discount Code: 40% OFF + 25% OFF | Nov 2026",
+      name: "Vuori Promo Code: Up to 40% OFF Activewear | Nov 2026",
       description:
-        "Get the latest Vuori Discount Code for November 2026 and save 40% OFF select activewear or enjoy 25% OFF eligible performance clothing and accessories.",
+        "Vuori Promo Code saves up to 40% on activewear and 25% on purchases. Find Vuori Discount Code deals with verified Nov 2026 savings and shop today.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-03",
@@ -78,15 +85,17 @@ const vuoriSchema = {
       name: "Vuori Discount Codes & Promo Codes",
       description: "Latest Vuori discount codes and offers.",
       url: "https://www.couponsbit.us/stores/vuori-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: VUORI_COUPONS.length,
+      itemListElement: VUORI_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/vuori-discount-code",
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/vuori-discount-code#" + o.id,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Vuori", url: "https://vuoriclothing.com" },
         },
       })),
@@ -109,6 +118,13 @@ const vuoriSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://vuoriclothing.com/#brand",
+      name: "Vuori",
+      url: "https://vuoriclothing.com",
     },
 
     {
@@ -190,7 +206,9 @@ export default function VuoriStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(vuoriSchema) }} />
-      <VuoriCouponsContent />
+      <Suspense fallback={null}>
+        <VuoriCouponsContent />
+      </Suspense>
     </>
   );
 }

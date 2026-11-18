@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { OFFERS } from "./offers";
+import { NESPRESSO_COUPONS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -89,7 +89,7 @@ export default function NespressoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest Nespresso Discount Code and Nespresso Promo Code for November 2026. Enjoy 20% OFF on selected CitiZ and Aeroccino coffee machine bundles or get a FREE Essenza Mini when you purchase eligible Original Line coffee sleeves. You can also save up to 18% OFF on Essenza Mini bundles, 10% OFF selected coffee machines and accessories, and enjoy exclusive bundle deals on Pixie, Lattissima, and office coffee solutions. Browse verified Nespresso offers and brew premium coffee for less.
+                      Nespresso Promo Code offers help coffee lovers save with 20% off CitiZ bundles and a free Essenza Mini machine on qualifying orders. Nespresso Discount Code deals also include 18% off Essenza Mini bundles and Original Line sleeves from ₹4,490. I recommend these verified offers for Nov 2026 shoppers upgrading their coffee setup. Tested deals make it easier to choose machines, capsules, and accessories for daily brewing needs while enjoying better value.
                     </p>
                     <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-1.5 mt-4 mb-2 bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-sm transition-colors">
                       Visit Store <ExternalLink className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export default function NespressoCouponsContent() {
                 <div className="mb-10">
                   <h2 className="text-2xl font-black text-black leading-tight">Nespresso Promo Codes & Offers</h2>
                 </div>
-                {OFFERS.map((c, i) => (
+                {NESPRESSO_COUPONS.map((c, i) => (
                   <div key={i} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
@@ -163,8 +163,9 @@ export default function NespressoCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -174,13 +175,13 @@ export default function NespressoCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
                             <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>

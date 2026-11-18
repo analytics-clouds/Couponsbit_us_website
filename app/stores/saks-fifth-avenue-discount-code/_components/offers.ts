@@ -1,193 +1,268 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const SAKS_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Saks Fifth Avenue Discount Code – 20% Off on Orders Over $250",
-    desc: "Get extra savings when you shop luxury clothing and accessories.",
-    bullets: [
-      "Get 20% off on eligible orders of $250 or more.",
-      "Shop designer clothing, shoes, handbags, and more.",
-      "Online offer for a short time.",
-      "Valid on eligible purchases."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Promo Code – 20% Off Orders Over $250",
+    description: "Take 20% off your Saks Fifth Avenue order when it totals more than $250.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 20% on eligible orders over $250 for a limited time.",
+      "Covers designer clothing, accessories, and other fashion items.",
+      "Helps lower the cost of a wardrobe refresh.",
+      "Exclusions may apply, so check the terms at checkout.",
+    ],
   },
   {
     id: "c2",
-    label: "GET",
-    value: "25% OFF",
-    title: "Saks Fifth Avenue Discount Code – 25% Off Your Order",
-    desc: "Update your wardrobe with high-end designer styles at lower prices.",
-    bullets: [
-      "Get 25% off on eligible purchases.",
-      "Valid on select luxury fashion items.",
-      "Good for shopping for the new season.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Promo Code – 25% Off Your Order",
+    description: "Take 25% off qualifying items in your Saks Fifth Avenue order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives 25% off eligible Saks Fifth Avenue items.",
+      "Includes clothing, accessories, and seasonal collections.",
+      "Available for a limited time only.",
+      "A fit for shoppers who want designer brands at lower prices.",
+    ],
   },
   {
     id: "c3",
-    label: "GET",
-    value: "15% OFF",
-    title: "Saks Fifth Avenue Coupon Code – 15% Off Your Next Purchase",
-    desc: "Get special savings when you join the Saks mailing list.",
-    bullets: [
-      "Get 15% off on your next eligible purchase.",
-      "Available when you sign up for Saks emails.",
-      "A good way to save on designer brands.",
-      "Online only."
-    ]
+    topLabel: "FLAT",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Discount Code – 15% Off Your Next Purchase",
+    description: "Join the Saks email list and get 15% off your next purchase.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Unlocks 15% off through the email sign-up offer.",
+      "Applies to designer apparel, accessories, and beauty products.",
+      "Keeps you updated on promotions and special offers.",
+      "A good option for new email subscribers.",
+    ],
   },
   {
     id: "c4",
-    label: "SIGN UP",
-    value: "10% OFF",
-    title: "Saks Fifth Avenue Coupon Code – 10% Off When You Create an Account",
-    desc: "Make a Saks account and get a special discount.",
-    bullets: [
-      "Save 10% on your first eligible purchase.",
-      "Open to new Saks account sign-ups.",
-      "Online-only offer.",
-      "Shop luxury brands for less."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Discount Code – 10% Off Account Sign-Up",
+    description: "Create a Saks account and get 10% off your purchase.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 10% when you register a new Saks Fifth Avenue account.",
+      "Applies to fashion collections available on the site.",
+      "An account makes it easier to shop and track orders.",
+      "Intended for first-time Saks shoppers.",
+    ],
   },
   {
     id: "c5",
-    label: "TEXT ALERTS",
-    value: "15% OFF",
-    title: "Saks Fifth Avenue Promo Code – 15% Off with Text Alerts",
-    desc: "Join the text message list and get special member savings.",
-    bullets: [
-      "Enjoy 15% off your next purchase.",
-      "Available once you join Saks text alerts.",
-      "Online only.",
-      "Stay in the loop on new arrivals and special deals."
-    ]
+    topLabel: "FLAT",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Voucher Code – 15% Off With Text Alerts",
+    description: "Sign up for Saks text alerts and get 15% off eligible purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives 15% off when you subscribe to Saks text messages.",
+      "Sends updates and subscriber offers by text.",
+      "Applies to designer styles that qualify.",
+      "Message and data rates may apply, so review the sign-up terms.",
+    ],
   },
   {
     id: "c6",
-    label: "SAVE",
-    value: "15% OFF",
-    title: "Saks Fifth Avenue Promo Code – 15% Off on Select Designer Styles",
-    desc: "Pick up featured designer deals at lower prices.",
-    bullets: [
-      "Get 15% off on select styles with eligible promotions.",
-      "Covers designer clothing, shoes, and accessories.",
-      "Savings for a short time.",
-      "Shop while the offers last."
-    ]
+    topLabel: "FLAT",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Voucher Code – 15% Off Designer Styles",
+    description: "Save 15% on select designer styles at Saks Fifth Avenue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 15% off featured designer fashion items and collections.",
+      "Includes clothing, accessories, and other brands sold at Saks.",
+      "Available for a limited time.",
+      "A fit for shoppers looking for designer deals.",
+    ],
   },
   {
     id: "c7",
-    label: "SPECIAL",
-    value: "RAG & BONE",
-    title: "Saks Fifth Avenue Offer Code – Savings on rag & bone Apparel",
-    desc: "Update your daily wardrobe with designer basics.",
-    bullets: [
-      "Shop the Plaid Cotton Flannel Shirt Jacket for $348.",
-      "Can qualify for 15% savings with eligible promotions.",
-      "Quality build and timeless style.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Saks Fifth Avenue Coupon Code – Savings on rag & bone Apparel",
+    description: "Find special pricing on rag & bone apparel at Saks Fifth Avenue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists reduced prices on selected rag & bone clothing.",
+      "Includes basics and everyday wardrobe pieces.",
+      "Savings apply to selected styles only.",
+      "A good fit for fans of contemporary designer fashion.",
+    ],
   },
   {
     id: "c8",
-    label: "SPECIAL",
-    value: "SANTONI",
-    title: "Saks Fifth Avenue Offer Code – Savings on Santoni Footwear",
-    desc: "Step out in high-end Italian footwear.",
-    bullets: [
-      "Save on Santoni Suede Desert Boots priced at $890.",
-      "Shop Leather Penny Loafers for $1,090.",
-      "Can qualify for featured promotional savings.",
-      "Good for both formal and casual looks."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Saks Fifth Avenue Coupon Code – Savings on Santoni Footwear",
+    description: "Find special pricing on Santoni shoes at Saks Fifth Avenue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists selected Santoni footwear styles at special prices.",
+      "Santoni is an Italian footwear brand.",
+      "Savings apply to selected styles only.",
+      "Suits shoppers who are looking for designer shoes.",
+    ],
   },
   {
     id: "c9",
-    label: "SPECIAL",
-    value: "KSUBI JEANS",
-    title: "Saks Fifth Avenue Voucher Code – Savings on Ksubi Jeans",
-    desc: "Find quality denim at a lower price.",
-    bullets: [
-      "Shop Ksubi Chitch Astral Intruder Slim Jeans for $156 instead of $240.",
-      "Save even more with eligible promotions.",
-      "A modern slim-fit style.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Saks Fifth Avenue Referral Code – Savings on Ksubi Jeans",
+    description: "Find special pricing on Ksubi jeans and denim at Saks Fifth Avenue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists selected Ksubi jeans with available savings.",
+      "Covers designer denim styles.",
+      "Savings apply to selected styles only.",
+      "A good fit for denim fans who want a lower price.",
+    ],
   },
   {
     id: "c10",
-    label: "REWARD",
-    value: "GIFT CARDS",
-    title: "Saks Fifth Avenue Voucher Code – Earn Gift Cards with Eligible Purchases",
-    desc: "Get bonus rewards while you shop luxury brands.",
-    bullets: [
-      "Earn gift cards from $50 up to $900 on eligible purchases.",
-      "Great value during promotional events.",
-      "Available on eligible orders.",
-      "Terms and conditions apply."
-    ]
+    topLabel: "EARN",
+    mainValue: "GIFT",
+    offText: "CARD",
+    title: "Saks Fifth Avenue Referral Code – Earn Gift Cards With Purchases",
+    description: "Earn gift cards when you complete eligible purchases at Saks Fifth Avenue.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives gift card rewards on qualifying orders.",
+      "Adds extra value to your purchase.",
+      "Rewards can go toward future Saks purchases.",
+      "Check the offer terms for the spend required and the reward amount.",
+    ],
   },
   {
     id: "c11",
-    label: "UP TO",
-    value: "$250 OFF",
-    title: "Saks Fifth Avenue Discount Offer – Up to $250 Off on Select Purchases",
-    desc: "Find high-end fashion with special savings.",
-    bullets: [
-      "Save up to $250 on eligible purchases.",
-      "Shop top luxury designer brands.",
-      "New offers are added through the season.",
-      "Available for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$250",
+    offText: "OFF",
+    title: "Saks Fifth Avenue Deals – Up to $250 Off Select Purchases",
+    description: "Save up to $250 on selected Saks Fifth Avenue purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $250 off qualifying items.",
+      "Covers designer clothing, accessories, and other collections.",
+      "Available for a limited time on selected products.",
+      "The exact amount depends on what you buy, so check the terms.",
+    ],
   },
   {
     id: "c12",
-    label: "EXPLORE",
-    value: "DESIGNER",
-    title: "Saks Fifth Avenue Discount Offer – Designer Fashion for Less",
-    desc: "Find special savings across luxury collections.",
-    bullets: [
-      "Save on clothing, shoes, handbags, beauty, and accessories.",
-      "Browse featured designer promotions.",
-      "Good seasonal deals are available online.",
-      "Savings for a short time."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Saks Fifth Avenue Deals – Designer Fashion for Less",
+    description: "Shop designer fashion at Saks Fifth Avenue with current savings.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Features designer brands and styles at lower prices.",
+      "Includes clothing, accessories, and fashion essentials.",
+      "Savings apply to selected collections.",
+      "A fit for shoppers who want designer pieces for less.",
+    ],
   },
   {
     id: "c13",
-    label: "GIFT CARD",
-    value: "FROM $50",
-    title: "Saks Fifth Avenue Gift Voucher – Gift Cards from $50 to $2,000",
-    desc: "Give the perfect gift for luxury shoppers.",
-    bullets: [
-      "Buy gift cards from $50 to $2,000.",
-      "Great for birthdays, holidays, and special days.",
-      "Easy to gift online.",
-      "Use on eligible Saks purchases."
-    ]
+    topLabel: "FROM",
+    mainValue: "$50",
+    offText: "GIFT CARD",
+    title: "Saks Fifth Avenue Cart Code – Gift Cards From $50 to $2,000",
+    description: "Saks Fifth Avenue gift cards come in values from $50 to $2,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Choose a gift card amount between $50 and $2,000.",
+      "Can be used toward fashion, accessories, and other Saks products.",
+      "A flexible gift for people who love fashion.",
+      "Works for birthdays, celebrations, and other occasions.",
+    ],
   },
   {
     id: "c14",
-    label: "BONUS",
-    value: "GIFT CARD",
-    title: "Saks Fifth Avenue Gift Voucher – Earn Bonus Gift Cards",
-    desc: "Get extra value with eligible purchases.",
-    bullets: [
-      "Earn promotional gift cards on eligible spending.",
-      "A nice reward for luxury shopping.",
-      "Available during select promotional events.",
-      "Terms and conditions apply."
-    ]
-  }
+    topLabel: "BONUS",
+    mainValue: "GIFT",
+    offText: "CARD",
+    title: "Saks Fifth Avenue Offers – Earn Bonus Gift Cards",
+    description: "Get bonus gift card rewards with eligible Saks Fifth Avenue purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Earns extra gift card value on qualifying purchases.",
+      "Applies to selected collections.",
+      "Adds more value to your fashion purchases.",
+      "Check the terms for the reward amount and dates.",
+    ],
+  },
 ];

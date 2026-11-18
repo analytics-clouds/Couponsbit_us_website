@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import EmergentCouponsContent from "./_components/StoreCouponsContent";
 import { EMERGENT_PLANS } from "./_components/offers";
 
-const TITLE = "Emergent Discount Code - Save $14.79 on monthy plan | Nov 2026";
+const TITLE = "Emergent Promo Code: 85% OFF Standard Pass | Nov 2026";
 const DESCRIPTION =
-  "Use an Emergent discount code or promo code & pay just $2.63/mo — save $14.79. Pro plan from $146.10/mo with free deployment & custom domain. November 2026.";
+  "Emergent Promo Code saves 85% on the 7-Day Standard Pass and 20% on Pro Plans. Find Emergent Discount Code deals with verified Nov 2026 savings.";
 
 export const metadata: Metadata = {
   title: {
@@ -62,10 +62,10 @@ export const metadata: Metadata = {
 
 const emergentOffers = EMERGENT_PLANS.map((plan) => ({
   "@type": "Offer",
-  name: plan.name,
+  name: plan.title,
   description: plan.description,
   priceCurrency: "USD",
-  price: plan.price,
+  availability: "https://schema.org/InStock",
   url: `https://www.couponsbit.us/stores/emergent-discount-code#${plan.id}`,
   seller: { "@type": "Organization", name: "Emergent", url: "https://app.emergent.sh/" },
 }));
@@ -92,7 +92,7 @@ const emergentSchema = {
 
     {
       "@type": "Organization",
-      "@id": "https://www.couponsbit.us/stores/emergent-discount-code#brand",
+      "@id": "https://app.emergent.sh/#brand",
       name: "Emergent",
       url: "https://app.emergent.sh/",
     },

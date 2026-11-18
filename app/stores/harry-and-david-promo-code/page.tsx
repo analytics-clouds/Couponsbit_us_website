@@ -1,13 +1,14 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import HarryAndDavidCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { HARRY_DAVID_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Harry and David Discount Code: 25% OFF + 20% OFF | Nov 2026",
+    absolute: "Harry and David Promo Code: 30% OFF Cookie Box | Nov 2026",
   },
   description:
-    "Get the latest Harry and David Discount Code and Harry and David Promo Code for November 2026. Save up to 25% OFF on gourmet gifts plus 20% OFF Fruit-of-the-Month Club collections.",
+    "Harry and David Promo Code saves 30% on Cheryl's Cookie Flavor Box and 25% on Berry Breakfast Box. Find Harry and David Discount Code deals verified Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/harry-and-david-promo-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/harry-and-david-promo-code",
-    title: "Harry and David Discount Code: 25% OFF + 20% OFF | Nov 2026",
+    title: "Harry and David Promo Code: 30% OFF Cookie Box | Nov 2026",
     description:
-      "Get the latest Harry and David Discount Code and Harry and David Promo Code for November 2026. Save up to 25% OFF on gourmet gifts plus 20% OFF Fruit-of-the-Month Club collections.",
+      "Harry and David Promo Code saves 30% on Cheryl's Cookie Flavor Box and 25% on Berry Breakfast Box. Find Harry and David Discount Code deals verified Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Harry and David Discount Code: 25% OFF + 20% OFF | Nov 2026",
+    title: "Harry and David Promo Code: 30% OFF Cookie Box | Nov 2026",
     description:
-      "Get the latest Harry and David Discount Code and Harry and David Promo Code for November 2026. Save up to 25% OFF on gourmet gifts plus 20% OFF Fruit-of-the-Month Club collections.",
+      "Harry and David Promo Code saves 30% on Cheryl's Cookie Flavor Box and 25% on Berry Breakfast Box. Find Harry and David Discount Code deals verified Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793688836/harryand-david-logo_psaq9y.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    'geo.region': 'US',
+    'geo.country': 'US',
+    language: 'en-US',
+  },
 };
 
 const harryAndDavidSchema = {
@@ -61,9 +68,9 @@ const harryAndDavidSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/harry-and-david-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/harry-and-david-promo-code",
-      name: "Harry and David Discount Code: 25% OFF + 20% OFF | Nov 2026",
+      name: "Harry and David Promo Code: 30% OFF Cookie Box | Nov 2026",
       description:
-        "Get the latest Harry and David Discount Code and Harry and David Promo Code for November 2026. Save up to 25% OFF on gourmet gifts plus 20% OFF Fruit-of-the-Month Club collections.",
+        "Harry and David Promo Code saves 30% on Cheryl's Cookie Flavor Box and 25% on Berry Breakfast Box. Find Harry and David Discount Code deals verified Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-03",
@@ -78,15 +85,17 @@ const harryAndDavidSchema = {
       name: "Harry and David Promo Codes & Coupon Codes",
       description: "Latest Harry and David promo codes and offers.",
       url: "https://www.couponsbit.us/stores/harry-and-david-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: HARRY_DAVID_COUPONS.length,
+      itemListElement: HARRY_DAVID_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/harry-and-david-promo-code",
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/harry-and-david-promo-code#" + o.id,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Harry and David", url: "https://www.harryanddavid.com" },
         },
       })),
@@ -109,6 +118,13 @@ const harryAndDavidSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.harryanddavid.com/#brand",
+      name: "Harry and David",
+      url: "https://www.harryanddavid.com",
     },
 
     {
@@ -190,7 +206,9 @@ export default function HarryAndDavidStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(harryAndDavidSchema) }} />
-      <HarryAndDavidCouponsContent />
+      <Suspense fallback={null}>
+        <HarryAndDavidCouponsContent />
+      </Suspense>
     </>
   );
 }

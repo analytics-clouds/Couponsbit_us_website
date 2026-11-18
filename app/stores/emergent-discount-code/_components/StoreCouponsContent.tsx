@@ -48,6 +48,7 @@ export default function EmergentCouponsContent() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [openCoupon, setOpenCoupon] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -202,95 +203,67 @@ export default function EmergentCouponsContent() {
             <div className="flex flex-col lg:flex-row gap-12">
               
               {/* Left Column: Coupons */}
-              <div className="top-offers lg:w-[65%] lg:sticky lg:top-24 lg:self-start">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Emergent Pricing Plans</h2>
-                  
-                </div>
+              <div className="top-offers lg:w-[65%]">
+  <div className="mb-10">
+    <h2 className="text-2xl font-black text-black leading-tight">Emergent Promo Codes & Offers</h2>
+  </div>
+  {EMERGENT_PLANS.map((c) => {
+    const isOpen = openCoupon === c.id;
 
-                
-
-                {/* Promo Banner */}
-                <div className="inline-flex flex-wrap items-center gap-3 bg-gradient-to-r from-[#056bfa] to-[#006d9b] text-white px-6 py-3 rounded-2xl shadow-md mb-8">
-                  <Zap className="w-4 h-4" />
-                  <span className="font-bold text-sm">FLAT 85% OFF on Standard Monthly Plan</span>
-                  <span className="bg-white/20 text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wide">Discount Auto Applied</span>
-                </div>
-
-                {/* Pricing Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Standard Plan */}
-                  <div className="bg-white border border-gray-200 rounded-[24px] p-8 shadow-sm flex flex-col">
-                    <div className="flex items-center gap-2 mb-1">
-                      <Zap className="w-4 h-4 text-[#056bfa]" />
-                      <h3 className="text-black font-black text-lg">Standard</h3>
-                    </div>
-                    <p className="text-gray-500 text-xs font-bold mb-6">Perfect for first-time builders</p>
-                    <div className="flex items-end gap-2 mb-1">
-                      <span className="text-gray-400 line-through text-sm font-bold">$17.42</span>
-                      <span className="bg-green-100 text-green-700 text-[11px] font-black px-2.5 py-1 rounded-full">Save $14.79</span>
-                    </div>
-                    <div className="flex items-end gap-1 mb-6">
-                      <span className="text-4xl font-black text-black">$2.63</span>
-                      <span className="text-gray-500 font-bold text-sm mb-1">/mo</span>
-                    </div>
-                    <div className="bg-[#f8f8f8] rounded-xl px-4 py-2.5 text-xs font-black text-gray-700 mb-6 inline-block w-fit">100 credits/mo</div>
-                    <ul className="space-y-3 mb-8 flex-1">
-                      {[
-                        "Mobile App Development",
-                        "Private project hosting",
-                        "GitHub integration",
-                        "Fork tasks",
-                        "Ability to buy additional credits"
-                      ].map((feature) => (
-                        <li key={feature} className="flex items-start gap-2 text-sm text-gray-700 font-medium">
-                          <CheckCircle className="w-4 h-4 text-[#22c55e] shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <a href="https://emergent.sjv.io/zz9jDe" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Emergent deal: Standard Plan" className="bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-                  </div>
-
-                  {/* Pro Plan */}
-                  <div className="bg-gradient-to-br from-[#056bfa] to-[#0451c4] text-white rounded-[24px] p-8 shadow-lg flex flex-col relative overflow-hidden">
-                    <div className="flex items-center gap-2 mb-1">
-                      <BadgeCheck className="w-4 h-4 text-white" />
-                      <h3 className="font-black text-lg">Pro</h3>
-                    </div>
-                    <p className="text-white/70 text-xs font-bold mb-6">Built for serious creators and brands</p>
-                    <div className="flex items-end gap-2 mb-1">
-                      <span className="text-white/50 line-through text-sm font-bold">$158.32</span>
-                      <span className="bg-white/20 text-white text-[11px] font-black px-2.5 py-1 rounded-full">Save $12.22</span>
-                    </div>
-                    <div className="flex items-end gap-1 mb-6">
-                      <span className="text-4xl font-black">$146.10</span>
-                      <span className="text-white/70 font-bold text-sm mb-1">/mo</span>
-                    </div>
-                    <div className="bg-white/15 rounded-xl px-4 py-2.5 text-xs font-black mb-6 inline-block w-fit">750 credits/mo</div>
-                    <ul className="space-y-3 mb-8 flex-1">
-                      {[
-                        "E-3 Agent",
-                        "Free deployment",
-                        "Free custom domain",
-                        "Analytics dashboard",
-                        "Full project memory",
-                        "Beast Thinking"
-                      ].map((feature) => (
-                        <li key={feature} className="flex items-start gap-2 text-sm font-medium">
-                          <CheckCircle className="w-4 h-4 text-white shrink-0 mt-0.5" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <a href="https://emergent.sjv.io/zz9jDe" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Emergent deal: Pro Plan" className="bg-white hover:bg-gray-100 text-[#0451c4] font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 text-center block">Upgrade to Pro</a>
-                  </div>
-                </div>
-
-              
-
-                
+    return (
+      <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
+        <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+          <div className="flex flex-row">
+            <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+              <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+              <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+              <div className="text-center px-1">
+                <p className="uppercase tracking-[4px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>
               </div>
+            </div>
+            <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+              <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
+                  <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+                </div>
+                <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
+                <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                <button
+                  type="button"
+                  onClick={() => setOpenCoupon(isOpen ? null : c.id)}
+                  className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                >
+                  View Details <ChevronDown size={16} className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                  <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                    {c.points.map((b, bi) => (
+                      <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                <a
+                  href="https://emergent.sjv.io/zz9jDe"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Get Emergent Deal: ${c.title}`}
+                  className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                >
+                  Get Deal
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">

@@ -1,13 +1,14 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import NespressoCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { NESPRESSO_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Nespresso Promo code: Get 20% OFF + Free Machine | Nov 2026",
+    absolute: "Nespresso Promo Code: 20% OFF CitiZ Bundle | Nov 2026",
   },
   description:
-    "Get the latest Nespresso Discount Code and Nespresso Promo Code for November 2026. Save 20% OFF coffee machine bundles or get a FREE Essenza Mini with eligible purchases.",
+    "Nespresso Promo Code saves 20% on CitiZ bundles and includes free Essenza Mini offers. Find Nespresso Discount Code deals with verified Nov 2026 savings.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/nespresso-promo-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/nespresso-promo-code",
-    title: "Nespresso Promo code: Get 20% OFF + Free Machine | Nov 2026",
+    title: "Nespresso Promo Code: 20% OFF CitiZ Bundle | Nov 2026",
     description:
-      "Get the latest Nespresso Discount Code and Nespresso Promo Code for November 2026. Save 20% OFF coffee machine bundles or get a FREE Essenza Mini with eligible purchases.",
+      "Nespresso Promo Code saves 20% on CitiZ bundles and includes free Essenza Mini offers. Find Nespresso Discount Code deals with verified Nov 2026 savings.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Nespresso Promo code: Get 20% OFF + Free Machine | Nov 2026",
+    title: "Nespresso Promo Code: 20% OFF CitiZ Bundle | Nov 2026",
     description:
-      "Get the latest Nespresso Discount Code and Nespresso Promo Code for November 2026. Save 20% OFF coffee machine bundles or get a FREE Essenza Mini with eligible purchases.",
+      "Nespresso Promo Code saves 20% on CitiZ bundles and includes free Essenza Mini offers. Find Nespresso Discount Code deals with verified Nov 2026 savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793688836/nespresso-logo_evanwx.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    'geo.region': 'US',
+    'geo.country': 'US',
+    language: 'en-US',
+  },
 };
 
 const nespressoSchema = {
@@ -61,9 +68,9 @@ const nespressoSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/nespresso-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/nespresso-promo-code",
-      name: "Nespresso Promo code: Get 20% OFF + Free Machine | Nov 2026",
+      name: "Nespresso Promo Code: 20% OFF CitiZ Bundle | Nov 2026",
       description:
-        "Get the latest Nespresso Discount Code and Nespresso Promo Code for November 2026. Save 20% OFF coffee machine bundles or get a FREE Essenza Mini with eligible purchases.",
+        "Nespresso Promo Code saves 20% on CitiZ bundles and includes free Essenza Mini offers. Find Nespresso Discount Code deals with verified Nov 2026 savings.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-03",
@@ -78,15 +85,17 @@ const nespressoSchema = {
       name: "Nespresso Promo Codes & Coupon Codes",
       description: "Latest Nespresso promo codes and offers.",
       url: "https://www.couponsbit.us/stores/nespresso-promo-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: NESPRESSO_COUPONS.length,
+      itemListElement: NESPRESSO_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/nespresso-promo-code",
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/nespresso-promo-code#" + o.id,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Nespresso", url: "https://www.nespresso.com" },
         },
       })),
@@ -109,6 +118,13 @@ const nespressoSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.nespresso.com/#brand",
+      name: "Nespresso",
+      url: "https://www.nespresso.com",
     },
 
     {
@@ -190,7 +206,9 @@ export default function NespressoStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nespressoSchema) }} />
-      <NespressoCouponsContent />
+      <Suspense fallback={null}>
+        <NespressoCouponsContent />
+      </Suspense>
     </>
   );
 }

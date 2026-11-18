@@ -1,219 +1,304 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const MAVIS_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "FROM",
-    value: "$61.49",
-    title: "Mavis Discount Code – All-Season Tires Starting at $61.49",
-    desc: "Give your car new tires at a low price with all-season options from Mavis.",
-    bullets: [
-      "All-season tires start at $61.49.",
-      "Sold in popular sizes, including 215/65/R16.",
-      "Made for steady performance all year round.",
-      "Good value for daily driving."
-    ]
+    topLabel: "FROM",
+    mainValue: "$61.49",
+    offText: "DEAL",
+    title: "Mavis Promo Code – All-Season Tires Starting at $61.49",
+    description: "Find all-season tires at Mavis with prices starting at $61.49.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Selected all-season tires start at $61.49.",
+      "Tire options are meant for everyday driving.",
+      "Gives you lower-priced choices when it's time to replace tires.",
+      "Handy for drivers swapping out worn tires.",
+    ],
   },
   {
     id: "c2",
-    label: "UP TO",
-    value: "$150 OFF",
-    title: "Mavis Discount Code – Up to $150 Off on Select Tire Sets",
-    desc: "Use this short-time offer to save on top tire sets.",
-    bullets: [
-      "Save up to $150 on select sets of 4 tires.",
-      "This includes up to $100 in mail-in savings.",
-      "Get an extra $50 instant discount when you buy online.",
-      "Available for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$150",
+    offText: "OFF",
+    title: "Mavis Promo Code – Up to $150 Off Tire Sets",
+    description: "Save up to $150 on select tire sets at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $150 off qualifying tire set purchases.",
+      "Applies to selected tire brands and options.",
+      "Helps lower the cost of vehicle maintenance.",
+      "The exact discount depends on the tires you choose.",
+    ],
   },
   {
     id: "c3",
-    label: "SAVE",
-    value: "$160 OFF",
-    title: "Mavis Coupon Code – $160 Off on Select Tire Purchases",
-    desc: "Put new tires on your car and save even more.",
-    bullets: [
-      "Save up to $160 on eligible sets of 4 tires.",
-      "This includes an $80 mail-in rebate.",
-      "You also get a $30 instant rebate.",
-      "Get an extra $50 off when you buy online."
-    ]
+    topLabel: "SAVE",
+    mainValue: "$160",
+    offText: "OFF",
+    title: "Mavis Discount Code – $160 Off Tire Purchases",
+    description: "Take $160 off eligible Mavis tire purchases for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Deducts $160 from selected tire orders.",
+      "Covers new tires for different vehicle types.",
+      "Lowers the cost of your next tire replacement.",
+      "A fit for drivers who need new tires soon.",
+    ],
   },
   {
     id: "c4",
-    label: "UP TO",
-    value: "$250 OFF",
-    title: "Mavis Coupon Code – Up to $250 Off on Select Tire Sets",
-    desc: "Get the most savings on top tire brands.",
-    bullets: [
-      "Save up to $250 on select sets of 4 tires.",
-      "This includes a $100 instant rebate.",
-      "You also get a $100 mail-in rebate.",
-      "Get an extra $50 instant discount when you buy online."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$250",
+    offText: "OFF",
+    title: "Mavis Discount Code – Up to $250 Off Tire Sets",
+    description: "Save up to $250 on selected tire sets at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $250 off qualifying tire purchases.",
+      "Includes options from popular tire brands.",
+      "Adds value when you replace several tires at once.",
+      "Suits drivers planning a tire upgrade.",
+    ],
   },
   {
     id: "c5",
-    label: "REWARD",
-    value: "$25 BACK",
-    title: "Mavis Promo Code – $25 Back on Every Mavis Tire",
-    desc: "Get rewarded when you buy Mavis-brand tires.",
-    bullets: [
-      "Earn a $25 statement credit on each eligible Mavis-brand tire.",
-      "Works with the Mavis Tire Credit Card.",
-      "A good way to save on your next buys.",
-      "Promotional offer for a short time."
-    ]
+    topLabel: "GET",
+    mainValue: "$25",
+    offText: "BACK",
+    title: "Mavis Voucher Code – $25 Back on Every Mavis Tire",
+    description: "Get $25 back when you buy Mavis-brand tires.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Earns a $25 reward on each eligible Mavis tire purchase.",
+      "Applies to Mavis-brand products.",
+      "Adds savings when you upgrade your tires.",
+      "A good match for repeat Mavis customers.",
+    ],
   },
   {
     id: "c6",
-    label: "SPECIAL",
-    value: "0% INTEREST",
-    title: "Mavis Promo Code – 6 Months No Interest Financing",
-    desc: "Spread out the cost of car care with easy financing.",
-    bullets: [
-      "Get 6 months of no-interest financing on purchases of $199 or more.",
-      "Works with the Mavis Tire Credit Card.",
-      "Makes bigger purchases easier to afford.",
-      "Open to eligible customers."
-    ]
+    topLabel: "6 MOS",
+    mainValue: "0% APR",
+    offText: "FINANCING",
+    title: "Mavis Voucher Code – 6 Months No Interest Financing",
+    description: "Spread out your car care costs with six months of no-interest financing.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers special financing on eligible purchases.",
+      "Lets you split payments for vehicle maintenance.",
+      "Can make tire and service costs easier to manage.",
+      "Financing terms and approval requirements apply, so review them first.",
+    ],
   },
   {
     id: "c7",
-    label: "SAVE",
-    value: "$35 OFF",
-    title: "Mavis Offer Code – $35 Off on Wheel Alignment",
-    desc: "Keep your car running straight with a professional alignment.",
-    bullets: [
-      "Save $35 on a wheel alignment.",
-      "A free alignment check is included.",
-      "Comes with a 90-day warranty.",
-      "Valid for most cars."
-    ]
+    topLabel: "SAVE",
+    mainValue: "$35",
+    offText: "OFF",
+    title: "Mavis Coupon Code – $35 Off Wheel Alignment",
+    description: "Save $35 on wheel alignment service at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes $35 off eligible wheel alignment services.",
+      "Proper alignment helps your vehicle drive straight.",
+      "Can support better handling and even tire wear.",
+      "A useful add-on for routine car care.",
+    ],
   },
   {
     id: "c8",
-    label: "SAVE",
-    value: "$20 OFF",
-    title: "Mavis Offer Code – $20 Off on Oil Changes",
-    desc: "Look after your engine and save on regular service.",
-    bullets: [
-      "Save $20 on eligible oil change services.",
-      "Valvoline Motor Oil is included.",
-      "A free tire rotation comes with it.",
-      "A visual brake check is also included."
-    ]
+    topLabel: "SAVE",
+    mainValue: "$20",
+    offText: "OFF",
+    title: "Mavis Coupon Code – $20 Off Oil Changes",
+    description: "Save $20 on an oil change at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes $20 off qualifying oil change services.",
+      "Regular oil changes are part of basic engine care.",
+      "Lowers the cost of essential maintenance.",
+      "Helpful when you're booking a routine service appointment.",
+    ],
   },
   {
     id: "c9",
-    label: "SAVE",
-    value: "25% OFF",
-    title: "Mavis Voucher Code – 25% Off on Mufflers & Exhaust Service",
-    desc: "Take care of your exhaust system and pay less for repairs.",
-    bullets: [
-      "Save 25% on muffler and exhaust services.",
-      "A free visual exhaust check is included.",
-      "A warranty is included on eligible services.",
-      "Valid for most vehicles."
-    ]
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Mavis Referral Code – 25% Off Mufflers & Exhaust Service",
+    description: "Get 25% off selected muffler and exhaust services at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 25% on eligible exhaust system repairs.",
+      "Covers an important part of vehicle upkeep.",
+      "Brings down the cost of repairs.",
+      "A fit for drivers who need exhaust work.",
+    ],
   },
   {
     id: "c10",
-    label: "UP TO",
-    value: "$80 OFF",
-    title: "Mavis Voucher Code – Up to $80 Off on Brake Service",
-    desc: "Drive with peace of mind and save on brake care.",
-    bullets: [
-      "Save up to $80 on brake service.",
-      "A free visual brake check is included.",
-      "Covers front or rear brake pads (or shoes) and labor.",
-      "Valid for most cars."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$80",
+    offText: "OFF",
+    title: "Mavis Referral Code – Up to $80 Off Brake Service",
+    description: "Save up to $80 on selected brake services at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $80 off qualifying brake repairs.",
+      "Brake service is a key part of vehicle safety upkeep.",
+      "Helps lower your service costs.",
+      "The exact discount depends on the service you need.",
+    ],
   },
   {
     id: "c11",
-    label: "UP TO",
-    value: "$150 OFF",
-    title: "Mavis Discount Offer – More Savings on Select Tire Brands",
-    desc: "Find good savings on top tire brands for your car.",
-    bullets: [
-      "Save up to $150 on eligible tire purchases.",
-      "Extra savings are available when you buy online.",
-      "Good deals on select sets of four tires.",
-      "Promotion for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$150",
+    offText: "OFF",
+    title: "Mavis Deals – Up to $150 Off Select Tire Brands",
+    description: "Save up to $150 on selected tire brands at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $150 off eligible tire purchases.",
+      "Lets you choose from the brands included in the offer.",
+      "Adds value when you're upgrading your tires.",
+      "Useful for drivers comparing tire prices.",
+    ],
   },
   {
     id: "c12",
-    label: "UP TO",
-    value: "$250 OFF",
-    title: "Mavis Discount Offer – Up to $250 Off on Premium Tire Sets",
-    desc: "Get new tires and save as much as you can.",
-    bullets: [
-      "Get instant and mail-in rebates together.",
-      "Extra discounts are available when you buy online.",
-      "Applies to select premium tire brands.",
-      "Available while the promotion lasts."
-    ]
+    topLabel: "UP TO",
+    mainValue: "$250",
+    offText: "OFF",
+    title: "Mavis Deals – Up to $250 Off Premium Tire Sets",
+    description: "Save up to $250 on selected premium tire sets at Mavis.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $250 off eligible premium tire sets.",
+      "Lets you pick from the tire options included in the offer.",
+      "Lowers the cost of replacing your tires.",
+      "A fit for drivers planning an upgrade.",
+    ],
   },
   {
     id: "c13",
-    label: "REWARD",
-    value: "$25 BACK",
-    title: "Mavis Bank Offer – Earn Rewards with the Mavis Credit Card",
-    desc: "Save more each time you buy Mavis-brand tires.",
-    bullets: [
-      "Earn $25 back on every eligible Mavis tire you buy.",
-      "A special perk for Mavis Credit Card holders.",
-      "Financing options are available on eligible purchases.",
-      "Handy for future tire changes."
-    ]
+    topLabel: "EARN",
+    mainValue: "$25",
+    offText: "BACK",
+    title: "Mavis Offer – Earn $25 Back With Mavis Credit Card",
+    description: "Earn a $25 reward when you use the Mavis Credit Card on eligible tire purchases.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives $25 back on qualifying Mavis-brand tire purchases.",
+      "Adds a reward on top of your tire purchase.",
+      "Requires paying with the Mavis Credit Card.",
+      "Suits customers who buy tires from Mavis often.",
+    ],
   },
   {
     id: "c14",
-    label: "SPECIAL",
-    value: "FINANCING",
-    title: "Mavis Bank Offer – Finance Purchases Over $199",
-    desc: "Handle repair costs with easy financing.",
-    bullets: [
-      "Get 6 months of no-interest financing on purchases over $199.",
-      "Works with the Mavis Tire Credit Card.",
-      "Good for tires, maintenance, and repairs.",
-      "Credit approval is required."
-    ]
+    topLabel: "ORDERS",
+    mainValue: "$199+",
+    offText: "FINANCING",
+    title: "Mavis Offer – Financing on Purchases Over $199",
+    description: "Financing is available on eligible Mavis purchases over $199.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Helps you manage larger auto care costs.",
+      "Applies to qualifying orders above $199.",
+      "Can cover repair and maintenance expenses.",
+      "Financing terms and approval requirements apply.",
+    ],
   },
   {
     id: "c15",
-    label: "SAVE",
-    value: "AUTO CARE",
-    title: "Mavis Gift Voucher – Savings on Essential Auto Services",
-    desc: "Keep your car in good shape with seasonal service savings.",
-    bullets: [
-      "Save on wheel alignments, oil changes, brake service, and more.",
-      "Service is done by certified technicians.",
-      "Available for most vehicle models.",
-      "Maintenance offers for a short time."
-    ]
+    topLabel: "AUTO",
+    mainValue: "CARE",
+    offText: "DEAL",
+    title: "Mavis Cart Code – Savings on Essential Auto Services",
+    description: "Save on everyday auto services with current Mavis service offers.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Includes savings on selected maintenance services.",
+      "Supports routine care to keep your car in good shape.",
+      "Offers vary by service, so check what applies to you.",
+      "Helps lower the cost of regular maintenance.",
+    ],
   },
   {
     id: "c16",
-    label: "EXPLORE",
-    value: "TIRE DEALS",
-    title: "Mavis Gift Voucher – Tire Deals & Auto Care Savings",
-    desc: "Pick up special offers on tires and car care.",
-    bullets: [
-      "Browse discounts on tires and auto services.",
-      "Save with seasonal deals all year long.",
-      "Good value on regular maintenance.",
-      "Offers valid for a short time."
-    ]
-  }
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Mavis Cart Code – Tire Deals & Auto Care Savings",
+    description: "Browse current Mavis tire deals and auto care savings.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Shows available tire offers and service discounts.",
+      "Includes savings on selected products and services.",
+      "Covers tires, repairs, and maintenance.",
+      "A handy starting point for drivers hunting for auto care deals.",
+    ],
+  },
 ];

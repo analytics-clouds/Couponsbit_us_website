@@ -1,193 +1,268 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const VUORI_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "GET",
-    value: "20% OFF",
-    title: "Vuori Discount Code – 20% Off on Your Order",
-    desc: "Freshen up your activewear with extra savings on eligible purchases.",
-    bullets: [
-      "Get 20% off on qualifying Vuori orders.",
-      "Works on select clothing and accessories.",
-      "Good for new and returning shoppers.",
-      "Online offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Vuori Promo Code – 20% Off Your Order",
+    description: "Take 20% off eligible Vuori activewear orders for a limited time.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Saves 20% on eligible Vuori clothing and activewear.",
+      "Covers apparel made for workouts and everyday wear.",
+      "Available only while the promotion is running.",
+      "Exclusions may apply, so check the terms at checkout.",
+    ],
   },
   {
     id: "c2",
-    label: "SAVE",
-    value: "25% OFF",
-    title: "Vuori Discount Code – 25% Off Your Purchase",
-    desc: "Save more on high-quality performance clothing.",
-    bullets: [
-      "Get 25% off on eligible Vuori products.",
-      "Valid on select styles for a short time.",
-      "A good chance to update your wardrobe.",
-      "Shop before the offer ends."
-    ]
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Vuori Promo Code – 25% Off Your Purchase",
+    description: "Take 25% off your Vuori order on eligible activewear.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Applies the discount to eligible Vuori products and styles.",
+      "Covers apparel for fitness and daily activities.",
+      "Available for a limited time only.",
+      "A fit for shoppers refreshing their activewear wardrobe.",
+    ],
   },
   {
     id: "c3",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Vuori Coupon Code – 20% Off Storewide",
-    desc: "Save across Vuori's full range of activewear.",
-    bullets: [
-      "Get 20% off on eligible storewide purchases.",
-      "Valid on select clothing and accessories.",
-      "Great for both men's and women's styles.",
-      "Online offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Vuori Discount Code – 20% Off Storewide",
+    description: "Save 20% on eligible products across the Vuori store.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 20% off available Vuori products site-wide.",
+      "Includes a wide range of activewear options.",
+      "Some items may be excluded, so read the terms.",
+      "Suits shoppers buying several items at once.",
+    ],
   },
   {
     id: "c4",
-    label: "SAVE",
-    value: "15% OFF",
-    title: "Vuori Coupon Code – 15% Off Your Purchase",
-    desc: "Get an instant discount on your next Vuori order.",
-    bullets: [
-      "Enjoy 15% off on qualifying purchases.",
-      "Works on eligible clothing and gear.",
-      "A simple way to save on daily basics.",
-      "Valid for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Vuori Discount Code – 15% Off Your Purchase",
+    description: "Take 15% off your next eligible Vuori order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives an instant 15% discount on qualifying orders.",
+      "Includes activewear styles for training and everyday use.",
+      "Applies to eligible items only.",
+      "Handy for your next Vuori order.",
+    ],
   },
   {
     id: "c5",
-    label: "UP TO",
-    value: "40% OFF",
-    title: "Vuori Promo Code – 40% Off on Select Orders",
-    desc: "Shop quality activewear with one of the biggest discounts on offer.",
-    bullets: [
-      "Save up to 40% on eligible purchases.",
-      "Valid on select Vuori collections.",
-      "Good for performance wear and casual clothing.",
-      "Savings for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "40%",
+    offText: "OFF",
+    title: "Vuori Voucher Code – Up to 40% Off Select Orders",
+    description: "Save up to 40% on selected Vuori activewear.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 40% off qualifying products and collections.",
+      "Covers apparel made for active lifestyles.",
+      "Available for a limited time on selected styles.",
+      "The exact discount depends on the item.",
+    ],
   },
   {
     id: "c6",
-    label: "SPECIAL",
-    value: "40% OFF",
-    title: "Vuori Promo Code – 40% Off Through the Influencer Program",
-    desc: "Unlock special savings and member perks.",
-    bullets: [
-      "Join the Vuori Influencer Program to get 40% off eligible orders.",
-      "Get access to special shopping chances.",
-      "Take part in giveaways and special deals.",
-      "Open to approved members."
-    ]
+    topLabel: "UP TO",
+    mainValue: "40%",
+    offText: "OFF",
+    title: "Vuori Voucher Code – 40% Off Through the Influencer Program",
+    description: "Get a discount of up to 40% on Vuori purchases through the influencer program.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 40% off for eligible program participants.",
+      "Requires being accepted into the program.",
+      "Includes special discounts and member benefits.",
+      "Best for creators who qualify for the program.",
+    ],
   },
   {
     id: "c7",
-    label: "REFERRAL",
-    value: "20% OFF",
-    title: "Vuori Offer Code – Refer a Friend & Save 20%",
-    desc: "Share Vuori with your friends and both of you win.",
-    bullets: [
-      "Your friend gets 20% off their first purchase.",
-      "You get 20% off your next order after a qualifying referral.",
-      "Your friend must spend $150 or more.",
-      "Open to U.S. customers."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Vuori Coupon Code – Refer a Friend and Save 20%",
+    description: "Take part in the Vuori referral offer and get 20% off.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Gives 20% off when you take part in the referral offer.",
+      "Lets you invite friends to try Vuori clothing.",
+      "Savings apply once the referral terms are met.",
+      "A good fit for customers who like to share the brand.",
+    ],
   },
   {
     id: "c8",
-    label: "FREE",
-    value: "SHIPPING",
-    title: "Vuori Offer Code – Free Standard Shipping on $75+ Orders",
-    desc: "Pay less for delivery when you spend more.",
-    bullets: [
-      "Enjoy free standard shipping on orders over $75.",
-      "Free returns on eligible purchases.",
-      "No hidden duties or taxes on international orders.",
-      "Shop in your local currency."
-    ]
+    topLabel: "FREE",
+    mainValue: "SHIP",
+    offText: "$75+",
+    title: "Vuori Coupon Code – Free Shipping on $75+ Orders",
+    description: "Get free standard shipping when your Vuori order reaches $75.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Standard shipping is free on qualifying orders of $75 or more.",
+      "Cuts delivery costs on activewear orders.",
+      "Applies to eligible online purchases.",
+      "Helpful if you're placing a larger order.",
+    ],
   },
   {
     id: "c9",
-    label: "GLOBAL",
-    value: "PERKS",
-    title: "Vuori Voucher Code – Shop in Local Currency",
-    desc: "Enjoy easy shopping from outside the U.S.",
-    bullets: [
-      "Pay in your own currency.",
-      "All duties and taxes are added at checkout.",
-      "No surprise import charges.",
-      "Dependable international shipping is available."
-    ]
+    topLabel: "LOCAL",
+    mainValue: "PAY",
+    offText: "PERK",
+    title: "Vuori Referral Code – Shop in Local Currency",
+    description: "Shop Vuori from outside the U.S. and pay in your local currency.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lets customers outside the U.S. shop Vuori online.",
+      "Shows prices in your local currency.",
+      "Makes international checkout simpler.",
+      "Available currencies and countries may vary.",
+    ],
   },
   {
     id: "c10",
-    label: "GLOBAL",
-    value: "SHIPPING",
-    title: "Vuori Voucher Code – International Shopping Benefits",
-    desc: "Shop with confidence from any country.",
-    bullets: [
-      "Clear pricing with no hidden fees.",
-      "Great international delivery options.",
-      "Free shipping on eligible orders.",
-      "Simple and smooth online shopping."
-    ]
+    topLabel: "GLOBAL",
+    mainValue: "SHIP",
+    offText: "PERK",
+    title: "Vuori Referral Code – International Shopping Benefits",
+    description: "Shop Vuori from outside the U.S. with options built for international customers.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lets you order Vuori activewear from different countries.",
+      "Includes international shopping features at checkout.",
+      "Available to customers located outside the U.S.",
+      "Shipping and duties vary by country, so check before you order.",
+    ],
   },
   {
     id: "c11",
-    label: "UP TO",
-    value: "40% OFF",
-    title: "Vuori Discount Offer – Up to 40% Off on Performance Apparel",
-    desc: "Update your activewear with short-time savings.",
-    bullets: [
-      "Save up to 40% on select Vuori styles.",
-      "Shop quality workout and daily clothing.",
-      "New offers appear throughout the season.",
-      "Online discounts for a short time."
-    ]
+    topLabel: "UP TO",
+    mainValue: "40%",
+    offText: "OFF",
+    title: "Vuori Deals – Up to 40% Off Performance Apparel",
+    description: "Save up to 40% on selected Vuori performance apparel.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 40% off eligible activewear and clothing.",
+      "Includes pieces for workouts and daily wear.",
+      "Available for a limited time on selected collections.",
+      "A fit for shoppers looking for activewear deals.",
+    ],
   },
   {
     id: "c12",
-    label: "EXPLORE",
-    value: "DEALS",
-    title: "Vuori Discount Offer – Premium Activewear for Less",
-    desc: "Find deals on comfy, high-performance clothing.",
-    bullets: [
-      "Save on tops, joggers, shorts, leggings, and more.",
-      "Look for seasonal markdowns on select styles.",
-      "Great value on quality activewear.",
-      "Available while stock lasts."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Vuori Deals – Activewear for Less",
+    description: "Find reduced prices on selected Vuori activewear.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists deals on activewear made for everyday movement.",
+      "Savings apply to selected products.",
+      "Includes styles for fitness, travel, and casual wear.",
+      "Suits shoppers who want lower prices on activewear.",
+    ],
   },
   {
     id: "c13",
-    label: "EXPLORE",
-    value: "SAVINGS",
-    title: "Vuori Gift Voucher – Savings on Your Next Activewear Order",
-    desc: "Get quality clothing at even better prices.",
-    bullets: [
-      "Find special savings on popular collections.",
-      "Shop for fitness and daily basics.",
-      "Great gift ideas for active people.",
-      "Online deals for a short time."
-    ]
+    topLabel: "HOT",
+    mainValue: "DEAL",
+    offText: "OFFER",
+    title: "Vuori Cart Code – Savings on Your Next Activewear Order",
+    description: "Save on your next Vuori activewear purchase.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers special pricing on selected clothing and activewear.",
+      "Helps keep your order total lower.",
+      "Lets you add to your activewear collection.",
+      "A fit for shoppers planning their next order.",
+    ],
   },
   {
     id: "c14",
-    label: "EXPLORE",
-    value: "DEALS",
-    title: "Vuori Gift Voucher – Seasonal Shopping Deals",
-    desc: "Check out the latest offers on Vuori favorites.",
-    bullets: [
-      "Shop men's and women's performance clothing.",
-      "Save with seasonal deals.",
-      "Free shipping on eligible orders.",
-      "Includes new arrivals and best sellers."
-    ]
-  }
+    topLabel: "SEASON",
+    mainValue: "SALE",
+    offText: "OFFER",
+    title: "Vuori Offers – Seasonal Shopping Deals",
+    description: "Browse seasonal savings on popular Vuori styles.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists current offers on selected clothing collections.",
+      "Includes promotional savings for a limited time.",
+      "Covers apparel for workouts and everyday activities.",
+      "A way to save on seasonal Vuori purchases.",
+    ],
+  },
 ];

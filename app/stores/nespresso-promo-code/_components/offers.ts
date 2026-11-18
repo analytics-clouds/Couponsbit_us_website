@@ -1,219 +1,304 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const NESPRESSO_COUPONS: Coupon[] = [
   {
     id: "c1",
-    label: "BUNDLE",
-    value: "₹4,490",
-    title: "Nespresso Discount Code – Any 5 Original Line Sleeves for ₹4,490",
-    desc: "Stock up on your favorite Nespresso coffees with a special bundle price.",
-    bullets: [
-      "Buy any 5 Original Line sleeves for ₹4,490.",
-      "Get quality coffee at a better price.",
-      "Mix and match the blends you love.",
-      "Bundle offer for a short time."
-    ]
+    topLabel: "ONLY",
+    mainValue: "₹4,490",
+    offText: "DEAL",
+    title: "Nespresso Promo Code – Any 5 Original Line Sleeves for ₹4,490",
+    description: "Pick any five Original Line coffee sleeves from Nespresso for a bundle price of ₹4,490.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Any 5 Original Line sleeves are priced at ₹4,490.",
+      "Lets you stock up on your favorite Nespresso varieties.",
+      "Applies to Original Line sleeves only.",
+      "Handy for people who drink Nespresso coffee every day.",
+    ],
   },
   {
     id: "c2",
-    label: "BUNDLE",
-    value: "FROM ₹7,990",
-    title: "Nespresso Discount Code – Bigger Savings on 10 or 20 Original Line Sleeves",
-    desc: "Save more when you buy your favorite coffees in larger packs.",
-    bullets: [
-      "Get any 10 Original Line sleeves for ₹7,990.",
-      "Or pick 20 Original Line sleeves for ₹15,490.",
-      "Ideal for people who drink coffee every day.",
-      "Great value on Nespresso blends."
-    ]
+    topLabel: "FROM",
+    mainValue: "₹7,990",
+    offText: "DEAL",
+    title: "Nespresso Promo Code – 10 or 20 Original Line Sleeves From ₹7,990",
+    description: "Buy Original Line coffee sleeves in larger bundles, starting at ₹7,990.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Bundles of 10 or 20 sleeves start at ₹7,990.",
+      "Choose the bundle size that fits how much coffee you drink.",
+      "Gives you more coffee in a single order.",
+      "A good match for shoppers who buy in bulk.",
+    ],
   },
   {
     id: "c3",
-    label: "FREE",
-    value: "MACHINE",
-    title: "Nespresso Coupon Code – Free Essenza Mini with Your Order",
-    desc: "Mark the festive season with a free coffee machine from Nespresso.",
-    bullets: [
-      "Get a free Essenza Mini when you buy 40 Original Line sleeves.",
-      "A good gift or an upgrade for your coffee setup.",
-      "Make rich espresso at home.",
-      "Diwali offer for a short time."
-    ]
+    topLabel: "FREE",
+    mainValue: "GIFT",
+    offText: "OFFER",
+    title: "Nespresso Discount Code – Free Essenza Mini Machine",
+    description: "Get an Essenza Mini coffee machine at no extra cost with a qualifying Nespresso order.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "An Essenza Mini machine is included with an eligible purchase.",
+      "Lets you make Nespresso coffee at home.",
+      "A compact machine that fits small kitchen spaces.",
+      "Useful if you're setting up your first Nespresso machine.",
+    ],
   },
   {
     id: "c4",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Nespresso Coupon Code – 20% Off on CitiZ with Aeroccino Bundle",
-    desc: "Upgrade your coffee routine with a high-quality machine bundle.",
-    bullets: [
-      "Get the CitiZ with Aeroccino and 5 Original Line sleeves for ₹34,999.",
-      "Save 20% on the bundle.",
-      "Great for lovers of espresso and milk coffee.",
-      "Offer valid for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Nespresso Discount Code – 20% Off CitiZ with Aeroccino Bundle",
+    description: "Save 20% on the Nespresso CitiZ bundle that comes with an Aeroccino.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 20% off the CitiZ machine bundle.",
+      "Includes an Aeroccino milk frother for milk-based drinks.",
+      "Puts a machine and frother together in one package.",
+      "Suits coffee lovers who want a complete home setup.",
+    ],
   },
   {
     id: "c5",
-    label: "BUNDLE",
-    value: "₹26,999",
-    title: "Nespresso Promo Code – CitiZ with 5 Coffee Sleeves for ₹26,999",
-    desc: "Enjoy café-style coffee at home with this machine bundle.",
-    bullets: [
-      "Buy CitiZ with any 5 Original Line sleeves for ₹26,999.",
-      "A neat and compact coffee machine.",
-      "Comes with your favorite Nespresso blends.",
-      "Available for a short time."
-    ]
+    topLabel: "ONLY",
+    mainValue: "₹26,999",
+    offText: "DEAL",
+    title: "Nespresso Voucher Code – CitiZ With 5 Coffee Sleeves for ₹26,999",
+    description: "Get the CitiZ machine bundle with five coffee sleeves for ₹26,999.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The CitiZ bundle is listed at ₹26,999.",
+      "Includes five coffee sleeves along with the machine.",
+      "Lets you start brewing as soon as it arrives.",
+      "A fit for people new to Nespresso.",
+    ],
   },
   {
     id: "c6",
-    label: "GET",
-    value: "10% OFF",
-    title: "Nespresso Promo Code – 10% Off on CitiZ Coffee Machine",
-    desc: "Improve your daily coffee with a special discount on the machine.",
-    bullets: [
-      "Get 10% off on the CitiZ machine.",
-      "Valid when you buy it with 1 Original Line sleeve.",
-      "Great for coffee fans at home.",
-      "Promotional offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Voucher Code – 10% Off CitiZ Coffee Machine",
+    description: "Save 10% on the Nespresso CitiZ coffee machine.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off a CitiZ machine purchase.",
+      "Adds a Nespresso machine to your home setup.",
+      "Brews coffee from Nespresso capsules.",
+      "Helpful if you're shopping for a machine on a budget.",
+    ],
   },
   {
     id: "c7",
-    label: "GET",
-    value: "10% OFF",
-    title: "Nespresso Offer Code – 10% Off on the New Pixie Machine",
-    desc: "Meet the latest machine in the Nespresso Original range.",
-    bullets: [
-      "Get 10% off on the new Pixie Machine.",
-      "Small in size with strong brewing performance.",
-      "A good fit for modern kitchens.",
-      "Introductory offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Coupon Code – 10% Off New Pixie Machine",
+    description: "Save 10% on the new Nespresso Pixie machine from the Original range.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off the latest Pixie machine.",
+      "Has a compact design for everyday coffee.",
+      "Belongs to the Original Line range.",
+      "Suits customers upgrading their current machine.",
+    ],
   },
   {
     id: "c8",
-    label: "FROM",
-    value: "₹36,999",
-    title: "Nespresso Offer Code – Lattissima Bundle from ₹36,999",
-    desc: "Make café-style milk coffees at home with Lattissima.",
-    bullets: [
-      "Buy Lattissima with any 5 Original Line sleeves for ₹36,999.",
-      "Great for cappuccinos and lattes.",
-      "A rich coffee experience at home.",
-      "Bundle deal for a short time."
-    ]
+    topLabel: "FROM",
+    mainValue: "₹36,999",
+    offText: "DEAL",
+    title: "Nespresso Coupon Code – Lattissima Bundle From ₹36,999",
+    description: "Make milk-based coffee at home with the Lattissima bundle, starting at ₹36,999.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lattissima bundles start at ₹36,999.",
+      "Built for preparing milk-based drinks like cappuccinos and lattes.",
+      "Gives you a machine dedicated to milk coffee.",
+      "A good fit for cappuccino and latte fans.",
+    ],
   },
   {
     id: "c9",
-    label: "SAVE",
-    value: "10% OFF",
-    title: "Nespresso Voucher Code – 10% Off on Lattissima Coffee Machine",
-    desc: "Save extra on your favorite milk coffee machine.",
-    bullets: [
-      "Get 10% off on the Lattissima machine.",
-      "Valid when you buy 1 Original Line sleeve.",
-      "Good for daily coffee lovers.",
-      "Available for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Referral Code – 10% Off Lattissima Coffee Machine",
+    description: "Save 10% on the Nespresso Lattissima coffee machine.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off the Lattissima machine.",
+      "Makes milk coffee drinks at home.",
+      "Works as an upgrade for your coffee corner.",
+      "Well suited to milk coffee enthusiasts.",
+    ],
   },
   {
     id: "c10",
-    label: "GET",
-    value: "10% OFF",
-    title: "Nespresso Voucher Code – 10% Off on Coffee Accessories",
-    desc: "Complete your coffee setup with quality accessories.",
-    bullets: [
-      "Enjoy 10% off on cups, travel mugs, and coffee essentials.",
-      "Great for improving your coffee routine.",
-      "Many accessories to choose from.",
-      "Does not include Aeroccino 3 and the Descaling Kit."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Referral Code – 10% Off Coffee Accessories",
+    description: "Save 10% on selected Nespresso coffee accessories.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off eligible accessories.",
+      "Helps you round out your coffee setup.",
+      "Lets you pick add-ons that fit how you drink coffee.",
+      "A fit for anyone improving their coffee station.",
+    ],
   },
   {
     id: "c11",
-    label: "SAVE",
-    value: "18% OFF",
-    title: "Nespresso Discount Offer – 18% Off on Essenza Mini Bundle",
-    desc: "Get a full coffee setup with the compact Essenza Mini.",
-    bullets: [
-      "Get Essenza Mini with Aeroccino and 4 Original Line sleeves for ₹28,499.",
-      "Save 18% on the full bundle.",
-      "Small size fits compact spaces.",
-      "Ideal for daily espresso fans."
-    ]
+    topLabel: "FLAT",
+    mainValue: "18%",
+    offText: "OFF",
+    title: "Nespresso Deals – 18% Off Essenza Mini Bundle",
+    description: "Save 18% on the Essenza Mini bundle for a ready-to-use coffee setup.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 18% off the Essenza Mini bundle.",
+      "Pairs a compact machine with coffee essentials.",
+      "Lets you make your favorite Nespresso drinks at home.",
+      "A good deal for shoppers who want a simple setup.",
+    ],
   },
   {
     id: "c12",
-    label: "GET",
-    value: "10% OFF",
-    title: "Nespresso Discount Offer – 10% Off on Essenza Mini",
-    desc: "Improve your coffee corner with a special machine discount.",
-    bullets: [
-      "Get 10% off on the Essenza Mini.",
-      "Valid when you buy 1 Original Line sleeve.",
-      "A compact machine with rich coffee quality.",
-      "Promotional offer for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Deals – 10% Off Essenza Mini",
+    description: "Save 10% on the compact Essenza Mini coffee machine.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off an Essenza Mini purchase.",
+      "Adds a small machine to your kitchen.",
+      "Makes brewing at home straightforward.",
+      "Suits customers who want a compact machine.",
+    ],
   },
   {
     id: "c13",
-    label: "SPECIAL",
-    value: "₹49,999",
-    title: "Nespresso Bank Offer – Full Office Coffee Setup for ₹49,999",
-    desc: "Give your office a professional coffee solution.",
-    bullets: [
-      "Get the Zenius Professional Machine with Aeroccino and 4 Professional Coffee Boxes for ₹49,999.",
-      "Made for offices and workplaces.",
-      "Serves quality coffee all day long.",
-      "Available while stock lasts."
-    ]
+    topLabel: "ONLY",
+    mainValue: "₹49,999",
+    offText: "DEAL",
+    title: "Nespresso Offer – Full Office Coffee Setup for ₹49,999",
+    description: "Set up an office coffee station with a Nespresso package priced at ₹49,999.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The complete office coffee setup is listed at ₹49,999.",
+      "Gives your workplace a ready-to-use coffee solution.",
+      "Makes it easy to serve coffee to staff and visitors.",
+      "Suited to businesses that need coffee equipment.",
+    ],
   },
   {
     id: "c14",
-    label: "GET",
-    value: "10% OFF",
-    title: "Nespresso Bank Offer – 10% Off on Coffee Essentials",
-    desc: "Update your coffee accessories and spend less.",
-    bullets: [
-      "Get 10% off on selected coffee accessories.",
-      "Covers cups, travel mugs, and daily essentials.",
-      "Great for completing your coffee collection.",
-      "Savings for a short time."
-    ]
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "Nespresso Offer – 10% Off Coffee Essentials",
+    description: "Save 10% on selected Nespresso coffee essentials.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off eligible accessories and essentials.",
+      "Lets you restock products you use every day.",
+      "Covers items that support your daily coffee routine.",
+      "Helpful for regular coffee drinkers.",
+    ],
   },
   {
     id: "c15",
-    label: "FREE",
-    value: "GIFT",
-    title: "Nespresso Gift Voucher – Free Essenza Mini with Your Order",
-    desc: "Mark special occasions with a special Nespresso gift.",
-    bullets: [
-      "Get a free Essenza Mini with eligible coffee purchases.",
-      "A great gift for coffee lovers.",
-      "Includes quality Original Line coffee options.",
-      "Festive offer for a short time."
-    ]
+    topLabel: "FREE",
+    mainValue: "GIFT",
+    offText: "OFFER",
+    title: "Nespresso Cart Code – Free Essenza Mini With Order",
+    description: "Get a free Essenza Mini machine when your Nespresso order qualifies.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "A free Essenza Mini comes with an eligible order.",
+      "Gives you a compact machine for brewing at home.",
+      "Adds value to your Nespresso purchase.",
+      "Useful if you want a machine bundled with your order.",
+    ],
   },
   {
     id: "c16",
-    label: "SAVE",
-    value: "20% OFF",
-    title: "Nespresso Gift Voucher – 20% Off on CitiZ Coffee Bundle",
-    desc: "Enjoy rich coffee moments with special bundle savings.",
-    bullets: [
-      "Save 20% on the CitiZ with Aeroccino bundle.",
-      "Comes with 5 Original Line coffee sleeves.",
-      "Great value for espresso fans.",
-      "Available for a short time."
-    ]
-  }
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Nespresso Cart Code – 20% Off CitiZ Coffee Bundle",
+    description: "Save 20% on the Nespresso CitiZ coffee bundle.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 20% off the CitiZ machine bundle.",
+      "Gives you what you need to prepare coffee at home.",
+      "Works as an upgrade to your daily coffee routine.",
+      "A good pick for shoppers looking for bundle savings.",
+    ],
+  },
 ];

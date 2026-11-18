@@ -1,13 +1,14 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import SaksFifthAvenueCouponsContent from "./_components/StoreCouponsContent";
-import { OFFERS } from "./_components/offers";
+import { SAKS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Saks Fifth Avenue Discount Code: Get 25% OFF + $250 OFF | Nov 2026",
+    absolute: "Saks Fifth Avenue Promo Code: 25% OFF Styles | Nov 2026",
   },
   description:
-    "Get the latest Saks Fifth Avenue Discount Code for November 2026 and save 25% OFF designer fashion or enjoy up to $250 OFF eligible luxury purchases.",
+    "Saks Fifth Avenue Promo Code saves 25% on orders and 20% on $250+ purchases. Find Saks Fifth Avenue Discount Code deals with verified Nov 2026 savings.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code",
-    title: "Saks Fifth Avenue Discount Code: Get 25% OFF + $250 OFF | Nov 2026",
+    title: "Saks Fifth Avenue Promo Code: 25% OFF Styles | Nov 2026",
     description:
-      "Get the latest Saks Fifth Avenue Discount Code for November 2026 and save 25% OFF designer fashion or enjoy up to $250 OFF eligible luxury purchases.",
+      "Saks Fifth Avenue Promo Code saves 25% on orders and 20% on $250+ purchases. Find Saks Fifth Avenue Discount Code deals with verified Nov 2026 savings.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Saks Fifth Avenue Discount Code: Get 25% OFF + $250 OFF | Nov 2026",
+    title: "Saks Fifth Avenue Promo Code: 25% OFF Styles | Nov 2026",
     description:
-      "Get the latest Saks Fifth Avenue Discount Code for November 2026 and save 25% OFF designer fashion or enjoy up to $250 OFF eligible luxury purchases.",
+      "Saks Fifth Avenue Promo Code saves 25% on orders and 20% on $250+ purchases. Find Saks Fifth Avenue Discount Code deals with verified Nov 2026 savings.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793688836/saks-fifth-avenue_senmoo.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    'geo.region': 'US',
+    'geo.country': 'US',
+    language: 'en-US',
+  },
 };
 
 const saksFifthAvenueSchema = {
@@ -61,9 +68,9 @@ const saksFifthAvenueSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code",
-      name: "Saks Fifth Avenue Discount Code: Get 25% OFF + $250 OFF | Nov 2026",
+      name: "Saks Fifth Avenue Promo Code: 25% OFF Styles | Nov 2026",
       description:
-        "Get the latest Saks Fifth Avenue Discount Code for November 2026 and save 25% OFF designer fashion or enjoy up to $250 OFF eligible luxury purchases.",
+        "Saks Fifth Avenue Promo Code saves 25% on orders and 20% on $250+ purchases. Find Saks Fifth Avenue Discount Code deals with verified Nov 2026 savings.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-03",
@@ -78,15 +85,17 @@ const saksFifthAvenueSchema = {
       name: "Saks Fifth Avenue Discount Codes & Promo Codes",
       description: "Latest Saks Fifth Avenue discount codes and luxury fashion offers.",
       url: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code",
-      numberOfItems: OFFERS.length,
-      itemListElement: OFFERS.map((o, i) => ({
+      numberOfItems: SAKS_COUPONS.length,
+      itemListElement: SAKS_COUPONS.map((o, i) => ({
         "@type": "ListItem",
         position: i + 1,
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
-          url: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code",
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code#" + o.id,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Saks Fifth Avenue", url: "https://www.saksfifthavenue.com" },
         },
       })),
@@ -112,6 +121,13 @@ const saksFifthAvenueSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.saksfifthavenue.com/#brand",
+      name: "Saks Fifth Avenue",
+      url: "https://www.saksfifthavenue.com",
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code#breadcrumb",
       itemListElement: [
@@ -122,6 +138,9 @@ const saksFifthAvenueSchema = {
     },
 
     {
+
+
+      
   "@type": "FAQPage",
   "@id": "https://www.couponsbit.us/stores/saks-fifth-avenue-discount-code#faq",
   "mainEntity": [
@@ -182,7 +201,9 @@ export default function SaksFifthAvenueStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(saksFifthAvenueSchema) }} />
-      <SaksFifthAvenueCouponsContent />
+      <Suspense fallback={null}>
+        <SaksFifthAvenueCouponsContent />
+      </Suspense>
     </>
   );
 }
