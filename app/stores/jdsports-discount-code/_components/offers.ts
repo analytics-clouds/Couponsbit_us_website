@@ -1,0 +1,218 @@
+export interface Coupon {
+  id: string;
+  topLabel?: string;
+  mainValue?: string;
+  offText?: string;
+  label?: string;
+  value?: string;
+  title: string;
+  desc?: string;
+  description: string;
+  code?: string;
+  points: string[];
+  bullets?: string[];
+  verified?: string;
+  userType?: string;
+  validTill?: string;
+}
+
+export const JDSPORTS_COUPONS: Coupon[] = [
+  {
+    id: "jdsports1",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "JD Sports Promo Code – Up to 50% Off Accessories Sale",
+    description: "Save up to 50% on selected accessories from brands sold at JD Sports.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 50% off accessories from Nike, adidas, Jordan, Puma, New Balance, and more.",
+      "Covers bags, socks, and other accessories.",
+      "Includes products from several sportswear brands.",
+      "The exact discount varies by product.",
+    ],
+  },
+  {
+    id: "jdsports2",
+    topLabel: "ONLY",
+    mainValue: "Rp275k",
+    offText: "DEAL",
+    title: "JD Sports Promo Code – adidas Diamond Bag for Rp275,000",
+    description: "Get the adidas Originals Adicolor Classics Diamond Bag for Rp275,000, down from Rp550,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp275,000 instead of Rp550,000.",
+      "A bag from the adidas Originals Adicolor Classics line.",
+      "Part of a selected range at JD Sports.",
+      "A fit for shoppers looking for a branded bag at a lower price.",
+    ],
+  },
+  {
+    id: "jdsports3",
+    topLabel: "ONLY",
+    mainValue: "Rp134.5k",
+    offText: "DEAL",
+    title: "JD Sports Discount Code – Jordan Cush Poly Socks for Rp134,500",
+    description: "Get the Jordan Cush Poly Socks 3-pack for Rp134,500, down from Rp269,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp134,500 instead of Rp269,000.",
+      "Comes as a pack of three pairs.",
+      "Made by Jordan.",
+      "A fit for everyday wear.",
+    ],
+  },
+  {
+    id: "jdsports4",
+    topLabel: "ONLY",
+    mainValue: "Rp341.4k",
+    offText: "DEAL",
+    title: "JD Sports Discount Code – Nike Aura Crossbody Bag for Rp341,400",
+    description: "Get the Nike Aura Crescent Crossbody Bag for Rp341,400, down from Rp569,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp341,400 instead of Rp569,000.",
+      "A compact crossbody bag from Nike.",
+      "Part of a selected range at JD Sports.",
+      "A fit for shoppers who want a small everyday bag.",
+    ],
+  },
+  {
+    id: "jdsports5",
+    topLabel: "UP TO",
+    mainValue: "50%",
+    offText: "OFF",
+    title: "JD Sports Voucher Code – Up to 50% Off Clothing Sale",
+    description: "Save up to 50% on selected clothing in the JD Sports sale.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 50% off eligible clothing.",
+      "Covers apparel for sports and casual wear.",
+      "Includes selected items from JD Sports collections.",
+      "The exact discount varies by item.",
+    ],
+  },
+  {
+    id: "jdsports6",
+    topLabel: "ONLY",
+    mainValue: "Rp729.5k",
+    offText: "DEAL",
+    title: "JD Sports Voucher Code – Jordan Flight Polo Jersey for Rp729,500",
+    description: "Get the Jordan Flight Polo Jersey for Rp729,500, down from Rp1,459,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp729,500 instead of Rp1,459,000.",
+      "A jersey from Jordan's apparel range.",
+      "Part of a selected range at JD Sports.",
+      "A fit for Jordan fans.",
+    ],
+  },
+  {
+    id: "jdsports7",
+    topLabel: "ONLY",
+    mainValue: "Rp279.3k",
+    offText: "DEAL",
+    title: "JD Sports Coupon Code – New Balance Graphic T-Shirt for Rp279,300",
+    description: "Get the New Balance Core Logo Graphic T-Shirt for Rp279,300, down from Rp399,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp279,300 instead of Rp399,000.",
+      "A graphic T-shirt with the New Balance logo.",
+      "Works for casual wear.",
+      "Availability varies by size and color.",
+    ],
+  },
+  {
+    id: "jdsports8",
+    topLabel: "ONLY",
+    mainValue: "Rp1.42M",
+    offText: "DEAL",
+    title: "JD Sports Coupon Code – Nike Air Max 95 for Rp1,424,500",
+    description: "Get the Nike Air Max 95 for Rp1,424,500 during the JD Sports sale.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp1,424,500.",
+      "A Nike sneaker offered at a sale price.",
+      "Part of the selected footwear in the sale.",
+      "Availability varies by size.",
+    ],
+  },
+  {
+    id: "jdsports9",
+    topLabel: "ONLY",
+    mainValue: "Rp899.5k",
+    offText: "DEAL",
+    title: "JD Sports Referral Code – Nike Air Max Phoenix Junior for Rp899,500",
+    description: "Get the Nike Air Max Phoenix Junior for Rp899,500, down from Rp1,799,000.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Costs Rp899,500 instead of Rp1,799,000.",
+      "A junior-size Nike shoe.",
+      "Part of selected kids' footwear.",
+      "A fit for parents buying sneakers for kids.",
+    ],
+  },
+  {
+    id: "jdsports10",
+    topLabel: "FLAT",
+    mainValue: "10%",
+    offText: "OFF",
+    title: "JD Sports Referral Code – 10% Off Your First Order",
+    description: "New customers can save 10% on their first JD Sports order.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 10% off your first eligible purchase.",
+      "Applies to your initial order only.",
+      "Covers selected products.",
+      "Intended for first-time JD Sports customers.",
+    ],
+  },
+  {
+    id: "jdsports11",
+    topLabel: "MEMBER",
+    mainValue: "VIP",
+    offText: "ACCESS",
+    title: "JD Sports Deals – Member Early Access",
+    description: "Join JD Sports membership to get early access to promotions and deals.",
+    code: "",
+    verified: "Verified",
+    userType: "Members",
+    validTill: "30 Nov 2026",
+    points: [
+      "Members can get early access to selected offers.",
+      "Lets you see promotions before they open to everyone.",
+      "Includes other member benefits.",
+      "A fit for people who shop at JD Sports often.",
+    ],
+  },
+];

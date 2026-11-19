@@ -1,206 +1,268 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
-  verified?: string;
-  userType?: string;
-  validTill?: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const OFFERS: Coupon[] = [
   {
-    id: "c1",
-    label: "UP TO",
-    value: "$150 GIFT CARD",
-    title: "Apple Discount Code: Up to $150 Gift Card with Education Pricing",
-    desc: "Students and educators can score a gift card worth $100 to $150 when they buy a qualifying Mac or iPad.",
-    verified: "Verified",
-    userType: "Students & Educators",
-    validTill: "30 Nov 2026",
-    bullets: [
-      "Pick up a $100–$150 gift card with select Mac and iPad purchases.",
-      "Education pricing applies to eligible devices.",
-      "Browse a range of qualifying Mac and iPad models.",
-      "This deal runs for a limited time only."
-    ]
-  },
-  {
-    id: "c2",
-    label: "FROM",
-    value: "$599",
-    title: "Apple Promo Code: MacBook Neo Starting at $599",
-    desc: "The newest MacBook Neo is now available at a starting price of $599.",
+    id: "apple1",
+    topLabel: "FROM",
+    mainValue: "$599",
+    offText: "ONLY",
+    title: "Apple Promo Code – MacBook Neo Starting at $599",
+    description: "Buy the MacBook Neo with prices starting at $599.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "MacBook Neo pricing begins at $599.",
-      "Dependable performance for work, school, and daily tasks.",
-      "Applies to select configurations.",
-      "Grab it before the offer ends."
-    ]
+    points: [
+      "The MacBook Neo starts at $599.",
+      "Gives shoppers a lower-priced way into the MacBook lineup.",
+      "Final price depends on the configuration you choose.",
+      "A fit for people who want a budget-friendly MacBook.",
+    ],
   },
   {
-    id: "c3",
-    label: "FLAT",
-    value: "20% OFF",
-    title: "Apple Promo Code: Flat 20% Student Discount",
-    desc: "Students can save big on select Apple products with this exclusive deal.",
-    verified: "Verified",
-    userType: "Students",
-    validTill: "30 Nov 2026",
-    bullets: [
-      "Take a flat 20% off qualifying products.",
-      "You may need to verify your student status to redeem it.",
-      "Pay less on eligible Apple devices.",
-      "Offer available for a short time only."
-    ]
-  },
-  {
-    id: "c4",
-    label: "FROM",
-    value: "$999",
-    title: "Apple Discount Code: MacBook Air From $999",
-    desc: "Step up to a MacBook Air with prices starting at $999.",
+    id: "apple2",
+    topLabel: "FROM",
+    mainValue: "$799",
+    offText: "ONLY",
+    title: "Apple Promo Code – iPhone 16 From $799",
+    description: "Buy the iPhone 16 with prices starting at $799.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "MacBook Air starts at $999.",
-      "Slim, light build that suits work and study.",
-      "Several eligible configurations to choose from.",
-      "Special pricing for a limited time."
-    ]
+    points: [
+      "The iPhone 16 starts at $799.",
+      "Final price depends on the storage size you choose.",
+      "Gives buyers a lower starting price on an iPhone.",
+      "A fit for shoppers planning a phone upgrade.",
+    ],
   },
   {
-    id: "c5",
-    label: "FROM",
-    value: "$699",
-    title: "Apple Discount Code: iPad Air From $699",
-    desc: "The powerful iPad Air can be yours starting at $699.",
+    id: "apple3",
+    topLabel: "FROM",
+    mainValue: "$999",
+    offText: "ONLY",
+    title: "Apple Discount Code – MacBook Air From $999",
+    description: "Buy a MacBook Air with prices starting at $999.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "iPad Air begins at $699.",
-      "Great for school, creative projects, and streaming.",
-      "Choose from eligible storage sizes and colors.",
-      "Available for a limited time."
-    ]
+    points: [
+      "MacBook Air models start at $999.",
+      "Offers a lightweight laptop option.",
+      "Final price depends on the configuration you choose.",
+      "A fit for students, professionals, and everyday users.",
+    ],
   },
   {
-    id: "c6",
-    label: "FROM",
-    value: "$1,899",
-    title: "Apple Voucher Code: MacBook Pro From $1,899",
-    desc: "Get pro-level power with a MacBook Pro starting at $1,899.",
+    id: "apple4",
+    topLabel: "FROM",
+    mainValue: "$699",
+    offText: "ONLY",
+    title: "Apple Discount Code – iPad Air From $699",
+    description: "Buy an iPad Air with prices starting at $699.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "MacBook Pro starts at $1,899.",
-      "Built for heavy-duty creative and professional work.",
-      "Multiple configurations to pick from.",
-      "Deal valid for a limited period."
-    ]
+    points: [
+      "The iPad Air starts at $699.",
+      "Works for tasks like work, study, and entertainment.",
+      "Final price depends on the model and storage you choose.",
+      "A fit for people who want a tablet for different uses.",
+    ],
   },
   {
-    id: "c7",
-    label: "FROM",
-    value: "$359",
-    title: "Apple Voucher Code: Apple Watch Series 11 From $359",
-    desc: "Apple Watch Series 11 is available at prices starting from $359.",
+    id: "apple5",
+    topLabel: "FROM",
+    mainValue: "$1,899",
+    offText: "ONLY",
+    title: "Apple Voucher Code – MacBook Pro From $1,899",
+    description: "Buy a MacBook Pro with prices starting at $1,899.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Series 11 begins at $359.",
-      "Easily monitor your fitness, health, and everyday activity.",
-      "Offered in select models and finishes.",
-      "Limited-time pricing in effect."
-    ]
+    points: [
+      "MacBook Pro models start at $1,899.",
+      "Covers Apple's higher-end laptop lineup.",
+      "Final price depends on the configuration you choose.",
+      "A fit for creative users and professionals.",
+    ],
   },
   {
-    id: "c8",
-    label: "FROM",
-    value: "$799",
-    title: "Apple Referral Code: iPhone 16 From $799",
-    desc: "Upgrade to the iPhone 16 with prices starting at $799.",
+    id: "apple6",
+    topLabel: "FROM",
+    mainValue: "$359",
+    offText: "ONLY",
+    title: "Apple Voucher Code – Apple Watch Series 11 From $359",
+    description: "Buy the Apple Watch Series 11 with prices starting at $359.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "iPhone 16 starts at $799.",
-      "Enjoy powerful camera and performance features.",
-      "Select from eligible storage options.",
-      "Available for a limited time."
-    ]
+    points: [
+      "The Apple Watch Series 11 starts at $359.",
+      "Final price depends on the size and case you choose.",
+      "Works as a connected accessory for your iPhone.",
+      "A fit for people shopping for a smartwatch.",
+    ],
   },
   {
-    id: "c9",
-    label: "FROM",
-    value: "$199",
-    title: "Apple Referral Code: Apple TV 4K From $199",
-    desc: "Bring Apple TV 4K home for as little as $199.",
+    id: "apple7",
+    topLabel: "FLAT",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Apple Coupon Code – 25% Off With Code MSM",
+    description: "Use code MSM at checkout to take 25% off eligible Apple purchases.",
+    code: "MSM",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Apple TV 4K begins at $199.",
-      "Stream your favorite content in high quality.",
-      "Works with supported Apple services.",
-      "Available while this offer lasts."
-    ]
+    points: [
+      "Enter code MSM to get 25% off qualifying products.",
+      "Applies to selected Apple items only.",
+      "Eligibility and terms may apply, so review them first.",
+      "Confirm the code works at checkout before you rely on it.",
+    ],
   },
   {
-    id: "c10",
-    label: "FROM",
-    value: "$1,099",
-    title: "Apple Cashback Offers: iPhone 17 Pro From $1,099",
-    desc: "Pick up the latest iPhone 17 Pro starting at $1,099.",
+    id: "apple8",
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Apple Coupon Code – 20% Off AppleCare With Code FEV",
+    description: "Students, parents, and teachers can use code FEV to save 20% on AppleCare.",
+    code: "FEV",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "iPhone 17 Pro starts at $1,099.",
-      "Pro-grade features and top-tier performance.",
-      "Offered in select storage options.",
-      "Limited-time pricing available."
-    ]
+    points: [
+      "Enter code FEV to get the AppleCare discount.",
+      "Open to education customers who buy eligible products.",
+      "Applies to qualifying Mac and iPad purchases.",
+      "Check the education terms to see who qualifies.",
+    ],
   },
   {
-    id: "c11",
-    label: "DEAL",
-    value: "$49",
-    title: "Apple Cashback Offers: iPhone 17 Silicone Case for $49",
-    desc: "Keep your phone safe with Apple’s MagSafe-compatible silicone case.",
+    id: "apple9",
+    topLabel: "UP TO",
+    mainValue: "$150",
+    offText: "GIFT CARD",
+    title: "Apple Referral Code – Up to $150 Gift Card",
+    description: "Students and educators can get a gift card with qualifying Mac and iPad purchases.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Get the iPhone 17 Silicone Case with MagSafe for $49.",
-      "Made to fit compatible iPhone 17 models.",
-      "Offers a soft, secure grip and dependable protection.",
-      "Available in select colors."
-    ]
+    points: [
+      "Eligible customers can receive a gift card worth up to $150.",
+      "Education pricing is available on qualifying products.",
+      "Applies to selected Mac and iPad models.",
+      "The gift card amount depends on the product you buy.",
+    ],
   },
   {
-    id: "c12",
-    label: "FROM",
-    value: "$39.95",
-    title: "Apple Wallet Offers: Native Union Ultralight Sleeve From $39.95",
-    desc: "Protect your MacBook with Native Union’s featherweight sleeve.",
+    id: "apple10",
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Apple Referral Code – 20% Student Discount",
+    description: "Eligible students can save 20% on selected Apple products through the education offer.",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "30 Nov 2026",
-    bullets: [
-      "Native Union Ultralight Sleeve starts at $39.95.",
-      "Fits 13-inch and 14-inch MacBook models.",
-      "Slim design guards against everyday scratches and wear.",
-      "Offered for a limited time."
-    ]
-  }
+    points: [
+      "Gives eligible students a 20% discount on select items.",
+      "Lowers the cost of qualifying Apple purchases.",
+      "Education pricing and proof of eligibility may be required.",
+      "Confirm the exact discount on Apple's education store.",
+    ],
+  },
+  {
+    id: "apple11",
+    topLabel: "FROM",
+    mainValue: "$1,099",
+    offText: "ONLY",
+    title: "Apple Deals – iPhone 17 Pro From $1,099",
+    description: "Buy the iPhone 17 Pro with prices starting at $1,099.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The iPhone 17 Pro starts at $1,099.",
+      "Final price depends on the storage size you choose.",
+      "Part of Apple's current iPhone lineup.",
+      "A fit for shoppers upgrading their phone.",
+    ],
+  },
+  {
+    id: "apple12",
+    topLabel: "ONLY",
+    mainValue: "$49",
+    offText: "DEAL",
+    title: "Apple Deals – iPhone 17 Silicone Case for $49",
+    description: "Get the iPhone 17 Silicone Case for $49.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The case is priced at $49.",
+      "Works with MagSafe accessories.",
+      "Adds protection to your iPhone.",
+      "Check that it fits your exact iPhone model.",
+    ],
+  },
+  {
+    id: "apple13",
+    topLabel: "FROM",
+    mainValue: "$39.95",
+    offText: "ONLY",
+    title: "Apple Cart Code – Native Union Ultralight Sleeve From $39.95",
+    description: "Get the Native Union Ultralight Sleeve for your MacBook, starting at $39.95.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The sleeve starts at $39.95.",
+      "Lets you carry a MacBook in a light protective case.",
+      "Useful when you travel with your laptop.",
+      "Sizes vary, so match it to your MacBook.",
+    ],
+  },
+  {
+    id: "apple14",
+    topLabel: "FLAT",
+    mainValue: "20%",
+    offText: "OFF",
+    title: "Apple Cart Code – Education Pricing + 20% Off AppleCare",
+    description: "Students, parents, and teachers can get education pricing and 20% off AppleCare.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Adding AppleCare to a qualifying purchase gives you 20% off AppleCare.",
+      "Education pricing applies to selected Mac and iPad models.",
+      "Combines device savings with AppleCare coverage.",
+      "A fit for eligible education customers.",
+    ],
+  },
 ];

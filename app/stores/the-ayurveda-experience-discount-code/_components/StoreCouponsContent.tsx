@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { AYURVEDA_COUPONS } from "./offers";
 import {
   ChevronRight,
   Star,
@@ -67,7 +68,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [openCoupon, setOpenCoupon] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -123,7 +124,7 @@ export default function TheAyurvedaExperienceCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(19.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find The Ayurveda Experience discount codes, promo codes, and Ayurvedic skincare deals for Nov 2026. Save 50% on Yauvari Youth Spring, 10% on the Day & Night Face Oil Duo, and shop body oils, neck care, face creams, and mini skincare essentials from $35.
+                      The Ayurveda Experience Promo Code offers verified skincare savings, including 50% off Yauvari Amplified Youth Spring for $24 and 20% off eligible storewide Ayurvedic products. The Ayurveda Experience Discount Code deals also include the Day & Night Face Oil Duo for $81 and Balaayah Firming Body Oil for $45. These working Nov 2026 offers cover face oils, creams, masks, and wellness essentials. I recommend checking product availability and discount terms to choose the right Ayurvedic skincare deal before checkout.
                     </p>
                     <a
                       href={STORE_URL}
@@ -145,11 +146,11 @@ export default function TheAyurvedaExperienceCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -192,208 +193,200 @@ export default function TheAyurvedaExperienceCouponsContent() {
 
         {/* Coupons + Sidebar */}
         {/* Coupons + Sidebar */}
-<section className="py-6 md:py-16 bg-white overflow-hidden">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="flex flex-col lg:flex-row gap-12">
-      <div className="top-offers lg:w-[65%]">
-        <div className="mb-10">
-          <h2 className="text-2xl font-black text-black leading-tight">
-            The Ayurveda Experience Discount Codes & Offers
-          </h2>
-        </div>
-
-        {[
-          { label: "FLAT", value: "50% OFF", title: "The Ayurveda Experience Discount Code – Yauvari Amplified Youth Spring | FLAT 50% OFF", desc: "Get Yauvari Amplified Youth Spring for just $24, down from $48.", bullets: ["Enjoy 50% savings on this Ayurvedic skincare essential.", "Helps improve the appearance of firmness, smoothness, and youthful-looking skin.", "Shop this limited-time offer and save $24."] },
-          { label: "SAVE", value: "10% OFF", title: "he Ayurveda Experience Discount Code– Day & Night Face Oil Duo | SAVE 10% –", desc: "Get the Day & Night Face Oil Duo for $81, down from $90.", bullets: ["Save $9 on this curated Ayurvedic skincare duo.", "Designed for morning and evening skincare routines.", "Nourishes the skin and makes an ideal addition to your daily ritual."] },
-          { label: "ONLY", value: "$45", title: "The Ayurveda Experience Promo Code – Balaayah Firming Body Oil | JUST $45", desc: "Shop Balaayah Firming Body Oil for only $45.", bullets: ["Helps nourish and moisturize dry, mature-looking skin.", "Formulated with Ayurvedic ingredients for a rich body-care experience.", "Available for customers in the USA, Canada, Australia & Singapore."] },
-          { label: "FROM", value: "$45", title: "The Ayurveda Experience Promo Code – Firm-Focus Neck Mask | FROM $45", desc: "Get the Firm-Focus Neck Mask from $45.", bullets: ["Helps improve the appearance of loose-looking skin around the neck and jawline.", "Formulated with Phyto-Ceramides and Water Lily.", "Available across the USA, Canada, Australia & Singapore."] },
-          { label: "FROM", value: "$45", title: "The Ayurveda Experience – Cerabuild Face & Neck Cream | FROM $45", desc: "Get Cerabuild Face & Neck Cream from $45.", bullets: ["Designed for both face and neck skincare.", "Ships across the USA, Canada, Australia & Singapore."] },
-          { label: "ONLY", value: "$35", title: "The Ayurveda Experience – 5 Mini Skincare Essentials | JUST $35", desc: "Get 5 bestselling mini skincare essentials for just $35.", bullets: ["Perfect for travel, gifting, or trying Ayurvedic skincare.", "Explore a selection of premium skincare products in convenient mini sizes.", "A great way to experience the range before purchasing full-size products."] },
-        ].map((c, i) => (
-          <div key={i} className="w-full max-w-7xl mx-auto mb-6">
-            <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-              <div className="flex flex-row">
-                {/* Left Blue Badge */}
-                <div className="relative w-[110px] sm:w-[150px] bg-[#056bfa] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                  <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                  <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                  <div className="text-center px-2">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">
-                      {c.label}
-                    </p>
-                    <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">
-                      {c.value}
-                    </div>
-                  </div>
+        <section className="py-6 md:py-16 bg-white overflow-hidden">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="flex flex-col lg:flex-row gap-12">
+              <div className="top-offers lg:w-[65%]">
+                <div className="mb-10">
+                  <h2 className="text-2xl font-black text-black leading-tight">
+                    The Ayurveda Experience Discount Codes & Offers
+                  </h2>
                 </div>
 
-                {/* Content */}
-                <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                  <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                        Limited Time
-                      </span>
-                      <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                        Verified Deal
-                      </span>
-                    </div>
-                    <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-                      {c.title}
-                    </h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-                      {c.desc}
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => setOpen(!open)}
-                      className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
-                    >
-                      View Details
-                      <ChevronDown
-                        size={16}
-                        className={`transition-transform duration-300 ${
-                          open ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ${
-                        open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"
-                      }`}
-                    >
-                      <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
-                          <li key={bi} className="flex items-start gap-2">
-                            <span className="text-[#0344b0]">•</span>
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
+                {AYURVEDA_COUPONS.map((c) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+                        {/* Left Blue Badge */}
+                        <div className="relative w-[110px] sm:w-[150px] bg-[#056bfa] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-2">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight">
+                              {c.topLabel}
+                            </p>
+                            <div className="text-sm sm:text-2xl font-black text-white leading-none mt-2 whitespace-nowrap">
+                              {c.mainValue}
+                            </div>
+                            {c.offText && <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-bold text-white leading-tight mt-1">{c.offText}</p>}
+                          </div>
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Limited Time
+                              </span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Verified Deal
+                              </span>
+                            </div>
+                            <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                              {c.title}
+                            </h2>
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                              {c.description}
+                            </p>
+                            <button
+                              type="button"
+                              onClick={() => setOpenCoupon(openCoupon === c.id ? null : c.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+                            >
+                              View Details
+                              <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${openCoupon === c.id ? "rotate-180" : ""
+                                  }`}
+                              />
+                            </button>
+                            <div
+                              className={`overflow-hidden transition-all duration-300 ${openCoupon === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"
+                                }`}
+                            >
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {c.points.map((b, bi) => (
+                                  <li key={bi} className="flex items-start gap-2">
+                                    <span className="text-[#0344b0]">•</span>
+                                    {b}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+                            <a
+                              href={STORE_URL}
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Shop The Ayurveda Experience: ${c.title}`}
+                              className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-                    <a
-                      href={STORE_URL}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      aria-label={`Shop The Ayurveda Experience: ${c.title}`}
-                      className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-                    >
-                      Get Deal
-                    </a>
+                ))}
+              </div>
+
+              {/* Sidebar */}
+              <div className="lg:w-[35%] space-y-8">
+
+                <div className="w-full flex justify-center mb-6">
+                  <a
+                    href="https://www.google.com/preferences/source?q=couponsbit.us"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+                  >
+                    <Image
+                      src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
+                      alt="Add as a preferred source on Google"
+                      width={280}
+                      height={70}
+                      className="w-full max-w-[260px] h-auto object-contain"
+                      priority
+                    />
+                  </a>
+                </div>
+
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-6">
+                    About The Ayurveda Experience
+                  </h3>
+                  <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
+                    The Ayurveda Experience is a wellness brand offering Ayurvedic hair oils, skincare, herbal supplements and wellness kits made with traditional natural ingredients.
+                  </p>
+                  <a
+                    href={STORE_URL}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2"
+                  >
+                    Visit Store <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Droplets, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Sparkles, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
+                      { icon: Leaf, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                    ].map((cat, i) => (
+                      <Link
+                        key={i}
+                        href={cat.href}
+                        className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer"
+                      >
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">
+                            {cat.name}
+                          </span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">
+                          {cat.count} Coupons
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link
+                    href="/categories"
+                    className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
+                  >
+                    View All Categories →
+                  </Link>
+                </div>
+
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8">
+                    The Ayurveda Experience Products & Services
+                  </h3>
+                  <div className="space-y-8">
+                    {[
+                      { icon: Droplets, title: "Ayurvedic Hair Oils", sub: "Traditional hair oil formulas made with natural ingredients." },
+                      { icon: Sparkles, title: "Skincare", sub: "Face oils, cleansers and masks formulated with Ayurvedic herbs." },
+                      { icon: Leaf, title: "Herbal Supplements", sub: "Wellness and herbal supplements for everyday support." },
+                      { icon: PackageOpen, title: "Wellness Kits", sub: "Curated kits combining multiple Ayurvedic products." },
+                    ].map((item, i) => (
+                      <div key={item.title} className="flex gap-4 items-start text-justify">
+                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                          <item.icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <p className="text-black font-black text-sm leading-tight mb-2">
+                            {item.title}
+                          </p>
+                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                            {item.sub}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
-
-      {/* Sidebar */}
-      <div className="lg:w-[35%] space-y-8">
-
-        <div className="w-full flex justify-center mb-6">
-          <a
-            href="https://www.google.com/preferences/source?q=couponsbit.us"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
-          >
-            <Image
-              src="https://res.cloudinary.com/couponsbit/image/upload/v1788251342/google_preferred_source_badge_light_en_j9wixw.png"
-              alt="Add as a preferred source on Google"
-              width={280}
-              height={70}
-              className="w-full max-w-[260px] h-auto object-contain"
-              priority
-            />
-          </a>
-        </div>
-
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-6">
-            About The Ayurveda Experience
-          </h3>
-          <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
-            The Ayurveda Experience is a wellness brand offering Ayurvedic hair oils, skincare, herbal supplements and wellness kits made with traditional natural ingredients.
-          </p>
-          <a
-            href={STORE_URL}
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2"
-          >
-            Visit Store <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        </div>
-
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-          <div className="space-y-1">
-            {[
-              { icon: Droplets, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
-              { icon: ShoppingBag, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-              { icon: Sparkles, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" },
-              { icon: Leaf, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-              { icon: Search, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
-            ].map((cat, i) => (
-              <Link
-                key={i}
-                href={cat.href}
-                className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer"
-              >
-                <div className="flex items-center gap-3">
-                  <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                  <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">
-                    {cat.name}
-                  </span>
-                </div>
-                <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">
-                  {cat.count} Coupons
-                </span>
-              </Link>
-            ))}
-          </div>
-          <Link
-            href="/categories"
-            className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline"
-          >
-            View All Categories →
-          </Link>
-        </div>
-
-        <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8">
-            The Ayurveda Experience Products & Services
-          </h3>
-          <div className="space-y-8">
-            {[
-              { icon: Droplets, title: "Ayurvedic Hair Oils", sub: "Traditional hair oil formulas made with natural ingredients." },
-              { icon: Sparkles, title: "Skincare", sub: "Face oils, cleansers and masks formulated with Ayurvedic herbs." },
-              { icon: Leaf, title: "Herbal Supplements", sub: "Wellness and herbal supplements for everyday support." },
-              { icon: PackageOpen, title: "Wellness Kits", sub: "Curated kits combining multiple Ayurvedic products." },
-            ].map((item, i) => (
-              <div key={item.title} className="flex gap-4 items-start text-justify">
-                <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-                  <item.icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-black font-black text-sm leading-tight mb-2">
-                    {item.title}
-                  </p>
-                  <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-                    {item.sub}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
         {/* More Stores */}
         <section className="py-20 bg-white border-t border-[#f0f0f0]">
@@ -429,125 +422,125 @@ export default function TheAyurvedaExperienceCouponsContent() {
                   The Ayurveda Experience Discount Codes, Promo Codes & Wellness Deals 2026
                 </h2>
 
-             <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <div className="overflow-x-auto">
-    <table className="w-full min-w-[850px] border-collapse text-left">
-      <thead>
-        <tr className="bg-[#056BFA]">
-          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
-          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
-          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
-          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
-          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
-        </tr>
-      </thead>
-      <tbody className="text-[14px] font-bold text-gray-600">
-        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            Yauvari Amplified Youth Spring
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            Flat 50% OFF ($24)
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            All Users
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            Limited-time offer, save $24
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            Ayurvedic youth spring skincare
-          </td>
-        </tr>
-        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            Day &amp; Night Face Oil Duo
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            Save 10% OFF ($81)
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            All Users
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            Discounted bundled price ($90 orig.)
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            Morning and evening face oil duo
-          </td>
-        </tr>
-        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            Balaayah Firming Body Oil
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            Only $45
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            USA, CA, AU &amp; SG
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            Select region shipping
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            Firming body oil for mature skin
-          </td>
-        </tr>
-        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            Firm-Focus Neck Mask
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            From $45
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            USA, CA, AU &amp; SG
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            Phyto-Ceramides &amp; Water Lily formula
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            Neck &amp; jawline firming treatment
-          </td>
-        </tr>
-        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            Cerabuild Face &amp; Neck Cream
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            From $45
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            USA, CA, AU &amp; SG
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            International shipping available
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            Dual-action face and neck cream
-          </td>
-        </tr>
-        <tr className="transition-colors hover:bg-gray-50/50">
-          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
-            5 Mini Skincare Essentials
-          </td>
-          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
-            Only $35
-          </td>
-          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
-            All Users
-          </td>
-          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
-            Travel size bundle
-          </td>
-          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
-            5 bestselling Ayurvedic mini items
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+                <div className="my-12 overflow-hidden rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <div className="overflow-x-auto">
+                    <table className="w-full min-w-[850px] border-collapse text-left">
+                      <thead>
+                        <tr className="bg-[#056BFA]">
+                          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Offer</th>
+                          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Discount / Price</th>
+                          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Eligibility</th>
+                          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Key Conditions</th>
+                          <th scope="col" className="p-5 text-[15px] font-black uppercase tracking-wider text-white">Applicable On</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-[14px] font-bold text-gray-600">
+                        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            Yauvari Amplified Youth Spring
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            Flat 50% OFF ($24)
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            All Users
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            Limited-time offer, save $24
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            Ayurvedic youth spring skincare
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            Day &amp; Night Face Oil Duo
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            Save 10% OFF ($81)
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            All Users
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            Discounted bundled price ($90 orig.)
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            Morning and evening face oil duo
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            Balaayah Firming Body Oil
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            Only $45
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            USA, CA, AU &amp; SG
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            Select region shipping
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            Firming body oil for mature skin
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            Firm-Focus Neck Mask
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            From $45
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            USA, CA, AU &amp; SG
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            Phyto-Ceramides &amp; Water Lily formula
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            Neck &amp; jawline firming treatment
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            Cerabuild Face &amp; Neck Cream
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            From $45
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            USA, CA, AU &amp; SG
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            International shipping available
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            Dual-action face and neck cream
+                          </td>
+                        </tr>
+                        <tr className="transition-colors hover:bg-gray-50/50">
+                          <td className="max-w-[220px] p-5 align-middle font-black text-black break-words">
+                            5 Mini Skincare Essentials
+                          </td>
+                          <td className="p-5 align-middle font-black whitespace-nowrap text-[#056BFA]">
+                            Only $35
+                          </td>
+                          <td className="p-5 align-middle whitespace-nowrap text-gray-500">
+                            All Users
+                          </td>
+                          <td className="max-w-[200px] p-5 align-middle text-gray-500 break-words">
+                            Travel size bundle
+                          </td>
+                          <td className="max-w-[240px] p-5 align-middle text-gray-500 break-words">
+                            5 bestselling Ayurvedic mini items
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
                   <p>

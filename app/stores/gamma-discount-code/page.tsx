@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import GammaContent from "./_components/StoreCouponsContent";
+import { GAMMA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
+    absolute: "Gamma Promo Code: 30% Off Subscriptions + Plan Savings | Nov 2026",
   },
   description:
-    "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
+    "Use a Gamma Promo Code and Gamma Discount Code to save 30% with code M and E30 on eligible purchases. Verified Nov 2026 offers with plan savings. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/gamma-discount-code",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/gamma-discount-code",
-    title: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
+    title: "Gamma Promo Code: 30% Off Subscriptions + Plan Savings | Nov 2026",
     description:
-      "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
+      "Use a Gamma Promo Code and Gamma Discount Code to save 30% with code M and E30 on eligible purchases. Verified Nov 2026 offers with plan savings. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
+    title: "Gamma Promo Code: 30% Off Subscriptions + Plan Savings | Nov 2026",
     description:
-      "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
+      "Use a Gamma Promo Code and Gamma Discount Code to save 30% with code M and E30 on eligible purchases. Verified Nov 2026 offers with plan savings. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791437484/gamma-logo_zh4kj5.webp"],
     site: "@couponsbit",
   },
@@ -51,6 +53,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const gammaSchema = {
@@ -60,9 +63,9 @@ const gammaSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/gamma-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/gamma-discount-code",
-      name: "Gamma Discount Code – Save 28% & Free Trial Nov 2026",
+      name: "Gamma Promo Code: 30% Off Subscriptions + Plan Savings | Nov 2026",
       description:
-        "Use the latest Gamma Discount Code and Gamma Promo Code to save up to 28% on annual plans and enjoy a free trial on eligible subscriptions. Get started today.",
+        "Use a Gamma Promo Code and Gamma Discount Code to save 30% with code M and E30 on eligible purchases. Verified Nov 2026 offers with plan savings. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -77,18 +80,20 @@ const gammaSchema = {
       name: "Gamma Discount Codes & Coupon Codes",
       description: "Latest Gamma discount codes and offers.",
       url: "https://www.couponsbit.us/stores/gamma-discount-code",
-      numberOfItems: 9,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Gamma – Save Up to 26% on Subscription Plans", description: "Enjoy up to 26% off on Gamma subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Gamma Annual Subscription – Save Up to 28%", description: "Save up to 28% on eligible Gamma annual subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Gamma Signup Offer – Get Free Templates", description: "Sign up for Gamma and get free templates on your first use.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Gamma Pro Monthly Plan – From $20", description: "Get the Gamma Pro Monthly Plan starting from $20.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Gamma Annual Plus Plan – From $96", description: "Get the Gamma Annual Plus Plan starting at $96.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Gamma Monthly Ultra Plan – From $100", description: "Get the Gamma Monthly Ultra Plan starting at $100.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Gamma Annual Pro Plan – From $180", description: "Get the Gamma Annual Pro Plan starting at just $180.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Gamma Monthly Plus Plan – From $10", description: "Grab the Gamma Monthly Plus Plan starting at just $10.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-        { "@type": "ListItem", position: 9, item: { "@type": "Offer", name: "Gamma – Free Trial on Subscription Plans", description: "Enjoy a free trial on eligible Gamma subscription plans.", url: "https://www.couponsbit.us/stores/gamma-discount-code", seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" } } },
-      ],
+      numberOfItems: GAMMA_COUPONS.length,
+      itemListElement: GAMMA_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/gamma-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Gamma", url: "https://gamma.app" },
+        },
+      })),
     },
 
     {
@@ -111,6 +116,13 @@ const gammaSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/gamma-discount-code#brand",
+      name: "Gamma",
+      url: "https://gamma.app",
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/gamma-discount-code#breadcrumb",
       itemListElement: [
@@ -121,51 +133,51 @@ const gammaSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/gamma-discount-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How can I find a Gamma AI discount code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Check the Gamma AI page on CouponsBit for available discount codes, coupons, and promotional offers. Review the terms of each promotion before using it."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/gamma-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I find a Gamma AI discount code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the Gamma AI page on CouponsBit for available discount codes, coupons, and promotional offers. Review the terms of each promotion before using it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Gamma AI discount code on every plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Promotional codes can have specific eligibility requirements and may apply only to certain plans or subscription types. Check the individual offer for its conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why isn't my Gamma AI promo code working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A promo code may have expired, reached its usage limit, or may not be valid for the plan you're trying to purchase. Check the promotion's terms and make sure the code is entered correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Gamma AI offer discounts without promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gamma may run promotions where a discount is applied directly rather than through a coupon code. CouponsBit can help you check for both code-based and other promotional offers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I check CouponsBit before subscribing to Gamma AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Checking for a Gamma AI discount code before subscribing takes only a moment and gives you an opportunity to find an available promotion before paying for your plan."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Can I use a Gamma AI discount code on every plan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. Promotional codes can have specific eligibility requirements and may apply only to certain plans or subscription types. Check the individual offer for its conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why isn't my Gamma AI promo code working?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A promo code may have expired, reached its usage limit, or may not be valid for the plan you're trying to purchase. Check the promotion's terms and make sure the code is entered correctly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Gamma AI offer discounts without promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gamma may run promotions where a discount is applied directly rather than through a coupon code. CouponsBit can help you check for both code-based and other promotional offers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I check CouponsBit before subscribing to Gamma AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Checking for a Gamma AI discount code before subscribing takes only a moment and gives you an opportunity to find an available promotion before paying for your plan."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -173,7 +185,7 @@ export default function GammaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(gammaSchema) }} />
-      <GammaContent />
+      <Suspense fallback={null}><GammaContent /></Suspense>
     </>
   );
 }

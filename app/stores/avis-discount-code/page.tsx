@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import AvisCouponsContent from "./_components/StoreCouponsContent";
 import { AVIS_COUPONS } from "./_components/offers";
 
-const TITLE = "Avis Discount Code: Up to 40% Off + 35% Off Rentals | Nov 2026";
+const TITLE = "Avis Promo Code: Up to 40% Off Late Pickup Rentals | Nov 2026";
 const DESCRIPTION =
-  "Save up to 40% with the latest Avis discount code. Get up to 35% off eligible rentals, plus verified car rental deals and exclusive offers this Nov 2026.";
+  "Use an Avis Promo Code and Avis Discount Code to save up to 40% on late-night pickups and up to 35% on eligible rentals. Verified Nov 2026 offers. Save now.";
 
 export const metadata: Metadata = {
   title: {
@@ -70,6 +70,8 @@ const storeOffers = AVIS_COUPONS.map((coupon, index) => ({
     name: coupon.title,
     description: coupon.description,
     url: "https://www.couponsbit.us/stores/avis-discount-code",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
     seller: {
       "@type": "Organization",
       name: "Avis",

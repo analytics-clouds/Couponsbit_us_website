@@ -21,7 +21,7 @@ export const BLUETTI_COUPONS: Coupon[] = [
     offText: "",
     title: "BLUETTI Promo Code – $150 Off on Elite 300 + Charger 2",
     description: "Save $150 on the Elite 300 + Charger 2 bundle for dependable portable power.",
-    code: "BLUETTI1",
+    code: "",
     verified: "Verified",
     userType: "All Users",
     validTill: "Dec 31, 2026",

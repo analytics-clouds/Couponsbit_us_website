@@ -2,34 +2,34 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { 
-  ChevronRight, 
-  Star, 
-  Tag, 
-  Percent, 
-  Users, 
-  BadgeCheck, 
-  ExternalLink, 
-  ShieldCheck, 
-  PiggyBank, 
-  RefreshCw, 
-  Clock, 
-  Copy, 
-  ChevronDown, 
-  Package, 
-  Truck, 
-  Shield, 
-  Laptop, 
-  Shirt, 
-  Home, 
-  Sparkles, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Star,
+  Tag,
+  Percent,
+  Users,
+  BadgeCheck,
+  ExternalLink,
+  ShieldCheck,
+  PiggyBank,
+  RefreshCw,
+  Clock,
+  Copy,
+  ChevronDown,
+  Package,
+  Truck,
+  Shield,
+  Laptop,
+  Shirt,
+  Home,
+  Sparkles,
+  BookOpen,
   CheckCircle,
   X,
-  ArrowRight,Video, Camera, Disc, Sliders,
+  ArrowRight, Video, Camera, Disc, Sliders,
   Plane,
   Tv,
-  Code,Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
+  Code, Server, Globe, Cloud, LayoutGrid, Cpu, Search, LayoutTemplate, ShoppingBag, Mail,
   Zap
 } from "lucide-react";
 import Image from "next/image";
@@ -240,7 +240,7 @@ export default function ObsbotCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Obsbot Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Obsbot Promo Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -250,7 +250,7 @@ export default function ObsbotCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop the OBSBOT Tail Air 4K Camera from $499, Tiny 2 Lite from $129, Tiny 2 AI Webcam from $299, and Tiny SE AI Webcam from $75.05. You can also grab the VOX SE Wireless Microphone from $59 and the Tiny 2 Remote Control from $49. Browse verified OBSBOT offers to save on AI-powered webcams, streaming cameras, microphones, and creator accessories.
+                      OBSBOT Promo Code options help creators save on streaming gear with verified deals like the Tail Air 4K Camera from $499 and Tiny 2 Lite 4K Webcam from $129. OBSBOT Discount Code offers also include the Tiny SE AI Webcam from $75.05 and VOX SE Wireless Microphone from $59. These working Nov 2026 deals cover webcams, cameras, and audio tools for streamers and remote professionals. I recommend comparing bundles and checking shipping terms to choose the right setup for your content needs.
                     </p>
                     <a
                       href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
@@ -272,11 +272,11 @@ export default function ObsbotCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <p className="text-black font-black text-xs leading-none">{stat.val}</p>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <p className="text-black font-black text-xs leading-none">{stat.val}</p>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -352,131 +352,130 @@ export default function ObsbotCouponsContent() {
         <section className="py-6 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
-              
+
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%] mx-auto">
-      <div className="mb-10">
-        <h2 className="text-2xl font-black text-black leading-tight">Obsbot Coupon Codes & Offers</h2>
-        <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
-          {OBSBOT_COUPONS.length} Coupons & Offers Available
-        </p>
-      </div>
-
-      {OBSBOT_COUPONS.map((coupon) => (
-        <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
-          <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-            <div className="flex flex-row">
-              
-              {/* LEFT OFFER BOX */}
-              <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-                <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-                <div className="text-center px-1">
-                  <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
-                    {coupon.topLabel}
+                <div className="mb-10">
+                  <h2 className="text-2xl font-black text-black leading-tight">Obsbot Promo Codes & Discount Offers</h2>
+                  <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">
+                    {OBSBOT_COUPONS.length} Coupons & Offers Available
                   </p>
-                  <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">
-                    {coupon.mainValue}
-                  </div>
-                  {coupon.offText && (
-                    <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
-                      {coupon.offText}
-                    </p>
-                  )}
                 </div>
+
+                {OBSBOT_COUPONS.map((coupon) => (
+                  <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+                    <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+                      <div className="flex flex-row">
+
+                        {/* LEFT OFFER BOX */}
+                        <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+                          <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+                          <div className="text-center px-1">
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">
+                              {coupon.topLabel}
+                            </p>
+                            <div className="text-[16px] sm:text-4xl font-extrabold leading-none mt-2">
+                              {coupon.mainValue}
+                            </div>
+                            {coupon.offText && (
+                              <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">
+                                {coupon.offText}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* CONTENT SECTION */}
+                        <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+
+                          {/* CENTER CONTENT */}
+                          <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+
+                            {/* BADGES */}
+                            <div className="flex flex-wrap gap-2 mb-3">
+                              <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Limited Time
+                              </span>
+                              <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                                Verified Deal
+                              </span>
+                            </div>
+
+                            {/* HEADING */}
+                            <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                              {coupon.title}
+                            </h3>
+
+                            {/* DESCRIPTION */}
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                              {coupon.description}
+                            </p>
+
+                            {/* VIEW DETAILS BUTTON */}
+                            <button
+                              type="button"
+                              onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
+                              className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
+                            >
+                              View Details
+                              <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
+                              />
+                            </button>
+
+                            {/* ACCORDION POINTS */}
+                            <div
+                              className={`overflow-hidden transition-all duration-300 ${expandedCoupon === coupon.id
+                                ? "max-h-[250px] opacity-100 mt-3"
+                                : "max-h-0 opacity-0"
+                                }`}
+                            >
+                              <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                                {coupon.points.map((point, pi) => (
+                                  <li key={pi} className="flex items-start gap-2">
+                                    <span className="text-[#0344b0]">•</span>
+                                    {point}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+
+                          {/* BUTTON SECTION */}
+                          <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
+                            {coupon.code && (
+                              <button
+                                onClick={() => handleCopy(coupon.code)}
+                                className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
+                              >
+                                <span className="font-mono">{coupon.code}</span>
+                                {showToast && toastCode === coupon.code ? (
+                                  <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
+                                ) : (
+                                  <Copy className="w-4 h-4 shrink-0" />
+                                )}
+                              </button>
+                            )}
+
+                            <a
+                              href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label={`Get Obsbot deal: ${coupon.title}`}
+                              className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+                            >
+                              Get Deal
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-
-              {/* CONTENT SECTION */}
-              <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-                
-                {/* CENTER CONTENT */}
-                <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-                  
-                  {/* BADGES */}
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                      Limited Time
-                    </span>
-                    <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
-                      Verified Deal
-                    </span>
-                  </div>
-
-                  {/* HEADING */}
-                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
-                    {coupon.title}
-                  </h3>
-
-                  {/* DESCRIPTION */}
-                  <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
-                    {coupon.description}
-                  </p>
-
-                  {/* VIEW DETAILS BUTTON */}
-                  <button
-                    type="button"
-                    onClick={() => setExpandedCoupon(expandedCoupon === coupon.id ? null : coupon.id)}
-                    className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1 focus:outline-none"
-                  >
-                    View Details
-                    <ChevronDown
-                      size={16}
-                      className={`transition-transform duration-300 ${expandedCoupon === coupon.id ? "rotate-180" : ""}`}
-                    />
-                  </button>
-
-                  {/* ACCORDION POINTS */}
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      expandedCoupon === coupon.id
-                        ? "max-h-[250px] opacity-100 mt-3"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                      {coupon.points.map((point, pi) => (
-                        <li key={pi} className="flex items-start gap-2">
-                          <span className="text-[#0344b0]">•</span>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* BUTTON SECTION */}
-                <div className="w-full lg:w-[210px] flex flex-col items-center justify-center px-3 sm:px-5 py-3 sm:py-6 gap-3">
-                  {coupon.code && (
-                    <button
-                      onClick={() => handleCopy(coupon.code)}
-                      className="w-full bg-white border-2 border-dashed border-[#056bfa] text-[#056bfa] font-black text-sm px-4 py-2.5 rounded-xl flex items-center justify-between gap-2 hover:bg-[#f0f7ff] transition-colors"
-                    >
-                      <span className="font-mono">{coupon.code}</span>
-                      {showToast && toastCode === coupon.code ? (
-                        <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />
-                      ) : (
-                        <Copy className="w-4 h-4 shrink-0" />
-                      )}
-                    </button>
-                  )}
-
-                  <a
-                    href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    aria-label={`Get Obsbot deal: ${coupon.title}`}
-                    className="w-full bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
-                  >
-                    Get Deal
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
 
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
@@ -484,7 +483,7 @@ export default function ObsbotCouponsContent() {
                 <div className="w-full flex justify-center mb-6">
                   <a
                     href="https://www.google.com/preferences/source?q=couponsbit.us"
-                    target="_blank" 
+                    target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="inline-block transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
                   >
@@ -512,73 +511,73 @@ export default function ObsbotCouponsContent() {
 
                 {/* Categories Card */}
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Laptop, name: "Electronics",        count: "850+", color: "text-blue-500",   href: "/categories/electronics" },
-                        { icon: Plane,  name: "Travel",             count: "420+", color: "text-teal-500",   href: "/categories/travel" },
-                        { icon: Tv,     name: "Entertainment",      count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
-                        { icon: Code,   name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
-                        { icon: Zap,    name: "Mobile & Telecom",   count: "320+", color: "text-green-500",  href: "/categories/mobile" }
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Laptop, name: "Electronics", count: "850+", color: "text-blue-500", href: "/categories/electronics" },
+                      { icon: Plane, name: "Travel", count: "420+", color: "text-teal-500", href: "/categories/travel" },
+                      { icon: Tv, name: "Entertainment", count: "210+", color: "text-purple-500", href: "/categories/entertainment" },
+                      { icon: Code, name: "Software & Digital", count: "300+", color: "text-violet-500", href: "/categories/software" },
+                      { icon: Zap, name: "Mobile & Telecom", count: "320+", color: "text-green-500", href: "/categories/mobile" }
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 {/* Why Shop Card */}
-              <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <div className="mb-8">
-    <h3 className="text-black font-black text-lg mb-2">Popular OBSBOT Products</h3>
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      OBSBOT offers a range of innovative camera systems and production solutions designed for content creators, remote professionals, and live broadcasters.
-    </p>
-  </div>
+                <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
+                  <div className="mb-8">
+                    <h3 className="text-black font-black text-lg mb-2">Popular OBSBOT Products</h3>
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      OBSBOT offers a range of innovative camera systems and production solutions designed for content creators, remote professionals, and live broadcasters.
+                    </p>
+                  </div>
 
-  <div className="space-y-8">
-    {[
-      {
-        icon: Video, 
-        title: "AI-Powered Webcams",
-        sub: "OBSBOT's webcam lineup is designed for video conferencing, online teaching, content creation, and live streaming. Many models feature AI auto-tracking and gesture controls that automatically keep users in frame."
-      },
-      {
-        icon: Camera, 
-        title: "Tiny Series Cameras",
-        sub: "The Tiny series is among OBSBOT's most popular product lines, featuring compact PTZ (Pan-Tilt-Zoom) webcams with intelligent tracking capabilities and high-resolution video performance."
-      },
-      {
-        icon: Disc, 
-        title: "Tail Series Cameras",
-        sub: "Designed for professional creators and live productions, the Tail series offers advanced AI tracking, remote control capabilities, and compatibility with professional streaming workflows."
-      },
-      {
-        icon: Sliders, 
-        title: "Streaming & Production Tools",
-        sub: "OBSBOT also offers accessories and production-focused solutions that help creators build more efficient recording and live-streaming setups."
-      }
-    ].map((item, i) => (
-      <div key={item.title} className="flex gap-4 items-start text-justify">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        icon: Video,
+                        title: "AI-Powered Webcams",
+                        sub: "OBSBOT's webcam lineup is designed for video conferencing, online teaching, content creation, and live streaming. Many models feature AI auto-tracking and gesture controls that automatically keep users in frame."
+                      },
+                      {
+                        icon: Camera,
+                        title: "Tiny Series Cameras",
+                        sub: "The Tiny series is among OBSBOT's most popular product lines, featuring compact PTZ (Pan-Tilt-Zoom) webcams with intelligent tracking capabilities and high-resolution video performance."
+                      },
+                      {
+                        icon: Disc,
+                        title: "Tail Series Cameras",
+                        sub: "Designed for professional creators and live productions, the Tail series offers advanced AI tracking, remote control capabilities, and compatibility with professional streaming workflows."
+                      },
+                      {
+                        icon: Sliders,
+                        title: "Streaming & Production Tools",
+                        sub: "OBSBOT also offers accessories and production-focused solutions that help creators build more efficient recording and live-streaming setups."
+                      }
+                    ].map((item, i) => (
+                      <div key={item.title} className="flex gap-4 items-start text-justify">
+                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                          <item.icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <p className="text-black font-black text-sm leading-tight mb-2">{item.title}</p>
+                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                            {item.sub}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
 
               </div>
@@ -593,8 +592,8 @@ export default function ObsbotCouponsContent() {
             <h2 className="text-2xl font-black text-black mb-10">More Stores You'll Love</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
               {RELATED_STORES.map((store, i) => (
-                <Link 
-                  key={i} 
+                <Link
+                  key={i}
                   href={store.href}
                   className="bg-white border border-[#f0f0f0] rounded-3xl p-6 text-center shadow-sm hover:border-[#056bfa] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
@@ -608,264 +607,264 @@ export default function ObsbotCouponsContent() {
               ))}
             </div>
           </div>
-                  <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <Link href="/stores" className="inline-flex items-center gap-2 px-9 py-3.5 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 shadow-sm hover:shadow-xl">
               <LayoutGrid className="w-4 h-4" />
               View More Stores
             </Link>
           </div>
-</section>
+        </section>
 
         {/* Section 7: SEO Text Section */}
-      
 
-       <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
-      
-      {/* Left: Text Content */}
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          OBSBOT Coupon Codes, Promo Codes & AI Camera Deals
-        </h2>
 
-<div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-gray-600 font-bold text-[14px]">
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – OBSBOT Tail Air 4K Camera</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $499</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K NDI streaming, wireless setup</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">OBSBOT Tail Air 4K</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – Insta360 Link 2 4K Webcam</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $199.99</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K resolution, smooth PTZ movement</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Insta360 Link 2 4K Webcam</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 Lite 4K Webcam</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $129</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K video capture, compact design</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Lite 4K Webcam</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 4K AI Webcam</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $299</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart AI tracking, 4K detailed video</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 4K AI Webcam</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – Tiny SE AI Webcam</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $75.05</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">1080P resolution, smart tracking features</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny SE AI Webcam</td>
-      </tr>
-      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – VOX SE Wireless Microphone</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $59</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Wireless audio, enhanced voice clarity</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">VOX SE Wireless Microphone</td>
-      </tr>
-      <tr className="hover:bg-gray-50/50 transition-colors">
-        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Offer – Tiny 2 Remote Control</td>
-        <td className="p-5 text-[#056BFA] font-black align-middle">From $49</td>
-        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart Remote for camera control & adjustments</td>
-        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Remote Control</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-        
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Smart Cameras with OBSBOT Coupon Codes</h3>
-          <p>
-            High-quality video has become essential for content creators, remote professionals, educators, and streamers. Whether you're hosting virtual meetings, creating YouTube content, live streaming, or recording online courses, OBSBOT offers innovative AI-powered camera solutions designed to make video production easier and more professional. Before making your purchase, check the latest <strong>OBSBOT coupon codes</strong>, promo offers, and camera discounts on CouponsBit to maximize your savings.
-          </p>
-          <p>
-            From intelligent <Link href="/stores/reolink-discount-code">webcams</Link> to advanced AI tracking cameras, OBSBOT combines cutting-edge technology with user-friendly features that help creators stay in focus without requiring complex camera setups.
-          </p>
+        <section className="py-24 bg-[#f5f5f5]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">About OBSBOT</h3>
-           
-            <p>
-              Today, OBSBOT products are used by content creators, educators, remote workers, streamers, and businesses in more than 120 countries worldwide. The brand has earned recognition for its innovative approach to AI-driven imaging and camera technology.
-            </p>
-          </div>
+              {/* Left: Text Content */}
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  OBSBOT Coupon Codes, Promo Codes & AI Camera Deals
+                </h2>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Creators Choose OBSBOT</h3>
-            <p><strong>AI Auto Tracking:</strong> One of OBSBOT's standout features is intelligent subject tracking, which automatically follows users as they move, helping maintain professional-looking video without requiring a camera operator.</p>
-            <p><strong>Gesture & Voice Controls:</strong> Many OBSBOT products support hands-free controls, allowing creators to manage tracking, zoom, and camera functions through simple gestures or voice commands.</p>
-            <p><strong>High-Quality Video Performance:</strong> Several OBSBOT cameras support 4K video recording and advanced image processing technologies designed to improve clarity and low-light performance.</p>
-            <p><strong>Ideal for Content Creation:</strong> The brand's products are widely used by streamers, educators, online presenters, and creators looking for professional-quality video solutions.</p>
-            <p><strong>Innovative Camera Technology:</strong> OBSBOT has earned numerous industry awards and recognition for innovation in AI camera development and imaging technology.</p>
-          </div>
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA] rounded-tl-[24px] rounded-tr-[24px] rounded-bl-none rounded-br-none">
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-l-xl">Offer</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-r-xl">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-gray-600 font-bold text-[14px]">
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – OBSBOT Tail Air 4K Camera</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $499</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K NDI streaming, wireless setup</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">OBSBOT Tail Air 4K</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Discount Code – Insta360 Link 2 4K Webcam</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $199.99</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K resolution, smooth PTZ movement</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Insta360 Link 2 4K Webcam</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 Lite 4K Webcam</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $129</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">4K video capture, compact design</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Lite 4K Webcam</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Promo Code – Tiny 2 4K AI Webcam</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $299</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart AI tracking, 4K detailed video</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 4K AI Webcam</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – Tiny SE AI Webcam</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $75.05</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">1080P resolution, smart tracking features</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny SE AI Webcam</td>
+                      </tr>
+                      <tr className="border-b border-gray-200 hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Voucher Code – VOX SE Wireless Microphone</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $59</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Wireless audio, enhanced voice clarity</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">VOX SE Wireless Microphone</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50/50 transition-colors">
+                        <td className="p-5 text-black font-black align-middle max-w-[220px]">OBSBOT Offer – Tiny 2 Remote Control</td>
+                        <td className="p-5 text-[#056BFA] font-black align-middle">From $49</td>
+                        <td className="p-5 text-gray-500 align-middle">New & existing customers</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[200px]">Smart Remote for camera control & adjustments</td>
+                        <td className="p-5 text-gray-500 align-middle max-w-[240px]">Tiny 2 Remote Control</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-          {/* How to Use Steps */}
-          <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-            <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an OBSBOT Coupon Code</h3>
-            <p className="text-gray-700 font-bold -mt-4">Saving money on your next OBSBOT purchase is simple.</p>
-            <div className="space-y-6">
-              {[
-                "Step 1: Visit CouponsBit — Browse the latest OBSBOT coupon codes and promotional offers.",
-                "Step 2: Select a Deal — Choose the discount that best fits your purchase.",
-                "Step 3: Copy the Promo Code — Copy the available coupon code before visiting OBSBOT.",
-                "Step 4: Shop Your Products — Add your preferred camera, webcam, or accessory to your cart.",
-                "Step 5: Apply the Discount — Enter the promo code during checkout if required.",
-                "Step 6: Complete Your Purchase — Finalize your order and enjoy your savings."
-              ].map((step, i) => (
-                <div key={i} className="flex gap-6 items-start">
-                  <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                    {i + 1}
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <h3 className="text-xl font-black text-[#056bfa] mb-4">Save More on Smart Cameras with OBSBOT Coupon Codes</h3>
+                  <p>
+                    High-quality video has become essential for content creators, remote professionals, educators, and streamers. Whether you're hosting virtual meetings, creating YouTube content, live streaming, or recording online courses, OBSBOT offers innovative AI-powered camera solutions designed to make video production easier and more professional. Before making your purchase, check the latest <strong>OBSBOT coupon codes</strong>, promo offers, and camera discounts on CouponsBit to maximize your savings.
+                  </p>
+                  <p>
+                    From intelligent <Link href="/stores/reolink-discount-code">webcams</Link> to advanced AI tracking cameras, OBSBOT combines cutting-edge technology with user-friendly features that help creators stay in focus without requiring complex camera setups.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">About OBSBOT</h3>
+
+                    <p>
+                      Today, OBSBOT products are used by content creators, educators, remote workers, streamers, and businesses in more than 120 countries worldwide. The brand has earned recognition for its innovative approach to AI-driven imaging and camera technology.
+                    </p>
                   </div>
-                  <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Creators Choose OBSBOT</h3>
+                    <p><strong>AI Auto Tracking:</strong> One of OBSBOT's standout features is intelligent subject tracking, which automatically follows users as they move, helping maintain professional-looking video without requiring a camera operator.</p>
+                    <p><strong>Gesture & Voice Controls:</strong> Many OBSBOT products support hands-free controls, allowing creators to manage tracking, zoom, and camera functions through simple gestures or voice commands.</p>
+                    <p><strong>High-Quality Video Performance:</strong> Several OBSBOT cameras support 4K video recording and advanced image processing technologies designed to improve clarity and low-light performance.</p>
+                    <p><strong>Ideal for Content Creation:</strong> The brand's products are widely used by streamers, educators, online presenters, and creators looking for professional-quality video solutions.</p>
+                    <p><strong>Innovative Camera Technology:</strong> OBSBOT has earned numerous industry awards and recognition for innovation in AI camera development and imaging technology.</p>
+                  </div>
+
+                  {/* How to Use Steps */}
+                  <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-8">How to Use an OBSBOT Coupon Code</h3>
+                    <p className="text-gray-700 font-bold -mt-4">Saving money on your next OBSBOT purchase is simple.</p>
+                    <div className="space-y-6">
+                      {[
+                        "Step 1: Visit CouponsBit — Browse the latest OBSBOT coupon codes and promotional offers.",
+                        "Step 2: Select a Deal — Choose the discount that best fits your purchase.",
+                        "Step 3: Copy the Promo Code — Copy the available coupon code before visiting OBSBOT.",
+                        "Step 4: Shop Your Products — Add your preferred camera, webcam, or accessory to your cart.",
+                        "Step 5: Apply the Discount — Enter the promo code during checkout if required.",
+                        "Step 6: Complete Your Purchase — Finalize your order and enjoy your savings."
+                      ].map((step, i) => (
+                        <div key={i} className="flex gap-6 items-start">
+                          <div className="w-10 h-10 shrink-0 bg-[#056bfa] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+                            {i + 1}
+                          </div>
+                          <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More on OBSBOT</h3>
+                    <p><strong>Check CouponsBit Before Every Purchase:</strong> New OBSBOT coupon codes and exclusive deals may become available regularly.</p>
+                    <p><strong>Shop During Seasonal Sales:</strong> Major shopping events often feature significant discounts on cameras and creator tools.</p>
+                    <p><strong>Consider Product Bundles:</strong> Bundles may provide additional value compared to purchasing products individually.</p>
+                    <p><strong>Subscribe to Brand Updates:</strong> Email subscribers may gain access to exclusive promotions and early sale announcements.</p>
+                    <p><strong>Watch for Product Launch Promotions:</strong> New camera releases are sometimes accompanied by special introductory offers.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Who Uses OBSBOT?</h3>
+                    <p className="text-gray-700 font-bold">OBSBOT products are popular among:</p>
+                    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+                      <li>Content creators</li>
+                      <li>YouTubers</li>
+                      <li>Livestreamers</li>
+                      <li>Online educators</li>
+                      <li>Remote professionals</li>
+                      <li>Business teams</li>
+                      <li>Event producers</li>
+                      <li>Video podcasters</li>
+                    </ul>
+                    <p>Its AI-powered technology helps users create professional-looking video content with less effort and equipment.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for OBSBOT Deals?</h3>
+                    <p><strong>Regularly Updated Offers:</strong> We continuously update deals to help shoppers find current savings opportunities.</p>
+                    <p><strong>Easy-to-Find Discounts:</strong> Find coupon codes, promotional offers, and camera deals in one place.</p>
+                    <p><strong>Completely Free to Use:</strong> CouponsBit helps users save money without requiring memberships or subscriptions.</p>
+                    <p><strong>Savings Across Multiple Categories:</strong> In addition to OBSBOT, CouponsBit features discounts from technology, software, travel, lifestyle, education, and productivity brands.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#056bfa] mb-4">Create Better Content for Less</h3>
+                    <p>Whether you're launching a YouTube channel, upgrading your streaming setup, teaching online classes, or improving your video conference experience, OBSBOT offers innovative AI-powered camera solutions designed to keep you looking your best.</p>
+                    <p>Browse the latest OBSBOT coupon codes, promo offers, and AI camera deals on CouponsBit today and save on your next content creation upgrade.</p>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
                 </div>
-              ))}
+
+                <button
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+                >
+                  {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
+
+                {/* FAQs Accordion */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
+                  {[
+                    { q: "What is OBSBOT?", a: "OBSBOT is an AI camera company that develops intelligent webcams, tracking cameras, and video production tools for creators, businesses, and professionals." },
+                    { q: "What is OBSBOT best known for?", a: "The brand is best known for its AI-powered tracking webcams and smart camera technology that automatically follows users during recording and streaming." },
+                    { q: "Are OBSBOT cameras suitable for streaming?", a: "Yes. Many OBSBOT products are designed specifically for livestreaming, content creation, video conferencing, and online presentations." },
+                    { q: "Where can I find OBSBOT coupon codes?", a: "You can find the latest OBSBOT coupon codes, promo offers, and camera discounts on CouponsBit." },
+                    { q: "Is CouponsBit free to use?", a: "Absolutely. CouponsBit is completely free and helps shoppers discover savings from popular brands across multiple categories." }
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular OBSBOT Searches</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {["AI Tracking Webcam", "OBSBOT Promo Code", "4K Streaming Camera", "Gesture Control PTZ", "Auto Framing Studio", "Remote Work Webcam", "Live Production Gear", "CouponsBit Technology"].map(tag => (
+                      <span
+                        key={tag}
+                        className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top OBSBOT Deals</h3>
+                  <div className="space-y-6">
+                    {[
+                      { heading: "Hardware Bundle Savings", sub: "Save significantly on hardware bundles containing tripod modules and webcams" },
+                      { heading: "Welcome Order Code", sub: "Introductory percentage adjustments applied directly to your initial purchase" },
+                      { heading: "Free Standard Transport", sub: "Complimentary package handling options when meeting structural tier pricing" },
+                      { heading: "Creator Studio Promo", sub: "Special pricing metrics on dedicated vertical video configuration options" },
+                      { heading: "CouponsBit Exclusive", sub: "Limited-time active validation voucher discounts code configurations" }
+                    ].map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                        </div>
+                        <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get OBSBOT deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+        </section>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Smart Ways to Save More on OBSBOT</h3>
-            <p><strong>Check CouponsBit Before Every Purchase:</strong> New OBSBOT coupon codes and exclusive deals may become available regularly.</p>
-            <p><strong>Shop During Seasonal Sales:</strong> Major shopping events often feature significant discounts on cameras and creator tools.</p>
-            <p><strong>Consider Product Bundles:</strong> Bundles may provide additional value compared to purchasing products individually.</p>
-            <p><strong>Subscribe to Brand Updates:</strong> Email subscribers may gain access to exclusive promotions and early sale announcements.</p>
-            <p><strong>Watch for Product Launch Promotions:</strong> New camera releases are sometimes accompanied by special introductory offers.</p>
-          </div>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Who Uses OBSBOT?</h3>
-            <p className="text-gray-700 font-bold">OBSBOT products are popular among:</p>
-            <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-              <li>Content creators</li>
-              <li>YouTubers</li>
-              <li>Livestreamers</li>
-              <li>Online educators</li>
-              <li>Remote professionals</li>
-              <li>Business teams</li>
-              <li>Event producers</li>
-              <li>Video podcasters</li>
-            </ul>
-            <p>Its AI-powered technology helps users create professional-looking video content with less effort and equipment.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Why Use CouponsBit for OBSBOT Deals?</h3>
-            <p><strong>Regularly Updated Offers:</strong> We continuously update deals to help shoppers find current savings opportunities.</p>
-            <p><strong>Easy-to-Find Discounts:</strong> Find coupon codes, promotional offers, and camera deals in one place.</p>
-            <p><strong>Completely Free to Use:</strong> CouponsBit helps users save money without requiring memberships or subscriptions.</p>
-            <p><strong>Savings Across Multiple Categories:</strong> In addition to OBSBOT, CouponsBit features discounts from technology, software, travel, lifestyle, education, and productivity brands.</p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-black text-[#056bfa] mb-4">Create Better Content for Less</h3>
-            <p>Whether you're launching a YouTube channel, upgrading your streaming setup, teaching online classes, or improving your video conference experience, OBSBOT offers innovative AI-powered camera solutions designed to keep you looking your best.</p>
-            <p>Browse the latest OBSBOT coupon codes, promo offers, and AI camera deals on CouponsBit today and save on your next content creation upgrade.</p>
-          </div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button 
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-        >
-          {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* FAQs Accordion */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-          {[
-            { q: "What is OBSBOT?", a: "OBSBOT is an AI camera company that develops intelligent webcams, tracking cameras, and video production tools for creators, businesses, and professionals." },
-            { q: "What is OBSBOT best known for?", a: "The brand is best known for its AI-powered tracking webcams and smart camera technology that automatically follows users during recording and streaming." },
-            { q: "Are OBSBOT cameras suitable for streaming?", a: "Yes. Many OBSBOT products are designed specifically for livestreaming, content creation, video conferencing, and online presentations." },
-            { q: "Where can I find OBSBOT coupon codes?", a: "You can find the latest OBSBOT coupon codes, promo offers, and camera discounts on CouponsBit." },
-            { q: "Is CouponsBit free to use?", a: "Absolutely. CouponsBit is completely free and helps shoppers discover savings from popular brands across multiple categories." }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button 
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular OBSBOT Searches</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {["AI Tracking Webcam", "OBSBOT Promo Code", "4K Streaming Camera", "Gesture Control PTZ", "Auto Framing Studio", "Remote Work Webcam", "Live Production Gear", "CouponsBit Technology"].map(tag => (
-              <span
-                key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top OBSBOT Deals</h3>
-          <div className="space-y-6">
-            {[
-              { heading: "Hardware Bundle Savings", sub: "Save significantly on hardware bundles containing tripod modules and webcams" },
-              { heading: "Welcome Order Code", sub: "Introductory percentage adjustments applied directly to your initial purchase" },
-              { heading: "Free Standard Transport", sub: "Complimentary package handling options when meeting structural tier pricing" },
-              { heading: "Creator Studio Promo", sub: "Special pricing metrics on dedicated vertical video configuration options" },
-              { heading: "CouponsBit Exclusive", sub: "Limited-time active validation voucher discounts code configurations" }
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">O</div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                </div>
-                <a href="https://obsbotamazonsellerus.pxf.io/c/6434050/3434711/46044?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get OBSBOT deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-        
       </main>
 
       <Footer />

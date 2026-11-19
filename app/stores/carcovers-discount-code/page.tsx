@@ -101,6 +101,8 @@ const carCoversSchema = {
           name: c.title,
           description: c.description,
           url: "https://www.couponsbit.us/stores/carcovers-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: {
             "@type": "Organization",
             name: "CarCovers",

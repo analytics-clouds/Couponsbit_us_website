@@ -5,10 +5,10 @@ import { GYMSHARK_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gymshark Promo Code: Save 50% on Jackets & Sports Bras | Nov 2026",
+    absolute: "Gymshark Promo Code: Soft Sculpt Sports Bra 50% Off | Nov 2026",
   },
   description:
-    "Save with a Gymshark Promo Code and Gymshark Discount Code. Get 50% off Lift Seamless Zip Up Jacket and 50% off Soft Sculpt Sports Bra. Verified Nov 2026.",
+    "Use a Gymshark Promo Code and Gymshark Discount Code to save 50% on Lift Seamless Jacket and Soft Sculpt Sports Bra. Verified Nov 2026 offers. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/gymshark-discount-code",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/gymshark-discount-code",
-    title: "Gymshark Promo Code: Save 50% on Jackets & Sports Bras | Nov 2026",
+    title: "Gymshark Promo Code: Soft Sculpt Sports Bra 50% Off | Nov 2026",
     description:
-      "Save with a Gymshark Promo Code and Gymshark Discount Code. Get 50% off Lift Seamless Zip Up Jacket and 50% off Soft Sculpt Sports Bra. Verified Nov 2026.",
+      "Use a Gymshark Promo Code and Gymshark Discount Code to save 50% on Lift Seamless Jacket and Soft Sculpt Sports Bra. Verified Nov 2026 offers. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1792648467/gymshark-logo_hvljlf.webp",
         width: 1200,
         height: 630,
-        alt: "Gymshark Discount Code & Coupon Codes – Couponsbit",
+        alt: "Gymshark Promo Code & Coupon Codes – Couponsbit",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Gymshark Promo Code: Save 50% on Jackets & Sports Bras | Nov 2026",
+    title: "Gymshark Promo Code: Soft Sculpt Sports Bra 50% Off | Nov 2026",
     description:
-      "Save with a Gymshark Promo Code and Gymshark Discount Code. Get 50% off Lift Seamless Zip Up Jacket and 50% off Soft Sculpt Sports Bra. Verified Nov 2026.",
+      "Use a Gymshark Promo Code and Gymshark Discount Code to save 50% on Lift Seamless Jacket and Soft Sculpt Sports Bra. Verified Nov 2026 offers. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1792648467/gymshark-logo_hvljlf.webp"],
     site: "@couponsbit",
   },
@@ -73,9 +73,9 @@ const gymsharkSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/gymshark-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/gymshark-discount-code",
-      name: "Gymshark Promo Code: Save 50% on Jackets & Sports Bras | Nov 2026",
+      name: "Gymshark Promo Code: Soft Sculpt Sports Bra 50% Off | Nov 2026",
       description:
-        "Save with a Gymshark Promo Code and Gymshark Discount Code. Get 50% off Lift Seamless Zip Up Jacket and 50% off Soft Sculpt Sports Bra. Verified Nov 2026.",
+        "Use a Gymshark Promo Code and Gymshark Discount Code to save 50% on Lift Seamless Jacket and Soft Sculpt Sports Bra. Verified Nov 2026 offers. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -94,8 +94,8 @@ const gymsharkSchema = {
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/gymshark-discount-code#offerlist",
-      name: "Gymshark Discount Codes & Coupon Codes",
-      description: "Latest Gymshark discount codes and offers.",
+      name: "Gymshark Promo Codes & Coupon Codes",
+      description: "Latest Gymshark Promo Codes and offers.",
       url: "https://www.couponsbit.us/stores/gymshark-discount-code",
       numberOfItems: GYMSHARK_COUPONS.length,
       itemListElement: gymsharkOffers.map((offer, i) => ({

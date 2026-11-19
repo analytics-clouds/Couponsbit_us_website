@@ -68,25 +68,22 @@ export default function AvisCouponsContent() {
   const [modalData, setModalData] = useState<{
     isOpen: boolean;
     code: string;
-    affiliateUrl: string;
     title: string;
   }>({
     isOpen: false,
     code: "",
-    affiliateUrl: "",
     title: "",
   });
 
-  const handleCopyCode = (code: string, id: string, affiliateUrl: string, title: string) => {
+  const handleCopyCode = (code: string, id: string, title: string) => {
     navigator.clipboard.writeText(code);
     setCopiedId(id);
     setModalData({
       isOpen: true,
       code,
-      affiliateUrl,
       title,
     });
-    window.open(affiliateUrl, "_blank", "noopener,noreferrer");
+    window.open(STORE_URL, "_blank", "noopener,noreferrer");
     setTimeout(() => {
       setCopiedId(null);
     }, 3000);
@@ -144,7 +141,7 @@ export default function AvisCouponsContent() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href={modalData.affiliateUrl}
+                href={STORE_URL}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 onClick={() => setModalData(prev => ({ ...prev, isOpen: false }))}
@@ -216,7 +213,7 @@ export default function AvisCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">Ratings</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Looking for the latest Avis discount code? Save up to 40% on eligible late-night pickups and enjoy up to 35% off select car rentals with verified Avis deals. You can also find discounts on airport rides, USA rentals, winter travel, and exclusive member offers throughout Nov 2026. Whether you're planning a business trip, family vacation, or weekend getaway, Avis helps you save more with flexible rental options, free vehicle upgrades, and limited-time promotions.
+                      Avis travelers can use an Avis Promo Code in Nov 2026 to unlock verified savings, including up to 40% off late-night pickup rentals and up to 35% off eligible vehicle bookings. Additional offers include up to 20% off Winter Sale rentals and USA reservations. An Avis Discount Code helps frequent renters find better rates on car hire, airport rides, and travel services. Tested deals make planning affordable trips easier with flexible savings on selected Avis bookings.
                     </p>
                     <div className="flex items-center gap-3 mt-4 mb-2">
                       <a
@@ -441,7 +438,7 @@ export default function AvisCouponsContent() {
                               <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
                                 {coupon.code ? (
                                   <button
-                                    onClick={() => handleCopyCode(coupon.code!, coupon.id, coupon.affiliateUrl, coupon.title)}
+                                    onClick={() => handleCopyCode(coupon.code!, coupon.id, coupon.title)}
                                     className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[16px] sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2"
                                   >
                                     {isCopied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
@@ -449,7 +446,7 @@ export default function AvisCouponsContent() {
                                   </button>
                                 ) : (
                                   <a
-                                    href={coupon.affiliateUrl}
+                                    href={STORE_URL}
                                     target="_blank"
                                     rel="nofollow noopener noreferrer"
                                     aria-label={`Get Avis deal: ${coupon.title}`}
@@ -840,7 +837,7 @@ export default function AvisCouponsContent() {
                           <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.topLabel} {deal.mainValue} {deal.offText}</p>
                           <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.title}</p>
                         </div>
-                        <a href={deal.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Avis deal: ${deal.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                        <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Avis deal: ${deal.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
                       </div>
                     ))}
                   </div>

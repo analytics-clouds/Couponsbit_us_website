@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import EpicCouponsContent from "./_components/StoreCouponsContent";
+import { EPIC_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Epic Discount Code: Save Extra 25% OFF + 7-Day Free Trial | Sept 2026",
+    absolute: "Epic Promo Code: Up to 30% Off Adventure Gear | Nov 2026",
   },
   description:
-    "Find the latest Epic discount code and Epic promo code at Maxiku Offers. Save an extra 25% OFF the Family annual plan, enjoy a 7-day free trial, and access 40,000+ kids' books, videos, and audiobooks.",
+    "Use an Epic Promo Code and Epic Discount Code to save up to 30% with code B30 and 20% with code D on adventure gear. Verified Nov 2026 offers. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/epic-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/epic-discount-code",
-    title: "Epic Discount Code: Save Extra 25% OFF + 7-Day Free Trial | Sept 2026",
+    title: "Epic Promo Code: Up to 30% Off Adventure Gear | Nov 2026",
     description:
-      "Find the latest Epic discount code and Epic promo code at Maxiku Offers. Save an extra 25% OFF the Family annual plan, enjoy a 7-day free trial, and access 40,000+ kids' books, videos, and audiobooks.",
+      "Use an Epic Promo Code and Epic Discount Code to save up to 30% with code B30 and 20% with code D on adventure gear. Verified Nov 2026 offers. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Epic Discount Code: Save Extra 25% OFF + 7-Day Free Trial | Sept 2026",
+    title: "Epic Promo Code: Up to 30% Off Adventure Gear | Nov 2026",
     description:
-      "Find the latest Epic discount code and Epic promo code at Maxiku Offers. Save an extra 25% OFF the Family annual plan, enjoy a 7-day free trial, and access 40,000+ kids' books, videos, and audiobooks.",
+      "Use an Epic Promo Code and Epic Discount Code to save up to 30% with code B30 and 20% with code D on adventure gear. Verified Nov 2026 offers. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789032950/epic-logo_kxo5y0.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const epicSchema = {
@@ -63,9 +66,9 @@ const epicSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/epic-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/epic-discount-code",
-      name: "Epic Discount Code: Save Extra 25% OFF + 7-Day Free Trial | Sept 2026",
+      name: "Epic Promo Code: Up to 30% Off Adventure Gear | Nov 2026",
       description:
-        "Find the latest Epic discount code and Epic promo code at Maxiku Offers. Save an extra 25% OFF the Family annual plan, enjoy a 7-day free trial, and access 40,000+ kids' books, videos, and audiobooks.",
+        "Use an Epic Promo Code and Epic Discount Code to save up to 30% with code B30 and 20% with code D on adventure gear. Verified Nov 2026 offers. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,15 +83,20 @@ const epicSchema = {
       name: "Epic Games Discount Codes & Coupon Codes",
       description: "Latest Epic Games discount codes and offers on PC game titles.",
       url: "https://www.couponsbit.us/stores/epic-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Epic Discount Code – Extra 25% OFF Annual Family Plan", description: "Get an Extra 25% OFF the Epic Family annual membership in the USA.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Epic Discount Code – Family Free Trial with 7-Day Trial", description: "Explore Epic’s digital library with 40,000+ high-quality books, videos and audiobooks for kids across the USA.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Epic Discount Code – Family Monthly Plan for $13.99/Month", description: "Choose Epic Family’s flexible monthly membership for $13.99/month in the USA.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Epic Discount Code – 12-Month Subscription for $84.99", description: "Get a 12-month Epic subscription for $84.99 and give kids a year of reading and discovery.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Epic 12-Month Subscription – $84.99", description: "Enjoy a full year of access to Epic’s digital library for kids for $84.99.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Epic 3-Month Subscription – $39.99", description: "Get three months of Epic access for $39.99 with the 3-month subscription.", url: "https://www.couponsbit.us/stores/epic-discount-code", seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" } } },
-      ],
+      numberOfItems: EPIC_COUPONS.length,
+      itemListElement: EPIC_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/epic-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Epic Games", url: "https://store.epicgames.com" },
+        },
+      })),
     },
 
     {
@@ -111,6 +119,13 @@ const epicSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/epic-discount-code#brand",
+      name: "Epic Games",
+      url: "https://store.epicgames.com",
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/epic-discount-code#breadcrumb",
       itemListElement: [
@@ -121,99 +136,99 @@ const epicSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/epic-discount-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Epic offer promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic periodically offers promotional campaigns, free trials, and other subscription offers. Availability and eligibility can change, so check CouponsBit and Epic's current terms before subscribing."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/epic-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Epic offer promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic periodically offers promotional campaigns, free trials, and other subscription offers. Availability and eligibility can change, so check CouponsBit and Epic's current terms before subscribing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find an Epic promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can check CouponsBit for current Epic promo codes, coupon offers, and subscription deals before signing up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Epic have a free trial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic currently promotes a free trial for families. The length and terms of the trial can change, so check the current offer before signing up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Epic free for teachers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic School currently provides free access for educators and students during designated school hours on weekdays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many books does Epic have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic currently promotes a library of more than 40,000 books, audiobooks, and learning videos from more than 250 publishers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What age is Epic for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic is designed primarily for children 12 and under, with content available across different ages and reading levels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Epic have audiobooks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Epic includes audiobooks and Read-To-Me books, giving children options to listen to stories as well as read them independently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Epic have educational videos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Epic's library includes educational videos covering subjects and activities such as science, math, DIY, yoga, and other learning topics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can parents track what their children read on Epic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic Family includes a parent dashboard where parents can see what their children are reading and suggest books."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Epic safe for kids?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic describes its platform as ad-free, curated by experts, and designed specifically for children. It also provides parent controls to help families guide their children's reading experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can children read Epic books offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epic Family promotes offline reading as one of its features, allowing children to continue reading outside an internet connection."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Where can I find an Epic promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check CouponsBit for current Epic promo codes, coupon offers, and subscription deals before signing up."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Epic have a free trial?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic currently promotes a free trial for families. The length and terms of the trial can change, so check the current offer before signing up."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Epic free for teachers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic School currently provides free access for educators and students during designated school hours on weekdays."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many books does Epic have?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic currently promotes a library of more than 40,000 books, audiobooks, and learning videos from more than 250 publishers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What age is Epic for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic is designed primarily for children 12 and under, with content available across different ages and reading levels."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Epic have audiobooks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Epic includes audiobooks and Read-To-Me books, giving children options to listen to stories as well as read them independently."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Epic have educational videos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Epic's library includes educational videos covering subjects and activities such as science, math, DIY, yoga, and other learning topics."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can parents track what their children read on Epic?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic Family includes a parent dashboard where parents can see what their children are reading and suggest books."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Epic safe for kids?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic describes its platform as ad-free, curated by experts, and designed specifically for children. It also provides parent controls to help families guide their children's reading experience."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can children read Epic books offline?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Epic Family promotes offline reading as one of its features, allowing children to continue reading outside an internet connection."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -224,7 +239,7 @@ export default function EpicStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(epicSchema) }} />
-      <EpicCouponsContent />
+      <Suspense fallback={null}><EpicCouponsContent /></Suspense>
     </>
   );
 }

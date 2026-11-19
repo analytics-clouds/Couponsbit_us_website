@@ -1,180 +1,268 @@
-export interface Offer {
+export interface Coupon {
   id: string;
-  label: string;
-  value: string;
+  topLabel: string;
+  mainValue: string;
+  offText: string;
   title: string;
-  desc: string;
-  bullets: string[];
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+  points: string[];
 }
 
-export const OFFERS: Offer[] = [
+export const OFFERS: Coupon[] = [
   {
-    id: "c1",
-    label: "JOIN",
-    value: "GIVEAWAY",
-    title: "Anantara Discount Code – Join the D$50,000 Rewards Giveaway",
-    desc: "Sign up for Minor DISCOVERY to become eligible for an exclusive prize draw featuring cash rewards and premium membership benefits.",
-    bullets: [
-      "Register for the D$50,000 promotional giveaway.",
-      "One winner can receive D$5,000 or lifetime Titanium status.",
-      "Joining Minor DISCOVERY is required to participate.",
-      "Entries are accepted for a limited promotional period."
-    ]
+    id: "anantara1",
+    topLabel: "WIN",
+    mainValue: "$50,000",
+    offText: "GIVEAWAY",
+    title: "Anantara Promo Code – Join the $50,000 Rewards Giveaway",
+    description: "Join Minor DISCOVERY for a chance to take part in the $50,000 rewards giveaway.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Joining Minor DISCOVERY makes you eligible for the giveaway.",
+      "The giveaway includes a chance to win cash rewards and membership benefits.",
+      "Membership gives you access to travel offers and rewards.",
+      "Eligibility rules and official terms apply, so read them before you enter.",
+    ],
   },
   {
-    id: "c2",
-    label: "FROM",
-    value: "$563",
-    title: "Anantara Discount Code – Dhigu Maldives Stays from $563",
-    desc: "Plan more days in the Maldives and unlock better room pricing at Anantara Dhigu from $563 per night.",
-    bullets: [
-      "Nightly rates begin at $563.",
-      "Extra nights can qualify for better accommodation pricing.",
-      "Choose from beachfront villas and island-style accommodations.",
-      "Available on eligible reservations."
-    ]
+    id: "anantara2",
+    topLabel: "FROM",
+    mainValue: "$563",
+    offText: "PER NIGHT",
+    title: "Anantara Promo Code – Dhigu Maldives Stay From $563",
+    description: "Book a stay at Anantara Dhigu Maldives from $563 per night.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Rates start at $563 per night.",
+      "Covers stays at an island resort in the Maldives.",
+      "Lets you extend your trip with additional nights.",
+      "Rates vary by date and room type.",
+    ],
   },
   {
-    id: "c3",
-    label: "UP TO",
-    value: "25%",
-    title: "Anantara Promo Code – Riverside Bangkok Hotel Savings",
-    desc: "Reserve multiple nights at Anantara Riverside Bangkok and receive discounted pricing on qualifying bookings.",
-    bullets: [
-      "Get up to 25% off on select hotel stays.",
-      "Book rooms starting at just $172 per night.",
-      "Enjoy riverside accommodations with premium facilities.",
-      "Available on selected booking dates."
-    ]
+    id: "anantara3",
+    topLabel: "UP TO",
+    mainValue: "25%",
+    offText: "OFF",
+    title: "Anantara Discount Code – Up to 25% Off at Riverside Bangkok",
+    description: "Save up to 25% on stays at Anantara Riverside Bangkok.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 25% off qualifying hotel bookings.",
+      "Savings apply to qualifying multi-night stays.",
+      "Located on the river in Bangkok.",
+      "The exact discount depends on your dates and stay length.",
+    ],
   },
   {
-    id: "c4",
-    label: "FROM",
-    value: "$367",
-    title: "Anantara Promo Code – Desaru Coast Resort from $367",
-    desc: "Spend more time at Anantara Desaru Coast and receive reduced rates on longer vacations.",
-    bullets: [
-      "Accommodation starts from $367 per night.",
-      "Eligible reservations can receive up to 20% savings.",
-      "Experience luxury beachfront accommodations in Malaysia.",
-      "Promotion applies to qualifying stays."
-    ]
+    id: "anantara4",
+    topLabel: "FROM",
+    mainValue: "$367",
+    offText: "ONLY",
+    title: "Anantara Discount Code – Desaru Coast Resort From $367",
+    description: "Book a stay at Anantara Desaru Coast starting at $367.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Rooms start from $367.",
+      "Reduced rates apply to qualifying longer stays.",
+      "Includes resort amenities and a coastal setting.",
+      "Rates vary by date and room type.",
+    ],
   },
   {
-    id: "c5",
-    label: "FROM",
-    value: "$1,342",
-    title: "Golden Triangle Explorer Package – From $1,342",
-    desc: "Explore Northern Thailand with a premium travel package that includes accommodations, dining, and daily experiences.",
-    bullets: [
-      "Vacation packages begin at $1,342.",
-      "Includes meals, airport transportation, and selected activities.",
-      "Visit one of Thailand's most famous destinations.",
-      "Package inclusions vary by reservation."
-    ]
+    id: "anantara5",
+    topLabel: "FROM",
+    mainValue: "$1,342",
+    offText: "ONLY",
+    title: "Anantara Voucher Code – Golden Triangle Explorer Package From $1,342",
+    description: "Book the Golden Triangle Explorer Package in Northern Thailand, starting at $1,342.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The package starts at $1,342.",
+      "Includes accommodations, dining, and daily experiences.",
+      "Follows a planned itinerary through Northern Thailand.",
+      "Check the package details for what's included each day.",
+    ],
   },
   {
-    id: "c6",
-    label: "FROM",
-    value: "$311",
-    title: "Chiang Mai Flexible Stay – From $311",
-    desc: "Reserve your stay with added flexibility and adjust your travel plans when needed.",
-    bullets: [
-      "Rates begin at $311 per night.",
-      "Eligible bookings allow date modifications.",
-      "Enjoy luxury accommodations in Chiang Mai.",
-      "Flexible booking conditions apply."
-    ]
+    id: "anantara6",
+    topLabel: "FROM",
+    mainValue: "$311",
+    offText: "ONLY",
+    title: "Anantara Voucher Code – Chiang Mai Flexible Stay From $311",
+    description: "Book a flexible stay in Chiang Mai starting at $311.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Rooms start from $311.",
+      "Offers flexible booking options.",
+      "Lets you adjust your travel plans, subject to the booking terms.",
+      "A fit for travelers who like adaptable plans.",
+    ],
   },
   {
-    id: "c7",
-    label: "FROM",
-    value: "$4,801",
-    title: "Layan Residences Phuket – Luxury Stay from $4,801",
-    desc: "Experience spacious private residences overlooking the Andaman Sea with premium hospitality services.",
-    bullets: [
-      "Residences are available from $4,801.",
-      "Enjoy a private butler along with spacious and well-appointed living spaces.",
-      "Wake up to panoramic ocean views.",
-      "Flexible booking options are available on eligible reservations."
-    ]
+    id: "anantara7",
+    topLabel: "FROM",
+    mainValue: "$4,801",
+    offText: "ONLY",
+    title: "Anantara Coupon Code – Layan Residences Phuket From $4,801",
+    description: "Book a stay at Layan Residences Phuket starting at $4,801.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Stays start from $4,801.",
+      "Features private residences overlooking the Andaman Sea.",
+      "Includes hospitality services during your stay.",
+      "Rates vary by dates and residence type.",
+    ],
   },
   {
-    id: "c8",
-    label: "FROM",
-    value: "$377",
-    title: "Al Jabal Al Akhdar Mountain Stay – From $377",
-    desc: "Discover Oman's mountain landscapes while receiving reduced pricing on longer hotel stays.",
-    bullets: [
-      "Stay from as low as $377 per night.",
-      "Save up to 20% on qualifying reservations.",
-      "Enjoy luxury accommodations surrounded by mountain scenery.",
-      "Offer applies to eligible booking dates."
-    ]
+    id: "anantara8",
+    topLabel: "FROM",
+    mainValue: "$377",
+    offText: "ONLY",
+    title: "Anantara Coupon Code – Al Jabal Al Akhdar Stay From $377",
+    description: "Book a stay at Al Jabal Al Akhdar in Oman starting at $377.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Rooms start from $377.",
+      "Reduced pricing applies to qualifying longer stays.",
+      "Located in Oman's mountain region.",
+      "A fit for travelers looking for a nature getaway.",
+    ],
   },
   {
-    id: "c9",
-    label: "FROM",
-    value: "$351",
-    title: "Al Baleed Salalah Resort – From $351",
-    desc: "Choose a longer beach vacation at Al Baleed by Anantara and enjoy lower rates on qualifying stays.",
-    bullets: [
-      "Prices start from $351 per night.",
-      "Eligible reservations can receive up to 25% savings.",
-      "Minimum stay requirements may apply.",
-      "Located on the beautiful coastline of Oman."
-    ]
+    id: "anantara9",
+    topLabel: "FROM",
+    mainValue: "$351",
+    offText: "ONLY",
+    title: "Anantara Referral Code – Al Baleed Salalah Resort From $351",
+    description: "Book a stay at Al Baleed Salalah Resort by Anantara starting at $351.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Rooms start from $351.",
+      "Lower rates apply to qualifying longer stays.",
+      "A beachfront resort in Salalah.",
+      "A fit for travelers planning a longer coastal trip.",
+    ],
   },
   {
-    id: "c10",
-    label: "FROM",
-    value: "$834",
-    title: "Bazaruto Island Luxury Escape – From $834",
-    desc: "Book an island vacation featuring premium accommodations, dining, and resort experiences from $834.",
-    bullets: [
-      "Rates begin at $834 per night.",
-      "Dining and selected resort activities are included.",
-      "Stay on the beautiful Bazaruto Island in Mozambique.",
-      "Available for qualifying reservations."
-    ]
+    id: "anantara10",
+    topLabel: "FROM",
+    mainValue: "$834",
+    offText: "ONLY",
+    title: "Anantara Referral Code – Bazaruto Island Escape From $834",
+    description: "Book an island stay at Bazaruto starting at $834.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Stays start from $834.",
+      "Includes dining and resort services.",
+      "Set on a tropical island.",
+      "Rates vary by dates and accommodation type.",
+    ],
   },
   {
-    id: "c11",
-    label: "SAVE",
-    value: "15%",
-    title: "Villa Padierna Palace Early Booking – Save Up to 15%",
-    desc: "Reserve your room ahead of time to receive lower rates and breakfast for two.",
-    bullets: [
-      "Receive up to 15% off eligible advance reservations.",
-      "Accommodation starts from $436 per night.",
-      "Daily breakfast for two is included with qualifying bookings.",
-      "Early reservation is required for this offer."
-    ]
+    id: "anantara11",
+    topLabel: "UP TO",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Anantara Deals – Villa Padierna Palace Early Booking, Save 15%",
+    description: "Book early and save up to 15% on a stay at Villa Padierna Palace.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 15% off when you book in advance.",
+      "Includes complimentary breakfast for two.",
+      "Early booking terms apply, so check the dates.",
+      "A fit for travelers who plan ahead.",
+    ],
   },
   {
-    id: "c12",
-    label: "SAVE",
-    value: "35%",
-    title: "Mui Ne Resort Stay – Save Up to 35%",
-    desc: "Book additional nights at Anantara Mui Ne and receive larger savings on your vacation.",
-    bullets: [
-      "Enjoy savings of up to 35% on selected stays.",
-      "Room prices begin at $170 per night.",
-      "Enjoy beachfront accommodations in Vietnam.",
-      "Discount depends on reservation length."
-    ]
+    id: "anantara12",
+    topLabel: "UP TO",
+    mainValue: "35%",
+    offText: "OFF",
+    title: "Anantara Deals – Mui Ne Resort Stay, Save 35%",
+    description: "Save up to 35% on longer stays at Anantara Mui Ne.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 35% off qualifying bookings.",
+      "Booking extra nights increases your savings.",
+      "A beachfront resort in Vietnam.",
+      "The exact discount depends on how long you stay.",
+    ],
   },
   {
-    id: "c13",
-    label: "SAVE",
-    value: "15%",
-    title: "Palazzo Naiadi Rome Early Booking – Save Up to 15%",
-    desc: "Plan your Rome vacation in advance to receive discounted room rates and complimentary breakfast.",
-    bullets: [
-      "Save up to 15% on eligible advance bookings.",
-      "Nightly rates start from $505.",
-      "Selected reservations include breakfast for two.",
-      "Available for qualifying advance purchases."
-    ]
+    id: "anantara13",
+    topLabel: "UP TO",
+    mainValue: "15%",
+    offText: "OFF",
+    title: "Anantara Cart Code – Palazzo Naiadi Rome, Save 15%",
+    description: "Book early and save up to 15% on a stay at Palazzo Naiadi in Rome.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 15% off Palazzo Naiadi stays.",
+      "Includes complimentary breakfast when you book in advance.",
+      "Located in central Rome.",
+      "A fit for travelers organizing a future trip.",
+    ],
+  },
+  {
+    id: "anantara14",
+    topLabel: "HOT",
+    mainValue: "DEALS",
+    offText: "SAVE",
+    title: "Anantara Offers – Resort and Hotel Savings",
+    description: "Browse current Anantara hotel and resort offers.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Lists savings across Anantara hotels and resorts.",
+      "Includes destinations in the Maldives, Thailand, Oman, and Europe.",
+      "Some offers include dining or other extras.",
+      "Check each offer for dates and terms.",
+    ],
   },
 ];

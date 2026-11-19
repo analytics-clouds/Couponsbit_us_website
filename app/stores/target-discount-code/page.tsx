@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import TargetCouponsContent from "./_components/StoreCouponsContent";
+import { TARGET_COUPONS } from "./_components/offers";
 
-const TITLE = "Target discount Code - Save Up to $100 + Up to 50% OFF | Nov 2026";
+const TITLE = "Target Promo Code: Up to 50% Off Pillows & Bedding | Nov 2026";
 const DESCRIPTION =
-  "Find the latest Target discount code, promo code, and deals for Nov 2026. Save up to $100 on select Apple devices, get 50% OFF clothing and bedding, and 40% OFF Gucci fragrance.";
+  "Use a Target promo code and Target discount code to save up to 50% on pillows and bedding plus 13% off Sharpie S-Gel Pens for $4.89. Verified Nov 2026 deals. Save now.";
 
 export const metadata: Metadata = {
   title: {
@@ -90,41 +91,20 @@ const targetSchema = {
       name: "Target Discount Codes & Coupon Codes",
       description: "Latest Target discount codes and offers for general merchandise, groceries and same-day delivery.",
       url: "https://www.couponsbit.us/stores/target-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "Target Promo Code – Save Up to $100 on Apple Devices", description: "Save up to $100 on select Apple devices", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
+      numberOfItems: TARGET_COUPONS.length,
+      itemListElement: TARGET_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/target-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "Target Promo Code – Up to 50% OFF Pillows & Bedding", description: "Get up to 50% OFF select pillows and bedding", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "Target Promo Code – Up to 50% OFF Clothing for All", description: "Save up to 50% OFF select clothing for women, men and kids", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "Target – Up to 40% OFF Storage & Home Improvement", description: "Save up to 40% OFF select storage and home improvement products", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "Target – Sharpie S-Gel Pens 4-Pack | 13% OFF", description: "Get the Sharpie S-Gel Pens 4-pack for $4.89, down from $5.59", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "Target – Gucci Guilty Elixir de Parfum Pour Homme | 40% OFF", description: "Shop Gucci Guilty Elixir de Parfum Pour Homme for $109.80, down from $183", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 7,
-          item: { "@type": "Offer", name: "Target – Women’s Eloise Sandals | Clearance Sale", description: "Get Women’s Eloise Sandals with Memory Foam Insole for $24.50, down from $35", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-        {
-          "@type": "ListItem", position: 8,
-          item: { "@type": "Offer", name: "Target – Champion Men’s Big Script T-Shirt | Under $20", description: "Shop the Champion Men’s Big Script T-Shirt for $12.60–$18.00", url: "https://www.couponsbit.us/stores/target-discount-code", seller: { "@type": "Organization", name: "Target", url: "https://www.target.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -157,59 +137,59 @@ const targetSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/target-discount-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Target?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Target is one of the largest retail chains in the United States, offering groceries, electronics, clothing, beauty products, home goods, toys, pet supplies, and much more through its stores and online platform."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/target-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Target?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Target is one of the largest retail chains in the United States, offering groceries, electronics, clothing, beauty products, home goods, toys, pet supplies, and much more through its stores and online platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Target Circle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Target Circle is Target's free loyalty program that provides members with automatic deals, personalized offers, rewards, and exclusive member benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What products can I buy at Target?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Target sells products across categories including groceries, home décor, electronics, furniture, apparel, beauty, baby products, toys, pet supplies, and household essentials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find a Target discount code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find the latest Target discount code, Target voucher, Target promo code, and Target Promo Code on CouponsBit before placing your order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Target offer online shopping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Customers can shop online through the Target website or app and choose shipping, in-store pickup, Drive Up, or same-day delivery for eligible orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CouponsBit free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. CouponsBit is completely free and helps shoppers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "What is Target Circle?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Target Circle is Target's free loyalty program that provides members with automatic deals, personalized offers, rewards, and exclusive member benefits."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What products can I buy at Target?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Target sells products across categories including groceries, home décor, electronics, furniture, apparel, beauty, baby products, toys, pet supplies, and household essentials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I find a Target discount code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can find the latest Target discount code, Target voucher, Target promo code, and Target coupon code on CouponsBit before placing your order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Target offer online shopping?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Customers can shop online through the Target website or app and choose shipping, in-store pickup, Drive Up, or same-day delivery for eligible orders."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is CouponsBit free to use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. CouponsBit is completely free and helps shoppers discover verified discount codes, vouchers, promo codes, and coupon codes from trusted global brands."
-      }
-    }
-  ]
-},
   ],
 };
 

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import TheAyurvedaExperienceCouponsContent from "./_components/StoreCouponsContent";
+import { AYURVEDA_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Nov 2026",
+    absolute: "The Ayurveda Experience Promo Code: 50% Off Yauvari | Nov 2026",
   },
   description:
-    "Find The Ayurveda Experience discount code, promo code, and skincare deals for Nov 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+    "The Ayurveda Experience Promo Code and Discount Code offer 50% off Yauvari Youth Spring plus 20% off skincare. Get verified Nov 2026 deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
-    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Nov 2026",
+    title: "The Ayurveda Experience Promo Code: 50% Off Yauvari | Nov 2026",
     description:
-      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Nov 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+      "The Ayurveda Experience Promo Code and Discount Code offer 50% off Yauvari Youth Spring plus 20% off skincare. Get verified Nov 2026 deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Nov 2026",
+    title: "The Ayurveda Experience Promo Code: 50% Off Yauvari | Nov 2026",
     description:
-      "Find The Ayurveda Experience discount code, promo code, and skincare deals for Nov 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+      "The Ayurveda Experience Promo Code and Discount Code offer 50% off Yauvari Youth Spring plus 20% off skincare. Get verified Nov 2026 deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787295215/tae-logo_dwfmfi.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const theAyurvedaExperienceSchema = {
@@ -63,9 +66,9 @@ const theAyurvedaExperienceSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
-      name: "The Ayurveda Experience Discount Code – Get 50% OFF + Skincare Deals | Nov 2026",
+      name: "The Ayurveda Experience Promo Code: 50% Off Yauvari | Nov 2026",
       description:
-        "Find The Ayurveda Experience discount code, promo code, and skincare deals for Nov 2026. Get 50% OFF Yauvari Youth Spring, save 10% on the Face Oil Duo, and shop skincare from $35.",
+        "The Ayurveda Experience Promo Code and Discount Code offer 50% off Yauvari Youth Spring plus 20% off skincare. Get verified Nov 2026 deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -80,33 +83,20 @@ const theAyurvedaExperienceSchema = {
       name: "The Ayurveda Experience Discount Codes & Coupon Codes",
       description: "Latest The Ayurveda Experience discount codes and offers for Ayurvedic hair, skin and wellness products.",
       url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          "@type": "ListItem", position: 1,
-          item: { "@type": "Offer", name: "The Ayurveda Experience Discount Code – Yauvari Amplified Youth Spring | FLAT 50% OFF", description: "Get Yauvari Amplified Youth Spring for just $24, down from $48.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
+      numberOfItems: AYURVEDA_COUPONS.length,
+      itemListElement: AYURVEDA_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" },
         },
-        {
-          "@type": "ListItem", position: 2,
-          item: { "@type": "Offer", name: "he Ayurveda Experience Discount Code– Day & Night Face Oil Duo | SAVE 10% –", description: "Get the Day & Night Face Oil Duo for $81, down from $90.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
-        },
-        {
-          "@type": "ListItem", position: 3,
-          item: { "@type": "Offer", name: "The Ayurveda Experience Promo Code – Balaayah Firming Body Oil | JUST $45", description: "Shop Balaayah Firming Body Oil for only $45.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
-        },
-        {
-          "@type": "ListItem", position: 4,
-          item: { "@type": "Offer", name: "The Ayurveda Experience Promo Code – Firm-Focus Neck Mask | FROM $45", description: "Get the Firm-Focus Neck Mask from $45.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
-        },
-        {
-          "@type": "ListItem", position: 5,
-          item: { "@type": "Offer", name: "The Ayurveda Experience – Cerabuild Face & Neck Cream | FROM $45", description: "Get Cerabuild Face & Neck Cream from $45.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
-        },
-        {
-          "@type": "ListItem", position: 6,
-          item: { "@type": "Offer", name: "The Ayurveda Experience – 5 Mini Skincare Essentials | JUST $35", description: "Get 5 bestselling mini skincare essentials for just $35.", url: "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code", seller: { "@type": "Organization", name: "The Ayurveda Experience", url: "https://theayurvedaexperience.com" } },
-        },
-      ],
+      })),
     },
 
     {
@@ -126,6 +116,13 @@ const theAyurvedaExperienceSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/the-ayurveda-experience-discount-code#brand",
+      name: "The Ayurveda Experience",
+      url: "https://theayurvedaexperience.com",
     },
 
     {
@@ -157,7 +154,7 @@ export default function TheAyurvedaExperienceStorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(theAyurvedaExperienceSchema) }} />
-      <TheAyurvedaExperienceCouponsContent />
+      <Suspense fallback={null}><TheAyurvedaExperienceCouponsContent /></Suspense>
     </>
   );
 }

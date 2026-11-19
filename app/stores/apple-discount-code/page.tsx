@@ -5,10 +5,10 @@ import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Apple Promo Code: Get 20% Off + $150 Gift Card | Nov 2026",
+    absolute: "Apple Promo Code: Get 25% Off With Code MSM | Nov 2026",
   },
   description:
-    "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
+    "Use an Apple Promo Code and Apple Discount Code with code MSM for 25% off eligible purchases and get up to $150 gift card on qualifying Mac and iPad deals. Verified Nov 2026 offers.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/apple-discount-code",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/apple-discount-code",
     title: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
     description:
-      "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
+      "Use an Apple Promo Code and Apple Discount Code with code MSM for 25% off eligible purchases and get up to $150 gift card on qualifying Mac and iPad deals. Verified Nov 2026 offers.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp",
         width: 1200,
         height: 630,
-        alt: "Apple Discount Code & Coupon Codes – Couponsbit",
+        alt: "Apple Discount Code & Promo Codes – Couponsbit",
       },
     ],
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
     description:
-      "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
+      "Use an Apple Promo Code and Apple Discount Code with code MSM for 25% off eligible purchases and get up to $150 gift card on qualifying Mac and iPad deals. Verified Nov 2026 offers.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787205138/apple-logo_vrakxu.webp"],
     site: "@couponsbit",
   },
@@ -68,7 +68,7 @@ const appleSchema = {
       url: "https://www.couponsbit.us/stores/apple-discount-code",
       name: "Apple Promo Code: 20% Off + $150 Gift Card | Nov 2026",
       description:
-        "Use an Apple Promo Code and Apple Discount Code to save 20% on eligible products or get up to a $150 gift card with education pricing. Verified Nov 2026.",
+        "Use an Apple Promo Code and Apple Discount Code with code MSM for 25% off eligible purchases and get up to $150 gift card on qualifying Mac and iPad deals. Verified Nov 2026 offers.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       datePublished: "2026-01-01",
@@ -80,7 +80,7 @@ const appleSchema = {
     {
       "@type": "ItemList",
       "@id": "https://www.couponsbit.us/stores/apple-discount-code#offerlist",
-      name: "Apple Discount Codes & Coupon Codes",
+      name: "Apple Discount Codes & Promo Codes",
       description: "Latest Apple discount codes and offers for iPhone, Mac, iPad and accessories.",
       url: "https://www.couponsbit.us/stores/apple-discount-code",
       numberOfItems: OFFERS.length,
@@ -90,8 +90,10 @@ const appleSchema = {
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
+          description: o.description,
           url: "https://www.couponsbit.us/stores/apple-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Apple", url: "https://www.apple.com" },
         },
       })),
@@ -135,99 +137,99 @@ const appleSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/apple-discount-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Where Can I Find an Apple Discount Code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check CouponsBit for available Apple discount codes, coupons, deals, and promotions before making a purchase."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/apple-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where Can I Find an Apple Discount Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can check CouponsBit for available Apple discount codes, coupons, deals, and promotions before making a purchase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Is an Apple Promo Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An Apple Promo Code is a promotional code that may provide a discount or another benefit on eligible products or purchases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Apple Always Offer Discount Codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Apple does not continuously run traditional coupon-code promotions. Savings may instead come through education pricing, trade-in offers, seasonal promotions, carrier deals, refurbished products, gift-card promotions, and other incentives."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Apple Have Sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple does offer promotional campaigns, but its approach is generally different from retailers that run frequent sitewide percentage-off sales. Promotions can include education savings, trade-in credits, gift cards, carrier offers, refurbished products, and limited-time campaigns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When Does Apple Run Back-to-School Sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple typically runs education-focused promotions around the back-to-school period. The exact dates and benefits depend on the country and year. Apple's 2026 U.S. promotion runs from July 16 through August 27, while the current India promotion uses the same promotional dates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Apple Offer Student Discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Apple provides education pricing for eligible students and educators. Current education offers include special pricing on selected Mac and iPad products and other student-focused benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Apple Have a Trade-In Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Apple Trade In allows customers to receive credit toward an eligible purchase or an Apple Gift Card when trading in an eligible device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Buy Refurbished Apple Products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Apple offers Certified Refurbished products, providing an alternative to buying new devices. Apple's U.S. store states that its refurbished products come with a one-year warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Products Does Apple Sell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple sells iPhone, Mac, iPad, Apple Watch, Apple Vision Pro, AirPods, AirTag, Apple TV 4K, HomePod, accessories, and Apple Gift Cards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Apple Sell Accessories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Apple has a large accessories section covering chargers, adapters, cases, cables, keyboards, mice, storage, headphones, speakers, Apple Pencil, watch bands, smart-home accessories, gaming products, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Get an Apple Discount on an iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Potential savings on an iPhone can come from trade-in credit, carrier promotions, seasonal campaigns, or other applicable offers. The exact promotion depends on the country, device, and current campaign. Apple's U.S. store currently advertises carrier deals that can provide significant credit toward eligible iPhone purchases."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "What Is an Apple Coupon Code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An Apple coupon code is a promotional code that may provide a discount or another benefit on eligible products or purchases."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Apple Always Offer Discount Codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Apple does not continuously run traditional coupon-code promotions. Savings may instead come through education pricing, trade-in offers, seasonal promotions, carrier deals, refurbished products, gift-card promotions, and other incentives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Apple Have Sales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apple does offer promotional campaigns, but its approach is generally different from retailers that run frequent sitewide percentage-off sales. Promotions can include education savings, trade-in credits, gift cards, carrier offers, refurbished products, and limited-time campaigns."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When Does Apple Run Back-to-School Sales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apple typically runs education-focused promotions around the back-to-school period. The exact dates and benefits depend on the country and year. Apple's 2026 U.S. promotion runs from July 16 through August 27, while the current India promotion uses the same promotional dates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Apple Offer Student Discounts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Apple provides education pricing for eligible students and educators. Current education offers include special pricing on selected Mac and iPad products and other student-focused benefits."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Apple Have a Trade-In Program?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Apple Trade In allows customers to receive credit toward an eligible purchase or an Apple Gift Card when trading in an eligible device."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I Buy Refurbished Apple Products?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Apple offers Certified Refurbished products, providing an alternative to buying new devices. Apple's U.S. store states that its refurbished products come with a one-year warranty."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Products Does Apple Sell?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apple sells iPhone, Mac, iPad, Apple Watch, Apple Vision Pro, AirPods, AirTag, Apple TV 4K, HomePod, accessories, and Apple Gift Cards."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Apple Sell Accessories?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Apple has a large accessories section covering chargers, adapters, cases, cables, keyboards, mice, storage, headphones, speakers, Apple Pencil, watch bands, smart-home accessories, gaming products, and more."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I Get an Apple Discount on an iPhone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Potential savings on an iPhone can come from trade-in credit, carrier promotions, seasonal campaigns, or other applicable offers. The exact promotion depends on the country, device, and current campaign. Apple's U.S. store currently advertises carrier deals that can provide significant credit toward eligible iPhone purchases."
-      }
-    }
-  ]
-},
   ],
 };
 

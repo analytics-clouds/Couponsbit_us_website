@@ -5,10 +5,10 @@ import { OBSBOT_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
+    absolute: "OBSBOT Promo Code: Tiny 2 Lite From $129 | Nov 2026",
   },
   description:
-    "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
+    "OBSBOT Promo Code and OBSBOT Discount Code feature Tiny 2 Lite from $129 plus Tail Air 4K from $499. Get verified Nov 2026 deals now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/obsbot-discount-code",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-    title: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
+    title: "OBSBOT Promo Code: Tiny 2 Lite From $129 | Nov 2026",
     description:
-      "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
+      "OBSBOT Promo Code and OBSBOT Discount Code feature Tiny 2 Lite from $129 plus Tail Air 4K from $499. Get verified Nov 2026 deals now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB"],
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
+    title: "OBSBOT Promo Code: Tiny 2 Lite From $129 | Nov 2026",
     description:
-      "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
+      "OBSBOT Promo Code and OBSBOT Discount Code feature Tiny 2 Lite from $129 plus Tail Air 4K from $499. Get verified Nov 2026 deals now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1782373659/obsbot-coupon-code_rs8fff.jpg"],
     site: "@couponsbit",
   },
@@ -79,9 +79,9 @@ const obsbotSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
-      name: "OBSBOT Discount Code: AI Webcams from $49 | Nov 2026",
+      name: "OBSBOT Promo Code: Tiny 2 Lite From $129 | Nov 2026",
       description:
-        "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
+        "OBSBOT Promo Code and OBSBOT Discount Code feature Tiny 2 Lite from $129 plus Tail Air 4K from $499. Get verified Nov 2026 deals now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -107,7 +107,7 @@ const obsbotSchema = {
       "@id": "https://www.couponsbit.us/stores/obsbot-discount-code#offerlist",
       name: "Obsbot Coupon Codes & Promo Codes",
       description:
-        "Get the latest OBSBOT Discount Code and OBSBOT Promo Code for November 2026. Shop AI webcams, 4K cameras, and accessories from just $49.",
+        "OBSBOT Promo Code and OBSBOT Discount Code feature Tiny 2 Lite from $129 plus Tail Air 4K from $499. Get verified Nov 2026 deals now.",
       url: "https://www.couponsbit.us/stores/obsbot-discount-code",
       numberOfItems: OBSBOT_COUPONS.length,
       itemListElement: obsbotOffers.map((offer, index) => ({

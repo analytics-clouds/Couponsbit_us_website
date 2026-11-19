@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AnantaraContent from "./_components/StoreCouponsContent";
 import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Anantara Discount Code – 35% OFF Hotels & 25% OFF Stays",
+    absolute: "Anantara Deals: Save 35% on Mui Ne Resort Stays | Nov 2026",
   },
   description:
-    "Save more with the latest Anantara Discount Code and Anantara Promo Code. Enjoy 35% OFF luxury stays and 25% OFF resort bookings. Book now.",
+    "Use an Anantara promo code and Anantara discount code to save up to 35% on Mui Ne stays and book Chiang Mai stays from $311. Verified Nov 2026 offers. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/anantara-discount-code",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/anantara-discount-code",
-    title: "Anantara Discount Code – 35% OFF Hotels & 25% OFF Stays",
+    title: "Anantara Deals: Save 35% on Mui Ne Resort Stays | Nov 2026",
     description:
-      "Save more with the latest Anantara Discount Code and Anantara Promo Code. Enjoy 35% OFF luxury stays and 25% OFF resort bookings. Book now.",
+      "Use an Anantara promo code and Anantara discount code to save up to 35% on Mui Ne stays and book Chiang Mai stays from $311. Verified Nov 2026 offers. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Anantara Discount Code – 35% OFF Hotels & 25% OFF Stays",
+    title: "Anantara Deals: Save 35% on Mui Ne Resort Stays | Nov 2026",
     description:
-      "Save more with the latest Anantara Discount Code and Anantara Promo Code. Enjoy 35% OFF luxury stays and 25% OFF resort bookings. Book now.",
+      "Use an Anantara promo code and Anantara discount code to save up to 35% on Mui Ne stays and book Chiang Mai stays from $311. Verified Nov 2026 offers. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1792761721/anatara-logo_b50jv5.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +54,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const anantaraSchema = {
@@ -62,9 +65,9 @@ const anantaraSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/anantara-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/anantara-discount-code",
-      name: "Anantara Discount Code – 35% OFF Hotels & 25% OFF Stays",
+      name: "Anantara Deals: Save 35% on Mui Ne Resort Stays | Nov 2026",
       description:
-        "Save more with the latest Anantara Discount Code and Anantara Promo Code. Enjoy 35% OFF luxury stays and 25% OFF resort bookings. Book now.",
+        "Use an Anantara promo code and Anantara discount code to save up to 35% on Mui Ne stays and book Chiang Mai stays from $311. Verified Nov 2026 offers. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -86,8 +89,10 @@ const anantaraSchema = {
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
+          description: o.description,
           url: "https://www.couponsbit.us/stores/anantara-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Anantara Hotels, Resorts & Spas", url: "https://www.anantara.com" },
         },
       })),
@@ -113,6 +118,13 @@ const anantaraSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/anantara-discount-code#brand",
+      name: "Anantara Hotels, Resorts & Spas",
+      url: "https://www.anantara.com",
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/anantara-discount-code#breadcrumb",
       itemListElement: [
@@ -122,52 +134,52 @@ const anantaraSchema = {
       ],
     },
 
-   {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/anantara-discount-code#faq",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "Where can I find an Anantara promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Visit CouponsClouds to check available Anantara promo codes and booking deals. You can also explore the official Anantara offers page for property-specific promotions."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/anantara-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find an Anantara promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit CouponsClouds to check available Anantara promo codes and booking deals. You can also explore the official Anantara offers page for property-specific promotions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Anantara offer discounts on hotel bookings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anantara features promotional offers that may include longer-stay savings, advance-purchase rates, and special packages. Availability and benefits depend on the hotel and booking conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save by booking directly with Anantara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anantara promotes direct-booking benefits, including a best-rate guarantee subject to its terms. Review the official website for the applicable conditions and benefits before making a reservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Minor DISCOVERY?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minor DISCOVERY is the loyalty programme associated with Minor Hotels, the hotel group behind Anantara. Members can access eligible programme benefits and recognition when staying at participating properties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do all Anantara hotels accept the same promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Promotional terms can vary by property, destination, room type, and booking dates. Check the conditions of your specific offer before confirming your reservation."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Does Anantara offer discounts on hotel bookings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Anantara features promotional offers that may include longer-stay savings, advance-purchase rates, and special packages. Availability and benefits depend on the hotel and booking conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I save by booking directly with Anantara?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Anantara promotes direct-booking benefits, including a best-rate guarantee subject to its terms. Review the official website for the applicable conditions and benefits before making a reservation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Minor DISCOVERY?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minor DISCOVERY is the loyalty programme associated with Minor Hotels, the hotel group behind Anantara. Members can access eligible programme benefits and recognition when staying at participating properties."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do all Anantara hotels accept the same promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Promotional terms can vary by property, destination, room type, and booking dates. Check the conditions of your specific offer before confirming your reservation."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -175,7 +187,9 @@ export default function AnantaraPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(anantaraSchema) }} />
-      <AnantaraContent />
+      <Suspense fallback={null}>
+        <AnantaraContent />
+      </Suspense>
     </>
   );
 }

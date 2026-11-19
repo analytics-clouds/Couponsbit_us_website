@@ -66,7 +66,7 @@ export default function AndieSwimCouponsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [openCoupon, setOpenCoupon] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -122,7 +122,7 @@ export default function AndieSwimCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(3.2k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save on premium swimwear with the latest Andie Swim Discount Code. Enjoy up to 60% OFF selected one-piece swimsuits and receive a free gift with eligible Support Edit purchases. Use an Andie Swim Promo Code to unlock verified savings on stylish swimsuits, accessories, and seasonal collections.
+                      Andie Swim shoppers can use an Andie Swim promo code to find verified savings in Nov 2026, including up to 60% off the Lanikai One Piece and up to 40% off clearance swimwear styles. Additional offers include free shipping on orders over $150 and up to 50% off selected accessories. An Andie Swim discount code helps customers save on swimsuits, beachwear, and seasonal collections. Tested deals make it easier to refresh your swim wardrobe with stylish options at lower prices.
                     </p>
                     <a
                       href={STORE_URL}
@@ -144,11 +144,11 @@ export default function AndieSwimCouponsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -206,8 +206,9 @@ export default function AndieSwimCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.label}</p>
-                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.value}</div>
+                            <p className="uppercase tracking-[10px] sm:tracking-[5px] text-[8px] sm:text-[15px] font-semibold leading-3">{c.topLabel}</p>
+                            <div className="text-[15px] sm:text-4xl font-extrabold leading-none mt-2">{c.mainValue}</div>
+                            {c.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{c.offText}</p>}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -217,14 +218,14 @@ export default function AndieSwimCouponsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
+                            <button type="button" onClick={() => setOpenCoupon(openCoupon === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${openCoupon === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${openCoupon === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {c.points.map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -281,85 +282,85 @@ export default function AndieSwimCouponsContent() {
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Waves, name: "One-Piece Swimsuits", count: "15+", color: "text-blue-500", href: "/categories/fashion" },
-                        { icon: Sparkles, name: "Bikinis", count: "20+", color: "text-purple-500", href: "/categories/fashion" },
-                        { icon: Gift, name: "Cover-Ups", count: "10+", color: "text-pink-500", href: "/categories/fashion" },
-                        { icon: Truck, name: "Free Shipping", count: "12+", color: "text-teal-500", href: "/categories/fashion" },
-                        { icon: Search, name: "New Arrivals", count: "8+", color: "text-orange-500", href: "/categories/fashion" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Waves, name: "One-Piece Swimsuits", count: "15+", color: "text-blue-500", href: "/categories/fashion" },
+                      { icon: Sparkles, name: "Bikinis", count: "20+", color: "text-purple-500", href: "/categories/fashion" },
+                      { icon: Gift, name: "Cover-Ups", count: "10+", color: "text-pink-500", href: "/categories/fashion" },
+                      { icon: Truck, name: "Free Shipping", count: "12+", color: "text-teal-500", href: "/categories/fashion" },
+                      { icon: Search, name: "New Arrivals", count: "8+", color: "text-orange-500", href: "/categories/fashion" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Find Better Andie Swim Deals
-  </h3>
-  <div className="space-y-8">
-    {[
-      {
-        icon: Tag,
-        title: "Check CouponsBit Before Shopping",
-        sub: "Before placing your order, check CouponsBit for the latest Andie Swim discount code and current offers.",
-      },
-      {
-        icon: HeartHandshake,
-        title: "Sign Up For Emails",
-        sub: "Join Andie Swim's email list to get notified about new arrivals, restocks, and member-exclusive offers.",
-      },
-      {
-        icon: Calendar,
-        title: "Watch for Sales Events",
-        sub: "Seasonal sales and holiday promotions can be useful periods to check for extra discounts.",
-      },
-      {
-        icon: ShieldAlert,
-        title: "Check Promotion Restrictions",
-        sub: "A promotion may only apply to selected styles or sizes. Always read the terms before purchasing.",
-      },
-      {
-        icon: Gift,
-        title: "Bundle Your Order",
-        sub: "Bundling tops and bottoms together can often provide better value than buying separately.",
-      },
-      {
-        icon: Sparkles,
-        title: "Check the Size Guide",
-        sub: "Reviewing Andie Swim's size guide before ordering can help reduce the need for returns or exchanges.",
-      },
-      {
-        icon: Receipt,
-        title: "Review the Final Order",
-        sub: "Before completing your purchase, make sure any eligible promotion has been applied and review your complete order details.",
-      },
-    ].map((item) => (
-      <div key={item.title} className="flex gap-4 items-start">
-        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
-          <item.icon className="w-5 h-5" />
-        </div>
-        <div>
-          <p className="text-black font-black text-sm leading-tight mb-2">
-            {item.title}
-          </p>
-          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
-            {item.sub}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                  <h3 className="text-black font-black text-lg mb-8">
+                    How to Find Better Andie Swim Deals
+                  </h3>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        icon: Tag,
+                        title: "Check CouponsBit Before Shopping",
+                        sub: "Before placing your order, check CouponsBit for the latest Andie Swim discount code and current offers.",
+                      },
+                      {
+                        icon: HeartHandshake,
+                        title: "Sign Up For Emails",
+                        sub: "Join Andie Swim's email list to get notified about new arrivals, restocks, and member-exclusive offers.",
+                      },
+                      {
+                        icon: Calendar,
+                        title: "Watch for Sales Events",
+                        sub: "Seasonal sales and holiday promotions can be useful periods to check for extra discounts.",
+                      },
+                      {
+                        icon: ShieldAlert,
+                        title: "Check Promotion Restrictions",
+                        sub: "A promotion may only apply to selected styles or sizes. Always read the terms before purchasing.",
+                      },
+                      {
+                        icon: Gift,
+                        title: "Bundle Your Order",
+                        sub: "Bundling tops and bottoms together can often provide better value than buying separately.",
+                      },
+                      {
+                        icon: Sparkles,
+                        title: "Check the Size Guide",
+                        sub: "Reviewing Andie Swim's size guide before ordering can help reduce the need for returns or exchanges.",
+                      },
+                      {
+                        icon: Receipt,
+                        title: "Review the Final Order",
+                        sub: "Before completing your purchase, make sure any eligible promotion has been applied and review your complete order details.",
+                      },
+                    ].map((item) => (
+                      <div key={item.title} className="flex gap-4 items-start">
+                        <div className="w-10 h-10 shrink-0 bg-[#e8f6f8] rounded-2xl flex items-center justify-center text-[#056bfa]">
+                          <item.icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <p className="text-black font-black text-sm leading-tight mb-2">
+                            {item.title}
+                          </p>
+                          <p className="text-gray-500 font-medium text-[11px] leading-relaxed">
+                            {item.sub}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
 
               </div>
@@ -394,218 +395,218 @@ export default function AndieSwimCouponsContent() {
 
         {/* SEO Text Section */}
         <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-      {/* Main Content Area */}
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Andie Swim Discount Code, Coupon Code & Discount Offers
-        </h2>
+              {/* Main Content Area */}
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  Andie Swim Discount Code, Coupon Code & Discount Offers
+                </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["The Support Edit - Charity Offer", "10% Profits Donated", "All Users", "10% of profits donated to Breast Cancer Research Fund throughout October", "The Support Edit Collection"],
-        ["The Amalfi One Piece + Free Gift", "$112", "All Users", "Includes a free deluxe sample of MAËLYS So-Silky Foaming Body Scrub", "Amalfi One Piece"],
-        ["The Malibu One Piece + Free Gift", "$112", "All Users", "Includes a free deluxe sample of MAËLYS So-Silky Foaming Body Scrub", "Malibu One Piece (Sherbert)"],
-        ["The Lanikai One Piece Sale", "60% OFF ($57)", "All Users", "Reduced from $142 original price; designed for longer torsos", "Lanikai One Piece Long Torso"],
-        ["The Lucaya One Piece Sale", "Up to 60% OFF", "All Users", "Deep savings on selected one-piece styles while stock lasts", "Lucaya One Piece"],
-        ["Andie Swim Accessories Sale", "Up to 50% OFF", "All Users", "Discounts up to ~47% off on selected swimwear essentials & socks", "Selected Accessories"],
-        ["The Amalfi One Piece Sale", "Up to 60% OFF ($51)", "All Users", "Selected styles reduced from $128 to $51 in official sale collection", "Selected Amalfi One Piece"],
-        ["The Sahara Bikini Top Sale", "Up to 39% OFF", "All Users", "Discounted bikini tops to pair with coordinating swim bottoms", "Sahara Bikini Top"],
-        ["The Amalfi Swim Dress - Texture Edit", "20% OFF ($118)", "All Users", "Reduced from $148 original price; available in select prints & fits", "Amalfi Swim Dress"],
-        ["The Devon One Piece - Mom Edit", "Up to 30% OFF", "All Users", "Price reduction on comfortable swim styles with Long Torso/Plus options", "Devon One Piece"],
-        ["Andie Swim Free Shipping", "Free Shipping $150+", "US Customers", "Free standard shipping on eligible US orders exceeding $150", "Orders $150+"]
-      ].map((row, i, arr) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
-        <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-          <p>
-            Whether you're shopping for a new one-piece or building a mix-and-match bikini, Andie Swim offers a wide range of swimwear styles designed for a comfortable fit.
-          </p>
-          <p>
-            If you're planning your next swimwear purchase, checking for an Andie Swim discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Andie Swim coupon codes, promo offers, and other ways to potentially save on their order.
-          </p>
-          <p>
-            From new-customer offers to bundle discounts and seasonal clearance picks, there are plenty of reasons to check current promotions before you check out.
-          </p>
-
-          <div className="space-y-8">
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Find an Andie Swim Discount Code</h3>
-    <p>An Andie Swim discount code can help you look for savings on eligible swimsuits, bikinis, or cover-ups when a promotion is available.</p>
-    <p>Before completing your order, check CouponsBit to see whether there is a current Andie Swim promotional offer that matches what you're shopping for.</p>
-    <p>Promotions can have specific conditions. Some may apply to selected styles or sizes, while others may be connected to a particular sales event.</p>
-    <p>Always review the terms of the offer, including its expiration date and style restrictions, before expecting a discount at checkout.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Andie Swim's Product Lineup</h3>
-    <p>Andie Swim offers swimwear across several categories, giving shoppers plenty of options for their next trip or <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wear</Link>.</p>
-    <p><strong>One-Piece Swimsuits:</strong> A range of necklines and coverage levels designed for a flattering fit.</p>
-    <p><strong>Bikinis:</strong> Mix-and-match tops and bottoms for a customizable fit.</p>
-    <p><strong>Cover-Ups & Accessories:</strong> Complementary pieces to pair with your swimwear.</p>
-  </div>
-
-  <div className="space-y-4">
-    <h3 className="text-xl font-black text-[#056bfa] mb-4">Andie Swim Sale and Seasonal Promotions</h3>
-    <p>Andie Swim promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
-    <p><strong>Seasonal Sales Events:</strong> Warm-weather and holiday sales events are a popular period for savings.</p>
-    <p><strong>Clearance Collections:</strong> Past-season styles are often discounted while stocks last.</p>
-    <p>Before placing an order, check CouponsBit for an Andie Swim discount code, coupon offer, or other promotion.</p>
-  </div>
-</div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
-        >
-          {isReadMore ? "Read Less" : "Read More"}
-          <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-        </button>
-
-        {/* Accordion FAQ Section */}
-        <div className="faq-section mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About Andie Swim Discount Codes
-          </h3>
-          {[
-            { q: "Does Andie Swim offer discount codes?", a: "Andie Swim periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
-            { q: "Where can I find an Andie Swim discount code?", a: "You can check CouponsBit for available Andie Swim discount codes, coupon codes, and sale promotions before shopping." },
-            { q: "How do I use an Andie Swim discount code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
-            { q: "Why isn't my Andie Swim promo code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected styles or sizes." },
-            { q: "What does Andie Swim sell?", a: "Andie Swim sells one-piece swimsuits, bikinis, cover-ups, and swimwear accessories." },
-            { q: "Does Andie Swim offer free shipping?", a: "Andie Swim may offer free shipping on qualifying orders. Check current offers for minimum order requirements." },
-            { q: "Does Andie Swim have a size guide?", a: "Yes. Andie Swim provides a size guide to help shoppers choose the right fit before ordering." },
-            { q: "Does Andie Swim have seasonal sales?", a: "Andie Swim may run promotions around seasonal and holiday shopping periods. Check current offers to see what is available." },
-            { q: "Can I return or exchange Andie Swim items?", a: "Andie Swim has its own returns and exchange policy. Check the official site for current terms before ordering." },
-            { q: "When is the best time to look for Andie Swim deals?", a: "Promotions can appear throughout the year, with seasonal sales events often bringing additional savings." },
-          ].map((faq, i) => (
-            <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-              <button
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
-                <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
-                  <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA]">
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#333333] font-bold text-[14px]">
+                      {[
+                        ["The Support Edit - Charity Offer", "10% Profits Donated", "All Users", "10% of profits donated to Breast Cancer Research Fund throughout October", "The Support Edit Collection"],
+                        ["The Amalfi One Piece + Free Gift", "$112", "All Users", "Includes a free deluxe sample of MAËLYS So-Silky Foaming Body Scrub", "Amalfi One Piece"],
+                        ["The Malibu One Piece + Free Gift", "$112", "All Users", "Includes a free deluxe sample of MAËLYS So-Silky Foaming Body Scrub", "Malibu One Piece (Sherbert)"],
+                        ["The Lanikai One Piece Sale", "60% OFF ($57)", "All Users", "Reduced from $142 original price; designed for longer torsos", "Lanikai One Piece Long Torso"],
+                        ["The Lucaya One Piece Sale", "Up to 60% OFF", "All Users", "Deep savings on selected one-piece styles while stock lasts", "Lucaya One Piece"],
+                        ["Andie Swim Accessories Sale", "Up to 50% OFF", "All Users", "Discounts up to ~47% off on selected swimwear essentials & socks", "Selected Accessories"],
+                        ["The Amalfi One Piece Sale", "Up to 60% OFF ($51)", "All Users", "Selected styles reduced from $128 to $51 in official sale collection", "Selected Amalfi One Piece"],
+                        ["The Sahara Bikini Top Sale", "Up to 39% OFF", "All Users", "Discounted bikini tops to pair with coordinating swim bottoms", "Sahara Bikini Top"],
+                        ["The Amalfi Swim Dress - Texture Edit", "20% OFF ($118)", "All Users", "Reduced from $148 original price; available in select prints & fits", "Amalfi Swim Dress"],
+                        ["The Devon One Piece - Mom Edit", "Up to 30% OFF", "All Users", "Price reduction on comfortable swim styles with Long Torso/Plus options", "Devon One Piece"],
+                        ["Andie Swim Free Shipping", "Free Shipping $150+", "US Customers", "Free standard shipping on eligible US orders exceeding $150", "Orders $150+"]
+                      ].map((row, i, arr) => (
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+                          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
-              </button>
-              <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                  {faq.a}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Sidebar */}
-      <div className="space-y-10">
-        {/* Tag Cloud */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular Andie Swim Searches
-          </h3>
-          <div className="flex flex-wrap gap-2.5">
-            {[
-              "Andie Swim Discount Code",
-              "One-Piece Swimsuits",
-              "Bikini Bundle",
-              "Free Shipping",
-              "Percentage Off Sitewide",
-              "New Customer Offer",
-              "Seasonal Sale",
-              "Swimwear Deals"
-            ].map((tag) => (
-              <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Sidebar Deals */}
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top Andie Swim Deals
-          </h3>
-          <div className="space-y-6">
-            {[
-              {
-              heading: "SUPPORT EDIT",
-              sub: "10% of profits donated to breast cancer research",
-              },
-              {
-              heading: "AMALFI ONE PIECE",
-              sub: "$112 plus a free gift",
-              },
-              {
-              heading: "LANIKAI ONE PIECE SALE",
-              sub: "Up to 60% off",
-              },
-              {
-              heading: "FREE SHIPPING",
-              sub: "On US orders over $150",
-              },
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  A
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                  <p>
+                    Whether you're shopping for a new one-piece or building a mix-and-match bikini, Andie Swim offers a wide range of swimwear styles designed for a comfortable fit.
                   </p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
+                  <p>
+                    If you're planning your next swimwear purchase, checking for an Andie Swim discount code before placing your order can be a smart way to look for savings. CouponsBit helps shoppers discover Andie Swim coupon codes, promo offers, and other ways to potentially save on their order.
                   </p>
+                  <p>
+                    From new-customer offers to bundle discounts and seasonal clearance picks, there are plenty of reasons to check current promotions before you check out.
+                  </p>
+
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Find an Andie Swim Discount Code</h3>
+                      <p>An Andie Swim discount code can help you look for savings on eligible swimsuits, bikinis, or cover-ups when a promotion is available.</p>
+                      <p>Before completing your order, check CouponsBit to see whether there is a current Andie Swim promotional offer that matches what you're shopping for.</p>
+                      <p>Promotions can have specific conditions. Some may apply to selected styles or sizes, while others may be connected to a particular sales event.</p>
+                      <p>Always review the terms of the offer, including its expiration date and style restrictions, before expecting a discount at checkout.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Explore Andie Swim's Product Lineup</h3>
+                      <p>Andie Swim offers swimwear across several categories, giving shoppers plenty of options for their next trip or <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wear</Link>.</p>
+                      <p><strong>One-Piece Swimsuits:</strong> A range of necklines and coverage levels designed for a flattering fit.</p>
+                      <p><strong>Bikinis:</strong> Mix-and-match tops and bottoms for a customizable fit.</p>
+                      <p><strong>Cover-Ups & Accessories:</strong> Complementary pieces to pair with your swimwear.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">Andie Swim Sale and Seasonal Promotions</h3>
+                      <p>Andie Swim promotions can change throughout the year, with certain periods often attracting more attention from shoppers.</p>
+                      <p><strong>Seasonal Sales Events:</strong> Warm-weather and holiday sales events are a popular period for savings.</p>
+                      <p><strong>Clearance Collections:</strong> Past-season styles are often discounted while stocks last.</p>
+                      <p>Before placing an order, check CouponsBit for an Andie Swim discount code, coupon offer, or other promotion.</p>
+                    </div>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
                 </div>
-                <a
-                  href={STORE_URL}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={`Shop Andie Swim: ${deal.heading}`}
-                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+
+                <button
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
                 >
-                  Get Deal
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+                  {isReadMore ? "Read Less" : "Read More"}
+                  <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
+                </button>
 
-    </div>
-  </div>
-</section>
+                {/* Accordion FAQ Section */}
+                <div className="faq-section mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">
+                    Frequently Asked Questions About Andie Swim Discount Codes
+                  </h3>
+                  {[
+                    { q: "Does Andie Swim offer discount codes?", a: "Andie Swim periodically offers promotional codes, discounts, and seasonal promotions. Availability and eligibility can vary." },
+                    { q: "Where can I find an Andie Swim discount code?", a: "You can check CouponsBit for available Andie Swim discount codes, coupon codes, and sale promotions before shopping." },
+                    { q: "How do I use an Andie Swim discount code?", a: "Add eligible items to your cart, proceed to checkout, and enter the applicable code in the promotional-code field. Confirm the discount has been applied before completing your purchase." },
+                    { q: "Why isn't my Andie Swim promo code working?", a: "The promotion may have expired, or your order may not meet its requirements. Some offers can be limited to selected styles or sizes." },
+                    { q: "What does Andie Swim sell?", a: "Andie Swim sells one-piece swimsuits, bikinis, cover-ups, and swimwear accessories." },
+                    { q: "Does Andie Swim offer free shipping?", a: "Andie Swim may offer free shipping on qualifying orders. Check current offers for minimum order requirements." },
+                    { q: "Does Andie Swim have a size guide?", a: "Yes. Andie Swim provides a size guide to help shoppers choose the right fit before ordering." },
+                    { q: "Does Andie Swim have seasonal sales?", a: "Andie Swim may run promotions around seasonal and holiday shopping periods. Check current offers to see what is available." },
+                    { q: "Can I return or exchange Andie Swim items?", a: "Andie Swim has its own returns and exchange policy. Check the official site for current terms before ordering." },
+                    { q: "When is the best time to look for Andie Swim deals?", a: "Promotions can appear throughout the year, with seasonal sales events often bringing additional savings." },
+                  ].map((faq, i) => (
+                    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#056bfa] rotate-180")}>
+                          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+                        </div>
+                      </button>
+                      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                {/* Tag Cloud */}
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Popular Andie Swim Searches
+                  </h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {[
+                      "Andie Swim Discount Code",
+                      "One-Piece Swimsuits",
+                      "Bikini Bundle",
+                      "Free Shipping",
+                      "Percentage Off Sitewide",
+                      "New Customer Offer",
+                      "Seasonal Sale",
+                      "Swimwear Deals"
+                    ].map((tag) => (
+                      <span key={tag} className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Sidebar Deals */}
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Today's Top Andie Swim Deals
+                  </h3>
+                  <div className="space-y-6">
+                    {[
+                      {
+                        heading: "SUPPORT EDIT",
+                        sub: "10% of profits donated to breast cancer research",
+                      },
+                      {
+                        heading: "AMALFI ONE PIECE",
+                        sub: "$112 plus a free gift",
+                      },
+                      {
+                        heading: "LANIKAI ONE PIECE SALE",
+                        sub: "Up to 60% off",
+                      },
+                      {
+                        heading: "FREE SHIPPING",
+                        sub: "On US orders over $150",
+                      },
+                    ].map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                          A
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                            {deal.heading}
+                          </p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                            {deal.sub}
+                          </p>
+                        </div>
+                        <a
+                          href={STORE_URL}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          aria-label={`Shop Andie Swim: ${deal.heading}`}
+                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
+                        >
+                          Get Deal
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
 
       </main>

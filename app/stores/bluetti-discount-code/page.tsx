@@ -101,6 +101,8 @@ const bluettiSchema = {
           name: c.title,
           description: c.description,
           url: "https://www.couponsbit.us/stores/bluetti-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Bluetti", url: "https://www.bluettipower.com" },
         },
       })),

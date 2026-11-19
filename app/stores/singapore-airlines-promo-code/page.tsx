@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import SingaporeAirlinesCouponsContent from "./_components/StoreCouponsContent";
+import { SINGAPORE_AIRLINES_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Singapore Airlines Promo Code | Flights from SGD 298 & Deals",
+    absolute: "Singapore Airlines Promo Code: Get 30% Off Awards | Nov 2026",
   },
   description:
-    "Get the latest Singapore Airlines promo code and Singapore Airlines discount code to save on flights from SGD 298 to Amsterdam, Osaka, Melbourne, Jakarta, Cebu, Los Angeles, and more.",
+    "Singapore Airlines Promo Code and Singapore Airlines Discount Code offer 30% off Saver Awards plus 10% student fares. Get verified Nov 2026 deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-    title: "Singapore Airlines Promo Code | Flights from SGD 298 & Deals",
+    title: "Singapore Airlines Promo Code: Get 30% Off Awards | Nov 2026",
     description:
-      "Get the latest Singapore Airlines promo code and Singapore Airlines discount code to save on flights from SGD 298 to Amsterdam, Osaka, Melbourne, Jakarta, Cebu, Los Angeles, and more.",
+      "Singapore Airlines Promo Code and Singapore Airlines Discount Code offer 30% off Saver Awards plus 10% student fares. Get verified Nov 2026 deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Singapore Airlines Promo Code | Flights from SGD 298 & Deals",
+    title: "Singapore Airlines Promo Code: Get 30% Off Awards | Nov 2026",
     description:
-      "Get the latest Singapore Airlines promo code and Singapore Airlines discount code to save on flights from SGD 298 to Amsterdam, Osaka, Melbourne, Jakarta, Cebu, Los Angeles, and more.",
+      "Singapore Airlines Promo Code and Singapore Airlines Discount Code offer 30% off Saver Awards plus 10% student fares. Get verified Nov 2026 deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1793169709/Singapore_Airlines_logo_an5s0z.webp"],
     site: "@couponsbit",
   },
@@ -62,9 +63,9 @@ const singaporeAirlinesSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/singapore-airlines-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-      name: "Singapore Airlines Promo Code | Flights from SGD 298 & Deals",
+      name: "Singapore Airlines Promo Code: Get 30% Off Awards | Nov 2026",
       description:
-        "Get the latest Singapore Airlines promo code and Singapore Airlines discount code to save on flights from SGD 298 to Amsterdam, Osaka, Melbourne, Jakarta, Cebu, Los Angeles, and more.",
+        "Singapore Airlines Promo Code and Singapore Airlines Discount Code offer 30% off Saver Awards plus 10% student fares. Get verified Nov 2026 deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -79,86 +80,18 @@ const singaporeAirlinesSchema = {
       name: "Singapore Airlines Promo Codes & Discount Codes",
       description: "Latest Singapore Airlines promo codes, discount codes, and flight deals.",
       url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-      numberOfItems: 7,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Amsterdam from SGD 1,475",
-            description: "Book flights from Singapore (SIN) to Amsterdam (AMS) starting at SGD 1,475.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
+      numberOfItems: SINGAPORE_AIRLINES_COUPONS.length,
+      itemListElement: SINGAPORE_AIRLINES_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description || o.desc,
+          url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
+          seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Bandar Seri Begawan from SGD 415",
-            description: "Find flights from Singapore to Bandar Seri Begawan (BWN) starting at SGD 415.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Cebu from SGD 343",
-            description: "Book flights from Singapore (SIN) to Cebu (CEB) starting at SGD 343.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Jakarta from SGD 298",
-            description: "Find flights from Singapore (SIN) to Jakarta (CGK) starting at SGD 298.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Los Angeles from SGD 1,045",
-            description: "Book flights from Singapore to Los Angeles (LAX) starting at SGD 1,045.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Melbourne from SGD 697",
-            description: "Find flights from Singapore to Melbourne (MEL) starting at SGD 697.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Singapore Airlines Flights to Osaka from SGD 713",
-            description: "Book flights from Singapore (SIN) to Osaka (KIX) starting at SGD 713.",
-            url: "https://www.couponsbit.us/stores/singapore-airlines-promo-code",
-            seller: { "@type": "Organization", name: "Singapore Airlines", url: "https://www.singaporeair.com" },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -196,51 +129,51 @@ const singaporeAirlinesSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/singapore-airlines-promo-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Where can I find a Singapore Airlines promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Visit CouponsBit to check available Singapore Airlines promo codes and travel deals. You can also explore the airline's official promotions page for current offers and eligibility requirements."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/singapore-airlines-promo-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find a Singapore Airlines promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit CouponsBit to check available Singapore Airlines promo codes and travel deals. You can also explore the airline's official promotions page for current offers and eligibility requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Singapore Airlines offer flight discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Singapore Airlines publishes promotional fares and partner offers from time to time. Availability depends on the destination, booking period, travel dates, and offer conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my Singapore Airlines promo code not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your code may have expired, may not apply to your selected route, or may require a particular payment card or cabin class. Check the offer's terms and confirm that your itinerary meets its requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Singapore Airlines promo code for international flights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some promotions apply to selected international routes, while others are restricted to specific departure markets. Review the eligible destinations and travel conditions before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I earn KrisFlyer miles on discounted tickets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eligible promotional fares can earn KrisFlyer miles. The number of miles depends on the fare type, booking class, distance, and applicable membership conditions."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Does Singapore Airlines offer flight discounts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Singapore Airlines publishes promotional fares and partner offers from time to time. Availability depends on the destination, booking period, travel dates, and offer conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is my Singapore Airlines promo code not working?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your code may have expired, may not apply to your selected route, or may require a particular payment card or cabin class. Check the offer's terms and confirm that your itinerary meets its requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use a Singapore Airlines promo code for international flights?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some promotions apply to selected international routes, while others are restricted to specific departure markets. Review the eligible destinations and travel conditions before booking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I earn KrisFlyer miles on discounted tickets?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Eligible promotional fares can earn KrisFlyer miles. The number of miles depends on the fare type, booking class, distance, and applicable membership conditions."
-      }
-    }
-  ]
-},
   ],
 };
 

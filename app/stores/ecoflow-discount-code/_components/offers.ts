@@ -1,0 +1,218 @@
+export interface Coupon {
+  id: string;
+  topLabel?: string;
+  mainValue?: string;
+  offText?: string;
+  label?: string;
+  value?: string;
+  title: string;
+  desc?: string;
+  description: string;
+  code?: string;
+  points: string[];
+  bullets?: string[];
+  verified?: string;
+  userType?: string;
+  validTill?: string;
+}
+
+export const ECOFLOW_COUPONS: Coupon[] = [
+  {
+    id: "ecoflow1",
+    topLabel: "UP TO",
+    mainValue: "57%",
+    offText: "OFF",
+    title: "EcoFlow Promo Code – Up to 57% Off in the Prime Day Fall Sale",
+    description: "Save up to 57% on selected EcoFlow power stations and accessories during the Prime Day Fall Sale.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to 57% off selected power stations and add-ons.",
+      "Covers energy backup products.",
+      "Available for a limited time during the sale.",
+      "The exact discount varies by product.",
+    ],
+  },
+  {
+    id: "ecoflow2",
+    topLabel: "FLAT",
+    mainValue: "35%",
+    offText: "OFF",
+    title: "EcoFlow Promo Code – 35% Off DELTA 3 Max Plus Smart Extra Battery",
+    description: "Get the DELTA 3 Max Plus Smart Extra Battery for $859, down from $1,329.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 35% off the regular price.",
+      "Costs $859 instead of $1,329.",
+      "Adds capacity to your existing EcoFlow setup.",
+      "Available for a limited time.",
+    ],
+  },
+  {
+    id: "ecoflow3",
+    topLabel: "FLAT",
+    mainValue: "27%",
+    offText: "OFF",
+    title: "EcoFlow Discount Code – 27% Off DELTA Pro Ultra",
+    description: "Get the EcoFlow DELTA Pro Ultra for $4,199, down from $5,799.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes about 27% off the regular price.",
+      "Costs $4,199 instead of $5,799.",
+      "A high-capacity power station for backup use.",
+      "Check the specs to make sure it fits your needs.",
+    ],
+  },
+  {
+    id: "ecoflow4",
+    topLabel: "FLAT",
+    mainValue: "27%",
+    offText: "OFF",
+    title: "EcoFlow Discount Code – 27% Off DELTA Pro 3",
+    description: "Get the EcoFlow DELTA Pro 3 at 27% off, priced at $2,799.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 27% off the listed price.",
+      "Costs $2,799.",
+      "Works as a power station for home and outdoor use.",
+      "Check the product page for the full specs.",
+    ],
+  },
+  {
+    id: "ecoflow5",
+    topLabel: "FLAT",
+    mainValue: "28%",
+    offText: "OFF",
+    title: "EcoFlow Voucher Code – 28% Off DELTA 3 Ultra Plus",
+    description: "Get the DELTA 3 Ultra Plus 3072Wh model for $1,579, down from $2,199.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes about 28% off the regular price.",
+      "The 3072Wh model costs $1,579 instead of $2,199.",
+      "Works as portable energy storage.",
+      "Other configurations may be priced differently.",
+    ],
+  },
+  {
+    id: "ecoflow6",
+    topLabel: "FLAT",
+    mainValue: "27%",
+    offText: "OFF",
+    title: "EcoFlow Voucher Code – 27% Off DELTA Pro Ultra X Smart Extra Battery",
+    description: "Get the DELTA Pro Ultra X Smart Extra Battery starting at $2,399.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes 27% off the regular price.",
+      "Starts at $2,399.",
+      "Adds capacity to your EcoFlow power system.",
+      "A fit for users expanding their energy storage.",
+    ],
+  },
+  {
+    id: "ecoflow7",
+    topLabel: "FLAT",
+    mainValue: "6%",
+    offText: "OFF",
+    title: "EcoFlow Coupon Code – 6% Off RAPID Pro X Power Bank",
+    description: "Get the EcoFlow RAPID Pro X Power Bank for $279.99, down from $299.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Takes about 6% off the regular price.",
+      "Costs $279.99 instead of $299.",
+      "A portable charger for use on the go.",
+      "Available for a limited time.",
+    ],
+  },
+  {
+    id: "ecoflow8",
+    topLabel: "FROM",
+    mainValue: "$7,999",
+    offText: "ONLY",
+    title: "EcoFlow Coupon Code – DELTA Pro Ultra X From $7,999",
+    description: "Buy the EcoFlow DELTA Pro Ultra X with prices starting at $7,999.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The DELTA Pro Ultra X starts at $7,999.",
+      "Sits at the high end of EcoFlow's power station lineup.",
+      "Final price depends on the configuration you choose.",
+      "A fit for large-scale energy needs.",
+    ],
+  },
+  {
+    id: "ecoflow9",
+    topLabel: "FROM",
+    mainValue: "$399",
+    offText: "ONLY",
+    title: "EcoFlow Referral Code – NextGen 220W Solar Panel From $399",
+    description: "Get the NextGen 220W Bifacial Portable Solar Panel starting at $399.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "The solar panel starts at $399.",
+      "Lets you add solar charging to your EcoFlow setup.",
+      "A portable option for outdoor and backup use.",
+      "Check which EcoFlow models it works with.",
+    ],
+  },
+  {
+    id: "ecoflow10",
+    topLabel: "FLAT",
+    mainValue: "5%",
+    offText: "OFF",
+    title: "EcoFlow Referral Code – 5% Off Your First Order",
+    description: "New customers can save 5% on their first EcoFlow order by signing up.",
+    code: "",
+    verified: "Verified",
+    userType: "New Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Subscribe to the EcoFlow newsletter to get 5% off.",
+      "Applies to your first order only.",
+      "Lowers the cost of your first purchase.",
+      "Intended for first-time EcoFlow customers.",
+    ],
+  },
+  {
+    id: "ecoflow11",
+    topLabel: "EARN",
+    mainValue: "$500",
+    offText: "REWARDS",
+    title: "EcoFlow Deals – Earn Up to $500 in Cash Rewards",
+    description: "Earn cash rewards when friends you refer make an EcoFlow purchase.",
+    code: "",
+    verified: "Verified",
+    userType: "All Users",
+    validTill: "30 Nov 2026",
+    points: [
+      "Offers up to $500 in cash rewards through referrals.",
+      "Pays 5% cashback on each successful purchase by a referred friend.",
+      "Rewards depend on referrals who complete a purchase.",
+      "Review the referral program terms before you join.",
+    ],
+  },
+];

@@ -3,7 +3,7 @@ export interface Coupon {
   topLabel: string;
   mainValue: string;
   offText: string;
-  offText: "", code: "", verified: "Verified", userType: "All Users", validTill: "30 Nov 2026", title:string;
+  title: string;
   description: string;
   code: string;
   verified: string;

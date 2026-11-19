@@ -108,7 +108,8 @@ export default function GymsharkCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(9.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Gymshark shoppers can find strong savings with a Gymshark Promo Code in Nov 2026, including 50% off the Lift Seamless Zip Up Jacket for $37.50 and 50% off the Soft Sculpt V-Neck Sports Bra for $25. Explore activewear, leggings, joggers, shorts, and workout essentials designed for training and everyday wear. Looking for a Gymshark Discount Code? We regularly update verified codes and hand-picked deals to help fitness shoppers discover the latest offers.
+                      Gymshark shoppers can use a Gymshark Promo Code in Nov 2026 to unlock verified savings, including 50% off the Lift Seamless Zip Up Jacket for $37.50 and 50% off the Soft Sculpt Sports Bra for $25. Additional deals include 40% off Apex Seamless Leggings and selected women’s joggers. A Gymshark Discount Code helps customers save on activewear, training gear, and fitness essentials. Tested offers make updating your workout wardrobe more affordable with current product discounts.
+
                     </p>
                     <a
                       href={STORE_URL}

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import RestContent from "./_components/StoreCouponsContent";
+import { REST_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
+    absolute: "Rest Promo Code: 40% Off Cooling Pajamas | Nov 2026",
   },
   description:
-    "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
+    "Rest Promo Code and Rest Discount Code offer 40% off cooling pajamas plus 30% off bedding. Get verified Nov 2026 savings and shop today.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/rest-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/rest-discount-code",
-    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
+    title: "Rest Promo Code: 40% Off Cooling Pajamas | Nov 2026",
     description:
-      "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
+      "Rest Promo Code and Rest Discount Code offer 40% off cooling pajamas plus 30% off bedding. Get verified Nov 2026 savings and shop today.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
+    title: "Rest Promo Code: 40% Off Cooling Pajamas | Nov 2026",
     description:
-      "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
+      "Rest Promo Code and Rest Discount Code offer 40% off cooling pajamas plus 30% off bedding. Get verified Nov 2026 savings and shop today.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791978343/restus-logo_qyvz2a.webp"],
     site: "@couponsbit",
   },
@@ -53,6 +55,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const restSchema = {
@@ -62,9 +65,9 @@ const restSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/rest-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/rest-discount-code",
-      name: "Rest Discount Code – 40% OFF Pajamas & 30% OFF Sale Nov 2026",
+      name: "Rest Promo Code: 40% Off Cooling Pajamas | Nov 2026",
       description:
-        "Find the latest Rest Discount Code and Rest Promo Code to save 40% on Evercool® Cooling Pajamas and up to 30% OFF the End of Season Sale. Shop now.",
+        "Rest Promo Code and Rest Discount Code offer 40% off cooling pajamas plus 30% off bedding. Get verified Nov 2026 savings and shop today.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -79,17 +82,20 @@ const restSchema = {
       name: "Rest Discount Codes & Coupon Codes",
       description: "Latest Rest discount codes and offers.",
       url: "https://www.couponsbit.us/stores/rest-discount-code",
-      numberOfItems: 8,
-      itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Offer", name: "Rest End of Season Sale – Save Up to 30% on Cooling Bedding & Sleepwear", description: "Give your bedroom a refreshing upgrade with Rest’s End of Season Sale on premium sleep essentials.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 2, item: { "@type": "Offer", name: "Rest Evercool® Cooling Pajamas Shorts Set – Save 40% at $77", description: "Keep your nighttime wardrobe comfortable with the Rest Evercool® Cooling Pajamas Shorts Set.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 3, item: { "@type": "Offer", name: "Rest Evercool® Cooling Pajamas Pants Set – Get 40% Off from $83", description: "Enjoy a comfortable bedtime routine with the Rest Evercool® Cooling Pajamas Pants Set.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 4, item: { "@type": "Offer", name: "Rest Evercool®+ Cooling Starter Sheet Set – Save 25% at $134", description: "Refresh your bed with the Rest Evercool®+ Cooling Starter Sheet Set, made for hot sleepers.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Offer", name: "Rest Evercool® Cooling Comforter – Get 25% Off the Best Seller", description: "Discover the Rest Evercool® Cooling Comforter, an award-winning choice for hot sleepers.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Offer", name: "Rest Evercool®+ Cooling Starter Sheet Set – Get 25% Off at $134", description: "Create a fresh, comfortable bed with the Rest Evercool®+ Cooling Starter Sheet Set.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 7, item: { "@type": "Offer", name: "Rest Evercool® Cooling Pillow – Save 15% at $169", description: "Give your sleep setup an upgrade with the Rest Evercool® Cooling Pillow.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-        { "@type": "ListItem", position: 8, item: { "@type": "Offer", name: "Rest Evercool®+ Cooling Pillowcases – Get 10% Off at $71", description: "Add a finishing touch to your bed with the Rest Evercool®+ Cooling Pillowcases.", url: "https://www.couponsbit.us/stores/rest-discount-code", seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" } } },
-      ],
+      numberOfItems: REST_COUPONS.length,
+      itemListElement: REST_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/rest-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Rest", url: "https://www.restduvet.com" },
+        },
+      })),
     },
 
     {
@@ -112,6 +118,13 @@ const restSchema = {
     },
 
     {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/rest-discount-code#brand",
+      name: "Rest",
+      url: "https://www.restduvet.com",
+    },
+
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.couponsbit.us/stores/rest-discount-code#breadcrumb",
       itemListElement: [
@@ -122,43 +135,43 @@ const restSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/rest-discount-code#faq",
-  "mainEntity": [
-    { 
-      "@type": "Question",
-      "name": "Does Rest offer discount codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Rest may feature promotional offers and seasonal deals. Check CouponsBit and the official regional website for currently available promotions."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/rest-discount-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Rest offer discount codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rest may feature promotional offers and seasonal deals. Check CouponsBit and the official regional website for currently available promotions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Rest promo code on every product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Some codes may apply only to selected products, collections or qualifying orders. Review the offer terms before checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can shoppers in Canada and the UK order from Rest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rest has a Canadian shopping website, but delivery options and product availability should be checked for your specific destination. UK shoppers should verify whether their address is supported before placing an order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Rest best known for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rest is best known for its Evercool® cooling bedding, including comforters and sheets designed for a cool-to-the-touch feel."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Can I use a Rest promo code on every product?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily. Some codes may apply only to selected products, collections or qualifying orders. Review the offer terms before checkout."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can shoppers in Canada and the UK order from Rest?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Rest has a Canadian shopping website, but delivery options and product availability should be checked for your specific destination. UK shoppers should verify whether their address is supported before placing an order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Rest best known for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Rest is best known for its Evercool® cooling bedding, including comforters and sheets designed for a cool-to-the-touch feel."
-      }
-    }
-  ]
-},
   ],
 };
 
@@ -166,7 +179,7 @@ export default function RestPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restSchema) }} />
-      <RestContent />
+      <Suspense fallback={null}><RestContent /></Suspense>
     </>
   );
 }

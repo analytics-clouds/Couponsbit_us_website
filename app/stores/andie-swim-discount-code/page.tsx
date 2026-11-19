@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AndieSwimContent from "./_components/StoreCouponsContent";
 import { OFFERS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
+    absolute: "Andie Swim Promo Code: Up to 60% Off Lanikai One Piece | Nov 2026",
   },
   description:
-    "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
+    "Use an Andie Swim promo code and Andie Swim discount code to save up to 60% on Lanikai One Piece and 40% off clearance swimwear. Verified Nov 2026 deals. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/andie-swim-discount-code",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
-    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
+    title: "Andie Swim Promo Code: Up to 60% Off Lanikai One Piece | Nov 2026",
     description:
-      "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
+      "Use an Andie Swim promo code and Andie Swim discount code to save up to 60% on Lanikai One Piece and 40% off clearance swimwear. Verified Nov 2026 deals. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
+    title: "Andie Swim Promo Code: Up to 60% Off Lanikai One Piece | Nov 2026",
     description:
-      "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
+      "Use an Andie Swim promo code and Andie Swim discount code to save up to 60% on Lanikai One Piece and 40% off clearance swimwear. Verified Nov 2026 deals. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1791543378/Andie_swim_discount_code_cnars1.webp"],
     site: "@couponsbit",
   },
@@ -52,6 +53,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const andieSwimSchema = {
@@ -61,9 +64,9 @@ const andieSwimSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/andie-swim-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
-      name: "Andie Swim Discount Code – Up to 60% OFF + Free Gift Nov 2026",
+      name: "Andie Swim Promo Code: Up to 60% Off Lanikai One Piece | Nov 2026",
       description:
-        "Use the latest Andie Swim Discount Code and Andie Swim Promo Code to save up to 60% OFF selected swimwear and get a free gift with eligible one-piece orders. Shop now.",
+        "Use an Andie Swim promo code and Andie Swim discount code to save up to 60% on Lanikai One Piece and 40% off clearance swimwear. Verified Nov 2026 deals. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -85,8 +88,10 @@ const andieSwimSchema = {
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
+          description: o.description,
           url: "https://www.couponsbit.us/stores/andie-swim-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Andie Swim", url: "https://www.andieswim.com" },
         },
       })),
@@ -109,6 +114,13 @@ const andieSwimSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/andie-swim-discount-code#brand",
+      name: "Andie Swim",
+      url: "https://www.andieswim.com",
     },
 
     {
@@ -174,7 +186,9 @@ export default function AndieSwimPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(andieSwimSchema) }} />
-      <AndieSwimContent />
+      <Suspense fallback={null}>
+        <AndieSwimContent />
+      </Suspense>
     </>
   );
 }

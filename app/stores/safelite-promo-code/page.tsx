@@ -3,10 +3,10 @@ import SafeliteCouponsContent from "./_components/StoreCouponsContent";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Safelite Promo Code: Save on Auto Glass Service | Nov 2026",
+    absolute: "Safelite Promo Code: Save $100 on Auto Glass | Nov 2026",
   },
   description:
-    "Find the latest Safelite promo code and coupon offers for Nov 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+    "Safelite Promo Code and Safelite Discount Code offer $100 off replacements plus $45 repair savings. Get verified Nov 2026 deals and save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/safelite-promo-code",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/safelite-promo-code",
-    title: "Safelite Promo Code: Save on Auto Glass Service | Nov 2026",
+    title: "Safelite Promo Code: Save $100 on Auto Glass | Nov 2026",
     description:
-      "Find the latest Safelite promo code and coupon offers for Nov 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+      "Safelite Promo Code and Safelite Discount Code offer $100 off replacements plus $45 repair savings. Get verified Nov 2026 deals and save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Safelite Promo Code: Save on Auto Glass Service | Nov 2026",
+    title: "Safelite Promo Code: Save $100 on Auto Glass | Nov 2026",
     description:
-      "Find the latest Safelite promo code and coupon offers for Nov 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+      "Safelite Promo Code and Safelite Discount Code offer $100 off replacements plus $45 repair savings. Get verified Nov 2026 deals and save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1789994531/safelite-logo_szoht4.webp"],
     site: "@couponsbit",
   },
@@ -60,9 +60,9 @@ const safeliteSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/safelite-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/safelite-promo-code",
-      name: "Safelite Promo Code: Save on Auto Glass Service | Nov 2026",
+      name: "Safelite Promo Code: Save $100 on Auto Glass | Nov 2026",
       description:
-        "Find the latest Safelite promo code and coupon offers for Nov 2026. Save on windshield repair, replacement, and mobile service with verified Safelite deals.",
+        "Safelite Promo Code and Safelite Discount Code offer $100 off replacements plus $45 repair savings. Get verified Nov 2026 deals and save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -118,91 +118,91 @@ const safeliteSchema = {
     },
 
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponsbit.us/stores/safelite-promo-code#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Safelite have promo codes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite offers promotional codes for eligible auto glass services. Offers can vary by service and may have restrictions relating to insurance, commercial or fleet services, eligibility, and booking method."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponsbit.us/stores/safelite-promo-code#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Safelite have promo codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite offers promotional codes for eligible auto glass services. Offers can vary by service and may have restrictions relating to insurance, commercial or fleet services, eligibility, and booking method."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find a Safelite promo code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can check CouponsBit for available Safelite offers before visiting Safelite to get a quote or schedule service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a Safelite promo code with insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the promotion. Safelite's current promotional offers commonly specify that the code is not valid on insurance claims, so check the terms of the specific offer before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite offer mobile service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite offers mobile auto glass service in most areas, allowing eligible customers to have a technician come to their home, workplace, or another convenient location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite repair small windshield chips?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite provides windshield repair for qualifying minor chips and cracks. The company says repair may be possible for damage under six inches, with no more than three chips or cracks, provided the damage does not interfere with cameras or sensors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite replace side windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite provides side-window replacement along with windshield and rear-window services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite replace rear windshields?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite offers back-glass and rear-window replacement services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite offer windshield recalibration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Safelite provides recalibration for advanced safety systems connected to the windshield. Depending on the vehicle, these systems can include lane-keeping assistance, automatic emergency braking, and forward collision warning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Safelite offer discounts for military members or first responders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Safelite currently lists discounts for military members, AAA members, AARP members, and first responders, subject to eligibility verification and offer restrictions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know whether I need windshield repair or replacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The appropriate service depends on the size, location, and severity of the damage, as well as whether the damaged area affects cameras or sensors. Safelite can assess the damage and determine whether repair or replacement is appropriate."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Where can I find a Safelite promo code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can check CouponsBit for available Safelite offers before visiting Safelite to get a quote or schedule service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use a Safelite promo code with insurance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the promotion. Safelite's current promotional offers commonly specify that the code is not valid on insurance claims, so check the terms of the specific offer before booking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite offer mobile service?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite offers mobile auto glass service in most areas, allowing eligible customers to have a technician come to their home, workplace, or another convenient location."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite repair small windshield chips?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite provides windshield repair for qualifying minor chips and cracks. The company says repair may be possible for damage under six inches, with no more than three chips or cracks, provided the damage does not interfere with cameras or sensors."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite replace side windows?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite provides side-window replacement along with windshield and rear-window services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite replace rear windshields?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite offers back-glass and rear-window replacement services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite offer windshield recalibration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Safelite provides recalibration for advanced safety systems connected to the windshield. Depending on the vehicle, these systems can include lane-keeping assistance, automatic emergency braking, and forward collision warning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Safelite offer discounts for military members or first responders?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Safelite currently lists discounts for military members, AAA members, AARP members, and first responders, subject to eligibility verification and offer restrictions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I know whether I need windshield repair or replacement?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The appropriate service depends on the size, location, and severity of the damage, as well as whether the damaged area affects cameras or sensors. Safelite can assess the damage and determine whether repair or replacement is appropriate."
-      }
-    }
-  ]
-},
   ],
 };
 

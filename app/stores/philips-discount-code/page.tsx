@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import PhilipsCouponsContent from "./_components/StoreCouponsContent";
+import { PHILIPS_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Philips Discount Code | 15% OFF + Save Up to £120",
+    absolute: "Philips Promo Code: Up to 70% Off Dining Room Lights | Nov 2026",
   },
   description:
-    "Get the latest Philips Discount Code and Philips Voucher to enjoy 15% OFF your first order, save up to £120, plus get FREE shipping on orders over £40.",
+    "Use a Philips promo code and Philips discount code to get up to 70% off dining lights and £120 off Sonicare DiamondClean 9900. Verified Nov 2026 offers. Save now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/philips-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/philips-discount-code",
-    title: "Philips Discount Code | 15% OFF + Save Up to £120",
+    title: "Philips Promo Code: Up to 70% Off Dining Room Lights | Nov 2026",
     description:
-      "Get the latest Philips Discount Code and Philips Voucher to enjoy 15% OFF your first order, save up to £120, plus get FREE shipping on orders over £40.",
+      "Use a Philips promo code and Philips discount code to get up to 70% off dining lights and £120 off Sonicare DiamondClean 9900. Verified Nov 2026 offers. Save now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Philips Discount Code | 15% OFF + Save Up to £120",
+    title: "Philips Promo Code: Up to 70% Off Dining Room Lights | Nov 2026",
     description:
-      "Get the latest Philips Discount Code and Philips Voucher to enjoy 15% OFF your first order, save up to £120, plus get FREE shipping on orders over £40.",
+      "Use a Philips promo code and Philips discount code to get up to 70% off dining lights and £120 off Sonicare DiamondClean 9900. Verified Nov 2026 offers. Save now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784881809/philips-logo_yuwckz.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const philipsSchema = {
@@ -63,9 +66,9 @@ const philipsSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/philips-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/philips-discount-code",
-      name: "Philips Discount Code | 15% OFF + Save Up to £120",
+      name: "Philips Promo Code: Up to 70% Off Dining Room Lights | Nov 2026",
       description:
-        "Get the latest Philips Discount Code and Philips Voucher to enjoy 15% OFF your first order, save up to £120, plus get FREE shipping on orders over £40.",
+        "Use a Philips promo code and Philips discount code to get up to 70% off dining lights and £120 off Sonicare DiamondClean 9900. Verified Nov 2026 offers. Save now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -85,159 +88,24 @@ const philipsSchema = {
       description:
         "Latest verified Philips coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/philips-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Philips – FREE Shipping on Orders Over £40",
-            description: "Enjoy FREE Shipping on all orders above £40.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
+      numberOfItems: PHILIPS_COUPONS.length,
+      itemListElement: PHILIPS_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/philips-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "Philips",
+            url: "https://www.usa.philips.com",
           },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Philips Baristina Espresso Machine – Only £379.99",
-            description: "Bring café-quality coffee home with the Philips Baristina Espresso Machine for just £379.99.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Philips Sonicare DiamondClean 9900 Prestige – SAVE £120",
-            description: "Get the Philips Sonicare DiamondClean 9900 Prestige for only £329.99 (Regular Price £449.99).",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Philips i9000 Prestige Shaver – SAVE £120",
-            description: "Buy the Philips i9000 Prestige Electric Shaver for just £329.99 (Regular Price £449.99).",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Philips Lumea IPL 9900 Pro – From £47.99/Month",
-            description: "Experience long-lasting hair reduction with Philips Lumea IPL 9900 Pro.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Philips 7000 Series Contact Grill – Only £119.99",
-            description: "Cook delicious meals with the Philips 7000 Series Contact Grill for £119.99.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Philips 5000 Series Contact Grill – Only £74.99",
-            description: "Get the Philips 5000 Series Contact Grill for just £74.99.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Philips OneUp 5000 Series Electric Mop – SAVE £30",
-            description: "Buy the Philips OneUp 5000 Series Electric Mop for only £119.99 (Regular Price £149.99).",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Philips – First Order Offer, SAVE 15%",
-            description: "Sign up today and enjoy 15% OFF your first Philips online order.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Philips – Newsletter Bonus, Get £10 OFF",
-            description: "Subscribe to the Philips newsletter and receive a £10 discount on your next purchase.",
-            url: "https://www.couponsbit.us/stores/philips-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Philips",
-              url: "https://www.usa.philips.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -269,6 +137,13 @@ const philipsSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/philips-discount-code#brand",
+      name: "Philips",
+      url: "https://www.usa.philips.com",
     },
 
     {
@@ -362,7 +237,7 @@ export default function PhilipsStorePage() {
           __html: JSON.stringify(philipsSchema),
         }}
       />
-      <PhilipsCouponsContent />
+      <Suspense fallback={null}><PhilipsCouponsContent /></Suspense>
     </>
   );
 }

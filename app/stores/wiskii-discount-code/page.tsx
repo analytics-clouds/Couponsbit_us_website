@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import WiskiiCouponsContent from "./_components/StoreCouponsContent";
+import { WISKII_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
+    absolute: "Wiskii Promo Code: 67% Off Flower Bee Fidget Ring | Nov 2026",
   },
   description:
-    "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
+    "Save with a Wiskii promo code and Wiskii discount code on a Flower Bee Fidget Ring at 67% off and DIY Rhinestone Nail Art Stones from $3.12. Verified Nov 2026 deals.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/wiskii-discount-code",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-    title: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
+    title: "Wiskii Promo Code: 67% Off Flower Bee Fidget Ring | Nov 2026",
     description:
-      "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
+      "Save with a Wiskii promo code and Wiskii discount code on a Flower Bee Fidget Ring at 67% off and DIY Rhinestone Nail Art Stones from $3.12. Verified Nov 2026 deals.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
+    title: "Wiskii Promo Code: 67% Off Flower Bee Fidget Ring | Nov 2026",
     description:
-      "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
+      "Save with a Wiskii promo code and Wiskii discount code on a Flower Bee Fidget Ring at 67% off and DIY Rhinestone Nail Art Stones from $3.12. Verified Nov 2026 deals.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1784699426/wishki-logo_qveoyb.webp"],
     site: "@couponsbit",
   },
@@ -54,6 +56,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  other: { "geo.region": "US", "geo.country": "US", language: "en-US" },
 };
 
 const wishkiSchema = {
@@ -63,9 +66,9 @@ const wishkiSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#webpage",
       url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-      name: "Wish Discount Code | Unlock Up to 60% OFF on Top Picks",
+      name: "Wiskii Promo Code: 67% Off Flower Bee Fidget Ring | Nov 2026",
       description:
-        "Find the latest Wish Discount Code and Wish Voucher to unlock up to 60% OFF storewide. Shop trending products, enjoy discounts of up to 67% OFF, and save on thousands of daily deals.",
+        "Save with a Wiskii promo code and Wiskii discount code on a Flower Bee Fidget Ring at 67% off and DIY Rhinestone Nail Art Stones from $3.12. Verified Nov 2026 deals.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -85,159 +88,20 @@ const wishkiSchema = {
       description:
         "Latest verified Wiskii coupon codes, promo codes and discount codes.",
       url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-      numberOfItems: 10,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Daily Deals Hub – UP TO 60% OFF",
-            description: "Discover thousands of trending products with UP TO 60% OFF every day.",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
+      numberOfItems: WISKII_COUPONS.length,
+      itemListElement: WISKII_COUPONS.map((o, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Offer",
+          name: o.title,
+          description: o.description,
+          url: "https://www.couponsbit.us/stores/wiskii-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Wiskii", url: "https://www.wishki.com" },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Flower Bee Fidget Anxiety Ring – SAVE 67%",
-            description: "Buy the Flower Bee Fidget Anxiety Ring for just $0.79 (Regular Price $2.40).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Self-Warming Pet Bed – SAVE UP TO 43%",
-            description: "Get the Self-Warming Pet Bed for only $7.29 (Regular Price $12.03).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – USB-C PD 60W Fast Charging Cable – SAVE 44%",
-            description: "Shop the USB-C PD 60W Fast Charging Cable for just $3.57 (Regular Price $6.42).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Outdoor Cooling Raised Dog Bed – SAVE 44%",
-            description: "Buy the Breathable Raised Dog Bed for only $36.23 (Regular Price $64.94).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Waterproof Scooter Handlebar Bag – SAVE UP TO 40%",
-            description: "Get the Waterproof Scooter Front Hanging Bag for just $12.75 (Regular Price $21.31).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – DIY Rhinestone Nail Art Stones – Deals Under $5",
-            description: "Shop DIY Rhinestone Nail Art Stones for only $3.12.",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 8,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Voice Activated Recorder – SAVE UP TO 22%",
-            description: "Buy the Voice Activated Recorder with MP3 Playback for just $17.35 (Regular Price $22.43).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 9,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Reinforced Cloth Headwear Storage Organizer – SAVE 21%",
-            description: "Get the Reinforced Cloth Headwear Storage Organizer for only $34.66 (Regular Price $44.15).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 10,
-          item: {
-            "@type": "Offer",
-            name: "Wiskii – Progressive Multifocal Reading Glasses – SAVE 29%",
-            description: "Buy Progressive Multifocal Reading Glasses for just $5.42 (Regular Price $7.65).",
-            url: "https://www.couponsbit.us/stores/wiskii-discount-code",
-            seller: {
-              "@type": "Organization",
-              name: "Wiskii",
-              url: "https://www.wishki.com",
-            },
-          },
-        },
-      ],
+      })),
     },
 
     {
@@ -269,6 +133,13 @@ const wishkiSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/wiskii-discount-code#brand",
+      name: "Wiskii",
+      url: "https://www.wishki.com",
     },
 
     {
@@ -362,7 +233,7 @@ export default function WiskiiStorePage() {
           __html: JSON.stringify(wishkiSchema),
         }}
       />
-      <WiskiiCouponsContent />
+      <Suspense fallback={null}><WiskiiCouponsContent /></Suspense>
     </>
   );
 }

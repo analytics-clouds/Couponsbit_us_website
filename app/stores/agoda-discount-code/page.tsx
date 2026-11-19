@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import AgodaCouponsContent from "./_components/StoreCouponsContent";
 import { AGODA_COUPONS } from "./_components/offers";
 
-const TITLE = "Agoda Discount Code: Up to 50% Off + Hotels $5/Night | Nov 2026";
+const TITLE = "Agoda Promo Code: Up to 50% OFF Attractions | Nov 2026";
 const DESCRIPTION =
-  "Find the latest Agoda discount codes and travel deals for Nov 2026. Save up to 50% on attractions, book USA hotels from $5/night, and enjoy discounts on NYC, Miami, Anaheim, Chicago, and more destinations.";
+  "Agoda Promo Code saves up to 50% on the Go City New York Explorer Pass and USA hotels from $5/night. Find Agoda Discount Code deals verified Nov 2026.";
 
 export const metadata: Metadata = {
   title: {
@@ -98,6 +98,8 @@ const agodaSchema = {
           name: c.title,
           description: c.description,
           url: `https://www.couponsbit.us/stores/agoda-discount-code#${c.id}`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Agoda", url: "https://www.agoda.com" },
         },
       })),

@@ -33,6 +33,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import { Coupon, JDSPORTS_COUPONS } from "./offers";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
@@ -59,7 +60,7 @@ export default function JDSportsContent() {
   const [toastCode, setToastCode] = useState("");
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [open, setOpen] = useState(false);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#056bfa] selection:text-white">
@@ -115,7 +116,7 @@ export default function JDSportsContent() {
                       <span className="text-gray-600 font-bold text-sm">(4,200 Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest JD Sports Discount Code on top sportswear and sneakers. Enjoy up to 50% OFF selected clothing, footwear, and accessories, plus 10% OFF your first order. Use a JD Sports Promo Code to unlock verified savings on <Link href="/stores/nike-discount-code" className="text-[#056bfa] hover:underline">Nike</Link>, <Link href="/stores/adidas-promo-code" className="text-[#056bfa] hover:underline">adidas</Link>, Jordan, New Balance, and more.
+                      JD Sports Promo Code shoppers can find verified savings with up to 50% off accessories and clothing, including selected Nike, adidas, Jordan, Puma, and New Balance items. JD Sports Discount Code deals also feature the adidas Diamond Bag for Rp275,000 and Nike Aura Crossbody Bag for Rp341,400. These working Nov 2026 offers cover sneakers, apparel, and sports accessories for everyday style. I recommend checking sizes and product availability to secure the best hand-picked JD Sports savings before checkout.
                     </p>
                     <a
                       href={STORE_URL}
@@ -137,11 +138,11 @@ export default function JDSportsContent() {
                     { icon: BadgeCheck, val: "100%", label: "Verified" }
                   ].map((stat, i) => (
                     <div key={i} className="flex items-center gap-2">
-                       <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
-                       <div>
-                         <div className="text-black font-black text-xs leading-none">{stat.val}</div>
-                         <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
-                       </div>
+                      <stat.icon className="w-4.5 h-4.5 text-[#056bfa]" />
+                      <div>
+                        <div className="text-black font-black text-xs leading-none">{stat.val}</div>
+                        <p className="text-gray-500 font-bold text-[12px] uppercase mt-0.5">{stat.label}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -191,20 +192,8 @@ export default function JDSportsContent() {
                   <h2 className="text-2xl font-black text-black leading-tight">JD Sports Discount Codes & Offers</h2>
                 </div>
 
-                {[
-                  { label: "UP TO", value: "50%", title: "JD Sports Accessories Sale – Up to 50% Off", desc: "Save up to 50% on accessories from Nike, adidas, Jordan, Puma, New Balance, ASICS, McKenzie and more.", bullets: ["Explore trend-forward bags, socks and everyday accessories at discounted prices.", "Enjoy free standard shipping on eligible orders, subject to applicable terms.", "Shop now before the offers end or available stock runs out."] },
-                  { label: "ONLY", value: "Rp275,000", title: "JD Sports – adidas Originals Adicolor Classics Diamond Bag at Rp275,000", desc: "Get the adidas Originals Adicolor Classics Diamond Bag for Rp275,000, reduced from Rp550,000.", bullets: ["Save 50% on this stylish adidas Originals accessory.", "Add a versatile bag to your everyday outfits with this special sale offer.", "Shop JD Sports and grab the deal while stocks last."] },
-                  { label: "ONLY", value: "Rp134,500", title: "JD Sports – Jordan Cush Poly Socks 3 Pairs at Rp134,500", desc: "Get the Jordan Cush Poly Socks 3 Pairs for Rp134,500, down from Rp269,000.", bullets: ["Save 50% on this Jordan socks multipack.", "Refresh your everyday essentials with a practical addition to your sportswear collection.", "Shop now at JD Sports while the discounted price is available."] },
-                  { label: "ONLY", value: "Rp341,400", title: "JD Sports – Nike Aura Crescent Crossbody Bag at Rp341,400", desc: "Grab the Nike Aura Crescent Crossbody Bag for Rp341,400, reduced from Rp569,000.", bullets: ["Save 40% on this stylish Nike crossbody bag.", "Complete your casual outfits with a convenient accessory for carrying everyday essentials.", "Shop the JD Sports accessories sale before the offer ends."] },
-                  { label: "UP TO", value: "50%", title: "JD Sports Clothing Sale – Up to 50% Off", desc: "Save up to 50% on selected clothing during the JD Sports sale.", bullets: ["Discover sportswear and casual styles from popular brands, including Nike, adidas, Jordan and New Balance.", "Refresh your wardrobe with discounted apparel for everyday wear and active lifestyles.", "Shop now and explore the latest clothing offers while stocks last."] },
-                  { label: "ONLY", value: "Rp729,500", title: "JD Sports – Jordan Flight Polo Jersey at Rp729,500", desc: "Get the Jordan Flight Polo Jersey for Rp729,500, reduced from Rp1,459,000.", bullets: ["Save 50% on this Jordan apparel deal.", "Add a sporty, casual style to your wardrobe with this discounted polo jersey.", "Shop JD Sports and take advantage of the limited-stock offer."] },
-                  { label: "ONLY", value: "Rp279,300", title: "JD Sports – New Balance Core Logo Graphic T-Shirt at Rp279,300", desc: "Get the New Balance Core Logo Graphic T-Shirt for Rp279,300, down from Rp399,000.", bullets: ["Save 30% on this everyday graphic T-shirt.", "Add a versatile New Balance piece to your casual wardrobe.", "Shop now at JD Sports and save on selected clothing."] },
-                  { label: "ONLY", value: "Rp1,424,500", title: "JD Sports – Nike Air Max 95 at Rp1,424,500", desc: "Grab the Nike Air Max 95 for Rp1,424,500 during the JD Sports sale.", bullets: ["The listed price drops from Rp2,049,000, offering substantial savings.", "Discover the iconic Nike Air Max design for your sneaker collection.", "Shop now while the discounted price and available sizes last."] },
-                  { label: "ONLY", value: "Rp899,500", title: "JD Sports – Nike Air Max Phoenix Junior at Rp899,500", desc: "Get the Nike Air Max Phoenix Junior for Rp899,500, reduced from Rp1,799,000.", bullets: ["Save 50% on these junior Nike sneakers.", "Explore a sporty footwear option for younger sneaker fans.", "Shop the JD Sports sale before your preferred size sells out."] },
-                  { label: "SAVE", value: "10%", title: "JD Sports – Get 10% Off Your First Order", desc: "Enjoy 10% off your first order at JD Sports, subject to applicable terms and conditions.", bullets: ["Discover sneakers, clothing and accessories from popular sportswear brands.", "Take advantage of next-day delivery where available and eligible.", "Shop online and explore convenient Click & Collect store pickup options."] },
-                  { label: "EARN", value: "Access", title: "JD Sports Members – Get Exclusive Early Access", desc: "Join JD Sports membership to access exclusive early deals and promotions.", bullets: ["Discover selected sneakers, sportswear and accessories before wider sale access.", "Enjoy convenient shopping options, including available delivery and Click & Collect services.", "Sign up or log in to check your membership benefits and claim eligible offers."] },
-                ].map((c, i) => (
-                  <div key={i} className="w-full max-w-7xl mx-auto mb-6">
+                {JDSPORTS_COUPONS.map((c: Coupon) => (
+                  <div key={c.id} className="w-full max-w-7xl mx-auto mb-6">
                     <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
                       <div className="flex flex-row">
                         <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
@@ -222,14 +211,14 @@ export default function JDSportsContent() {
                               <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                             </div>
                             <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
-                            <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
+                            <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description || c.desc}</p>
+                            <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                               View Details
-                              <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+                              <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                             </button>
-                            <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
+                            <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                               <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                                {c.bullets.map((b, bi) => (
+                                {(c.points || c.bullets || []).map((b, bi) => (
                                   <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                                 ))}
                               </ul>
@@ -279,73 +268,73 @@ export default function JDSportsContent() {
                   <p className="text-gray-500 font-bold text-sm leading-relaxed mb-6 text-justify">
                     JD Sports is also known for its focus on sports-inspired fashion, giving customers the option to combine athletic styles with everyday outfits.
                   </p>
-                 
+
                   <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-[#056bfa] font-black text-sm flex items-center gap-1.5 hover:underline decoration-2">
                     Visit Store <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-                   <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
-                   <div className="space-y-1">
-                      {[
-                        { icon: Footprints, name: "Sneakers & Trainers", count: "150+", color: "text-blue-500", href: "/categories/fashion" },
-                        { icon: Shirt, name: "Sportswear & Apparel", count: "90+", color: "text-purple-500", href: "/categories/fashion" },
-                        { icon: Backpack, name: "Bags & Accessories", count: "40+", color: "text-pink-500", href: "/categories/fashion" },
-                        { icon: Percent, name: "Clearance & Sale", count: "60+", color: "text-teal-500", href: "/categories/fashion" },
-                        { icon: Gift, name: "New Releases", count: "25+", color: "text-orange-500", href: "/categories/fashion" },
-                      ].map((cat, i) => (
-                        <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
-                          <div className="flex items-center gap-3">
-                            <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
-                            <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
-                          </div>
-                          <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
-                        </Link>
-                      ))}
-                   </div>
-                   <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
+                  <h3 className="text-black font-black text-lg mb-6">Top Categories</h3>
+                  <div className="space-y-1">
+                    {[
+                      { icon: Footprints, name: "Sneakers & Trainers", count: "150+", color: "text-blue-500", href: "/categories/fashion" },
+                      { icon: Shirt, name: "Sportswear & Apparel", count: "90+", color: "text-purple-500", href: "/categories/fashion" },
+                      { icon: Backpack, name: "Bags & Accessories", count: "40+", color: "text-pink-500", href: "/categories/fashion" },
+                      { icon: Percent, name: "Clearance & Sale", count: "60+", color: "text-teal-500", href: "/categories/fashion" },
+                      { icon: Gift, name: "New Releases", count: "25+", color: "text-orange-500", href: "/categories/fashion" },
+                    ].map((cat, i) => (
+                      <Link key={i} href={cat.href} className="flex items-center justify-between py-3 border-b border-[#f0f0f0] last:border-0 group cursor-pointer">
+                        <div className="flex items-center gap-3">
+                          <cat.icon className={cn("w-4.5 h-4.5", cat.color)} />
+                          <span className="text-gray-600 font-bold text-sm group-hover:text-black transition-colors">{cat.name}</span>
+                        </div>
+                        <span className="bg-[#e8f6f8] text-[#0451c4] px-2.5 py-0.5 rounded-full text-[12px] font-black">{cat.count} Coupons</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/categories" className="block mt-6 text-[#056bfa] font-black text-[11px] uppercase tracking-widest hover:underline">View All Categories →</Link>
                 </div>
 
                 <div className="bg-white rounded-[32px] border border-[#f0f0f0] p-8 shadow-sm">
-  <h3 className="text-black font-black text-lg mb-8">
-    How to Use a JD Sports Discount Code
-  </h3>
-  <div className="space-y-6">
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      Found a suitable JD Sports discount code on CouponsBit? Follow these general steps:
-    </p>
-    <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
-      <p>
-        <strong className="text-black font-black block mb-1">Visit CouponsBit:</strong>
-        Open the JD Sports page on CouponsBit and review the available offers.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Choose your offer:</strong>
-        Select the coupon or promotional deal that suits your purchase.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Copy the code:</strong>
-        If the promotion requires a code, copy it from CouponsBit.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Shop at JD Sports:</strong>
-        Visit JD Sports and add your chosen sneakers, clothing, or accessories to your basket.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Apply the code:</strong>
-        Enter the promotional code in the relevant field during checkout.
-      </p>
-      <p>
-        <strong className="text-black font-black block mb-1">Check your total:</strong>
-        Confirm that the discount has been applied before completing your order.
-      </p>
-    </div>
-    <p className="text-gray-500 font-medium text-sm leading-relaxed">
-      If a code doesn't work, check its expiry date and eligibility requirements. It may also be restricted to particular products, brands, or customers.
-    </p>
-  </div>
-</div>
+                  <h3 className="text-black font-black text-lg mb-8">
+                    How to Use a JD Sports Discount Code
+                  </h3>
+                  <div className="space-y-6">
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      Found a suitable JD Sports discount code on CouponsBit? Follow these general steps:
+                    </p>
+                    <div className="space-y-4 text-gray-500 font-medium text-sm leading-relaxed">
+                      <p>
+                        <strong className="text-black font-black block mb-1">Visit CouponsBit:</strong>
+                        Open the JD Sports page on CouponsBit and review the available offers.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Choose your offer:</strong>
+                        Select the coupon or promotional deal that suits your purchase.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Copy the code:</strong>
+                        If the promotion requires a code, copy it from CouponsBit.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Shop at JD Sports:</strong>
+                        Visit JD Sports and add your chosen sneakers, clothing, or accessories to your basket.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Apply the code:</strong>
+                        Enter the promotional code in the relevant field during checkout.
+                      </p>
+                      <p>
+                        <strong className="text-black font-black block mb-1">Check your total:</strong>
+                        Confirm that the discount has been applied before completing your order.
+                      </p>
+                    </div>
+                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
+                      If a code doesn't work, check its expiry date and eligibility requirements. It may also be restricted to particular products, brands, or customers.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -377,420 +366,420 @@ export default function JDSportsContent() {
         </section>
 
         {/* SEO Text Section */}
-       <section className="py-24 bg-[#f5f5f5]">
-  <div className="container mx-auto px-4 max-w-7xl">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+        <section className="py-24 bg-[#f5f5f5]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-      {/* Main Content Area */}
-      <div className="prose max-w-none text-justify">
-        <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          JD Sports Discount Code, Coupons & Deals
-        </h2>
+              {/* Main Content Area */}
+              <div className="prose max-w-none text-justify">
+                <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
+                  JD Sports Discount Code, Coupons & Deals
+                </h2>
 
-        <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
-  <table className="w-full text-left border-collapse min-w-[850px]">
-    <thead>
-      <tr className="bg-[#056BFA]">
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
-        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
-      </tr>
-    </thead>
-    <tbody className="text-[#333333] font-bold text-[14px]">
-      {[
-        ["JD Sports Accessories Sale", "Up to 50% OFF", "All Users", "Bags, socks & accessories from Nike, adidas, Jordan & more; free shipping eligible", "Accessories"],
-        ["adidas Originals Adicolor Diamond Bag", "50% OFF (Rp275,000)", "All Users", "Reduced from Rp550,000 original price", "adidas Accessories"],
-        ["Jordan Cush Poly Socks (3 Pairs)", "50% OFF (Rp134,500)", "All Users", "Reduced from Rp269,000 original price", "Jordan Socks"],
-        ["Nike Aura Crescent Crossbody Bag", "40% OFF (Rp341,400)", "All Users", "Reduced from Rp569,000 original price", "Nike Bags"],
-        ["JD Sports Clothing Sale", "Up to 50% OFF", "All Users", "Discounts on sportswear and casual apparel across top brands", "Selected Clothing"],
-        ["Jordan Flight Polo Jersey", "50% OFF (Rp729,500)", "All Users", "Reduced from Rp1,459,000 original price", "Jordan Apparel"],
-        ["New Balance Core Logo T-Shirt", "30% OFF (Rp279,300)", "All Users", "Reduced from Rp399,000 original price", "New Balance Clothing"],
-        ["Nike Air Max 95", "Save Rp624,500 (Rp1,424,500)", "All Users", "Reduced from Rp2,049,000 original price", "Nike Footwear"],
-        ["Nike Air Max Phoenix Junior", "50% OFF (Rp899,500)", "All Users", "Reduced from Rp1,799,000 original price for junior sizing", "Junior Footwear"],
-        ["JD Sports First Order Discount", "10% OFF", "New Customers", "Sign up to receive 10% off; next-day delivery & Click & Collect available", "First Orders"],
-        ["JD Sports Member Exclusive Access", "Early Access", "JD Sports Members", "Exclusive early access to sales, deals, and special promotions for members", "Member Deals"]
-      ].map((row, i, arr) => (
-        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
-          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
-          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
-          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
-          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
+                <div className="my-12 overflow-x-auto rounded-[24px] border-2 border-gray-100 bg-white shadow-sm">
+                  <table className="w-full text-left border-collapse min-w-[850px]">
+                    <thead>
+                      <tr className="bg-[#056BFA]">
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tl-[22px]">Offer</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Discount / Price</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Eligibility</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider">Key Conditions</th>
+                        <th scope="col" className="p-5 text-[15px] font-black text-white uppercase tracking-wider rounded-tr-[22px]">Applicable On</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[#333333] font-bold text-[14px]">
+                      {[
+                        ["JD Sports Accessories Sale", "Up to 50% OFF", "All Users", "Bags, socks & accessories from Nike, adidas, Jordan & more; free shipping eligible", "Accessories"],
+                        ["adidas Originals Adicolor Diamond Bag", "50% OFF (Rp275,000)", "All Users", "Reduced from Rp550,000 original price", "adidas Accessories"],
+                        ["Jordan Cush Poly Socks (3 Pairs)", "50% OFF (Rp134,500)", "All Users", "Reduced from Rp269,000 original price", "Jordan Socks"],
+                        ["Nike Aura Crescent Crossbody Bag", "40% OFF (Rp341,400)", "All Users", "Reduced from Rp569,000 original price", "Nike Bags"],
+                        ["JD Sports Clothing Sale", "Up to 50% OFF", "All Users", "Discounts on sportswear and casual apparel across top brands", "Selected Clothing"],
+                        ["Jordan Flight Polo Jersey", "50% OFF (Rp729,500)", "All Users", "Reduced from Rp1,459,000 original price", "Jordan Apparel"],
+                        ["New Balance Core Logo T-Shirt", "30% OFF (Rp279,300)", "All Users", "Reduced from Rp399,000 original price", "New Balance Clothing"],
+                        ["Nike Air Max 95", "Save Rp624,500 (Rp1,424,500)", "All Users", "Reduced from Rp2,049,000 original price", "Nike Footwear"],
+                        ["Nike Air Max Phoenix Junior", "50% OFF (Rp899,500)", "All Users", "Reduced from Rp1,799,000 original price for junior sizing", "Junior Footwear"],
+                        ["JD Sports First Order Discount", "10% OFF", "New Customers", "Sign up to receive 10% off; next-day delivery & Click & Collect available", "First Orders"],
+                        ["JD Sports Member Exclusive Access", "Early Access", "JD Sports Members", "Exclusive early access to sales, deals, and special promotions for members", "Member Deals"]
+                      ].map((row, i, arr) => (
+                        <tr key={i} className={cn("border-b border-gray-200 hover:bg-gray-50/50 transition-colors", i === arr.length - 1 && "border-b-0")}>
+                          <td className="p-5 text-[#333333] font-black align-middle max-w-[220px]">{row[0]}</td>
+                          <td className="p-5 text-[#056BFA] font-black align-middle">{row[1]}</td>
+                          <td className="p-5 text-[#333333] align-middle">{row[2]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[240px]">{row[3]}</td>
+                          <td className="p-5 text-[#333333] align-middle max-w-[200px]">{row[4]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
 
-        <div
-          className={cn(
-            "text-gray-500 font-bold leading-relaxed space-y-6 relative",
-            !isReadMore && "max-h-[500px] overflow-hidden"
-          )}
-        >
-          <p>
-            Looking for a JD Sports discount code to save on your next pair of sneakers, sportswear, or activewear? CouponsBit helps shoppers find the latest JD Sports discount codes, promo codes, coupons, and deals before placing an order. Whether you're refreshing your <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wardrobe</Link>, picking up new trainers, or looking for sportswear from popular brands, checking for a deal before checkout can help you shop for less.
-          </p>
-          <p>
-            Before you complete your JD Sports purchase, visit CouponsBit to check the latest available offers and find a promotion that matches your shopping needs.
-          </p>
-
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Tips for Saving More at JD Sports
-              </h3>
-              <p>
-                Finding a coupon is only one way to make your JD Sports shopping more budget-friendly. Before buying, compare the available promotions and check whether the products you're interested in are already included in a sale.
-              </p>
-              <p>
-                It's also worth considering whether a promotion applies to your entire basket or only selected items. Reading the terms can help you understand the actual saving before you place your order.
-              </p>
-              <p>
-                If you're shopping for multiple products, adding everything you need to your basket first can also make it easier to determine which available offer provides the best value.
-              </p>
-              <p>
-                Most importantly, check CouponsBit before checkout for the latest JD Sports discount code, deals, and promotional offers.
-              </p>
-            </div>
-
-            <div className="max-w-5xl mx-auto space-y-12 py-8 px-4 sm:px-6">
-
-  {/* Hero / Header Section */}
-  <section className="text-center space-y-4 max-w-3xl mx-auto">
-    <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
-      JD Sports Shopping Guide
-    </Badge>
-    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
-      Find a JD Sports Discount Code on CouponsBit
-    </h2>
-    <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
-      <p>
-        Sportswear and branded sneakers can be a significant purchase, especially when you're shopping for multiple items. Finding a JD Sports discount code before checkout can give you an opportunity to reduce your total spending when an eligible offer is available.
-      </p>
-      <p>
-        CouponsBit makes it easier to check for current JD Sports coupons and promotions in one place. Before purchasing, head to the JD Sports page on CouponsBit and review the available offers.
-      </p>
-      <p>
-        You may find a promotional code that can be entered at checkout or a deal that applies automatically to eligible products. Make sure you read the offer details carefully, as individual promotions can have different requirements.
-      </p>
-      <p>
-        Checking CouponsBit before shopping can also help you avoid missing a limited-time promotion.
-      </p>
-    </div>
-  </section>
-
-  {/* Coupons, Promo Codes & Offers */}
-  <section>
-    <Card className="border-slate-200 shadow-sm">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <Tag className="w-6 h-6" /> JD Sports Coupons, Promo Codes &amp; Offers
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4 text-gray-600 leading-relaxed">
-        <p>
-          JD Sports promotions can take different forms. Depending on the current campaign, shoppers may find discounts on selected products, promotional codes, seasonal offers, or other opportunities to save.
-        </p>
-        <div className="space-y-2">
-          <p className="font-semibold text-gray-900">CouponsBit can help you look for:</p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "JD Sports discount codes",
-              "JD Sports promo codes",
-              "JD Sports coupons",
-              "JD Sports promotional offers",
-              "Sneaker and footwear deals",
-              "Sportswear offers",
-              "Seasonal sales",
-              "Selected-brand promotions",
-              "Limited-time shopping deals"
-            ].map((item, index) => (
-              <Badge key={index} variant="outline" className="bg-slate-50 border-slate-300 text-slate-700 py-1">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-        <p>
-          Not every offer will apply to every product. Some promotions may have exclusions for selected brands, products, sale items, or other categories. Always check the terms before completing your purchase.
-        </p>
-      </CardContent>
-    </Card>
-  </section>
-
-  {/* What Can You Shop at JD Sports? */}
-  <section className="space-y-6">
-    <div className="text-center space-y-2">
-      <h2 className="text-2xl font-bold text-[#056bfa]">What Can You Shop at JD Sports?</h2>
-      <p className="text-gray-600">JD Sports offers a broad selection of sports fashion and lifestyle products, making it useful for shoppers with different needs.</p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Sneakers and Trainers */}
-      <Card className="hover:shadow-md transition-shadow duration-200">
-        <CardHeader>
-          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <Footprints className="w-5 h-5 text-[#056bfa]" /> Sneakers and Trainers
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
-          <p>
-            Footwear is one of JD Sports' key categories. Shoppers can browse sneakers and trainers designed for sports, casual wear, running, and everyday use. The selection includes popular styles from major sports and lifestyle brands.
-          </p>
-        </CardContent>
-      </Card>
-
-      {/* Sportswear and Activewear */}
-      <Card className="hover:shadow-md transition-shadow duration-200">
-        <CardHeader>
-          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <Shirt className="w-5 h-5 text-[#056bfa]" /> Sportswear and Activewear
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
-          <p>
-            You can also find clothing designed for workouts, training, and active lifestyles. Depending on the collection, this can include T-shirts, shorts, leggings, tracksuits, sweatshirts, hoodies, and performance-focused clothing.
-          </p>
-        </CardContent>
-      </Card>
-
-      {/* Kids' Clothing and Footwear */}
-      <Card className="hover:shadow-md transition-shadow duration-200">
-        <CardHeader>
-          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <Smile className="w-5 h-5 text-[#056bfa]" /> Kids' Clothing and Footwear
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
-          <p>
-            JD Sports also offers options for younger shoppers, including children's trainers, clothing, and sportswear. This makes it possible to shop for different members of the family in one place.
-          </p>
-        </CardContent>
-      </Card>
-
-      {/* Accessories */}
-      <Card className="hover:shadow-md transition-shadow duration-200">
-        <CardHeader>
-          <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <ShoppingBag className="w-5 h-5 text-[#056bfa]" /> Accessories
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
-          <p>
-            Alongside footwear and apparel, shoppers can find sports and lifestyle accessories that complement their outfits and training gear.
-          </p>
-        </CardContent>
-      </Card>
-    </div>
-  </section>
-
-  {/* Why Check for a JD Sports Promo Code? */}
-  <section>
-    <Card className="border-slate-200 shadow-sm">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
-          <HelpCircle className="w-6 h-6" /> Why Check for a JD Sports Promo Code?
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4 text-gray-600 leading-relaxed">
-        <p>
-          If you're already planning to purchase sneakers or sportswear, checking for a promotion before checkout is a simple way to look for additional value.
-        </p>
-        <p>
-          A JD Sports promo code may be particularly useful when you're purchasing more than one item or shopping during a promotional period. Even when you don't find a suitable coupon code, checking current deals can help you identify products that are already discounted.
-        </p>
-        <p>
-          CouponsBit gives shoppers a convenient starting point for this process. Rather than searching across multiple websites for JD Sports offers, you can check available promotions before heading to checkout.
-        </p>
-      </CardContent>
-    </Card>
-  </section>
-
-</div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-[#056bfa] mb-4">
-                Save on Your Next JD Sports Purchase With CouponsBit
-              </h3>
-              <p>
-                Whether you're looking for the latest sneakers, sportswear, activewear, or accessories, JD Sports offers plenty of options for sports and lifestyle shopping. And before you pay full price, it's worth checking whether an eligible promotion can lower your total.
-              </p>
-              <p>
-                Visit CouponsBit before your next JD Sports purchase to find the latest JD Sports discount code, coupons, promo codes, and deals. Compare the available offers, check their terms, and choose the one that works best for your shopping basket.
-              </p>
-            </div>
-          </div>
-
-          {!isReadMore && (
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-          )}
-        </div>
-
-        <button
-          onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
-        >
-          {isReadMore ? "Read Less" : "Read More"}
-          <ChevronDown
-            className={cn(
-              "w-4 h-4 transition-transform duration-300",
-              isReadMore && "rotate-180"
-            )}
-          />
-        </button>
-
-        {/* Accordion FAQ Section */}
-        <div className="mt-20 space-y-4">
-          <h3 className="text-2xl font-black text-black mb-8">
-            Frequently Asked Questions About JD Sports Discount Codes
-          </h3>
-          {[
-            {
-              q: "How can I find a JD Sports discount code?",
-              a: "Visit the JD Sports page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible deal and follow its redemption instructions.",
-            },
-            {
-              q: "Can I use a JD Sports discount code on sale items?",
-              a: "This depends on the individual promotion. Some coupon codes may exclude sale products or selected brands, while others may have broader eligibility. Check the terms of the offer before using it.",
-            },
-            {
-              q: "Why isn't my JD Sports promo code working?",
-              a: "A promo code may not work if it has expired, has usage restrictions, applies only to selected products, or isn't valid for your order. Check the promotion's conditions and make sure the code has been entered correctly.",
-            },
-            {
-              q: "Does JD Sports offer deals without a discount code?",
-              a: "Yes. Shoppers may find sale products and other promotional offers where the discount is already reflected in the listed price and no code is required.",
-            },
-            {
-              q: "Should I check CouponsBit before shopping at JD Sports?",
-              a: "Yes. Checking CouponsBit before checkout lets you see whether a JD Sports discount code or another promotional offer is available for your purchase.",
-            },
-          ].map((faq, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300"
-            >
-              <button
-                onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors cursor-pointer"
-              >
-                <span className="text-black font-black text-base">{faq.q}</span>
                 <div
                   className={cn(
-                    "bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300",
-                    openFaq === i && "bg-[#056bfa]"
+                    "text-gray-500 font-bold leading-relaxed space-y-6 relative",
+                    !isReadMore && "max-h-[500px] overflow-hidden"
                   )}
                 >
+                  <p>
+                    Looking for a JD Sports discount code to save on your next pair of sneakers, sportswear, or activewear? CouponsBit helps shoppers find the latest JD Sports discount codes, promo codes, coupons, and deals before placing an order. Whether you're refreshing your <Link href="/stores/old-navy-promo-code" className="text-[#056bfa] hover:underline">everyday wardrobe</Link>, picking up new trainers, or looking for sportswear from popular brands, checking for a deal before checkout can help you shop for less.
+                  </p>
+                  <p>
+                    Before you complete your JD Sports purchase, visit CouponsBit to check the latest available offers and find a promotion that matches your shopping needs.
+                  </p>
+
+                  <div className="space-y-8">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Tips for Saving More at JD Sports
+                      </h3>
+                      <p>
+                        Finding a coupon is only one way to make your JD Sports shopping more budget-friendly. Before buying, compare the available promotions and check whether the products you're interested in are already included in a sale.
+                      </p>
+                      <p>
+                        It's also worth considering whether a promotion applies to your entire basket or only selected items. Reading the terms can help you understand the actual saving before you place your order.
+                      </p>
+                      <p>
+                        If you're shopping for multiple products, adding everything you need to your basket first can also make it easier to determine which available offer provides the best value.
+                      </p>
+                      <p>
+                        Most importantly, check CouponsBit before checkout for the latest JD Sports discount code, deals, and promotional offers.
+                      </p>
+                    </div>
+
+                    <div className="max-w-5xl mx-auto space-y-12 py-8 px-4 sm:px-6">
+
+                      {/* Hero / Header Section */}
+                      <section className="text-center space-y-4 max-w-3xl mx-auto">
+                        <Badge variant="secondary" className="px-3 py-1 text-sm font-semibold text-[#056bfa] bg-[#056bfa]/10">
+                          JD Sports Shopping Guide
+                        </Badge>
+                        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
+                          Find a JD Sports Discount Code on CouponsBit
+                        </h2>
+                        <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-left sm:text-center">
+                          <p>
+                            Sportswear and branded sneakers can be a significant purchase, especially when you're shopping for multiple items. Finding a JD Sports discount code before checkout can give you an opportunity to reduce your total spending when an eligible offer is available.
+                          </p>
+                          <p>
+                            CouponsBit makes it easier to check for current JD Sports coupons and promotions in one place. Before purchasing, head to the JD Sports page on CouponsBit and review the available offers.
+                          </p>
+                          <p>
+                            You may find a promotional code that can be entered at checkout or a deal that applies automatically to eligible products. Make sure you read the offer details carefully, as individual promotions can have different requirements.
+                          </p>
+                          <p>
+                            Checking CouponsBit before shopping can also help you avoid missing a limited-time promotion.
+                          </p>
+                        </div>
+                      </section>
+
+                      {/* Coupons, Promo Codes & Offers */}
+                      <section>
+                        <Card className="border-slate-200 shadow-sm">
+                          <CardHeader>
+                            <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
+                              <Tag className="w-6 h-6" /> JD Sports Coupons, Promo Codes &amp; Offers
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-4 text-gray-600 leading-relaxed">
+                            <p>
+                              JD Sports promotions can take different forms. Depending on the current campaign, shoppers may find discounts on selected products, promotional codes, seasonal offers, or other opportunities to save.
+                            </p>
+                            <div className="space-y-2">
+                              <p className="font-semibold text-gray-900">CouponsBit can help you look for:</p>
+                              <div className="flex flex-wrap gap-2">
+                                {[
+                                  "JD Sports discount codes",
+                                  "JD Sports promo codes",
+                                  "JD Sports coupons",
+                                  "JD Sports promotional offers",
+                                  "Sneaker and footwear deals",
+                                  "Sportswear offers",
+                                  "Seasonal sales",
+                                  "Selected-brand promotions",
+                                  "Limited-time shopping deals"
+                                ].map((item, index) => (
+                                  <Badge key={index} variant="outline" className="bg-slate-50 border-slate-300 text-slate-700 py-1">
+                                    {item}
+                                  </Badge>
+                                ))}
+                              </div>
+                            </div>
+                            <p>
+                              Not every offer will apply to every product. Some promotions may have exclusions for selected brands, products, sale items, or other categories. Always check the terms before completing your purchase.
+                            </p>
+                          </CardContent>
+                        </Card>
+                      </section>
+
+                      {/* What Can You Shop at JD Sports? */}
+                      <section className="space-y-6">
+                        <div className="text-center space-y-2">
+                          <h2 className="text-2xl font-bold text-[#056bfa]">What Can You Shop at JD Sports?</h2>
+                          <p className="text-gray-600">JD Sports offers a broad selection of sports fashion and lifestyle products, making it useful for shoppers with different needs.</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          {/* Sneakers and Trainers */}
+                          <Card className="hover:shadow-md transition-shadow duration-200">
+                            <CardHeader>
+                              <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                <Footprints className="w-5 h-5 text-[#056bfa]" /> Sneakers and Trainers
+                              </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+                              <p>
+                                Footwear is one of JD Sports' key categories. Shoppers can browse sneakers and trainers designed for sports, casual wear, running, and everyday use. The selection includes popular styles from major sports and lifestyle brands.
+                              </p>
+                            </CardContent>
+                          </Card>
+
+                          {/* Sportswear and Activewear */}
+                          <Card className="hover:shadow-md transition-shadow duration-200">
+                            <CardHeader>
+                              <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                <Shirt className="w-5 h-5 text-[#056bfa]" /> Sportswear and Activewear
+                              </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+                              <p>
+                                You can also find clothing designed for workouts, training, and active lifestyles. Depending on the collection, this can include T-shirts, shorts, leggings, tracksuits, sweatshirts, hoodies, and performance-focused clothing.
+                              </p>
+                            </CardContent>
+                          </Card>
+
+                          {/* Kids' Clothing and Footwear */}
+                          <Card className="hover:shadow-md transition-shadow duration-200">
+                            <CardHeader>
+                              <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                <Smile className="w-5 h-5 text-[#056bfa]" /> Kids' Clothing and Footwear
+                              </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+                              <p>
+                                JD Sports also offers options for younger shoppers, including children's trainers, clothing, and sportswear. This makes it possible to shop for different members of the family in one place.
+                              </p>
+                            </CardContent>
+                          </Card>
+
+                          {/* Accessories */}
+                          <Card className="hover:shadow-md transition-shadow duration-200">
+                            <CardHeader>
+                              <CardTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                <ShoppingBag className="w-5 h-5 text-[#056bfa]" /> Accessories
+                              </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-3 text-sm text-gray-600 leading-relaxed">
+                              <p>
+                                Alongside footwear and apparel, shoppers can find sports and lifestyle accessories that complement their outfits and training gear.
+                              </p>
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </section>
+
+                      {/* Why Check for a JD Sports Promo Code? */}
+                      <section>
+                        <Card className="border-slate-200 shadow-sm">
+                          <CardHeader>
+                            <CardTitle className="text-2xl font-bold text-[#056bfa] flex items-center gap-2">
+                              <HelpCircle className="w-6 h-6" /> Why Check for a JD Sports Promo Code?
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-4 text-gray-600 leading-relaxed">
+                            <p>
+                              If you're already planning to purchase sneakers or sportswear, checking for a promotion before checkout is a simple way to look for additional value.
+                            </p>
+                            <p>
+                              A JD Sports promo code may be particularly useful when you're purchasing more than one item or shopping during a promotional period. Even when you don't find a suitable coupon code, checking current deals can help you identify products that are already discounted.
+                            </p>
+                            <p>
+                              CouponsBit gives shoppers a convenient starting point for this process. Rather than searching across multiple websites for JD Sports offers, you can check available promotions before heading to checkout.
+                            </p>
+                          </CardContent>
+                        </Card>
+                      </section>
+
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-black text-[#056bfa] mb-4">
+                        Save on Your Next JD Sports Purchase With CouponsBit
+                      </h3>
+                      <p>
+                        Whether you're looking for the latest sneakers, sportswear, activewear, or accessories, JD Sports offers plenty of options for sports and lifestyle shopping. And before you pay full price, it's worth checking whether an eligible promotion can lower your total.
+                      </p>
+                      <p>
+                        Visit CouponsBit before your next JD Sports purchase to find the latest JD Sports discount code, coupons, promo codes, and deals. Compare the available offers, check their terms, and choose the one that works best for your shopping basket.
+                      </p>
+                    </div>
+                  </div>
+
+                  {!isReadMore && (
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
+                  )}
+                </div>
+
+                <button
+                  onClick={() => setIsReadMore(!isReadMore)}
+                  className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
+                >
+                  {isReadMore ? "Read Less" : "Read More"}
                   <ChevronDown
                     className={cn(
-                      "w-4 h-4 text-gray-500 transition-transform duration-300",
-                      openFaq === i && "text-white rotate-180"
+                      "w-4 h-4 transition-transform duration-300",
+                      isReadMore && "rotate-180"
                     )}
                   />
+                </button>
+
+                {/* Accordion FAQ Section */}
+                <div className="mt-20 space-y-4">
+                  <h3 className="text-2xl font-black text-black mb-8">
+                    Frequently Asked Questions About JD Sports Discount Codes
+                  </h3>
+                  {[
+                    {
+                      q: "How can I find a JD Sports discount code?",
+                      a: "Visit the JD Sports page on CouponsBit to check for available discount codes, coupons, and promotional offers. Choose an eligible deal and follow its redemption instructions.",
+                    },
+                    {
+                      q: "Can I use a JD Sports discount code on sale items?",
+                      a: "This depends on the individual promotion. Some coupon codes may exclude sale products or selected brands, while others may have broader eligibility. Check the terms of the offer before using it.",
+                    },
+                    {
+                      q: "Why isn't my JD Sports promo code working?",
+                      a: "A promo code may not work if it has expired, has usage restrictions, applies only to selected products, or isn't valid for your order. Check the promotion's conditions and make sure the code has been entered correctly.",
+                    },
+                    {
+                      q: "Does JD Sports offer deals without a discount code?",
+                      a: "Yes. Shoppers may find sale products and other promotional offers where the discount is already reflected in the listed price and no code is required.",
+                    },
+                    {
+                      q: "Should I check CouponsBit before shopping at JD Sports?",
+                      a: "Yes. Checking CouponsBit before checkout lets you see whether a JD Sports discount code or another promotional offer is available for your purchase.",
+                    },
+                  ].map((faq, i) => (
+                    <div
+                      key={i}
+                      className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300"
+                    >
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors cursor-pointer"
+                      >
+                        <span className="text-black font-black text-base">{faq.q}</span>
+                        <div
+                          className={cn(
+                            "bg-[#f0f0f0] p-2 rounded-xl transition-all duration-300",
+                            openFaq === i && "bg-[#056bfa]"
+                          )}
+                        >
+                          <ChevronDown
+                            className={cn(
+                              "w-4 h-4 text-gray-500 transition-transform duration-300",
+                              openFaq === i && "text-white rotate-180"
+                            )}
+                          />
+                        </div>
+                      </button>
+                      <div
+                        className={cn(
+                          "overflow-hidden transition-all duration-300 px-8 bg-white",
+                          openFaq === i
+                            ? "max-h-60 pb-8 opacity-100"
+                            : "max-h-0 opacity-0 pb-0"
+                        )}
+                      >
+                        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </button>
-              <div
-                className={cn(
-                  "overflow-hidden transition-all duration-300 px-8 bg-white",
-                  openFaq === i
-                    ? "max-h-60 pb-8 opacity-100"
-                    : "max-h-0 opacity-0 pb-0"
-                )}
-              >
-                <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">
-                  {faq.a}
-                </p>
               </div>
+
+              {/* Sidebar */}
+              <div className="space-y-10">
+                {/* Tag Cloud */}
+                <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Popular JD Sports Searches
+                  </h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {[
+                      "JD Sports Promo Code",
+                      "Sneakers Discount",
+                      "Nike Trainer Deals",
+                      "Adidas Activewear Offers",
+                      "JD Sports Clearance Sale",
+                      "CouponsBit JD Sports",
+                      "Sportswear Coupons",
+                      "Free Delivery Offers",
+                    ].map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Sidebar Deals */}
+                <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
+                  <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                    Today's Top JD Sports Deals
+                  </h3>
+                  <div className="space-y-6">
+                    {[
+                      {
+                        heading: "ACCESSORIES SALE",
+                        sub: "Save up to 50% on accessories from Nike, adidas, Jordan and more",
+                      },
+                      {
+                        heading: "NIKE AIR MAX 95",
+                        sub: "At Rp1,424,500 during the JD Sports sale",
+                      },
+                      {
+                        heading: "FIRST ORDER OFFER",
+                        sub: "Enjoy 10% off your first order at JD Sports",
+                      },
+                      {
+                        heading: "MEMBERS EARLY ACCESS",
+                        sub: "Join JD Sports membership for exclusive early deals",
+                      },
+                    ].map((deal, i) => (
+                      <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                        <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
+                          {i + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
+                            {deal.heading}
+                          </p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
+                            {deal.sub}
+                          </p>
+                        </div>
+                        <a
+                          href="https://www.jdsports.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Get deal: ${deal.heading}`}
+                          className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
+                        >
+                          Get Deal
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="space-y-10">
-        {/* Tag Cloud */}
-        <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#056bfa]/5">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Popular JD Sports Searches
-          </h3>
-          <div className="flex flex-wrap gap-2.5">
-            {[
-              "JD Sports Promo Code",
-              "Sneakers Discount",
-              "Nike Trainer Deals",
-              "Adidas Activewear Offers",
-              "JD Sports Clearance Sale",
-              "CouponsBit JD Sports",
-              "Sportswear Coupons",
-              "Free Delivery Offers",
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#056bfa] uppercase tracking-widest shadow-sm border border-white cursor-pointer hover:bg-[#056bfa] hover:text-white transition-colors"
-              >
-                {tag}
-              </span>
-            ))}
           </div>
-        </div>
-
-        {/* Sidebar Deals */}
-        <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-          <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-            Today's Top JD Sports Deals
-          </h3>
-          <div className="space-y-6">
-            {[
-              {
-              heading: "ACCESSORIES SALE",
-              sub: "Save up to 50% on accessories from Nike, adidas, Jordan and more",
-              },
-              {
-              heading: "NIKE AIR MAX 95",
-              sub: "At Rp1,424,500 during the JD Sports sale",
-              },
-              {
-              heading: "FIRST ORDER OFFER",
-              sub: "Enjoy 10% off your first order at JD Sports",
-              },
-              {
-              heading: "MEMBERS EARLY ACCESS",
-              sub: "Join JD Sports membership for exclusive early deals",
-              },
-            ].map((deal, i) => (
-              <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">
-                  {i + 1}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
-                  </p>
-                  <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                    {deal.sub}
-                  </p>
-                </div>
-                <a
-                  href="https://www.jdsports.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Get deal: ${deal.heading}`}
-                  className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90 flex-shrink-0"
-                >
-                  Get Deal
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+        </section>
 
       </main>
 
