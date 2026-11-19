@@ -73,6 +73,8 @@ const storeOffers = OMAN_AIR_COUPONS.map((coupon, index) => ({
     name: coupon.title,
     description: coupon.description,
     url: "https://www.couponsbit.us/stores/oman-air-discount-code",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
     seller: {
       "@type": "Organization",
       name: "Oman Air",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import BudgetCouponsContent from "./_components/StoreCouponsContent";
 import { OFFERS } from "./_components/offers";
 
@@ -52,6 +53,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
+  },
 };
 
 const budgetSchema = {
@@ -92,6 +99,8 @@ const budgetSchema = {
           name: o.title,
           description: o.description,
           url: "https://www.couponsbit.us/stores/budget-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "Budget", url: "https://www.budget.com" },
         },
       })),
@@ -126,6 +135,13 @@ const budgetSchema = {
         contactType: "Customer Support",
         availableLanguage: "English",
       },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/budget-discount-code#brand",
+      name: "Budget",
+      url: "https://www.budget.com",
     },
 
     {
@@ -219,7 +235,9 @@ export default function BudgetStorePage() {
           __html: JSON.stringify(budgetSchema),
         }}
       />
-      <BudgetCouponsContent />
+      <Suspense fallback={null}>
+        <BudgetCouponsContent />
+      </Suspense>
     </>
   );
 }
