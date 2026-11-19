@@ -144,7 +144,7 @@ export default function RayneoCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Rayneo Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Rayneo Promo Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -153,7 +153,7 @@ export default function RayneoCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(8.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest RayNeo Discount Code and RayNeo Promo Code for November 2026. Enjoy up to $130 OFF the RayNeo X3 Pro AI smart glasses and up to $70 OFF RayNeo Air Series AR glasses and bundle deals. You can also shop the RayNeo Air 4 Pro starting at $254.15, grab the JoyDock gaming companion for $89, and save on Air 3s entertainment bundles. Browse verified RayNeo offers to upgrade your AR and gaming experience for less.
+                      Looking to save on your next wearable tech purchase? A RayNeo promo code can help you get up to 30% off selected smart glasses and accessories in Nov 2026. If you're wondering whether RayNeo offers a discount code, the answer is yes—verified promotions are available on eligible products, with savings varying by item. We regularly update these offers, making it easier to find trusted deals before you complete your purchase.
                     </p>
                     <a
                       href="https://rayneo.pxf.io/c/4303217/1983430/24338?subId1=1016b"
@@ -257,7 +257,7 @@ export default function RayneoCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-8">
-                  <h2 className="text-2xl font-black text-black leading-tight">Rayneo discount Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Rayneo Promo Codes & Discounts Offers</h2>
                   <p className="text-gray-500 font-bold text-sm tracking-wide mt-1">6 Coupons & Offers Available</p>
                 </div>
 

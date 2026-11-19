@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import RayneoCouponsContent from "./_components/StoreCouponsContent";
 import { RAYNEO_COUPONS } from "./_components/offers";
 
-const TITLE = "RayNeo Discount Code: Get Up to $130 OFF | Nov 2026";
+const TITLE = "RayNeo Promo Code: Up to 30% Off Sitewide | Nov 2026";
 const DESCRIPTION =
-  "Get the latest RayNeo Discount Code and RayNeo Promo Code for November 2026. Save up to $130 OFF RayNeo X3 Pro AI and up to $70 OFF Air Series AR glasses.";
+  "Use a RayNeo promo code and save up to 30% on smart glasses and accessories. Find the latest discount code offers with verified deals in Nov 2026.";
 
 export const metadata: Metadata = {
   title: {

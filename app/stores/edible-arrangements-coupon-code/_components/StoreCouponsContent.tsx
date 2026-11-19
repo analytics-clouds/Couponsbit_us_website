@@ -798,17 +798,17 @@ export default function EdibleArrangementsCouponsContent() {
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                            {deal.heading}
+                            {deal.topLabel} {deal.mainValue} {deal.offText}
                           </p>
                           <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">
-                            {deal.sub}
+                            {deal.description}
                           </p>
                         </div>
                         <a
                           href="https://www.ediblearrangements.com"
                           target="_blank"
                           rel="nofollow noopener noreferrer"
-                          aria-label={`Shop Edible Arrangements: ${deal.heading}`}
+                          aria-label={`Shop Edible Arrangements: ${deal.title}`}
                           className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                         >
                           Get Deal

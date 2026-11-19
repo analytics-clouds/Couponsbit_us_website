@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import OmanAirCouponsContent from "./_components/StoreCouponsContent";
 import { OMAN_AIR_COUPONS } from "./_components/offers";
 
-const TITLE = "Oman Air Discount Code: 50% Off + 25% Off | Nov 2026";
+const TITLE = "Oman Air Promo Code: 50% Off Oman Air Pass | Nov 2026";
 const DESCRIPTION =
-  "Save up to 50% with the latest Oman Air discount code. Get 25% off select flights and book verified airfare deals on domestic and international routes this Nov 2026.";
+  "Oman Air Promo Code and Oman Air Discount Code offer up to 50% off flights plus 25% off fares. Get verified Nov 2026 travel deals now.";
 
 export const metadata: Metadata = {
   title: {

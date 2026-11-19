@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import UnipinCouponsContent from "./_components/StoreCouponsContent";
 import { UNIPIN_COUPONS } from "./_components/offers";
 
-const TITLE = "UniPin Discount Code: Get 25% Extra Robux | Nov 2026";
+const TITLE = "UniPin Promo Code: 25% Extra Robux + Top-Ups | Nov 2026";
 const DESCRIPTION =
-  "Get the latest UniPin Discount Code and UniPin Promo Code for November 2026. Enjoy 25% Extra Robux or save up to 17% OFF on eligible game vouchers.";
+  "UniPin Promo Code and UniPin Discount Code offer 16% off mobile games plus 25% extra Robux. Get verified Nov 2026 gaming deals now.";
 
 export const metadata: Metadata = {
   title: {

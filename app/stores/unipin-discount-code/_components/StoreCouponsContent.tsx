@@ -148,7 +148,7 @@ export default function UnipinCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Unipin Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">Unipin Promo Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -158,7 +158,7 @@ export default function UnipinCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Save more with the latest UniPin deals for November 2026. Enjoy 25% Extra Robux on eligible Roblox purchases and save up to 17% OFF selected game vouchers. You can also get 10% OFF UniPin Credits, 16% OFF eligible mobile games, and top up PUBG Mobile UC, Fortnite V-Bucks, Mobile Legends, PlayStation Gift Cards, and Roblox Gift Cards at competitive prices. Browse verified UniPin offers for secure game top-ups, digital gift cards, and gaming vouchers.
+                      UniPin Promo Code offers bring verified gaming savings with 25% extra Robux on eligible purchases and up to 17% off selected game vouchers. UniPin Discount Code deals also include Mobile Legends top-ups from $1 and Magic Chess credits from $0.94. These working Nov 2026 offers cover popular games like PUBG Mobile, Fortnite, Roblox, and more digital gaming needs. I recommend checking account details, region limits, and eligible products to complete your top-up safely and get the best available value.
                     </p>
                     <a
                       href="https://unipin.sjv.io/c/4303217/1151699/14562?subId1=1015"
@@ -264,7 +264,7 @@ export default function UnipinCouponsContent() {
               {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
                 <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Unipin Coupon Codes & Offers</h2>
+                  <h2 className="text-2xl font-black text-black leading-tight">Unipin Promo Codes & Discount Offers</h2>
                 </div>
 
                 {UNIPIN_COUPONS.map((coupon) => (
@@ -275,9 +275,9 @@ export default function UnipinCouponsContent() {
                           <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                           <div className="text-center px-1">
-                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">{coupon.topLabel}</p>
-                            <div className={`${coupon.valueFontClass} font-extrabold leading-none mt-2`}>{coupon.mainValue}</div>
-                            {coupon.offText && <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">{coupon.offText}</p>}
+                            <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[12px] sm:text-[12px] font-semibold leading-3">{coupon.topLabel}</p>
+                            <div className="text-[22px] sm:text-4xl font-extrabold leading-none mt-2">{coupon.mainValue}</div>
+                            {coupon.offText && <p className="text-[18px] sm:text-xl font-bold mt-2 uppercase">{coupon.offText}</p>}
                           </div>
                         </div>
                         <div className="flex-1 flex flex-col lg:flex-row min-w-0">

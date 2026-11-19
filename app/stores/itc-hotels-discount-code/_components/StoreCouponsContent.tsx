@@ -27,7 +27,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { type Offer, OFFERS } from "./offers";
+import { type Coupon, OFFERS } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -54,9 +54,9 @@ export default function ItcHotelsCouponsContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
-  const [activeOffer, setActiveOffer] = useState<Offer | null>(null);
+  const [activeOffer, setActiveOffer] = useState<Coupon | null>(null);
 
-  const handleGetDeal = (offer: Offer) => {
+  const handleGetDeal = (offer: Coupon) => {
     setActiveOffer(offer);
     setShowModal(true);
   };
@@ -118,7 +118,7 @@ export default function ItcHotelsCouponsContent() {
                     </div>
                   </a>
                   <div>
-                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">ITC Hotels Discount Code</h1>
+                    <h1 className="text-black font-black text-3xl md:text-4xl mb-2">ITC Hotels Promo Code</h1>
                     <div className="flex items-center gap-1.5 mb-3">
                       <div className="flex items-center">
                         {[1, 2, 3, 4].map(i => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
@@ -128,7 +128,7 @@ export default function ItcHotelsCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(21.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Planning your next escape? November 2026 is a good time to book, with ITC Hotels offering a range of deals that stretch your travel budget. Members can get up to 50% off on exclusive stays, while the All-In Getaway package comes with a 20% discount. There are also extra savings on dining and curated hotel experiences. If a beach break is on your mind, eligible Goa stays and Extended Escape bookings both carry a 33% discount through an ITC Hotels discount code. We refresh our verified offers regularly, so you can find a luxury stay without paying full price.
+                      ITC Hotels Promo Code options help travelers unlock verified hotel savings, including up to 50% membership benefits and flat 33% off selected Goa stays. ITC Hotels Discount Code deals also feature up to 20% off All-In Getaway packages and 33% off extended escapes. These working Nov 2026 offers cover luxury stays, dining benefits, spa services, and vacation packages. I recommend checking property availability, membership requirements, and package details to secure the best ITC Hotels experience for your trip.
                     </p>
                     <a
                       href={STORE_URL}
@@ -202,7 +202,7 @@ export default function ItcHotelsCouponsContent() {
     <div className="flex flex-col lg:flex-row gap-12">
       <div className="top-offers lg:w-[65%]">
         <div className="mb-10">
-          <h2 className="text-2xl font-black text-black leading-tight">ITC Hotels Discount Codes & Offers</h2>
+          <h2 className="text-2xl font-black text-black leading-tight">ITC Hotels Promo Codes & Discount Offers</h2>
         </div>
 
         {OFFERS.map((c, i) => (
@@ -213,8 +213,9 @@ export default function ItcHotelsCouponsContent() {
                   <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
                   <div className="text-center px-1">
-                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.label}</p>
-                    <div className="text-[22px] sm:text-[32px] font-extrabold leading-none mt-2">{c.value}</div>
+                    <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[11px] sm:text-[13px] font-bold leading-tight">{c.topLabel}</p>
+                    <div className="text-[22px] sm:text-[32px] font-extrabold leading-none mt-2">{c.mainValue}</div>
+                    {c.offText && <p className="text-[11px] sm:text-sm font-bold mt-1 uppercase">{c.offText}</p>}
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -224,14 +225,14 @@ export default function ItcHotelsCouponsContent() {
                       <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
                     </div>
                     <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h2>
-                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+                    <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
                     <button type="button" onClick={() => setExpandedCouponId(expandedCouponId === c.id ? null : c.id)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
                       View Details
                       <ChevronDown size={16} className={`transition-transform duration-300 ${expandedCouponId === c.id ? "rotate-180" : ""}`} />
                     </button>
                     <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                       <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                        {c.bullets.map((b, bi) => (
+                        {c.points.map((b, bi) => (
                           <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                         ))}
                       </ul>
@@ -974,10 +975,10 @@ export default function ItcHotelsCouponsContent() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-wider group-hover:text-[#056bfa] transition-colors truncate">
-                    {offer.label} {offer.value}
+                    {offer.topLabel} {offer.mainValue} {offer.offText}
                   </p>
                   <p className="text-gray-500 font-medium text-[11px] truncate mt-0.5">
-                    {offer.desc}
+                    {offer.description}
                   </p>
                 </div>
                 <button

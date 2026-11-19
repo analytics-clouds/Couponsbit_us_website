@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     absolute: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
   },
   description:
-    "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
+    "ITC Hotels Promo Code and ITC Hotels Discount Code offer 50% membership savings plus 33% off Goa stays. Get verified Nov 2026 deals now.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
     title: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
     description:
-      "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
+      "ITC Hotels Promo Code and ITC Hotels Discount Code offer 50% membership savings plus 33% off Goa stays. Get verified Nov 2026 deals now.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
     description:
-      "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
+      "ITC Hotels Promo Code and ITC Hotels Discount Code offer 50% membership savings plus 33% off Goa stays. Get verified Nov 2026 deals now.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787124413/itc-hotels-logo_ceakgl.webp"],
     site: "@couponsbit",
   },
@@ -68,7 +68,7 @@ const itcHotelsSchema = {
       url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
       name: "ITC Hotels Promo Code: Up to 50% Off Stays | Nov 2026",
       description:
-        "Book for less with an ITC Hotels Promo Code or ITC Hotels Discount Code to save up to 50% on stays and 33% on Goa vacations. Verified Nov 2026.",
+        "ITC Hotels Promo Code and ITC Hotels Discount Code offer 50% membership savings plus 33% off Goa stays. Get verified Nov 2026 deals now.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       datePublished: "2026-01-01",
@@ -90,8 +90,10 @@ const itcHotelsSchema = {
         item: {
           "@type": "Offer",
           name: o.title,
-          description: o.desc,
+          description: o.description,
           url: "https://www.couponsbit.us/stores/itc-hotels-discount-code",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
           seller: { "@type": "Organization", name: "ITC Hotels", url: "https://www.itchotels.com" },
         },
       })),

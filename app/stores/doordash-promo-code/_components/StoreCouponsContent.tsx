@@ -290,8 +290,8 @@ export default function DoorDashCouponsContent() {
             <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
             <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
             <div className="text-center px-1">
-              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-extrabold leading-3">{c.label}</p>
-              <div className="text-[15px] sm:text-2xl font-black leading-tight sm:leading-none mt-2.5">{c.value}</div>
+              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] font-extrabold leading-3">{c.topLabel}</p>
+              <div className="text-[15px] sm:text-2xl font-black leading-tight sm:leading-none mt-2.5">{c.mainValue}{c.offText && <span className="block text-[11px] sm:text-sm font-extrabold mt-0.5">{c.offText}</span>}</div>
             </div>
           </div>
           <div className="flex-1 flex flex-col lg:flex-row min-w-0">
@@ -301,7 +301,7 @@ export default function DoorDashCouponsContent() {
                 <span className="bg-green-100 text-green-700 text-[10px] sm:text-[11px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">{c.verified}</span>
               </div>
               <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">{c.title}</h3>
-              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.desc}</p>
+              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">{c.description}</p>
               
               <button 
                 type="button" 
@@ -315,7 +315,7 @@ export default function DoorDashCouponsContent() {
 
               <div className={`overflow-hidden transition-all duration-300 ${expandedCouponId === c.id ? "max-h-[400px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
                 <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-                  {(c.bullets ?? []).map((b, bi) => (
+                  {c.points.map((b, bi) => (
                     <li key={bi} className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>{b}</li>
                   ))}
                 </ul>
@@ -808,17 +808,17 @@ For busy professionals, families, students, and anyone who would rather skip the
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">
-                    {deal.heading}
+                    {deal.topLabel} {deal.mainValue} {deal.offText}
                   </p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1">
-                    {deal.sub}
+                    {deal.description}
                   </p>
                 </div>
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="nofollow noopener noreferrer" 
-                  aria-label={`Get deal: ${deal.heading}`} 
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`Get deal: ${deal.title}`} 
                   className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90"
                 >
                   Get Deal

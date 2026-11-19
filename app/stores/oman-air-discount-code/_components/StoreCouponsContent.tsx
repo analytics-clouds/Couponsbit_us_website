@@ -28,7 +28,7 @@ import {
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { cn } from "@/lib/utils";
-import { OMAN_AIR_COUPONS } from "./offers";
+import { OMAN_AIR_COUPONS, STORE_URL } from "./offers";
 
 interface StoreItem {
   name: string;
@@ -205,7 +205,7 @@ export default function OmanAirCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                      Looking for the latest Oman Air discount code? Save up to 50% with the Oman Air Pass and enjoy 25% off eligible Economy and Business Class flights. Discover verified airfare deals on popular international routes, including Muscat, Chennai, Dhaka, and Jakarta, throughout Nov 2026. Whether you're traveling for business, a family vacation, or a weekend getaway, Oman Air offers comfortable flights, flexible booking options, and exclusive promotions to help you travel for less.
+                      Oman Air Promo Code offers help travelers find verified flight savings, including up to 50% off selected flights with the Oman Air Pass and 25% off eligible Economy and Business Class fares. Oman Air Discount Code deals also feature Chennai to Muscat flights from $165 and Dhaka to Muscat fares from $328. These working Nov 2026 offers cover international routes and flexible cabin options. I recommend checking route availability, travel dates, and fare conditions to secure the best Oman Air booking value.
                     </p>
                     <div className="flex items-center gap-3 mt-4 mb-2">
                       <a
@@ -430,7 +430,7 @@ export default function OmanAirCouponsContent() {
                               <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
                                 {coupon.code ? (
                                   <button
-                                    onClick={() => handleCopyCode(coupon.code!, coupon.id, coupon.affiliateUrl, coupon.title)}
+                                    onClick={() => handleCopyCode(coupon.code!, coupon.id, STORE_URL, coupon.title)}
                                     className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[16px] sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center flex items-center justify-center gap-2"
                                   >
                                     {isCopied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
@@ -438,7 +438,7 @@ export default function OmanAirCouponsContent() {
                                   </button>
                                 ) : (
                                   <a
-                                    href={coupon.affiliateUrl}
+                                    href={STORE_URL}
                                     target="_blank"
                                     rel="nofollow noopener noreferrer"
                                     aria-label={`Get Oman Air deal: ${coupon.title}`}
@@ -787,7 +787,7 @@ export default function OmanAirCouponsContent() {
                           <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.mainValue} {deal.offText}</p>
                           <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.title}</p>
                         </div>
-                        <a href={deal.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Oman Air deal: ${deal.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                        <a href={STORE_URL} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get Oman Air deal: ${deal.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
                       </div>
                     ))}
                   </div>

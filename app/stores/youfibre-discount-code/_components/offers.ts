@@ -6,6 +6,9 @@ export interface Coupon {
   title: string;
   description: string;
   code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
   points: string[];
 }
 
