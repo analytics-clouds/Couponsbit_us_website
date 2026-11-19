@@ -720,14 +720,14 @@ export default function WiskiiCouponsContent() {
                 <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top WISKII Active Deals</h3>
                   <div className="space-y-6">
-                    {COUPONS.slice(0, 5).map((deal, i) => (
+                    {WISKII_COUPONS.slice(0, 5).map((deal, i) => (
                       <div key={i} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056bfa] font-black text-xl italic shadow-inner">W</div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056bfa] transition-colors">{deal.title}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.description}</p>
                         </div>
-                        <a href="https://performance.gotrackier.com/click?campaign_id=4725&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get WISKII Active deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
+                        <a href="https://performance.gotrackier.com/click?campaign_id=4725&pub_id=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label={`Get WISKII Active deal: ${deal.title}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056bfa] hover:text-white transition-all active:scale-90">Get Deal</a>
                       </div>
                     ))}
                   </div>

@@ -703,20 +703,20 @@ export default function LumibrickCouponsContent() {
                 <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Lumibricks Deals</h3>
                   <div className="space-y-6">
-                    {COUPONS.map((deal, i) => (
+                    {LUMIBRICK_COUPONS.map((deal, i) => (
                       <div key={i} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#056BFA] font-black text-xl italic shadow-inner">
                           <Blocks className="w-5 h-5" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056BFA] transition-colors">{deal.heading}</p>
-                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.sub}</p>
+                          <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#056BFA] transition-colors">{deal.title}</p>
+                          <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-1.5 normal-case">{deal.description}</p>
                         </div>
                         <a
                           href="https://funwhole.sjv.io/c/4303217/1448255/17189?subId1=1015"
                           target="_blank"
                           rel="nofollow noopener noreferrer"
-                          aria-label={`Get Lumibricks deal: ${deal.heading}`}
+                          aria-label={`Get Lumibricks deal: ${deal.title}`}
                           className="bg-[#fff7f2] text-[#056BFA] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#056BFA] hover:text-white transition-all active:scale-90"
                         >
                           Get Deal
