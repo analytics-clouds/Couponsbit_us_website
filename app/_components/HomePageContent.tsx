@@ -951,6 +951,56 @@ export default function HomePageContent() {
           </div>
         </section>
 
+         {/* Section 7: Latest Blog Posts */}
+        <section className="bg-[#f5f5f5] py-12">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-10">
+              <h2 className="text-black font-extrabold text-4xl lg:text-5xl">Latest Insights</h2>
+              <div className="w-16 h-[3px] bg-[#056bfa] rounded-full mx-auto mt-4" />
+              <p className="text-gray-500 text-base max-w-[600px] mx-auto mt-4 leading-relaxed">
+                Shopping tips, saving hacks and deal guides from our expert team
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {[
+                { date: "Nov 17, 2026", title: "5 Reasons to Shop During the Black Friday Sale", desc: "Discover 5 reasons to shop during the Black Friday sale in the US. Find seasonal deals, save on gifts, compare prices, and use promo codes.", img: "https://res.cloudinary.com/zzlsqavg/image/upload/v1794915843/reasons-to-shop-black-friday-sale.webp", href: "/blog/reasons-to-shop-black-friday-sale" },
+                { date: "Nov 13, 2026", title: "Top 5 Reasons to Use a Promo Code Before Shopping", desc: "Discover 5 reasons to use a promo code before buying anything. Learn how promo codes help you save money, shop smarter, and get better value.", img: "/blog/reasons-to-use-promo-code-before-buying.webp", href: "/blog/reasons-to-use-promo-code-before-buying" },
+                { date: "Nov 05, 2026", title: "Veterans Day 2026: Ways to Honour Our Heroes", desc: "Discover the meaning of Veterans Day 2026, its history, celebration ideas, and thoughtful ways to honour the brave men and women who served.", img: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793866032/veterans-day-2026-ways-to-honour-veterans.webp", href: "/blog/veterans-day-2026-ways-to-honour-veterans" }
+              ].map((post, i) => (
+                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1.5 transition-all duration-300">
+                  <div className="w-full sm:w-[180px] lg:w-full aspect-video sm:h-[180px] lg:aspect-video shrink-0 overflow-hidden">
+                    <img
+                      src={post.img}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2 text-gray-500 text-[10px] font-bold uppercase tracking-widest leading-none">
+                        <span>{post.date}</span>
+                      </div>
+                      <h3 className="text-[#056bfa] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
+                      <p className="text-gray-500 text-xs mt-2 line-clamp-2 leading-relaxed">{post.desc}</p>
+                    </div>
+                    <div className="flex items-center gap-2 text-[#056bfa] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
+                      READ MORE <ArrowRight className="w-3 h-3" />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-10 flex justify-center">
+              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
+                <BookOpen className="w-4 h-4" />
+                Read More →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-20 bg-[#f5f5f5]">
           <div className="container mx-auto px-4 max-w-7xl">
@@ -1011,61 +1061,7 @@ export default function HomePageContent() {
           </div>
         </section>
 
-        {/* Section 7: Latest Blog Posts */}
-        {/* <section className="bg-[#f5f5f5] py-12">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="text-center mb-10">
-              <p className="text-gray-500 font-black text-[10px] tracking-[0.2em] uppercase mb-2">FROM OUR EDITORS</p>
-              <h2 className="text-black font-extrabold text-4xl lg:text-5xl">Latest from Our Blog</h2>
-              <div className="w-16 h-[3px] bg-[#FF9900] rounded-full mx-auto mt-4" />
-              <p className="text-gray-500 text-base max-w-[600px] mx-auto mt-4 leading-relaxed">
-                Shopping tips, saving hacks and deal guides from our expert team
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {[
-                { kw: "amazon online shopping india", date: "May 12, 2026", read: "6 min read", title: "10 Smart Ways to Save Money on Amazon India in 2026", desc: "Amazon India is a goldmine of deals if you know where to look. Here are 10 proven strategies.", href: "/blog/couponsbit-shopping-savings-guide" },
-                { kw: "coupon code discount", date: "May 10, 2026", read: "5 min read", title: "How to Stack Coupons and Bank Offers for Maximum Savings", desc: "Did you know you can combine multiple deals for even bigger discounts? This guide explains how.", href: "/blog" },
-                { kw: "fashion sale clothing", date: "May 8, 2026", read: "7 min read", title: "Myntra Grand Sale 2026 — Complete Guide to Getting the Best Deals", desc: "Myntra's biggest sale of the year is here. Here is your complete guide to saving the most money.", href: "/blog" }
-              ].map((post, i) => (
-                <Link href={post.href} key={i} className="group bg-white rounded-2xl border border-[#f0f0f0] shadow-sm overflow-hidden flex flex-col sm:flex-row lg:flex-col hover:shadow-xl hover:border-[#056bfa] hover:-translate-y-1.5 transition-all duration-300">
-                  <div className="w-full sm:w-[180px] lg:w-full h-48 sm:h-auto lg:h-44 shrink-0 overflow-hidden">
-                    <img
-                      src={`https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=300&h=200&sig=${i}`}
-                      alt="Blog Post"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2 text-gray-500 text-[10px] font-bold uppercase tracking-widest leading-none">
-                        <span>{post.date}</span>
-                        <span>•</span>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          <span>{post.read}</span>
-                        </div>
-                      </div>
-                      <h3 className="text-[#056bfa] font-extrabold text-base leading-snug line-clamp-2 group-hover:text-[#0451c4] transition-colors">{post.title}</h3>
-                      <p className="text-gray-500 text-xs mt-2 line-clamp-2 leading-relaxed">{post.desc}</p>
-                    </div>
-                    <div className="flex items-center gap-2 text-[#056bfa] font-black text-xs mt-4 uppercase tracking-[0.1em] group-hover:gap-4 transition-all">
-                      READ MORE <ArrowRight className="w-3 h-3" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="mt-10 flex justify-center">
-              <Link href="/blog" className="inline-flex items-center gap-2 px-9 py-3 border-2 border-[#056bfa] text-[#056bfa] bg-white rounded-full font-black hover:bg-[#056bfa] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl">
-                <BookOpen className="w-4 h-4" />
-                View All Articles →
-              </Link>
-            </div>
-          </div>
-        </section> */}
+       
 
       </main>
 

@@ -14,7 +14,17 @@ import {
   Code,
   Zap,
   LayoutGrid,
-  X
+  X,
+  ShoppingBag,
+  Heart,
+  HomeIcon,
+  Gamepad2,
+  UtensilsCrossed,
+  Building2,
+  Car,
+  Baby,
+  Glasses,
+  Gift
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -49,12 +59,21 @@ export const NavLinks = [
     href: "/categories", 
     hasDropdown: true,
     subLinks: [
-      { name: "Electronics",         href: "/categories/electronics",   icon: Laptop },
-      { name: "Travel",              href: "/categories/travel",         icon: Plane },
-      { name: "Entertainment",       href: "/categories/entertainment",  icon: Tv },
-      { name: "Software & Digital",  href: "/categories/software",      icon: Code },
-      { name: "Mobile & Telecom",    href: "/categories/mobile",        icon: Zap },
-      { name: "View All Categories", href: "/categories",               icon: LayoutGrid },
+      { name: "Electronics",        href: "/categories/electronics",   icon: Laptop },
+      { name: "Travel",             href: "/categories/travel",        icon: Plane },
+      { name: "Entertainment",      href: "/categories/entertainment", icon: Tv },
+      { name: "Software & Digital", href: "/categories/software",     icon: Code },
+      { name: "Mobile & Telecom",   href: "/categories/mobile",       icon: Zap },
+      { name: "Fashion",            href: "/categories/fashion",      icon: ShoppingBag },
+      { name: "Health & Beauty",    href: "/categories/health",       icon: Heart },
+      { name: "Home & Lifestyle",   href: "/categories/home",         icon: HomeIcon },
+      { name: "Gaming",             href: "/categories/gaming",       icon: Gamepad2 },
+      { name: "Food & Drinks",      href: "/categories/food",         icon: UtensilsCrossed },
+      { name: "Hotels",             href: "/categories/hotels",       icon: Building2 },
+      { name: "Automotive",         href: "/categories/automotive",   icon: Car },
+      { name: "Baby & Kids",        href: "/categories/baby",         icon: Baby },
+      { name: "Eyewear",            href: "/categories/eyewear",      icon: Glasses },
+      { name: "Gift Cards",         href: "/categories/gift",         icon: Gift },
     ]
   },
   { name: "Stores", href: "/stores" },
@@ -123,19 +142,19 @@ export const Navbar = () => {
         isScrolled ? "shadow-md border-transparent py-2" : "border-brand-primary-light py-4"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
         {/* Logo */}
         <Link href="/">
           <Logo />
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:absolute lg:flex lg:left-1/2 lg:-translate-x-1/2 items-center gap-8">
           {NavLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <div key={link.name} className="relative group/nav-item">
-                <Link 
+                <Link
                   href={link.href}
                   className={cn(
                     "font-medium transition-colors flex items-center gap-1 group py-4",
@@ -149,8 +168,8 @@ export const Navbar = () => {
                 </Link>
 
                 {link.hasDropdown && (
-                  <div className="absolute top-full left-0 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-300 transform translate-y-2 group-hover/nav-item:translate-y-0 z-50 overflow-hidden">
-                    <div className="p-4 grid gap-1">
+                  <div className="absolute top-full left-0 w-[650px] bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover/nav-item:opacity-100 group-hover/nav-item:visible transition-all duration-300 transform translate-y-2 group-hover/nav-item:translate-y-0 z-50 overflow-hidden">
+                    <div className="p-4 grid grid-cols-3 gap-1">
                       {link.subLinks?.map((subLink) => (
                         <Link
                           key={subLink.name}
@@ -169,6 +188,11 @@ export const Navbar = () => {
                         </Link>
                       ))}
                     </div>
+                    <div className="border-t border-gray-100 px-4 py-2.5 mt-1 flex justify-center">
+                      <Link href="/categories" className="flex items-center gap-1.5 text-sm font-semibold text-brand-primary hover:underline">
+                        <LayoutGrid className="w-4 h-4" /> View All Categories →
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>
@@ -178,17 +202,83 @@ export const Navbar = () => {
 
         {/* Right side CTA & Icons */}
         <div className="flex items-center gap-2 md:gap-4">
+          {/* Search button + floating card */}
+          <div className="relative" ref={searchRef}>
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Search"
+              className={cn("text-black hover:text-brand-primary", isSearchOpen && "text-brand-primary")}
+              onClick={() => { setIsSearchOpen(o => !o); setSearchQuery(''); }}
+            >
+              <Search className="w-5 h-5" />
+            </Button>
+
+            {/* Floating search card */}
+            {isSearchOpen && (
+              <div className="absolute top-full right-0 mt-3 w-[420px] bg-white rounded-2xl shadow-xl border border-gray-200 z-50 overflow-hidden">
+                {/* Input row */}
+                <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-100">
+                  <Search className="w-4 h-4 text-gray-400 shrink-0" />
+                  <input
+                    ref={searchInputRef}
+                    autoFocus
+                    type="text"
+                    placeholder="Search for a store..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    className="flex-1 text-sm outline-none text-black placeholder:text-gray-400 font-medium bg-transparent"
+                  />
+                  {searchQuery && (
+                    <button onClick={() => setSearchQuery('')} className="p-1 rounded-full hover:bg-gray-100 transition-colors">
+                      <X className="w-3.5 h-3.5 text-gray-400" />
+                    </button>
+                  )}
+                </div>
+
+                {/* Results when typing */}
+                {searchQuery.length > 0 ? (
+                  <div className="py-2 px-2 max-h-[60vh] overflow-y-auto">
+                    {searchResults.length > 0 ? (
+                      <>
+                        {searchResults.map(store => (
+                          <Link
+                            key={store.id}
+                            href={`/stores/${store.id}`}
+                            onClick={closeSearch}
+                            className="flex items-center gap-3 py-2.5 px-2 rounded-xl hover:bg-gray-50 transition-colors"
+                          >
+                            <div className="w-9 h-9 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+                              <img src={store.logo} alt={store.name} width={28} height={28} className="w-7 h-7 object-contain" />
+                            </div>
+                            <span className="text-sm font-semibold text-black flex-1">{store.name}</span>
+                            <span className="text-xs text-gray-400 font-medium hidden sm:block">{store.discount}</span>
+                          </Link>
+                        ))}
+                        <Link
+                          href="/stores"
+                          onClick={closeSearch}
+                          className="flex items-center gap-1 mt-1 mb-1 py-2 px-2 text-xs font-bold text-brand-primary hover:underline"
+                        >
+                          View all stores →
+                        </Link>
+                      </>
+                    ) : (
+                      <p className="text-sm text-gray-500 py-5 text-center">
+                        No stores found for &ldquo;<span className="font-semibold text-black">{searchQuery}</span>&rdquo;
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <div className="px-4 py-6 text-center">
+                    <p className="text-sm text-gray-400">Start typing a store name to search</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
           <Button
-            variant="ghost"
-            size="icon"
-            aria-label="Search"
-            className={cn("text-black hover:text-brand-primary", isSearchOpen && "text-brand-primary")}
-            onClick={() => { setIsSearchOpen(o => !o); setSearchQuery(''); }}
-          >
-            <Search className="w-5 h-5" />
-          </Button>
-          
-          <Button 
             className="hidden md:flex bg-brand-primary hover:bg-brand-primary-dark text-white rounded-full px-6 font-bold transition-all duration-300"
             render={<Link href="/deals-of-the-day" />}
           >
@@ -196,166 +286,85 @@ export const Navbar = () => {
           </Button>
 
           <div className="relative" ref={notificationRef}>
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Notifications"
-              className={cn("text-black hover:text-brand-primary relative", isNotificationOpen && "text-brand-primary")}
-              onClick={() => setIsNotificationOpen(!isNotificationOpen)}
-            >
-              <Bell className="w-6 h-6" />
-              <span className="absolute top-1.5 right-1.5 w-4 h-4 bg-[#ef4444] text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
-                3
-              </span>
-            </Button>
-
-            <NotificationPanel isOpen={isNotificationOpen} onClose={() => setIsNotificationOpen(false)} />
-          </div>
-
-          {/* Mobile Menu Trigger */}
-          <div className="lg:hidden">
-            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Open navigation menu" className="text-black hover:text-brand-primary">
-                  <Menu className="w-6 h-6" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Notifications"
+                  className={cn("text-black hover:text-brand-primary relative", isNotificationOpen && "text-brand-primary")}
+                  onClick={() => setIsNotificationOpen(!isNotificationOpen)}
+                >
+                  <Bell className="w-6 h-6" />
+                  <span className="absolute top-1.5 right-1.5 w-4 h-4 bg-[#ef4444] text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">
+                    3
+                  </span>
                 </Button>
-              </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-white">
-                <SheetHeader className="mb-8">
-                  <SheetTitle className="text-left">
-                    <Link href="/" onClick={handleLinkClick}>
-                      <Logo />
-                    </Link>
-                  </SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-6">
-                  {NavLinks.map((link) => {
-                    const isActive = pathname === link.href;
-                    return (
-                      <div key={link.name} className="space-y-4">
-                        <Link 
-                          href={link.href}
-                          onClick={handleLinkClick}
-                          className={cn(
-                            "text-lg transition-colors flex items-center justify-between font-semibold",
-                            isActive ? "text-brand-primary" : "text-black hover:text-brand-primary"
-                          )}
-                        >
-                          {link.name}
-                          {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
+
+                <NotificationPanel isOpen={isNotificationOpen} onClose={() => setIsNotificationOpen(false)} />
+              </div>
+
+              {/* Mobile Menu Trigger */}
+              <div className="lg:hidden">
+                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                  <SheetTrigger asChild>
+                    <Button variant="ghost" size="icon" aria-label="Open navigation menu" className="text-black hover:text-brand-primary">
+                      <Menu className="w-6 h-6" />
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-white">
+                    <SheetHeader className="mb-8">
+                      <SheetTitle className="text-left">
+                        <Link href="/" onClick={handleLinkClick}>
+                          <Logo />
                         </Link>
-                        
-                        {link.hasDropdown && (
-                          <div className="grid grid-cols-1 gap-2 pl-4 border-l-2 border-brand-primary/10">
-                            {link.subLinks?.map((subLink) => (
-                              <Link
-                                key={subLink.name}
-                                href={subLink.href}
-                                onClick={handleLinkClick}
-                                className="flex items-center gap-3 py-2 text-gray-600 hover:text-brand-primary transition-colors"
-                              >
-                                <subLink.icon className="w-4 h-4" />
-                                <span className="text-sm font-medium">{subLink.name}</span>
-                              </Link>
-                            ))}
+                      </SheetTitle>
+                    </SheetHeader>
+                    <div className="flex flex-col gap-6">
+                      {NavLinks.map((link) => {
+                        const isActive = pathname === link.href;
+                        return (
+                          <div key={link.name} className="space-y-4">
+                            <Link
+                              href={link.href}
+                              onClick={handleLinkClick}
+                              className={cn(
+                                "text-lg transition-colors flex items-center justify-between font-semibold",
+                                isActive ? "text-brand-primary" : "text-black hover:text-brand-primary"
+                              )}
+                            >
+                              {link.name}
+                              {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                            </Link>
+
+                            {link.hasDropdown && (
+                              <div className="grid grid-cols-1 gap-2 pl-4 border-l-2 border-brand-primary/10">
+                                {link.subLinks?.map((subLink) => (
+                                  <Link
+                                    key={subLink.name}
+                                    href={subLink.href}
+                                    onClick={handleLinkClick}
+                                    className="flex items-center gap-3 py-2 text-gray-600 hover:text-brand-primary transition-colors"
+                                  >
+                                    <subLink.icon className="w-4 h-4" />
+                                    <span className="text-sm font-medium">{subLink.name}</span>
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
                           </div>
-                        )}
-                      </div>
-                    )
-                  })}
-                  <Button 
-                    className="w-full bg-brand-primary hover:bg-brand-primary-dark text-white rounded-full py-6 text-lg font-bold"
-                    render={<Link href="/deals-of-the-day" onClick={handleLinkClick} />}
-                  >
-                    Deals of the Day
-                  </Button>
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
-        </div>
-      </div>
-
-      {/* Search Panel */}
-      {isSearchOpen && (
-        <div ref={searchRef} className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl z-40">
-          {/* Input row */}
-          <div className="container mx-auto px-4 md:px-6 py-3 flex items-center gap-3 border-b border-gray-100">
-            <Search className="w-5 h-5 text-gray-400 shrink-0" />
-            <input
-              ref={searchInputRef}
-              autoFocus
-              type="text"
-              placeholder="Search stores..."
-              value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
-              className="flex-1 text-sm outline-none text-black placeholder:text-gray-400 font-medium bg-transparent"
-            />
-            <button
-              onClick={closeSearch}
-              aria-label="Close search"
-              className="p-1.5 rounded-full hover:bg-gray-100 transition-colors"
-            >
-              <X className="w-4 h-4 text-gray-400" />
-            </button>
-          </div>
-
-          {/* Results when typing */}
-          {searchQuery.length > 0 && (
-            <div className="container mx-auto px-4 md:px-6 py-2 max-h-[60vh] overflow-y-auto">
-              {searchResults.length > 0 ? (
-                <>
-                  {searchResults.map(store => (
-                    <Link
-                      key={store.id}
-                      href={`/stores/${store.id}`}
-                      onClick={closeSearch}
-                      className="flex items-center gap-3 py-2.5 px-2 rounded-xl hover:bg-gray-50 transition-colors"
-                    >
-                      <div className="w-9 h-9 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
-                        <img src={store.logo} alt={store.name} width={28} height={28} className="w-7 h-7 object-contain" />
-                      </div>
-                      <span className="text-sm font-semibold text-black flex-1">{store.name}</span>
-                      <span className="text-xs text-gray-400 font-medium hidden sm:block">{store.discount}</span>
-                    </Link>
-                  ))}
-                  <Link
-                    href="/stores"
-                    onClick={closeSearch}
-                    className="flex items-center gap-1 mt-1 mb-1 py-2 px-2 text-xs font-bold text-brand-primary hover:underline"
-                  >
-                    View all stores →
-                  </Link>
-                </>
-              ) : (
-                <p className="text-sm text-gray-500 py-5 text-center">
-                  No stores found for &ldquo;<span className="font-semibold text-black">{searchQuery}</span>&rdquo;
-                </p>
-              )}
-            </div>
-          )}
-
-          {/* Popular stores shown before user types */}
-          {searchQuery.length === 0 && (
-            <div className="container mx-auto px-4 md:px-6 py-3">
-              <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">Popular Stores</p>
-              <div className="flex flex-wrap gap-2">
-                {allStores.slice(0, 6).map(store => (
-                  <Link
-                    key={store.id}
-                    href={`/stores/${store.id}`}
-                    onClick={closeSearch}
-                    className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 hover:bg-brand-primary/5 border border-gray-200 transition-colors"
-                  >
-                    <img src={store.logo} alt={store.name} width={16} height={16} className="w-4 h-4 object-contain" />
-                    <span className="text-xs font-semibold text-gray-700">{store.name}</span>
-                  </Link>
-                ))}
+                        )
+                      })}
+                      <Button
+                        className="w-full bg-brand-primary hover:bg-brand-primary-dark text-white rounded-full py-6 text-lg font-bold"
+                        render={<Link href="/deals-of-the-day" onClick={handleLinkClick} />}
+                      >
+                        Deals of the Day
+                      </Button>
+                    </div>
+                  </SheetContent>
+                </Sheet>
               </div>
             </div>
-          )}
-        </div>
-      )}
+      </div>
     </nav>
   );
 };
