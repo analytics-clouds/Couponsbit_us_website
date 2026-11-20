@@ -8,6 +8,17 @@ import { Footer } from "@/components/Footer";
 
 const posts = [
   {
+    href: "/blog/amd-vs-nvidia-ai-chip-war",
+    image: "https://res.cloudinary.com/zzlsqavg/image/upload/v1795154734/amd-vs-nvidia-ai-chip-war.webp",
+    alt: "AMD vs NVIDIA: Is the AI Chip War Changing?",
+    category: "TECH NEWS",
+    categoryBg: "bg-purple-500",
+    date: "November 20, 2026",
+    readTime: "4 MIN READ",
+    title: "AMD vs NVIDIA: Is the AI Chip War Changing?",
+    desc: "Discover how AMD is challenging NVIDIA in AI chips and what their growing competition could mean for technology and consumers.",
+  },
+  {
     href: "/blog/reasons-to-shop-black-friday-sale",
     image: "https://res.cloudinary.com/zzlsqavg/image/upload/v1794915843/reasons-to-shop-black-friday-sale.webp",
     alt: "Top 5 Reasons to Shop During the Black Friday Sale",

@@ -444,8 +444,8 @@ export default function ArticleInteractive() {
                 </h4>
                 <div className="space-y-4">
                   {[
-                    { name: "Amazon", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/amazon-coupon-code_xn2sqr.webp", dealText: "Up to 50% OFF", href: "/stores/amazon-discount-code" },
-                    { name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1781775924/airalo-coupon-code_tkmyoo.webp", dealText: "Save with AC10ALL", href: "/stores/airalo-discount-code" },
+                    { name: "Amazon", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp", dealText: "Up to 50% OFF", href: "/stores/amazon-discount-code" },
+                    { name: "Airalo", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1784895740/airalo-logo_fc6u6p.webp", dealText: "Save with AC10ALL", href: "/stores/airalo-discount-code" },
                     { name: "Bluehost", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/bluehost-coupon-code_j8pvdt.webp", dealText: "Up to 69% OFF", href: "/stores/bluehost-discount-code" },
                     { name: "TrainPal", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1782114026/trainpal-logo_lkwb0o.webp", dealText: "Up to 50% OFF", href: "/stores/trainpal-discount-code" },
                     { name: "Sungait", logo: "https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1785130842/sungait-logo_tfolql.webp", dealText: "Save with CLOUDS15", href: "/stores/sungait-discount-code" },
