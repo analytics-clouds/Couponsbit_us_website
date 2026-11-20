@@ -37,6 +37,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { NUAGE_COUPONS as NUAGEWEAR_COUPONS } from "./offers";
 
 // --- Types ---
 interface Coupon {
@@ -60,156 +61,7 @@ interface StoreItem {
   href: string;
 }
 
-// --- Data ---
-const COUPONS: Coupon[] = [
-  {
-    id: "c1",
-    discount: "FREE",
-    label: "SHIPPING",
-    badge: "Best Offer",
-    title: "NuageWears USA Offer – Free Worldwide Shipping Over $60",
-    heading: "Free Worldwide Shipping",
-    sub: "On Orders Over $60",
-    description: "Shop premium bras, shapewear and everyday essentials with free worldwide shipping on orders above $60.",
-    usedCount: "112k",
-    expiresIn: "2 days",
-    code: "NUAGESHIP60"
-  },
-  {
-    id: "c2",
-    discount: "$49",
-    label: "ONLY",
-    badge: "Popular",
-    title: "NuageWears Commando Chic Shorts – Only $49",
-    heading: "Commando Chic Shorts",
-    sub: "Only $49",
-    description: "Complete your essentials collection with the Commando Chic Shorts, designed for comfort and a sleek fit.",
-    usedCount: "95k",
-    expiresIn: "3 days",
-    code: "NUAGECHIC49"
-  },
-  {
-    id: "c3",
-    discount: "39%",
-    label: "OFF",
-    badge: "Trending",
-    title: "NuageWears Wireless Soft Stay-Put Bra – 39% OFF",
-    heading: "Wireless Soft Stay-Put Bra",
-    sub: "$36.00 (Reg. $59.88)",
-    description: "Experience all-day comfort with this customer-favorite everyday bra, now 39% OFF.",
-    usedCount: "88k",
-    expiresIn: "1 day",
-    code: "NUAGEBRA39"
-  },
-  {
-    id: "c4",
-    discount: "35%",
-    label: "OFF",
-    title: "NuageWears Daily Cover Comfort Guard Bra – 35% OFF",
-    heading: "Daily Cover Comfort Guard Bra",
-    sub: "$36.00 (Reg. $56.00)",
-    description: "Enjoy superior support and full coverage with the Daily Cover Comfort Guard Bra.",
-    usedCount: "76k",
-    expiresIn: "2 days",
-    code: "NUAGECOVER35"
-  },
-  {
-    id: "c5",
-    discount: "33%",
-    label: "OFF",
-    title: "NuageWears Perfect Coverage Push-Up Bra – 33% OFF",
-    heading: "Perfect Coverage Push-Up Bra",
-    sub: "$36.00 (Reg. $54.00)",
-    description: "Enhance your look with this bestselling push-up bra, offering support, comfort and a flattering silhouette.",
-    usedCount: "65k",
-    expiresIn: "5 days",
-    code: "NUAGEPUSH33"
-  },
-  {
-    id: "c6",
-    discount: "12%",
-    label: "SAVE",
-    title: "NuageWears NuAir Mesh Pivot+ 5-Pack – Save 12%",
-    heading: "NuAir Mesh Pivot+ 5-Pack",
-    sub: "$79.00 (Reg. $90.00)",
-    description: "Upgrade your essentials with this breathable mesh 5-pack, crafted for maximum comfort.",
-    usedCount: "54k",
-    expiresIn: "3 days",
-    code: "NUAGEPIVOT12"
-  },
-  {
-    id: "c7",
-    discount: "33%",
-    label: "OFF",
-    title: "NuageWears NuCloud Red Holiday Bra Set – 33% OFF",
-    heading: "NuCloud Red Holiday Bra Set",
-    sub: "$59.00 (Reg. $89.00)",
-    description: "Add elegance to your collection with this stylish, comfortable holiday bra set.",
-    usedCount: "48k",
-    expiresIn: "4 days",
-    code: "NUAGEHOLIDAY33"
-  },
-  {
-    id: "c8",
-    discount: "$16",
-    label: "FROM",
-    title: "NuageWears NuAir Mesh Flex Brief – Starting at $16",
-    heading: "NuAir Mesh Flex Brief",
-    sub: "Starting at $16",
-    description: "Stay comfortable all day with this lightweight, breathable mesh brief.",
-    usedCount: "41k",
-    expiresIn: "2 days",
-    code: "NUAGEFLEX16"
-  },
-  {
-    id: "c9",
-    discount: "10%",
-    label: "SAVE",
-    title: "NuageWears NuAir Mesh Flex Brief 5-Pack – Save 10%",
-    heading: "NuAir Mesh Flex Brief 5-Pack",
-    sub: "$72.00 (Reg. $80.00)",
-    description: "Stock up and save with this breathable, flexible 5-pack designed for everyday wear.",
-    usedCount: "37k",
-    expiresIn: "3 days",
-    code: "NUAGEFLEX10"
-  },
-  {
-    id: "c10",
-    discount: "$18",
-    label: "ONLY",
-    title: "NuageWears NuAir Mesh FlexShield Thong – $18 Only",
-    heading: "NuAir Mesh FlexShield Thong",
-    sub: "Only $18",
-    description: "Feel light and confident with this seamless, breathable mesh thong.",
-    usedCount: "33k",
-    expiresIn: "5 days",
-    code: "NUAGESHIELD18"
-  },
-  {
-    id: "c11",
-    discount: "$14",
-    label: "ONLY",
-    title: "NuageWears NuCloud Original Bikini – Only $14",
-    heading: "NuCloud Original Bikini",
-    sub: "Only $14",
-    description: "Discover second-skin comfort, ideal for yoga, pilates and daily wear.",
-    usedCount: "29k",
-    expiresIn: "2 days",
-    code: "NUAGEBIKINI14"
-  },
-  {
-    id: "c12",
-    discount: "37%",
-    label: "OFF",
-    title: "NuageWears NuBloom Bra – 37% OFF",
-    heading: "NuBloom Bra",
-    sub: "$62.00 (Reg. $99.00)",
-    description: "Elevate your comfort with the stylish NuBloom Bra, available in multiple colors.",
-    usedCount: "25k",
-    expiresIn: "4 days",
-    code: "NUAGEBLOOM37"
-  }
-];
+
 
 const RELATED_STORES: StoreItem[] = [
   { name: "Bamboocool", logo: "https://res.cloudinary.com/couponsbit/image/upload/v1787205194/bamboocool-logo_pzkzgu.webp", dealText: "Up To 25% OFF", href: "/stores/bamboocool-discount-code" },
@@ -226,6 +78,7 @@ export default function NuagewearCouponsContent() {
   const [showToast, setShowToast] = useState(false);
   const [toastCode, setToastCode] = useState("");
   const [expandedCoupon, setExpandedCoupon] = useState<string | null>(null);
+  const [expandedCouponId, setExpandedCouponId] = useState<string | null>(null);
   const [isReadMore, setIsReadMore] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [revealedCodes, setRevealedCodes] = useState<Set<string>>(new Set());
@@ -309,7 +162,7 @@ export default function NuagewearCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(32.5k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Get verified Nuage discount codes & NuageWear promo codes for November 2026. Save 39% on the bestselling Wireless Stay-Put Bra from just $36. Enjoy free worldwide shipping on orders above $60 — comfort-first lingerie & shapewear updated daily.
+                     Refresh your everyday essentials for less with a NuageWears promo code in Nov 2026. Verified offers include 39% off the Wireless Soft Stay-Put Bra, 37% off the NuBloom Bra, and free worldwide shipping on orders over $60. Looking for a discount code? You can also save 35% on the Daily Cover Comfort Guard Bra and shop everyday bras, shapewear, briefs, and underwear starting from $14 with regularly updated deals.
                     </p>
                     <a
                       href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015"
@@ -412,512 +265,102 @@ export default function NuagewearCouponsContent() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-12">
               
-              {/* Left Column: Coupons */}
               <div className="top-offers lg:w-[65%]">
-                <div className="mb-10">
-                  <h2 className="text-2xl font-black text-black leading-tight">Nuagewear Coupon Codes & Offers</h2>
-                  
-                </div>
-
-                
-
-                {/* Coupon 1 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SHIPPING</p>
-          <h2 className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">FREE</h2>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">SHIPPING</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears USA Offer – Free Worldwide Shipping Over $60</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Shop premium bras, shapewear and everyday essentials with free worldwide shipping on orders above $60.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Enjoy FREE Worldwide Shipping on orders above $60</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Discover comfort-focused collections designed for everyday confidence</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Limited-time shipping offer available for global customers</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears USA Offer – Free Worldwide Shipping Over $60" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
+  <div className="mb-10">
+    <h2 className="text-2xl font-black text-black leading-tight">
+      Nuagewear Coupon Codes &amp; Offers
+    </h2>
   </div>
-</div>
 
-{/* Coupon 2 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$49</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
+  {NUAGEWEAR_COUPONS.map((coupon) => (
+    <div key={coupon.id} id={coupon.id} className="w-full max-w-7xl mx-auto mb-6">
+      <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
+        <div className="flex flex-row">
+          <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
+            <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+            <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
+            <div className="text-center px-1">
+              <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[15px] font-semibold leading-3">
+                {coupon.topLabel}
+              </p>
+              <div className="text-[15px] sm:text-2xl font-extrabold leading-none mt-2">
+                {coupon.mainValue}
+              </div>
+            </div>
           </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears Commando Chic Shorts – Only $49</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Complete your essentials collection with the Commando Chic Shorts, designed for comfort and a sleek fit.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for just $49.00</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for comfort, coverage and a sleek fit</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for layering, lounging and everyday wear</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Commando Chic Shorts – Only $49" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-{/* Coupon 3 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">39%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears Wireless Soft Stay-Put Bra – 39% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Experience all-day comfort with this customer-favorite everyday bra, now 39% OFF.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $36.00 (Regular Price: $59.88)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for comfort, support and a seamless fit</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for daily wear and long-lasting comfort</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Wireless Soft Stay-Put Bra – 39% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 4 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">35%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears Daily Cover Comfort Guard Bra – 35% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enjoy superior support and full coverage with the Daily Cover Comfort Guard Bra.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $36.00 (Regular Price: $56.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed for full coverage and all-day confidence</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A must-have addition to your lingerie collection</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Daily Cover Comfort Guard Bra – 35% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 5 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears Perfect Coverage Push-Up Bra – 33% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Enhance your look with this bestselling push-up bra, offering support, comfort and a flattering silhouette.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $36.00 (Regular Price: $54.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Provides support, comfort and a flattering silhouette</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for everyday wear and special occasions</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears Perfect Coverage Push-Up Bra – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 6 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">12%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuAir Mesh Pivot+ 5-Pack – Save 12%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Upgrade your essentials with this breathable mesh 5-pack, crafted for maximum comfort.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $79.00 (Regular Price: $90.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Crafted with breathable mesh fabric for maximum comfort</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for everyday wear and active lifestyles</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Pivot+ 5-Pack – Save 12%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 7 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">33%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuCloud Red Holiday Bra Set – 33% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Add elegance to your collection with this stylish, comfortable holiday bra set.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $59.00 (Regular Price: $89.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Stylish, comfortable and designed for a perfect fit</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Ideal for gifting or upgrading your lingerie drawer</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Red Holiday Bra Set – 33% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 8 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">FROM</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$16</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuAir Mesh Flex Brief – Starting at $16</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stay comfortable all day with this lightweight, breathable mesh brief.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from just $16.00</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Soft mesh construction for a smooth feel</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>A wardrobe essential for modern women</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief – Starting at $16" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 9 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">SAVE</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">10%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuAir Mesh Flex Brief 5-Pack – Save 10%</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Stock up and save with this breathable, flexible 5-pack designed for everyday wear.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $72.00 (Regular Price: $80.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Breathable, flexible and designed for everyday wear</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for comfort and convenience</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh Flex Brief 5-Pack – Save 10%" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 10 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$18</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuAir Mesh FlexShield Thong – $18 Only</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Feel light and confident with this seamless, breathable mesh thong.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available for just $18.00</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Designed with breathable mesh fabric and a seamless fit</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect for everyday comfort and invisible wear</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuAir Mesh FlexShield Thong – $18 Only" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 11 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">ONLY</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">$14</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase"></p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuCloud Original Bikini – Only $14</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Discover second-skin comfort, ideal for yoga, pilates and daily wear.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available from just $14.00</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Soft, breathable and ideal for yoga, pilates and daily wear</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Everyday essentials at an unbeatable price</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuCloud Original Bikini – Only $14" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Coupon 12 */}
-<div className="w-full max-w-7xl mx-auto mb-6">
-  <div className="bg-[#f8f8f8] border border-gray-200 rounded-[24px] overflow-hidden shadow-sm">
-    <div className="flex flex-row">
-      <div className="relative w-[90px] sm:w-[160px] bg-gradient-to-b from-[#056bfa] to-[#006d9b] flex items-center justify-center py-6 sm:py-8 text-white shrink-0">
-        <div className="absolute -right-3 top-8 sm:top-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="absolute -right-3 bottom-8 sm:bottom-10 w-6 h-6 bg-[#f8f8f8] rounded-full"></div>
-        <div className="text-center px-1">
-          <p className="uppercase tracking-[2px] sm:tracking-[3px] text-[8px] sm:text-[9px] font-semibold leading-3">OFF</p>
-          <div className="text-[20px] sm:text-4xl font-extrabold leading-none mt-2">37%</div>
-          <p className="text-[11px] sm:text-sm font-bold mt-2 uppercase">OFF</p>
-        </div>
-      </div>
-      <div className="flex-1 flex flex-col lg:flex-row min-w-0">
-        <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Limited Time</span>
-            <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">Verified Deal</span>
-          </div>
-          <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">NuageWears NuBloom Bra – 37% OFF</h2>
-          <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">Elevate your comfort with the stylish NuBloom Bra, available in multiple colors.</p>
-          <button type="button" onClick={() => setOpen(!open)} className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1">
-            View Details
-            <ChevronDown size={16} className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[250px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-            <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Sale Price: $62.00 (Regular Price: $99.00)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Available in multiple colors for versatile styling</li>
-              <li className="flex items-start gap-2"><span className="text-[#0344b0]">•</span>Perfect blend of support and elegance</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
-          <a href="https://go.sjv.io/c/4303217/3232402/41026?subId1=1015" target="_blank" rel="nofollow noopener noreferrer" aria-label="Get Nuagewear deal: NuageWears NuBloom Bra – 37% OFF" className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block">Get Deal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-              
-
-                
+          <div className="flex-1 flex flex-col lg:flex-row min-w-0">
+            <div className="flex-1 px-3 sm:px-6 py-3 sm:py-5 border-b lg:border-b-0 lg:border-r border-dashed border-gray-300 min-w-0">
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                  Limited Time
+                </span>
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[9px] font-bold px-2 sm:px-3 py-1 rounded-full uppercase whitespace-nowrap">
+                  Verified Deal
+                </span>
               </div>
 
+              <h2 className="text-[15px] sm:text-[22px] font-extrabold text-[#061b3a] leading-[22px] sm:leading-snug">
+                {coupon.title}
+              </h2>
+
+              <p className="mt-2 sm:mt-3 text-gray-600 text-[13px] sm:text-sm leading-6">
+                {coupon.description}
+              </p>
+
+              <button
+                type="button"
+                onClick={() =>
+                  setExpandedCouponId(
+                    expandedCouponId === coupon.id ? null : coupon.id
+                  )
+                }
+                className="mt-3 sm:mt-4 text-[#061b3a] font-bold text-[13px] sm:text-sm flex items-center gap-1"
+              >
+                View Details
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${
+                    expandedCouponId === coupon.id ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  expandedCouponId === coupon.id
+                    ? "max-h-[250px] opacity-100 mt-3"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="space-y-2 text-gray-700 text-[13px] sm:text-sm leading-6">
+                  {coupon.points.map((b, bi) => (
+                    <li key={bi} className="flex items-start gap-2">
+                      <span className="text-[#0344b0]">•</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="w-full lg:w-[210px] flex items-center justify-center px-3 sm:px-5 py-3 sm:py-6">
+              <a
+                href={coupon.url}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label={coupon.ariaLabel}
+                className="w-full lg:w-auto bg-[#056bfa] hover:bg-[#005f91] text-white font-bold text-[18px] sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-md transition-all duration-300 text-center block"
+              >
+                Get Deal
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
               {/* Sidebar */}
               <div className="lg:w-[35%] space-y-8">
 

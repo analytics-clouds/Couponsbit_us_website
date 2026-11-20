@@ -5,10 +5,10 @@ import { BOOKING_COUPONS } from "./_components/offers";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Nov 2026",
+    absolute: "Booking Promo Code: Up to 40% Off Hotels & Cruises | Nov 2026",
   },
   description:
-    "Discover the latest Booking promo code and discount code for Nov 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+    "Use a Booking promo code to save up to 40% on hotels and cruises, plus enjoy a discount code for 20% off eligible stays. Verified deals for Nov 2026.",
 
   alternates: {
     canonical: "https://www.couponsbit.us/stores/booking-promo-code",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.couponsbit.us/stores/booking-promo-code",
-    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Nov 2026",
+    title: "Booking Promo Code: Up to 40% Off Hotels & Cruises | Nov 2026",
     description:
-      "Discover the latest Booking promo code and discount code for Nov 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+      "Use a Booking promo code to save up to 40% on hotels and cruises, plus enjoy a discount code for 20% off eligible stays. Verified deals for Nov 2026.",
     siteName: "Couponsbit",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_IN"],
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Nov 2026",
+    title: "Booking Promo Code: Up to 40% Off Hotels & Cruises | Nov 2026",
     description:
-      "Discover the latest Booking promo code and discount code for Nov 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+      "Use a Booking promo code to save up to 40% on hotels and cruises, plus enjoy a discount code for 20% off eligible stays. Verified deals for Nov 2026.",
     images: ["https://res.cloudinary.com/couponsbit/image/upload/v1787639269/booking-logo_dtnn30.webp"],
     site: "@couponsbit",
   },
@@ -55,6 +55,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+
+  other: {
+    "geo.region": "US",
+    "geo.country": "US",
+    language: "en-US",
   },
 };
 
@@ -75,9 +81,9 @@ const bookingSchema = {
       "@type": "WebPage",
       "@id": "https://www.couponsbit.us/stores/booking-promo-code#webpage",
       url: "https://www.couponsbit.us/stores/booking-promo-code",
-      name: "Booking Promo Code: Get 20% OFF on Hotels + 15% OFF Stays | Nov 2026",
+      name: "Booking Promo Code: Up to 40% Off Hotels & Cruises | Nov 2026",
       description:
-        "Discover the latest Booking promo code and discount code for Nov 2026. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, up to 40% on Las Vegas hotels and Carnival Cruise Line, plus exclusive deals on flights and guest homes.",
+        "Use a Booking promo code to save up to 40% on hotels and cruises, plus enjoy a discount code for 20% off eligible stays. Verified deals for Nov 2026.",
       inLanguage: "en-US",
       author: { "@type": "Organization", name: "Couponsbit", url: "https://www.couponsbit.us" },
       dateModified: "2026-11-01",
@@ -117,6 +123,13 @@ const bookingSchema = {
       url: "https://www.couponsbit.us",
       logo: { "@type": "ImageObject", url: "https://res.cloudinary.com/couponsbit/image/upload/v1781775924/couponsbit-logo_kxqyir.webp", width: 200, height: 60 },
       contactPoint: { "@type": "ContactPoint", contactType: "Customer Support", availableLanguage: "English" },
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.couponsbit.us/stores/booking-promo-code#brand",
+      name: "Booking.com",
+      url: "https://www.booking.com",
     },
 
     {

@@ -108,7 +108,7 @@ export default function BookingCouponsContent() {
                       <span className="text-gray-600 font-bold text-sm">(61.4k Ratings)</span>
                     </div>
                     <p className="store-description text-gray-600 text-sm leading-relaxed max-w-[400px] text-justify">
-                     Find verified Booking promo codes and discount codes for hotels, flights, cruises, and vacation stays. Save 20% on hotel bookings, 15% on select stays, 10% on your first booking, and enjoy exclusive travel savings throughout Nov 2026.
+                     Planning your next trip? A Booking promo code can unlock up to 40% off select Las Vegas stays and Carnival Cruise Line bookings, while eligible hotels offer 20% off and 15% off selected reservations. New customers can also claim 10% off their first eligible booking in Nov 2026. Looking for a discount code? We regularly verify and update these offers, helping you save on hotels, flights, cruises, and vacation stays with confidence.
                     </p>
                     <a
                       href={STORE_URL}
