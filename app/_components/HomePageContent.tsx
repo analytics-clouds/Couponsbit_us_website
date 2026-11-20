@@ -39,90 +39,96 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
+      image: "https://res.cloudinary.com/zzlsqavg/image/upload/v1795177436/Black_Friday_Tech_Sale_Showcase.webp",
+      alt: "OGL Moves Discount Code & Promo Deals",
+      href: "https://www.couponsbit.us/stores/amazon-discount-code"
+    },
+    {
+      id: 2,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/1_p1m23a.webp",
       alt: "OGL Moves Discount Code & Promo Deals",
       href: "https://eastriseinternationalgrouplimited.pxf.io/QYv3Yz"
     },
     {
-      id: 2,
+      id: 3,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/2_mlqozl.webp",
       alt: "Helium 10 Discount Code & Promo Deals",
       href: "https://i.helium10.com/c/4303217/3054775/37271?subId1=1015"
     },
     {
-      id: 3,
+      id: 4,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/3_vu214r.webp",
       alt: "Beelink Discount Code & Promo Deals",
       href: "https://beelink.sjv.io/c/4303217/2840092/32821?subId1=1015"
     },
     {
-      id: 4,
+      id: 5,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/4_hlcmu9.webp",
       alt: "iSinwheel Discount Code & Promo Deals",
       href: "https://isinwheel.pxf.io/c/4303217/1289264/15800?subId1=1015"
     },
     {
-      id: 5,
+      id: 6,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144790/5_xmdpqq.webp",
       alt: "Epic Discount Code & Promo Deals",
       href: "https://epic.pxf.io/c/4303217/3763127/47834?adnetwork=1&trafsrc=2"
     },
     {
-      id: 6,
+      id: 7,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/6_dh8e1i.webp",
       alt: "Airalo Discount Code & Promo Deals",
       href: "https://www.airalo.com/?code=AC10ALL"
     },
     {
-      id: 7,
+      id: 8,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/7_b7mwm4.webp",
       alt: "Blue Cypress Discount Code & Promo Deals",
       href: "https://bluecypress.sjv.io/3kOgBX"
     },
     {
-      id: 8,
+      id: 9,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/8_dblfhb.webp",
       alt: "LovesJerkyCo Discount Code & Promo Deals",
       href: "https://lovesjerkyco.pxf.io/VOV7Ja"
     },
     {
-      id: 9,
+      id: 10,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809730/5_ihwcho.webp",
       alt: "Bluehost Discount Code & Promo Deals",
       href: "https://bluehost.sjv.io/c/4303217/795082/11352?subId1=1015"
     },
     {
-      id: 10,
+      id: 11,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/9_qkjxk7.webp",
       alt: "Bluetti Discount Code & Promo Deals",
       href: "http://bluettius.sjv.io/c/6434050/1439830/17108?subId1=pubid&subId2=1015"
     },
     {
-      id: 11,
+      id: 12,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144792/11_uedwgr.webp",
       alt: "Sungait Discount Code & Promo Deals",
       href: "https://sungaitcn.pxf.io/c/6434050/3933369/54145?subId1=986"
     },
     {
-      id: 12,
+      id: 13,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1790144791/12_nvvkly.webp",
       alt: "Factor 75 Discount Code & Promo Deals",
       href: "https://factorus.sjv.io/c/4303217/3278845/41435?subId1=1015"
     },
     {
-      id: 13,
+      id: 14,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/7_ymlcxp.webp",
       alt: "Major Fitness Discount Code & Promo Deals",
       href: "https://majorfitness.sjv.io/c/4303217/1835793/21930?subId1=1015"
     },
     {
-      id: 14,
+      id: 15,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/8_dzfhxz.webp",
       alt: "Fytoo Discount Code & Promo Deals",
       href: "https://fytoo.sjv.io/c/4303217/1383992/16551?subId1=1015"
     },
     {
-      id: 15,
+      id: 16,
       image: "https://res.cloudinary.com/couponsbit/image/upload/v1791809731/6_arunqx.webp",
       alt: "Dreame Discount Code & Promo Deals",
       href: "https://dreame.sjv.io/c/4303217/1700990/19782?subId1=1015"

@@ -60,6 +60,12 @@ export const NotificationPanel = ({ isOpen }: NotificationPanelProps) => {
           </div>
           <div className="max-h-[400px] overflow-y-auto">
             <NotificationItem
+              text="🛍️ Amazon Black Friday 2026 is Coming – Starting Nov 27! Score the Biggest Deals of the Year on Tech, Fashion, Home & More"
+              image="https://res.cloudinary.com/couponsbit/image/upload/f_auto,q_auto/v1786002074/amazon-logo_vt811s.webp"
+              ctaLabel="Shop Now"
+              ctaHref="/stores/amazon-discount-code"
+            />
+            <NotificationItem
               text="🦃 Thanksgiving is Coming! Save Up to $130 OFF Your First Factor75 Meal Deliveries"
               image="https://res.cloudinary.com/couponsbit/image/upload/v1782288848/factor75-coupon-code_a7lrym.webp"
               ctaLabel="Shop Now"

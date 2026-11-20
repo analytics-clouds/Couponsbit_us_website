@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CookieConsent } from "@/components/CookieConsent";
+import { AmazonBlackFridayPopup } from "@/components/AmazonBlackFridayPopup";
 import Season from "@/components/ui/Season";
 import Music from "@/components/ui/Music";
 import "./globals.css";
@@ -103,6 +104,7 @@ export default function RootLayout({
           }}
         />
         <SpeedInsights />
+        <AmazonBlackFridayPopup />
         <CookieConsent />
       </body>
     </html>
