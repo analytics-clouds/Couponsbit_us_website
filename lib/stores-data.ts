@@ -188,6 +188,8 @@ export const allStores: StoreEntry[] = [
   { name: "Feel Good Contacts", id: "feelgoodcontacts-discount-code",  category: "Eyewear",     coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793878984/feel_good_contact_logo.webp",           discount: "Up to 50% OFF",       popular: false },
   { name: "Udemy",              id: "udemy-discount-code",              category: "More",        coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793879483/udmey_logo.webp",                       discount: "Up to 80% OFF",       popular: false },
   { name: "Ultrahuman",         id: "ultrahuman-discount-code",         category: "Electronics", coupons: 3,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1793879483/Ultrahuman_logo.webp",                  discount: "Up to 20% OFF",       popular: false },
+  { name: "Tetr",               id: "tetr-promo-code",                  category: "Entertainment", coupons: 8,  logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1795168729/tetr-logo.webp",                       discount: "Save on Plus",        popular: false },
+  { name: "New Balance",        id: "newbalance-promo-code",            category: "Fashion",       coupons: 10, logo: "https://res.cloudinary.com/zzlsqavg/image/upload/v1795168908/newbalance-logo.webp",                  discount: "Up To 40% OFF",       popular: false },
 ];
 
 
